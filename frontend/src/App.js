@@ -107,6 +107,7 @@ const GasSmellFromStove = lazy(() => import("./components/pages/blog/GasSmellFro
 const RefrigeratorWaterFilter = lazy(() => import("./components/pages/blog/RefrigeratorWaterFilter"));
 const DishwasherNotDraining = lazy(() => import("./components/pages/blog/DishwasherNotDraining"));
 const NeighborhoodPage = lazy(() => import("./components/pages/NeighborhoodPage"));
+const MarinCountyPage = lazy(() => import("./components/pages/MarinCountyPage"));
 
 export default function App() {
   return (
@@ -251,6 +252,7 @@ export default function App() {
         <Route path="/maintenance/wine-cooler" element={<WineCoolerMaintenance />} />
 
         {/* Brand-specific service pages */}
+        <Route path="/marin-county-appliance-repair" element={<MarinCountyPage />} />
         <Route path="/whirlpool-appliance-repair" element={<WhirlpoolApplianceRepairPage />} />
         <Route path="/lg-appliance-repair" element={<LGApplianceRepairPage />} />
         <Route path="/samsung-appliance-repair" element={<SamsungApplianceRepairPage />} />

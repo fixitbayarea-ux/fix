@@ -47,6 +47,7 @@ https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
 /reviews  /reviews.html  200
 /brands  /brands.html  200
 /local-appliance-repair  /local-appliance-repair.html  200
+/marin-county-appliance-repair  /marin-county-appliance-repair.html  200
 /residential-appliance-repair  /residential-appliance-repair.html  200
 /commercial-appliance-repair  /commercial-appliance-repair.html  200
 /commercial-refrigerator-repair  /commercial-refrigerator-repair.html  200

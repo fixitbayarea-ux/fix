@@ -127,6 +127,7 @@ const OTHER_KEY_PAGES = [
   'reviews',
   'brands',
   'local-appliance-repair',
+  'marin-county-appliance-repair',
   'residential-appliance-repair',
   'commercial-appliance-repair',
   'commercial-refrigerator-repair',
@@ -551,6 +552,41 @@ function getSEOContent(route) {
         '/maintenance/cooktop',
         '/maintenance/oven-range',
         '/maintenance/wine-cooler',
+      ]
+    };
+  }
+
+  // Marin County page
+  if (route === '/marin-county-appliance-repair') {
+    return {
+      title: 'Appliance Repair Marin County | Same-Day Service | FixitBay',
+      description: 'Licensed appliance repair in Marin County. Serving Mill Valley, San Rafael, Novato, Sausalito, Tiburon. $60 diagnostic, 180-day warranty. Same-day service.',
+      h1: 'Appliance Repair in Marin County',
+      content: `
+        <p style="margin-bottom:1rem;">FixitBay provides professional appliance repair across all of Marin County. Our licensed and insured technicians serve Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo, Belvedere, and San Quentin with same-day service available.</p>
+        <p style="margin-bottom:1rem;">We understand Marin County's unique homes — from hillside estates in Tiburon and Sausalito to charming bungalows in Mill Valley and San Anselmo. Our technicians are experienced with high-end appliances common in Marin, including Sub-Zero, Wolf, Viking, Thermador, and Miele.</p>
+        <p>Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day appliance repair in Marin County.</p>
+      `,
+      internalLinks: [
+        '/',
+        '/service-areas',
+        '/mill-valley-appliance-repair',
+        '/san-rafael-appliance-repair',
+        '/novato-appliance-repair',
+        '/sausalito-appliance-repair',
+        '/tiburon-appliance-repair',
+        '/corte-madera-appliance-repair',
+        '/larkspur-appliance-repair',
+        '/greenbrae-appliance-repair',
+        '/ross-appliance-repair',
+        '/fairfax-appliance-repair',
+        '/san-anselmo-appliance-repair',
+        '/belvedere-appliance-repair',
+        '/san-quentin-appliance-repair',
+        '/refrigerator-repair',
+        '/washer-repair',
+        '/dryer-repair',
+        '/contact'
       ]
     };
   }

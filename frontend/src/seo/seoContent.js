@@ -19,6 +19,7 @@ export const getSEOContent = (route) => {
     '/about': getAboutContent(),
     '/service-areas': getServiceAreasContent(),
     '/local-appliance-repair': getLocalRepairContent(),
+    '/marin-county-appliance-repair': getMarinCountyContent(),
     '/blog/gas-smell-from-stove': getBlogContent('gas-smell-from-stove'),
     '/blog/appliance-repair-cost-san-francisco': getBlogContent('appliance-repair-cost'),
     '/blog/appliance-repair-marin-county': getBlogContent('appliance-repair-marin'),
@@ -374,6 +375,43 @@ function getLocalRepairContent() {
       <p>Call <a href="tel:+17605435733">(760) 543-5733</a> or <a href="/book">book online</a> for fast, professional local appliance repair.</p>
     `,
     internalLinks: ['/', '/service-areas', '/refrigerator-repair', '/washer-repair', '/dryer-repair', '/dishwasher-repair', '/contact', '/about']
+  };
+}
+
+function getMarinCountyContent() {
+  return {
+    title: 'Appliance Repair Marin County | Same-Day Service | FixitBay',
+    description: 'Licensed appliance repair in Marin County. Serving Mill Valley, San Rafael, Novato, Sausalito, Tiburon. $60 diagnostic, 180-day warranty. Same-day service.',
+    h1: 'Appliance Repair in Marin County',
+    content: `
+      <p>FixitBay provides professional appliance repair across all of Marin County. Our licensed and insured technicians serve Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo, Belvedere, and San Quentin with same-day service available.</p>
+      
+      <h2>Expert Service for Marin County Homes</h2>
+      <p>We understand Marin County's unique homes — from hillside estates in Tiburon and Sausalito to charming bungalows in Mill Valley and San Anselmo. Our technicians are experienced with high-end appliances common in Marin, including Sub-Zero, Wolf, Viking, Thermador, and Miele.</p>
+      
+      <h2>Appliance Repair Services</h2>
+      <p>We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, wine coolers, ice makers, and more. Our $60 diagnostic fee is fully applied to your repair cost. Every repair includes our comprehensive 180-day warranty on parts and labor.</p>
+      
+      <h2>Same-Day Service Throughout Marin</h2>
+      <p>Appliance emergencies don't wait, and neither do we. We offer same-day service across Marin County when you call in the morning. Our technicians know Marin's roads and can reach you quickly.</p>
+      
+      <h2>Premium Brand Specialists</h2>
+      <p>Marin homes often feature high-end appliances. Our technicians are factory-trained on premium brands: Sub-Zero, Wolf, Viking, Thermador, Miele, Bosch, and more. We carry specialized parts and tools for luxury appliance repairs.</p>
+      
+      <p>Call <a href="tel:+17605435733">(760) 543-5733</a> or <a href="/book">book online</a> for same-day appliance repair in Marin County.</p>
+    `,
+    internalLinks: [
+      '/',
+      '/service-areas',
+      '/mill-valley-appliance-repair',
+      '/san-rafael-appliance-repair',
+      '/novato-appliance-repair',
+      '/sausalito-appliance-repair',
+      '/tiburon-appliance-repair',
+      '/corte-madera-appliance-repair',
+      '/refrigerator-repair',
+      '/contact'
+    ]
   };
 }
 
