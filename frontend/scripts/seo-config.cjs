@@ -1105,7 +1105,7 @@ function getSEOContent(route) {
         links: ['/', '/refrigerator-repair', '/freezer-repair', '/dishwasher-repair', '/service-areas', '/reviews', '/contact']
       },
       'wine-cooler': {
-        title: 'Wine Cooler Repair San Francisco & Bay Area | FixitBay',
+        title: 'Wine Cooler Repair San Francisco & Bay Area | Same-Day | FixitBay',
         desc: 'Specialized wine refrigerator repair in San Francisco & Bay Area. Temperature, humidity, compressor issues. Same-day service. 180-day warranty. Call (760) 543-5733.',
         h1: 'Wine Cooler Repair in San Francisco & Bay Area',
         content: `
