@@ -18,7 +18,11 @@ export const getSEOContent = (route) => {
     '/contact': getContactContent(),
     '/about': getAboutContent(),
     '/service-areas': getServiceAreasContent(),
-    '/local-appliance-repair': getLocalRepairContent()
+    '/local-appliance-repair': getLocalRepairContent(),
+    '/blog/gas-smell-from-stove': getBlogContent('gas-smell-from-stove'),
+    '/blog/appliance-repair-cost-san-francisco': getBlogContent('appliance-repair-cost'),
+    '/blog/appliance-repair-marin-county': getBlogContent('appliance-repair-marin'),
+    '/blog/same-day-appliance-repair-bay-area': getBlogContent('same-day-repair')
   };
 
   // Check if it's a city page (new canonical pattern: /{city}-appliance-repair)
@@ -370,5 +374,42 @@ function getDefaultContent(route) {
     h1: 'Appliance Repair Services',
     content: '<p>Professional appliance repair services across the Bay Area.</p>',
     internalLinks: ['/', '/service-areas', '/contact']
+  };
+}
+
+function getBlogContent(slug) {
+  const blogData = {
+    'gas-smell-from-stove': {
+      title: 'Is It Normal to Smell Gas From Stove? | FixitBay SF',
+      description: 'When gas smell from stove is dangerous vs normal. Expert advice from licensed Bay Area appliance technician. Serving SF, Marin & Peninsula.',
+      h1: 'Is It Normal to Smell Gas From Your Stove?'
+    },
+    'appliance-repair-cost': {
+      title: 'Appliance Repair Cost San Francisco 2026 | FixitBay',
+      description: 'Complete guide to appliance repair costs in San Francisco & Bay Area. Refrigerator, washer, dryer, dishwasher repair prices. $60 diagnostic.',
+      h1: 'Appliance Repair Cost in San Francisco 2026'
+    },
+    'appliance-repair-marin': {
+      title: 'Appliance Repair Marin County | Same-Day | FixitBay',
+      description: 'Licensed appliance repair in Marin County — Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo, Belvedere, San Quentin. $60 diagnostic, 180-day warranty.',
+      h1: 'Appliance Repair in Marin County'
+    },
+    'same-day-repair': {
+      title: 'Same-Day Appliance Repair Bay Area | FixitBay',
+      description: 'Same-day appliance repair across SF Bay Area — San Francisco, Peninsula & Marin County. Licensed technicians available today. $60 diagnostic applied to repair.',
+      h1: 'Same-Day Appliance Repair Bay Area'
+    }
+  };
+  const data = blogData[slug] || {
+    title: 'Appliance Repair Tips | FixitBay',
+    description: 'Expert appliance repair advice for Bay Area homeowners.',
+    h1: 'FixitBay Blog'
+  };
+  return {
+    title: data.title,
+    description: data.description,
+    h1: data.h1,
+    content: '<p>Expert appliance repair advice for Bay Area homeowners across San Francisco, Peninsula and Marin County.</p>',
+    internalLinks: ['/', '/service-areas', '/contact', '/refrigerator-repair', '/san-francisco-appliance-repair']
   };
 }

@@ -114,7 +114,10 @@ const BLOG_PAGES = [
   { slug: 'blog/energy-efficient-appliances', title: 'Energy Efficient Appliances' },
   { slug: 'blog/gas-smell-from-stove', title: 'Gas Smell From Stove' },
   { slug: 'blog/refrigerator-water-filter', title: 'Refrigerator Water Filter' },
-  { slug: 'blog/dishwasher-not-draining', title: 'Dishwasher Not Draining' }
+  { slug: 'blog/dishwasher-not-draining', title: 'Dishwasher Not Draining' },
+  { slug: 'blog/appliance-repair-cost-san-francisco', title: 'Appliance Repair Cost San Francisco' },
+  { slug: 'blog/appliance-repair-marin-county', title: 'Appliance Repair Marin County' },
+  { slug: 'blog/same-day-appliance-repair-bay-area', title: 'Same-Day Appliance Repair Bay Area' }
 ];
 
 const OTHER_KEY_PAGES = [
@@ -699,6 +702,18 @@ function getSEOContent(route) {
       'when-to-repair-vs-replace': {
         title: 'Repair vs Replace: When to Fix Your Appliance | FixitBay Expert Guide',
         description: 'Not sure if it\'s worth repairing your old appliance? Use our expert guide based on the 50% rule, age considerations, and repair costs. Make the right financial decision for your home.'
+      },
+      'appliance-repair-cost-san-francisco': {
+        title: 'Appliance Repair Cost San Francisco 2026 | FixitBay',
+        description: 'Complete guide to appliance repair costs in San Francisco & Bay Area. Refrigerator, washer, dryer, dishwasher repair prices. $60 diagnostic.'
+      },
+      'appliance-repair-marin-county': {
+        title: 'Appliance Repair Marin County | Same-Day | FixitBay',
+        description: 'Licensed appliance repair in Marin County — Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo, Belvedere, San Quentin. $60 diagnostic, 180-day warranty.'
+      },
+      'same-day-appliance-repair-bay-area': {
+        title: 'Same-Day Appliance Repair Bay Area | FixitBay',
+        description: 'Same-day appliance repair across SF Bay Area — San Francisco, Peninsula & Marin County. Licensed technicians available today. $60 diagnostic applied to repair.'
       }
     };
     const explicit = blogSEO[blogSlug];
