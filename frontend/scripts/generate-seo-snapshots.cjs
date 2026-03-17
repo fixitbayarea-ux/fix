@@ -56,6 +56,20 @@ ALLOWED_CITIES.forEach(city => {
   routes.push(`/${city.slug}-appliance-repair`);
 });
 
+// City+Service combination pages — {city}-{service}-repair
+const CITY_SERVICE_CITIES = [
+  'san-francisco', 'daly-city', 'south-san-francisco', 'san-bruno', 'pacifica',
+  'millbrae', 'mill-valley', 'san-rafael', 'sausalito', 'novato',
+  'corte-madera', 'tiburon', 'belvedere', 'larkspur', 'greenbrae',
+  'ross', 'fairfax', 'san-anselmo'
+];
+const CITY_SERVICE_SERVICES = ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven', 'wine-cooler', 'ice-maker'];
+CITY_SERVICE_CITIES.forEach(city => {
+  CITY_SERVICE_SERVICES.forEach(svc => {
+    routes.push(`/${city}-${svc}-repair`);
+  });
+});
+
 // Maintenance sub-pages
 routes.push('/maintenance/refrigerator');
 routes.push('/maintenance/washer');

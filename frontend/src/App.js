@@ -255,27 +255,151 @@ export default function App() {
         {/* Brand-specific service pages */}
         <Route path="/marin-county-appliance-repair" element={<MarinCountyPage />} />
         
-        {/* City+Service combination pages - explicit routes for SEO */}
+        {/* City+Service combination pages — 17 cities × 7 services = 119 routes */}
+        {/* San Francisco */}
+        <Route path="/san-francisco-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/san-francisco-washer-repair" element={<CityServicePage />} />
+        <Route path="/san-francisco-dryer-repair" element={<CityServicePage />} />
+        <Route path="/san-francisco-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/san-francisco-oven-repair" element={<CityServicePage />} />
+        <Route path="/san-francisco-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/san-francisco-ice-maker-repair" element={<CityServicePage />} />
+        {/* Daly City */}
         <Route path="/daly-city-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/daly-city-washer-repair" element={<CityServicePage />} />
         <Route path="/daly-city-dryer-repair" element={<CityServicePage />} />
         <Route path="/daly-city-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/daly-city-oven-repair" element={<CityServicePage />} />
+        <Route path="/daly-city-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/daly-city-ice-maker-repair" element={<CityServicePage />} />
+        {/* South San Francisco */}
+        <Route path="/south-san-francisco-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/south-san-francisco-washer-repair" element={<CityServicePage />} />
+        <Route path="/south-san-francisco-dryer-repair" element={<CityServicePage />} />
+        <Route path="/south-san-francisco-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/south-san-francisco-oven-repair" element={<CityServicePage />} />
+        <Route path="/south-san-francisco-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/south-san-francisco-ice-maker-repair" element={<CityServicePage />} />
+        {/* San Bruno */}
+        <Route path="/san-bruno-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/san-bruno-washer-repair" element={<CityServicePage />} />
+        <Route path="/san-bruno-dryer-repair" element={<CityServicePage />} />
+        <Route path="/san-bruno-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/san-bruno-oven-repair" element={<CityServicePage />} />
+        <Route path="/san-bruno-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/san-bruno-ice-maker-repair" element={<CityServicePage />} />
+        {/* Pacifica */}
+        <Route path="/pacifica-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/pacifica-washer-repair" element={<CityServicePage />} />
+        <Route path="/pacifica-dryer-repair" element={<CityServicePage />} />
+        <Route path="/pacifica-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/pacifica-oven-repair" element={<CityServicePage />} />
+        <Route path="/pacifica-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/pacifica-ice-maker-repair" element={<CityServicePage />} />
+        {/* Millbrae */}
+        <Route path="/millbrae-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/millbrae-washer-repair" element={<CityServicePage />} />
+        <Route path="/millbrae-dryer-repair" element={<CityServicePage />} />
+        <Route path="/millbrae-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/millbrae-oven-repair" element={<CityServicePage />} />
+        <Route path="/millbrae-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/millbrae-ice-maker-repair" element={<CityServicePage />} />
+        {/* Mill Valley */}
+        <Route path="/mill-valley-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/mill-valley-washer-repair" element={<CityServicePage />} />
+        <Route path="/mill-valley-dryer-repair" element={<CityServicePage />} />
+        <Route path="/mill-valley-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/mill-valley-oven-repair" element={<CityServicePage />} />
+        <Route path="/mill-valley-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/mill-valley-ice-maker-repair" element={<CityServicePage />} />
+        {/* San Rafael */}
         <Route path="/san-rafael-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/san-rafael-washer-repair" element={<CityServicePage />} />
         <Route path="/san-rafael-dryer-repair" element={<CityServicePage />} />
         <Route path="/san-rafael-dishwasher-repair" element={<CityServicePage />} />
-        <Route path="/mill-valley-refrigerator-repair" element={<CityServicePage />} />
-        <Route path="/mill-valley-washer-repair" element={<CityServicePage />} />
-        <Route path="/mill-valley-dryer-repair" element={<CityServicePage />} />
+        <Route path="/san-rafael-oven-repair" element={<CityServicePage />} />
+        <Route path="/san-rafael-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/san-rafael-ice-maker-repair" element={<CityServicePage />} />
+        {/* Sausalito */}
+        <Route path="/sausalito-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/sausalito-washer-repair" element={<CityServicePage />} />
+        <Route path="/sausalito-dryer-repair" element={<CityServicePage />} />
+        <Route path="/sausalito-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/sausalito-oven-repair" element={<CityServicePage />} />
+        <Route path="/sausalito-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/sausalito-ice-maker-repair" element={<CityServicePage />} />
+        {/* Novato */}
         <Route path="/novato-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/novato-washer-repair" element={<CityServicePage />} />
         <Route path="/novato-dryer-repair" element={<CityServicePage />} />
-        <Route path="/south-san-francisco-refrigerator-repair" element={<CityServicePage />} />
-        <Route path="/san-bruno-refrigerator-repair" element={<CityServicePage />} />
-        <Route path="/pacifica-refrigerator-repair" element={<CityServicePage />} />
-        <Route path="/sausalito-refrigerator-repair" element={<CityServicePage />} />
-        <Route path="/tiburon-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/novato-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/novato-oven-repair" element={<CityServicePage />} />
+        <Route path="/novato-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/novato-ice-maker-repair" element={<CityServicePage />} />
+        {/* Corte Madera */}
         <Route path="/corte-madera-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/corte-madera-washer-repair" element={<CityServicePage />} />
+        <Route path="/corte-madera-dryer-repair" element={<CityServicePage />} />
+        <Route path="/corte-madera-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/corte-madera-oven-repair" element={<CityServicePage />} />
+        <Route path="/corte-madera-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/corte-madera-ice-maker-repair" element={<CityServicePage />} />
+        {/* Tiburon */}
+        <Route path="/tiburon-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/tiburon-washer-repair" element={<CityServicePage />} />
+        <Route path="/tiburon-dryer-repair" element={<CityServicePage />} />
+        <Route path="/tiburon-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/tiburon-oven-repair" element={<CityServicePage />} />
+        <Route path="/tiburon-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/tiburon-ice-maker-repair" element={<CityServicePage />} />
+        {/* Belvedere */}
+        <Route path="/belvedere-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/belvedere-washer-repair" element={<CityServicePage />} />
+        <Route path="/belvedere-dryer-repair" element={<CityServicePage />} />
+        <Route path="/belvedere-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/belvedere-oven-repair" element={<CityServicePage />} />
+        <Route path="/belvedere-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/belvedere-ice-maker-repair" element={<CityServicePage />} />
+        {/* Larkspur */}
+        <Route path="/larkspur-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/larkspur-washer-repair" element={<CityServicePage />} />
+        <Route path="/larkspur-dryer-repair" element={<CityServicePage />} />
+        <Route path="/larkspur-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/larkspur-oven-repair" element={<CityServicePage />} />
+        <Route path="/larkspur-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/larkspur-ice-maker-repair" element={<CityServicePage />} />
+        {/* Greenbrae */}
+        <Route path="/greenbrae-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/greenbrae-washer-repair" element={<CityServicePage />} />
+        <Route path="/greenbrae-dryer-repair" element={<CityServicePage />} />
+        <Route path="/greenbrae-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/greenbrae-oven-repair" element={<CityServicePage />} />
+        <Route path="/greenbrae-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/greenbrae-ice-maker-repair" element={<CityServicePage />} />
+        {/* Ross */}
+        <Route path="/ross-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/ross-washer-repair" element={<CityServicePage />} />
+        <Route path="/ross-dryer-repair" element={<CityServicePage />} />
+        <Route path="/ross-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/ross-oven-repair" element={<CityServicePage />} />
+        <Route path="/ross-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/ross-ice-maker-repair" element={<CityServicePage />} />
+        {/* Fairfax */}
+        <Route path="/fairfax-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/fairfax-washer-repair" element={<CityServicePage />} />
+        <Route path="/fairfax-dryer-repair" element={<CityServicePage />} />
+        <Route path="/fairfax-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/fairfax-oven-repair" element={<CityServicePage />} />
+        <Route path="/fairfax-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/fairfax-ice-maker-repair" element={<CityServicePage />} />
+        {/* San Anselmo */}
+        <Route path="/san-anselmo-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/san-anselmo-washer-repair" element={<CityServicePage />} />
+        <Route path="/san-anselmo-dryer-repair" element={<CityServicePage />} />
+        <Route path="/san-anselmo-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/san-anselmo-oven-repair" element={<CityServicePage />} />
+        <Route path="/san-anselmo-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/san-anselmo-ice-maker-repair" element={<CityServicePage />} />
         
         <Route path="/whirlpool-appliance-repair" element={<WhirlpoolApplianceRepairPage />} />
         <Route path="/lg-appliance-repair" element={<LGApplianceRepairPage />} />

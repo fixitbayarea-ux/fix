@@ -10,6 +10,12 @@ const SERVICES = ['refrigerator', 'washer', 'dryer', 'dishwasher',
 
 // City-specific local context for rich content
 const CITY_CONTEXT = {
+  'san-francisco': {
+    region: 'San Francisco',
+    neighborhoods: 'Sunset, Richmond, Mission, Noe Valley, Marina, Pacific Heights, SoMa, Castro, North Beach, Bernal Heights',
+    localFactor: 'San Francisco\'s Victorian and Edwardian homes often have compact kitchens with built-in appliances that require experienced technicians. Our team navigates tight spaces, steep driveways, and multi-unit buildings daily—arriving with the right tools and parts for first-visit repairs.',
+    features: 'dense urban housing, Victorian homes, steep hills, fog-belt climate'
+  },
   'daly-city': {
     region: 'Peninsula',
     neighborhoods: 'Westlake, Serramonte, Top of the Hill, St. Francis Heights',

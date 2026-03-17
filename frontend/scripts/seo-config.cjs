@@ -250,7 +250,7 @@ const CITY_SEO_DATA = {
   },
   'colma': {
     title: 'Appliance Repair Colma | Fast Same/Next-Day | FixitBay',
-    description: 'Professional appliance repair in Colma near BART and retail corridors. Same/next-day options. $60 diagnostic applied to repair. 6-month warranty. Call (760) 543-5733.',
+    description: 'Professional appliance repair in Colma near BART and retail corridors. Same/next-day options. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
     h1: 'Fast Appliance Repair in Colma, CA',
     content: `
       <p style="margin-bottom:1rem;">Colma's unique position as one of the smallest incorporated towns in California creates a tight-knit community with specific appliance service needs. Our technicians know Colma's layout intimately — from Hillside Boulevard to Lawndale Boulevard, and the residential areas surrounding Colma BART. We navigate the town's compact geography quickly, ensuring fast response times for all appliance emergencies.</p>
@@ -416,11 +416,11 @@ function getSEOContent(route) {
   if (route === '/') {
     return {
       title: 'Appliance Repair San Francisco & Bay Area | FixitBay',
-      description: 'Professional appliance repair in San Francisco, Peninsula & North Bay. Same-day service, 6-month warranty. Licensed & insured. Call (760) 543-5733!',
+      description: 'Professional appliance repair in San Francisco, Peninsula & North Bay. Same-day service, 180-day warranty. Licensed & insured. Call (760) 543-5733!',
       h1: 'Professional Appliance Repair in San Francisco & Bay Area',
       content: `
         <p style="margin-bottom: 1rem;">FixitBay provides expert appliance repair across San Francisco, the Peninsula, and North Bay. Our licensed technicians fix refrigerators, washers, dryers, dishwashers, ovens, and more with same/next-day service.</p>
-        <p style="margin-bottom: 1rem;">We charge a transparent $60 diagnostic fee (fully applied to your repair). Every repair includes our comprehensive 6-month warranty on parts and labor.</p>
+        <p style="margin-bottom: 1rem;">We charge a transparent $60 diagnostic fee (fully applied to your repair). Every repair includes our comprehensive 180-day warranty on parts and labor.</p>
         <p>Serving 22 cities including San Francisco, Daly City, Mill Valley, and surrounding areas. Call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> or book online for same-day service!</p>
       `,
       internalLinks: [
@@ -904,11 +904,11 @@ function getSEOContent(route) {
       }
       return {
         title: `Appliance Repair in ${city.name}, CA | FixitBay - Same Day Service`,
-        description: `Professional appliance repair in ${city.name}, CA. Licensed technicians, 6-month warranty, same-day service. Refrigerators, washers, dryers & more. Call (760) 543-5733!`,
+        description: `Professional appliance repair in ${city.name}, CA. Licensed technicians, 180-day warranty, same-day service. Refrigerators, washers, dryers & more. Call (760) 543-5733!`,
         h1: `Appliance Repair in ${city.name}, CA`,
         content: `
           <p style="margin-bottom: 1rem;">FixitBay provides professional appliance repair service in ${city.name}, CA and surrounding areas. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, and more throughout ${city.name}.</p>
-          <p style="margin-bottom: 1rem;">We offer same-day and next-day appointments in ${city.name}. Our transparent $60 diagnostic fee is fully applied to your repair cost when you proceed. Every repair includes our comprehensive 6-month warranty on both parts and labor.</p>
+          <p style="margin-bottom: 1rem;">We offer same-day and next-day appointments in ${city.name}. Our transparent $60 diagnostic fee is fully applied to your repair cost when you proceed. Every repair includes our comprehensive 180-day warranty on both parts and labor.</p>
           <p style="margin-bottom: 1rem;">We service all major appliance brands and carry common replacement parts. Whether you live in a house, apartment, or condo in ${city.name}, our experienced technicians are ready to help.</p>
           <p>Call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> or book online today!</p>
         ` + popularRepairsClusterHTML(city.name),
@@ -1189,11 +1189,11 @@ function getSEOContent(route) {
     // Generic fallback for services not in SERVICE_DATA
     return {
       title: `${serviceName} Repair in San Francisco & Bay Area | FixitBay`,
-      description: `Professional ${serviceName.toLowerCase()} repair in San Francisco & Bay Area. $60 diagnostic applied to repair. 6-month warranty. Same-day service. Call (760) 543-5733.`,
+      description: `Professional ${serviceName.toLowerCase()} repair in San Francisco & Bay Area. $60 diagnostic applied to repair. 180-day warranty. Same-day service. Call (760) 543-5733.`,
       h1: `${serviceName} Repair in San Francisco & Bay Area`,
       content: `
         <p style="margin-bottom: 1rem;">When your ${serviceName.toLowerCase()} breaks down, FixitBay provides fast, reliable repair service across San Francisco, the Peninsula, and North Bay. Our licensed technicians arrive fully equipped to diagnose and fix most issues on the same visit.</p>
-        <p style="margin-bottom: 1rem;">We charge a transparent $60 diagnostic fee that's fully applied to your repair cost when you proceed. Every repair is backed by our comprehensive 6-month warranty on parts and labor.</p>
+        <p style="margin-bottom: 1rem;">We charge a transparent $60 diagnostic fee that's fully applied to your repair cost when you proceed. Every repair is backed by our comprehensive 180-day warranty on parts and labor.</p>
         <p style="margin-bottom: 1rem;">We service all major brands including Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Viking, Thermador, Miele, and more.</p>
         <p>Call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> or book online for same-day service!</p>
       ` + serviceAreaClusterHTML(`${serviceName} Repair`),
@@ -1456,14 +1456,67 @@ function getSEOContent(route) {
     };
   }
 
+  // City+Service combination pages (e.g., /daly-city-refrigerator-repair)
+  const cityServiceServices = ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven', 'wine-cooler', 'ice-maker'];
+  for (const svc of cityServiceServices) {
+    const suffix = `-${svc}-repair`;
+    if (route.endsWith(suffix)) {
+      const citySlug = route.replace(/^\//, '').replace(suffix, '');
+      const cityName = citySlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      const serviceName = svc.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      const pricing = {
+        'refrigerator': '$180–$450', 'washer': '$150–$350', 'dryer': '$120–$300',
+        'dishwasher': '$140–$320', 'oven': '$150–$400', 'wine-cooler': '$150–$350', 'ice-maker': '$150–$280'
+      };
+      const range = pricing[svc] || '$150–$350';
+      return {
+        title: `${serviceName} Repair ${cityName} | Same-Day | FixitBay`,
+        description: `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Cost: ${range} after $60 diagnostic. Same-day service. 180-day warranty. Licensed & insured. Call (760) 543-5733.`,
+        h1: `${serviceName} Repair in ${cityName}`,
+        content: `
+          <p style="margin-bottom:1rem;">FixitBay provides professional ${serviceName.toLowerCase()} repair throughout ${cityName} with same-day and next-day availability. Our licensed technicians arrive with common ${serviceName.toLowerCase()} parts stocked—including thermostats, pumps, motors, and control boards—enabling us to complete most repairs during the first visit.</p>
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">${serviceName} Repair Pricing in ${cityName}</h2>
+          <p style="margin-bottom:1rem;">Most ${serviceName.toLowerCase()} repairs in ${cityName} cost ${range} after the $60 diagnostic fee. We provide exact pricing before starting any work, and the $60 diagnostic is fully applied to your repair cost.</p>
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why Choose FixitBay for ${serviceName} Repair in ${cityName}?</h2>
+          <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+            <li style="margin-bottom:0.5rem;"><strong>Same-Day Service:</strong> Call before noon for same-day ${serviceName.toLowerCase()} repair in ${cityName}.</li>
+            <li style="margin-bottom:0.5rem;"><strong>180-Day Warranty:</strong> Every repair backed by our comprehensive parts and labor warranty.</li>
+            <li style="margin-bottom:0.5rem;"><strong>All Major Brands:</strong> Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Viking, Thermador, Miele.</li>
+            <li style="margin-bottom:0.5rem;"><strong>$60 Diagnostic:</strong> Fully credited toward your repair cost.</li>
+            <li style="margin-bottom:0.5rem;"><strong>Licensed & Insured:</strong> Full CA credentials and liability coverage.</li>
+          </ul>
+          <p style="margin-bottom:1rem;">Every ${serviceName.toLowerCase()} repair in ${cityName} includes our comprehensive 180-day warranty on parts and labor. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for fast ${serviceName.toLowerCase()} repair service in ${cityName}.</p>
+        `,
+        schemas: [
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": `${serviceName} Repair ${cityName}`,
+            "serviceType": `${serviceName} Repair`,
+            "provider": { "@id": "https://fixitbay.net/#organization" },
+            "areaServed": { "@type": "City", "name": cityName },
+            "description": `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Same-day service, $60 diagnostic applied to repair, 180-day warranty.`
+          }
+        ],
+        internalLinks: [
+          '/',
+          `/${citySlug}-appliance-repair`,
+          `/${svc}-repair`,
+          '/service-areas',
+          '/contact'
+        ]
+      };
+    }
+  }
+
   // Default content for other pages
   return {
     title: 'FixitBay - Appliance Repair San Francisco & Bay Area',
-    description: 'Professional appliance repair service in San Francisco & Bay Area. Licensed technicians, 6-month warranty, same-day service. Call (760) 543-5733!',
+    description: 'Professional appliance repair service in San Francisco & Bay Area. Licensed technicians, 180-day warranty, same-day service. Call (760) 543-5733!',
     h1: 'Appliance Repair Service in San Francisco & Bay Area',
     content: `
       <p style="margin-bottom: 1rem;">FixitBay provides professional appliance repair across San Francisco, the Peninsula, and North Bay. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, and more.</p>
-      <p style="margin-bottom: 1rem;">$60 diagnostic fee fully applied to repair. 6-month warranty on parts and labor. Same-day and next-day appointments available.</p>
+      <p style="margin-bottom: 1rem;">$60 diagnostic fee fully applied to repair. 180-day warranty on parts and labor. Same-day and next-day appointments available.</p>
       <p>Call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> for same-day service!</p>
     `,
     internalLinks: defaultInternalLinks

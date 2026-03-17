@@ -311,19 +311,25 @@ function getCityContent(citySlug) {
 function getCityServiceContent(citySlug, serviceSlug) {
   const cityName = citySlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   const serviceName = serviceSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  const pricing = {
+    'refrigerator': '$180–$450', 'washer': '$150–$350', 'dryer': '$120–$300',
+    'dishwasher': '$140–$320', 'oven': '$150–$400', 'wine-cooler': '$150–$350', 'ice-maker': '$150–$280'
+  };
+  const range = pricing[serviceSlug] || '$150–$350';
   return {
     title: `${serviceName} Repair ${cityName} | Same-Day | FixitBay`,
-    description: `Professional ${serviceName.toLowerCase()} repair in ${cityName}. $60 diagnostic applied to repair. Same-day service. 180-day warranty. Licensed & insured.`,
+    description: `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Cost: ${range} after $60 diagnostic. Same-day service. 180-day warranty. Licensed & insured.`,
     h1: `${serviceName} Repair in ${cityName}`,
     content: `
       <p>FixitBay provides expert ${serviceName.toLowerCase()} repair in ${cityName} with same-day and next-day service. 
       Our licensed technicians arrive with common ${serviceName.toLowerCase()} parts stocked for same-visit repairs.</p>
-      <p>We charge a transparent $60 diagnostic fee fully applied toward your repair. 
-      Every ${serviceName.toLowerCase()} repair includes our 180-day warranty on parts and labor.</p>
+      <h2>${serviceName} Repair Pricing in ${cityName}</h2>
+      <p>Most ${serviceName.toLowerCase()} repairs cost ${range} after the $60 diagnostic fee. We provide exact pricing before starting any work, and the $60 diagnostic is fully applied to your repair cost.</p>
       <h2>Common ${serviceName} Problems We Fix in ${cityName}</h2>
       <p>Our technicians handle all ${serviceName.toLowerCase()} issues — from minor component failures to major system repairs. 
       We service all major brands and provide upfront pricing before any work begins.</p>
-      <p>Call <a href="tel:+17605435733">(760) 543-5733</a> or book online for same-day ${serviceName.toLowerCase()} repair in ${cityName}.</p>
+      <p>Every ${serviceName.toLowerCase()} repair in ${cityName} includes our comprehensive 180-day warranty on parts and labor.
+      Call <a href="tel:+17605435733">(760) 543-5733</a> or book online for same-day ${serviceName.toLowerCase()} repair in ${cityName}.</p>
     `,
     internalLinks: [
       '/',
