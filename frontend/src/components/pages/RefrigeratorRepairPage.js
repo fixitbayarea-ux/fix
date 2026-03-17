@@ -119,7 +119,7 @@ const MobileRefrigeratorRepair = () => (
   <MobileServiceLanding
     appliance="Refrigerator"
     pageSlug="refrigerator-repair"
-    pageTitle="Refrigerator Repair San Francisco | Same-Day | FixitBay"
+    pageTitle="Refrigerator Repair San Francisco & Bay Area | Same-Day | FixitBay"
     metaDescription="Expert refrigerator repair in San Francisco. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Same-day service."
     heroTitle={<>Refrigerator Repair<br />San Francisco &amp; Bay Area</>}
     heroSubtitle="Same Day Service — Most Repairs Completed Today"
