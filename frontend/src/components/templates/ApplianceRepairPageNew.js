@@ -76,30 +76,42 @@ const CITY_GROUPS = {
   'North Bay / Marin': ['Sausalito', 'Mill Valley', 'Tiburon', 'Belvedere Tiburon', 'Corte Madera', 'San Rafael', 'Larkspur', 'Greenbrae', 'Novato', 'San Quentin', 'Ross', 'Fairfax', 'San Anselmo'],
 };
 
-const nearbyLookup = {
-  'Daly City': [{ href: '/south-san-francisco-appliance-repair', label: 'South San Francisco' }, { href: '/pacifica-appliance-repair', label: 'Pacifica' }],
-  'South San Francisco': [{ href: '/daly-city-appliance-repair', label: 'Daly City' }, { href: '/san-bruno-appliance-repair', label: 'San Bruno' }],
-  'San Bruno': [{ href: '/south-san-francisco-appliance-repair', label: 'South San Francisco' }, { href: '/millbrae-appliance-repair', label: 'Millbrae' }],
-  'Pacifica': [{ href: '/daly-city-appliance-repair', label: 'Daly City' }, { href: '/montara-appliance-repair', label: 'Montara' }],
-  'Millbrae': [{ href: '/san-bruno-appliance-repair', label: 'San Bruno' }, { href: '/brisbane-appliance-repair', label: 'Brisbane' }],
-  'Brisbane': [{ href: '/daly-city-appliance-repair', label: 'Daly City' }, { href: '/south-san-francisco-appliance-repair', label: 'South San Francisco' }],
-  'Colma': [{ href: '/daly-city-appliance-repair', label: 'Daly City' }, { href: '/south-san-francisco-appliance-repair', label: 'South San Francisco' }],
-  'Montara': [{ href: '/pacifica-appliance-repair', label: 'Pacifica' }],
-  'San Rafael': [{ href: '/san-anselmo-appliance-repair', label: 'San Anselmo' }, { href: '/greenbrae-appliance-repair', label: 'Greenbrae' }],
-  'Mill Valley': [{ href: '/sausalito-appliance-repair', label: 'Sausalito' }, { href: '/corte-madera-appliance-repair', label: 'Corte Madera' }],
-  'Sausalito': [{ href: '/mill-valley-appliance-repair', label: 'Mill Valley' }, { href: '/tiburon-appliance-repair', label: 'Tiburon' }],
-  'Novato': [{ href: '/san-rafael-appliance-repair', label: 'San Rafael' }],
-  'San Francisco': [{ href: '/daly-city-appliance-repair', label: 'Daly City' }, { href: '/south-san-francisco-appliance-repair', label: 'South San Francisco' }],
-  'Corte Madera': [{ href: '/mill-valley-appliance-repair', label: 'Mill Valley' }, { href: '/larkspur-appliance-repair', label: 'Larkspur' }],
-  'Larkspur': [{ href: '/corte-madera-appliance-repair', label: 'Corte Madera' }, { href: '/greenbrae-appliance-repair', label: 'Greenbrae' }],
-  'Greenbrae': [{ href: '/larkspur-appliance-repair', label: 'Larkspur' }, { href: '/san-rafael-appliance-repair', label: 'San Rafael' }],
-  'Ross': [{ href: '/san-anselmo-appliance-repair', label: 'San Anselmo' }, { href: '/fairfax-appliance-repair', label: 'Fairfax' }],
-  'Fairfax': [{ href: '/san-anselmo-appliance-repair', label: 'San Anselmo' }, { href: '/ross-appliance-repair', label: 'Ross' }],
-  'San Anselmo': [{ href: '/fairfax-appliance-repair', label: 'Fairfax' }, { href: '/san-rafael-appliance-repair', label: 'San Rafael' }],
-  'Belvedere': [{ href: '/tiburon-appliance-repair', label: 'Tiburon' }, { href: '/mill-valley-appliance-repair', label: 'Mill Valley' }],
-  'Tiburon': [{ href: '/belvedere-appliance-repair', label: 'Belvedere' }, { href: '/mill-valley-appliance-repair', label: 'Mill Valley' }],
-  'San Quentin': [{ href: '/san-rafael-appliance-repair', label: 'San Rafael' }, { href: '/larkspur-appliance-repair', label: 'Larkspur' }],
+// Geographic proximity map - 5 nearest cities for internal linking clusters
+const CITY_NEIGHBORS = {
+  'san-francisco': ['daly-city', 'south-san-francisco', 'sausalito', 'mill-valley', 'tiburon'],
+  'daly-city': ['san-francisco', 'south-san-francisco', 'colma', 'pacifica', 'san-bruno'],
+  'south-san-francisco': ['daly-city', 'san-francisco', 'san-bruno', 'brisbane', 'millbrae'],
+  'san-bruno': ['south-san-francisco', 'millbrae', 'san-francisco', 'brisbane', 'colma'],
+  'pacifica': ['daly-city', 'san-francisco', 'san-bruno', 'montara', 'millbrae'],
+  'millbrae': ['san-bruno', 'south-san-francisco', 'colma', 'brisbane', 'pacifica'],
+  'colma': ['daly-city', 'san-francisco', 'south-san-francisco', 'millbrae', 'brisbane'],
+  'brisbane': ['san-francisco', 'south-san-francisco', 'colma', 'daly-city', 'san-bruno'],
+  'montara': ['pacifica', 'san-bruno', 'millbrae', 'san-francisco', 'daly-city'],
+  'mill-valley': ['san-francisco', 'sausalito', 'tiburon', 'corte-madera', 'san-rafael'],
+  'san-rafael': ['novato', 'corte-madera', 'san-anselmo', 'fairfax', 'greenbrae'],
+  'sausalito': ['san-francisco', 'mill-valley', 'tiburon', 'corte-madera', 'belvedere'],
+  'novato': ['san-rafael', 'san-anselmo', 'fairfax', 'corte-madera', 'greenbrae'],
+  'corte-madera': ['mill-valley', 'san-rafael', 'larkspur', 'tiburon', 'sausalito'],
+  'larkspur': ['corte-madera', 'san-rafael', 'greenbrae', 'ross', 'san-anselmo'],
+  'greenbrae': ['larkspur', 'san-rafael', 'corte-madera', 'ross', 'san-anselmo'],
+  'ross': ['san-anselmo', 'fairfax', 'greenbrae', 'larkspur', 'san-rafael'],
+  'fairfax': ['san-anselmo', 'ross', 'san-rafael', 'novato', 'greenbrae'],
+  'san-anselmo': ['fairfax', 'ross', 'san-rafael', 'larkspur', 'greenbrae'],
+  'tiburon': ['belvedere', 'sausalito', 'mill-valley', 'corte-madera', 'san-rafael'],
+  'belvedere': ['tiburon', 'sausalito', 'mill-valley', 'corte-madera', 'san-rafael'],
+  'san-quentin': ['san-rafael', 'larkspur', 'corte-madera', 'greenbrae', 'novato'],
 };
+
+// Helper to convert slug to display name
+const slugToName = (slug) => slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+
+// Generate nearby links from CITY_NEIGHBORS
+const nearbyLookup = Object.fromEntries(
+  Object.entries(CITY_NEIGHBORS).map(([citySlug, neighbors]) => [
+    slugToName(citySlug),
+    neighbors.map(n => ({ href: `/${n}-appliance-repair`, label: slugToName(n) }))
+  ])
+);
 
 /* ═══ Shared Inline Styles ═══ */
 const S = {
