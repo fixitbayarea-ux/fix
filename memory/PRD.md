@@ -143,6 +143,12 @@ Multi-phase "Precision Craft" redesign of a static appliance repair SPA (React).
   - Verified API endpoints working: /api/, /api/business-info
   - Verified frontend rendering correctly with homepage hero, navigation, and service sections
 
+- **SEO & Content Fixes:**
+  1. City page titles: Updated pattern to "Appliance Repair ${cityName} | Fast Same-Day Service | FixitBay"
+  2. Warranty text: Fixed 4 pages (ResidentialApplianceRepairPage, AboutPage, ContactPage, MaintenanceHub) - changed "6-month" warranty to "180-day"
+  3. Wine Cooler page JSON-LD Schema: Added comprehensive Service schema with full address, 22 service areas, and priceRange
+  4. SEO snapshots regenerated: 102/102 pages
+
 ## Backlog
 - (P1) Refactor monolithic components into smaller sub-components
 - (P2) Centralize hardcoded content into JSON structures

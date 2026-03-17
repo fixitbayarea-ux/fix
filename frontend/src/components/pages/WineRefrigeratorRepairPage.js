@@ -2,7 +2,6 @@ import React from 'react';
 import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
-import { SERVICE_CITIES_SCHEMA } from '../../data/serviceCities';
 
 const WineRefrigeratorRepairPage = () => {
   const isMobile = useIsMobile();
@@ -60,13 +59,28 @@ const WineRefrigeratorRepairPage = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    "name": "Wine Cooler Repair San Francisco Bay Area",
     "serviceType": "Wine Cooler Repair",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay",
-      "telephone": "(760) 543-5733"
+      "name": "FixitBay LLC",
+      "telephone": "+17605435733",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1549 Franklin St, Unit A",
+        "addressLocality": "San Francisco",
+        "addressRegion": "CA",
+        "postalCode": "94109"
+      }
     },
-    "areaServed": SERVICE_CITIES_SCHEMA
+    "areaServed": [
+      "San Francisco", "Daly City", "South San Francisco", "San Bruno",
+      "Pacifica", "Millbrae", "Colma", "Brisbane", "Montara",
+      "Mill Valley", "San Rafael", "Sausalito", "Belvedere", "Tiburon",
+      "Corte Madera", "San Quentin", "Larkspur", "Greenbrae", "Ross",
+      "Fairfax", "San Anselmo", "Novato"
+    ],
+    "priceRange": "From $195"
   };
 
   if (isMobile) {
