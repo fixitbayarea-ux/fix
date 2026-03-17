@@ -55,12 +55,12 @@ function getHomeContent() {
       <h2>Top Brands We Service</h2>
       <p>Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Viking, Thermador, Miele, and more.</p>
       <p><strong>Same-day and next-day appointments available.</strong> Call <a href="tel:+17605435733">(760) 543-5733</a> or <a href="/book">book online</a>.</p>
+      <p>Need dedicated <a href="/dishwasher-repair">dishwasher repair in San Francisco & Bay Area</a>? See our service page with full pricing and same-day availability.</p>
     `,
     internalLinks: [
       '/refrigerator-repair',
       '/washer-repair',
       '/dryer-repair',
-      '/dishwasher-repair',
       '/oven-repair',
       '/ice-maker-repair',
       '/service-areas',
@@ -109,9 +109,14 @@ function getServiceContent(service) {
 
   const data = serviceData[service] || serviceData['Refrigerator'];
   
+  // Custom internal links and description for Dishwasher to fix SEO cannibalization
+  const isDishwasher = service === 'Dishwasher';
+  
   return {
     title: `${service} Repair San Francisco & Bay Area | Same-Day | FixitBay`,
-    description: `Professional ${service.toLowerCase()} repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`,
+    description: isDishwasher 
+      ? `Dishwasher repair San Francisco & Bay Area. Professional ${service.toLowerCase()} repair. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`
+      : `Professional ${service.toLowerCase()} repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`,
     h1: `${service} Repair in San Francisco & Bay Area`,
     content: `
       <p>When your ${service.toLowerCase()} breaks down, FixitBay delivers professional repair service throughout San Francisco, the Peninsula, and North Bay. Our licensed and insured technicians diagnose and fix most issues on the same visit, carrying an extensive inventory of common replacement parts in our service vehicles. We charge a transparent $60 diagnostic fee that's fully applied to your repair cost when you proceed—honest pricing from start to finish.</p>
@@ -144,18 +149,31 @@ function getServiceContent(service) {
       
       <p>Call <a href="tel:+17605435733">(760) 543-5733</a> or <a href="/book">book online</a> for fast, professional ${service.toLowerCase()} repair service.</p>
     `,
-    internalLinks: [
-      '/',
-      '/service-areas',
-      '/contact',
-      '/refrigerator-repair',
-      '/washer-repair',
-      '/dryer-repair',
-      '/dishwasher-repair',
-      '/san-francisco-appliance-repair',
-      '/mill-valley-appliance-repair',
-      '/about'
-    ]
+    internalLinks: isDishwasher 
+      ? [
+        '/',
+        '/san-francisco-appliance-repair',
+        '/dishwasher-repair',
+        '/service-areas',
+        '/contact',
+        '/refrigerator-repair',
+        '/washer-repair',
+        '/dryer-repair',
+        '/mill-valley-appliance-repair',
+        '/about'
+      ]
+      : [
+        '/',
+        '/service-areas',
+        '/contact',
+        '/refrigerator-repair',
+        '/washer-repair',
+        '/dryer-repair',
+        '/dishwasher-repair',
+        '/san-francisco-appliance-repair',
+        '/mill-valley-appliance-repair',
+        '/about'
+      ]
   };
 }
 
