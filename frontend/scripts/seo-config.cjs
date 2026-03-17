@@ -209,8 +209,8 @@ const CITY_SEO_DATA = {
     `
   },
   'south-san-francisco': {
-    title: 'Appliance Repair South San Francisco | Same-Day | FixitBay',
-    description: 'Professional appliance repair in South San Francisco. Same-day service for homes and businesses. Licensed technicians, 180-day warranty. Call (760) 543-5733.',
+    title: 'Appliance Repair South San Francisco | Fast Same-Day Service | FixitBay',
+    description: 'Appliance repair in South San Francisco. Serving SSF, Sunshine Gardens & Sign Hill area.',
     h1: 'South San Francisco Appliance Repair Services',
     content: `
       <p style="margin-bottom:1rem;">South San Francisco's position between San Francisco and the Peninsula creates a diverse service area from hilltop homes to bayfront apartments. As "The Industrial City," SSF combines residential neighborhoods with biotech campuses, requiring appliance expertise for both homes and light commercial spaces. Our technicians navigate SSF daily, from Sign Hill's elevated streets to Grand Avenue's commercial corridor.</p>
@@ -229,8 +229,8 @@ const CITY_SEO_DATA = {
     `
   },
   'pacifica': {
-    title: 'Appliance Repair Pacifica | Coastal Same/Next-Day | FixitBay',
-    description: 'Coastal appliance repair in Pacifica — Linda Mar, Sharp Park, Rockaway. Salt-air aware repairs. $60 diagnostic credited. 6-month warranty. Call (760) 543-5733.',
+    title: 'Appliance Repair Pacifica | Fast Same-Day Service | FixitBay',
+    description: 'Coastal appliance repair in Pacifica. Fog and salt air experts. Same-day service.',
     h1: 'Coastal Appliance Repair Experts Serving Pacifica',
     content: `
       <p style="margin-bottom:1rem;">Pacifica's dramatic Pacific coastline creates one of the Bay Area's most challenging environments for home appliances. From Linda Mar's surf-side homes to Pedro Point's clifftop properties, marine layer fog, salt air, and coastal humidity take a toll on refrigerators, dryers, and gas appliances. Our technicians specialize in diagnosing and preventing the corrosion, moisture, and airflow issues unique to Pacifica's oceanfront location.</p>
@@ -239,8 +239,8 @@ const CITY_SEO_DATA = {
     `
   },
   'millbrae': {
-    title: 'Appliance Repair Millbrae | Same-Day Service | FixitBay',
-    description: 'Professional appliance repair in Millbrae near BART, Caltrain. Same-day service. Licensed technicians, 180-day warranty. Call (760) 543-5733.',
+    title: 'Appliance Repair Millbrae | Fast Same-Day Service | FixitBay',
+    description: 'Appliance repair in Millbrae. Licensed technicians near BART. Same-day available.',
     h1: 'Millbrae Appliance Repair Services',
     content: `
       <p style="margin-bottom:1rem;">Millbrae's unique position on the San Francisco Bay creates a diverse community from bayside flats to hillside homes overlooking the water. Our technicians serve Millbrae daily, navigating from El Camino Real's commercial corridor to residential neighborhoods throughout the city. We understand Millbrae's mix of mid-century homes, modern condos near transit, and newer developments, along with the appliances common in each.</p>
@@ -279,8 +279,8 @@ const CITY_SEO_DATA = {
     `
   },
   'san-rafael': {
-    title: 'Appliance Repair San Rafael | Same-Day Service | FixitBay',
-    description: 'Professional appliance repair in San Rafael. Same-day service in Terra Linda, Marinwood, downtown. Licensed technicians, 180-day warranty. Call (760) 543-5733.',
+    title: 'Appliance Repair San Rafael | Fast Same-Day Service | FixitBay',
+    description: 'Appliance repair in San Rafael, Marin County. Serving Terra Linda, Dominican, Downtown.',
     h1: 'San Rafael Appliance Repair Services',
     content: `
       <p style="margin-bottom:1rem;">San Rafael, as Marin County's largest city, presents diverse appliance service needs from downtown apartments to hillside estates. Our technicians navigate San Rafael daily, from Fourth Street's commercial district to Terra Linda's residential neighborhoods and Marinwood's family homes. We understand San Rafael's mix of housing styles and the specific appliance challenges each area faces.</p>
@@ -289,8 +289,8 @@ const CITY_SEO_DATA = {
     `
   },
   'novato': {
-    title: 'Appliance Repair Novato | Same-Day Service | FixitBay',
-    description: 'Professional appliance repair in Novato. Same-day service throughout North Marin. Licensed technicians, 180-day warranty. Call (760) 543-5733.',
+    title: 'Appliance Repair Novato | Fast Same-Day Service | FixitBay',
+    description: 'Appliance repair in Novato, North Marin. Hamilton & Downtown. Same-day available.',
     h1: "Novato Appliance Repair — North Marin's Largest City",
     content: `
       <p style="margin-bottom:1rem;">Novato, as North Marin's largest city, offers diverse appliance service needs from downtown to suburban neighborhoods. Our technicians serve all Novato areas including Bel Marin Keys, Hamilton, San Marin, and Ignacio. We navigate Novato's geography efficiently, providing fast response throughout this sprawling North Bay community.</p>
@@ -299,8 +299,8 @@ const CITY_SEO_DATA = {
     `
   },
   'mill-valley': {
-    title: 'Appliance Repair Mill Valley | Same/Next-Day | FixitBay',
-    description: 'Same/next-day appliance repair in Mill Valley, Tamalpais Valley, and Strawberry. $60 diagnostic applied to repair. 6-month warranty. Call (760) 543-5733.',
+    title: 'Appliance Repair Mill Valley | Fast Same-Day Service | FixitBay',
+    description: 'Appliance repair in Mill Valley, Marin. Hillside home experts. Same-day service.',
     h1: 'Mill Valley Appliance Repair — Hillside & Redwood Specialists',
     content: `
       <p style="margin-bottom:1rem;">Mill Valley's dramatic hillside setting beneath Mount Tamalpais creates unique challenges for home appliances. Steep terrain, redwood microclimates, and elevation changes affect everything from refrigerator cooling to dryer venting. Our technicians navigate Mill Valley's winding roads daily, from downtown's commercial district to Tam Valley's hillside homes, understanding both the geography and the upscale appliances common in this affluent Marin community.</p>
@@ -309,8 +309,8 @@ const CITY_SEO_DATA = {
     `
   },
   'sausalito': {
-    title: 'Appliance Repair Sausalito | Premium Brands | FixitBay',
-    description: 'Professional appliance repair in Sausalito. Hillside homes and premium brands. Sub-Zero, Wolf, Miele specialists. Same-day service. Call (760) 543-5733.',
+    title: 'Appliance Repair Sausalito | Fast Same-Day Service | FixitBay',
+    description: 'Appliance repair in Sausalito. Houseboat & hillside specialists. Same-day service.',
     h1: 'Sausalito Appliance Repair — Premium & Hillside Specialists',
     content: `
       <p style="margin-bottom:1rem;">Sausalito's stunning hillside location overlooking San Francisco Bay creates both beauty and complexity for appliance service. From waterfront houseboats to hillside estates with panoramic views, we navigate Sausalito's unique geography daily. Our technicians understand the challenges of steep terrain, limited access, and the premium appliances common in this affluent Marin community.</p>
@@ -329,8 +329,8 @@ const CITY_SEO_DATA = {
     `
   },
   'tiburon': {
-    title: 'Appliance Repair Tiburon | Luxury Brands | FixitBay',
-    description: 'Premium appliance repair in Tiburon. Sub-Zero, Wolf, Thermador specialists. Waterfront and hillside homes. Same-day service. Call (760) 543-5733.',
+    title: 'Appliance Repair Tiburon | Fast Same-Day Service | FixitBay',
+    description: 'Luxury appliance repair in Tiburon. Sub-Zero, Wolf, Thermador specialists. Same-day.',
     h1: 'Tiburon Appliance Repair — Premium & Waterfront Specialists',
     content: `
       <p style="margin-bottom:1rem;">Tiburon's stunning waterfront location on the Marin Peninsula features luxurious homes and premium appliances. Our technicians specialize in high-end brands like Sub-Zero, Wolf, Thermador, Viking, and Miele that are standard in Tiburon homes. We understand both the sophisticated appliances and the service expectations of Tiburon homeowners overlooking San Francisco Bay.</p>

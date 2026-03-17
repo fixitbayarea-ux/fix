@@ -195,9 +195,22 @@ function getServiceContent(service) {
 function getCityContent(citySlug) {
   const cityName = citySlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   
+  const cityDescriptions = {
+    'daly-city': 'Fog-belt appliance repair in Daly City. Same-day service in Westlake, Serramonte & all neighborhoods.',
+    'south-san-francisco': 'Appliance repair in South San Francisco. Serving SSF, Sunshine Gardens & Sign Hill area.',
+    'san-bruno': 'Appliance repair in San Bruno near SFO. Fast same-day service for all SF Bay homeowners.',
+    'pacifica': 'Coastal appliance repair in Pacifica. Fog and salt air experts. Same-day service.',
+    'millbrae': 'Appliance repair in Millbrae. Licensed technicians near BART. Same-day available.',
+    'mill-valley': 'Appliance repair in Mill Valley, Marin. Hillside home experts. Same-day service.',
+    'san-rafael': 'Appliance repair in San Rafael, Marin County. Serving Terra Linda, Dominican, Downtown.',
+    'sausalito': 'Appliance repair in Sausalito. Houseboat & hillside specialists. Same-day service.',
+    'novato': 'Appliance repair in Novato, North Marin. Hamilton & Downtown. Same-day available.',
+    'tiburon': 'Luxury appliance repair in Tiburon. Sub-Zero, Wolf, Thermador specialists. Same-day.',
+  };
+  
   return {
     title: `Appliance Repair ${cityName} | Fast Same-Day Service | FixitBay`,
-    description: `Licensed & insured appliance repair in ${cityName} and nearby areas. $60 diagnostic applied to repair. Same/next-day available. 180-day warranty.`,
+    description: cityDescriptions[citySlug] || `Licensed & insured appliance repair in ${cityName}. $60 diagnostic applied to repair. Same-day available. 180-day warranty.`,
     h1: `Appliance Repair in ${cityName}, CA`,
     content: `
       <p>FixitBay provides professional appliance repair service in ${cityName} and throughout the Bay Area. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ice makers, and more. We understand how disruptive a broken appliance can be to your daily routine, which is why we offer same-day and next-day appointments throughout ${cityName} and surrounding areas.</p>
