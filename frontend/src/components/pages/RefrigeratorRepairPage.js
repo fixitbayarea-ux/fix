@@ -25,7 +25,7 @@ const desktopFaqData = [
   { question: "What brands do you repair?", answer: "All major brands: Sub-Zero, Viking, Thermador, Samsung, LG, Whirlpool, GE, Bosch, Miele, KitchenAid, Frigidaire, Maytag, and more." },
   { question: "Do you offer a warranty?", answer: "Yes — every repair comes with a 180-day warranty on parts and labor. If the same issue returns, we fix it at no additional charge." },
   { question: "Do you repair built-in refrigerators?", answer: "Yes — French door, side-by-side, built-in, counter-depth, under-counter, and commercial units. All types and configurations." },
-  { question: "How much does refrigerator repair cost in San Francisco in 2025?", answer: "In San Francisco, refrigerator repair typically costs $150–$400 after the $60 diagnostic fee. Common repairs like thermostat replacement run $150–$200, while compressor work ranges $400–$600. FixitBay's $60 diagnostic is fully applied toward your repair cost." },
+  { question: "How much does refrigerator repair cost in San Francisco in 2026?", answer: "In San Francisco, refrigerator repair typically costs $150–$400 after the $60 diagnostic fee. Common repairs like thermostat replacement run $150–$200, while compressor work ranges $400–$600. FixitBay's $60 diagnostic is fully applied toward your repair cost." },
   { question: "Is it worth repairing a refrigerator in SF?", answer: "For refrigerators under 10 years old, repair almost always beats replacement. New fridges in SF start at $800–$1,500+ for comparable models. A $200–$400 repair pays for itself in 2–3 years." },
 ];
 
@@ -110,7 +110,7 @@ const mobileFaqs = [
   { q: 'What brands do you repair?', a: 'All major brands: Sub-Zero, Viking, Thermador, Samsung, LG, Whirlpool, GE, Bosch, Miele, KitchenAid, Frigidaire, Maytag, and more.' },
   { q: 'Do you offer a warranty?', a: 'Yes — every repair comes with a 180-day warranty on parts and labor. If the same issue returns, we fix it at no additional charge.' },
   { q: 'Do you repair built-in refrigerators?', a: 'Yes — French door, side-by-side, built-in, counter-depth, under-counter, and commercial units.' },
-  { q: 'How much does refrigerator repair cost in San Francisco in 2025?', a: 'In San Francisco, refrigerator repair typically costs $150–$400 after the $60 diagnostic fee. Common repairs like thermostat replacement run $150–$200, while compressor work ranges $400–$600. FixitBay\'s $60 diagnostic is fully applied toward your repair cost.' },
+  { q: 'How much does refrigerator repair cost in San Francisco in 2026?', a: 'In San Francisco, refrigerator repair typically costs $150–$400 after the $60 diagnostic fee. Common repairs like thermostat replacement run $150–$200, while compressor work ranges $400–$600. FixitBay\'s $60 diagnostic is fully applied toward your repair cost.' },
   { q: 'Is it worth repairing a refrigerator in SF?', a: 'For refrigerators under 10 years old, repair almost always beats replacement. New fridges in SF start at $800–$1,500+ for comparable models. A $200–$400 repair pays for itself in 2–3 years.' },
 ];
 
