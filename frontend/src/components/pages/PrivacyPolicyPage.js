@@ -59,7 +59,7 @@ const PrivacyPolicyPage = () => {
         title="Privacy Policy | FixitBay LLC Appliance Repair & Maintenance"
         description="Privacy Policy for FixitBay LLC Appliance Repair & Maintenance – learn how we collect, use, and protect your information when you contact us for appliance repair in San Francisco, Peninsula, and Marin County."
         canonical="https://fixitbay.net/privacy-policy"
-        noindex={true}
+        noindex={false}
       />
       <div style={{ fontFamily: F }}>
         <style>{`

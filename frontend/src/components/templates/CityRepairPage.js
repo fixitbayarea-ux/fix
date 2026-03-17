@@ -162,7 +162,7 @@ const CityRepairPage = ({
         description={`Licensed & insured technicians offering same-day appliance repair in ${city}. FixItBay provides fast, local appliance repair and maintenance throughout the San Francisco Bay Area. 180-day warranty on parts and labor.`}
         canonical={`https://fixitbay.net/${city.toLowerCase().replace(/\s+/g, '-')}-appliance-repair`}
         ogImage="https://fixitbay.net/images/og-cover.png"
-        noindex={true}
+        noindex={false}
       />
       <ServiceSchema serviceType="Appliance Repair" city={city} serviceName={`Appliance Repair in ${city}`} />
       
