@@ -108,6 +108,7 @@ const RefrigeratorWaterFilter = lazy(() => import("./components/pages/blog/Refri
 const DishwasherNotDraining = lazy(() => import("./components/pages/blog/DishwasherNotDraining"));
 const NeighborhoodPage = lazy(() => import("./components/pages/NeighborhoodPage"));
 const MarinCountyPage = lazy(() => import("./components/pages/MarinCountyPage"));
+const CityServicePage = lazy(() => import("./components/pages/CityServicePage"));
 
 export default function App() {
   return (
@@ -253,6 +254,16 @@ export default function App() {
 
         {/* Brand-specific service pages */}
         <Route path="/marin-county-appliance-repair" element={<MarinCountyPage />} />
+        
+        {/* City+Service combination pages (high-priority keywords) */}
+        <Route path="/:citySlug-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/:citySlug-washer-repair" element={<CityServicePage />} />
+        <Route path="/:citySlug-dryer-repair" element={<CityServicePage />} />
+        <Route path="/:citySlug-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/:citySlug-oven-repair" element={<CityServicePage />} />
+        <Route path="/:citySlug-ice-maker-repair" element={<CityServicePage />} />
+        <Route path="/:citySlug-wine-cooler-repair" element={<CityServicePage />} />
+        
         <Route path="/whirlpool-appliance-repair" element={<WhirlpoolApplianceRepairPage />} />
         <Route path="/lg-appliance-repair" element={<LGApplianceRepairPage />} />
         <Route path="/samsung-appliance-repair" element={<SamsungApplianceRepairPage />} />
