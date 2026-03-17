@@ -7,52 +7,39 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 ```
 /app/frontend/src/
   components/
-    SEOMetaTags.js             # Meta tags, robots, OG, Twitter
-    CityRepairRoute.js         # Dynamic router → custom city pages or generic CityRepairPage
-    pages/
-      CityServicePage.js       # 126 city+service combo pages
-      BookPage.js              # Booking page (noindex=true)
-      cities/                  # 21 custom city page components
-    templates/
-      ApplianceRepairPageNew.js # Desktop template (Popular Repairs + Service Areas)
-      CityRepairPage.js        # Generic city template (Popular Repairs section)
-      MobileServiceLanding.js  # Mobile template
-  seo/
-    seoContent.js              # Runtime SEO content
+    SEOMetaTags.js, CityRepairRoute.js
+    pages/CityServicePage.js, BookPage.js, cities/[21 custom]
+    templates/ApplianceRepairPageNew.js, CityRepairPage.js, MobileServiceLanding.js
+  seo/seoContent.js
   public/
-    index.html                 # routeMeta inline script
-    sitemap.xml                # 207+ canonical URLs
-    _redirects                 # Netlify 301 redirects
+    index.html, sitemap.xml (230 URLs), robots.txt, _redirects
+    d905a0c5900bccfa6834d45047983926.txt  (IndexNow verification key)
 /app/frontend/scripts/
-    seo-config.cjs             # SEO content for snapshots
-    generate-seo-snapshots.cjs # 232 HTML snapshots + build/sitemap.xml (230 canonical)
+    seo-config.cjs, generate-seo-snapshots.cjs
+    submit-indexnow.cjs  (IndexNow + sitemap ping script)
 ```
 
 ## Completed Work
 
-### Session 17 (Mar 17, 2026) — Meta Description Length Fix
+### Session 18 (Mar 17, 2026) — Sitemap Sync & IndexNow
+- Synced public/sitemap.xml with build/sitemap.xml (207→230 URLs), adding 23 missing pages (marin-county, 9 blog, 12 SF neighborhoods, llm-info)
+- Created IndexNow setup: API key `d905a0c5900bccfa6834d45047983926`, verification file in public/
+- Created `scripts/submit-indexnow.cjs`: submits URLs to api.indexnow.org, pings Google & Bing sitemap endpoints
+- Submitted 159 new pages to IndexNow (status: 202 Accepted)
+- robots.txt already declares `Sitemap: https://fixitbay.net/sitemap.xml`
+- Google/Bing `/ping` endpoints deprecated; user should verify sitemap in GSC
 
-**All meta descriptions normalized to 130-160 characters:**
-- seo-config.cjs: Fixed 12+ descriptions (city data, city+service template, generic city fallback, service data, blog, generic service fallback)
-- seoContent.js: Updated getCityServiceContent() template to user-specified format (~140 chars)
-- CityServicePage.js: Updated metaDescription template (removed neighborhoods, standardized format)
-- DalyCity.js, Colma.js: Trimmed component-level metaDescription
-- Verified 33 routes: 33 OK, 0 SHORT, 0 LONG
-- SEO snapshots regenerated: 232/232
+### Session 17 — Meta Description Lengths
+- All descriptions normalized to 130-160 chars across seo-config.cjs, seoContent.js, CityServicePage.js, component files
 
-### Session 16 (Mar 17, 2026) — Internal Links
-- City pages: "Popular Repairs in {City}" section with 7 city+service links
-- Service pages: City chips link to city+service pages (conditional)
-- Added to ApplianceRepairPageNew.js, SanFrancisco.js, CityRepairPage.js, seo-config.cjs
+### Session 16 — Internal Links
+- City pages: "Popular Repairs" section → city+service links
+- Service pages: city chips → city+service links
 
-### Session 15 (Mar 17, 2026) — SEO Fixes
-- "6-month warranty" → "180-day warranty" globally
-- noindex fix: explicit robots tags on all page types
-- /book: noindex=true, removed from sitemap
-- City+service title format: "{Service} Repair {City} | Same-Day | FixitBay"
-- 126 city+service routes (18 cities × 7 services)
+### Session 15 — Core SEO Fixes
+- 126 city+service routes, noindex fix, /book removed from sitemap, title format fix, warranty text fix
 
 ## Backlog
 - (P1) Investigate 2 Soft 404 pages from GSC
-- (P1) Refactor dual content sources (seoContent.js + seo-config.cjs) into single source
-- (P2) Refactor monolithic components into smaller sub-components
+- (P1) Refactor dual content sources into single source
+- (P2) Refactor monolithic components
