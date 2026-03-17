@@ -113,14 +113,24 @@ function getServiceContent(service) {
 
   const data = serviceData[service] || serviceData['Refrigerator'];
   
-  // Custom internal links and description for Dishwasher to fix SEO cannibalization
+  // Custom internal links and description for specific services
   const isDishwasher = service === 'Dishwasher';
+  const isIceMaker = service === 'Ice Maker';
+  
+  // Custom descriptions per service
+  const getDescription = () => {
+    if (isDishwasher) {
+      return `Dishwasher repair San Francisco & Bay Area. Professional ${service.toLowerCase()} repair. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`;
+    }
+    if (isIceMaker) {
+      return `Ice maker repair cost San Francisco & Bay Area: from $150 after $60 diagnostic. Same-day service across 22 cities. Licensed & insured. 180-day warranty.`;
+    }
+    return `Professional ${service.toLowerCase()} repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`;
+  };
   
   return {
     title: `${service} Repair San Francisco & Bay Area | Same-Day | FixitBay`,
-    description: isDishwasher 
-      ? `Dishwasher repair San Francisco & Bay Area. Professional ${service.toLowerCase()} repair. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`
-      : `Professional ${service.toLowerCase()} repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`,
+    description: getDescription(),
     h1: `${service} Repair in San Francisco & Bay Area`,
     content: `
       <p>When your ${service.toLowerCase()} breaks down, FixitBay delivers professional repair service throughout San Francisco, the Peninsula, and North Bay. Our licensed and insured technicians diagnose and fix most issues on the same visit, carrying an extensive inventory of common replacement parts in our service vehicles. We charge a transparent $60 diagnostic fee that's fully applied to your repair cost when you proceed—honest pricing from start to finish.</p>

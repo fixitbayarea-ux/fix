@@ -22,7 +22,11 @@ const IceMakerRepairPage = () => {
   const faqData = [
     {
       question: "How much does ice maker repair cost in San Francisco?",
-      answer: "Ice maker repair costs vary by issue. Common repairs like replacing a water inlet valve, ice maker assembly, or water filter typically range from $150-$280. More complex repairs involving the control board or water line may cost $280-$400. Our $60 diagnostic fee is fully applied to your repair cost. We provide clear pricing before starting any work."
+      answer: "Ice maker repair in San Francisco costs $150–$250 after the $60 diagnostic fee. Common repairs: water inlet valve replacement ($100–$150), ice maker module ($120–$200), auger motor ($80–$150). The $60 diagnostic is fully applied toward repair cost. We serve all 22 cities across SF, Peninsula & Marin County."
+    },
+    {
+      question: "Is it worth repairing an ice maker?",
+      answer: "For built-in ice makers in refrigerators under 10 years old, repair almost always makes sense vs. replacement. Standalone units under $300 may be better replaced. We give you an honest recommendation after the $60 diagnostic — no pressure."
     },
     {
       question: "Should I repair or replace my ice maker that's not making ice?",
@@ -74,8 +78,9 @@ const IceMakerRepairPage = () => {
         appliance="Ice Maker"
         pageSlug="ice-maker-repair"
         pageTitle="Ice Maker Repair San Francisco | Same-Day | FixitBay"
-        metaDescription="Expert ice maker repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty."
-        heroTitle={<>Expert Ice Maker<br />Repair in SF. Today.</>}
+        metaDescription="Ice maker repair cost San Francisco & Bay Area: from $150 after $60 diagnostic. Same-day service across 22 cities. Licensed & insured. 180-day warranty."
+        heroTitle={<>Ice Maker Repair<br />San Francisco &amp; Bay Area</>}
+        heroSubtitle="Cost & Same-Day Service"
         heroImage="/images/technicians/ice-maker-tech.jpg"
         heroImageAlt="FixitBay technician repairing an ice maker in a San Francisco home"
         heroImagePosition="center top"
@@ -113,9 +118,10 @@ const IceMakerRepairPage = () => {
       <ApplianceRepairPageNew
       serviceSchema={serviceSchema}
       appliance="Ice Maker"
+      customH1="Ice Maker Repair San Francisco & Bay Area | Cost & Same-Day"
       cmsSlug="ice-maker-repair"
       pageTitle="Ice Maker Repair San Francisco | Same-Day | FixitBay"
-      metaDescription="Expert ice maker repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty."
+      metaDescription="Ice maker repair cost San Francisco & Bay Area: from $150 after $60 diagnostic. Same-day service across 22 cities. Licensed & insured. 180-day warranty."
       heroImage="/images/technicians/ice-maker-tech.jpg"
       heroImageAlt="FixitBay technician repairing an ice maker in a San Francisco home"
       commonProblems={commonProblems}
