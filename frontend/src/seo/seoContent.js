@@ -375,7 +375,7 @@ function getAboutContent() {
     description: 'FixitBay provides professional appliance repair in San Francisco. Licensed, insured technicians. 180-day warranty. Over 3 years serving the community.',
     h1: 'About FixitBay',
     content: `
-      <p>FixitBay is a licensed and insured appliance repair company serving San Francisco, the Peninsula, and North Bay. With over 3 years of experience, we've helped thousands of homeowners and renters restore their appliances quickly, affordably, and professionally.</p>
+      <p>FixitBay is a licensed and insured appliance repair company serving San Francisco, the Peninsula, and North Bay. With over 2 years of experience, we've helped thousands of homeowners and renters restore their appliances quickly, affordably, and professionally.</p>
       
       <h2>Our Story</h2>
       <p>Founded by experienced appliance technicians who saw a need for honest, reliable, and transparent appliance repair service in the Bay Area, FixitBay has grown from a small local operation to a trusted name across 22 cities. We built our reputation on quality workmanship, fair pricing, and exceptional customer service.</p>
@@ -428,7 +428,7 @@ function getServiceAreasContent() {
       </ul>
       
       <h2>Why Choose FixitBay?</h2>
-      <p>Licensed & insured with over 3 years serving Bay Area communities. Our technicians carry common parts for same-day repairs. Transparent $60 diagnostic (applied to repair). Comprehensive 180-day warranty on all work. We service all major brands including Whirlpool, GE, Samsung, LG, Bosch, Frigidaire, Maytag, KitchenAid, Sub-Zero, Viking, and more.</p>
+      <p>Licensed & insured with over 2 years serving Bay Area communities. Our technicians carry common parts for same-day repairs. Transparent $60 diagnostic (applied to repair). Comprehensive 180-day warranty on all work. We service all major brands including Whirlpool, GE, Samsung, LG, Bosch, Frigidaire, Maytag, KitchenAid, Sub-Zero, Viking, and more.</p>
       
       <p>Don't see your city listed? Call us at <a href="tel:+17605435733">(760) 543-5733</a> to confirm coverage. We're continuously expanding our service area and may be able to accommodate your location.</p>
     `,

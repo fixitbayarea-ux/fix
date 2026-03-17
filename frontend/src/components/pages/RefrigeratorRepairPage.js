@@ -63,7 +63,7 @@ const DesktopRefrigeratorRepair = () => (
     <ApplianceRepairPageNew
       appliance="Refrigerator"
       customH1="Refrigerator Repair San Francisco & Bay Area — Same Day"
-      heroDescription="Serving San Francisco & Bay Area since 2019. Over 500 refrigerators repaired across 22 cities. Most repairs completed same day."
+      heroDescription="Serving San Francisco & Bay Area since 2023. Over 500 refrigerators repaired across 22 cities. Most repairs completed same day."
       pageTitle="Refrigerator Repair San Francisco | Same-Day | FixitBay"
       metaDescription="Expert refrigerator repair in San Francisco. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Same-day service."
       commonProblems={desktopCommonProblems}
@@ -123,7 +123,7 @@ const MobileRefrigeratorRepair = () => (
     metaDescription="Expert refrigerator repair in San Francisco. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Same-day service."
     heroTitle={<>Refrigerator Repair<br />San Francisco &amp; Bay Area</>}
     heroSubtitle="Same Day Service — Most Repairs Completed Today"
-    heroDescription="Serving San Francisco & Bay Area since 2019. Over 500 refrigerators repaired across 22 cities. Most repairs completed same day."
+    heroDescription="Serving San Francisco & Bay Area since 2023. Over 500 refrigerators repaired across 22 cities. Most repairs completed same day."
     techImage="/images/technicians/fridge-tech.jpg"
     techImageAlt="FixitBay technician next to a refrigerator in a San Francisco home"
     issues={mobileIssues}
