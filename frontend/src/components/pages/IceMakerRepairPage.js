@@ -42,7 +42,7 @@ const IceMakerRepairPage = () => {
     },
     {
       question: "Does your warranty cover ice maker repairs?",
-      answer: "Yes! Every ice maker repair includes a comprehensive 6-month warranty on parts and labor. If the same issue reoccurs within 6 months, we'll return at no charge to fix it properly."
+      answer: "Yes! Every ice maker repair includes a comprehensive 180-day warranty on parts and labor. If the same issue reoccurs within 180 days, we'll return at no charge to fix it properly."
     },
     {
       question: "Why is my ice maker not making ice but water works?",
@@ -77,7 +77,7 @@ const IceMakerRepairPage = () => {
       <MobileServiceLanding
         appliance="Ice Maker"
         pageSlug="ice-maker-repair"
-        pageTitle="Ice Maker Repair San Francisco | Same-Day | FixitBay"
+        pageTitle="Ice Maker Repair San Francisco & Bay Area | Same-Day | FixitBay"
         metaDescription="Ice maker repair cost San Francisco & Bay Area: from $150 after $60 diagnostic. Same-day service across 22 cities. Licensed & insured. 180-day warranty."
         heroTitle={<>Ice Maker Repair<br />San Francisco &amp; Bay Area</>}
         heroSubtitle="Cost & Same-Day Service"
@@ -131,7 +131,7 @@ const IceMakerRepairPage = () => {
         paragraphs: [
           <>When your ice maker stops making ice, leaks water, or produces bad-tasting cubes, FixitBay provides professional repair service across San Francisco, the Peninsula, and North Bay. Our licensed technicians diagnose and fix most ice maker issues on the same visit. We charge a straightforward <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—transparent pricing, every time.</>,
           <>Our ice maker repair process includes a complete inspection of the water inlet valve, ice maker assembly, water line, water filter, temperature controls, dispenser motor, and freezer conditions. We test water flow, check for frozen lines, and identify the root cause of issues like no ice production, water leaks, jammed dispensers, or poor ice quality. Whether you have a built-in ice maker or a refrigerator ice maker, we have the expertise.</>,
-          <>We service ice makers in all major refrigerator brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like water inlet valves, ice maker assemblies, and filters, enabling same-day repairs in most cases. Every repair is backed by our <strong>6-month warranty</strong> on parts and labor. From SF apartments to North Bay homes, we keep your ice flowing.</>
+          <>We service ice makers in all major refrigerator brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like water inlet valves, ice maker assemblies, and filters, enabling same-day repairs in most cases. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From SF apartments to North Bay homes, we keep your ice flowing.</>
         ]
       }}
       repairVsReplace={{
