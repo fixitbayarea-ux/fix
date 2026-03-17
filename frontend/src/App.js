@@ -255,14 +255,26 @@ export default function App() {
         {/* Brand-specific service pages */}
         <Route path="/marin-county-appliance-repair" element={<MarinCountyPage />} />
         
-        {/* City+Service combination pages (high-priority keywords) */}
-        <Route path="/:citySlug-refrigerator-repair" element={<CityServicePage />} />
-        <Route path="/:citySlug-washer-repair" element={<CityServicePage />} />
-        <Route path="/:citySlug-dryer-repair" element={<CityServicePage />} />
-        <Route path="/:citySlug-dishwasher-repair" element={<CityServicePage />} />
-        <Route path="/:citySlug-oven-repair" element={<CityServicePage />} />
-        <Route path="/:citySlug-ice-maker-repair" element={<CityServicePage />} />
-        <Route path="/:citySlug-wine-cooler-repair" element={<CityServicePage />} />
+        {/* City+Service combination pages - explicit routes for SEO */}
+        <Route path="/daly-city-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/daly-city-washer-repair" element={<CityServicePage />} />
+        <Route path="/daly-city-dryer-repair" element={<CityServicePage />} />
+        <Route path="/daly-city-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/san-rafael-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/san-rafael-washer-repair" element={<CityServicePage />} />
+        <Route path="/san-rafael-dryer-repair" element={<CityServicePage />} />
+        <Route path="/san-rafael-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/mill-valley-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/mill-valley-washer-repair" element={<CityServicePage />} />
+        <Route path="/mill-valley-dryer-repair" element={<CityServicePage />} />
+        <Route path="/novato-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/novato-washer-repair" element={<CityServicePage />} />
+        <Route path="/novato-dryer-repair" element={<CityServicePage />} />
+        <Route path="/south-san-francisco-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/san-bruno-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/pacifica-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/sausalito-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/tiburon-refrigerator-repair" element={<CityServicePage />} />
         
         <Route path="/whirlpool-appliance-repair" element={<WhirlpoolApplianceRepairPage />} />
         <Route path="/lg-appliance-repair" element={<LGApplianceRepairPage />} />

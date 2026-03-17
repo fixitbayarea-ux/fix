@@ -1,24 +1,44 @@
 import React from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import { useLocation, Navigate } from 'react-router-dom';
 import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
 
+// List of valid services
+const SERVICES = ['refrigerator', 'washer', 'dryer', 'dishwasher', 
+  'oven', 'wine-cooler', 'ice-maker', 'cooktop', 'range', 'freezer'];
+
 // City+Service combination page - renders service-specific content for a city
 const CityServicePage = () => {
-  const { citySlug } = useParams();
   const location = useLocation();
   const isMobile = useIsMobile();
   
-  // Extract service from the URL path (e.g., /daly-city-refrigerator-repair -> refrigerator)
-  const pathMatch = location.pathname.match(/\/(.+)-(refrigerator|washer|dryer|dishwasher|oven|ice-maker|wine-cooler)-repair$/);
-  const extractedCitySlug = pathMatch ? pathMatch[1] : citySlug;
-  const serviceSlug = pathMatch ? pathMatch[2] : 'refrigerator';
+  // Parse city and service from URL pathname (e.g., /daly-city-refrigerator-repair)
+  const pathname = location.pathname;
   
-  // Convert slug to display name
-  const toDisplayName = (slug) => slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  let serviceSlug = '';
+  let citySlug = '';
   
-  const cityName = toDisplayName(extractedCitySlug);
+  for (const svc of SERVICES) {
+    const suffix = `-${svc}-repair`;
+    if (pathname.endsWith(suffix)) {
+      serviceSlug = svc;
+      citySlug = pathname.replace(/^\//, '').replace(suffix, '');
+      break;
+    }
+  }
+  
+  // Convert slug to display name with null check
+  const toDisplayName = (slug) => slug
+    ? slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+    : '';
+  
+  // Redirect if we can't parse the URL
+  if (!citySlug || !serviceSlug) {
+    return <Navigate to="/" replace />;
+  }
+  
+  const cityName = toDisplayName(citySlug);
   const serviceName = toDisplayName(serviceSlug);
   
   // Service-specific data
@@ -153,7 +173,7 @@ const CityServicePage = () => {
     return (
       <MobileServiceLanding
         appliance={serviceName}
-        pageSlug={`${extractedCitySlug}-${serviceSlug}-repair`}
+        pageSlug={`${citySlug}-${serviceSlug}-repair`}
         pageTitle={pageTitle}
         metaDescription={metaDescription}
         heroTitle={<>{serviceName} Repair<br />{cityName}</>}
@@ -163,7 +183,7 @@ const CityServicePage = () => {
         issues={data.problems.slice(0, 6).map(p => ({ icon: '🔧', label: p.title }))}
         faqs={faqData}
         relatedLinks={[
-          { href: `/${extractedCitySlug}-appliance-repair`, label: `${cityName} Appliance Repair`, desc: 'All appliances' },
+          { href: `/${citySlug}-appliance-repair`, label: `${cityName} Appliance Repair`, desc: 'All appliances' },
           { href: `/${serviceSlug}-repair`, label: `${serviceName} Repair`, desc: 'All locations' },
         ]}
         schemaData={serviceSchema}
@@ -175,7 +195,7 @@ const CityServicePage = () => {
     <ApplianceRepairPageNew
       appliance={serviceName}
       customH1={`${serviceName} Repair in ${cityName}`}
-      cmsSlug={`${extractedCitySlug}-${serviceSlug}-repair`}
+      cmsSlug={`${citySlug}-${serviceSlug}-repair`}
       pageTitle={pageTitle}
       metaDescription={metaDescription}
       heroImage={data.heroImage}
@@ -191,7 +211,7 @@ const CityServicePage = () => {
         ]
       }}
       relatedLinks={[
-        { href: `/${extractedCitySlug}-appliance-repair`, label: `${cityName} Appliance Repair`, desc: 'All appliance services' },
+        { href: `/${citySlug}-appliance-repair`, label: `${cityName} Appliance Repair`, desc: 'All appliance services' },
         { href: `/${serviceSlug}-repair`, label: `${serviceName} Repair SF`, desc: 'All Bay Area locations' },
         { href: '/service-areas', label: 'Service Areas', desc: 'All 22 cities we serve' },
       ]}
