@@ -560,6 +560,7 @@ function getSEOContent(route) {
   if (route === '/marin-county-appliance-repair') {
     return {
       title: 'Appliance Repair Marin County | Same-Day Service | FixitBay',
+      robots: 'index, follow',
       description: 'Licensed appliance repair in Marin County. Serving Mill Valley, San Rafael, Novato, Sausalito, Tiburon. $60 diagnostic, 180-day warranty. Same-day service.',
       h1: 'Appliance Repair in Marin County',
       content: `
@@ -661,6 +662,7 @@ function getSEOContent(route) {
   if (route === '/blog') {
     return {
       title: 'Appliance Repair Tips & Guides | FixitBay Blog',
+      robots: 'index, follow',
       description: 'Expert appliance repair tips, maintenance guides, and troubleshooting advice from FixitBay. Learn how to care for your refrigerator, washer, dryer, dishwasher, and more.',
       h1: 'Appliance Repair Blog',
       content: `
@@ -756,6 +758,7 @@ function getSEOContent(route) {
     if (explicit) {
       return {
         title: explicit.title,
+        robots: 'index, follow',
         description: explicit.description,
         h1: explicit.title.replace(/ \| FixitBay.*$/, ''),
         content: `
@@ -772,6 +775,7 @@ function getSEOContent(route) {
     const blogTitle = blog ? blog.title : blogSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
     return {
       title: `${blogTitle} | FixitBay Appliance Repair Blog`,
+      robots: 'index, follow',
       description: `${blogTitle} - expert advice from FixitBay. Professional appliance repair tips for San Francisco & Bay Area homeowners. Call (760) 543-5733.`,
       h1: blogTitle,
       content: `
@@ -887,6 +891,7 @@ function getSEOContent(route) {
         }
         return {
           title: cityData.title,
+          robots: 'index, follow',
           description: cityData.description,
           h1: cityData.h1,
           content: cityData.content + popularRepairsClusterHTML(city.name),
@@ -904,6 +909,7 @@ function getSEOContent(route) {
       }
       return {
         title: `Appliance Repair in ${city.name}, CA | FixitBay - Same Day Service`,
+        robots: 'index, follow',
         description: `Professional appliance repair in ${city.name}, CA. Licensed technicians, 180-day warranty, same-day service. Refrigerators, washers, dryers & more. Call (760) 543-5733!`,
         h1: `Appliance Repair in ${city.name}, CA`,
         content: `
@@ -917,7 +923,64 @@ function getSEOContent(route) {
     }
   }
 
-  // Service pages (e.g. /refrigerator-repair, /washer-repair) — AFTER brand/city check
+  // City+Service combination pages (e.g., /daly-city-refrigerator-repair) — BEFORE generic service check
+  const cityServiceServices = ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven', 'wine-cooler', 'ice-maker'];
+  for (const svc of cityServiceServices) {
+    const suffix = `-${svc}-repair`;
+    if (route.endsWith(suffix)) {
+      const citySlug = route.replace(/^\//, '').replace(suffix, '');
+      // Only match if citySlug is non-empty and not a known single-word service
+      if (citySlug && citySlug !== svc) {
+        const cityName = citySlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        const serviceName = svc.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        const pricing = {
+          'refrigerator': '$180\u2013$450', 'washer': '$150\u2013$350', 'dryer': '$120\u2013$300',
+          'dishwasher': '$140\u2013$320', 'oven': '$150\u2013$400', 'wine-cooler': '$150\u2013$350', 'ice-maker': '$150\u2013$280'
+        };
+        const range = pricing[svc] || '$150\u2013$350';
+        return {
+          title: `${serviceName} Repair ${cityName} | Same-Day | FixitBay`,
+          robots: 'index, follow',
+          description: `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Cost: ${range} after $60 diagnostic. Same-day service. 180-day warranty. Licensed & insured. Call (760) 543-5733.`,
+          h1: `${serviceName} Repair in ${cityName}`,
+          content: `
+            <p style="margin-bottom:1rem;">FixitBay provides professional ${serviceName.toLowerCase()} repair throughout ${cityName} with same-day and next-day availability. Our licensed technicians arrive with common ${serviceName.toLowerCase()} parts stocked\u2014including thermostats, pumps, motors, and control boards\u2014enabling us to complete most repairs during the first visit.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">${serviceName} Repair Pricing in ${cityName}</h2>
+            <p style="margin-bottom:1rem;">Most ${serviceName.toLowerCase()} repairs in ${cityName} cost ${range} after the $60 diagnostic fee. We provide exact pricing before starting any work, and the $60 diagnostic is fully applied to your repair cost.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why Choose FixitBay for ${serviceName} Repair in ${cityName}?</h2>
+            <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Same-Day Service:</strong> Call before noon for same-day ${serviceName.toLowerCase()} repair in ${cityName}.</li>
+              <li style="margin-bottom:0.5rem;"><strong>180-Day Warranty:</strong> Every repair backed by our comprehensive parts and labor warranty.</li>
+              <li style="margin-bottom:0.5rem;"><strong>All Major Brands:</strong> Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Viking, Thermador, Miele.</li>
+              <li style="margin-bottom:0.5rem;"><strong>$60 Diagnostic:</strong> Fully credited toward your repair cost.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Licensed & Insured:</strong> Full CA credentials and liability coverage.</li>
+            </ul>
+            <p style="margin-bottom:1rem;">Every ${serviceName.toLowerCase()} repair in ${cityName} includes our comprehensive 180-day warranty on parts and labor. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for fast ${serviceName.toLowerCase()} repair service in ${cityName}.</p>
+          `,
+          schemas: [
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "name": `${serviceName} Repair ${cityName}`,
+              "serviceType": `${serviceName} Repair`,
+              "provider": { "@id": "https://fixitbay.net/#organization" },
+              "areaServed": { "@type": "City", "name": cityName },
+              "description": `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Same-day service, $60 diagnostic applied to repair, 180-day warranty.`
+            }
+          ],
+          internalLinks: [
+            '/',
+            `/${citySlug}-appliance-repair`,
+            `/${svc}-repair`,
+            '/service-areas',
+            '/contact'
+          ]
+        };
+      }
+    }
+  }
+
+  // Service pages (e.g. /refrigerator-repair, /washer-repair) — AFTER brand/city/city-service check
   const serviceMatch = route.match(/^\/([\w-]+)-repair$/);
   if (serviceMatch) {
     const slug = serviceMatch[1];
@@ -1178,6 +1241,7 @@ function getSEOContent(route) {
     if (data) {
       return {
         title: data.title,
+        robots: 'index, follow',
         description: data.desc,
         h1: data.h1,
         content: data.content + serviceAreaClusterHTML(data.h1.replace(/ in San Francisco.*$/, '')),
@@ -1189,6 +1253,7 @@ function getSEOContent(route) {
     // Generic fallback for services not in SERVICE_DATA
     return {
       title: `${serviceName} Repair in San Francisco & Bay Area | FixitBay`,
+      robots: 'index, follow',
       description: `Professional ${serviceName.toLowerCase()} repair in San Francisco & Bay Area. $60 diagnostic applied to repair. 180-day warranty. Same-day service. Call (760) 543-5733.`,
       h1: `${serviceName} Repair in San Francisco & Bay Area`,
       content: `
@@ -1402,6 +1467,7 @@ function getSEOContent(route) {
   if (route === '/book') {
     return {
       title: 'Book Online | FixitBay Appliance Repair',
+      robots: 'noindex, follow',
       description: 'Book appliance repair online with FixitBay. $60 diagnostic applied toward repair. 180-day warranty. Same-day and next-day service in San Francisco & Bay Area.',
       h1: 'Book Your Repair',
       content: `
@@ -1454,59 +1520,6 @@ function getSEOContent(route) {
       `,
       internalLinks: defaultInternalLinks
     };
-  }
-
-  // City+Service combination pages (e.g., /daly-city-refrigerator-repair)
-  const cityServiceServices = ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven', 'wine-cooler', 'ice-maker'];
-  for (const svc of cityServiceServices) {
-    const suffix = `-${svc}-repair`;
-    if (route.endsWith(suffix)) {
-      const citySlug = route.replace(/^\//, '').replace(suffix, '');
-      const cityName = citySlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      const serviceName = svc.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      const pricing = {
-        'refrigerator': '$180–$450', 'washer': '$150–$350', 'dryer': '$120–$300',
-        'dishwasher': '$140–$320', 'oven': '$150–$400', 'wine-cooler': '$150–$350', 'ice-maker': '$150–$280'
-      };
-      const range = pricing[svc] || '$150–$350';
-      return {
-        title: `${serviceName} Repair ${cityName} | Same-Day | FixitBay`,
-        description: `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Cost: ${range} after $60 diagnostic. Same-day service. 180-day warranty. Licensed & insured. Call (760) 543-5733.`,
-        h1: `${serviceName} Repair in ${cityName}`,
-        content: `
-          <p style="margin-bottom:1rem;">FixitBay provides professional ${serviceName.toLowerCase()} repair throughout ${cityName} with same-day and next-day availability. Our licensed technicians arrive with common ${serviceName.toLowerCase()} parts stocked—including thermostats, pumps, motors, and control boards—enabling us to complete most repairs during the first visit.</p>
-          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">${serviceName} Repair Pricing in ${cityName}</h2>
-          <p style="margin-bottom:1rem;">Most ${serviceName.toLowerCase()} repairs in ${cityName} cost ${range} after the $60 diagnostic fee. We provide exact pricing before starting any work, and the $60 diagnostic is fully applied to your repair cost.</p>
-          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why Choose FixitBay for ${serviceName} Repair in ${cityName}?</h2>
-          <ul style="margin-bottom:1rem;padding-left:1.5rem;">
-            <li style="margin-bottom:0.5rem;"><strong>Same-Day Service:</strong> Call before noon for same-day ${serviceName.toLowerCase()} repair in ${cityName}.</li>
-            <li style="margin-bottom:0.5rem;"><strong>180-Day Warranty:</strong> Every repair backed by our comprehensive parts and labor warranty.</li>
-            <li style="margin-bottom:0.5rem;"><strong>All Major Brands:</strong> Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Viking, Thermador, Miele.</li>
-            <li style="margin-bottom:0.5rem;"><strong>$60 Diagnostic:</strong> Fully credited toward your repair cost.</li>
-            <li style="margin-bottom:0.5rem;"><strong>Licensed & Insured:</strong> Full CA credentials and liability coverage.</li>
-          </ul>
-          <p style="margin-bottom:1rem;">Every ${serviceName.toLowerCase()} repair in ${cityName} includes our comprehensive 180-day warranty on parts and labor. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for fast ${serviceName.toLowerCase()} repair service in ${cityName}.</p>
-        `,
-        schemas: [
-          {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": `${serviceName} Repair ${cityName}`,
-            "serviceType": `${serviceName} Repair`,
-            "provider": { "@id": "https://fixitbay.net/#organization" },
-            "areaServed": { "@type": "City", "name": cityName },
-            "description": `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Same-day service, $60 diagnostic applied to repair, 180-day warranty.`
-          }
-        ],
-        internalLinks: [
-          '/',
-          `/${citySlug}-appliance-repair`,
-          `/${svc}-repair`,
-          '/service-areas',
-          '/contact'
-        ]
-      };
-    }
   }
 
   // Default content for other pages
