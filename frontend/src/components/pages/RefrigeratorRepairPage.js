@@ -1,5 +1,4 @@
 import React from 'react';
-import { SERVICE_CITIES_SCHEMA } from '../../data/serviceCities';
 import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 
 const BOOKING_URL = '/book?go=1';
@@ -43,16 +42,28 @@ const desktopServiceDescription = {
 const refrigeratorServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
+  "name": "Refrigerator Repair San Francisco Bay Area",
   "serviceType": "Refrigerator Repair",
-  "provider": { "@id": "https://fixitbay.net/#organization" },
-  "areaServed": SERVICE_CITIES_SCHEMA,
-  "url": "https://fixitbay.net/refrigerator-repair",
-  "description": "Same-day refrigerator repair in San Francisco and the Bay Area. French door, side-by-side, built-in, and counter-depth models. All major brands including Sub-Zero, Samsung, LG, GE, Whirlpool, and Bosch. $60 diagnostic credited toward repair. 180-day warranty."
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "FixitBay LLC",
+    "telephone": "+17605435733"
+  },
+  "priceRange": "From $255",
+  "areaServed": [
+    "San Francisco", "Daly City", "South San Francisco", "San Bruno",
+    "Pacifica", "Millbrae", "Colma", "Brisbane", "Montara",
+    "Mill Valley", "San Rafael", "Sausalito", "Belvedere", "Tiburon",
+    "Corte Madera", "San Quentin", "Larkspur", "Greenbrae", "Ross",
+    "Fairfax", "San Anselmo", "Novato"
+  ]
 };
 
 const DesktopRefrigeratorRepair = () => (
     <ApplianceRepairPageNew
       appliance="Refrigerator"
+      customH1="Refrigerator Repair San Francisco & Bay Area — Same Day"
+      heroDescription="Serving San Francisco & Bay Area since 2019. Over 500 refrigerators repaired across 22 cities. Most repairs completed same day."
       pageTitle="Refrigerator Repair San Francisco | Same-Day | FixitBay"
       metaDescription="Expert refrigerator repair in San Francisco. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Same-day service."
       commonProblems={desktopCommonProblems}
@@ -110,7 +121,9 @@ const MobileRefrigeratorRepair = () => (
     pageSlug="refrigerator-repair"
     pageTitle="Refrigerator Repair San Francisco | Same-Day | FixitBay"
     metaDescription="Expert refrigerator repair in San Francisco. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Same-day service."
-    heroTitle={<>Expert Refrigerator<br />Repair in SF. Today.</>}
+    heroTitle={<>Refrigerator Repair<br />San Francisco &amp; Bay Area</>}
+    heroSubtitle="Same Day Service — Most Repairs Completed Today"
+    heroDescription="Serving San Francisco & Bay Area since 2019. Over 500 refrigerators repaired across 22 cities. Most repairs completed same day."
     techImage="/images/technicians/fridge-tech.jpg"
     techImageAlt="FixitBay technician next to a refrigerator in a San Francisco home"
     issues={mobileIssues}
@@ -130,15 +143,7 @@ const MobileRefrigeratorRepair = () => (
       { href: '/ice-maker-repair', label: 'Ice Maker Repair', desc: 'No ice, leaking, or jammed dispenser' },
       { href: '/wine-cooler-repair', label: 'Wine Cooler Repair', desc: 'Temperature or compressor problems' },
     ]}
-    schemaData={{
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Refrigerator Repair",
-      "provider": { "@id": "https://fixitbay.net/#organization" },
-      "areaServed": SERVICE_CITIES_SCHEMA,
-      "url": "https://fixitbay.net/refrigerator-repair",
-      "description": "Same-day refrigerator repair in San Francisco and the Bay Area. French door, side-by-side, built-in, and counter-depth models. All major brands. $60 diagnostic credited toward repair. 180-day warranty."
-    }}
+    schemaData={refrigeratorServiceSchema}
   />
 );
 
