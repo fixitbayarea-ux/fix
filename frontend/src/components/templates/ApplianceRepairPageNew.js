@@ -34,6 +34,34 @@ const buildFAQSchema = (faqData) => {
   };
 };
 
+// Standard Service schema for all service pages
+const buildServiceSchema = (serviceName) => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": `${serviceName} Repair San Francisco Bay Area`,
+  "serviceType": `${serviceName} Repair`,
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "FixitBay LLC",
+    "telephone": "+17605435733",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1549 Franklin St, Unit A",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA",
+      "postalCode": "94109"
+    },
+    "priceRange": "$$"
+  },
+  "areaServed": [
+    "San Francisco", "Daly City", "South San Francisco", "San Bruno",
+    "Pacifica", "Millbrae", "Colma", "Brisbane", "Montara",
+    "Mill Valley", "San Rafael", "Sausalito", "Belvedere", "Tiburon",
+    "Corte Madera", "San Quentin", "Larkspur", "Greenbrae", "Ross",
+    "Fairfax", "San Anselmo", "Novato"
+  ]
+});
+
 const COMMON_BRANDS = [
   'Whirlpool','GE','Samsung','LG','Frigidaire','Maytag','KitchenAid','Bosch',
   'Kenmore','Amana','Thermador','Viking','Sub-Zero','Wolf','Miele','Jenn-Air','Electrolux','Fisher & Paykel'
@@ -225,7 +253,11 @@ const ApplianceRepairPageNew = ({
       ])
     }];
     if (faqData?.length > 0) { const fs = buildFAQSchema(faqData); if (fs) schemas.push({ id: `faq-schema-${appliance}`, data: fs }); }
-    if (serviceSchema) schemas.push({ id: `service-schema-${appliance}`, data: serviceSchema });
+    
+    // Add Service schema - use provided schema or generate default
+    const effectiveServiceSchema = serviceSchema || buildServiceSchema(appliance);
+    schemas.push({ id: `service-schema-${appliance}`, data: effectiveServiceSchema });
+    
     if (cityName) {
       const cSlug = cityName.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
       schemas.push({

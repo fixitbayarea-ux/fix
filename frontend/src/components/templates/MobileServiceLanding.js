@@ -77,6 +77,34 @@ const buildMobileFAQSchema = (faqs) => {
   };
 };
 
+// Standard Service schema for all service pages
+const buildMobileServiceSchema = (serviceName) => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": `${serviceName} Repair San Francisco Bay Area`,
+  "serviceType": `${serviceName} Repair`,
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "FixitBay LLC",
+    "telephone": "+17605435733",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1549 Franklin St, Unit A",
+      "addressLocality": "San Francisco",
+      "addressRegion": "CA",
+      "postalCode": "94109"
+    },
+    "priceRange": "$$"
+  },
+  "areaServed": [
+    "San Francisco", "Daly City", "South San Francisco", "San Bruno",
+    "Pacifica", "Millbrae", "Colma", "Brisbane", "Montara",
+    "Mill Valley", "San Rafael", "Sausalito", "Belvedere", "Tiburon",
+    "Corte Madera", "San Quentin", "Larkspur", "Greenbrae", "Ross",
+    "Fairfax", "San Anselmo", "Novato"
+  ]
+});
+
 const MobileServiceLanding = ({
   appliance = 'Appliance',
   pageSlug = 'appliance-repair',
@@ -104,7 +132,9 @@ const MobileServiceLanding = ({
 
   const mobileSchemas = useMemo(() => {
     const schemas = [];
-    if (schemaData) schemas.push({ id: `mobile-service-schema-${pageSlug}`, data: schemaData });
+    // Add Service schema - use provided schema or generate default
+    const effectiveServiceSchema = schemaData || buildMobileServiceSchema(appliance);
+    schemas.push({ id: `mobile-service-schema-${pageSlug}`, data: effectiveServiceSchema });
     if (faqSchema) schemas.push({ id: `mobile-faq-schema-${pageSlug}`, data: faqSchema });
     schemas.push({
       id: `mobile-breadcrumb-schema-${pageSlug}`,
