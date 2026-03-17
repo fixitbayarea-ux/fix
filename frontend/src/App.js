@@ -275,6 +275,7 @@ export default function App() {
         <Route path="/pacifica-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/sausalito-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/tiburon-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/corte-madera-refrigerator-repair" element={<CityServicePage />} />
         
         <Route path="/whirlpool-appliance-repair" element={<WhirlpoolApplianceRepairPage />} />
         <Route path="/lg-appliance-repair" element={<LGApplianceRepairPage />} />
