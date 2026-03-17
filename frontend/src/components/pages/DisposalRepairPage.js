@@ -60,7 +60,7 @@ const DisposalRepairPage = () => {
     },
     {
       question: "Does your garbage disposal repair warranty cover leaks and motor failures?",
-      answer: "Yes! Our 180-day comprehensive warranty covers all disposal repairs—parts and labor—including motor fixes, leak repairs, electrical work, and blade issues. If your disposal leaks again or jams within 6 months, we'll return at no charge to fix it properly."
+      answer: "Yes! Our 180-day comprehensive warranty covers all disposal repairs—parts and labor—including motor fixes, leak repairs, electrical work, and blade issues. If your disposal leaks again or jams within 180 days, we'll return at no charge to fix it properly."
     }
   ];
 

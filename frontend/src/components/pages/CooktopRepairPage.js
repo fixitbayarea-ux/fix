@@ -52,7 +52,7 @@ const CooktopRepairPage = () => {
     },
     {
       question: "Does your cooktop repair warranty cover igniter and heating element failures?",
-      answer: "Yes! Our 180-day comprehensive warranty covers all cooktop repairs—parts and labor—including igniters, heating elements, control boards, gas valves, and sensors. If your cooktop burner stops working or ignition issues return within 6 months, we'll come back at no charge to fix it properly."
+      answer: "Yes! Our 180-day comprehensive warranty covers all cooktop repairs—parts and labor—including igniters, heating elements, control boards, gas valves, and sensors. If your cooktop burner stops working or ignition issues return within 180 days, we'll come back at no charge to fix it properly."
     }
   ];
 

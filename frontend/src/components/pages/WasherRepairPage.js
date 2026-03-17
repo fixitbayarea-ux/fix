@@ -42,7 +42,7 @@ const WasherRepairPage = () => {
     },
     {
       question: "Does your warranty cover washer repairs?",
-      answer: "Yes! Every washer repair comes with a comprehensive 6-month warranty on parts and labor. If the same issue reoccurs within 6 months, we'll return at no additional charge to make it right."
+      answer: "Yes! Every washer repair comes with a comprehensive 180-day warranty on parts and labor. If the same issue reoccurs within 180 days, we'll return at no additional charge to make it right."
     },
     {
       question: "Can you repair washers in apartments and condos?",
@@ -127,7 +127,7 @@ const WasherRepairPage = () => {
         paragraphs: [
           <>When your washing machine won't spin, drain, or start, FixitBay delivers fast, reliable repair service throughout San Francisco, the Peninsula, and North Bay. Our licensed technicians diagnose and fix most washer issues on the same visit. We charge a <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—transparent pricing from start to finish.</>,
           <>Our washer repair process includes a thorough inspection of the motor, drum, drain pump, belts, hoses, door seal, control board, and water inlet valves. We test all cycles, check for leaks, and identify the root cause of issues like failure to spin, drain problems, excessive shaking, or error codes. Whether you have a front-load, top-load, or high-efficiency model, we have the expertise to restore it.</>,
-          <>We service all major washer brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts, allowing us to complete most repairs during the first visit. Every repair is backed by our <strong>6-month warranty</strong> on parts and labor. From SF apartments to Peninsula homes, we've got your laundry covered.</>
+          <>We service all major washer brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts, allowing us to complete most repairs during the first visit. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From SF apartments to Peninsula homes, we've got your laundry covered.</>
         ]
       }}
       repairVsReplace={{

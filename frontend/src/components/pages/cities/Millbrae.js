@@ -20,7 +20,7 @@ const Millbrae = () => {
     { question: 'Do you service high-rise condos in Millbrae?', answer: 'Yes. We regularly service appliances in Millbrae\'s condo buildings and high-rises, coordinating with building management as needed.' },
     { question: 'What brands do you repair in Millbrae?', answer: 'We service all major brands: Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Thermador, and more.' },
     { question: 'Are you licensed to work in Millbrae?', answer: 'Yes. FixitBay LLC is fully licensed and insured to provide appliance repair services in Millbrae and throughout San Mateo County.' },
-    { question: 'Do you offer warranties on repairs in Millbrae?', answer: 'Yes. Every completed repair includes our standard 180-day (6-month) parts and labor warranty.' }
+    { question: 'Do you offer warranties on repairs in Millbrae?', answer: 'Yes. Every completed repair includes our standard 180-day parts and labor warranty.' }
   ];
 
   const serviceDescription = {

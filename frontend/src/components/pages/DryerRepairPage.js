@@ -42,7 +42,7 @@ const DryerRepairPage = () => {
     },
     {
       question: "Does your warranty cover dryer repairs?",
-      answer: "Yes! Every dryer repair includes a comprehensive 6-month warranty on parts and labor. If the same issue reoccurs within 6 months, we'll return at no charge to fix it properly."
+      answer: "Yes! Every dryer repair includes a comprehensive 180-day warranty on parts and labor. If the same issue reoccurs within 180 days, we'll return at no charge to fix it properly."
     },
     {
       question: "Why is my dryer taking so long to dry clothes?",
@@ -126,7 +126,7 @@ const DryerRepairPage = () => {
           paragraphs: [
             <>When your dryer stops heating, won't start, or makes loud noises, FixitBay provides expert repair service across San Francisco, the Peninsula, and North Bay. Our licensed technicians diagnose and fix most dryer issues on the same visit. We charge a straightforward <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—honest pricing, every time.</>,
             <>Our dryer repair process includes a complete inspection of the heating element, thermal fuse, thermostat, drum belt, motor, control board, and vent system. We test all cycles, check for airflow restrictions, and identify the root cause of issues like no heat, failure to start, excessive noise, or long dry times. Whether you have a gas or electric dryer, front-load or top-load, we have the skills to restore it.</>,
-            <>We service all major dryer brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like heating elements, belts, and thermal fuses, enabling same-day repairs in most cases. Every repair is backed by our <strong>6-month warranty</strong> on parts and labor. From apartments to single-family homes, we keep your laundry moving.</>
+            <>We service all major dryer brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like heating elements, belts, and thermal fuses, enabling same-day repairs in most cases. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From apartments to single-family homes, we keep your laundry moving.</>
           ]
         }}
         repairVsReplace={{

@@ -52,7 +52,7 @@ const FreezerRepairPage = () => {
     },
     {
       question: "Does your freezer repair warranty cover compressor and cooling system failures?",
-      answer: "Yes! Our comprehensive 180-day warranty covers all freezer repairs—parts and labor—including compressors, evaporator fans, defrost timers, thermostats, and door seals. If your freezer stops freezing again or temperature issues return within 6 months, we'll come back at no additional charge to fix it right."
+      answer: "Yes! Our comprehensive 180-day warranty covers all freezer repairs—parts and labor—including compressors, evaporator fans, defrost timers, thermostats, and door seals. If your freezer stops freezing again or temperature issues return within 180 days, we'll come back at no additional charge to fix it right."
     }
   ];
 

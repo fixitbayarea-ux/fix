@@ -58,7 +58,7 @@ const FAQ = [
   { q: 'Do you service all major appliance brands?', a: 'Yes! We service all major appliance brands including Whirlpool, GE, Samsung, LG, Bosch, and premium brands like Sub-Zero, Wolf, and Thermador. Our technicians are trained on both standard and luxury appliances.' },
   { q: 'Do you use genuine brand parts?', a: "We always use OEM (Original Equipment Manufacturer) parts or high-quality equivalents. For premium brands, we source genuine parts from authorized distributors to maintain your appliance's quality and warranty." },
   { q: 'Can you repair older appliance models?', a: 'Yes! We service both current and older appliance models. Our technicians have experience with vintage appliances and can often source discontinued parts through our extensive supplier network.' },
-  { q: 'What warranty do you provide on brand repairs?', a: "All repairs include our standard 180-day (6-month) parts and labor warranty, regardless of brand. If the same issue recurs within that period, we'll fix it at no additional charge." },
+  { q: 'What warranty do you provide on brand repairs?', a: "All repairs include our standard 180-day parts and labor warranty, regardless of brand. If the same issue recurs within that period, we'll fix it at no additional charge." },
   { q: 'Which brands do you repair most often in San Francisco?', a: 'Our most common repairs in SF are Bosch dishwashers, Samsung refrigerators, LG washers, Sub-Zero refrigerators in Pacific Heights, and Wolf ranges in luxury homes. We carry parts for all these brands on our vans.' },
   { q: 'Do you repair both old and new appliance models?', a: 'Yes \u2014 we repair appliances from the 1990s through the latest smart models. Older units often need harder-to-find parts; we source them through our supplier network. New smart appliances require diagnostic tools we carry for brands like Samsung, LG, and Bosch.' },
   { q: 'How long does a typical brand-name appliance repair take?', a: 'Most repairs are completed in a single visit: 1\u20132 hours for standard brands like Whirlpool or GE, 2\u20134 hours for premium brands like Sub-Zero or Wolf that require careful disassembly. We always call ahead if additional parts need to be ordered.' },
@@ -457,7 +457,7 @@ const BrandsPage = () => {
                         <span style={{ fontFamily: F, fontWeight: 600, fontSize: 11, color: PC.accent, background: PC.accentBg, padding: '3px 10px', borderRadius: PC.r }}>Same/Next-Day</span>
                         <span style={{ fontFamily: F, fontWeight: 600, fontSize: 11, color: PC.accent, background: PC.accentBg, padding: '3px 10px', borderRadius: PC.r }}>$60 Diagnostic</span>
                       </div>
-                      <div style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: PC.textMid, marginBottom: 12, fontStyle: 'italic' }}>6-Month (180-Day) Warranty on parts &amp; labor</div>
+                      <div style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: PC.textMid, marginBottom: 12, fontStyle: 'italic' }}>180-Day Warranty on parts &amp; labor</div>
                       <a href={s.link} className="svc-btn" style={{ display: 'block', textAlign: 'center', fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', background: PC.navy, color: PC.white, padding: 12, borderRadius: PC.r, textDecoration: 'none', letterSpacing: '0.04em' }}>VIEW SERVICE</a>
                     </div>
                   </div>

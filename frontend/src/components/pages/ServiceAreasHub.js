@@ -33,7 +33,7 @@ const ServiceAreasHub = () => {
     },
     {
       title: "Verifying Warranty Coverage by Location",
-      description: "Need confirmation that our 6-month parts and labor warranty applies to repairs in your city."
+      description: "Need confirmation that our 180-day parts and labor warranty applies to repairs in your city."
     },
     {
       title: "Looking for Transparent Local Pricing",
@@ -56,7 +56,7 @@ const ServiceAreasHub = () => {
     },
     {
       question: 'What warranty do you provide?',
-      answer: 'Every repair includes our comprehensive 180-day (6-month) warranty on both parts and labor. This warranty is valid across all cities we serve—whether you\'re in San Francisco, Peninsula, or North Bay. If the same issue returns within 6 months, we\'ll come back at no additional charge to make it right.'
+      answer: 'Every repair includes our comprehensive 180-day warranty on both parts and labor. This warranty is valid across all cities we serve—whether you\'re in San Francisco, Peninsula, or North Bay. If the same issue returns within 180 days, we\'ll come back at no additional charge to make it right.'
     },
     {
       question: 'Which brands do you service?',
@@ -126,7 +126,7 @@ const ServiceAreasHub = () => {
           paragraphs: [
             <>FixitBay provides professional in-home appliance repair across <strong>22 cities</strong> in San Francisco, the Peninsula, and North Bay communities. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, and more—bringing expertise and quality parts directly to your home, condo, or apartment. We charge a transparent <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost when you proceed.</>,
             <>We offer same-day and next-day appointments throughout the Bay Area. Our service area includes the entire city of San Francisco (all neighborhoods), Peninsula cities from Daly City to Montara, and North Bay communities from San Rafael to San Anselmo. Whether you're in a Mission District apartment, a Pacifica coastal home, or a Mill Valley hillside residence, our team responds quickly with fully-stocked service vehicles.</>,
-            <>Every repair is backed by our comprehensive <strong>6-month warranty</strong> on parts and labor, valid across all cities we serve. Our technicians carry common replacement parts for all major brands (Whirlpool, GE, Samsung, LG, Bosch, and more), allowing us to complete most repairs during the first visit. Call <strong>(760) 543-5733</strong> or book online to schedule service in your city today.</>
+            <>Every repair is backed by our comprehensive <strong>180-day warranty</strong> on parts and labor, valid across all cities we serve. Our technicians carry common replacement parts for all major brands (Whirlpool, GE, Samsung, LG, Bosch, and more), allowing us to complete most repairs during the first visit. Call <strong>(760) 543-5733</strong> or book online to schedule service in your city today.</>
           ]
         }}
       >

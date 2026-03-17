@@ -20,7 +20,7 @@ const SanRafael = () => {
     { question: 'Do you service apartments near downtown?', answer: 'Absolutely. We regularly service apartments, condos, and homes throughout downtown San Rafael and surrounding neighborhoods.' },
     { question: 'What brands do you repair?', answer: 'We repair all major brands: Whirlpool, GE, Samsung, LG, Bosch, KitchenAid, Thermador, Viking, Sub-Zero, and more.' },
     { question: 'Are you licensed in Marin County?', answer: 'Yes. FixitBay LLC is fully licensed and insured to provide appliance repair throughout San Rafael and Marin County.' },
-    { question: 'What warranty do you provide?', answer: 'Every completed repair includes our standard 180-day (6-month) parts and labor warranty.' }
+    { question: 'What warranty do you provide?', answer: 'Every completed repair includes our standard 180-day parts and labor warranty.' }
   ];
 
   const serviceDescription = {

@@ -306,7 +306,7 @@ const BrandLandingPage = ({ brand }) => {
                             <span style={{ background: PC.accentBg, color: PC.accent, padding: '4px 10px', borderRadius: PC.r, fontFamily: F, fontWeight: 600, fontSize: 11 }}>Same/Next-Day</span>
                             <span style={{ background: PC.accentBg, color: PC.accent, padding: '4px 10px', borderRadius: PC.r, fontFamily: F, fontWeight: 600, fontSize: 11 }}>$60 Diagnostic</span>
                           </div>
-                          <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: PC.textMid, marginBottom: 14 }}>6-Month (180-Day) Warranty</p>
+                          <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: PC.textMid, marginBottom: 14 }}>180-Day Warranty</p>
                           <a href={card.href || '#'} className="svc-btn" data-testid={`carousel-card-${i}-btn`} style={{ display: 'block', textAlign: 'center', background: PC.navy, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, padding: 12, borderRadius: PC.r, textDecoration: 'none', marginTop: 'auto' }}>
                             VIEW SERVICE &rarr;
                           </a>

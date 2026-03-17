@@ -38,7 +38,7 @@ const DishwasherRepairPage = () => {
     },
     {
       question: "Does your warranty cover dishwasher repairs?",
-      answer: "Yes! Every dishwasher repair includes a comprehensive 6-month warranty on parts and labor. If the same issue reoccurs within 6 months, we'll return at no charge to make it right."
+      answer: "Yes! Every dishwasher repair includes a comprehensive 180-day warranty on parts and labor. If the same issue reoccurs within 180 days, we'll return at no charge to make it right."
     },
     {
       question: "Why is my dishwasher not cleaning dishes properly?",

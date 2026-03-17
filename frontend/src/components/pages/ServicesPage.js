@@ -47,7 +47,7 @@ const STEPS = [
 const FAQ_DATA = [
   { q: 'How much does a diagnostic visit cost?', a: '$60. This covers the technician\u2019s visit and full inspection. If you approve the repair, the $60 is credited toward the total cost \u2014 so the diagnostic is essentially free when you proceed.' },
   { q: 'Can I get same-day service?', a: 'Yes. Requests placed before 2:00 PM typically receive same-day service. Next-day appointments are almost always available regardless of when you call.' },
-  { q: 'What warranty do repairs include?', a: 'Every repair includes a 180-day (6-month) warranty on both parts and labor. If the same problem returns within that window, we come back and fix it at no charge.' },
+  { q: 'What warranty do repairs include?', a: 'Every repair includes a 180-day warranty on both parts and labor. If the same problem returns within that window, we come back and fix it at no charge.' },
   { q: 'Do you repair premium brands like Sub-Zero and Wolf?', a: 'Yes. Our technicians are trained on all premium and luxury brands including Sub-Zero, Wolf, Viking, Thermador, Miele, and Bosch Benchmark. We carry specialized tools and diagnostic equipment for these brands.' },
   { q: 'What areas do you serve?', a: 'We serve 22 cities across San Francisco, Northern San Mateo County (Peninsula), and Marin County. Our primary base is in San Francisco with typical response times of 15\u201345 minutes.' },
 ];

@@ -42,7 +42,7 @@ const OvenRepairPage = () => {
     },
     {
       question: "Does your warranty cover oven repairs?",
-      answer: "Yes! Every oven repair includes a comprehensive 6-month warranty on parts and labor. If the same issue reoccurs within 6 months, we'll return at no charge to fix it properly."
+      answer: "Yes! Every oven repair includes a comprehensive 180-day warranty on parts and labor. If the same issue reoccurs within 180 days, we'll return at no charge to fix it properly."
     },
     {
       question: "Why is my oven not reaching the right temperature?",
@@ -122,7 +122,7 @@ const OvenRepairPage = () => {
         paragraphs: [
           <>When your oven won't heat, won't reach temperature, or shows error codes, FixitBay provides expert repair service throughout San Francisco, the Peninsula, and North Bay. Our licensed technicians diagnose and fix most oven issues on the same visit. We charge a transparent <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—honest pricing from start to finish.</>,
           <>Our oven repair process includes a thorough inspection of heating elements, igniters, temperature sensors, gas valves, control boards, door hinges, and safety systems. We test all heating functions, check for gas leaks (if applicable), and identify the root cause of issues like no heat, temperature problems, or error codes. Whether you have a wall oven, double oven, or built-in unit, we have the expertise.</>,
-          <>We service all major oven brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like igniters, heating elements, and temperature sensors, enabling same-day repairs in most cases. Every repair is backed by our <strong>6-month warranty</strong> on parts and labor. Need <a href="/range-repair" style={{color:'#C0362C', fontWeight:'bold'}}>range repair</a> or <a href="/stove-repair" style={{color:'#C0362C', fontWeight:'bold'}}>stove repair</a>? We have dedicated pages for those too.</>
+          <>We service all major oven brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like igniters, heating elements, and temperature sensors, enabling same-day repairs in most cases. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. Need <a href="/range-repair" style={{color:'#C0362C', fontWeight:'bold'}}>range repair</a> or <a href="/stove-repair" style={{color:'#C0362C', fontWeight:'bold'}}>stove repair</a>? We have dedicated pages for those too.</>
         ]
       }}
       repairVsReplace={{

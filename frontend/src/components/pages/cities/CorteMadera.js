@@ -20,7 +20,7 @@ const CorteMadera = () => {
     { question: 'What\'s your response time to Corte Madera?', answer: 'We typically arrive within 1-2 hours for same-day appointments via Highway 101 and local routes.' },
     { question: 'What brands do you repair?', answer: 'We repair all major brands: Whirlpool, GE, Samsung, LG, Bosch, KitchenAid, Thermador, and more.' },
     { question: 'Are you licensed in Marin County?', answer: 'Yes. FixitBay LLC is fully licensed and insured for appliance repair throughout Corte Madera and Marin County.' },
-    { question: 'Do you offer warranties?', answer: 'Yes. Every repair includes a 180-day (6-month) parts and labor warranty.' }
+    { question: 'Do you offer warranties?', answer: 'Yes. Every repair includes a 180-day parts and labor warranty.' }
   ];
 
   const serviceDescription = {

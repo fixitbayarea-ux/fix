@@ -20,7 +20,7 @@ const Pacifica = () => {
     { question: 'Do you offer same-day availability in Pacifica?', answer: 'Yes! We offer same/next-day appointments across Pacifica: Linda Mar, Sharp Park, Rockaway, Vallemar, Pacific Manor, Fairmont, and Pedro Point.' },
     { question: 'Do you service garage fridges/freezers in coastal areas?', answer: 'Yes. We test ambient conditions and advise on performance adjustments when appliances are placed in humid/coastal garages common in Pacifica.' },
     { question: 'What brands do you handle in Pacifica?', answer: 'We service all major brands: LG, Samsung, Whirlpool, GE, Kenmore, Frigidaire, Maytag, Bosch, Thermador, Viking, KitchenAid, Sub-Zero, Wolf, Miele, and more.' },
-    { question: 'What warranty is included?', answer: 'Every completed repair includes a 6-month (180-day) parts and labor warranty, covering both the repair and parts against coastal environment factors.' }
+    { question: 'What warranty is included?', answer: 'Every completed repair includes a 180-day parts and labor warranty, covering both the repair and parts against coastal environment factors.' }
   ];
 
   const serviceDescription = {
@@ -37,7 +37,7 @@ const Pacifica = () => {
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
         pageTitle="Appliance Repair Pacifica | Coastal Same/Next-Day | FixitBay"
-        metaDescription="Coastal appliance repair in Pacifica—Linda Mar, Sharp Park, Rockaway. Salt-air aware repairs. $60 diagnostic credited. 6-month warranty. Call (760) 543-5733."
+        metaDescription="Coastal appliance repair in Pacifica—Linda Mar, Sharp Park, Rockaway. Salt-air aware repairs. $60 diagnostic credited. 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

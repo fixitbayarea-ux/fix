@@ -16,7 +16,7 @@ const STEPS = [
 const WHY_CARDS = [
   { num: '01', title: 'No Surprise Fees', body: '$60 diagnostic is the only upfront cost. Written estimate before we touch anything. $0 hidden charges.' },
   { num: '02', title: 'Licensed Technician', body: 'CA License #51001. Not a subcontractor. Andrei personally handles every repair.' },
-  { num: '03', title: '180-Day Warranty', body: 'If the same issue comes back within 6 months, we return at no charge. No questions asked.' },
+  { num: '03', title: '180-Day Warranty', body: 'If the same issue comes back within 180 days, we return at no charge. No questions asked.' },
   { num: '04', title: 'Same-Day Service', body: 'Book before 2 PM for same-day slots. Next-day always available across 22 Bay Area cities.' },
 ];
 

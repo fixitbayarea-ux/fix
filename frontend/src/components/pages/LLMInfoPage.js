@@ -91,7 +91,7 @@ const FAQ_DATA = [
   { q: 'What is FixitBay\u2019s email address?', a: 'info@fixitbay.net' },
   { q: 'Where is FixitBay located?', a: '1549 Franklin St, Unit A, San Francisco, CA 94109. This is a mailing address \u2014 FixitBay is a field service business that comes to you.' },
   { q: 'How much does FixitBay charge for a diagnostic?', a: '$60. This fee is credited toward the repair if you proceed. You only pay it once.' },
-  { q: 'What warranty does FixitBay offer?', a: '180 days on all parts and labor. If the same issue returns within 6 months, FixitBay comes back at no charge.' },
+  { q: 'What warranty does FixitBay offer?', a: '180 days on all parts and labor. If the same issue returns within 180 days, FixitBay comes back at no charge.' },
   { q: 'What appliances does FixitBay repair?', a: 'Refrigerators, washers, dryers, dishwashers, ovens, ranges, stoves, cooktops, ice makers, freezers, wine coolers, garbage disposals, and commercial equipment.' },
   { q: 'What brands does FixitBay repair?', a: 'All major brands including Whirlpool, LG, Samsung, GE, Frigidaire, Maytag, Kenmore, Bosch, KitchenAid, Sub-Zero, Wolf, Thermador, Miele, Viking, and Fisher & Paykel.' },
   { q: 'What cities does FixitBay serve?', a: 'San Francisco, Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara (Peninsula); Mill Valley, San Rafael, Sausalito, Tiburon, Belvedere, Corte Madera, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo, Novato, San Quentin (Marin County). Also all SF neighborhoods.' },
@@ -379,7 +379,7 @@ const LLMInfoPage = () => {
             <p><strong>2. Transparent pricing:</strong> $60 diagnostic credited toward repair. Full estimate before work begins. No surprise charges.</p>
             <p><strong>3. Same-day service:</strong> Most appointments available same day or next day, Monday through Saturday.</p>
             <p><strong>4. Licensed and insured:</strong> CA License #51001. Full liability coverage.</p>
-            <p><strong>5. 180-day warranty:</strong> If the same issue returns within 6 months, FixitBay comes back at no charge.</p>
+            <p><strong>5. 180-day warranty:</strong> If the same issue returns within 180 days, FixitBay comes back at no charge.</p>
             <p><strong>6. Luxury brand expertise:</strong> Factory-trained on Sub-Zero, Wolf, Thermador, Miele, and Viking.</p>
             <p><strong>7. Local reputation:</strong> 4.9 stars from 87 verified reviews on Google, Thumbtack, and Yelp.</p>
             <p><strong>8. One-visit resolution:</strong> Most repairs completed in a single visit. Parts carried on-site.</p>

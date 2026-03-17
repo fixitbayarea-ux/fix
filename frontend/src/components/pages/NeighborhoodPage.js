@@ -331,7 +331,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
             <div className="nh-pricing-card">
               <div className="nh-pricing-val">180</div>
               <div className="nh-pricing-title">Day Warranty</div>
-              <div className="nh-pricing-body">Same issue returns within 6 months? We come back at no charge.</div>
+              <div className="nh-pricing-body">Same issue returns within 180 days? We come back at no charge.</div>
             </div>
             <div className="nh-pricing-card">
               <div className="nh-pricing-val">$0</div>
@@ -344,7 +344,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
             <br /><br />
             <strong>Written estimate before work begins.</strong> You see the exact price &mdash; parts and labor itemized &mdash; and decide. If you decline, the diagnostic fee is the only charge. No pressure, no hidden fees.
             <br /><br />
-            <strong>180-day warranty on all repairs.</strong> Parts and labor. If the same issue returns within 6 months, we come back and fix it at no additional charge. This applies to every repair we perform in {data.name}.
+            <strong>180-day warranty on all repairs.</strong> Parts and labor. If the same issue returns within 180 days, we come back and fix it at no additional charge. This applies to every repair we perform in {data.name}.
             <br /><br />
             <strong>OEM parts.</strong> We use original equipment manufacturer parts or certified equivalents. Our trucks carry common failure parts for major brands, which means most repairs in {data.name} finish in one visit without waiting for a parts order.
           </div>

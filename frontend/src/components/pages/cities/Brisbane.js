@@ -20,7 +20,7 @@ const Brisbane = () => {
     { question: 'Do you service Brisbane apartments?', answer: 'Absolutely. We service apartments, condos, and single-family homes throughout Brisbane.' },
     { question: 'What\'s your diagnostic fee?', answer: 'Our diagnostic fee is $60, fully credited toward your repair if you proceed.' },
     { question: 'Are you licensed in San Mateo County?', answer: 'Yes. FixitBay LLC is fully licensed and insured to provide appliance repair in Brisbane and throughout San Mateo County.' },
-    { question: 'Do you offer warranties?', answer: 'Yes. Every repair includes our standard 180-day (6-month) parts and labor warranty.' }
+    { question: 'Do you offer warranties?', answer: 'Yes. Every repair includes our standard 180-day parts and labor warranty.' }
   ];
 
   const serviceDescription = {
