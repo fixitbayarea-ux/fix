@@ -618,6 +618,31 @@ const ApplianceRepairPageNew = ({
           </div>
         </section>
 
+        {/* ═══ POPULAR REPAIRS IN CITY ═══ */}
+        {(() => {
+          const cs = cityName.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
+          const repairs = [
+            { label: 'Refrigerator', svc: 'refrigerator' }, { label: 'Washer', svc: 'washer' },
+            { label: 'Dryer', svc: 'dryer' }, { label: 'Dishwasher', svc: 'dishwasher' },
+            { label: 'Oven & Range', svc: 'oven' }, { label: 'Wine Cooler', svc: 'wine-cooler' },
+            { label: 'Ice Maker', svc: 'ice-maker' },
+          ];
+          return (
+            <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
+              <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+                <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 24 }}>Popular Repairs in {cityName}</h2>
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4" style={{ gap: 12 }}>
+                  {repairs.map(s => (
+                    <Link key={s.svc} to={`/${cs}-${s.svc}-repair`} data-testid={`popular-repair-${s.svc}`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#fff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; }}>
+                      <Wrench size={14} style={{ color: '#FF5722' }} /> {s.label} Repair
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </section>
+          );
+        })()}
+
         {/* ═══ SECTION 14 — FOOTER ═══ */}
         <footer data-testid="city-footer" style={{ background: '#0D1B2A', borderTop: '3px solid #FF5722', padding: '24px 40px' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
@@ -1009,31 +1034,6 @@ const ApplianceRepairPageNew = ({
                 ) : (
                   <p>We provide fast appliance repair across {cityName}. Most repairs completed same-day.</p>
                 )}
-              </div>
-            </div>
-          </section>
-        );
-      })()}
-
-      {/* City popular repairs — link to city+service pages for internal linking */}
-      {isCity && (() => {
-        const cs = cityName.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
-        const repairs = [
-          { label: 'Refrigerator', svc: 'refrigerator' }, { label: 'Washer', svc: 'washer' },
-          { label: 'Dryer', svc: 'dryer' }, { label: 'Dishwasher', svc: 'dishwasher' },
-          { label: 'Oven & Range', svc: 'oven' }, { label: 'Wine Cooler', svc: 'wine-cooler' },
-          { label: 'Ice Maker', svc: 'ice-maker' },
-        ];
-        return (
-          <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
-            <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-              <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 24 }}>Popular Repairs in {cityName}</h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4" style={{ gap: 12 }}>
-                {repairs.map(s => (
-                  <Link key={s.svc} to={`/${cs}-${s.svc}-repair`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#fff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; }}>
-                    <Wrench size={14} style={{ color: '#FF5722' }} /> {s.label} Repair
-                  </Link>
-                ))}
               </div>
             </div>
           </section>
