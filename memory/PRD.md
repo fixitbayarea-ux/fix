@@ -1,84 +1,63 @@
 # FixitBay Appliance Repair Website — PRD
 
 ## Original Problem Statement
-Multi-phase "Precision Craft" redesign of a static appliance repair SPA (React). Mobile-first, responsive on desktop. Dark/cream alternating section design system across all page templates. Ongoing SEO and content optimization based on Google Search Console data.
-
-## Design System: Precision Craft
-- **Light sections**: bg `#F8F5F0`, cards `#FFFFFF`, headings `#1A1A1A`, body `#4A5568`, eyebrow `#FF5722`
-- **Dark sections**: bg `#0D1B2A`, cards `#1A2F45`, headings `#FFFFFF`, body `rgba(255,255,255,0.60)`, eyebrow `rgba(255,255,255,0.45)`
-- Accent: `#FF5722`, Border radius: 4px
+Multi-phase SEO and content optimization of a React SPA appliance repair website (fixitbay.net). Mobile-first, responsive on desktop. Ongoing SEO fixes based on Google Search Console data.
 
 ## Architecture
 ```
 /app/frontend/src/
   components/
-    SiteNavbar.jsx             # Mobile menu accordion redesign
-    SEOMetaTags.js             # Meta tags, OG, Twitter, GEO
-    ProfessionalLandingPage.js # Homepage
+    SEOMetaTags.js             # Meta tags, robots, OG, Twitter
     pages/
-      CityServicePage.js       # 119 city+service combo pages (NEW)
-      AboutPage.js             # Mobile-first responsive
-      BrandsPage.js            # Theme aligned
-      BlogListPage.js          # Mobile-first
+      CityServicePage.js       # 126 city+service combo pages
+      BookPage.js              # Booking page (noindex=true)
     templates/
-      ApplianceRepairPageNew.js # Desktop template (commonProblems, faqData, serviceDescription, serviceSchema)
+      ApplianceRepairPageNew.js # Desktop template
       MobileServiceLanding.js   # Mobile template
-      BrandLandingPage.js       # Brand pages
-    sections/
-      HomeHero.jsx             # Single H1
   seo/
-    seoContent.js              # Runtime SEO content for React app
+    seoContent.js              # Runtime SEO content
   public/
-    index.html                 # routeMeta inline script (warranty text fixed)
-    sitemap.xml                # 207 URLs (101 original + 126 city+service)
+    index.html                 # routeMeta inline script
+    sitemap.xml                # 207 canonical URLs
     _redirects                 # Netlify 301 redirects
 /app/frontend/scripts/
-    seo-config.cjs             # SEO content for static snapshots
+    seo-config.cjs             # SEO content for snapshots (robots tags added)
     generate-seo-snapshots.cjs # Generates 232 HTML snapshots + build/sitemap.xml
 ```
 
 ## Completed Work
 
-### Sessions 1–13 (Previous Forks)
-- Full Precision Craft redesign across all templates
-- Mobile menu accordion, sticky footer, navbar performance
-- NeighborhoodPage, MobileServiceLanding, ApplianceRepairPageNew, BrandLandingPage fixes
-- Tech photos on all service pages
-- Wine Cooler SEO overhaul
-- Session 14: GitHub import, env setup, city page titles, warranty text (6-month→180-day)
-
 ### Session 15 (Mar 17, 2026)
-- **"6-Month Warranty" → "180-Day Warranty" Global Fix:**
-  - Fixed 26 occurrences in `public/index.html` routeMeta script (garbage-disposal, commercial-*, local-appliance, residential-appliance, colma, mill-valley, pacifica)
-  - Fixed 9 occurrences in `scripts/seo-config.cjs` (homepage, Colma city, generic city fallback, generic service fallback, default fallback)
-  - Fixed in all 232 build/ HTML snapshot files
-  - Enhanced `seoContent.js` `getCityServiceContent()` with pricing data
-  - Verified: 0 "6-month warranty" instances in source and build
 
-- **City+Service Pages (119 Routes) — Full Implementation:**
-  - Added `san-francisco` to CITY_CONTEXT in CityServicePage.js (18 total cities with context)
-  - Registered 126 explicit routes in App.js (18 cities × 7 services)
-  - Each page renders 300+ words: city context, 6 common problems, pricing, 5 FAQs, JSON-LD Service schema
-  - Desktop: via ApplianceRepairPageNew template
-  - Mobile: via MobileServiceLanding template
-  - Added city+service handler to `seo-config.cjs` for static HTML snapshots
-  - Added city+service route generation to `generate-seo-snapshots.cjs`
-  - Regenerated snapshots: 232/232 (up from 102)
-  - Build sitemap: 231 canonical URLs (up from ~100)
-  - Public sitemap: 207 URLs (126 city+service added)
-  - 10/10 tests passed (iteration_95.json)
+**Critical Fix 1 — noindex removal from indexable pages:**
+- Added explicit `robots: 'index, follow'` to ALL page types in seo-config.cjs: city+service, city, service, blog, marin-county
+- Added `robots: 'noindex, follow'` to /book in seo-config.cjs
+- Added `noindex={true}` to SEOMetaTags in BookPage.js
+- Added `/book` to noindexRoutes array in generate-seo-snapshots.cjs
+- Verified: all indexable pages have `index, follow`, /book has `noindex, follow`
 
-- **Sitemap Verification:**
-  - Confirmed: NO old redirect URLs (/appliance-repair-daly-city, /wine-refrigerator-repair) in either public or build sitemap
-  - Both sitemaps clean of redirected URLs
+**Critical Fix 2 — City+service page title format:**
+- Moved city+service handler BEFORE generic service handler in seo-config.cjs (was matching wrong regex)
+- Title now: `"{Service} Repair {City} | Same-Day | FixitBay"` (was: `"{City} {Service} Repair in San Francisco & Bay Area | FixitBay"`)
+- Verified on /daly-city-refrigerator-repair, /san-francisco-washer-repair, /mill-valley-wine-cooler-repair, etc.
 
-- **noindex Audit:**
-  - Only NotFound404 and ThankYouBooking have noindex=true (both correct)
-  - All other pages set noindex=false → renders as "index, follow"
+**Critical Fix 3 — /book removed from sitemap:**
+- Added `/book` to noindexRoutes in generate-seo-snapshots.cjs
+- Build sitemap: 230 canonical URLs (excluded /thank-you-booking and /book)
+- Verified: /book not in build/sitemap.xml
+
+**Previous Session Work (inherited):**
+- 126 city+service routes (18 cities × 7 services) in App.js
+- "6-month warranty" → "180-day warranty" globally (26 in index.html, 9 in seo-config.cjs)
+- All city+service pages render 300+ words with city context, problems, pricing, FAQs, JSON-LD schema
+- SEO snapshots regenerated: 232/232
+
+## Test Results
+- iteration_95.json: 10/10 passed (content rendering, mobile, JSON-LD, warranty text)
+- iteration_96.json: 9/10 passed (titles, robots tags), /book noindex fixed post-test
 
 ## Backlog
-- (P1) Refactor monolithic components into smaller sub-components
-- (P1) Refactor dual content sources (seoContent.js + seo-config.cjs) into single source of truth
+- (P1) Investigate 2 Soft 404 pages from GSC
+- (P1) Refactor dual content sources (seoContent.js + seo-config.cjs) into single source
+- (P2) Refactor monolithic components into smaller sub-components
 - (P2) Centralize hardcoded content into JSON structures
-- (P2) Migrate inline styles to scoped CSS files
-- (P2) ProfessionalLandingPage.js cream color check
