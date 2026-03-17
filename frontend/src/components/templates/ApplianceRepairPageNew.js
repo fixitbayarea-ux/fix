@@ -333,7 +333,7 @@ const ApplianceRepairPageNew = ({
               <span style={{ width: 36, height: 2, background: '#FF5722', display: 'inline-block' }} />
               <span style={{ ...S.eyebrow, letterSpacing: '0.22em' }}>{cityName.toUpperCase()} APPLIANCE REPAIR</span>
             </div>
-            <h1 data-testid="city-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in<br />{cityName}</h1>
+            <h1 data-testid="city-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in<br/>{cityName}</h1>
             <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same-day & next-day &middot; $60 diagnostic &middot; 180-day warranty</p>
             <div data-testid="city-trust-badges" style={{ display: 'flex', alignItems: 'center', gap: 24, marginTop: 20, fontFamily: S.font, fontWeight: 500, fontSize: 13, flexWrap: 'wrap' }}>
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span><span style={{ color: 'rgba(255,255,255,0.85)' }}>Licensed CA Technician</span></span>

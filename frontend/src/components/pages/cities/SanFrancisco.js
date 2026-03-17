@@ -519,6 +519,25 @@ const SanFrancisco = () => {
         </div>
       </section>
 
+      {/* ═══ POPULAR REPAIRS IN SAN FRANCISCO ═══ */}
+      <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+          <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 24 }}>Popular Repairs in San Francisco</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4" style={{ gap: 12 }}>
+            {[
+              { label: 'Refrigerator Repair', svc: 'refrigerator' }, { label: 'Washer Repair', svc: 'washer' },
+              { label: 'Dryer Repair', svc: 'dryer' }, { label: 'Dishwasher Repair', svc: 'dishwasher' },
+              { label: 'Oven & Range Repair', svc: 'oven' }, { label: 'Wine Cooler Repair', svc: 'wine-cooler' },
+              { label: 'Ice Maker Repair', svc: 'ice-maker' },
+            ].map(s => (
+              <Link key={s.svc} to={`/san-francisco-${s.svc}-repair`} data-testid={`popular-repair-${s.svc}`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#fff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; }}>
+                <Wrench size={14} style={{ color: '#FF5722' }} /> {s.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ═══════════════════════════════════════
           FOOTER
           ═══════════════════════════════════════ */}
