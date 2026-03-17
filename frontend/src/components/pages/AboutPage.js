@@ -249,7 +249,7 @@ const AboutPage = () => {
             {[
               { num: '01', title: 'Licensed & Insured', body: 'Fully licensed CA Technician (License #51001). Insured for your protection. Professional service you can trust.' },
               { num: '02', title: 'Honest, Transparent Pricing', body: '$60 diagnostic fee fully applied to your repair cost \u2014 you never pay it twice. Upfront written estimate before any work begins. No surprises.' },
-              { num: '03', title: '180-Day Warranty', body: 'All repairs backed by a 180-day warranty on parts and labor. If the same issue returns within 6 months, we come back at no charge.' },
+              { num: '03', title: '180-Day Warranty', body: 'All repairs backed by a 180-day warranty on parts and labor. If the same issue returns within 180 days, we come back at no charge.' },
               { num: '04', title: 'Truly Local Service', body: 'Serving San Francisco, Marin County, and Peninsula communities. We\u2019re your neighbors \u2014 not a call center franchise.' },
             ].map((card, i) => (
               <div key={i} style={{ background: '#F8F5F0', border: '1px solid rgba(255,87,34,0.15)', borderTop: '3px solid #FF5722', borderRadius: 4, padding: 28 }}>

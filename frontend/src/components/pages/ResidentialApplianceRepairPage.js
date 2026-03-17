@@ -55,7 +55,7 @@ const ResidentialApplianceRepairPage = () => {
     },
     {
       question: 'Do you offer a warranty on residential repairs?',
-      answer: 'All residential appliance repairs include our comprehensive 180-day parts and labor warranty. If the same issue comes back within that 6-month period, we will return to your home at no additional charge and make it right. This warranty covers the specific repair performed, giving you peace of mind.'
+      answer: 'All residential appliance repairs include our comprehensive 180-day parts and labor warranty. If the same issue comes back within that 180-day period, we will return to your home at no additional charge and make it right. This warranty covers the specific repair performed, giving you peace of mind.'
     },
     {
       question: 'How quickly can you come to my Bay Area home for appliance repair?',

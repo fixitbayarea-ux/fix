@@ -283,7 +283,7 @@ const MaintenanceHub = () => {
     },
     {
       question: 'Is there a warranty on maintenance work?',
-      answer: 'Yes. All maintenance work includes our 180-day warranty. If an issue arises with components we serviced or adjusted during maintenance, we\'ll return at no charge to address it within the 6-month warranty period.'
+      answer: 'Yes. All maintenance work includes our 180-day warranty. If an issue arises with components we serviced or adjusted during maintenance, we\'ll return at no charge to address it within the 180-day warranty period.'
     }
   ];
 

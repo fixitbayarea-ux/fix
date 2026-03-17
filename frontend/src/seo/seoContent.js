@@ -163,7 +163,7 @@ function getCityContent(citySlug) {
   const cityName = citySlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   
   return {
-    title: `Appliance Repair ${cityName} | Same-Day Service | FixitBay`,
+    title: `Appliance Repair ${cityName} | Fast Same-Day Service | FixitBay`,
     description: `Licensed & insured appliance repair in ${cityName} and nearby areas. $60 diagnostic applied to repair. Same/next-day available. 180-day warranty.`,
     h1: `Appliance Repair in ${cityName}, CA`,
     content: `

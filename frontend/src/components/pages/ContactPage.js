@@ -226,7 +226,7 @@ const ContactPage = () => {
                 <div style={EYE}>SERVICE AREA</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 22, color: '#1A1A1A', marginBottom: 12 }}>We Come to You</h3>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.7, marginBottom: 0 }}>
-                  Contact FixitBay LLC today for same-day or next-day service. Our licensed and insured technicians are ready to fix your refrigerator, washer, dryer, dishwasher, oven, and other appliances with a comprehensive 6-month warranty on all repairs.
+                  Contact FixitBay LLC today for same-day or next-day service. Our licensed and insured technicians are ready to fix your refrigerator, washer, dryer, dishwasher, oven, and other appliances with a comprehensive 180-day warranty on all repairs.
                 </p>
                 <div style={{ height: 1, background: 'rgba(255,87,34,0.15)', margin: '20px 0' }} />
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
