@@ -318,7 +318,7 @@ function getCityServiceContent(citySlug, serviceSlug) {
   const range = pricing[serviceSlug] || '$150–$350';
   return {
     title: `${serviceName} Repair ${cityName} | Same-Day | FixitBay`,
-    description: `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Cost: ${range} after $60 diagnostic. Same-day service. 180-day warranty. Licensed & insured.`,
+    description: `Licensed ${serviceName.toLowerCase()} repair in ${cityName}, CA. Same-day & next-day service. $60 diagnostic applied to repair. 180-day warranty on parts and labor.`,
     h1: `${serviceName} Repair in ${cityName}`,
     content: `
       <p>FixitBay provides expert ${serviceName.toLowerCase()} repair in ${cityName} with same-day and next-day service. 

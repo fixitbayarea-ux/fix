@@ -37,7 +37,7 @@ const Colma = () => {
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
         pageTitle="Appliance Repair Colma | Fast Same/Next-Day | FixitBay"
-        metaDescription="Professional appliance repair in Colma near BART and retail corridors. Same/next-day options. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733."
+        metaDescription="Professional appliance repair in Colma near BART and retail corridors. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

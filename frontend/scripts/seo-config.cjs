@@ -183,7 +183,7 @@ const defaultInternalLinks = [
 const CITY_SEO_DATA = {
   'san-francisco': {
     title: 'Appliance Repair San Francisco | Same-Day Service | FixitBay',
-    description: 'Professional appliance repair in San Francisco. Same-day service available. Licensed technicians, 180-day warranty. Serving all SF neighborhoods. Call (760) 543-5733.',
+    description: 'Professional appliance repair in San Francisco. Same-day service. Licensed technicians, 180-day warranty. Serving all SF neighborhoods. Call (760) 543-5733.',
     h1: 'Professional Appliance Repair Throughout San Francisco',
     content: `
       <p style="margin-bottom:1rem;">San Francisco's unique geography — from fog-swept Outer Sunset to sunny Mission District — creates distinct challenges for home appliances. Coastal humidity affects refrigerators and dryers, while steep hills and aging infrastructure in Victorian neighborhoods require specialized repair expertise. FixitBay LLC provides comprehensive appliance repair services across all SF neighborhoods, from downtown high-rises to hillside homes.</p>
@@ -211,7 +211,7 @@ const CITY_SEO_DATA = {
   },
   'daly-city': {
     title: 'Appliance Repair Daly City | Fast Same-Day Service | FixitBay',
-    description: 'Professional appliance repair in Daly City. Same-day service in Westlake, Serramonte, and all neighborhoods. Coastal climate experts. $60 diagnostic. Call (760) 543-5733.',
+    description: 'Professional appliance repair in Daly City. Same-day service in Westlake, Serramonte & all neighborhoods. $60 diagnostic applied to repair. Call (760) 543-5733.',
     h1: 'Daly City Appliance Repair — Coastal Climate Experts',
     content: `
       <p style="margin-bottom:1rem;">Daly City's location on the San Francisco Peninsula creates unique challenges for home appliances. The city's famous fog belt brings persistent moisture that affects dryer performance, refrigerator humidity control, and gas appliance igniters. Our technicians understand these local conditions and come prepared with the right parts and solutions for Daly City's coastal microclimate.</p>
@@ -221,7 +221,7 @@ const CITY_SEO_DATA = {
   },
   'south-san-francisco': {
     title: 'Appliance Repair South San Francisco | Fast Same-Day Service | FixitBay',
-    description: 'Appliance repair in South San Francisco. Serving SSF, Sunshine Gardens & Sign Hill area.',
+    description: 'Appliance repair in South San Francisco. Same-day service in Sunshine Gardens, Sign Hill & all SSF. $60 diagnostic applied to repair. 180-day warranty.',
     h1: 'South San Francisco Appliance Repair Services',
     content: `
       <p style="margin-bottom:1rem;">South San Francisco's position between San Francisco and the Peninsula creates a diverse service area from hilltop homes to bayfront apartments. As "The Industrial City," SSF combines residential neighborhoods with biotech campuses, requiring appliance expertise for both homes and light commercial spaces. Our technicians navigate SSF daily, from Sign Hill's elevated streets to Grand Avenue's commercial corridor.</p>
@@ -241,7 +241,7 @@ const CITY_SEO_DATA = {
   },
   'pacifica': {
     title: 'Appliance Repair Pacifica | Fast Same-Day Service | FixitBay',
-    description: 'Coastal appliance repair in Pacifica. Fog and salt air experts. Same-day service.',
+    description: 'Coastal appliance repair in Pacifica. Fog and salt air experts. Same-day service. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
     h1: 'Coastal Appliance Repair Experts Serving Pacifica',
     content: `
       <p style="margin-bottom:1rem;">Pacifica's dramatic Pacific coastline creates one of the Bay Area's most challenging environments for home appliances. From Linda Mar's surf-side homes to Pedro Point's clifftop properties, marine layer fog, salt air, and coastal humidity take a toll on refrigerators, dryers, and gas appliances. Our technicians specialize in diagnosing and preventing the corrosion, moisture, and airflow issues unique to Pacifica's oceanfront location.</p>
@@ -251,7 +251,7 @@ const CITY_SEO_DATA = {
   },
   'millbrae': {
     title: 'Appliance Repair Millbrae | Fast Same-Day Service | FixitBay',
-    description: 'Appliance repair in Millbrae. Licensed technicians near BART. Same-day available.',
+    description: 'Appliance repair in Millbrae near BART. Licensed technicians. Same-day & next-day service. $60 diagnostic applied to repair. 180-day warranty.',
     h1: 'Millbrae Appliance Repair Services',
     content: `
       <p style="margin-bottom:1rem;">Millbrae's unique position on the San Francisco Bay creates a diverse community from bayside flats to hillside homes overlooking the water. Our technicians serve Millbrae daily, navigating from El Camino Real's commercial corridor to residential neighborhoods throughout the city. We understand Millbrae's mix of mid-century homes, modern condos near transit, and newer developments, along with the appliances common in each.</p>
@@ -261,7 +261,7 @@ const CITY_SEO_DATA = {
   },
   'colma': {
     title: 'Appliance Repair Colma | Fast Same/Next-Day | FixitBay',
-    description: 'Professional appliance repair in Colma near BART and retail corridors. Same/next-day options. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+    description: 'Professional appliance repair in Colma near BART and retail corridors. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
     h1: 'Fast Appliance Repair in Colma, CA',
     content: `
       <p style="margin-bottom:1rem;">Colma's unique position as one of the smallest incorporated towns in California creates a tight-knit community with specific appliance service needs. Our technicians know Colma's layout intimately — from Hillside Boulevard to Lawndale Boulevard, and the residential areas surrounding Colma BART. We navigate the town's compact geography quickly, ensuring fast response times for all appliance emergencies.</p>
@@ -291,7 +291,7 @@ const CITY_SEO_DATA = {
   },
   'san-rafael': {
     title: 'Appliance Repair San Rafael | Fast Same-Day Service | FixitBay',
-    description: 'Appliance repair in San Rafael, Marin County. Serving Terra Linda, Dominican, Downtown.',
+    description: 'Appliance repair in San Rafael, Marin County. Serving Terra Linda, Dominican & Downtown. $60 diagnostic applied to repair. 180-day warranty.',
     h1: 'San Rafael Appliance Repair Services',
     content: `
       <p style="margin-bottom:1rem;">San Rafael, as Marin County's largest city, presents diverse appliance service needs from downtown apartments to hillside estates. Our technicians navigate San Rafael daily, from Fourth Street's commercial district to Terra Linda's residential neighborhoods and Marinwood's family homes. We understand San Rafael's mix of housing styles and the specific appliance challenges each area faces.</p>
@@ -301,7 +301,7 @@ const CITY_SEO_DATA = {
   },
   'novato': {
     title: 'Appliance Repair Novato | Fast Same-Day Service | FixitBay',
-    description: 'Appliance repair in Novato, North Marin. Hamilton & Downtown. Same-day available.',
+    description: 'Appliance repair in Novato, North Marin. Serving Hamilton & Downtown. Same-day service. $60 diagnostic applied to repair. 180-day warranty on parts and labor.',
     h1: "Novato Appliance Repair — North Marin's Largest City",
     content: `
       <p style="margin-bottom:1rem;">Novato, as North Marin's largest city, offers diverse appliance service needs from downtown to suburban neighborhoods. Our technicians serve all Novato areas including Bel Marin Keys, Hamilton, San Marin, and Ignacio. We navigate Novato's geography efficiently, providing fast response throughout this sprawling North Bay community.</p>
@@ -311,7 +311,7 @@ const CITY_SEO_DATA = {
   },
   'mill-valley': {
     title: 'Appliance Repair Mill Valley | Fast Same-Day Service | FixitBay',
-    description: 'Appliance repair in Mill Valley, Marin. Hillside home experts. Same-day service.',
+    description: 'Appliance repair in Mill Valley, Marin. Hillside home experts. Same-day service. $60 diagnostic applied to repair. 180-day warranty on parts and labor.',
     h1: 'Mill Valley Appliance Repair — Hillside & Redwood Specialists',
     content: `
       <p style="margin-bottom:1rem;">Mill Valley's dramatic hillside setting beneath Mount Tamalpais creates unique challenges for home appliances. Steep terrain, redwood microclimates, and elevation changes affect everything from refrigerator cooling to dryer venting. Our technicians navigate Mill Valley's winding roads daily, from downtown's commercial district to Tam Valley's hillside homes, understanding both the geography and the upscale appliances common in this affluent Marin community.</p>
@@ -321,7 +321,7 @@ const CITY_SEO_DATA = {
   },
   'sausalito': {
     title: 'Appliance Repair Sausalito | Fast Same-Day Service | FixitBay',
-    description: 'Appliance repair in Sausalito. Houseboat & hillside specialists. Same-day service.',
+    description: 'Appliance repair in Sausalito. Houseboat & hillside specialists. Same-day service. $60 diagnostic applied to repair. 180-day warranty on parts and labor.',
     h1: 'Sausalito Appliance Repair — Premium & Hillside Specialists',
     content: `
       <p style="margin-bottom:1rem;">Sausalito's stunning hillside location overlooking San Francisco Bay creates both beauty and complexity for appliance service. From waterfront houseboats to hillside estates with panoramic views, we navigate Sausalito's unique geography daily. Our technicians understand the challenges of steep terrain, limited access, and the premium appliances common in this affluent Marin community.</p>
@@ -341,7 +341,7 @@ const CITY_SEO_DATA = {
   },
   'tiburon': {
     title: 'Appliance Repair Tiburon | Fast Same-Day Service | FixitBay',
-    description: 'Luxury appliance repair in Tiburon. Sub-Zero, Wolf, Thermador specialists. Same-day.',
+    description: 'Luxury appliance repair in Tiburon. Sub-Zero, Wolf, Thermador specialists. Same-day service. $60 diagnostic applied to repair. 180-day warranty.',
     h1: 'Tiburon Appliance Repair — Premium & Waterfront Specialists',
     content: `
       <p style="margin-bottom:1rem;">Tiburon's stunning waterfront location on the Marin Peninsula features luxurious homes and premium appliances. Our technicians specialize in high-end brands like Sub-Zero, Wolf, Thermador, Viking, and Miele that are standard in Tiburon homes. We understand both the sophisticated appliances and the service expectations of Tiburon homeowners overlooking San Francisco Bay.</p>
@@ -674,7 +674,7 @@ function getSEOContent(route) {
     return {
       title: 'Appliance Repair Tips & Guides | FixitBay Blog',
       robots: 'index, follow',
-      description: 'Expert appliance repair tips, maintenance guides, and troubleshooting advice from FixitBay. Learn how to care for your refrigerator, washer, dryer, dishwasher, and more.',
+      description: 'Expert appliance repair tips, maintenance guides, and troubleshooting advice from FixitBay. Care for your refrigerator, washer, dryer, dishwasher, and more.',
       h1: 'Appliance Repair Blog',
       content: `
         <p style="margin-bottom: 1rem;">Get expert tips on appliance maintenance, troubleshooting, and repair from the FixitBay team. Our guides cover common issues with refrigerators, washers, dryers, dishwashers, ovens, and more across San Francisco, Peninsula, and North Bay.</p>
@@ -921,7 +921,7 @@ function getSEOContent(route) {
       return {
         title: `Appliance Repair in ${city.name}, CA | FixitBay - Same Day Service`,
         robots: 'index, follow',
-        description: `Professional appliance repair in ${city.name}, CA. Licensed technicians, 180-day warranty, same-day service. Refrigerators, washers, dryers & more. Call (760) 543-5733!`,
+        description: `Professional appliance repair in ${city.name}, CA. Same-day & next-day service. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.`,
         h1: `Appliance Repair in ${city.name}, CA`,
         content: `
           <p style="margin-bottom: 1rem;">FixitBay provides professional appliance repair service in ${city.name}, CA and surrounding areas. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, and more throughout ${city.name}.</p>
@@ -952,7 +952,7 @@ function getSEOContent(route) {
         return {
           title: `${serviceName} Repair ${cityName} | Same-Day | FixitBay`,
           robots: 'index, follow',
-          description: `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Cost: ${range} after $60 diagnostic. Same-day service. 180-day warranty. Licensed & insured. Call (760) 543-5733.`,
+          description: `Licensed ${serviceName.toLowerCase()} repair in ${cityName}, CA. Same-day & next-day service. $60 diagnostic applied to repair. 180-day warranty on parts and labor.`,
           h1: `${serviceName} Repair in ${cityName}`,
           content: `
             <p style="margin-bottom:1rem;">FixitBay provides professional ${serviceName.toLowerCase()} repair throughout ${cityName} with same-day and next-day availability. Our licensed technicians arrive with common ${serviceName.toLowerCase()} parts stocked\u2014including thermostats, pumps, motors, and control boards\u2014enabling us to complete most repairs during the first visit.</p>
@@ -1001,7 +1001,7 @@ function getSEOContent(route) {
     const SERVICE_DATA = {
       'refrigerator': {
         title: 'Refrigerator Repair San Francisco & Bay Area | Same-Day | FixitBay',
-        desc: 'Expert refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Same-day service. Call (760) 543-5733.',
+        desc: 'Expert refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. 180-day warranty. Same-day service. Call (760) 543-5733.',
         h1: 'Refrigerator Repair in San Francisco & Bay Area',
         schemas: [
           {
@@ -1163,7 +1163,7 @@ function getSEOContent(route) {
       },
       'ice-maker': {
         title: 'Ice Maker Repair San Francisco & Bay Area | Same-Day | FixitBay',
-        desc: 'Expert ice maker repair in San Francisco & Bay Area. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+        desc: 'Expert ice maker repair in San Francisco & Bay Area. Same-day service. $60 diagnostic applied to repair cost. 180-day warranty on parts and labor.',
         h1: 'Ice Maker Repair in San Francisco & Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your ice maker stops making ice, leaks water, or produces bad-tasting cubes, FixitBay provides same-day repair across San Francisco, the Peninsula, and North Bay. We fix water inlet valves, ice maker assemblies, frozen lines, filters, and dispenser motors for built-in and refrigerator ice makers.</p>
@@ -1180,7 +1180,7 @@ function getSEOContent(route) {
       },
       'wine-cooler': {
         title: 'Wine Cooler Repair San Francisco & Bay Area | Same-Day | FixitBay',
-        desc: 'Specialized wine refrigerator repair in San Francisco & Bay Area. Temperature, humidity, compressor issues. Same-day service. 180-day warranty. Call (760) 543-5733.',
+        desc: 'Wine cooler and wine refrigerator repair in San Francisco & Bay Area. Temperature and humidity issues. Same-day service. 180-day warranty. Call (760) 543-5733.',
         h1: 'Wine Cooler Repair in San Francisco & Bay Area',
         content: `
           <p style="margin-bottom:1rem;">Wine refrigerators require precise temperature and humidity control. Our technicians specialize in single-zone, dual-zone, and built-in wine coolers — diagnosing thermostat failures, compressor issues, humidity problems, and vibration concerns. We respond urgently to prevent wine damage from temperature fluctuations.</p>
@@ -1265,7 +1265,7 @@ function getSEOContent(route) {
     return {
       title: `${serviceName} Repair in San Francisco & Bay Area | FixitBay`,
       robots: 'index, follow',
-      description: `Professional ${serviceName.toLowerCase()} repair in San Francisco & Bay Area. $60 diagnostic applied to repair. 180-day warranty. Same-day service. Call (760) 543-5733.`,
+      description: `Professional ${serviceName.toLowerCase()} repair in San Francisco & Bay Area. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`,
       h1: `${serviceName} Repair in San Francisco & Bay Area`,
       content: `
         <p style="margin-bottom: 1rem;">When your ${serviceName.toLowerCase()} breaks down, FixitBay provides fast, reliable repair service across San Francisco, the Peninsula, and North Bay. Our licensed technicians arrive fully equipped to diagnose and fix most issues on the same visit.</p>

@@ -354,7 +354,7 @@ const CityServicePage = () => {
   };
 
   const pageTitle = `${serviceName} Repair ${cityName} | Same-Day | FixitBay`;
-  const metaDescription = `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Cost: ${pricing.range} after $60 diagnostic. Same-day service in ${cityContext.neighborhoods}. 180-day warranty. Licensed & insured.`;
+  const metaDescription = `Licensed ${serviceName.toLowerCase()} repair in ${cityName}, CA. Same-day & next-day service. $60 diagnostic applied to repair. 180-day warranty on parts and labor.`;
 
   // Rich service description with local context
   const serviceDescription = {
