@@ -1,0 +1,112 @@
+{
+  "summary": "Tested internal linking for city and service pages. 6/8 tests PASSED. CRITICAL BUG: City pages (/daly-city-appliance-repair, /san-francisco-appliance-repair etc) are MISSING the 'Popular Repairs in [City]' section with links to city+service pages. The code for this section exists (lines 1018-1041) but is placed OUTSIDE the city-specific layout block which returns early at line 656. Service pages work correctly - city chips link to city+service pages for services with routes (refrigerator, washer, dryer, dishwasher, oven, wine-cooler, ice-maker) and fall back to city+appliance pages for others (cooktop, freezer, garbage-disposal).",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "critical": [
+      {
+        "component": "ApplianceRepairPageNew.js",
+        "issue": "City pages MISSING 'Popular Repairs in [City]' section - the section code (lines 1018-1041) is placed OUTSIDE the city-specific layout block that returns early at line 656, so it never executes for city pages",
+        "priority": "HIGH",
+        "affected_pages": [
+          "/daly-city-appliance-repair",
+          "/san-francisco-appliance-repair",
+          "All /{city}-appliance-repair pages"
+        ],
+        "expected": "City pages should have a 'Popular Repairs in [City]' section with links to /{city}-refrigerator-repair, /{city}-washer-repair, etc",
+        "actual": "Section not present - city pages only have 'Every Major Appliance' cards linking to generic service pages like /refrigerator-repair",
+        "fix": "Move the 'Popular Repairs' section code (lines 1018-1041) INSIDE the city-specific layout block (before line 656 return statement), or duplicate it within the city layout"
+      }
+    ],
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_results": {
+    "test_1_city_page_popular_repairs_section": {
+      "url": "/daly-city-appliance-repair",
+      "description": "City page should have 'Popular Repairs in Daly City' section",
+      "expected": "Section with links to /daly-city-refrigerator-repair, /daly-city-washer-repair, etc",
+      "actual": "Section NOT found on page",
+      "status": "FAIL"
+    },
+    "test_2_service_page_city_chips": {
+      "url": "/refrigerator-repair",
+      "description": "Service page city chips should link to city+service pages",
+      "expected": "City chips link to /{city}-refrigerator-repair",
+      "actual": "18 city+refrigerator links found including /daly-city-refrigerator-repair, /san-francisco-refrigerator-repair",
+      "status": "PASS"
+    },
+    "test_3_cooktop_fallback": {
+      "url": "/cooktop-repair",
+      "description": "Cooktop service page should fall back to city+appliance links",
+      "expected": "City chips link to /{city}-appliance-repair (not /{city}-cooktop-repair)",
+      "actual": "No city+cooktop links found, city+appliance links present as expected",
+      "status": "PASS"
+    },
+    "test_4_navigation_service_to_city_service": {
+      "url": "/refrigerator-repair -> /daly-city-refrigerator-repair",
+      "description": "Clicking Daly City chip navigates to city+service page",
+      "actual": "Navigation successful, H1 shows 'Refrigerator Repair in Daly City'",
+      "status": "PASS"
+    },
+    "test_5_city_service_page_links": {
+      "url": "/daly-city-refrigerator-repair",
+      "description": "City+service page has city chips linking to other city+service pages",
+      "actual": "Found links to /san-francisco-refrigerator-repair, /south-san-francisco-refrigerator-repair, etc",
+      "status": "PASS"
+    },
+    "test_6_washer_service_city_links": {
+      "url": "/washer-repair",
+      "description": "Washer service page city chips link to city+washer pages",
+      "actual": "Found /daly-city-washer-repair, /san-francisco-washer-repair, /mill-valley-washer-repair",
+      "status": "PASS"
+    },
+    "test_7_sf_city_page_popular_repairs": {
+      "url": "/san-francisco-appliance-repair",
+      "description": "San Francisco city page should have 'Popular Repairs' section",
+      "expected": "Section with links to /san-francisco-refrigerator-repair, etc",
+      "actual": "Section NOT found - no city+service links on page",
+      "status": "FAIL"
+    },
+    "test_8_existing_content_renders": {
+      "url": "/daly-city-appliance-repair",
+      "description": "Existing city page content renders correctly",
+      "checks": {
+        "H1": "PASS - 'Appliance Repair in Daly City'",
+        "Pricing ($60, 180-Day)": "PASS",
+        "FAQs section": "PASS",
+        "JSON-LD schema": "PASS",
+        "Common Problems section": "PASS",
+        "Services section": "PASS"
+      },
+      "status": "PASS"
+    }
+  },
+  "code_analysis": {
+    "root_cause": "The 'Popular Repairs' section code (lines 1018-1041 in ApplianceRepairPageNew.js) checks `{isCity && ...}` but is placed AFTER the city-specific layout block that returns early at line 656. The city layout (lines 309-656) has its own return statement, so any code after line 656 never executes for city pages.",
+    "affected_code_location": "/app/frontend/src/components/templates/ApplianceRepairPageNew.js lines 1018-1041",
+    "early_return_location": "/app/frontend/src/components/templates/ApplianceRepairPageNew.js line 656"
+  },
+  "test_report_links": [],
+  "action_items": [
+    "CRITICAL: Add 'Popular Repairs in [City]' section to city-specific layout in ApplianceRepairPageNew.js - move code from lines 1018-1041 INTO the city layout block (before line 656 return) or duplicate it within the city layout",
+    "The section should render links to /{city}-{service}-repair for: refrigerator, washer, dryer, dishwasher, oven, wine-cooler, ice-maker"
+  ],
+  "critical_code_review_comments": [
+    "Code for 'Popular Repairs' section exists at lines 1018-1041 but is unreachable for city pages due to early return at line 656",
+    "Service pages correctly implement conditional city+service links based on CITY_SERVICE_SVCS list (lines 944-973)",
+    "seo-config.cjs has correct popularRepairsClusterHTML function that generates the same city+service links for prerendered HTML"
+  ],
+  "updated_files": [],
+  "success_rate": {
+    "frontend": "75% (6/8 tests passed)"
+  },
+  "seed_data_creation": "None",
+  "retest_needed": true,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "City pages are missing 'Popular Repairs' section. The code exists but is unreachable. Service page city chips work correctly - linking to city+service for eligible services and city+appliance for others. After fix, retest /daly-city-appliance-repair and /san-francisco-appliance-repair for 'Popular Repairs in [City]' section presence.",
+  "rca_of_the_issue": "The ApplianceRepairPageNew component has two separate render paths: city-specific layout (lines 309-656) and service layout (lines 660+). The city layout has an early return at line 656, so code at lines 1018-1041 for 'Popular Repairs' never executes for city pages. FIX: Add the Popular Repairs section inside the city-specific layout block before the return statement."
+}

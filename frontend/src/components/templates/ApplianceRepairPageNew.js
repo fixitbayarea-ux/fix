@@ -941,29 +941,36 @@ const ApplianceRepairPageNew = ({
       )}
 
       {/* ═══ SERVICE AREAS ═══ */}
-      {!isCity && !isBrand && !isCommercial && (
-        <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
-          <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-            <div style={{ ...S.eyebrow, marginBottom: 10 }}>COVERAGE</div>
-            <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 10 }}>Service Areas for {appliance} {serviceWord}</h2>
-            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>We serve San Francisco, Peninsula &amp; North Bay / Marin County</p>
-            <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#4A5568', marginBottom: 16, lineHeight: 1.7 }}>We provide {appliance.toLowerCase()} {serviceWord.toLowerCase()} throughout San Francisco, Peninsula, and Marin County — including Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara, Mill Valley, San Rafael, Sausalito, Novato, Corte Madera, Larkspur, Greenbrae, Tiburon, Fairfax, San Anselmo, and Ross. Same-day and next-day appointments available across all service areas.</p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'flex-start' }}>
-              {['San Francisco','Daly City','South San Francisco','Colma','Brisbane','San Bruno','Millbrae','Pacifica','Montara','Sausalito','Mill Valley','Tiburon','Belvedere Tiburon','Corte Madera','San Rafael','Larkspur','Greenbrae','Novato','Ross','Fairfax','San Anselmo','San Quentin'].map(city => {
-                const slug = city.toLowerCase().replace(/\s+/g, '-');
-                return (
-                  <a key={city} href={`/${slug}-appliance-repair`} style={{ fontFamily: S.font, fontWeight: 500, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.10)', borderRadius: 20, padding: '7px 16px', whiteSpace: 'nowrap', cursor: 'pointer', transition: 'all 0.15s ease' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#0D1B2A'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.10)'; }}>
-                    {city}
-                  </a>
-                );
-              })}
+      {!isCity && !isBrand && !isCommercial && (() => {
+        const CITY_SERVICE_SLUGS = ['san-francisco','daly-city','south-san-francisco','san-bruno','pacifica','millbrae','mill-valley','san-rafael','sausalito','novato','corte-madera','tiburon','belvedere','larkspur','greenbrae','ross','fairfax','san-anselmo'];
+        const CITY_SERVICE_SVCS = ['refrigerator','washer','dryer','dishwasher','oven','wine-cooler','ice-maker'];
+        const svcSlug = appliance ? appliance.toLowerCase().replace(/\s+/g, '-').replace(/-appliance$/, '') : '';
+        const hasCityServiceRoutes = CITY_SERVICE_SVCS.includes(svcSlug);
+        return (
+          <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
+            <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+              <div style={{ ...S.eyebrow, marginBottom: 10 }}>COVERAGE</div>
+              <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 10 }}>Service Areas for {appliance} {serviceWord}</h2>
+              <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>We serve San Francisco, Peninsula &amp; North Bay / Marin County</p>
+              <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#4A5568', marginBottom: 16, lineHeight: 1.7 }}>We provide {appliance.toLowerCase()} {serviceWord.toLowerCase()} throughout San Francisco, Peninsula, and Marin County — including Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara, Mill Valley, San Rafael, Sausalito, Novato, Corte Madera, Larkspur, Greenbrae, Tiburon, Fairfax, San Anselmo, and Ross. Same-day and next-day appointments available across all service areas.</p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'flex-start' }}>
+                {['San Francisco','Daly City','South San Francisco','Colma','Brisbane','San Bruno','Millbrae','Pacifica','Montara','Sausalito','Mill Valley','Tiburon','Belvedere','Corte Madera','San Rafael','Larkspur','Greenbrae','Novato','Ross','Fairfax','San Anselmo'].map(city => {
+                  const slug = city.toLowerCase().replace(/\s+/g, '-');
+                  const href = hasCityServiceRoutes && CITY_SERVICE_SLUGS.includes(slug) ? `/${slug}-${svcSlug}-repair` : `/${slug}-appliance-repair`;
+                  return (
+                    <Link key={city} to={href} style={{ fontFamily: S.font, fontWeight: 500, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.10)', borderRadius: 20, padding: '7px 16px', whiteSpace: 'nowrap', cursor: 'pointer', transition: 'all 0.15s ease' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#0D1B2A'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.10)'; }}>
+                      {city}
+                    </Link>
+                  );
+                })}
+              </div>
+              <p style={{ marginTop: 20 }}>
+                <Link to="/service-areas" style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#FF5722', textDecoration: 'none', transition: 'text-decoration 0.2s' }} onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'} onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}>View all service cities &rarr;</Link>
+              </p>
             </div>
-            <p style={{ marginTop: 20 }}>
-              <a href="/service-areas" style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#FF5722', textDecoration: 'none', transition: 'text-decoration 0.2s' }} onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'} onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}>View all 22 service cities &rarr;</a>
-            </p>
-          </div>
-        </section>
-      )}
+          </section>
+        );
+      })()}
 
       {/* ═══ CITY/BRAND SPECIFIC ═══ */}
       {isBrand && appliance && (() => {
@@ -1008,26 +1015,30 @@ const ApplianceRepairPageNew = ({
         );
       })()}
 
-      {/* City popular repairs */}
-      {isCity && (
-        <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
-          <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-            <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 24 }}>Popular Repairs in {cityName}</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4" style={{ gap: 12 }}>
-              {[
-                { href: '/refrigerator-repair', label: 'Refrigerator' }, { href: '/washer-repair', label: 'Washer' },
-                { href: '/dryer-repair', label: 'Dryer' }, { href: '/dishwasher-repair', label: 'Dishwasher' },
-                { href: '/oven-repair', label: 'Oven & Range' }, { href: '/cooktop-repair', label: 'Cooktop' },
-                { href: '/freezer-repair', label: 'Freezer' }, { href: '/ice-maker-repair', label: 'Ice Maker' },
-              ].map(s => (
-                <a key={s.href} href={s.href} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#fff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; }}>
-                  <Wrench size={14} style={{ color: '#FF5722' }} /> {s.label}
-                </a>
-              ))}
+      {/* City popular repairs — link to city+service pages for internal linking */}
+      {isCity && (() => {
+        const cs = cityName.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
+        const repairs = [
+          { label: 'Refrigerator', svc: 'refrigerator' }, { label: 'Washer', svc: 'washer' },
+          { label: 'Dryer', svc: 'dryer' }, { label: 'Dishwasher', svc: 'dishwasher' },
+          { label: 'Oven & Range', svc: 'oven' }, { label: 'Wine Cooler', svc: 'wine-cooler' },
+          { label: 'Ice Maker', svc: 'ice-maker' },
+        ];
+        return (
+          <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
+            <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+              <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 24 }}>Popular Repairs in {cityName}</h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4" style={{ gap: 12 }}>
+                {repairs.map(s => (
+                  <Link key={s.svc} to={`/${cs}-${s.svc}-repair`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#fff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; }}>
+                    <Wrench size={14} style={{ color: '#FF5722' }} /> {s.label} Repair
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      )}
+          </section>
+        );
+      })()}
 
       {/* Template already has compact Service Areas above — children (ServiceAreasList) removed to avoid duplicate */}
 

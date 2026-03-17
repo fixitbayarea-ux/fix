@@ -44,16 +44,20 @@ const KEY_SERVICES = [
 // Cluster link blocks for prerendered HTML
 const CLUSTER_CITIES = ALLOWED_CITIES.slice(0, 12); // Top 12 for service pages
 
-function serviceAreaClusterHTML(serviceName) {
-  const links = CLUSTER_CITIES.map(c =>
-    `<a href="/${c.slug}-appliance-repair" style="color:#1A3B5D;text-decoration:none;display:inline-block;padding:0.4rem 0.8rem;margin:0.2rem;border:1px solid #E5E7EB;border-radius:0.5rem;font-size:0.875rem;font-weight:600;">${c.name}</a>`
-  ).join(' ');
+function serviceAreaClusterHTML(serviceName, serviceSlug) {
+  const CITY_SVC_SLUGS = ['san-francisco','daly-city','south-san-francisco','san-bruno','pacifica','millbrae','mill-valley','san-rafael','sausalito','novato','corte-madera','tiburon','belvedere','larkspur','greenbrae','ross','fairfax','san-anselmo'];
+  const CITY_SVC_SERVICES = ['refrigerator','washer','dryer','dishwasher','oven','wine-cooler','ice-maker'];
+  const hasCityServiceRoutes = serviceSlug && CITY_SVC_SERVICES.includes(serviceSlug);
+  const links = CLUSTER_CITIES.map(c => {
+    const href = hasCityServiceRoutes && CITY_SVC_SLUGS.includes(c.slug) ? `/${c.slug}-${serviceSlug}-repair` : `/${c.slug}-appliance-repair`;
+    return `<a href="${href}" style="color:#1A3B5D;text-decoration:none;display:inline-block;padding:0.4rem 0.8rem;margin:0.2rem;border:1px solid #E5E7EB;border-radius:0.5rem;font-size:0.875rem;font-weight:600;">${c.name}</a>`;
+  }).join(' ');
   return `
     <div style="margin-top:2rem;padding:2rem;background:#F0F8FC;border-radius:1rem;">
       <h2 style="font-size:1.5rem;font-weight:bold;margin-bottom:0.5rem;color:#1A3B5D;">Service Areas for ${serviceName}</h2>
       <p style="font-size:0.875rem;color:#4A5568;margin-bottom:1rem;">We provide ${serviceName.toLowerCase()} across San Francisco, the Peninsula, and Marin County. Select your city for local details and availability.</p>
       <div>${links}</div>
-      <p style="margin-top:0.75rem;font-size:0.75rem;"><a href="/service-areas" style="color:#C0362C;">View all 22 service cities</a></p>
+      <p style="margin-top:0.75rem;font-size:0.75rem;"><a href="/service-areas" style="color:#C0362C;">View all service cities</a></p>
     </div>
   `;
 }
@@ -71,9 +75,16 @@ const CORE_SERVICES_FOR_CITY = [
   { href: '/wine-cooler-repair', label: 'Wine Cooler Repair' },
 ];
 
-function popularRepairsClusterHTML(cityName) {
-  const links = CORE_SERVICES_FOR_CITY.map(s =>
-    `<a href="${s.href}" style="color:#1A3B5D;text-decoration:none;display:inline-block;padding:0.4rem 0.8rem;margin:0.2rem;border:1px solid #E5E7EB;border-radius:0.5rem;font-size:0.875rem;font-weight:600;">${s.label}</a>`
+function popularRepairsClusterHTML(cityName, citySlug) {
+  const CITY_SVC_SERVICES = [
+    { svc: 'refrigerator', label: 'Refrigerator Repair' }, { svc: 'washer', label: 'Washer Repair' },
+    { svc: 'dryer', label: 'Dryer Repair' }, { svc: 'dishwasher', label: 'Dishwasher Repair' },
+    { svc: 'oven', label: 'Oven & Range Repair' }, { svc: 'wine-cooler', label: 'Wine Cooler Repair' },
+    { svc: 'ice-maker', label: 'Ice Maker Repair' },
+  ];
+  const slug = citySlug || cityName.toLowerCase().replace(/\s+/g, '-');
+  const links = CITY_SVC_SERVICES.map(s =>
+    `<a href="/${slug}-${s.svc}-repair" style="color:#1A3B5D;text-decoration:none;display:inline-block;padding:0.4rem 0.8rem;margin:0.2rem;border:1px solid #E5E7EB;border-radius:0.5rem;font-size:0.875rem;font-weight:600;">${s.label} in ${cityName}</a>`
   ).join(' ');
   return `
     <div style="margin-top:2rem;padding:2rem;background:#F0F8FC;border-radius:1rem;">
@@ -894,7 +905,7 @@ function getSEOContent(route) {
           robots: 'index, follow',
           description: cityData.description,
           h1: cityData.h1,
-          content: cityData.content + popularRepairsClusterHTML(city.name),
+          content: cityData.content + popularRepairsClusterHTML(city.name, city.slug),
           schemas: citySchemas.length > 0 ? citySchemas : undefined,
           internalLinks: [
             '/', '/services', '/service-areas', '/reviews', '/contact', '/about',
@@ -917,7 +928,7 @@ function getSEOContent(route) {
           <p style="margin-bottom: 1rem;">We offer same-day and next-day appointments in ${city.name}. Our transparent $60 diagnostic fee is fully applied to your repair cost when you proceed. Every repair includes our comprehensive 180-day warranty on both parts and labor.</p>
           <p style="margin-bottom: 1rem;">We service all major appliance brands and carry common replacement parts. Whether you live in a house, apartment, or condo in ${city.name}, our experienced technicians are ready to help.</p>
           <p>Call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> or book online today!</p>
-        ` + popularRepairsClusterHTML(city.name),
+        ` + popularRepairsClusterHTML(city.name, city.slug),
         internalLinks: defaultInternalLinks.filter(l => !CORE_SERVICES_FOR_CITY.some(s => s.href === l))
       };
     }
@@ -1244,7 +1255,7 @@ function getSEOContent(route) {
         robots: 'index, follow',
         description: data.desc,
         h1: data.h1,
-        content: data.content + serviceAreaClusterHTML(data.h1.replace(/ in San Francisco.*$/, '')),
+        content: data.content + serviceAreaClusterHTML(data.h1.replace(/ in San Francisco.*$/, ''), slug),
         schemas: data.schemas,
         internalLinks: data.links
       };
@@ -1261,7 +1272,7 @@ function getSEOContent(route) {
         <p style="margin-bottom: 1rem;">We charge a transparent $60 diagnostic fee that's fully applied to your repair cost when you proceed. Every repair is backed by our comprehensive 180-day warranty on parts and labor.</p>
         <p style="margin-bottom: 1rem;">We service all major brands including Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Viking, Thermador, Miele, and more.</p>
         <p>Call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> or book online for same-day service!</p>
-      ` + serviceAreaClusterHTML(`${serviceName} Repair`),
+      ` + serviceAreaClusterHTML(`${serviceName} Repair`, slug),
       internalLinks: defaultInternalLinks.filter(l => !CLUSTER_CITIES.some(c => `/${c.slug}-appliance-repair` === l))
     };
   }
