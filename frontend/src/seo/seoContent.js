@@ -207,6 +207,58 @@ function getCityContent(citySlug) {
     'novato': 'Appliance repair in Novato, North Marin. Hamilton & Downtown. Same-day available.',
     'tiburon': 'Luxury appliance repair in Tiburon. Sub-Zero, Wolf, Thermador specialists. Same-day.',
   };
+
+  const cityUniqueContent = {
+    'daly-city': `
+      <h2>Appliance Repair in Daly City's Fog Belt</h2>
+      <p>Daly City's coastal microclimate creates unique appliance challenges. 
+      Persistent fog increases dryer vent moisture, corrodes washer drums, and 
+      causes gas igniter failures faster than inland areas. Our technicians 
+      arrive prepared with parts for Westlake, Serramonte, and Top of the Hill homes.</p>
+      <h2>Neighborhoods We Serve in Daly City</h2>
+      <p>Westlake, Serramonte, Top of the Hill, St. Francis Heights, Crocker, 
+      Mission Terrace, Bayshore. We know local HOA protocols and building access requirements.</p>
+    `,
+    'san-rafael': `
+      <h2>Appliance Repair in San Rafael, Marin County</h2>
+      <p>San Rafael is Marin County's largest city with diverse housing — from 
+      Terra Linda tract homes to downtown Victorians to Canal District apartments. 
+      Our technicians service all building types with same-day availability throughout San Rafael.</p>
+      <h2>Neighborhoods We Serve in San Rafael</h2>
+      <p>Terra Linda, Dominican, Downtown San Rafael, Canal District, Gerstle Park, 
+      Sun Valley, Lucas Valley. We're familiar with all local roads and building types.</p>
+    `,
+    'mill-valley': `
+      <h2>Appliance Repair in Mill Valley</h2>
+      <p>Mill Valley's hillside homes, canyon properties, and historic downtown 
+      district require technicians who know how to navigate narrow roads and 
+      compact kitchens. We specialize in luxury brands common in Mill Valley — 
+      Sub-Zero, Wolf, Thermador, and Miele.</p>
+      <h2>Neighborhoods We Serve in Mill Valley</h2>
+      <p>Downtown Mill Valley, Tamalpais Valley, Alto, Homestead Valley, 
+      Blithedale Canyon, East Blithedale. We service hillside homes, condos, and luxury estates.</p>
+    `,
+    'novato': `
+      <h2>Appliance Repair in Novato, North Marin</h2>
+      <p>Novato is Marin's northernmost city with a mix of suburban neighborhoods, 
+      historic downtown, and Hamilton residential communities. We offer same-day 
+      and next-day service throughout Novato with no extra travel charges.</p>
+      <h2>Neighborhoods We Serve in Novato</h2>
+      <p>Downtown Novato, Hamilton, Ignacio, Bel Marin Keys, San Marin, 
+      Vintage Oaks. Full coverage across all Novato zip codes 94945, 94947, 94949.</p>
+    `,
+    'tiburon': `
+      <h2>Luxury Appliance Repair in Tiburon & Belvedere</h2>
+      <p>Tiburon and Belvedere homeowners expect premium service for premium appliances. 
+      Our factory-trained technicians specialize in Sub-Zero, Wolf, Thermador, Miele, 
+      and other luxury brands common in waterfront and hillside estates.</p>
+      <h2>Neighborhoods We Serve</h2>
+      <p>Downtown Tiburon, Tiburon Peninsula, Belvedere Island, Paradise Cay. 
+      We understand the access requirements for gated communities and waterfront properties.</p>
+    `
+  };
+
+  const uniqueContent = cityUniqueContent[citySlug] || '';
   
   return {
     title: `Appliance Repair ${cityName} | Fast Same-Day Service | FixitBay`,
@@ -215,6 +267,7 @@ function getCityContent(citySlug) {
     content: `
       <p>FixitBay provides professional appliance repair service in ${cityName} and throughout the Bay Area. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ice makers, and more. We understand how disruptive a broken appliance can be to your daily routine, which is why we offer same-day and next-day appointments throughout ${cityName} and surrounding areas.</p>
       <p>Our transparent pricing starts with a $60 diagnostic fee that is fully credited toward your repair when you proceed. No hidden charges, no surprises—just honest, upfront pricing. Every repair is backed by our comprehensive 180-day warranty on parts and labor, giving you long-term peace of mind.</p>
+      ${uniqueContent}
       <h2>Appliances We Repair in ${cityName}</h2>
       <ul>
         <li><strong>Refrigerator Repair:</strong> Not cooling, water leaks, ice maker issues, strange noises, temperature problems</li>
