@@ -1,0 +1,102 @@
+{
+  "summary": "Frontend-only testing of /blog/dishwasher-not-draining page. All 39+ test cases passed across desktop (1920x800) and mobile (390x844) viewports. Page renders correctly with Precision Craft design system.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": ["/app/test_reports/iteration_64.json"],
+  "action_items": [],
+  "critical_code_review_comments": [],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped)", "frontend": "100%"},
+  "test_credentials": "N/A - static blog page",
+  "seed_data_creation": "None required",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "DishwasherNotDraining blog page fully tested. All components render correctly: Hero with background, breadcrumb (Home→Blog→Dishwasher), category pill, title, subtitle. Quick Diagnosis Banner with 3-column grid (DIY Easy, DIY Moderate, Call a Pro). TOC with 9 anchor links (7 fixes + checklist + FAQ). All 7 fix sections with FIX #N badges (Fix #1-7). DarkBox components with numbered steps: Fix #1 (7 steps), Fix #2 (5 steps), Fix #3 (5 steps), Fix #4 (5 steps), Fix #5 (3 steps). Callout components for Prevention/Pro tip/Note after fixes 1-3. Fix #6 and #7 have 'When to call a pro' styled boxes with navy left border. Mid-article CTA between Fix #4 and Fix #5 with phone and book buttons. Dark checklist with 6 checkmark items. FAQ accordion with 5 items with open/close and chevron rotation. Bottom CTA with call and book buttons. Author box with 'A' avatar and credentials. Sticky sidebar with 3 widgets: Book Repair, Quick Diagnosis (5 symptom rows), Related Articles (4 links). Related Services section with 3 cards. Footer with logo, phone, copyright. Floating BOOK REPAIR button appears on desktop after scroll >300px. Mobile sticky bar with CALL/BOOK ONLINE/TEXT US buttons (hidden on desktop). All 5 phone links use tel:7605435733, all 7 book links use /book?go=1. Design tokens verified: Montserrat font, #0D1B2A dark navy, #FF5722 orange accent, #F8F5F0 cream background. SEO meta tags and 4+ JSON-LD schemas (Article, HowTo, FAQPage, BreadcrumbList) present.",
+  "tested_features": {
+    "desktop_1920x800": [
+      "Page loads at /blog/dishwasher-not-draining without errors",
+      "Hero section with background, breadcrumb (Home→Blog→Dishwasher), category pill, title, subtitle",
+      "Quick Diagnosis Banner with 3-column grid (DIY Easy, DIY Moderate, Call a Pro)",
+      "Table of Contents with 9 anchor links (7 fixes + checklist + FAQ)",
+      "All 7 fix sections render with FIX #N badges and correct IDs",
+      "DarkBox components with numbered steps: Fix #1 (7), Fix #2 (5), Fix #3 (5), Fix #4 (5), Fix #5 (3)",
+      "Callout components for Prevention/Pro tip/Note after fixes 1-3",
+      "Fix #6 and #7 have 'When to call a pro' styled boxes with navy left border",
+      "Mid-article CTA between Fix #4 and Fix #5 with phone and book buttons",
+      "Dark checklist box with 6 checkmark items",
+      "FAQ accordion with 5 items - clicking opens/closes answers with chevron rotation",
+      "Bottom CTA box with call and book buttons",
+      "Author box with avatar initial 'A' and credentials",
+      "Sticky sidebar with 3 widgets: Book Repair, Quick Diagnosis (5 symptom rows), Related Articles (4 links)",
+      "Related Services section with 3 cards",
+      "Footer with logo, phone, copyright",
+      "Floating BOOK REPAIR button appears after scrolling 300px",
+      "5 phone links with href=tel:7605435733",
+      "7 book links with href=/book?go=1",
+      "TOC anchor links scroll to correct section IDs",
+      "Data-testid attributes present on all key sections"
+    ],
+    "mobile_390x844": [
+      "Page loads on mobile viewport",
+      "Hero section responsive",
+      "Quick Diagnosis Banner responsive (single column on mobile)",
+      "TOC visible on mobile",
+      "Article content responsive (single column)",
+      "FAQ accordion clickable on mobile",
+      "Mobile sticky bar with CALL, BOOK ONLINE, TEXT US buttons",
+      "Desktop floating button hidden on mobile",
+      "Mid-article CTA visible on mobile",
+      "Bottom CTA present on mobile",
+      "Author box renders on mobile",
+      "Related services section renders on mobile (single column)",
+      "Footer visible on mobile",
+      "Sidebar flows below content on mobile",
+      "Checklist renders on mobile"
+    ],
+    "design_tokens_verified": [
+      "Font: Montserrat, sans-serif",
+      "Dark navy #0D1B2A for DarkBox, Diagnosis Banner, Bottom CTA, Checklist",
+      "Orange accent #FF5722 for buttons, links, badges, accents",
+      "Cream background #F8F5F0 for article section",
+      "White #FFFFFF for article content card"
+    ],
+    "seo_verified": [
+      "Title: Dishwasher Not Draining? 7 Quick Fixes (Most Are DIY) | FixitBay Bay Area",
+      "Meta description present",
+      "Canonical: https://fixitbay.net/blog/dishwasher-not-draining",
+      "Robots meta: index, follow",
+      "JSON-LD Article schema",
+      "JSON-LD HowTo schema (7 steps)",
+      "JSON-LD FAQPage schema (5 questions)",
+      "JSON-LD BreadcrumbList schema"
+    ],
+    "data_testid_verified": [
+      "article-hero",
+      "article-title",
+      "diagnosis-banner",
+      "toc",
+      "article-content",
+      "mid-cta",
+      "checklist",
+      "faq-section",
+      "faq-item-0 through faq-item-4",
+      "bottom-cta",
+      "author-box",
+      "sidebar",
+      "sidebar-phone",
+      "related-services",
+      "article-footer",
+      "float-btn",
+      "mobile-call",
+      "mobile-book",
+      "mobile-text"
+    ]
+  }
+}

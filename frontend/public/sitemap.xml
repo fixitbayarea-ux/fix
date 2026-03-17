@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url><loc>https://fixitbay.net/</loc><lastmod>2026-02-25</lastmod></url>
+  
+  <!-- Core Service Pages -->
+  <url><loc>https://fixitbay.net/refrigerator-repair</loc><lastmod>2026-02-20</lastmod></url>
+  <url><loc>https://fixitbay.net/washer-repair</loc><lastmod>2026-02-20</lastmod></url>
+  <url><loc>https://fixitbay.net/dryer-repair</loc><lastmod>2026-02-20</lastmod></url>
+  <url><loc>https://fixitbay.net/dishwasher-repair</loc><lastmod>2026-02-20</lastmod></url>
+  <url><loc>https://fixitbay.net/oven-repair</loc><lastmod>2026-02-27</lastmod></url>
+  <url><loc>https://fixitbay.net/range-repair</loc><lastmod>2026-02-27</lastmod></url>
+  <url><loc>https://fixitbay.net/stove-repair</loc><lastmod>2026-02-27</lastmod></url>
+  <url><loc>https://fixitbay.net/freezer-repair</loc><lastmod>2026-02-20</lastmod></url>
+  <url><loc>https://fixitbay.net/cooktop-repair</loc><lastmod>2026-02-20</lastmod></url>
+  <url><loc>https://fixitbay.net/garbage-disposal-repair</loc><lastmod>2026-02-20</lastmod></url>
+  <url><loc>https://fixitbay.net/wine-cooler-repair</loc><lastmod>2026-02-20</lastmod></url>
+  <url><loc>https://fixitbay.net/ice-maker-repair</loc><lastmod>2026-02-20</lastmod></url>
+  
+  <!-- Service Hub & Areas -->
+  <url><loc>https://fixitbay.net/services</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/service-areas</loc><lastmod>2026-02-18</lastmod></url>
+
+  <!-- City Pages — Canonical: /{city}-appliance-repair -->
+  <url><loc>https://fixitbay.net/san-francisco-appliance-repair</loc><lastmod>2026-02-18</lastmod></url>
+  <url><loc>https://fixitbay.net/daly-city-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/south-san-francisco-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/san-bruno-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/pacifica-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/millbrae-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/colma-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/brisbane-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/montara-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/mill-valley-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/san-rafael-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/sausalito-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/belvedere-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/tiburon-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/corte-madera-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/novato-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/san-quentin-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/larkspur-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/greenbrae-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/ross-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/fairfax-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+  <url><loc>https://fixitbay.net/san-anselmo-appliance-repair</loc><lastmod>2026-02-10</lastmod></url>
+
+  <!-- Commercial Services -->
+  <url><loc>https://fixitbay.net/residential-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/commercial-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/commercial-refrigerator-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/commercial-dishwasher-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/commercial-washer-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/commercial-dryer-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/commercial-oven-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/local-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  
+  <!-- Brand Pages -->
+  <url><loc>https://fixitbay.net/brands</loc><lastmod>2026-02-22</lastmod></url>
+  <url><loc>https://fixitbay.net/whirlpool-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/lg-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/samsung-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/ge-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/bosch-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/kitchenaid-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/maytag-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/frigidaire-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/kenmore-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/thermador-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/viking-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/miele-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/sub-zero-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/wolf-appliance-repair</loc><lastmod>2026-02-25</lastmod></url>
+  
+  <!-- Blog -->
+  <url><loc>https://fixitbay.net/blog</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://fixitbay.net/blog/refrigerator-not-cooling</loc><lastmod>2026-01-20</lastmod></url>
+  <url><loc>https://fixitbay.net/blog/dishwasher-maintenance</loc><lastmod>2026-01-15</lastmod></url>
+  <url><loc>https://fixitbay.net/blog/when-to-repair-vs-replace</loc><lastmod>2025-12-10</lastmod></url>
+  <url><loc>https://fixitbay.net/blog/dryer-taking-too-long</loc><lastmod>2026-01-10</lastmod></url>
+  <url><loc>https://fixitbay.net/blog/washer-error-codes</loc><lastmod>2026-01-05</lastmod></url>
+  <url><loc>https://fixitbay.net/blog/oven-temperature-calibration</loc><lastmod>2026-01-08</lastmod></url>
+  <url><loc>https://fixitbay.net/blog/dishwasher-not-draining</loc><lastmod>2026-01-12</lastmod></url>
+  
+  <!-- Maintenance Guides -->
+  <url><loc>https://fixitbay.net/maintenance</loc><lastmod>2026-02-15</lastmod></url>
+  <url><loc>https://fixitbay.net/maintenance/refrigerator</loc><lastmod>2026-01-25</lastmod></url>
+  <url><loc>https://fixitbay.net/maintenance/washer</loc><lastmod>2026-01-25</lastmod></url>
+  <url><loc>https://fixitbay.net/maintenance/dryer</loc><lastmod>2026-01-25</lastmod></url>
+  <url><loc>https://fixitbay.net/maintenance/dishwasher</loc><lastmod>2026-01-25</lastmod></url>
+  <url><loc>https://fixitbay.net/maintenance/oven-range</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/maintenance/cooktop</loc><lastmod>2026-01-25</lastmod></url>
+  <url><loc>https://fixitbay.net/maintenance/wine-cooler</loc><lastmod>2026-01-25</lastmod></url>
+  
+  <!-- Info Pages -->
+  <url><loc>https://fixitbay.net/about</loc><lastmod>2026-02-01</lastmod></url>
+  <url><loc>https://fixitbay.net/reviews</loc><lastmod>2026-02-20</lastmod></url>
+  <url><loc>https://fixitbay.net/contact</loc><lastmod>2026-02-01</lastmod></url>
+  <url><loc>https://fixitbay.net/site-map</loc><lastmod>2026-02-25</lastmod></url>
+  <url><loc>https://fixitbay.net/privacy-policy</loc><lastmod>2025-10-01</lastmod></url>
+</urlset>

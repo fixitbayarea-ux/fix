@@ -1,0 +1,164 @@
+{
+  "summary": "Complete testing of redesigned /san-francisco-appliance-repair page. All sections verified with Precision Craft design system. Hero with centered layout and gradient overlay, 10 neighborhood tabs with interactive content switching, How It Works (4 steps), Common Problems (6 cards), CTA Banner, Pricing (3 cards with MOST ASKED badge), FAQ (10 accordions), Reviews, Brands (18 logos), Service Areas (pill links), Footer, and Floating sticky button all working correctly. Non-SF pages (/refrigerator-repair, /daly-city-appliance-repair) verified to still work with their respective templates.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/test_reports/iteration_47.json"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "San Francisco page (SanFrancisco.js) is now fully standalone - does not use ApplianceRepairPageNew template",
+    "Hero section: centered layout, gradient overlay background, eyebrow 'APPLIANCE REPAIR · SAN FRANCISCO, CA', H1 'Appliance Repair in San Francisco', trust badges, BOOK/CALL CTAs, stats row (10+ Years, 180-Day Warranty, Same-Day Service)",
+    "Neighborhoods Tabs: 10 clickable tabs (The Mission, Castro, Pacific Heights, SOMA, Richmond, Sunset, Noe Valley, Marina, Haight, Bernal Heights) - clicking switches content correctly showing 3 issue cards + neighborhood info",
+    "How It Works: cream #F8F5F0 bg, 4 ghost-number steps 01-04 with orange icons",
+    "Common Problems: cream bg, 2-column grid, 6 problem cards (white bg, orange left border)",
+    "CTA Banner: dark navy #0D1B2A bg with orange top+bottom borders, Call and Book buttons",
+    "Pricing: #1A2F45 bg, 3 horizontal cards ($60 featured with MOST ASKED badge, 180-Day, $0), note below",
+    "FAQ: cream bg, 10 accordion questions with + toggle, expands with orange left border on answer",
+    "Reviews: dark bg, 2-column grid, testimonial cards with star ratings",
+    "Brands: cream bg, 18 brand logo tiles in 6-column grid with correct links",
+    "Service Areas: cream bg, 13 pill-style nearby city links in flex-wrap, 'View all 22 service cities' link",
+    "Footer: dark bg, orange top border, single row (logo+name, phone (760) 543-5733, © 2026 copyright)",
+    "Floating sticky BOOK REPAIR button appears after scrolling past hero",
+    "Mobile responsive: hero adapts, tabs scroll horizontally, grids stack properly"
+  ],
+  "updated_files": [],
+  "success_rate": {
+    "backend": "N/A (frontend-only test)",
+    "frontend": "100%"
+  },
+  "test_credentials": "None needed - static frontend",
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Iteration 47 verified complete San Francisco page redesign with new standalone component (SanFrancisco.js). Key data-testid attributes: sf-hero, sf-hero-h1, sf-trust-badges, sf-hero-book, sf-hero-call, sf-neighborhoods, sf-tabs-row, sf-tab-mission/castro/pacific-heights/soma/richmond/sunset/noe-valley/marina/haight/bernal, sf-tab-panel, sf-how-it-works, sf-step-01/02/03/04, sf-problems, sf-cta-banner, sf-cta-call, sf-cta-book, sf-pricing, sf-faq, sf-faq-q-0 through sf-faq-q-9, sf-reviews, sf-brands, sf-nearby, sf-footer, sf-sticky-book. Non-SF pages (/refrigerator-repair uses ApplianceRepairPageNew, /daly-city-appliance-repair uses city template) still work correctly.",
+  "test_results": {
+    "page_url": "/san-francisco-appliance-repair",
+    "sections_verified": {
+      "hero": {
+        "data_testid": "sf-hero",
+        "layout": "centered",
+        "gradient_overlay": true,
+        "eyebrow": "APPLIANCE REPAIR · SAN FRANCISCO, CA",
+        "h1": "Appliance Repair in San Francisco",
+        "trust_badges": ["Licensed CA Technician", "4.9 Google", "License #51001"],
+        "cta_buttons": {
+          "book": {"testid": "sf-hero-book", "href": "/book?go=1"},
+          "call": {"testid": "sf-hero-call", "href": "tel:+17605435733"}
+        },
+        "stats_row": ["10+ Years", "180-Day Warranty", "Same-Day Service"]
+      },
+      "neighborhoods_tabs": {
+        "data_testid": "sf-neighborhoods",
+        "tabs_count": 10,
+        "tabs": ["The Mission", "Castro", "Pacific Heights", "SOMA", "Richmond", "Sunset", "Noe Valley", "Marina", "Haight", "Bernal Heights"],
+        "tab_switching": "PASS - content changes on click",
+        "issue_cards_per_tab": 3,
+        "neighborhood_info_panel": true
+      },
+      "how_it_works": {
+        "data_testid": "sf-how-it-works",
+        "background": "cream #F8F5F0",
+        "steps": 4,
+        "ghost_numbers": ["01", "02", "03", "04"]
+      },
+      "common_problems": {
+        "data_testid": "sf-problems",
+        "background": "cream #F8F5F0",
+        "cards": 6,
+        "card_style": "white bg, orange left border"
+      },
+      "cta_banner": {
+        "data_testid": "sf-cta-banner",
+        "background": "dark navy #0D1B2A",
+        "borders": "orange top+bottom",
+        "buttons": ["Call", "Book"]
+      },
+      "pricing": {
+        "data_testid": "sf-pricing",
+        "background": "#1A2F45",
+        "cards": [
+          {"value": "$60", "label": "Diagnostic Fee", "badge": "MOST ASKED", "featured": true},
+          {"value": "180-Day", "label": "Warranty"},
+          {"value": "$0", "label": "Hidden Fees"}
+        ],
+        "note": "Typical repairs range $150-$400 after diagnosis"
+      },
+      "faq": {
+        "data_testid": "sf-faq",
+        "background": "cream #F8F5F0",
+        "questions": 10,
+        "accordion_functional": true,
+        "toggle_icon": "+",
+        "expanded_border": "orange left border"
+      },
+      "reviews": {
+        "data_testid": "sf-reviews",
+        "background": "dark #0D1B2A",
+        "layout": "2-column grid",
+        "star_ratings": true
+      },
+      "brands": {
+        "data_testid": "sf-brands",
+        "background": "cream #F8F5F0",
+        "logos": 18,
+        "grid": "6-column",
+        "links_working": true
+      },
+      "service_areas": {
+        "data_testid": "sf-nearby",
+        "background": "cream #F8F5F0",
+        "layout": "pill-style flex-wrap",
+        "cities_count": 13,
+        "view_all_link": "/service-areas"
+      },
+      "footer": {
+        "data_testid": "sf-footer",
+        "background": "dark #0D1B2A",
+        "border": "orange top",
+        "layout": "single row",
+        "elements": ["logo+name", "phone", "copyright 2026"]
+      },
+      "floating_button": {
+        "data_testid": "sf-sticky-book",
+        "visible_after_scroll": true,
+        "href": "/book?go=1"
+      }
+    },
+    "links_verified": {
+      "hero_book": "/book?go=1",
+      "hero_call": "tel:+17605435733",
+      "cta_call": "tel:+17605435733",
+      "cta_book": "/book?go=1",
+      "brand_links": ["whirlpool-appliance-repair", "lg-appliance-repair"],
+      "nearby_cities": ["daly-city-appliance-repair", "south-san-francisco-appliance-repair"],
+      "sticky_book": "/book?go=1"
+    },
+    "mobile_responsive": {
+      "viewport": "390x844",
+      "hero_adapts": true,
+      "tabs_scroll_horizontally": true,
+      "grids_stack": true,
+      "sticky_button_visible": true
+    },
+    "non_sf_pages_regression": {
+      "refrigerator_repair": {
+        "status": "PASS",
+        "uses_template": "ApplianceRepairPageNew",
+        "sections": ["service-hero", "how-it-works", "common-problems", "brands-section"]
+      },
+      "daly_city_appliance_repair": {
+        "status": "PASS",
+        "uses_template": "city template",
+        "sections": ["city-intro", "city-services", "city-process", "city-footer"]
+      }
+    }
+  }
+}

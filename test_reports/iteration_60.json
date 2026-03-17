@@ -1,0 +1,60 @@
+{
+  "summary": "Frontend testing complete for /blog/appliance-lifespan page. All 20 test features from the Precision Craft design system passed. Page correctly implements hero with breadcrumb (Home → Blog → Expert Advice), Expert Advice pill, date/time, H1 title, Lifespan Visual Overview (5 progress bars), TOC with 8 anchor links, 5 appliance sections with lifespan badges and FactorList and TipBox, Mid-article CTA after Dryers, Quick Reference Table with 6 rows, When to Start Planning (2x2 grid of 4 cards), FAQ accordion (5 items), Bottom CTA, Author box, 3 sidebar widgets, Related Services (3 cards), footer, floating button, and mobile sticky bar.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": ["/app/test_reports/iteration_60.json"],
+  "action_items": [],
+  "critical_code_review_comments": [],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (frontend only)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "The /blog/appliance-lifespan page is fully functional with all Precision Craft design elements. This is a static React component with no backend API calls. Uses custom SEOMetaTags + useSchemas for SEO (NOT react-helmet-async). TipBox uses dot bullets (not numbered steps). SectionH2 uses lifespan badge format (10-13 YRS) instead of numbered circles.",
+  "test_details": {
+    "page_url": "/blog/appliance-lifespan",
+    "tests_passed": [
+      "Hero renders with breadcrumb (Home → Blog → Expert Advice)",
+      "Expert Advice pill displayed correctly",
+      "Date: January 3, 2025 shown",
+      "6 min read shown",
+      "H1 title: 'How Long Should Your Appliances Last? — Expected Lifespan Guide for Bay Area Homes'",
+      "Lifespan Visual Overview: 5 horizontal progress bars (Refrigerators 87% 10-13yrs, Washers 73% 10-12yrs, Dryers 87% 10-13yrs, Dishwashers 63% 9-10yrs, Ovens & Ranges 100% 13-15yrs)",
+      "Table of Contents with 8/8 anchor links",
+      "5 appliance sections with lifespan badges (10-13 YRS, 10-12 YRS, 10-13 YRS, 9-10 YRS, 13-15 YRS)",
+      "FactorList components with bold factor names (Type, Usage, Maintenance, Load frequency, Overloading, Fuel type, Vent maintenance, Usage intensity, Water quality, Detergent type, Filter maintenance, Self-cleaning, Heavy use) - 13 total",
+      "TipBox components with 'MAINTENANCE TIPS' header and dot bullets (5 TipBoxes, 4 tips each)",
+      "Mid-article CTA after Dryers section with Call and Book buttons",
+      "Quick Reference Table with header row (#0D1B2A bg) and 6 data rows with alternating bg (includes Microwaves 8-9 years)",
+      "When to Start Planning: 2x2 grid of 4 planning cards with icons and left orange border",
+      "FAQ accordion (5 items) opens/closes correctly with chevron rotation (matrix -1,0,0,-1 transform)",
+      "Bottom CTA with 'ADD YEARS TO YOUR APPLIANCES' eyebrow",
+      "Author box with Andrei, Licensed Appliance Technician, License #51001",
+      "Sidebar Widget 1: Book Service with 'EXTEND YOUR APPLIANCE LIFE' eyebrow, 3 info rows (All Major Appliance Brands, Same-Day Available, Licensed CA Technician)",
+      "Sidebar Widget 2: Lifespan at a Glance with 5 rows and orange year badges (rgba(255,87,34,0.1)) + tip box",
+      "Sidebar Widget 3: Related Articles with 4 links (repair-vs-replace, refrigerator-not-cooling, dryer-taking-too-long, oven-temperature-calibration)",
+      "Related Services: 3 cards (All Appliance Repair SERVICE, Repair vs Replace ARTICLE, SF Appliance Repair SERVICE)",
+      "Minimal footer with logo, phone (760) 543-5733, copyright 2026",
+      "Floating BOOK REPAIR button appears after 300px scroll on desktop (class hidden md:flex)",
+      "Mobile sticky bar with CALL, BOOK ONLINE, TEXT US buttons (class flex md:hidden)",
+      "Responsive: 2-column (748px/352px gap 40px) on desktop, 1-column on mobile"
+    ],
+    "design_system_verification": {
+      "colors_verified": [
+        "#0D1B2A (Primary dark - hero, lifespan bars, tipbox, bottom CTA, sidebar widget 1)",
+        "#1A2F45 (Secondary dark - related service cards)",
+        "#FF5722 (Orange accent - badges, CTAs, progress bars, links, checkmarks)",
+        "#F8F5F0 (Light cream - article background, TOC, FAQ, planning cards)"
+      ],
+      "font_verified": "Montserrat (const F = 'Montserrat, sans-serif')",
+      "responsive_verified": "2-column (68%/32% = 748px/352px) on desktop, 1-column (342px) on mobile"
+    }
+  }
+}

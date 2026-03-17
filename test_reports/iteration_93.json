@@ -1,0 +1,94 @@
+{
+  "summary": "Verified 5 targeted changes on ApplianceRepairPageNew.js for city pages (daly-city, millbrae). 8/9 tests PASS. One intermittent issue found with BreadcrumbList dedup due to race condition with UniversalBreadcrumb.js.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [],
+    "minor_observations": [
+      {
+        "component": "BreadcrumbList Dedup",
+        "issue": "INTERMITTENT: Sometimes 2 BreadcrumbList schemas appear (universal-breadcrumb-schema + breadcrumb-schema-Appliance Repair). Race condition between UniversalBreadcrumb.js 300ms timeout and useSchemas hook.",
+        "priority": "MEDIUM",
+        "note": "The dedup logic in ApplianceRepairPageNew.js (lines 243-252) works correctly within its own schemas. The issue is UniversalBreadcrumb.js sometimes doesn't detect the page-specific schema in time."
+      },
+      {
+        "component": "Neighborhood Pills display property",
+        "observation": "Inline style correctly has 'display: inline-flex' but computed style shows 'flex'. This is browser normalization when element is inside a flex container - functionally equivalent. All other properties (minHeight:44px, padding:10px 16px, alignItems:center) are correct.",
+        "priority": "NONE - Not a bug"
+      }
+    ]
+  },
+  "test_results": {
+    "1_service_schema": {
+      "status": "PASS",
+      "details": "Service JSON-LD schema exists with @type:'Service', name='Appliance Repair in [City]', provider.@type='LocalBusiness', provider.name='FixitBay LLC', areaServed.@type='City', offers.price='60'"
+    },
+    "2_breadcrumb_dedup": {
+      "status": "INTERMITTENT FAIL",
+      "details": "Sometimes shows 1 BreadcrumbList (PASS), sometimes shows 2 (FAIL). Race condition with UniversalBreadcrumb.js - NOT part of the 5 targeted changes",
+      "schemas_observed": [
+        "universal-breadcrumb-schema (2 items: Home > City Appliance Repair)",
+        "breadcrumb-schema-Appliance Repair (3 items: Home > Service Areas > City)"
+      ]
+    },
+    "3_faq_schema": {
+      "status": "PASS",
+      "details": "FAQPage JSON-LD schema present with 6 questions"
+    },
+    "4_section6_h2": {
+      "status": "PASS",
+      "details": "Section 6 (city-cta-banner) contains H2 with text 'Need Appliance Repair in [City] Today?'"
+    },
+    "5_section13_h3": {
+      "status": "PASS",
+      "details": "Section 13 (city-final-cta) contains H3 (NOT H2) with text 'Need Appliance Repair in [City]?' - H2 to H3 change confirmed"
+    },
+    "6_faq_buttons_touch": {
+      "status": "PASS",
+      "details": "FAQ buttons (city-faq-q-0, etc) have minHeight=48px, actual height=48px"
+    },
+    "7_neighborhood_pills": {
+      "status": "PASS",
+      "details": "Inline style has display:inline-flex, minHeight:44px, padding:10px 16px, alignItems:center. Computed shows display:flex due to flex container normalization - functionally correct."
+    },
+    "8_hero_section": {
+      "status": "PASS",
+      "details": "Hero renders with H1, book button, call button, trust badges"
+    },
+    "9_desktop_viewport": {
+      "status": "PASS",
+      "details": "Page renders correctly on 1920x1080 viewport, all 5 key sections visible"
+    }
+  },
+  "targeted_changes_verified": {
+    "1_service_schema_added": "PASS - Service schema exists with correct structure",
+    "2_breadcrumblist_dedup_logic": "PARTIAL - Dedup logic in ApplianceRepairPageNew.js works, but UniversalBreadcrumb.js race condition causes intermittent duplicates",
+    "3_h2_to_h3_change": "PASS - Section 13 correctly uses H3 instead of H2",
+    "4_faq_buttons_minheight": "PASS - minHeight:48px applied",
+    "5_neighborhood_pills_styles": "PASS - minHeight:44px, display:inline-flex (in inline style), padding:10px 16px, alignItems:center"
+  },
+  "pages_tested": [
+    "/daly-city-appliance-repair",
+    "/millbrae-appliance-repair"
+  ],
+  "test_report_links": [],
+  "action_items": [
+    "MEDIUM: Fix BreadcrumbList race condition between UniversalBreadcrumb.js and page-specific schemas. Options: (1) Increase UniversalBreadcrumb delay, (2) Have page components signal they have their own breadcrumb, (3) Move dedup logic to UniversalBreadcrumb"
+  ],
+  "critical_code_review_comments": [
+    "ApplianceRepairPageNew.js dedup logic (lines 243-252) only deduplicates within its own pageSchemas array. It cannot prevent UniversalBreadcrumb.js from also injecting a schema.",
+    "UniversalBreadcrumb.js check (lines 31-37) should skip if page-specific schema exists, but 300ms delay may not be long enough for useSchemas to have injected its schema yet."
+  ],
+  "updated_files": [],
+  "success_rate": {
+    "frontend": "89% (8/9 tests passed, 1 intermittent issue)"
+  },
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Verified 5 targeted changes on ApplianceRepairPageNew.js city pages. All pass except intermittent BreadcrumbList duplication (race condition with UniversalBreadcrumb.js - not part of the 5 changes). The inline 'display: inline-flex' on neighborhood pills correctly appears in inline style even though computed style shows 'flex' (browser normalization in flex containers)."
+}

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend=self.webpackChunkfrontend||[]).push([[2417],{2417:(n,a,e)=>{e.r(a),e.d(a,{default:()=>t});e(5043);var s=e(5327),d=e(1233),r=e(579);const t=()=>(0,r.jsx)(s.A,{brand:d.brandLandingData.bosch})}}]);
+//# sourceMappingURL=2417.55567471.chunk.js.map

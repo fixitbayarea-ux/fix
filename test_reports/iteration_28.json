@@ -1,0 +1,73 @@
+{
+  "summary": "SEO Internal Linking & SF Neighborhoods Tests - ALL 22 TESTS PASSED. Verified: (1) Service pages have exactly 12 unique city links in 'Service Areas for {Service}' cluster, (2) City pages have exactly 10 unique service links in 'Popular Repairs in {City}' cluster, (3) SF page has H2 'San Francisco Neighborhoods We Serve' with 12 clickable neighborhood links, (4) 12 neighborhood HTML files exist under build/san-francisco/, (5) sitemap.xml contains 12 neighborhood URLs, (6) React app routing fixed for neighborhood pages.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_seo_linking.py",
+    "/app/test_reports/iteration_28.json"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Fixed React Router path for SF neighborhoods: Changed from '/san-francisco/:neighborhood-appliance-repair' (invalid param syntax) to '/san-francisco/:neighborhood'",
+    "Fixed NeighborhoodPage.js to strip '-appliance-repair' suffix from URL param before looking up neighborhood data",
+    "Added cityName='San Francisco' prop to ApplianceRepairPageNew in SanFrancisco.js to enable SF Neighborhoods section rendering",
+    "Prerendered HTML files in build/ directory are correct and verified via pytest",
+    "React app now properly routes to neighborhood pages and displays content"
+  ],
+  "updated_files": [
+    "/app/frontend/src/App.js",
+    "/app/frontend/src/components/pages/NeighborhoodPage.js",
+    "/app/frontend/src/components/pages/cities/SanFrancisco.js"
+  ],
+  "success_rate": {
+    "backend": "100% (22/22 build artifact tests passed)",
+    "frontend": "100% (SF neighborhoods section, neighborhood page routing, all links verified)"
+  },
+  "test_credentials": "None needed",
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "SEO Internal Linking Phase complete. Service pages display 12 city links via CLUSTER_CITIES array in seo-config.cjs. City pages display 10 service links via CORE_SERVICES_FOR_CITY array. SF page now has 'San Francisco Neighborhoods We Serve' section with 12 clickable links. Neighborhood pages route to /san-francisco/:neighborhood where :neighborhood is like 'sunset-district-appliance-repair'. The NeighborhoodPage component strips '-appliance-repair' suffix before data lookup.",
+  "test_results": {
+    "build_artifact_tests": {
+      "refrigerator_repair_12_city_links": "PASSED",
+      "refrigerator_repair_no_duplicates": "PASSED",
+      "daly_city_10_service_links": "PASSED",
+      "daly_city_no_duplicates": "PASSED",
+      "sf_page_neighborhoods_h2": "PASSED",
+      "sf_page_12_neighborhood_links": "PASSED",
+      "12_neighborhood_html_files_exist": "PASSED",
+      "sitemap_12_neighborhood_urls": "PASSED",
+      "all_12_neighborhood_files_verified": "PASSED (12/12)"
+    },
+    "react_app_tests": {
+      "sf_page_neighborhoods_section": "PASSED - Shows 12 clickable neighborhood links",
+      "neighborhood_page_routing": "PASSED - /san-francisco/sunset-district-appliance-repair loads correctly",
+      "neighborhood_page_content": "PASSED - Displays Sunset District content with ZIP, housing info, FAQs"
+    }
+  },
+  "fixes_applied": [
+    {
+      "file": "/app/frontend/src/App.js",
+      "issue": "Invalid React Router param syntax ':neighborhood-appliance-repair'",
+      "fix": "Changed to ':neighborhood' which properly captures the full slug"
+    },
+    {
+      "file": "/app/frontend/src/components/pages/NeighborhoodPage.js",
+      "issue": "Component expected param without '-appliance-repair' suffix but route included it",
+      "fix": "Added .replace(/-appliance-repair$/, '') to strip suffix from URL param"
+    },
+    {
+      "file": "/app/frontend/src/components/pages/cities/SanFrancisco.js",
+      "issue": "SF Neighborhoods section not rendering because cityName prop was missing",
+      "fix": "Added cityName='San Francisco' prop to ApplianceRepairPageNew"
+    }
+  ]
+}

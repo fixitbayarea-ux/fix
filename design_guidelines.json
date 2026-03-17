@@ -1,0 +1,153 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "FixitBay - The Warm Professional",
+      "core_values": ["Trust", "Warmth", "Precision", "Local"],
+      "aesthetic": "Organic Tech - Blending high-end appliance precision with the warmth of a Bay Area home."
+    },
+    "typography": {
+      "font_family": "Montserrat, system-ui, -apple-system, sans-serif",
+      "weights": {
+        "light": 300,
+        "regular": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700,
+        "extrabold": 800
+      },
+      "desktop_scale": {
+        "h1": { "size": "56px", "line_height": "1.05", "tracking": "-0.02em", "weight": "800" },
+        "h2": { "size": "44px", "line_height": "1.1", "tracking": "-0.02em", "weight": "800" },
+        "h3": { "size": "26px", "line_height": "1.25", "tracking": "-0.01em", "weight": "700" },
+        "body_lg": { "size": "18px", "line_height": "1.65", "weight": "500" },
+        "body": { "size": "16px", "line_height": "1.65", "weight": "500" },
+        "caption": { "size": "14px", "line_height": "1.5", "weight": "600", "tracking": "0.02em", "case": "uppercase" }
+      },
+      "rules": [
+        "Headings MUST use tight tracking (-0.02em) for an editorial look.",
+        "Body text should be relaxed (1.65 line-height) for readability.",
+        "Use 'Medium' (500) weight for body text instead of 'Regular' (400) to increase perceived value on high-res screens."
+      ]
+    },
+    "colors": {
+      "palette": {
+        "brand": {
+          "navy": "#1A3B5D",
+          "red": "#C0362C",
+          "orange": "#E8872D",
+          "gold": "#F39C12",
+          "blue_light": "#62C2E3"
+        },
+        "neutrals": {
+          "white": "#FFFFFF",
+          "off_white": "#FAFCFE",
+          "warm_white": "#FFF8F5",
+          "peach_light": "#FFF1E8",
+          "peach_medium": "#FFE4D6",
+          "grey_border": "#D9E6F2",
+          "text_primary": "#1A3B5D",
+          "text_secondary": "#44556A",
+          "text_tertiary": "#6B7280"
+        }
+      },
+      "usage": {
+        "backgrounds": {
+          "hero": "linear-gradient(135deg, #62C2E3 0%, rgba(98, 194, 227, 0.8) 100%)",
+          "intro": "linear-gradient(180deg, #FFFFFF 0%, #FFF8F5 100%)",
+          "how_it_works": "#FFF8F5",
+          "services": "#FFFFFF",
+          "pricing": "linear-gradient(135deg, #FFF1E8 0%, #FFF8F5 100%)",
+          "reviews": "#FFFFFF",
+          "faq": "#FFFFFF",
+          "footer": "#153A5B"
+        },
+        "accents": {
+          "primary_cta": "#C0362C",
+          "secondary_cta": "#FFFFFF (with #C0362C border)",
+          "icons": "#E8872D",
+          "stars": "#F39C12"
+        }
+      }
+    },
+    "visual_enhancers": {
+      "gradients": {
+        "warm_mesh": "radial-gradient(circle at 100% 0%, #FFE4D6 0%, transparent 25%), radial-gradient(circle at 0% 100%, #E0F0FA 0%, transparent 25%)",
+        "glass_surface": "rgba(255, 255, 255, 0.72)"
+      },
+      "shadows": {
+        "card_hover": "0 20px 48px -12px rgba(232, 135, 45, 0.15)",
+        "floating": "0 24px 64px -12px rgba(26, 59, 93, 0.12)"
+      },
+      "borders": {
+        "subtle": "1px solid #E2E8F0",
+        "warm": "1px solid #F5D4BA"
+      },
+      "textures": {
+        "noise": "url('data:image/svg+xml,...') opacity 0.03"
+      }
+    },
+    "layout_strategies": {
+      "spacing": {
+        "section_padding_desktop": "96px",
+        "card_padding": "32px",
+        "grid_gap": "24px"
+      },
+      "grids": {
+        "bento_3": "grid-cols-[1.5fr_1fr_1fr]",
+        "services_dense": "grid-cols-4 (Refrigerators span 2 cols)"
+      }
+    }
+  },
+  "component_instructions": {
+    "site_navbar": {
+      "path": "/app/frontend/src/components/SiteNavbar.jsx",
+      "instruction": "Increase backdrop-blur to 'blur(32px)' and saturate to 'saturate(180%)' for a 'Crystal Glass' effect. Add a subtle 1px bottom border using 'rgba(255,255,255,0.4)' to define the edge against the hero."
+    },
+    "professional_landing_page": {
+      "path": "/app/frontend/src/components/ProfessionalLandingPage.js",
+      "sections": {
+        "intro_band": {
+          "style": "Change background to 'warm_mesh' (defined in visual_enhancers). Add a subtle 'grain' texture overlay.",
+          "typography": "Make 'Appliance Repair...' H1 tighter (tracking-tighter). Use text-balance if available."
+        },
+        "value_cards": {
+          "layout": "Use the 'Bento' layout. Make the first card (Cities) span 2 rows if content permits, or keep as is but increase padding to 'p-8'.",
+          "style": "Add a 'hover:scale-[1.02]' transition with cubic-bezier(0.25, 1, 0.5, 1) for a premium feel. Change border color on hover to '#E8872D'."
+        },
+        "how_it_works": {
+          "background": "CHANGE from '#EEF7FC' (Blue) to '#FFF8F5' (Warm White) to match the new theme.",
+          "cards": "Remove the heavy drop shadow. Use a 'flat' style with a 1px border that glows Orange on hover.",
+          "connectors": "Replace the simple chevron with a dashed orange line SVG that connects the steps visually."
+        },
+        "services": {
+          "grid": "Implement a 'Dense' grid. Make the 'Refrigerator' card span 2 columns (col-span-2) to emphasize it as the primary service.",
+          "images": "Ensure images have a subtle warm overlay (mix-blend-mode: overlay, opacity: 0.1, color: #E8872D) to unify the photography."
+        },
+        "pricing": {
+          "style": "Transform into 'Promise Cards'. heavily rounded corners (rounded-3xl). Background: white. Border: 1px solid #FFE4D6. Shadow: warm/soft."
+        },
+        "reviews": {
+          "style": "Keep the carousel but add a 'Warm Glow' behind the active card using a pseudo-element."
+        }
+      }
+    },
+    "unified_footer": {
+      "path": "/app/frontend/src/components/UnifiedFooter.js",
+      "instruction": "Add a 4px top border in '#E8872D' (Orange) to cap off the page. Ensure the text contrast is high against the Navy background."
+    }
+  },
+  "universal_guidelines": {
+    "mobile_constraint": "DO NOT TOUCH MOBILE STYLES. All CSS changes must be wrapped in '@media (min-width: 1024px)' or use 'lg:' Tailwind prefixes.",
+    "hero_constraint": "DO NOT CHANGE the Hero Artwork or Hero Typography significantly. Just ensure the surrounding elements blend well.",
+    "interaction": "All interactive elements (buttons, cards) must have a 'hover' state that lifts the element (translate-y-1) and enhances the shadow.",
+    "accessibility": "Ensure all orange/white text combinations meet WCAG AA (4.5:1). If #E8872D is too light on white, darken it slightly to #D6761F for text.",
+    "code_style": "Refactor inline styles to Tailwind classes where possible, or use a 'styles' object for cleanliness."
+  },
+  "image_urls": {
+    "textures": {
+      "noise": "https://grainy-gradients.vercel.app/noise.svg",
+      "paper": "https://www.transparenttextures.com/patterns/cream-paper.png"
+    }
+  },
+  "instructions_to_main_agent": "You are implementing a 'Warm Professional' redesign. The user wants to move away from the 'Cold/Blue' default of the past towards a 'Warm/Home' feel. Focus on the 'How It Works' section first (it's currently blue, needs to be warm). Then refine the gradients to be subtle meshes rather than linear stripes. Use the defined typography scale to create editorial hierarchy."
+}

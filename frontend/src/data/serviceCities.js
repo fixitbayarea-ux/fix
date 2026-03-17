@@ -1,0 +1,25 @@
+// Service cities for schema.org areaServed
+export const SERVICE_CITIES_SCHEMA = [
+  "San Francisco, CA",
+  "Daly City, CA",
+  "South San Francisco, CA",
+  "San Bruno, CA",
+  "Pacifica, CA",
+  "Millbrae, CA",
+  "Colma, CA",
+  "Brisbane, CA",
+  "Montara, CA",
+  "San Rafael, CA",
+  "Novato, CA",
+  "Mill Valley, CA",
+  "Sausalito, CA",
+  "Belvedere, CA",
+  "Tiburon, CA",
+  "Corte Madera, CA",
+  "San Quentin, CA",
+  "Larkspur, CA",
+  "Greenbrae, CA",
+  "Ross, CA",
+  "Fairfax, CA",
+  "San Anselmo, CA"
+];

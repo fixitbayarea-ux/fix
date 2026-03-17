@@ -1,0 +1,112 @@
+/* Sticky CTA that appears on scroll - OPTIMIZED FOR PERFORMANCE */
+
+.stickyCta {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: none;
+  
+  /* Desktop: bottom-right with safe area */
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  right: 16px;
+  
+  animation: slideInUp 0.3s ease-out;
+}
+
+.stickyCtaBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  
+  font-weight: 800;
+  line-height: 1.2;
+  white-space: nowrap;
+  
+  /* BIGGER responsive sizing */
+  font-size: clamp(16px, 1.2vw, 22px);
+  padding: clamp(14px, 1.2vw, 18px) clamp(24px, 2.2vw, 36px);
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  
+  color: #fff;
+  background: rgba(200, 30, 30, 0.95);
+  
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  
+  /* FIXED: Use only composited properties (transform, opacity) */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  
+  text-decoration: none;
+  cursor: pointer;
+  pointer-events: auto;
+  
+  /* Only transform and opacity for performance */
+  transition: transform 200ms ease, opacity 200ms ease;
+  
+  /* Hint browser for better performance */
+  will-change: transform;
+}
+
+.stickyCtaBtn:hover {
+  transform: translateY(-2px) scale(1.05);
+  opacity: 0.95;
+}
+
+/* Mobile: bottom-centered bar */
+@media (max-width: 768px) {
+  .stickyCta {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
+  }
+  
+  .stickyCtaBtn {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: clamp(17px, 4vw, 20px);
+    padding: 16px 32px;
+    display: flex;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* OPTIMIZED: Pulse animation using only transform/opacity (GPU-accelerated) */
+@media (prefers-reduced-motion: no-preference) {
+  .stickyCtaBtn {
+    animation: stickyPulseOptimized 3s ease-in-out infinite;
+  }
+  
+  @keyframes stickyPulseOptimized {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.02);
+      opacity: 0.95;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stickyCta {
+    animation: none;
+  }
+  .stickyCtaBtn {
+    animation: none;
+  }
+}

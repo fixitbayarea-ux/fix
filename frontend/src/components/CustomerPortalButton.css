@@ -1,0 +1,42 @@
+/* Housecall Pro Customer Portal Button */
+.customer-portal-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background: #0f77cc;
+  color: white;
+  border: 0;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 200ms ease;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.customer-portal-btn:hover {
+  background: #0c5fa3;
+  box-shadow: 0 4px 12px rgba(15, 119, 204, 0.3);
+  transform: translateY(-1px);
+}
+
+.customer-portal-btn:focus-visible {
+  outline: none;
+  ring: 2px solid #0f77cc;
+  ring-offset: 2px;
+}
+
+.customer-portal-btn:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .customer-portal-btn {
+    transition: background 200ms ease;
+  }
+  .customer-portal-btn:hover {
+    transform: none;
+  }
+}

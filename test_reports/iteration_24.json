@@ -1,0 +1,137 @@
+{
+  "summary": "Mobile Maintenance Pages MobileServiceLanding Template Testing Complete - All 12 test cases PASSED. Verified: (1) All 7 maintenance pages render MobileServiceLanding template on mobile (390x844 viewport), (2) Desktop renders ApplianceRepairPageNew template for regression check, (3) All pages have hero-book-btn and hero-call-btn data-testids, (4) Picture element with local hero image present on all mobile pages, (5) FAQ accordion functional on refrigerator and dishwasher pages.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": ["/app/test_reports/iteration_24.json"],
+  "action_items": [],
+  "critical_code_review_comments": [],
+  "updated_files": [],
+  "success_rate": {
+    "backend": "N/A (frontend only testing)",
+    "frontend": "100% (12/12 test cases passed)"
+  },
+  "test_credentials": "None needed",
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "All 7 maintenance pages now use MobileServiceLanding template on mobile (<768px viewport). useIsMobile hook triggers the switch. Desktop still uses ApplianceRepairPageNew template. Each mobile maintenance page has: hero-book-btn, hero-call-btn data-testids, picture element with local /images/hero/service-hero-*.webp, $60 pricing box, issues chips, brands grid, FAQ accordion, sticky bottom bar.",
+  "test_results": {
+    "mobile_maintenance_pages": {
+      "/maintenance/refrigerator": {
+        "status": "PASSED",
+        "hero_book_btn": true,
+        "hero_call_btn": true,
+        "picture_element": true,
+        "issues_chips": true,
+        "faq_section": true,
+        "pricing_box_60": true,
+        "mobile_template_detected": true
+      },
+      "/maintenance/oven-range": {
+        "status": "PASSED",
+        "hero_book_btn": true,
+        "hero_call_btn": true,
+        "picture_element": true,
+        "issues_chips": true,
+        "faq_section": true,
+        "pricing_box_60": true,
+        "mobile_template_detected": true
+      },
+      "/maintenance/dishwasher": {
+        "status": "PASSED",
+        "hero_book_btn": true,
+        "hero_call_btn": true,
+        "picture_element": true,
+        "issues_chips": true,
+        "faq_section": true,
+        "pricing_box_60": true,
+        "mobile_template_detected": true
+      },
+      "/maintenance/washer": {
+        "status": "PASSED",
+        "hero_book_btn": true,
+        "hero_call_btn": true,
+        "picture_element": true,
+        "issues_chips": true,
+        "faq_section": true,
+        "pricing_box_60": true,
+        "mobile_template_detected": true
+      },
+      "/maintenance/dryer": {
+        "status": "PASSED",
+        "hero_book_btn": true,
+        "hero_call_btn": true,
+        "picture_element": true,
+        "issues_chips": ["No Heat", "Slow Drying", "Loud Noise", "Vent Clogged", "Won't Start", "Burning Smell"],
+        "faq_section": true,
+        "pricing_box_60": true,
+        "mobile_template_detected": true
+      },
+      "/maintenance/cooktop": {
+        "status": "PASSED",
+        "hero_book_btn": true,
+        "hero_call_btn": true,
+        "picture_element": true,
+        "issues_chips": ["Won't Light", "Uneven Heat", "Gas Smell", "Not Heating"],
+        "faq_section": true,
+        "pricing_box_60": true,
+        "mobile_template_detected": true
+      },
+      "/maintenance/wine-cooler": {
+        "status": "PASSED",
+        "hero_book_btn": true,
+        "hero_call_btn": true,
+        "picture_element": true,
+        "issues_chips": ["Temp Issues", "Not Cooling", "Condensation", "Noisy", "Door Seal", "Frost"],
+        "faq_section": true,
+        "pricing_box_60": true,
+        "mobile_template_detected": true
+      }
+    },
+    "desktop_regression_tests": {
+      "/maintenance/refrigerator": {
+        "status": "PASSED",
+        "uses_desktop_template": true,
+        "no_mobile_sticky_bar": true,
+        "has_h1": true,
+        "template": "ApplianceRepairPageNew"
+      },
+      "/maintenance/oven-range": {
+        "status": "PASSED",
+        "uses_desktop_template": true,
+        "no_mobile_sticky_bar": true,
+        "has_h1": true,
+        "template": "ApplianceRepairPageNew"
+      }
+    },
+    "faq_accordion_functionality": {
+      "/maintenance/refrigerator": {
+        "status": "PASSED",
+        "faq_count": 6,
+        "accordion_expands": true,
+        "sample_question": "How much does refrigerator maintenance cost?",
+        "sample_answer_preview": "Our diagnostic fee is $60, which is applied toward the repair..."
+      },
+      "/maintenance/dishwasher": {
+        "status": "PASSED",
+        "faq_count": 6,
+        "accordion_expands": true,
+        "sample_question": "How often should I service my dishwasher?"
+      }
+    }
+  },
+  "screenshots": [
+    ".screenshots/mobile_refrigerator_maintenance.png",
+    ".screenshots/mobile_wine_cooler_maintenance.png",
+    ".screenshots/desktop_refrigerator_maintenance.png",
+    ".screenshots/faq_refrigerator_mobile.png",
+    ".screenshots/faq_dishwasher_mobile.png"
+  ]
+}

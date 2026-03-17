@@ -1,0 +1,48 @@
+{
+  "summary": "SEO Schema Testing Complete - All 10 features tested. Had to restart frontend server to fix stale index.html caching issue. After restart, all schemas render correctly. Homepage has 3 static schemas (LocalBusiness with hasOfferCatalog + 9 services, WebSite, BreadcrumbList). Service page /refrigerator-repair has 7 total schemas including FAQPage with 8 questions.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    ".screenshots/homepage_seo_test.png",
+    ".screenshots/footer_seo.png",
+    ".screenshots/service_page_seo.png"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Frontend server needed restart to pick up changes to public/index.html - hot reload may not apply to static HTML files",
+    "Multiple duplicate schemas exist (static in body + Helmet in head) - works for SEO but could be cleaned up",
+    "Service page LocalBusiness schema from ApplianceRepairPageNew.js has slightly different areaServed format (no containedInPlace) vs static index.html schema"
+  ],
+  "updated_files": [],
+  "success_rate": {
+    "backend": "N/A - skipped per request",
+    "frontend": "100% (10/10 tests passed)"
+  },
+  "test_credentials": {},
+  "seed_data_creation": "None needed",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "All SEO schema tests pass. Frontend needed a restart (sudo supervisorctl restart frontend) to pick up index.html changes - this may be needed after any public/ folder edits.",
+  "test_results": {
+    "homepage_localBusiness_exists": "PASS",
+    "homepage_no_fake_cities": "PASS - Oakland, San Jose, Berkeley, Palo Alto not in areaServed",
+    "homepage_areaServed_count": "PASS - 22 entries (21 cities + Bay Area)",
+    "homepage_hasOfferCatalog": "PASS - 9 services (Refrigerator, Washer, Dryer, Dishwasher, Oven & Range, Cooktop, Ice Maker, Wine Cooler, Garbage Disposal)",
+    "homepage_website_schema": "PASS - name='FixitBay LLC', url='https://fixitbay.net'",
+    "homepage_breadcrumb_schema": "PASS",
+    "homepage_footer_service_areas": "PASS",
+    "homepage_footer_site_map": "PASS",
+    "homepage_footer_contact": "PASS - address 1549 Franklin Street, phone (760) 543-5733, hours Mon-Fri 8am-6pm",
+    "homepage_pricing_anchor": "PASS - scrollY=3829 (> 200)",
+    "service_page_faq_schema": "PASS - 8 questions",
+    "service_page_breadcrumb": "PASS - 3 items (Home, Services, Refrigerator Repair)",
+    "service_page_localBusiness_areaServed": "PASS - 22 cities, no fake cities"
+  }
+}
