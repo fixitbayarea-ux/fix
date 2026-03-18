@@ -160,6 +160,20 @@ const ApplianceRepairCostSanFrancisco = () => {
         </ul>
         <p style={P}>San Francisco's fog-belt climate means refrigerators in Sunset, Richmond, and Daly City work harder to maintain temperature in unconditioned garages. This can shorten compressor life by 2–3 years compared to units in climate-controlled kitchens.</p>
 
+        {/* ── MID-ARTICLE CTA ── */}
+        <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
+          <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
+            <div>
+              <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
+              <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Same-day service · $60 diagnostic · 180-day warranty</p>
+            </div>
+            <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+              <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
+              <a href="/book" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)' }}>Book online →</a>
+            </div>
+          </div>
+        </div>
+
         <h2 id="washer-dryer-cost" style={H2S}>Washer & Dryer Repair Cost</h2>
         <p style={P}>Washer repairs average $150–$350 in San Francisco. Front-load washers tend to cost more due to more complex components (drum bearings, door boots). Dryer repairs are typically less expensive at $120–$300, with thermal fuse and heating element being the most common fixes.</p>
         <p style={P}>In San Francisco's multi-unit buildings, stackable washer-dryer combos require technicians experienced with compact spaces. FixitBay technicians regularly service units in Victorian flats, in-law units, and basement laundry rooms.</p>
@@ -224,6 +238,23 @@ const ApplianceRepairCostSanFrancisco = () => {
               <span style={{ fontFamily: F, fontSize: 12, color: '#4A5568', marginTop: 4, display: 'block' }}>{link.desc}</span>
             </Link>
           ))}
+        </div>
+
+        {/* ── Related Articles ── */}
+        <div data-testid="related-articles" style={{ margin: '32px 0' }}>
+          <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 22, color: '#0D1B2A', marginBottom: 16 }}>Related articles</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {[
+              { title: 'Repair vs. Replace: When to Fix Your Appliance', href: '/blog/repair-vs-replace' },
+              { title: 'How Long Do Appliances Last? Average Lifespan Guide', href: '/blog/appliance-lifespan' },
+              { title: 'Dryer Not Heating? Common Causes & Repair Cost', href: '/blog/dryer-not-heating' },
+            ].map((a, i) => (
+              <Link key={i} to={a.href} data-testid={`related-article-${i}`} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.06)', borderRadius: 4, textDecoration: 'none' }}>
+                <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#0D1B2A' }}>{a.title}</span>
+                <span style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', flexShrink: 0, marginLeft: 16 }}>Read article →</span>
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* ── CTA ── */}

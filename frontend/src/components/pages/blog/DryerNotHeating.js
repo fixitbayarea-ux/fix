@@ -136,6 +136,20 @@ const DryerNotHeating = () => {
         <p style={P}><strong style={{ color: '#1A1A1A' }}>DIY check:</strong> Disconnect the vent hose from the back of the dryer. Run the dryer for 5 minutes. If it heats up, the vent is the problem — clean it out or call a vent cleaning service.</p>
         <TipBox label="SF Tip" text="San Francisco building codes require dryer vents to terminate outside. If your vent exhausts into a crawl space or attic, it's both a fire hazard and a code violation. We see this in pre-1960 homes regularly." icon={AlertTriangle} />
 
+        {/* ── MID-ARTICLE CTA ── */}
+        <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
+          <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
+            <div>
+              <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
+              <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Same-day service · $60 diagnostic · 180-day warranty</p>
+            </div>
+            <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+              <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
+              <a href="/book" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)' }}>Book online →</a>
+            </div>
+          </div>
+        </div>
+
         {/* ── Pricing Table ── */}
         <h2 id="pricing" style={H2S}><DollarSign size={22} style={{ color: '#FF5722', display: 'inline', verticalAlign: 'middle', marginRight: 8 }} />Dryer Repair Cost in San Francisco (2026)</h2>
         <div style={{ overflowX: 'auto', margin: '16px 0 24px' }}>
@@ -225,6 +239,22 @@ const DryerNotHeating = () => {
               <span style={{ fontFamily: F, fontSize: 12, color: '#4A5568', marginTop: 4, display: 'block' }}>{link.desc}</span>
             </Link>
           ))}
+        </div>
+
+        {/* ── Related Articles ── */}
+        <div data-testid="related-articles" style={{ margin: '32px 0' }}>
+          <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 22, color: '#0D1B2A', marginBottom: 16 }}>Related articles</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {[
+              { title: 'Why Is My Dryer Taking So Long to Dry?', href: '/blog/dryer-taking-too-long' },
+              { title: 'Washer Error Codes Explained — What They Mean & How to Fix', href: '/blog/washer-error-codes' },
+            ].map((a, i) => (
+              <Link key={i} to={a.href} data-testid={`related-article-${i}`} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.06)', borderRadius: 4, textDecoration: 'none' }}>
+                <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#0D1B2A' }}>{a.title}</span>
+                <span style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', flexShrink: 0, marginLeft: 16 }}>Read article →</span>
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* ── CTA ── */}

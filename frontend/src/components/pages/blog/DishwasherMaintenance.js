@@ -133,6 +133,18 @@ const DishwasherMaintenance = () => {
                 </p>
               </div>
 
+              {/* ── MID-ARTICLE CTA ── */}
+              <div data-testid="mid-cta" className="flex items-center justify-between flex-wrap gap-4 rounded p-6 my-8" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722' }}>
+                <div>
+                  <p className="font-bold text-white text-base mb-1">Need appliance repair in San Francisco?</p>
+                  <p className="text-sm" style={{ color: 'rgba(255,255,255,0.75)' }}>Same-day service · $60 diagnostic · 180-day warranty</p>
+                </div>
+                <div className="flex gap-3 flex-wrap">
+                  <a href="tel:7605435733" className="font-bold text-sm px-5 py-2 rounded" style={{ background: '#FF5722', color: '#fff', textDecoration: 'none' }}>Call (760) 543-5733</a>
+                  <a href="/book" className="font-bold text-sm px-5 py-2 rounded border" style={{ background: 'transparent', color: '#fff', textDecoration: 'none', borderColor: 'rgba(255,255,255,0.4)' }}>Book online →</a>
+                </div>
+              </div>
+
               <div className="mb-10">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: '#1A3B5D' }}>
                   4. Run Hot Water Before Starting a Cycle
@@ -206,6 +218,22 @@ const DishwasherMaintenance = () => {
                     <span style={{ color: '#4A5568' }}><strong>Always:</strong> Run hot water before starting, use proper detergent amounts, leave door ajar after cycles</span>
                   </li>
                 </ul>
+              </div>
+
+              {/* ── Related Articles ── */}
+              <div data-testid="related-articles" className="mb-10">
+                <h2 className="text-2xl font-bold mb-4" style={{ color: '#1A3B5D' }}>Related articles</h2>
+                <div className="flex flex-col gap-3">
+                  {[
+                    { title: 'Dishwasher Not Draining? 7 Fixes to Try First', href: '/blog/dishwasher-not-draining' },
+                    { title: 'Washer Error Codes Explained — What They Mean & How to Fix', href: '/blog/washer-error-codes' },
+                  ].map((a, i) => (
+                    <Link key={i} to={a.href} data-testid={`related-article-${i}`} className="flex items-center justify-between rounded p-4" style={{ background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.06)', textDecoration: 'none' }}>
+                      <span className="font-semibold text-sm" style={{ color: '#0D1B2A' }}>{a.title}</span>
+                      <span className="font-bold text-sm ml-4 flex-shrink-0" style={{ color: '#FF5722' }}>Read article →</span>
+                    </Link>
+                  ))}
+                </div>
               </div>
 
               <div className="mt-12 p-8 rounded-xl text-center" style={{ background: 'linear-gradient(135deg, #032D55 0%, #1A3B5D 100%)' }}>
