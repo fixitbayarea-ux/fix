@@ -141,6 +141,45 @@ const nearbyLookup = Object.fromEntries(
   ])
 );
 
+// City+service cross-linking data
+const CITY_SERVICE_LINKS = {
+  'san-francisco': ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven'],
+  'daly-city': ['refrigerator', 'washer', 'dryer'],
+  'san-rafael': ['refrigerator', 'washer', 'dryer', 'dishwasher'],
+  'mill-valley': ['refrigerator', 'dryer'],
+  'novato': ['refrigerator', 'washer'],
+  'south-san-francisco': ['refrigerator', 'washer', 'dryer'],
+  'san-bruno': ['refrigerator', 'washer'],
+  'pacifica': ['refrigerator', 'dryer'],
+  'millbrae': ['refrigerator', 'washer'],
+  'sausalito': ['refrigerator'],
+  'tiburon': ['refrigerator'],
+  'corte-madera': ['refrigerator', 'dryer'],
+};
+
+const SERVICE_LABELS = {
+  refrigerator: 'Refrigerator', washer: 'Washer', dryer: 'Dryer',
+  dishwasher: 'Dishwasher', oven: 'Oven & Range',
+};
+
+// Reverse map: service → [city slugs]
+const SERVICE_CITY_LINKS = {};
+Object.entries(CITY_SERVICE_LINKS).forEach(([city, services]) => {
+  services.forEach(svc => {
+    if (!SERVICE_CITY_LINKS[svc]) SERVICE_CITY_LINKS[svc] = [];
+    SERVICE_CITY_LINKS[svc].push(city);
+  });
+});
+
+const CITY_DISPLAY_NAMES = {
+  'san-francisco': 'San Francisco', 'daly-city': 'Daly City',
+  'san-rafael': 'San Rafael', 'mill-valley': 'Mill Valley',
+  'novato': 'Novato', 'south-san-francisco': 'South San Francisco',
+  'san-bruno': 'San Bruno', 'pacifica': 'Pacifica',
+  'millbrae': 'Millbrae', 'sausalito': 'Sausalito',
+  'tiburon': 'Tiburon', 'corte-madera': 'Corte Madera',
+};
+
 /* ═══ Shared Inline Styles ═══ */
 const S = {
   font: 'Montserrat, sans-serif',
@@ -621,15 +660,19 @@ const ApplianceRepairPageNew = ({
         {/* ═══ POPULAR REPAIRS IN CITY ═══ */}
         {(() => {
           const cs = cityName.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
-          const repairs = [
-            { label: 'Refrigerator', svc: 'refrigerator' }, { label: 'Washer', svc: 'washer' },
-            { label: 'Dryer', svc: 'dryer' }, { label: 'Dishwasher', svc: 'dishwasher' },
-            { label: 'Oven & Range', svc: 'oven' }, { label: 'Wine Cooler', svc: 'wine-cooler' },
-            { label: 'Ice Maker', svc: 'ice-maker' },
-          ];
+          const cityServices = CITY_SERVICE_LINKS[cs];
+          const repairs = cityServices
+            ? cityServices.map(svc => ({ label: SERVICE_LABELS[svc] || (svc.charAt(0).toUpperCase() + svc.slice(1)), svc }))
+            : [
+                { label: 'Refrigerator', svc: 'refrigerator' }, { label: 'Washer', svc: 'washer' },
+                { label: 'Dryer', svc: 'dryer' }, { label: 'Dishwasher', svc: 'dishwasher' },
+                { label: 'Oven & Range', svc: 'oven' }, { label: 'Wine Cooler', svc: 'wine-cooler' },
+                { label: 'Ice Maker', svc: 'ice-maker' },
+              ];
           return (
             <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
               <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+                <div style={{ ...S.eyebrow, marginBottom: 10 }}>APPLIANCE REPAIR</div>
                 <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 24 }}>Popular Repairs in {cityName}</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4" style={{ gap: 12 }}>
                   {repairs.map(s => (
@@ -992,6 +1035,29 @@ const ApplianceRepairPageNew = ({
               <p style={{ marginTop: 20 }}>
                 <Link to="/service-areas" style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#FF5722', textDecoration: 'none', transition: 'text-decoration 0.2s' }} onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'} onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}>View all service cities &rarr;</Link>
               </p>
+            </div>
+          </section>
+        );
+      })()}
+
+      {/* ═══ BY CITY CROSS-LINKS ═══ */}
+      {!isCity && !isBrand && !isCommercial && !isMaintenance && (() => {
+        const svcSlug = appliance ? appliance.toLowerCase().replace(/\s+/g, '-').replace(/-appliance$/, '') : '';
+        const cities = SERVICE_CITY_LINKS[svcSlug] || [];
+        if (cities.length === 0) return null;
+        return (
+          <section style={{ background: '#FFFFFF', padding: '60px 0' }}>
+            <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+              <div style={{ ...S.eyebrow, marginBottom: 10 }}>LOCAL SERVICE</div>
+              <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 10 }}>{appliance} Repair by City</h2>
+              <p style={{ fontFamily: S.font, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>Same-day {appliance.toLowerCase()} repair available in these cities:</p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+                {cities.map(citySlug => (
+                  <Link key={citySlug} to={`/${citySlug}-${svcSlug}-repair`} data-testid={`city-service-link-${citySlug}`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 18px', display: 'inline-flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#FF5722'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.background = '#F8F5F0'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.09)'; }}>
+                    <MapPin size={13} /> {CITY_DISPLAY_NAMES[citySlug]} {appliance} Repair
+                  </Link>
+                ))}
+              </div>
             </div>
           </section>
         );

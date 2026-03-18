@@ -21,7 +21,13 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 
 ## Completed Work
 
-### Session 20 (Mar 18, 2026) — SEO Title & Description Cleanup
+### Session 21 (Mar 18, 2026) — Internal Linking (78 low-link pages)
+- In `ApplianceRepairPageNew.js` city layout: replaced hardcoded 7-service "Popular Repairs" list with `CITY_SERVICE_LINKS` per-city data — cities in the map show only their actual service pages; others fall back to full list
+- Added "by City" section on service pages (refrigerator, washer, dryer, dishwasher, oven): uses reverse `SERVICE_CITY_LINKS` map to list all cities offering that service with `/${citySlug}-${service}-repair` links
+- Added `CITY_DISPLAY_NAMES`, `SERVICE_LABELS`, and `SERVICE_CITY_LINKS` (reverse map) constants to the template
+- 233 SEO snapshots rebuilt (0 failures)
+
+
 - Fixed 30+ page titles exceeding 60 chars across all page components and seo-config.cjs:
   - Removed "Fast " from "Fast Same-Day Service" pattern across all city pages (11 in seo-config + 3 component files)
   - Removed "& Bay Area" from service page titles (Refrigerator, Dishwasher, Cooktop, Ice Maker, Wine Cooler, Stove, Range, Freezer)
