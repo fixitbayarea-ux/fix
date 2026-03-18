@@ -109,7 +109,7 @@ const EnergyEfficientAppliances = () => {
   return (
     <>
       <SEOMetaTags
-        title="How to Make Appliances More Energy Efficient — Save $440/Year | FixitBay Bay Area"
+        title="Make Your Appliances More Energy Efficient | FixitBay"
         description="Proven tips to reduce appliance energy bills by 10-25%. Refrigerator, washer, dryer, and dishwasher efficiency guide. Save $230-$440/year."
         canonical="https://fixitbay.net/blog/energy-efficient-appliances"
         ogType="article"

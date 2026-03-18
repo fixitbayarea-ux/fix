@@ -112,7 +112,7 @@ const RepairVsReplace = () => {
   return (
     <>
       <SEOMetaTags
-        title="Repair vs Replace Appliance Guide 2026 | FixitBay Bay Area — The 50% Rule Explained"
+        title="When to Repair vs Replace Your Appliance | FixitBay"
         description="Should you repair or replace your appliance? Use the 50% rule with our expert guide — age, costs, energy efficiency, and real examples."
         canonical="https://fixitbay.net/blog/when-to-repair-vs-replace"
         ogType="article"

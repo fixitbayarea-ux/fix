@@ -36,7 +36,7 @@ const Brisbane = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair Brisbane | Fast Same-Day Service | FixitBay"
+        pageTitle="Appliance Repair Brisbane | Same-Day | FixitBay"
         metaDescription="Professional appliance repair in Brisbane. Same-day hillside service. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

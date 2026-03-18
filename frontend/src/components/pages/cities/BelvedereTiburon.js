@@ -36,7 +36,7 @@ const BelvedereTiburon = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair Belvedere Tiburon | Luxury Brands | FixitBay"
+        pageTitle="Appliance Repair Belvedere Tiburon | FixitBay"
         metaDescription="Premium appliance repair in Belvedere and Tiburon. Sub-Zero, Wolf, Miele specialists. Waterfront home experts. Same-day service. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

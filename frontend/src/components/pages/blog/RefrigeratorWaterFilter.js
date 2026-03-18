@@ -84,7 +84,7 @@ const RefrigeratorWaterFilter = () => {
   return (
     <>
       <SEOMetaTags
-        title="When to Change Refrigerator Water Filter — Brand Guide 2026 | FixitBay Bay Area"
+        title="When to Change Your Refrigerator Water Filter | FixitBay"
         description="How often to change your refrigerator water filter by brand: LG, Samsung, GE, Whirlpool, Frigidaire. 5-minute DIY replacement steps."
         canonical="https://fixitbay.net/blog/refrigerator-water-filter"
         ogType="article"

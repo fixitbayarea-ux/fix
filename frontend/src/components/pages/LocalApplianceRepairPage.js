@@ -106,7 +106,7 @@ const LocalApplianceRepairPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Local Appliance Repair — Same-Day Service SF Bay Area | FixitBay LLC"
+        title="Local Appliance Repair | Same-Day | FixitBay"
         description="Local appliance repair in San Francisco & Bay Area. $60 diagnostic, 180-day warranty, same-day service. Licensed CA technician. Refrigerators, washers, dryers, dishwashers, ovens and more."
         canonical="https://fixitbay.net/local-appliance-repair"
       />

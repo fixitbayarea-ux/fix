@@ -88,7 +88,7 @@ const WineRefrigeratorRepairPage = () => {
       <MobileServiceLanding
         appliance="Wine Cooler"
         pageSlug="wine-refrigerator-repair"
-        pageTitle="Wine Cooler Repair San Francisco & Bay Area | Same-Day | FixitBay"
+        pageTitle="Wine Cooler Repair San Francisco | Same-Day | FixitBay"
         metaDescription="Specialized wine refrigerator repair in San Francisco. Temperature, humidity, compressor issues. Same-day service. 180-day warranty."
         heroTitle={<>Wine Cooler Repair<br />San Francisco &amp; Bay Area</>}
         heroImageAlt="wine cooler repair san francisco"

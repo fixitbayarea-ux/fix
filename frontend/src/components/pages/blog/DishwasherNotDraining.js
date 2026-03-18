@@ -108,7 +108,7 @@ const DishwasherNotDraining = () => {
   return (
     <>
       <SEOMetaTags
-        title="Dishwasher Not Draining? 7 Quick Fixes (Most Are DIY) | FixitBay Bay Area"
+        title="Dishwasher Not Draining? 7 Quick Fixes | FixitBay"
         description="Dishwasher won't drain? Check these 7 causes: clogged filter, kinked hose, disposal plug, air gap, faulty pump. Most fixes take under 10 minutes."
         canonical="https://fixitbay.net/blog/dishwasher-not-draining"
         ogType="article"

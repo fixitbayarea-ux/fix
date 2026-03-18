@@ -225,7 +225,7 @@ const BlogFAQPage = () => {
       })}</script>
 
       <SEOMetaTags
-        title="Appliance Repair Tips & FAQ - FixitBay Bay Area Expert Advice"
+        title="Appliance Repair Tips & FAQ | FixitBay Bay Area"
         description="Expert appliance repair tips, troubleshooting guides, and FAQ for San Francisco Bay Area homeowners. Learn when to repair vs replace, maintenance tips, and emergency procedures."
         keywords="appliance repair tips, refrigerator problems, dishwasher not draining, washer repair guide, Bay Area appliance maintenance, San Francisco appliance FAQ"
         canonical="https://fixitbay.net/blog-faq"

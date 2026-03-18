@@ -101,7 +101,7 @@ const WasherErrorCodes = () => {
   return (
     <>
       <SEOMetaTags
-        title="Common Washer Error Codes Explained 2026 — OE, UE, LE, dE, IE | FixitBay Bay Area"
+        title="Washer Error Codes: OE, UE, LE, dE, IE Explained | FixitBay"
         description="What does OE, UE, LE or dE mean on your Samsung, LG, Whirlpool or GE washer? Full error code guide with DIY fixes and when to call a pro."
         canonical="https://fixitbay.net/blog/washer-error-codes"
         ogType="article"

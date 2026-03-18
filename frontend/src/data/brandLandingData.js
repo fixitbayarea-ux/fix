@@ -537,7 +537,7 @@ const brandLandingData = {
       },
       {
         q: 'My Whirlpool ice maker stopped working. Could it be the water filter?',
-        a: 'Possibly. A filter past its 6-month life can restrict water flow enough to starve the ice maker. We check the filter, the inlet valve, and the ice maker module itself to isolate the specific cause.',
+        a: 'Possibly. A filter past its 180-day life can restrict water flow enough to starve the ice maker. We check the filter, the inlet valve, and the ice maker module itself to isolate the specific cause.',
       },
       {
         q: 'How long do Whirlpool appliances usually last?',
@@ -1243,7 +1243,7 @@ const brandLandingData = {
     ],
     beforeYouCall: [
       'For a blinking clean light on a KitchenAid dishwasher, try the reset sequence: press Heated Dry, Normal, Heated Dry, Normal in rapid succession',
-      'Check your KitchenAid refrigerator water filter — a filter past its 6-month life reduces pressure to the ice maker and water dispenser',
+      'Check your KitchenAid refrigerator water filter — a filter past its 180-day life reduces pressure to the ice maker and water dispenser',
       'For KitchenAid AquaLift oven cleaning, ensure you are pouring exactly 16 ounces of water into the oven bottom as specified in the manual',
       'Verify your KitchenAid cooktop is on a dedicated electrical circuit — a shared circuit can cause erratic element cycling and false error codes',
       'Write down any error code on the display before calling — KitchenAid F-codes map directly to specific component failures and save diagnostic time',

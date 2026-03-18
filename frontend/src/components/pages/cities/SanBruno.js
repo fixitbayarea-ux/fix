@@ -36,7 +36,7 @@ const SanBruno = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair San Bruno | Fast Same-Day Service | FixitBay"
+        pageTitle="Appliance Repair San Bruno | Same-Day | FixitBay"
         metaDescription="Professional appliance repair in San Bruno. Same-day service near SFO, BART, downtown. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

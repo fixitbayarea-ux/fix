@@ -58,7 +58,7 @@ const AboutPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="About FixitBay LLC — Licensed Appliance Repair, SF Bay Area | Andrei, Lead Technician"
+        title="About FixitBay | Licensed Appliance Repair SF Bay Area"
         description="Meet Andrei, FixitBay's licensed appliance repair technician (CA License #51001). Mechanical engineer, 10+ years experience, 4.9 Google rating. Serving San Francisco and Bay Area."
         canonical="https://fixitbay.net/about"
       />

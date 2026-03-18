@@ -77,7 +77,7 @@ const IceMakerRepairPage = () => {
       <MobileServiceLanding
         appliance="Ice Maker"
         pageSlug="ice-maker-repair"
-        pageTitle="Ice Maker Repair San Francisco & Bay Area | Same-Day | FixitBay"
+        pageTitle="Ice Maker Repair San Francisco | Same-Day | FixitBay"
         metaDescription="Ice maker repair cost San Francisco & Bay Area: from $150 after $60 diagnostic. Same-day service across 22 cities. Licensed & insured. 180-day warranty."
         heroTitle={<>Ice Maker Repair<br />San Francisco &amp; Bay Area</>}
         heroSubtitle="Cost & Same-Day Service"

@@ -82,7 +82,7 @@ const DryerTakingTooLong = () => {
   return (
     <>
       <SEOMetaTags
-        title="Why Is My Dryer Taking So Long to Dry? 7 Causes + Fixes | FixitBay SF Bay Area"
+        title="Why Is My Dryer Taking Too Long? 7 Causes | FixitBay"
         description="Dryer taking 2-3 cycles to dry clothes? Learn 7 causes — clogged vents, bad heating element, moisture sensor — with DIY fixes."
         canonical="https://fixitbay.net/blog/dryer-taking-too-long"
         ogType="article"

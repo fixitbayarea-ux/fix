@@ -101,7 +101,7 @@ const ServicesPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Appliance Repair Services \u2014 San Francisco & Bay Area | FixitBay LLC"
+        title="Appliance Repair Services | San Francisco | FixitBay"
         description="Complete appliance repair services in San Francisco & Bay Area. Refrigerators, washers, dryers, ovens, dishwashers, commercial equipment and more. $60 diagnostic, 180-day warranty, same-day service."
         canonical="https://fixitbay.net/services"
         ogTitle="Appliance Repair Services \u2014 San Francisco & Bay Area | FixitBay LLC"

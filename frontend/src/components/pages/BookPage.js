@@ -120,10 +120,10 @@ const BookPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Book Appliance Repair Online \u2014 Same-Day SF Bay Area | FixitBay LLC"
+        title="Book Appliance Repair Online | Same-Day | FixitBay"
         description="Book appliance repair online in San Francisco & Bay Area. Same-day and next-day available. $60 diagnostic, 180-day warranty. Licensed technician. Click to schedule."
         canonical="https://fixitbay.net/book"
-        ogTitle="Book Appliance Repair Online \u2014 Same-Day SF Bay Area | FixitBay LLC"
+        ogTitle="Book Appliance Repair Online | Same-Day | FixitBay"
         ogDescription="Book appliance repair online. Same-day and next-day available. $60 diagnostic, 180-day warranty."
         noindex={true}
       />

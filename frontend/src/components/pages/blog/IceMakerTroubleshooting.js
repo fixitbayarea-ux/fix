@@ -96,7 +96,7 @@ const IceMakerTroubleshooting = () => {
   return (
     <>
       <SEOMetaTags
-        title="Ice Maker Not Working? 10 Fixes That Actually Work | FixitBay SF Bay Area"
+        title="Ice Maker Not Working? Top 10 Fixes | FixitBay"
         description="Ice maker not making ice? Try these 10 fixes first — water filter, supply valve, frozen fill tube, reset, and more. DIY troubleshooting guide."
         canonical="https://fixitbay.net/blog/ice-maker-troubleshooting"
         ogType="article"

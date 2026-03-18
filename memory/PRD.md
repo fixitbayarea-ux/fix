@@ -21,7 +21,19 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 
 ## Completed Work
 
-### Session 19 (Mar 18, 2026) — New Blog Post Integration
+### Session 20 (Mar 18, 2026) — SEO Title & Description Cleanup
+- Fixed 30+ page titles exceeding 60 chars across all page components and seo-config.cjs:
+  - Removed "Fast " from "Fast Same-Day Service" pattern across all city pages (11 in seo-config + 3 component files)
+  - Removed "& Bay Area" from service page titles (Refrigerator, Dishwasher, Cooktop, Ice Maker, Wine Cooler, Stove, Range, Freezer)
+  - Shortened blog post titles: DryerTakingTooLong, ApplianceLifespan, GasSmellFromStove, RepairVsReplace, WasherErrorCodes, DishwasherNotDraining, IceMakerTroubleshooting, OvenTemperatureCalibration, EnergyEfficientAppliances, RefrigeratorWaterFilter
+  - Shortened misc pages: About, Contact, Services, Book, LocalRepair, Reviews, CooktopMaintenance, BelvedereTiburon, BlogFAQ
+  - Fixed city+service page title template in seo-config.cjs (line 929)
+- Fixed description template in getCityServiceContent() (seoContent.js + seo-config.cjs): max 150 chars (was 160 for worst case)
+- Replaced "6-month life" with "180-day life" in Whirlpool & KitchenAid sections of brandLandingData.js
+- Rebuilt production build: 233 SEO snapshots verified (0 failures)
+- All existing content, links, H1s, and functionality preserved
+
+
 - Integrated 2 new blog post components into the app:
   - `/blog/dryer-not-heating` — "Dryer Not Heating? Common Causes & Repair Cost in San Francisco"
   - `/blog/appliance-repair-cost-san-francisco` — "Appliance Repair Cost in San Francisco 2026 — Complete Price Guide"

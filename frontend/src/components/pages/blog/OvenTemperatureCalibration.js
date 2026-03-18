@@ -83,7 +83,7 @@ const OvenTemperatureCalibration = () => {
   return (
     <>
       <SEOMetaTags
-        title="How to Calibrate Oven Temperature 2026 — Step-by-Step All Brands | FixitBay Bay Area"
+        title="How to Calibrate Your Oven Temperature | FixitBay"
         description="Oven burning or undercooking food? Learn to test and calibrate oven temperature in 4 steps — works for GE, Samsung, LG, Bosch, Whirlpool."
         canonical="https://fixitbay.net/blog/oven-temperature-calibration"
         ogType="article"

@@ -77,7 +77,7 @@ const ReviewsPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Customer Reviews | FixitBay LLC \u2014 Appliance Repair in San Francisco Bay Area"
+        title="Customer Reviews | FixitBay Appliance Repair SF"
         description="Read verified customer reviews for FixitBay LLC appliance repair in San Francisco Bay Area. 4.9 stars, 237 reviews across Google, Thumbtack & Yelp. Same-day service, 180-day warranty. Call (760) 543-5733."
         canonical="https://fixitbay.net/reviews"
       />

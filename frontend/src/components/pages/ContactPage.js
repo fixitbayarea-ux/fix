@@ -87,7 +87,7 @@ const ContactPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Contact FixitBay | Appliance Repair in San Francisco Bay Area — (760) 543-5733"
+        title="Contact FixitBay | Appliance Repair San Francisco"
         description="Contact FixitBay LLC for same-day appliance repair in San Francisco Bay Area. Call (760) 543-5733 or book online. Licensed technicians, $60 diagnostic, 180-day warranty."
         canonical="https://fixitbay.net/contact"
       />

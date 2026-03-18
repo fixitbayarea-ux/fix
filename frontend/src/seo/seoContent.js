@@ -136,7 +136,7 @@ function getServiceContent(service) {
   };
   
   return {
-    title: `${service} Repair San Francisco & Bay Area | Same-Day | FixitBay`,
+    title: `${service} Repair San Francisco | Same-Day | FixitBay`,
     description: getDescription(),
     h1: `${service} Repair in San Francisco & Bay Area`,
     content: `
@@ -267,7 +267,7 @@ function getCityContent(citySlug) {
   const uniqueContent = cityUniqueContent[citySlug] || '';
   
   return {
-    title: `Appliance Repair ${cityName} | Fast Same-Day Service | FixitBay`,
+    title: `Appliance Repair ${cityName} | Same-Day | FixitBay`,
     description: cityDescriptions[citySlug] || `Licensed & insured appliance repair in ${cityName}. $60 diagnostic applied to repair. Same-day available. 180-day warranty.`,
     h1: `Appliance Repair in ${cityName}, CA`,
     content: `
@@ -318,7 +318,7 @@ function getCityServiceContent(citySlug, serviceSlug) {
   const range = pricing[serviceSlug] || '$150–$350';
   return {
     title: `${serviceName} Repair ${cityName} | Same-Day | FixitBay`,
-    description: `Licensed ${serviceName.toLowerCase()} repair in ${cityName}, CA. Same-day & next-day service. $60 diagnostic applied to repair. 180-day warranty on parts and labor.`,
+    description: `Professional ${serviceName.toLowerCase()} repair in ${cityName}. $60 diagnostic applied to repair. Same-day service. 180-day warranty. Licensed & insured.`,
     h1: `${serviceName} Repair in ${cityName}`,
     content: `
       <p>FixitBay provides expert ${serviceName.toLowerCase()} repair in ${cityName} with same-day and next-day service. 
