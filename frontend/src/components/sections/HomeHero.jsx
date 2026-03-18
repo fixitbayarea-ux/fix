@@ -89,6 +89,11 @@ const HomeHero = () => {
               </a>
             </div>
 
+            {/* Desktop urgency micro-copy */}
+            <p className="hero-d" data-testid="hero-urgency-slots-desktop" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 12, color: 'rgba(255,255,255,0.65)', marginTop: 10, textAlign: 'center' }}>
+              ⚡ Most slots filled by noon — book now to secure today
+            </p>
+
             {/* Desktop schedule note */}
             <p className="hero-d" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.38)', marginTop: 14 }}>
               Same-day &amp; next-day &middot; Mon–Sat
@@ -109,6 +114,10 @@ const HomeHero = () => {
                   CALL (760) 543-5733
                 </a>
               </div>
+              {/* Mobile urgency micro-copy */}
+              <p data-testid="hero-urgency-slots-mobile" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 12, color: 'rgba(255,255,255,0.65)', textAlign: 'center', marginTop: 2, marginBottom: 12 }}>
+                ⚡ Most slots filled by noon — book now to secure today
+              </p>
               {/* Mobile trust badges */}
               <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 12, marginTop: 16, fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 12, color: 'rgba(255,255,255,0.7)' }}>
                 <span>&#11088; 4.9 Google</span>

@@ -90,6 +90,28 @@ const BRAND_LOGOS = {
 const BRAND_LOGO_H = 54;
 const BRAND_LOGO_OVERRIDE = { 'Kenmore': 70, 'LG': 70 };
 
+const POPULAR_REPAIRS_MAP = {
+  'san-francisco': ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven'],
+  'daly-city': ['refrigerator', 'washer', 'dryer'],
+  'south-san-francisco': ['refrigerator', 'washer', 'dryer'],
+  'san-rafael': ['refrigerator', 'washer', 'dryer', 'dishwasher'],
+  'mill-valley': ['refrigerator', 'dryer'],
+  'novato': ['refrigerator', 'washer'],
+  'san-bruno': ['refrigerator', 'washer'],
+  'pacifica': ['refrigerator', 'dryer'],
+  'millbrae': ['refrigerator', 'washer'],
+  'sausalito': ['refrigerator'],
+  'tiburon': ['refrigerator'],
+  'corte-madera': ['refrigerator', 'dryer'],
+};
+const SERVICE_DISPLAY_NAMES = {
+  refrigerator: 'Refrigerator Repair',
+  washer: 'Washer Repair',
+  dryer: 'Dryer Repair',
+  dishwasher: 'Dishwasher Repair',
+  oven: 'Oven Repair',
+};
+
 const SERVICE_CITIES = [
   { slug: 'san-francisco', name: 'San Francisco' }, { slug: 'daly-city', name: 'Daly City' },
   { slug: 'south-san-francisco', name: 'South San Francisco' }, { slug: 'san-bruno', name: 'San Bruno' },
@@ -385,6 +407,10 @@ const ApplianceRepairPageNew = ({
               <a href="/book?go=1" data-testid="city-hero-book" className="city-cta-book" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
               <a href="tel:+17605435733" data-testid="city-hero-call" className="city-cta-call" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 28px', borderRadius: 3, background: 'transparent', border: '1.5px solid rgba(255,255,255,0.30)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.30)'; e.currentTarget.style.color = '#FFFFFF'; }}>CALL (760) 543-5733</a>
             </div>
+            {/* Urgency micro-copy */}
+            <p data-testid="city-hero-urgency" style={{ fontFamily: S.font, fontSize: 12, color: 'rgba(255,255,255,0.65)', marginTop: 12 }}>
+              ⚡ Most slots filled by noon — book now to secure today
+            </p>
             <div style={{ width: 48, height: 2, background: 'rgba(255,87,34,0.40)', margin: '24px 0 20px' }} />
             <div style={{ display: 'flex', alignItems: 'center' }}>
               {[{ value: '10+', label: 'Years' }, { value: '180-Day', label: 'Warranty' }, { value: 'Same-Day', label: 'Service' }].map((stat, i) => (
@@ -596,6 +622,31 @@ const ApplianceRepairPageNew = ({
                 <a href="https://www.thumbtack.com/ca/san-francisco/appliance-repair/fixitbay" target="_blank" rel="noopener noreferrer" data-testid="city-reviews-thumbtack" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#FFFFFF', textDecoration: 'none', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 4, padding: '10px 20px', transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.background = 'rgba(255,87,34,0.10)'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}>
                   <Star size={14} style={{ fill: '#FFB800', color: '#FFB800' }} /> Read Thumbtack Reviews
                 </a>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* ═══ POPULAR REPAIRS ═══ */}
+        {POPULAR_REPAIRS_MAP[citySlug]?.length > 0 && (
+          <section data-testid="popular-repairs" style={{ background: '#FFFFFF', padding: '60px 0' }}>
+            <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+              <div style={S.eyebrow}>MOST REQUESTED</div>
+              <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 28 }}>Popular Repairs in {cityName}</h2>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                {POPULAR_REPAIRS_MAP[citySlug].map(service => (
+                  <a
+                    key={service}
+                    href={`/${citySlug}-${service}-repair`}
+                    data-testid={`popular-repair-${service}`}
+                    style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.06)', borderRadius: 4, textDecoration: 'none', transition: 'border-color 0.2s' }}
+                    onMouseEnter={e => e.currentTarget.style.borderColor = '#FF5722'}
+                    onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(0,0,0,0.06)'}
+                  >
+                    <span style={{ fontFamily: S.font, fontWeight: 600, fontSize: 15, color: '#0D1B2A' }}>{SERVICE_DISPLAY_NAMES[service]} in {cityName}</span>
+                    <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 13, color: '#FF5722', flexShrink: 0, marginLeft: 16 }}>→</span>
+                  </a>
+                ))}
               </div>
             </div>
           </section>
