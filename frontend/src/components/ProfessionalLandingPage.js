@@ -593,7 +593,8 @@ const ProfessionalLandingPage = () => {
           p, li { font-size: 14px; line-height: 1.6; }
           h2 { font-size: 22px !important; line-height: 1.25; word-break: break-word; }
           h3 { font-size: 18px !important; word-break: break-word; }
-          section:not(.hero-section-root) { padding: 40px 16px !important; }
+          /* Hide desktop-only stats section on all mobile viewports */
+          [data-testid="stats-section"] { display: none !important; }
 
           /* -- TRUST BAR -- */
           .mobile-trust-bar { display: flex; justify-content: space-around; align-items: center; }
