@@ -183,7 +183,7 @@ const ProfessionalLandingPage = () => {
     setShowSwipeHint(true);
     setActiveCarouselIndex(0);
     if (carouselRef.current) carouselRef.current.scrollLeft = 0;
-    const timer = setTimeout(() => setShowSwipeHint(false), 2000);
+    const timer = setTimeout(() => setShowSwipeHint(false), 3000);
     return () => clearTimeout(timer);
   }, [activeCategory]);
   const filteredServices = servicesData.filter(s => s.category === activeCategory);
@@ -367,18 +367,18 @@ const ProfessionalLandingPage = () => {
           </div>
           {/* Mobile carousel */}
           <div key={`m-${activeCategory}`} className="lg:hidden animate-fadeIn">
-            {/* Swipe hint — fades out after 2s */}
-            <div style={{ textAlign: 'right', paddingRight: 20, marginBottom: 8, height: 18 }}>
+            {/* Swipe hint — centered, fades out after 3s */}
+            <div style={{ textAlign: 'center', marginBottom: 10, height: 20 }}>
               <span
                 data-testid="swipe-hint"
                 style={{
-                  fontSize: 11, fontWeight: 600, color: '#4A5568',
-                  fontFamily: 'Montserrat, sans-serif', letterSpacing: '0.04em',
+                  fontSize: 12, color: '#999',
+                  fontFamily: 'Montserrat, sans-serif',
                   opacity: showSwipeHint ? 1 : 0,
                   transition: 'opacity 0.6s ease',
                   pointerEvents: 'none', userSelect: 'none',
                 }}
-              >Swipe to see all services →</span>
+              >← Swipe to see all services →</span>
             </div>
             {/* Scroll container */}
             <div
@@ -417,11 +417,11 @@ const ProfessionalLandingPage = () => {
                     setActiveCarouselIndex(i);
                   }}
                   style={{
-                    width: activeCarouselIndex === i ? 20 : 8,
-                    height: 8, borderRadius: 4, border: 'none', padding: 0,
-                    background: activeCarouselIndex === i ? '#FF5722' : 'rgba(0,0,0,0.20)',
+                    width: 8,
+                    height: 8, borderRadius: '50%', border: 'none', padding: 0,
+                    background: activeCarouselIndex === i ? '#FF5722' : '#ccc',
                     cursor: 'pointer', flexShrink: 0,
-                    transition: 'width 0.3s ease, background 0.3s ease',
+                    transition: 'background 0.3s ease',
                   }}
                 />
               ))}
