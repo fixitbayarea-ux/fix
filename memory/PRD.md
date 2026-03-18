@@ -86,6 +86,11 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **FIX 2 (Related Articles)**: Added `data-testid="related-articles"` section to all 14 blog posts with 2-3 topically-relevant article cards and "Read article →" text. Fixed broken internal links (/blog/repair-vs-replace → /blog/when-to-repair-vs-replace) in 3 posts.
 - **SEO**: Regenerated 233/233 SEO snapshots successfully.
 
+### Session 25 (Mar 18, 2026) — Blog SEO Enhancements
+- **RefrigeratorNotCooling**: Title updated to "[SF Tech Guide]", datePublished → March 2026, meta description fixed to 157 chars, SF coastal humidity tip added for coils, FAQ pricing updated to "from $255"
+- **DryerNotHeating**: Meta description updated to reflect "from $235", 154 chars
+- **ApplianceRepairCostSanFrancisco**: Title → "Price Guide", datePublished → March 2026, PRICING_DATA updated to match servicePricing.js (from $255/240/235/195/230), service links updated, FAQ pricing updated
+
 ## Backlog
 - (P1) Investigate 2 Soft 404 pages from GSC
 - (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`

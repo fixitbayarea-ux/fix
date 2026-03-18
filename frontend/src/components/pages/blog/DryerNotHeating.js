@@ -56,7 +56,7 @@ const DryerNotHeating = () => {
     <div style={{ background: '#FFFFFF', minHeight: '100vh' }}>
       <SEOMetaTags
         title="Dryer Not Heating? Common Causes & Repair Cost in San Francisco"
-        description="Dryer not heating? Gas vs electric causes, DIY checks, and SF repair costs $120-$300. Thermal fuse, heating element, gas valve fixes. Same-day service."
+        description="Dryer not heating? Gas vs electric causes: thermal fuse, heating element, gas valve solenoids explained. DIY checks + when to call. SF repairs from $235. Same-day service."
         canonical="https://fixitbay.net/blog/dryer-not-heating"
       />
       {schemas.map((s, i) => (

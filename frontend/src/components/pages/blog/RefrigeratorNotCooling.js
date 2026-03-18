@@ -12,7 +12,7 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: "Why is my refrigerator running but not cooling?", a: "The most common causes are dirty condenser coils, a faulty evaporator fan, or a failed thermostat. Start by cleaning the coils on the back or bottom of the fridge. If it's still not cooling after 24 hours, call a technician." },
-  { q: "How much does refrigerator repair cost in San Francisco?", a: "In the Bay Area, refrigerator repairs typically cost $150\u2013$550 depending on the issue. A compressor replacement runs $300\u2013$600+. FixitBay charges a $60 diagnostic fee, which is applied to your repair if you proceed." },
+  { q: "How much does refrigerator repair cost in San Francisco?", a: "In the Bay Area, refrigerator repairs start from $255 (including the $60 diagnostic). A thermostat replacement runs $150–$200, evaporator fan motor $120–$200, and compressor replacement $400–$600+. The $60 diagnostic fee is applied to your repair if you proceed." },
   { q: "Is it worth repairing a refrigerator that's not cooling?", a: "If the fridge is under 10 years old and the repair is under 50% of replacement cost, repair is usually worth it. Premium brands like Sub-Zero are almost always worth repairing. Our technician gives an honest recommendation after the $60 diagnostic." },
   { q: "How long can food stay safe when the fridge stops cooling?", a: "The FDA recommends discarding perishables after 4 hours at temperatures above 40\u00B0F. Keep the doors closed as much as possible to maintain temperature while waiting for a technician." },
   { q: "Can I fix a refrigerator that's not cooling myself?", a: "Some fixes are DIY-friendly: cleaning condenser coils, checking door seals, and clearing blocked vents. However, compressor issues, refrigerant leaks, and control board failures require a licensed technician with specialized tools and EPA certification." },
@@ -62,10 +62,10 @@ const RefrigeratorNotCooling = () => {
       id: 'article-schema',
       data: {
         "@context": "https://schema.org", "@type": "BlogPosting",
-        "headline": "Refrigerator Not Cooling? 7 Causes & Fixes [SF Technician Guide]",
+        "headline": "Refrigerator Not Cooling? 7 Causes & Fixes [SF Tech Guide]",
         "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
         "publisher": { "@type": "Organization", "name": "FixitBay LLC" },
-        "datePublished": "2026-01-15",
+        "datePublished": "2026-03-15",
         "dateModified": "2026-03-17",
         "url": "https://fixitbay.net/blog/refrigerator-not-cooling"
       }
@@ -124,8 +124,8 @@ const RefrigeratorNotCooling = () => {
   return (
     <>
       <SEOMetaTags
-        title="Refrigerator Not Cooling? 7 Causes & Fixes [SF Technician Guide]"
-        description="Refrigerator not cooling? 7 common causes from dirty coils to compressor failure. DIY checks + when to call a pro. SF repair cost $150-$550. Same-day service."
+        title="Refrigerator Not Cooling? 7 Causes & Fixes [SF Tech Guide]"
+        description="Refrigerator not cooling in San Francisco? 7 causes: dirty coils, evaporator fan, compressor. DIY checks + when to call a tech. Same-day repairs from $255."
         canonical="https://fixitbay.net/blog/refrigerator-not-cooling"
         ogType="article"
       />
@@ -164,11 +164,11 @@ const RefrigeratorNotCooling = () => {
             </nav>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 20, alignItems: 'center', flexWrap: 'wrap', marginBottom: 16 }}>
               <span style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 11, padding: '4px 12px', borderRadius: 3 }}>Refrigerator</span>
-              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>January 20, 2026</span>
+              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>March 15, 2026</span>
               <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>5 min read</span>
             </div>
             <h1 className="art-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 720, margin: '0 auto 16px' }}>
-              Refrigerator Not Cooling? 7 Causes & Fixes [SF Technician Guide]
+              Refrigerator Not Cooling? 7 Causes & Fixes [SF Tech Guide]
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto' }}>
               Is your fridge running but not keeping food cold? Here are 7 causes — from dirty coils to compressor failure — with DIY checks, repair costs, and when to call a San Francisco technician.
@@ -216,7 +216,7 @@ const RefrigeratorNotCooling = () => {
               <h2 id="dirty-coils" style={H2S}><span style={{ color: '#FF5722' }}>1.</span> Dirty Condenser Coils</h2>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Why it happens:</strong> Condenser coils release heat from inside the refrigerator. When they're covered in dust, pet hair, and debris, they can't efficiently dissipate heat, causing the entire system to work overtime—and eventually fail to cool properly.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>DIY Fix:</strong> Locate the coils (usually on the back or beneath the unit). Unplug the fridge, use a coil brush or vacuum attachment to gently remove buildup, then plug it back in.</p>
-              <TipBox label="Prevention Tip" text="Clean condenser coils every 6 months to maintain peak efficiency and extend appliance life." />
+              <TipBox label="SF Coastal Tip" text="San Francisco's coastal humidity — especially in the Sunset, Richmond, and Outer Avenues — causes condenser coils to accumulate grime 2–3× faster than inland homes. Clean your coils every 3 months if your fridge is in a garage or near an exterior wall." />
 
               {/* ── Section 2 ── */}
               <h2 id="thermostat" style={H2S}><span style={{ color: '#FF5722' }}>2.</span> Faulty or Incorrectly Set Thermostat</h2>

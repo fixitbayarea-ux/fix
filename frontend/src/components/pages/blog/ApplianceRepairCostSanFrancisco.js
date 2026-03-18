@@ -9,20 +9,20 @@ const H3S = { fontFamily: F, fontWeight: 700, fontSize: 20, color: '#1A3B5D', ma
 const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.75, margin: '0 0 16px' };
 
 const PRICING_DATA = [
-  { appliance: 'Refrigerator', range: '$180–$450', common: 'Thermostat, compressor, fan motor', link: '/refrigerator-repair' },
-  { appliance: 'Washer', range: '$150–$350', common: 'Pump, belt, control board, bearings', link: '/washer-repair' },
-  { appliance: 'Dryer', range: '$120–$300', common: 'Heating element, thermal fuse, belt', link: '/dryer-repair' },
-  { appliance: 'Dishwasher', range: '$140–$320', common: 'Pump, spray arm, control panel', link: '/dishwasher-repair' },
-  { appliance: 'Oven / Range', range: '$150–$400', common: 'Igniter, element, thermostat, door', link: '/oven-repair' },
-  { appliance: 'Wine Cooler', range: '$150–$350', common: 'Compressor, thermostat, fan', link: '/wine-cooler-repair' },
-  { appliance: 'Ice Maker', range: '$150–$280', common: 'Water valve, motor, thermostat', link: '/ice-maker-repair' },
-  { appliance: 'Garbage Disposal', range: '$100–$250', common: 'Motor, impeller, reset switch', link: '/garbage-disposal-repair' },
-  { appliance: 'Cooktop', range: '$120–$300', common: 'Burner, igniter, switch, element', link: '/cooktop-repair' },
-  { appliance: 'Freezer', range: '$150–$400', common: 'Compressor, thermostat, defrost', link: '/freezer-repair' },
+  { appliance: 'Refrigerator', range: 'From $255', common: 'Thermostat · ice maker · evaporator fan · door seal · compressor', link: '/refrigerator-repair' },
+  { appliance: 'Washer', range: 'From $240', common: 'Control board · drum bearing · water pump · door latch · drain pump', link: '/washer-repair' },
+  { appliance: 'Dryer', range: 'From $235', common: 'Heating element · thermal fuse · drum belt · control board · gas valve', link: '/dryer-repair' },
+  { appliance: 'Dishwasher', range: 'From $195', common: 'Drain pump · door latch · spray arm · water inlet valve · control board', link: '/dishwasher-repair' },
+  { appliance: 'Oven / Range', range: 'From $230', common: 'Igniter · bake element · temperature sensor · control board', link: '/oven-repair' },
+  { appliance: 'Wine Cooler', range: 'From $195', common: 'Compressor · thermostat · fan motor · door seal · control board', link: '/wine-cooler-repair' },
+  { appliance: 'Ice Maker', range: 'From $150', common: 'Water inlet valve · ice maker assembly · thermostat · water line', link: '/ice-maker-repair' },
+  { appliance: 'Garbage Disposal', range: 'From $195', common: 'Motor repair · jam clearing · leak repair · full replacement', link: '/garbage-disposal-repair' },
+  { appliance: 'Cooktop', range: 'From $230', common: 'Burner · igniter · switch · element · induction element', link: '/cooktop-repair' },
+  { appliance: 'Freezer', range: 'From $255', common: 'Compressor · thermostat · defrost heater · evaporator fan · door seal', link: '/freezer-repair' },
 ];
 
 const FAQS = [
-  { q: 'What is the average cost of appliance repair in San Francisco?', a: 'The average appliance repair in San Francisco costs $150–$350 after diagnostic, depending on the appliance type and parts needed. FixitBay charges a $60 diagnostic fee that is fully applied to the repair cost if you proceed. Simple fixes (thermal fuse, belt) run $80–$150, while complex repairs (compressor, control board) can reach $400–$600.' },
+  { q: 'What is the average cost of appliance repair in San Francisco?', a: 'Appliance repairs in San Francisco start from $150–$255 depending on the appliance type. FixitBay charges a $60 diagnostic fee that is fully applied to the repair cost if you proceed. Refrigerator repairs start from $255, dryer repairs from $235, and washer repairs from $240. Complex repairs (compressor, control board) can reach $400–$600.' },
   { q: 'Is the $60 diagnostic fee worth it?', a: 'Yes. The $60 diagnostic covers a complete inspection, root-cause diagnosis, and a detailed repair estimate. If you proceed with the repair, the $60 is credited toward your total cost — so you effectively pay nothing extra for the diagnosis. If you decline the repair, you pay only the $60 and get a professional assessment you can use for comparison shopping.' },
   { q: 'Why is appliance repair more expensive in San Francisco?', a: 'SF repair costs are 15–25% higher than the national average due to higher labor rates, commercial rent, insurance requirements, and the cost of maintaining a licensed, insured fleet in a dense urban area. However, FixitBay keeps costs competitive by stocking common parts on trucks (reducing return visits) and operating a lean team of experienced technicians.' },
   { q: 'Should I repair or replace my appliance?', a: 'Use the 50% rule: if the repair costs more than 50% of a new appliance AND the unit is over 8 years old, replacement often makes more sense. For premium brands (Sub-Zero, Viking, Miele), the threshold is higher because replacement costs are significantly more.' },
@@ -36,10 +36,10 @@ const ApplianceRepairCostSanFrancisco = () => {
 
   const schemas = [
     { "@context": "https://schema.org", "@type": "Article",
-      "headline": "Appliance Repair Cost in San Francisco 2026 — Complete Price Guide",
+      "headline": "Appliance Repair Cost in San Francisco 2026 — Price Guide",
       "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
       "publisher": { "@type": "Organization", "name": "FixitBay LLC" },
-      "datePublished": "2026-01-01",
+      "datePublished": "2026-03-15",
       "dateModified": "2026-03-17",
       "mainEntityOfPage": "https://fixitbay.net/blog/appliance-repair-cost-san-francisco"
     },
@@ -61,8 +61,8 @@ const ApplianceRepairCostSanFrancisco = () => {
   return (
     <div style={{ background: '#FFFFFF', minHeight: '100vh' }}>
       <SEOMetaTags
-        title="Appliance Repair Cost in San Francisco 2026 — Complete Price Guide"
-        description="Appliance repair cost in San Francisco 2026. Complete pricing for refrigerators, washers, dryers, dishwashers & more. $60 diagnostic applied. 180-day warranty."
+        title="Appliance Repair Cost in San Francisco 2026 — Price Guide"
+        description="Appliance repair cost in San Francisco 2026 — pricing guide for all major appliances. $60 diagnostic applied to your repair. 180-day parts &amp; labor warranty."
         canonical="https://fixitbay.net/blog/appliance-repair-cost-san-francisco"
       />
       {schemas.map((s, i) => (
@@ -84,7 +84,7 @@ const ApplianceRepairCostSanFrancisco = () => {
             <span style={{ fontFamily: F, fontSize: 12, fontWeight: 600, color: '#FF5722' }}>Updated March 2026</span>
           </div>
           <h1 className="art-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 720, margin: '0 auto 16px' }}>
-            Appliance Repair Cost in San Francisco 2026 — Complete Price Guide
+            Appliance Repair Cost in San Francisco 2026 — Price Guide
           </h1>
           <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto' }}>
             What does appliance repair actually cost in the Bay Area? We break down pricing for every major appliance, explain the $60 diagnostic model, and help you decide between repair and replacement.
@@ -150,7 +150,7 @@ const ApplianceRepairCostSanFrancisco = () => {
 
         {/* ── Breakdown by Appliance ── */}
         <h2 id="refrigerator-cost" style={H2S}>Refrigerator Repair Cost in San Francisco</h2>
-        <p style={P}>Refrigerator repairs are the most requested service in our Bay Area practice. Costs range from $180 for a simple thermostat swap to $450+ for compressor work. The most common repairs we perform:</p>
+        <p style={P}>Refrigerator repairs are the most requested service in our Bay Area practice. Costs start from $255, which includes the $60 diagnostic. The most common repairs we perform:</p>
         <ul style={{ fontFamily: F, fontSize: 14, color: '#4A5568', lineHeight: 2.2, paddingLeft: 20, marginBottom: 24 }}>
           <li><strong>Thermostat replacement:</strong> $150–$220</li>
           <li><strong>Evaporator fan motor:</strong> $180–$280</li>
@@ -175,11 +175,11 @@ const ApplianceRepairCostSanFrancisco = () => {
         </div>
 
         <h2 id="washer-dryer-cost" style={H2S}>Washer & Dryer Repair Cost</h2>
-        <p style={P}>Washer repairs average $150–$350 in San Francisco. Front-load washers tend to cost more due to more complex components (drum bearings, door boots). Dryer repairs are typically less expensive at $120–$300, with thermal fuse and heating element being the most common fixes.</p>
+        <p style={P}>Washer repairs start from $240 in San Francisco. Front-load washers tend to cost more due to more complex components (drum bearings, door boots). Dryer repairs start from $235, with thermal fuse and heating element being the most common fixes.</p>
         <p style={P}>In San Francisco's multi-unit buildings, stackable washer-dryer combos require technicians experienced with compact spaces. FixitBay technicians regularly service units in Victorian flats, in-law units, and basement laundry rooms.</p>
 
         <h2 id="dishwasher-cost" style={H2S}>Dishwasher Repair Cost</h2>
-        <p style={P}>Dishwasher repairs in SF run $140–$320. The most common issue we see is a failing drain pump ($120–$200), followed by spray arm problems and control board failures. Built-in dishwashers in San Francisco's older kitchens sometimes have non-standard installations that add 15–30 minutes to service time.</p>
+        <p style={P}>Dishwasher repairs in SF start from $195. The most common issue we see is a failing drain pump ($130–$220), followed by spray arm problems and control board failures. Built-in dishwashers in San Francisco's older kitchens sometimes have non-standard installations that add 15–30 minutes to service time.</p>
 
         {/* ── SF Market Context ── */}
         <h2 id="sf-market" style={H2S}>Why Appliance Repair Costs More in San Francisco</h2>
@@ -226,10 +226,10 @@ const ApplianceRepairCostSanFrancisco = () => {
         <h2 style={H2S}>Explore Our Services</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12, margin: '16px 0 32px' }}>
           {[
-            { to: '/san-francisco-refrigerator-repair', label: 'SF Refrigerator Repair', desc: 'Same-day, $180–$450' },
-            { to: '/san-francisco-washer-repair', label: 'SF Washer Repair', desc: 'Same-day, $150–$350' },
-            { to: '/san-francisco-dryer-repair', label: 'SF Dryer Repair', desc: 'Same-day, $120–$300' },
-            { to: '/san-francisco-dishwasher-repair', label: 'SF Dishwasher Repair', desc: 'Same-day, $140–$320' },
+            { to: '/san-francisco-refrigerator-repair', label: 'SF Refrigerator Repair', desc: 'Same-day, from $255' },
+            { to: '/san-francisco-washer-repair', label: 'SF Washer Repair', desc: 'Same-day, from $240' },
+            { to: '/san-francisco-dryer-repair', label: 'SF Dryer Repair', desc: 'Same-day, from $235' },
+            { to: '/san-francisco-dishwasher-repair', label: 'SF Dishwasher Repair', desc: 'Same-day, from $195' },
             { to: '/service-areas', label: 'All Service Areas', desc: '22 cities covered' },
             { to: '/book', label: 'Book a Repair', desc: '$60 diagnostic, same-day' },
           ].map(link => (
