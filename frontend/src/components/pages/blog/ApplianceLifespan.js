@@ -389,7 +389,7 @@ const ApplianceLifespan = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 22, color: '#0D1B2A', marginBottom: 20 }}>Related articles</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               {[
-                { title: 'Repair vs. Replace: When to Fix Your Appliance', href: '/blog/repair-vs-replace' },
+                { title: 'Repair vs. Replace: When to Fix Your Appliance', href: '/blog/when-to-repair-vs-replace' },
                 { title: 'Energy-Efficient Appliances: Worth the Cost?', href: '/blog/energy-efficient-appliances' },
                 { title: 'Appliance Repair Cost in San Francisco 2026', href: '/blog/appliance-repair-cost-san-francisco' },
               ].map((a, i) => (

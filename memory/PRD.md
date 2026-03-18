@@ -81,6 +81,11 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **FIX 4**: Updated all blog post dates from January 2025 → January 2026 across `BlogPage.js`, `BlogPost.js`, `BlogListPage.js`, and all individual blog files; updated `dateModified` in JSON-LD; regenerated 233 SEO snapshots
 - **FIX 1 (Ghost div)**: Not identified via code analysis — requires user testing on actual mobile device to reproduce and pinpoint
 
+### Session 24 (Mar 18, 2026) — Blog Post Enhancements
+- **FIX 1 (Mid-Article CTA)**: Updated all 11 existing orange CTAs to dark navy (#0D1B2A) with orange left border (#FF5722). Added missing CTA to 3 posts (DishwasherMaintenance, DryerNotHeating, ApplianceRepairCostSanFrancisco). Standardized heading: "Need appliance repair in San Francisco?", subtext, Call + Book online buttons.
+- **FIX 2 (Related Articles)**: Added `data-testid="related-articles"` section to all 14 blog posts with 2-3 topically-relevant article cards and "Read article →" text. Fixed broken internal links (/blog/repair-vs-replace → /blog/when-to-repair-vs-replace) in 3 posts.
+- **SEO**: Regenerated 233/233 SEO snapshots successfully.
+
 ## Backlog
 - (P1) Investigate 2 Soft 404 pages from GSC
 - (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`

@@ -245,7 +245,7 @@ const ApplianceRepairCostSanFrancisco = () => {
           <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 22, color: '#0D1B2A', marginBottom: 16 }}>Related articles</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
             {[
-              { title: 'Repair vs. Replace: When to Fix Your Appliance', href: '/blog/repair-vs-replace' },
+              { title: 'Repair vs. Replace: When to Fix Your Appliance', href: '/blog/when-to-repair-vs-replace' },
               { title: 'How Long Do Appliances Last? Average Lifespan Guide', href: '/blog/appliance-lifespan' },
               { title: 'Dryer Not Heating? Common Causes & Repair Cost', href: '/blog/dryer-not-heating' },
             ].map((a, i) => (

@@ -355,7 +355,7 @@ const EnergyEfficientAppliances = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               {[
                 { title: 'How Long Do Appliances Last? Average Lifespan Guide', href: '/blog/appliance-lifespan' },
-                { title: 'Repair vs. Replace: When to Fix Your Appliance', href: '/blog/repair-vs-replace' },
+                { title: 'Repair vs. Replace: When to Fix Your Appliance', href: '/blog/when-to-repair-vs-replace' },
                 { title: 'Appliance Repair Cost in San Francisco 2026', href: '/blog/appliance-repair-cost-san-francisco' },
               ].map((a, i) => (
                 <Link key={i} to={a.href} data-testid={`related-article-${i}`} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.06)', borderRadius: 4, textDecoration: 'none' }}>
