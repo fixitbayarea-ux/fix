@@ -24,6 +24,8 @@ const STATIC_POSTS = [
   { slug: 'gas-smell-from-stove', title: 'Smell Gas From Your Stove? Do This Immediately', excerpt: "Gas leaks are dangerous. Learn the immediate safety steps to take if you smell gas, when to call emergency services, and how to prevent gas leaks.", publish_date: '2024-12-25', categories: ['Safety'], readTime: '4 min' },
   { slug: 'refrigerator-water-filter', title: 'When to Change Your Refrigerator Water Filter', excerpt: 'Old filters reduce water flow, ice production, and water quality. Learn how often to change filters by brand and signs for replacement.', publish_date: '2024-12-22', categories: ['Refrigerator', 'Maintenance Tips'], readTime: '5 min' },
   { slug: 'dishwasher-not-draining', title: 'Dishwasher Not Draining? 7 Quick Fixes', excerpt: 'Standing water after a cycle? Check these 7 common causes: clogged filter, blocked drain hose, garbage disposal connection, and air gap.', publish_date: '2024-12-20', categories: ['Dishwasher'], readTime: '6 min' },
+  { slug: 'dryer-not-heating', title: 'Dryer Not Heating? Common Causes & Repair Cost in San Francisco', excerpt: 'Dryer tumbles but clothes stay wet? Learn the top causes — thermal fuse, heating element, gas valve solenoid — and what repairs cost in the SF Bay Area.', publish_date: '2026-03-10', categories: ['Dryer'], readTime: '7 min' },
+  { slug: 'appliance-repair-cost-san-francisco', title: 'Appliance Repair Cost in San Francisco 2026 — Complete Price Guide', excerpt: 'What does appliance repair cost in San Francisco? See 2026 price ranges for refrigerators, washers, dryers, dishwashers, and more. $60 diagnostic applied.', publish_date: '2026-01-01', categories: ['Expert Advice', 'San Francisco'], readTime: '8 min' },
 ];
 
 const TRUST_CARDS = [

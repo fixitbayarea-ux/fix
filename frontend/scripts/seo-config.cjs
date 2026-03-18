@@ -126,6 +126,7 @@ const BLOG_PAGES = [
   { slug: 'blog/gas-smell-from-stove', title: 'Gas Smell From Stove' },
   { slug: 'blog/refrigerator-water-filter', title: 'Refrigerator Water Filter' },
   { slug: 'blog/dishwasher-not-draining', title: 'Dishwasher Not Draining' },
+  { slug: 'blog/dryer-not-heating', title: 'Dryer Not Heating' },
   { slug: 'blog/appliance-repair-cost-san-francisco', title: 'Appliance Repair Cost San Francisco' },
   { slug: 'blog/appliance-repair-marin-county', title: 'Appliance Repair Marin County' },
   { slug: 'blog/same-day-appliance-repair-bay-area', title: 'Same-Day Appliance Repair Bay Area' }
@@ -695,6 +696,8 @@ function getSEOContent(route) {
         '/blog/gas-smell-from-stove',
         '/blog/refrigerator-water-filter',
         '/blog/when-to-repair-vs-replace',
+        '/blog/dryer-not-heating',
+        '/blog/appliance-repair-cost-san-francisco',
         '/blog-faq',
       ]
     };
@@ -755,6 +758,10 @@ function getSEOContent(route) {
       'appliance-repair-cost-san-francisco': {
         title: 'Appliance Repair Cost San Francisco 2026 | FixitBay',
         description: 'Complete guide to appliance repair costs in San Francisco & Bay Area. Refrigerator, washer, dryer, dishwasher repair prices. $60 diagnostic.'
+      },
+      'dryer-not-heating': {
+        title: 'Dryer Not Heating? Common Causes & Repair Cost in SF | FixitBay',
+        description: 'Dryer not heating? Gas vs electric causes, DIY checks, and SF repair costs $120-$300. Thermal fuse, heating element, gas valve fixes. Same-day service.'
       },
       'appliance-repair-marin-county': {
         title: 'Appliance Repair Marin County | Same-Day | FixitBay',

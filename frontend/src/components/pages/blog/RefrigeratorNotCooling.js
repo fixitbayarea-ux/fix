@@ -23,6 +23,8 @@ const TOC = [
   { id: 'thermostat', label: 'Faulty or Incorrectly Set Thermostat' },
   { id: 'door-seals', label: 'Damaged or Worn Door Seals (Gaskets)' },
   { id: 'air-vents', label: 'Blocked Air Vents Inside the Fridge' },
+  { id: 'evaporator-fan', label: 'Failed Evaporator Fan Motor' },
+  { id: 'start-relay', label: 'Defective Start Relay or Overload' },
   { id: 'compressor', label: 'Failed Compressor or Refrigerant Leak' },
   { id: 'checklist', label: 'Quick Diagnostic Checklist' },
   { id: 'when-to-call', label: 'When to Call a Professional' },
@@ -60,11 +62,11 @@ const RefrigeratorNotCooling = () => {
       id: 'article-schema',
       data: {
         "@context": "https://schema.org", "@type": "BlogPosting",
-        "headline": "5 Common Reasons Your Refrigerator Isn't Cooling",
+        "headline": "Refrigerator Not Cooling? 7 Causes & Fixes [SF Technician Guide]",
         "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
         "publisher": { "@type": "Organization", "name": "FixitBay LLC" },
-        "datePublished": "2024-06-01",
-        "dateModified": "2025-01-01",
+        "datePublished": "2026-01-15",
+        "dateModified": "2026-03-17",
         "url": "https://fixitbay.net/blog/refrigerator-not-cooling"
       }
     },
@@ -122,8 +124,8 @@ const RefrigeratorNotCooling = () => {
   return (
     <>
       <SEOMetaTags
-        title="5 Reasons Your Refrigerator Isn't Cooling + DIY Fixes | FixitBay Bay Area"
-        description="Refrigerator running but not cooling? Learn the 5 most common causes — dirty coils, bad thermostat, failed compressor — with DIY fixes."
+        title="Refrigerator Not Cooling? 7 Causes & Fixes [SF Technician Guide]"
+        description="Refrigerator not cooling? 7 common causes from dirty coils to compressor failure. DIY checks + when to call a pro. SF repair cost $150-$550. Same-day service."
         canonical="https://fixitbay.net/blog/refrigerator-not-cooling"
         ogType="article"
       />
@@ -166,10 +168,10 @@ const RefrigeratorNotCooling = () => {
               <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>5 min read</span>
             </div>
             <h1 className="art-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 720, margin: '0 auto 16px' }}>
-              5 Common Reasons Your Refrigerator Isn't Cooling — Bay Area Repair Guide
+              Refrigerator Not Cooling? 7 Causes & Fixes [SF Technician Guide]
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto' }}>
-              Is your fridge running but not keeping food cold? Learn the top 5 causes including compressor issues, dirty coils, and thermostat problems. Plus, what you can check yourself before calling a technician.
+              Is your fridge running but not keeping food cold? Here are 7 causes — from dirty coils to compressor failure — with DIY checks, repair costs, and when to call a San Francisco technician.
             </p>
           </div>
         </section>
@@ -248,7 +250,19 @@ const RefrigeratorNotCooling = () => {
               <p style={P}><strong style={{ color: '#1A1A1A' }}>DIY Fix:</strong> Rearrange items to ensure vents (usually on the back wall inside the fridge compartment) are clear. Leave at least 1–2 inches of space around vents for proper circulation.</p>
 
               {/* ── Section 5 ── */}
-              <h2 id="compressor" style={H2S}><span style={{ color: '#FF5722' }}>5.</span> Failed Compressor or Refrigerant Leak</h2>
+              <h2 id="evaporator-fan" style={H2S}><span style={{ color: '#FF5722' }}>5.</span> Failed Evaporator Fan Motor</h2>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Why it happens:</strong> The evaporator fan circulates cold air from the freezer coils into both the fridge and freezer compartments. When this fan fails, the freezer may still be cold but the refrigerator section warms up significantly.</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Signs:</strong> You may hear a loud buzzing or squealing noise, or notice the fan isn't spinning when you open the freezer door. In San Francisco's older homes, power fluctuations can accelerate fan motor wear.</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>DIY Check:</strong> Open the freezer and listen for the fan. If the freezer is cold but the fridge is warm and you hear no fan noise, the motor likely needs replacement ($80–$200 with labor).</p>
+
+              {/* ── Section 6 ── */}
+              <h2 id="start-relay" style={H2S}><span style={{ color: '#FF5722' }}>6.</span> Defective Start Relay or Overload</h2>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Why it happens:</strong> The start relay helps the compressor motor start. When it fails, the compressor tries to start, clicks, and shuts off—cycling repeatedly without ever running long enough to cool. This is one of the most common causes we see in Bay Area service calls.</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Signs:</strong> A repeating click-buzz pattern every 2–5 minutes. The fridge may feel slightly warm. You might smell a faint electrical burning odor from the back of the unit.</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Repair cost:</strong> Start relay replacement is one of the most affordable fixes—typically $80–$150 in San Francisco including the $60 diagnostic. Most FixitBay technicians carry these parts on the truck for same-visit repair.</p>
+
+              {/* ── Section 7 ── */}
+              <h2 id="compressor" style={H2S}><span style={{ color: '#FF5722' }}>7.</span> Failed Compressor or Refrigerant Leak</h2>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Why it happens:</strong> The compressor is the heart of your refrigerator's cooling system. If it fails, or if refrigerant leaks from the sealed system, the fridge will not cool at all—or will take hours to drop a few degrees.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Signs of compressor failure:</strong> Loud clicking, buzzing, or no noise at all. The compressor may feel unusually hot to the touch.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>When to call a pro:</strong> Compressor and refrigerant issues require specialized tools, EPA certification (for refrigerant handling), and diagnostic equipment. This is NOT a DIY repair.</p>

@@ -9,7 +9,7 @@ const BlogPage = () => {
   const blogPosts = [
     {
       slug: 'refrigerator-not-cooling',
-      title: '5 Common Reasons Your Refrigerator Isn\'t Cooling',
+      title: 'Refrigerator Not Cooling? 7 Causes & Fixes [SF Technician Guide]',
       excerpt: 'Is your fridge running but not keeping food cold? Learn the top 5 causes including compressor issues, dirty coils, and thermostat problems. Plus, what you can check yourself before calling a technician.',
       content: 'Common causes include dirty condenser coils, faulty thermostats, damaged door seals, compressor failures, and blocked air vents. Regular maintenance can prevent most of these issues.',
       date: 'January 20, 2025',

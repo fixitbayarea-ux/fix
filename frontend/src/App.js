@@ -106,6 +106,8 @@ const EnergyEfficientAppliances = lazy(() => import("./components/pages/blog/Ene
 const GasSmellFromStove = lazy(() => import("./components/pages/blog/GasSmellFromStove"));
 const RefrigeratorWaterFilter = lazy(() => import("./components/pages/blog/RefrigeratorWaterFilter"));
 const DishwasherNotDraining = lazy(() => import("./components/pages/blog/DishwasherNotDraining"));
+const DryerNotHeating = lazy(() => import("./components/pages/blog/DryerNotHeating"));
+const ApplianceRepairCostSanFrancisco = lazy(() => import("./components/pages/blog/ApplianceRepairCostSanFrancisco"));
 const NeighborhoodPage = lazy(() => import("./components/pages/NeighborhoodPage"));
 const MarinCountyPage = lazy(() => import("./components/pages/MarinCountyPage"));
 const CityServicePage = lazy(() => import("./components/pages/CityServicePage"));
@@ -224,6 +226,8 @@ export default function App() {
         <Route path="/blog/gas-smell-from-stove" element={<GasSmellFromStove />} />
         <Route path="/blog/refrigerator-water-filter" element={<RefrigeratorWaterFilter />} />
         <Route path="/blog/dishwasher-not-draining" element={<DishwasherNotDraining />} />
+        <Route path="/blog/dryer-not-heating" element={<DryerNotHeating />} />
+        <Route path="/blog/appliance-repair-cost-san-francisco" element={<ApplianceRepairCostSanFrancisco />} />
         
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
