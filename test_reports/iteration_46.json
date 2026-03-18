@@ -81,7 +81,7 @@
     "issue": "/belvedere-tiburon-appliance-repair not loading city page",
     "root_cause": "In CityRepairRoute.js (lines 82-89), VALID_CITIES check happens BEFORE CUSTOM_CITY_PAGES check. VALID_CITIES is derived from cities.js which only has 'belvedere' and 'tiburon' as separate slugs, not 'belvedere-tiburon'. Since 'belvedere-tiburon' is not in VALID_CITIES, it redirects to /service-areas before reaching the CUSTOM_CITY_PAGES check where 'belvedere-tiburon' IS defined.",
     "reproduction_steps": [
-      "Navigate to https://mobile-cta-testing.preview.emergentagent.com/belvedere-tiburon-appliance-repair",
+      "Navigate to https://repair-engagement.preview.emergentagent.com/belvedere-tiburon-appliance-repair",
       "Page shows generic 'Expert Service Areas Repair in San Francisco' instead of Belvedere & Tiburon city page"
     ],
     "mitigation": "Add { name: 'Belvedere Tiburon', slug: 'belvedere-tiburon', path: '/belvedere-tiburon-appliance-repair', region: 'North Bay' } to SERVICE_CITIES in cities.js"

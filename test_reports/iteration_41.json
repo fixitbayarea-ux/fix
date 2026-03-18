@@ -30,7 +30,7 @@
   "seed_data_creation": "None",
   "retest_needed": false,
   "should_main_agent_self_test": false,
-  "context_for_next_testing_agent": "Iteration 41 verified global color change from warm amber #E07B39 to deep orange-red #FF5722. All accents, buttons, badges, icons, borders, links now use #FF5722. Hover color changed from #F5A05A to #FF7043. Header has border-bottom rgba(255,87,34,0.25), logo 40px, phone styling correct. Map stretches to match cities list height with min-height 420px. Sticky CALL NOW button appears after scrolling past hero with #FF5722 background. Base URL: https://mobile-cta-testing.preview.emergentagent.com",
+  "context_for_next_testing_agent": "Iteration 41 verified global color change from warm amber #E07B39 to deep orange-red #FF5722. All accents, buttons, badges, icons, borders, links now use #FF5722. Hover color changed from #F5A05A to #FF7043. Header has border-bottom rgba(255,87,34,0.25), logo 40px, phone styling correct. Map stretches to match cities list height with min-height 420px. Sticky CALL NOW button appears after scrolling past hero with #FF5722 background. Base URL: https://repair-engagement.preview.emergentagent.com",
   "test_results": {
     "global_color_scan": {
       "old_E07B39_instances": "0 - PASS",
