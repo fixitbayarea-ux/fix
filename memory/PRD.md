@@ -21,6 +21,17 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 
 ## Completed Work
 
+### Session 19 (Mar 18, 2026) — New Blog Post Integration
+- Integrated 2 new blog post components into the app:
+  - `/blog/dryer-not-heating` — "Dryer Not Heating? Common Causes & Repair Cost in San Francisco"
+  - `/blog/appliance-repair-cost-san-francisco` — "Appliance Repair Cost in San Francisco 2026 — Complete Price Guide"
+- Added lazy imports and routes in `App.js`
+- Added metadata to `STATIC_POSTS` in `BlogListPage.js` (new "San Francisco" category filter tab auto-generated)
+- Added SEO config entries in `seo-config.cjs` (BLOG_PAGES + blogSEO + internalLinks)
+- Rebuilt production build — all 233 SEO snapshots verified (0 failures)
+- Submitted 160 URLs via IndexNow (`blog/refrigerator-not-cooling` update also included)
+- Testing: 8/8 frontend tests passed
+
 ### Session 18 (Mar 17, 2026) — Sitemap Sync & IndexNow
 - Synced public/sitemap.xml with build/sitemap.xml (207→230 URLs), adding 23 missing pages (marin-county, 9 blog, 12 SF neighborhoods, llm-info)
 - Created IndexNow setup: API key `d905a0c5900bccfa6834d45047983926`, verification file in public/
