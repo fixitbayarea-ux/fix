@@ -91,6 +91,17 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **DryerNotHeating**: Meta description updated to reflect "from $235", 154 chars
 - **ApplianceRepairCostSanFrancisco**: Title → "Price Guide", datePublished → March 2026, PRICING_DATA updated to match servicePricing.js (from $255/240/235/195/230), service links updated, FAQ pricing updated
 
+### Session 26 (Mar 18, 2026) — SEO Meta Description & Title Length Fixes
+- **FIX 2 (Titles > 60 chars)**: All page titles verified ≤60 chars across 466 generated HTML files. Fixed generic service fallback template and city+service template in `seo-config.cjs`. Also fixed city+service template in `seoContent.js`.
+- **FIX 3 (Descriptions > 158 chars)**: Trimmed 30 meta descriptions across `seo-config.cjs` and `seoContent.js`:
+  - City pages (Daly City), Reviews, Service Areas, Contact, Maintenance, Brands index
+  - 12 blog descriptions (refrigerator-not-cooling, dishwasher-maintenance, dishwasher-not-draining, dryer-taking-too-long, washer-error-codes, oven-temperature-calibration, ice-maker-troubleshooting, appliance-lifespan, energy-efficient, gas-smell, marin-county, same-day, refrigerator-water-filter, when-to-repair-vs-replace)
+  - 5 maintenance sub-pages (refrigerator, washer, dryer, dishwasher, wine-cooler)
+  - Services, Privacy Policy, Blog FAQ pages
+  - Generic service fallback and neighborhood page templates
+- **FIX 1 (6-month text)**: All brand page warranty mentions already fixed. Fixed 1 remaining warranty-related "within 6 months" → "within 180 days" in neighborhood page template. All other "6 months" instances are legitimate service advice (e.g., "clean coils every 6 months").
+- Regenerated 233/233 SEO snapshots. Final validation: 466 HTML files, 0 titles >60, 0 descriptions >158.
+
 ## Backlog
 - (P1) Investigate 2 Soft 404 pages from GSC
 - (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`

@@ -317,7 +317,7 @@ function getCityServiceContent(citySlug, serviceSlug) {
   };
   const range = pricing[serviceSlug] || '$150–$350';
   return {
-    title: `${serviceName} Repair ${cityName} | Same-Day | FixitBay`,
+    title: `${serviceName} Repair ${cityName} | FixitBay`,
     description: `Professional ${serviceName.toLowerCase()} repair in ${cityName}. $60 diagnostic applied to repair. Same-day service. 180-day warranty. Licensed & insured.`,
     h1: `${serviceName} Repair in ${cityName}`,
     content: `
@@ -544,12 +544,12 @@ function getBlogContent(slug) {
     },
     'appliance-repair-marin': {
       title: 'Appliance Repair Marin County | Same-Day | FixitBay',
-      description: 'Licensed appliance repair in Marin County — Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo, Belvedere, San Quentin. $60 diagnostic, 180-day warranty.',
+      description: 'Licensed appliance repair in Marin County — Mill Valley, San Rafael, Novato, Sausalito, Tiburon & more. $60 diagnostic, 180-day warranty.',
       h1: 'Appliance Repair in Marin County'
     },
     'same-day-repair': {
       title: 'Same-Day Appliance Repair Bay Area | FixitBay',
-      description: 'Same-day appliance repair across SF Bay Area — San Francisco, Peninsula & Marin County. Licensed technicians available today. $60 diagnostic applied to repair.',
+      description: 'Same-day appliance repair across SF Bay Area — San Francisco, Peninsula & Marin County. Licensed technicians available today. $60 diagnostic.',
       h1: 'Same-Day Appliance Repair Bay Area'
     }
   };

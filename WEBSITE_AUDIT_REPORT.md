@@ -1,6 +1,6 @@
 # 🔍 КОМПЛЕКСНЫЙ АУДИТ САЙТА FIXITBAY
 **Дата:** 24 января 2026  
-**URL:** https://repair-engagement.preview.emergentagent.com
+**URL:** https://title-desc-fix.preview.emergentagent.com
 
 ---
 
