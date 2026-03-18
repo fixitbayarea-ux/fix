@@ -624,8 +624,8 @@ const ProfessionalLandingPage = () => {
           }
 
           /* -- INTRO CTA BUTTONS (mobile full-width) -- */
-          .intro-cta-row { flex-direction: column !important; }
-          .intro-cta-book, .intro-cta-call { width: 100% !important; min-width: 0 !important; box-sizing: border-box; }
+          .intro-cta-row { flex-direction: column !important; align-items: stretch !important; }
+          .intro-cta-book, .intro-cta-call { width: 100% !important; min-width: 0 !important; box-sizing: border-box; display: flex !important; justify-content: center; }
 
           /* -- SERVICES TABS -- */
           .tabs, [class*="tab-list"], [role="tablist"] {

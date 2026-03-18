@@ -11,7 +11,7 @@ const BlogPost = () => {
     'refrigerator-not-cooling': {
       title: '5 Common Reasons Your Refrigerator Isn\'t Cooling',
       metaDescription: 'Is your fridge not cooling? Learn the top 5 causes: dirty condenser coils, faulty thermostats, bad door seals, compressor issues & blocked vents. DIY fixes included.',
-      date: 'January 20, 2025',
+      date: 'January 20, 2026',
       readTime: '5 min',
       category: 'Refrigerator',
       icon: '🧊',
@@ -71,7 +71,7 @@ const BlogPost = () => {
     'dishwasher-maintenance': {
       title: 'How to Maintain Your Dishwasher for Longer Life',
       metaDescription: 'Keep your dishwasher running 10+ years with simple monthly maintenance. Clean filters, spray arms, door seals. Prevent clogs, leaks & odors. Free tips from pros.',
-      date: 'January 18, 2025',
+      date: 'January 18, 2026',
       readTime: '7 min',
       category: 'Dishwasher',
       icon: '🍽️',
@@ -171,7 +171,7 @@ const BlogPost = () => {
     'when-to-repair-vs-replace': {
       title: 'Repair vs Replace: When to Fix Your Appliance',
       metaDescription: 'Should you repair or replace your appliance? Use the 50% rule, age factors, and energy efficiency to make the right financial decision. Expert guide included.',
-      date: 'January 15, 2025',
+      date: 'January 15, 2026',
       readTime: '6 min',
       category: 'Expert Advice',
       icon: '💡',
@@ -291,7 +291,7 @@ const BlogPost = () => {
     'dryer-taking-too-long': {
       title: 'Why Is My Dryer Taking So Long to Dry?',
       metaDescription: 'Dryer taking forever? Learn 7 causes: clogged vent, bad heating element, thermostat, moisture sensor. DIY fixes + when to call pro. Prevent fire hazards.',
-      date: 'January 12, 2025',
+      date: 'January 12, 2026',
       readTime: '6 min',
       category: 'Dryer',
       icon: '🌀',
@@ -377,7 +377,7 @@ const BlogPost = () => {
     'washer-error-codes': {
       title: 'Common Washer Error Codes & What They Mean',
       metaDescription: 'Decode washer error codes from Samsung, LG, Whirlpool, GE. OE, UE, LE codes explained. Simple troubleshooting steps before calling repair.',
-      date: 'January 10, 2025',
+      date: 'January 10, 2026',
       readTime: '8 min',
       category: 'Washer',
       icon: '👕',
@@ -387,7 +387,7 @@ const BlogPost = () => {
     'oven-temperature-calibration': {
       title: 'How to Calibrate Your Oven Temperature',
       metaDescription: 'Is your oven cooking unevenly? Test temperature accuracy with a thermometer and calibrate for perfect results. Works for all oven brands.',
-      date: 'January 8, 2025',
+      date: 'January 8, 2026',
       readTime: '5 min',
       category: 'Oven',
       icon: '🔥',
@@ -397,7 +397,7 @@ const BlogPost = () => {
     'ice-maker-troubleshooting': {
       title: 'Ice Maker Not Working? Top 10 Fixes',
       metaDescription: 'No ice? Slow production? Small cubes? Troubleshoot water supply, ice maker module, water filter. Most ice maker problems are easy fixes.',
-      date: 'January 5, 2025',
+      date: 'January 5, 2026',
       readTime: '7 min',
       category: 'Refrigerator',
       icon: '🧊',
@@ -407,7 +407,7 @@ const BlogPost = () => {
     'appliance-lifespan': {
       title: 'How Long Should Your Appliances Last?',
       metaDescription: 'Expected lifespans: Refrigerators 13 years, Washers 10 years, Dryers 13 years. Learn when to plan for replacement and extend appliance life.',
-      date: 'January 3, 2025',
+      date: 'January 3, 2026',
       readTime: '6 min',
       category: 'Expert Advice',
       icon: '📅',

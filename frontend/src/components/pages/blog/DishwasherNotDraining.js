@@ -86,7 +86,7 @@ const DishwasherNotDraining = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Dishwasher Not Draining? 7 Quick Fixes", "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2024-06-01", "dateModified": "2025-01-01", "url": "https://fixitbay.net/blog/dishwasher-not-draining" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Dishwasher Not Draining? 7 Quick Fixes", "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2024-06-01", "dateModified": "2026-01-01", "url": "https://fixitbay.net/blog/dishwasher-not-draining" } },
     { id: 'howto-schema', data: { "@context": "https://schema.org", "@type": "HowTo", "name": "How to Fix a Dishwasher That Won't Drain", "description": "7 fixes for dishwasher drainage problems, ordered by likelihood", "totalTime": "PT10M", "step": [
       { "@type": "HowToStep", "position": 1, "name": "Clean the dishwasher filter", "text": "Remove and rinse the cylindrical filter at the bottom of the tub under hot water with a soft brush." },
       { "@type": "HowToStep", "position": 2, "name": "Check the drain hose for kinks", "text": "Inspect the drain hose for bends, kinks, or visible damage. Ensure it forms a high loop secured to the underside of the counter." },

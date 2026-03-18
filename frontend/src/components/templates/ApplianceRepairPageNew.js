@@ -716,9 +716,9 @@ const ApplianceRepairPageNew = ({
             [data-testid="city-hero"] { min-height: auto !important; max-height: none !important; }
             [data-testid="city-hero"] > div { padding: 48px 20px !important; }
             [data-testid="city-hero-h1"] { font-size: 34px !important; }
-            .city-cta-row { flex-direction: column !important; }
-            .city-cta-book { width: 100% !important; }
-            .city-cta-call { width: 100% !important; }
+            .city-cta-row { flex-direction: column !important; align-items: stretch !important; gap: 12px !important; }
+            .city-cta-book { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
+            .city-cta-call { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
           }
           @media (max-width: 480px) {
             .city-process-grid { grid-template-columns: 1fr !important; }

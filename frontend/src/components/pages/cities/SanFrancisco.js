@@ -250,9 +250,9 @@ const SanFrancisco = () => {
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#128737;</span> <span style={{ color: 'rgba(255,255,255,0.85)' }}>License #51001</span></span>
           </div>
           {/* CTAs */}
-          <div style={{ display: 'flex', gap: 14, marginTop: 28, flexWrap: 'wrap' }}>
-            <a href="/book?go=1" data-testid="sf-hero-book" style={{ display: 'inline-flex', alignItems: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
-            <a href="tel:+17605435733" data-testid="sf-hero-call" style={{ display: 'inline-flex', alignItems: 'center', padding: '16px 28px', borderRadius: 3, background: 'transparent', border: '1.5px solid rgba(255,255,255,0.30)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.30)'; e.currentTarget.style.color = '#FFFFFF'; }}>CALL (760) 543-5733</a>
+          <div className="sf-cta-row" style={{ display: 'flex', gap: 14, marginTop: 28, flexWrap: 'wrap' }}>
+            <a href="/book?go=1" data-testid="sf-hero-book" className="sf-cta-book" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
+            <a href="tel:+17605435733" data-testid="sf-hero-call" className="sf-cta-call" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 28px', borderRadius: 3, background: 'transparent', border: '1.5px solid rgba(255,255,255,0.30)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.30)'; e.currentTarget.style.color = '#FFFFFF'; }}>CALL (760) 543-5733</a>
           </div>
           {/* Stats row */}
           <div style={{ width: 48, height: 2, background: 'rgba(255,87,34,0.40)', margin: '24px 0 20px' }} />
@@ -571,6 +571,8 @@ const SanFrancisco = () => {
           [data-testid="sf-hero"] { min-height: auto !important; max-height: none !important; }
           [data-testid="sf-hero"] > div { padding: 48px 20px !important; }
           [data-testid="sf-hero-h1"] { font-size: 34px !important; }
+          .sf-cta-row { flex-direction: column !important; gap: 12px !important; align-items: stretch !important; }
+          .sf-cta-book, .sf-cta-call { width: 100% !important; box-sizing: border-box !important; min-width: 0 !important; display: flex !important; justify-content: center !important; }
         }
         @media (max-width: 480px) {
           .sf-how-grid { grid-template-columns: 1fr !important; }

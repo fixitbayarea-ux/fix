@@ -74,6 +74,13 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - Verified: `/daly-city-refrigerator-repair` → `"Refrigerator Repair Daly City | Same-Day | FixitBay"` ✅, `/san-francisco-washer-repair` → `"Washer Repair San Francisco | Same-Day | FixitBay"` ✅
 - File changed: `frontend/public/index.html` (3-line change)
 
+### Session 23 (Mar 18, 2026) — Mobile UX Fixes & Blog Date Updates
+- **FIX 2 (P0)**: SF city page (`SanFrancisco.js`) hero CTA buttons — added `className="sf-cta-row/sf-cta-book/sf-cta-call"` and CSS rules: `align-items: stretch`, `width: 100%`, `display: flex`, `min-width: 0` at `@media (max-width: 767px)` for full-width mobile buttons
+- **FIX 2B**: `ApplianceRepairPageNew.js` — enhanced `.city-cta-row/book/call` mobile CSS with `align-items: stretch` and `display: flex !important` (all 20 city pages using template)
+- **FIX 3**: Homepage intro CTA buttons (`ProfessionalLandingPage.js`) — added `align-items: stretch !important` and `display: flex !important` to `.intro-cta-row`, `.intro-cta-book`, `.intro-cta-call` CSS rules
+- **FIX 4**: Updated all blog post dates from January 2025 → January 2026 across `BlogPage.js`, `BlogPost.js`, `BlogListPage.js`, and all individual blog files; updated `dateModified` in JSON-LD; regenerated 233 SEO snapshots
+- **FIX 1 (Ghost div)**: Not identified via code analysis — requires user testing on actual mobile device to reproduce and pinpoint
+
 ## Backlog
 - (P1) Investigate 2 Soft 404 pages from GSC
 - (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`

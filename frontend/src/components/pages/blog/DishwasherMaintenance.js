@@ -20,7 +20,7 @@ const DishwasherMaintenance = () => {
         />
         <link rel="canonical" href="https://fixitbay.net/blog/dishwasher-maintenance" />
         <meta property="og:type" content="article" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Maintain Your Dishwasher for Longer Life","author":{"@type":"Person","name":"Andrei","jobTitle":"Licensed Appliance Technician","worksFor":{"@type":"Organization","name":"FixitBay LLC"}},"publisher":{"@type":"Organization","name":"FixitBay LLC"},"datePublished":"2024-06-01","dateModified":"2025-01-01","url":"https://fixitbay.net/blog/dishwasher-maintenance"})}</script>
+        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Maintain Your Dishwasher for Longer Life","author":{"@type":"Person","name":"Andrei","jobTitle":"Licensed Appliance Technician","worksFor":{"@type":"Organization","name":"FixitBay LLC"}},"publisher":{"@type":"Organization","name":"FixitBay LLC"},"datePublished":"2024-06-01","dateModified":"2026-01-01","url":"https://fixitbay.net/blog/dishwasher-maintenance"})}</script>
       </Helmet>
 
       <article className="min-h-screen bg-gray-50">
@@ -52,7 +52,7 @@ const DishwasherMaintenance = () => {
                 <Tag className="w-4 h-4 mr-1" /> Dishwasher
               </span>
               <span className="text-white/80 text-sm flex items-center gap-1">
-                <Calendar className="w-4 h-4" /> January 18, 2025
+                <Calendar className="w-4 h-4" /> January 18, 2026
               </span>
               <span className="text-white/80 text-sm flex items-center gap-1">
                 <Clock className="w-4 h-4" /> 7 min read
