@@ -68,7 +68,14 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 ### Session 15 — Core SEO Fixes
 - 126 city+service routes, noindex fix, /book removed from sitemap, title format fix, warranty text fix
 
+### Session 22 (Mar 18, 2026) — Fix "Page and SERP titles do not match" (P0)
+- Root cause: `applySEO()` function in `public/index.html` had a fallback `routeMeta[path] || routeMeta['/']` that overrode city+service page titles with the home page title when routes weren't in the `routeMeta` object
+- Fix: Changed fallback to early `return` when route not in `routeMeta` — React's `SEOMetaTags` component handles title for unknown routes
+- Verified: `/daly-city-refrigerator-repair` → `"Refrigerator Repair Daly City | Same-Day | FixitBay"` ✅, `/san-francisco-washer-repair` → `"Washer Repair San Francisco | Same-Day | FixitBay"` ✅
+- File changed: `frontend/public/index.html` (3-line change)
+
 ## Backlog
 - (P1) Investigate 2 Soft 404 pages from GSC
-- (P1) Refactor dual content sources into single source
+- (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`
+- (P2) Refactor dual content sources (`seoContent.js` + `seo-config.cjs`) into single source
 - (P2) Refactor monolithic components

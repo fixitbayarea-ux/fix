@@ -612,7 +612,10 @@
 
     function applySEO() {
       var path = (window.location.pathname || '/').replace(/\/$/, '') || '/';
-      var meta = routeMeta[path] || routeMeta['/'];
+      var meta = routeMeta[path];
+      // If this route is not in routeMeta, React components (SEOMetaTags) handle title/meta.
+      // Do NOT fall back to home page — that causes "Page and SERP titles do not match" errors.
+      if (!meta) return;
       var url = 'https://fixitbay.net' + path;
       
       document.title = meta.title || 'FixitBay LLC Appliance Repair – San Francisco & Bay Area';
