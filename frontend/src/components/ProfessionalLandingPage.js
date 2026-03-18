@@ -174,6 +174,18 @@ const ProfessionalLandingPage = () => {
   ];
   const categories = ['Kitchen', 'Laundry', 'Commercial'];
   const [activeCategory, setActiveCategory] = useState('Kitchen');
+  const [activeCarouselIndex, setActiveCarouselIndex] = useState(0);
+  const [showSwipeHint, setShowSwipeHint] = useState(true);
+  const carouselRef = React.useRef(null);
+
+  /* Reset carousel state + swipe hint whenever tab changes */
+  React.useEffect(() => {
+    setShowSwipeHint(true);
+    setActiveCarouselIndex(0);
+    if (carouselRef.current) carouselRef.current.scrollLeft = 0;
+    const timer = setTimeout(() => setShowSwipeHint(false), 2000);
+    return () => clearTimeout(timer);
+  }, [activeCategory]);
   const filteredServices = servicesData.filter(s => s.category === activeCategory);
 
   const howItWorksSteps = [
@@ -259,9 +271,9 @@ const ProfessionalLandingPage = () => {
               </div>
             ))}
           </div>
-          <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
-            <a href="/book?go=1" className="r2-btn-primary" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minWidth: 230, height: 56, borderRadius: 4, background: '#FF5722', color: '#fff', fontSize: 16, fontWeight: 800, textDecoration: 'none' }}>Book Online</a>
-            <a href="tel:+17605435733" className="r2-btn-secondary" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10, minWidth: 230, height: 56, borderRadius: 4, background: '#fff', color: '#FF5722', fontSize: 16, fontWeight: 800, textDecoration: 'none', border: '2px solid #FF5722' }}><Phone size={18} /> Call (760) 543-5733</a>
+          <div className="intro-cta-row flex flex-col sm:flex-row items-center gap-4 mt-6">
+            <a href="/book?go=1" data-testid="intro-cta-book" className="r2-btn-primary intro-cta-book" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minWidth: 230, height: 56, borderRadius: 4, background: '#FF5722', color: '#fff', fontSize: 16, fontWeight: 800, textDecoration: 'none' }}>Book Online</a>
+            <a href="tel:+17605435733" data-testid="intro-cta-call" className="r2-btn-secondary intro-cta-call" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10, minWidth: 230, height: 56, borderRadius: 4, background: '#fff', color: '#FF5722', fontSize: 16, fontWeight: 800, textDecoration: 'none', border: '2px solid #FF5722' }}><Phone size={18} /> Call (760) 543-5733</a>
           </div>
         </div>
       </section>
@@ -354,13 +366,64 @@ const ProfessionalLandingPage = () => {
             ))}
           </div>
           {/* Mobile carousel */}
-          <div key={`m-${activeCategory}`} className="lg:hidden overflow-x-auto pb-4 scrollbar-hide -mx-4 animate-fadeIn" style={{ scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch' }}>
-            <div className="flex gap-4 px-4">
-              {filteredServices.map(svc => (
-                <a key={svc.name} href={svc.path} rel={svc.name === 'Dishwasher' ? 'nofollow' : undefined} className="flex-shrink-0 flex flex-col bg-white rounded-xl overflow-hidden shadow-md" style={{ width: '85vw', maxWidth: 360, scrollSnapAlign: 'center', textDecoration: 'none' }}>
-                  <div className="relative h-40 bg-gray-200 overflow-hidden"><img src={svc.image} alt={`${svc.name} repair`} className="w-full h-full object-cover" loading="lazy" /></div>
-                  <div className="flex flex-col flex-grow p-5"><h3 className="text-lg font-bold mb-2" style={{ color: '#0D1B2A' }}>{svc.name}</h3><p className="text-sm mb-3" style={{ color: '#4A5568' }}>{svc.description}</p><div className="flex flex-wrap gap-2 mb-3"><span className="text-xs px-2.5 py-1 rounded-full font-semibold" style={{ background: '#F0EBE5', color: '#0D1B2A' }}>Same/Next-Day</span><span className="text-xs px-2.5 py-1 rounded-full font-semibold" style={{ background: '#F8F5F0', color: '#744210' }}>$60 Diagnostic</span></div><div className="mt-auto w-full px-5 py-2.5 rounded-lg font-bold text-center text-sm" style={{ background: '#FF5722', color: '#fff' }}>View Service</div></div>
-                </a>
+          <div key={`m-${activeCategory}`} className="lg:hidden animate-fadeIn">
+            {/* Swipe hint — fades out after 2s */}
+            <div style={{ textAlign: 'right', paddingRight: 20, marginBottom: 8, height: 18 }}>
+              <span
+                data-testid="swipe-hint"
+                style={{
+                  fontSize: 11, fontWeight: 600, color: '#4A5568',
+                  fontFamily: 'Montserrat, sans-serif', letterSpacing: '0.04em',
+                  opacity: showSwipeHint ? 1 : 0,
+                  transition: 'opacity 0.6s ease',
+                  pointerEvents: 'none', userSelect: 'none',
+                }}
+              >Swipe to see all services →</span>
+            </div>
+            {/* Scroll container */}
+            <div
+              ref={carouselRef}
+              data-testid="services-carousel"
+              onScroll={(e) => {
+                const el = e.currentTarget;
+                const cardWidth = el.clientWidth * 0.85;
+                const idx = Math.round(el.scrollLeft / (cardWidth + 16));
+                setActiveCarouselIndex(Math.max(0, Math.min(idx, filteredServices.length - 1)));
+              }}
+              className="overflow-x-auto pb-4 scrollbar-hide -mx-4"
+              style={{ scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch' }}
+            >
+              <div className="flex gap-4 px-4">
+                {filteredServices.map(svc => (
+                  <a key={svc.name} href={svc.path} rel={svc.name === 'Dishwasher' ? 'nofollow' : undefined} className="flex-shrink-0 flex flex-col bg-white rounded-xl overflow-hidden shadow-md" style={{ width: '85vw', maxWidth: 360, scrollSnapAlign: 'center', textDecoration: 'none' }}>
+                    <div className="relative h-40 bg-gray-200 overflow-hidden"><img src={svc.image} alt={`${svc.name} repair`} className="w-full h-full object-cover" loading="lazy" /></div>
+                    <div className="flex flex-col flex-grow p-5"><h3 className="text-lg font-bold mb-2" style={{ color: '#0D1B2A' }}>{svc.name}</h3><p className="text-sm mb-3" style={{ color: '#4A5568' }}>{svc.description}</p><div className="flex flex-wrap gap-2 mb-3"><span className="text-xs px-2.5 py-1 rounded-full font-semibold" style={{ background: '#F0EBE5', color: '#0D1B2A' }}>Same/Next-Day</span><span className="text-xs px-2.5 py-1 rounded-full font-semibold" style={{ background: '#F8F5F0', color: '#744210' }}>$60 Diagnostic</span></div><div className="mt-auto w-full px-5 py-2.5 rounded-lg font-bold text-center text-sm" style={{ background: '#FF5722', color: '#fff' }}>View Service</div></div>
+                  </a>
+                ))}
+              </div>
+            </div>
+            {/* Scroll indicator dots */}
+            <div className="flex justify-center gap-2 mt-3" aria-hidden="true" data-testid="carousel-dots">
+              {filteredServices.map((_, i) => (
+                <button
+                  key={i}
+                  data-testid={`carousel-dot-${i}`}
+                  onClick={() => {
+                    const el = carouselRef.current;
+                    if (el) {
+                      const cardWidth = el.clientWidth * 0.85;
+                      el.scrollTo({ left: i * (cardWidth + 16), behavior: 'smooth' });
+                    }
+                    setActiveCarouselIndex(i);
+                  }}
+                  style={{
+                    width: activeCarouselIndex === i ? 20 : 8,
+                    height: 8, borderRadius: 4, border: 'none', padding: 0,
+                    background: activeCarouselIndex === i ? '#FF5722' : 'rgba(0,0,0,0.20)',
+                    cursor: 'pointer', flexShrink: 0,
+                    transition: 'width 0.3s ease, background 0.3s ease',
+                  }}
+                />
               ))}
             </div>
           </div>
@@ -558,6 +621,10 @@ const ProfessionalLandingPage = () => {
           [class*="how-it-works"] .grid, [class*="steps"] .grid, [class*="process"] .grid {
             grid-template-columns: 1fr; gap: 16px;
           }
+
+          /* -- INTRO CTA BUTTONS (mobile full-width) -- */
+          .intro-cta-row { flex-direction: column !important; }
+          .intro-cta-book, .intro-cta-call { width: 100% !important; min-width: 0 !important; box-sizing: border-box; }
 
           /* -- SERVICES TABS -- */
           .tabs, [class*="tab-list"], [role="tablist"] {
