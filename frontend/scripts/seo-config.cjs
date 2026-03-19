@@ -628,6 +628,24 @@ function getSEOContent(route) {
         <p style="margin-bottom:1rem;">FixitBay LLC is a licensed and insured appliance repair company proudly serving San Francisco, the Peninsula, and Marin County since 2023. We repair all major appliance brands including Whirlpool, Samsung, LG, GE, Sub-Zero, Viking, and more.</p>
         <p>Every repair comes with a transparent $60 diagnostic fee applied to your repair cost and is backed by our 180-day warranty on parts and labor. Learn more about our team, values, and commitment to quality service.</p>
       `,
+      schemas: [
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "FixitBay Appliance Repair — How It Works",
+          "description": "Learn how FixitBay LLC provides same-day appliance repair in San Francisco & Bay Area. Licensed technicians, $60 diagnostic, 180-day warranty.",
+          "thumbnailUrl": "https://img.youtube.com/vi/WBEc8Lz2saA/maxresdefault.jpg",
+          "uploadDate": "2026-01-01",
+          "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA",
+          "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA",
+          "publisher": {
+            "@type": "Organization",
+            "name": "FixitBay LLC",
+            "url": "https://fixitbay.net"
+          },
+          "duration": "PT2M"
+        }
+      ],
       internalLinks: defaultInternalLinks
     };
   }

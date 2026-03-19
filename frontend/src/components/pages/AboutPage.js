@@ -51,7 +51,8 @@ const AboutPage = () => {
   const schemas = useMemo(() => [
     { id: 'localbusiness-schema', data: { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "FixitBay LLC", "description": "Licensed appliance repair service in San Francisco and Bay Area. Family-owned, honest pricing, 180-day warranty.", "url": "https://fixitbay.net", "telephone": "+17605435733", "email": "info@fixitbay.net", "address": { "@type": "PostalAddress", "streetAddress": "1549 Franklin St, Unit A", "addressLocality": "San Francisco", "addressRegion": "CA", "postalCode": "94109" }, "geo": { "@type": "GeoCoordinates", "latitude": 37.7749, "longitude": -122.4194 }, "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }, { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }], "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "87" }, "employee": { "@type": "Person", "name": "Andrei", "jobTitle": "Lead Technician", "description": "Licensed CA appliance repair technician, mechanical engineer, License #51001" } } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://fixitbay.net/about" }] } },
-    { id: 'person-schema', data: { "@context": "https://schema.org", "@type": "Person", "name": "Andrei", "jobTitle": "Lead Appliance Repair Technician", "worksFor": { "@type": "LocalBusiness", "name": "FixitBay LLC" }, "description": "Licensed CA appliance repair technician (License #51001). Mechanical engineer with 10+ years experience. Former cargo ship boatswain.", "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "CA Major Appliance Technician License #51001", "recognizedBy": { "@type": "Organization", "name": "Bureau of Household Goods and Services" } } } }
+    { id: 'person-schema', data: { "@context": "https://schema.org", "@type": "Person", "name": "Andrei", "jobTitle": "Lead Appliance Repair Technician", "worksFor": { "@type": "LocalBusiness", "name": "FixitBay LLC" }, "description": "Licensed CA appliance repair technician (License #51001). Mechanical engineer with 10+ years experience. Former cargo ship boatswain.", "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "CA Major Appliance Technician License #51001", "recognizedBy": { "@type": "Organization", "name": "Bureau of Household Goods and Services" } } } },
+    { id: 'video-schema', data: { "@context": "https://schema.org", "@type": "VideoObject", "name": "FixitBay Appliance Repair — How It Works", "description": "Learn how FixitBay LLC provides same-day appliance repair in San Francisco & Bay Area. Licensed technicians, $60 diagnostic, 180-day warranty.", "thumbnailUrl": "https://img.youtube.com/vi/WBEc8Lz2saA/maxresdefault.jpg", "uploadDate": "2026-01-01", "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA", "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net" }, "duration": "PT2M" } }
   ], []);
   useSchemas(schemas);
 
@@ -186,17 +187,17 @@ const AboutPage = () => {
           </div>
         </section>
 
-        {/* ━━━ 3. WATCH ANDREI IN ACTION ━━━ */}
+        {/* ━━━ 3. SEE HOW OUR REPAIR PROCESS WORKS ━━━ */}
         <section data-testid="videos-section" style={{ background: '#0D1B2A', padding: '64px 24px' }}>
           <div style={{ textAlign: 'center' }}>
             <div style={EYE}>SEE THE WORK</div>
-            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#fff', marginBottom: 8 }}>Watch Andrei in Action</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.6)', marginBottom: 40 }}>See our professional appliance repair service firsthand</p>
+            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#fff', marginBottom: 8 }}>See How Our Repair Process Works</h2>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.6)', marginBottom: 40 }}>Watch our licensed technicians diagnose and fix appliances across the Bay Area — from initial inspection to final testing.</p>
           </div>
           <div className="video-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, maxWidth: 900, margin: '0 auto' }}>
             {[
-              { src: 'https://www.youtube.com/embed/WBEc8Lz2saA', title: 'Andrei Appliance Repair - Video 1', caption: 'Professional Repair Service' },
-              { src: 'https://www.youtube.com/embed/ottiV_KfcUI', title: 'Andrei Appliance Repair - Video 2', caption: 'Expert Technician at Work' },
+              { src: 'https://www.youtube.com/embed/WBEc8Lz2saA', title: 'FixitBay Appliance Repair — How It Works', caption: 'Professional Repair Service' },
+              { src: 'https://www.youtube.com/embed/ottiV_KfcUI', title: 'FixitBay Expert Technician at Work', caption: 'Expert Technician at Work' },
             ].map((v, i) => (
               <div key={i} style={{ borderRadius: 4, overflow: 'hidden', border: '1px solid rgba(255,87,34,0.2)', boxShadow: '0 4px 24px rgba(0,0,0,0.3)' }}>
                 <div style={{ position: 'relative', paddingBottom: '177.78%', background: '#000' }}>
@@ -215,6 +216,9 @@ const AboutPage = () => {
               </div>
             ))}
           </div>
+          <p data-testid="video-description" style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.55)', textAlign: 'center', maxWidth: 700, margin: '24px auto 0', lineHeight: 1.7 }}>
+            Every FixitBay repair starts with a thorough $60 diagnostic — we identify the root cause, explain the issue, and provide a written estimate before any work begins. All repairs include our 180-day warranty on parts and labor.
+          </p>
           <div style={{ textAlign: 'center', marginTop: 32 }}>
             <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="phone-cta" style={{ display: 'inline-block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Book Your Repair Today</a>
           </div>

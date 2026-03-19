@@ -102,6 +102,13 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **FIX 1 (6-month text)**: All brand page warranty mentions already fixed. Fixed 1 remaining warranty-related "within 6 months" → "within 180 days" in neighborhood page template. All other "6 months" instances are legitimate service advice (e.g., "clean coils every 6 months").
 - Regenerated 233/233 SEO snapshots. Final validation: 466 HTML files, 0 titles >60, 0 descriptions >158.
 
+### Session 27 (Mar 19, 2026) — About Page VideoObject Schema & Video Enhancement
+- Added `VideoObject` JSON-LD schema to About page (both React component via `useSchemas` hook and `seo-config.cjs` for pre-rendered HTML)
+- Schema includes: name, description, thumbnailUrl, uploadDate, contentUrl, embedUrl, publisher, duration
+- Updated video section heading: "Watch Andrei in Action" → "See How Our Repair Process Works"
+- Added descriptive subtitle above videos and a process description paragraph below the video embeds
+- 233/233 SEO snapshots rebuilt. VideoObject schema validated in pre-rendered about.html.
+
 ## Backlog
 - (P1) Investigate 2 Soft 404 pages from GSC
 - (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`

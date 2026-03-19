@@ -1,0 +1,657 @@
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+[build]
+  command = "yarn build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# ══════════════════════════════════════════════════════════
+# REDIRECTS — ordered by priority (Netlify processes top-down)
+# ══════════════════════════════════════════════════════════
+
+# ── 1. HTTPS enforcement ──
+[[redirects]]
+  from = "http://fixitbay.net/*"
+  to = "https://fixitbay.net/:splat"
+  status = 301
+  force = true
+
+# ── 2. www → non-www ──
+[[redirects]]
+  from = "https://www.fixitbay.net/*"
+  to = "https://fixitbay.net/:splat"
+  status = 301
+  force = true
+
+# ── 3. Legacy city URLs → canonical pattern ──
+# Old: /appliance-repair-{city}  →  New: /{city}-appliance-repair
+[[redirects]]
+  from = "/appliance-repair-san-francisco"
+  to = "/san-francisco-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-san-rafael"
+  to = "/san-rafael-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-mill-valley"
+  to = "/mill-valley-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-pacifica"
+  to = "/pacifica-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-daly-city"
+  to = "/daly-city-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-south-san-francisco"
+  to = "/south-san-francisco-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-san-bruno"
+  to = "/san-bruno-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-colma"
+  to = "/colma-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-brisbane"
+  to = "/brisbane-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-millbrae"
+  to = "/millbrae-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-montara"
+  to = "/montara-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-sausalito"
+  to = "/sausalito-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-tiburon"
+  to = "/tiburon-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-belvedere"
+  to = "/belvedere-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-corte-madera"
+  to = "/corte-madera-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-larkspur"
+  to = "/larkspur-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-greenbrae"
+  to = "/greenbrae-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-ross"
+  to = "/ross-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-fairfax"
+  to = "/fairfax-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-san-anselmo"
+  to = "/san-anselmo-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-novato"
+  to = "/novato-appliance-repair"
+  status = 301
+  force = true
+
+# ── 4. Trailing slash variants of legacy city URLs (single hop) ──
+[[redirects]]
+  from = "/appliance-repair-san-francisco/"
+  to = "/san-francisco-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-daly-city/"
+  to = "/daly-city-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-south-san-francisco/"
+  to = "/south-san-francisco-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-san-bruno/"
+  to = "/san-bruno-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-pacifica/"
+  to = "/pacifica-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-millbrae/"
+  to = "/millbrae-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-colma/"
+  to = "/colma-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-brisbane/"
+  to = "/brisbane-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-montara/"
+  to = "/montara-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-san-rafael/"
+  to = "/san-rafael-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-novato/"
+  to = "/novato-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-mill-valley/"
+  to = "/mill-valley-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-sausalito/"
+  to = "/sausalito-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-belvedere/"
+  to = "/belvedere-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-tiburon/"
+  to = "/tiburon-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-corte-madera/"
+  to = "/corte-madera-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-san-quentin/"
+  to = "/san-quentin-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-larkspur/"
+  to = "/larkspur-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-greenbrae/"
+  to = "/greenbrae-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-ross/"
+  to = "/ross-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-fairfax/"
+  to = "/fairfax-appliance-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-san-anselmo/"
+  to = "/san-anselmo-appliance-repair"
+  status = 301
+  force = true
+
+# ── 5. Trailing slash removal (except root /) ──
+[[redirects]]
+  from = "/:splat/"
+  to = "/:splat"
+  status = 301
+  force = true
+
+# ── 6. Non-served cities (old prefix pattern) → service areas ──
+[[redirects]]
+  from = "/appliance-repair-belvedere-tiburon"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-alameda"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-berkeley"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-burlingame"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-castro-valley"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-concord"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-cupertino"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-foster-city"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-fremont"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-hayward"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-livermore"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-milpitas"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-mountain-view"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-near-you"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-oakland"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-palo-alto"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-pleasanton"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-redwood-city"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-richmond"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-san-jose"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-san-leandro"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-san-mateo"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-santa-clara"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-sunnyvale"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-union-city"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-vallejo"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-walnut-creek"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-dublin"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-newark"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+# ── 7. Non-served cities (new suffix pattern) → service areas ──
+[[redirects]]
+  from = "/dublin-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/livermore-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/union-city-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/hayward-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/berkeley-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/san-leandro-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/vallejo-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+# ── 8. Legacy canonical redirects ──
+[[redirects]]
+  from = "/appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wine-refrigerator-repair"
+  to = "/wine-cooler-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/disposal-repair"
+  to = "/garbage-disposal-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wall-oven-repair"
+  to = "/oven-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/stacked-washer-dryer-repair"
+  to = "/washer-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/built-in-refrigerator-repair"
+  to = "/refrigerator-repair"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-tips"
+  to = "/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-replacement"
+  to = "/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/appliance-repair-near-you"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+# ── 9. Gone pages ──
+[[redirects]]
+  from = "/old-near-you"
+  to = "/404"
+  status = 410
+  force = true
+
+# ── 10. SPA fallback is now handled by _redirects (generated during build) ──
+# The postbuild script generates a _redirects file with:
+# - Explicit rewrites for all prerendered routes (e.g., /refrigerator-repair → /refrigerator-repair.html)
+# - A SPA fallback (/* → /index.html) as the last rule
+# _redirects rules are processed BEFORE netlify.toml rules
+
+# ══════════════════════════════════════════════════════════
+# HEADERS
+# ══════════════════════════════════════════════════════════
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+# Cache headers for static assets
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.avif"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.woff"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML — no-cache so deployments propagate immediately
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/*/index.html"
+  [headers.values]
+    Cache-Control = "no-cache"
