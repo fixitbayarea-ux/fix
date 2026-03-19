@@ -123,6 +123,14 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **FIX 2**: Swipe hint on homepage services carousel was already implemented (no changes needed).
 - 233/233 SEO snapshots rebuilt.
 
+### Session 30 (Mar 19, 2026) — Review Count 93, About LLC Title, Book Online Link, Blog Dates
+- **FIX 1 (87→93 reviews)**: Updated review count from 87 to 93 across 11 files: AboutPage, BrandsPage, BookPage, NeighborhoodPage, LLMInfoPage (5 instances), SchemaMarkup, HomeHero (2), BrandLandingPage (2), MobileServiceLanding.
+- **FIX 2 (About title LLC)**: Added "LLC" to About page title in both AboutPage.js and seo-config.cjs. Kept under 60 chars.
+- **FIX 3 (Service images)**: Already implemented — range.jpg, disposal.jpg, wine-cooler.jpg exist and are properly imported.
+- **FIX 4 (Book Online clickable)**: Wrapped step 01 "Book Online" in both desktop and mobile How It Works sections with `<a href="/book">` — visual design unchanged.
+- **FIX 5 (Blog dates)**: Updated datePublished from 2024-06-01 to 2026-01-01 in 7 blog components (ApplianceLifespan, RepairVsReplace, DryerTakingTooLong, IceMakerTroubleshooting, OvenTemperatureCalibration, EnergyEfficientAppliances, RefrigeratorWaterFilter). Updated 2 BlogListPage entries.
+- 233/233 SEO snapshots rebuilt.
+
 ## Backlog
 - (P1) Investigate 2 Soft 404 pages from GSC
 - (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`

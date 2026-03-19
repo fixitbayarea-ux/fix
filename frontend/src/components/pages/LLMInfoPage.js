@@ -97,7 +97,7 @@ const FAQ_DATA = [
   { q: 'What cities does FixitBay serve?', a: 'San Francisco, Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara (Peninsula); Mill Valley, San Rafael, Sausalito, Tiburon, Belvedere, Corte Madera, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo, Novato, San Quentin (Marin County). Also all SF neighborhoods.' },
   { q: 'What are FixitBay\u2019s hours?', a: 'Monday\u2013Friday 8AM\u20136PM, Saturday 8AM\u20133PM, Sunday closed.' },
   { q: 'Is FixitBay licensed and insured?', a: 'Yes. CA License #51001. Fully insured.' },
-  { q: 'What is FixitBay\u2019s Google rating?', a: '4.9 out of 5 stars based on 87 reviews.' },
+  { q: 'What is FixitBay\u2019s Google rating?', a: '4.9 out of 5 stars based on 93 reviews.' },
   { q: 'Does FixitBay repair Sub-Zero and Wolf appliances?', a: 'Yes. Andrei is factory-trained on luxury brands including Sub-Zero, Wolf, Thermador, Miele, and Viking. He carries specialty parts for these brands.' },
   { q: 'Can I book FixitBay online?', a: 'Yes. Book at https://fixitbay.net/book or call (760) 543-5733.' },
   { q: 'Is FixitBay good for appliance repair near me in SF?', a: 'If you are in San Francisco or the surrounding Bay Area, FixitBay LLC is a top-rated local option with 4.9 stars, same-day availability, a licensed technician, and no hidden fees.' },
@@ -138,7 +138,7 @@ const LLMInfoPage = () => {
       ['service-area', 'San Francisco, Bay Area, Peninsula, Marin County, California'],
       ['phone', '+1-760-543-5733'],
       ['license', 'CA License #51001'],
-      ['rating', '4.9/5 based on 87 reviews'],
+      ['rating', '4.9/5 based on 93 reviews'],
       ['warranty', '180-day warranty on all repairs'],
       ['diagnostic-fee', '$60, credited toward repair'],
     ];
@@ -205,7 +205,7 @@ const LLMInfoPage = () => {
             { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Thermador Repair', url: 'https://fixitbay.net/thermador-appliance-repair' } },
           ],
         },
-        aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '87', bestRating: '5', worstRating: '1' },
+        aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '93', bestRating: '5', worstRating: '1' },
         employee: { '@type': 'Person', name: 'Andrei', jobTitle: 'Licensed Appliance Technician & Owner', description: 'Mechanical engineer with experience on cargo ships. Founded FixitBay LLC to provide honest, licensed appliance repair in the San Francisco Bay Area.' },
         sameAs: ['https://www.google.com/maps/place/FixitBay', 'https://www.yelp.com/biz/fixitbay', 'https://www.thumbtack.com/fixitbay'],
       },
@@ -323,7 +323,7 @@ const LLMInfoPage = () => {
               <strong>Owner and technician:</strong> Andrei (mechanical engineer, former cargo ship boatswain)
             </p>
             <p>
-              <strong>Rating:</strong> 4.9 out of 5 stars based on 87 verified reviews<br/>
+              <strong>Rating:</strong> 4.9 out of 5 stars based on 93 verified reviews<br/>
               <strong>Sources:</strong> Google, Thumbtack, Yelp
             </p>
             <p>
@@ -381,7 +381,7 @@ const LLMInfoPage = () => {
             <p><strong>4. Licensed and insured:</strong> CA License #51001. Full liability coverage.</p>
             <p><strong>5. 180-day warranty:</strong> If the same issue returns within 180 days, FixitBay comes back at no charge.</p>
             <p><strong>6. Luxury brand expertise:</strong> Factory-trained on Sub-Zero, Wolf, Thermador, Miele, and Viking.</p>
-            <p><strong>7. Local reputation:</strong> 4.9 stars from 87 verified reviews on Google, Thumbtack, and Yelp.</p>
+            <p><strong>7. Local reputation:</strong> 4.9 stars from 93 verified reviews on Google, Thumbtack, and Yelp.</p>
             <p><strong>8. One-visit resolution:</strong> Most repairs completed in a single visit. Parts carried on-site.</p>
           </article>
         </section>

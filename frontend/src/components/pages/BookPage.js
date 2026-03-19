@@ -274,7 +274,7 @@ const BookPage = () => {
                 '\u2713 Licensed & Insured \u00B7 CA #51001',
                 '\u2713 $60 Diagnostic \u00B7 Applied to Repair',
                 '\u2713 180-Day Warranty',
-                '\u2713 4.9 / 5 \u00B7 87 Google Reviews',
+                '\u2713 4.9 / 5 \u00B7 93 Google Reviews',
               ].map((t, i) => (
                 <span key={i} className="bk-trust-item"><span className="bk-trust-check">{t.charAt(0)}</span>{t.slice(2)}</span>
               ))}

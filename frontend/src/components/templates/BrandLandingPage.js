@@ -144,7 +144,7 @@ const BrandLandingPage = ({ brand }) => {
         "priceRange": "$$",
         "areaServed": "San Francisco Bay Area",
         "knowsAbout": `${brand.name} appliance repair`,
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "87" },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "93" },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": `${brand.name} Repair Services`,
@@ -236,7 +236,7 @@ const BrandLandingPage = ({ brand }) => {
             <div style={{ display: 'flex', justifyContent: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 24, marginTop: 4 }}>
               {[
                 { top: 'Licensed CA', bottom: 'Technician' },
-                { top: '4.9 \u2B50', bottom: '87 Reviews' },
+                { top: '4.9 \u2B50', bottom: '93 Reviews' },
                 { top: 'License', bottom: '#51001' },
                 { top: 'Same-Day', bottom: 'Service' },
               ].map((b, i) => (

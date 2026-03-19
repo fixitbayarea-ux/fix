@@ -73,7 +73,7 @@ const RepairVsReplace = () => {
         "headline": "Repair vs Replace: When to Fix Your Appliance",
         "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
         "publisher": { "@type": "Organization", "name": "FixitBay LLC" },
-        "datePublished": "2024-06-01",
+        "datePublished": "2026-01-01",
         "dateModified": "2026-01-01",
         "url": "https://fixitbay.net/blog/when-to-repair-vs-replace"
       }

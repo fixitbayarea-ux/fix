@@ -621,7 +621,7 @@ function getSEOContent(route) {
   // About page
   if (route === '/about') {
     return {
-      title: 'About FixitBay – Licensed Appliance Repair in San Francisco',
+      title: 'About FixitBay LLC – Appliance Repair San Francisco',
       description: 'FixitBay LLC is a licensed and insured appliance repair company serving San Francisco & Bay Area since 2023. Learn about our team and values.',
       h1: 'About FixitBay — Licensed Appliance Repair in San Francisco',
       content: `

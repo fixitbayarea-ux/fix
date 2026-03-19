@@ -298,14 +298,17 @@ const ProfessionalLandingPage = () => {
                 { num: '02', icon: <User size={32} strokeWidth={1.5} />, title: 'TECH ARRIVES', desc: 'Licensed, on time, with tools' },
                 { num: '03', icon: <SearchCheck size={32} strokeWidth={1.5} />, title: 'DIAGNOSIS', desc: 'Upfront estimate, zero surprises' },
                 { num: '04', icon: <ShieldCheck size={32} strokeWidth={1.5} />, title: 'REPAIR DONE', desc: '180-day warranty on every job' },
-              ].map((step, i) => (
-                <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', position: 'relative', zIndex: 1 }}>
+              ].map((step, i) => {
+                const inner = (
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', position: 'relative', zIndex: 1 }}>
                   <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 72, lineHeight: 1, color: 'rgba(255,255,255,0.05)', display: 'block' }}>{step.num}</span>
                   <div style={{ color: '#FF5722', marginTop: -8 }}>{step.icon}</div>
                   <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#FFFFFF', marginTop: 16, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{step.title}</div>
                   <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.50)', maxWidth: 160, lineHeight: 1.6, marginTop: 8 }}>{step.desc}</p>
                 </div>
-              ))}
+                );
+                return i === 0 ? <a key={i} href="/book" style={{ textDecoration: 'none', color: 'inherit' }}>{inner}</a> : <React.Fragment key={i}>{inner}</React.Fragment>;
+              })}
             </div>
           </div>
 
@@ -316,13 +319,16 @@ const ProfessionalLandingPage = () => {
               { num: '02', title: 'Technician Arrives', desc: 'A licensed technician arrives on time with the right tools.' },
               { num: '03', title: 'Quick Diagnosis', desc: 'We diagnose the issue and provide an upfront estimate — no surprises.' },
               { num: '04', title: 'Professional Repair', desc: 'Fast, quality repair backed by our 180-day warranty.' },
-            ].map((step, i) => (
-              <div key={i} data-testid={`hiw-mobile-step-${i}`} style={{ padding: '20px 16px', borderLeft: '3px solid #FF5722', marginBottom: 12, background: 'rgba(255,255,255,0.03)' }}>
+            ].map((step, i) => {
+              const inner = (
+              <div data-testid={`hiw-mobile-step-${i}`} style={{ padding: '20px 16px', borderLeft: '3px solid #FF5722', marginBottom: 12, background: 'rgba(255,255,255,0.03)' }}>
                 <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 28, color: '#FF5722', display: 'block', marginBottom: 6, lineHeight: 1 }}>{step.num}</span>
                 <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#FFFFFF', margin: '0 0 6px 0' }}>{step.title}</h3>
                 <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.65)', lineHeight: 1.6, margin: 0 }}>{step.desc}</p>
               </div>
-            ))}
+              );
+              return i === 0 ? <a key={i} href="/book" style={{ textDecoration: 'none', color: 'inherit' }}>{inner}</a> : <React.Fragment key={i}>{inner}</React.Fragment>;
+            })}
           </div>
         </div>
       </section>
