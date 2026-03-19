@@ -102,7 +102,7 @@ export const getLocalBusinessSchema = (city = "San Francisco") => {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "75"
+      "reviewCount": "94"
     },
     "founder": {
       "@type": "Person",

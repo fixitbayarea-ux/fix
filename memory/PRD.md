@@ -131,6 +131,14 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **FIX 5 (Blog dates)**: Updated datePublished from 2024-06-01 to 2026-01-01 in 7 blog components (ApplianceLifespan, RepairVsReplace, DryerTakingTooLong, IceMakerTroubleshooting, OvenTemperatureCalibration, EnergyEfficientAppliances, RefrigeratorWaterFilter). Updated 2 BlogListPage entries.
 - 233/233 SEO snapshots rebuilt.
 
+### Session 31 (Mar 19, 2026) — Review Count 94, Service Images Eager, FixitBay LLC
+- **FIX 1 (93→94 reviews)**: Updated review count across all files: AboutPage, BrandsPage, BookPage, NeighborhoodPage, LLMInfoPage (5), SchemaMarkup, HomeHero (2), BrandLandingPage (2), MobileServiceLanding, ReviewsPage (90→94), schemaMarkup.js (75→94).
+- **FIX 2 (Service card images)**: Changed `loading="lazy"` to `loading="eager"` on both desktop and mobile service card images. Added explicit `height="160"` to mobile cards.
+- **FIX 3 (FixitBay LLC)**: Updated ThankYouBooking ("About FixitBay"→"About FixitBay LLC"), UnifiedFooter img alt, seoContent.js h1.
+- **FIX 4 (Book Online clickable)**: Already implemented in previous session — verified working.
+- **FIX 5 (Google review link)**: Already correct, no change needed.
+- 233/233 SEO snapshots rebuilt.
+
 ## Backlog
 - (P1) Investigate 2 Soft 404 pages from GSC
 - (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`

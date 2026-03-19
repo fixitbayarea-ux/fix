@@ -209,7 +209,7 @@ const ThankYouBooking = () => {
             <a href="/service-areas" className="ty-related-pill">Service Areas</a>
             <a href="/reviews" className="ty-related-pill">Customer Reviews</a>
             <a href="/blog" className="ty-related-pill">Tips & Guides</a>
-            <a href="/about" className="ty-related-pill">About FixitBay</a>
+            <a href="/about" className="ty-related-pill">About FixitBay LLC</a>
             <a href="/san-francisco-appliance-repair" className="ty-related-pill">San Francisco</a>
           </div>
         </section>

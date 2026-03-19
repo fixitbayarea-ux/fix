@@ -379,7 +379,7 @@ function getAboutContent() {
   return {
     title: 'About FixitBay | Appliance Repair San Francisco',
     description: 'FixitBay provides professional appliance repair in San Francisco. Licensed, insured technicians. 180-day warranty. Over 3 years serving the community.',
-    h1: 'About FixitBay',
+    h1: 'About FixitBay LLC',
     content: `
       <p>FixitBay is a licensed and insured appliance repair company serving San Francisco, the Peninsula, and North Bay. With over 2 years of experience, we've helped thousands of homeowners and renters restore their appliances quickly, affordably, and professionally.</p>
       

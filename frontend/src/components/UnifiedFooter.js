@@ -98,7 +98,7 @@ const UnifiedFooter = () => (
         {/* Col 1 — Brand (always visible) */}
         <div>
           <div className="flex items-center" style={{ gap: 14, marginBottom: 18 }}>
-            <img src={navbarLogo} alt="FixitBay" width="56" height="56" loading="lazy" style={{ borderRadius: 4 }} />
+            <img src={navbarLogo} alt="FixitBay LLC" width="56" height="56" loading="lazy" style={{ borderRadius: 4 }} />
             <div>
               <p style={{ fontSize: 22, fontWeight: 800, color: '#fff', lineHeight: 1.15 }}>FixitBay LLC</p>
               <p style={{ fontSize: 14, fontWeight: 600, color: 'rgba(255,255,255,0.65)' }}>Appliance Repair &amp; Maintenance</p>
