@@ -139,6 +139,13 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **FIX 5 (Google review link)**: Already correct, no change needed.
 - 233/233 SEO snapshots rebuilt.
 
+### Session 32 (Mar 19, 2026) — Mobile Navbar Compact Accordion Fix
+- **FIX 1 (Accordion gaps)**: Removed `.mob-accordion-body` wrapper divs and replaced with conditional rendering — accordion content only renders when open, guaranteeing zero height when collapsed. Removed `min-height: 44px` from mobile menu items.
+- **FIX 2 (Compact padding)**: Reduced padding across all mobile menu elements: section labels (10px→6px), trigger buttons (12px→8px), sub-items (10px→6px), quick links (12px→8px), company links (12px→8px), CTA buttons (15px→12px). Reduced inner accordion padding (8px→4px).
+- **FIX 3 (Remove descriptions)**: Mobile menu items already had no descriptions — confirmed no changes needed.
+- Result: Entire mobile menu fits on one screen with all collapsed accordions, links, and CTAs visible without scrolling.
+- 233/233 SEO snapshots rebuilt.
+
 ## Backlog
 - (P1) Investigate 2 Soft 404 pages from GSC
 - (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`

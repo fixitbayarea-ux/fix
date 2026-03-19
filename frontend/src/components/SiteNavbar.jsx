@@ -538,25 +538,25 @@ const SiteNavbar = () => {
           >
 
             {/* ─────────────── QUICK LINKS ─────────────── */}
-            <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', paddingBottom: 4, paddingTop: 4 }}>
-              <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'10px 16px 4px' }}>Quick Links</div>
-              <a href="/" style={{ display:'flex', alignItems:'center', gap:10, padding:'12px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_home'); }}>
+            <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', paddingBottom: 2, paddingTop: 2 }}>
+              <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'6px 16px 2px' }}>Quick Links</div>
+              <a href="/" style={{ display:'flex', alignItems:'center', gap:10, padding:'8px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_home'); }}>
                 Home
               </a>
-              <a href="/san-francisco-appliance-repair" style={{ display:'flex', alignItems:'center', gap:10, padding:'12px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_sf'); }}>
+              <a href="/san-francisco-appliance-repair" style={{ display:'flex', alignItems:'center', gap:10, padding:'8px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_sf'); }}>
                 San Francisco
               </a>
-              <a href="/reviews" style={{ display:'flex', alignItems:'center', gap:10, padding:'12px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_reviews'); }}>
+              <a href="/reviews" style={{ display:'flex', alignItems:'center', gap:10, padding:'8px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_reviews'); }}>
                 Reviews
               </a>
             </div>
 
             {/* ─────────────── SERVICES ACCORDION ─────────────── */}
             <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-              <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'10px 16px 4px' }}>Services</div>
+              <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'6px 16px 0' }}>Services</div>
               <button
                 className={`mob-acc-trigger w-full${mobileServicesOpen ? ' open' : ''}`}
-                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'12px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
+                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'8px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
                 onClick={() => { setMobileServicesOpen(!mobileServicesOpen); setMobileMaintenanceOpen(false); setMobileBrandsOpen(false); setMobileAreasOpen(false); setMobileMoreOpen(false); }}
                 aria-expanded={mobileServicesOpen}
               >
@@ -565,8 +565,7 @@ const SiteNavbar = () => {
                 </span>
                 <ChevronDown className={`mob-acc-arrow w-4 h-4${mobileServicesOpen ? ' open' : ''}`} style={{ color:'#FF5722' }} />
               </button>
-              <div className={`mob-accordion-body${mobileServicesOpen ? ' open' : ''}`}>
-                <div style={{ padding:'4px 0 8px', background:'rgba(255,255,255,0.02)' }}>
+              {mobileServicesOpen && <div style={{ padding:'2px 0 4px', background:'rgba(255,255,255,0.02)' }}>
                   {[
                     { name:'Refrigerator Repair', path:'/refrigerator-repair' },
                     { name:'Washer Repair', path:'/washer-repair' },
@@ -581,22 +580,21 @@ const SiteNavbar = () => {
                     { name:'Wine Cooler Repair', path:'/wine-cooler-repair' },
                     { name:'Garbage Disposal', path:'/garbage-disposal-repair' },
                   ].map(item => (
-                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'flex', alignItems:'center', gap:10, padding:'10px 16px 10px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick(item.name, 'services'); }}>
+                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'flex', alignItems:'center', gap:10, padding:'6px 16px 6px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick(item.name, 'services'); }}>
                       {item.name}
                     </a>
                   ))}
-                  <a href="/services" style={{ display:'flex', alignItems:'center', gap:8, padding:'10px 16px 10px 28px', color:'#FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:12, textDecoration:'none', letterSpacing:'0.05em' }} onClick={() => { setMobileMenuOpen(false); }}>
+                  <a href="/services" style={{ display:'flex', alignItems:'center', gap:8, padding:'6px 16px 6px 28px', color:'#FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:12, textDecoration:'none', letterSpacing:'0.05em' }} onClick={() => { setMobileMenuOpen(false); }}>
                     &#8594; All Services
                   </a>
-                </div>
-              </div>
+                </div>}
             </div>
 
             {/* ─────────────── MAINTENANCE ACCORDION ─────────────── */}
             <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
               <button
                 className={`mob-acc-trigger w-full${mobileMaintenanceOpen ? ' open' : ''}`}
-                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'12px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
+                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'8px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
                 onClick={() => { setMobileMaintenanceOpen(!mobileMaintenanceOpen); setMobileServicesOpen(false); setMobileBrandsOpen(false); setMobileAreasOpen(false); setMobileMoreOpen(false); }}
                 aria-expanded={mobileMaintenanceOpen}
               >
@@ -605,8 +603,7 @@ const SiteNavbar = () => {
                 </span>
                 <ChevronDown className={`mob-acc-arrow w-4 h-4${mobileMaintenanceOpen ? ' open' : ''}`} style={{ color:'#FF5722' }} />
               </button>
-              <div className={`mob-accordion-body${mobileMaintenanceOpen ? ' open' : ''}`}>
-                <div style={{ padding:'4px 0 8px', background:'rgba(255,255,255,0.02)' }}>
+              {mobileMaintenanceOpen && <div style={{ padding:'2px 0 4px', background:'rgba(255,255,255,0.02)' }}>
                   {[
                     { name:'Refrigerator Maintenance', path:'/maintenance/refrigerator' },
                     { name:'Washer Maintenance', path:'/maintenance/washer' },
@@ -616,22 +613,21 @@ const SiteNavbar = () => {
                     { name:'Cooktop Maintenance', path:'/maintenance/cooktop' },
                     { name:'Wine Cooler Maintenance', path:'/maintenance/wine-cooler' },
                   ].map(item => (
-                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'flex', alignItems:'center', padding:'10px 16px 10px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick(item.name, 'maintenance'); }}>
+                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'flex', alignItems:'center', padding:'6px 16px 6px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick(item.name, 'maintenance'); }}>
                       {item.name}
                     </a>
                   ))}
-                  <a href="/maintenance" style={{ display:'flex', alignItems:'center', gap:8, padding:'10px 16px 10px 28px', color:'#FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:12, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
+                  <a href="/maintenance" style={{ display:'flex', alignItems:'center', gap:8, padding:'6px 16px 6px 28px', color:'#FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:12, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
                     &#8594; All Maintenance
                   </a>
-                </div>
-              </div>
+                </div>}
             </div>
 
             {/* ─────────────── BRANDS ACCORDION ─────────────── */}
             <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
               <button
                 className={`mob-acc-trigger w-full${mobileBrandsOpen ? ' open' : ''}`}
-                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'12px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
+                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'8px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
                 onClick={() => { setMobileBrandsOpen(!mobileBrandsOpen); setMobileServicesOpen(false); setMobileMaintenanceOpen(false); setMobileAreasOpen(false); setMobileMoreOpen(false); }}
                 aria-expanded={mobileBrandsOpen}
               >
@@ -640,9 +636,8 @@ const SiteNavbar = () => {
                 </span>
                 <ChevronDown className={`mob-acc-arrow w-4 h-4${mobileBrandsOpen ? ' open' : ''}`} style={{ color:'#FF5722' }} />
               </button>
-              <div className={`mob-accordion-body${mobileBrandsOpen ? ' open' : ''}`}>
-                <div style={{ padding:'8px 16px 12px 28px', background:'rgba(255,255,255,0.02)' }}>
-                  <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'2px 8px' }}>
+              {mobileBrandsOpen && <div style={{ padding:'4px 16px 6px 28px', background:'rgba(255,255,255,0.02)' }}>
+                  <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'0 8px' }}>
                     {[
                       { name:'Whirlpool', path:'/whirlpool-appliance-repair' },
                       { name:'LG', path:'/lg-appliance-repair' },
@@ -659,23 +654,22 @@ const SiteNavbar = () => {
                       { name:'Miele', path:'/miele-appliance-repair' },
                       { name:'Kenmore', path:'/kenmore-appliance-repair' },
                     ].map(brand => (
-                      <a key={brand.path} href={brand.path} className="mob-sub-item" style={{ display:'block', padding:'8px 6px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick(brand.name, 'brands'); }}>
+                      <a key={brand.path} href={brand.path} className="mob-sub-item" style={{ display:'block', padding:'5px 6px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick(brand.name, 'brands'); }}>
                         {brand.name}
                       </a>
                     ))}
                   </div>
-                  <a href="/brands" style={{ display:'flex', alignItems:'center', gap:8, padding:'10px 0 4px', color:'#FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:12, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
+                  <a href="/brands" style={{ display:'flex', alignItems:'center', gap:8, padding:'6px 0 2px', color:'#FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:12, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
                     &#8594; All Brands
                   </a>
-                </div>
-              </div>
+                </div>}
             </div>
 
             {/* ─────────────── SERVICE AREAS ACCORDION ─────────────── */}
             <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
               <button
                 className={`mob-acc-trigger w-full${mobileAreasOpen ? ' open' : ''}`}
-                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'12px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
+                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'8px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
                 onClick={() => { setMobileAreasOpen(!mobileAreasOpen); setMobileServicesOpen(false); setMobileMaintenanceOpen(false); setMobileBrandsOpen(false); setMobileMoreOpen(false); }}
                 aria-expanded={mobileAreasOpen}
               >
@@ -684,9 +678,8 @@ const SiteNavbar = () => {
                 </span>
                 <ChevronDown className={`mob-acc-arrow w-4 h-4${mobileAreasOpen ? ' open' : ''}`} style={{ color:'#FF5722' }} />
               </button>
-              <div className={`mob-accordion-body${mobileAreasOpen ? ' open' : ''}`}>
-                <div style={{ padding:'4px 0 8px', background:'rgba(255,255,255,0.02)' }}>
-                  <div style={{ padding:'6px 16px 2px 28px', fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.10em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase' }}>San Francisco</div>
+              {mobileAreasOpen && <div style={{ padding:'2px 0 4px', background:'rgba(255,255,255,0.02)' }}>
+                  <div style={{ padding:'4px 16px 1px 28px', fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.10em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase' }}>San Francisco</div>
                   {[
                     { name:'SF \u2014 All Areas', path:'/san-francisco-appliance-repair' },
                     { name:'Sunset District', path:'/san-francisco/sunset-district-appliance-repair' },
@@ -702,11 +695,11 @@ const SiteNavbar = () => {
                     { name:'Bernal Heights', path:'/san-francisco/bernal-heights-appliance-repair' },
                     { name:'Potrero Hill', path:'/san-francisco/potrero-hill-appliance-repair' },
                   ].map(item => (
-                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'block', padding:'8px 16px 8px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
+                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'block', padding:'5px 16px 5px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
                       {item.name}
                     </a>
                   ))}
-                  <div style={{ padding:'10px 16px 2px 28px', fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.10em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase' }}>Peninsula</div>
+                  <div style={{ padding:'6px 16px 1px 28px', fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.10em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase' }}>Peninsula</div>
                   {[
                     { name:'Daly City', path:'/daly-city-appliance-repair' },
                     { name:'South San Francisco', path:'/south-san-francisco-appliance-repair' },
@@ -717,11 +710,11 @@ const SiteNavbar = () => {
                     { name:'Brisbane', path:'/brisbane-appliance-repair' },
                     { name:'Montara', path:'/montara-appliance-repair' },
                   ].map(item => (
-                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'block', padding:'8px 16px 8px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
+                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'block', padding:'5px 16px 5px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
                       {item.name}
                     </a>
                   ))}
-                  <div style={{ padding:'10px 16px 2px 28px', fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.10em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase' }}>Marin County</div>
+                  <div style={{ padding:'6px 16px 1px 28px', fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.10em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase' }}>Marin County</div>
                   {[
                     { name:'San Rafael', path:'/san-rafael-appliance-repair' },
                     { name:'Novato', path:'/novato-appliance-repair' },
@@ -735,40 +728,39 @@ const SiteNavbar = () => {
                     { name:'Ross', path:'/ross-appliance-repair' },
                     { name:'Greenbrae', path:'/greenbrae-appliance-repair' },
                   ].map(item => (
-                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'block', padding:'8px 16px 8px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
+                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'block', padding:'5px 16px 5px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
                       {item.name}
                     </a>
                   ))}
-                  <a href="/service-areas" style={{ display:'flex', alignItems:'center', gap:8, padding:'10px 16px 10px 28px', color:'#FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:12, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
+                  <a href="/service-areas" style={{ display:'flex', alignItems:'center', gap:8, padding:'6px 16px 6px 28px', color:'#FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:12, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
                     &#8594; All Service Areas
                   </a>
-                </div>
-              </div>
+                </div>}
             </div>
 
             {/* ─────────────── COMPANY LINKS ─────────────── */}
-            <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', paddingBottom: 4, paddingTop: 4 }}>
-              <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'10px 16px 4px' }}>Company</div>
-              <a href="/blog" style={{ display:'flex', alignItems:'center', gap:10, padding:'12px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_blog'); }}>
+            <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', paddingBottom: 2, paddingTop: 2 }}>
+              <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'6px 16px 2px' }}>Company</div>
+              <a href="/blog" style={{ display:'flex', alignItems:'center', gap:10, padding:'8px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_blog'); }}>
                 Blog &amp; Tips
               </a>
-              <a href="/about" style={{ display:'flex', alignItems:'center', gap:10, padding:'12px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_about'); }}>
+              <a href="/about" style={{ display:'flex', alignItems:'center', gap:10, padding:'8px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_about'); }}>
                 About Us
               </a>
-              <a href="/contact" style={{ display:'flex', alignItems:'center', gap:10, padding:'12px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_contact'); }}>
+              <a href="/contact" style={{ display:'flex', alignItems:'center', gap:10, padding:'8px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_contact'); }}>
                 Contact
               </a>
             </div>
 
             {/* ─────────────── BOTTOM CTA ─────────────── */}
-            <div style={{ padding:'16px', display:'flex', flexDirection:'column', gap:'10px' }}>
-              <a href="/book?go=1" style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, background:'#FF5722', color:'#FFFFFF', padding:'15px 24px', borderRadius:'4px', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:'15px', textDecoration:'none', minHeight:'52px', textAlign:'center' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_menu_book'); }}>
+            <div style={{ padding:'12px 16px', display:'flex', flexDirection:'column', gap:'8px' }}>
+              <a href="/book?go=1" style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, background:'#FF5722', color:'#FFFFFF', padding:'12px 24px', borderRadius:'4px', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:'14px', textDecoration:'none', textAlign:'center' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_menu_book'); }}>
                 Book Repair Online
               </a>
-              <a href="tel:+17605435733" style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, background:'transparent', color:'#FF5722', padding:'14px 24px', borderRadius:'4px', border:'2px solid #FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:'15px', textDecoration:'none', minHeight:'52px' }} onClick={() => trackNavClick('mobile_menu_call')}>
+              <a href="tel:+17605435733" style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, background:'transparent', color:'#FF5722', padding:'10px 24px', borderRadius:'4px', border:'2px solid #FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:'14px', textDecoration:'none' }} onClick={() => trackNavClick('mobile_menu_call')}>
                 (760) 543-5733
               </a>
-              <a href="sms:+17605435733?body=Hi%20FixitBay!%20I%20need%20appliance%20repair." style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, background:'transparent', color:'rgba(255,255,255,0.65)', padding:'12px 24px', borderRadius:'4px', border:'1px solid rgba(255,255,255,0.15)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:'14px', textDecoration:'none', minHeight:'48px' }}>
+              <a href="sms:+17605435733?body=Hi%20FixitBay!%20I%20need%20appliance%20repair." style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, background:'transparent', color:'rgba(255,255,255,0.65)', padding:'10px 24px', borderRadius:'4px', border:'1px solid rgba(255,255,255,0.15)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:'13px', textDecoration:'none' }}>
                 Text Us
               </a>
             </div>
@@ -779,7 +771,9 @@ const SiteNavbar = () => {
         .mob-accordion-body {
           overflow: hidden;
           max-height: 0;
-          transition: max-height 0.35s ease, opacity 0.25s ease;
+          padding: 0;
+          margin: 0;
+          transition: max-height 0.3s ease, opacity 0.2s ease;
           opacity: 0;
         }
         .mob-accordion-body.open {
@@ -800,7 +794,7 @@ const SiteNavbar = () => {
         .mob-acc-trigger.open {
           background: rgba(255, 87, 34, 0.07) !important;
           border-left: 3px solid #FF5722;
-          padding-left: 13px;
+          padding-left: 13px !important;
         }
         .mob-sub-item {
           transition: background 0.15s ease, color 0.15s ease;
@@ -813,10 +807,6 @@ const SiteNavbar = () => {
           .main-nav { height: 60px !important; padding: 0 16px !important; }
           .main-nav > div { height: 60px !important; }
           body { padding-bottom: 56px; }
-          #mobile-menu a,
-          #mobile-menu button {
-            min-height: 44px;
-          }
         }
       `}</style>
       </div>
