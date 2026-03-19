@@ -118,6 +118,11 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **FIX 2**: Added mid-article CTA box to `BlogFAQPage.js` after the 3rd category section (Dishwasher). Dark navy (#0D1B2A) background, orange (#FF5722) left border, Call + Book online buttons.
 - 233/233 SEO snapshots rebuilt.
 
+### Session 29 (Mar 19, 2026) — About Page Video Thumbnail + Schema Update
+- **FIX 1**: Replaced YouTube iframe embeds with clickable thumbnail images linking to YouTube (resolves GSC "Video isn't on a watch page" error). Updated VideoObject JSON-LD schema: name includes "San Francisco", uploadDate→2024-01-01, removed duration field. Updated both React component and seo-config.cjs.
+- **FIX 2**: Swipe hint on homepage services carousel was already implemented (no changes needed).
+- 233/233 SEO snapshots rebuilt.
+
 ## Backlog
 - (P1) Investigate 2 Soft 404 pages from GSC
 - (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`

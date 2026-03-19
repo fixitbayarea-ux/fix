@@ -632,18 +632,17 @@ function getSEOContent(route) {
         {
           "@context": "https://schema.org",
           "@type": "VideoObject",
-          "name": "FixitBay Appliance Repair — How It Works",
-          "description": "Learn how FixitBay LLC provides same-day appliance repair in San Francisco & Bay Area. Licensed technicians, $60 diagnostic, 180-day warranty.",
+          "name": "FixitBay Appliance Repair San Francisco — How It Works",
+          "description": "Licensed appliance repair in San Francisco & Bay Area. Same-day service, $60 diagnostic, 180-day warranty. Call (760) 543-5733.",
           "thumbnailUrl": "https://img.youtube.com/vi/WBEc8Lz2saA/maxresdefault.jpg",
-          "uploadDate": "2026-01-01",
+          "uploadDate": "2024-01-01",
           "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA",
           "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA",
           "publisher": {
             "@type": "Organization",
             "name": "FixitBay LLC",
             "url": "https://fixitbay.net"
-          },
-          "duration": "PT2M"
+          }
         }
       ],
       internalLinks: defaultInternalLinks

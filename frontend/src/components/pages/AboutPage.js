@@ -52,7 +52,7 @@ const AboutPage = () => {
     { id: 'localbusiness-schema', data: { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "FixitBay LLC", "description": "Licensed appliance repair service in San Francisco and Bay Area. Family-owned, honest pricing, 180-day warranty.", "url": "https://fixitbay.net", "telephone": "+17605435733", "email": "info@fixitbay.net", "address": { "@type": "PostalAddress", "streetAddress": "1549 Franklin St, Unit A", "addressLocality": "San Francisco", "addressRegion": "CA", "postalCode": "94109" }, "geo": { "@type": "GeoCoordinates", "latitude": 37.7749, "longitude": -122.4194 }, "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }, { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }], "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "87" }, "employee": { "@type": "Person", "name": "Andrei", "jobTitle": "Lead Technician", "description": "Licensed CA appliance repair technician, mechanical engineer, License #51001" } } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://fixitbay.net/about" }] } },
     { id: 'person-schema', data: { "@context": "https://schema.org", "@type": "Person", "name": "Andrei", "jobTitle": "Lead Appliance Repair Technician", "worksFor": { "@type": "LocalBusiness", "name": "FixitBay LLC" }, "description": "Licensed CA appliance repair technician (License #51001). Mechanical engineer with 10+ years experience. Former cargo ship boatswain.", "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "CA Major Appliance Technician License #51001", "recognizedBy": { "@type": "Organization", "name": "Bureau of Household Goods and Services" } } } },
-    { id: 'video-schema', data: { "@context": "https://schema.org", "@type": "VideoObject", "name": "FixitBay Appliance Repair — How It Works", "description": "Learn how FixitBay LLC provides same-day appliance repair in San Francisco & Bay Area. Licensed technicians, $60 diagnostic, 180-day warranty.", "thumbnailUrl": "https://img.youtube.com/vi/WBEc8Lz2saA/maxresdefault.jpg", "uploadDate": "2026-01-01", "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA", "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net" }, "duration": "PT2M" } }
+    { id: 'video-schema', data: { "@context": "https://schema.org", "@type": "VideoObject", "name": "FixitBay Appliance Repair San Francisco — How It Works", "description": "Licensed appliance repair in San Francisco & Bay Area. Same-day service, $60 diagnostic, 180-day warranty. Call (760) 543-5733.", "thumbnailUrl": "https://img.youtube.com/vi/WBEc8Lz2saA/maxresdefault.jpg", "uploadDate": "2024-01-01", "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA", "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net" } } }
   ], []);
   useSchemas(schemas);
 
@@ -196,23 +196,27 @@ const AboutPage = () => {
           </div>
           <div className="video-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, maxWidth: 900, margin: '0 auto' }}>
             {[
-              { src: 'https://www.youtube.com/embed/WBEc8Lz2saA', title: 'FixitBay Appliance Repair — How It Works', caption: 'Professional Repair Service' },
-              { src: 'https://www.youtube.com/embed/ottiV_KfcUI', title: 'FixitBay Expert Technician at Work', caption: 'Expert Technician at Work' },
+              { id: 'WBEc8Lz2saA', alt: 'Watch how FixitBay repairs appliances in San Francisco', caption: 'Professional Repair Service' },
+              { id: 'ottiV_KfcUI', alt: 'FixitBay expert technician at work in Bay Area', caption: 'Expert Technician at Work' },
             ].map((v, i) => (
-              <div key={i} style={{ borderRadius: 4, overflow: 'hidden', border: '1px solid rgba(255,87,34,0.2)', boxShadow: '0 4px 24px rgba(0,0,0,0.3)' }}>
-                <div style={{ position: 'relative', paddingBottom: '177.78%', background: '#000' }}>
-                  <iframe
-                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                    src={v.src}
-                    title={v.title}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                  />
-                </div>
-                <div style={{ padding: '12px 16px', background: '#1A2F45' }}>
-                  <p style={{ fontFamily: F, fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>{v.caption}</p>
-                </div>
+              <div key={i} style={{ borderRadius: 8, overflow: 'hidden', border: '1px solid rgba(255,87,34,0.2)', boxShadow: '0 4px 24px rgba(0,0,0,0.3)' }}>
+                <a href={`https://www.youtube.com/watch?v=${v.id}`} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textDecoration: 'none' }}>
+                  <div style={{ position: 'relative' }}>
+                    <img
+                      src={`https://img.youtube.com/vi/${v.id}/maxresdefault.jpg`}
+                      alt={v.alt}
+                      style={{ width: '100%', display: 'block', borderRadius: '8px 8px 0 0' }}
+                      loading="lazy"
+                    />
+                    <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 64, height: 64, background: 'rgba(255,87,34,0.9)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                      <div style={{ width: 0, height: 0, borderTop: '12px solid transparent', borderBottom: '12px solid transparent', borderLeft: '20px solid #fff', marginLeft: 4 }} />
+                    </div>
+                  </div>
+                  <div style={{ padding: '12px 16px', background: '#1A2F45' }}>
+                    <p style={{ fontFamily: F, fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.75)', marginBottom: 4 }}>{v.caption}</p>
+                    <p style={{ fontFamily: F, fontWeight: 500, fontSize: 12, color: '#FF5722' }}>▶ Watch: How Our Repair Process Works</p>
+                  </div>
+                </a>
               </div>
             ))}
           </div>
