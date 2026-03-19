@@ -109,6 +109,15 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - Added descriptive subtitle above videos and a process description paragraph below the video embeds
 - 233/233 SEO snapshots rebuilt. VideoObject schema validated in pre-rendered about.html.
 
+### Session 28 (Mar 19, 2026) — Blog Date Updates & BlogFAQ CTA
+- **FIX 1**: Updated blog post publication dates to 2026 in both `BlogListPage.js` (publish_date) and individual blog component JSON-LD schemas (datePublished + dateModified):
+  - dishwasher-maintenance → 2026-01-18
+  - washer-error-codes → 2026-02-10
+  - dishwasher-not-draining → 2026-02-20
+  - gas-smell-from-stove → 2026-03-01
+- **FIX 2**: Added mid-article CTA box to `BlogFAQPage.js` after the 3rd category section (Dishwasher). Dark navy (#0D1B2A) background, orange (#FF5722) left border, Call + Book online buttons.
+- 233/233 SEO snapshots rebuilt.
+
 ## Backlog
 - (P1) Investigate 2 Soft 404 pages from GSC
 - (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`

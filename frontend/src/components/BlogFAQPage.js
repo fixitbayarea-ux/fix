@@ -347,12 +347,13 @@ const BlogFAQPage = () => {
             </div>
           ) : (
             <div className="space-y-8">
-              {['refrigerator', 'washer', 'dishwasher', 'general'].map(catId => {
+              {['refrigerator', 'washer', 'dishwasher', 'general'].map((catId, catIndex) => {
                 const catItems = filteredContent.filter(i => i.category === catId);
                 if (catItems.length === 0) return null;
                 const catLabel = { refrigerator: 'Refrigerator Repair Tips', washer: 'Washer & Dryer Repair Tips', dishwasher: 'Dishwasher Repair Tips', general: 'General Appliance Tips' }[catId];
                 return (
-                  <div key={catId}>
+                  <React.Fragment key={catId}>
+                  <div>
                     <h2 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 800, fontSize: 24, color: '#1A1A1A', marginBottom: 16, paddingBottom: 8, borderBottom: '2px solid rgba(255,87,34,0.2)' }}>{catLabel}</h2>
                     <div className="space-y-6">
                       {catItems.map((item, index) => (
@@ -444,6 +445,34 @@ const BlogFAQPage = () => {
               ))}
                     </div>
                   </div>
+                  {catIndex === 2 && (
+                    <div data-testid="mid-article-cta" style={{
+                      background: '#0D1B2A',
+                      borderLeft: '4px solid #FF5722',
+                      padding: '20px 24px',
+                      borderRadius: '8px',
+                      margin: '32px 0'
+                    }}>
+                      <p style={{color:'#fff', fontWeight:'600', fontSize:'16px', marginBottom:'6px'}}>
+                        Need appliance repair in San Francisco?
+                      </p>
+                      <p style={{color:'rgba(255,255,255,0.7)', fontSize:'14px', marginBottom:'16px'}}>
+                        Same-day service · $60 diagnostic · 180-day warranty
+                      </p>
+                      <div style={{display:'flex', gap:'12px', flexWrap:'wrap'}}>
+                        <a href="tel:7605435733" style={{
+                          background:'#FF5722', color:'#fff', padding:'12px 20px',
+                          borderRadius:'6px', textDecoration:'none', fontWeight:'600',
+                          fontSize:'14px'
+                        }}>Call (760) 543-5733</a>
+                        <a href="/book" style={{
+                          color:'#FF5722', padding:'12px', textDecoration:'none',
+                          fontSize:'14px', fontWeight:'500'
+                        }}>Book online →</a>
+                      </div>
+                    </div>
+                  )}
+                  </React.Fragment>
                 );
               })}
             </div>
