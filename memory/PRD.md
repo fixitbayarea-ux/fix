@@ -147,7 +147,15 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - 233/233 SEO snapshots rebuilt.
 
 ## Backlog
-- (P1) Investigate 2 Soft 404 pages from GSC
+- (P1) Investigate 2 Soft 404 pages from GSC (likely /garbage-disposal-repair — 222 words, may need enrichment)
 - (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`
 - (P2) Refactor dual content sources (`seoContent.js` + `seo-config.cjs`) into single source
 - (P2) Refactor monolithic components
+
+### Session 33 (Feb 2026) — 5-Part Critical SEO Fix (Google Search Console)
+- **FIX 1 (Canonical):** Verified `/wine-cooler-repair` canonical → `https://fixitbay.net/wine-cooler-repair`. Added explicit `seoData.canonical` support in `generate-seo-snapshots.cjs` for future overrides.
+- **FIX 2 (Noindex Sub-pages):** Added `robots: 'noindex, follow'` to all 7 maintenance sub-pages (`/maintenance/refrigerator`, `/maintenance/washer`, `/maintenance/dryer`, `/maintenance/dishwasher`, `/maintenance/oven-range`, `/maintenance/cooktop`, `/maintenance/wine-cooler`) in `seo-config.cjs`. Added all 7 to `noindexRoutes` in `generate-seo-snapshots.cjs` to exclude from sitemap.
+- **FIX 3 (301 Redirects):** Added 4 missing redirects (`/appliance-repair-san-francisco`, `/belvedere-tiburon-appliance-repair`, `/appliance-repair-hayward`, `/appliance-repair-santa-clara`). Changed 2 redirect targets (`/appliance-repair` → `/services`, `/appliance-replacement` → `/services`). Total: 82 redirect rules (was ~76).
+- **FIX 4 (Strengthen Thin Content):** Added 300+ words of unique, localized content to 4 city+service pages: `/south-san-francisco-oven-repair` (354 words), `/south-san-francisco-wine-cooler-repair` (347 words), `/corte-madera-dryer-repair` (344 words), `/pacifica-wine-cooler-repair` (342 words). Content includes city-specific context, common problems, pricing, and FAQ sections.
+- **FIX 5 (Clean Sitemap):** Added `/llm-info`, `/blog-faq`, `/privacy-policy` to `noindexRoutes`. Sitemap reduced from 231 to 221 canonical URLs (12 noindex exclusions total).
+- 233/233 SEO snapshots rebuilt. All fixes verified programmatically.

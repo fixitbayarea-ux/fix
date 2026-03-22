@@ -152,8 +152,8 @@ routes.forEach(route => {
       html = html.replace('</head>', `  <meta name="description" content="${seoData.description}">\n</head>`);
     }
     
-    // Update or add canonical link
-    const canonicalURL = `https://fixitbay.net${route}`;
+    // Update or add canonical link — use seoData.canonical if explicitly set
+    const canonicalURL = seoData.canonical || `https://fixitbay.net${route}`;
     if (html.includes('<link rel="canonical"')) {
       html = html.replace(/(<link rel="canonical" href=")[^"]*"/, `$1${canonicalURL}"`);
     } else {
@@ -238,10 +238,10 @@ const redirects301 = [
   ['/wall-oven-repair', '/oven-repair'],
   ['/built-in-refrigerator-repair', '/refrigerator-repair'],
   // Misc public redirects
-  ['/appliance-repair', '/service-areas'],
+  ['/appliance-repair', '/services'],
   ['/appliance-repair-near-you', '/service-areas'],
   ['/appliance-repair-tips', '/blog'],
-  ['/appliance-replacement', '/about'],
+  ['/appliance-replacement', '/services'],
   // Extended city redirects (outside service area)
   ['/alameda-appliance-repair', '/service-areas'],
   ['/appliance-repair-alameda', '/service-areas'],
@@ -261,6 +261,7 @@ const redirects301 = [
   ['/fremont-appliance-repair', '/service-areas'],
   ['/appliance-repair-fremont', '/service-areas'],
   ['/hayward-appliance-repair', '/service-areas'],
+  ['/appliance-repair-hayward', '/service-areas'],
   ['/livermore-appliance-repair', '/service-areas'],
   ['/appliance-repair-livermore', '/service-areas'],
   ['/milpitas-appliance-repair', '/service-areas'],
@@ -291,6 +292,8 @@ const redirects301 = [
   ['/appliance-repair-vallejo', '/service-areas'],
   ['/walnut-creek-appliance-repair', '/service-areas'],
   ['/appliance-repair-walnut-creek', '/service-areas'],
+  ['/appliance-repair-santa-clara', '/service-areas'],
+  ['/belvedere-tiburon-appliance-repair', '/belvedere-appliance-repair'],
 ];
 redirects301.forEach(([from, to]) => {
   redirectLines.push(`${from}  ${to}  301`);
@@ -302,6 +305,7 @@ redirectLines.unshift('https://www.fixitbay.net/* https://fixitbay.net/:splat 30
 
 // Add city alternate-slug redirects
 const cityRedirects = [
+  '/appliance-repair-san-francisco /san-francisco-appliance-repair 301',
   '/appliance-repair-daly-city /daly-city-appliance-repair 301',
   '/appliance-repair-south-san-francisco /south-san-francisco-appliance-repair 301',
   '/appliance-repair-san-bruno /san-bruno-appliance-repair 301',
@@ -333,7 +337,13 @@ console.log('\n🎉 SEO Snapshots generation complete!');
 
 // Generate sitemap.xml — canonical indexable URLs only
 const SITE_URL = 'https://fixitbay.net';
-const noindexRoutes = ['/thank-you-booking', '/book'];
+const noindexRoutes = [
+  '/thank-you-booking', '/book',
+  '/maintenance/refrigerator', '/maintenance/washer', '/maintenance/dryer',
+  '/maintenance/dishwasher', '/maintenance/oven-range', '/maintenance/cooktop',
+  '/maintenance/wine-cooler',
+  '/llm-info', '/blog-faq', '/privacy-policy'
+];
 const sitemapUrls = ['/', ...routes.filter(r => r !== '/' && !noindexRoutes.includes(r))];
 const today = new Date().toISOString().split('T')[0];
 

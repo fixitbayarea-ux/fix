@@ -958,6 +958,144 @@ function getSEOContent(route) {
     }
   }
 
+  // City+Service RICH CONTENT — pages flagged as thin by Google, with unique local content
+  const CITY_SERVICE_RICH = {
+    '/south-san-francisco-oven-repair': {
+      title: 'Oven Repair South San Francisco | Same-Day | FixitBay',
+      description: 'Professional oven repair in South San Francisco. Gas igniter, bake element & temperature issues. From $230 after $60 diagnostic. 180-day warranty.',
+      h1: 'Oven Repair in South San Francisco',
+      content: `
+            <p style="margin-bottom:1rem;">South San Francisco is a dense working-class suburb with many older homes and apartment buildings. Fog and coastal humidity affect gas igniter performance, making oven repairs one of the most common service calls in SSF. Many homes have older Whirlpool, GE, and Maytag freestanding ranges that develop igniter, element, and temperature control issues over time.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common Oven Problems in South San Francisco</h2>
+            <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Gas igniter clicking but not lighting</strong> — coastal humidity causes igniter degradation faster than in inland cities. This is the #1 oven repair call in SSF.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Uneven baking due to worn bake element</strong> — older ranges in SSF homes often have bake elements that heat unevenly or develop hot spots.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Broiler not working</strong> — a separate heating element from the main bake element; often fails independently.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Oven not reaching set temperature</strong> — faulty temperature sensor or calibration issue common in aging GE and Whirlpool models.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Self-clean door lock stuck</strong> — the latch motor or switch fails, locking the door shut or preventing the oven from operating.</li>
+            </ul>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Oven Repair Pricing in South San Francisco</h2>
+            <p style="margin-bottom:1rem;">Most oven repairs in South San Francisco start from <strong>$230 after the $60 diagnostic fee</strong>. Gas igniter replacement typically runs $150\u2013$220 parts and labor. The $60 diagnostic is fully applied to your repair cost, and every job is backed by our 180-day warranty on parts and labor.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Frequently Asked Questions</h2>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">How much does oven repair cost in South San Francisco?</p><p style="color:#4A5568;font-size:0.875rem;">Most oven repairs in South San Francisco cost $180\u2013$350 after the $60 diagnostic fee is applied. Gas igniter replacement typically runs $150\u2013$220 parts and labor.</p></div>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Do you offer same-day oven repair in South San Francisco?</p><p style="color:#4A5568;font-size:0.875rem;">Yes \u2014 we offer same-day appointments for requests placed before 2 PM, and next-day guaranteed for all other requests.</p></div>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">What oven brands do you repair in South San Francisco?</p><p style="color:#4A5568;font-size:0.875rem;">We repair all major brands including Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, and Bosch.</p></div>
+            <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day oven repair in South San Francisco.</p>
+          `
+    },
+    '/south-san-francisco-wine-cooler-repair': {
+      title: 'Wine Cooler Repair South San Francisco | FixitBay',
+      description: 'Wine cooler repair in South San Francisco. Thermoelectric, compressor & door seal issues. From $195 after $60 diagnostic. 180-day warranty.',
+      h1: 'Wine Cooler Repair in South San Francisco',
+      content: `
+            <p style="margin-bottom:1rem;">South San Francisco's biotech professionals and growing wine culture mean a rising number of residential wine coolers. Coastal humidity accelerates thermoelectric unit wear and causes door seal degradation faster than in inland cities. Whether you have a freestanding unit in your kitchen or a built-in wine storage system, our technicians understand the unique challenges SSF's climate presents to wine cooler performance.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common Wine Cooler Problems in South San Francisco</h2>
+            <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Temperature not holding</strong> — the thermostat or control board fails to maintain the set temperature, risking your wine collection.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Thermoelectric module failure</strong> — SSF's coastal humidity makes thermoelectric coolers work harder and fail sooner than in drier climates.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Compressor cycling constantly</strong> — may indicate a refrigerant leak, dirty condenser coils, or a failing compressor relay.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Door seal letting in humid air</strong> — fog and moisture degrade rubber gaskets, allowing warm, humid air inside the unit.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Interior light staying on and warming the unit</strong> — a faulty door switch keeps the light on, adding unwanted heat to the cabinet.</li>
+            </ul>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Wine Cooler Repair Pricing in South San Francisco</h2>
+            <p style="margin-bottom:1rem;">Wine cooler repairs in South San Francisco start from <strong>$195 after the $60 diagnostic fee</strong>. Thermoelectric module replacement is $180\u2013$280; compressor repair runs $250\u2013$400. The $60 diagnostic is fully credited toward your repair.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Frequently Asked Questions</h2>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">How much does wine cooler repair cost in South San Francisco?</p><p style="color:#4A5568;font-size:0.875rem;">Wine cooler repairs in South San Francisco typically range from $150\u2013$400. Thermoelectric module replacement is $180\u2013$280; compressor repair runs $250\u2013$400.</p></div>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Do you repair built-in wine coolers in South San Francisco?</p><p style="color:#4A5568;font-size:0.875rem;">Yes, we repair both freestanding and built-in wine coolers including Sub-Zero, Vinotemp, EuroCave, and all major brands.</p></div>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Why does my wine cooler struggle in South San Francisco?</p><p style="color:#4A5568;font-size:0.875rem;">Coastal humidity in South SF accelerates door seal wear and causes thermoelectric units to work harder. We recommend annual seal inspection for units in this area.</p></div>
+            <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for wine cooler repair in South San Francisco.</p>
+          `
+    },
+    '/corte-madera-dryer-repair': {
+      title: 'Dryer Repair Corte Madera | Gas & Electric | FixitBay',
+      description: 'Professional dryer repair in Corte Madera. Thermal fuse, gas valve & belt issues. From $235 after $60 diagnostic. 180-day warranty.',
+      h1: 'Dryer Repair in Corte Madera',
+      content: `
+            <p style="margin-bottom:1rem;">Corte Madera is a prosperous Marin County suburb with many single-family homes built in the 1960s\u201380s. Gas dryers are common due to the area's older housing stock. Homes near Corte Madera Creek have higher humidity which affects dryer ventilation and can cause lint to clump more quickly, reducing airflow and increasing drying times.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common Dryer Problems in Corte Madera</h2>
+            <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Dryer not heating (thermal fuse failure)</strong> — the most common dryer repair in Corte Madera. Thermal fuses blow when exhaust vents are restricted or dryer overheats.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Gas valve solenoid failure</strong> — gas dryers in older Corte Madera homes develop solenoid issues that cause intermittent or no heating.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Drum not turning (broken belt)</strong> — the drive belt wears out over time, especially in heavily used household dryers.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Taking multiple cycles to dry</strong> — often caused by clogged exhaust vents, especially in Corte Madera homes near the creek where humidity is higher.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Burning smell from lint buildup</strong> — a safety concern that requires immediate professional vent cleaning and inspection.</li>
+            </ul>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Dryer Repair Pricing in Corte Madera</h2>
+            <p style="margin-bottom:1rem;">Most dryer repairs in Corte Madera start from <strong>$235 after the $60 diagnostic fee</strong>. Thermal fuse replacement is typically $120\u2013$180; gas valve repair runs $200\u2013$320. The $60 diagnostic is fully applied to your repair cost.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Frequently Asked Questions</h2>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">How much does dryer repair cost in Corte Madera?</p><p style="color:#4A5568;font-size:0.875rem;">Most dryer repairs in Corte Madera cost $170\u2013$350 after the $60 diagnostic. Thermal fuse replacement is typically $120\u2013$180; gas valve repair runs $200\u2013$320.</p></div>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Do you repair gas and electric dryers in Corte Madera?</p><p style="color:#4A5568;font-size:0.875rem;">Yes, we repair both gas and electric dryers. Gas dryers are very common in Corte Madera's older homes and we carry common gas valve parts on our trucks.</p></div>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Do you offer same-day dryer repair in Corte Madera?</p><p style="color:#4A5568;font-size:0.875rem;">Yes \u2014 same-day service available for requests before 2 PM. We serve Corte Madera from our Marin County technicians.</p></div>
+            <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for dryer repair in Corte Madera.</p>
+          `
+    },
+    '/pacifica-wine-cooler-repair': {
+      title: 'Wine Cooler Repair Pacifica | Coastal Experts | FixitBay',
+      description: 'Wine cooler repair in Pacifica. Salt air & humidity specialists. Thermoelectric, compressor & gasket repair. From $195 after $60 diagnostic.',
+      h1: 'Wine Cooler Repair in Pacifica',
+      content: `
+            <p style="margin-bottom:1rem;">Pacifica is one of the foggiest, most humid cities in the Bay Area \u2014 sitting directly on the Pacific coast. This coastal environment is uniquely harsh on wine coolers: salt air accelerates compressor corrosion, humidity causes door gasket failure 2\u20133x faster than inland, and thermoelectric units struggle against the naturally cool ambient temperature. If you own a wine cooler in Pacifica, proactive maintenance is critical to protecting your collection.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common Wine Cooler Problems in Pacifica</h2>
+            <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Thermoelectric module overworking and failing</strong> — Pacifica's cool, humid air forces thermoelectric coolers to work overtime, burning out Peltier modules prematurely.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Door gasket degradation from salt-air humidity</strong> — rubber seals break down 2\u20133x faster in Pacifica than in inland Bay Area cities.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Compressor corrosion in older units</strong> — salt air attacks exposed metal components, causing compressor and condenser coil corrosion.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Temperature fluctuation from humidity infiltration</strong> — worn door seals allow humid air in, causing the unit to cycle more frequently.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Condensation buildup inside the unit</strong> — Pacifica's humidity creates visible condensation on shelves and bottles when seals fail.</li>
+            </ul>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Wine Cooler Repair Pricing in Pacifica</h2>
+            <p style="margin-bottom:1rem;">Wine cooler repairs in Pacifica start from <strong>$195 after the $60 diagnostic fee</strong>. Door gasket replacement is $120\u2013$180; thermoelectric module replacement runs $180\u2013$280. We use corrosion-resistant parts where possible for Pacifica installations.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Frequently Asked Questions</h2>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Why does my wine cooler break down faster in Pacifica?</p><p style="color:#4A5568;font-size:0.875rem;">Pacifica's coastal fog and salt air are uniquely hard on wine coolers. Door seals degrade 2\u20133x faster, and thermoelectric units struggle in high-humidity environments. Annual maintenance is especially recommended in Pacifica.</p></div>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">How much does wine cooler repair cost in Pacifica?</p><p style="color:#4A5568;font-size:0.875rem;">Wine cooler repairs in Pacifica typically cost $150\u2013$380. Door gasket replacement is $120\u2013$180; thermoelectric module replacement runs $180\u2013$280.</p></div>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">What wine cooler brands do you repair in Pacifica?</p><p style="color:#4A5568;font-size:0.875rem;">We repair all brands \u2014 Sub-Zero, Vinotemp, EuroCave, Wine Enthusiast, NewAir, Whynter, EdgeStar, and more.</p></div>
+            <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for wine cooler repair in Pacifica.</p>
+          `
+    }
+  };
+
+  // Check for rich city+service content BEFORE generic handler
+  if (CITY_SERVICE_RICH[route]) {
+    const rich = CITY_SERVICE_RICH[route];
+    const cityServiceServices2 = ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven', 'wine-cooler', 'ice-maker'];
+    let svcSlug = '';
+    let citySlugRich = '';
+    for (const s of cityServiceServices2) {
+      const sfx = `-${s}-repair`;
+      if (route.endsWith(sfx)) {
+        svcSlug = s;
+        citySlugRich = route.replace(/^\//, '').replace(sfx, '');
+        break;
+      }
+    }
+    const serviceNameRich = svcSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    return {
+      title: rich.title,
+      robots: 'index, follow',
+      description: rich.description,
+      h1: rich.h1,
+      content: rich.content,
+      schemas: [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": `${serviceNameRich} Repair ${rich.h1.replace(/^.*in /, '')}`,
+          "serviceType": `${serviceNameRich} Repair`,
+          "provider": { "@id": "https://fixitbay.net/#organization" },
+          "areaServed": { "@type": "City", "name": rich.h1.replace(/^.*in /, '') },
+          "description": rich.description
+        }
+      ],
+      internalLinks: [
+        '/',
+        `/${citySlugRich}-appliance-repair`,
+        `/${svcSlug}-repair`,
+        '/service-areas',
+        '/contact'
+      ]
+    };
+  }
+
   // City+Service combination pages (e.g., /daly-city-refrigerator-repair) — BEFORE generic service check
   const cityServiceServices = ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven', 'wine-cooler', 'ice-maker'];
   for (const svc of cityServiceServices) {
@@ -1301,42 +1439,49 @@ function getSEOContent(route) {
     };
   }
 
-  // Maintenance sub-pages
+  // Maintenance sub-pages — noindex, follow (thin content; crawl budget optimization)
   const maintenanceSubPages = {
     '/maintenance/refrigerator': {
       title: 'Refrigerator Maintenance | FixitBay LLC',
       description: 'Refrigerator maintenance in SF Bay Area. Keep your fridge running efficiently with expert service from FixitBay. $60 diagnostic, 180-day warranty.',
-      h1: 'Refrigerator Maintenance in San Francisco Bay Area'
+      h1: 'Refrigerator Maintenance in San Francisco Bay Area',
+      robots: 'noindex, follow'
     },
     '/maintenance/washer': {
       title: 'Washer Maintenance | FixitBay LLC',
       description: 'Washing machine maintenance in SF Bay Area. Prevent leaks and breakdowns with expert washer service from FixitBay. $60 diagnostic, 180-day warranty.',
-      h1: 'Washer Maintenance in San Francisco Bay Area'
+      h1: 'Washer Maintenance in San Francisco Bay Area',
+      robots: 'noindex, follow'
     },
     '/maintenance/dryer': {
       title: 'Dryer Maintenance & Vent Cleaning | FixitBay LLC',
       description: 'Dryer maintenance and vent cleaning in SF Bay Area. Prevent fires and improve efficiency. $60 diagnostic, 180-day warranty. FixitBay LLC.',
-      h1: 'Dryer Maintenance & Vent Cleaning in San Francisco Bay Area'
+      h1: 'Dryer Maintenance & Vent Cleaning in San Francisco Bay Area',
+      robots: 'noindex, follow'
     },
     '/maintenance/dishwasher': {
       title: 'Dishwasher Maintenance | FixitBay LLC',
       description: 'Dishwasher maintenance in SF Bay Area. Keep your dishwasher cleaning efficiently with expert service from FixitBay. $60 diagnostic, 180-day warranty.',
-      h1: 'Dishwasher Maintenance in San Francisco Bay Area'
+      h1: 'Dishwasher Maintenance in San Francisco Bay Area',
+      robots: 'noindex, follow'
     },
     '/maintenance/oven-range': {
       title: 'Oven Maintenance | FixitBay LLC',
       description: 'Professional oven maintenance in San Francisco Bay Area. Gas and electric service. Ensure safe, efficient cooking. $60 diagnostic, 180-day warranty.',
-      h1: 'Oven & Range Maintenance in San Francisco Bay Area'
+      h1: 'Oven & Range Maintenance in San Francisco Bay Area',
+      robots: 'noindex, follow'
     },
     '/maintenance/cooktop': {
       title: 'Cooktop Maintenance | Gas, Electric & Induction | FixitBay',
       description: 'Professional cooktop maintenance in San Francisco Bay Area. Service for gas, electric, and induction cooktops. $60 diagnostic, 180-day warranty. FixitBay LLC.',
-      h1: 'Cooktop Maintenance in San Francisco Bay Area'
+      h1: 'Cooktop Maintenance in San Francisco Bay Area',
+      robots: 'noindex, follow'
     },
     '/maintenance/wine-cooler': {
       title: 'Wine Cooler Maintenance & Repair | FixitBay LLC',
       description: 'Wine cooler maintenance in SF Bay Area. Protect your wine collection with expert service from FixitBay. $60 diagnostic, 180-day warranty.',
-      h1: 'Wine Cooler Maintenance in San Francisco Bay Area'
+      h1: 'Wine Cooler Maintenance in San Francisco Bay Area',
+      robots: 'noindex, follow'
     }
   };
   if (maintenanceSubPages[route]) {
@@ -1345,6 +1490,7 @@ function getSEOContent(route) {
       title: mp.title,
       description: mp.description,
       h1: mp.h1,
+      robots: mp.robots,
       content: `
         <p style="margin-bottom: 1rem;">${mp.description} Our licensed technicians provide thorough inspections to catch problems early and keep your appliances running at peak performance.</p>
         <p style="margin-bottom: 1rem;">Regular maintenance prevents costly emergency repairs and extends the life of your appliances. We serve homeowners throughout San Francisco, Daly City, South San Francisco, San Bruno, Millbrae, Pacifica, San Rafael, Mill Valley, Sausalito, Novato, and all surrounding Bay Area communities.</p>
