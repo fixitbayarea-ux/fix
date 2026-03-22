@@ -1,160 +1,867 @@
 <analysis>**original_problem_statement:**
-The user wants to continue the development of an existing appliance repair website, . The primary focus is on a series of Search Engine Optimization (SEO), content expansion, and technical SEO tasks to improve the site's ranking and traffic on Google.
+The user has a series of ongoing SEO and content optimization tasks for their appliance repair website. The latest request is a 5-part critical fix to address errors reported by Google Search Console.
 
 **PRODUCT REQUIREMENTS:**
-1.  **SEO & Content Fixes:** Correct page titles, meta descriptions, and on-page content to align with SEO best practices and user-provided specifications.
-2.  **Technical SEO:** Fix  tag issues, clean up , resolve redirect errors, and fix orphan pages by improving internal linking.
-3.  **Content Creation:** Generate new, high-value blog posts targeting specific, high-volume keywords.
-4.  **Indexing:** Ensure new pages are submitted to search engines for faster indexing using IndexNow.
+1.  **FIX 1 (Canonical URL):** Fix the canonical URL on , which is currently pointing to a different page. It must point to itself.
+2.  **FIX 2 (Noindex Sub-pages):** Add a  meta tag to 7 thin-content maintenance sub-pages (, , etc.) and remove them from the sitemap.
+3.  **FIX 3 (301 Redirects):** Add a large list of 301 redirects to the  file for old, out-of-service-area, and alternate-format URLs to point them to relevant pages like  or the canonical city page URL.
+4.  **FIX 4 (Strengthen Thin Content):** Add substantial, unique content (minimum 300 words) to 4 specific city+service pages that Google has classified as thin content. The user provided specific context, common problems, and pricing details to be included for each page.
+5.  **FIX 5 (Clean Sitemap):** Remove low-value pages (, , ) from the .
 
 **User's preferred language**: English
 
 **what currently exists?**
-The project is a React SPA with a heavy focus on SEO. Content and metadata are managed across two primary files:  for the live React application and  for generating static HTML snapshots for search engine crawlers. The agent has successfully implemented numerous SEO fixes, including correcting page titles, optimizing meta description lengths, resolving  issues, improving internal linking, and setting up IndexNow for submitting new URLs. The last task was to create three new blog posts.
+The application is a static-generated React SPA. SEO metadata, page content, redirects, and sitemap generation are primarily handled by two Node.js scripts:  and . The agent has just completed a series of five separate user requests involving updating review counts, fixing mobile navigation layout, updating blog post dates, and adding/updating JSON-LD schema. The codebase for handling redirects and sitemap exclusions already exists within .
 
 **Last working item**:
--   **Last item agent was working:** The agent was in the process of creating three new blog posts as requested by the user. It has already updated the existing  post and created the component files for  and . The final step was the creation of the  file.
+-   **Last item agent was working:** The agent began investigating the 5-part SEO fix request. It has identified the key files involved (, ) and reviewed their contents to understand how to implement the required changes. It confirmed that the structure for handling redirects and sitemap exclusions is already in place.
 -   **Status:** IN PROGRESS
 -   **Agent Testing Done:** N
--   **Which testing method agent to use?** Frontend testing agent. The agent needs to verify that all three blog posts (one updated, two new) render correctly, are listed on the main blog page, have the correct schema and content, and that the new routes are active.
+-   **Which testing method agent to use?** manual testing by curl. After all changes are implemented and the command 🚀 Starting SEO Snapshots Generation...
+
+📝 Generating 233 SEO snapshots...
+
+✅ /
+✅ /refrigerator-repair
+✅ /washer-repair
+✅ /dryer-repair
+✅ /dishwasher-repair
+✅ /oven-repair
+✅ /ice-maker-repair
+✅ /cooktop-repair
+✅ /wine-cooler-repair
+✅ /garbage-disposal-repair
+✅ /freezer-repair
+✅ /stove-repair
+✅ /range-repair
+✅ /whirlpool-appliance-repair
+✅ /lg-appliance-repair
+✅ /samsung-appliance-repair
+✅ /ge-appliance-repair
+✅ /bosch-appliance-repair
+✅ /kitchenaid-appliance-repair
+✅ /maytag-appliance-repair
+✅ /frigidaire-appliance-repair
+✅ /kenmore-appliance-repair
+✅ /thermador-appliance-repair
+✅ /viking-appliance-repair
+✅ /miele-appliance-repair
+✅ /sub-zero-appliance-repair
+✅ /wolf-appliance-repair
+✅ /blog
+✅ /blog/refrigerator-not-cooling
+✅ /blog/dishwasher-maintenance
+✅ /blog/when-to-repair-vs-replace
+✅ /blog/dryer-taking-too-long
+✅ /blog/washer-error-codes
+✅ /blog/oven-temperature-calibration
+✅ /blog/ice-maker-troubleshooting
+✅ /blog/appliance-lifespan
+✅ /blog/energy-efficient-appliances
+✅ /blog/gas-smell-from-stove
+✅ /blog/refrigerator-water-filter
+✅ /blog/dishwasher-not-draining
+✅ /blog/dryer-not-heating
+✅ /blog/appliance-repair-cost-san-francisco
+✅ /blog/appliance-repair-marin-county
+✅ /blog/same-day-appliance-repair-bay-area
+✅ /contact
+✅ /about
+✅ /service-areas
+✅ /reviews
+✅ /brands
+✅ /local-appliance-repair
+✅ /marin-county-appliance-repair
+✅ /residential-appliance-repair
+✅ /commercial-appliance-repair
+✅ /commercial-refrigerator-repair
+✅ /commercial-dishwasher-repair
+✅ /commercial-washer-repair
+✅ /commercial-dryer-repair
+✅ /commercial-oven-repair
+✅ /maintenance
+✅ /san-francisco-appliance-repair
+✅ /daly-city-appliance-repair
+✅ /south-san-francisco-appliance-repair
+✅ /san-bruno-appliance-repair
+✅ /pacifica-appliance-repair
+✅ /millbrae-appliance-repair
+✅ /colma-appliance-repair
+✅ /brisbane-appliance-repair
+✅ /montara-appliance-repair
+✅ /san-rafael-appliance-repair
+✅ /novato-appliance-repair
+✅ /mill-valley-appliance-repair
+✅ /sausalito-appliance-repair
+✅ /belvedere-appliance-repair
+✅ /tiburon-appliance-repair
+✅ /corte-madera-appliance-repair
+✅ /san-quentin-appliance-repair
+✅ /larkspur-appliance-repair
+✅ /greenbrae-appliance-repair
+✅ /ross-appliance-repair
+✅ /fairfax-appliance-repair
+✅ /san-anselmo-appliance-repair
+✅ /san-francisco-refrigerator-repair
+✅ /san-francisco-washer-repair
+✅ /san-francisco-dryer-repair
+✅ /san-francisco-dishwasher-repair
+✅ /san-francisco-oven-repair
+✅ /san-francisco-wine-cooler-repair
+✅ /san-francisco-ice-maker-repair
+✅ /daly-city-refrigerator-repair
+✅ /daly-city-washer-repair
+✅ /daly-city-dryer-repair
+✅ /daly-city-dishwasher-repair
+✅ /daly-city-oven-repair
+✅ /daly-city-wine-cooler-repair
+✅ /daly-city-ice-maker-repair
+✅ /south-san-francisco-refrigerator-repair
+✅ /south-san-francisco-washer-repair
+✅ /south-san-francisco-dryer-repair
+✅ /south-san-francisco-dishwasher-repair
+✅ /south-san-francisco-oven-repair
+✅ /south-san-francisco-wine-cooler-repair
+✅ /south-san-francisco-ice-maker-repair
+✅ /san-bruno-refrigerator-repair
+✅ /san-bruno-washer-repair
+✅ /san-bruno-dryer-repair
+✅ /san-bruno-dishwasher-repair
+✅ /san-bruno-oven-repair
+✅ /san-bruno-wine-cooler-repair
+✅ /san-bruno-ice-maker-repair
+✅ /pacifica-refrigerator-repair
+✅ /pacifica-washer-repair
+✅ /pacifica-dryer-repair
+✅ /pacifica-dishwasher-repair
+✅ /pacifica-oven-repair
+✅ /pacifica-wine-cooler-repair
+✅ /pacifica-ice-maker-repair
+✅ /millbrae-refrigerator-repair
+✅ /millbrae-washer-repair
+✅ /millbrae-dryer-repair
+✅ /millbrae-dishwasher-repair
+✅ /millbrae-oven-repair
+✅ /millbrae-wine-cooler-repair
+✅ /millbrae-ice-maker-repair
+✅ /mill-valley-refrigerator-repair
+✅ /mill-valley-washer-repair
+✅ /mill-valley-dryer-repair
+✅ /mill-valley-dishwasher-repair
+✅ /mill-valley-oven-repair
+✅ /mill-valley-wine-cooler-repair
+✅ /mill-valley-ice-maker-repair
+✅ /san-rafael-refrigerator-repair
+✅ /san-rafael-washer-repair
+✅ /san-rafael-dryer-repair
+✅ /san-rafael-dishwasher-repair
+✅ /san-rafael-oven-repair
+✅ /san-rafael-wine-cooler-repair
+✅ /san-rafael-ice-maker-repair
+✅ /sausalito-refrigerator-repair
+✅ /sausalito-washer-repair
+✅ /sausalito-dryer-repair
+✅ /sausalito-dishwasher-repair
+✅ /sausalito-oven-repair
+✅ /sausalito-wine-cooler-repair
+✅ /sausalito-ice-maker-repair
+✅ /novato-refrigerator-repair
+✅ /novato-washer-repair
+✅ /novato-dryer-repair
+✅ /novato-dishwasher-repair
+✅ /novato-oven-repair
+✅ /novato-wine-cooler-repair
+✅ /novato-ice-maker-repair
+✅ /corte-madera-refrigerator-repair
+✅ /corte-madera-washer-repair
+✅ /corte-madera-dryer-repair
+✅ /corte-madera-dishwasher-repair
+✅ /corte-madera-oven-repair
+✅ /corte-madera-wine-cooler-repair
+✅ /corte-madera-ice-maker-repair
+✅ /tiburon-refrigerator-repair
+✅ /tiburon-washer-repair
+✅ /tiburon-dryer-repair
+✅ /tiburon-dishwasher-repair
+✅ /tiburon-oven-repair
+✅ /tiburon-wine-cooler-repair
+✅ /tiburon-ice-maker-repair
+✅ /belvedere-refrigerator-repair
+✅ /belvedere-washer-repair
+✅ /belvedere-dryer-repair
+✅ /belvedere-dishwasher-repair
+✅ /belvedere-oven-repair
+✅ /belvedere-wine-cooler-repair
+✅ /belvedere-ice-maker-repair
+✅ /larkspur-refrigerator-repair
+✅ /larkspur-washer-repair
+✅ /larkspur-dryer-repair
+✅ /larkspur-dishwasher-repair
+✅ /larkspur-oven-repair
+✅ /larkspur-wine-cooler-repair
+✅ /larkspur-ice-maker-repair
+✅ /greenbrae-refrigerator-repair
+✅ /greenbrae-washer-repair
+✅ /greenbrae-dryer-repair
+✅ /greenbrae-dishwasher-repair
+✅ /greenbrae-oven-repair
+✅ /greenbrae-wine-cooler-repair
+✅ /greenbrae-ice-maker-repair
+✅ /ross-refrigerator-repair
+✅ /ross-washer-repair
+✅ /ross-dryer-repair
+✅ /ross-dishwasher-repair
+✅ /ross-oven-repair
+✅ /ross-wine-cooler-repair
+✅ /ross-ice-maker-repair
+✅ /fairfax-refrigerator-repair
+✅ /fairfax-washer-repair
+✅ /fairfax-dryer-repair
+✅ /fairfax-dishwasher-repair
+✅ /fairfax-oven-repair
+✅ /fairfax-wine-cooler-repair
+✅ /fairfax-ice-maker-repair
+✅ /san-anselmo-refrigerator-repair
+✅ /san-anselmo-washer-repair
+✅ /san-anselmo-dryer-repair
+✅ /san-anselmo-dishwasher-repair
+✅ /san-anselmo-oven-repair
+✅ /san-anselmo-wine-cooler-repair
+✅ /san-anselmo-ice-maker-repair
+✅ /maintenance/refrigerator
+✅ /maintenance/washer
+✅ /maintenance/dryer
+✅ /maintenance/dishwasher
+✅ /maintenance/oven-range
+✅ /maintenance/cooktop
+✅ /maintenance/wine-cooler
+✅ /privacy-policy
+✅ /site-map
+✅ /blog-faq
+✅ /thank-you-booking
+✅ /services
+✅ /llm-info
+✅ /book
+✅ /san-francisco/sunset-district-appliance-repair
+✅ /san-francisco/richmond-district-appliance-repair
+✅ /san-francisco/mission-district-appliance-repair
+✅ /san-francisco/noe-valley-appliance-repair
+✅ /san-francisco/castro-appliance-repair
+✅ /san-francisco/marina-appliance-repair
+✅ /san-francisco/pacific-heights-appliance-repair
+✅ /san-francisco/nob-hill-appliance-repair
+✅ /san-francisco/north-beach-appliance-repair
+✅ /san-francisco/soma-appliance-repair
+✅ /san-francisco/bernal-heights-appliance-repair
+✅ /san-francisco/potrero-hill-appliance-repair
+
+✅ Generated 233/233 SEO snapshots successfully!
+
+📄 Generated _redirects with 311 rules (310 routes + SPA fallback)
+
+🎉 SEO Snapshots generation complete!
+
+🗺️  Generated sitemap.xml with 231 canonical URLs (excluded 2 noindex route(s)) is run, the agent must verify:
+    1.  The content of the generated  file contains the new redirects.
+    2.  The generated  excludes the specified pages.
+    3.  The generated HTML for  has the correct canonical link.
+    4.  The generated HTML for the 7 maintenance sub-pages contains the  meta tag.
+    5.  The generated HTML for the 4 city-service pages contains the new, extensive content.
 -   **User Testing Done:** N
 
 **All Pending/In progress Issue list**:
--   **Issue 1:** Complete the creation and integration of three new blog posts. (P0)
+-   **Issue 1:** Fix critical SEO errors from Google Search Console (P0)
 
-    -   **Issues Detail:**
-        -   **Issue 1:** Integrate the newly created blog post components into the application.
-            -   **Attempted fixes:** The agent has successfully updated the content for  and created the component files  and .
-            -   **Next debug checklist:**
-                1.  Import the new components (, ) into  and register their routes (, ).
-                2.  Update the  array in  to include metadata for the two new posts, ensuring they appear on the blog index page.
-                3.  Update  to add the two new posts to the  array and add their corresponding content logic to the  function. This is critical for generating static snapshots.
-                4.  Run 🚀 Starting SEO Snapshots Generation... to build the new static HTML files and update the sitemap.
-                5.  Run  to submit the new URLs for indexing.
-            -   **Why fix this issue and what will be achieved with the fix?** To publish new, SEO-optimized content targeting high-value commercial keywords, thereby increasing organic traffic and search rankings as requested by the user.
-            -   **Status:** IN PROGRESS
-            -   **Is recurring issue?** N
-            -   **Should Test frontend/backend/both after fix?** Frontend
-            -   **Blocked on other issue:** None
+**Issues Detail:**
+-   **Issue 1: Fix critical SEO errors from Google Search Console**
+    -   **Attempted fixes:** The agent has started the investigation phase, reviewing relevant files (, ) to plan the implementation.
+    -   **Next debug checklist:**
+        1.  **FIX 1 (Canonical):** In , find the entry for  and set its  property to .
+        2.  **FIX 2 (Noindex):** In , find the entries for the 7 maintenance sub-pages and add a  property. Ensure  correctly adds the meta tag based on this property.
+        3.  **FIX 3 (Redirects):** In , compare the user's list with the existing  array and add any missing redirects.
+        4.  **FIX 4 (Thin Content):** In , locate the  function and add conditional logic to return the user-provided rich content for the four specific city+service page combinations.
+        5.  **FIX 5 (Sitemap):** In , add , , and  to the  array, which will automatically exclude them from the sitemap.
+        6.  After all code changes, run 🚀 Starting SEO Snapshots Generation...
+
+📝 Generating 233 SEO snapshots...
+
+✅ /
+✅ /refrigerator-repair
+✅ /washer-repair
+✅ /dryer-repair
+✅ /dishwasher-repair
+✅ /oven-repair
+✅ /ice-maker-repair
+✅ /cooktop-repair
+✅ /wine-cooler-repair
+✅ /garbage-disposal-repair
+✅ /freezer-repair
+✅ /stove-repair
+✅ /range-repair
+✅ /whirlpool-appliance-repair
+✅ /lg-appliance-repair
+✅ /samsung-appliance-repair
+✅ /ge-appliance-repair
+✅ /bosch-appliance-repair
+✅ /kitchenaid-appliance-repair
+✅ /maytag-appliance-repair
+✅ /frigidaire-appliance-repair
+✅ /kenmore-appliance-repair
+✅ /thermador-appliance-repair
+✅ /viking-appliance-repair
+✅ /miele-appliance-repair
+✅ /sub-zero-appliance-repair
+✅ /wolf-appliance-repair
+✅ /blog
+✅ /blog/refrigerator-not-cooling
+✅ /blog/dishwasher-maintenance
+✅ /blog/when-to-repair-vs-replace
+✅ /blog/dryer-taking-too-long
+✅ /blog/washer-error-codes
+✅ /blog/oven-temperature-calibration
+✅ /blog/ice-maker-troubleshooting
+✅ /blog/appliance-lifespan
+✅ /blog/energy-efficient-appliances
+✅ /blog/gas-smell-from-stove
+✅ /blog/refrigerator-water-filter
+✅ /blog/dishwasher-not-draining
+✅ /blog/dryer-not-heating
+✅ /blog/appliance-repair-cost-san-francisco
+✅ /blog/appliance-repair-marin-county
+✅ /blog/same-day-appliance-repair-bay-area
+✅ /contact
+✅ /about
+✅ /service-areas
+✅ /reviews
+✅ /brands
+✅ /local-appliance-repair
+✅ /marin-county-appliance-repair
+✅ /residential-appliance-repair
+✅ /commercial-appliance-repair
+✅ /commercial-refrigerator-repair
+✅ /commercial-dishwasher-repair
+✅ /commercial-washer-repair
+✅ /commercial-dryer-repair
+✅ /commercial-oven-repair
+✅ /maintenance
+✅ /san-francisco-appliance-repair
+✅ /daly-city-appliance-repair
+✅ /south-san-francisco-appliance-repair
+✅ /san-bruno-appliance-repair
+✅ /pacifica-appliance-repair
+✅ /millbrae-appliance-repair
+✅ /colma-appliance-repair
+✅ /brisbane-appliance-repair
+✅ /montara-appliance-repair
+✅ /san-rafael-appliance-repair
+✅ /novato-appliance-repair
+✅ /mill-valley-appliance-repair
+✅ /sausalito-appliance-repair
+✅ /belvedere-appliance-repair
+✅ /tiburon-appliance-repair
+✅ /corte-madera-appliance-repair
+✅ /san-quentin-appliance-repair
+✅ /larkspur-appliance-repair
+✅ /greenbrae-appliance-repair
+✅ /ross-appliance-repair
+✅ /fairfax-appliance-repair
+✅ /san-anselmo-appliance-repair
+✅ /san-francisco-refrigerator-repair
+✅ /san-francisco-washer-repair
+✅ /san-francisco-dryer-repair
+✅ /san-francisco-dishwasher-repair
+✅ /san-francisco-oven-repair
+✅ /san-francisco-wine-cooler-repair
+✅ /san-francisco-ice-maker-repair
+✅ /daly-city-refrigerator-repair
+✅ /daly-city-washer-repair
+✅ /daly-city-dryer-repair
+✅ /daly-city-dishwasher-repair
+✅ /daly-city-oven-repair
+✅ /daly-city-wine-cooler-repair
+✅ /daly-city-ice-maker-repair
+✅ /south-san-francisco-refrigerator-repair
+✅ /south-san-francisco-washer-repair
+✅ /south-san-francisco-dryer-repair
+✅ /south-san-francisco-dishwasher-repair
+✅ /south-san-francisco-oven-repair
+✅ /south-san-francisco-wine-cooler-repair
+✅ /south-san-francisco-ice-maker-repair
+✅ /san-bruno-refrigerator-repair
+✅ /san-bruno-washer-repair
+✅ /san-bruno-dryer-repair
+✅ /san-bruno-dishwasher-repair
+✅ /san-bruno-oven-repair
+✅ /san-bruno-wine-cooler-repair
+✅ /san-bruno-ice-maker-repair
+✅ /pacifica-refrigerator-repair
+✅ /pacifica-washer-repair
+✅ /pacifica-dryer-repair
+✅ /pacifica-dishwasher-repair
+✅ /pacifica-oven-repair
+✅ /pacifica-wine-cooler-repair
+✅ /pacifica-ice-maker-repair
+✅ /millbrae-refrigerator-repair
+✅ /millbrae-washer-repair
+✅ /millbrae-dryer-repair
+✅ /millbrae-dishwasher-repair
+✅ /millbrae-oven-repair
+✅ /millbrae-wine-cooler-repair
+✅ /millbrae-ice-maker-repair
+✅ /mill-valley-refrigerator-repair
+✅ /mill-valley-washer-repair
+✅ /mill-valley-dryer-repair
+✅ /mill-valley-dishwasher-repair
+✅ /mill-valley-oven-repair
+✅ /mill-valley-wine-cooler-repair
+✅ /mill-valley-ice-maker-repair
+✅ /san-rafael-refrigerator-repair
+✅ /san-rafael-washer-repair
+✅ /san-rafael-dryer-repair
+✅ /san-rafael-dishwasher-repair
+✅ /san-rafael-oven-repair
+✅ /san-rafael-wine-cooler-repair
+✅ /san-rafael-ice-maker-repair
+✅ /sausalito-refrigerator-repair
+✅ /sausalito-washer-repair
+✅ /sausalito-dryer-repair
+✅ /sausalito-dishwasher-repair
+✅ /sausalito-oven-repair
+✅ /sausalito-wine-cooler-repair
+✅ /sausalito-ice-maker-repair
+✅ /novato-refrigerator-repair
+✅ /novato-washer-repair
+✅ /novato-dryer-repair
+✅ /novato-dishwasher-repair
+✅ /novato-oven-repair
+✅ /novato-wine-cooler-repair
+✅ /novato-ice-maker-repair
+✅ /corte-madera-refrigerator-repair
+✅ /corte-madera-washer-repair
+✅ /corte-madera-dryer-repair
+✅ /corte-madera-dishwasher-repair
+✅ /corte-madera-oven-repair
+✅ /corte-madera-wine-cooler-repair
+✅ /corte-madera-ice-maker-repair
+✅ /tiburon-refrigerator-repair
+✅ /tiburon-washer-repair
+✅ /tiburon-dryer-repair
+✅ /tiburon-dishwasher-repair
+✅ /tiburon-oven-repair
+✅ /tiburon-wine-cooler-repair
+✅ /tiburon-ice-maker-repair
+✅ /belvedere-refrigerator-repair
+✅ /belvedere-washer-repair
+✅ /belvedere-dryer-repair
+✅ /belvedere-dishwasher-repair
+✅ /belvedere-oven-repair
+✅ /belvedere-wine-cooler-repair
+✅ /belvedere-ice-maker-repair
+✅ /larkspur-refrigerator-repair
+✅ /larkspur-washer-repair
+✅ /larkspur-dryer-repair
+✅ /larkspur-dishwasher-repair
+✅ /larkspur-oven-repair
+✅ /larkspur-wine-cooler-repair
+✅ /larkspur-ice-maker-repair
+✅ /greenbrae-refrigerator-repair
+✅ /greenbrae-washer-repair
+✅ /greenbrae-dryer-repair
+✅ /greenbrae-dishwasher-repair
+✅ /greenbrae-oven-repair
+✅ /greenbrae-wine-cooler-repair
+✅ /greenbrae-ice-maker-repair
+✅ /ross-refrigerator-repair
+✅ /ross-washer-repair
+✅ /ross-dryer-repair
+✅ /ross-dishwasher-repair
+✅ /ross-oven-repair
+✅ /ross-wine-cooler-repair
+✅ /ross-ice-maker-repair
+✅ /fairfax-refrigerator-repair
+✅ /fairfax-washer-repair
+✅ /fairfax-dryer-repair
+✅ /fairfax-dishwasher-repair
+✅ /fairfax-oven-repair
+✅ /fairfax-wine-cooler-repair
+✅ /fairfax-ice-maker-repair
+✅ /san-anselmo-refrigerator-repair
+✅ /san-anselmo-washer-repair
+✅ /san-anselmo-dryer-repair
+✅ /san-anselmo-dishwasher-repair
+✅ /san-anselmo-oven-repair
+✅ /san-anselmo-wine-cooler-repair
+✅ /san-anselmo-ice-maker-repair
+✅ /maintenance/refrigerator
+✅ /maintenance/washer
+✅ /maintenance/dryer
+✅ /maintenance/dishwasher
+✅ /maintenance/oven-range
+✅ /maintenance/cooktop
+✅ /maintenance/wine-cooler
+✅ /privacy-policy
+✅ /site-map
+✅ /blog-faq
+✅ /thank-you-booking
+✅ /services
+✅ /llm-info
+✅ /book
+✅ /san-francisco/sunset-district-appliance-repair
+✅ /san-francisco/richmond-district-appliance-repair
+✅ /san-francisco/mission-district-appliance-repair
+✅ /san-francisco/noe-valley-appliance-repair
+✅ /san-francisco/castro-appliance-repair
+✅ /san-francisco/marina-appliance-repair
+✅ /san-francisco/pacific-heights-appliance-repair
+✅ /san-francisco/nob-hill-appliance-repair
+✅ /san-francisco/north-beach-appliance-repair
+✅ /san-francisco/soma-appliance-repair
+✅ /san-francisco/bernal-heights-appliance-repair
+✅ /san-francisco/potrero-hill-appliance-repair
+
+✅ Generated 233/233 SEO snapshots successfully!
+
+📄 Generated _redirects with 311 rules (310 routes + SPA fallback)
+
+🎉 SEO Snapshots generation complete!
+
+🗺️  Generated sitemap.xml with 231 canonical URLs (excluded 2 noindex route(s)) and perform verification as described in the Last working item testing plan.
+    -   **Why fix this issue and what will be achieved with the fix?** To resolve multiple high-priority SEO errors reported by Google, improve indexing, consolidate link equity, and ensure the correct pages are visible in search results.
+    -   **Status:** IN PROGRESS
+    -   **Is recurring issue?** N
+    -   **Should Test frontend/backend/both after fix?** Frontend (static files)
+    -   **Blocked on other issue:** None
 
 **In progress Task List**:
--   **Task 1:** Integrate and deploy three new blog posts. (P0)
-    -   **Where to resume:** The component files are created/updated. Resume by modifying  to add the new routes.
-    -   **What will be achieved with this?** The website will feature three high-quality, SEO-focused blog posts targeting valuable keywords, improving content freshness and authority.
+-   **Task 1: Implement 5-Part SEO & Content Fix (P0)**
+    -   **Where to resume:** Begin implementation starting with FIX 1 (Canonical URL fix) in . Proceed systematically through all five fixes.
+    -   **What will be achieved with this?** A healthier SEO profile for the website, resolving critical errors from Google Search Console.
     -   **Status:** IN PROGRESS
-    -   **Should Test frontend/backend/both after fix?** Frontend
-    -   **Blocked on something:** None
+    -   **Should Test frontend/backend/both after fix?** Frontend (static files)
+    -   **Blocked on something:** None.
 
 **Upcoming and Future Tasks**
--   **Upcoming Tasks:**
-    -   (P1) Investigate and fix 2 Soft 404 pages reported in Google Search Console.
--   **Future Tasks:**
-    -   (P2) Refactor the dual content sources ( and ) into a single source of truth to improve maintainability.
-    -   (P2) Refactor monolithic page components into smaller, more manageable sub-components.
+-   (P1) Investigate 2 Soft 404 pages from Google Search Console (This is likely the current task).
+-   (P2) Remove legacy  function from .
+-   (P2) Merge dual SEO content sources ( + ) into a single source of truth.
+-   (P2) Refactor monolithic page components (e.g., , ).
 
 **Completed work in this session**
--   **Critical SEO Fixes:**
-    -   Resolved an issue where numerous pages were incorrectly marked with a  tag. All key pages are now , while utility pages like  are correctly set to .
-    -   Corrected the page title format for all  pages to match the user's required pattern: .
-    -   Removed the  page  from the .
--   **Internal Linking (Orphan Pages):**
-    -   Fixed orphan page issues by adding Popular Repairs sections with internal links from city pages to their corresponding  pages.
-    -   Updated service page templates to make city chips link directly to the relevant  page instead of the generic city page.
--   **Meta Description Optimization:**
-    -   Audited and rewrote dozens of meta descriptions across components and content files (, ) to ensure they are within the optimal 130-160 character length.
--   **Sitemap & Indexing:**
-    -   Synced the  with the build-generated sitemap, ensuring all 230 canonical URLs are included.
-    -   Implemented an IndexNow integration by creating an API key, a verification file (), and a submission script ().
-    -   Submitted 159 new URLs to the IndexNow API for faster indexing.
--   **Blog Content Creation (Started):**
-    -   Rewrote and expanded the existing  post with new content, a new title, and updated schema.
-    -   Created the component files for two new blog posts:  and .
+-   **SEO Meta Fixes:** Corrected all page titles to be ≤ 60 characters and all meta descriptions to be ≤ 158 characters across the entire site (466 files).
+-   **Review Count Update:** Updated the customer review count from 87/93 to 94 across all components, schemas, and text.
+-   **Service Card Image Fix:** Fixed an issue where service images were not loading by changing  to .
+-   **Brand Consistency:** Added LLC to instances of FixitBay in titles, headings, and the footer for consistency.
+-   **Content/UX Updates:** Made the How It Works step 1 tile a clickable link, updated multiple blog post dates to 2026, and added a mid-article CTA to the Blog FAQ page.
+-   **Mobile Navbar Fix:** Completely overhauled the mobile menu accordion to remove empty space between collapsed items and reduce padding, resulting in a compact, single-screen view.
+-   **About Page Enhancements:** Added/updated the  JSON-LD schema and replaced YouTube iframes with clickable thumbnail images.
 
 **Earlier issues found/mentioned but not fixed**
--   None. The user's iterative requests have all been addressed or are currently in progress.
-
-**Known issue recurrence from previous fork**
--   N/A
+-   **Issue 1: Ghost Div on Homepage:** A known but deferred issue from a previous fork about an empty div on the mobile homepage has not been addressed.
 
 **Code Architecture**
 
 
 **Key Technical Concepts**
--   **React SPA:** The core project is a Single Page Application.
--   **Static Snapshots for SEO:** A Node.js script () pre-renders key pages into static HTML files for optimal search engine crawling.
--   **Decoupled Content:** Page content and metadata are managed in two separate headless JavaScript files ( and ), which must be kept in sync.
--   **Client-Side Routing:**  handles all application routes, including dynamic routes for cities, services, and blog posts.
--   **JSON-LD Schema:** Structured data is dynamically generated and injected into page components to enhance search engine visibility.
--   **IndexNow API:** Used for programmatically submitting new URLs to search engines for faster indexing.
-
-**key DB schema**
--   N/A. This is a static site without a database.
-
-**changes in tech stack**
--   None.
+-   React SPA with a static pre-rendering build step.
+-   Centralized SEO & Content configuration via a Node.js module ().
+-   A master Node.js script () that handles sitemap generation, Netlify-style redirect file creation, and static HTML snapshotting.
+-   Use of  meta tags and sitemap exclusions to manage search engine crawling.
+-   JSON-LD for structured data (rich snippets).
 
 **All files of reference**
--   : Runtime content for the React app.
--   : Content for build-time static HTML snapshots. **Crucial for all SEO changes.**
--   : The build script for static pages and the sitemap. **Must be run after content changes.**
--   : The script for submitting new URLs for indexing.
--   : Main application router.
--   : Defines the list of all blog posts.
--   : Directory containing all individual blog post components.
--   : The primary template for city-specific pages.
--   : The template for the San Francisco city page.
+-    (For redirects, sitemap logic, and noindex implementation)
+-    (For canonical URLs, robots content, and page content)
+-    (To verify FIX 3)
+-    (To verify FIX 2 and FIX 5)
+-   The generated HTML files for the affected pages (To verify FIX 1, 2, and 4)
 
-**Areas that need refactoring**
--   The duplication of content and logic between  and  is a major source of potential bugs and extra work. Consolidating this into a single source of truth is the highest-priority refactoring task.
-
-**key api endpoints**
--   N/A
+**Areas that need refactoring**:
+-   The dual SEO content system ( and ) is a known issue and listed as a future task.
+-    has grown to handle many responsibilities and could be broken into smaller, more focused modules.
 
 **Critical Info for New Agent**
--   **DUAL CONTENT SOURCES:** Any change to SEO content (titles, descriptions, etc.) or page structure almost always requires updating **both**  (for the live app) and  (for SEO snapshots). Forgetting one will lead to inconsistencies between what users see and what Google crawls.
--   **RUN BUILD SCRIPTS:** After any significant content or SEO change, you **MUST** run 🚀 Starting SEO Snapshots Generation... to update the static pre-rendered HTML files and the sitemap.
--   **BLOG POST WORKFLOW:** To add a new blog post, you must:
-    1.  Create the React component file in .
-    2.  Add a route for it in .
-    3.  Add its metadata to the  array in .
-    4.  Add its SEO data to .
+-   This is a multi-part task. Ensure all 5 fixes are implemented and verified before finishing.
+-   The main logic for redirects and sitemap generation lives in .
+-   The main configuration for page-specific metadata (like canonicals and  content) and dynamic page content is in .
+-   **Crucially, after making any changes, you must run 🚀 Starting SEO Snapshots Generation...
+
+📝 Generating 233 SEO snapshots...
+
+✅ /
+✅ /refrigerator-repair
+✅ /washer-repair
+✅ /dryer-repair
+✅ /dishwasher-repair
+✅ /oven-repair
+✅ /ice-maker-repair
+✅ /cooktop-repair
+✅ /wine-cooler-repair
+✅ /garbage-disposal-repair
+✅ /freezer-repair
+✅ /stove-repair
+✅ /range-repair
+✅ /whirlpool-appliance-repair
+✅ /lg-appliance-repair
+✅ /samsung-appliance-repair
+✅ /ge-appliance-repair
+✅ /bosch-appliance-repair
+✅ /kitchenaid-appliance-repair
+✅ /maytag-appliance-repair
+✅ /frigidaire-appliance-repair
+✅ /kenmore-appliance-repair
+✅ /thermador-appliance-repair
+✅ /viking-appliance-repair
+✅ /miele-appliance-repair
+✅ /sub-zero-appliance-repair
+✅ /wolf-appliance-repair
+✅ /blog
+✅ /blog/refrigerator-not-cooling
+✅ /blog/dishwasher-maintenance
+✅ /blog/when-to-repair-vs-replace
+✅ /blog/dryer-taking-too-long
+✅ /blog/washer-error-codes
+✅ /blog/oven-temperature-calibration
+✅ /blog/ice-maker-troubleshooting
+✅ /blog/appliance-lifespan
+✅ /blog/energy-efficient-appliances
+✅ /blog/gas-smell-from-stove
+✅ /blog/refrigerator-water-filter
+✅ /blog/dishwasher-not-draining
+✅ /blog/dryer-not-heating
+✅ /blog/appliance-repair-cost-san-francisco
+✅ /blog/appliance-repair-marin-county
+✅ /blog/same-day-appliance-repair-bay-area
+✅ /contact
+✅ /about
+✅ /service-areas
+✅ /reviews
+✅ /brands
+✅ /local-appliance-repair
+✅ /marin-county-appliance-repair
+✅ /residential-appliance-repair
+✅ /commercial-appliance-repair
+✅ /commercial-refrigerator-repair
+✅ /commercial-dishwasher-repair
+✅ /commercial-washer-repair
+✅ /commercial-dryer-repair
+✅ /commercial-oven-repair
+✅ /maintenance
+✅ /san-francisco-appliance-repair
+✅ /daly-city-appliance-repair
+✅ /south-san-francisco-appliance-repair
+✅ /san-bruno-appliance-repair
+✅ /pacifica-appliance-repair
+✅ /millbrae-appliance-repair
+✅ /colma-appliance-repair
+✅ /brisbane-appliance-repair
+✅ /montara-appliance-repair
+✅ /san-rafael-appliance-repair
+✅ /novato-appliance-repair
+✅ /mill-valley-appliance-repair
+✅ /sausalito-appliance-repair
+✅ /belvedere-appliance-repair
+✅ /tiburon-appliance-repair
+✅ /corte-madera-appliance-repair
+✅ /san-quentin-appliance-repair
+✅ /larkspur-appliance-repair
+✅ /greenbrae-appliance-repair
+✅ /ross-appliance-repair
+✅ /fairfax-appliance-repair
+✅ /san-anselmo-appliance-repair
+✅ /san-francisco-refrigerator-repair
+✅ /san-francisco-washer-repair
+✅ /san-francisco-dryer-repair
+✅ /san-francisco-dishwasher-repair
+✅ /san-francisco-oven-repair
+✅ /san-francisco-wine-cooler-repair
+✅ /san-francisco-ice-maker-repair
+✅ /daly-city-refrigerator-repair
+✅ /daly-city-washer-repair
+✅ /daly-city-dryer-repair
+✅ /daly-city-dishwasher-repair
+✅ /daly-city-oven-repair
+✅ /daly-city-wine-cooler-repair
+✅ /daly-city-ice-maker-repair
+✅ /south-san-francisco-refrigerator-repair
+✅ /south-san-francisco-washer-repair
+✅ /south-san-francisco-dryer-repair
+✅ /south-san-francisco-dishwasher-repair
+✅ /south-san-francisco-oven-repair
+✅ /south-san-francisco-wine-cooler-repair
+✅ /south-san-francisco-ice-maker-repair
+✅ /san-bruno-refrigerator-repair
+✅ /san-bruno-washer-repair
+✅ /san-bruno-dryer-repair
+✅ /san-bruno-dishwasher-repair
+✅ /san-bruno-oven-repair
+✅ /san-bruno-wine-cooler-repair
+✅ /san-bruno-ice-maker-repair
+✅ /pacifica-refrigerator-repair
+✅ /pacifica-washer-repair
+✅ /pacifica-dryer-repair
+✅ /pacifica-dishwasher-repair
+✅ /pacifica-oven-repair
+✅ /pacifica-wine-cooler-repair
+✅ /pacifica-ice-maker-repair
+✅ /millbrae-refrigerator-repair
+✅ /millbrae-washer-repair
+✅ /millbrae-dryer-repair
+✅ /millbrae-dishwasher-repair
+✅ /millbrae-oven-repair
+✅ /millbrae-wine-cooler-repair
+✅ /millbrae-ice-maker-repair
+✅ /mill-valley-refrigerator-repair
+✅ /mill-valley-washer-repair
+✅ /mill-valley-dryer-repair
+✅ /mill-valley-dishwasher-repair
+✅ /mill-valley-oven-repair
+✅ /mill-valley-wine-cooler-repair
+✅ /mill-valley-ice-maker-repair
+✅ /san-rafael-refrigerator-repair
+✅ /san-rafael-washer-repair
+✅ /san-rafael-dryer-repair
+✅ /san-rafael-dishwasher-repair
+✅ /san-rafael-oven-repair
+✅ /san-rafael-wine-cooler-repair
+✅ /san-rafael-ice-maker-repair
+✅ /sausalito-refrigerator-repair
+✅ /sausalito-washer-repair
+✅ /sausalito-dryer-repair
+✅ /sausalito-dishwasher-repair
+✅ /sausalito-oven-repair
+✅ /sausalito-wine-cooler-repair
+✅ /sausalito-ice-maker-repair
+✅ /novato-refrigerator-repair
+✅ /novato-washer-repair
+✅ /novato-dryer-repair
+✅ /novato-dishwasher-repair
+✅ /novato-oven-repair
+✅ /novato-wine-cooler-repair
+✅ /novato-ice-maker-repair
+✅ /corte-madera-refrigerator-repair
+✅ /corte-madera-washer-repair
+✅ /corte-madera-dryer-repair
+✅ /corte-madera-dishwasher-repair
+✅ /corte-madera-oven-repair
+✅ /corte-madera-wine-cooler-repair
+✅ /corte-madera-ice-maker-repair
+✅ /tiburon-refrigerator-repair
+✅ /tiburon-washer-repair
+✅ /tiburon-dryer-repair
+✅ /tiburon-dishwasher-repair
+✅ /tiburon-oven-repair
+✅ /tiburon-wine-cooler-repair
+✅ /tiburon-ice-maker-repair
+✅ /belvedere-refrigerator-repair
+✅ /belvedere-washer-repair
+✅ /belvedere-dryer-repair
+✅ /belvedere-dishwasher-repair
+✅ /belvedere-oven-repair
+✅ /belvedere-wine-cooler-repair
+✅ /belvedere-ice-maker-repair
+✅ /larkspur-refrigerator-repair
+✅ /larkspur-washer-repair
+✅ /larkspur-dryer-repair
+✅ /larkspur-dishwasher-repair
+✅ /larkspur-oven-repair
+✅ /larkspur-wine-cooler-repair
+✅ /larkspur-ice-maker-repair
+✅ /greenbrae-refrigerator-repair
+✅ /greenbrae-washer-repair
+✅ /greenbrae-dryer-repair
+✅ /greenbrae-dishwasher-repair
+✅ /greenbrae-oven-repair
+✅ /greenbrae-wine-cooler-repair
+✅ /greenbrae-ice-maker-repair
+✅ /ross-refrigerator-repair
+✅ /ross-washer-repair
+✅ /ross-dryer-repair
+✅ /ross-dishwasher-repair
+✅ /ross-oven-repair
+✅ /ross-wine-cooler-repair
+✅ /ross-ice-maker-repair
+✅ /fairfax-refrigerator-repair
+✅ /fairfax-washer-repair
+✅ /fairfax-dryer-repair
+✅ /fairfax-dishwasher-repair
+✅ /fairfax-oven-repair
+✅ /fairfax-wine-cooler-repair
+✅ /fairfax-ice-maker-repair
+✅ /san-anselmo-refrigerator-repair
+✅ /san-anselmo-washer-repair
+✅ /san-anselmo-dryer-repair
+✅ /san-anselmo-dishwasher-repair
+✅ /san-anselmo-oven-repair
+✅ /san-anselmo-wine-cooler-repair
+✅ /san-anselmo-ice-maker-repair
+✅ /maintenance/refrigerator
+✅ /maintenance/washer
+✅ /maintenance/dryer
+✅ /maintenance/dishwasher
+✅ /maintenance/oven-range
+✅ /maintenance/cooktop
+✅ /maintenance/wine-cooler
+✅ /privacy-policy
+✅ /site-map
+✅ /blog-faq
+✅ /thank-you-booking
+✅ /services
+✅ /llm-info
+✅ /book
+✅ /san-francisco/sunset-district-appliance-repair
+✅ /san-francisco/richmond-district-appliance-repair
+✅ /san-francisco/mission-district-appliance-repair
+✅ /san-francisco/noe-valley-appliance-repair
+✅ /san-francisco/castro-appliance-repair
+✅ /san-francisco/marina-appliance-repair
+✅ /san-francisco/pacific-heights-appliance-repair
+✅ /san-francisco/nob-hill-appliance-repair
+✅ /san-francisco/north-beach-appliance-repair
+✅ /san-francisco/soma-appliance-repair
+✅ /san-francisco/bernal-heights-appliance-repair
+✅ /san-francisco/potrero-hill-appliance-repair
+
+✅ Generated 233/233 SEO snapshots successfully!
+
+📄 Generated _redirects with 311 rules (310 routes + SPA fallback)
+
+🎉 SEO Snapshots generation complete!
+
+🗺️  Generated sitemap.xml with 231 canonical URLs (excluded 2 noindex route(s))** to apply them to the static build output. If the script reports a missing  directory, run yarn run v1.22.22
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command. first.
 
 **documents and test reports created in this job**
 -   
--   
--   
--   
--   
--    (IndexNow key file)
--   
 
 **Last 10 User Messages and any pending HUMAN messages**
-1.  **Request (In Progress):** Create three new high-value blog posts for specific keywords (, , ).
-2.  **Request (Completed):** Ensure new pages are submitted for indexing and check sitemap status.
-3.  **Request (Completed):** Fix meta description lengths across the site to be within the 130-160 character range.
-4.  **Request (Completed):** Fix orphan pages by adding internal links from city and service pages to the new  pages.
-5.  **Request (Completed):** Fix three critical SEO issues:  tags on indexable pages, incorrect  page titles, and the  page appearing in the sitemap.
-6.  User prompt to proceed with plan.
-7.  **Request (Completed):** A high-priority list of tasks, including fixing the sitemap, removing  tags, fixing soft 404s, and generating all  pages.
-8.  User prompt to confirm plan.
-9.  (User messages from a previous session, all completed).
+1.  **User (Current):** Requested a 5-part critical SEO fix: fix canonical, add noindex, add redirects, strengthen thin pages, and clean the sitemap. (IN PROGRESS)
+2.  **Agent (Finish):** Summarized completion of the mobile navbar layout fix. (DONE)
+3.  **User:** Requested fixes for the mobile navbar layout (gaps, padding). (DONE)
+4.  **Agent (Finish):** Summarized completion of updates to review count, service images, and FixitBay LLC branding. (DONE)
+5.  **User:** Requested updates to review count, service card images, and adding LLC to the brand name. (DONE)
+6.  **Agent (Finish):** Summarized completion of blog date updates and adding a CTA to the blog FAQ page. (DONE)
+7.  **User:** Requested updates to blog post dates and adding a mid-article CTA. (DONE)
+8.  **Agent (Finish):** Summarized completion of the About page  schema update. (DONE)
+9.  **User:** Requested to add a  schema and a prominent video section to the About page. (DONE)
+10. **Agent (Finish):** Summarized completion of the SEO meta title and description length fixes. (DONE)
 
 **Project Health Check:**
--   **Working:** The application is fully functional and running. All previous requests have been implemented.
--   **Broken:** None.
+-   **Broken:**
+    -   An incorrect canonical tag on  is hurting its SEO.
+    -   Thin-content pages are being unnecessarily crawled and included in the sitemap.
+    -   Missing 301 redirects are leading to 404s from old backlinks.
+    -   Several important city+service pages are not being indexed due to thin content.
 -   **Mocked:** None.
 
 **3rd Party Integrations**
--   **IndexNow:** Used to submit new URLs for faster search engine indexing. An API key and submission script have been configured.
+-   **IndexNow:** Used for submitting URLs to search engines (mentioned in handoff summary).
+-   **Schema.org:** Used for providing structured data (JSON-LD) for rich snippets.
 
 **Testing status**
--   **Testing agent used after significant changes:** YES. The agent was used multiple times to verify critical SEO fixes, internal linking, and content rendering, proving effective at catching regressions (e.g., the  issue on the live  page).
+-   **Testing agent used after significant changes:** NO (Agent has used screenshots and manual verification for recent tasks).
 -   **Troubleshoot agent used after agent stuck in loop:** NO
--   **Test files created:** []
--   **Known regressions:** None currently. A regression on the  page's  tag was caught by the testing agent and fixed during this session.
-
-**Credentials to test flow:**
--   N/A
+-   **Test files created:** None
+-   **Known regressions:** A previous  command broke a file, causing a build failure, but this was immediately identified and fixed by the agent.
 
 **What agent forgot to execute**
--   The agent has been thorough and has not forgotten any user requests. It successfully navigated the complex, decoupled content architecture to apply changes consistently.</analysis>
+-   All user requests in the current session have been addressed. The only known deferred item is the ghost div on the mobile homepage from a previous fork.</analysis>
