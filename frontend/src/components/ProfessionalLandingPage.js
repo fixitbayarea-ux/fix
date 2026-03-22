@@ -233,7 +233,7 @@ const ProfessionalLandingPage = () => {
         <div style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr auto 1fr', alignItems: 'stretch' }}>
             {[
-              { num: '21+', unit: 'Cities', title: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin' },
+              { num: '22', unit: 'Cities', title: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin' },
               { num: '$60', unit: 'Diagnostic', title: 'GOES TOWARD REPAIR', desc: 'Applied if you proceed' },
               { num: '180-Day', unit: 'Warranty', title: 'PARTS & LABOR', desc: '180-day guarantee' },
             ].map((s, i) => (

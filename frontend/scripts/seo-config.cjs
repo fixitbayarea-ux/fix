@@ -1168,15 +1168,6 @@ function getSEOContent(route) {
         schemas: [
           {
             "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net/" },
-              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://fixitbay.net/services" },
-              { "@type": "ListItem", "position": 3, "name": "Refrigerator Repair", "item": "https://fixitbay.net/refrigerator-repair" }
-            ]
-          },
-          {
-            "@context": "https://schema.org",
             "@type": "Service",
             "serviceType": "Refrigerator Repair",
             "provider": { "@id": "https://fixitbay.net/#organization" },
@@ -1203,15 +1194,6 @@ function getSEOContent(route) {
         desc: 'Expert washing machine repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733.',
         h1: 'Washer Repair in San Francisco & Bay Area',
         schemas: [
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net/" },
-              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://fixitbay.net/services" },
-              { "@type": "ListItem", "position": 3, "name": "Washer Repair", "item": "https://fixitbay.net/washer-repair" }
-            ]
-          },
           {
             "@context": "https://schema.org",
             "@type": "Service",
@@ -1257,15 +1239,6 @@ function getSEOContent(route) {
         desc: 'Expert dishwasher repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733.',
         h1: 'Dishwasher Repair in San Francisco & Bay Area',
         schemas: [
-          {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net/" },
-              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://fixitbay.net/services" },
-              { "@type": "ListItem", "position": 3, "name": "Dishwasher Repair", "item": "https://fixitbay.net/dishwasher-repair" }
-            ]
-          },
           {
             "@context": "https://schema.org",
             "@type": "Service",

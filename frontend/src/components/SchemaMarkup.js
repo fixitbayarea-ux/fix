@@ -70,13 +70,28 @@ const SchemaMarkup = () => {
         }
       ],
       "areaServed": [
-        {"@type":"City","name":"San Francisco","containedInPlace":{"@type":"State","name":"California"}},
+        {"@type":"City","name":"San Francisco"},
         {"@type":"City","name":"Daly City"},
         {"@type":"City","name":"South San Francisco"},
+        {"@type":"City","name":"San Bruno"},
         {"@type":"City","name":"Pacifica"},
         {"@type":"City","name":"Millbrae"},
-        {"@type":"City","name":"San Mateo"},
-        {"@type":"City","name":"Marin County"}
+        {"@type":"City","name":"Colma"},
+        {"@type":"City","name":"Brisbane"},
+        {"@type":"City","name":"Montara"},
+        {"@type":"City","name":"Mill Valley"},
+        {"@type":"City","name":"San Rafael"},
+        {"@type":"City","name":"Sausalito"},
+        {"@type":"City","name":"Novato"},
+        {"@type":"City","name":"Corte Madera"},
+        {"@type":"City","name":"Larkspur"},
+        {"@type":"City","name":"Greenbrae"},
+        {"@type":"City","name":"Ross"},
+        {"@type":"City","name":"Fairfax"},
+        {"@type":"City","name":"San Anselmo"},
+        {"@type":"City","name":"Tiburon"},
+        {"@type":"City","name":"Belvedere"},
+        {"@type":"City","name":"San Quentin"}
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -103,7 +118,8 @@ const SchemaMarkup = () => {
         "https://www.facebook.com/fixitbay",
         "https://share.google/Q48c6OXAIB7u60fNv",
         "https://www.yelp.com/biz/fixitbay-san-francisco-5",
-        "https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644"
+        "https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644",
+        "https://www.bbb.org/us/ca/san-francisco/profile/appliance-repair/fixitbay-llc"
       ]
     });
     document.head.appendChild(script);

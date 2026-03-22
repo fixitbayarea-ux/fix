@@ -318,6 +318,50 @@ const ApplianceRepairPageNew = ({
     // Add Service schema - use provided schema or generate default
     const effectiveServiceSchema = serviceSchema || buildServiceSchema(appliance);
     schemas.push({ id: `service-schema-${appliance}`, data: effectiveServiceSchema });
+
+    // Add HowTo schema for all service pages
+    schemas.push({
+      id: `howto-schema-${appliance}`,
+      data: {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": `How to Get Your ${appliance} Repaired in San Francisco`,
+        "description": `Book same-day ${appliance.toLowerCase()} repair with FixitBay LLC. $60 diagnostic applied to repair cost. 180-day warranty.`,
+        "totalTime": "P1D",
+        "estimatedCost": {
+          "@type": "MonetaryAmount",
+          "currency": "USD",
+          "value": "60"
+        },
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Book Online",
+            "text": "Schedule your repair at fixitbay.net/book — takes 60 seconds, no phone call needed.",
+            "url": "https://fixitbay.net/book"
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Technician Arrives",
+            "text": "A licensed California technician arrives same-day or next-day with professional tools."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Diagnosis and Estimate",
+            "text": "$60 diagnostic visit with upfront estimate before any work begins. No surprises."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Repair Complete",
+            "text": "Your appliance is fixed with a comprehensive 180-day warranty on all parts and labor."
+          }
+        ]
+      }
+    });
     
     if (cityName) {
       const cSlug = cityName.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');

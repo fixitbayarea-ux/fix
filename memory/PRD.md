@@ -159,3 +159,14 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **FIX 4 (Strengthen Thin Content):** Added 300+ words of unique, localized content to 4 city+service pages: `/south-san-francisco-oven-repair` (354 words), `/south-san-francisco-wine-cooler-repair` (347 words), `/corte-madera-dryer-repair` (344 words), `/pacifica-wine-cooler-repair` (342 words). Content includes city-specific context, common problems, pricing, and FAQ sections.
 - **FIX 5 (Clean Sitemap):** Added `/llm-info`, `/blog-faq`, `/privacy-policy` to `noindexRoutes`. Sitemap reduced from 231 to 221 canonical URLs (12 noindex exclusions total).
 - 233/233 SEO snapshots rebuilt. All fixes verified programmatically.
+
+### Session 34 (Feb 2026) — 7-Part Schema & SEO Fix (Google Search Console)
+- **FIX 1 (AggregateRating):** Updated homepage LocalBusiness schema in `public/index.html`: ratingValue 5.0→4.9, reviewCount 10→94. `SchemaMarkup.js` already had correct values.
+- **FIX 2 (areaServed):** Expanded from 7/21 cities to exactly 22 in both `public/index.html` and `SchemaMarkup.js`. Added San Quentin, standardized format.
+- **FIX 3 (sameAs + BBB):** Added BBB link to sameAs in both `public/index.html` (5 entries) and `SchemaMarkup.js` (5 entries).
+- **FIX 4 (Duplicate BreadcrumbList):** Removed BreadcrumbList schemas from `seo-config.cjs` SERVICE_DATA for refrigerator, washer, dishwasher. React component (`ApplianceRepairPageNew.js`) handles BreadcrumbList consistently for all service pages.
+- **FIX 5 (21+→22):** Changed "21+" to "22" in homepage stats in `ProfessionalLandingPage.js`.
+- **FIX 6 (Wine Cooler title):** Shortened from 65→54 chars in `WineRefrigeratorRepairPage.js` (removed "& Bay Area").
+- **FIX 7 (HowTo schema):** Added HowTo JSON-LD schema to `ApplianceRepairPageNew.js` with 4 steps, dynamically using appliance name. Injected via `useSchemas` with dedup ID.
+- `.gitignore` cleaned: removed corrupted entries (326→113 lines), unblocked .env files for Emergent deployment.
+- 233/233 SEO snapshots rebuilt. All fixes verified programmatically.
