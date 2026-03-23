@@ -156,7 +156,95 @@ const WineRefrigeratorRepairPage = () => {
         { href: '/ice-maker-repair', label: 'Ice Maker Repair', desc: 'No ice, leaking, or jammed dispenser' },
         { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Not freezing, frost buildup, or temp problems' },
       ]}
-    />
+    >
+      {/* ═══ ENHANCEMENT 1: SF-specific climate section ═══ */}
+      <section style={{ background: '#FAFAF7', padding: '48px 40px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <h2 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '1.5rem', fontWeight: 800, color: '#1A3B5D', marginBottom: 20 }}>Wine Cooler Repair for San Francisco's Unique Climate</h2>
+          <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 15, lineHeight: 1.75, color: '#4A5568' }}>
+            <p style={{ marginBottom: 16 }}>San Francisco's coastal microclimate — fog, salt air, and humidity swings between 50–95% — creates specific challenges for wine coolers. Door seals degrade faster in Pacifica, the Sunset District, and any home within a mile of the ocean. Thermoelectric units struggle when kitchen ambient temperatures spike above 80°F in South Bay and East Bay homes during summer months.</p>
+            <p style={{ marginBottom: 16 }}>Our technician Andrei has repaired wine coolers in Victorian flats in the Mission, high-rise condos in SoMa, penthouse kitchens in Pacific Heights, and estate wine cellars in Ross and Tiburon. We understand that a built-in undercounter unit in a Nob Hill kitchen has different ventilation needs than a freestanding cooler in a Marin County garage.</p>
+            <p>When your cooler drifts more than 5°F from setpoint, your wine collection is at risk. We diagnose and fix the root cause — not just reset the thermostat.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ ENHANCEMENT 2: Types of wine coolers ═══ */}
+      <section style={{ background: '#FFFFFF', padding: '48px 40px' }}>
+        <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+          <h2 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '1.5rem', fontWeight: 800, color: '#1A3B5D', marginBottom: 28, textAlign: 'center' }}>Types of Wine Coolers We Repair</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20 }}>
+            {[
+              { title: 'Thermoelectric', desc: 'Silent operation, ideal for SF apartments. Struggles above 80°F ambient — common in South Bay summer months.' },
+              { title: 'Compressor-Based', desc: 'Powerful cooling, handles SF fog climate. Best for larger collections and consistent temperature control.' },
+              { title: 'Dual-Zone', desc: 'Popular in Marin County and Peninsula homes. Separate temps for reds (55–65°F) and whites (45–55°F).' },
+              { title: 'Built-In Undercounter', desc: 'Common in Pacific Heights, Nob Hill, SoMa renovations. Requires precise ventilation clearance.' },
+            ].map(t => (
+              <div key={t.title} style={{ border: '1px solid #E5E2DD', borderRadius: 8, padding: 24, background: '#FAFAF7' }}>
+                <h3 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: 16, fontWeight: 700, color: '#1A3B5D', marginBottom: 10 }}>{t.title}</h3>
+                <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, lineHeight: 1.65, color: '#4A5568', margin: 0 }}>{t.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ ENHANCEMENT 3: Expanded brands ═══ */}
+      <section style={{ background: '#FAFAF7', padding: '48px 40px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <h2 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '1.5rem', fontWeight: 800, color: '#1A3B5D', marginBottom: 20, textAlign: 'center' }}>Wine Cooler Brands We Repair</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 10 }}>
+            {['Sub-Zero', 'Vinotemp', 'EuroCave', 'Wine Enthusiast', 'NewAir', 'Whynter', 'EdgeStar', 'Marvel', 'Liebherr', 'Kalamera', 'hOmelabs', 'Thermador', 'U-Line', 'KitchenAid', 'Frigidaire', 'Bosch', 'GE Monogram'].map(b => (
+              <span key={b} style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, padding: '8px 16px', borderRadius: 6, background: '#FFFFFF', border: '1px solid #E5E2DD', color: '#1A3B5D' }}>{b}</span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ ENHANCEMENT 4: Wine temperature guide ═══ */}
+      <section style={{ background: '#FFF9F0', padding: '48px 40px' }}>
+        <div style={{ maxWidth: 700, margin: '0 auto' }}>
+          <h2 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '1.5rem', fontWeight: 800, color: '#1A3B5D', marginBottom: 24, textAlign: 'center' }}>Optimal Wine Storage Temperatures</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 16 }}>
+            {[
+              { type: 'Red Wine', temp: '55–65°F', metric: '13–18°C', color: '#8B2252' },
+              { type: 'White Wine', temp: '45–55°F', metric: '7–13°C', color: '#C9A830' },
+              { type: 'Sparkling', temp: '40–50°F', metric: '4–10°C', color: '#4A7C59' },
+              { type: 'Rosé', temp: '48–55°F', metric: '9–13°C', color: '#D4758B' },
+            ].map(w => (
+              <div key={w.type} style={{ background: '#FFFFFF', border: '1px solid #E5E2DD', borderRadius: 8, padding: 20, textAlign: 'center' }}>
+                <div style={{ fontFamily: 'Montserrat,sans-serif', fontSize: 14, fontWeight: 700, color: w.color, marginBottom: 8, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{w.type}</div>
+                <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 22, fontWeight: 800, color: '#1A3B5D' }}>{w.temp}</div>
+                <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 13, color: '#718096', marginTop: 4 }}>{w.metric}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ ENHANCEMENT 5: Andrei's Note (E-E-A-T) ═══ */}
+      <section style={{ background: '#FFFFFF', padding: '48px 40px' }}>
+        <div style={{ maxWidth: 800, margin: '0 auto' }}>
+          <h2 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '1.3rem', fontWeight: 800, color: '#1A3B5D', marginBottom: 20 }}>From the Field</h2>
+          <blockquote style={{ borderLeft: '4px solid #FF5722', padding: '20px 24px', margin: 0, background: '#FAFAF7', borderRadius: '0 8px 8px 0' }}>
+            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 15, lineHeight: 1.75, color: '#4A5568', fontStyle: 'italic', margin: '0 0 16px 0' }}>"Last month in Pacific Heights, a customer's Sub-Zero wine unit was cycling on/off every 3 minutes — a classic compressor overload symptom worsened by a blocked condenser coil. The unit sat in a tight undercounter cavity with only 1 inch of ventilation clearance instead of the required 3 inches. We cleaned the condenser, improved the airflow, and the unit has been running perfectly since. Same-day fix, 180-day warranty."</p>
+            <footer style={{ fontFamily: 'Montserrat,sans-serif', fontSize: 14, fontWeight: 700, color: '#1A3B5D' }}>— Andrei, Lead Appliance Technician, FixitBay LLC</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      {/* ═══ ENHANCEMENT 6: Orphan page links ═══ */}
+      <section style={{ background: '#FAFAF7', padding: '36px 40px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <h2 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '1.1rem', fontWeight: 700, color: '#1A3B5D', marginBottom: 16 }}>Related Resources</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16 }}>
+            <a href="/blog/same-day-appliance-repair-bay-area" style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none' }}>Same-Day Repair Guide &rarr;</a>
+            <a href="/marin-county-appliance-repair" style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none' }}>Marin County Appliance Repair &rarr;</a>
+            <a href="/blog/appliance-repair-marin-county" style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none' }}>Appliance Repair in Marin County &rarr;</a>
+          </div>
+        </div>
+      </section>
+    </ApplianceRepairPageNew>
 
   );
 };

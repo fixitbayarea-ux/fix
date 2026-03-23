@@ -1324,16 +1324,44 @@ function getSEOContent(route) {
         h1: 'Wine Cooler Repair in San Francisco & Bay Area',
         content: `
           <p style="margin-bottom:1rem;">Wine refrigerators require precise temperature and humidity control. Our technicians specialize in single-zone, dual-zone, and built-in wine coolers — diagnosing thermostat failures, compressor issues, humidity problems, and vibration concerns. We respond urgently to prevent wine damage from temperature fluctuations.</p>
-          <p style="margin-bottom:1rem;">We service Sub-Zero, Vintec, EuroCave, Wine Enthusiast, NewAir, Thermador, U-Line, and more. $60 diagnostic credited toward repair. 180-day warranty.</p>
-          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Wine Cooler</h2>
+          <p style="margin-bottom:1rem;">We service Sub-Zero, Vinotemp, EuroCave, Wine Enthusiast, NewAir, Whynter, EdgeStar, Marvel, Liebherr, Kalamera, hOmelabs, Thermador, U-Line, KitchenAid, Frigidaire, Bosch, and GE Monogram. $60 diagnostic credited toward repair. 180-day warranty.</p>
+
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Wine Cooler Repair for San Francisco's Unique Climate</h2>
+          <p style="margin-bottom:1rem;">San Francisco's coastal microclimate — fog, salt air, and humidity swings between 50–95% — creates specific challenges for wine coolers. Door seals degrade faster in Pacifica, the Sunset District, and any home within a mile of the ocean. Thermoelectric units struggle when kitchen ambient temperatures spike above 80°F in South Bay and East Bay homes during summer months.</p>
+          <p style="margin-bottom:1rem;">Our technician Andrei has repaired wine coolers in Victorian flats in the Mission, high-rise condos in SoMa, penthouse kitchens in Pacific Heights, and estate wine cellars in Ross and Tiburon. We understand that a built-in undercounter unit in a Nob Hill kitchen has different ventilation needs than a freestanding cooler in a Marin County garage.</p>
+          <p style="margin-bottom:1rem;">When your cooler drifts more than 5°F from setpoint, your wine collection is at risk. We diagnose and fix the root cause — not just reset the thermostat.</p>
+
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Types of Wine Coolers We Repair</h2>
+          <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+            <li style="margin-bottom:0.5rem;"><strong>Thermoelectric</strong> — Silent operation, ideal for SF apartments. Struggles above 80°F ambient — common in South Bay summer months.</li>
+            <li style="margin-bottom:0.5rem;"><strong>Compressor-Based</strong> — Powerful cooling, handles SF fog climate. Best for larger collections and consistent temperature control.</li>
+            <li style="margin-bottom:0.5rem;"><strong>Dual-Zone</strong> — Popular in Marin County and Peninsula homes. Separate temps for reds (55–65°F) and whites (45–55°F).</li>
+            <li style="margin-bottom:0.5rem;"><strong>Built-In Undercounter</strong> — Common in Pacific Heights, Nob Hill, SoMa renovations. Requires precise ventilation clearance.</li>
+          </ul>
+
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Optimal Wine Storage Temperatures</h2>
+          <p style="margin-bottom:0.5rem;"><strong>Red Wine:</strong> 55–65°F (13–18°C)</p>
+          <p style="margin-bottom:0.5rem;"><strong>White Wine:</strong> 45–55°F (7–13°C)</p>
+          <p style="margin-bottom:0.5rem;"><strong>Sparkling:</strong> 40–50°F (4–10°C)</p>
+          <p style="margin-bottom:1rem;"><strong>Ros&eacute;:</strong> 48–55°F (9–13°C)</p>
+
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">From the Field</h2>
+          <blockquote style="border-left:4px solid #FF5722;padding:16px 20px;margin:0 0 1rem 0;background:#FAFAF7;border-radius:0 6px 6px 0;">
+            <p style="font-size:0.95rem;line-height:1.7;color:#4A5568;font-style:italic;margin:0 0 8px 0;">"Last month in Pacific Heights, a customer's Sub-Zero wine unit was cycling on/off every 3 minutes — a classic compressor overload symptom worsened by a blocked condenser coil. The unit sat in a tight undercounter cavity with only 1 inch of ventilation clearance instead of the required 3 inches. We cleaned the condenser, improved the airflow, and the unit has been running perfectly since. Same-day fix, 180-day warranty."</p>
+            <p style="font-size:0.9rem;font-weight:bold;color:#1A3B5D;margin:0;">— Andrei, Lead Appliance Technician, FixitBay LLC</p>
+          </blockquote>
+
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Wine Cooler</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Temperature fluctuating, compressor runs — faulty thermostat/sensor $150–$250.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Door seal worn — new gasket $80–$150 restores seal and humidity.</p>
           <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Compressor failure on thermoelectric cooler — repair may cost as much as a new unit ($200–$500).</p>
           <p style="margin-bottom:1rem;"><strong>Repair:</strong> Compressor failure on premium built-in (Sub-Zero, EuroCave) — $400–$800 repair is worth it on a $2,000–$8,000+ unit.</p>
-          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
-          <p>We also offer <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerator repair</a>, <a href="/ice-maker-repair" style="color:#C0362C;font-weight:bold;">ice maker repair</a>, and <a href="/freezer-repair" style="color:#C0362C;font-weight:bold;">freezer repair</a> across the Bay Area.</p>
+
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Services & Resources</h2>
+          <p style="margin-bottom:0.5rem;">We also offer <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerator repair</a>, <a href="/ice-maker-repair" style="color:#C0362C;font-weight:bold;">ice maker repair</a>, and <a href="/freezer-repair" style="color:#C0362C;font-weight:bold;">freezer repair</a> across the Bay Area.</p>
+          <p><a href="/blog/same-day-appliance-repair-bay-area" style="color:#C0362C;font-weight:bold;">Same-Day Repair Guide</a> · <a href="/marin-county-appliance-repair" style="color:#C0362C;font-weight:bold;">Marin County Appliance Repair</a> · <a href="/blog/appliance-repair-marin-county" style="color:#C0362C;font-weight:bold;">Appliance Repair in Marin County</a></p>
         `,
-        links: ['/', '/refrigerator-repair', '/ice-maker-repair', '/freezer-repair', '/service-areas', '/reviews', '/contact']
+        links: ['/', '/refrigerator-repair', '/ice-maker-repair', '/freezer-repair', '/service-areas', '/reviews', '/contact', '/blog/same-day-appliance-repair-bay-area', '/marin-county-appliance-repair', '/blog/appliance-repair-marin-county']
       },
       'stove': {
         title: 'Stove Repair San Francisco | Gas & Electric | FixitBay',
