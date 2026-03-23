@@ -90,8 +90,8 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
   // Always include aggregateRating for Rich Snippets in Google
   baseSchema.aggregateRating = {
     "@type": "AggregateRating",
-    "ratingValue": ratingValue ? String(ratingValue) : "5.0",
-    "reviewCount": reviewCount ? String(reviewCount) : "10",
+    "ratingValue": ratingValue ? String(ratingValue) : "4.9",
+    "reviewCount": reviewCount ? String(reviewCount) : "94",
     "bestRating": "5",
     "worstRating": "1"
   };
