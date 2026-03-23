@@ -499,6 +499,9 @@ function getSEOContent(route) {
         '/blog/refrigerator-water-filter',
         '/blog/dishwasher-not-draining',
         '/blog/when-to-repair-vs-replace',
+        '/blog/same-day-appliance-repair-bay-area',
+        '/blog/appliance-repair-marin-county',
+        '/marin-county-appliance-repair',
       ]
     };
   }
@@ -935,6 +938,8 @@ function getSEOContent(route) {
             '/', '/services', '/service-areas', '/reviews', '/contact', '/about',
             '/brands', '/blog',
             '/san-francisco-appliance-repair',
+            '/marin-county-appliance-repair',
+            '/blog/same-day-appliance-repair-bay-area',
             '/whirlpool-appliance-repair',
             '/samsung-appliance-repair',
             '/lg-appliance-repair',
@@ -1517,6 +1522,7 @@ function getSEOContent(route) {
   if (route === '/privacy-policy') {
     return {
       title: 'Privacy Policy | FixitBay LLC Appliance Repair & Maintenance',
+      robots: 'noindex, follow',
       description: 'Privacy Policy for FixitBay LLC — how we collect, use & protect your information when you use our appliance repair services in SF Bay Area.',
       h1: 'Privacy Policy',
       content: `
@@ -1531,6 +1537,7 @@ function getSEOContent(route) {
   if (route === '/llm-info') {
     return {
       title: 'Official Business Information | FixitBay LLC',
+      robots: 'noindex, follow',
       description: 'Official structured information about FixitBay LLC appliance repair service in San Francisco Bay Area. For AI assistants, search engines, and directories.',
       h1: 'Official Information About FixitBay LLC',
       content: `
@@ -1652,6 +1659,7 @@ function getSEOContent(route) {
   if (route === '/blog-faq') {
     return {
       title: 'Appliance Repair Tips & FAQ | FixitBay Bay Area',
+      robots: 'noindex, follow',
       description: 'Expert appliance repair tips, troubleshooting guides & FAQ for SF Bay Area homeowners. Repair vs replace, maintenance tips & emergency procedures.',
       h1: 'Appliance Repair Tips & FAQ',
       content: `

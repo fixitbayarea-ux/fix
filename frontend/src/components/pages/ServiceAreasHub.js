@@ -192,6 +192,9 @@ const ServiceAreasHub = () => {
                 North Bay / Marin County
               </h3>
               <p className="text-xs mb-4" style={{color:'#4A5568'}}>Marin County towns — from Sausalito to Novato.</p>
+              <a href="/marin-county-appliance-repair" className="block px-4 py-3 mb-3 bg-gradient-to-r from-orange-50 to-orange-100 rounded-lg border border-orange-300 hover:border-orange-500 hover:shadow-md transition-all duration-300 font-bold text-center" style={{color:'#C0362C', textDecoration:'none', fontSize:'15px'}}>
+                All Marin County Appliance Repair &rarr;
+              </a>
               <div className="space-y-2">
                 {[
                   { name: 'San Rafael', slug: 'san-rafael' },

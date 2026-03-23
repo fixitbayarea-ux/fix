@@ -180,3 +180,9 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **FIX B:** Fixed duplicate BreadcrumbList on service pages. Added `/-repair$/` to `SKIP_PATTERNS` in `UniversalBreadcrumb.js` so it doesn't inject a 2nd BreadcrumbList on pages where `ApplianceRepairPageNew.js` already provides a 3-level one.
 - **FIX C:** Changed `"87 Reviews"` to `"94 Reviews"` in `LocalApplianceRepairPage.js` trust badges.
 - **FIX 10 (Trust bar 87→94):** Updated mobile trust bar in `ProfessionalLandingPage.js` and `LocalApplianceRepairPage.js` schema reviewCount from 87 to 94.
+
+### Session 37 (Feb 2026) — Critical AggregateRating, Orphan Pages, Noindex Audit
+- **FIX 1 (Homepage AggregateRating ROOT CAUSE):** Found and fixed `useAggregateRating(5, 50)` in `ProfessionalLandingPage.js` → `useAggregateRating(4.9, 94)`. This React hook was overwriting the correct pre-rendered schema at runtime via hydration. Also fixed `StructuredData.js` defaults from 5.0/10 to 4.9/94.
+- **FIX 2 (BreadcrumbList):** Already fixed (UniversalBreadcrumb skips /-repair$/ pages). Verified 0 duplicates across all service pages.
+- **FIX 3 (Orphan Pages):** Added internal links to 3 orphan pages: (a) `/blog/same-day-appliance-repair-bay-area` — added to BlogListPage POSTS + homepage internalLinks; (b) `/marin-county-appliance-repair` — added to ServiceAreasHub, homepage internalLinks, city page internalLinks; (c) `/blog/appliance-repair-marin-county` — added to BlogListPage POSTS + MarinCountyPage related content section.
+- **FIX 4 (Noindex Audit):** Verified 12 noindex pages are all intentional. Added missing `robots: 'noindex, follow'` to `/privacy-policy`, `/llm-info`, and `/blog-faq` in seo-config.cjs. Zero unexpected noindex on any service/city/blog/about page.
