@@ -525,38 +525,52 @@ const SiteNavbar = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
+          <>
+          <div
+            onClick={() => setMobileMenuOpen(false)}
+            style={{
+              position: 'fixed',
+              inset: 0,
+              background: 'rgba(0,0,0,0.50)',
+              zIndex: 9998,
+            }}
+          />
           <div 
             id="mobile-menu"
             className="md:hidden"
             style={{
+              position: 'fixed',
+              top: 60,
+              left: 0,
+              right: 0,
+              bottom: 0,
               background: '#0D1B2A',
-              borderTop: '1px solid rgba(255,87,34,0.20)',
-              maxHeight: 'calc(100vh - 60px)',
+              zIndex: 9999,
               overflowY: 'auto',
               overflowX: 'hidden',
             }}
           >
 
             {/* ─────────────── QUICK LINKS ─────────────── */}
-            <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', paddingBottom: 2, paddingTop: 2 }}>
-              <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'6px 16px 2px' }}>Quick Links</div>
-              <a href="/" style={{ display:'flex', alignItems:'center', gap:10, padding:'8px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_home'); }}>
+            <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', paddingBottom: 0, paddingTop: 0 }}>
+              <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'4px 16px 0' }}>Quick Links</div>
+              <a href="/" style={{ display:'flex', alignItems:'center', gap:10, padding:'6px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_home'); }}>
                 Home
               </a>
-              <a href="/san-francisco-appliance-repair" style={{ display:'flex', alignItems:'center', gap:10, padding:'8px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_sf'); }}>
+              <a href="/san-francisco-appliance-repair" style={{ display:'flex', alignItems:'center', gap:10, padding:'6px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_sf'); }}>
                 San Francisco
               </a>
-              <a href="/reviews" style={{ display:'flex', alignItems:'center', gap:10, padding:'8px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_reviews'); }}>
+              <a href="/reviews" style={{ display:'flex', alignItems:'center', gap:10, padding:'6px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_reviews'); }}>
                 Reviews
               </a>
             </div>
 
             {/* ─────────────── SERVICES ACCORDION ─────────────── */}
             <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-              <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'6px 16px 0' }}>Services</div>
+              <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'4px 16px 0' }}>Services</div>
               <button
                 className={`mob-acc-trigger w-full${mobileServicesOpen ? ' open' : ''}`}
-                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'8px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
+                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'6px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
                 onClick={() => { setMobileServicesOpen(!mobileServicesOpen); setMobileMaintenanceOpen(false); setMobileBrandsOpen(false); setMobileAreasOpen(false); setMobileMoreOpen(false); }}
                 aria-expanded={mobileServicesOpen}
               >
@@ -594,7 +608,7 @@ const SiteNavbar = () => {
             <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
               <button
                 className={`mob-acc-trigger w-full${mobileMaintenanceOpen ? ' open' : ''}`}
-                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'8px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
+                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'6px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
                 onClick={() => { setMobileMaintenanceOpen(!mobileMaintenanceOpen); setMobileServicesOpen(false); setMobileBrandsOpen(false); setMobileAreasOpen(false); setMobileMoreOpen(false); }}
                 aria-expanded={mobileMaintenanceOpen}
               >
@@ -627,7 +641,7 @@ const SiteNavbar = () => {
             <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
               <button
                 className={`mob-acc-trigger w-full${mobileBrandsOpen ? ' open' : ''}`}
-                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'8px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
+                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'6px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
                 onClick={() => { setMobileBrandsOpen(!mobileBrandsOpen); setMobileServicesOpen(false); setMobileMaintenanceOpen(false); setMobileAreasOpen(false); setMobileMoreOpen(false); }}
                 aria-expanded={mobileBrandsOpen}
               >
@@ -669,7 +683,7 @@ const SiteNavbar = () => {
             <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
               <button
                 className={`mob-acc-trigger w-full${mobileAreasOpen ? ' open' : ''}`}
-                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'8px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
+                style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'6px 16px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
                 onClick={() => { setMobileAreasOpen(!mobileAreasOpen); setMobileServicesOpen(false); setMobileMaintenanceOpen(false); setMobileBrandsOpen(false); setMobileMoreOpen(false); }}
                 aria-expanded={mobileAreasOpen}
               >
@@ -739,15 +753,15 @@ const SiteNavbar = () => {
             </div>
 
             {/* ─────────────── COMPANY LINKS ─────────────── */}
-            <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', paddingBottom: 2, paddingTop: 2 }}>
-              <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'6px 16px 2px' }}>Company</div>
-              <a href="/blog" style={{ display:'flex', alignItems:'center', gap:10, padding:'8px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_blog'); }}>
+            <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', paddingBottom: 0, paddingTop: 0 }}>
+              <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'4px 16px 0' }}>Company</div>
+              <a href="/blog" style={{ display:'flex', alignItems:'center', gap:10, padding:'6px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_blog'); }}>
                 Blog &amp; Tips
               </a>
-              <a href="/about" style={{ display:'flex', alignItems:'center', gap:10, padding:'8px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_about'); }}>
+              <a href="/about" style={{ display:'flex', alignItems:'center', gap:10, padding:'6px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_about'); }}>
                 About Us
               </a>
-              <a href="/contact" style={{ display:'flex', alignItems:'center', gap:10, padding:'8px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_contact'); }}>
+              <a href="/contact" style={{ display:'flex', alignItems:'center', gap:10, padding:'6px 16px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_contact'); }}>
                 Contact
               </a>
             </div>
@@ -766,6 +780,7 @@ const SiteNavbar = () => {
             </div>
 
           </div>
+          </>
         )}
       <style>{`
         .mob-accordion-body {

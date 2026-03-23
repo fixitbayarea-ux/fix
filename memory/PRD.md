@@ -170,3 +170,8 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **FIX 7 (HowTo schema):** Added HowTo JSON-LD schema to `ApplianceRepairPageNew.js` with 4 steps, dynamically using appliance name. Injected via `useSchemas` with dedup ID.
 - `.gitignore` cleaned: removed corrupted entries (326→113 lines), unblocked .env files for Emergent deployment.
 - 233/233 SEO snapshots rebuilt. All fixes verified programmatically.
+
+### Session 35 (Feb 2026) — Mobile Menu, Trust Bar & Deployment Fixes
+- **FIX 8 (Mobile menu empty blocks):** Tightened all accordion header padding from 8px to 6px, section label padding from 6px to 4px, quick links and company links from 8px to 6px. Menu now fits on one screen when all accordions collapsed.
+- **FIX 9 (Mobile menu overlay):** Made menu `position:fixed` covering full viewport. Added semi-transparent dark backdrop (`rgba(0,0,0,0.50)`) behind menu panel. Menu background fully opaque `#0D1B2A`. z-index 9999. Backdrop click closes menu.
+- **FIX 10 (Trust bar 87→94):** Updated mobile trust bar in `ProfessionalLandingPage.js` and `LocalApplianceRepairPage.js` schema reviewCount from 87 to 94.

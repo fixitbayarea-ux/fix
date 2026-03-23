@@ -217,7 +217,7 @@ const ProfessionalLandingPage = () => {
       <div className="lg:hidden mobile-trust-bar" data-testid="mobile-trust-bar" style={{ background: '#1A2F45', padding: '14px 16px' }}>
         {[
           { top: '\u2B50 4.9', bottom: 'GOOGLE' },
-          { top: '\u2713 87', bottom: 'REVIEWS' },
+          { top: '\u2713 94', bottom: 'REVIEWS' },
           { top: '\uD83D\uDEE1\uFE0F #51001', bottom: 'LICENSE' },
           { top: '180-Day', bottom: 'WARRANTY' },
         ].map((item, i) => (
