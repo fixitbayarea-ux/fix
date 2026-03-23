@@ -174,4 +174,9 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 ### Session 35 (Feb 2026) — Mobile Menu, Trust Bar & Deployment Fixes
 - **FIX 8 (Mobile menu empty blocks):** Tightened all accordion header padding from 8px to 6px, section label padding from 6px to 4px, quick links and company links from 8px to 6px. Menu now fits on one screen when all accordions collapsed.
 - **FIX 9 (Mobile menu overlay):** Made menu `position:fixed` covering full viewport. Added semi-transparent dark backdrop (`rgba(0,0,0,0.50)`) behind menu panel. Menu background fully opaque `#0D1B2A`. z-index 9999. Backdrop click closes menu.
+
+### Session 36 (Feb 2026) — Homepage Rating, BreadcrumbList Dedup, Trust Bar Fix
+- **FIX A:** Changed homepage `aggregateRating.ratingValue` from `"5.0"` to `"4.9"` in `schemaMarkup.js`. ReviewCount was already `"94"`.
+- **FIX B:** Fixed duplicate BreadcrumbList on service pages. Added `/-repair$/` to `SKIP_PATTERNS` in `UniversalBreadcrumb.js` so it doesn't inject a 2nd BreadcrumbList on pages where `ApplianceRepairPageNew.js` already provides a 3-level one.
+- **FIX C:** Changed `"87 Reviews"` to `"94 Reviews"` in `LocalApplianceRepairPage.js` trust badges.
 - **FIX 10 (Trust bar 87→94):** Updated mobile trust bar in `ProfessionalLandingPage.js` and `LocalApplianceRepairPage.js` schema reviewCount from 87 to 94.

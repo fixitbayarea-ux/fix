@@ -157,7 +157,7 @@ const LocalApplianceRepairPage = () => {
               <a href="tel:7605435733" className="hero-sec" style={{ background: 'transparent', border: '2px solid rgba(255,255,255,0.5)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 15, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'border-color 0.2s' }}>(760) 543-5733</a>
             </div>
             <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: 28 }}>
-              {['Licensed CA Technician #51001', '4.9 Google \u00B7 87 Reviews', '180-Day Warranty', 'Same-Day Available'].map((b, i) => (
+              {['Licensed CA Technician #51001', '4.9 Google \u00B7 94 Reviews', '180-Day Warranty', 'Same-Day Available'].map((b, i) => (
                 <div key={i} style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
                   <span style={{ color: '#FF5722', fontFamily: F, fontWeight: 700, fontSize: 13 }}>{'\u2713'}</span>
                   <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.8)' }}>{b}</span>

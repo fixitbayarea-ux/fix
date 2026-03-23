@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom';
  * Skips homepage and /privacy-policy.
  */
 const SKIP_PATHS = ['/', '/privacy-policy'];
+const SKIP_PATTERNS = [/-repair$/]; // Service pages handle their own BreadcrumbList
 const SCRIPT_ID = 'universal-breadcrumb-schema';
 
 const UniversalBreadcrumb = () => {
@@ -19,8 +20,9 @@ const UniversalBreadcrumb = () => {
     const old = document.getElementById(SCRIPT_ID);
     if (old) old.remove();
 
-    // Skip excluded paths
+    // Skip excluded paths and patterns (service pages have their own BreadcrumbList)
     if (SKIP_PATHS.includes(path)) return;
+    if (SKIP_PATTERNS.some(p => p.test(path))) return;
 
     // Small delay to let the page render its H1
     const timer = setTimeout(() => {
