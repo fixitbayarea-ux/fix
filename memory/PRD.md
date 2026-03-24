@@ -231,6 +231,14 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - Internal links: /dryer-repair, /san-francisco-appliance-repair, /blog/dryer-taking-too-long, /blog/when-to-repair-vs-replace, /blog/same-day-appliance-repair-bay-area
 - Files changed: `DryerNotHeating.js` (full rewrite), `seo-config.cjs`, `BlogListPage.js`
   - Schema names updated to "... Bay Area"
+
+### Session 40c (Feb 2026) — Full Blog Rewrite: /blog/appliance-repair-cost-san-francisco
+- **Complete rewrite** of pricing guide blog post — comprehensive 2026 cost article
+- New title: "Appliance Repair Cost San Francisco 2026 | FixitBay Guide" (58 chars)
+- 3 pricing tables (by appliance, by luxury brand, by symptom), comparison table, "Why SF Costs More" (4 factors), $60 diagnostic flow visualization, Repair vs Replace decision guide (green/orange columns), Andrei's Pricing Advice blockquote, 5 FAQ
+- Internal links: 11 service pages, 5 blog articles, Marin County page
+- Schemas: 1 BlogPosting, 1 FAQPage, 1 BreadcrumbList (no duplicates)
+- Files changed: `ApplianceRepairCostSanFrancisco.js` (full rewrite), `seo-config.cjs`, `BlogListPage.js`
 - **seoContent.js:** Added `hasSFCityPage` flag for 7 services that auto-selects Bay Area title/H1/content for pre-rendered HTML
 - **seo-config.cjs:** Updated SERVICE_DATA titles, descriptions, H1s, and content for all 7 services + added internal links to SF pages in content
 - **SF mention counts after fix:** 3-4 per page (FAQ question + internal link + one natural geographic reference)

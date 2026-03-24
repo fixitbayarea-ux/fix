@@ -776,8 +776,8 @@ function getSEOContent(route) {
         description: 'Worth repairing your old appliance? Expert guide using the 50% rule, age & repair costs to make the right financial decision for your home.'
       },
       'appliance-repair-cost-san-francisco': {
-        title: 'Appliance Repair Cost San Francisco 2026 | FixitBay',
-        description: 'Complete guide to appliance repair costs in San Francisco & Bay Area. Refrigerator, washer, dryer, dishwasher repair prices. $60 diagnostic.'
+        title: 'Appliance Repair Cost San Francisco 2026 | FixitBay Guide',
+        description: 'How much does appliance repair cost in San Francisco? Full 2026 pricing guide for refrigerators, washers, dryers, ovens & more. From $60 diagnostic at FixitBay.'
       },
       'dryer-not-heating': {
         title: 'Dryer Not Heating? 7 Causes & Fixes | FixitBay SF',

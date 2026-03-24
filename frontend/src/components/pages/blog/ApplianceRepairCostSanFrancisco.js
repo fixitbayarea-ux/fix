@@ -1,273 +1,538 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, ArrowRight, ChevronDown, ChevronUp, Calendar, DollarSign, Wrench, CheckCircle } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import SEOMetaTags from '../../SEOMetaTags';
+import { useSchemas } from '../../../hooks/useSchema';
+import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 
-const F = "'Montserrat', sans-serif";
-const H2S = { fontFamily: F, fontWeight: 800, fontSize: 26, color: '#0D1B2A', margin: '48px 0 16px', lineHeight: 1.3 };
-const H3S = { fontFamily: F, fontWeight: 700, fontSize: 20, color: '#1A3B5D', margin: '28px 0 10px' };
-const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.75, margin: '0 0 16px' };
+const F = 'Montserrat, sans-serif';
+const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
+const H2S = { fontFamily: F, fontWeight: 800, fontSize: 22, color: '#1A1A1A', borderBottom: '2px solid rgba(255,87,34,0.2)', paddingBottom: 8, margin: '36px 0 16px' };
+const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.8, marginBottom: 12 };
+const TH = { color: '#fff', fontWeight: 700, padding: '12px 16px', textAlign: 'left', borderBottom: '2px solid #FF5722', fontFamily: F, fontSize: 13 };
+const TD = (i) => ({ padding: '10px 16px', borderBottom: '1px solid rgba(0,0,0,0.06)', fontFamily: F, fontSize: 14, background: i % 2 === 0 ? '#F8F5F0' : '#fff' });
 
-const PRICING_DATA = [
-  { appliance: 'Refrigerator', range: 'From $255', common: 'Thermostat · ice maker · evaporator fan · door seal · compressor', link: '/refrigerator-repair' },
-  { appliance: 'Washer', range: 'From $240', common: 'Control board · drum bearing · water pump · door latch · drain pump', link: '/washer-repair' },
-  { appliance: 'Dryer', range: 'From $235', common: 'Heating element · thermal fuse · drum belt · control board · gas valve', link: '/dryer-repair' },
-  { appliance: 'Dishwasher', range: 'From $195', common: 'Drain pump · door latch · spray arm · water inlet valve · control board', link: '/dishwasher-repair' },
-  { appliance: 'Oven / Range', range: 'From $230', common: 'Igniter · bake element · temperature sensor · control board', link: '/oven-repair' },
-  { appliance: 'Wine Cooler', range: 'From $195', common: 'Compressor · thermostat · fan motor · door seal · control board', link: '/wine-cooler-repair' },
-  { appliance: 'Ice Maker', range: 'From $150', common: 'Water inlet valve · ice maker assembly · thermostat · water line', link: '/ice-maker-repair' },
-  { appliance: 'Garbage Disposal', range: 'From $195', common: 'Motor repair · jam clearing · leak repair · full replacement', link: '/garbage-disposal-repair' },
-  { appliance: 'Cooktop', range: 'From $230', common: 'Burner · igniter · switch · element · induction element', link: '/cooktop-repair' },
-  { appliance: 'Freezer', range: 'From $255', common: 'Compressor · thermostat · defrost heater · evaporator fan · door seal', link: '/freezer-repair' },
+const FAQ_ITEMS = [
+  { q: "How much does appliance repair cost in San Francisco?", a: "Most appliance repairs in San Francisco cost between $150\u2013$500 after the diagnostic fee. Simple fixes like a blown thermal fuse or clogged drain start around $150. Complex repairs like compressor replacement can reach $600\u2013$800. FixitBay charges a $60 diagnostic that is fully applied toward the repair cost." },
+  { q: "Is the diagnostic fee worth it?", a: "Yes. The $60 diagnostic gives you an exact diagnosis and upfront repair estimate with no obligation. Companies that offer \u2018free diagnostics\u2019 typically build that cost into inflated repair prices. Our diagnostic fee ensures you get honest pricing whether you proceed with the repair or not." },
+  { q: "Why is appliance repair more expensive in San Francisco?", a: "SF repair costs are 20\u201340% higher than suburban areas due to parking costs, building access logistics, older housing stock requiring extra labor, higher concentration of European luxury appliances with expensive parts, and the general cost of doing business in the city." },
+  { q: "Is it cheaper to repair or replace an appliance?", a: "General rule: if the repair costs less than 50% of a new appliance and the unit is under 8\u201310 years old, repair makes sense. For luxury brands like Sub-Zero ($5,000\u2013$15,000 new), repair is almost always the better choice. For standard brands over 12 years old with major failures, replacement often wins." },
+  { q: "Does FixitBay charge extra for weekends or emergency service?", a: "FixitBay offers same-day and next-day appointments Monday through Saturday at the same pricing. No emergency surcharges, no weekend premiums. The $60 diagnostic fee and quoted repair prices apply equally regardless of when we come." },
 ];
 
-const FAQS = [
-  { q: 'What is the average cost of appliance repair in San Francisco?', a: 'Appliance repairs in San Francisco start from $150–$255 depending on the appliance type. FixitBay charges a $60 diagnostic fee that is fully applied to the repair cost if you proceed. Refrigerator repairs start from $255, dryer repairs from $235, and washer repairs from $240. Complex repairs (compressor, control board) can reach $400–$600.' },
-  { q: 'Is the $60 diagnostic fee worth it?', a: 'Yes. The $60 diagnostic covers a complete inspection, root-cause diagnosis, and a detailed repair estimate. If you proceed with the repair, the $60 is credited toward your total cost — so you effectively pay nothing extra for the diagnosis. If you decline the repair, you pay only the $60 and get a professional assessment you can use for comparison shopping.' },
-  { q: 'Why is appliance repair more expensive in San Francisco?', a: 'SF repair costs are 15–25% higher than the national average due to higher labor rates, commercial rent, insurance requirements, and the cost of maintaining a licensed, insured fleet in a dense urban area. However, FixitBay keeps costs competitive by stocking common parts on trucks (reducing return visits) and operating a lean team of experienced technicians.' },
-  { q: 'Should I repair or replace my appliance?', a: 'Use the 50% rule: if the repair costs more than 50% of a new appliance AND the unit is over 8 years old, replacement often makes more sense. For premium brands (Sub-Zero, Viking, Miele), the threshold is higher because replacement costs are significantly more.' },
-  { q: 'Does FixitBay offer financing for expensive repairs?', a: 'For repairs over $300, we offer flexible payment options. We also provide detailed estimates before starting any work, so you can make an informed decision. Our 180-day warranty on parts and labor gives you confidence that the repair will last.' },
+const TOC = [
+  { id: 'pricing', label: 'Complete Repair Pricing 2026' },
+  { id: 'luxury', label: 'Luxury & High-End Brand Pricing' },
+  { id: 'why-sf', label: 'Why SF Costs More' },
+  { id: 'diagnostic', label: 'How the $60 Diagnostic Works' },
+  { id: 'repair-replace', label: 'Repair vs. Replace Guide' },
+  { id: 'by-problem', label: 'Costs by Problem' },
+  { id: 'advice', label: "Andrei\u2019s Pricing Advice" },
+  { id: 'compare', label: 'How FixitBay Compares' },
+  { id: 'faq', label: 'Frequently Asked Questions' },
+  { id: 'related', label: 'Related Articles' },
+];
+
+const MAIN_PRICING = [
+  { appliance: 'Diagnostic / Service Call', fixitbay: '$60 (applied to repair)', market: '$50\u2013$120' },
+  { appliance: 'Refrigerator', fixitbay: 'from $255', market: '$200\u2013$600', href: '/refrigerator-repair' },
+  { appliance: 'Freezer', fixitbay: 'from $255', market: '$200\u2013$550', href: '/freezer-repair' },
+  { appliance: 'Ice Maker', fixitbay: 'from $150', market: '$120\u2013$350', href: '/ice-maker-repair' },
+  { appliance: 'Washer', fixitbay: 'from $240', market: '$180\u2013$450', href: '/washer-repair' },
+  { appliance: 'Dryer', fixitbay: 'from $235', market: '$170\u2013$400', href: '/dryer-repair' },
+  { appliance: 'Dishwasher', fixitbay: 'from $195', market: '$150\u2013$350', href: '/dishwasher-repair' },
+  { appliance: 'Oven / Range / Stove', fixitbay: 'from $230', market: '$180\u2013$500', href: '/oven-repair' },
+  { appliance: 'Cooktop', fixitbay: 'from $230', market: '$180\u2013$450', href: '/cooktop-repair' },
+  { appliance: 'Wine Cooler', fixitbay: 'from $195', market: '$150\u2013$400', href: '/wine-cooler-repair' },
+  { appliance: 'Garbage Disposal', fixitbay: 'from $195', market: '$130\u2013$300', href: '/garbage-disposal-repair' },
+];
+
+const LUXURY_PRICING = [
+  { brand: 'Sub-Zero', price: 'from $555', why: 'Factory-certified parts, sealed cooling systems, precision calibration', href: '/sub-zero-appliance-repair' },
+  { brand: 'Viking', price: 'from $295', why: 'Heavy-duty commercial-grade components, specialized gas valve parts' },
+  { brand: 'Thermador', price: 'from $425', why: 'German-engineered electronics, proprietary control boards' },
+  { brand: 'Miele', price: 'from $445', why: 'European parts often shipped from Germany, precision tolerances' },
+  { brand: 'Built-In units', price: 'from $445', why: 'Requires cabinet removal, custom access, reinstallation' },
+];
+
+const PROBLEM_PRICING = [
+  { problem: 'Refrigerator not cooling \u2014 dirty coils', cost: '$60 (diagnostic only)' },
+  { problem: 'Refrigerator not cooling \u2014 thermostat', cost: 'from $150' },
+  { problem: 'Refrigerator not cooling \u2014 compressor', cost: 'from $400' },
+  { problem: 'Dryer not heating \u2014 thermal fuse', cost: 'from $150' },
+  { problem: 'Dryer not heating \u2014 heating element', cost: 'from $180' },
+  { problem: 'Washer not spinning \u2014 lid switch/belt', cost: 'from $140' },
+  { problem: 'Washer leaking \u2014 pump or hose', cost: 'from $160' },
+  { problem: 'Dishwasher not draining \u2014 pump', cost: 'from $150' },
+  { problem: 'Oven not heating \u2014 igniter', cost: 'from $180' },
+  { problem: 'Ice maker not working \u2014 valve or motor', cost: 'from $150' },
+  { problem: 'Wine cooler temp fluctuating', cost: 'from $150' },
+  { problem: 'Garbage disposal jammed/humming', cost: 'from $120' },
+];
+
+const COMPARE = [
+  { feat: 'Diagnostic fee', us: '$60 (applied to repair)', them: '$50\u2013$120 (often NOT applied)' },
+  { feat: 'Same-day service', us: 'Yes, Mon\u2013Sat', them: 'Often 2\u20133 day wait' },
+  { feat: 'Warranty', us: '180 days parts & labor', them: '30\u201390 days typical' },
+  { feat: 'Upfront pricing', us: 'Yes, before work starts', them: 'Sometimes quoted after' },
+  { feat: 'Licensed CA technician', us: 'Yes, License #51001', them: 'Varies' },
+  { feat: 'Cities served', us: '22 Bay Area cities', them: 'Often SF only' },
+];
+
+const WHY_SF = [
+  { title: 'Parking & Access', text: 'Street parking in SF averages $4\u20136/hour. Many buildings require appointment scheduling with doormen, freight elevator access, and building insurance certificates. These logistics add time to every job.' },
+  { title: 'Older Housing Stock', text: "Victorian and Edwardian homes have tight kitchens, non-standard cabinet sizes, and original plumbing. Pulling a built-in dishwasher out of a 1920s kitchen takes 3x longer than in a modern suburban home." },
+  { title: 'Parts Availability', text: "San Francisco\u2019s concentration of European appliances (Bosch, Miele, Thermador) means parts often need to be ordered from specialized distributors, adding 1\u20133 days to some repairs." },
+  { title: 'Cost of Living', text: "Technician wages, insurance, vehicle costs, and business licensing in SF are 30\u201350% higher than suburban areas. This is reflected in every repair company\u2019s pricing \u2014 not just ours." },
 ];
 
 const ApplianceRepairCostSanFrancisco = () => {
-  const [openFAQ, setOpenFAQ] = useState(null);
+  const [showFloat, setShowFloat] = useState(false);
+  const [openFaq, setOpenFaq] = useState(-1);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
+  useEffect(() => {
+    const h = () => setShowFloat(window.scrollY > 300);
+    window.addEventListener('scroll', h, { passive: true });
+    return () => window.removeEventListener('scroll', h);
+  }, []);
 
-  const schemas = [
-    { "@context": "https://schema.org", "@type": "Article",
-      "headline": "Appliance Repair Cost in San Francisco 2026 — Price Guide",
-      "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
-      "publisher": { "@type": "Organization", "name": "FixitBay LLC" },
-      "datePublished": "2026-03-15",
-      "dateModified": "2026-03-17",
-      "mainEntityOfPage": "https://fixitbay.net/blog/appliance-repair-cost-san-francisco"
+  const schemas = useMemo(() => [
+    {
+      id: 'article-schema',
+      data: {
+        "@context": "https://schema.org", "@type": "BlogPosting",
+        "headline": "Appliance Repair Cost San Francisco 2026 | FixitBay Guide",
+        "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
+        "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/navbar-logo-new-112.webp" } },
+        "datePublished": "2026-03-23",
+        "dateModified": "2026-03-23",
+        "mainEntityOfPage": "https://fixitbay.net/blog/appliance-repair-cost-san-francisco"
+      }
     },
-    { "@context": "https://schema.org", "@type": "FAQPage",
-      "mainEntity": FAQS.map(f => ({
-        "@type": "Question", "name": f.q,
-        "acceptedAnswer": { "@type": "Answer", "text": f.a }
-      }))
+    {
+      id: 'faq-schema',
+      data: {
+        "@context": "https://schema.org", "@type": "FAQPage",
+        "mainEntity": FAQ_ITEMS.map(f => ({
+          "@type": "Question", "name": f.q,
+          "acceptedAnswer": { "@type": "Answer", "text": f.a }
+        }))
+      }
     },
-    { "@context": "https://schema.org", "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" },
-        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" },
-        { "@type": "ListItem", "position": 3, "name": "Appliance Repair Cost SF", "item": "https://fixitbay.net/blog/appliance-repair-cost-san-francisco" }
-      ]
+    {
+      id: 'breadcrumb-schema',
+      data: {
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Appliance Repair Cost San Francisco", "item": "https://fixitbay.net/blog/appliance-repair-cost-san-francisco" }
+        ]
+      }
     }
-  ];
+  ], []);
+
+  useSchemas(schemas);
+
+  const PricingTable = ({ headers, rows, testId }) => (
+    <div style={{ overflowX: 'auto', marginBottom: 16 }}>
+      <table data-testid={testId} style={{ width: '100%', borderCollapse: 'collapse', fontFamily: F, fontSize: 14 }}>
+        <thead><tr style={{ background: '#1A3B5D' }}>{headers.map((h, i) => <th key={i} style={TH}>{h}</th>)}</tr></thead>
+        <tbody>{rows}</tbody>
+      </table>
+    </div>
+  );
 
   return (
-    <div style={{ background: '#FFFFFF', minHeight: '100vh' }}>
+    <>
       <SEOMetaTags
-        title="Appliance Repair Cost in San Francisco 2026 — Price Guide"
-        description="Appliance repair cost in San Francisco 2026 — pricing guide for all major appliances. $60 diagnostic applied to your repair. 180-day parts &amp; labor warranty."
+        title="Appliance Repair Cost San Francisco 2026 | FixitBay Guide"
+        description="How much does appliance repair cost in San Francisco? Full 2026 pricing guide for refrigerators, washers, dryers, ovens & more. From $60 diagnostic at FixitBay."
         canonical="https://fixitbay.net/blog/appliance-repair-cost-san-francisco"
+        ogType="article"
       />
-      {schemas.map((s, i) => (
-        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(s) }} />
-      ))}
 
-      <style>{`
-        .art-h1{font-size:38px !important}
-        @media(max-width:640px){
-          .art-h1{font-size:24px !important}
-        }
-      `}</style>
+      <div style={{ fontFamily: F }}>
+        <style>{`
+          .art-h1{font-size:40px !important}
+          @media(max-width:767px){
+            .art-h1{font-size:26px !important}
+            .art-grid{grid-template-columns:1fr !important}
+            .mid-cta-inner{flex-direction:column !important;text-align:center}
+            .related-grid{grid-template-columns:1fr !important}
+            .why-grid{grid-template-columns:1fr !important}
+            .diag-flow{flex-direction:column !important}
+            .rr-grid{grid-template-columns:1fr !important}
+          }
+          .toc-link{transition:all 0.15s}.toc-link:hover{color:#FF7043 !important;padding-left:4px}
+          .sidebar-pill:hover{background:#FF5722 !important;color:#fff !important;border-color:#FF5722 !important}
+          .sidebar-link:hover{color:#FF5722 !important}
+          .faq-q{cursor:pointer;transition:border-color 0.2s}.faq-q:hover{border-color:rgba(255,87,34,0.3) !important}
+          .phone-cta:hover{background:#FF7043 !important}
+          .book-cta:hover{background:rgba(255,255,255,0.08) !important}
+          .related-card:hover{border-color:rgba(255,87,34,0.4) !important}
+        `}</style>
 
-      {/* Hero */}
-      <section style={{ background: 'linear-gradient(135deg, #0D1B2A 0%, #1A3B5D 100%)', padding: '100px 24px 60px', textAlign: 'center' }}>
-        <div style={{ maxWidth: 800, margin: '0 auto' }}>
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(255,87,34,0.15)', borderRadius: 20, padding: '6px 16px', marginBottom: 20 }}>
-            <Calendar size={14} style={{ color: '#FF5722' }} />
-            <span style={{ fontFamily: F, fontSize: 12, fontWeight: 600, color: '#FF5722' }}>Updated March 2026</span>
-          </div>
-          <h1 className="art-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 720, margin: '0 auto 16px' }}>
-            Appliance Repair Cost in San Francisco 2026 — Price Guide
-          </h1>
-          <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto' }}>
-            What does appliance repair actually cost in the Bay Area? We break down pricing for every major appliance, explain the $60 diagnostic model, and help you decide between repair and replacement.
-          </p>
-        </div>
-      </section>
-
-      {/* Content */}
-      <article style={{ maxWidth: 760, margin: '0 auto', padding: '48px 24px 80px' }}>
-
-        <p style={P}>Appliance repair costs in San Francisco run 15–25% higher than the national average. Labor rates, insurance, and the cost of operating in a dense urban environment all contribute. But knowing what to expect before you call can save you time, stress, and money.</p>
-        <p style={P}>This guide covers <strong>real pricing from FixitBay service calls in 2026</strong> — not national averages from generic websites. Every price below reflects what San Francisco and Bay Area residents actually pay.</p>
-
-        {/* ── How Pricing Works ── */}
-        <h2 id="how-pricing" style={H2S}><DollarSign size={22} style={{ color: '#FF5722', display: 'inline', verticalAlign: 'middle', marginRight: 8 }} />How Appliance Repair Pricing Works</h2>
-
-        <p style={P}>At FixitBay, every service call starts with a <strong>$60 diagnostic fee</strong>. Here's what that includes and how it works:</p>
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 16, margin: '16px 0 24px' }}>
-          {[
-            { step: '1', title: 'Schedule', desc: 'Book online or call. Same-day available if you call before noon.' },
-            { step: '2', title: 'Diagnose', desc: 'Technician inspects the appliance, identifies the problem, and quotes an exact repair price.' },
-            { step: '3', title: 'Decide', desc: 'You approve or decline. If you approve, the $60 is applied to your total. If not, you pay only $60.' },
-          ].map(item => (
-            <div key={item.step} style={{ background: '#F8F5F0', borderRadius: 4, padding: '20px', textAlign: 'center' }}>
-              <div style={{ width: 36, height: 36, borderRadius: '50%', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 800, fontSize: 16, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px' }}>{item.step}</div>
-              <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#0D1B2A', marginBottom: 6 }}>{item.title}</p>
-              <p style={{ fontFamily: F, fontSize: 13, color: '#4A5568', lineHeight: 1.5, margin: 0 }}>{item.desc}</p>
+        {/* ━━━ HERO ━━━ */}
+        <section data-testid="article-hero" style={{ background: "linear-gradient(rgba(13,27,42,0.94),rgba(13,27,42,0.94)),url('/background_new2.webp')", backgroundSize: 'cover', backgroundPosition: 'center 60%', minHeight: 400, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px 24px 56px', color: '#fff' }}>
+          <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
+            <nav style={{ fontFamily: F, fontSize: 12, color: 'rgba(255,255,255,0.5)', marginBottom: 16 }}>
+              <a href="/" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Home</a>
+              <span style={{ color: '#FF5722', margin: '0 6px' }}>&rarr;</span>
+              <Link to="/blog" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Blog</Link>
+              <span style={{ color: '#FF5722', margin: '0 6px' }}>&rarr;</span>
+              <span style={{ color: 'rgba(255,255,255,0.8)' }}>Appliance Repair Cost SF</span>
+            </nav>
+            <div style={{ display: 'flex', justifyContent: 'center', gap: 20, alignItems: 'center', flexWrap: 'wrap', marginBottom: 16 }}>
+              <span style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 11, padding: '4px 12px', borderRadius: 3 }}>Expert Advice</span>
+              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>March 23, 2026</span>
+              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>10 min read</span>
             </div>
-          ))}
-        </div>
+            <h1 className="art-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 720, margin: '0 auto 16px' }}>
+              Appliance Repair Cost in San Francisco — 2026 Pricing Guide
+            </h1>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto' }}>
+              3 pricing tables, luxury brand rates, why SF costs more, and a repair-vs-replace decision guide. Real numbers from a real technician.
+            </p>
+          </div>
+        </section>
 
-        <p style={P}>The $60 diagnostic is the only upfront cost. You'll never be surprised by hidden fees. If the repair isn't worth it, you walk away with a professional diagnosis for just $60.</p>
+        {/* ━━━ ARTICLE ━━━ */}
+        <section style={{ background: '#F8F5F0', padding: '56px 24px' }}>
+          <div className="art-grid" style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: '68% 32%', gap: 40, alignItems: 'start' }}>
 
-        {/* ── Complete Pricing Table ── */}
-        <h2 id="pricing-table" style={H2S}>Complete Appliance Repair Pricing — San Francisco 2026</h2>
-        <p style={P}>These prices include the $60 diagnostic fee (applied to repair cost). Parts and labor are covered by our 180-day warranty.</p>
+            <article data-testid="article-content" style={{ background: '#fff', borderRadius: 4, padding: '40px 36px', border: '1px solid rgba(0,0,0,0.07)', boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}>
 
-        <div style={{ overflowX: 'auto', margin: '16px 0 32px' }}>
-          <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: F, fontSize: 14 }}>
-            <thead>
-              <tr style={{ background: '#0D1B2A', color: '#fff' }}>
-                <th style={{ padding: '14px 16px', textAlign: 'left', fontWeight: 700 }}>Appliance</th>
-                <th style={{ padding: '14px 16px', textAlign: 'left', fontWeight: 700 }}>Cost Range</th>
-                <th style={{ padding: '14px 16px', textAlign: 'left', fontWeight: 700 }}>Common Repairs</th>
-                <th style={{ padding: '14px 16px', textAlign: 'center', fontWeight: 700 }}>Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              {PRICING_DATA.map((row, i) => (
-                <tr key={i} style={{ background: i % 2 === 0 ? '#F8F5F0' : '#fff', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
-                  <td style={{ padding: '12px 16px', color: '#1A1A1A', fontWeight: 600 }}>{row.appliance}</td>
-                  <td style={{ padding: '12px 16px', color: '#FF5722', fontWeight: 700 }}>{row.range}</td>
-                  <td style={{ padding: '12px 16px', color: '#4A5568', fontSize: 13 }}>{row.common}</td>
-                  <td style={{ padding: '12px 16px', textAlign: 'center' }}>
-                    <Link to={row.link} style={{ color: '#FF5722', fontWeight: 600, fontSize: 13, textDecoration: 'none' }}>View <ArrowRight size={12} style={{ display: 'inline', verticalAlign: 'middle' }} /></Link>
-                  </td>
-                </tr>
+              {/* TOC */}
+              <div data-testid="toc" style={{ background: '#F8F5F0', borderLeft: '3px solid #FF5722', borderRadius: 4, padding: '20px 24px', marginBottom: 32 }}>
+                <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#1A1A1A', marginBottom: 12 }}>In This Article</p>
+                {TOC.map((t, i) => (
+                  <a key={t.id} href={`#${t.id}`} className="toc-link" style={{ fontFamily: F, fontWeight: 500, fontSize: 13, color: '#FF5722', textDecoration: 'none', display: 'block', padding: '3px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
+                    {i + 1}. {t.label}
+                  </a>
+                ))}
+              </div>
+
+              {/* Intro */}
+              <p style={{ ...P, marginBottom: 16 }}>
+                <span style={{ fontWeight: 600, color: '#1A1A1A' }}>How much should you expect to pay for appliance repair in San Francisco?</span> As a licensed technician who's done over 2,000 service calls across the Bay Area, I get this question daily. The honest answer: it depends on the appliance, the problem, and whether you need standard or luxury brand parts.
+              </p>
+              <p style={{ ...P, marginBottom: 16 }}>
+                Below is a transparent breakdown of what we charge at FixitBay and what the market looks like in 2026. No hidden fees, no bait-and-switch pricing — just real numbers from a real technician.
+              </p>
+              <p style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#1A3B5D', fontStyle: 'italic', marginBottom: 28 }}>
+                — Andrei, Licensed Appliance Technician, FixitBay LLC
+              </p>
+
+              {/* ── Main Pricing Table ── */}
+              <h2 id="pricing" style={H2S}>Complete Appliance Repair Pricing — San Francisco 2026</h2>
+              <PricingTable testId="pricing-table" headers={['Appliance', 'FixitBay Starting Price', 'Typical SF Market Range']}
+                rows={MAIN_PRICING.map((r, i) => (
+                  <tr key={i}>
+                    <td style={{ ...TD(i), color: '#1A1A1A', fontWeight: 600 }}>
+                      {r.href ? <a href={r.href} style={{ color: '#C0362C', textDecoration: 'none', fontWeight: 600 }}>{r.appliance}</a> : r.appliance}
+                    </td>
+                    <td style={{ ...TD(i), color: '#FF5722', fontWeight: 700 }}>{r.fixitbay}</td>
+                    <td style={{ ...TD(i), color: '#4A5568' }}>{r.market}</td>
+                  </tr>
+                ))}
+              />
+              <p style={{ ...P, fontStyle: 'italic', fontSize: 13 }}>All prices include labor and standard parts. The $60 diagnostic fee is fully applied toward your repair — if we fix it, you only pay the repair price.</p>
+
+              {/* ── CTA after pricing ── */}
+              <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
+                <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
+                  <div>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need an appliance repair estimate?</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>$60 diagnostic applied to repair &middot; <a href="/blog/same-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>Same-day service</a> &middot; 180-day warranty &middot; 22 Bay Area cities</p>
+                  </div>
+                  <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+                    <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
+                    <a href="/book" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }}>Book Online</a>
+                  </div>
+                </div>
+              </div>
+
+              {/* ── Luxury Pricing ── */}
+              <h2 id="luxury" style={H2S}>Luxury & High-End Brand Repair Pricing</h2>
+              <PricingTable testId="luxury-table" headers={['Brand', 'FixitBay Starting Price', 'Why It Costs More']}
+                rows={LUXURY_PRICING.map((r, i) => (
+                  <tr key={i}>
+                    <td style={{ ...TD(i), color: '#1A1A1A', fontWeight: 600 }}>
+                      {r.href ? <a href={r.href} style={{ color: '#C0362C', textDecoration: 'none', fontWeight: 600 }}>{r.brand}</a> : r.brand}
+                    </td>
+                    <td style={{ ...TD(i), color: '#FF5722', fontWeight: 700 }}>{r.price}</td>
+                    <td style={{ ...TD(i), color: '#4A5568', fontSize: 13 }}>{r.why}</td>
+                  </tr>
+                ))}
+              />
+              <p style={P}>Luxury brand repairs cost more because parts are expensive and proprietary. But repairing a $5,000–$15,000 <a href="/sub-zero-appliance-repair" style={{ color: '#C0362C', fontWeight: 600 }}>Sub-Zero</a> is almost always cheaper than replacing it.</p>
+
+              {/* ── Why SF Costs More ── */}
+              <h2 id="why-sf" style={H2S}>Why Appliance Repair Costs More in San Francisco</h2>
+              <div className="why-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
+                {WHY_SF.map((item, i) => (
+                  <div key={i} style={{ background: '#F8F5F0', borderRadius: 4, padding: '20px 24px', borderTop: '3px solid #FF5722' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
+                      <span style={{ width: 28, height: 28, borderRadius: '50%', background: '#FF5722', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 14, fontWeight: 700, flexShrink: 0 }}>{i + 1}</span>
+                      <span style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#1A1A1A' }}>{item.title}</span>
+                    </div>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568', lineHeight: 1.65 }}>{item.text}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* ── How Diagnostic Works ── */}
+              <h2 id="diagnostic" style={H2S}>How the $60 Diagnostic Fee Works</h2>
+              <div data-testid="diagnostic-flow" style={{ background: '#0D1B2A', borderRadius: 4, padding: '28px 24px', marginBottom: 16 }}>
+                <div className="diag-flow" style={{ display: 'flex', gap: 0, alignItems: 'stretch' }}>
+                  {[
+                    { step: '1', label: 'Book', desc: 'Online or call \u2192 We arrive same-day or next-day' },
+                    { step: '2', label: 'Diagnose', desc: 'Technician diagnoses the problem \u2192 $60 diagnostic fee' },
+                    { step: '3', label: 'Estimate', desc: 'You get an upfront estimate \u2192 No surprises' },
+                    { step: '4', label: 'Decide', desc: 'Approve \u2192 $60 credited toward total\nDecline \u2192 You only pay $60' },
+                  ].map((s, i) => (
+                    <div key={i} style={{ flex: 1, textAlign: 'center', padding: '0 12px', borderRight: i < 3 ? '1px solid rgba(255,255,255,0.1)' : 'none' }}>
+                      <div style={{ width: 36, height: 36, borderRadius: '50%', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 800, fontSize: 16, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 8px' }}>{s.step}</div>
+                      <p style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#fff', marginBottom: 4 }}>{s.label}</p>
+                      <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.7)', lineHeight: 1.5, whiteSpace: 'pre-line' }}>{s.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <p style={{ ...P, fontStyle: 'italic', fontSize: 13 }}>The diagnostic fee guarantees you get an honest, professional assessment — even if you decide not to repair. Many competitors advertise "free diagnostic" but inflate repair prices to compensate. We prefer transparency.</p>
+
+              {/* ── Repair vs Replace ── */}
+              <h2 id="repair-replace" style={H2S}>Repair vs. Replace — When It Makes Sense</h2>
+              <div className="rr-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 16 }}>
+                <div style={{ background: '#E8F5E9', borderRadius: 4, padding: '20px 24px', borderTop: '3px solid #4CAF50' }}>
+                  <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#2E7D32', marginBottom: 12, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Repair When</p>
+                  {[
+                    'Appliance is under 8 years old',
+                    'Repair cost is less than 50% of replacement',
+                    'It\u2019s a simple fix (thermostat, gasket, fuse, relay)',
+                    'The appliance is a premium/luxury brand',
+                    'The problem is a first-time failure',
+                  ].map((item, i) => (
+                    <div key={i} style={{ display: 'flex', gap: 8, marginBottom: 6 }}>
+                      <span style={{ color: '#4CAF50', fontWeight: 700, flexShrink: 0 }}>{'\u2713'}</span>
+                      <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568', lineHeight: 1.5 }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <div style={{ background: '#FFF3E0', borderRadius: 4, padding: '20px 24px', borderTop: '3px solid #FF9800' }}>
+                  <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#E65100', marginBottom: 12, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Replace When</p>
+                  {[
+                    'Appliance is 12+ years old AND repair exceeds $400',
+                    'Multiple components failing (compressor + board + seal)',
+                    'Parts are discontinued',
+                    'Energy savings offset cost within 2 years',
+                    'You\u2019ve repaired it 2+ times in the past year',
+                  ].map((item, i) => (
+                    <div key={i} style={{ display: 'flex', gap: 8, marginBottom: 6 }}>
+                      <span style={{ color: '#FF9800', fontWeight: 700, flexShrink: 0 }}>{'\u2717'}</span>
+                      <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568', lineHeight: 1.5 }}>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <p style={{ ...P, fontWeight: 600 }}><a href="/blog/when-to-repair-vs-replace" style={{ color: '#C0362C' }}>Rule of thumb</a>: if repair cost &times; remaining years &lt; replacement cost, repair wins.</p>
+
+              {/* ── Costs by Problem ── */}
+              <h2 id="by-problem" style={H2S}>Common Repair Costs by Problem</h2>
+              <PricingTable testId="problem-table" headers={['Problem', 'Typical Repair Cost']}
+                rows={PROBLEM_PRICING.map((r, i) => (
+                  <tr key={i}>
+                    <td style={{ ...TD(i), color: '#4A5568' }}>{r.problem}</td>
+                    <td style={{ ...TD(i), color: '#1A1A1A', fontWeight: 600 }}>{r.cost}</td>
+                  </tr>
+                ))}
+              />
+
+              {/* ── Andrei's Advice ── */}
+              <h2 id="advice" style={H2S}>Andrei's Pricing Advice</h2>
+              <blockquote data-testid="field-note" style={{ borderLeft: '4px solid #FF5722', padding: '20px 24px', margin: '0 0 24px', background: '#FAFAF7', borderRadius: '0 8px 8px 0' }}>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.75, fontStyle: 'italic', marginBottom: 16 }}>
+                  "Here's what I tell every customer: get the diagnostic before deciding anything. I've seen people buy a $2,000 refrigerator because they assumed the repair would be expensive — turns out it was a $60 coil cleaning. I've also saved customers from spending $500 on a repair when an $800 new washer made more sense. The $60 diagnostic is the smartest money you'll spend because it gives you the real numbers to make the right decision."
+                </p>
+                <footer style={{ fontFamily: F, fontSize: 14, fontWeight: 700, color: '#1A3B5D' }}>— Andrei, Lead Appliance Technician, FixitBay LLC</footer>
+              </blockquote>
+
+              {/* ── How FixitBay Compares ── */}
+              <h2 id="compare" style={H2S}>How FixitBay Compares</h2>
+              <div style={{ overflowX: 'auto', marginBottom: 16 }}>
+                <table data-testid="compare-table" style={{ width: '100%', borderCollapse: 'collapse', fontFamily: F, fontSize: 14 }}>
+                  <thead><tr style={{ background: '#1A3B5D' }}>
+                    <th style={TH}>Feature</th>
+                    <th style={{ ...TH, background: '#FF5722' }}>FixitBay</th>
+                    <th style={TH}>Typical SF Companies</th>
+                  </tr></thead>
+                  <tbody>
+                    {COMPARE.map((r, i) => (
+                      <tr key={i}>
+                        <td style={{ ...TD(i), color: '#1A1A1A', fontWeight: 600 }}>{r.feat}</td>
+                        <td style={{ ...TD(i), color: '#2E7D32', fontWeight: 600 }}>{r.us}</td>
+                        <td style={{ ...TD(i), color: '#4A5568' }}>{r.them}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* ── FAQ ── */}
+              <div id="faq" data-testid="faq-section" style={{ border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 28, margin: '32px 0' }}>
+                <div style={EYE}>FAQ</div>
+                <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#1A1A1A', marginBottom: 20 }}>Frequently Asked Questions</h2>
+                {FAQ_ITEMS.map((faq, i) => {
+                  const isOpen = openFaq === i;
+                  return (
+                    <div key={i} className="faq-q" data-testid={`faq-${i}`} style={{ background: '#fff', border: isOpen ? 'none' : '1px solid rgba(0,0,0,0.08)', borderLeft: isOpen ? '3px solid #FF5722' : '1px solid rgba(0,0,0,0.08)', borderRadius: 4, marginBottom: 8, overflow: 'hidden' }} onClick={() => setOpenFaq(isOpen ? -1 : i)}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '14px 16px', cursor: 'pointer' }}>
+                        <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#1A1A1A', flex: 1, paddingRight: 12 }}>{faq.q}</span>
+                        <ChevronDown size={18} style={{ color: '#FF5722', flexShrink: 0, transition: 'transform 0.2s', transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)' }} />
+                      </div>
+                      {isOpen && (
+                        <div style={{ padding: '0 16px 16px' }}>
+                          <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568', lineHeight: 1.65 }}>{faq.a}</p>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* ── Related Articles ── */}
+              <h2 id="related" style={H2S}>Related Articles</h2>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginBottom: 24 }}>
+                {[
+                  { title: 'Refrigerator Not Cooling? 8 Causes & Fixes', href: '/blog/refrigerator-not-cooling' },
+                  { title: 'Dryer Not Heating? 7 Causes & Fixes', href: '/blog/dryer-not-heating' },
+                  { title: 'When to Repair vs Replace', href: '/blog/when-to-repair-vs-replace' },
+                  { title: 'How Long Do Appliances Last?', href: '/blog/appliance-lifespan' },
+                ].map((a, i) => (
+                  <Link key={i} to={a.href} data-testid={`related-inline-${i}`} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '12px 16px', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.06)', borderRadius: 4, textDecoration: 'none' }}>
+                    <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#0D1B2A' }}>{a.title}</span>
+                    <span style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', flexShrink: 0, marginLeft: 16 }}>Read &rarr;</span>
+                  </Link>
+                ))}
+              </div>
+
+              {/* ── Bottom CTA ── */}
+              <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
+                <div style={{ ...EYE, marginBottom: 8 }}>GET YOUR ESTIMATE</div>
+                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Ready for a <a href="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Professional Diagnosis</a>?</h3>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>$60 diagnostic applied to repair. <a href="/blog/same-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>Same-day service</a> across San Francisco, <a href="/marin-county-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Marin County</a>, and the Peninsula.</p>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
+                  <a href="tel:+17605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
+                  <a href="/book" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }}>Book Online Now</a>
+                </div>
+              </div>
+
+              {/* ── Author ── */}
+              <div data-testid="author-box" style={{ background: '#fff', borderRadius: 4, padding: 24, border: '1px solid rgba(255,87,34,0.15)', display: 'flex', gap: 20, alignItems: 'center', marginTop: 32 }}>
+                <div style={{ width: 56, height: 56, borderRadius: '50%', background: 'rgba(255,87,34,0.15)', color: '#FF5722', fontFamily: F, fontWeight: 800, fontSize: 20, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>A</div>
+                <div>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2 }}>Written by</p>
+                  <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 2 }}>Andrei — Lead Appliance Technician</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>2,000+ service calls &middot; License #51001 &middot; 10+ years in the Bay Area</p>
+                </div>
+              </div>
+            </article>
+
+            {/* ━━━ SIDEBAR ━━━ */}
+            <aside data-testid="sidebar" style={{ position: 'sticky', top: 80 }}>
+              <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
+                <div style={EYE}>GET YOUR ESTIMATE</div>
+                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>$60 Diagnostic</h3>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>Applied to repair. 180-day warranty. No hidden fees.</p>
+                <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
+                {['Licensed CA Technician', 'Same-Day Available', '22 Bay Area Cities', '180-Day Warranty'].map(item => (
+                  <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
+                    <span style={{ color: '#FF5722', fontFamily: F, fontWeight: 700 }}>{'\u2713'}</span>
+                    <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>{item}</span>
+                  </div>
+                ))}
+                <a href="tel:+17605435733" className="phone-cta" data-testid="sidebar-call" style={{ display: 'block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: 14, borderRadius: 4, textAlign: 'center', textDecoration: 'none', marginTop: 20, transition: 'background 0.2s' }}>Call (760) 543-5733</a>
+                <a href="/book" className="book-cta" style={{ display: 'block', background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: 14, borderRadius: 4, textAlign: 'center', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.25)', marginTop: 8, transition: 'background 0.2s' }}>Book Online</a>
+              </div>
+              <div style={{ background: '#fff', borderRadius: 4, padding: 20, border: '1px solid rgba(0,0,0,0.07)', marginTop: 20 }}>
+                <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#1A1A1A', paddingBottom: 12, borderBottom: '1px solid rgba(0,0,0,0.08)', marginBottom: 16 }}>Related Articles</p>
+                {[
+                  { text: 'Refrigerator Not Cooling? 8 Causes', href: '/blog/refrigerator-not-cooling' },
+                  { text: 'Dryer Not Heating? 7 Causes', href: '/blog/dryer-not-heating' },
+                  { text: 'When to Repair vs Replace', href: '/blog/when-to-repair-vs-replace' },
+                  { text: 'How Long Do Appliances Last?', href: '/blog/appliance-lifespan' },
+                ].map((link, i) => (
+                  <Link key={i} to={link.href} className="sidebar-link" style={{ display: 'flex', gap: 10, padding: '10px 0', borderBottom: '1px solid rgba(0,0,0,0.05)', fontFamily: F, fontWeight: 500, fontSize: 13, color: '#4A5568', textDecoration: 'none', transition: 'color 0.2s' }}>
+                    <span style={{ color: '#FF5722', fontWeight: 700, flexShrink: 0 }}>&rarr;</span>{link.text}
+                  </Link>
+                ))}
+              </div>
+              <div style={{ background: '#F8F5F0', borderRadius: 4, padding: 20, border: '1px solid rgba(255,87,34,0.15)', marginTop: 20 }}>
+                <div style={{ ...EYE, marginBottom: 12 }}>OUR REPAIR SERVICES</div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                  {[
+                    { label: 'Refrigerator', href: '/refrigerator-repair' },
+                    { label: 'Washer', href: '/washer-repair' },
+                    { label: 'Dryer', href: '/dryer-repair' },
+                    { label: 'Dishwasher', href: '/dishwasher-repair' },
+                    { label: 'Oven', href: '/oven-repair' },
+                    { label: 'Wine Cooler', href: '/wine-cooler-repair' },
+                  ].map(s => (
+                    <Link key={s.label} to={s.href} className="sidebar-pill" style={{ background: '#fff', border: '1px solid rgba(255,87,34,0.25)', color: '#FF5722', fontFamily: F, fontWeight: 600, fontSize: 12, padding: '6px 14px', borderRadius: 4, textDecoration: 'none', transition: 'all 0.2s' }}>{s.label}</Link>
+                  ))}
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        {/* ━━━ RELATED SERVICES ━━━ */}
+        <section data-testid="related-services" style={{ background: '#0D1B2A', padding: '56px 24px' }}>
+          <div style={{ maxWidth: 1000, margin: '0 auto' }}>
+            <div style={EYE}>EXPLORE MORE</div>
+            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services & Articles</h2>
+            <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
+              {[
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Same-day available.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'ARTICLE', title: 'Refrigerator Not Cooling? 8 Causes', body: '8 causes from dirty coils to compressor failure. DIY checklist + pro costs.', link: 'Read Article', href: '/blog/refrigerator-not-cooling' },
+                { tag: 'SERVICE', title: 'Marin County Appliance Repair', body: 'Same-day service in Mill Valley, San Rafael, Novato & more.', link: 'View Service', href: '/marin-county-appliance-repair' },
+              ].map((card, i) => (
+                <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
+                  <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
+                  <h3 style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 8 }}>{card.title}</h3>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', lineHeight: 1.6, marginBottom: 12 }}>{card.body}</p>
+                  <span style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722' }}>{card.link} &rarr;</span>
+                </Link>
               ))}
-            </tbody>
-          </table>
-        </div>
-
-        {/* ── Breakdown by Appliance ── */}
-        <h2 id="refrigerator-cost" style={H2S}>Refrigerator Repair Cost in San Francisco</h2>
-        <p style={P}>Refrigerator repairs are the most requested service in our Bay Area practice. Costs start from $255, which includes the $60 diagnostic. The most common repairs we perform:</p>
-        <ul style={{ fontFamily: F, fontSize: 14, color: '#4A5568', lineHeight: 2.2, paddingLeft: 20, marginBottom: 24 }}>
-          <li><strong>Thermostat replacement:</strong> $150–$220</li>
-          <li><strong>Evaporator fan motor:</strong> $180–$280</li>
-          <li><strong>Compressor (with refrigerant):</strong> $350–$550</li>
-          <li><strong>Door seal/gasket:</strong> $80–$180</li>
-          <li><strong>Start relay:</strong> $80–$150</li>
-        </ul>
-        <p style={P}>San Francisco's fog-belt climate means refrigerators in Sunset, Richmond, and Daly City work harder to maintain temperature in unconditioned garages. This can shorten compressor life by 2–3 years compared to units in climate-controlled kitchens.</p>
-
-        {/* ── MID-ARTICLE CTA ── */}
-        <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
-          <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
-            <div>
-              <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
-              <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Same-day service · $60 diagnostic · 180-day warranty</p>
-            </div>
-            <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-              <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
-              <a href="/book" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)' }}>Book online →</a>
             </div>
           </div>
-        </div>
+        </section>
 
-        <h2 id="washer-dryer-cost" style={H2S}>Washer & Dryer Repair Cost</h2>
-        <p style={P}>Washer repairs start from $240 in San Francisco. Front-load washers tend to cost more due to more complex components (drum bearings, door boots). Dryer repairs start from $235, with thermal fuse and heating element being the most common fixes.</p>
-        <p style={P}>In San Francisco's multi-unit buildings, stackable washer-dryer combos require technicians experienced with compact spaces. FixitBay technicians regularly service units in Victorian flats, in-law units, and basement laundry rooms.</p>
-
-        <h2 id="dishwasher-cost" style={H2S}>Dishwasher Repair Cost</h2>
-        <p style={P}>Dishwasher repairs in SF start from $195. The most common issue we see is a failing drain pump ($130–$220), followed by spray arm problems and control board failures. Built-in dishwashers in San Francisco's older kitchens sometimes have non-standard installations that add 15–30 minutes to service time.</p>
-
-        {/* ── SF Market Context ── */}
-        <h2 id="sf-market" style={H2S}>Why Appliance Repair Costs More in San Francisco</h2>
-        <p style={P}>If you've gotten quotes from multiple companies, you've probably noticed SF rates are higher than what you see online. Here's why:</p>
-        <div style={{ margin: '16px 0 24px' }}>
-          {[
-            { factor: 'Labor rates', detail: 'Licensed technicians in SF earn $35–$55/hour, reflecting the cost of living and certification requirements.' },
-            { factor: 'Insurance & licensing', detail: 'California requires contractors to carry liability insurance, workers comp, and maintain active licenses — adding $2,000–$5,000/year per technician.' },
-            { factor: 'Parking & logistics', detail: 'Service trucks pay meter/garage fees of $30–$50 per service call. Multi-unit buildings often require double-parking permits or extended walking with heavy tools.' },
-            { factor: 'Parts markup', detail: 'Stocking common parts on the truck for same-visit repairs means carrying $8,000–$15,000 in inventory. This convenience is built into pricing.' },
-          ].map((item, i) => (
-            <div key={i} style={{ display: 'flex', gap: 12, padding: '12px 0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
-              <CheckCircle size={18} style={{ color: '#FF5722', flexShrink: 0, marginTop: 2 }} />
-              <div><strong style={{ fontFamily: F, fontSize: 14, color: '#1A1A1A' }}>{item.factor}:</strong> <span style={{ fontFamily: F, fontSize: 14, color: '#4A5568' }}>{item.detail}</span></div>
-            </div>
-          ))}
-        </div>
-
-        {/* ── 180-Day Warranty ── */}
-        <h2 id="warranty" style={H2S}>FixitBay 180-Day Warranty</h2>
-        <p style={P}>Every repair includes our <strong>180-day warranty on parts and labor</strong>. If the same issue recurs within 180 days, we return and fix it at no additional cost. This applies to all appliance types and all service areas including San Francisco, Daly City, South San Francisco, Marin County, and the entire Bay Area.</p>
-
-        {/* ── FAQ ── */}
-        <h2 id="faq" style={H2S}>Frequently Asked Questions</h2>
-        <div data-testid="faq-section" style={{ margin: '16px 0 32px' }}>
-          {FAQS.map((faq, i) => (
-            <div key={i} style={{ borderBottom: '1px solid rgba(0,0,0,0.08)' }}>
-              <button
-                data-testid={`faq-toggle-${i}`}
-                onClick={() => setOpenFAQ(openFAQ === i ? null : i)}
-                style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 0', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left' }}
-              >
-                <span style={{ fontFamily: F, fontWeight: 600, fontSize: 15, color: '#1A1A1A', paddingRight: 16 }}>{faq.q}</span>
-                {openFAQ === i ? <ChevronUp size={18} style={{ color: '#FF5722', flexShrink: 0 }} /> : <ChevronDown size={18} style={{ color: '#999', flexShrink: 0 }} />}
-              </button>
-              {openFAQ === i && (
-                <p style={{ fontFamily: F, fontSize: 14, color: '#4A5568', lineHeight: 1.7, padding: '0 0 16px', margin: 0 }}>{faq.a}</p>
-              )}
-            </div>
-          ))}
-        </div>
-
-        {/* ── Internal Links ── */}
-        <h2 style={H2S}>Explore Our Services</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12, margin: '16px 0 32px' }}>
-          {[
-            { to: '/san-francisco-refrigerator-repair', label: 'SF Refrigerator Repair', desc: 'Same-day, from $255' },
-            { to: '/san-francisco-washer-repair', label: 'SF Washer Repair', desc: 'Same-day, from $240' },
-            { to: '/san-francisco-dryer-repair', label: 'SF Dryer Repair', desc: 'Same-day, from $235' },
-            { to: '/san-francisco-dishwasher-repair', label: 'SF Dishwasher Repair', desc: 'Same-day, from $195' },
-            { to: '/service-areas', label: 'All Service Areas', desc: '22 cities covered' },
-            { to: '/book', label: 'Book a Repair', desc: '$60 diagnostic, same-day' },
-          ].map(link => (
-            <Link key={link.to} to={link.to} style={{ display: 'block', padding: '16px', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.06)', borderRadius: 4, textDecoration: 'none', transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.06)'; }}>
-              <span style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#0D1B2A', display: 'flex', alignItems: 'center', gap: 6 }}><ArrowRight size={14} style={{ color: '#FF5722' }} />{link.label}</span>
-              <span style={{ fontFamily: F, fontSize: 12, color: '#4A5568', marginTop: 4, display: 'block' }}>{link.desc}</span>
-            </Link>
-          ))}
-        </div>
-
-        {/* ── Related Articles ── */}
-        <div data-testid="related-articles" style={{ margin: '32px 0' }}>
-          <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 22, color: '#0D1B2A', marginBottom: 16 }}>Related articles</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-            {[
-              { title: 'Repair vs. Replace: When to Fix Your Appliance', href: '/blog/when-to-repair-vs-replace' },
-              { title: 'How Long Do Appliances Last? Average Lifespan Guide', href: '/blog/appliance-lifespan' },
-              { title: 'Dryer Not Heating? Common Causes & Repair Cost', href: '/blog/dryer-not-heating' },
-            ].map((a, i) => (
-              <Link key={i} to={a.href} data-testid={`related-article-${i}`} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.06)', borderRadius: 4, textDecoration: 'none' }}>
-                <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#0D1B2A' }}>{a.title}</span>
-                <span style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', flexShrink: 0, marginLeft: 16 }}>Read article →</span>
-              </Link>
-            ))}
+        {/* ━━━ FOOTER ━━━ */}
+        <footer data-testid="article-footer" style={{ background: '#0D1B2A', borderTop: '1px solid rgba(255,87,34,0.2)', padding: '20px 24px' }}>
+          <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
+            <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
+            <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
-        </div>
+        </footer>
 
-        {/* ── CTA ── */}
-        <div style={{ background: '#0D1B2A', borderRadius: 8, padding: '32px', textAlign: 'center', margin: '32px 0' }}>
-          <p style={{ fontFamily: F, fontWeight: 700, fontSize: 20, color: '#fff', marginBottom: 8 }}>Get an exact repair quote today</p>
-          <p style={{ fontFamily: F, fontSize: 14, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$60 diagnostic applied to repair. 180-day warranty. Same-day service available.</p>
-          <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="tel:+17605435733" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', padding: '12px 24px', borderRadius: 4, fontFamily: F, fontWeight: 700, fontSize: 14, textDecoration: 'none' }}><Phone size={16} /> (760) 543-5733</a>
-            <Link to="/book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: '#fff', padding: '12px 24px', borderRadius: 4, fontFamily: F, fontWeight: 700, fontSize: 14, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.3)' }}>Book Online <ArrowRight size={16} /></Link>
+        {showFloat && (
+          <a href="/book" data-testid="float-btn" className="hidden md:flex" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '14px 20px', borderRadius: 4, boxShadow: '0 4px 20px rgba(255,87,34,0.45)', textDecoration: 'none' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>
+            BOOK REPAIR
+          </a>
+        )}
+        {showFloat && (
+          <div className="flex md:hidden" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 999, background: '#0D1B2A', borderTop: '1px solid rgba(255,87,34,0.3)', padding: '10px 12px', gap: 8, justifyContent: 'center' }}>
+            <a href="tel:+17605435733" data-testid="mobile-call" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none' }}>CALL</a>
+            <a href="/book" data-testid="mobile-book" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none' }}>BOOK ONLINE</a>
+            <a href="sms:7605435733?body=Hello%20FixitBay!" data-testid="mobile-text" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,87,34,0.4)' }}>TEXT US</a>
           </div>
-        </div>
-      </article>
-    </div>
+        )}
+      </div>
+    </>
   );
 };
 
