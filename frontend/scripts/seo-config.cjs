@@ -728,8 +728,8 @@ function getSEOContent(route) {
     // Explicit blog article SEO — synced with component Helmet values
     const blogSEO = {
       'refrigerator-not-cooling': {
-        title: '5 Common Reasons Your Refrigerator Isn\'t Cooling | FixitBay',
-        description: 'Fridge not keeping food cold? Top 5 causes: compressor issues, dirty coils & thermostat problems. Expert diagnosis & same-day repair in SF Bay Area.'
+        title: 'Refrigerator Not Cooling? 8 Causes & Fixes | FixitBay SF',
+        description: 'Refrigerator not cooling? 8 common causes from dirty coils to compressor failure. SF Bay Area DIY checklist + when to call a pro. From $255 at FixitBay LLC.'
       },
       'dishwasher-maintenance': {
         title: 'How to Maintain Your Dishwasher for Longer Life | FixitBay',

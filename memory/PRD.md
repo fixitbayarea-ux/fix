@@ -211,6 +211,16 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
   - H1s: "... in San Francisco & Bay Area" → "... in the Bay Area"
   - Service descriptions, FAQ answers, hero text: SF → Bay Area
   - Meta descriptions: updated to Bay Area focus
+
+### Session 40 (Feb 2026) — Full Blog Rewrite: /blog/refrigerator-not-cooling
+- **Complete rewrite** of blog post from 5-cause article to comprehensive 8-cause guide
+- New title: "Refrigerator Not Cooling? 8 Causes & Fixes | FixitBay SF" (58 chars)
+- New sections: 8 causes ranked by complexity, DIY checklist, pricing table, Andrei's Field Note (case study), 5 FAQ items, Related Articles
+- **Schema fix:** Removed duplicate `dangerouslySetInnerHTML` BlogPosting script tag. Now exactly 1 BlogPosting, 1 FAQPage, 1 BreadcrumbList via `useSchemas` hook
+- Internal links woven throughout: /refrigerator-repair, /sub-zero-appliance-repair, /blog/when-to-repair-vs-replace, /blog/same-day-appliance-repair-bay-area, /san-francisco-appliance-repair
+- SF-specific content: coastal fog/coils, Sunset/Richmond/Pacifica gasket wear, Victorian homes, real case study from Sunset District
+- Updated seo-config.cjs and BlogListPage.js with new title/description
+- Files changed: `RefrigeratorNotCooling.js` (full rewrite), `seo-config.cjs`, `BlogListPage.js`
   - Added internal link paragraph to SF city-specific page on each page
   - Schema names updated to "... Bay Area"
 - **seoContent.js:** Added `hasSFCityPage` flag for 7 services that auto-selects Bay Area title/H1/content for pre-rendered HTML

@@ -12,7 +12,7 @@ const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', te
 
 /* ── hardcoded blog posts ── */
 const STATIC_POSTS = [
-  { slug: 'refrigerator-not-cooling', title: "5 Common Reasons Your Refrigerator Isn't Cooling", excerpt: 'Is your fridge running but not keeping food cold? Learn the top 5 causes including compressor issues, dirty coils, and thermostat problems.', publish_date: '2026-01-20', categories: ['Refrigerator'], readTime: '5 min' },
+  { slug: 'refrigerator-not-cooling', title: "Refrigerator Not Cooling? 8 Causes & What to Do", excerpt: 'A warm refrigerator puts your food at risk. 8 common causes ranked from DIY fix to pro repair, with SF Bay Area pricing and a real technician case study.', publish_date: '2026-03-23', categories: ['Refrigerator'], readTime: '8 min' },
   { slug: 'dishwasher-maintenance', title: 'How to Maintain Your Dishwasher for Longer Life', excerpt: 'Simple maintenance tips to prevent clogs, leaks, and odors. Learn how to clean filters, check spray arms, and maintain door seals.', publish_date: '2026-01-18', categories: ['Dishwasher'], readTime: '7 min' },
   { slug: 'when-to-repair-vs-replace', title: 'Repair vs Replace: When to Fix Your Appliance', excerpt: "Not sure if it's worth repairing your old appliance? Use our expert guide based on the 50% rule, age considerations, and repair costs.", publish_date: '2026-01-15', categories: ['Expert Advice'], readTime: '6 min' },
   { slug: 'dryer-taking-too-long', title: 'Why Is My Dryer Taking So Long to Dry?', excerpt: 'Long drying times waste energy and money. Discover the 7 most common causes including clogged vents, heating element issues, and moisture sensor problems.', publish_date: '2026-01-12', categories: ['Dryer'], readTime: '6 min' },
