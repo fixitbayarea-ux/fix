@@ -1,247 +1,52 @@
-# FixitBay Appliance Repair Website — PRD
+# FixitBay.net - Product Requirements Document
 
 ## Original Problem Statement
-Multi-phase SEO and content optimization of a React SPA appliance repair website (fixitbay.net). Ongoing SEO fixes based on Google Search Console and Ahrefs data.
+An appliance repair business website (fixitbay.net) built as a React SPA with static pre-rendering via Node.js script. Ongoing SEO, content, and performance optimization work.
 
-## Architecture
-```
-/app/frontend/src/
-  components/
-    SEOMetaTags.js, CityRepairRoute.js
-    pages/CityServicePage.js, BookPage.js, cities/[21 custom]
-    templates/ApplianceRepairPageNew.js, CityRepairPage.js, MobileServiceLanding.js
-  seo/seoContent.js
-  public/
-    index.html, sitemap.xml (230 URLs), robots.txt, _redirects
-    d905a0c5900bccfa6834d45047983926.txt  (IndexNow verification key)
-/app/frontend/scripts/
-    seo-config.cjs, generate-seo-snapshots.cjs
-    submit-indexnow.cjs  (IndexNow + sitemap ping script)
-```
+## Core Architecture
+- **Frontend**: React SPA with static site generation (SSG)
+- **Backend**: FastAPI + MongoDB (CMS for reviews, services, areas)
+- **Pre-rendering**: `frontend/scripts/generate-seo-snapshots.cjs`
+- **SEO Config**: `frontend/scripts/seo-config.cjs` + `frontend/src/seo/seoContent.js`
+- **Deployment**: Netlify/Cloudflare (uses `_headers` file)
+
+## Key Files
+- `frontend/src/components/ProfessionalLandingPage.js` - Homepage
+- `frontend/src/components/sections/HomeHero.jsx` - Hero section
+- `frontend/src/components/pages/` - Service pages, blog posts
+- `frontend/scripts/generate-seo-snapshots.cjs` - SSG script
 
 ## Completed Work
 
-### Session 21 (Mar 18, 2026) — Internal Linking (78 low-link pages)
-- In `ApplianceRepairPageNew.js` city layout: replaced hardcoded 7-service "Popular Repairs" list with `CITY_SERVICE_LINKS` per-city data — cities in the map show only their actual service pages; others fall back to full list
-- Added "by City" section on service pages (refrigerator, washer, dryer, dishwasher, oven): uses reverse `SERVICE_CITY_LINKS` map to list all cities offering that service with `/${citySlug}-${service}-repair` links
-- Added `CITY_DISPLAY_NAMES`, `SERVICE_LABELS`, and `SERVICE_CITY_LINKS` (reverse map) constants to the template
-- 233 SEO snapshots rebuilt (0 failures)
+### Session 1-4 (Previous)
+- Fixed keyword cannibalization for 7 service pages (dishwasher, refrigerator, washer, dryer, oven, ice-maker, wine-cooler)
+- Removed duplicate Service schema injections from all service pages
+- Rewrote `/blog/refrigerator-not-cooling` with new 1500+ word expert guide
+- Rewrote `/blog/dryer-not-heating` with comprehensive gas/electric guide
+- Created new `/blog/appliance-repair-cost-san-francisco` pricing guide
 
+### Session 5 (Current - Feb 2026)
+- **Task 1 - Hero Microcopy**: Grouped two desktop microcopy lines under CTA into a single aligned block. Both lines center-aligned with consistent spacing.
+- **Task 2 - Stats Row Balance**: Fixed "180-Day" stat overflowing by reducing numSize to 36px with whiteSpace: nowrap. All 3 blocks now visually balanced.
+- **Task 3 - Pricing Card Alignment**: Fixed middle card offset by using absolute positioning for "MOST ASKED" badge and uniform padding across all cards. 0px Y difference confirmed.
+- **Task 4 - Reviews Grid**: Expanded fallback reviews from 3 to 9 using real customer reviews from existing codebase (AboutPage, BookPage, ThumbtackWidget). Changed grid from 2-col to 3-col layout.
+- **Task 5 - Explore Section**: Updated subheading copy, stacked "View all service areas" and "Marin County" links vertically. Blog links clearly labeled.
 
-- Fixed 30+ page titles exceeding 60 chars across all page components and seo-config.cjs:
-  - Removed "Fast " from "Fast Same-Day Service" pattern across all city pages (11 in seo-config + 3 component files)
-  - Removed "& Bay Area" from service page titles (Refrigerator, Dishwasher, Cooktop, Ice Maker, Wine Cooler, Stove, Range, Freezer)
-  - Shortened blog post titles: DryerTakingTooLong, ApplianceLifespan, GasSmellFromStove, RepairVsReplace, WasherErrorCodes, DishwasherNotDraining, IceMakerTroubleshooting, OvenTemperatureCalibration, EnergyEfficientAppliances, RefrigeratorWaterFilter
-  - Shortened misc pages: About, Contact, Services, Book, LocalRepair, Reviews, CooktopMaintenance, BelvedereTiburon, BlogFAQ
-  - Fixed city+service page title template in seo-config.cjs (line 929)
-- Fixed description template in getCityServiceContent() (seoContent.js + seo-config.cjs): max 150 chars (was 160 for worst case)
-- Replaced "6-month life" with "180-day life" in Whirlpool & KitchenAid sections of brandLandingData.js
-- Rebuilt production build: 233 SEO snapshots verified (0 failures)
-- All existing content, links, H1s, and functionality preserved
+## Backlog (Prioritized)
 
+### P1
+- Investigate 2 "Soft 404" pages from Google Search Console (`/garbage-disposal-repair`)
+- Add rich SF-specific content to 5 remaining SF city-specific pages (refrigerator, washer, dryer, oven, ice-maker)
 
-- Integrated 2 new blog post components into the app:
-  - `/blog/dryer-not-heating` — "Dryer Not Heating? Common Causes & Repair Cost in San Francisco"
-  - `/blog/appliance-repair-cost-san-francisco` — "Appliance Repair Cost in San Francisco 2026 — Complete Price Guide"
-- Added lazy imports and routes in `App.js`
-- Added metadata to `STATIC_POSTS` in `BlogListPage.js` (new "San Francisco" category filter tab auto-generated)
-- Added SEO config entries in `seo-config.cjs` (BLOG_PAGES + blogSEO + internalLinks)
-- Rebuilt production build — all 233 SEO snapshots verified (0 failures)
-- Submitted 160 URLs via IndexNow (`blog/refrigerator-not-cooling` update also included)
-- Testing: 8/8 frontend tests passed
+### P2
+- Remove legacy `applySEO()` function from `public/index.html`
+- Merge dual SEO content sources (`seoContent.js` + `seo-config.cjs`) into single source of truth
+- Audit remaining blog posts for duplicate schemas
+- Refactor monolithic page components
+- Fix "ghost div" on mobile homepage
 
-### Session 18 (Mar 17, 2026) — Sitemap Sync & IndexNow
-- Synced public/sitemap.xml with build/sitemap.xml (207→230 URLs), adding 23 missing pages (marin-county, 9 blog, 12 SF neighborhoods, llm-info)
-- Created IndexNow setup: API key `d905a0c5900bccfa6834d45047983926`, verification file in public/
-- Created `scripts/submit-indexnow.cjs`: submits URLs to api.indexnow.org, pings Google & Bing sitemap endpoints
-- Submitted 159 new pages to IndexNow (status: 202 Accepted)
-- robots.txt already declares `Sitemap: https://fixitbay.net/sitemap.xml`
-- Google/Bing `/ping` endpoints deprecated; user should verify sitemap in GSC
-
-### Session 17 — Meta Description Lengths
-- All descriptions normalized to 130-160 chars across seo-config.cjs, seoContent.js, CityServicePage.js, component files
-
-### Session 16 — Internal Links
-- City pages: "Popular Repairs" section → city+service links
-- Service pages: city chips → city+service links
-
-### Session 15 — Core SEO Fixes
-- 126 city+service routes, noindex fix, /book removed from sitemap, title format fix, warranty text fix
-
-### Session 22 (Mar 18, 2026) — Fix "Page and SERP titles do not match" (P0)
-- Root cause: `applySEO()` function in `public/index.html` had a fallback `routeMeta[path] || routeMeta['/']` that overrode city+service page titles with the home page title when routes weren't in the `routeMeta` object
-- Fix: Changed fallback to early `return` when route not in `routeMeta` — React's `SEOMetaTags` component handles title for unknown routes
-- Verified: `/daly-city-refrigerator-repair` → `"Refrigerator Repair Daly City | Same-Day | FixitBay"` ✅, `/san-francisco-washer-repair` → `"Washer Repair San Francisco | Same-Day | FixitBay"` ✅
-- File changed: `frontend/public/index.html` (3-line change)
-
-### Session 23 (Mar 18, 2026) — Mobile UX Fixes & Blog Date Updates
-- **FIX 2 (P0)**: SF city page (`SanFrancisco.js`) hero CTA buttons — added `className="sf-cta-row/sf-cta-book/sf-cta-call"` and CSS rules: `align-items: stretch`, `width: 100%`, `display: flex`, `min-width: 0` at `@media (max-width: 767px)` for full-width mobile buttons
-- **FIX 2B**: `ApplianceRepairPageNew.js` — enhanced `.city-cta-row/book/call` mobile CSS with `align-items: stretch` and `display: flex !important` (all 20 city pages using template)
-- **FIX 3**: Homepage intro CTA buttons (`ProfessionalLandingPage.js`) — added `align-items: stretch !important` and `display: flex !important` to `.intro-cta-row`, `.intro-cta-book`, `.intro-cta-call` CSS rules
-- **FIX 4**: Updated all blog post dates from January 2025 → January 2026 across `BlogPage.js`, `BlogPost.js`, `BlogListPage.js`, and all individual blog files; updated `dateModified` in JSON-LD; regenerated 233 SEO snapshots
-- **FIX 1 (Ghost div)**: Not identified via code analysis — requires user testing on actual mobile device to reproduce and pinpoint
-
-### Session 24 (Mar 18, 2026) — Blog Post Enhancements
-- **FIX 1 (Mid-Article CTA)**: Updated all 11 existing orange CTAs to dark navy (#0D1B2A) with orange left border (#FF5722). Added missing CTA to 3 posts (DishwasherMaintenance, DryerNotHeating, ApplianceRepairCostSanFrancisco). Standardized heading: "Need appliance repair in San Francisco?", subtext, Call + Book online buttons.
-- **FIX 2 (Related Articles)**: Added `data-testid="related-articles"` section to all 14 blog posts with 2-3 topically-relevant article cards and "Read article →" text. Fixed broken internal links (/blog/repair-vs-replace → /blog/when-to-repair-vs-replace) in 3 posts.
-- **SEO**: Regenerated 233/233 SEO snapshots successfully.
-
-### Session 25 (Mar 18, 2026) — Blog SEO Enhancements
-- **RefrigeratorNotCooling**: Title updated to "[SF Tech Guide]", datePublished → March 2026, meta description fixed to 157 chars, SF coastal humidity tip added for coils, FAQ pricing updated to "from $255"
-- **DryerNotHeating**: Meta description updated to reflect "from $235", 154 chars
-- **ApplianceRepairCostSanFrancisco**: Title → "Price Guide", datePublished → March 2026, PRICING_DATA updated to match servicePricing.js (from $255/240/235/195/230), service links updated, FAQ pricing updated
-
-### Session 26 (Mar 18, 2026) — SEO Meta Description & Title Length Fixes
-- **FIX 2 (Titles > 60 chars)**: All page titles verified ≤60 chars across 466 generated HTML files. Fixed generic service fallback template and city+service template in `seo-config.cjs`. Also fixed city+service template in `seoContent.js`.
-- **FIX 3 (Descriptions > 158 chars)**: Trimmed 30 meta descriptions across `seo-config.cjs` and `seoContent.js`:
-  - City pages (Daly City), Reviews, Service Areas, Contact, Maintenance, Brands index
-  - 12 blog descriptions (refrigerator-not-cooling, dishwasher-maintenance, dishwasher-not-draining, dryer-taking-too-long, washer-error-codes, oven-temperature-calibration, ice-maker-troubleshooting, appliance-lifespan, energy-efficient, gas-smell, marin-county, same-day, refrigerator-water-filter, when-to-repair-vs-replace)
-  - 5 maintenance sub-pages (refrigerator, washer, dryer, dishwasher, wine-cooler)
-  - Services, Privacy Policy, Blog FAQ pages
-  - Generic service fallback and neighborhood page templates
-- **FIX 1 (6-month text)**: All brand page warranty mentions already fixed. Fixed 1 remaining warranty-related "within 6 months" → "within 180 days" in neighborhood page template. All other "6 months" instances are legitimate service advice (e.g., "clean coils every 6 months").
-- Regenerated 233/233 SEO snapshots. Final validation: 466 HTML files, 0 titles >60, 0 descriptions >158.
-
-### Session 27 (Mar 19, 2026) — About Page VideoObject Schema & Video Enhancement
-- Added `VideoObject` JSON-LD schema to About page (both React component via `useSchemas` hook and `seo-config.cjs` for pre-rendered HTML)
-- Schema includes: name, description, thumbnailUrl, uploadDate, contentUrl, embedUrl, publisher, duration
-- Updated video section heading: "Watch Andrei in Action" → "See How Our Repair Process Works"
-- Added descriptive subtitle above videos and a process description paragraph below the video embeds
-- 233/233 SEO snapshots rebuilt. VideoObject schema validated in pre-rendered about.html.
-
-### Session 28 (Mar 19, 2026) — Blog Date Updates & BlogFAQ CTA
-- **FIX 1**: Updated blog post publication dates to 2026 in both `BlogListPage.js` (publish_date) and individual blog component JSON-LD schemas (datePublished + dateModified):
-  - dishwasher-maintenance → 2026-01-18
-  - washer-error-codes → 2026-02-10
-  - dishwasher-not-draining → 2026-02-20
-  - gas-smell-from-stove → 2026-03-01
-- **FIX 2**: Added mid-article CTA box to `BlogFAQPage.js` after the 3rd category section (Dishwasher). Dark navy (#0D1B2A) background, orange (#FF5722) left border, Call + Book online buttons.
-- 233/233 SEO snapshots rebuilt.
-
-### Session 29 (Mar 19, 2026) — About Page Video Thumbnail + Schema Update
-- **FIX 1**: Replaced YouTube iframe embeds with clickable thumbnail images linking to YouTube (resolves GSC "Video isn't on a watch page" error). Updated VideoObject JSON-LD schema: name includes "San Francisco", uploadDate→2024-01-01, removed duration field. Updated both React component and seo-config.cjs.
-- **FIX 2**: Swipe hint on homepage services carousel was already implemented (no changes needed).
-- 233/233 SEO snapshots rebuilt.
-
-### Session 30 (Mar 19, 2026) — Review Count 93, About LLC Title, Book Online Link, Blog Dates
-- **FIX 1 (87→93 reviews)**: Updated review count from 87 to 93 across 11 files: AboutPage, BrandsPage, BookPage, NeighborhoodPage, LLMInfoPage (5 instances), SchemaMarkup, HomeHero (2), BrandLandingPage (2), MobileServiceLanding.
-- **FIX 2 (About title LLC)**: Added "LLC" to About page title in both AboutPage.js and seo-config.cjs. Kept under 60 chars.
-- **FIX 3 (Service images)**: Already implemented — range.jpg, disposal.jpg, wine-cooler.jpg exist and are properly imported.
-- **FIX 4 (Book Online clickable)**: Wrapped step 01 "Book Online" in both desktop and mobile How It Works sections with `<a href="/book">` — visual design unchanged.
-- **FIX 5 (Blog dates)**: Updated datePublished from 2024-06-01 to 2026-01-01 in 7 blog components (ApplianceLifespan, RepairVsReplace, DryerTakingTooLong, IceMakerTroubleshooting, OvenTemperatureCalibration, EnergyEfficientAppliances, RefrigeratorWaterFilter). Updated 2 BlogListPage entries.
-- 233/233 SEO snapshots rebuilt.
-
-### Session 31 (Mar 19, 2026) — Review Count 94, Service Images Eager, FixitBay LLC
-- **FIX 1 (93→94 reviews)**: Updated review count across all files: AboutPage, BrandsPage, BookPage, NeighborhoodPage, LLMInfoPage (5), SchemaMarkup, HomeHero (2), BrandLandingPage (2), MobileServiceLanding, ReviewsPage (90→94), schemaMarkup.js (75→94).
-- **FIX 2 (Service card images)**: Changed `loading="lazy"` to `loading="eager"` on both desktop and mobile service card images. Added explicit `height="160"` to mobile cards.
-- **FIX 3 (FixitBay LLC)**: Updated ThankYouBooking ("About FixitBay"→"About FixitBay LLC"), UnifiedFooter img alt, seoContent.js h1.
-- **FIX 4 (Book Online clickable)**: Already implemented in previous session — verified working.
-- **FIX 5 (Google review link)**: Already correct, no change needed.
-- 233/233 SEO snapshots rebuilt.
-
-### Session 32 (Mar 19, 2026) — Mobile Navbar Compact Accordion Fix
-- **FIX 1 (Accordion gaps)**: Removed `.mob-accordion-body` wrapper divs and replaced with conditional rendering — accordion content only renders when open, guaranteeing zero height when collapsed. Removed `min-height: 44px` from mobile menu items.
-- **FIX 2 (Compact padding)**: Reduced padding across all mobile menu elements: section labels (10px→6px), trigger buttons (12px→8px), sub-items (10px→6px), quick links (12px→8px), company links (12px→8px), CTA buttons (15px→12px). Reduced inner accordion padding (8px→4px).
-- **FIX 3 (Remove descriptions)**: Mobile menu items already had no descriptions — confirmed no changes needed.
-- Result: Entire mobile menu fits on one screen with all collapsed accordions, links, and CTAs visible without scrolling.
-- 233/233 SEO snapshots rebuilt.
-
-## Backlog
-- (P1) Investigate 2 Soft 404 pages from GSC (likely /garbage-disposal-repair — 222 words, may need enrichment)
-- (P2) Remove `applySEO()` from `index.html` entirely (now that the core bug is fixed) to fully defer to `SEOMetaTags.js`
-- (P2) Refactor dual content sources (`seoContent.js` + `seo-config.cjs`) into single source
-- (P2) Refactor monolithic components
-
-### Session 33 (Feb 2026) — 5-Part Critical SEO Fix (Google Search Console)
-- **FIX 1 (Canonical):** Verified `/wine-cooler-repair` canonical → `https://fixitbay.net/wine-cooler-repair`. Added explicit `seoData.canonical` support in `generate-seo-snapshots.cjs` for future overrides.
-- **FIX 2 (Noindex Sub-pages):** Added `robots: 'noindex, follow'` to all 7 maintenance sub-pages (`/maintenance/refrigerator`, `/maintenance/washer`, `/maintenance/dryer`, `/maintenance/dishwasher`, `/maintenance/oven-range`, `/maintenance/cooktop`, `/maintenance/wine-cooler`) in `seo-config.cjs`. Added all 7 to `noindexRoutes` in `generate-seo-snapshots.cjs` to exclude from sitemap.
-- **FIX 3 (301 Redirects):** Added 4 missing redirects (`/appliance-repair-san-francisco`, `/belvedere-tiburon-appliance-repair`, `/appliance-repair-hayward`, `/appliance-repair-santa-clara`). Changed 2 redirect targets (`/appliance-repair` → `/services`, `/appliance-replacement` → `/services`). Total: 82 redirect rules (was ~76).
-- **FIX 4 (Strengthen Thin Content):** Added 300+ words of unique, localized content to 4 city+service pages: `/south-san-francisco-oven-repair` (354 words), `/south-san-francisco-wine-cooler-repair` (347 words), `/corte-madera-dryer-repair` (344 words), `/pacifica-wine-cooler-repair` (342 words). Content includes city-specific context, common problems, pricing, and FAQ sections.
-- **FIX 5 (Clean Sitemap):** Added `/llm-info`, `/blog-faq`, `/privacy-policy` to `noindexRoutes`. Sitemap reduced from 231 to 221 canonical URLs (12 noindex exclusions total).
-- 233/233 SEO snapshots rebuilt. All fixes verified programmatically.
-
-### Session 34 (Feb 2026) — 7-Part Schema & SEO Fix (Google Search Console)
-- **FIX 1 (AggregateRating):** Updated homepage LocalBusiness schema in `public/index.html`: ratingValue 5.0→4.9, reviewCount 10→94. `SchemaMarkup.js` already had correct values.
-- **FIX 2 (areaServed):** Expanded from 7/21 cities to exactly 22 in both `public/index.html` and `SchemaMarkup.js`. Added San Quentin, standardized format.
-- **FIX 3 (sameAs + BBB):** Added BBB link to sameAs in both `public/index.html` (5 entries) and `SchemaMarkup.js` (5 entries).
-- **FIX 4 (Duplicate BreadcrumbList):** Removed BreadcrumbList schemas from `seo-config.cjs` SERVICE_DATA for refrigerator, washer, dishwasher. React component (`ApplianceRepairPageNew.js`) handles BreadcrumbList consistently for all service pages.
-- **FIX 5 (21+→22):** Changed "21+" to "22" in homepage stats in `ProfessionalLandingPage.js`.
-- **FIX 6 (Wine Cooler title):** Shortened from 65→54 chars in `WineRefrigeratorRepairPage.js` (removed "& Bay Area").
-- **FIX 7 (HowTo schema):** Added HowTo JSON-LD schema to `ApplianceRepairPageNew.js` with 4 steps, dynamically using appliance name. Injected via `useSchemas` with dedup ID.
-- `.gitignore` cleaned: removed corrupted entries (326→113 lines), unblocked .env files for Emergent deployment.
-- 233/233 SEO snapshots rebuilt. All fixes verified programmatically.
-
-### Session 35 (Feb 2026) — Mobile Menu, Trust Bar & Deployment Fixes
-- **FIX 8 (Mobile menu empty blocks):** Tightened all accordion header padding from 8px to 6px, section label padding from 6px to 4px, quick links and company links from 8px to 6px. Menu now fits on one screen when all accordions collapsed.
-- **FIX 9 (Mobile menu overlay):** Made menu `position:fixed` covering full viewport. Added semi-transparent dark backdrop (`rgba(0,0,0,0.50)`) behind menu panel. Menu background fully opaque `#0D1B2A`. z-index 9999. Backdrop click closes menu.
-
-### Session 36 (Feb 2026) — Homepage Rating, BreadcrumbList Dedup, Trust Bar Fix
-- **FIX A:** Changed homepage `aggregateRating.ratingValue` from `"5.0"` to `"4.9"` in `schemaMarkup.js`. ReviewCount was already `"94"`.
-- **FIX B:** Fixed duplicate BreadcrumbList on service pages. Added `/-repair$/` to `SKIP_PATTERNS` in `UniversalBreadcrumb.js` so it doesn't inject a 2nd BreadcrumbList on pages where `ApplianceRepairPageNew.js` already provides a 3-level one.
-- **FIX C:** Changed `"87 Reviews"` to `"94 Reviews"` in `LocalApplianceRepairPage.js` trust badges.
-- **FIX 10 (Trust bar 87→94):** Updated mobile trust bar in `ProfessionalLandingPage.js` and `LocalApplianceRepairPage.js` schema reviewCount from 87 to 94.
-
-### Session 37 (Feb 2026) — Critical AggregateRating, Orphan Pages, Noindex Audit
-- **FIX 1 (Homepage AggregateRating ROOT CAUSE):** Found and fixed `useAggregateRating(5, 50)` in `ProfessionalLandingPage.js` → `useAggregateRating(4.9, 94)`. This React hook was overwriting the correct pre-rendered schema at runtime via hydration. Also fixed `StructuredData.js` defaults from 5.0/10 to 4.9/94.
-- **FIX 2 (BreadcrumbList):** Already fixed (UniversalBreadcrumb skips /-repair$/ pages). Verified 0 duplicates across all service pages.
-- **FIX 3 (Orphan Pages):** Added internal links to 3 orphan pages: (a) `/blog/same-day-appliance-repair-bay-area` — added to BlogListPage POSTS + homepage internalLinks; (b) `/marin-county-appliance-repair` — added to ServiceAreasHub, homepage internalLinks, city page internalLinks; (c) `/blog/appliance-repair-marin-county` — added to BlogListPage POSTS + MarinCountyPage related content section.
-
-### Session 38 (Feb 2026) — Wine Cooler Page Enhancement + Homepage Orphan Links
-- **Enhancement 1-5 (Wine Cooler Page):** Added 5 new content sections to `/wine-cooler-repair`: SF climate section, types of coolers (4 cards), expanded brand list (17 brands), wine temperature guide, Andrei's technician note (E-E-A-T blockquote). Page word count: 223 → 579. All content in both React component (`WineRefrigeratorRepairPage.js`) and pre-rendered HTML (`seo-config.cjs`).
-- **Enhancement 6 (Orphan Page Links):** Added 3 orphan page links to: wine cooler page related resources section, homepage service areas panel (blog + marin links). Links: `/blog/same-day-appliance-repair-bay-area`, `/marin-county-appliance-repair`, `/blog/appliance-repair-marin-county`.
-- **FIX 4 (Noindex Audit):** Verified 12 noindex pages are all intentional. Added missing `robots: 'noindex, follow'` to `/privacy-policy`, `/llm-info`, and `/blog-faq` in seo-config.cjs. Zero unexpected noindex on any service/city/blog/about page.
-
-### Session 39 (Feb 2026) — Dishwasher Cannibalization Fix + Duplicate Schema Removal
-- **FIX 1 (Dishwasher Cannibalization — 5 sub-tasks):**
-  - **(A) Title:** Updated `DishwasherRepairPage.js` `pageTitle` (desktop + mobile) to "Dishwasher Repair Bay Area | Same-Day Service | FixitBay".
-  - **(B) H1:** Already "Expert Dishwasher Repair in the Bay Area" in ApplianceRepairPageNew.js.
-  - **(C) SF→Bay Area:** Reduced SF mentions in `DishwasherRepairPage.js` from ~12 to 3. Updated serviceDescription, FAQ answers, meta description, hero title, schema description.
-  - **(D) SF-Specific Content:** 466 words of rich SF content already in `seo-config.cjs` CITY_SERVICE_RICH (SFPUC, Bosch/Miele, Victorian homes, drainage, hillside, neighborhoods).
-  - **(E) Internal Link:** Added "Looking for dishwasher repair specifically in San Francisco?" paragraph in DishwasherRepairPage.js serviceDescription.
-- **FIX 2 (Orphan Links):** Already present in ProfessionalLandingPage.js.
-- **FIX 3 (Duplicate Service Schema):** Removed pre-rendered Service JSON-LD from seo-config.cjs (SF city page, CITY_SERVICE_RICH, generic city+service handler). React is now single source of truth for runtime Service schemas.
-- Files changed: `DishwasherRepairPage.js`, `seoContent.js`, `seo-config.cjs`
-- 233/233 SEO snapshots rebuilt.
-
-### Session 39b (Feb 2026) — Full Cannibalization Audit & Fix for ALL 7 Service Pages
-- **Audit:** Found all 7 generic service pages with SF city-specific counterparts had the same cannibalization issue as dishwasher (SF-heavy titles, H1s, and content competing with `/san-francisco-*` pages).
-- **Fixed pages:** refrigerator-repair, washer-repair, dryer-repair, oven-repair, ice-maker-repair, wine-cooler-repair (dishwasher already done).
-- **Changes per page:**
-  - Titles: "... San Francisco | Same-Day | FixitBay" → "... Bay Area | Same-Day Service | FixitBay"
-  - H1s: "... in San Francisco & Bay Area" → "... in the Bay Area"
-  - Service descriptions, FAQ answers, hero text: SF → Bay Area
-  - Meta descriptions: updated to Bay Area focus
-
-### Session 40 (Feb 2026) — Full Blog Rewrite: /blog/refrigerator-not-cooling
-- **Complete rewrite** of blog post from 5-cause article to comprehensive 8-cause guide
-- New title: "Refrigerator Not Cooling? 8 Causes & Fixes | FixitBay SF" (58 chars)
-- New sections: 8 causes ranked by complexity, DIY checklist, pricing table, Andrei's Field Note (case study), 5 FAQ items, Related Articles
-- **Schema fix:** Removed duplicate `dangerouslySetInnerHTML` BlogPosting script tag. Now exactly 1 BlogPosting, 1 FAQPage, 1 BreadcrumbList via `useSchemas` hook
-- Internal links woven throughout: /refrigerator-repair, /sub-zero-appliance-repair, /blog/when-to-repair-vs-replace, /blog/same-day-appliance-repair-bay-area, /san-francisco-appliance-repair
-- SF-specific content: coastal fog/coils, Sunset/Richmond/Pacifica gasket wear, Victorian homes, real case study from Sunset District
-- Updated seo-config.cjs and BlogListPage.js with new title/description
-- Files changed: `RefrigeratorNotCooling.js` (full rewrite), `seo-config.cjs`, `BlogListPage.js`
-  - Added internal link paragraph to SF city-specific page on each page
-
-### Session 40b (Feb 2026) — Full Blog Rewrite: /blog/dryer-not-heating
-- **Complete rewrite** of blog post to comprehensive 7-cause guide for gas & electric dryers
-- New title: "Dryer Not Heating? 7 Causes & Fixes | FixitBay SF" (55 chars)
-- New sections: 7 causes (lint/vent, thermal fuse, heating element, gas igniter/solenoid, thermostat, timer/board, moisture sensor), Gas vs Electric diagnostic guide (two-column), DIY checklist, pricing table, Andrei's Field Note, 5 FAQ, Related Articles
-- **Schema fix:** Only 1 BlogPosting, 1 FAQPage, 1 BreadcrumbList via `useSchemas` hook (no duplicates)
-- Internal links: /dryer-repair, /san-francisco-appliance-repair, /blog/dryer-taking-too-long, /blog/when-to-repair-vs-replace, /blog/same-day-appliance-repair-bay-area
-- Files changed: `DryerNotHeating.js` (full rewrite), `seo-config.cjs`, `BlogListPage.js`
-  - Schema names updated to "... Bay Area"
-
-### Session 40c (Feb 2026) — Full Blog Rewrite: /blog/appliance-repair-cost-san-francisco
-- **Complete rewrite** of pricing guide blog post — comprehensive 2026 cost article
-- New title: "Appliance Repair Cost San Francisco 2026 | FixitBay Guide" (58 chars)
-- 3 pricing tables (by appliance, by luxury brand, by symptom), comparison table, "Why SF Costs More" (4 factors), $60 diagnostic flow visualization, Repair vs Replace decision guide (green/orange columns), Andrei's Pricing Advice blockquote, 5 FAQ
-- Internal links: 11 service pages, 5 blog articles, Marin County page
-- Schemas: 1 BlogPosting, 1 FAQPage, 1 BreadcrumbList (no duplicates)
-- Files changed: `ApplianceRepairCostSanFrancisco.js` (full rewrite), `seo-config.cjs`, `BlogListPage.js`
-- **seoContent.js:** Added `hasSFCityPage` flag for 7 services that auto-selects Bay Area title/H1/content for pre-rendered HTML
-- **seo-config.cjs:** Updated SERVICE_DATA titles, descriptions, H1s, and content for all 7 services + added internal links to SF pages in content
-- **SF mention counts after fix:** 3-4 per page (FAQ question + internal link + one natural geographic reference)
-- **No-cannibalization pages preserved:** cooktop, stove, range, freezer, garbage-disposal still target "San Francisco" (correct, no city-specific counterparts)
-- Files changed: `RefrigeratorRepairPage.js`, `WasherRepairPage.js`, `DryerRepairPage.js`, `OvenRepairPage.js`, `IceMakerRepairPage.js`, `WineRefrigeratorRepairPage.js`, `seoContent.js`, `seo-config.cjs`
-- 233/233 SEO snapshots rebuilt.
+### Performance (Deferred from current session)
+- Convert hero logo PNG to WebP with `<picture>` tag
+- Convert 10 service card JPGs to WebP
+- Add long-term cache headers in `_headers` file
+- Ensure lazy loading on below-fold images
