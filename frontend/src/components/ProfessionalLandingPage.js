@@ -27,6 +27,22 @@ import commercialDishwasherImg from '../assets/services/commercial-dishwasher.jp
 import commercialWasherImg from '../assets/services/commercial-washer.jpg';
 import commercialDryerImg from '../assets/services/commercial-dryer.jpg';
 
+import refrigeratorImgWebP from '../assets/services/refrigerator.webp';
+import freezerImgWebP from '../assets/services/freezer.webp';
+import iceMakerImgWebP from '../assets/services/ice-maker.webp';
+import dishwasherImgWebP from '../assets/services/dishwasher.webp';
+import ovenImgWebP from '../assets/services/oven.webp';
+import cooktopImgWebP from '../assets/services/cooktop.webp';
+import rangeImgWebP from '../assets/services/range.webp';
+import disposalImgWebP from '../assets/services/disposal.webp';
+import wineCoolerImgWebP from '../assets/services/wine-cooler.webp';
+import washerImgWebP from '../assets/services/washer.webp';
+import dryerImgWebP from '../assets/services/dryer.webp';
+import commercialRefrigeratorImgWebP from '../assets/services/commercial-refrigerator.webp';
+import commercialDishwasherImgWebP from '../assets/services/commercial-dishwasher.webp';
+import commercialWasherImgWebP from '../assets/services/commercial-washer.webp';
+import commercialDryerImgWebP from '../assets/services/commercial-dryer.webp';
+
 /* ─── Homepage-only schema injection (BreadcrumbList + FAQPage) ─── */
 const HomepageSchemas = () => {
   useEffect(() => {
@@ -162,21 +178,21 @@ const ProfessionalLandingPage = () => {
 
   /* Services data */
   const servicesData = [
-    { name: 'Refrigerator', category: 'Kitchen', description: 'Not cooling, water leaks, ice maker issues', path: '/refrigerator-repair', image: refrigeratorImg },
-    { name: 'Freezer', category: 'Kitchen', description: 'Not freezing, frost buildup, temperature issues', path: '/freezer-repair', image: freezerImg },
-    { name: 'Ice Maker', category: 'Kitchen', description: 'Not making ice, water leaking, jammed', path: '/ice-maker-repair', image: iceMakerImg },
-    { name: 'Dishwasher', category: 'Kitchen', description: 'Not draining, leaking, won\'t start', path: '/dishwasher-repair', image: dishwasherImg },
-    { name: 'Oven', category: 'Kitchen', description: 'Not heating, temperature issues', path: '/oven-repair', image: ovenImg },
-    { name: 'Stove & Cooktop', category: 'Kitchen', description: 'Burners not working, igniter problems', path: '/cooktop-repair', image: cooktopImg },
-    { name: 'Range', category: 'Kitchen', description: 'Combo oven and stove repair', path: '/oven-repair', image: rangeImg },
-    { name: 'Garbage Disposal', category: 'Kitchen', description: 'Jammed, leaking, or humming', path: '/garbage-disposal-repair', image: disposalImg },
-    { name: 'Wine Cooler', category: 'Kitchen', description: 'Temperature not holding, not cooling', path: '/wine-cooler-repair', image: wineCoolerImg },
-    { name: 'Washer', category: 'Laundry', description: 'Not spinning, draining, or filling', path: '/washer-repair', image: washerImg },
-    { name: 'Dryer', category: 'Laundry', description: 'Not heating, tumbling, or turning on', path: '/dryer-repair', image: dryerImg },
-    { name: 'Commercial Refrigerator', category: 'Commercial', description: 'Walk-in coolers, reach-in units, display cases', path: '/commercial-refrigerator-repair', image: commercialRefrigeratorImg },
-    { name: 'Commercial Dishwasher', category: 'Commercial', description: 'Restaurant dishwashers, high-temp units', path: '/commercial-dishwasher-repair', image: commercialDishwasherImg },
-    { name: 'Commercial Washer', category: 'Commercial', description: 'Industrial washing machines, coin-op units', path: '/commercial-washer-repair', image: commercialWasherImg },
-    { name: 'Commercial Dryer', category: 'Commercial', description: 'Industrial dryers, coin-op dryers', path: '/commercial-dryer-repair', image: commercialDryerImg },
+    { name: 'Refrigerator', category: 'Kitchen', description: 'Not cooling, water leaks, ice maker issues', path: '/refrigerator-repair', image: refrigeratorImg, imageWebP: refrigeratorImgWebP },
+    { name: 'Freezer', category: 'Kitchen', description: 'Not freezing, frost buildup, temperature issues', path: '/freezer-repair', image: freezerImg, imageWebP: freezerImgWebP },
+    { name: 'Ice Maker', category: 'Kitchen', description: 'Not making ice, water leaking, jammed', path: '/ice-maker-repair', image: iceMakerImg, imageWebP: iceMakerImgWebP },
+    { name: 'Dishwasher', category: 'Kitchen', description: 'Not draining, leaking, won\'t start', path: '/dishwasher-repair', image: dishwasherImg, imageWebP: dishwasherImgWebP },
+    { name: 'Oven', category: 'Kitchen', description: 'Not heating, temperature issues', path: '/oven-repair', image: ovenImg, imageWebP: ovenImgWebP },
+    { name: 'Stove & Cooktop', category: 'Kitchen', description: 'Burners not working, igniter problems', path: '/cooktop-repair', image: cooktopImg, imageWebP: cooktopImgWebP },
+    { name: 'Range', category: 'Kitchen', description: 'Combo oven and stove repair', path: '/oven-repair', image: rangeImg, imageWebP: rangeImgWebP },
+    { name: 'Garbage Disposal', category: 'Kitchen', description: 'Jammed, leaking, or humming', path: '/garbage-disposal-repair', image: disposalImg, imageWebP: disposalImgWebP },
+    { name: 'Wine Cooler', category: 'Kitchen', description: 'Temperature not holding, not cooling', path: '/wine-cooler-repair', image: wineCoolerImg, imageWebP: wineCoolerImgWebP },
+    { name: 'Washer', category: 'Laundry', description: 'Not spinning, draining, or filling', path: '/washer-repair', image: washerImg, imageWebP: washerImgWebP },
+    { name: 'Dryer', category: 'Laundry', description: 'Not heating, tumbling, or turning on', path: '/dryer-repair', image: dryerImg, imageWebP: dryerImgWebP },
+    { name: 'Commercial Refrigerator', category: 'Commercial', description: 'Walk-in coolers, reach-in units, display cases', path: '/commercial-refrigerator-repair', image: commercialRefrigeratorImg, imageWebP: commercialRefrigeratorImgWebP },
+    { name: 'Commercial Dishwasher', category: 'Commercial', description: 'Restaurant dishwashers, high-temp units', path: '/commercial-dishwasher-repair', image: commercialDishwasherImg, imageWebP: commercialDishwasherImgWebP },
+    { name: 'Commercial Washer', category: 'Commercial', description: 'Industrial washing machines, coin-op units', path: '/commercial-washer-repair', image: commercialWasherImg, imageWebP: commercialWasherImgWebP },
+    { name: 'Commercial Dryer', category: 'Commercial', description: 'Industrial dryers, coin-op dryers', path: '/commercial-dryer-repair', image: commercialDryerImg, imageWebP: commercialDryerImgWebP },
   ];
   const categories = ['Kitchen', 'Laundry', 'Commercial'];
   const [activeCategory, setActiveCategory] = useState('Kitchen');
@@ -360,7 +376,7 @@ const ProfessionalLandingPage = () => {
           <div key={activeCategory} className="hidden lg:grid lg:grid-cols-3 animate-fadeIn" style={{ gap: 28 }}>
             {filteredServices.map(svc => (
               <a key={svc.name} href={svc.path} rel={svc.name === 'Dishwasher' ? 'nofollow' : undefined} className="svc-card group flex flex-col bg-white overflow-hidden" style={{ borderRadius: 4, border: '1px solid rgba(0,0,0,0.08)', textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s', cursor: 'pointer' }} data-testid={`svc-card-${svc.name.toLowerCase().replace(/\s+/g, '-')}`}>
-                <div className="relative overflow-hidden" style={{ height: 200 }}><img src={svc.image} alt={`${svc.name} repair — FixitBay`} className="w-full h-full object-cover transition-transform duration-200 group-hover:scale-[1.03]" width="480" height="200" loading="eager" decoding="async" /></div>
+                <div className="relative overflow-hidden" style={{ height: 200 }}><picture><source srcSet={svc.imageWebP} type="image/webp" /><img src={svc.image} alt={`${svc.name} repair — FixitBay`} className="w-full h-full object-cover transition-transform duration-200 group-hover:scale-[1.03]" width="800" height="533" loading="lazy" decoding="async" /></picture></div>
                 <div className="flex flex-col flex-grow" style={{ padding: '20px 24px 24px' }}>
                   <h3 style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: 'Montserrat, sans-serif', fontSize: 17, fontWeight: 700, color: '#0D1B2A', marginBottom: 8 }}>
                     <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#FF5722', flexShrink: 0 }} />
@@ -408,7 +424,7 @@ const ProfessionalLandingPage = () => {
               <div className="flex gap-4 px-4">
                 {filteredServices.map(svc => (
                   <a key={svc.name} href={svc.path} rel={svc.name === 'Dishwasher' ? 'nofollow' : undefined} className="flex-shrink-0 flex flex-col bg-white rounded-xl overflow-hidden shadow-md" style={{ width: '85vw', maxWidth: 360, scrollSnapAlign: 'center', textDecoration: 'none' }}>
-                    <div className="relative h-40 bg-gray-200 overflow-hidden"><img src={svc.image} alt={`${svc.name} repair`} className="w-full h-full object-cover" loading="eager" height="160" /></div>
+                    <div className="relative h-40 bg-gray-200 overflow-hidden"><picture><source srcSet={svc.imageWebP} type="image/webp" /><img src={svc.image} alt={`${svc.name} repair`} className="w-full h-full object-cover" loading="lazy" height="160" /></picture></div>
                     <div className="flex flex-col flex-grow p-5"><h3 className="text-lg font-bold mb-2" style={{ color: '#0D1B2A' }}>{svc.name}</h3><p className="text-sm mb-3" style={{ color: '#4A5568' }}>{svc.description}</p><div className="flex flex-wrap gap-2 mb-3"><span className="text-xs px-2.5 py-1 rounded-full font-semibold" style={{ background: '#F0EBE5', color: '#0D1B2A' }}>Same/Next-Day</span><span className="text-xs px-2.5 py-1 rounded-full font-semibold" style={{ background: '#F8F5F0', color: '#744210' }}>$60 Diagnostic</span></div><div className="mt-auto w-full px-5 py-2.5 rounded-lg font-bold text-center text-sm" style={{ background: '#FF5722', color: '#fff' }}>View Service</div></div>
                   </a>
                 ))}

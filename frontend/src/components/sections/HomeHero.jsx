@@ -145,11 +145,12 @@ const HomeHero = () => {
         >
           <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at center, rgba(255,87,34,0.12) 0%, transparent 65%)', pointerEvents: 'none' }} />
           <picture style={{ position: 'relative', zIndex: 1 }}>
+            <source srcSet="/images/hero-logo-new.webp" type="image/webp" />
             <img
               src="/hero-logo-new.png"
               alt="FixitBay Appliance Repair Logo"
-              width="160"
-              height="56"
+              width="400"
+              height="400"
               fetchPriority="high"
               loading="eager"
               decoding="async"
