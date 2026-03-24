@@ -202,3 +202,20 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **FIX 3 (Duplicate Service Schema):** Removed pre-rendered Service JSON-LD from seo-config.cjs (SF city page, CITY_SERVICE_RICH, generic city+service handler). React is now single source of truth for runtime Service schemas.
 - Files changed: `DishwasherRepairPage.js`, `seoContent.js`, `seo-config.cjs`
 - 233/233 SEO snapshots rebuilt.
+
+### Session 39b (Feb 2026) — Full Cannibalization Audit & Fix for ALL 7 Service Pages
+- **Audit:** Found all 7 generic service pages with SF city-specific counterparts had the same cannibalization issue as dishwasher (SF-heavy titles, H1s, and content competing with `/san-francisco-*` pages).
+- **Fixed pages:** refrigerator-repair, washer-repair, dryer-repair, oven-repair, ice-maker-repair, wine-cooler-repair (dishwasher already done).
+- **Changes per page:**
+  - Titles: "... San Francisco | Same-Day | FixitBay" → "... Bay Area | Same-Day Service | FixitBay"
+  - H1s: "... in San Francisco & Bay Area" → "... in the Bay Area"
+  - Service descriptions, FAQ answers, hero text: SF → Bay Area
+  - Meta descriptions: updated to Bay Area focus
+  - Added internal link paragraph to SF city-specific page on each page
+  - Schema names updated to "... Bay Area"
+- **seoContent.js:** Added `hasSFCityPage` flag for 7 services that auto-selects Bay Area title/H1/content for pre-rendered HTML
+- **seo-config.cjs:** Updated SERVICE_DATA titles, descriptions, H1s, and content for all 7 services + added internal links to SF pages in content
+- **SF mention counts after fix:** 3-4 per page (FAQ question + internal link + one natural geographic reference)
+- **No-cannibalization pages preserved:** cooktop, stove, range, freezer, garbage-disposal still target "San Francisco" (correct, no city-specific counterparts)
+- Files changed: `RefrigeratorRepairPage.js`, `WasherRepairPage.js`, `DryerRepairPage.js`, `OvenRepairPage.js`, `IceMakerRepairPage.js`, `WineRefrigeratorRepairPage.js`, `seoContent.js`, `seo-config.cjs`
+- 233/233 SEO snapshots rebuilt.

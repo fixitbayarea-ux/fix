@@ -34,7 +34,7 @@ const OvenRepairPage = () => {
     },
     {
       question: "How quickly can you fix an oven that's not heating?",
-      answer: "We offer same-day and next-day service for urgent oven issues across San Francisco and the Bay Area. Most heating problems—like bad igniters, broken heating elements, or faulty sensors—can be diagnosed and repaired within 1-2 hours. Our vans carry common oven parts for faster repairs."
+      answer: "We offer same-day and next-day service for urgent oven issues across the Bay Area. Most heating problems—like bad igniters, broken heating elements, or faulty sensors—can be diagnosed and repaired within 1-2 hours. Our vans carry common oven parts for faster repairs."
     },
     {
       question: "What brands of ovens do you repair?",
@@ -73,11 +73,11 @@ const OvenRepairPage = () => {
       <MobileServiceLanding
         appliance="Oven"
         pageSlug="oven-repair"
-        pageTitle="Oven Repair San Francisco | Same-Day | FixitBay"
-        metaDescription="Expert oven repair in San Francisco. Gas and electric. $60 diagnostic applied to repair. 180-day warranty."
-        heroTitle={<>Expert Oven<br />Repair in SF. Today.</>}
+        pageTitle="Oven Repair Bay Area | Same-Day Service | FixitBay"
+        metaDescription="Expert oven repair across the Bay Area. Gas and electric. $60 diagnostic applied to repair. 180-day warranty."
+        heroTitle={<>Expert Oven<br />Repair. Bay Area.</>}
         techImage="/images/technicians/oven-tech.jpg"
-        techImageAlt="FixitBay technician repairing an oven in a San Francisco kitchen"
+        techImageAlt="FixitBay technician repairing an oven in a Bay Area kitchen"
         issues={[
           { icon: '🔥', label: 'Not Heating' },
           { icon: '🌡️', label: 'Temp Off' },
@@ -111,18 +111,19 @@ const OvenRepairPage = () => {
       <ApplianceRepairPageNew
         serviceSchema={serviceSchema}
       appliance="Oven"
-      pageTitle="Oven Repair San Francisco | Same-Day | FixitBay"
-      metaDescription="Expert oven repair in San Francisco. Gas and electric. $60 diagnostic applied to repair. 180-day warranty."
+      pageTitle="Oven Repair Bay Area | Same-Day Service | FixitBay"
+      metaDescription="Expert oven repair across the Bay Area — SF, Peninsula & Marin. Gas and electric. $60 diagnostic applied to repair. 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       heroImage="/images/technicians/oven-tech.jpg"
-      heroImageAlt="FixitBay technician repairing an oven in a San Francisco kitchen"
+      heroImageAlt="FixitBay technician repairing an oven in a Bay Area kitchen"
       serviceDescription={{
-        title: "Professional Oven Repair in San Francisco",
+        title: "Professional Oven Repair Across the Bay Area",
         paragraphs: [
-          <>When your oven won't heat, won't reach temperature, or shows error codes, FixitBay provides expert repair service throughout San Francisco, the Peninsula, and North Bay. Our licensed technicians diagnose and fix most oven issues on the same visit. We charge a transparent <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—honest pricing from start to finish.</>,
+          <>When your oven won't heat, won't reach temperature, or shows error codes, FixitBay provides expert repair service throughout the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most oven issues on the same visit. We charge a transparent <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—honest pricing from start to finish.</>,
           <>Our oven repair process includes a thorough inspection of heating elements, igniters, temperature sensors, gas valves, control boards, door hinges, and safety systems. We test all heating functions, check for gas leaks (if applicable), and identify the root cause of issues like no heat, temperature problems, or error codes. Whether you have a wall oven, double oven, or built-in unit, we have the expertise.</>,
-          <>We service all major oven brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like igniters, heating elements, and temperature sensors, enabling same-day repairs in most cases. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. Need <a href="/range-repair" style={{color:'#C0362C', fontWeight:'bold'}}>range repair</a> or <a href="/stove-repair" style={{color:'#C0362C', fontWeight:'bold'}}>stove repair</a>? We have dedicated pages for those too.</>
+          <>We service all major oven brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like igniters, heating elements, and temperature sensors, enabling same-day repairs in most cases. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. Need <a href="/range-repair" style={{color:'#C0362C', fontWeight:'bold'}}>range repair</a> or <a href="/stove-repair" style={{color:'#C0362C', fontWeight:'bold'}}>stove repair</a>? We have dedicated pages for those too.</>,
+          <><strong>Looking for oven repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-oven-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Oven Repair</a> page for local details and availability.</>
         ]
       }}
       repairVsReplace={{

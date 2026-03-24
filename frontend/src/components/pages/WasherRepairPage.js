@@ -34,7 +34,7 @@ const WasherRepairPage = () => {
     },
     {
       question: "How quickly can you fix a washer that won't drain or spin?",
-      answer: "We offer same-day and next-day service for urgent washer issues across San Francisco and the Bay Area. Most drainage and spinning problems—like clogged pumps, broken belts, or faulty lid switches—can be diagnosed and repaired within 1-2 hours. Our vans carry common washer parts for faster repairs."
+      answer: "We offer same-day and next-day service for urgent washer issues across the Bay Area. Most drainage and spinning problems—like clogged pumps, broken belts, or faulty lid switches—can be diagnosed and repaired within 1-2 hours. Our vans carry common washer parts for faster repairs."
     },
     {
       question: "What brands of washers do you repair?",
@@ -50,7 +50,7 @@ const WasherRepairPage = () => {
     },
     {
       question: "How much does washer repair cost in San Francisco?",
-      answer: "Washer repair in San Francisco costs $150–$350 for most common issues — pump replacement, control board, drum bearing. Our $60 diagnostic is applied to the repair total."
+      answer: "Washer repair typically costs $150–$350 for most common issues — pump replacement, control board, drum bearing. Our $60 diagnostic is applied to the repair total."
     },
     {
       question: "What's included in the $60 diagnostic?",
@@ -67,7 +67,7 @@ const WasherRepairPage = () => {
     "provider": { "@id": "https://fixitbay.net/#organization" },
     "areaServed": SERVICE_CITIES_SCHEMA,
     "url": "https://fixitbay.net/washer-repair",
-    "description": "Same-day washing machine repair in San Francisco and the Bay Area. Front-load, top-load, and high-efficiency models. All major brands including Whirlpool, Samsung, LG, GE, Maytag, and Bosch. $60 diagnostic credited toward repair. 180-day warranty."
+    "description": "Same-day washing machine repair across the Bay Area — SF, Peninsula, and Marin. Front-load, top-load, and high-efficiency models. All major brands including Whirlpool, Samsung, LG, GE, Maytag, and Bosch. $60 diagnostic credited toward repair. 180-day warranty."
   };
 
   if (isMobile) {
@@ -75,14 +75,14 @@ const WasherRepairPage = () => {
       <MobileServiceLanding
         appliance="Washer"
         pageSlug="washer-repair"
-        pageTitle="Washer Repair San Francisco | Same-Day | FixitBay"
-        metaDescription="Expert washing machine repair in San Francisco. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty."
-        heroTitle={<>Expert Washer<br />Repair in SF. Today.</>}
+        pageTitle="Washer Repair Bay Area | Same-Day Service | FixitBay"
+        metaDescription="Expert washing machine repair across the Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty."
+        heroTitle={<>Expert Washer<br />Repair. Bay Area.</>}
         heroImage="/images/technicians/washer-tech.jpg"
-        heroImageAlt="FixitBay technician next to a washing machine in a San Francisco home"
+        heroImageAlt="FixitBay technician next to a washing machine in a Bay Area home"
         heroImagePosition="65% center"
         techImage="/images/technicians/washer-tech.jpg"
-        techImageAlt="FixitBay technician next to a washing machine in a San Francisco home"
+        techImageAlt="FixitBay technician next to a washing machine in a Bay Area home"
         issues={[
           { icon: '🔄', label: 'Not Spinning' },
           { icon: '💧', label: 'Won\'t Drain' },
@@ -116,18 +116,19 @@ const WasherRepairPage = () => {
       serviceSchema={serviceSchema}
       appliance="Washer"
       cmsSlug="washer-repair"
-      pageTitle="Washer Repair San Francisco | Same-Day | FixitBay"
-      metaDescription="Expert washing machine repair in San Francisco. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty."
+      pageTitle="Washer Repair Bay Area | Same-Day Service | FixitBay"
+      metaDescription="Expert washing machine repair across the Bay Area — SF, Peninsula & Marin. $60 diagnostic applied to repair. 180-day warranty."
       heroImage="/images/technicians/washer-tech.jpg"
-      heroImageAlt="FixitBay technician next to a washing machine in a San Francisco home"
+      heroImageAlt="FixitBay technician next to a washing machine in a Bay Area home"
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={{
-        title: "Expert Washer Repair in San Francisco",
+        title: "Expert Washer Repair Across the Bay Area",
         paragraphs: [
-          <>When your washing machine won't spin, drain, or start, FixitBay delivers fast, reliable repair service throughout San Francisco, the Peninsula, and North Bay. Our licensed technicians diagnose and fix most washer issues on the same visit. We charge a <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—transparent pricing from start to finish.</>,
+          <>When your washing machine won't spin, drain, or start, FixitBay delivers fast, reliable repair service throughout the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most washer issues on the same visit. We charge a <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—transparent pricing from start to finish.</>,
           <>Our washer repair process includes a thorough inspection of the motor, drum, drain pump, belts, hoses, door seal, control board, and water inlet valves. We test all cycles, check for leaks, and identify the root cause of issues like failure to spin, drain problems, excessive shaking, or error codes. Whether you have a front-load, top-load, or high-efficiency model, we have the expertise to restore it.</>,
-          <>We service all major washer brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts, allowing us to complete most repairs during the first visit. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From SF apartments to Peninsula homes, we've got your laundry covered.</>
+          <>We service all major washer brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts, allowing us to complete most repairs during the first visit. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From Bay Area apartments to Peninsula homes, we've got your laundry covered.</>,
+          <><strong>Looking for washer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-washer-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Washer Repair</a> page for local details and availability.</>
         ]
       }}
       repairVsReplace={{

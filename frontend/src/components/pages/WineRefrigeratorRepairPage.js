@@ -39,7 +39,7 @@ const WineRefrigeratorRepairPage = () => {
     },
     {
       question: "How quickly can you repair a wine refrigerator that's warming up?",
-      answer: "We understand wine storage is time-critical to protect your collection from spoilage. We offer same-day emergency service in San Francisco, Peninsula, and Marin County. Most wine cooler repairs (thermostat, compressor, door seal) take 1-2 hours. Call us immediately to prevent wine damage from temperature fluctuations."
+      answer: "We understand wine storage is time-critical to protect your collection from spoilage. We offer same-day emergency service across the Bay Area — SF, Peninsula, and Marin County. Most wine cooler repairs (thermostat, compressor, door seal) take 1-2 hours. Call us immediately to prevent wine damage from temperature fluctuations."
     },
     {
       question: "Can you repair built-in and freestanding wine refrigerators?",
@@ -59,7 +59,7 @@ const WineRefrigeratorRepairPage = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Wine Cooler Repair San Francisco Bay Area",
+    "name": "Wine Cooler Repair Bay Area",
     "serviceType": "Wine Cooler Repair",
     "provider": {
       "@type": "LocalBusiness",
@@ -88,11 +88,11 @@ const WineRefrigeratorRepairPage = () => {
       <MobileServiceLanding
         appliance="Wine Cooler"
         pageSlug="wine-refrigerator-repair"
-        pageTitle="Wine Cooler Repair San Francisco | Same-Day | FixitBay"
-        metaDescription="Specialized wine refrigerator repair in San Francisco. Temperature, humidity, compressor issues. Same-day service. 180-day warranty."
-        heroTitle={<>Wine Cooler Repair<br />San Francisco &amp; Bay Area</>}
-        heroImageAlt="wine cooler repair san francisco"
-        heroDescription="FixitBay repairs all types of wine coolers and wine refrigerators in San Francisco — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Same-day service, from $195 after $60 diagnostic."
+        pageTitle="Wine Cooler Repair Bay Area | Same-Day Service | FixitBay"
+        metaDescription="Specialized wine refrigerator repair across the Bay Area. Temperature, humidity, compressor issues. Same-day service. 180-day warranty."
+        heroTitle={<>Wine Cooler Repair<br />Bay Area. Same Day.</>}
+        heroImageAlt="wine cooler repair Bay Area"
+        heroDescription="FixitBay repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Same-day service, from $195 after $60 diagnostic."
        
         issues={[
           { icon: '🌡️', label: 'Temp Wrong' },
@@ -126,11 +126,11 @@ const WineRefrigeratorRepairPage = () => {
       <ApplianceRepairPageNew
       serviceSchema={serviceSchema}
       appliance="Wine Cooler"
-      heroImageAlt="wine cooler repair san francisco"
-      heroDescription="FixitBay repairs all types of wine coolers and wine refrigerators in San Francisco — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Same-day service, from $195 after $60 diagnostic."
+      heroImageAlt="wine cooler repair Bay Area"
+      heroDescription="FixitBay repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Same-day service, from $195 after $60 diagnostic."
       cmsSlug="wine-cooler-repair"
-      pageTitle="Wine Cooler Repair San Francisco | Same-Day | FixitBay"
-      metaDescription="Specialized wine refrigerator repair in San Francisco. Temperature, humidity, compressor issues. Same-day service. 180-day warranty."
+      pageTitle="Wine Cooler Repair Bay Area | Same-Day Service | FixitBay"
+      metaDescription="Specialized wine refrigerator repair across the Bay Area. Temperature, humidity, compressor issues. Same-day service. 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={{
@@ -138,7 +138,8 @@ const WineRefrigeratorRepairPage = () => {
         paragraphs: [
           <>Wine refrigerators require precise temperature and humidity control to protect valuable wine collections. Our technicians specialize in diagnosing single-zone, dual-zone, and built-in wine coolers. We identify thermostat failures, compressor issues, humidity control problems, and vibration concerns. We charge a <strong>$60 diagnostic fee</strong> (waived with repair) and respond urgently to prevent wine damage from temperature fluctuations.</>,
           <>Our wine cooler repair process includes calibrating temperature controls, testing compressor performance, checking humidity sensors, inspecting door gaskets for proper sealing, and examining UV-filtered lighting systems. We understand the critical importance of maintaining optimal red wine (55-65°F) and white wine (45-55°F) storage temperatures. Most wine refrigerator repairs are completed same-day to minimize risk to your collection.</>,
-          <>Whether your wine cooler has inconsistent temperatures, excessive vibration, or humidity problems, we'll restore proper function. We service all wine refrigerator brands including Sub-Zero, Vintec, EuroCave, Wine Enthusiast, and NewAir. Every wine cooler repair includes our <strong>180-day warranty</strong> on parts and labor, protecting your investment.</>
+          <>Whether your wine cooler has inconsistent temperatures, excessive vibration, or humidity problems, we'll restore proper function. We service all wine refrigerator brands including Sub-Zero, Vintec, EuroCave, Wine Enthusiast, and NewAir. Every wine cooler repair includes our <strong>180-day warranty</strong> on parts and labor, protecting your investment.</>,
+          <><strong>Looking for wine cooler repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-wine-cooler-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Wine Cooler Repair</a> page for local details and availability.</>
         ]
       }}
       repairVsReplace={{
@@ -160,10 +161,10 @@ const WineRefrigeratorRepairPage = () => {
       {/* ═══ ENHANCEMENT 1: SF-specific climate section ═══ */}
       <section style={{ background: '#FAFAF7', padding: '48px 40px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '1.5rem', fontWeight: 800, color: '#1A3B5D', marginBottom: 20 }}>Wine Cooler Repair for San Francisco's Unique Climate</h2>
+          <h2 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '1.5rem', fontWeight: 800, color: '#1A3B5D', marginBottom: 20 }}>Wine Cooler Repair for the Bay Area's Unique Climate</h2>
           <div style={{ fontFamily: 'Inter,sans-serif', fontSize: 15, lineHeight: 1.75, color: '#4A5568' }}>
-            <p style={{ marginBottom: 16 }}>San Francisco's coastal microclimate — fog, salt air, and humidity swings between 50–95% — creates specific challenges for wine coolers. Door seals degrade faster in Pacifica, the Sunset District, and any home within a mile of the ocean. Thermoelectric units struggle when kitchen ambient temperatures spike above 80°F in South Bay and East Bay homes during summer months.</p>
-            <p style={{ marginBottom: 16 }}>Our technician Andrei has repaired wine coolers in Victorian flats in the Mission, high-rise condos in SoMa, penthouse kitchens in Pacific Heights, and estate wine cellars in Ross and Tiburon. We understand that a built-in undercounter unit in a Nob Hill kitchen has different ventilation needs than a freestanding cooler in a Marin County garage.</p>
+            <p style={{ marginBottom: 16 }}>The Bay Area's coastal microclimate — fog, salt air, and humidity swings between 50–95% — creates specific challenges for wine coolers. Door seals degrade faster in coastal neighborhoods and any home within a mile of the ocean. Thermoelectric units struggle when kitchen ambient temperatures spike above 80°F during summer months in the Peninsula and beyond.</p>
+            <p style={{ marginBottom: 16 }}>Our technician Andrei has repaired wine coolers in Victorian flats in the Mission, high-rise condos in SoMa, penthouse kitchens in Pacific Heights, and estate wine cellars in Ross and Tiburon. We understand that a built-in undercounter unit in a San Francisco kitchen has different ventilation needs than a freestanding cooler in a Marin County garage.</p>
             <p>When your cooler drifts more than 5°F from setpoint, your wine collection is at risk. We diagnose and fix the root cause — not just reset the thermostat.</p>
           </div>
         </div>
@@ -175,8 +176,8 @@ const WineRefrigeratorRepairPage = () => {
           <h2 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '1.5rem', fontWeight: 800, color: '#1A3B5D', marginBottom: 28, textAlign: 'center' }}>Types of Wine Coolers We Repair</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20 }}>
             {[
-              { title: 'Thermoelectric', desc: 'Silent operation, ideal for SF apartments. Struggles above 80°F ambient — common in South Bay summer months.' },
-              { title: 'Compressor-Based', desc: 'Powerful cooling, handles SF fog climate. Best for larger collections and consistent temperature control.' },
+              { title: 'Thermoelectric', desc: 'Silent operation, ideal for apartments. Struggles above 80°F ambient — common in summer months across the Bay Area.' },
+              { title: 'Compressor-Based', desc: 'Powerful cooling, handles Bay Area fog climate. Best for larger collections and consistent temperature control.' },
               { title: 'Dual-Zone', desc: 'Popular in Marin County and Peninsula homes. Separate temps for reds (55–65°F) and whites (45–55°F).' },
               { title: 'Built-In Undercounter', desc: 'Common in Pacific Heights, Nob Hill, SoMa renovations. Requires precise ventilation clearance.' },
             ].map(t => (

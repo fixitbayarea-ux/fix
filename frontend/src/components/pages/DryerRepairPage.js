@@ -34,7 +34,7 @@ const DryerRepairPage = () => {
     },
     {
       question: "How quickly can you fix a dryer that's not heating?",
-      answer: "We offer same-day and next-day service for urgent dryer issues across San Francisco and the Bay Area. Most heating problems—like bad heating elements, blown thermal fuses, or clogged vents—can be diagnosed and repaired within 1-2 hours. Our vans carry common dryer parts for fast repairs."
+      answer: "We offer same-day and next-day service for urgent dryer issues across the Bay Area. Most heating problems—like bad heating elements, blown thermal fuses, or clogged vents—can be diagnosed and repaired within 1-2 hours. Our vans carry common dryer parts for fast repairs."
     },
     {
       question: "What brands of dryers do you repair?",
@@ -73,14 +73,14 @@ const DryerRepairPage = () => {
       <MobileServiceLanding
         appliance="Dryer"
         pageSlug="dryer-repair"
-        pageTitle="Dryer Repair San Francisco | Same-Day | FixitBay"
-        metaDescription="Expert dryer repair in San Francisco. Gas and electric. $60 diagnostic applied to repair. 180-day warranty."
-        heroTitle={<>Expert Dryer<br />Repair in SF. Today.</>}
+        pageTitle="Dryer Repair Bay Area | Same-Day Service | FixitBay"
+        metaDescription="Expert dryer repair across the Bay Area. Gas and electric. $60 diagnostic applied to repair. 180-day warranty."
+        heroTitle={<>Expert Dryer<br />Repair. Bay Area.</>}
         heroImage="/images/technicians/dryer-tech.jpg"
-        heroImageAlt="FixitBay technician repairing a dryer in a San Francisco home"
+        heroImageAlt="FixitBay technician repairing a dryer in a Bay Area home"
         heroImagePosition="60% top"
         techImage="/images/technicians/dryer-tech.jpg"
-        techImageAlt="FixitBay technician repairing a dryer in a San Francisco home"
+        techImageAlt="FixitBay technician repairing a dryer in a Bay Area home"
         issues={[
           { icon: '🔥', label: 'Not Heating' },
           { icon: '⚡', label: 'Won\'t Start' },
@@ -114,19 +114,20 @@ const DryerRepairPage = () => {
         serviceSchema={serviceSchema}
         appliance="Dryer"
         cmsSlug="dryer-repair"
-        pageTitle="Dryer Repair San Francisco | Same-Day | FixitBay"
-        metaDescription="Expert dryer repair in San Francisco. Gas and electric. $60 diagnostic applied to repair. 180-day warranty."
+        pageTitle="Dryer Repair Bay Area | Same-Day Service | FixitBay"
+        metaDescription="Expert dryer repair across the Bay Area — SF, Peninsula & Marin. Gas and electric. $60 diagnostic applied to repair. 180-day warranty."
         heroImage="/images/technicians/dryer-tech.jpg"
-        heroImageAlt="FixitBay technician repairing a dryer in a San Francisco home"
+        heroImageAlt="FixitBay technician repairing a dryer in a Bay Area home"
         heroImagePosition="60% top"
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={{
-          title: "Professional Dryer Repair in San Francisco",
+          title: "Professional Dryer Repair Across the Bay Area",
           paragraphs: [
-            <>When your dryer stops heating, won't start, or makes loud noises, FixitBay provides expert repair service across San Francisco, the Peninsula, and North Bay. Our licensed technicians diagnose and fix most dryer issues on the same visit. We charge a straightforward <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—honest pricing, every time.</>,
+            <>When your dryer stops heating, won't start, or makes loud noises, FixitBay provides expert repair service across the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most dryer issues on the same visit. We charge a straightforward <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—honest pricing, every time.</>,
             <>Our dryer repair process includes a complete inspection of the heating element, thermal fuse, thermostat, drum belt, motor, control board, and vent system. We test all cycles, check for airflow restrictions, and identify the root cause of issues like no heat, failure to start, excessive noise, or long dry times. Whether you have a gas or electric dryer, front-load or top-load, we have the skills to restore it.</>,
-            <>We service all major dryer brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like heating elements, belts, and thermal fuses, enabling same-day repairs in most cases. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From apartments to single-family homes, we keep your laundry moving.</>
+            <>We service all major dryer brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like heating elements, belts, and thermal fuses, enabling same-day repairs in most cases. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From apartments to single-family homes, we keep your laundry moving.</>,
+            <><strong>Looking for dryer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-dryer-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Dryer Repair</a> page for local details and availability.</>
           ]
         }}
         repairVsReplace={{

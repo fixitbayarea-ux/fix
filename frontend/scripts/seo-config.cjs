@@ -1161,29 +1161,31 @@ function getSEOContent(route) {
     // Per-service unique content
     const SERVICE_DATA = {
       'refrigerator': {
-        title: 'Refrigerator Repair San Francisco | Same-Day | FixitBay',
-        desc: 'Expert refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. 180-day warranty. Same-day service. Call (760) 543-5733.',
-        h1: 'Refrigerator Repair in San Francisco & Bay Area',
+        title: 'Refrigerator Repair Bay Area | Same-Day Service | FixitBay',
+        desc: 'Expert refrigerator repair across SF Bay Area — Peninsula, Marin & San Francisco. $60 diagnostic applied to repair. 180-day warranty. Same-day service. Call (760) 543-5733.',
+        h1: 'Refrigerator Repair in the Bay Area',
         content: `
-          <p style="margin-bottom:1rem;">When your refrigerator stops cooling, leaks water, or makes unusual noises, FixitBay provides same-day repair service across San Francisco, the Peninsula, and North Bay. Our licensed technicians diagnose and fix most refrigerator issues in a single visit — from compressor failures and thermostat problems to ice maker malfunctions and door seal replacements.</p>
+          <p style="margin-bottom:1rem;">When your refrigerator stops cooling, leaks water, or makes unusual noises, FixitBay provides same-day repair service across the Bay Area — from San Francisco to Marin County and the Peninsula. Our licensed technicians diagnose and fix most refrigerator issues in a single visit — from compressor failures and thermostat problems to ice maker malfunctions and door seal replacements.</p>
           <p style="margin-bottom:1rem;">We service all major refrigerator brands including Sub-Zero, Samsung, LG, GE, Whirlpool, KitchenAid, Bosch, Frigidaire, Maytag, and Viking. Our $60 diagnostic fee is fully applied to your repair cost, and every job is backed by our 180-day warranty on parts and labor.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Refrigerator</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Under 10 years old with a single issue — most component failures (thermostat, compressor relay, door seal, ice maker) cost $150–$400, far less than a $1,500+ replacement.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Faulty door seal or gasket — quick, affordable fix that solves most temperature complaints.</p>
           <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Compressor failure on a 12+ year unit — at $600–$900, that money is better put toward a new, efficient model.</p>
           <p style="margin-bottom:1rem;"><strong>Replace:</strong> Frequent breakdowns or 2+ repairs/year — cumulative cost usually exceeds half the price of a new unit.</p>
+          <p style="margin-bottom:1rem;"><strong>Looking for refrigerator repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-refrigerator-repair" style="color:#C0362C;font-weight:bold;">San Francisco Refrigerator Repair</a> page for local details and availability.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
           <p>We also offer <a href="/freezer-repair" style="color:#C0362C;font-weight:bold;">freezer repair</a>, <a href="/ice-maker-repair" style="color:#C0362C;font-weight:bold;">ice maker repair</a>, <a href="/wine-cooler-repair" style="color:#C0362C;font-weight:bold;">wine cooler repair</a>, and <a href="/dishwasher-repair" style="color:#C0362C;font-weight:bold;">dishwasher repair</a> across the Bay Area.</p>
         `,
         links: ['/', '/freezer-repair', '/ice-maker-repair', '/wine-cooler-repair', '/dishwasher-repair', '/service-areas', '/reviews', '/contact']
       },
       'washer': {
-        title: 'Washer Repair San Francisco & Bay Area | Same-Day | FixitBay',
-        desc: 'Expert washing machine repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733.',
-        h1: 'Washer Repair in San Francisco & Bay Area',
+        title: 'Washer Repair Bay Area | Same-Day Service | FixitBay',
+        desc: 'Expert washing machine repair across SF Bay Area — Peninsula, Marin & San Francisco. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+        h1: 'Washer Repair in the Bay Area',
         content: `
-          <p style="margin-bottom:1rem;">When your washing machine won't spin, drain, or start, FixitBay delivers fast, reliable repair throughout San Francisco, the Peninsula, and North Bay. Our licensed technicians diagnose and fix most washer issues on the same visit — from motor and drum failures to drain pump problems and control board malfunctions.</p>
+          <p style="margin-bottom:1rem;">When your washing machine won't spin, drain, or start, FixitBay delivers fast, reliable repair throughout the Bay Area — from San Francisco to Marin County and the Peninsula. Our licensed technicians diagnose and fix most washer issues on the same visit — from motor and drum failures to drain pump problems and control board malfunctions.</p>
           <p style="margin-bottom:1rem;">We service all major washer brands including Whirlpool, Samsung, LG, GE, Maytag, Bosch, and more. Front-load, top-load, and high-efficiency models — our team handles them all. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;"><strong>Looking for washer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-washer-repair" style="color:#C0362C;font-weight:bold;">San Francisco Washer Repair</a> page for local details and availability.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Washing Machine</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Under 8 years old with a mechanical issue — door latches, drain pumps, belts cost $150–$280.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Shakes violently — usually worn shock absorbers or unbalanced drum, not a replacement issue.</p>
@@ -1195,12 +1197,13 @@ function getSEOContent(route) {
         links: ['/', '/dryer-repair', '/dishwasher-repair', '/refrigerator-repair', '/service-areas', '/reviews', '/contact']
       },
       'dryer': {
-        title: 'Dryer Repair San Francisco & Bay Area | Same-Day | FixitBay',
-        desc: 'Expert dryer repair in San Francisco & Bay Area. Gas and electric. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
-        h1: 'Dryer Repair in San Francisco & Bay Area',
+        title: 'Dryer Repair Bay Area | Same-Day Service | FixitBay',
+        desc: 'Expert dryer repair across SF Bay Area — Peninsula, Marin & San Francisco. Gas and electric. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+        h1: 'Dryer Repair in the Bay Area',
         content: `
-          <p style="margin-bottom:1rem;">When your dryer stops heating, won't start, or makes loud noises, FixitBay provides expert repair across San Francisco, the Peninsula, and North Bay. We fix gas and electric dryers — from heating element failures and thermal fuse issues to drum belt problems and vent blockages.</p>
+          <p style="margin-bottom:1rem;">When your dryer stops heating, won't start, or makes loud noises, FixitBay provides expert repair across the Bay Area — from San Francisco to Marin County and the Peninsula. We fix gas and electric dryers — from heating element failures and thermal fuse issues to drum belt problems and vent blockages.</p>
           <p style="margin-bottom:1rem;">We service all major brands including Whirlpool, Samsung, LG, GE, Maytag, and more. $60 diagnostic credited toward repair. 180-day warranty on parts and labor.</p>
+          <p style="margin-bottom:1rem;"><strong>Looking for dryer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-dryer-repair" style="color:#C0362C;font-weight:bold;">San Francisco Dryer Repair</a> page for local details and availability.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Dryer</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Under 10 years old with heating issue — elements, fuses cost $150–$250 to replace.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Loud thumping or squealing — worn drum rollers or frayed belt, $120–$200 fix.</p>
@@ -1230,12 +1233,13 @@ function getSEOContent(route) {
         links: ['/', '/san-francisco-dishwasher-repair', '/refrigerator-repair', '/oven-repair', '/washer-repair', '/service-areas', '/reviews', '/contact']
       },
       'oven': {
-        title: 'Oven Repair San Francisco & Bay Area | Same-Day | FixitBay',
-        desc: 'Expert oven repair in San Francisco & Bay Area. Gas and electric. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
-        h1: 'Oven Repair in San Francisco & Bay Area',
+        title: 'Oven Repair Bay Area | Same-Day Service | FixitBay',
+        desc: 'Expert oven repair across SF Bay Area — Peninsula, Marin & San Francisco. Gas and electric. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+        h1: 'Oven Repair in the Bay Area',
         content: `
-          <p style="margin-bottom:1rem;">When your oven won't heat, won't reach temperature, or shows error codes, FixitBay provides expert repair across San Francisco, the Peninsula, and North Bay. We fix heating elements, igniters, temperature sensors, gas valves, control boards, door hinges, and safety systems for both gas and electric ovens.</p>
+          <p style="margin-bottom:1rem;">When your oven won't heat, won't reach temperature, or shows error codes, FixitBay provides expert repair across the Bay Area — from San Francisco to Marin County and the Peninsula. We fix heating elements, igniters, temperature sensors, gas valves, control boards, door hinges, and safety systems for both gas and electric ovens.</p>
           <p style="margin-bottom:1rem;">We service all major brands including GE, Whirlpool, Samsung, LG, Viking, Thermador, Wolf, Bosch, and KitchenAid. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;"><strong>Looking for oven repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-oven-repair" style="color:#C0362C;font-weight:bold;">San Francisco Oven Repair</a> page for local details and availability.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Oven</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Not heating or temperature off — igniters, elements cost $150–$300.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Gas oven clicks but won't light — weak igniter, $150–$220 replacement.</p>
@@ -1264,12 +1268,13 @@ function getSEOContent(route) {
         links: ['/', '/oven-repair', '/range-repair', '/stove-repair', '/dishwasher-repair', '/service-areas', '/contact']
       },
       'ice-maker': {
-        title: 'Ice Maker Repair San Francisco | Same-Day | FixitBay',
-        desc: 'Expert ice maker repair in San Francisco & Bay Area. Same-day service. $60 diagnostic applied to repair cost. 180-day warranty on parts and labor.',
-        h1: 'Ice Maker Repair in San Francisco & Bay Area',
+        title: 'Ice Maker Repair Bay Area | Same-Day Service | FixitBay',
+        desc: 'Expert ice maker repair across SF Bay Area — Peninsula, Marin & San Francisco. Same-day service. $60 diagnostic applied to repair cost. 180-day warranty.',
+        h1: 'Ice Maker Repair in the Bay Area',
         content: `
-          <p style="margin-bottom:1rem;">When your ice maker stops making ice, leaks water, or produces bad-tasting cubes, FixitBay provides same-day repair across San Francisco, the Peninsula, and North Bay. We fix water inlet valves, ice maker assemblies, frozen lines, filters, and dispenser motors for built-in and refrigerator ice makers.</p>
+          <p style="margin-bottom:1rem;">When your ice maker stops making ice, leaks water, or produces bad-tasting cubes, FixitBay provides same-day repair across the Bay Area — from San Francisco to Marin County and the Peninsula. We fix water inlet valves, ice maker assemblies, frozen lines, filters, and dispenser motors for built-in and refrigerator ice makers.</p>
           <p style="margin-bottom:1rem;">We service ice makers in all major brands including Sub-Zero, Samsung, LG, GE, Whirlpool, KitchenAid, and more. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;"><strong>Looking for ice maker repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-ice-maker-repair" style="color:#C0362C;font-weight:bold;">San Francisco Ice Maker Repair</a> page for local details and availability.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Ice Maker</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Stopped making ice, fridge works fine — frozen line or bad valve costs $150–$280.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Ice tastes bad — new water filter + cleaning usually resolves it for under $100.</p>
@@ -1281,9 +1286,9 @@ function getSEOContent(route) {
         links: ['/', '/refrigerator-repair', '/freezer-repair', '/dishwasher-repair', '/service-areas', '/reviews', '/contact']
       },
       'wine-cooler': {
-        title: 'Wine Cooler Repair San Francisco | Same-Day | FixitBay',
-        desc: 'Wine cooler and wine fridge repair in San Francisco & Bay Area. Temperature and humidity issues. Same-day service. 180-day warranty. Call (760) 543-5733.',
-        h1: 'Wine Cooler Repair in San Francisco & Bay Area',
+        title: 'Wine Cooler Repair Bay Area | Same-Day Service | FixitBay',
+        desc: 'Wine cooler and wine fridge repair across SF Bay Area. Temperature and humidity issues. Same-day service. 180-day warranty. Call (760) 543-5733.',
+        h1: 'Wine Cooler Repair in the Bay Area',
         content: `
           <p style="margin-bottom:1rem;">Wine refrigerators require precise temperature and humidity control. Our technicians specialize in single-zone, dual-zone, and built-in wine coolers — diagnosing thermostat failures, compressor issues, humidity problems, and vibration concerns. We respond urgently to prevent wine damage from temperature fluctuations.</p>
           <p style="margin-bottom:1rem;">We service Sub-Zero, Vinotemp, EuroCave, Wine Enthusiast, NewAir, Whynter, EdgeStar, Marvel, Liebherr, Kalamera, hOmelabs, Thermador, U-Line, KitchenAid, Frigidaire, Bosch, and GE Monogram. $60 diagnostic credited toward repair. 180-day warranty.</p>
