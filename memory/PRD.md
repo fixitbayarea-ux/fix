@@ -10,12 +10,11 @@ An appliance repair business website (fixitbay.net) built as a React SPA with st
 - **SEO Config**: `frontend/scripts/seo-config.cjs` + `frontend/src/seo/seoContent.js`
 - **Deployment**: Netlify/Cloudflare (uses `_headers` file for cache control)
 
-## Key Files
-- `frontend/src/components/ProfessionalLandingPage.js` - Homepage
-- `frontend/src/components/sections/HomeHero.jsx` - Hero section
-- `frontend/src/seo/seoContent.js` - Client-side SEO content
-- `frontend/scripts/seo-config.cjs` - SSG SEO config (BOTH must be updated for SEO changes)
-- `frontend/public/_headers` - Cache control headers
+## IMPORTANT: Dual SEO Source
+SEO changes must be updated in BOTH:
+1. `frontend/src/seo/seoContent.js` (client-side React)
+2. `frontend/scripts/seo-config.cjs` (SSG pre-rendering)
+3. Individual page component files (e.g., `RefrigeratorRepairPage.js`)
 
 ## Completed Work
 
@@ -24,42 +23,35 @@ An appliance repair business website (fixitbay.net) built as a React SPA with st
 - Removed duplicate Service schema injections
 - Rewrote 2 blog posts, created 1 new blog post
 
-### Session 5 (Feb 2026) - Homepage Visual Fixes
-- Hero microcopy alignment, stats row balance, pricing card alignment
-- Reviews grid expanded to 9 in 3-column layout
-- Explore section copy cleanup
+### Session 5 - Homepage Visual Fixes
+- Hero microcopy, stats row, pricing cards, reviews 3x3 grid, explore section
 
-### Session 6 (Feb 2026) - Performance Optimization
-- Hero logo: 1.6MB PNG → 37KB WebP with `<picture>` tag
-- 15 service images converted to WebP with `<picture>` tags
-- Cache headers (`_headers`) for static assets
-- Lazy loading on all below-fold images
+### Session 6 - Performance Optimization
+- Hero logo WebP (98% smaller), service card WebP, cache headers, lazy loading
 
-### Session 7 (Feb 2026) - SEO Title & Description Fixes
-- **Wine Cooler title**: Changed from "Bay Area" to "San Francisco" (vol 700, pos #26 target)
-- **3 meta descriptions shortened to ≤160 chars**:
-  - Refrigerator: 172→150 chars
-  - Dishwasher: 172→135 chars
-  - Dryer: 165→124 chars
-- Updated in BOTH `seoContent.js` AND `seo-config.cjs` (dual source)
-- Updated in component files: `WineRefrigeratorRepairPage.js`, `RefrigeratorRepairPage.js`, `DishwasherRepairPage.js`, `DryerRepairPage.js`
-- Tasks 3-5 (hero WebP, service WebP, orphan links) were already complete from Session 6
+### Session 7 - SEO Title & Description Fixes
+- Wine Cooler title → "San Francisco" (vol 700 target keyword)
+- 3 meta descriptions shortened to ≤160 chars
 
-## IMPORTANT: Dual SEO Source
-SEO changes must be updated in BOTH:
-1. `frontend/src/seo/seoContent.js` (client-side React)
-2. `frontend/scripts/seo-config.cjs` (SSG pre-rendering)
-3. Individual page component files (e.g., `RefrigeratorRepairPage.js`)
+### Session 8 (Feb 2026) - Soft 404 Fix & SF City Content
+- **Garbage Disposal Soft 404 Fix**: Added full `SERVICE_DATA` entry in seo-config.cjs with:
+  - 11 paragraphs, 6 h2 headings of unique content
+  - Common problems, pricing, repair vs replace guidance, FAQs
+  - Updated title, description, and component file to match
+- **5 SF City-Service Pages** — Added `CITY_SERVICE_RICH` entries for:
+  - `/san-francisco-refrigerator-repair` — Sub-Zero specialists, Victorian kitchen expertise, coastal humidity content
+  - `/san-francisco-washer-repair` — Multi-unit plumbing, stacked configurations, water pressure content
+  - `/san-francisco-dryer-repair` — Victorian venting, gas dryer safety, stacked dryer content
+  - `/san-francisco-oven-repair` — Gas igniter humidity, Wolf/Viking expertise, Victorian gas lines content
+  - `/san-francisco-ice-maker-repair` — Water pressure hillside, SFPUC minerals, Sub-Zero specialists content
+  - Each page: ~280 words, 4 h2s, 5 list items, neighborhood references, pricing, CTAs
+- **SSG Build**: 233 pages verified, 0 failures
 
 ## Backlog (Prioritized)
 
-### P1
-- Investigate 2 "Soft 404" pages from Google Search Console (`/garbage-disposal-repair`)
-- Add rich SF-specific content to 5 remaining SF city-specific pages
-
 ### P2
 - Remove legacy `applySEO()` function from `public/index.html`
-- Merge dual SEO content sources into single source of truth
+- Merge dual SEO content sources (`seoContent.js` + `seo-config.cjs`) into single source of truth
 - Audit remaining blog posts for duplicate schemas
 - Refactor monolithic page components
 - Fix "ghost div" on mobile homepage

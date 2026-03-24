@@ -140,6 +140,9 @@ function getServiceContent(service) {
     if (service === 'Dryer') {
       return `Dryer repair in SF & Bay Area. Gas and electric. Not heating, not spinning. $60 diagnostic applied to repair. Call FixitBay.`;
     }
+    if (service === 'Garbage Disposal') {
+      return `Garbage disposal repair in SF & Bay Area. Jammed, leaking, humming, won't turn on. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay.`;
+    }
     if (hasSFCityPage) {
       return `Expert ${service.toLowerCase()} repair across the Bay Area — SF, Peninsula & Marin. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`;
     }

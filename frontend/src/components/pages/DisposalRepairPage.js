@@ -82,8 +82,8 @@ const DisposalRepairPage = () => {
       <MobileServiceLanding
         appliance="Garbage Disposal"
         pageSlug="disposal-repair"
-        pageTitle="Garbage Disposal Repair in San Francisco | FixitBay"
-        metaDescription="Professional garbage disposal repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty. Same-day service."
+        pageTitle="Garbage Disposal Repair San Francisco | Same-Day | FixitBay"
+        metaDescription="Garbage disposal repair in SF & Bay Area. Jammed, leaking, humming, won't turn on. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay."
         heroTitle={<>Expert Disposal<br />Repair in SF. Today.</>}
         issues={[
           { icon: '🔧', label: 'Jammed' },

@@ -1072,6 +1072,131 @@ function getSEOContent(route) {
             <p style="margin-bottom:1rem;">Most dishwasher repairs in San Francisco cost <strong>$140–$320 after the $60 diagnostic fee</strong>. Drain pump replacement typically runs $150–$250; door seal replacement is $80–$180. The $60 diagnostic is fully credited toward your repair.</p>
             <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day dishwasher repair in San Francisco. Also see our <a href="/dishwasher-repair" style="color:#C0362C;font-weight:bold;">Bay Area dishwasher repair</a> page for general service information.</p>
           `
+    },
+    '/san-francisco-refrigerator-repair': {
+      title: 'Refrigerator Repair San Francisco | Local SF Service | FixitBay',
+      description: 'Refrigerator repair in San Francisco. Sub-Zero, Viking & all brands. Victorian kitchen specialists. From $180 after $60 diagnostic. 180-day warranty.',
+      h1: 'Refrigerator Repair in San Francisco',
+      content: `
+            <p style="margin-bottom:1rem;">San Francisco's unique housing stock and coastal climate create specific refrigerator challenges you won't find in other Bay Area cities. From Sub-Zero built-ins in Pacific Heights to aging GE units in Sunset District flats, our technicians understand how SF's fog, humidity, and older building infrastructure affect refrigerator performance and longevity.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why Refrigerators Fail Differently in San Francisco</h2>
+            <p style="margin-bottom:1rem;"><strong>Coastal humidity and fog</strong> accelerate condenser coil corrosion and cause door gaskets to degrade faster than in inland cities. Homes in the Sunset, Richmond, and Outer Mission — within a mile of the ocean — see refrigerator seal failures 30–40% sooner than homes in the Mission or Castro.</p>
+            <p style="margin-bottom:1rem;"><strong>Victorian and Edwardian kitchens</strong> often have limited ventilation behind built-in refrigerators. Poor airflow causes compressors to overheat and run inefficiently. Our technicians check rear clearance on every SF service call and advise on ventilation improvements.</p>
+            <p style="margin-bottom:1rem;"><strong>Sub-Zero and high-end built-ins</strong> are extremely common in Pacific Heights, Nob Hill, Russian Hill, and Marina District homes. These units require specialized knowledge — custom panel adjustments, dual-compressor diagnostics, and air purification system service that general appliance companies often lack.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common SF Refrigerator Problems</h2>
+            <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Not cooling properly</strong> — dirty condenser coils, failed compressor relay, or thermostat issues. Coastal dust and pet hair accelerate coil buildup in SF homes.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Water leaking on the floor</strong> — clogged defrost drain, cracked water line, or damaged door seal. Common in older SF buildings with uneven floors.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Ice maker not producing ice</strong> — frozen water line, faulty inlet valve, or water pressure issues in hillside neighborhoods like Twin Peaks and Nob Hill.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Excessive frost buildup</strong> — defrost heater or timer failure. SF's humidity makes defrost cycle problems more noticeable and urgent.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Loud compressor noise</strong> — worn compressor mounts or failing compressor. In quiet Victorian flats with shared walls, even minor compressor noise becomes disruptive.</li>
+            </ul>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">San Francisco Neighborhoods We Serve</h2>
+            <p style="margin-bottom:1rem;">Same-day refrigerator repair across all SF neighborhoods: <strong>Pacific Heights, Nob Hill, Russian Hill, Marina, Sunset, Richmond, Mission, Castro, SoMa, Noe Valley, Bernal Heights</strong>, Twin Peaks, the Haight, Potrero Hill, Excelsior, Bayview, and more.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">SF Refrigerator Repair Pricing</h2>
+            <p style="margin-bottom:1rem;">Most refrigerator repairs in San Francisco cost <strong>$180–$450 after the $60 diagnostic fee</strong>. Thermostat replacement runs $150–$250; compressor relay $120–$200; door seal replacement $100–$180. Sub-Zero and built-in models may cost more due to specialized parts.</p>
+            <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day refrigerator repair in San Francisco. Also see our <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">Bay Area refrigerator repair</a> page for general service information.</p>
+          `
+    },
+    '/san-francisco-washer-repair': {
+      title: 'Washer Repair San Francisco | Local SF Service | FixitBay',
+      description: 'Washer repair in San Francisco. Multi-unit building specialists. Front-load & top-load. From $150 after $60 diagnostic. 180-day warranty.',
+      h1: 'Washer Repair in San Francisco',
+      content: `
+            <p style="margin-bottom:1rem;">Washing machine repairs in San Francisco come with challenges unique to the city's dense, multi-unit housing and older building infrastructure. From shared laundry connections in Victorian flats to stackable units in SoMa condos, our technicians understand the specific plumbing constraints and space limitations of SF homes.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why Washers Fail Differently in San Francisco</h2>
+            <p style="margin-bottom:1rem;"><strong>Multi-unit plumbing</strong> is a major factor. Many SF Victorians and Edwardians share drain lines between units. When a washer drain pump fails or a drain hose clogs, the issue can affect neighboring units. Our technicians diagnose whether the problem is the washer itself or the building's shared plumbing — saving you from unnecessary repairs.</p>
+            <p style="margin-bottom:1rem;"><strong>Stacked and compact units</strong> are everywhere in San Francisco. Space constraints in SoMa lofts, Marina apartments, and Noe Valley flats mean many homes use ventless condensing dryers stacked on front-load washers. These compact configurations require technicians who understand the specific clearance, leveling, and vibration issues they present.</p>
+            <p style="margin-bottom:1rem;"><strong>Water pressure variations</strong> across SF neighborhoods affect washer fill times and error codes. Hillside homes in Pacific Heights, Twin Peaks, and Diamond Heights often experience lower water pressure, causing fill cycle errors on modern electronic washers. We calibrate pressure settings during every repair.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common SF Washer Problems</h2>
+            <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Won't drain or spin</strong> — clogged drain pump, failed lid switch, or motor coupling failure. In SF's older buildings, we also check for shared drain line blockages.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Excessive vibration and walking</strong> — uneven floors in Victorians cause front-load washers to vibrate excessively during spin cycles. We adjust leveling legs and check shock absorbers.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Door seal mold and odor</strong> — SF's humidity promotes mold growth inside front-load washer door boots. We replace seals and advise on prevention.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Error codes from low water pressure</strong> — hillside neighborhoods with reduced pressure trigger fill cycle errors. We diagnose and adjust inlet valve settings.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Leaking from bottom</strong> — worn tub seal, cracked hose, or loose connections. We check all water paths and tighten or replace as needed.</li>
+            </ul>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">San Francisco Neighborhoods We Serve</h2>
+            <p style="margin-bottom:1rem;">Same-day washer repair across all SF neighborhoods: <strong>Mission, Castro, SoMa, Marina, Pacific Heights, Noe Valley, Bernal Heights, Sunset, Richmond</strong>, Twin Peaks, Diamond Heights, the Haight, Potrero Hill, Excelsior, Bayview, and more.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">SF Washer Repair Pricing</h2>
+            <p style="margin-bottom:1rem;">Most washer repairs in San Francisco cost <strong>$150–$350 after the $60 diagnostic fee</strong>. Drain pump replacement runs $150–$250; door seal replacement $120–$200; motor coupling $100–$180. The $60 diagnostic is fully credited toward your repair.</p>
+            <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day washer repair in San Francisco. Also see our <a href="/washer-repair" style="color:#C0362C;font-weight:bold;">Bay Area washer repair</a> page for general service information.</p>
+          `
+    },
+    '/san-francisco-dryer-repair': {
+      title: 'Dryer Repair San Francisco | Gas & Electric | FixitBay',
+      description: 'Dryer repair in San Francisco. Gas & electric. Victorian venting specialists. From $120 after $60 diagnostic. 180-day warranty.',
+      h1: 'Dryer Repair in San Francisco',
+      content: `
+            <p style="margin-bottom:1rem;">Dryer repairs in San Francisco require expertise that goes beyond standard appliance service. The city's older housing stock, shared venting systems, and building code requirements create dryer challenges unique to SF. Our technicians specialize in the gas and electric dryer issues that San Francisco homes face — from Victorian-era venting constraints to fire safety compliance in multi-unit buildings.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why Dryers Fail Differently in San Francisco</h2>
+            <p style="margin-bottom:1rem;"><strong>Long, complex venting runs</strong> are the #1 dryer issue in San Francisco. Many Victorian and Edwardian homes route dryer exhaust through 15–25 feet of ductwork with multiple elbows. This dramatically reduces airflow, causing thermal fuse failures, overheating, and extended drying times. We see this constantly in the Mission, Haight, and Castro.</p>
+            <p style="margin-bottom:1rem;"><strong>Gas dryers in older buildings</strong> present specific challenges. Many SF homes built before 1970 have gas dryers connected to aging gas lines. Our technicians perform gas leak checks on every gas dryer service call and ensure proper ventilation meets current SF Building Code requirements.</p>
+            <p style="margin-bottom:1rem;"><strong>Stacked configurations in small spaces</strong> are extremely common in SF apartments. When a dryer sits on top of a washer in a tight closet, heat buildup and restricted airflow cause faster component wear. We optimize venting and check clearances during every stacked dryer repair.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common SF Dryer Problems</h2>
+            <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Not heating (thermal fuse blown)</strong> — restricted venting in older SF homes is the #1 cause. We replace the fuse and clean the vent to prevent recurrence.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Takes multiple cycles to dry</strong> — long vent runs reduce exhaust flow. We measure airflow at the exterior vent and clear lint buildup throughout the ductwork.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Gas igniter not lighting</strong> — humidity and age cause gas valve solenoids to fail. Common in Sunset and Richmond District homes with gas dryers.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Burning smell during operation</strong> — lint accumulation in the vent or drum felt seal is a fire hazard. We clean all lint paths and inspect safety components.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Drum not turning</strong> — worn belt, broken idler pulley, or failed motor. Our technicians carry common belts for Samsung, LG, Whirlpool, and GE models.</li>
+            </ul>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">San Francisco Neighborhoods We Serve</h2>
+            <p style="margin-bottom:1rem;">Same-day dryer repair across all SF neighborhoods: <strong>Mission, Castro, Haight, Sunset, Richmond, SoMa, Marina, Pacific Heights, Noe Valley, Bernal Heights</strong>, Twin Peaks, Potrero Hill, Excelsior, Bayview, and more.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">SF Dryer Repair Pricing</h2>
+            <p style="margin-bottom:1rem;">Most dryer repairs in San Francisco cost <strong>$120–$300 after the $60 diagnostic fee</strong>. Thermal fuse replacement runs $100–$180; gas valve repair $200–$320; belt replacement $80–$150. The $60 diagnostic is fully credited toward your repair.</p>
+            <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day dryer repair in San Francisco. Also see our <a href="/dryer-repair" style="color:#C0362C;font-weight:bold;">Bay Area dryer repair</a> page for general service information.</p>
+          `
+    },
+    '/san-francisco-oven-repair': {
+      title: 'Oven Repair San Francisco | Gas & Electric | FixitBay',
+      description: 'Oven repair in San Francisco. Gas igniter specialists. Viking, Wolf, Thermador experts. From $150 after $60 diagnostic. 180-day warranty.',
+      h1: 'Oven Repair in San Francisco',
+      content: `
+            <p style="margin-bottom:1rem;">San Francisco kitchens demand oven expertise that accounts for the city's unique combination of gas infrastructure, high-end appliance prevalence, and older building challenges. From Wolf ranges in Pacific Heights estates to aging Whirlpool gas ovens in Sunset District homes, our technicians fix gas igniters, heating elements, temperature sensors, and control boards across every SF neighborhood.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why Ovens Fail Differently in San Francisco</h2>
+            <p style="margin-bottom:1rem;"><strong>Gas igniters degrade faster</strong> in San Francisco's humid, coastal climate. Foggy neighborhoods like the Sunset, Richmond, and Outer Mission see igniter failures 20–30% sooner than homes in drier parts of the Bay Area. The constant humidity cycle — fog at night, sun during the day — causes igniter elements to crack and weaken.</p>
+            <p style="margin-bottom:1rem;"><strong>High-end pro-style ranges</strong> are extremely common in San Francisco. Wolf, Viking, Thermador, and La Cornue ranges are standard in Pacific Heights, Nob Hill, Sea Cliff, and Presidio Heights homes. These commercial-grade units require specialized diagnostics — dual-fuel configurations, convection fan motors, and digital control systems that general technicians often misdiagnose.</p>
+            <p style="margin-bottom:1rem;"><strong>Victorian-era gas lines</strong> can affect gas oven performance. Older gas infrastructure in pre-1940 buildings sometimes delivers inconsistent gas pressure, causing uneven heating and igniter cycling problems. Our technicians check gas pressure on every gas oven service call.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common SF Oven Problems</h2>
+            <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Gas oven won't light</strong> — weak or cracked igniter. The #1 oven repair call in San Francisco, especially in foggy neighborhoods.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Oven not reaching temperature</strong> — faulty temperature sensor, calibration drift, or heating element failure. We verify with an independent thermometer.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Uneven baking</strong> — convection fan failure, worn bake element, or incorrect rack positioning. Common in Wolf and Viking units after 8+ years.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Self-clean door stuck</strong> — latch motor or switch failure locks the door. We manually release the lock and replace the defective component.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Error codes on digital displays</strong> — control board or sensor failure. We diagnose the specific error and replace only the failed component.</li>
+            </ul>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">San Francisco Neighborhoods We Serve</h2>
+            <p style="margin-bottom:1rem;">Same-day oven repair across all SF neighborhoods: <strong>Pacific Heights, Nob Hill, Sea Cliff, Sunset, Richmond, Mission, Castro, SoMa, Marina, Noe Valley</strong>, Twin Peaks, Presidio Heights, Russian Hill, the Haight, Potrero Hill, and more.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">SF Oven Repair Pricing</h2>
+            <p style="margin-bottom:1rem;">Most oven repairs in San Francisco cost <strong>$150–$400 after the $60 diagnostic fee</strong>. Gas igniter replacement runs $150–$220; heating element $130–$200; temperature sensor $100–$180. Pro-style ranges (Wolf, Viking, Thermador) may cost more due to specialized parts.</p>
+            <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day oven repair in San Francisco. Also see our <a href="/oven-repair" style="color:#C0362C;font-weight:bold;">Bay Area oven repair</a> page for general service information.</p>
+          `
+    },
+    '/san-francisco-ice-maker-repair': {
+      title: 'Ice Maker Repair San Francisco | Local SF Service | FixitBay',
+      description: 'Ice maker repair in San Francisco. Sub-Zero, Samsung & all brands. Water pressure specialists. From $150 after $60 diagnostic. 180-day warranty.',
+      h1: 'Ice Maker Repair in San Francisco',
+      content: `
+            <p style="margin-bottom:1rem;">Ice maker repairs in San Francisco involve challenges specific to the city's water supply, building infrastructure, and appliance mix. From built-in Sub-Zero ice systems in Pacific Heights to Samsung refrigerator ice makers in Marina apartments, our technicians diagnose frozen water lines, faulty inlet valves, and water pressure issues across every SF neighborhood.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why Ice Makers Fail Differently in San Francisco</h2>
+            <p style="margin-bottom:1rem;"><strong>Water pressure variations</strong> are a leading cause of ice maker failures in San Francisco. Hillside homes in Twin Peaks, Nob Hill, Pacific Heights, and Diamond Heights often have lower water pressure than flatland neighborhoods. Low pressure prevents the inlet valve from opening fully, causing small or hollow ice cubes and eventually triggering the ice maker to shut off.</p>
+            <p style="margin-bottom:1rem;"><strong>SFPUC water minerals</strong> cause sediment buildup in water inlet valves and filters. Over 2–3 years, calcium deposits restrict water flow to the ice maker, reducing production and causing the water line to freeze. We see this especially in the Sunset, Richmond, and Marina — areas with older water infrastructure.</p>
+            <p style="margin-bottom:1rem;"><strong>Sub-Zero and high-end integrated ice makers</strong> are common in San Francisco's upscale neighborhoods. These units have dedicated ice maker compressors and sophisticated controls that require specialized diagnostic equipment. Our technicians are experienced with Sub-Zero, Thermador, and Viking integrated ice systems.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common SF Ice Maker Problems</h2>
+            <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Not making ice at all</strong> — frozen water line, faulty inlet valve, or failed ice maker module. Low water pressure in hillside neighborhoods is a common hidden cause.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Small or hollow ice cubes</strong> — restricted water flow from low pressure or mineral buildup in the inlet valve. We check water pressure and clean or replace the valve.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Ice tastes bad or has odor</strong> — old water filter, food absorption from the freezer, or stale ice. We replace the filter and inspect the water line.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Water leaking from ice maker</strong> — cracked water line, loose connection, or frozen drain tube. We trace the full water path to find the leak source.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Ice maker cycling but tray empty</strong> — ejector arm failure or harvest cycle malfunction. The motor turns but ice isn't being released into the bin.</li>
+            </ul>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">San Francisco Neighborhoods We Serve</h2>
+            <p style="margin-bottom:1rem;">Same-day ice maker repair across all SF neighborhoods: <strong>Pacific Heights, Nob Hill, Twin Peaks, Marina, Sunset, Richmond, Mission, Castro, SoMa, Noe Valley</strong>, Diamond Heights, Russian Hill, Sea Cliff, Presidio Heights, Potrero Hill, and more.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">SF Ice Maker Repair Pricing</h2>
+            <p style="margin-bottom:1rem;">Most ice maker repairs in San Francisco cost <strong>$150–$280 after the $60 diagnostic fee</strong>. Water inlet valve replacement runs $120–$200; ice maker module replacement $150–$250; water line repair $80–$150. Sub-Zero and built-in units may cost more due to specialized parts.</p>
+            <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day ice maker repair in San Francisco. Also see our <a href="/ice-maker-repair" style="color:#C0362C;font-weight:bold;">Bay Area ice maker repair</a> page for general service information.</p>
+          `
     }
   };
 
@@ -1284,6 +1409,39 @@ function getSEOContent(route) {
           <p>We also offer <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerator repair</a>, <a href="/freezer-repair" style="color:#C0362C;font-weight:bold;">freezer repair</a>, and <a href="/dishwasher-repair" style="color:#C0362C;font-weight:bold;">dishwasher repair</a> across the Bay Area.</p>
         `,
         links: ['/', '/refrigerator-repair', '/freezer-repair', '/dishwasher-repair', '/service-areas', '/reviews', '/contact']
+      },
+      'garbage-disposal': {
+        title: 'Garbage Disposal Repair San Francisco | Same-Day | FixitBay',
+        desc: 'Garbage disposal repair in SF & Bay Area. Jammed, leaking, humming, won\'t turn on. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay.',
+        h1: 'Garbage Disposal Repair in San Francisco & Bay Area',
+        content: `
+          <p style="margin-bottom:1rem;">When your garbage disposal jams, leaks, or won't turn on, FixitBay provides same-day repair across the Bay Area — from San Francisco to Marin County and the Peninsula. Our licensed technicians diagnose and fix jammed blades, electrical failures, leaks, motor issues, and drainage problems. We also provide professional garbage disposal installation and replacement when repair isn't cost-effective.</p>
+          <p style="margin-bottom:1rem;">We repair and install all major garbage disposal brands including InSinkErator, Waste King, Moen, KitchenAid, Badger, and GE. Whether you have a 1/3 HP apartment unit or a 1 HP Evolution model, our technicians carry common disposal parts — reset switches, mounting gaskets, disposal wrenches, and splash guards — for same-day repairs.</p>
+          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common Garbage Disposal Problems We Fix</h2>
+          <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+            <li style="margin-bottom:0.5rem;"><strong>Disposal jammed or stuck</strong> — foreign objects, fibrous foods, or dull blades prevent the grinding plate from turning. We clear jams safely and inspect for blade wear.</li>
+            <li style="margin-bottom:0.5rem;"><strong>Won't turn on (no power)</strong> — faulty reset switch, tripped breaker, or wiring issue. We diagnose electrical problems and replace defective components.</li>
+            <li style="margin-bottom:0.5rem;"><strong>Humming but not spinning</strong> — the motor energizes but the flywheel is stuck. Often caused by a small object wedged between the impeller and shredder ring.</li>
+            <li style="margin-bottom:0.5rem;"><strong>Leaking from bottom or connections</strong> — worn mounting gasket, cracked housing, or loose drain connections cause water to pool under the sink.</li>
+            <li style="margin-bottom:0.5rem;"><strong>Slow draining or backing up</strong> — clogged drain line, blocked dishwasher connection, or partially jammed grinding chamber restricts water flow.</li>
+            <li style="margin-bottom:0.5rem;"><strong>Bad odors</strong> — food buildup and bacterial growth inside the grinding chamber. We clean the unit and advise on prevention.</li>
+          </ul>
+          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Garbage Disposal Repair Pricing</h2>
+          <p style="margin-bottom:1rem;">Most garbage disposal repairs cost <strong>$100–$250 after the $60 diagnostic fee</strong>. Simple jams and resets run $80–$150. Leak repairs cost $90–$180. Motor replacement or full disposal replacement runs $150–$350 installed, depending on the model and horsepower. The $60 diagnostic is fully applied to your repair cost, and every job is backed by our 180-day warranty.</p>
+          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Garbage Disposal</h2>
+          <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Jammed blades or humming — most jams are cleared in 15–30 minutes for $80–$150. The motor is fine.</p>
+          <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Leaking from the flange or drain connection — a worn gasket or loose fitting costs $90–$140 to fix.</p>
+          <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Motor burned out or unit won't turn on — motor replacement often costs as much as a new disposal ($150–$300 installed).</p>
+          <p style="margin-bottom:1rem;"><strong>Replace:</strong> Unit is 10+ years old with chronic jams — a new 3/4 HP disposal runs $180–$300 installed and handles food waste far better.</p>
+          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Frequently Asked Questions</h2>
+          <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">How much does garbage disposal repair cost in the Bay Area?</p><p style="color:#4A5568;font-size:0.875rem;">Most repairs cost $100–$250 after the $60 diagnostic. Jams and resets run $80–$150. Leak repairs $90–$180. Full replacement with a new unit $150–$350 installed.</p></div>
+          <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Should I repair or replace my garbage disposal?</p><p style="color:#4A5568;font-size:0.875rem;">For units under 8 years old with occasional jams, repair is almost always worthwhile. For disposals 10+ years old with motor issues or chronic jams, a new unit is the better investment.</p></div>
+          <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">What brands of garbage disposals do you repair?</p><p style="color:#4A5568;font-size:0.875rem;">We repair all major brands: InSinkErator, Waste King, Moen, KitchenAid, Badger, GE, and more. We also install new disposals from all manufacturers.</p></div>
+          <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Do you offer same-day garbage disposal repair?</p><p style="color:#4A5568;font-size:0.875rem;">Yes — call before noon for same-day service in most Bay Area cities. We serve 22 cities across San Francisco, the Peninsula, and Marin County.</p></div>
+          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
+          <p>We also offer <a href="/dishwasher-repair" style="color:#C0362C;font-weight:bold;">dishwasher repair</a> (often connected to the same drain line), <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerator repair</a>, and <a href="/washer-repair" style="color:#C0362C;font-weight:bold;">washer repair</a> across the Bay Area.</p>
+        `,
+        links: ['/', '/dishwasher-repair', '/refrigerator-repair', '/washer-repair', '/service-areas', '/reviews', '/contact']
       },
       'wine-cooler': {
         title: 'Wine Cooler Repair San Francisco | Same-Day | FixitBay',
