@@ -8,29 +8,37 @@ An appliance repair business website (fixitbay.net) built as a React SPA with st
 - **Backend**: FastAPI + MongoDB (CMS for reviews, services, areas)
 - **Pre-rendering**: `frontend/scripts/generate-seo-snapshots.cjs`
 - **SEO Config**: `frontend/scripts/seo-config.cjs` + `frontend/src/seo/seoContent.js`
-- **Deployment**: Netlify/Cloudflare (uses `_headers` file)
+- **Deployment**: Netlify/Cloudflare (uses `_headers` file for cache control)
 
 ## Key Files
 - `frontend/src/components/ProfessionalLandingPage.js` - Homepage
 - `frontend/src/components/sections/HomeHero.jsx` - Hero section
 - `frontend/src/components/pages/` - Service pages, blog posts
 - `frontend/scripts/generate-seo-snapshots.cjs` - SSG script
+- `frontend/public/_headers` - Cache control headers
 
 ## Completed Work
 
 ### Session 1-4 (Previous)
-- Fixed keyword cannibalization for 7 service pages (dishwasher, refrigerator, washer, dryer, oven, ice-maker, wine-cooler)
+- Fixed keyword cannibalization for 7 service pages
 - Removed duplicate Service schema injections from all service pages
 - Rewrote `/blog/refrigerator-not-cooling` with new 1500+ word expert guide
 - Rewrote `/blog/dryer-not-heating` with comprehensive gas/electric guide
 - Created new `/blog/appliance-repair-cost-san-francisco` pricing guide
 
-### Session 5 (Current - Feb 2026)
-- **Task 1 - Hero Microcopy**: Grouped two desktop microcopy lines under CTA into a single aligned block. Both lines center-aligned with consistent spacing.
-- **Task 2 - Stats Row Balance**: Fixed "180-Day" stat overflowing by reducing numSize to 36px with whiteSpace: nowrap. All 3 blocks now visually balanced.
-- **Task 3 - Pricing Card Alignment**: Fixed middle card offset by using absolute positioning for "MOST ASKED" badge and uniform padding across all cards. 0px Y difference confirmed.
-- **Task 4 - Reviews Grid**: Expanded fallback reviews from 3 to 9 using real customer reviews from existing codebase (AboutPage, BookPage, ThumbtackWidget). Changed grid from 2-col to 3-col layout.
-- **Task 5 - Explore Section**: Updated subheading copy, stacked "View all service areas" and "Marin County" links vertically. Blog links clearly labeled.
+### Session 5 (Feb 2026) - Homepage Visual Fixes
+- Hero microcopy: Grouped two desktop lines under CTA into aligned block
+- Stats row balance: Fixed "180-Day" overflow with reduced font and nowrap
+- Pricing card alignment: Absolute badge positioning, 0px Y offset
+- Reviews grid: Expanded from 3 to 9 real reviews, 3-column grid
+- Explore section: Updated subheading, stacked links vertically
+
+### Session 6 (Feb 2026) - Performance Optimization
+- **FIX 1 - Hero Logo WebP**: Converted 1.6MB PNG to 37KB WebP (98% reduction). `<picture>` tag with WebP source, `loading="eager"`, `fetchpriority="high"`.
+- **FIX 2 - Service Card WebP**: Converted all 15 service JPGs to WebP (31-88% savings each). `<picture>` tags with WebP `<source>` + JPG fallback.
+- **FIX 3 - Cache Headers**: Created `_headers` file with long-term caching: 1yr immutable for static/webp, 30 days for jpg/png.
+- **FIX 4 - Lazy Loading**: All service card images set to `loading="lazy"`. Only hero logo and navbar logo remain `loading="eager"`.
+- **SSG Build**: 233 pages verified, 0 failures.
 
 ## Backlog (Prioritized)
 
@@ -44,9 +52,3 @@ An appliance repair business website (fixitbay.net) built as a React SPA with st
 - Audit remaining blog posts for duplicate schemas
 - Refactor monolithic page components
 - Fix "ghost div" on mobile homepage
-
-### Performance (Deferred from current session)
-- Convert hero logo PNG to WebP with `<picture>` tag
-- Convert 10 service card JPGs to WebP
-- Add long-term cache headers in `_headers` file
-- Ensure lazy loading on below-fold images
