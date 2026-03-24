@@ -129,10 +129,16 @@ function getServiceContent(service) {
   // Custom descriptions per service
   const getDescription = () => {
     if (isDishwasher) {
-      return `Expert dishwasher repair across the Bay Area — SF, Peninsula & Marin. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`;
+      return `Dishwasher repair across the Bay Area. Leaks, draining, won't start. Same-day service, $60 diagnostic applied to repair. Call FixitBay.`;
     }
     if (isIceMaker) {
       return `Ice maker repair across the Bay Area: from $150 after $60 diagnostic. Same-day service across 22 cities. Licensed & insured. 180-day warranty.`;
+    }
+    if (service === 'Refrigerator') {
+      return `Expert refrigerator repair across the Bay Area. Cooling issues, leaks, ice buildup. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay.`;
+    }
+    if (service === 'Dryer') {
+      return `Dryer repair in SF & Bay Area. Gas and electric. Not heating, not spinning. $60 diagnostic applied to repair. Call FixitBay.`;
     }
     if (hasSFCityPage) {
       return `Expert ${service.toLowerCase()} repair across the Bay Area — SF, Peninsula & Marin. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`;
@@ -140,8 +146,10 @@ function getServiceContent(service) {
     return `Professional ${service.toLowerCase()} repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`;
   };
   
+  const isWineCooler = service === 'Wine Cooler';
+
   return {
-    title: hasSFCityPage ? `${service} Repair Bay Area | Same-Day Service | FixitBay` : `${service} Repair San Francisco | Same-Day | FixitBay`,
+    title: isWineCooler ? 'Wine Cooler Repair San Francisco | Same-Day | FixitBay' : (hasSFCityPage ? `${service} Repair Bay Area | Same-Day Service | FixitBay` : `${service} Repair San Francisco | Same-Day | FixitBay`),
     description: getDescription(),
     h1: hasSFCityPage ? `${service} Repair in the Bay Area` : `${service} Repair in San Francisco & Bay Area`,
     content: `

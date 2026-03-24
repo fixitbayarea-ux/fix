@@ -74,7 +74,7 @@ const DryerRepairPage = () => {
         appliance="Dryer"
         pageSlug="dryer-repair"
         pageTitle="Dryer Repair Bay Area | Same-Day Service | FixitBay"
-        metaDescription="Expert dryer repair across the Bay Area. Gas and electric. $60 diagnostic applied to repair. 180-day warranty."
+        metaDescription="Dryer repair in SF & Bay Area. Gas and electric. Not heating, not spinning. $60 diagnostic applied to repair. Call FixitBay."
         heroTitle={<>Expert Dryer<br />Repair. Bay Area.</>}
         heroImage="/images/technicians/dryer-tech.jpg"
         heroImageAlt="FixitBay technician repairing a dryer in a Bay Area home"
@@ -115,7 +115,7 @@ const DryerRepairPage = () => {
         appliance="Dryer"
         cmsSlug="dryer-repair"
         pageTitle="Dryer Repair Bay Area | Same-Day Service | FixitBay"
-        metaDescription="Expert dryer repair across the Bay Area — SF, Peninsula & Marin. Gas and electric. $60 diagnostic applied to repair. 180-day warranty."
+        metaDescription="Dryer repair in SF & Bay Area. Gas and electric. Not heating, not spinning. $60 diagnostic applied to repair. Call FixitBay."
         heroImage="/images/technicians/dryer-tech.jpg"
         heroImageAlt="FixitBay technician repairing a dryer in a Bay Area home"
         heroImagePosition="60% top"

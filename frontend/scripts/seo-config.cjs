@@ -1162,7 +1162,7 @@ function getSEOContent(route) {
     const SERVICE_DATA = {
       'refrigerator': {
         title: 'Refrigerator Repair Bay Area | Same-Day Service | FixitBay',
-        desc: 'Expert refrigerator repair across SF Bay Area — Peninsula, Marin & San Francisco. $60 diagnostic applied to repair. 180-day warranty. Same-day service. Call (760) 543-5733.',
+        desc: 'Expert refrigerator repair across the Bay Area. Cooling issues, leaks, ice buildup. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay.',
         h1: 'Refrigerator Repair in the Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your refrigerator stops cooling, leaks water, or makes unusual noises, FixitBay provides same-day repair service across the Bay Area — from San Francisco to Marin County and the Peninsula. Our licensed technicians diagnose and fix most refrigerator issues in a single visit — from compressor failures and thermostat problems to ice maker malfunctions and door seal replacements.</p>
@@ -1198,7 +1198,7 @@ function getSEOContent(route) {
       },
       'dryer': {
         title: 'Dryer Repair Bay Area | Same-Day Service | FixitBay',
-        desc: 'Expert dryer repair across SF Bay Area — Peninsula, Marin & San Francisco. Gas and electric. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+        desc: 'Dryer repair in SF & Bay Area. Gas and electric. Not heating, not spinning. $60 diagnostic applied to repair. Call FixitBay.',
         h1: 'Dryer Repair in the Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your dryer stops heating, won't start, or makes loud noises, FixitBay provides expert repair across the Bay Area — from San Francisco to Marin County and the Peninsula. We fix gas and electric dryers — from heating element failures and thermal fuse issues to drum belt problems and vent blockages.</p>
@@ -1216,7 +1216,7 @@ function getSEOContent(route) {
       },
       'dishwasher': {
         title: 'Dishwasher Repair Bay Area | Same-Day Service | FixitBay',
-        desc: 'Expert dishwasher repair across SF Bay Area — Peninsula, Marin & San Francisco. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733.',
+        desc: 'Dishwasher repair across the Bay Area. Leaks, draining, won\'t start. Same-day service, $60 diagnostic applied to repair. Call FixitBay.',
         h1: 'Dishwasher Repair in the Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your dishwasher won't drain, leaks water, or leaves dishes dirty, FixitBay delivers professional repair across the Bay Area — from San Francisco to Marin County and the Peninsula. Our technicians fix drain pumps, spray arms, heating elements, door seals, control boards, and more.</p>
@@ -1286,7 +1286,7 @@ function getSEOContent(route) {
         links: ['/', '/refrigerator-repair', '/freezer-repair', '/dishwasher-repair', '/service-areas', '/reviews', '/contact']
       },
       'wine-cooler': {
-        title: 'Wine Cooler Repair Bay Area | Same-Day Service | FixitBay',
+        title: 'Wine Cooler Repair San Francisco | Same-Day | FixitBay',
         desc: 'Wine cooler and wine fridge repair across SF Bay Area. Temperature and humidity issues. Same-day service. 180-day warranty. Call (760) 543-5733.',
         h1: 'Wine Cooler Repair in the Bay Area',
         content: `

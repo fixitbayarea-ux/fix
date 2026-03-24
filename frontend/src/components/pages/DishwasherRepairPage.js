@@ -72,7 +72,7 @@ const DishwasherRepairPage = () => {
         appliance="Dishwasher"
         pageSlug="dishwasher-repair"
         pageTitle="Dishwasher Repair Bay Area | Same-Day Service | FixitBay"
-        metaDescription="Expert dishwasher repair across the Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty."
+        metaDescription="Dishwasher repair across the Bay Area. Leaks, draining, won't start. Same-day service, $60 diagnostic applied to repair. Call FixitBay."
         heroTitle={<>Expert Dishwasher<br />Repair. Bay Area.</>}
         heroImage="/images/technicians/dishwasher-tech.jpg"
         heroImageAlt="FixitBay technician repairing a dishwasher in a Bay Area home"
@@ -112,7 +112,7 @@ const DishwasherRepairPage = () => {
       serviceSchema={serviceSchema}
       appliance="Dishwasher"
       pageTitle="Dishwasher Repair Bay Area | Same-Day Service | FixitBay"
-      metaDescription="Expert dishwasher repair across the Bay Area — SF, Peninsula & Marin. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty."
+      metaDescription="Dishwasher repair across the Bay Area. Leaks, draining, won't start. Same-day service, $60 diagnostic applied to repair. Call FixitBay."
       heroImage="/images/technicians/dishwasher-tech.jpg"
       heroImageAlt="FixitBay technician repairing a dishwasher in a Bay Area home"
       commonProblems={commonProblems}

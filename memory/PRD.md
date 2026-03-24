@@ -13,42 +13,53 @@ An appliance repair business website (fixitbay.net) built as a React SPA with st
 ## Key Files
 - `frontend/src/components/ProfessionalLandingPage.js` - Homepage
 - `frontend/src/components/sections/HomeHero.jsx` - Hero section
-- `frontend/src/components/pages/` - Service pages, blog posts
-- `frontend/scripts/generate-seo-snapshots.cjs` - SSG script
+- `frontend/src/seo/seoContent.js` - Client-side SEO content
+- `frontend/scripts/seo-config.cjs` - SSG SEO config (BOTH must be updated for SEO changes)
 - `frontend/public/_headers` - Cache control headers
 
 ## Completed Work
 
-### Session 1-4 (Previous)
+### Sessions 1-4 (Previous)
 - Fixed keyword cannibalization for 7 service pages
-- Removed duplicate Service schema injections from all service pages
-- Rewrote `/blog/refrigerator-not-cooling` with new 1500+ word expert guide
-- Rewrote `/blog/dryer-not-heating` with comprehensive gas/electric guide
-- Created new `/blog/appliance-repair-cost-san-francisco` pricing guide
+- Removed duplicate Service schema injections
+- Rewrote 2 blog posts, created 1 new blog post
 
 ### Session 5 (Feb 2026) - Homepage Visual Fixes
-- Hero microcopy: Grouped two desktop lines under CTA into aligned block
-- Stats row balance: Fixed "180-Day" overflow with reduced font and nowrap
-- Pricing card alignment: Absolute badge positioning, 0px Y offset
-- Reviews grid: Expanded from 3 to 9 real reviews, 3-column grid
-- Explore section: Updated subheading, stacked links vertically
+- Hero microcopy alignment, stats row balance, pricing card alignment
+- Reviews grid expanded to 9 in 3-column layout
+- Explore section copy cleanup
 
 ### Session 6 (Feb 2026) - Performance Optimization
-- **FIX 1 - Hero Logo WebP**: Converted 1.6MB PNG to 37KB WebP (98% reduction). `<picture>` tag with WebP source, `loading="eager"`, `fetchpriority="high"`.
-- **FIX 2 - Service Card WebP**: Converted all 15 service JPGs to WebP (31-88% savings each). `<picture>` tags with WebP `<source>` + JPG fallback.
-- **FIX 3 - Cache Headers**: Created `_headers` file with long-term caching: 1yr immutable for static/webp, 30 days for jpg/png.
-- **FIX 4 - Lazy Loading**: All service card images set to `loading="lazy"`. Only hero logo and navbar logo remain `loading="eager"`.
-- **SSG Build**: 233 pages verified, 0 failures.
+- Hero logo: 1.6MB PNG → 37KB WebP with `<picture>` tag
+- 15 service images converted to WebP with `<picture>` tags
+- Cache headers (`_headers`) for static assets
+- Lazy loading on all below-fold images
+
+### Session 7 (Feb 2026) - SEO Title & Description Fixes
+- **Wine Cooler title**: Changed from "Bay Area" to "San Francisco" (vol 700, pos #26 target)
+- **3 meta descriptions shortened to ≤160 chars**:
+  - Refrigerator: 172→150 chars
+  - Dishwasher: 172→135 chars
+  - Dryer: 165→124 chars
+- Updated in BOTH `seoContent.js` AND `seo-config.cjs` (dual source)
+- Updated in component files: `WineRefrigeratorRepairPage.js`, `RefrigeratorRepairPage.js`, `DishwasherRepairPage.js`, `DryerRepairPage.js`
+- Tasks 3-5 (hero WebP, service WebP, orphan links) were already complete from Session 6
+
+## IMPORTANT: Dual SEO Source
+SEO changes must be updated in BOTH:
+1. `frontend/src/seo/seoContent.js` (client-side React)
+2. `frontend/scripts/seo-config.cjs` (SSG pre-rendering)
+3. Individual page component files (e.g., `RefrigeratorRepairPage.js`)
 
 ## Backlog (Prioritized)
 
 ### P1
 - Investigate 2 "Soft 404" pages from Google Search Console (`/garbage-disposal-repair`)
-- Add rich SF-specific content to 5 remaining SF city-specific pages (refrigerator, washer, dryer, oven, ice-maker)
+- Add rich SF-specific content to 5 remaining SF city-specific pages
 
 ### P2
 - Remove legacy `applySEO()` function from `public/index.html`
-- Merge dual SEO content sources (`seoContent.js` + `seo-config.cjs`) into single source of truth
+- Merge dual SEO content sources into single source of truth
 - Audit remaining blog posts for duplicate schemas
 - Refactor monolithic page components
 - Fix "ghost div" on mobile homepage

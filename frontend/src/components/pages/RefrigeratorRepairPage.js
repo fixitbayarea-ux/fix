@@ -66,7 +66,7 @@ const DesktopRefrigeratorRepair = () => (
       customH1="Expert Refrigerator Repair in the Bay Area"
       heroDescription="Serving the SF Bay Area since 2023. Over 500 refrigerators repaired across 22 cities. Most repairs completed same day."
       pageTitle="Refrigerator Repair Bay Area | Same-Day Service | FixitBay"
-      metaDescription="Expert refrigerator repair across the Bay Area — SF, Peninsula & Marin. $60 diagnostic applied to repair. 180-day warranty."
+      metaDescription="Expert refrigerator repair across the Bay Area. Cooling issues, leaks, ice buildup. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay."
       commonProblems={desktopCommonProblems}
       faqData={desktopFaqData}
       serviceDescription={desktopServiceDescription}
