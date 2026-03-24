@@ -222,6 +222,14 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - Updated seo-config.cjs and BlogListPage.js with new title/description
 - Files changed: `RefrigeratorNotCooling.js` (full rewrite), `seo-config.cjs`, `BlogListPage.js`
   - Added internal link paragraph to SF city-specific page on each page
+
+### Session 40b (Feb 2026) — Full Blog Rewrite: /blog/dryer-not-heating
+- **Complete rewrite** of blog post to comprehensive 7-cause guide for gas & electric dryers
+- New title: "Dryer Not Heating? 7 Causes & Fixes | FixitBay SF" (55 chars)
+- New sections: 7 causes (lint/vent, thermal fuse, heating element, gas igniter/solenoid, thermostat, timer/board, moisture sensor), Gas vs Electric diagnostic guide (two-column), DIY checklist, pricing table, Andrei's Field Note, 5 FAQ, Related Articles
+- **Schema fix:** Only 1 BlogPosting, 1 FAQPage, 1 BreadcrumbList via `useSchemas` hook (no duplicates)
+- Internal links: /dryer-repair, /san-francisco-appliance-repair, /blog/dryer-taking-too-long, /blog/when-to-repair-vs-replace, /blog/same-day-appliance-repair-bay-area
+- Files changed: `DryerNotHeating.js` (full rewrite), `seo-config.cjs`, `BlogListPage.js`
   - Schema names updated to "... Bay Area"
 - **seoContent.js:** Added `hasSFCityPage` flag for 7 services that auto-selects Bay Area title/H1/content for pre-rendered HTML
 - **seo-config.cjs:** Updated SERVICE_DATA titles, descriptions, H1s, and content for all 7 services + added internal links to SF pages in content

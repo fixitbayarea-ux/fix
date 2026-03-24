@@ -780,8 +780,8 @@ function getSEOContent(route) {
         description: 'Complete guide to appliance repair costs in San Francisco & Bay Area. Refrigerator, washer, dryer, dishwasher repair prices. $60 diagnostic.'
       },
       'dryer-not-heating': {
-        title: 'Dryer Not Heating? Causes & Repair Cost SF | FixitBay',
-        description: 'Dryer not heating? Gas vs electric causes, DIY checks, and SF repair costs $120-$300. Thermal fuse, heating element, gas valve fixes. Same-day service.'
+        title: 'Dryer Not Heating? 7 Causes & Fixes | FixitBay SF',
+        description: 'Dryer not heating? 7 common causes for gas & electric dryers. SF Bay Area guide with DIY checks + when to call a pro. From $235 at FixitBay LLC.'
       },
       'appliance-repair-marin-county': {
         title: 'Appliance Repair Marin County | Same-Day | FixitBay',
