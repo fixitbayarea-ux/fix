@@ -89,15 +89,15 @@ const HomeHero = () => {
               </a>
             </div>
 
-            {/* Desktop urgency micro-copy */}
-            <p className="hero-d" data-testid="hero-urgency-slots-desktop" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 12, color: 'rgba(255,255,255,0.65)', marginTop: 10, textAlign: 'center' }}>
-              ⚡ Most slots filled by noon — book now to secure today
-            </p>
-
-            {/* Desktop schedule note */}
-            <p className="hero-d" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.38)', marginTop: 14 }}>
-              Same-day &amp; next-day &middot; Mon–Sat
-            </p>
+            {/* Desktop microcopy block */}
+            <div className="hero-d" data-testid="hero-microcopy-desktop" style={{ textAlign: 'center', marginTop: 14 }}>
+              <p data-testid="hero-urgency-slots-desktop" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 12, color: 'rgba(255,255,255,0.55)', margin: 0, lineHeight: 1.6 }}>
+                ⚡ Most slots filled by noon — book now to secure today
+              </p>
+              <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.38)', margin: '4px 0 0 0', lineHeight: 1.6 }}>
+                Same-day &amp; next-day &middot; Mon–Sat
+              </p>
+            </div>
 
             {/* ━━━ MOBILE-ONLY ELEMENTS ━━━ */}
             <div className="hero-m" data-testid="hero-mobile">

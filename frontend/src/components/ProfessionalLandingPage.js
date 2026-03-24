@@ -116,9 +116,15 @@ const ProfessionalLandingPage = () => {
   /* Reviews state */
   const { reviews: apiReviews } = useReviews(true);
   const fallbackReviews = [
-    { id: "g-1", source: "Google", author: "Gayle Rabbitt", rating: 5, text: "Andrei was excellent. He explained and checked everything. I'd definitely contact FixitBay LLC if have a problem with any appliance." },
-    { id: "g-2", source: "Google", author: "Emily Chen", rating: 5, text: "One of the smoothest repair experiences I've had. Super easy to book online. Would highly recommend!" },
-    { id: "g-3", source: "Google", author: "Michael Kagan", rating: 5, text: "Andrei from FixItBay is great. He's knowledgeable, professional, fast, and answered any questions I had." },
+    { id: "g-1", source: "Google", author: "jennifer mushnick", rating: 5, text: "Andrei was great\u2014diagnosed issues with our oven, was communicative, and professional. His assessment of the problem with the igniter seems accurate. He was informed and thorough explaining the issue." },
+    { id: "g-2", source: "Google", author: "Ms Tee", rating: 5, text: "I would recommend FixitBay. It\u2019s a professional service. Andrei was punctual and came the day after I called. He took his time and looked all over the unit. Appreciate the service." },
+    { id: "g-3", source: "Google", author: "Karen Dzienkowski", rating: 5, text: "Andrei was great! Fixed it the first visit and came back to install a new thermostat the next day because he didn\u2019t have that part day 1. Reasonable price to fix a 20 yo fridge too! Highly recommend." },
+    { id: "g-4", source: "Google", author: "Gayle Rabbitt", rating: 5, text: "Andrei was excellent. He explained and checked everything. He quickly realized the leak was from the utility sink next to the washer and shut off the hoses so leak stopped. I\u2019d definitely contact FixitBay LLC if have a problem with any appliance." },
+    { id: "g-5", source: "Google", author: "Emily Chen", rating: 5, text: "One of the smoothest repair experiences I\u2019ve had. Super easy to book online and continue communicating over text with Andrei. He showed up on time, and was in/out within 2 hours. Would highly recommend!" },
+    { id: "g-6", source: "Google", author: "Michael Kagan", rating: 5, text: "Andrei from FixItBay is great. He\u2019s knowledgeable, professional, fast, and answered any questions I had about my fridge and dishwasher. He\u2019s saved me twice already!" },
+    { id: "t-1", source: "Thumbtack", author: "Heather O.", rating: 5, text: "Andrei was awesome! He diagnosed the problem with my washing machine and fixed it, giving me 2 options along the way in terms of cost. He was punctual and professional. Would use him again!" },
+    { id: "g-7", source: "Google", author: "Sarah M.", rating: 5, text: "Had a Sub-Zero emergency on Thanksgiving morning. They came within an hour and saved our dinner party. Incredibly professional." },
+    { id: "g-8", source: "Google", author: "James L.", rating: 5, text: "Fixed my LG washer same day. Andrei knew exactly what was wrong, explained everything clearly, and the price was fair. No upselling." },
   ];
   const reviews = apiReviews.length > 0 ? apiReviews : fallbackReviews;
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
@@ -233,16 +239,16 @@ const ProfessionalLandingPage = () => {
         <div style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr auto 1fr', alignItems: 'stretch' }}>
             {[
-              { num: '22', unit: 'Cities', title: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin' },
-              { num: '$60', unit: 'Diagnostic', title: 'GOES TOWARD REPAIR', desc: 'Applied if you proceed' },
-              { num: '180-Day', unit: 'Warranty', title: 'PARTS & LABOR', desc: '180-day guarantee' },
+              { num: '22', unit: 'Cities', title: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin', numSize: 64 },
+              { num: '$60', unit: 'Diagnostic', title: 'GOES TOWARD REPAIR', desc: 'Applied if you proceed', numSize: 64 },
+              { num: '180-Day', unit: 'Warranty', title: 'PARTS & LABOR', desc: '180-day guarantee', numSize: 36 },
             ].map((s, i) => (
               <React.Fragment key={i}>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: 20 }}>
                   <div style={{ width: 3, alignSelf: 'stretch', background: '#FF5722', flexShrink: 0 }} />
                   <div>
                     <div style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}>
-                      <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 64, lineHeight: 1, color: '#0D1B2A' }}>{s.num}</span>
+                      <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: s.numSize, lineHeight: 1, color: '#0D1B2A', whiteSpace: 'nowrap' }}>{s.num}</span>
                       <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 20, color: '#FF5722' }}>{s.unit}</span>
                     </div>
                     <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginTop: 6, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{s.title}</div>
@@ -449,8 +455,8 @@ const ProfessionalLandingPage = () => {
               { icon: <Tag size={36} strokeWidth={1.8} />, title: '$60 Diagnostic Visit', body: 'Applied toward repair if you proceed.', featured: true },
               { icon: <BadgeCheck size={36} strokeWidth={1.8} />, title: 'No Hidden Fees', body: 'You approve the estimate before work starts.', featured: false },
             ].map(c => (
-              <div key={c.title} className={`pricing-card relative ${c.featured ? 'pricing-card-featured' : 'pricing-card-default'}`} style={{ background: 'rgba(255,255,255,0.04)', borderRadius: 4, padding: c.featured ? '22px 18px' : '16px', border: c.featured ? '2px solid #FF5722' : '1px solid rgba(255,255,255,0.10)', textAlign: 'center', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }} data-testid={`pricing-card-${c.featured ? 'featured' : 'default'}`}>
-                {c.featured && <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 10, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block', marginBottom: 6 }} data-testid="pricing-badge">MOST ASKED</span>}
+              <div key={c.title} className={`pricing-card relative ${c.featured ? 'pricing-card-featured' : 'pricing-card-default'}`} style={{ background: 'rgba(255,255,255,0.04)', borderRadius: 4, padding: '32px 18px 24px', border: c.featured ? '2px solid #FF5722' : '1px solid rgba(255,255,255,0.10)', textAlign: 'center', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }} data-testid={`pricing-card-${c.featured ? 'featured' : 'default'}`}>
+                {c.featured && <span style={{ position: 'absolute', top: 10, left: 0, right: 0, fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 10, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.1em', display: 'block' }} data-testid="pricing-badge">MOST ASKED</span>}
                 <div style={{ color: '#FF5722', marginBottom: 20 }}>{c.icon}</div>
                 <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: c.featured ? 18 : 16, fontWeight: 700, color: '#FFFFFF', marginBottom: 10 }}>{c.title}</h3>
                 <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: c.featured ? 14 : 13, lineHeight: 1.6, color: 'rgba(255,255,255,0.60)', fontWeight: 400 }}>{c.body}</p>
@@ -469,10 +475,10 @@ const ProfessionalLandingPage = () => {
               <h2 className="hidden lg:block" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 38, fontWeight: 800, color: '#FFFFFF' }}>Real People. Real Repairs.</h2>
               <h2 className="lg:hidden text-3xl font-bold mb-3" style={{ color: '#FFFFFF' }}>Real Customer Reviews</h2>
             </div>
-            {/* Desktop: 2-column reviews grid */}
-            <div className="hidden lg:grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)', gap: 24, marginBottom: 40 }}>
+            {/* Desktop: 3-column reviews grid */}
+            <div className="hidden lg:grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)', gap: 24, marginBottom: 40 }}>
               {reviews.map((r, ri) => (
-                <div key={r.id} style={{ borderRadius: 4, padding: 28, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', ...(reviews.length % 2 !== 0 && ri === reviews.length - 1 ? { gridColumn: '1 / -1', maxWidth: 400, justifySelf: 'center' } : {}) }} data-testid={`review-card-${ri}`}>
+                <div key={r.id} style={{ borderRadius: 4, padding: 28, background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }} data-testid={`review-card-${ri}`}>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 14 }}>
                     <div style={{ display: 'flex', gap: 4 }}>{r.rating && [...Array(r.rating)].map((_, i) => <span key={i} style={{ color: '#FF5722', fontSize: 15 }}>&#9733;</span>)}</div>
                     <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>{r.source}</span>
@@ -536,7 +542,7 @@ const ProfessionalLandingPage = () => {
           <div className="text-center" style={{ marginBottom: 20 }}>
             <div className="hidden lg:block" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: 8 }}>SITEMAP</div>
             <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 28, fontWeight: 800, color: '#0D1B2A', marginBottom: 4 }}>Explore Services &amp; Areas</h2>
-            <p style={{ fontSize: 15, color: '#4A5568', fontWeight: 500 }}>Popular repair services and local service pages.</p>
+            <p style={{ fontSize: 15, color: '#4A5568', fontWeight: 500 }}>Browse popular repair services and local service area pages across the Bay Area.</p>
           </div>
           <div className="grid lg:grid-cols-2" style={{ gap: 18 }}>
             {/* Services panel */}
@@ -561,8 +567,10 @@ const ProfessionalLandingPage = () => {
                   <a key={l.href} href={l.href} className="r2-chip" style={{ fontSize: 14, fontWeight: 600, padding: '10px 16px', borderRadius: 4, background: '#fff', border: '1px solid #E5E2DD', color: '#0D1B2A', textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>{l.label}</a>
                 ))}
               </div>
-              <a href="/service-areas" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, marginTop: 18, fontSize: 15, fontWeight: 700, color: '#FF5722', textDecoration: 'none', minHeight: 44 }}>View all service areas &rarr;</a>
-              <a href="/marin-county-appliance-repair" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, marginTop: 8, fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none', minHeight: 44 }}>Marin County Appliance Repair &rarr;</a>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 4, marginTop: 18 }}>
+                <a href="/service-areas" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 15, fontWeight: 700, color: '#FF5722', textDecoration: 'none', minHeight: 44 }}>View all service areas &rarr;</a>
+                <a href="/marin-county-appliance-repair" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none', minHeight: 44 }}>Marin County Appliance Repair &rarr;</a>
+              </div>
               <div style={{ marginTop: 18, borderTop: '1px solid #E5E2DD', paddingTop: 14 }}>
                 <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', color: 'rgba(0,0,0,0.35)', textTransform: 'uppercase' }}>From the Blog</span>
                 <div className="flex flex-col" style={{ gap: 6, marginTop: 8 }}>
