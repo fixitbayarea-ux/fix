@@ -190,3 +190,15 @@ Multi-phase SEO and content optimization of a React SPA appliance repair website
 - **Enhancement 1-5 (Wine Cooler Page):** Added 5 new content sections to `/wine-cooler-repair`: SF climate section, types of coolers (4 cards), expanded brand list (17 brands), wine temperature guide, Andrei's technician note (E-E-A-T blockquote). Page word count: 223 → 579. All content in both React component (`WineRefrigeratorRepairPage.js`) and pre-rendered HTML (`seo-config.cjs`).
 - **Enhancement 6 (Orphan Page Links):** Added 3 orphan page links to: wine cooler page related resources section, homepage service areas panel (blog + marin links). Links: `/blog/same-day-appliance-repair-bay-area`, `/marin-county-appliance-repair`, `/blog/appliance-repair-marin-county`.
 - **FIX 4 (Noindex Audit):** Verified 12 noindex pages are all intentional. Added missing `robots: 'noindex, follow'` to `/privacy-policy`, `/llm-info`, and `/blog-faq` in seo-config.cjs. Zero unexpected noindex on any service/city/blog/about page.
+
+### Session 39 (Feb 2026) — Dishwasher Cannibalization Fix + Duplicate Schema Removal
+- **FIX 1 (Dishwasher Cannibalization — 5 sub-tasks):**
+  - **(A) Title:** Updated `DishwasherRepairPage.js` `pageTitle` (desktop + mobile) to "Dishwasher Repair Bay Area | Same-Day Service | FixitBay".
+  - **(B) H1:** Already "Expert Dishwasher Repair in the Bay Area" in ApplianceRepairPageNew.js.
+  - **(C) SF→Bay Area:** Reduced SF mentions in `DishwasherRepairPage.js` from ~12 to 3. Updated serviceDescription, FAQ answers, meta description, hero title, schema description.
+  - **(D) SF-Specific Content:** 466 words of rich SF content already in `seo-config.cjs` CITY_SERVICE_RICH (SFPUC, Bosch/Miele, Victorian homes, drainage, hillside, neighborhoods).
+  - **(E) Internal Link:** Added "Looking for dishwasher repair specifically in San Francisco?" paragraph in DishwasherRepairPage.js serviceDescription.
+- **FIX 2 (Orphan Links):** Already present in ProfessionalLandingPage.js.
+- **FIX 3 (Duplicate Service Schema):** Removed pre-rendered Service JSON-LD from seo-config.cjs (SF city page, CITY_SERVICE_RICH, generic city+service handler). React is now single source of truth for runtime Service schemas.
+- Files changed: `DishwasherRepairPage.js`, `seoContent.js`, `seo-config.cjs`
+- 233/233 SEO snapshots rebuilt.

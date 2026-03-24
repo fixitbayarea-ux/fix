@@ -915,15 +915,6 @@ function getSEOContent(route) {
                 { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://fixitbay.net/service-areas" },
                 { "@type": "ListItem", "position": 3, "name": "San Francisco", "item": "https://fixitbay.net/san-francisco-appliance-repair" }
               ]
-            },
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "serviceType": "Appliance Repair",
-              "provider": { "@id": "https://fixitbay.net/#organization" },
-              "areaServed": { "@type": "City", "name": "San Francisco, CA" },
-              "url": "https://fixitbay.net/san-francisco-appliance-repair",
-              "description": "Same-day appliance repair throughout San Francisco. Refrigerators, washers, dryers, dishwashers, ovens, and cooktops in all SF neighborhoods. $60 diagnostic credited toward repair. 180-day warranty on parts and labor."
             }
           );
         }
@@ -1056,6 +1047,31 @@ function getSEOContent(route) {
             <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">What wine cooler brands do you repair in Pacifica?</p><p style="color:#4A5568;font-size:0.875rem;">We repair all brands \u2014 Sub-Zero, Vinotemp, EuroCave, Wine Enthusiast, NewAir, Whynter, EdgeStar, and more.</p></div>
             <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for wine cooler repair in Pacifica.</p>
           `
+    },
+    '/san-francisco-dishwasher-repair': {
+      title: 'Dishwasher Repair San Francisco | Local SF Service | FixitBay',
+      description: 'Dishwasher repair in San Francisco. SFPUC hard water specialists. Victorian & Edwardian home experts. From $140 after $60 diagnostic. 180-day warranty.',
+      h1: 'Dishwasher Repair in San Francisco',
+      content: `
+            <p style="margin-bottom:1rem;">San Francisco homes present unique challenges for dishwashers that technicians in other cities rarely encounter. Our team specializes in the specific issues that SF apartments, Victorians, and high-rises face — from SFPUC hard water problems to the tight under-counter spaces common in pre-war kitchens.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why Dishwashers Fail Faster in San Francisco</h2>
+            <p style="margin-bottom:1rem;"><strong>SFPUC hard water</strong> is one of the biggest factors. San Francisco's Hetch Hetchy water supply, while clean, contains enough mineral content to cause calcium and lime buildup on spray arms, heating elements, and internal water channels. Over 3–5 years, this buildup reduces water pressure inside the unit, leaving dishes dirty and triggering error codes. We see this especially in the Sunset, Richmond, and Marina districts.</p>
+            <p style="margin-bottom:1rem;"><strong>Older Bosch and Miele units</strong> are extremely common in San Francisco. Many apartments and condos were renovated in the 1990s–2000s with European-style integrated dishwashers. These are excellent machines, but after 10–15 years, their circulation pumps, door seals, and control boards begin to fail. We carry common Bosch and Miele parts on our trucks for same-day San Francisco repairs.</p>
+            <p style="margin-bottom:1rem;"><strong>Victorian and Edwardian homes</strong> often have kitchens with non-standard cabinetry and tight under-counter spaces. Standard 24-inch dishwashers may need custom installation brackets or modified plumbing connections. Our technicians are experienced with these older SF homes and understand the clearance and ventilation requirements.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common SF Dishwasher Problems</h2>
+            <ul style="margin-bottom:1rem;padding-left:1.5rem;">
+              <li style="margin-bottom:0.5rem;"><strong>Drainage issues in older buildings</strong> — shared plumbing in multi-unit Victorians causes slow drainage and backflow. We diagnose whether the issue is the dishwasher or the building's plumbing.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Low water pressure in hillside neighborhoods</strong> — Nob Hill, Russian Hill, Twin Peaks, and Pacific Heights homes at higher elevations often have reduced water pressure, causing fill cycle errors.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Hard water mineral buildup</strong> — SFPUC water leaves deposits on spray arms, filters, and heating elements, reducing cleaning performance over time.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Door seal failures from humidity</strong> — coastal fog and kitchen steam degrade rubber gaskets, causing leaks at the door base.</li>
+              <li style="margin-bottom:0.5rem;"><strong>Control board failures in older European models</strong> — Bosch and Miele units from the 2000s era develop intermittent electronic faults.</li>
+            </ul>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">San Francisco Neighborhoods We Serve</h2>
+            <p style="margin-bottom:1rem;">We provide same-day dishwasher repair across all San Francisco neighborhoods: <strong>Mission, Castro, Pacific Heights, Sunset, Richmond, SoMa, Marina, Noe Valley, Bernal Heights</strong>, Nob Hill, Russian Hill, Twin Peaks, the Haight, Inner Sunset, Outer Sunset, Excelsior, Bayview, Potrero Hill, and more.</p>
+            <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">SF Dishwasher Repair Pricing</h2>
+            <p style="margin-bottom:1rem;">Most dishwasher repairs in San Francisco cost <strong>$140–$320 after the $60 diagnostic fee</strong>. Drain pump replacement typically runs $150–$250; door seal replacement is $80–$180. The $60 diagnostic is fully credited toward your repair.</p>
+            <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day dishwasher repair in San Francisco. Also see our <a href="/dishwasher-repair" style="color:#C0362C;font-weight:bold;">Bay Area dishwasher repair</a> page for general service information.</p>
+          `
     }
   };
 
@@ -1080,17 +1096,6 @@ function getSEOContent(route) {
       description: rich.description,
       h1: rich.h1,
       content: rich.content,
-      schemas: [
-        {
-          "@context": "https://schema.org",
-          "@type": "Service",
-          "name": `${serviceNameRich} Repair ${rich.h1.replace(/^.*in /, '')}`,
-          "serviceType": `${serviceNameRich} Repair`,
-          "provider": { "@id": "https://fixitbay.net/#organization" },
-          "areaServed": { "@type": "City", "name": rich.h1.replace(/^.*in /, '') },
-          "description": rich.description
-        }
-      ],
       internalLinks: [
         '/',
         `/${citySlugRich}-appliance-repair`,
@@ -1135,17 +1140,6 @@ function getSEOContent(route) {
             </ul>
             <p style="margin-bottom:1rem;">Every ${serviceName.toLowerCase()} repair in ${cityName} includes our comprehensive 180-day warranty on parts and labor. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for fast ${serviceName.toLowerCase()} repair service in ${cityName}.</p>
           `,
-          schemas: [
-            {
-              "@context": "https://schema.org",
-              "@type": "Service",
-              "name": `${serviceName} Repair ${cityName}`,
-              "serviceType": `${serviceName} Repair`,
-              "provider": { "@id": "https://fixitbay.net/#organization" },
-              "areaServed": { "@type": "City", "name": cityName },
-              "description": `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Same-day service, $60 diagnostic applied to repair, 180-day warranty.`
-            }
-          ],
           internalLinks: [
             '/',
             `/${citySlug}-appliance-repair`,
@@ -1170,17 +1164,6 @@ function getSEOContent(route) {
         title: 'Refrigerator Repair San Francisco | Same-Day | FixitBay',
         desc: 'Expert refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. 180-day warranty. Same-day service. Call (760) 543-5733.',
         h1: 'Refrigerator Repair in San Francisco & Bay Area',
-        schemas: [
-          {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "serviceType": "Refrigerator Repair",
-            "provider": { "@id": "https://fixitbay.net/#organization" },
-            "areaServed": ALLOWED_CITIES.map(c => ({ "@type": "City", "name": c.name + ", CA" })),
-            "url": "https://fixitbay.net/refrigerator-repair",
-            "description": "Same-day refrigerator repair in San Francisco and the Bay Area. French door, side-by-side, built-in, and counter-depth models. All major brands including Sub-Zero, Samsung, LG, GE, Whirlpool, and Bosch. $60 diagnostic credited toward repair. 180-day warranty."
-          }
-        ],
         content: `
           <p style="margin-bottom:1rem;">When your refrigerator stops cooling, leaks water, or makes unusual noises, FixitBay provides same-day repair service across San Francisco, the Peninsula, and North Bay. Our licensed technicians diagnose and fix most refrigerator issues in a single visit — from compressor failures and thermostat problems to ice maker malfunctions and door seal replacements.</p>
           <p style="margin-bottom:1rem;">We service all major refrigerator brands including Sub-Zero, Samsung, LG, GE, Whirlpool, KitchenAid, Bosch, Frigidaire, Maytag, and Viking. Our $60 diagnostic fee is fully applied to your repair cost, and every job is backed by our 180-day warranty on parts and labor.</p>
@@ -1198,17 +1181,6 @@ function getSEOContent(route) {
         title: 'Washer Repair San Francisco & Bay Area | Same-Day | FixitBay',
         desc: 'Expert washing machine repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733.',
         h1: 'Washer Repair in San Francisco & Bay Area',
-        schemas: [
-          {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "serviceType": "Washing Machine Repair",
-            "provider": { "@id": "https://fixitbay.net/#organization" },
-            "areaServed": ALLOWED_CITIES.map(c => ({ "@type": "City", "name": c.name + ", CA" })),
-            "url": "https://fixitbay.net/washer-repair",
-            "description": "Same-day washing machine repair in San Francisco and the Bay Area. Front-load, top-load, and high-efficiency models. All major brands including Whirlpool, Samsung, LG, GE, Maytag, and Bosch. $60 diagnostic credited toward repair. 180-day warranty."
-          }
-        ],
         content: `
           <p style="margin-bottom:1rem;">When your washing machine won't spin, drain, or start, FixitBay delivers fast, reliable repair throughout San Francisco, the Peninsula, and North Bay. Our licensed technicians diagnose and fix most washer issues on the same visit — from motor and drum failures to drain pump problems and control board malfunctions.</p>
           <p style="margin-bottom:1rem;">We service all major washer brands including Whirlpool, Samsung, LG, GE, Maytag, Bosch, and more. Front-load, top-load, and high-efficiency models — our team handles them all. $60 diagnostic credited toward repair. 180-day warranty.</p>
@@ -1240,32 +1212,22 @@ function getSEOContent(route) {
         links: ['/', '/washer-repair', '/refrigerator-repair', '/oven-repair', '/service-areas', '/reviews', '/contact']
       },
       'dishwasher': {
-        title: 'Dishwasher Repair San Francisco | Same-Day | FixitBay',
-        desc: 'Expert dishwasher repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733.',
-        h1: 'Dishwasher Repair in San Francisco & Bay Area',
-        schemas: [
-          {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "serviceType": "Dishwasher Repair",
-            "provider": { "@id": "https://fixitbay.net/#organization" },
-            "areaServed": ALLOWED_CITIES.map(c => ({ "@type": "City", "name": c.name + ", CA" })),
-            "url": "https://fixitbay.net/dishwasher-repair",
-            "description": "Same-day dishwasher repair in San Francisco and the Bay Area. All major brands including Bosch, Samsung, LG, GE, Whirlpool, KitchenAid, Miele, and Thermador. Drain pumps, spray arms, door seals, and control boards. $60 diagnostic credited toward repair. 180-day warranty."
-          }
-        ],
+        title: 'Dishwasher Repair Bay Area | Same-Day Service | FixitBay',
+        desc: 'Expert dishwasher repair across SF Bay Area — Peninsula, Marin & San Francisco. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733.',
+        h1: 'Dishwasher Repair in the Bay Area',
         content: `
-          <p style="margin-bottom:1rem;">When your dishwasher won't drain, leaks water, or leaves dishes dirty, FixitBay delivers professional repair throughout San Francisco, the Peninsula, and North Bay. Our technicians fix drain pumps, spray arms, heating elements, door seals, control boards, and more.</p>
+          <p style="margin-bottom:1rem;">When your dishwasher won't drain, leaks water, or leaves dishes dirty, FixitBay delivers professional repair across the Bay Area — from San Francisco to Marin County and the Peninsula. Our technicians fix drain pumps, spray arms, heating elements, door seals, control boards, and more.</p>
           <p style="margin-bottom:1rem;">We service all major brands including Bosch, Samsung, LG, GE, Whirlpool, KitchenAid, Miele, and Thermador. $60 diagnostic credited toward repair. 180-day warranty.</p>
-          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Dishwasher</h2>
+          <p style="margin-bottom:1rem;"><strong>Looking for dishwasher repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-dishwasher-repair" style="color:#C0362C;font-weight:bold;">San Francisco Dishwasher Repair</a> page for local details, neighborhood coverage, and SF-specific availability.</p>
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Dishwasher</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Under 8 years old, won't drain or clean — clogged filters, bad drain pumps cost $150–$280.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Door latch broken or seal leaking — gaskets $80–$180 installed.</p>
           <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Motor or control board failure on 10+ year unit — $300–$450 repair on aging machine.</p>
           <p style="margin-bottom:1rem;"><strong>Replace:</strong> Cracked tub or inner drum corrosion — rarely cost-effective to repair.</p>
-          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
           <p>We also offer <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerator repair</a>, <a href="/oven-repair" style="color:#C0362C;font-weight:bold;">oven repair</a>, and <a href="/washer-repair" style="color:#C0362C;font-weight:bold;">washer repair</a> across the Bay Area.</p>
         `,
-        links: ['/', '/refrigerator-repair', '/oven-repair', '/washer-repair', '/service-areas', '/reviews', '/contact']
+        links: ['/', '/san-francisco-dishwasher-repair', '/refrigerator-repair', '/oven-repair', '/washer-repair', '/service-areas', '/reviews', '/contact']
       },
       'oven': {
         title: 'Oven Repair San Francisco & Bay Area | Same-Day | FixitBay',

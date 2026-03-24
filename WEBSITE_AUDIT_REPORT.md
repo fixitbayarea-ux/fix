@@ -1,6 +1,6 @@
 # 🔍 КОМПЛЕКСНЫЙ АУДИТ САЙТА FIXITBAY
 **Дата:** 24 января 2026  
-**URL:** https://seo-gsc-errors.preview.emergentagent.com
+**URL:** https://appliance-seo-fixes.preview.emergentagent.com
 
 ---
 

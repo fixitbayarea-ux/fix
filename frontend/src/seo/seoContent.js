@@ -127,7 +127,7 @@ function getServiceContent(service) {
   // Custom descriptions per service
   const getDescription = () => {
     if (isDishwasher) {
-      return `Dishwasher repair San Francisco & Bay Area. Professional ${service.toLowerCase()} repair. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`;
+      return `Expert dishwasher repair across the Bay Area — SF, Peninsula & Marin. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`;
     }
     if (isIceMaker) {
       return `Ice maker repair cost San Francisco & Bay Area: from $150 after $60 diagnostic. Same-day service across 22 cities. Licensed & insured. 180-day warranty.`;
@@ -136,14 +136,16 @@ function getServiceContent(service) {
   };
   
   return {
-    title: `${service} Repair San Francisco | Same-Day | FixitBay`,
+    title: isDishwasher ? 'Dishwasher Repair Bay Area | Same-Day Service | FixitBay' : `${service} Repair San Francisco | Same-Day | FixitBay`,
     description: getDescription(),
-    h1: `${service} Repair in San Francisco & Bay Area`,
+    h1: isDishwasher ? `${service} Repair in the Bay Area` : `${service} Repair in San Francisco & Bay Area`,
     content: `
-      <p>When your ${service.toLowerCase()} breaks down, FixitBay delivers professional repair service throughout San Francisco, the Peninsula, and North Bay. Our licensed and insured technicians diagnose and fix most issues on the same visit, carrying an extensive inventory of common replacement parts in our service vehicles. We charge a transparent $60 diagnostic fee that's fully applied to your repair cost when you proceed—honest pricing from start to finish.</p>
+      <p>When your ${service.toLowerCase()} breaks down, FixitBay delivers professional repair service throughout ${isDishwasher ? 'the SF Bay Area — San Francisco, the Peninsula, and Marin County' : 'San Francisco, the Peninsula, and North Bay'}. Our licensed and insured technicians diagnose and fix most issues on the same visit, carrying an extensive inventory of common replacement parts in our service vehicles. We charge a transparent $60 diagnostic fee that's fully applied to your repair cost when you proceed—honest pricing from start to finish.</p>
       
       <p>Our ${service.toLowerCase()} repair process includes a thorough inspection of all major components and systems. We test functionality, check for underlying issues, and identify the root cause of problems. Whether you're dealing with mechanical failures, electrical issues, or component malfunctions, we have the expertise and parts to restore your ${service.toLowerCase()} quickly and professionally.</p>
-      
+      ${isDishwasher ? `
+      <p><strong>Looking for dishwasher repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-dishwasher-repair">San Francisco Dishwasher Repair</a> page for local details and availability.</p>
+      ` : ''}
       <h2>Common ${service} Problems We Fix</h2>
       <ul>
         ${data.problems.map(p => `<li>${p}</li>`).join('\n        ')}
@@ -166,7 +168,7 @@ function getServiceContent(service) {
       <h2>Why Choose FixitBay?</h2>
       <p><strong>Licensed & Insured</strong> • <strong>180-Day Warranty</strong> • <strong>Same/Next Day Service</strong> • <strong>Transparent Pricing</strong></p>
       
-      <p>We service all neighborhoods across San Francisco, the Peninsula, and North Bay including apartments, condos, and single-family homes. Our technicians are background-checked, professional, and respectful of your home. We clean up after ourselves and ensure your ${service.toLowerCase()} is working perfectly before we leave.</p>
+      <p>We service all neighborhoods across ${isDishwasher ? 'the Bay Area' : 'San Francisco, the Peninsula, and North Bay'} including apartments, condos, and single-family homes. Our technicians are background-checked, professional, and respectful of your home. We clean up after ourselves and ensure your ${service.toLowerCase()} is working perfectly before we leave.</p>
       
       <p>Call <a href="tel:+17605435733">(760) 543-5733</a> or <a href="/book">book online</a> for fast, professional ${service.toLowerCase()} repair service.</p>
     `,
