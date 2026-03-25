@@ -45,6 +45,7 @@ An appliance repair business website (fixitbay.net) built as a React SPA with st
 - Ensured all external links have `rel="noopener noreferrer"` (fixed 16 missing instances)
 - Added `minHeight: 44px` to nav "Book Online" button (was 41px → 44px, WCAG 2.5.5)
 - Standardized primary CTA text to "BOOK REPAIR ONLINE" across all templates (service, brand, homepage intro, DynamicLandingPage)
+- Increased brand logo display size from 38×38px to 80×80px with `object-fit: contain` in BrandLandingPage.js hero
 
 ## Backlog (Prioritized)
 

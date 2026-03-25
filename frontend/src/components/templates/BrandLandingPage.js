@@ -208,7 +208,7 @@ const BrandLandingPage = ({ brand }) => {
 
             {logo && (
               <div style={{ display: 'inline-flex', alignItems: 'center', background: PC.white08, border: `1px solid ${PC.white15}`, borderRadius: PC.r, padding: '12px 24px', marginBottom: 20 }}>
-                <img src={logo} alt={`${brand.name} brand logo`} style={{ maxHeight: 38, maxWidth: 140, filter: 'brightness(0) invert(1) opacity(0.85)' }} loading="lazy" />
+                <img src={logo} alt={`${brand.name} brand logo`} style={{ width: 80, height: 80, objectFit: 'contain', filter: 'brightness(0) invert(1) opacity(0.85)' }} loading="lazy" />
               </div>
             )}
 
