@@ -157,13 +157,24 @@ const BrandLandingPage = ({ brand }) => {
         canonical={canonical}
       />
 
-      <div style={{ fontFamily: F }}>
+      <div style={{ fontFamily: F, overflowX: 'hidden' }}>
         <style>{`
           * { box-sizing: border-box; }
-          .brand-h1 { font-size: 28px !important; line-height: 1.15 !important; }
-          @media (min-width: 768px) { .brand-h1 { font-size: 46px !important; } }
+          .brand-h1 { font-size: 26px !important; line-height: 1.2 !important; }
+          @media (min-width: 768px) { .brand-h1 { font-size: 46px !important; line-height: 1.15 !important; } }
           .brand-section-h2 { font-size: 24px !important; }
           @media (min-width: 768px) { .brand-section-h2 { font-size: 32px !important; } }
+
+          /* Mobile hero fixes */
+          @media (max-width: 767px) {
+            [data-testid="brand-hero"] { padding: 70px 16px 40px !important; }
+            .brand-trust-bar { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 8px !important; }
+            .brand-stats-bar { gap: 0 !important; }
+            .brand-stats-bar > div { padding-left: 12px !important; padding-right: 12px !important; }
+            .brand-stats-bar .brand-stat-val { font-size: 22px !important; }
+            .brand-cta-row { flex-direction: column !important; width: 100% !important; }
+            .brand-cta-row > a { width: 100% !important; justify-content: center !important; padding: 14px 20px !important; }
+          }
           .carousel-track { display: flex; transition: transform 0.5s ease; }
           .carousel-card { flex-shrink: 0; }
           .carousel-arrow { width: 40px; height: 40px; border-radius: 50%; background: #FFFFFF; border: 1px solid rgba(255,87,34,0.30); display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0; }
@@ -211,7 +222,7 @@ const BrandLandingPage = ({ brand }) => {
               Same-day &amp; next-day service &middot; $60 diagnostic applied toward repair &middot; 180-day warranty on all {brand.name} repairs
             </p>
 
-            <div style={{ display: 'flex', justifyContent: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 24, marginTop: 4 }}>
+            <div className="brand-trust-bar" style={{ display: 'flex', justifyContent: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 24, marginTop: 4 }}>
               {[
                 { top: 'Licensed CA', bottom: 'Technician' },
                 { top: '4.9 \u2B50', bottom: '94 Reviews' },
@@ -225,7 +236,7 @@ const BrandLandingPage = ({ brand }) => {
               ))}
             </div>
 
-            <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
+            <div className="brand-cta-row" style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="cta-book-top" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: PC.r, textDecoration: 'none', border: 'none' }}>
                 Book Online
               </a>
@@ -234,14 +245,14 @@ const BrandLandingPage = ({ brand }) => {
               </a>
             </div>
 
-            <div style={{ display: 'flex', justifyContent: 'center', gap: 0, marginTop: 40, paddingTop: 32, borderTop: `1px solid ${PC.white10}` }}>
+            <div className="brand-stats-bar" style={{ display: 'flex', justifyContent: 'center', gap: 0, marginTop: 40, paddingTop: 32, borderTop: `1px solid ${PC.white10}` }}>
               {[
                 { val: '10+', unit: 'Years', label: 'Experience' },
                 { val: '180', unit: '-Day', label: 'Warranty' },
                 { val: 'Same', unit: '-Day', label: 'Service' },
               ].map((s, i, arr) => (
                 <div key={i} style={{ textAlign: 'center', paddingRight: i < arr.length - 1 ? 40 : 0, borderRight: i < arr.length - 1 ? `1px solid ${PC.white15}` : 'none', paddingLeft: i > 0 ? 40 : 0 }}>
-                  <div style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: PC.white }}>{s.val}<span style={{ color: PC.accent }}>{s.unit}</span></div>
+                  <div className="brand-stat-val" style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: PC.white }}>{s.val}<span style={{ color: PC.accent }}>{s.unit}</span></div>
                   <div style={{ fontFamily: F, fontWeight: 500, fontSize: 12, color: PC.white45 }}>{s.label}</div>
                 </div>
               ))}
