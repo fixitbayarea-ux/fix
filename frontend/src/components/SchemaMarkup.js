@@ -2,18 +2,26 @@ import { useEffect } from 'react';
 
 const SchemaMarkup = () => {
   useEffect(() => {
-    // Remove any pre-existing page-level LocalBusiness duplicates
-    // so only the global one (injected here) survives
+    // Dedup function: remove any LocalBusiness schema that isn't the global one
+    const dedupLocalBusiness = () => {
+      document.querySelectorAll('script[type="application/ld+json"]').forEach(el => {
+        try {
+          const d = JSON.parse(el.textContent);
+          if (d['@type'] === 'LocalBusiness' && el.id !== 'local-business-schema') {
+            el.remove();
+          }
+        } catch(e) {}
+      });
+    };
+
+    // Remove any pre-existing duplicates
+    dedupLocalBusiness();
+
+    // Remove prerendered no-id duplicates of BreadcrumbList and Service
     const seenTypes = new Set();
     document.querySelectorAll('script[type="application/ld+json"]').forEach(el => {
       try {
         const d = JSON.parse(el.textContent);
-        // Remove duplicate LocalBusiness (keep only the one we inject)
-        if (d['@type'] === 'LocalBusiness' && el.id !== 'local-business-schema') {
-          el.remove();
-          return;
-        }
-        // Remove prerendered no-id duplicates of BreadcrumbList and Service
         if (!el.id && (d['@type'] === 'BreadcrumbList' || d['@type'] === 'Service')) {
           if (seenTypes.has(d['@type'])) {
             el.remove();
@@ -25,9 +33,9 @@ const SchemaMarkup = () => {
     });
 
     const id = 'local-business-schema';
-    if (document.getElementById(id)) return;
-    const script = document.createElement('script');
-    script.id = id;
+    if (!document.getElementById(id)) {
+      const script = document.createElement('script');
+      script.id = id;
     script.type = 'application/ld+json';
     script.textContent = JSON.stringify({
       "@context": "https://schema.org",
@@ -122,8 +130,17 @@ const SchemaMarkup = () => {
         "https://www.bbb.org/us/ca/san-francisco/profile/appliance-repair/fixitbay-llc"
       ]
     });
-    document.head.appendChild(script);
-    return () => { document.getElementById(id)?.remove(); };
+      document.head.appendChild(script);
+    }
+
+    // MutationObserver: catch LocalBusiness schemas injected after mount by page components
+    const observer = new MutationObserver(() => dedupLocalBusiness());
+    observer.observe(document.head, { childList: true });
+
+    return () => {
+      observer.disconnect();
+      document.getElementById(id)?.remove();
+    };
   }, []);
   return null;
 };
