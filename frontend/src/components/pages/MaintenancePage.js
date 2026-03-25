@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEOMetaTags from '../SEOMetaTags';
 import { Phone, AlertTriangle, Calendar, CheckCircle, ArrowLeft } from 'lucide-react';
 
 const MaintenancePage = ({ appliance, content }) => {
@@ -11,49 +11,7 @@ const MaintenancePage = ({ appliance, content }) => {
 
   return (
     <>
-      <Helmet>
-        <title>{title} Tips & Schedule | FixitBay LLC</title>
-        <meta name="description" content={description} />
-        <link rel="canonical" href={`https://fixitbay.net/maintenance/${slug}`} />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": title,
-            "description": description,
-            "author": { "@type": "Organization", "name": "FixitBay LLC" },
-            "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/images/logo.png" } },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net/" },
-              { "@type": "ListItem", "position": 2, "name": "Maintenance", "item": "https://fixitbay.net/maintenance" },
-              { "@type": "ListItem", "position": 3, "name": title, "item": `https://fixitbay.net/maintenance/${slug}` }
-            ]
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "serviceType": `${appliance} Repair`,
-            "provider": {
-              "@type": "LocalBusiness",
-              "name": "FixitBay LLC",
-              "telephone": "+1-760-543-5733",
-              "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressRegion": "CA" }
-            },
-            "areaServed": "San Francisco Bay Area",
-            "offers": { "@type": "Offer", "description": "$60 diagnostic fee (applied to repair)", "price": "60", "priceCurrency": "USD" }
-          })}
-        </script>
-      </Helmet>
+      <SEOMetaTags title={`${title} Tips & Schedule | FixitBay LLC`} description={description} canonical={`https://fixitbay.net/maintenance/${slug}`} />
 
       <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #E8F4FA 0%, #F0F8FC 100%)', paddingTop: '64px' }}>
         {/* Hero Section */}

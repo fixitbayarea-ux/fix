@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Phone, MessageSquare, Calendar, ChevronDown, ChevronUp, Shield, Award, Clock, Star, MapPin, ArrowLeft, Thermometer, Droplets, Snowflake, Volume2, Power, CheckCircle2, ArrowRight } from 'lucide-react';
+import SEOMetaTags from '../SEOMetaTags';
 
 const BOOKING_URL = '/book?go=1';
 const PHONE = '+17605435733';
@@ -97,11 +97,7 @@ const RefrigeratorRepairMobile = () => {
   return (
     <div data-testid="mobile-landing-refrigerator" style={{ fontFamily: "'Montserrat', sans-serif", background: '#fff', paddingBottom: 82 }}>
 
-      <Helmet>
-        <title>Refrigerator Repair San Francisco | Same-Day Service | FixitBay</title>
-        <meta name="description" content="Fast refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733." />
-        <link rel="canonical" href="https://fixitbay.net/refrigerator-repair" />
-      </Helmet>
+      <SEOMetaTags title="Refrigerator Repair San Francisco | Same-Day Service | FixitBay" description="Fast refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733." canonical="https://fixitbay.net/refrigerator-repair" />
 
       {/* ── HEADER ── */}
       <header data-testid="mobile-header" style={{

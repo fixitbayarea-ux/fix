@@ -1,6 +1,4 @@
-// src/components/templates/ApplianceRepairPage.js
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import RelatedServices from '../RelatedServices';
@@ -121,16 +119,7 @@ const ApplianceRepairPage = ({
           <div className="mb-3 text-left"><BackButton /></div>
 
           <div className="text-center">
-            {/* JSON-LD breadcrumbs */}
-            <Helmet>
-              <script type="application/ld+json">
-                {JSON.stringify(buildBreadcrumbSchema([
-                  { name: 'Home', url: 'https://fixitbay.net/' },
-                  { name: breadcrumbLabel, url: schemaCategoryUrl },
-                  { name: pageTitle || `${appliance} Repair`, url: `https://fixitbay.net${currentPath}` }
-                ]))}
-              </script>
-            </Helmet>
+            {/* JSON-LD breadcrumbs injected via SEOMetaTags */}
 
             {/* Round logo */}
             <picture>
@@ -255,40 +244,7 @@ const ApplianceRepairPage = ({
       </section>
 
       {/* FAQ Section */}
-      <Helmet>
-        {/* Page Title */}
-        <title>{pageTitle}</title>
-        
-        {/* Meta Description */}
-        <meta name="description" content={metaDescription || "Licensed & Insured Appliance Repair in San Francisco, Peninsula & Marin County"} />
-        
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://fixitbay.net${currentPath}`} />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={metaDescription || "Licensed & Insured Appliance Repair in San Francisco, Peninsula & Marin County"} />
-        <meta property="og:image" content="https://fixitbay.net/images/og-cover.png" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content={`https://fixitbay.net${currentPath}`} />
-        <meta name="twitter:title" content={pageTitle} />
-        <meta name="twitter:description" content={metaDescription || "Licensed & Insured Appliance Repair in San Francisco, Peninsula & Marin County"} />
-        <meta name="twitter:image" content="https://fixitbay.net/images/og-cover.png" />
-        
-        {/* FAQ Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": (faqData || []).map(f => ({
-              "@type": "Question",
-              "name": f.question,
-              "acceptedAnswer": { "@type": "Answer", "text": f.answer }
-            }))
-          })}
-        </script>
-      </Helmet>
+      <SEOMetaTags title={pageTitle} description={metaDescription || "Licensed & Insured Appliance Repair in San Francisco, Peninsula & Marin County"} canonical={`https://fixitbay.net${currentPath}`} ogTitle={pageTitle} ogDescription={metaDescription || "Licensed & Insured Appliance Repair in San Francisco, Peninsula & Marin County"} ogImage="https://fixitbay.net/images/og-cover.png" />
 
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

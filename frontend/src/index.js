@@ -1,6 +1,5 @@
 import React from "react";
 import { createRoot, hydrateRoot } from "react-dom/client";
-import { HelmetProvider } from 'react-helmet-async';
 import { onCLS, onFCP, onLCP } from 'web-vitals';
 import "./index.css";
 import App from "./App";
@@ -27,9 +26,7 @@ if (rootElement.hasChildNodes()) {
   // Prerendered HTML exists - hydrate
   hydrateRoot(
     rootElement,
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>,
+    <App />,
     {
       onRecoverableError: (error) => {
         // Suppress known hydration mismatches from react-snap prerendering
@@ -45,9 +42,7 @@ if (rootElement.hasChildNodes()) {
   // No prerendered HTML - render client-side
   const root = createRoot(rootElement);
   root.render(
-    <HelmetProvider>
-      <App />
-    </HelmetProvider>
+    <App />
   );
 }
 

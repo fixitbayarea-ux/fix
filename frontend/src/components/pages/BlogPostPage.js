@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEOMetaTags from '../SEOMetaTags';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Clock, Tag, ArrowLeft, Phone } from 'lucide-react';
 import UnifiedFooter from '../UnifiedFooter';
@@ -62,20 +62,7 @@ const BlogPostPage = () => {
 
   return (
     <div className="min-h-screen" style={{ paddingTop: '64px', background: '#F7FAFC' }}>
-      <Helmet>
-        <meta name="description" content={post.meta_description || post.excerpt} />
-        <link rel="canonical" href={`https://fixitbay.net/blog/${post.slug}`} />
-        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" },
-            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" },
-            { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://fixitbay.net/blog/${post.slug}` }
-          ]
-        })}</script>
-      </Helmet>
+      <SEOMetaTags title={post.title + ' | FixitBay Blog'} description={post.meta_description || post.excerpt} canonical={`https://fixitbay.net/blog/${post.slug}`} />
 
       {/* ─── Back button + Breadcrumb bar ─── */}
       <div className="bg-white border-b shadow-sm">

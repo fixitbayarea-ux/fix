@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import Breadcrumbs from '../Breadcrumbs';
 import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import refrigeratorImg from '../../assets/services/refrigerator.jpg';
@@ -8,6 +7,7 @@ import dryerImg from '../../assets/services/dryer.jpg';
 import dishwasherImg from '../../assets/services/dishwasher.jpg';
 import ovenImg from '../../assets/services/oven.jpg';
 import iceMakerImg from '../../assets/services/ice-maker.jpg';
+import SEOMetaTags from '../SEOMetaTags';
 
 const ServiceAreasHub = () => {
   const commonProblems = [
@@ -95,25 +95,7 @@ const ServiceAreasHub = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Appliance Repair Service Areas | San Francisco | FixitBay</title>
-        <meta name="description" content="FixitBay serves 22 cities across San Francisco, the Peninsula, and Marin County. Find your service area and book same-day appliance repair. Call (760) 543-5733." />
-        <meta name="robots" content="index,follow" />
-        <link rel="canonical" href="https://fixitbay.net/service-areas" />
-        <script type="application/ld+json">
-          {JSON.stringify(serviceSchema)}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net/" },
-              { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://fixitbay.net/service-areas" }
-            ]
-          })}
-        </script>
-      </Helmet>
+      <SEOMetaTags title="Appliance Repair Service Areas | San Francisco | FixitBay" description="FixitBay serves 22 cities across San Francisco, the Peninsula, and Marin County. Find your service area and book same-day appliance repair. Call (760) 543-5733." canonical="https://fixitbay.net/service-areas" />
       <ApplianceRepairPageNew
         appliance="Service Areas"
         pageTitle="Appliance Repair Service Areas | San Francisco | FixitBay"

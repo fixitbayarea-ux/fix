@@ -7,8 +7,13 @@ import { useSchemas } from '../../hooks/useSchema';
 import brandLocalData from '../../data/brandLocalData';
 import cityLocalData from '../../data/cityLocalData';
 import { SERVICE_CITIES as ALL_SERVICE_CITIES } from '../../data/cities';
-import { SERVICE_PRICING } from '../../data/servicePricing';
+import BrandsGrid from '../sections/BrandsGrid';
+import CTABanner from '../sections/CTABanner';
+import CompactFooter from '../sections/CompactFooter';
+import ProcessSteps from '../sections/ProcessSteps';
+import FAQAccordion from '../sections/FAQAccordion';
 
+import { SERVICE_PRICING } from '../../data/servicePricing';
 const buildBreadcrumbSchema = (items) => ({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -61,34 +66,6 @@ const buildServiceSchema = (serviceName) => ({
     "Fairfax", "San Anselmo", "Novato"
   ]
 });
-
-const COMMON_BRANDS = [
-  'Whirlpool','GE','Samsung','LG','Frigidaire','Maytag','KitchenAid','Bosch',
-  'Kenmore','Amana','Thermador','Viking','Sub-Zero','Wolf','Miele','Jenn-Air','Electrolux','Fisher & Paykel'
-];
-
-const brandLinkMap = {
-  Whirlpool: '/whirlpool-appliance-repair', LG: '/lg-appliance-repair', Samsung: '/samsung-appliance-repair',
-  GE: '/ge-appliance-repair', Bosch: '/bosch-appliance-repair', KitchenAid: '/kitchenaid-appliance-repair',
-  Maytag: '/maytag-appliance-repair', Frigidaire: '/frigidaire-appliance-repair', Kenmore: '/kenmore-appliance-repair',
-  Thermador: '/thermador-appliance-repair', Viking: '/viking-appliance-repair', Miele: '/miele-appliance-repair',
-  'Sub-Zero': '/sub-zero-appliance-repair', Wolf: '/wolf-appliance-repair',
-  'Jenn-Air': '/brands', Amana: '/brands', Electrolux: '/brands', 'Fisher & Paykel': '/brands',
-};
-
-const BRAND_LOGOS = {
-  'Amana':'/images/brands/amana.svg','Bosch':'/images/brands/bosch.svg',
-  'Electrolux':'/images/brands/electrolux.svg','Fisher & Paykel':'/images/brands/fisher-paykel.svg',
-  'Frigidaire':'/images/brands/frigidaire.png','GE':'/images/brands/ge.svg',
-  'Jenn-Air':'/images/brands/jenn-air.svg','Kenmore':'/images/brands/kenmore.png',
-  'KitchenAid':'/images/brands/kitchenaid.svg','LG':'/images/brands/lg.svg',
-  'Maytag':'/images/brands/maytag.svg','Miele':'/images/brands/miele.svg',
-  'Samsung':'/images/brands/samsung.svg','Sub-Zero':'/images/brands/sub-zero.svg',
-  'Thermador':'/images/brands/thermador.png','Viking':'/images/brands/viking.svg',
-  'Whirlpool':'/images/brands/whirlpool.jpg','Wolf':'/images/brands/wolf.svg',
-};
-const BRAND_LOGO_H = 54;
-const BRAND_LOGO_OVERRIDE = { 'Kenmore': 70, 'LG': 70 };
 
 const POPULAR_REPAIRS_MAP = {
   'san-francisco': ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven'],
@@ -262,7 +239,6 @@ const ApplianceRepairPageNew = ({
   const location = useLocation();
   const currentPath = location.pathname.replace(/\/+$/, '') || '/';
 
-  const [openFaq, setOpenFaq] = useState(null);
   const [showStickyBtn, setShowStickyBtn] = useState(false);
 
   useEffect(() => {
@@ -513,27 +489,7 @@ const ApplianceRepairPageNew = ({
         )}
 
         {/* ═══ SECTION 4 — PROCESS ═══ */}
-        <section data-testid="city-process" style={{ background: '#F8F5F0', padding: '70px 0' }}>
-          <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
-            <div style={{ ...S.eyebrow, textAlign: 'center' }}>THE PROCESS</div>
-            <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 48, textAlign: 'center' }}>Simple. Fast. Professional.</h2>
-            <div className="city-process-grid grid grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                { num: '01', icon: <CalendarCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'Book Online', text: 'Schedule same-day or next-day at your convenience.' },
-                { num: '02', icon: <Search size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Diagnose', text: '$60 diagnostic visit — applied to repair if you proceed.' },
-                { num: '03', icon: <ClipboardCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'You Approve', text: 'Upfront estimate before any work begins. No surprises.' },
-                { num: '04', icon: <Wrench size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Fix It', text: 'Professional repair with 180-day warranty on parts and labor.' },
-              ].map(s => (
-                <div key={s.num} data-testid={`city-step-${s.num}`}>
-                  <div style={{ fontFamily: S.font, fontWeight: 800, fontSize: 72, color: 'rgba(255,87,34,0.18)', lineHeight: 1 }}>{s.num}</div>
-                  <div style={{ marginTop: 12 }}>{s.icon}</div>
-                  <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 14, color: '#0D1B2A', textTransform: 'uppercase', letterSpacing: '0.08em', marginTop: 8 }}>{s.title}</div>
-                  <p style={{ ...S.body, fontSize: 14, marginTop: 8 }}>{s.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <ProcessSteps gridClassName="city-process-grid grid grid-cols-2 lg:grid-cols-4 gap-8" testId="city-process" />
 
         {/* ═══ SECTION 5 — PRICING ═══ */}
         <section data-testid="city-pricing" style={{ background: '#1A2F45', padding: '70px 0' }}>
@@ -563,38 +519,10 @@ const ApplianceRepairPageNew = ({
         </section>
 
         {/* ═══ SECTION 6 — CTA BANNER ═══ */}
-        <section data-testid="city-cta-banner" style={{ background: '#0D1B2A', borderTop: '3px solid #FF5722', borderBottom: '3px solid #FF5722', padding: '60px 0', textAlign: 'center' }}>
-          <div style={{ maxWidth: 700, margin: '0 auto', padding: '0 24px' }}>
-            <h2 style={{ ...S.h2, color: '#FFFFFF', marginBottom: 12 }}>Need Appliance Repair in {cityName} Today?</h2>
-            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginBottom: 28 }}>Same-day & next-day appointments available</p>
-            <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href="/book?go=1" data-testid="city-cta-book" style={{ display: 'inline-flex', alignItems: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
-              <a href="tel:+17605435733" data-testid="city-cta-call" style={{ display: 'inline-flex', alignItems: 'center', padding: '16px 28px', borderRadius: 3, background: 'transparent', minHeight: 52, border: '2px solid rgba(255,255,255,0.65)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.65)'; e.currentTarget.style.color = '#FFFFFF'; }}>CALL (760) 543-5733</a>
-            </div>
-          </div>
-        </section>
+        <CTABanner heading={`Need Appliance Repair in ${cityName} Today?`} testId="city-cta-banner" />
 
         {/* ═══ SECTION 7 — BRANDS ═══ */}
-        <section data-testid="city-brands" style={{ background: '#F8F5F0', padding: '60px 0' }}>
-          <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-            <div style={S.eyebrow}>BRANDS WE SERVICE</div>
-            <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginTop: 10, marginBottom: 28 }}>All Major Brands</h2>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6" style={{ gap: 12 }}>
-              {COMMON_BRANDS.map(brand => {
-                const link = brandLinkMap[brand];
-                const logo = BRAND_LOGOS[brand];
-                const cell = (
-                  <div style={{ background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 4, padding: '16px 24px', display: 'flex', alignItems: 'center', justifyContent: 'center', height: 96, transition: 'border-color 0.2s', cursor: 'pointer' }} onMouseEnter={e => e.currentTarget.style.borderColor = '#FF5722'} onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(0,0,0,0.08)'}>
-                    {logo && <img src={logo} alt={`${brand} logo`} style={{ maxHeight: BRAND_LOGO_OVERRIDE[brand] || BRAND_LOGO_H, width: '100%', objectFit: 'contain' }} loading="lazy" />}
-                  </div>
-                );
-                return link
-                  ? <a key={brand} href={link} title={`${brand} repair in ${cityName}`} style={{ textDecoration: 'none' }}>{cell}</a>
-                  : <div key={brand}>{cell}</div>;
-              })}
-            </div>
-          </div>
-        </section>
+        <BrandsGrid cityName={cityName} testId="city-brands" />
 
         {/* ═══ SECTION 8 — HOUSING TYPES ═══ */}
         {cd?.housingTypes?.length > 0 && (
@@ -697,29 +625,7 @@ const ApplianceRepairPageNew = ({
         )}
 
         {/* ═══ SECTION 11 — FAQ ═══ */}
-        {faqData?.length > 0 && (
-          <section data-testid="city-faq" style={{ background: '#F8F5F0', padding: '70px 0' }}>
-            <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 24px' }}>
-              <div style={S.eyebrow}>FAQ</div>
-              <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 32 }}>Quick Answers</h2>
-              {faqData.map((faq, i) => (
-                <div key={i} style={{ borderBottom: '1px solid rgba(0,0,0,0.09)', padding: '22px 0' }}>
-                  <button
-                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                    data-testid={`city-faq-q-${i}`}
-                    style={{ width: '100%', textAlign: 'left', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontFamily: S.font, fontSize: 15, fontWeight: 600, color: '#0D1B2A', background: 'transparent', border: 'none', cursor: 'pointer', padding: 0, minHeight: 48 }}
-                  >
-                    <span style={{ paddingRight: 16 }}>{faq.question}</span>
-                    <span style={{ fontFamily: S.font, fontSize: 22, color: '#FF5722', flexShrink: 0 }}>{openFaq === i ? '\u00D7' : '+'}</span>
-                  </button>
-                  <div style={{ maxHeight: openFaq === i ? 500 : 0, overflow: 'hidden', transition: 'max-height 0.3s ease' }}>
-                    <div style={{ fontFamily: S.font, fontSize: 14, lineHeight: 1.7, color: '#4A5568', paddingTop: 14, borderLeft: '2px solid #FF5722', paddingLeft: 16 }}>{faq.answer}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
+        {faqData?.length > 0 && <FAQAccordion faqs={faqData} testIdPrefix="city-faq" />}
 
         {/* ═══ SECTION 12 — NEARBY SERVICE AREAS ═══ */}
         <section data-testid="city-nearby" style={{ background: '#F8F5F0', padding: '60px 0' }}>
@@ -782,19 +688,7 @@ const ApplianceRepairPageNew = ({
         })()}
 
         {/* ═══ SECTION 14 — FOOTER ═══ */}
-        <footer data-testid="city-footer" style={{ background: '#0D1B2A', borderTop: '3px solid #FF5722', padding: '24px 40px' }}>
-          <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-              <img src="/navbar-logo-new.png" alt="FixitBay" style={{ height: 36, width: 36, borderRadius: '50%', objectFit: 'cover' }} />
-              <div>
-                <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 14, color: '#FFFFFF', display: 'block' }}>FixitBay LLC</span>
-                <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>Appliance Repair &amp; Maintenance</span>
-              </div>
-            </div>
-            <a href="tel:+17605435733" style={{ fontFamily: S.font, fontWeight: 700, fontSize: 18, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.30)' }}>&copy; 2026 FixitBay LLC</span>
-          </div>
-        </footer>
+        <CompactFooter testId="city-footer" />
 
         {/* Floating sticky Book Repair */}
         {showStickyBtn && (
@@ -978,18 +872,7 @@ const ApplianceRepairPageNew = ({
       )}
 
       {/* ═══ CTA BANNER ═══ */}
-      <section data-testid="cta-banner" style={{ background: '#0D1B2A', borderTop: '3px solid #FF5722', borderBottom: '3px solid #FF5722', padding: '60px 0', textAlign: 'center' }}>
-        <div style={{ maxWidth: 700, margin: '0 auto', padding: '0 24px' }}>
-          <h2 style={{ ...S.h2, color: '#FFFFFF', marginBottom: 12 }}>Need {appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? appliance : `${appliance} ${serviceWord}`} Today?</h2>
-          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginBottom: 28 }}>Same-day & next-day appointments available</p>
-          <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="tel:+17605435733" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 30px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none' }}>
-              <Phone size={16} /> Call (760) 543-5733
-            </a>
-            <a href="/book?go=1" style={{ display: 'inline-flex', alignItems: 'center', padding: '15px 26px', borderRadius: 3, background: 'transparent', minHeight: 52, border: '2px solid rgba(255,255,255,0.65)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none' }}>Book Online</a>
-          </div>
-        </div>
-      </section>
+      <CTABanner heading={`Need ${appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? appliance : `${appliance} ${serviceWord}`} Today?`} testId="cta-banner" />
 
       {/* ═══ REPAIR VS REPLACE ═══ */}
       {repairVsReplace && (
@@ -1047,45 +930,10 @@ const ApplianceRepairPageNew = ({
       )}
 
       {/* ═══ FAQ ═══ */}
-      {faqData?.length > 0 && (
-        <section data-testid="faq-section" style={{ background: '#FFFFFF', padding: '70px 0' }}>
-          <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 24px' }}>
-            <div style={{ ...S.eyebrow, marginBottom: 10 }}>FAQ</div>
-            <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 32 }}>Quick Answers</h2>
-            {faqData.map((faq, i) => (
-              <div key={i} style={{ borderBottom: '1px solid rgba(0,0,0,0.09)', padding: '22px 0' }}>
-                <button onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', textAlign: 'left', display: 'flex', alignItems: 'center', justifyContent: 'space-between', fontFamily: S.font, fontSize: 15, fontWeight: 600, color: '#0D1B2A', background: 'transparent', border: 'none', cursor: 'pointer', padding: 0 }}>
-                  <span style={{ paddingRight: 16 }}>{faq.question}</span>
-                  <span style={{ fontFamily: S.font, fontSize: 22, color: '#FF5722', flexShrink: 0 }}>{openFaq === i ? '\u00D7' : '+'}</span>
-                </button>
-                <div style={{ maxHeight: openFaq === i ? 400 : 0, overflow: 'hidden', transition: 'max-height 0.3s ease' }}>
-                  <div style={{ fontFamily: S.font, fontSize: 14, lineHeight: 1.7, color: '#4A5568', paddingTop: 14, borderLeft: '2px solid #FF5722', paddingLeft: 16 }}>{faq.answer}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
+      {faqData?.length > 0 && <FAQAccordion faqs={faqData} background="#FFFFFF" testIdPrefix="faq" />}
 
       {/* ═══ BRANDS ═══ */}
-      <section data-testid="brands-section" style={{ background: '#F8F5F0', padding: '60px 0' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ ...S.eyebrow, marginBottom: 10 }}>BRANDS WE SERVICE</div>
-          <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 28 }}>All Major Brands</h2>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6" style={{ gap: 12 }}>
-            {COMMON_BRANDS.map(brand => {
-              const link = brandLinkMap[brand];
-              const logo = BRAND_LOGOS[brand];
-              const cell = (
-                <div key={brand} style={{ background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 4, padding: '10px 12px', display: 'flex', alignItems: 'center', justifyContent: 'center', height: 96, transition: 'border-color 0.2s', cursor: 'pointer' }} onMouseEnter={e => e.currentTarget.style.borderColor = '#FF5722'} onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(0,0,0,0.08)'}>
-                  {logo && <img src={logo} alt={`${brand} logo`} style={{ maxHeight: BRAND_LOGO_OVERRIDE[brand] || BRAND_LOGO_H, width: '100%', objectFit: 'contain' }} loading="lazy" />}
-                </div>
-              );
-              return link ? <a key={brand} href={link} title={brand} style={{ textDecoration: 'none' }}>{cell}</a> : cell;
-            })}
-          </div>
-        </div>
-      </section>
+      <BrandsGrid testId="brands-section" />
 
       {/* ═══ RELATED SERVICES ═══ */}
       {autoRelatedLinks?.length > 0 && (
@@ -1212,19 +1060,7 @@ const ApplianceRepairPageNew = ({
       {children}
 
       {/* ═══ MINIMAL FOOTER ═══ */}
-      <footer data-testid="service-footer" style={{ background: '#0D1B2A', borderTop: '3px solid #FF5722', padding: '24px 40px' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <img src="/navbar-logo-new.png" alt="FixitBay" style={{ height: 36, width: 36, borderRadius: '50%', objectFit: 'cover' }} />
-            <div>
-              <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 14, color: '#FFFFFF', display: 'block' }}>FixitBay LLC</span>
-              <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>Appliance Repair &amp; Maintenance</span>
-            </div>
-          </div>
-          <a href="tel:+17605435733" style={{ fontFamily: S.font, fontWeight: 700, fontSize: 18, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-          <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.30)' }}>&copy; 2026 FixitBay LLC</span>
-        </div>
-      </footer>
+      <CompactFooter testId="service-footer" />
 
       {/* Mobile responsive */}
       <style>{`

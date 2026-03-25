@@ -1,8 +1,8 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
+import SEOMetaTags from '../SEOMetaTags';
 
 const PHONE_DISPLAY = '(760) 543-5733';
 

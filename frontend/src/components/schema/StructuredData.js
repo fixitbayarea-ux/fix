@@ -1,5 +1,4 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import React, { useEffect } from 'react';
 
 const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount = null }) => {
   const baseSchema = {
@@ -136,16 +135,20 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
     ]
   };
 
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(baseSchema)}
-      </script>
-      <script type="application/ld+json">
-        {JSON.stringify(siteNavSchema)}
-      </script>
-    </Helmet>
-  );
+  useEffect(() => {
+    const schemas = [
+      { id: 'sd-local-business', data: baseSchema },
+      { id: 'sd-site-nav', data: siteNavSchema },
+    ];
+    schemas.forEach(({ id, data }) => {
+      let el = document.getElementById(id);
+      if (!el) { el = document.createElement('script'); el.type = 'application/ld+json'; el.id = id; document.head.appendChild(el); }
+      el.textContent = JSON.stringify(data);
+    });
+    return () => schemas.forEach(({ id }) => { const el = document.getElementById(id); if (el) el.remove(); });
+  });
+
+  return null;
 };
 
 export default StructuredData;

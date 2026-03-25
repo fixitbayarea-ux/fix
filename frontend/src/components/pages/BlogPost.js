@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import SEOMetaTags from '../SEOMetaTags';
 import { Calendar, Clock, Tag, ArrowLeft, CheckCircle, AlertCircle, Phone, Wrench } from 'lucide-react';
 
 const BlogPost = () => {
@@ -480,29 +480,7 @@ const BlogPost = () => {
 
   return (
     <>
-      <Helmet>
-        <title>{article.title} | FixitBay Blog</title>
-        <meta name="description" content={article.metaDescription} />
-        <meta name="keywords" content={article.keywords} />
-        <link rel="canonical" href={`https://fixitbay.net/blog/${slug}`} />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": article.title,
-            "description": article.metaDescription,
-            "datePublished": article.date,
-            "author": {
-              "@type": "Organization",
-              "name": "FixitBay LLC"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "FixitBay LLC"
-            }
-          })}
-        </script>
-      </Helmet>
+      <SEOMetaTags title={`${article.title} | FixitBay Blog`} description={article.metaDescription} canonical={`https://fixitbay.net/blog/${slug}`} />
 
       <article className="min-h-screen bg-gray-50" style={{ paddingTop: '80px' }}>
         {/* Header */}

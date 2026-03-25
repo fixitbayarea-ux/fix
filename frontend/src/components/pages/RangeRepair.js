@@ -1,17 +1,13 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import BackButton from '../BackButton';
 import { Calendar, Phone } from 'lucide-react';
+import SEOMetaTags from '../SEOMetaTags';
 
 const RangeRepair = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <>
-      <Helmet>
-        <title>Range Repair | FixitBay LLC San Francisco</title>
-        <meta name="description" content="Same/next-day range repair in SF & Bay Area. Burner won't ignite, uneven heating, oven temp issues. $60 diagnostic applied to repair. 180-day warranty. Book online with FixitBay." />
-        <link rel="canonical" href="https://fixitbay.net/range-repair" />
-      </Helmet>
+      <SEOMetaTags title="Range Repair | FixitBay LLC San Francisco" description="Same/next-day range repair in SF & Bay Area. Burner won't ignite, uneven heating, oven temp issues. $60 diagnostic applied to repair. 180-day warranty. Book online with FixitBay." canonical="https://fixitbay.net/range-repair" />
 
       <div className="min-h-screen bg-white">
         {/* Hero Section */}

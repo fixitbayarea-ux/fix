@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
 import { Calendar, Clock, Tag, Search, Wrench, Lightbulb, Shield, TrendingUp, ArrowRight, BookOpen } from 'lucide-react';
+import SEOMetaTags from '../SEOMetaTags';
 
 const BlogPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -215,45 +215,7 @@ const BlogPage = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Appliance Repair Tips & Expert Advice | FixitBay Blog</title>
-        <meta 
-          name="description" 
-          content="Expert appliance repair tips, maintenance guides, and troubleshooting advice from FixitBay LLC. Learn how to fix and maintain refrigerators, washers, dryers, dishwashers & more." 
-        />
-        <meta 
-          name="keywords" 
-          content="appliance repair tips, refrigerator maintenance, dishwasher troubleshooting, dryer problems, washer error codes, oven calibration, appliance advice" 
-        />
-        <link rel="canonical" href="https://fixitbay.net/blog" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Blog",
-            "name": "FixitBay Appliance Repair Blog",
-            "description": "Expert appliance repair tips and maintenance guides",
-            "url": "https://fixitbay.net/blog",
-            "publisher": {
-              "@type": "Organization",
-              "name": "FixitBay LLC",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://fixitbay.net/logo.png"
-              }
-            },
-            "blogPost": blogPosts.map(post => ({
-              "@type": "BlogPosting",
-              "headline": post.title,
-              "description": post.excerpt,
-              "datePublished": post.date,
-              "author": {
-                "@type": "Organization",
-                "name": "FixitBay LLC"
-              }
-            }))
-          })}
-        </script>
-      </Helmet>
+      <SEOMetaTags title="Appliance Repair Tips & Expert Advice | FixitBay Blog" description="Expert appliance repair tips, maintenance guides, and troubleshooting advice from FixitBay LLC. Learn how to fix and maintain refrigerators, washers, dryers, dishwashers & more." canonical="https://fixitbay.net/blog" />
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}

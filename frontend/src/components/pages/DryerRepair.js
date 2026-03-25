@@ -1,17 +1,13 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import BackButton from '../BackButton';
 import { Calendar, Phone } from 'lucide-react';
+import SEOMetaTags from '../SEOMetaTags';
 
 const DryerRepair = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <>
-      <Helmet>
-        <title>Dryer Repair | FixitBay LLC San Francisco</title>
-        <meta name="description" content="Professional dryer repair in San Francisco, Peninsula & Marin. Not heating, drum not spinning, sensor or vent issues. $60 diagnostic applied to repair. 180-day warranty. Book online with FixitBay." />
-        <link rel="canonical" href="https://fixitbay.net/dryer-repair" />
-      </Helmet>
+      <SEOMetaTags title="Dryer Repair | FixitBay LLC San Francisco" description="Professional dryer repair in San Francisco, Peninsula & Marin. Not heating, drum not spinning, sensor or vent issues. $60 diagnostic applied to repair. 180-day warranty. Book online with FixitBay." canonical="https://fixitbay.net/dryer-repair" />
 
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
