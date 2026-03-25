@@ -69,9 +69,9 @@ const ThumbtackReviewWidget = () => {
                   rel="noopener noreferrer"
                   href="https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644"
                   className="inline-flex text-sm font-semibold text-[#1A3B5D] hover:text-[#C0362C] underline"
-                >
+                 aria-label="opens in new tab">
                   See all reviews
-                <span className="sr-only"> (opens in new tab)</span></a>
+                </a>
               </div>
             </div>
             <br />

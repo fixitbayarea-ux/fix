@@ -360,9 +360,9 @@ const BlogListPage = () => {
             <h2 className="blog-section-h2" style={{ fontFamily: F, fontWeight: 800, color: '#fff', marginBottom: 12 }}>Common Appliance Problems — Answered</h2>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginBottom: 28 }}>Our certified technicians are here with same-day service in San Francisco Bay Area.</p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
-              <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="blog-cta-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', border: 'none' }}>
+              <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="blog-cta-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', border: 'none' }} aria-label="opens in new tab">
                 Schedule Repair Now
-              <span className="sr-only"> (opens in new tab)</span></a>
+              </a>
               <a href="tel:+17605435733" data-testid="blog-cta-call" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.15)' }}>
                 Call (760) 543-5733
               </a>
@@ -375,9 +375,9 @@ const BlogListPage = () => {
 
         {/* ━━━ 8. FLOATING BUTTON ━━━ */}
         {showFloat && (
-          <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="float-btn" className="hidden md:flex" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '14px 20px', borderRadius: 4, boxShadow: '0 4px 20px rgba(255,87,34,0.45)', textDecoration: 'none' }}>
+          <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="float-btn" className="hidden md:flex" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '14px 20px', borderRadius: 4, boxShadow: '0 4px 20px rgba(255,87,34,0.45)', textDecoration: 'none' }} aria-label="opens in new tab">
             BOOK REPAIR
-          <span className="sr-only"> (opens in new tab)</span></a>
+          </a>
         )}
 
         {/* ━━━ 9. MOBILE STICKY BAR ━━━ */}

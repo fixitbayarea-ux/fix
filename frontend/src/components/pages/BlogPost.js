@@ -558,9 +558,9 @@ const BlogPost = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-bold rounded-lg border-2 bg-white hover:bg-gray-50 transition-all"
                 style={{ color: '#032D55', borderColor: 'white' }}
-              >
+               aria-label="opens in new tab">
                 Book Online
-              <span className="sr-only"> (opens in new tab)</span></a>
+              </a>
             </div>
           </div>
         </div>

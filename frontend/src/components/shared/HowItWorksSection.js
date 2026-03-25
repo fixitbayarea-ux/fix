@@ -57,7 +57,7 @@ const HowItWorksSection = () => {
                       maxWidth: '280px',
                       textDecoration: 'none'
                     }}
-                  >
+                   aria-label="opens in new tab">
                     {/* Step number badge */}
                     <div 
                       className="absolute top-3 left-3 w-7 h-7 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg"
@@ -85,7 +85,7 @@ const HowItWorksSection = () => {
                     <p className="text-center text-sm leading-relaxed" style={{color:'#4A5568'}}>
                       {step.description}
                     </p>
-                  <span className="sr-only"> (opens in new tab)</span></a>
+                  </a>
                   
                   {/* Connector arrow (not after last card) */}
                   {i < howItWorksSteps.length - 1 && (
@@ -118,7 +118,7 @@ const HowItWorksSection = () => {
                   minHeight: '280px',
                   textDecoration: 'none'
                 }}
-              >
+               aria-label="opens in new tab">
                 {/* Step number */}
                 <div 
                   className="absolute top-3 left-3 w-7 h-7 rounded-full flex items-center justify-center text-white font-bold text-sm shadow-lg"
@@ -146,7 +146,7 @@ const HowItWorksSection = () => {
                 <p className="text-center text-sm leading-relaxed" style={{color:'#4A5568'}}>
                   {step.description}
                 </p>
-              <span className="sr-only"> (opens in new tab)</span></a>
+              </a>
             );
           })}
         </div>
@@ -166,7 +166,7 @@ const HowItWorksSection = () => {
                 className="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm border border-gray-100 active:shadow-md transition-shadow"
                 style={{ textDecoration: 'none' }}
                 data-testid={`how-it-works-mobile-step-${i + 1}`}
-              >
+               aria-label="opens in new tab">
                 {/* Step number + Icon */}
                 <div className="flex-shrink-0 relative">
                   <div 
@@ -192,7 +192,7 @@ const HowItWorksSection = () => {
                     {step.description}
                   </p>
                 </div>
-              <span className="sr-only"> (opens in new tab)</span></a>
+              </a>
             );
           })}
         </div>

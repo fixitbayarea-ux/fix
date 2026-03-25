@@ -256,9 +256,9 @@ const ReviewsPage = () => {
                   borderRadius: 4, padding: '14px 28px',
                   color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14,
                   textDecoration: 'none', transition: 'all 0.2s',
-                }}>
+                }} aria-label="opens in new tab">
                   <span style={{ color: '#FF5722' }}>{'\u2605'}</span> {p.label}
-                <span className="sr-only"> (opens in new tab)</span></a>
+                </a>
               ))}
             </div>
           </div>
@@ -297,9 +297,9 @@ const ReviewsPage = () => {
               Join hundreds of satisfied Bay Area homeowners. Schedule your repair today.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
-              <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="cta-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '16px 36px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>
+              <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="cta-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '16px 36px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e = aria-label="opens in new tab"> e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>
                 Schedule Repair Now
-              <span className="sr-only"> (opens in new tab)</span></a>
+              </a>
               <a href="tel:+17605435733" data-testid="cta-call" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '16px 36px', borderRadius: 4, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.6)', transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }} onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; }}>
                 Call (760) 543-5733
               </a>

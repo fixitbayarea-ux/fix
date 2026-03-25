@@ -121,7 +121,7 @@ const CityHero = ({ bgImage, cityName }) => {
                     height="52"
                     loading="lazy"
                   />
-                <span className="sr-only"> (opens in new tab)</span></a>
+                </a>
               ))}
             </div>
 
@@ -134,7 +134,7 @@ const CityHero = ({ bgImage, cityName }) => {
               aria-label={`Schedule appliance repair in ${cityName}`}
             >
               Schedule Repair Now
-            <span className="sr-only"> (opens in new tab)</span></a>
+            </a>
           </div>
 
           <div className="ctaSubtext">Same/Next-Day Service in {cityName}</div>

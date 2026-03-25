@@ -192,9 +192,9 @@ const ThankYouBooking = () => {
           <div style={{ fontWeight: 800, fontSize: 26, color: '#1A1A1A', marginBottom: 8 }}>Happy with the Service?</div>
           <p style={{ color: '#4A5568', fontSize: 14, marginBottom: 32 }}>A quick review helps other Bay Area homeowners find honest local repair.</p>
           <div className="ty-review-btns">
-            <a href="https://www.google.com/maps/place/FixitBay" target="_blank" rel="noopener noreferrer" className="ty-review-btn" style={{ background: '#4285F4' }} data-testid="ty-review-google">Review on Google<span className="sr-only"> (opens in new tab)</span></a>
-            <a href="https://www.yelp.com/biz/fixitbay" target="_blank" rel="noopener noreferrer" className="ty-review-btn" style={{ background: '#D32323' }} data-testid="ty-review-yelp">Review on Yelp<span className="sr-only"> (opens in new tab)</span></a>
-            <a href="https://www.thumbtack.com/fixitbay" target="_blank" rel="noopener noreferrer" className="ty-review-btn" style={{ background: '#009fd9' }} data-testid="ty-review-thumbtack">Review on Thumbtack<span className="sr-only"> (opens in new tab)</span></a>
+            <a href="https://www.google.com/maps/place/FixitBay" target="_blank" rel="noopener noreferrer" className="ty-review-btn" style={{ background: '#4285F4' }} data-testid="ty-review-google" aria-label="opens in new tab">Review on Google</a>
+            <a href="https://www.yelp.com/biz/fixitbay" target="_blank" rel="noopener noreferrer" className="ty-review-btn" style={{ background: '#D32323' }} data-testid="ty-review-yelp" aria-label="opens in new tab">Review on Yelp</a>
+            <a href="https://www.thumbtack.com/fixitbay" target="_blank" rel="noopener noreferrer" className="ty-review-btn" style={{ background: '#009fd9' }} data-testid="ty-review-thumbtack" aria-label="opens in new tab">Review on Thumbtack</a>
           </div>
           <p style={{ color: '#4A5568', fontSize: 12, marginTop: 16 }}>Takes less than 2 minutes. Your feedback means everything to a small local business.</p>
         </section>

@@ -158,9 +158,9 @@ const MaintenancePage = ({ appliance, content }) => {
                 rel="noopener noreferrer" 
                 className="inline-flex items-center justify-center px-8 py-4 text-white font-bold rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105" 
                 style={{ background: 'linear-gradient(135deg, #C0362C 0%, #A02820 100%)' }}
-              >
+               aria-label="opens in new tab">
                 Book Online
-              <span className="sr-only"> (opens in new tab)</span></a>
+              </a>
             </div>
           </div>
         </section>

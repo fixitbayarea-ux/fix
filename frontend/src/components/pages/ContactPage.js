@@ -139,16 +139,16 @@ const ContactPage = () => {
               <a href="tel:+17605435733" data-testid="hero-call-btn" className="hero-cta" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>
                 Call (760) 543-5733
               </a>
-              <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="hero-book-btn" className="hero-cta" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', border: '2px solid #fff', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'} onMouseLeave={e => e.currentTarget.style.background = 'transparent'}>
+              <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="hero-book-btn" className="hero-cta" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', border: '2px solid #fff', transition: 'background 0.2s' }} onMouseEnter={e = aria-label="opens in new tab"> e.currentTarget.style.background = 'rgba(255,255,255,0.1)'} onMouseLeave={e => e.currentTarget.style.background = 'transparent'}>
                 Book Online Now
-              <span className="sr-only"> (opens in new tab)</span></a>
+              </a>
             </div>
             {/* Social icons */}
             <div style={{ display: 'flex', justifyContent: 'center', gap: 16, marginTop: 28 }}>
               {SOCIAL_LINKS.map(s => (
-                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" title={s.label} className="social-circle" data-testid={`hero-social-${s.label.toLowerCase().replace(/\s+/g,'-')}`} style={{ width: 40, height: 40, borderRadius: '50%', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.18)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.2s' }}>
+                <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" title={s.label} className="social-circle" data-testid={`hero-social-${s.label.toLowerCase().replace(/\s+/g,'-')}`} style={{ width: 40, height: 40, borderRadius: '50%', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.18)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.2s' }} aria-label="opens in new tab">
                   <img src={s.icon} alt={s.label} style={{ width: 16, height: 16, filter: 'brightness(10)' }} />
-                <span className="sr-only"> (opens in new tab)</span></a>
+                </a>
               ))}
             </div>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.45)', marginTop: 8 }}>Follow us &amp; read our reviews</p>
@@ -241,9 +241,9 @@ const ContactPage = () => {
                 <div style={EYE}>FIND US ONLINE</div>
                 <div style={{ display: 'flex', gap: 12, marginBottom: 8 }}>
                   {SOCIAL_LINKS.map(s => (
-                    <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" title={s.label} className="social-sq" data-testid={`social-${s.label.toLowerCase().replace(/\s+/g,'-')}`} style={{ width: 44, height: 44, borderRadius: 4, background: '#F8F5F0', border: '1px solid rgba(255,87,34,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.2s' }}>
+                    <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer" title={s.label} className="social-sq" data-testid={`social-${s.label.toLowerCase().replace(/\s+/g,'-')}`} style={{ width: 44, height: 44, borderRadius: 4, background: '#F8F5F0', border: '1px solid rgba(255,87,34,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center', transition: 'all 0.2s' }} aria-label="opens in new tab">
                       <img src={s.icon} alt={s.label} style={{ width: 18, height: 18, transition: 'filter 0.2s' }} />
-                    <span className="sr-only"> (opens in new tab)</span></a>
+                    </a>
                   ))}
                 </div>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: '#4A5568', marginTop: 8 }}>Read our reviews and follow us</p>
@@ -409,9 +409,9 @@ const ContactPage = () => {
               <span style={{ fontFamily: F, fontWeight: 500, fontSize: 14, color: 'rgba(255,255,255,0.65)' }}>Mon&ndash;Fri 8AM&ndash;6PM &middot; Sat 8AM&ndash;3PM &middot; Sun Closed</span>
             </div>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
-              <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="final-book-btn" className="final-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '16px 36px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>
+              <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="final-book-btn" className="final-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '16px 36px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} aria-label="opens in new tab">
                 Book Online
-              <span className="sr-only"> (opens in new tab)</span></a>
+              </a>
               <a href="tel:+17605435733" data-testid="final-call-btn" className="final-secondary" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '16px 36px', borderRadius: 4, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.6)', transition: 'background 0.2s' }}>
                 (760) 543-5733
               </a>

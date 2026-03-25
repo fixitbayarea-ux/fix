@@ -300,9 +300,9 @@ const CMSDashboard = () => {
                           </div>
                         </div>
                         <div className="flex gap-2 flex-shrink-0">
-                          <a href={`/blog/${bp.slug}`} target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 text-sm">
+                          <a href={`/blog/${bp.slug}`} target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 text-sm" aria-label="opens in new tab">
                             Просмотр
-                          <span className="sr-only"> (opens in new tab)</span></a>
+                          </a>
                           <button onClick={() => setEditingBlog(bp)} className="px-3 py-1.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm">
                             Изменить
                           </button>

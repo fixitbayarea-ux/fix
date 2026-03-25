@@ -15,6 +15,6 @@ export default function FloatingBookButton(){
       }}
     >
       Easy Book Now
-    <span className="sr-only"> (opens in new tab)</span></a>
+    </a>
   );
 }

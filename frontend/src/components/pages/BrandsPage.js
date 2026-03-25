@@ -246,7 +246,7 @@ const BrandsPage = () => {
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', gap: 10, flexWrap: 'wrap', marginTop: 0 }}>
             <a href="tel:+17605435733" data-testid="brands-hero-call" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', padding: '15px 28px', borderRadius: PC.r, textDecoration: 'none', letterSpacing: '0.04em', border: 'none' }}>Call (760) 543-5733</a>
-            <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="brands-hero-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', padding: '15px 28px', borderRadius: PC.r, textDecoration: 'none', border: `2px solid ${PC.white15}`, letterSpacing: '0.04em' }}>Book Online<span className="sr-only"> (opens in new tab)</span></a>
+            <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="brands-hero-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', padding: '15px 28px', borderRadius: PC.r, textDecoration: 'none', border: `2px solid ${PC.white15}`, letterSpacing: '0.04em' }} aria-label="opens in new tab">Book Online</a>
           </div>
         </div>
       </section>
@@ -487,7 +487,7 @@ const BrandsPage = () => {
           <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: PC.white60, marginBottom: 28 }}>Get same-day service from certified technicians who know your brand inside and out.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
             <a href="tel:+17605435733" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', padding: '16px 32px', borderRadius: PC.r, textDecoration: 'none', letterSpacing: '0.04em', border: 'none' }}>Call (760) 543-5733</a>
-            <a href="/book?go=1" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', padding: '16px 32px', borderRadius: PC.r, textDecoration: 'none', border: `2px solid ${PC.white15}`, letterSpacing: '0.04em' }}>Book Online<span className="sr-only"> (opens in new tab)</span></a>
+            <a href="/book?go=1" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', padding: '16px 32px', borderRadius: PC.r, textDecoration: 'none', border: `2px solid ${PC.white15}`, letterSpacing: '0.04em' }} aria-label="opens in new tab">Book Online</a>
           </div>
         </div>
       </section>
@@ -509,7 +509,7 @@ const BrandsPage = () => {
 
       {/* 10. FLOATING BUTTON + MOBILE BAR */}
       {showFloat && <>
-        <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="brands-float-btn" className="brands-float-btn" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, alignItems: 'center', gap: 8, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '16px 24px', borderRadius: PC.r, boxShadow: '0 4px 16px rgba(0,0,0,0.3)', textDecoration: 'none' }}>BOOK REPAIR<span className="sr-only"> (opens in new tab)</span></a>
+        <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="brands-float-btn" className="brands-float-btn" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, alignItems: 'center', gap: 8, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '16px 24px', borderRadius: PC.r, boxShadow: '0 4px 16px rgba(0,0,0,0.3)', textDecoration: 'none' }} aria-label="opens in new tab">BOOK REPAIR</a>
         <div className="brands-mobile-bar" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 999, background: PC.navyMid, borderTop: `2px solid ${PC.accent}`, padding: '10px 12px', gap: 8, justifyContent: 'center' }}>
           <a href="tel:+17605435733" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: PC.r, textDecoration: 'none' }}>CALL</a>
           <button onClick={() => window.open('/book?go=1', '_blank')} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: PC.navy, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '8px 0', borderRadius: PC.r, border: `1px solid ${PC.white15}`, cursor: 'pointer' }}>
