@@ -482,7 +482,7 @@ const ApplianceRepairPageNew = ({
                     <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginBottom: 6 }}><span style={{ color: '#FF5722', marginRight: 8 }}>&bull;</span>{item.name}</div>
                     <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.6, marginBottom: 14 }}>{item.desc}</p>
                   </div>
-                  <span className="city-svc-btn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minHeight: 44, background: '#0D1B2A', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 11, textTransform: 'uppercase', padding: '10px 16px', borderRadius: 3, textAlign: 'center', transition: 'background 0.2s' }}>VIEW SERVICE</span>
+                  <span className="city-svc-btn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minHeight: 44, background: 'transparent', color: '#FF5722', border: '1.5px solid #FF5722', fontFamily: S.font, fontWeight: 700, fontSize: 14, padding: '10px 16px', borderRadius: 3, textAlign: 'center', transition: 'background 0.2s, color 0.2s' }}>View Service</span>
                 </a>
               ))}
             </div>
