@@ -483,13 +483,13 @@ const BlogPage = () => {
               </a>
               <a 
                 href="/book?go=1"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-lg font-bold rounded-lg border-2 bg-white hover:bg-gray-50 transition-all"
                 style={{ color: '#032D55', borderColor: 'white' }}
               >
                 Book Online
-              </a>
+              <span className="sr-only"> (opens in new tab)</span></a>
             </div>
           </div>
         </section>

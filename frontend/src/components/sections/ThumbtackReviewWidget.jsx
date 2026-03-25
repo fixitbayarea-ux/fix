@@ -65,13 +65,13 @@ const ThumbtackReviewWidget = () => {
                   Andrei was awesome! He diagnosed the problem with my washing machine and fixed it, giving me 2 options along the way in terms of cost. He was punctual and professional. Would use him again!
                 </p>
                 <a
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   rel="noopener noreferrer"
                   href="https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644"
                   className="inline-flex text-sm font-semibold text-[#1A3B5D] hover:text-[#C0362C] underline"
                 >
                   See all reviews
-                </a>
+                <span className="sr-only"> (opens in new tab)</span></a>
               </div>
             </div>
             <br />

@@ -216,7 +216,7 @@ const AboutPage = () => {
                     <p style={{ fontFamily: F, fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.75)', marginBottom: 4 }}>{v.caption}</p>
                     <p style={{ fontFamily: F, fontWeight: 500, fontSize: 12, color: '#FF5722' }}>▶ Watch: How Our Repair Process Works</p>
                   </div>
-                </a>
+                <span className="sr-only"> (opens in new tab)</span></a>
               </div>
             ))}
           </div>
@@ -224,7 +224,7 @@ const AboutPage = () => {
             Every FixitBay repair starts with a thorough $60 diagnostic — we identify the root cause, explain the issue, and provide a written estimate before any work begins. All repairs include our 180-day warranty on parts and labor.
           </p>
           <div style={{ textAlign: 'center', marginTop: 32 }}>
-            <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="phone-cta" style={{ display: 'inline-block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Book Your Repair Today</a>
+            <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="phone-cta" style={{ display: 'inline-block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Book Your Repair Today<span className="sr-only"> (opens in new tab)</span></a>
           </div>
         </section>
 
@@ -351,7 +351,7 @@ const AboutPage = () => {
                         <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#1A1A1A' }}>{review.author}</p>
                         <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: '#4A5568' }}>{review.date}</p>
                       </div>
-                      <a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ fontFamily: F, fontWeight: 600, fontSize: 12, color: '#FF5722', textDecoration: 'none' }}>Read on Google &rarr;</a>
+                      <a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ fontFamily: F, fontWeight: 600, fontSize: 12, color: '#FF5722', textDecoration: 'none' }}>Read on Google &rarr;<span className="sr-only"> (opens in new tab)</span></a>
                     </div>
                   </div>
                 ))}
@@ -403,7 +403,7 @@ const AboutPage = () => {
           <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.7)', marginBottom: 32 }}>Experience honest, professional appliance repair service today.</p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
-            <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.4)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Book Online</a>
+            <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.4)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Book Online<span className="sr-only"> (opens in new tab)</span></a>
           </div>
         </section>
 

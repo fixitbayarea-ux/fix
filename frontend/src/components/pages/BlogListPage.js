@@ -362,7 +362,7 @@ const BlogListPage = () => {
             <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="blog-cta-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', border: 'none' }}>
                 Schedule Repair Now
-              </a>
+              <span className="sr-only"> (opens in new tab)</span></a>
               <a href="tel:+17605435733" data-testid="blog-cta-call" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.15)' }}>
                 Call (760) 543-5733
               </a>
@@ -377,7 +377,7 @@ const BlogListPage = () => {
         {showFloat && (
           <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="float-btn" className="hidden md:flex" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '14px 20px', borderRadius: 4, boxShadow: '0 4px 20px rgba(255,87,34,0.45)', textDecoration: 'none' }}>
             BOOK REPAIR
-          </a>
+          <span className="sr-only"> (opens in new tab)</span></a>
         )}
 
         {/* ━━━ 9. MOBILE STICKY BAR ━━━ */}

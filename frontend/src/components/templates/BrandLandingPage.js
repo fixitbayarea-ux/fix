@@ -239,7 +239,7 @@ const BrandLandingPage = ({ brand }) => {
             <div className="brand-cta-row" style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="cta-book-top" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: PC.r, textDecoration: 'none', border: 'none' }}>
                 Book Online
-              </a>
+              <span className="sr-only"> (opens in new tab)</span></a>
               <a href="tel:+17605435733" data-testid="cta-call-top" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', minHeight: 52, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: PC.r, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.65)' }}>
                 (760) 543-5733
               </a>
@@ -457,7 +457,7 @@ const BrandLandingPage = ({ brand }) => {
             <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="cta-book-bottom" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '16px 36px', borderRadius: PC.r, textDecoration: 'none', border: 'none' }}>
                 Book Online
-              </a>
+              <span className="sr-only"> (opens in new tab)</span></a>
               <a href="tel:+17605435733" data-testid="cta-call-bottom" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', minHeight: 52, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '16px 36px', borderRadius: PC.r, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.65)' }}>
                 (760) 543-5733
               </a>

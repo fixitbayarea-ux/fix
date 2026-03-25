@@ -64,9 +64,9 @@ const HomeHero = () => {
 
             {/* Desktop trust row */}
             <div className="hero-d-flex" style={{ alignItems: 'center', gap: 20, marginTop: 24, fontFamily: 'Montserrat, sans-serif', fontWeight: 500, fontSize: 13 }}>
-              <span style={{ minHeight: 44, display:'flex', alignItems:'center' }}><a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }} data-testid="hero-trust-google">&#11088; 4.9 Google</a></span>
+              <span style={{ minHeight: 44, display:'flex', alignItems:'center' }}><a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }} data-testid="hero-trust-google">&#11088; 4.9 Google<span className="sr-only"> (opens in new tab)</span></a></span>
               <span style={{ color: 'rgba(255,255,255,0.35)' }}>&middot;</span>
-              <span style={{ minHeight: 44, display:'flex', alignItems:'center' }}><a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }} data-testid="hero-trust-reviews">&#10003; 94 Reviews</a></span>
+              <span style={{ minHeight: 44, display:'flex', alignItems:'center' }}><a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }} data-testid="hero-trust-reviews">&#10003; 94 Reviews<span className="sr-only"> (opens in new tab)</span></a></span>
               <span style={{ color: 'rgba(255,255,255,0.35)' }}>&middot;</span>
               <span style={{ color: '#FF5722', fontWeight: 600 }}>&#128737; License #51001</span>
             </div>
@@ -109,7 +109,7 @@ const HomeHero = () => {
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 10 }}>
                 <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" data-testid="hero-mobile-book-btn" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', minHeight: 56, borderRadius: 4, background: '#FF5722', color: '#FFFFFF', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 16, textTransform: 'uppercase', letterSpacing: '0.04em', textDecoration: 'none' }}>
                   BOOK REPAIR ONLINE
-                </a>
+                <span className="sr-only"> (opens in new tab)</span></a>
                 <a href="tel:+17605435733" data-testid="hero-mobile-call-btn" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', minHeight: 56, borderRadius: 4, background: '#E04B25', color: '#FFFFFF', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 16, textDecoration: 'none' }}>
                   CALL (760) 543-5733
                 </a>

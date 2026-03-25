@@ -41,6 +41,8 @@ An appliance repair business website (fixitbay.net) built as a React SPA with st
 - Fixed desktop nav tel link touch target: added `min-h-[44px]` to meet WCAG 2.5.5 (was 21px → now 44px)
 - Removed duplicate mobile trust bar from ProfessionalLandingPage.js (was duplicating hero inline badges within 200px)
 - Hidden breadcrumbs on mobile (<768px) in BrandLandingPage.js and ApplianceRepairPageNew.js hero sections (saves ~30px, markup stays in DOM for SEO)
+- Added sr-only "(opens in new tab)" span to all 101 `target="_blank"` links across 30+ files (WCAG 2.4.4)
+- Ensured all external links have `rel="noopener noreferrer"` (fixed 16 missing instances)
 
 ## Backlog (Prioritized)
 

@@ -109,7 +109,7 @@ const BookPage = () => {
           ) : (
             <>
               <div className="bk-redirect-text" data-testid="fallback-text">Redirect was blocked</div>
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-redirect-btn" data-testid="fallback-open-btn">Open Booking</a>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-redirect-btn" data-testid="fallback-open-btn">Open Booking<span className="sr-only"> (opens in new tab)</span></a>
             </>
           )}
         </div>
@@ -264,7 +264,7 @@ const BookPage = () => {
             <h1 data-testid="book-h1">Book Your Appliance Repair</h1>
             <p className="bk-hero-sub">Schedule a licensed technician online. Pick the time that works for you.</p>
 
-            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-main-cta" data-testid="book-hero-cta">Book Online Now</a>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-main-cta" data-testid="book-hero-cta">Book Online Now<span className="sr-only"> (opens in new tab)</span></a>
 
             <div className="bk-or">&mdash; or call for immediate scheduling &mdash;</div>
             <a href="tel:7605435733" className="bk-phone-hero" data-testid="book-hero-phone">(760) 543-5733</a>
@@ -314,7 +314,7 @@ const BookPage = () => {
               <span>{'\u2713'} 180-Day Warranty</span>
             </div>
 
-            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-book-full" data-testid="book-widget-book-btn">Open Booking Calendar</a>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-book-full" data-testid="book-widget-book-btn">Open Booking Calendar<span className="sr-only"> (opens in new tab)</span></a>
 
             <div className="bk-divider"><span className="bk-divider-text">&mdash; prefer to call? &mdash;</span></div>
 
@@ -385,7 +385,7 @@ const BookPage = () => {
           <div className="bk-final-title">Ready to Book?</div>
           <div className="bk-final-sub">Same-day and next-day appointments available across the Bay Area.</div>
           <div className="bk-final-btns">
-            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-btn-white" data-testid="book-final-book-btn">Book Online Now</a>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-btn-white" data-testid="book-final-book-btn">Book Online Now<span className="sr-only"> (opens in new tab)</span></a>
             <a href="tel:7605435733" className="bk-btn-outline" data-testid="book-final-call-btn">(760) 543-5733</a>
           </div>
         </section>
@@ -406,12 +406,12 @@ const BookPage = () => {
         </footer>
 
         {/* ─── 9. FLOATING BUTTON ─── */}
-        <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className={`bk-float${showFloat ? '' : ' hidden'}`} data-testid="book-floating-btn">BOOK REPAIR</a>
+        <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className={`bk-float${showFloat ? '' : ' hidden'}`} data-testid="book-floating-btn">BOOK REPAIR<span className="sr-only"> (opens in new tab)</span></a>
 
         {/* ─── MOBILE STICKY BAR ─── */}
         <div className="bk-mobile-bar" data-testid="book-mobile-bar">
           <a href="tel:7605435733">CALL</a>
-          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">BOOK ONLINE</a>
+          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">BOOK ONLINE<span className="sr-only"> (opens in new tab)</span></a>
           <a href="sms:7605435733?body=Hello%20FixitBay!">TEXT US</a>
         </div>
       </div>

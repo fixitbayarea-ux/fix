@@ -4,7 +4,7 @@ export default function FloatingBookButton(){
   return (
     <a
       href="/book?go=1"
-      target="_blank"
+      target="_blank" rel="noopener noreferrer"
       rel="noopener noreferrer"
       className="fxb-fixed-book"
       aria-label="Book Online"
@@ -15,6 +15,6 @@ export default function FloatingBookButton(){
       }}
     >
       Easy Book Now
-    </a>
+    <span className="sr-only"> (opens in new tab)</span></a>
   );
 }

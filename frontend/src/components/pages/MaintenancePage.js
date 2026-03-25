@@ -196,13 +196,13 @@ const MaintenancePage = ({ appliance, content }) => {
               </a>
               <a 
                 href="/book?go=1" 
-                target="_blank" 
+                target="_blank" rel="noopener noreferrer" 
                 rel="noopener noreferrer" 
                 className="inline-flex items-center justify-center px-8 py-4 text-white font-bold rounded-lg transition-all duration-300 hover:shadow-xl hover:scale-105" 
                 style={{ background: 'linear-gradient(135deg, #C0362C 0%, #A02820 100%)' }}
               >
                 Book Online
-              </a>
+              <span className="sr-only"> (opens in new tab)</span></a>
             </div>
           </div>
         </section>

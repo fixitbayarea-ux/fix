@@ -240,7 +240,7 @@ const ServicesPage = () => {
             <h1 data-testid="services-h1">Appliance Repair Services</h1>
             <p className="sp-hero-sub">$60 diagnostic fee applied to repair. Licensed technicians. 180-day warranty on parts and labor. Same-day and next-day service across 22 cities.</p>
             <div className="sp-hero-ctas">
-              <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="sp-btn-primary" data-testid="services-hero-book-btn">Book Online Now</a>
+              <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="sp-btn-primary" data-testid="services-hero-book-btn">Book Online Now<span className="sr-only"> (opens in new tab)</span></a>
               <a href="tel:7605435733" className="sp-btn-secondary" data-testid="services-hero-call-btn">(760) 543-5733</a>
             </div>
             <div className="sp-trust" data-testid="services-trust-badges">
@@ -410,7 +410,7 @@ const ServicesPage = () => {
           <div className="sp-cta-title">Not Sure Which Service You Need?</div>
           <p className="sp-cta-sub">Call us and describe the problem. We will book the right technician for same-day or next-day service &mdash; no guessing required.</p>
           <div className="sp-cta-btns">
-            <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="sp-btn-primary" data-testid="services-cta-book-btn">Book Online</a>
+            <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="sp-btn-primary" data-testid="services-cta-book-btn">Book Online<span className="sr-only"> (opens in new tab)</span></a>
             <a href="tel:7605435733" className="sp-btn-secondary" style={{ borderWidth: 1, borderColor: 'rgba(255,255,255,0.4)' }} data-testid="services-cta-call-btn">(760) 543-5733</a>
           </div>
           <div className="sp-cta-links" data-testid="services-cta-links">
@@ -430,12 +430,12 @@ const ServicesPage = () => {
         </footer>
 
         {/* ─── 10. FLOATING BUTTON ─── */}
-        <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className={`sp-float${showFloat ? '' : ' hidden'}`} data-testid="services-floating-book-btn">BOOK REPAIR</a>
+        <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className={`sp-float${showFloat ? '' : ' hidden'}`} data-testid="services-floating-book-btn">BOOK REPAIR<span className="sr-only"> (opens in new tab)</span></a>
 
         {/* ─── MOBILE STICKY BAR ─── */}
         <div className="sp-mobile-bar" data-testid="services-mobile-bar">
           <a href="tel:7605435733">CALL</a>
-          <a href="/book?go=1" target="_blank" rel="noopener noreferrer">BOOK ONLINE</a>
+          <a href="/book?go=1" target="_blank" rel="noopener noreferrer">BOOK ONLINE<span className="sr-only"> (opens in new tab)</span></a>
           <a href="sms:7605435733?body=Hello%20FixitBay!">TEXT US</a>
         </div>
       </div>

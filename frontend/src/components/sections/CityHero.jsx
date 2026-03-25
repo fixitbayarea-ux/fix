@@ -108,7 +108,7 @@ const CityHero = ({ bgImage, cityName }) => {
                 <a
                   key={item.aria}
                   href={item.href}
-                  target="_blank"
+                  target="_blank" rel="noopener noreferrer"
                   rel="noopener noreferrer"
                   aria-label={item.aria}
                   className="socialBtn"
@@ -121,20 +121,20 @@ const CityHero = ({ bgImage, cityName }) => {
                     height="52"
                     loading="lazy"
                   />
-                </a>
+                <span className="sr-only"> (opens in new tab)</span></a>
               ))}
             </div>
 
             {/* Main CTA */}
             <a
               href={BOOKING_URL}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               rel="noopener noreferrer"
               className="heroCta"
               aria-label={`Schedule appliance repair in ${cityName}`}
             >
               Schedule Repair Now
-            </a>
+            <span className="sr-only"> (opens in new tab)</span></a>
           </div>
 
           <div className="ctaSubtext">Same/Next-Day Service in {cityName}</div>

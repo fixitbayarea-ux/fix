@@ -488,15 +488,15 @@ const ProfessionalLandingPage = () => {
                   <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.65, marginBottom: 18 }}>"{r.text}"</p>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                     <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 13, color: '#FFFFFF' }}>{r.author}</span>
-                    <a href={r.source === 'Google' ? 'https://share.google/Q48c6OXAIB7u60fNv' : 'https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644'} target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 12, color: '#FF5722', textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>Read on {r.source} &rarr;</a>
+                    <a href={r.source === 'Google' ? 'https://share.google/Q48c6OXAIB7u60fNv' : 'https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644'} target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 12, color: '#FF5722', textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>Read on {r.source} &rarr;<span className="sr-only"> (opens in new tab)</span></a>
                   </div>
                 </div>
               ))}
             </div>
             {/* Desktop: bottom links */}
             <div className="hidden lg:flex justify-center" style={{ gap: 32 }}>
-              <a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 13, color: '#FF5722', textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>Read all Google reviews &rarr;</a>
-              <a href="https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 13, color: '#FF5722', textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>Read Thumbtack reviews &rarr;</a>
+              <a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 13, color: '#FF5722', textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>Read all Google reviews &rarr;<span className="sr-only"> (opens in new tab)</span></a>
+              <a href="https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 13, color: '#FF5722', textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>Read Thumbtack reviews &rarr;<span className="sr-only"> (opens in new tab)</span></a>
             </div>
             {/* Mobile */}
             <div className="lg:hidden overflow-x-auto pb-4 scrollbar-hide -mx-4"><div className="flex gap-4 px-4" style={{ scrollSnapType: 'x mandatory' }}>{reviews.map(r => (
@@ -504,7 +504,7 @@ const ProfessionalLandingPage = () => {
                 <div className="flex items-center justify-between mb-4"><div className="flex items-center gap-2">{r.source === 'Google' ? <GoogleIcon size={18} /> : <ThumbIcon size={18} />}<span className="font-semibold text-sm" style={{ color: '#fff' }}>{r.source}</span></div></div>
                 {r.rating && <div className="flex items-center mb-3">{[...Array(r.rating)].map((_, i) => <span key={i} style={{ color: '#FF5722', fontSize: 14 }}>&#9733;</span>)}</div>}
                 <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.75)' }}>"{r.text}"</p>
-                <div className="pt-4 border-t border-white/10"><p className="font-semibold text-sm mb-1" style={{ color: '#fff' }}>{r.author}</p><a href={r.source === 'Google' ? 'https://share.google/Q48c6OXAIB7u60fNv' : 'https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644'} target="_blank" rel="noopener noreferrer" className="text-xs font-medium" style={{ color: '#FF5722', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>Read on {r.source} &rarr;</a></div>
+                <div className="pt-4 border-t border-white/10"><p className="font-semibold text-sm mb-1" style={{ color: '#fff' }}>{r.author}</p><a href={r.source === 'Google' ? 'https://share.google/Q48c6OXAIB7u60fNv' : 'https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644'} target="_blank" rel="noopener noreferrer" className="text-xs font-medium" style={{ color: '#FF5722', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>Read on {r.source} &rarr;<span className="sr-only"> (opens in new tab)</span></a></div>
               </div>
             ))}</div></div>
           </div>

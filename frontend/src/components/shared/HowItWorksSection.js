@@ -49,7 +49,7 @@ const HowItWorksSection = () => {
                 <React.Fragment key={i}>
                   <a
                     href={bookingUrl}
-                    target="_blank"
+                    target="_blank" rel="noopener noreferrer"
                     rel="noreferrer"
                     className="how-it-works-card group relative bg-white rounded-2xl p-6 shadow-md border-2 border-transparent hover:border-blue-400 hover:shadow-xl transition-all duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 flex-1"
                     style={{
@@ -85,7 +85,7 @@ const HowItWorksSection = () => {
                     <p className="text-center text-sm leading-relaxed" style={{color:'#4A5568'}}>
                       {step.description}
                     </p>
-                  </a>
+                  <span className="sr-only"> (opens in new tab)</span></a>
                   
                   {/* Connector arrow (not after last card) */}
                   {i < howItWorksSteps.length - 1 && (
@@ -111,7 +111,7 @@ const HowItWorksSection = () => {
               <a
                 key={i}
                 href={bookingUrl}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 rel="noreferrer"
                 className="how-it-works-card group relative bg-white rounded-2xl p-6 shadow-md border-2 border-transparent hover:border-blue-400 hover:shadow-xl transition-all duration-300 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                 style={{
@@ -146,7 +146,7 @@ const HowItWorksSection = () => {
                 <p className="text-center text-sm leading-relaxed" style={{color:'#4A5568'}}>
                   {step.description}
                 </p>
-              </a>
+              <span className="sr-only"> (opens in new tab)</span></a>
             );
           })}
         </div>
@@ -161,7 +161,7 @@ const HowItWorksSection = () => {
               <a
                 key={i}
                 href={bookingUrl}
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
                 rel="noreferrer"
                 className="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm border border-gray-100 active:shadow-md transition-shadow"
                 style={{ textDecoration: 'none' }}
@@ -192,7 +192,7 @@ const HowItWorksSection = () => {
                     {step.description}
                   </p>
                 </div>
-              </a>
+              <span className="sr-only"> (opens in new tab)</span></a>
             );
           })}
         </div>

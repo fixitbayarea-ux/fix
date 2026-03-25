@@ -201,7 +201,7 @@ const MarinCountyPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg transition-colors" data-testid="book-online-btn">
                 Book Online Now
-              </a>
+              <span className="sr-only"> (opens in new tab)</span></a>
               <a href="tel:+17605435733" className="inline-flex items-center justify-center gap-2 bg-white text-[#0D1B2A] font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors" data-testid="call-btn">
                 <Phone className="w-5 h-5" />
                 (760) 543-5733
@@ -307,7 +307,7 @@ const MarinCountyPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[#0D1B2A] hover:bg-[#1B3A5F] text-white font-bold py-4 px-8 rounded-lg transition-colors">
               Book Online Now
-            </a>
+            <span className="sr-only"> (opens in new tab)</span></a>
             <a href="tel:+17605435733" className="inline-flex items-center justify-center gap-2 bg-white text-orange-500 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors">
               <Phone className="w-5 h-5" />
               (760) 543-5733
