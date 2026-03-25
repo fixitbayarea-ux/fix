@@ -310,11 +310,11 @@ const ProfessionalLandingPage = () => {
           </div>
           <h2 className="lg:hidden text-3xl font-bold mb-3 text-center" style={{ color: '#FFFFFF' }}>How It Works</h2>
 
-          {/* Desktop: 4 steps in a row with dashed connectors */}
-          <div className="hidden lg:block" style={{ marginTop: 56 }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', position: 'relative' }}>
-              {/* Dashed line connecting steps */}
-              <div style={{ position: 'absolute', top: 80, left: '18%', right: '18%', height: 1, borderTop: '1px dashed rgba(255,87,34,0.30)', zIndex: 0 }} aria-hidden="true" />
+          {/* 4 steps — responsive grid */}
+          <div style={{ marginTop: 56 }}>
+            <div className="grid grid-cols-2 lg:grid-cols-4" style={{ position: 'relative', gap: 24 }}>
+              {/* Dashed line connecting steps — desktop only */}
+              <div className="hidden lg:block" style={{ position: 'absolute', top: 80, left: '18%', right: '18%', height: 1, borderTop: '1px dashed rgba(255,87,34,0.30)', zIndex: 0 }} aria-hidden="true" />
               {[
                 { num: '01', icon: <CalendarCheck size={32} strokeWidth={1.5} />, title: 'BOOK ONLINE', desc: 'Schedule in 60 seconds, no calls' },
                 { num: '02', icon: <User size={32} strokeWidth={1.5} />, title: 'TECH ARRIVES', desc: 'Licensed, on time, with tools' },
@@ -334,8 +334,8 @@ const ProfessionalLandingPage = () => {
             </div>
           </div>
 
-          {/* Mobile: vertical steps — enhanced */}
-          <div className="lg:hidden px-2 mt-6">
+          {/* Mobile: vertical steps — hidden, replaced by responsive grid above */}
+          <div className="hidden px-2 mt-6">
             {[
               { num: '01', title: 'Book Online', desc: 'Schedule your repair in seconds — no calls, no waiting.' },
               { num: '02', title: 'Technician Arrives', desc: 'A licensed technician arrives on time with the right tools.' },
@@ -373,7 +373,7 @@ const ProfessionalLandingPage = () => {
             </div>
           </div>
           {/* Desktop grid */}
-          <div key={activeCategory} className="hidden lg:grid lg:grid-cols-3 animate-fadeIn" style={{ gap: 28 }}>
+          <div key={activeCategory} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 animate-fadeIn" style={{ gap: 28 }}>
             {filteredServices.map(svc => (
               <a key={svc.name} href={svc.path} rel={svc.name === 'Dishwasher' ? 'nofollow' : undefined} className="svc-card group flex flex-col bg-white overflow-hidden" style={{ borderRadius: 4, border: '1px solid rgba(0,0,0,0.08)', textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s', cursor: 'pointer' }} data-testid={`svc-card-${svc.name.toLowerCase().replace(/\s+/g, '-')}`}>
                 <div className="relative overflow-hidden" style={{ height: 200 }}><picture><source srcSet={svc.imageWebP} type="image/webp" /><img src={svc.image} alt={`${svc.name} repair — FixitBay`} className="w-full h-full object-cover transition-transform duration-200 group-hover:scale-[1.03]" width="800" height="533" loading="lazy" decoding="async" /></picture></div>
@@ -394,7 +394,7 @@ const ProfessionalLandingPage = () => {
             ))}
           </div>
           {/* Mobile carousel */}
-          <div key={`m-${activeCategory}`} className="lg:hidden animate-fadeIn">
+          <div key={`m-${activeCategory}`} className="hidden animate-fadeIn">
             {/* Swipe hint — centered, fades out after 3s */}
             <div style={{ textAlign: 'center', marginBottom: 10, height: 20 }}>
               <span
@@ -752,9 +752,6 @@ const ProfessionalLandingPage = () => {
         /* -- EXTRA SMALL -- */
         @media (max-width: 480px) {
           .hero h1 { font-size: 24px !important; }
-          [class*="grid-4"], .grid-cols-4 { grid-template-columns: 1fr !important; }
-          [class*="grid-3"], .grid-cols-3 { grid-template-columns: 1fr !important; }
-          .service-card + .service-card, [class*="appliance-card"] { grid-template-columns: 1fr !important; }
         }
       `}</style>
 

@@ -335,7 +335,7 @@ const SanFrancisco = () => {
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
           <div style={{ ...S.eyebrow, marginBottom: 10 }}>THE PROCESS</div>
           <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 48 }}>Simple. Fast. Professional.</h2>
-          <div className="sf-how-grid grid md:grid-cols-4 gap-8">
+          <div className="sf-how-grid grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { num: '01', icon: <CalendarCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'Book Online', text: 'Schedule same-day or next-day at your convenience.' },
               { num: '02', icon: <Search size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Diagnose', text: '$60 diagnostic visit — applied to repair if you proceed.' },
@@ -397,7 +397,7 @@ const SanFrancisco = () => {
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
           <div style={{ ...S.eyebrow, color: '#FF5722', marginBottom: 10 }}>TRANSPARENT PRICING</div>
           <h2 style={{ ...S.h2, color: '#FFFFFF', marginBottom: 36 }}>No Surprises. Ever.</h2>
-          <div className="grid md:grid-cols-3" style={{ gap: 20 }}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{ gap: 20 }}>
             {/* Card 1 — $60 Diagnostic (featured) */}
             <div style={{ border: '2px solid #FF5722', background: 'rgba(255,87,34,0.06)', borderRadius: 4, padding: '32px 24px', position: 'relative' }}>
               <span style={{ position: 'absolute', top: 16, right: 16, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 10, textTransform: 'uppercase', borderRadius: 2, padding: '3px 8px' }}>MOST ASKED</span>
@@ -575,7 +575,6 @@ const SanFrancisco = () => {
           .sf-cta-book, .sf-cta-call { width: 100% !important; box-sizing: border-box !important; min-width: 0 !important; display: flex !important; justify-content: center !important; }
         }
         @media (max-width: 480px) {
-          .sf-how-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </div>

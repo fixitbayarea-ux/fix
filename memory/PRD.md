@@ -18,40 +18,37 @@ SEO changes must be updated in BOTH:
 
 ## Completed Work
 
-### Sessions 1-4 (Previous)
+### Sessions 1-4 — SEO & Content
 - Fixed keyword cannibalization for 7 service pages
 - Removed duplicate Service schema injections
 - Rewrote 2 blog posts, created 1 new blog post
 
-### Session 5 - Homepage Visual Fixes
+### Session 5 — Homepage Visual Fixes
 - Hero microcopy, stats row, pricing cards, reviews 3x3 grid, explore section
 
-### Session 6 - Performance Optimization
+### Session 6 — Performance Optimization
 - Hero logo WebP (98% smaller), service card WebP, cache headers, lazy loading
 
-### Session 7 - SEO Title & Description Fixes
-- Wine Cooler title → "San Francisco" (vol 700 target keyword)
-- 3 meta descriptions shortened to ≤160 chars
+### Session 7 — SEO Title & Description Fixes
+- Wine Cooler title → "San Francisco", 3 meta descriptions shortened to ≤160 chars
 
-### Session 8 (Feb 2026) - Soft 404 Fix & SF City Content
-- **Garbage Disposal Soft 404 Fix**: Added full `SERVICE_DATA` entry in seo-config.cjs with:
-  - 11 paragraphs, 6 h2 headings of unique content
-  - Common problems, pricing, repair vs replace guidance, FAQs
-  - Updated title, description, and component file to match
-- **5 SF City-Service Pages** — Added `CITY_SERVICE_RICH` entries for:
-  - `/san-francisco-refrigerator-repair` — Sub-Zero specialists, Victorian kitchen expertise, coastal humidity content
-  - `/san-francisco-washer-repair` — Multi-unit plumbing, stacked configurations, water pressure content
-  - `/san-francisco-dryer-repair` — Victorian venting, gas dryer safety, stacked dryer content
-  - `/san-francisco-oven-repair` — Gas igniter humidity, Wolf/Viking expertise, Victorian gas lines content
-  - `/san-francisco-ice-maker-repair` — Water pressure hillside, SFPUC minerals, Sub-Zero specialists content
-  - Each page: ~280 words, 4 h2s, 5 list items, neighborhood references, pricing, CTAs
-- **SSG Build**: 233 pages verified, 0 failures
+### Session 8 — Soft 404 Fix & SF City Content
+- Garbage Disposal: full SERVICE_DATA entry (11p, 6h2) to fix soft 404
+- 5 SF city-service pages: rich, neighborhood-specific content added
+
+### Session 9 (Feb 2026) — Mobile Grid Responsiveness
+- **Service cards grid**: Changed from desktop-only `hidden lg:grid lg:grid-cols-3` to responsive `grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`. Hid legacy mobile carousel.
+- **Process steps grid**: Changed from desktop-only `hidden lg:block` 4-col inline grid to responsive `grid grid-cols-2 lg:grid-cols-4`. Hid legacy mobile vertical list. Dashed connector line hidden on mobile.
+- **SanFrancisco.js city page**: Updated process steps from `md:grid-cols-4` to `grid-cols-2 lg:grid-cols-4`. Updated pricing cards from `md:grid-cols-3` to `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`. Removed CSS override that forced 1-column at 480px.
+- **Removed conflicting CSS**: Deleted `!important` overrides for `grid-cols-3` and `grid-cols-4` at 480px that fought with Tailwind responsive classes.
+- Files changed: `ProfessionalLandingPage.js`, `SanFrancisco.js`
+- Build: 233 pages, 0 failures
 
 ## Backlog (Prioritized)
 
 ### P2
 - Remove legacy `applySEO()` function from `public/index.html`
-- Merge dual SEO content sources (`seoContent.js` + `seo-config.cjs`) into single source of truth
+- Merge dual SEO content sources into single source of truth
 - Audit remaining blog posts for duplicate schemas
 - Refactor monolithic page components
 - Fix "ghost div" on mobile homepage
