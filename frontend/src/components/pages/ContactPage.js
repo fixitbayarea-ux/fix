@@ -139,7 +139,7 @@ const ContactPage = () => {
               <a href="tel:+17605435733" data-testid="hero-call-btn" className="hero-cta" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>
                 Call (760) 543-5733
               </a>
-              <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="hero-book-btn" className="hero-cta" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', border: '2px solid #fff', transition: 'background 0.2s' }} onMouseEnter={e = aria-label="opens in new tab"> e.currentTarget.style.background = 'rgba(255,255,255,0.1)'} onMouseLeave={e => e.currentTarget.style.background = 'transparent'}>
+              <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="hero-book-btn" className="hero-cta" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', border: '2px solid #fff', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'} onMouseLeave={e => e.currentTarget.style.background = 'transparent'}>
                 Book Online Now
               </a>
             </div>
