@@ -134,28 +134,6 @@ const BrandLandingPage = ({ brand }) => {
       }
     },
     {
-      id: `brand-localbusiness-${slug}`,
-      data: {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "FixitBay LLC",
-        "description": `${brand.name} appliance repair in San Francisco Bay Area. Same-day service.`,
-        "telephone": "+17605435733",
-        "priceRange": "$$",
-        "areaServed": "San Francisco Bay Area",
-        "knowsAbout": `${brand.name} appliance repair`,
-        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "94" },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": `${brand.name} Repair Services`,
-          "itemListElement": cards.slice(0, 6).map(a => ({
-            "@type": "Offer",
-            "itemOffered": a.carouselTitle || a.name
-          }))
-        }
-      }
-    },
-    {
       id: `brand-faq-${slug}`,
       data: {
         "@context": "https://schema.org",
