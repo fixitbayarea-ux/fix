@@ -7,7 +7,7 @@ import requests
 import os
 import uuid
 
-BASE_URL = os.environ.get('REACT_APP_BACKEND_URL', 'https://trust-stats-mobile.preview.emergentagent.com')
+BASE_URL = os.environ.get('REACT_APP_BACKEND_URL', 'https://mobile-ui-fix-17.preview.emergentagent.com')
 
 
 class TestReviewsGET:

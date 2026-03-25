@@ -1,6 +1,6 @@
 # 🔍 КОМПЛЕКСНЫЙ АУДИТ САЙТА FIXITBAY
 **Дата:** 24 января 2026  
-**URL:** https://trust-stats-mobile.preview.emergentagent.com
+**URL:** https://mobile-ui-fix-17.preview.emergentagent.com
 
 ---
 
