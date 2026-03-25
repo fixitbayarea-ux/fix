@@ -556,11 +556,11 @@ const ProfessionalLandingPage = () => {
           <div>
             {faqs.map((faq, idx) => (
               <div key={idx} data-testid={`faq-item-${idx}`} style={{ borderBottom: '1px solid rgba(0,0,0,0.09)', padding: '22px 0' }}>
-                <button onClick={() => setOpenFaq(openFaq === idx ? null : idx)} className="w-full text-left flex items-center justify-between" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 16, fontWeight: 600, color: '#0D1B2A', background: 'transparent', border: 'none', cursor: 'pointer', padding: '12px 16px', minHeight: 48, display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }} aria-expanded={openFaq === idx} data-testid={`faq-btn-${idx}`}>
+                <button onClick={() => setOpenFaq(openFaq === idx ? null : idx)} className="w-full text-left flex items-center justify-between" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 16, fontWeight: 600, color: '#0D1B2A', background: 'transparent', border: 'none', cursor: 'pointer', padding: '12px 16px', minHeight: 48, display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }} id={`faq-btn-${idx}`} aria-expanded={openFaq === idx} aria-controls={`faq-panel-${idx}`} data-testid={`faq-btn-${idx}`}>
                   <span style={{ paddingRight: 16, fontSize: 14 }}>{faq.question}</span>
                   <span style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 22, fontWeight: 400, color: '#FF5722', flexShrink: 0, lineHeight: 1, transition: 'transform 0.2s' }}>{openFaq === idx ? '\u00D7' : '+'}</span>
                 </button>
-                <div style={{ maxHeight: openFaq === idx ? 400 : 0, overflow: 'hidden', transition: 'max-height 0.3s ease' }}>
+                <div id={`faq-panel-${idx}`} role="region" aria-labelledby={`faq-btn-${idx}`} style={{ maxHeight: openFaq === idx ? 400 : 0, overflow: 'hidden', transition: 'max-height 0.3s ease' }}>
                   <div style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, lineHeight: 1.70, color: '#4A5568', fontWeight: 400, paddingTop: 14, borderLeft: '2px solid #FF5722', paddingLeft: 16 }}>{faq.answer}</div>
                 </div>
               </div>
