@@ -44,6 +44,7 @@ An appliance repair business website (fixitbay.net) built as a React SPA with st
 - Added sr-only "(opens in new tab)" span to all 101 `target="_blank"` links across 30+ files (WCAG 2.4.4)
 - Ensured all external links have `rel="noopener noreferrer"` (fixed 16 missing instances)
 - Added `minHeight: 44px` to nav "Book Online" button (was 41px → 44px, WCAG 2.5.5)
+- Standardized primary CTA text to "BOOK REPAIR ONLINE" across all templates (service, brand, homepage intro, DynamicLandingPage)
 
 ## Backlog (Prioritized)
 

@@ -311,7 +311,7 @@ const DynamicLandingPage = () => {
                 whileHover={{ scale: 1.05 }}
                 className="inline-block px-6 py-3 text-lg font-semibold border-2 border-white text-white rounded-lg hover:bg-white hover:text-gray-800 transition-all duration-300"
               >
-                Book Online
+                BOOK REPAIR ONLINE
               </motion.a>
             </div>
 

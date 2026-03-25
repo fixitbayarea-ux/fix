@@ -280,7 +280,7 @@ const ProfessionalLandingPage = () => {
             ))}
           </div>
           <div className="intro-cta-row flex flex-col sm:flex-row items-center gap-4 mt-6">
-            <a href="/book?go=1" data-testid="intro-cta-book" className="r2-btn-primary intro-cta-book" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minWidth: 230, height: 56, borderRadius: 4, background: '#FF5722', color: '#fff', fontSize: 16, fontWeight: 800, textDecoration: 'none' }}>Book Online</a>
+            <a href="/book?go=1" data-testid="intro-cta-book" className="r2-btn-primary intro-cta-book" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minWidth: 230, height: 56, borderRadius: 4, background: '#FF5722', color: '#fff', fontSize: 16, fontWeight: 800, textDecoration: 'none' }}>BOOK REPAIR ONLINE</a>
             <a href="tel:+17605435733" data-testid="intro-cta-call" className="r2-btn-secondary intro-cta-call" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 10, minWidth: 230, height: 56, borderRadius: 4, background: '#fff', color: '#FF5722', fontSize: 16, fontWeight: 800, textDecoration: 'none', border: '2px solid #FF5722' }}><Phone size={18} /> Call (760) 543-5733</a>
           </div>
         </div>
