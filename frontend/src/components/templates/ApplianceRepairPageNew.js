@@ -475,14 +475,14 @@ const ApplianceRepairPageNew = ({
           <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
             <div style={S.eyebrow}>WHAT WE FIX</div>
             <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 28 }}>Every Major Appliance</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3" style={{ gap: 14 }}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{ gap: 14 }}>
               {CITY_APPLIANCE_SERVICES.map((item) => (
                 <a key={item.href} href={item.href} data-testid={`city-svc-${item.href.replace(/\//g, '')}`} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 4, padding: 20, textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s', cursor: 'pointer' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(255,87,34,0.10)'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.08)'; e.currentTarget.style.boxShadow = 'none'; }}>
                   <div>
                     <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginBottom: 6 }}><span style={{ color: '#FF5722', marginRight: 8 }}>&bull;</span>{item.name}</div>
-                    <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: '#4A5568', lineHeight: 1.6, marginBottom: 14 }}>{item.desc}</p>
+                    <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.6, marginBottom: 14 }}>{item.desc}</p>
                   </div>
-                  <span className="city-svc-btn" style={{ display: 'inline-block', background: '#0D1B2A', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 11, textTransform: 'uppercase', padding: '10px 16px', borderRadius: 3, textAlign: 'center', transition: 'background 0.2s' }}>VIEW SERVICE</span>
+                  <span className="city-svc-btn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minHeight: 44, background: '#0D1B2A', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 11, textTransform: 'uppercase', padding: '10px 16px', borderRadius: 3, textAlign: 'center', transition: 'background 0.2s' }}>VIEW SERVICE</span>
                 </a>
               ))}
             </div>
@@ -540,7 +540,7 @@ const ApplianceRepairPageNew = ({
           <div style={{ maxWidth: 780, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
             <div style={{ ...S.eyebrow, color: '#FF5722', textAlign: 'center', marginBottom: 10 }}>TRANSPARENT PRICING</div>
             <h2 style={{ ...S.h2, color: '#FFFFFF', textAlign: 'center', marginBottom: 36 }}>No Surprises. Ever.</h2>
-            <div className="grid md:grid-cols-3" style={{ gap: 20 }}>
+            <div className="grid grid-cols-1 sm:grid-cols-3" style={{ gap: 20 }}>
               <div style={{ border: '2px solid #FF5722', background: 'rgba(255,87,34,0.06)', borderRadius: 4, padding: '32px 24px', position: 'relative' }}>
                 <span style={{ position: 'absolute', top: -12, left: '50%', transform: 'translateX(-50%)', background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 10, textTransform: 'uppercase', borderRadius: 2, padding: '3px 10px', whiteSpace: 'nowrap' }}>MOST ASKED</span>
                 <div style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FF5722', marginBottom: 8 }}>$60</div>
