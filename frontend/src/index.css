@@ -47,6 +47,16 @@
   --fixitbay-sky-blue: #F8F5F0;
   --fixitbay-golden-yellow: #FF5722;
   --fxb-gold-600: #D98C0E;
+
+  /* Typography & Spacing tokens */
+  --font-size-hero-mobile: 28px;
+  --font-size-body-min: 14px;
+  --font-size-label: 12px;
+  --cta-height-primary: 56px;
+  --cta-height-secondary: 52px;
+  --sticky-cta-height: 58px;
+  --touch-target-min: 44px;
+  --space-section-mobile: 48px;
 }
 
 /* ======= BODY & GLOBAL ======= */
