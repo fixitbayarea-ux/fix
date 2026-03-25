@@ -33,9 +33,17 @@ An appliance repair business website (fixitbay.net) built as a React SPA with st
 - **Fixed sitewide LocalBusiness schema duplicates**: Added MutationObserver to `SchemaMarkup.js` that catches and removes page-level LocalBusiness schemas injected after mount — all 30+ pages now show exactly 1 LocalBusiness
 - **Merged SEO sources**: Deleted unused `seoContent.js` (586 lines of dead code). `seo-config.cjs` is now the single source of truth.
 
+### Session 12 (Mar 2026) — CTA Contrast Fix
+- Standardized secondary CTA button border opacity to `rgba(255,255,255,0.65)` across all dark-background templates
+- Updated `ApplianceRepairPageNew.js`: 5 secondary CTAs (city-hero, city-cta-banner, city-final, service-hero, service-cta-banner) — border `2px solid rgba(255,255,255,0.65)`, `minHeight: 52`, hover reset to 0.65
+- Updated `BrandLandingPage.js`: bottom CTA border from `PC.white15` (0.15) to 0.65, added `minHeight: 52` to both brand CTAs
+- WCAG AA contrast compliance for secondary CTA buttons on dark backgrounds
+
 ## Backlog (Prioritized)
 
+### P1
+- Refactor monolithic page components (ProfessionalLandingPage.js, ApplianceRepairPageNew.js are 800+ lines)
+
 ### P2
-- Refactor monolithic page components (ProfessionalLandingPage.js is 800+ lines)
 - Remove legacy `react-helmet-async` from remaining components
 - Audit blog schema types beyond BlogPosting (FAQ, BreadcrumbList duplicates)

@@ -240,7 +240,7 @@ const BrandLandingPage = ({ brand }) => {
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="cta-book-top" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: PC.r, textDecoration: 'none', border: 'none' }}>
                 Book Online
               </a>
-              <a href="tel:+17605435733" data-testid="cta-call-top" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: PC.r, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.65)' }}>
+              <a href="tel:+17605435733" data-testid="cta-call-top" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', minHeight: 52, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: PC.r, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.65)' }}>
                 (760) 543-5733
               </a>
             </div>
@@ -458,7 +458,7 @@ const BrandLandingPage = ({ brand }) => {
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="cta-book-bottom" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '16px 36px', borderRadius: PC.r, textDecoration: 'none', border: 'none' }}>
                 Book Online
               </a>
-              <a href="tel:+17605435733" data-testid="cta-call-bottom" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '16px 36px', borderRadius: PC.r, textDecoration: 'none', border: `2px solid ${PC.white15}` }}>
+              <a href="tel:+17605435733" data-testid="cta-call-bottom" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', minHeight: 52, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '16px 36px', borderRadius: PC.r, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.65)' }}>
                 (760) 543-5733
               </a>
             </div>
