@@ -172,8 +172,8 @@ const BrandLandingPage = ({ brand }) => {
             .brand-stats-bar { gap: 0 !important; }
             .brand-stats-bar > div { padding-left: 12px !important; padding-right: 12px !important; }
             .brand-stats-bar .brand-stat-val { font-size: 22px !important; }
-            .brand-cta-row { flex-direction: column !important; width: 100% !important; }
-            .brand-cta-row > a { width: 100% !important; justify-content: center !important; padding: 14px 20px !important; }
+            .brand-cta-row { flex-direction: column !important; width: 100% !important; gap: 12px !important; }
+            .brand-cta-row > a { width: 100% !important; justify-content: center !important; padding: 14px 20px !important; min-height: 56px !important; }
           }
           .carousel-track { display: flex; transition: transform 0.5s ease; }
           .carousel-card { flex-shrink: 0; }
@@ -240,7 +240,7 @@ const BrandLandingPage = ({ brand }) => {
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="cta-book-top" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: PC.r, textDecoration: 'none', border: 'none' }}>
                 Book Online
               </a>
-              <a href="tel:+17605435733" data-testid="cta-call-top" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: PC.r, textDecoration: 'none', border: `2px solid ${PC.white15}` }}>
+              <a href="tel:+17605435733" data-testid="cta-call-top" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: PC.r, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.65)' }}>
                 (760) 543-5733
               </a>
             </div>
