@@ -198,7 +198,7 @@ const BrandLandingPage = ({ brand }) => {
         {/* 1. HERO */}
         <section data-testid="brand-hero" style={{ background: "linear-gradient(rgba(13,27,42,0.93),rgba(13,27,42,0.93)),url('/background_new2.webp')", backgroundSize: 'cover', backgroundPosition: 'center 60%', minHeight: 520, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px 20px 60px', color: PC.white }}>
           <div style={{ maxWidth: 780, margin: '0 auto', textAlign: 'center' }}>
-            <nav style={{ fontFamily: F, fontSize: 12, color: PC.white45, marginBottom: 20 }}>
+            <nav className="hidden md:block" aria-label="breadcrumb" style={{ fontFamily: F, fontSize: 12, color: PC.white45, marginBottom: 20 }}>
               <a href="/" style={{ color: PC.white45, textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 4px' }}>Home</a>
               <span style={{ color: PC.accent, margin: '0 6px' }}>&rarr;</span>
               <a href="/brands" style={{ color: PC.white45, textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center', padding: '0 4px' }}>Brands</a>

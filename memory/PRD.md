@@ -40,6 +40,7 @@ An appliance repair business website (fixitbay.net) built as a React SPA with st
 - WCAG AA contrast compliance for secondary CTA buttons on dark backgrounds
 - Fixed desktop nav tel link touch target: added `min-h-[44px]` to meet WCAG 2.5.5 (was 21px → now 44px)
 - Removed duplicate mobile trust bar from ProfessionalLandingPage.js (was duplicating hero inline badges within 200px)
+- Hidden breadcrumbs on mobile (<768px) in BrandLandingPage.js and ApplianceRepairPageNew.js hero sections (saves ~30px, markup stays in DOM for SEO)
 
 ## Backlog (Prioritized)
 

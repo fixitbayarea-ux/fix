@@ -849,7 +849,7 @@ const ApplianceRepairPageNew = ({
             {/* Right: Text */}
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: '60px 7vw 60px 50px', background: '#0D1B2A' }} className="service-hero-text">
               {/* Breadcrumb */}
-              <div style={{ fontFamily: S.font, fontWeight: 500, fontSize: 12, color: 'rgba(255,255,255,0.35)', marginBottom: 20 }}>
+              <div className="hidden md:block" aria-label="breadcrumb" style={{ fontFamily: S.font, fontWeight: 500, fontSize: 12, color: 'rgba(255,255,255,0.35)', marginBottom: 20 }}>
                 <a href="/" style={{ color: 'rgba(255,255,255,0.35)', textDecoration: 'none' }}>Home</a>
                 <span style={{ margin: '0 8px' }}>&rarr;</span>
                 <a href={breadcrumbHref} style={{ color: 'rgba(255,255,255,0.35)', textDecoration: 'none' }}>{breadcrumbLabel}</a>
