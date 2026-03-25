@@ -118,7 +118,6 @@ export default function App() {
       <CanonicalUpdater />
       <SchemaMarkup />
       <UniversalBreadcrumb />
-      <style>{`@media(max-width:767px){body{padding-bottom:56px!important}}`}</style>
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[9999] focus:bg-white focus:text-gray-900 focus:px-4 focus:py-2 focus:rounded focus:shadow-lg focus:text-sm"
@@ -128,7 +127,7 @@ export default function App() {
       </a>
       <SiteNavbar />
       <StickyCTA />
-      <main id="main-content">
+      <main id="main-content" className="pb-[72px] md:pb-0">
         <Suspense fallback={
           <div className="min-h-screen flex items-center justify-center">
             <div className="text-center">
