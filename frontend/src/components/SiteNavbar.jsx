@@ -245,7 +245,7 @@ const SiteNavbar = () => {
           <div className="hidden md:flex items-center gap-3 lg:gap-6 flex-1 justify-center">
             {/* 1. Services Dropdown */}
             <div className="relative" ref={servicesDropdownRef}>
-              <button
+              <button type="button"
                 className="nav-link flex items-center gap-1"
                 onClick={() => { const next = !servicesDropdownOpen; setServicesDropdownOpen(next); if (next) { setCitiesDropdownOpen(false); setBrandsDropdownOpen(false); setMoreDropdownOpen(false); } }}
                 onKeyDown={(e) => {
@@ -272,7 +272,7 @@ const SiteNavbar = () => {
 
             {/* 2. Areas Dropdown (service areas with cities) */}
             <div className="relative" ref={citiesDropdownRef}>
-              <button
+              <button type="button"
                 className="nav-link flex items-center gap-1 whitespace-nowrap"
                 onClick={() => { const next = !citiesDropdownOpen; setCitiesDropdownOpen(next); if (next) { setServicesDropdownOpen(false); setBrandsDropdownOpen(false); setMoreDropdownOpen(false); } }}
                 onKeyDown={(e) => {
@@ -311,7 +311,7 @@ const SiteNavbar = () => {
 
             {/* 3. Brands Dropdown */}
             <div className="relative" ref={brandsDropdownRef}>
-              <button
+              <button type="button"
                 className="nav-link flex items-center gap-1 whitespace-nowrap"
                 onClick={() => { const next = !brandsDropdownOpen; setBrandsDropdownOpen(next); if (next) { setServicesDropdownOpen(false); setCitiesDropdownOpen(false); setMoreDropdownOpen(false); } }}
                 onKeyDown={(e) => {
@@ -337,7 +337,7 @@ const SiteNavbar = () => {
             </div>
 
             {/* 4. Reviews */}
-            <button 
+            <button type="button"
               className="nav-link whitespace-nowrap"
               onClick={() => {
                 scrollToAnchor('reviews');
@@ -349,7 +349,7 @@ const SiteNavbar = () => {
 
             {/* 5. More Dropdown (Maintenance, Tips, About, Contact, Portal) */}
             <div className="relative" ref={moreDropdownRef}>
-              <button
+              <button type="button"
                 className="nav-link flex items-center gap-1 whitespace-nowrap"
                 onClick={() => { const next = !moreDropdownOpen; setMoreDropdownOpen(next); if (next) { setServicesDropdownOpen(false); setCitiesDropdownOpen(false); setBrandsDropdownOpen(false); } }}
                 onKeyDown={(e) => {
@@ -511,7 +511,7 @@ const SiteNavbar = () => {
             </a>
 
             {/* Mobile Menu Button */}
-            <button
+            <button type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden p-2 rounded-md hover:bg-white/10 min-h-[44px] flex items-center"
               style={{ color: 'rgba(255,255,255,0.75)' }}
@@ -569,7 +569,7 @@ const SiteNavbar = () => {
             {/* ─────────────── SERVICES ACCORDION ─────────────── */}
             <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
               <div style={{ fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.12em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', padding:'4px 16px 0' }}>Services</div>
-              <button
+              <button type="button"
                 className={`mob-acc-trigger w-full${mobileServicesOpen ? ' open' : ''}`}
                 style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'6px 16px', minHeight:'44px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
                 onClick={() => { setMobileServicesOpen(!mobileServicesOpen); setMobileMaintenanceOpen(false); setMobileBrandsOpen(false); setMobileAreasOpen(false); setMobileMoreOpen(false); }}
@@ -607,7 +607,7 @@ const SiteNavbar = () => {
 
             {/* ─────────────── MAINTENANCE ACCORDION ─────────────── */}
             <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-              <button
+              <button type="button"
                 className={`mob-acc-trigger w-full${mobileMaintenanceOpen ? ' open' : ''}`}
                 style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'6px 16px', minHeight:'44px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
                 onClick={() => { setMobileMaintenanceOpen(!mobileMaintenanceOpen); setMobileServicesOpen(false); setMobileBrandsOpen(false); setMobileAreasOpen(false); setMobileMoreOpen(false); }}
@@ -640,7 +640,7 @@ const SiteNavbar = () => {
 
             {/* ─────────────── BRANDS ACCORDION ─────────────── */}
             <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-              <button
+              <button type="button"
                 className={`mob-acc-trigger w-full${mobileBrandsOpen ? ' open' : ''}`}
                 style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'6px 16px', minHeight:'44px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
                 onClick={() => { setMobileBrandsOpen(!mobileBrandsOpen); setMobileServicesOpen(false); setMobileMaintenanceOpen(false); setMobileAreasOpen(false); setMobileMoreOpen(false); }}
@@ -682,7 +682,7 @@ const SiteNavbar = () => {
 
             {/* ─────────────── SERVICE AREAS ACCORDION ─────────────── */}
             <div style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-              <button
+              <button type="button"
                 className={`mob-acc-trigger w-full${mobileAreasOpen ? ' open' : ''}`}
                 style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'6px 16px', minHeight:'44px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
                 onClick={() => { setMobileAreasOpen(!mobileAreasOpen); setMobileServicesOpen(false); setMobileMaintenanceOpen(false); setMobileBrandsOpen(false); setMobileMoreOpen(false); }}
