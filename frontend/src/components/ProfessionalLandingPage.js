@@ -253,8 +253,8 @@ const ProfessionalLandingPage = () => {
       {/* ═══ STATS SECTION ═══ */}
       <section className="block" style={{ background: '#F8F5F0' }} data-testid="stats-section">
         <div className="py-6 lg:py-16" style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px' }}>
-          {/* Desktop: grid layout */}
-          <div className="hidden lg:grid" style={{ gridTemplateColumns: '1fr auto 1fr auto 1fr', alignItems: 'stretch' }}>
+          {/* Stats: responsive grid + flex mobile */}
+          <div className="stats-desktop-grid" style={{ gridTemplateColumns: '1fr auto 1fr auto 1fr', alignItems: 'stretch' }}>
             {[
               { num: '22', unit: 'Cities', title: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin', numSize: 64 },
               { num: '$60', unit: 'Diagnostic', title: 'GOES TOWARD REPAIR', desc: 'Applied if you proceed', numSize: 64 },
@@ -262,34 +262,18 @@ const ProfessionalLandingPage = () => {
             ].map((s, i) => (
               <React.Fragment key={i}>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: 20 }}>
-                  <div style={{ width: 3, alignSelf: 'stretch', background: '#FF5722', flexShrink: 0 }} />
+                  <div className="stat-accent-bar" style={{ width: 3, alignSelf: 'stretch', background: '#FF5722', flexShrink: 0 }} />
                   <div>
                     <div style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}>
-                      <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: s.numSize, lineHeight: 1, color: '#0D1B2A', whiteSpace: 'nowrap' }}>{s.num}</span>
-                      <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 20, color: '#FF5722' }}>{s.unit}</span>
+                      <span className="stat-num" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: s.numSize, lineHeight: 1, color: '#0D1B2A', whiteSpace: 'nowrap' }}>{s.num}</span>
+                      <span className="stat-unit" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 20, color: '#FF5722' }}>{s.unit}</span>
                     </div>
-                    <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginTop: 6, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{s.title}</div>
-                    <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 13, color: '#4A5568', maxWidth: 200, marginTop: 4, lineHeight: 1.5 }}>{s.desc}</div>
+                    <div className="stat-title" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginTop: 6, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{s.title}</div>
+                    <div className="stat-desc" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 13, color: '#4A5568', maxWidth: 200, marginTop: 4, lineHeight: 1.5 }}>{s.desc}</div>
                   </div>
                 </div>
-                {i < 2 && <div style={{ width: 1, background: 'rgba(0,0,0,0.08)', margin: '0 24px' }} />}
+                {i < 2 && <div className="stat-divider" style={{ width: 1, background: 'rgba(0,0,0,0.08)', margin: '0 24px' }} />}
               </React.Fragment>
-            ))}
-          </div>
-          {/* Mobile: flex layout for stats */}
-          <div className="lg:hidden flex flex-wrap justify-center gap-4 px-4 py-3">
-            {[
-              { num: '22', unit: 'Cities', title: 'BAY AREA COVERAGE' },
-              { num: '$60', unit: 'Diagnostic', title: 'GOES TOWARD REPAIR' },
-              { num: '180-Day', unit: 'Warranty', title: 'PARTS & LABOR' },
-            ].map((s, i) => (
-              <div key={i} style={{ textAlign: 'center', minWidth: 90 }}>
-                <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: 4 }}>
-                  <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 24, lineHeight: 1, color: '#0D1B2A' }}>{s.num}</span>
-                  <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 12, color: '#FF5722' }}>{s.unit}</span>
-                </div>
-                <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 9, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.08em', marginTop: 4 }}>{s.title}</div>
-              </div>
             ))}
           </div>
         </div>
@@ -619,6 +603,18 @@ const ProfessionalLandingPage = () => {
       {/* Utility styles */}
       <style>{`
         @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Stats bar: desktop = grid, mobile = flex wrap */
+        .stats-desktop-grid { display: grid; }
+        @media (max-width: 1023px) {
+          .stats-desktop-grid { display: flex !important; flex-wrap: wrap; justify-content: center; gap: 16px; padding: 10px 16px; }
+          .stats-desktop-grid .stat-divider { display: none; }
+          .stats-desktop-grid .stat-accent-bar { display: none; }
+          .stats-desktop-grid .stat-num { font-size: 28px !important; }
+          .stats-desktop-grid .stat-unit { font-size: 13px !important; }
+          .stats-desktop-grid .stat-title { font-size: 10px !important; }
+          .stats-desktop-grid .stat-desc { display: none; }
+        }
         .animate-fadeIn { animation: fadeIn 0.3s ease-out both; }
         .scrollbar-hide::-webkit-scrollbar { display: none; }
         .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
