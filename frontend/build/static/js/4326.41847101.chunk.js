@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend=self.webpackChunkfrontend||[]).push([[4326],{4326:(n,a,e)=>{e.r(a),e.d(a,{default:()=>s});e(5043);var r=e(5327),d=e(1233),t=e(579);const s=()=>(0,t.jsx)(r.A,{brand:d.brandLandingData.thermador})}}]);
+//# sourceMappingURL=4326.41847101.chunk.js.map

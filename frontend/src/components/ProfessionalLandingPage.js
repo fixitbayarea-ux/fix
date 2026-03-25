@@ -343,7 +343,7 @@ const ProfessionalLandingPage = () => {
                   <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 72, lineHeight: 1, color: 'rgba(255,255,255,0.05)', display: 'block' }}>{step.num}</span>
                   <div style={{ color: '#FF5722', marginTop: -8 }}>{step.icon}</div>
                   <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#FFFFFF', marginTop: 16, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{step.title}</div>
-                  <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.50)', maxWidth: 160, lineHeight: 1.6, marginTop: 8 }}>{step.desc}</p>
+                  <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.50)', maxWidth: 160, lineHeight: 1.6, marginTop: 8 }}>{step.desc}</p>
                 </div>
                 );
                 return i === 0 ? <a key={i} href="/book" style={{ textDecoration: 'none', color: 'inherit' }}>{inner}</a> : <React.Fragment key={i}>{inner}</React.Fragment>;

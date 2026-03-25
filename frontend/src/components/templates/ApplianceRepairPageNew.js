@@ -517,7 +517,7 @@ const ApplianceRepairPageNew = ({
           <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
             <div style={{ ...S.eyebrow, textAlign: 'center' }}>THE PROCESS</div>
             <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 48, textAlign: 'center' }}>Simple. Fast. Professional.</h2>
-            <div className="city-process-grid grid md:grid-cols-4 gap-8">
+            <div className="city-process-grid grid grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { num: '01', icon: <CalendarCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'Book Online', text: 'Schedule same-day or next-day at your convenience.' },
                 { num: '02', icon: <Search size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Diagnose', text: '$60 diagnostic visit — applied to repair if you proceed.' },
@@ -527,8 +527,8 @@ const ApplianceRepairPageNew = ({
                 <div key={s.num} data-testid={`city-step-${s.num}`}>
                   <div style={{ fontFamily: S.font, fontWeight: 800, fontSize: 72, color: 'rgba(255,87,34,0.18)', lineHeight: 1 }}>{s.num}</div>
                   <div style={{ marginTop: 12 }}>{s.icon}</div>
-                  <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 13, color: '#0D1B2A', textTransform: 'uppercase', letterSpacing: '0.08em', marginTop: 8 }}>{s.title}</div>
-                  <p style={{ ...S.body, fontSize: 13, marginTop: 8 }}>{s.text}</p>
+                  <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 14, color: '#0D1B2A', textTransform: 'uppercase', letterSpacing: '0.08em', marginTop: 8 }}>{s.title}</div>
+                  <p style={{ ...S.body, fontSize: 14, marginTop: 8 }}>{s.text}</p>
                 </div>
               ))}
             </div>
@@ -810,7 +810,6 @@ const ApplianceRepairPageNew = ({
             .hero-main-h1 { font-size: 28px !important; line-height: 1.2 !important; }
           }
           @media (max-width: 767px) {
-            .city-process-grid { grid-template-columns: 1fr 1fr !important; gap: 24px !important; }
             [data-testid="city-hero"] { min-height: auto !important; max-height: none !important; }
             [data-testid="city-hero"] > div { padding: 48px 20px !important; }
             [data-testid="city-hero-h1"] { max-width: 100% !important; }
@@ -819,7 +818,6 @@ const ApplianceRepairPageNew = ({
             .city-cta-call { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
           }
           @media (max-width: 480px) {
-            .city-process-grid { grid-template-columns: 1fr !important; }
           }
         `}</style>
       </div>

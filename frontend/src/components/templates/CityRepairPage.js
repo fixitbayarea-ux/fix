@@ -354,7 +354,7 @@ const CityRepairPage = ({
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {howItWorks.map((step, index) => (
               <motion.div
                 key={step.step}
@@ -378,10 +378,10 @@ const CityRepairPage = ({
                     {step.step}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-3" style={{ color: '#1A3B5D' }}>
+                <h3 className="text-base lg:text-xl font-bold mb-3" style={{ color: '#1A3B5D' }}>
                   {step.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-sm lg:text-base text-gray-600 leading-relaxed">
                   {step.description}
                 </p>
               </motion.div>
