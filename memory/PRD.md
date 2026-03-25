@@ -39,6 +39,7 @@ An appliance repair business website (fixitbay.net) built as a React SPA with st
 - Updated `BrandLandingPage.js`: bottom CTA border from `PC.white15` (0.15) to 0.65, added `minHeight: 52` to both brand CTAs
 - WCAG AA contrast compliance for secondary CTA buttons on dark backgrounds
 - Fixed desktop nav tel link touch target: added `min-h-[44px]` to meet WCAG 2.5.5 (was 21px → now 44px)
+- Removed duplicate mobile trust bar from ProfessionalLandingPage.js (was duplicating hero inline badges within 200px)
 
 ## Backlog (Prioritized)
 

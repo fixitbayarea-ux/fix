@@ -235,21 +235,6 @@ const ProfessionalLandingPage = () => {
       <HomepageSchemas />
       <HomeHero />
 
-      {/* ═══ TRUST BAR — Mobile Only ═══ */}
-      <div className="lg:hidden mobile-trust-bar" data-testid="mobile-trust-bar" style={{ background: '#1A2F45', padding: '14px 16px' }}>
-        {[
-          { top: '\u2B50 4.9', bottom: 'GOOGLE' },
-          { top: '\u2713 94', bottom: 'REVIEWS' },
-          { top: '\uD83D\uDEE1\uFE0F #51001', bottom: 'LICENSE' },
-          { top: '180-Day', bottom: 'WARRANTY' },
-        ].map((item, i) => (
-          <div key={i} style={{ textAlign: 'center' }}>
-            <div style={{ color: '#FF5722', fontSize: 14, fontWeight: 700, fontFamily: 'Montserrat, sans-serif', lineHeight: 1.3 }}>{item.top}</div>
-            <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: 10, fontWeight: 600, fontFamily: 'Montserrat, sans-serif', textTransform: 'uppercase', letterSpacing: '0.04em' }}>{item.bottom}</div>
-          </div>
-        ))}
-      </div>
-
       {/* ═══ STATS SECTION ═══ */}
       <section className="block" style={{ background: '#F8F5F0' }} data-testid="stats-section">
         <div className="py-6 lg:py-16" style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px' }}>
@@ -644,10 +629,6 @@ const ProfessionalLandingPage = () => {
           p, li { font-size: 14px; line-height: 1.6; }
           h2 { font-size: 22px !important; line-height: 1.25; word-break: break-word; }
           h3 { font-size: 18px !important; word-break: break-word; }
-          /* -- TRUST BAR -- */
-          .mobile-trust-bar { display: flex; justify-content: space-around; align-items: center; }
-          @media (min-width: 1024px) { .mobile-trust-bar { display: none !important; } }
-
           /* -- HERO -- */
           /* hero-mobile-wrapper rules removed — unified hero layout */
           .hero:not(.hero-section-root):not(.hero-mobile-wrapper) { min-height: 480px; padding: 60px 16px 80px; }
