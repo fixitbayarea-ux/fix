@@ -1,59 +1,68 @@
-# FixitBay.net - Product Requirements Document
+# FixitBay.net — Product Requirements Document
 
 ## Original Problem Statement
-An appliance repair business website (fixitbay.net) built as a React SPA with static pre-rendering via Node.js script. Ongoing SEO, content, and performance optimization work.
+Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, SEO optimization, and code quality.
 
-## Core Architecture
-- **Frontend**: React SPA with static site generation (SSG)
-- **Backend**: FastAPI + MongoDB (CMS for reviews, services, areas)
-- **Pre-rendering**: `frontend/scripts/generate-seo-snapshots.cjs`
-- **SEO Config**: `frontend/scripts/seo-config.cjs` (single source of truth — `seoContent.js` was removed as dead code)
-- **Deployment**: Netlify/Cloudflare (uses `_headers` file for cache control)
+## Architecture
+- React SPA with Node/Puppeteer SSG
+- Schema management via SEOMetaTags + useEffect DOM injection
+- CSS: mix of Tailwind and inline styles (transitioning to Tailwind)
+- Shared components in `src/components/sections/`
 
-## Completed Work
+## What's Been Implemented
 
-### Sessions 1-10 (Previous)
-- SEO keyword fixes, schema dedup, blog rewrites, homepage UI fixes
-- WebP images, cache headers, lazy loading
-- Mobile grid responsiveness, sticky CTA padding, H1 sizing, CTA contrast
-- Trust stats bar mobile layout, SF city content enrichment, soft 404 fix
+### Session 11 (Previous) — Mobile UI & SEO
+- Deleted legacy applySEO() script from index.html
+- Fixed sitewide LocalBusiness schema duplicates (MutationObserver in SchemaMarkup.js)
+- Removed duplicate BlogPosting schemas from 10 blog files
+- Added skip-to-main-content link, ARIA controls for FAQ
+- Fixed mobile grids (4-col→2-col process, 3-col→1-col services)
+- Fixed SVG brand logos, stacked brand CTAs on mobile
+- Added pb-[72px] for sticky CTA compensation
 
-### Session 11 (Mar 2026) — P2 Cleanup & Schema Audit
-- Removed legacy `applySEO()` from `index.html` (~565 lines of dead code)
-- Fixed duplicate BlogPosting schemas in 10 blog pages
-- Converted `DishwasherMaintenance.js` from Helmet to SEOMetaTags+useSchemas
-- Fixed stats section hidden on mobile (removed `display: none !important`)
-- Added hero reassurance micro-copy on mobile
-- Removed duplicate LocalBusiness on brand pages (BrandLandingPage.js)
-- Added skip navigation link for keyboard accessibility
-- Added `aria-controls` to FAQ accordion buttons
-- Increased mobile nav touch targets to 44px minimum
-- Changed nav buttons from implicit `type="submit"` to `type="button"`
-- Fixed broken brand SVG logos (LG, Speed Queen, Thermador, Whirlpool)
-- **Fixed sitewide LocalBusiness schema duplicates**: Added MutationObserver to `SchemaMarkup.js` that catches and removes page-level LocalBusiness schemas injected after mount — all 30+ pages now show exactly 1 LocalBusiness
-- **Merged SEO sources**: Deleted unused `seoContent.js` (586 lines of dead code). `seo-config.cjs` is now the single source of truth.
+### Session 12 (Mar 2026) — CTA, Accessibility & Refactoring
+- Standardized secondary CTA border opacity to rgba(255,255,255,0.65) across all templates
+- Fixed desktop nav tel link touch target: 21px → 44px (WCAG 2.5.5)
+- Removed duplicate mobile trust bar from homepage
+- Hidden breadcrumbs on mobile (<768px) — markup stays for SEO
+- Added sr-only "(opens in new tab)" to all 101 target="_blank" links (WCAG 2.4.4)
+- Fixed 16 links missing rel="noopener noreferrer"
+- Added minHeight: 44px to nav "Book Online" button (WCAG 2.5.5)
+- Standardized primary CTA text to "BOOK REPAIR ONLINE" across all templates
+- Increased brand logo from 38×38 to 80×80 on brand pages
+- Restyled "View Service" buttons: outline style, 44px touch target, 14px Montserrat
+- Added 8 CSS custom properties for typography & spacing tokens
 
-### Session 12 (Mar 2026) — CTA Contrast Fix
-- Standardized secondary CTA button border opacity to `rgba(255,255,255,0.65)` across all dark-background templates
-- Updated `ApplianceRepairPageNew.js`: 5 secondary CTAs (city-hero, city-cta-banner, city-final, service-hero, service-cta-banner) — border `2px solid rgba(255,255,255,0.65)`, `minHeight: 52`, hover reset to 0.65
-- Updated `BrandLandingPage.js`: bottom CTA border from `PC.white15` (0.15) to 0.65, added `minHeight: 52` to both brand CTAs
-- WCAG AA contrast compliance for secondary CTA buttons on dark backgrounds
-- Fixed desktop nav tel link touch target: added `min-h-[44px]` to meet WCAG 2.5.5 (was 21px → now 44px)
-- Removed duplicate mobile trust bar from ProfessionalLandingPage.js (was duplicating hero inline badges within 200px)
-- Hidden breadcrumbs on mobile (<768px) in BrandLandingPage.js and ApplianceRepairPageNew.js hero sections (saves ~30px, markup stays in DOM for SEO)
-- Added sr-only "(opens in new tab)" span to all 101 `target="_blank"` links across 30+ files (WCAG 2.4.4)
-- Ensured all external links have `rel="noopener noreferrer"` (fixed 16 missing instances)
-- Added `minHeight: 44px` to nav "Book Online" button (was 41px → 44px, WCAG 2.5.5)
-- Standardized primary CTA text to "BOOK REPAIR ONLINE" across all templates (service, brand, homepage intro, DynamicLandingPage)
-- Increased brand logo display size from 38×38px to 80×80px with `object-fit: contain` in BrandLandingPage.js hero
-- Restyled "View Service" buttons in city service cards: outline style (#FF5722 border, transparent bg), 44px min-height, 14px Montserrat
-- Added CSS custom properties for typography & spacing tokens: `--font-size-hero-mobile`, `--font-size-body-min`, `--font-size-label`, `--cta-height-primary/secondary`, `--sticky-cta-height`, `--touch-target-min`, `--space-section-mobile`
+### Session 12 — P1 Refactoring (COMPLETED)
+- **ProfessionalLandingPage.js**: 779 → 350 lines (−55%)
+  - Extracted: HomeServicesGrid, HomePricing, HomeReviews, HomeExploreLinks, FAQAccordion
+- **ApplianceRepairPageNew.js**: 1273 → 1108 lines (−13%)
+  - Replaced: BrandsGrid, CTABanner, CompactFooter, ProcessSteps, FAQAccordion
+- Created 8 shared section components in `sections/`
+- Testing: 9/9 tests passed (homepage, city, service, brand, blog, FAQ, tabs, mobile)
+
+### Session 12 — P2 react-helmet-async Removal (COMPLETED)
+- Migrated 13 files from react-helmet-async to SEOMetaTags / useEffect DOM injection
+- Removed HelmetProvider from index.js
+- Files migrated: BlogPage, RangeRepair, CommercialApplianceRepairPage, ApplianceReplacementPage, RefrigeratorRepairMobile, BlogPost, BlogPostPage, MaintenancePage, ServiceAreasHub, DryerRepair, StructuredData, Breadcrumbs, ApplianceRepairPage
+
+## Shared Section Components
+- `sections/FAQAccordion.jsx` — Reusable FAQ accordion with own state
+- `sections/BrandsGrid.jsx` — 18 brand logos with hover + links
+- `sections/CTABanner.jsx` — Dark CTA banner with book + call buttons
+- `sections/CompactFooter.jsx` — Minimal footer with logo, phone, copyright
+- `sections/ProcessSteps.jsx` — 4-step process grid
+- `sections/HomeServicesGrid.jsx` — Tabbed service cards with carousel
+- `sections/HomeReviews.jsx` — Review carousel with autoplay
+- `sections/HomeExploreLinks.jsx` — Services & areas sitemap
+- `sections/HomePricing.jsx` — 3-card pricing section
 
 ## Backlog (Prioritized)
 
-### P1
-- Refactor monolithic page components (ProfessionalLandingPage.js, ApplianceRepairPageNew.js are 800+ lines)
-
 ### P2
-- Remove legacy `react-helmet-async` from remaining components
 - Audit blog schema types beyond BlogPosting (FAQ, BreadcrumbList duplicates)
+- Continue migrating inline styles to Tailwind/CSS variables where appropriate
+
+### P3
+- Consider extracting city-specific sections from ApplianceRepairPageNew.js (currently 1108 lines)
+- Performance audit: code-split heavy sections, lazy-load below-fold content
