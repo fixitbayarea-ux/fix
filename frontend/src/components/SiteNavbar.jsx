@@ -452,6 +452,7 @@ const SiteNavbar = () => {
                 letterSpacing: '0.08em',
                 borderRadius: '4px',
                 padding: '10px 20px',
+                minHeight: '44px',
                 textDecoration: 'none',
                 transition: 'background 0.2s ease',
                 display: 'inline-flex',
