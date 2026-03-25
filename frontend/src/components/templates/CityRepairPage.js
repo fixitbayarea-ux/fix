@@ -168,7 +168,7 @@ const CityRepairPage = ({
       <ServiceSchema serviceType="Appliance Repair" city={city} serviceName={`Appliance Repair in ${city}`} />
       
       {/* Schemas injected via useSchemas hook above */}
-      <div className="min-h-screen bg-white font-montserrat">
+      <div className="min-h-screen bg-white font-montserrat pb-[72px] lg:pb-0">
       
 
       {/* Hero Section */}

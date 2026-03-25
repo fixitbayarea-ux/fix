@@ -80,7 +80,7 @@ const DynamicLandingPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-montserrat">
+    <div className="min-h-screen bg-white font-montserrat pb-[72px] lg:pb-0">
       {/* Header Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center">

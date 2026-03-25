@@ -230,7 +230,7 @@ const ProfessionalLandingPage = () => {
   const [openFaq, setOpenFaq] = useState(null);
 
   return (
-    <div className="min-h-screen" style={{ background: '#fff', fontFamily: 'Montserrat, system-ui, -apple-system, sans-serif' }}>
+    <div className="min-h-screen pb-[72px] lg:pb-0" style={{ background: '#fff', fontFamily: 'Montserrat, system-ui, -apple-system, sans-serif' }}>
       <SEOMetaTags title="Appliance Repair San Francisco & Bay Area | FixitBay" description="Professional appliance repair in San Francisco Bay Area. Same-day service for refrigerators, washers, dryers, dishwashers. Call (760) 543-5733 or book online." canonical="https://fixitbay.net/" keywords="appliance repair San Francisco, refrigerator repair, washer repair, same day appliance repair Bay Area, FixitBay" ogTitle="Appliance Repair San Francisco & Bay Area | FixitBay" ogDescription="Professional appliance repair in San Francisco Bay Area. Same-day service for refrigerators, washers, dryers, dishwashers. Call (760) 543-5733 or book online." ogImage="https://fixitbay.net/images/og-cover.png" twitterSite="@fixitbay" twitterTitle="Appliance Repair SF Bay Area | FixitBay" twitterDescription="Same-day appliance repair in San Francisco. $60 diagnostic, 180-day warranty, licensed CA technician." />
       <HomepageSchemas />
       <HomeHero />
