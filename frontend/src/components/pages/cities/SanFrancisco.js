@@ -236,7 +236,7 @@ const SanFrancisco = () => {
             <span style={S.eyebrow}>APPLIANCE REPAIR &middot; SAN FRANCISCO, CA</span>
           </div>
           {/* H1 */}
-          <h1 data-testid="sf-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in San&nbsp;Francisco</h1>
+          <h1 className="hero-main-h1" data-testid="sf-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in San&nbsp;Francisco</h1>
           {/* Subtext */}
           <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>
             Same-day & next-day service &middot; $60 diagnostic &middot; 180-day warranty on all repairs
@@ -566,11 +566,13 @@ const SanFrancisco = () => {
       <style>{`
         .sf-tabs-scroll { scrollbar-width: none; -ms-overflow-style: none; }
         .sf-tabs-scroll::-webkit-scrollbar { display: none; }
+        @media (max-width: 1023px) {
+          .hero-main-h1 { font-size: 28px !important; line-height: 1.2 !important; }
+        }
         @media (max-width: 767px) {
           .sf-how-grid { grid-template-columns: 1fr 1fr !important; gap: 24px !important; }
           [data-testid="sf-hero"] { min-height: auto !important; max-height: none !important; }
           [data-testid="sf-hero"] > div { padding: 48px 20px !important; }
-          [data-testid="sf-hero-h1"] { font-size: 34px !important; }
           .sf-cta-row { flex-direction: column !important; gap: 12px !important; align-items: stretch !important; }
           .sf-cta-book, .sf-cta-call { width: 100% !important; box-sizing: border-box !important; min-width: 0 !important; display: flex !important; justify-content: center !important; }
         }

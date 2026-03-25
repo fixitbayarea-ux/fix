@@ -169,7 +169,11 @@ const CityRepairPage = ({
       
       {/* Schemas injected via useSchemas hook above */}
       <div className="min-h-screen bg-white font-montserrat pb-[72px] lg:pb-0">
-      
+      <style>{`
+        @media (max-width: 1023px) {
+          .hero-main-h1 { font-size: 28px !important; line-height: 1.2 !important; }
+        }
+      `}</style>
 
       {/* Hero Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#62C2E3' }}>
@@ -206,7 +210,7 @@ const CityRepairPage = ({
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-5xl font-bold mb-6 text-white"
+              className="hero-main-h1 text-4xl md:text-5xl font-bold mb-6 text-white"
             >
               {`Appliance Repair in ${city}`}
             </motion.h1>

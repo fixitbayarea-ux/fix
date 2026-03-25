@@ -438,7 +438,7 @@ const ApplianceRepairPageNew = ({
               <span style={{ width: 36, height: 2, background: '#FF5722', display: 'inline-block' }} />
               <span style={{ ...S.eyebrow, letterSpacing: '0.22em' }}>{cityName.toUpperCase()} APPLIANCE REPAIR</span>
             </div>
-            <h1 data-testid="city-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in<br/>{cityName}</h1>
+            <h1 className="hero-main-h1" data-testid="city-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in<br/>{cityName}</h1>
             <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same-day & next-day &middot; $60 diagnostic &middot; 180-day warranty</p>
             <div data-testid="city-trust-badges" style={{ display: 'flex', alignItems: 'center', gap: 24, marginTop: 20, fontFamily: S.font, fontWeight: 500, fontSize: 13, flexWrap: 'wrap' }}>
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span><span style={{ color: 'rgba(255,255,255,0.85)' }}>Licensed CA Technician</span></span>
@@ -806,11 +806,14 @@ const ApplianceRepairPageNew = ({
         <style>{`
           .city-svc-btn:hover { background: #FF5722 !important; }
           .city-cta-book, .city-cta-call { min-height: 52px; box-sizing: border-box; }
+          @media (max-width: 1023px) {
+            .hero-main-h1 { font-size: 28px !important; line-height: 1.2 !important; }
+          }
           @media (max-width: 767px) {
             .city-process-grid { grid-template-columns: 1fr 1fr !important; gap: 24px !important; }
             [data-testid="city-hero"] { min-height: auto !important; max-height: none !important; }
             [data-testid="city-hero"] > div { padding: 48px 20px !important; }
-            [data-testid="city-hero-h1"] { font-size: 34px !important; }
+            [data-testid="city-hero-h1"] { max-width: 100% !important; }
             .city-cta-row { flex-direction: column !important; align-items: stretch !important; gap: 12px !important; }
             .city-cta-book { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
             .city-cta-call { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
@@ -861,7 +864,7 @@ const ApplianceRepairPageNew = ({
                 <span style={{ ...S.eyebrow, letterSpacing: '0.22em' }}>{appliance ? `${appliance.toUpperCase()} ${serviceWord.toUpperCase()}` : 'APPLIANCE REPAIR'}</span>
               </div>
               {/* H1 */}
-              <h1 style={{ fontFamily: S.font, fontWeight: 800, fontSize: 46, color: '#FFFFFF', lineHeight: 1.12, maxWidth: 520, marginTop: 16 }}>{displayH1}</h1>
+              <h1 className="hero-main-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 46, color: '#FFFFFF', lineHeight: 1.12, maxWidth: 520, marginTop: 16 }}>{displayH1}</h1>
               {/* Subtext */}
               <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>$60 diagnostic &middot; Same/Next-Day &middot; 180-Day Warranty</p>
               {heroDescription && <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.55)', marginTop: 12, lineHeight: 1.6, maxWidth: 480 }}>{heroDescription}</p>}
@@ -1228,11 +1231,14 @@ const ApplianceRepairPageNew = ({
       {/* Mobile responsive */}
       <style>{`
         .related-svc-btn:hover { background: #FF5722 !important; }
+        @media (max-width: 1023px) {
+          .hero-main-h1 { font-size: 28px !important; line-height: 1.2 !important; }
+        }
         @media (max-width: 767px) {
           .service-hero-grid { grid-template-columns: 1fr !important; min-height: auto !important; max-height: none !important; }
           .service-hero-photo { height: 280px; max-height: 280px !important; }
           .service-hero-text { padding: 36px 20px 44px !important; }
-          .service-hero-text h1 { font-size: 30px !important; max-width: 100% !important; }
+          .service-hero-text h1 { max-width: 100% !important; }
           .service-how-grid { grid-template-columns: 1fr 1fr !important; gap: 24px !important; text-align: center; }
         }
         @media (max-width: 480px) {

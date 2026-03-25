@@ -81,6 +81,11 @@ const DynamicLandingPage = () => {
 
   return (
     <div className="min-h-screen bg-white font-montserrat pb-[72px] lg:pb-0">
+      <style>{`
+        @media (max-width: 1023px) {
+          .hero-main-h1 { font-size: 28px !important; line-height: 1.2 !important; }
+        }
+      `}</style>
       {/* Header Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center">
@@ -99,7 +104,7 @@ const DynamicLandingPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-4xl md:text-6xl font-bold mb-8"
+            className="hero-main-h1 text-4xl md:text-6xl font-bold mb-8"
             style={{ color: '#C0362C' }}
           >
             Appliance Repair in {currentCity}, CA –<br />

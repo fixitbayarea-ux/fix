@@ -231,7 +231,7 @@ const MobileServiceLanding = ({
 
           <p style={{ fontSize: 11, fontWeight: 700, color: PC.white45, letterSpacing: '0.10em', textTransform: 'uppercase', margin: '0 0 10px', fontFamily: F }}>San Francisco &amp; Bay Area</p>
 
-          <h1 style={{ fontFamily: F, fontSize: 30, fontWeight: 800, lineHeight: 1.15, color: PC.white, margin: '0 0 10px' }}>{heroTitle}</h1>
+          <h1 style={{ fontFamily: F, fontSize: 28, fontWeight: 800, lineHeight: 1.2, color: PC.white, margin: '0 0 10px' }}>{heroTitle}</h1>
           <p style={{ fontFamily: F, fontSize: 14, color: PC.white60, margin: '0 0 18px', fontWeight: 500, lineHeight: 1.5 }}>{heroSubtitle}</p>
           {heroDescription && <p style={{ fontFamily: F, fontSize: 13, color: PC.white60, margin: '0 0 18px', fontWeight: 400, lineHeight: 1.6 }}>{heroDescription}</p>}
 
