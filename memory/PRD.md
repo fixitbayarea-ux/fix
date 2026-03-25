@@ -38,6 +38,7 @@ An appliance repair business website (fixitbay.net) built as a React SPA with st
 - Updated `ApplianceRepairPageNew.js`: 5 secondary CTAs (city-hero, city-cta-banner, city-final, service-hero, service-cta-banner) — border `2px solid rgba(255,255,255,0.65)`, `minHeight: 52`, hover reset to 0.65
 - Updated `BrandLandingPage.js`: bottom CTA border from `PC.white15` (0.15) to 0.65, added `minHeight: 52` to both brand CTAs
 - WCAG AA contrast compliance for secondary CTA buttons on dark backgrounds
+- Fixed desktop nav tel link touch target: added `min-h-[44px]` to meet WCAG 2.5.5 (was 21px → now 44px)
 
 ## Backlog (Prioritized)
 

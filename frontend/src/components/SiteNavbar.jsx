@@ -423,7 +423,7 @@ const SiteNavbar = () => {
           <div className="hidden md:flex items-center gap-5 shrink-0">
             <a
               href={`tel:${PHONE_TEL}`}
-              className="flex items-center gap-2 whitespace-nowrap"
+              className="flex items-center gap-2 whitespace-nowrap min-h-[44px]"
               style={{ 
                 color: '#FF5722',
                 fontFamily: 'Montserrat, sans-serif',
