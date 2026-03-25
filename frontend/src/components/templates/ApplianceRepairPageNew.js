@@ -803,7 +803,7 @@ const ApplianceRepairPageNew = ({
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
           <div style={{ ...S.eyebrow, marginBottom: 10 }}>THE PROCESS</div>
           <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 48 }}>Simple. Fast. Professional.</h2>
-          <div className="service-how-grid grid md:grid-cols-4 gap-8">
+          <div className="service-how-grid grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { num: '01', icon: <CalendarCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'Book Online', text: 'Schedule same-day or next-day at your convenience.' },
               { num: '02', icon: <Search size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Diagnose', text: '$60 diagnostic visit — applied to repair if you proceed.' },
@@ -1076,7 +1076,7 @@ const ApplianceRepairPageNew = ({
           .service-how-grid { grid-template-columns: 1fr 1fr !important; gap: 24px !important; text-align: center; }
         }
         @media (max-width: 480px) {
-          .service-how-grid { grid-template-columns: 1fr !important; }
+          .service-how-grid { grid-template-columns: 1fr 1fr !important; gap: 16px !important; }
         }
       `}</style>
 
