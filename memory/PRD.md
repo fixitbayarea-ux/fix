@@ -57,10 +57,19 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - `sections/HomeExploreLinks.jsx` — Services & areas sitemap
 - `sections/HomePricing.jsx` — 3-card pricing section
 
+### Session 13 (Mar 25 2026) — Brand Logo PNG Fix
+- Replaced SVG logos with pre-rendered white PNG equivalents (320x160px, 2x retina) for all 8 brand hero sections
+- Brands: LG, Samsung, Whirlpool, GE, Bosch, KitchenAid, Viking, Thermador
+- Removed CSS `brightness(0) invert(1)` filter (PNGs are already white on transparent)
+- Added `onError` fallback to SVG, `loading="eager"`, `data-testid="brand-hero-logo"`
+- Testing: 8/8 brand pages pass — all logos load (naturalWidth=320, complete=true)
+
 ## Backlog (Prioritized)
 
-### P2
+### P1
 - Audit blog schema types beyond BlogPosting (FAQ, BreadcrumbList duplicates)
+
+### P2
 - Continue migrating inline styles to Tailwind/CSS variables where appropriate
 
 ### P3
