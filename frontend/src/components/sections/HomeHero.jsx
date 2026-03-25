@@ -114,6 +114,10 @@ const HomeHero = () => {
                   CALL (760) 543-5733
                 </a>
               </div>
+              {/* Mobile reassurance micro-copy */}
+              <p data-testid="hero-reassurance-mobile" style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', textAlign: 'center', marginTop: 8 }}>
+                Same-day available &middot; Licensed &amp; insured &middot; No fix, no fee
+              </p>
               {/* Mobile urgency micro-copy */}
               <p data-testid="hero-urgency-slots-mobile" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 12, color: 'rgba(255,255,255,0.65)', textAlign: 'center', marginTop: 2, marginBottom: 12 }}>
                 ⚡ Most slots filled by noon — book now to secure today
