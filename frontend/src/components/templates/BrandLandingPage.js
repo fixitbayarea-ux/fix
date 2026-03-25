@@ -91,6 +91,7 @@ const BrandLandingPage = ({ brand }) => {
   const slug = brand.name.toLowerCase().replace(/[\s&]+/g, '-');
   const canonical = `https://fixitbay.net/${slug}-appliance-repair`;
   const logo = BRAND_LOGOS[brand.name];
+  const heroPng = `/images/brands/${slug}.png`;
 
   const seoTitle = brand.seoTitle || brand.title;
   const seoDesc = brand.seoDescription || brand.description;
@@ -206,11 +207,18 @@ const BrandLandingPage = ({ brand }) => {
               <span style={{ color: PC.white60 }}>{brand.name}</span>
             </nav>
 
-            {logo && (
-              <div style={{ display: 'inline-flex', alignItems: 'center', background: PC.white08, border: `1px solid ${PC.white15}`, borderRadius: PC.r, padding: '12px 24px', marginBottom: 20 }}>
-                <img src={logo} alt={`${brand.name} brand logo`} style={{ width: 80, height: 80, objectFit: 'contain', filter: 'brightness(0) invert(1) opacity(0.85)' }} loading="lazy" />
-              </div>
-            )}
+            <div style={{ display: 'inline-flex', alignItems: 'center', marginBottom: 20 }}>
+              <img
+                src={heroPng}
+                alt={`${brand.name} brand logo`}
+                width="80"
+                height="80"
+                data-testid="brand-hero-logo"
+                style={{ width: 80, height: 80, objectFit: 'contain', opacity: 0.85 }}
+                loading="eager"
+                onError={(e) => { if (logo && e.target.src !== logo) { e.target.src = logo; e.target.style.filter = 'brightness(0) invert(1)'; } }}
+              />
+            </div>
 
             <div style={{ ...EYE, textAlign: 'center', color: PC.white45 }}>{brand.name.toUpperCase()} APPLIANCE REPAIR &mdash; BAY AREA</div>
 
