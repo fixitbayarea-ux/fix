@@ -30,25 +30,36 @@ SEO changes must be updated in BOTH:
 - Hero logo WebP (98% smaller), service card WebP, cache headers, lazy loading
 
 ### Session 7 — SEO Title & Description Fixes
-- Wine Cooler title → "San Francisco", 3 meta descriptions shortened to ≤160 chars
+- Wine Cooler title -> "San Francisco", 3 meta descriptions shortened to <=160 chars
 
 ### Session 8 — Soft 404 Fix & SF City Content
 - Garbage Disposal: full SERVICE_DATA entry (11p, 6h2) to fix soft 404
 - 5 SF city-service pages: rich, neighborhood-specific content added
 
-### Session 9 (Feb 2026) — Mobile Grid Responsiveness
-- **Service cards grid**: Changed from desktop-only `hidden lg:grid lg:grid-cols-3` to responsive `grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`. Hid legacy mobile carousel.
-- **Process steps grid**: Changed from desktop-only `hidden lg:block` 4-col inline grid to responsive `grid grid-cols-2 lg:grid-cols-4`. Hid legacy mobile vertical list. Dashed connector line hidden on mobile.
-- **SanFrancisco.js city page**: Updated process steps from `md:grid-cols-4` to `grid-cols-2 lg:grid-cols-4`. Updated pricing cards from `md:grid-cols-3` to `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`. Removed CSS override that forced 1-column at 480px.
-- **Removed conflicting CSS**: Deleted `!important` overrides for `grid-cols-3` and `grid-cols-4` at 480px that fought with Tailwind responsive classes.
-- Files changed: `ProfessionalLandingPage.js`, `SanFrancisco.js`
+### Session 9 — Mobile Grid Responsiveness
+- Service cards grid: responsive `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3`
+- Process steps grid: responsive `grid-cols-2 lg:grid-cols-4`
+- SanFrancisco.js city page: Updated grids for mobile
+- Removed conflicting CSS `!important` overrides
+
+### Session 10 — Mobile UI Improvements
+- Sticky CTA padding fix for bottom overlap
+- Mobile H1 font size standardization
+- Mobile CTA "Call Now" button contrast fix
+- Trust stats bar mobile layout (mobile flex + desktop grid)
+
+### Session 11 (Mar 2026) — P2 Cleanup & Schema Audit
+- **Removed legacy `applySEO()` from `index.html`**: Deleted ~565 lines of redundant `routeMeta` object, `ensureMeta*` helpers, `applySEO()` function, and `history.pushState` overrides. Preserved only the `dedupLocalBusiness` logic (prevents duplicate LocalBusiness schemas).
+- **Fixed duplicate blog schemas**: Removed inline `<script type="application/ld+json">` from 10 blog pages that already used `useSchemas()` hook, eliminating double BlogPosting schema injection.
+- **Converted DishwasherMaintenance.js**: Migrated from legacy `react-helmet-async` `<Helmet>` to modern `SEOMetaTags` + `useSchemas()` pattern for consistency.
+- **Fixed stats section visibility on mobile**: Removed CSS `[data-testid="stats-section"] { display: none !important; }` that was hiding the "22 Cities / $60 Diagnostic / 180-Day Warranty" stats on mobile. Added responsive padding (`py-6 lg:py-16`).
+- **Investigated ghost div**: Confirmed the "ghost div" is actually the lazy-loaded ServiceAreaMapLibre section that renders city links and heading on mobile when scrolled to — functioning correctly as a lazy-loading container.
+- Files changed: `public/index.html`, `ProfessionalLandingPage.js`, `DishwasherMaintenance.js`, 10 blog post files
 - Build: 233 pages, 0 failures
 
 ## Backlog (Prioritized)
 
 ### P2
-- Remove legacy `applySEO()` function from `public/index.html`
-- Merge dual SEO content sources into single source of truth
-- Audit remaining blog posts for duplicate schemas
+- Merge dual SEO content sources (`seoContent.js` + `seo-config.cjs`) into single source of truth
+- Audit remaining blog posts for duplicate schemas (non-BlogPosting types)
 - Refactor monolithic page components
-- Fix "ghost div" on mobile homepage

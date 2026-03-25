@@ -102,7 +102,6 @@ const GasSmellFromStove = () => {
         canonical="https://fixitbay.net/blog/gas-smell-from-stove"
         ogType="article"
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas[0].data) }} />
       <div style={{ fontFamily: F }}>
         <style>{`
           .gas-h1{font-size:40px !important}

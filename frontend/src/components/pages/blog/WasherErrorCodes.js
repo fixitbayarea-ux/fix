@@ -106,7 +106,6 @@ const WasherErrorCodes = () => {
         canonical="https://fixitbay.net/blog/washer-error-codes"
         ogType="article"
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas[0].data) }} />
       <div style={{ fontFamily: F }}>
         <style>{`
           .wec-h1{font-size:40px !important}

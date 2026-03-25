@@ -251,9 +251,10 @@ const ProfessionalLandingPage = () => {
       </div>
 
       {/* ═══ STATS SECTION ═══ */}
-      <section className="hidden lg:block" style={{ background: '#F8F5F0', padding: '60px 0 70px' }} data-testid="stats-section">
-        <div style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr auto 1fr auto 1fr', alignItems: 'stretch' }}>
+      <section className="block" style={{ background: '#F8F5F0' }} data-testid="stats-section">
+        <div className="py-6 lg:py-16" style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px' }}>
+          {/* Desktop: grid layout */}
+          <div className="hidden lg:grid" style={{ gridTemplateColumns: '1fr auto 1fr auto 1fr', alignItems: 'stretch' }}>
             {[
               { num: '22', unit: 'Cities', title: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin', numSize: 64 },
               { num: '$60', unit: 'Diagnostic', title: 'GOES TOWARD REPAIR', desc: 'Applied if you proceed', numSize: 64 },
@@ -273,6 +274,22 @@ const ProfessionalLandingPage = () => {
                 </div>
                 {i < 2 && <div style={{ width: 1, background: 'rgba(0,0,0,0.08)', margin: '0 24px' }} />}
               </React.Fragment>
+            ))}
+          </div>
+          {/* Mobile: flex layout for stats */}
+          <div className="lg:hidden flex flex-wrap justify-center gap-4 px-4 py-3">
+            {[
+              { num: '22', unit: 'Cities', title: 'BAY AREA COVERAGE' },
+              { num: '$60', unit: 'Diagnostic', title: 'GOES TOWARD REPAIR' },
+              { num: '180-Day', unit: 'Warranty', title: 'PARTS & LABOR' },
+            ].map((s, i) => (
+              <div key={i} style={{ textAlign: 'center', minWidth: 90 }}>
+                <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'center', gap: 4 }}>
+                  <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 24, lineHeight: 1, color: '#0D1B2A' }}>{s.num}</span>
+                  <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 12, color: '#FF5722' }}>{s.unit}</span>
+                </div>
+                <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 9, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.08em', marginTop: 4 }}>{s.title}</div>
+              </div>
             ))}
           </div>
         </div>
@@ -631,9 +648,6 @@ const ProfessionalLandingPage = () => {
           p, li { font-size: 14px; line-height: 1.6; }
           h2 { font-size: 22px !important; line-height: 1.25; word-break: break-word; }
           h3 { font-size: 18px !important; word-break: break-word; }
-          /* Hide desktop-only stats section on all mobile viewports */
-          [data-testid="stats-section"] { display: none !important; }
-
           /* -- TRUST BAR -- */
           .mobile-trust-bar { display: flex; justify-content: space-around; align-items: center; }
           @media (min-width: 1024px) { .mobile-trust-bar { display: none !important; } }

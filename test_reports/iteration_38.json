@@ -28,7 +28,7 @@
   "seed_data_creation": "None",
   "retest_needed": false,
   "should_main_agent_self_test": false,
-  "context_for_next_testing_agent": "Homepage redesign complete. Reviews section at #reviews has dark navy bg, 3-column grid, 10 reviews. Where We Serve at #service-area uses cream bg with amber accents. All sections use 4px border-radius. Map is lazy-loaded via IntersectionObserver - scroll slowly to trigger. Base URL: https://homepage-optimize.preview.emergentagent.com",
+  "context_for_next_testing_agent": "Homepage redesign complete. Reviews section at #reviews has dark navy bg, 3-column grid, 10 reviews. Where We Serve at #service-area uses cream bg with amber accents. All sections use 4px border-radius. Map is lazy-loaded via IntersectionObserver - scroll slowly to trigger. Base URL: https://trust-stats-mobile.preview.emergentagent.com",
   "test_results": {
     "reviews_section": {
       "background": "PASS - rgb(13, 27, 42) = #0D1B2A dark navy",

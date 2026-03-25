@@ -113,7 +113,6 @@ const DishwasherNotDraining = () => {
         canonical="https://fixitbay.net/blog/dishwasher-not-draining"
         ogType="article"
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas[0].data) }} />
       <div style={{ fontFamily: F }}>
         <style>{`
           .dnd-h1{font-size:40px !important}

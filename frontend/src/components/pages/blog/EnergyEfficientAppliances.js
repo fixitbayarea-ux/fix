@@ -114,7 +114,6 @@ const EnergyEfficientAppliances = () => {
         canonical="https://fixitbay.net/blog/energy-efficient-appliances"
         ogType="article"
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas[0].data) }} />
       <div style={{ fontFamily: F }}>
         <style>{`
           .energy-h1{font-size:40px !important}

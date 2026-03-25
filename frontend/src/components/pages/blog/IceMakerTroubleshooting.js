@@ -101,7 +101,6 @@ const IceMakerTroubleshooting = () => {
         canonical="https://fixitbay.net/blog/ice-maker-troubleshooting"
         ogType="article"
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemas[0].data) }} />
       <div style={{ fontFamily: F }}>
         <style>{`
           .ice-h1{font-size:40px !important}

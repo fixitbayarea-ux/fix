@@ -1,27 +1,26 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import React, { useMemo } from 'react';
 import { Calendar, Clock, Tag, ArrowLeft, Phone, Wrench, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Breadcrumbs from '../../Breadcrumbs';
 import BlogRelatedLinks from '../../shared/BlogRelatedLinks';
+import SEOMetaTags from '../../SEOMetaTags';
+import { useSchemas } from '../../../hooks/useSchema';
 
 const DishwasherMaintenance = () => {
+  const schemas = useMemo(() => [
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to Maintain Your Dishwasher for Longer Life", "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-18", "dateModified": "2026-01-18", "url": "https://fixitbay.net/blog/dishwasher-maintenance" } },
+  ], []);
+  useSchemas(schemas);
+
   return (
     <>
-      <Helmet>
-        <title>How to Maintain Your Dishwasher for Longer Life | FixitBay</title>
-        <meta 
-          name="description" 
-          content="Simple dishwasher maintenance tips to prevent clogs, leaks, and odors. Clean filters, check spray arms, and maintain door seals." 
-        />
-        <meta 
-          name="keywords" 
-          content="dishwasher maintenance, clean dishwasher filter, dishwasher care, prevent dishwasher problems, dishwasher longevity, San Francisco dishwasher service" 
-        />
-        <link rel="canonical" href="https://fixitbay.net/blog/dishwasher-maintenance" />
-        <meta property="og:type" content="article" />
-        <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Maintain Your Dishwasher for Longer Life","author":{"@type":"Person","name":"Andrei","jobTitle":"Licensed Appliance Technician","worksFor":{"@type":"Organization","name":"FixitBay LLC"}},"publisher":{"@type":"Organization","name":"FixitBay LLC"},"datePublished":"2026-01-18","dateModified":"2026-01-18","url":"https://fixitbay.net/blog/dishwasher-maintenance"})}</script>
-      </Helmet>
+      <SEOMetaTags
+        title="How to Maintain Your Dishwasher for Longer Life | FixitBay"
+        description="Simple dishwasher maintenance tips to prevent clogs, leaks, and odors. Clean filters, check spray arms, and maintain door seals."
+        canonical="https://fixitbay.net/blog/dishwasher-maintenance"
+        keywords="dishwasher maintenance, clean dishwasher filter, dishwasher care, prevent dishwasher problems, dishwasher longevity, San Francisco dishwasher service"
+        ogType="article"
+      />
 
       <article className="min-h-screen bg-gray-50">
         <section 
