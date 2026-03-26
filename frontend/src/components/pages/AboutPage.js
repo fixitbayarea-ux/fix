@@ -133,10 +133,10 @@ const AboutPage = () => {
             <div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
                 <div style={{ borderRadius: 4, overflow: 'hidden', aspectRatio: '1/1', boxShadow: '0 4px 20px rgba(0,0,0,0.12)' }}>
-                  <img src="https://customer-assets.emergentagent.com/job_uiux-overhaul-2/artifacts/3d7d3r89_Andrei.png" alt="Andrei - Lead Appliance Repair Technician" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                  <img src="/images/team/andrei-lead-tech.webp" alt="Andrei - Lead Appliance Repair Technician" width={747} height={1024} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
                 </div>
                 <div style={{ borderRadius: 4, overflow: 'hidden', aspectRatio: '1/1', boxShadow: '0 4px 20px rgba(0,0,0,0.12)' }}>
-                  <img src="https://customer-assets.emergentagent.com/job_uiux-overhaul-2/artifacts/9crrkgia_Andrei2.png" alt="Andrei working on appliance repair" style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                  <img src="/images/team/andrei-working.webp" alt="Andrei working on appliance repair" width={585} height={1024} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
                 </div>
               </div>
               <div style={{ display: 'flex', justifyContent: 'center', gap: 8, alignItems: 'center', marginTop: 12 }}>

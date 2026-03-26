@@ -86,11 +86,12 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - `sections/CaseStudies.jsx` — Recent repair case studies (city pages)
 - `sections/Testimonials.jsx` — Client review cards + external links (city pages)
 
-### Session 14 (Mar 26 2026) — Contact Page Refinements
+### Session 14 (Mar 26 2026) — Contact Page Refinements + About Page Images Fix
 - Changed `/contact` page mobile H1 from 28px to 30px
 - Replaced `fixitbayarea@gmail.com` → `info@fixitbay.net` globally (Quick Bar, Email Card, JSON-LD schema)
 - Added Google Maps iframe (Bay Area — San Francisco, Marin, Peninsula) to Service Area panel
 - Verified: 0 remaining references to old email across entire codebase
+- **BUG FIX**: Migrated 2 Andrei team photos from external CDN to local `/images/team/` as WebP (34KB + 23KB). Added explicit width/height for CLS prevention. External CDN was unreliable on production Netlify deploys.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
