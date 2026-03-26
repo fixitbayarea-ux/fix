@@ -290,7 +290,7 @@ const LLMInfoPage = () => {
         .llm-footer a:hover{color:rgba(255,255,255,0.8)}
 
         @media(max-width:767px){
-          .llm-hero h1{font-size:26px}
+          .llm-hero h1{font-size:28px}
           .llm-table{font-size:12px}
         }
       `}</style>

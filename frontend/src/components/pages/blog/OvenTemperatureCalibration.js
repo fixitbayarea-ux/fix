@@ -92,7 +92,7 @@ const OvenTemperatureCalibration = () => {
         <style>{`
           .oven-h1{font-size:40px !important}
           @media(max-width:767px){
-            .oven-h1{font-size:26px !important}
+            .oven-h1{font-size:28px !important}
             .oven-grid{grid-template-columns:1fr !important}
             .mid-cta-inner{flex-direction:column !important;text-align:center}
             .related-grid{grid-template-columns:1fr !important}

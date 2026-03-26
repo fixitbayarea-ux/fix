@@ -105,7 +105,7 @@ const IceMakerTroubleshooting = () => {
         <style>{`
           .ice-h1{font-size:40px !important}
           @media(max-width:767px){
-            .ice-h1{font-size:26px !important}
+            .ice-h1{font-size:28px !important}
             .ice-grid{grid-template-columns:1fr !important}
             .mid-cta-inner{flex-direction:column !important;text-align:center}
             .related-grid{grid-template-columns:1fr !important}

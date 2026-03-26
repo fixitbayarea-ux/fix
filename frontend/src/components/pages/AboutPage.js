@@ -66,7 +66,7 @@ const AboutPage = () => {
       <div style={{ fontFamily: F }}>
         <style>{`
           * { box-sizing: border-box; }
-          .about-h1 { font-size: 26px !important; line-height: 1.2 !important; }
+          .about-h1 { /* handled by global index.css */ }
           .about-h2 { font-size: 22px !important; }
           @media (min-width: 768px) { .about-h1 { font-size: 42px !important; } .about-h2 { font-size: 32px !important; } }
           .hero-badges { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 10px 16px; justify-items: start; max-width: 360px; margin: 0 auto; }

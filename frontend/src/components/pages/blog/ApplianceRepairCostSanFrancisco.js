@@ -157,7 +157,7 @@ const ApplianceRepairCostSanFrancisco = () => {
         <style>{`
           .art-h1{font-size:40px !important}
           @media(max-width:767px){
-            .art-h1{font-size:26px !important}
+            .art-h1{font-size:28px !important}
             .art-grid{grid-template-columns:1fr !important}
             .mid-cta-inner{flex-direction:column !important;text-align:center}
             .related-grid{grid-template-columns:1fr !important}

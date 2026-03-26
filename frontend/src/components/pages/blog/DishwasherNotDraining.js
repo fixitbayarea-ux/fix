@@ -117,7 +117,7 @@ const DishwasherNotDraining = () => {
         <style>{`
           .dnd-h1{font-size:40px !important}
           @media(max-width:767px){
-            .dnd-h1{font-size:26px !important}
+            .dnd-h1{font-size:28px !important}
             .dnd-grid{grid-template-columns:1fr !important}
             .mid-cta-inner{flex-direction:column !important;text-align:center}
             .related-grid{grid-template-columns:1fr !important}

@@ -123,7 +123,7 @@ const RepairVsReplace = () => {
         <style>{`
           .rvr-h1{font-size:40px !important}
           @media(max-width:767px){
-            .rvr-h1{font-size:26px !important}
+            .rvr-h1{font-size:28px !important}
             .rvr-grid{grid-template-columns:1fr !important}
             .mid-cta-inner{flex-direction:column !important;text-align:center}
             .related-grid{grid-template-columns:1fr !important}
