@@ -128,7 +128,17 @@ const SchemaMarkup = () => {
         "https://www.yelp.com/biz/fixitbay-san-francisco-5",
         "https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644",
         "https://www.bbb.org/us/ca/san-francisco/profile/appliance-repair/fixitbay-llc"
-      ]
+      ],
+      "foundingDate": "2023",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": 3
+      },
+      "employee": {
+        "@type": "Person",
+        "name": "Andrei Suprunov",
+        "jobTitle": "Lead Appliance Repair Technician"
+      }
     });
       document.head.appendChild(script);
     }
