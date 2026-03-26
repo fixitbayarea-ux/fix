@@ -11,8 +11,8 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
     "url": "https://fixitbay.net",
     "telephone": "+17605435733",
     "priceRange": "$$",
-    "image": "https://fixitbay.net/logo.png",
-    "logo": "https://fixitbay.net/logo.png",
+    "image": "https://fixitbay.net/images/og-cover.png",
+    "logo": "https://fixitbay.net/images/og-cover.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "1549 Franklin Street, Unit A",
