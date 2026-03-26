@@ -163,6 +163,7 @@ const BrandLandingPage = ({ brand }) => {
           * { box-sizing: border-box; }
           .brand-h1 { font-size: 28px !important; line-height: 1.2 !important; }
           @media (min-width: 768px) { .brand-h1 { font-size: 46px !important; line-height: 1.15 !important; } }
+          @media (max-width: 767px) { .brand-card-h3 { font-size: 16px !important; line-height: 1.4 !important; } }
           .brand-section-h2 { font-size: 24px !important; }
           @media (min-width: 768px) { .brand-section-h2 { font-size: 32px !important; } }
 
@@ -297,7 +298,7 @@ const BrandLandingPage = ({ brand }) => {
                           <img src={card.image} alt={card.carouselTitle || card.name} style={{ width: '100%', height: 180, objectFit: 'cover', display: 'block' }} loading="lazy" />
                         )}
                         <div style={{ padding: '16px 18px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                          <h3 style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: PC.textDark, marginBottom: 6 }}>{card.carouselTitle || card.name}</h3>
+                          <h3 className="brand-card-h3" style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: PC.textDark, marginBottom: 6 }}>{card.carouselTitle || card.name}</h3>
                           {card.issues && <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: PC.textMid, marginBottom: 12 }}>{card.issues}</p>}
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 10 }}>
                             <span style={{ background: PC.accentBg, color: PC.accent, padding: '4px 10px', borderRadius: PC.r, fontFamily: F, fontWeight: 600, fontSize: 11 }}>Same/Next-Day</span>
