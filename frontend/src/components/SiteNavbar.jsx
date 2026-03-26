@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
+import { createPortal } from 'react-dom';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone } from 'lucide-react';
 import CustomerPortalButton from './CustomerPortalButton';
@@ -116,6 +117,16 @@ const SiteNavbar = () => {
     setMobileMoreOpen(false);
     setMobileAreasOpen(false);
   }, [location.pathname]);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+    return () => document.body.classList.remove('overflow-hidden');
+  }, [mobileMenuOpen]);
 
   // Scroll to anchor with offset — handles lazy-loaded sections with retry
   const scrollToAnchor = (anchorId) => {
@@ -525,8 +536,8 @@ const SiteNavbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
+        {/* Mobile Menu — rendered via portal to avoid backdrop-filter containing block */}
+        {mobileMenuOpen && createPortal(
           <>
           <div
             onClick={() => setMobileMenuOpen(false)}
@@ -539,10 +550,11 @@ const SiteNavbar = () => {
           />
           <div 
             id="mobile-menu"
+            data-testid="mobile-menu-panel"
             className="md:hidden"
             style={{
               position: 'fixed',
-              top: 60,
+              top: 'var(--navbar-height, 60px)',
               left: 0,
               right: 0,
               bottom: 0,
@@ -782,9 +794,11 @@ const SiteNavbar = () => {
             </div>
 
           </div>
-          </>
+          </>,
+          document.body
         )}
       <style>{`
+        :root { --navbar-height: 72px; }
         .mob-accordion-body {
           overflow: hidden;
           max-height: 0;
@@ -821,9 +835,11 @@ const SiteNavbar = () => {
           color: #FF5722 !important;
         }
         @media (max-width: 767px) {
+          :root { --navbar-height: 60px; }
           .main-nav { height: 60px !important; padding: 0 16px !important; }
           .main-nav > div { height: 60px !important; }
           body { padding-bottom: 56px; }
+          body.overflow-hidden { overflow: hidden !important; }
         }
       `}</style>
       </div>
