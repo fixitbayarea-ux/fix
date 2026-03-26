@@ -89,6 +89,7 @@ const ReviewsPage = () => {
           .rv-card:hover{border-color:rgba(255,87,34,0.3) !important;box-shadow:0 4px 24px rgba(255,87,34,0.1) !important}
           .trust-card:hover{box-shadow:0 4px 20px rgba(255,87,34,0.12) !important}
           .platform-btn:hover{border-color:#FF5722 !important;background:rgba(255,87,34,0.1) !important}
+          @media(max-width:600px){.review-platforms-grid{grid-template-columns:1fr !important}.platform-btn{min-height:52px !important;width:100% !important;justify-content:center !important}}
           .filter-tab{cursor:pointer;transition:all 0.2s}
           .filter-tab:hover:not(.active){background:rgba(255,87,34,0.06) !important}
           .rv-masonry{column-count:2;column-gap:20px}
@@ -244,7 +245,7 @@ const ReviewsPage = () => {
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.7)', marginBottom: 28 }}>
               We're proud of every review &mdash; read them all on your preferred platform.
             </p>
-            <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
+            <div className="review-platforms-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, auto)', justifyContent: 'center', gap: 12 }}>
               {[
                 { label: 'Google Reviews', href: PLATFORMS.google },
                 { label: 'Yelp Reviews', href: PLATFORMS.yelp },
