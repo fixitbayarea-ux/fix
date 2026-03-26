@@ -146,7 +146,7 @@ export default function SiteMapPage() {
         title="Site Map | FixitBay LLC — All Pages"
         description="Complete site map for FixitBay LLC. 100+ pages including appliance repair services, brand pages, Bay Area cities, SF neighborhoods, and blog articles."
         canonical="https://fixitbay.net/site-map"
-        noindex={false}
+        noindex={true}
       />
       <div style={{ fontFamily: F }}>
         <style>{`
