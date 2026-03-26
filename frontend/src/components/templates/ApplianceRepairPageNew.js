@@ -283,15 +283,20 @@ const ApplianceRepairPageNew = ({
 
   const breadcrumbLabel = breadcrumbCategoryName || 'Services';
   const breadcrumbHref = breadcrumbCategoryHref || '/#services';
+  const isTopLevel = breadcrumbHref === '/';
+  const isSelfReferencing = typeof window !== 'undefined' && breadcrumbHref === window.location.pathname;
 
   const pageSchemas = useMemo(() => {
+    const crumbs = [{ name: 'Home', url: 'https://fixitbay.net/' }];
+    if (!isTopLevel) {
+      crumbs.push({ name: breadcrumbLabel, url: breadcrumbHref.startsWith('/') ? `https://fixitbay.net${breadcrumbHref}` : 'https://fixitbay.net/#services' });
+    }
+    if (!isSelfReferencing) {
+      crumbs.push({ name: cityName || pageTitle || `${appliance} Repair`, url: 'https://fixitbay.net/' });
+    }
     const schemas = [{
       id: `breadcrumb-schema-${appliance}`,
-      data: buildBreadcrumbSchema([
-        { name: 'Home', url: 'https://fixitbay.net/' },
-        { name: breadcrumbLabel, url: breadcrumbHref.startsWith('/') ? `https://fixitbay.net${breadcrumbHref}` : 'https://fixitbay.net/#services' },
-        { name: cityName || pageTitle || `${appliance} Repair`, url: 'https://fixitbay.net/' }
-      ])
+      data: buildBreadcrumbSchema(crumbs)
     }];
     if (faqData?.length > 0) { const fs = buildFAQSchema(faqData); if (fs) schemas.push({ id: `faq-schema-${appliance}`, data: fs }); }
     
@@ -381,11 +386,11 @@ const ApplianceRepairPageNew = ({
       return true;
     });
     return deduped;
-  }, [appliance, breadcrumbLabel, breadcrumbHref, cityName, pageTitle, faqData, serviceSchema]);
+  }, [appliance, breadcrumbLabel, breadcrumbHref, isTopLevel, cityName, pageTitle, faqData, serviceSchema]);
   useSchemas(pageSchemas);
 
-  const displayName = cityName ? `Appliance Repair in ${cityName}` : `${appliance} ${serviceWord}`;
-  const displayH1 = customH1 || (cityName ? `Expert Appliance Repair in ${cityName}` : (appliance === 'Dishwasher' ? `Expert ${appliance} ${serviceWord} in the Bay\u00A0Area` : `Expert ${appliance} ${serviceWord} in San\u00A0Francisco`));
+  const displayName = cityName ? `Appliance Repair in ${cityName}` : (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? appliance : `${appliance} ${serviceWord}`);
+  const displayH1 = customH1 || (cityName ? `Expert Appliance Repair in ${cityName}` : (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? `Expert ${appliance} in San\u00A0Francisco` : (appliance === 'Dishwasher' ? `Expert ${appliance} ${serviceWord} in the Bay\u00A0Area` : `Expert ${appliance} ${serviceWord} in San\u00A0Francisco`)));
 
 
   /* ═══════════════════════════════════════════════════════════
@@ -660,15 +665,19 @@ const ApplianceRepairPageNew = ({
               {/* Breadcrumb */}
               <div className="hidden md:block" aria-label="breadcrumb" style={{ fontFamily: S.font, fontWeight: 500, fontSize: 12, color: 'rgba(255,255,255,0.35)', marginBottom: 20 }}>
                 <a href="/" style={{ color: 'rgba(255,255,255,0.35)', textDecoration: 'none' }}>Home</a>
-                <span style={{ margin: '0 8px' }}>&rarr;</span>
-                <a href={breadcrumbHref} style={{ color: 'rgba(255,255,255,0.35)', textDecoration: 'none' }}>{breadcrumbLabel}</a>
-                <span style={{ margin: '0 8px' }}>&rarr;</span>
-                <span>{displayName}</span>
+                {!isTopLevel && (<>
+                  <span style={{ margin: '0 8px' }}>&rarr;</span>
+                  <a href={breadcrumbHref} style={{ color: isSelfReferencing ? 'rgba(255,255,255,0.60)' : 'rgba(255,255,255,0.35)', textDecoration: 'none' }}>{breadcrumbLabel}</a>
+                </>)}
+                {!isSelfReferencing && (<>
+                  <span style={{ margin: '0 8px' }}>&rarr;</span>
+                  <span>{displayName}</span>
+                </>)}
               </div>
               {/* Eyebrow */}
               <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
                 <span style={{ width: 36, height: 2, background: '#FF5722', display: 'inline-block' }} />
-                <span style={{ ...S.eyebrow, letterSpacing: '0.22em' }}>{appliance ? `${appliance.toUpperCase()} ${serviceWord.toUpperCase()}` : 'APPLIANCE REPAIR'}</span>
+                <span style={{ ...S.eyebrow, letterSpacing: '0.22em' }}>{appliance ? (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? appliance.toUpperCase() : `${appliance.toUpperCase()} ${serviceWord.toUpperCase()}`) : 'APPLIANCE REPAIR'}</span>
               </div>
               {/* H1 */}
               <h1 className="hero-main-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 46, color: '#FFFFFF', lineHeight: 1.12, maxWidth: 520, marginTop: 16 }}>{displayH1}</h1>

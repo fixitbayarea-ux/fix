@@ -294,8 +294,8 @@ const MaintenanceHub = () => {
       metaDescription="Preventive appliance maintenance in San Francisco, Peninsula & Marin County. $60 residential, $100 commercial diagnostic fee. Licensed technicians, 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
-      breadcrumbCategoryName="Home"
-      breadcrumbCategoryHref="/"
+      breadcrumbCategoryName="Maintenance"
+      breadcrumbCategoryHref="/maintenance"
       relatedServicesCategory="HIDDEN" // Hide Related Services section
       serviceDescription={{
         title: "Professional Preventive Maintenance Service",
