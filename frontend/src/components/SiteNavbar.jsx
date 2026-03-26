@@ -161,6 +161,7 @@ const SiteNavbar = () => {
   const servicesItems = dropdownData?.servicesItems || [];
   const maintenanceItems = dropdownData?.maintenanceItems || [];
   const citiesItems = dropdownData?.citiesItems || [];
+  const areasGrouped = dropdownData?.areasGrouped || [];
   const brandsItems = dropdownData?.brandsItems || [];
   const topBrandLinks = dropdownData?.topBrandLinks || {};
 
@@ -299,7 +300,7 @@ const SiteNavbar = () => {
               {citiesDropdownOpen && dropdownData && (
                 <Suspense fallback={<DropdownSkeleton columns={4} rows={6} />}>
                   <AreasDropdownPanel 
-                    citiesItems={citiesItems}
+                    areasGrouped={areasGrouped}
                     onClose={() => setCitiesDropdownOpen(false)}
                     onTrackClick={trackNavClick}
                     scrollToAnchor={scrollToAnchor}
@@ -707,58 +708,15 @@ const SiteNavbar = () => {
                 <ChevronDown className={`mob-acc-arrow w-4 h-4${mobileAreasOpen ? ' open' : ''}`} style={{ color:'#FF5722' }} />
               </button>
               {mobileAreasOpen && <div style={{ padding:'2px 0 4px', background:'rgba(255,255,255,0.02)' }}>
-                  <div style={{ padding:'4px 16px 1px 28px', fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.10em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase' }}>San Francisco</div>
-                  {[
-                    { name:'SF \u2014 All Areas', path:'/san-francisco-appliance-repair' },
-                    { name:'Sunset District', path:'/san-francisco/sunset-district-appliance-repair' },
-                    { name:'Mission District', path:'/san-francisco/mission-district-appliance-repair' },
-                    { name:'Pacific Heights', path:'/san-francisco/pacific-heights-appliance-repair' },
-                    { name:'Richmond District', path:'/san-francisco/richmond-district-appliance-repair' },
-                    { name:'SOMA', path:'/san-francisco/soma-appliance-repair' },
-                    { name:'Castro', path:'/san-francisco/castro-appliance-repair' },
-                    { name:'Noe Valley', path:'/san-francisco/noe-valley-appliance-repair' },
-                    { name:'Marina', path:'/san-francisco/marina-appliance-repair' },
-                    { name:'Nob Hill', path:'/san-francisco/nob-hill-appliance-repair' },
-                    { name:'North Beach', path:'/san-francisco/north-beach-appliance-repair' },
-                    { name:'Bernal Heights', path:'/san-francisco/bernal-heights-appliance-repair' },
-                    { name:'Potrero Hill', path:'/san-francisco/potrero-hill-appliance-repair' },
-                  ].map(item => (
-                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'block', padding:'5px 16px 5px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
-                      {item.name}
-                    </a>
-                  ))}
-                  <div style={{ padding:'6px 16px 1px 28px', fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.10em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase' }}>Peninsula</div>
-                  {[
-                    { name:'Daly City', path:'/daly-city-appliance-repair' },
-                    { name:'South San Francisco', path:'/south-san-francisco-appliance-repair' },
-                    { name:'San Bruno', path:'/san-bruno-appliance-repair' },
-                    { name:'Millbrae', path:'/millbrae-appliance-repair' },
-                    { name:'Pacifica', path:'/pacifica-appliance-repair' },
-                    { name:'Colma', path:'/colma-appliance-repair' },
-                    { name:'Brisbane', path:'/brisbane-appliance-repair' },
-                    { name:'Montara', path:'/montara-appliance-repair' },
-                  ].map(item => (
-                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'block', padding:'5px 16px 5px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
-                      {item.name}
-                    </a>
-                  ))}
-                  <div style={{ padding:'6px 16px 1px 28px', fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.10em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase' }}>Marin County</div>
-                  {[
-                    { name:'San Rafael', path:'/san-rafael-appliance-repair' },
-                    { name:'Novato', path:'/novato-appliance-repair' },
-                    { name:'Mill Valley', path:'/mill-valley-appliance-repair' },
-                    { name:'Sausalito', path:'/sausalito-appliance-repair' },
-                    { name:'Tiburon', path:'/tiburon-appliance-repair' },
-                    { name:'Corte Madera', path:'/corte-madera-appliance-repair' },
-                    { name:'Larkspur', path:'/larkspur-appliance-repair' },
-                    { name:'Fairfax', path:'/fairfax-appliance-repair' },
-                    { name:'San Anselmo', path:'/san-anselmo-appliance-repair' },
-                    { name:'Ross', path:'/ross-appliance-repair' },
-                    { name:'Greenbrae', path:'/greenbrae-appliance-repair' },
-                  ].map(item => (
-                    <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'block', padding:'5px 16px 5px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
-                      {item.name}
-                    </a>
+                  {areasGrouped.map((group) => (
+                    <React.Fragment key={group.region}>
+                      <p className="area-group-label" style={{ padding:'6px 16px 1px 28px', fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.10em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', marginTop:8, marginBottom:0 }}>{group.region}</p>
+                      {group.cities.map(item => (
+                        <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'block', padding:'5px 16px 5px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
+                          {item.name}
+                        </a>
+                      ))}
+                    </React.Fragment>
                   ))}
                   <a href="/service-areas" style={{ display:'flex', alignItems:'center', gap:8, padding:'6px 16px 6px 28px', color:'#FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:12, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
                     &#8594; All Service Areas
