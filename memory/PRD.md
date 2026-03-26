@@ -101,6 +101,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **Internal Linking**: Added 2-4 contextual service page links per blog post (refrigerator-repair, washer-repair, dryer-repair, dishwasher-repair, oven-repair, ice-maker-repair). Created `BlogCTA.js` component ("Get Expert Help — $60 Diagnostic — Book Online") and inserted into all 14 blog posts before Related Articles section.
 - **UI**: Fixed /services page mobile grid overflow — changed from 3-col (568px+) to 2-col on ≤600px. Cards use vertical icon layout on mobile for readability. No page overflow at 390px.
 - **BUG FIX**: Fixed duplicate "Home → Home" breadcrumb on /maintenance. Root cause: `breadcrumbCategoryName="Home"` in MaintenanceHub.js. Fixed to `"Maintenance"` with self-referencing detection in template. Also fixed "Maintenance Maintenance" duplication in H1/eyebrow by detecting when appliance name already contains serviceWord.
+- **PROMPT 01-07**: Mobile Hero CALL button differentiation, Hero Trust Strip visual box, Global brand rename "FixitBay" → "FixitBay LLC", Mobile Hero Stats 3-col grid with dividers, How It Works connector arrows, Homepage Blog section revamp with visual cards.
+- **PROMPT 08**: Mobile footer accordion optimization in `UnifiedFooter.js` — sections collapsed by default (max-height:0), smooth CSS transition, ChevronDown rotation, 0px gap between sections on mobile, border-top separators, reduced padding. Desktop 4-col grid preserved unchanged. Testing: 9/9 tests passed (iteration_106).
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
