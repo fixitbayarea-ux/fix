@@ -228,12 +228,15 @@ const ProfessionalLandingPage = () => {
         @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
         .stats-desktop-grid { display: grid; }
         @media (max-width: 1023px) {
-          .stats-desktop-grid { display: flex !important; flex-wrap: wrap; justify-content: center; gap: 16px; padding: 10px 16px; }
-          .stats-desktop-grid .stat-divider { display: none; }
+          .stats-desktop-grid { display: grid !important; grid-template-columns: 1fr 1px 1fr 1px 1fr; align-items: stretch; gap: 0; padding: 10px 16px; }
+          .stats-desktop-grid .stat-divider { display: block !important; width: 1px !important; background: rgba(0,0,0,0.1) !important; margin: 0 !important; align-self: stretch; }
           .stats-desktop-grid .stat-accent-bar { display: none; }
-          .stats-desktop-grid .stat-num { font-size: 28px !important; }
-          .stats-desktop-grid .stat-unit { font-size: 13px !important; }
-          .stats-desktop-grid .stat-title { font-size: 10px !important; }
+          .stats-desktop-grid > div:not(.stat-divider) { text-align: center !important; padding: 4px 8px !important; display: flex !important; flex-direction: column !important; align-items: center !important; gap: 2px !important; overflow: hidden; }
+          .stats-desktop-grid > div:not(.stat-divider) > div { align-items: center !important; }
+          .stats-desktop-grid > div:not(.stat-divider) > div > div:first-child { justify-content: center !important; flex-wrap: wrap; }
+          .stats-desktop-grid .stat-num { font-size: 22px !important; font-weight: 700; color: #0D1B2A; }
+          .stats-desktop-grid .stat-unit { font-size: 11px !important; text-transform: uppercase; letter-spacing: 0.5px; }
+          .stats-desktop-grid .stat-title { font-size: 9px !important; letter-spacing: 0.08em; }
           .stats-desktop-grid .stat-desc { display: none; }
         }
         .animate-fadeIn { animation: fadeIn 0.3s ease-out both; }
