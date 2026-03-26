@@ -233,12 +233,11 @@ const SiteNavbar = () => {
               loading="eager"
               fetchPriority="high"
               decoding="async"
-              className="rounded-full"
+              className="navbar-logo-img"
               style={{ 
                 display: 'block',
-                objectFit: 'cover',
-                width: 44,
-                height: 44,
+                objectFit: 'contain',
+                borderRadius: 4,
               }}
             />
             {/* Mobile: tagline */}
@@ -756,6 +755,7 @@ const SiteNavbar = () => {
         )}
       <style>{`
         :root { --navbar-height: 72px; }
+        .navbar-logo-img { width: 56px; height: 56px; }
         .mob-accordion-body {
           overflow: hidden;
           max-height: 0;
@@ -795,6 +795,7 @@ const SiteNavbar = () => {
           :root { --navbar-height: 60px; }
           .main-nav { height: 60px !important; padding: 0 16px !important; }
           .main-nav > div { height: 60px !important; }
+          .navbar-logo-img { width: 48px; height: 48px; }
           body { padding-bottom: 56px; }
           body.overflow-hidden { overflow: hidden !important; }
         }
