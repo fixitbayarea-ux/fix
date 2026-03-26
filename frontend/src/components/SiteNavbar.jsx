@@ -241,10 +241,10 @@ const SiteNavbar = () => {
                 height: 44,
               }}
             />
-            {/* Mobile: tagline — HIDDEN on mobile */}
-            <div className="flex sm:hidden flex-col leading-tight" style={{ display: 'none' }}>
-              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 16, color: '#FFFFFF' }}>FixitBay LLC</span>
-              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.50)' }}>Appliance Repair & Maintenance</span>
+            {/* Mobile: tagline */}
+            <div className="flex sm:hidden flex-col leading-tight">
+              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 14, color: '#FFFFFF' }}>FixitBay LLC</span>
+              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.75)' }}>Appliance Repair</span>
             </div>
             {/* Desktop: tagline */}
             <div className="hidden sm:flex flex-col leading-tight">
@@ -505,22 +505,21 @@ const SiteNavbar = () => {
               BOOK
             </a>
 
-            {/* Mobile Phone Button */}
+            {/* Mobile Phone Icon-only Button */}
             <a
               href={`tel:${PHONE_TEL}`}
               data-testid="navbar-mobile-phone"
               className="navbar-mobile-phone-link"
               style={{
-                display: 'flex', alignItems: 'center', gap: '5px',
-                minHeight: '44px',
-                color: '#FF5722', fontFamily: 'Montserrat, sans-serif',
-                fontWeight: 700, fontSize: '13px',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                minHeight: '44px', minWidth: '44px',
+                color: '#FF5722',
                 textDecoration: 'none',
-                whiteSpace: 'nowrap',
               }}
+              aria-label={`Call FixitBay LLC at ${PHONE_DISPLAY}`}
               onClick={() => trackNavClick('phone_mobile')}
             >
-              <Phone className="w-4 h-4" style={{ color: '#FF5722' }} /> {PHONE_DISPLAY}
+              <Phone className="w-5 h-5" style={{ color: '#FF5722' }} />
             </a>
 
             {/* Mobile Menu Button */}

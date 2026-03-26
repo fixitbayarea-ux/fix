@@ -106,6 +106,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **PROMPT 09**: Fixed mobile navbar overlay menu positioning bug. Root cause: `backdrop-filter:blur()` on `<nav>` created new containing block, breaking `position:fixed` for child elements. Fix: moved mobile menu to `createPortal(document.body)`, added `body.overflow-hidden` scroll lock via useEffect with cleanup, CSS variable `--navbar-height`. Testing: 12/12 tests passed (iteration_107).
 - **PROMPT 10**: Renamed "Maintenance Plans" → "Maintenance Services" in mobile nav accordion (`SiteNavbar.jsx`) and sitemap page (`SiteMapPage.js`). URLs unchanged.
 - **PROMPT 11**: Restructured Areas dropdown (desktop) and Service Areas accordion (mobile). Grouped cities by 3 regions: San Francisco (13), Peninsula (8), Marin County (11). Desktop: 3-column grid with orange uppercase region headers, column borders. Mobile: region labels (10px, uppercase, 0.3 opacity). Data consolidated in `navbarData.js` `areasGrouped` export. Testing: 100% passed (iteration_108).
+- **PROMPT 12**: Fixed mobile navbar brand text visibility bug — removed `style={{display:'none'}}` that overrode Tailwind `flex sm:hidden`. Brand now shows "FixitBay LLC" (14px/700) + "Appliance Repair" (11px/0.75 opacity). Phone replaced with icon-only (no text) to save space. Desktop unchanged.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
