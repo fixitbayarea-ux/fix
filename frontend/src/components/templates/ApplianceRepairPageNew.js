@@ -393,7 +393,7 @@ const ApplianceRepairPageNew = ({
     const cityBg = CITY_HERO_BG[citySlug] || '/background_new2.webp';
 
     return (
-      <div style={{ fontFamily: S.font }}>
+      <div className="city-page-wrap" style={{ fontFamily: S.font }}>
         <SEOMetaTags
           title={effectiveTitle}
           description={effectiveDescription || `Professional appliance repair in ${cityName}. Same-day service. Licensed technicians, 180-day warranty. Call (760) 543-5733.`}
@@ -710,6 +710,7 @@ const ApplianceRepairPageNew = ({
             .city-cta-row { flex-direction: column !important; align-items: stretch !important; gap: 12px !important; }
             .city-cta-book { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
             .city-cta-call { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
+            .city-page-wrap h2 { font-size: 22px !important; line-height: 1.3 !important; }
           }
           @media (max-width: 480px) {
           }
