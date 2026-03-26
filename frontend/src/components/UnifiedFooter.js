@@ -155,6 +155,8 @@ const UnifiedFooter = () => (
       <div style={{ maxWidth: 1440, margin: '0 auto', padding: '20px 32px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
         <p style={{ fontFamily: F, fontSize: 12, color: 'rgba(255,255,255,0.30)', fontWeight: 400 }}>&copy; 2026 FixitBay LLC. All rights reserved.</p>
         <a href="/privacy-policy" style={{ fontFamily: F, fontSize: 12, color: 'rgba(255,255,255,0.30)', fontWeight: 400, textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>Privacy Policy</a>
+        <span style={{ color: 'rgba(255,255,255,0.15)', fontSize: 12 }}>&middot;</span>
+        <a href="/terms" style={{ fontFamily: F, fontSize: 12, color: 'rgba(255,255,255,0.30)', fontWeight: 400, textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>Terms of Service</a>
       </div>
     </div>
 

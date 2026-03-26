@@ -98,6 +98,7 @@ const MieleApplianceRepairPage = lazy(() => import("./components/pages/brands/Mi
 const SubZeroApplianceRepairPage = lazy(() => import("./components/pages/brands/SubZeroApplianceRepairPage"));
 const WolfApplianceRepairPage = lazy(() => import("./components/pages/brands/WolfApplianceRepairPage"));
 const PrivacyPolicyPage = lazy(() => import("./components/pages/PrivacyPolicyPage"));
+const TermsPage = lazy(() => import("./components/pages/TermsPage"));
 const LLMInfoPage = lazy(() => import("./components/pages/LLMInfoPage"));
 const BookPage = lazy(() => import("./components/pages/BookPage"));
 const ThankYouBooking = lazy(() => import("./components/pages/ThankYouBooking"));
@@ -259,6 +260,7 @@ export default function App() {
         <Route path="/commercial-oven-repair" element={<CommercialOvenRepairPage />} />
         <Route path="/local-appliance-repair" element={<LocalApplianceRepairPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms" element={<TermsPage />} />
         <Route path="/llm-info" element={<LLMInfoPage />} />
         <Route path="/book" element={<BookPage />} />
 
