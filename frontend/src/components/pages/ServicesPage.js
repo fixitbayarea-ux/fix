@@ -154,7 +154,7 @@ const ServicesPage = () => {
         /* CARDS GRID */
         .sp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1100px;margin:0 auto}
         @media(max-width:900px){.sp-grid{grid-template-columns:repeat(2,1fr)}}
-        @media(max-width:600px){.sp-grid{grid-template-columns:1fr}}
+        @media(max-width:600px){.sp-grid{grid-template-columns:repeat(2,1fr)}.sp-card,.sp-card-dark{padding:14px;gap:8px;flex-direction:column;align-items:flex-start;overflow:hidden;min-width:0}.sp-card-icon{width:28px;height:28px;font-size:12px}.sp-card-title{font-size:13px}.sp-card-issues{font-size:11px;line-height:1.5}.sp-card-link{font-size:10px}}
 
         /* RESIDENTIAL / MAINTENANCE CARD */
         .sp-card{background:#fff;border:1px solid rgba(255,87,34,0.15);border-top:3px solid var(--accent);border-radius:4px;padding:22px 24px;display:flex;gap:14px;align-items:flex-start;text-decoration:none;transition:box-shadow 0.25s,border-top-color 0.25s}
