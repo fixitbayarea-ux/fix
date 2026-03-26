@@ -36,11 +36,7 @@ const HomeExploreLinks = () => (
             <a href="/marin-county-appliance-repair" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none', minHeight: 44 }}>Marin County Appliance Repair &rarr;</a>
           </div>
           <div style={{ marginTop: 18, borderTop: '1px solid #E5E2DD', paddingTop: 14 }}>
-            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', color: 'rgba(0,0,0,0.35)', textTransform: 'uppercase' }}>From the Blog</span>
-            <div className="flex flex-col" style={{ gap: 6, marginTop: 8 }}>
-              <a href="/blog/same-day-appliance-repair-bay-area" style={{ fontSize: 14, fontWeight: 600, color: '#0D1B2A', textDecoration: 'none' }}>Same-Day Appliance Repair Guide &rarr;</a>
-              <a href="/blog/appliance-repair-marin-county" style={{ fontSize: 14, fontWeight: 600, color: '#0D1B2A', textDecoration: 'none' }}>Appliance Repair in Marin County &rarr;</a>
-            </div>
+            <a href="/blog" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 15, fontWeight: 700, color: '#FF5722', textDecoration: 'none', minHeight: 44 }}>Visit Our Blog &rarr;</a>
           </div>
         </div>
       </div>

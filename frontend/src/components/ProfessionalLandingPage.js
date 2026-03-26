@@ -9,6 +9,7 @@ import HomeServicesGrid from './sections/HomeServicesGrid';
 import HomePricing from './sections/HomePricing';
 import HomeReviews from './sections/HomeReviews';
 import HomeExploreLinks from './sections/HomeExploreLinks';
+import HomeBlogSection from './sections/HomeBlogSection';
 import FAQAccordion from './sections/FAQAccordion';
 
 const UnifiedFooter = lazy(() => import('./UnifiedFooter'));
@@ -227,6 +228,7 @@ const ProfessionalLandingPage = () => {
       </div>
 
       <FAQAccordion faqs={faqs} testIdPrefix="faq" />
+      <HomeBlogSection />
       <HomeExploreLinks />
 
       {/* Utility styles */}
