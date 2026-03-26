@@ -110,7 +110,7 @@ const HomeHero = () => {
                 <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" data-testid="hero-mobile-book-btn" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', minHeight: 56, borderRadius: 4, background: '#FF5722', color: '#FFFFFF', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 16, textTransform: 'uppercase', letterSpacing: '0.04em', textDecoration: 'none' }} aria-label="opens in new tab">
                   BOOK REPAIR ONLINE
                 </a>
-                <a href="tel:+17605435733" data-testid="hero-mobile-call-btn" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', minHeight: 56, borderRadius: 4, background: '#E04B25', color: '#FFFFFF', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 16, textDecoration: 'none' }}>
+                <a href="tel:+17605435733" data-testid="hero-mobile-call-btn" className="hero-m-call" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', minHeight: 56, borderRadius: 4, background: 'transparent', border: '1px solid rgba(255,255,255,0.4)', color: '#FFFFFF', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 16, textDecoration: 'none' }}>
                   CALL (760) 543-5733
                 </a>
               </div>
@@ -228,6 +228,7 @@ const HomeHero = () => {
           .hero-d { display: none !important; }
           .hero-d-flex { display: none !important; }
           .hero-m { display: block !important; }
+          .hero-m-call:active { background: rgba(255,255,255,0.1) !important; }
         }
       `}</style>
     </section>
