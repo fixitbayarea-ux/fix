@@ -1,6 +1,6 @@
 # 🔍 КОМПЛЕКСНЫЙ АУДИТ САЙТА FIXITBAY
 **Дата:** 24 января 2026  
-**URL:** https://wcag-enhance.preview.emergentagent.com
+**URL:** https://fixitbay-contact.preview.emergentagent.com
 
 ---
 

@@ -53,7 +53,7 @@ const ContactPage = () => {
         "@type": "LocalBusiness",
         "name": "FixitBay LLC",
         "telephone": "+17605435733",
-        "email": "fixitbayarea@gmail.com",
+        "email": "info@fixitbay.net",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "1549 Franklin Street, Unit A",
@@ -96,7 +96,7 @@ const ContactPage = () => {
         <style>{`
           .contact-h1{font-size:48px !important}
           @media(max-width:767px){
-            .contact-h1{font-size:28px !important}
+            .contact-h1{font-size:30px !important}
             .qbar-row{flex-direction:column !important}
             .qbar-item{border-right:none !important;padding:12px 0 !important;border-bottom:1px solid rgba(255,255,255,0.2)}
             .qbar-item:last-child{border-bottom:none}
@@ -164,7 +164,7 @@ const ContactPage = () => {
             </div>
             <div className="qbar-item" style={{ padding: '0 40px', borderRight: '1px solid rgba(255,255,255,0.25)', textAlign: 'center' }}>
               <div style={{ fontFamily: F, fontWeight: 700, fontSize: 11, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: 4 }}>EMAIL US</div>
-              <a href="mailto:fixitbayarea@gmail.com" data-testid="qbar-email" style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', textDecoration: 'none' }}>fixitbayarea@gmail.com</a>
+              <a href="mailto:info@fixitbay.net" data-testid="qbar-email" style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', textDecoration: 'none' }}>info@fixitbay.net</a>
             </div>
             <div className="qbar-item" style={{ padding: '0 40px', textAlign: 'center' }}>
               <div style={{ fontFamily: F, fontWeight: 700, fontSize: 11, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: 4 }}>HOURS</div>
@@ -192,8 +192,7 @@ const ContactPage = () => {
                 {/* Email */}
                 <div className="info-card" data-testid="card-email" style={{ background: '#fff', borderRadius: 4, padding: '24px 20px', border: '1px solid rgba(255,87,34,0.15)', borderLeft: '3px solid #FF5722', transition: 'box-shadow 0.2s' }}>
                   <div style={EYE}>EMAIL</div>
-                  <a href="mailto:fixitbayarea@gmail.com" style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#FF5722', textDecoration: 'none', display: 'block', marginBottom: 4 }}>fixitbayarea@gmail.com</a>
-                  <a href="mailto:info@fixitbay.net" style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568', textDecoration: 'none', display: 'block', marginBottom: 6 }}>info@fixitbay.net</a>
+                  <a href="mailto:info@fixitbay.net" style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#FF5722', textDecoration: 'none', display: 'block', marginBottom: 6 }}>info@fixitbay.net</a>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>We reply within 2 hours</p>
                 </div>
                 {/* Address */}
@@ -236,6 +235,20 @@ const ContactPage = () => {
                       <span style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568' }}>{area}</span>
                     </div>
                   ))}
+                </div>
+                <div style={{ height: 1, background: 'rgba(255,87,34,0.15)', margin: '20px 0' }} />
+                <div style={EYE}>SERVICE MAP</div>
+                <div data-testid="service-area-map" style={{ borderRadius: 4, overflow: 'hidden', marginBottom: 16, border: '1px solid rgba(255,87,34,0.15)' }}>
+                  <iframe
+                    title="FixitBay Service Area — San Francisco Bay Area"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d201879.72384241942!2d-122.47858865!3d37.7577627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000000"
+                    width="100%"
+                    height="200"
+                    style={{ border: 0, display: 'block' }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
                 <div style={{ height: 1, background: 'rgba(255,87,34,0.15)', margin: '20px 0' }} />
                 <div style={EYE}>FIND US ONLINE</div>
