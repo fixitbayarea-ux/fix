@@ -4,6 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
+import BlogByline from './BlogByline';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -92,7 +93,7 @@ const WasherErrorCodes = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Common Washer Error Codes & What They Mean", "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-02-10", "dateModified": "2026-02-10", "url": "https://fixitbay.net/blog/washer-error-codes" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Common Washer Error Codes & What They Mean", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-02-10", "dateModified": "2026-02-10", "url": "https://fixitbay.net/blog/washer-error-codes" } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Washer Error Codes", "item": "https://fixitbay.net/blog/washer-error-codes" } ] } }
   ], []);
@@ -137,9 +138,8 @@ const WasherErrorCodes = () => {
             </nav>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 20, alignItems: 'center', flexWrap: 'wrap', marginBottom: 16 }}>
               <span style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 11, padding: '4px 12px', borderRadius: 3 }}>Washer</span>
-              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>January 10, 2026</span>
-              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>8 min read</span>
             </div>
+            <BlogByline dateISO="2026-01-10" dateFormatted="January 10, 2026" readTime="8 min" />
             <h1 className="wec-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 760, margin: '0 auto 16px' }}>
               Common Washer Error Codes &amp; What They Mean — Samsung, LG, Whirlpool, GE, Bosch Guide
             </h1>

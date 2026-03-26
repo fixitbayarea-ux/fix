@@ -4,6 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
+import BlogByline from './BlogByline';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -87,7 +88,7 @@ const GasSmellFromStove = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Smell Gas From Your Stove? Do This Immediately", "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-03-01", "dateModified": "2026-03-01", "url": "https://fixitbay.net/blog/gas-smell-from-stove" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Smell Gas From Your Stove? Do This Immediately", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-03-01", "dateModified": "2026-03-01", "url": "https://fixitbay.net/blog/gas-smell-from-stove" } },
     { id: 'howto-schema', data: { "@context": "https://schema.org", "@type": "HowTo", "name": "What to Do If You Smell Gas From Your Stove", "description": "Emergency protocol for gas leaks from kitchen appliances", "step": EMERGENCY_STEPS.map((s, i) => ({ "@type": "HowToStep", "position": i + 1, "name": s.replace(/^DO NOT /, '').substring(0, 40), "text": s })) } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Gas Smell From Stove", "item": "https://fixitbay.net/blog/gas-smell-from-stove" }] } }
@@ -132,9 +133,8 @@ const GasSmellFromStove = () => {
             </nav>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 20, alignItems: 'center', flexWrap: 'wrap', marginBottom: 16 }}>
               <span style={{ background: '#C0392B', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 11, padding: '4px 12px', borderRadius: 3 }}>Safety</span>
-              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>December 25, 2024</span>
-              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>4 min read</span>
             </div>
+            <BlogByline dateISO="2024-12-25" dateFormatted="December 25, 2024" readTime="4 min" />
             <h1 className="gas-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 720, margin: '0 auto 16px' }}>
               Smell Gas From Your Stove? Do This Immediately
             </h1>

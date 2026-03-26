@@ -5,10 +5,11 @@ import Breadcrumbs from '../../Breadcrumbs';
 import BlogRelatedLinks from '../../shared/BlogRelatedLinks';
 import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
+import BlogByline from './BlogByline';
 
 const DishwasherMaintenance = () => {
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to Maintain Your Dishwasher for Longer Life", "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-18", "dateModified": "2026-01-18", "url": "https://fixitbay.net/blog/dishwasher-maintenance" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to Maintain Your Dishwasher for Longer Life", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-18", "dateModified": "2026-01-18", "url": "https://fixitbay.net/blog/dishwasher-maintenance" } },
   ], []);
   useSchemas(schemas);
 
@@ -50,13 +51,8 @@ const DishwasherMaintenance = () => {
               <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold" style={{ background: '#C0362C', color: 'white' }}>
                 <Tag className="w-4 h-4 mr-1" /> Dishwasher
               </span>
-              <span className="text-white/80 text-sm flex items-center gap-1">
-                <Calendar className="w-4 h-4" /> January 18, 2026
-              </span>
-              <span className="text-white/80 text-sm flex items-center gap-1">
-                <Clock className="w-4 h-4" /> 7 min read
-              </span>
             </div>
+            <BlogByline dateISO="2026-01-18" dateFormatted="January 18, 2026" readTime="7 min" />
 
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               How to Maintain Your Dishwasher for Longer Life

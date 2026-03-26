@@ -4,6 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
+import BlogByline from './BlogByline';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -86,7 +87,7 @@ const DishwasherNotDraining = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Dishwasher Not Draining? 7 Quick Fixes", "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-02-20", "dateModified": "2026-02-20", "url": "https://fixitbay.net/blog/dishwasher-not-draining" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Dishwasher Not Draining? 7 Quick Fixes", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-02-20", "dateModified": "2026-02-20", "url": "https://fixitbay.net/blog/dishwasher-not-draining" } },
     { id: 'howto-schema', data: { "@context": "https://schema.org", "@type": "HowTo", "name": "How to Fix a Dishwasher That Won't Drain", "description": "7 fixes for dishwasher drainage problems, ordered by likelihood", "totalTime": "PT10M", "step": [
       { "@type": "HowToStep", "position": 1, "name": "Clean the dishwasher filter", "text": "Remove and rinse the cylindrical filter at the bottom of the tub under hot water with a soft brush." },
       { "@type": "HowToStep", "position": 2, "name": "Check the drain hose for kinks", "text": "Inspect the drain hose for bends, kinks, or visible damage. Ensure it forms a high loop secured to the underside of the counter." },
@@ -144,9 +145,8 @@ const DishwasherNotDraining = () => {
             </nav>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 20, alignItems: 'center', flexWrap: 'wrap', marginBottom: 16 }}>
               <span style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 11, padding: '4px 12px', borderRadius: 3 }}>Dishwasher</span>
-              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>December 20, 2024</span>
-              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>6 min read</span>
             </div>
+            <BlogByline dateISO="2024-12-20" dateFormatted="December 20, 2024" readTime="6 min" />
             <h1 className="dnd-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 720, margin: '0 auto 16px' }}>
               Dishwasher Not Draining? 7 Quick Fixes You Can Try Right Now
             </h1>

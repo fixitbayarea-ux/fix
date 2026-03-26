@@ -4,6 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
+import BlogByline from './BlogByline';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -71,7 +72,7 @@ const DryerNotHeating = () => {
       data: {
         "@context": "https://schema.org", "@type": "BlogPosting",
         "headline": "Dryer Not Heating? 7 Causes & Fixes | FixitBay SF",
-        "author": { "@type": "Person", "name": "Andrei", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
+        "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
         "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/navbar-logo-new-112.webp" } },
         "datePublished": "2026-03-23",
         "dateModified": "2026-03-23",
@@ -155,9 +156,8 @@ const DryerNotHeating = () => {
             </nav>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 20, alignItems: 'center', flexWrap: 'wrap', marginBottom: 16 }}>
               <span style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 11, padding: '4px 12px', borderRadius: 3 }}>Dryer</span>
-              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>March 23, 2026</span>
-              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>8 min read</span>
             </div>
+            <BlogByline dateISO="2026-03-23" dateFormatted="March 23, 2026" readTime="8 min" />
             <h1 className="art-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 720, margin: '0 auto 16px' }}>
               Dryer Not Heating? 7 Common Causes for Gas & Electric Dryers
             </h1>
