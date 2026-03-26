@@ -40,7 +40,7 @@ const OvenRangeMaintenance = () => {
     "serviceType": "Oven, Range & Stove Maintenance",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     }
   };

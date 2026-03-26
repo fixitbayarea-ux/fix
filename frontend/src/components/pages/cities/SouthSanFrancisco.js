@@ -36,7 +36,7 @@ const SouthSanFrancisco = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair South San Francisco | Same-Day | FixitBay"
+        pageTitle="Appliance Repair South San Francisco | Same-Day | FixitBay LLC"
         metaDescription="Professional appliance repair in South San Francisco. Same-day service for homes and businesses. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

@@ -36,7 +36,7 @@ const DalyCity = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair Daly City | Same-Day | FixitBay"
+        pageTitle="Appliance Repair Daly City | Same-Day | FixitBay LLC"
         metaDescription="Professional appliance repair in Daly City. Same-day service in Westlake, Serramonte & all neighborhoods. $60 diagnostic applied to repair. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

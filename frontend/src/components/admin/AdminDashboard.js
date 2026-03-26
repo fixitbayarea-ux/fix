@@ -173,7 +173,7 @@ const AdminDashboard = () => {
                 className="w-10 h-10 rounded-full"
               />
               <div>
-                <h1 className="text-xl font-bold text-gray-900">FixitBay Admin</h1>
+                <h1 className="text-xl font-bold text-gray-900">FixitBay LLC Admin</h1>
                 <p className="text-sm text-gray-500">Management Dashboard</p>
               </div>
             </div>

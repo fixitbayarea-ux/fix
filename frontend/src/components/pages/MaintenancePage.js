@@ -116,11 +116,11 @@ const MaintenancePage = ({ appliance, content }) => {
               </ul>
             </div>
 
-            {/* When to Call FixitBay */}
+            {/* When to Call FixitBay LLC */}
             <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 border-2 border-red-300">
               <h2 className="text-2xl font-bold mb-6 flex items-center gap-3" style={{ color: '#1A3B5D' }}>
                 <Phone className="w-8 h-8" style={{ color: '#C0362C' }} />
-                When to Call FixitBay
+                When to Call FixitBay LLC
               </h2>
               <ul className="space-y-3">
                 {whenToCall.map((item, i) => (

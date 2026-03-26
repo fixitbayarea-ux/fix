@@ -6,7 +6,7 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
     "@type": "LocalBusiness",
     "@id": "https://fixitbay.net/#organization",
     "name": "FixitBay LLC",
-    "alternateName": "FixitBay Appliance Repair",
+    "alternateName": "FixitBay LLC Appliance Repair",
     "description": "Professional appliance repair services in San Francisco Bay Area. Licensed & insured technicians providing same-day service. Service-area business - we come to you.",
     "url": "https://fixitbay.net",
     "telephone": "+17605435733",
@@ -101,7 +101,7 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
       "@type": "Review",
       "author": { "@type": "Person", "name": "Gayle Rabbitt" },
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "reviewBody": "Andrei was excellent. He explained and checked everything. I highly recommend him and FixitBay!",
+      "reviewBody": "Andrei was excellent. He explained and checked everything. I highly recommend him and FixitBay LLC!",
       "publisher": { "@type": "Organization", "name": "Google" }
     },
     {

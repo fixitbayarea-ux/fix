@@ -62,7 +62,7 @@ const DryerRepairPage = () => {
     "serviceType": "Dryer Repair",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     },
     "areaServed": SERVICE_CITIES_SCHEMA
@@ -73,8 +73,8 @@ const DryerRepairPage = () => {
       <MobileServiceLanding
         appliance="Dryer"
         pageSlug="dryer-repair"
-        pageTitle="Dryer Repair Bay Area | Same-Day Service | FixitBay"
-        metaDescription="Dryer repair in SF & Bay Area. Gas and electric. Not heating, not spinning. $60 diagnostic applied to repair. Call FixitBay."
+        pageTitle="Dryer Repair Bay Area | Same-Day Service | FixitBay LLC"
+        metaDescription="Dryer repair in SF & Bay Area. Gas and electric. Not heating, not spinning. $60 diagnostic applied to repair. Call FixitBay LLC."
         heroTitle={<>Expert Dryer<br />Repair. Bay Area.</>}
         heroImage="/images/technicians/dryer-tech.jpg"
         heroImageAlt="FixitBay technician repairing a dryer in a Bay Area home"
@@ -114,8 +114,8 @@ const DryerRepairPage = () => {
         serviceSchema={serviceSchema}
         appliance="Dryer"
         cmsSlug="dryer-repair"
-        pageTitle="Dryer Repair Bay Area | Same-Day Service | FixitBay"
-        metaDescription="Dryer repair in SF & Bay Area. Gas and electric. Not heating, not spinning. $60 diagnostic applied to repair. Call FixitBay."
+        pageTitle="Dryer Repair Bay Area | Same-Day Service | FixitBay LLC"
+        metaDescription="Dryer repair in SF & Bay Area. Gas and electric. Not heating, not spinning. $60 diagnostic applied to repair. Call FixitBay LLC."
         heroImage="/images/technicians/dryer-tech.jpg"
         heroImageAlt="FixitBay technician repairing a dryer in a Bay Area home"
         heroImagePosition="60% top"
@@ -124,7 +124,7 @@ const DryerRepairPage = () => {
         serviceDescription={{
           title: "Professional Dryer Repair Across the Bay Area",
           paragraphs: [
-            <>When your dryer stops heating, won't start, or makes loud noises, FixitBay provides expert repair service across the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most dryer issues on the same visit. We charge a straightforward <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—honest pricing, every time.</>,
+            <>When your dryer stops heating, won't start, or makes loud noises, FixitBay LLC provides expert repair service across the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most dryer issues on the same visit. We charge a straightforward <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—honest pricing, every time.</>,
             <>Our dryer repair process includes a complete inspection of the heating element, thermal fuse, thermostat, drum belt, motor, control board, and vent system. We test all cycles, check for airflow restrictions, and identify the root cause of issues like no heat, failure to start, excessive noise, or long dry times. Whether you have a gas or electric dryer, front-load or top-load, we have the skills to restore it.</>,
             <>We service all major dryer brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like heating elements, belts, and thermal fuses, enabling same-day repairs in most cases. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From apartments to single-family homes, we keep your laundry moving.</>,
             <><strong>Looking for dryer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-dryer-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Dryer Repair</a> page for local details and availability.</>

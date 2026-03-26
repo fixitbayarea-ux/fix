@@ -36,7 +36,7 @@ const MillValley = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair Mill Valley | Same/Next-Day | FixitBay"
+        pageTitle="Appliance Repair Mill Valley | Same/Next-Day | FixitBay LLC"
         metaDescription="Same/next-day appliance repair in Mill Valley, Tamalpais Valley, and Strawberry. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

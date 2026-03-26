@@ -14,10 +14,10 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: "Why is my dryer not heating but still spinning?", a: "The most common cause is a blown thermal fuse \u2014 a safety device that trips when the dryer overheats, usually from a clogged vent. The dryer will tumble normally but produce no heat. For electric dryers, also check your breaker panel \u2014 a tripped 240V breaker will allow tumbling but not heating." },
-  { q: "How much does dryer repair cost in San Francisco?", a: "Most dryer repairs cost $150\u2013$300 after the diagnostic fee. FixitBay charges a $60 diagnostic applied toward repair. Thermal fuse replacement starts from $150. Heating element replacement ranges from $180\u2013$280. Gas valve solenoid repair is typically $200\u2013$260." },
+  { q: "How much does dryer repair cost in San Francisco?", a: "Most dryer repairs cost $150\u2013$300 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic applied toward repair. Thermal fuse replacement starts from $150. Heating element replacement ranges from $180\u2013$280. Gas valve solenoid repair is typically $200\u2013$260." },
   { q: "Should I repair or replace a dryer that's not heating?", a: "If your dryer is under 8 years old, repair is almost always worth it \u2014 most heating issues cost $150\u2013$280 to fix. For dryers over 12 years old where the motor or control board has failed ($300+ repair), replacement often makes more sense." },
   { q: "Is a gas dryer not heating dangerous?", a: "A gas dryer that isn\u2019t heating is not immediately dangerous \u2014 if the igniter isn\u2019t lighting, gas typically doesn\u2019t flow. However, if you smell gas near the dryer at any time, turn off the gas valve, open windows, and call your gas company immediately. Don\u2019t use the dryer until it\u2019s been inspected." },
-  { q: "How long does dryer repair take?", a: "Most dryer repairs take 45 minutes to 1.5 hours. Thermal fuses, heating elements, and igniters are common parts that our technician carries on the truck. Gas valve solenoids and control boards may occasionally require ordering. FixitBay offers same-day and next-day appointments Monday through Saturday." },
+  { q: "How long does dryer repair take?", a: "Most dryer repairs take 45 minutes to 1.5 hours. Thermal fuses, heating elements, and igniters are common parts that our technician carries on the truck. Gas valve solenoids and control boards may occasionally require ordering. FixitBay LLC offers same-day and next-day appointments Monday through Saturday." },
 ];
 
 const TOC = [
@@ -72,7 +72,7 @@ const DryerNotHeating = () => {
       id: 'article-schema',
       data: {
         "@context": "https://schema.org", "@type": "BlogPosting",
-        "headline": "Dryer Not Heating? 7 Causes & Fixes | FixitBay SF",
+        "headline": "Dryer Not Heating? 7 Causes & Fixes | FixitBay LLC SF",
         "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
         "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/navbar-logo-new-112.webp" } },
         "datePublished": "2026-03-23",
@@ -118,7 +118,7 @@ const DryerNotHeating = () => {
   return (
     <>
       <SEOMetaTags
-        title="Dryer Not Heating? 7 Causes & Fixes | FixitBay SF"
+        title="Dryer Not Heating? 7 Causes & Fixes | FixitBay LLC SF"
         description="Dryer not heating? 7 common causes for gas & electric dryers. SF Bay Area guide with DIY checks + when to call a pro. From $235 at FixitBay LLC."
         canonical="https://fixitbay.net/blog/dryer-not-heating"
         ogType="article"
@@ -302,7 +302,7 @@ const DryerNotHeating = () => {
                   </div>
                 ))}
                 <p style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#1A1A1A', marginTop: 16 }}>
-                  If none of these solve it &rarr; call FixitBay: <a href="tel:7605435733" style={{ color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
+                  If none of these solve it &rarr; call FixitBay LLC: <a href="tel:7605435733" style={{ color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
                 </p>
               </div>
 
@@ -326,7 +326,7 @@ const DryerNotHeating = () => {
                   </tbody>
                 </table>
               </div>
-              <p style={P}>FixitBay <a href="/dryer-repair" style={{ color: '#C0362C', fontWeight: 600 }}>dryer repair</a> starts from $235 after $60 diagnostic. The $60 diagnostic fee is fully applied toward your repair cost.</p>
+              <p style={P}>FixitBay LLC <a href="/dryer-repair" style={{ color: '#C0362C', fontWeight: 600 }}>dryer repair</a> starts from $235 after $60 diagnostic. The $60 diagnostic fee is fully applied toward your repair cost.</p>
 
               {/* ── Andrei's Field Note ── */}
               <h2 id="field-note" style={H2S}>Andrei's Field Note</h2>

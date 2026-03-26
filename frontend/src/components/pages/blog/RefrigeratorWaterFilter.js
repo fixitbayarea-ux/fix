@@ -59,7 +59,7 @@ const CHECKLIST = [
 const FAQ_ITEMS = [
   { q: 'What happens if I don\'t change my refrigerator water filter?', a: 'An overdue filter becomes a breeding ground for bacteria and stops removing contaminants. You\'ll notice reduced water flow, bad-tasting water, and smaller ice cubes. The filter media saturates and can no longer capture chlorine, lead, or sediment. Beyond water quality, a clogged filter strains the water inlet valve and ice maker motor, potentially causing expensive repairs.' },
   { q: 'Can I run my refrigerator without a water filter?', a: 'Most refrigerators will dispense water and make ice without a filter installed if you insert a bypass plug (usually included with the fridge). However, you\'ll be drinking unfiltered tap water. If your Bay Area tap water has high mineral content or you\'re on older plumbing, we recommend always keeping a working filter installed.' },
-  { q: 'Why is my water flow still slow after replacing the filter?', a: 'If slow flow continues after a new filter, the problem is likely elsewhere\u2014most often a failing water inlet valve or kinked water supply line. The water inlet valve is a solenoid valve that opens to allow water flow; they wear out after several years. FixitBay technicians can diagnose and replace water inlet valves same-day. Call (760) 543-5733.' },
+  { q: 'Why is my water flow still slow after replacing the filter?', a: 'If slow flow continues after a new filter, the problem is likely elsewhere\u2014most often a failing water inlet valve or kinked water supply line. The water inlet valve is a solenoid valve that opens to allow water flow; they wear out after several years. FixitBay LLC technicians can diagnose and replace water inlet valves same-day. Call (760) 543-5733.' },
   { q: 'Are aftermarket refrigerator filters safe?', a: 'Yes, if they are NSF/ANSI 42 and 53 certified. This certification means the filter meets federal drinking water standards for contaminant reduction. Avoid uncertified cheap filters from unknown brands\u2014they may not filter effectively and can leak. When in doubt, OEM filters guarantee fit and performance.' },
   { q: 'My refrigerator doesn\'t have a filter indicator. How do I know when to change it?', a: 'Set a calendar reminder every 6 months from the day you install each filter\u2014write the date on the filter itself with a permanent marker. Watch for signs: slow dispenser flow, smaller ice cubes, any change in taste or smell. If your household uses more than 1-2 gallons of water per day, consider changing every 4-5 months instead of waiting for 6.' },
 ];
@@ -86,7 +86,7 @@ const RefrigeratorWaterFilter = () => {
   return (
     <>
       <SEOMetaTags
-        title="When to Change Your Refrigerator Water Filter | FixitBay"
+        title="When to Change Your Refrigerator Water Filter | FixitBay LLC"
         description="How often to change your refrigerator water filter by brand: LG, Samsung, GE, Whirlpool, Frigidaire. 5-minute DIY replacement steps."
         canonical="https://fixitbay.net/blog/refrigerator-water-filter"
         ogType="article"

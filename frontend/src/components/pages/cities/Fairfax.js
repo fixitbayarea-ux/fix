@@ -36,7 +36,7 @@ const Fairfax = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair Fairfax | Same-Day Service | FixitBay"
+        pageTitle="Appliance Repair Fairfax | Same-Day Service | FixitBay LLC"
         metaDescription="Professional appliance repair in Fairfax. Same-day service throughout West Marin gateway. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

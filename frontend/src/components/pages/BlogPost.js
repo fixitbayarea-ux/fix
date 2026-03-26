@@ -51,7 +51,7 @@ const BlogPost = () => {
         </ul>
 
         <h2>When to Call a Professional</h2>
-        <p>Call FixitBay if you experience:</p>
+        <p>Call FixitBay LLC if you experience:</p>
         <ul>
           <li>Compressor won't start or makes unusual noises</li>
           <li>Refrigerant leak (you'll see frost buildup or hear hissing)</li>
@@ -354,7 +354,7 @@ const BlogPost = () => {
         </ul>
 
         <h3>When to Call a Professional</h3>
-        <p>Contact FixitBay if:</p>
+        <p>Contact FixitBay LLC if:</p>
         <ul>
           <li>Cleaning the vent doesn't improve drying time</li>
           <li>Dryer doesn't heat at all</li>
@@ -480,7 +480,7 @@ const BlogPost = () => {
 
   return (
     <>
-      <SEOMetaTags title={`${article.title} | FixitBay Blog`} description={article.metaDescription} canonical={`https://fixitbay.net/blog/${slug}`} />
+      <SEOMetaTags title={`${article.title} | FixitBay LLC Blog`} description={article.metaDescription} canonical={`https://fixitbay.net/blog/${slug}`} />
 
       <article className="min-h-screen bg-gray-50" style={{ paddingTop: '80px' }}>
         {/* Header */}

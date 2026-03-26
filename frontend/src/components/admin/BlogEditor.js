@@ -6,7 +6,7 @@ const BlogEditor = ({ post, onClose, onSave, backendURL }) => {
   const [form, setForm] = useState({
     title: post?.title || '',
     slug: post?.slug || '',
-    author: post?.author || 'FixitBay Team',
+    author: post?.author || 'FixitBay LLC Team',
     excerpt: post?.excerpt || '',
     content: post?.content || '',
     categories: (post?.categories || []).join(', '),

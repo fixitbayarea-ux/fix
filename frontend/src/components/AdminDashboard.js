@@ -350,7 +350,7 @@ const AdminDashboard = ({ onLogout }) => {
               />
               <div>
                 <h1 className="text-xl font-bold" style={{ color: '#1A3B5D' }}>
-                  FixitBay Admin
+                  FixitBay LLC Admin
                 </h1>
                 <p className="text-sm text-gray-600">Welcome, {adminEmail}</p>
               </div>

@@ -29,7 +29,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Emergency Commercial Refrigeration Repair in San Francisco',
   paragraphs: [
-    <>When your commercial refrigerator fails, every minute counts. Food inventory worth thousands of dollars is at risk, and health code violations can shut down your business. FixitBay provides <strong>emergency same-day commercial refrigeration repair</strong> for restaurants, grocery stores, delis, hotels, and commercial kitchens throughout San Francisco, the Peninsula, and Marin County.</>,
+    <>When your commercial refrigerator fails, every minute counts. Food inventory worth thousands of dollars is at risk, and health code violations can shut down your business. FixitBay LLC provides <strong>emergency same-day commercial refrigeration repair</strong> for restaurants, grocery stores, delis, hotels, and commercial kitchens throughout San Francisco, the Peninsula, and Marin County.</>,
     <>Our licensed technician arrives with diagnostic equipment and common replacement parts for walk-in coolers, reach-in refrigerators, prep tables, display cases, and bar refrigeration. We charge a <strong>$100 diagnostic fee</strong> (credited toward your repair) and provide an upfront written estimate before any work begins.</>,
     <>From compressor replacements and refrigerant recharges to thermostat calibration and door gasket replacements, we handle the full spectrum of commercial refrigeration repair. Every job includes our <strong>180-day warranty on parts and labor</strong>, giving you confidence that the repair will last.</>,
   ],
@@ -99,11 +99,11 @@ const UniqueContent = () => (
       </div>
     </section>
 
-    {/* ── Why Restaurants Trust FixitBay ── */}
+    {/* ── Why Restaurants Trust FixitBay LLC ── */}
     <section style={{ background: '#0D1B2A', padding: '70px 0' }}>
       <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px' }}>
         <div style={{ fontFamily: F, fontWeight: 700, fontSize: 11, letterSpacing: '0.14em', color: '#FF5722', textTransform: 'uppercase', marginBottom: 10 }}>WHY CHOOSE US</div>
-        <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#FFFFFF', marginBottom: 24, lineHeight: 1.2 }}>Why Restaurants Trust FixitBay</h2>
+        <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#FFFFFF', marginBottom: 24, lineHeight: 1.2 }}>Why Restaurants Trust FixitBay LLC</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}>
           {[
             { title: 'Emergency Same-Day Response', text: 'We understand that a broken walk-in cooler means thousands of dollars in spoiling inventory. San Francisco restaurants call us because we prioritize commercial emergencies and typically arrive within 2-4 hours.' },
@@ -181,7 +181,7 @@ const MobilePage = () => (
       "@context": "https://schema.org",
       "@type": "Service",
       "serviceType": "Commercial Refrigerator Repair",
-      "provider": { "@type": "LocalBusiness", "name": "FixitBay", "telephone": PHONE_DISPLAY },
+      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": PHONE_DISPLAY },
     }}
   />
 );

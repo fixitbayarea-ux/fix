@@ -89,7 +89,7 @@ const TermsPage = () => {
             {/* Main content */}
             <div style={{ background: '#fff', borderRadius: 4, padding: '40px 36px', border: '1px solid rgba(255,87,34,0.1)' }}>
               <p style={P}>
-                These Terms of Service ("Terms") govern your use of the services provided by <span style={B}>FixitBay LLC</span> ("FixitBay," "we," "us," or "our"), a California limited liability company. By scheduling a repair, contacting us, or using our website, you agree to be bound by these Terms.
+                These Terms of Service ("Terms") govern your use of the services provided by <span style={B}>FixitBay LLC</span> ("FixitBay LLC," "we," "us," or "our"), a California limited liability company. By scheduling a repair, contacting us, or using our website, you agree to be bound by these Terms.
               </p>
 
               <div style={{ height: 1, background: 'rgba(0,0,0,0.07)', margin: '32px 0' }} />
@@ -109,7 +109,7 @@ const TermsPage = () => {
                   <Li>Garbage disposals</Li>
                 </div>
                 <p style={{ ...P, marginTop: 16 }}>
-                  All services are performed by licensed and insured technicians. FixitBay holds California BHGS License #51001.
+                  All services are performed by licensed and insured technicians. FixitBay LLC holds California BHGS License #51001.
                 </p>
               </div>
 

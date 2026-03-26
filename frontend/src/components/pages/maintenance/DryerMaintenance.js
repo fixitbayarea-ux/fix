@@ -40,7 +40,7 @@ const DryerMaintenance = () => {
     "serviceType": "Dryer Maintenance & Vent Cleaning",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     }
   };

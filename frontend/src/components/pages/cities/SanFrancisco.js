@@ -214,7 +214,7 @@ const SanFrancisco = () => {
   return (
     <div className="pb-[72px] lg:pb-0" style={{ fontFamily: S.font, background: '#F8F5F0' }}>
       <SEOMetaTags
-        title="Appliance Repair San Francisco | Same-Day Service | FixitBay"
+        title="Appliance Repair San Francisco | Same-Day Service | FixitBay LLC"
         description="Professional appliance repair in San Francisco. Same-day service available. Licensed technicians, 180-day warranty. Serving all SF neighborhoods. Call (760) 543-5733."
         canonical="https://fixitbay.net/san-francisco-appliance-repair"
         ogImage="https://fixitbay.net/images/og-cover.png"

@@ -385,7 +385,7 @@ const BrandLandingPage = ({ brand }) => {
         {/* 7. WHY FIXITBAY */}
         <section data-testid="why-section" style={{ background: PC.cream, padding: '48px 20px' }}>
           <div style={{ maxWidth: 880, margin: '0 auto' }}>
-            <div style={{ ...EYE, color: PC.accent }}>Why Choose FixitBay</div>
+            <div style={{ ...EYE, color: PC.accent }}>Why Choose FixitBay LLC</div>
             <h2 className="brand-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.textDark, marginBottom: 28 }}>Why Choose FixitBay LLC for {brand.name} Repair</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 880, margin: '0 auto' }}>
               {WHY_CARDS.map((w, i) => (

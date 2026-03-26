@@ -120,10 +120,10 @@ const BookPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Book Appliance Repair Online | Same-Day | FixitBay"
+        title="Book Appliance Repair Online | Same-Day | FixitBay LLC"
         description="Book appliance repair online in San Francisco & Bay Area. Same-day and next-day available. $60 diagnostic, 180-day warranty. Licensed technician. Click to schedule."
         canonical="https://fixitbay.net/book"
-        ogTitle="Book Appliance Repair Online | Same-Day | FixitBay"
+        ogTitle="Book Appliance Repair Online | Same-Day | FixitBay LLC"
         ogDescription="Book appliance repair online. Same-day and next-day available. $60 diagnostic, 180-day warranty."
         noindex={true}
       />
@@ -327,7 +327,7 @@ const BookPage = () => {
         {/* ─── 4. WHY BOOK WITH FIXITBAY ─── */}
         <section className="bk-why" data-testid="book-why-section">
           <div className="bk-eyebrow" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 8 }}>WHY CHOOSE US</div>
-          <h2 style={{ color: '#fff', fontWeight: 800, fontSize: 32, marginBottom: 48 }}>Why Homeowners Book FixitBay</h2>
+          <h2 style={{ color: '#fff', fontWeight: 800, fontSize: 32, marginBottom: 48 }}>Why Homeowners Book FixitBay LLC</h2>
           <div className="bk-why-grid">
             {WHY_CARDS.map((c, i) => (
               <div key={i} className="bk-why-card" data-testid={`book-why-card-${i}`}>
@@ -399,7 +399,7 @@ const BookPage = () => {
             <a href="/reviews">Reviews</a>
           </div>
           <div className="bk-footer-row">
-            <a href="/" style={{ fontWeight: 700 }}>FixitBay</a>
+            <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
             <a href="tel:7605435733">(760) 543-5733</a>
             <span>&copy; 2026 FixitBay LLC</span>
           </div>

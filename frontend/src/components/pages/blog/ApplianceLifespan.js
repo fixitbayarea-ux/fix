@@ -108,7 +108,7 @@ const ApplianceLifespan = () => {
   return (
     <>
       <SEOMetaTags
-        title="How Long Do Appliances Last? Lifespan Guide | FixitBay"
+        title="How Long Do Appliances Last? Lifespan Guide | FixitBay LLC"
         description="How long do refrigerators, washers, dryers, dishwashers, and ovens last? Expert lifespan guide with maintenance tips to extend appliance life."
         canonical="https://fixitbay.net/blog/appliance-lifespan"
         ogType="article"

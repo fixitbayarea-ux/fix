@@ -66,8 +66,8 @@ const FAQ_ITEMS = [
   { q: 'What does a gas leak smell like?', a: "Natural gas itself is odorless. Gas companies add mercaptan, a chemical that smells like rotten eggs or sulfur, as a safety warning. If you detect this smell\u2014even faintly\u2014take it seriously. A brief whiff when lighting a burner can be normal; a persistent or strong smell is an emergency." },
   { q: 'Can a gas stove leak without the burners being on?', a: "Yes. Gas can leak from the flex line connecting the stove to the wall, from a faulty regulator, or from a worn gas valve even when all burners are off. If you smell gas but no burners are on, this is more serious\u2014evacuate and call your gas company immediately." },
   { q: 'How quickly is a gas leak dangerous?', a: "Very quickly. Natural gas concentrations of 5-15% in air are explosive. In an enclosed kitchen, dangerous levels can build within minutes. Never delay evacuation to investigate. Get everyone out first, then call 911 from outside the building." },
-  { q: 'Can I repair a gas line myself to save money?', a: "No\u2014never. Gas line work must be performed by a licensed technician. In California, improper gas line repairs can void your homeowner\u2019s insurance and are illegal without proper licensing. FixitBay technicians are licensed CA technicians (License #51001) trained in gas appliance safety." },
-  { q: 'How much does a gas stove safety inspection cost?', a: "FixitBay\u2019s standard diagnostic fee is $60, which is applied toward any repair if you proceed. A gas safety inspection includes checking all connections, testing for leaks with electronic detection equipment, and inspecting valves, regulators, and igniters. Same-day appointments are available Mon\u2013Sat." },
+  { q: 'Can I repair a gas line myself to save money?', a: "No\u2014never. Gas line work must be performed by a licensed technician. In California, improper gas line repairs can void your homeowner\u2019s insurance and are illegal without proper licensing. FixitBay LLC technicians are licensed CA technicians (License #51001) trained in gas appliance safety." },
+  { q: 'How much does a gas stove safety inspection cost?', a: "FixitBay LLC\u2019s standard diagnostic fee is $60, which is applied toward any repair if you proceed. A gas safety inspection includes checking all connections, testing for leaks with electronic detection equipment, and inspecting valves, regulators, and igniters. Same-day appointments are available Mon\u2013Sat." },
 ];
 
 const CheckRow = ({ label, text }) => (
@@ -99,7 +99,7 @@ const GasSmellFromStove = () => {
   return (
     <>
       <SEOMetaTags
-        title="Smell Gas From Your Stove? Do This Immediately | FixitBay"
+        title="Smell Gas From Your Stove? Do This Immediately | FixitBay LLC"
         description="Smell gas from your stove or range? Immediate safety steps: evacuate, call 911, what NOT to do. Common gas leak causes and prevention tips."
         canonical="https://fixitbay.net/blog/gas-smell-from-stove"
         ogType="article"
@@ -308,7 +308,7 @@ const GasSmellFromStove = () => {
                   </div>
                 ))}
                 <div style={{ background: '#C0392B', fontFamily: F, fontWeight: 800, fontSize: 14, padding: 14, borderRadius: 4, color: '#fff', textAlign: 'center', marginTop: 14 }}>CALL 911 &mdash; GAS EMERGENCY</div>
-                <a href="tel:+17605435733" className="phone-cta" style={{ display: 'block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: 12, borderRadius: 4, textAlign: 'center', textDecoration: 'none', marginTop: 8, transition: 'background 0.2s' }}>Call FixitBay: (760) 543-5733</a>
+                <a href="tel:+17605435733" className="phone-cta" style={{ display: 'block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: 12, borderRadius: 4, textAlign: 'center', textDecoration: 'none', marginTop: 8, transition: 'background 0.2s' }}>Call FixitBay LLC: (760) 543-5733</a>
               </div>
 
               {/* Widget 2: Book Inspection */}

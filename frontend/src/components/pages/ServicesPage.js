@@ -101,7 +101,7 @@ const ServicesPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Appliance Repair Services | San Francisco | FixitBay"
+        title="Appliance Repair Services | San Francisco | FixitBay LLC"
         description="Complete appliance repair services in San Francisco & Bay Area. Refrigerators, washers, dryers, ovens, dishwashers, commercial equipment and more. $60 diagnostic, 180-day warranty, same-day service."
         canonical="https://fixitbay.net/services"
         ogTitle="Appliance Repair Services \u2014 San Francisco & Bay Area | FixitBay LLC"
@@ -424,7 +424,7 @@ const ServicesPage = () => {
 
         {/* ─── 9. FOOTER ─── */}
         <footer className="sp-footer" data-testid="services-footer">
-          <a href="/" style={{ fontWeight: 700 }}>FixitBay</a>
+          <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
           <a href="tel:7605435733">(760) 543-5733</a>
           <span>&copy; 2026 FixitBay LLC</span>
         </footer>

@@ -106,7 +106,7 @@ const LocalApplianceRepairPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Local Appliance Repair | Same-Day | FixitBay"
+        title="Local Appliance Repair | Same-Day | FixitBay LLC"
         description="Local appliance repair in San Francisco & Bay Area. $60 diagnostic, 180-day warranty, same-day service. Licensed CA technician. Refrigerators, washers, dryers, dishwashers, ovens and more."
         canonical="https://fixitbay.net/local-appliance-repair"
       />
@@ -206,7 +206,7 @@ const LocalApplianceRepairPage = () => {
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#FF5722', textAlign: 'center', marginTop: 24 }}>FixitBay solves all of these.</p>
+          <p style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#FF5722', textAlign: 'center', marginTop: 24 }}>FixitBay LLC solves all of these.</p>
         </section>
 
         {/* ━━━ 4. THE FIXITBAY DIFFERENCE ━━━ */}
@@ -218,7 +218,7 @@ const LocalApplianceRepairPage = () => {
           <div className="diff-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, maxWidth: 900, margin: '0 auto', alignItems: 'center' }}>
             <div>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8, marginBottom: 16 }}>
-                FixitBay is a local, family-owned appliance repair company serving <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>San Francisco</strong>, the Peninsula, and Marin County. Our technicians live in the Bay Area and understand the unique challenges of local homes. We charge a <strong style={{ fontFamily: F, fontWeight: 700, color: '#FF5722' }}>$60 diagnostic fee</strong> (credited toward your repair).
+                FixitBay LLC is a local, family-owned appliance repair company serving <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>San Francisco</strong>, the Peninsula, and Marin County. Our technicians live in the Bay Area and understand the unique challenges of local homes. We charge a <strong style={{ fontFamily: F, fontWeight: 700, color: '#FF5722' }}>$60 diagnostic fee</strong> (credited toward your repair).
               </p>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8, marginBottom: 16 }}>
                 We repair all major household appliances — refrigerators, washers, dryers, dishwashers, ovens, cooktops, freezers, ice makers, wine coolers, and garbage disposals. Same-day and next-day appointments available.

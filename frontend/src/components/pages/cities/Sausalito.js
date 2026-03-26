@@ -36,7 +36,7 @@ const Sausalito = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair Sausalito | Premium Brands | FixitBay"
+        pageTitle="Appliance Repair Sausalito | Premium Brands | FixitBay LLC"
         metaDescription="Professional appliance repair in Sausalito. Hillside homes and premium brands. Sub-Zero, Wolf, Miele specialists. Same-day service. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

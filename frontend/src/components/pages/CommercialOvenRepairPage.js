@@ -29,7 +29,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Commercial Oven Repair — Convection, Pizza, Combi & Range',
   paragraphs: [
-    <>A broken commercial oven can shut down a restaurant kitchen in minutes. Bakeries can't bake, pizzerias can't make pizza, and hotels fall behind on banquet service. FixitBay provides <strong>emergency same-day commercial oven repair</strong> for every type of commercial cooking equipment in San Francisco, the Peninsula, and Marin County.</>,
+    <>A broken commercial oven can shut down a restaurant kitchen in minutes. Bakeries can't bake, pizzerias can't make pizza, and hotels fall behind on banquet service. FixitBay LLC provides <strong>emergency same-day commercial oven repair</strong> for every type of commercial cooking equipment in San Francisco, the Peninsula, and Marin County.</>,
     <>Our licensed technician has hands-on experience with convection ovens, deck ovens, pizza ovens, combi ovens, conveyor ovens, commercial ranges, and related cooking equipment from all major manufacturers. We test thermostats, calibrate temperature controls, inspect gas burners and igniters, check heating elements, and evaluate fan motors and convection systems. The <strong>$100 diagnostic fee</strong> is credited toward your repair.</>,
     <>From a Rational combi oven with a failed steam generator to a Bakers Pride pizza deck that won't hold temperature, we handle the full spectrum of commercial cooking equipment repair. Every job includes our <strong>180-day warranty on parts and labor</strong>.</>,
   ],
@@ -170,7 +170,7 @@ const MobilePage = () => (
       "@context": "https://schema.org",
       "@type": "Service",
       "serviceType": "Commercial Oven Repair",
-      "provider": { "@type": "LocalBusiness", "name": "FixitBay", "telephone": PHONE_DISPLAY },
+      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": PHONE_DISPLAY },
     }}
   />
 );

@@ -14,10 +14,10 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: 'What is the 50% rule for appliance repair?', a: "The 50% rule states: if the repair cost exceeds 50% of the appliance's replacement cost, and the appliance is past 50% of its expected lifespan, replacement is usually smarter. For a $1,200 refrigerator, that means don't spend more than $600 on repairs." },
-  { q: 'How do I know if my appliance is worth repairing in the Bay Area?', a: "Three key factors: age (under 10 years is generally repairable), repair cost vs replacement cost (50% rule), and repair history (2+ repairs in a year is a red flag). FixitBay technicians give honest assessments \u2014 we'll tell you if replacement makes more financial sense." },
+  { q: 'How do I know if my appliance is worth repairing in the Bay Area?', a: "Three key factors: age (under 10 years is generally repairable), repair cost vs replacement cost (50% rule), and repair history (2+ repairs in a year is a red flag). FixitBay LLC technicians give honest assessments \u2014 we'll tell you if replacement makes more financial sense." },
   { q: 'Is it ever worth repairing a 15-year-old appliance?', a: "Rarely for standard brands. However, premium appliances like Sub-Zero, Wolf, and Thermador are built to last 20\u201325 years and are almost always worth repairing \u2014 replacement parts are available, and new models cost $5,000\u2013$15,000+." },
   { q: 'What appliances are most worth repairing?', a: "Refrigerators and washing machines have the best repair-to-replace value if under 10 years old. Dishwashers and dryers are borderline at 8+ years. Microwaves are almost never worth professional repair \u2014 replacement is usually cheaper." },
-  { q: 'Does FixitBay give honest repair vs replace advice?', a: "Always. Our $60 diagnostic includes an honest assessment of whether the repair makes financial sense. If we think replacement is smarter, we'll tell you \u2014 even if that means we don't do the repair. Our reputation is built on trust, not unnecessary repairs." },
+  { q: 'Does FixitBay LLC give honest repair vs replace advice?', a: "Always. Our $60 diagnostic includes an honest assessment of whether the repair makes financial sense. If we think replacement is smarter, we'll tell you \u2014 even if that means we don't do the repair. Our reputation is built on trust, not unnecessary repairs." },
 ];
 
 const TOC = [
@@ -114,7 +114,7 @@ const RepairVsReplace = () => {
   return (
     <>
       <SEOMetaTags
-        title="When to Repair vs Replace Your Appliance | FixitBay"
+        title="When to Repair vs Replace Your Appliance | FixitBay LLC"
         description="Should you repair or replace your appliance? Use the 50% rule with our expert guide — age, costs, energy efficiency, and real examples."
         canonical="https://fixitbay.net/blog/when-to-repair-vs-replace"
         ogType="article"

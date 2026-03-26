@@ -41,7 +41,7 @@ const RangeRepairPage = () => {
     "serviceType": "Range Repair",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     },
     "areaServed": { "@type": "City", "name": "San Francisco" }
@@ -52,7 +52,7 @@ const RangeRepairPage = () => {
       <MobileServiceLanding
         appliance="Range"
         pageSlug="range-repair"
-        pageTitle="Range Repair San Francisco | Gas & Electric | FixitBay"
+        pageTitle="Range Repair San Francisco | Gas & Electric | FixitBay LLC"
         metaDescription="Expert range repair in San Francisco. Gas and electric ranges. $60 diagnostic applied to repair. 180-day warranty."
         heroTitle={<>Expert Range<br />Repair in SF. Today.</>}
         heroImage="/images/technicians/range-tech.jpg"
@@ -79,7 +79,7 @@ const RangeRepairPage = () => {
     <ApplianceRepairPageNew
       serviceSchema={serviceSchema}
       appliance="Range"
-      pageTitle="Range Repair San Francisco | Gas & Electric | FixitBay"
+      pageTitle="Range Repair San Francisco | Gas & Electric | FixitBay LLC"
       metaDescription="Expert range repair in San Francisco. Gas and electric ranges. $60 diagnostic applied to repair. 180-day warranty."
       heroImage="/images/technicians/range-tech.jpg"
       heroImageAlt="FixitBay technician next to a gas range in a San Francisco kitchen"

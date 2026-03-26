@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   { q: 'Why is my oven burning food on the recommended temperature?', a: "Most likely your oven is running hot \u2014 common in ovens 5+ years old as the temperature sensor drifts. Test with an oven thermometer. If it\u2019s 25\u201335\u00b0F over set temp, you can calibrate it yourself using the control panel. If it\u2019s 50\u00b0F+ off, the temperature sensor or control board may need replacement." },
   { q: 'Can I calibrate any oven brand myself?', a: "Yes \u2014 most modern ovens (GE, Whirlpool, Samsung, LG, Bosch, KitchenAid) allow \u00b135\u00b0F offset adjustment through the control panel. Older dial/knob ovens have a calibration screw behind the temperature knob. Always check your owner\u2019s manual for brand-specific steps \u2014 incorrect adjustment can void warranties." },
   { q: 'How often should I calibrate my oven?', a: "Test your oven temperature once a year using an oven thermometer. Most ovens drift gradually over time \u2014 especially after power surges, heavy use, or cleaning cycles. If you notice consistent burning or undercooking, test it immediately rather than waiting for your annual check." },
-  { q: 'How much does oven temperature sensor replacement cost in Bay Area?', a: "Oven temperature sensor replacement in the SF Bay Area typically costs $150\u2013$250 including parts and labor. Control board replacement runs $200\u2013$400 depending on the brand. FixitBay charges $60 diagnostic (credited to repair) and provides a written estimate before any work begins." },
+  { q: 'How much does oven temperature sensor replacement cost in Bay Area?', a: "Oven temperature sensor replacement in the SF Bay Area typically costs $150\u2013$250 including parts and labor. Control board replacement runs $200\u2013$400 depending on the brand. FixitBay LLC charges $60 diagnostic (credited to repair) and provides a written estimate before any work begins." },
 ];
 
 const TOC = [
@@ -85,7 +85,7 @@ const OvenTemperatureCalibration = () => {
   return (
     <>
       <SEOMetaTags
-        title="How to Calibrate Your Oven Temperature | FixitBay"
+        title="How to Calibrate Your Oven Temperature | FixitBay LLC"
         description="Oven burning or undercooking food? Learn to test and calibrate oven temperature in 4 steps — works for GE, Samsung, LG, Bosch, Whirlpool."
         canonical="https://fixitbay.net/blog/oven-temperature-calibration"
         ogType="article"

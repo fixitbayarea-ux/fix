@@ -78,7 +78,7 @@ const ReviewsPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Customer Reviews | FixitBay Appliance Repair SF"
+        title="Customer Reviews | FixitBay LLC Appliance Repair SF"
         description="Read verified customer reviews for FixitBay LLC appliance repair in San Francisco Bay Area. 4.9 stars, 237 reviews across Google, Thumbtack & Yelp. Same-day service, 180-day warranty. Call (760) 543-5733."
         canonical="https://fixitbay.net/reviews"
       />
@@ -109,10 +109,10 @@ const ReviewsPage = () => {
             </nav>
             <div style={EYE}>VERIFIED CUSTOMER REVIEWS</div>
             <h1 className="rv-h1" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.15, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 700, margin: '0 auto 16px' }}>
-              Customer Reviews — FixitBay Appliance Repair San Francisco
+              Customer Reviews — FixitBay LLC Appliance Repair San Francisco
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.78)', maxWidth: 540, margin: '0 auto 32px' }}>
-              See why families across San Francisco, the Peninsula, and Marin County trust FixitBay for appliance repair.
+              See why families across San Francisco, the Peninsula, and Marin County trust FixitBay LLC for appliance repair.
             </p>
             <div>
               <div style={{ color: '#FF5722', fontSize: 28, letterSpacing: 4, marginBottom: 12 }}>{'\u2605\u2605\u2605\u2605\u2605'}</div>
@@ -270,7 +270,7 @@ const ReviewsPage = () => {
         <section data-testid="reviews-trust" style={{ background: '#F8F5F0', padding: '64px 24px' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>
             <div style={EYE}>WHY CUSTOMERS TRUST US</div>
-            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 28 }}>What Makes FixitBay Different</h2>
+            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 28 }}>What Makes FixitBay LLC Different</h2>
             <div className="grid md:grid-cols-3" style={{ gap: 16 }}>
               {TRUST_CARDS.map((c, i) => (
                 <div key={i} className="trust-card" style={{

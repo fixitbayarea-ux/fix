@@ -53,7 +53,7 @@ const AdminLogin = ({ onLogin }) => {
             className="w-20 h-20 mx-auto mb-4 rounded-full"
           />
           <h1 className="text-2xl font-bold mb-2" style={{ color: '#1A3B5D' }}>
-            FixitBay Admin Panel
+            FixitBay LLC Admin Panel
           </h1>
           <p className="text-gray-600">Sign in to manage your website</p>
         </div>

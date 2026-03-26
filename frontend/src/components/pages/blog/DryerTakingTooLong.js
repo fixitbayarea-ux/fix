@@ -14,7 +14,7 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: 'Why is my dryer taking 2 cycles to dry clothes?', a: "The most common cause is a clogged dryer vent or lint trap. Restricted airflow means moisture can't escape the drum, so clothes stay damp. Clean the lint trap and have the vent duct professionally cleaned if it hasn't been done in over a year." },
-  { q: 'How much does dryer repair cost in San Francisco Bay Area?', a: "Dryer repairs in the Bay Area typically cost $150\u2013$350. A heating element replacement runs $150\u2013$250. Gas valve solenoids cost $100\u2013$200. FixitBay charges a $60 diagnostic fee, credited toward your repair." },
+  { q: 'How much does dryer repair cost in San Francisco Bay Area?', a: "Dryer repairs in the Bay Area typically cost $150\u2013$350. A heating element replacement runs $150\u2013$250. Gas valve solenoids cost $100\u2013$200. FixitBay LLC charges a $60 diagnostic fee, credited toward your repair." },
   { q: 'Is it safe to run a dryer that takes too long to dry?', a: "No \u2014 a dryer that runs multiple cycles is a serious fire hazard. Clogged vents are the #1 cause of dryer fires in the US. The NFPA reports nearly 17,000 dryer fires per year, mostly from lint buildup. Address the issue immediately." },
   { q: 'Can I clean my dryer vent myself?', a: "You can clean the lint trap yourself \u2014 do it after every load. For the vent duct, a DIY kit works for short straight runs. However, longer or flexible duct systems, rooftop vents, and high-rise apartment vents should be professionally cleaned annually." },
   { q: 'How do I know if my dryer vent is clogged?', a: "Four warning signs: (1) clothes are hot but still damp after a full cycle, (2) the dryer exterior feels very hot, (3) you smell burning during operation, (4) the laundry room is unusually humid after a cycle. Any of these means your vent needs immediate attention." },
@@ -84,7 +84,7 @@ const DryerTakingTooLong = () => {
   return (
     <>
       <SEOMetaTags
-        title="Why Is My Dryer Taking Too Long? 7 Causes | FixitBay"
+        title="Why Is My Dryer Taking Too Long? 7 Causes | FixitBay LLC"
         description="Dryer taking 2-3 cycles to dry clothes? Learn 7 causes — clogged vents, bad heating element, moisture sensor — with DIY fixes."
         canonical="https://fixitbay.net/blog/dryer-taking-too-long"
         ogType="article"

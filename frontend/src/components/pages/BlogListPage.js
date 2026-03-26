@@ -26,7 +26,7 @@ const STATIC_POSTS = [
   { slug: 'dishwasher-not-draining', title: 'Dishwasher Not Draining? 7 Quick Fixes', excerpt: 'Standing water after a cycle? Check these 7 common causes: clogged filter, blocked drain hose, garbage disposal connection, and air gap.', publish_date: '2026-02-20', categories: ['Dishwasher'], readTime: '6 min' },
   { slug: 'dryer-not-heating', title: 'Dryer Not Heating? 7 Causes for Gas & Electric Dryers', excerpt: 'A dryer that tumbles but won\'t heat is one of the most common problems. 7 causes ranked by complexity with SF Bay Area pricing and a real technician case study.', publish_date: '2026-03-23', categories: ['Dryer'], readTime: '8 min' },
   { slug: 'appliance-repair-cost-san-francisco', title: 'Appliance Repair Cost in San Francisco 2026 — Complete Price Guide', excerpt: 'How much does appliance repair cost in San Francisco? 3 pricing tables, luxury brand rates, a repair-vs-replace guide, and real numbers from a licensed technician.', publish_date: '2026-03-23', categories: ['Expert Advice', 'San Francisco'], readTime: '10 min' },
-  { slug: 'same-day-appliance-repair-bay-area', title: 'Same-Day Appliance Repair in the Bay Area — How It Works', excerpt: 'Need your appliance fixed today? Learn how FixitBay delivers same-day repair across SF, Peninsula & Marin. $60 diagnostic, 180-day warranty.', publish_date: '2026-02-15', categories: ['Expert Advice', 'San Francisco'], readTime: '5 min' },
+  { slug: 'same-day-appliance-repair-bay-area', title: 'Same-Day Appliance Repair in the Bay Area — How It Works', excerpt: 'Need your appliance fixed today? Learn how FixitBay LLC delivers same-day repair across SF, Peninsula & Marin. $60 diagnostic, 180-day warranty.', publish_date: '2026-02-15', categories: ['Expert Advice', 'San Francisco'], readTime: '5 min' },
   { slug: 'appliance-repair-marin-county', title: 'Appliance Repair in Marin County — Complete Guide', excerpt: 'Everything you need to know about appliance repair in Marin County. Coverage areas, pricing, common issues in Marin homes, and how to book.', publish_date: '2026-02-01', categories: ['Expert Advice', 'Marin County'], readTime: '6 min' },
 ];
 
@@ -94,7 +94,7 @@ const BlogListPage = () => {
       data: {
         "@context": "https://schema.org",
         "@type": "Blog",
-        "name": "FixitBay Appliance Repair Tips & Advice",
+        "name": "FixitBay LLC Appliance Repair Tips & Advice",
         "description": "Expert appliance repair tips, cost guides, and maintenance advice from certified Bay Area technicians.",
         "url": "https://fixitbay.net/blog",
         "publisher": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": "+17605435733" },
@@ -122,7 +122,7 @@ const BlogListPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Appliance Repair Tips & Guides | FixitBay Blog \u2014 Bay Area"
+        title="Appliance Repair Tips & Guides | FixitBay LLC Blog \u2014 Bay Area"
         description="Free appliance repair tips, cost guides, and error code troubleshooting from certified technicians in San Francisco Bay Area. Learn when to repair vs replace, DIY fixes, and maintenance advice."
         canonical="https://fixitbay.net/blog"
       />

@@ -39,7 +39,7 @@ const FAQ_ITEMS = [
   { q: 'How do I know if my dishwasher drain pump is bad?', a: 'During the drain cycle (typically near the end of the wash cycle), listen for a humming or whirring sound\u2014that\u2019s the pump working. Silence during the drain cycle often means the pump isn\u2019t running. A loud grinding or buzzing sound suggests the pump is running but obstructed. If the pump sounds fine but water still won\u2019t drain, the pump may have an electrical failure and needs professional diagnosis.' },
   { q: 'My dishwasher just installed \u2014 why won\u2019t it drain?', a: 'If your dishwasher was just installed and has never drained properly, the garbage disposal knockout plug is almost certainly the issue. When a dishwasher drains into a garbage disposal, the installer must remove a small plastic plug from the disposal\u2019s inlet port. If it\u2019s still in place, water has nowhere to go. Look under the sink, find the disposal\u2019s dishwasher inlet, and check if the plug is still inserted.' },
   { q: 'Can I use my dishwasher if it\u2019s not draining properly?', a: 'We recommend fixing the drainage issue before running more cycles. Standing water can become a breeding ground for bacteria and mold, leading to unpleasant odors. More importantly, if the drain pump is running against a stubborn clog, continued use can burn out the motor\u2014turning an easy $60 repair into a $200+ pump replacement.' },
-  { q: 'How much does dishwasher drain repair cost in the Bay Area?', a: 'If the fix is cleaning the filter or clearing a hose kink, it\u2019s a free DIY repair. If the issue requires professional service\u2014like replacing a drain pump, check valve, or drain solenoid\u2014FixitBay charges a $60 diagnostic fee that\u2019s applied toward the repair cost. Most drain pump replacements run $150\u2013$250 total, parts and labor included, with a 180-day warranty.' },
+  { q: 'How much does dishwasher drain repair cost in the Bay Area?', a: 'If the fix is cleaning the filter or clearing a hose kink, it\u2019s a free DIY repair. If the issue requires professional service\u2014like replacing a drain pump, check valve, or drain solenoid\u2014FixitBay LLC charges a $60 diagnostic fee that\u2019s applied toward the repair cost. Most drain pump replacements run $150\u2013$250 total, parts and labor included, with a 180-day warranty.' },
 ];
 
 const DarkBox = ({ label, steps }) => (
@@ -101,7 +101,7 @@ const DishwasherNotDraining = () => {
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
       { "@type": "Question", "name": "Why is there standing water at the bottom of my dishwasher?", "acceptedAnswer": { "@type": "Answer", "text": "Most commonly a clogged filter. Clean the cylindrical filter at the bottom of the tub. If clean, check the drain hose for kinks. These two fixes solve 80% of drainage problems." } },
       { "@type": "Question", "name": "My dishwasher just installed \u2014 why won't it drain?", "acceptedAnswer": { "@type": "Answer", "text": "Almost certainly the garbage disposal knockout plug. The installer must remove this plastic plug from the disposal's dishwasher inlet port. Check under the sink." } },
-      { "@type": "Question", "name": "How much does dishwasher drain repair cost?", "acceptedAnswer": { "@type": "Answer", "text": "Filter cleaning and hose clearing are free DIY fixes. Professional drain pump replacement runs $150-$250 total with FixitBay's $60 diagnostic applied to the repair. 180-day warranty included." } }
+      { "@type": "Question", "name": "How much does dishwasher drain repair cost?", "acceptedAnswer": { "@type": "Answer", "text": "Filter cleaning and hose clearing are free DIY fixes. Professional drain pump replacement runs $150-$250 total with FixitBay LLC's $60 diagnostic applied to the repair. 180-day warranty included." } }
     ] } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Dishwasher Not Draining", "item": "https://fixitbay.net/blog/dishwasher-not-draining" }] } }
   ], []);
@@ -110,7 +110,7 @@ const DishwasherNotDraining = () => {
   return (
     <>
       <SEOMetaTags
-        title="Dishwasher Not Draining? 7 Quick Fixes | FixitBay"
+        title="Dishwasher Not Draining? 7 Quick Fixes | FixitBay LLC"
         description="Dishwasher won't drain? Check these 7 causes: clogged filter, kinked hose, disposal plug, air gap, faulty pump. Most fixes take under 10 minutes."
         canonical="https://fixitbay.net/blog/dishwasher-not-draining"
         ogType="article"

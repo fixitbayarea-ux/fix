@@ -71,8 +71,8 @@ const DishwasherRepairPage = () => {
       <MobileServiceLanding
         appliance="Dishwasher"
         pageSlug="dishwasher-repair"
-        pageTitle="Dishwasher Repair Bay Area | Same-Day Service | FixitBay"
-        metaDescription="Dishwasher repair across the Bay Area. Leaks, draining, won't start. Same-day service, $60 diagnostic applied to repair. Call FixitBay."
+        pageTitle="Dishwasher Repair Bay Area | Same-Day Service | FixitBay LLC"
+        metaDescription="Dishwasher repair across the Bay Area. Leaks, draining, won't start. Same-day service, $60 diagnostic applied to repair. Call FixitBay LLC."
         heroTitle={<>Expert Dishwasher<br />Repair. Bay Area.</>}
         heroImage="/images/technicians/dishwasher-tech.jpg"
         heroImageAlt="FixitBay technician repairing a dishwasher in a Bay Area home"
@@ -111,8 +111,8 @@ const DishwasherRepairPage = () => {
       <ApplianceRepairPageNew
       serviceSchema={serviceSchema}
       appliance="Dishwasher"
-      pageTitle="Dishwasher Repair Bay Area | Same-Day Service | FixitBay"
-      metaDescription="Dishwasher repair across the Bay Area. Leaks, draining, won't start. Same-day service, $60 diagnostic applied to repair. Call FixitBay."
+      pageTitle="Dishwasher Repair Bay Area | Same-Day Service | FixitBay LLC"
+      metaDescription="Dishwasher repair across the Bay Area. Leaks, draining, won't start. Same-day service, $60 diagnostic applied to repair. Call FixitBay LLC."
       heroImage="/images/technicians/dishwasher-tech.jpg"
       heroImageAlt="FixitBay technician repairing a dishwasher in a Bay Area home"
       commonProblems={commonProblems}
@@ -120,7 +120,7 @@ const DishwasherRepairPage = () => {
       serviceDescription={{
         title: "Bay Area Dishwasher Repair — Expert Same-Day Service",
         paragraphs: [
-          <>Looking for professional <strong>dishwasher repair</strong> you can trust? FixitBay delivers same-day service throughout the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most dishwasher issues on the first visit. We charge a transparent <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—no hidden charges.</>,
+          <>Looking for professional <strong>dishwasher repair</strong> you can trust? FixitBay LLC delivers same-day service throughout the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most dishwasher issues on the first visit. We charge a transparent <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—no hidden charges.</>,
           <>Our dishwasher repair process includes a comprehensive inspection of the drain pump, spray arms, heating element, door seal, control board, inlet valve, and filters. We test all cycles, check for leaks and blockages, and identify the root cause of issues like drainage failures, poor cleaning, water leaks, or error codes. Whether you have a basic dishwasher or a high-end European model, we have the expertise.</>,
           <>We service all major dishwasher brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like pumps, heating elements, and door seals, enabling same-day repairs in most cases. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From Bay Area apartments to Peninsula homes, we keep your kitchen running smoothly.</>,
           <><strong>Looking for dishwasher repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-dishwasher-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Dishwasher Repair</a> page for local details, neighborhood coverage, and availability.</>

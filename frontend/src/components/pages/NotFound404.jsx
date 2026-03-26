@@ -3,7 +3,7 @@ import SEOMetaTags from '../SEOMetaTags';
 
 const POPULAR_PAGES = [
   { title: 'Book a Repair', sub: 'Schedule same-day or next-day', href: '/book' },
-  { title: 'Homepage', sub: 'FixitBay appliance repair', href: '/' },
+  { title: 'Homepage', sub: 'FixitBay LLC appliance repair', href: '/' },
   { title: 'All Services', sub: 'Residential & commercial repair', href: '/services' },
   { title: 'Refrigerator Repair', sub: 'Not cooling, ice maker, leaks', href: '/refrigerator-repair' },
   { title: 'Washer Repair', sub: 'Won\u2019t drain, error codes, vibration', href: '/washer-repair' },
@@ -20,7 +20,7 @@ export default function NotFound404() {
     <>
       <SEOMetaTags
         title="Page Not Found | FixitBay LLC"
-        description="Page not found. Browse FixitBay appliance repair services, book a repair, or call (760) 543-5733."
+        description="Page not found. Browse FixitBay LLC appliance repair services, book a repair, or call (760) 543-5733."
         noindex={true}
       />
 
@@ -105,7 +105,7 @@ export default function NotFound404() {
 
         {/* ─── 3. FOOTER ─── */}
         <footer className="nf-footer" data-testid="nf-footer">
-          <a href="/" style={{ fontWeight: 700 }}>FixitBay</a>
+          <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
           <a href="tel:7605435733">(760) 543-5733</a>
           <span>&copy; 2026 FixitBay LLC</span>
         </footer>

@@ -97,7 +97,7 @@ const RefrigeratorRepairMobile = () => {
   return (
     <div data-testid="mobile-landing-refrigerator" style={{ fontFamily: "'Montserrat', sans-serif", background: '#fff', paddingBottom: 82 }}>
 
-      <SEOMetaTags title="Refrigerator Repair San Francisco | Same-Day Service | FixitBay" description="Fast refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733." canonical="https://fixitbay.net/refrigerator-repair" />
+      <SEOMetaTags title="Refrigerator Repair San Francisco | Same-Day Service | FixitBay LLC" description="Fast refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733." canonical="https://fixitbay.net/refrigerator-repair" />
 
       {/* ── HEADER ── */}
       <header data-testid="mobile-header" style={{
@@ -106,7 +106,7 @@ const RefrigeratorRepairMobile = () => {
       }}>
         <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none' }}>
           <img src="/fixitbay-logo-round.png" alt="FixitBay" width={36} height={36} style={{ borderRadius: '50%' }} />
-          <span style={{ fontWeight: 800, fontSize: 16, color: '#1A3B5D', letterSpacing: '-0.3px' }}>FixitBay</span>
+          <span style={{ fontWeight: 800, fontSize: 16, color: '#1A3B5D', letterSpacing: '-0.3px' }}>FixitBay LLC</span>
         </a>
         <a href={`tel:${PHONE}`} onClick={() => handleCall('header')} data-testid="header-call-btn" style={{
           display: 'flex', alignItems: 'center', gap: 6, background: '#C0362C', color: '#fff', borderRadius: 10,
@@ -270,7 +270,7 @@ const RefrigeratorRepairMobile = () => {
         background: 'linear-gradient(135deg, #0F2A47 0%, #1A3B5D 100%)',
         color: '#fff',
       }}>
-        <h2 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 16px' }}>Why FixitBay</h2>
+        <h2 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 16px' }}>Why FixitBay LLC</h2>
         {[
           { icon: <Shield size={20} color="#34D399" />, title: 'Licensed & Insured', desc: 'CA License #51001. Full liability coverage.' },
           { icon: <Award size={20} color="#FBBF24" />, title: '180-Day Warranty', desc: 'On every repair — parts and labor.' },
@@ -405,7 +405,7 @@ const RefrigeratorRepairMobile = () => {
       {/* Back link */}
       <div style={{ padding: '14px 20px', textAlign: 'center', background: '#fff' }}>
         <a href="/" style={{ fontSize: 13, color: '#94A3B8', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
-          <ArrowLeft size={14} /> Back to FixitBay Home
+          <ArrowLeft size={14} /> Back to FixitBay LLC Home
         </a>
       </div>
 

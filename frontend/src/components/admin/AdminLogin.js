@@ -88,7 +88,7 @@ const AdminLogin = ({ onLogin }) => {
             <Shield className="w-8 h-8 text-blue-600" />
           </div>
           <h1 className="text-2xl font-bold text-gray-900 mb-2">Admin Login</h1>
-          <p className="text-gray-600">Access FixitBay Admin Panel</p>
+          <p className="text-gray-600">Access FixitBay LLC Admin Panel</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -163,7 +163,7 @@ const AdminLogin = ({ onLogin }) => {
 
         <div className="mt-8 text-center">
           <p className="text-xs text-gray-500">
-            Secure access to FixitBay management panel
+            Secure access to FixitBay LLC management panel
           </p>
         </div>
       </motion.div>

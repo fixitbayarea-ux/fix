@@ -29,7 +29,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Commercial Washer Repair for Laundromats, Hotels & Healthcare',
   paragraphs: [
-    <>Commercial washer breakdowns cost real money — a single out-of-service machine in a busy San Francisco laundromat can mean $50-$100+ per day in lost revenue. Hotels fall behind on linen service. Healthcare facilities risk sanitation compliance. FixitBay provides <strong>priority same-day commercial washer repair</strong> to minimize downtime.</>,
+    <>Commercial washer breakdowns cost real money — a single out-of-service machine in a busy San Francisco laundromat can mean $50-$100+ per day in lost revenue. Hotels fall behind on linen service. Healthcare facilities risk sanitation compliance. FixitBay LLC provides <strong>priority same-day commercial washer repair</strong> to minimize downtime.</>,
     <>Our licensed technician diagnoses front-load and top-load commercial washers from all major brands. We test motors, pumps, bearings, control boards, valves, and payment systems. We carry common replacement parts for Speed Queen, Dexter, and Maytag Commercial units. The <strong>$100 diagnostic fee</strong> is credited toward your repair.</>,
     <>Whether your laundromat washer won't spin, your hotel washer-extractor is leaking, or your coin-op machine won't accept payment, we'll restore operation fast. Every repair includes our <strong>180-day warranty on parts and labor</strong>.</>,
   ],
@@ -166,7 +166,7 @@ const MobilePage = () => (
       "@context": "https://schema.org",
       "@type": "Service",
       "serviceType": "Commercial Washer Repair",
-      "provider": { "@type": "LocalBusiness", "name": "FixitBay", "telephone": PHONE_DISPLAY },
+      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": PHONE_DISPLAY },
     }}
   />
 );

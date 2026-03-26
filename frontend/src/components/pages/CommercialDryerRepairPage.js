@@ -29,7 +29,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Commercial Dryer Repair — Gas, Electric & Stack Dryers',
   paragraphs: [
-    <>A non-heating commercial dryer is one of the most costly breakdowns for laundromat owners. Customers leave, revenue drops, and negative reviews pile up. FixitBay provides <strong>priority same-day commercial dryer repair</strong> for gas and electric dryers in laundromats, hotels, healthcare facilities, and multi-family buildings throughout San Francisco, the Peninsula, and Marin County.</>,
+    <>A non-heating commercial dryer is one of the most costly breakdowns for laundromat owners. Customers leave, revenue drops, and negative reviews pile up. FixitBay LLC provides <strong>priority same-day commercial dryer repair</strong> for gas and electric dryers in laundromats, hotels, healthcare facilities, and multi-family buildings throughout San Francisco, the Peninsula, and Marin County.</>,
     <>Our licensed technician diagnoses gas valve solenoids, igniters, heating elements, thermostats, drum bearings, belts, motors, and control boards. We carry common parts for Speed Queen and Dexter dryers — the two most popular brands in Bay Area commercial laundry. The <strong>$100 diagnostic fee</strong> is credited toward your repair.</>,
     <>Whether your laundromat gas dryer won't heat, your hotel stack dryer is taking too long, or your apartment building dryer won't start, we'll fix it fast. Every repair includes our <strong>180-day warranty on parts and labor</strong>.</>,
   ],
@@ -173,7 +173,7 @@ const MobilePage = () => (
       "@context": "https://schema.org",
       "@type": "Service",
       "serviceType": "Commercial Dryer Repair",
-      "provider": { "@type": "LocalBusiness", "name": "FixitBay", "telephone": PHONE_DISPLAY },
+      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": PHONE_DISPLAY },
     }}
   />
 );

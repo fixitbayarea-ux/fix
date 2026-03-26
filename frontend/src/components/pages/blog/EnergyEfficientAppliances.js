@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   { q: 'Does washing clothes in cold water really save money?', a: "Yes \u2014 significantly. Up to 90% of washer energy goes to heating water. Modern detergents clean just as effectively in cold water for most loads. Switching to cold water for regular loads saves $60\u2013$100/year. Use hot water only for heavily soiled items or sanitizing loads like baby clothes or towels." },
   { q: 'How often should I clean my dryer vent to save energy?', a: "Clean the lint trap after every single load \u2014 a clogged lint trap increases drying time by 30%. The vent duct (the hose running from your dryer to outside) should be professionally cleaned once a year. A clogged duct can double drying time and waste $100\u2013$200/year in electricity, and creates a serious fire risk." },
   { q: 'Does a dirty refrigerator use more electricity?', a: "Yes. Condenser coils covered in dust force the compressor to work 5\u201310% harder, increasing energy use and shortening the compressor\u2019s life. Clean coils every 6 months \u2014 it takes 10 minutes and saves $50\u2013$100/year. Also check door seals: worn gaskets let cold air escape, forcing the fridge to run constantly." },
-  { q: 'Can a professional tune-up reduce my appliance energy bills?', a: "Absolutely. A professional maintenance visit includes cleaning condenser coils, checking door seals, inspecting the drain pump, and verifying the heating element efficiency. Appliances running at peak efficiency use 10\u201320% less energy than poorly maintained ones. FixitBay\u2019s $60 diagnostic includes an efficiency check for all major appliances." },
+  { q: 'Can a professional tune-up reduce my appliance energy bills?', a: "Absolutely. A professional maintenance visit includes cleaning condenser coils, checking door seals, inspecting the drain pump, and verifying the heating element efficiency. Appliances running at peak efficiency use 10\u201320% less energy than poorly maintained ones. FixitBay LLC\u2019s $60 diagnostic includes an efficiency check for all major appliances." },
 ];
 
 const TOC = [
@@ -111,7 +111,7 @@ const EnergyEfficientAppliances = () => {
   return (
     <>
       <SEOMetaTags
-        title="Make Your Appliances More Energy Efficient | FixitBay"
+        title="Make Your Appliances More Energy Efficient | FixitBay LLC"
         description="Proven tips to reduce appliance energy bills by 10-25%. Refrigerator, washer, dryer, and dishwasher efficiency guide. Save $230-$440/year."
         canonical="https://fixitbay.net/blog/energy-efficient-appliances"
         ogType="article"

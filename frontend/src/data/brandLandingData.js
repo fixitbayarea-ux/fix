@@ -72,10 +72,10 @@ const brandLandingData = {
   'bosch': {
     name: 'Bosch',
     h1: 'Bosch Appliance Repair',
-    title: 'Bosch Appliance Repair San Francisco | FixitBay',
+    title: 'Bosch Appliance Repair San Francisco | FixitBay LLC',
     description: 'Bosch appliance repair in San Francisco. Dishwashers, refrigerators, washers, dryers, ovens & more. $60 diagnostic applied to repair. 180-day warranty.',
     intro: 'Bosch built its reputation on one obsession: quiet. Their dishwashers routinely measure under 44 decibels — quieter than a library — and that engineering philosophy extends to their entire appliance line. In the Bay Area, Bosch dishwashers are the single most common European appliance we encounter, followed by their heat-pump dryers and counter-depth refrigerators. The reason Bosch repairs differ from standard American brands is the underlying technology: condensation drying instead of heated drying, inverter motors instead of belt-driven motors, and heat-pump compression instead of resistance heating.',
-    intro2: 'These engineering choices make Bosch appliances more energy-efficient and longer-lasting, but they also mean that a generic repair approach often leads to misdiagnosis. A Bosch dishwasher that "doesn\'t dry" isn\'t missing a heating element — it uses a fundamentally different drying method that relies on stainless-steel interior walls and temperature differentials. FixitBay technicians work on Bosch units daily across San Francisco, the Peninsula, and Marin County, and we understand these systems at the component level.',
+    intro2: 'These engineering choices make Bosch appliances more energy-efficient and longer-lasting, but they also mean that a generic repair approach often leads to misdiagnosis. A Bosch dishwasher that "doesn\'t dry" isn\'t missing a heating element — it uses a fundamentally different drying method that relies on stainless-steel interior walls and temperature differentials. FixitBay LLC technicians work on Bosch units daily across San Francisco, the Peninsula, and Marin County, and we understand these systems at the component level.',
     appliances: [
       {
         name: 'Bosch Dishwashers',
@@ -165,14 +165,14 @@ const brandLandingData = {
         a: 'Yes. Heat-pump dryers are less common in the US than in Europe, but they are growing fast in the Bay Area due to energy codes and ventless installation requirements. We service them regularly and understand the sealed refrigerant loop, condenser cleaning, and thermistor diagnostics.',
       },
     ],
-    seoTitle: 'Bosch Appliance Repair San Francisco | FixitBay',
+    seoTitle: 'Bosch Appliance Repair San Francisco | FixitBay LLC',
     seoDescription: 'Bosch appliance repair in San Francisco. Dishwashers, refrigerators, washers, dryers, ovens & more. $60 diagnostic applied to repair. 180-day warranty.',
     reviews: [
       {
         name: 'Sarah M.',
         location: 'Noe Valley, SF',
         appliance: 'DISHWASHER',
-        text: 'Our Bosch 800 Series showed E24 repeatedly. FixitBay found a clogged check valve, cleared it, and tested three cycles before leaving. Silent as day one now.',
+        text: 'Our Bosch 800 Series showed E24 repeatedly. FixitBay LLC found a clogged check valve, cleared it, and tested three cycles before leaving. Silent as day one now.',
       },
       {
         name: 'David R.',
@@ -191,10 +191,10 @@ const brandLandingData = {
   'samsung': {
     name: 'Samsung',
     h1: 'Samsung Appliance Repair',
-    title: 'Samsung Appliance Repair San Francisco | FixitBay',
+    title: 'Samsung Appliance Repair San Francisco | FixitBay LLC',
     description: 'Samsung appliance repair in San Francisco. Refrigerators, washers, dryers, dishwashers, ovens & more. $60 diagnostic applied to repair. 180-day warranty.',
     intro: 'Samsung ships more appliances into Bay Area homes than almost any other brand. Aggressive pricing, smart-home connectivity, and sleek industrial design have made Samsung refrigerators, washers, and ranges a default choice for new construction and renovations from Daly City to Novato. But that popularity comes with a trade-off: Samsung innovates faster than they iterate on reliability. Their ice makers have a well-documented freezing defect across multiple refrigerator generations, their Smart Hub touchscreens lock up under certain firmware conditions, and their washer suspension systems wear faster than competitors in the same price range.',
-    intro2: 'None of this means Samsung makes bad appliances — it means Samsung appliances need a repair technician who has seen these specific failure patterns hundreds of times. FixitBay handles more Samsung repair calls than any other single brand in our service area. We diagnose Samsung error codes, perform firmware resets on Smart Hub models, and address the recurring design issues that Samsung owners know all too well.',
+    intro2: 'None of this means Samsung makes bad appliances — it means Samsung appliances need a repair technician who has seen these specific failure patterns hundreds of times. FixitBay LLC handles more Samsung repair calls than any other single brand in our service area. We diagnose Samsung error codes, perform firmware resets on Smart Hub models, and address the recurring design issues that Samsung owners know all too well.',
     appliances: [
       {
         name: 'Samsung Refrigerators',
@@ -284,14 +284,14 @@ const brandLandingData = {
         a: 'The three most likely causes are a failed heating element, a blown thermal fuse, or a clogged exhaust vent. We test all three during the diagnostic and repair whatever is causing the no-heat condition.',
       },
     ],
-    seoTitle: 'Samsung Appliance Repair San Francisco | FixitBay',
+    seoTitle: 'Samsung Appliance Repair San Francisco | FixitBay LLC',
     seoDescription: 'Samsung appliance repair in San Francisco. Refrigerators, washers, dryers, dishwashers, ovens & more. $60 diagnostic applied to repair. 180-day warranty.',
     reviews: [
       {
         name: 'James L.',
         location: 'Sunset District, SF',
         appliance: 'REFRIGERATOR',
-        text: 'The infamous Samsung ice maker freeze-up. FixitBay replaced the defrost heater and installed the updated assembly. Six months later, still making ice perfectly.',
+        text: 'The infamous Samsung ice maker freeze-up. FixitBay LLC replaced the defrost heater and installed the updated assembly. Six months later, still making ice perfectly.',
       },
       {
         name: 'Patricia W.',
@@ -310,10 +310,10 @@ const brandLandingData = {
   'lg': {
     name: 'LG',
     h1: 'LG Appliance Repair',
-    title: 'LG Appliance Repair San Francisco | FixitBay',
+    title: 'LG Appliance Repair San Francisco | FixitBay LLC',
     description: 'LG appliance repair in San Francisco. Refrigerators, washers, dryers, dishwashers, ovens & more. $60 diagnostic applied to repair. 180-day warranty.',
     intro: 'LG staked its appliance reputation on two technologies: the linear compressor in refrigerators and the direct-drive motor in washers. Both eliminated major failure points found in conventional designs — the linear compressor removed the connecting rod and piston found in reciprocating compressors, while the direct-drive motor removed the belt and pulley system entirely. In theory, fewer moving parts means fewer failures. In practice, LG\'s linear compressors developed their own reliability problems significant enough that LG extended compressor warranty coverage to 10 years on affected models.',
-    intro2: 'For Bay Area homeowners, this means two things: your LG refrigerator compressor might be covered under an extended warranty you didn\'t know existed, and your LG repair technician needs to know the difference between a $200 fan motor swap and a warranty-eligible compressor replacement. FixitBay handles LG repairs daily across San Francisco, the Peninsula, and Marin County. We track LG\'s warranty bulletins, diagnose linear compressor issues accurately, and help eligible owners navigate the parts coverage process.',
+    intro2: 'For Bay Area homeowners, this means two things: your LG refrigerator compressor might be covered under an extended warranty you didn\'t know existed, and your LG repair technician needs to know the difference between a $200 fan motor swap and a warranty-eligible compressor replacement. FixitBay LLC handles LG repairs daily across San Francisco, the Peninsula, and Marin County. We track LG\'s warranty bulletins, diagnose linear compressor issues accurately, and help eligible owners navigate the parts coverage process.',
     appliances: [
       {
         name: 'LG Refrigerators',
@@ -403,7 +403,7 @@ const brandLandingData = {
         a: 'Yes. InstaView panel replacements and LED backlight repairs are a regular call for us. We source the correct panel for your model and recalibrate the knock-to-view sensor after installation.',
       },
     ],
-    seoTitle: 'LG Appliance Repair San Francisco | FixitBay',
+    seoTitle: 'LG Appliance Repair San Francisco | FixitBay LLC',
     seoDescription: 'LG appliance repair in San Francisco. Refrigerators, washers, dryers, dishwashers, ovens & more. $60 diagnostic applied to repair. 180-day warranty.',
     reviews: [
       {
@@ -429,12 +429,12 @@ const brandLandingData = {
   'whirlpool': {
     name: 'Whirlpool',
     h1: 'Whirlpool Appliance Repair',
-    seoTitle: 'Whirlpool Appliance Repair San Francisco | FixitBay',
+    seoTitle: 'Whirlpool Appliance Repair San Francisco | FixitBay LLC',
     seoDescription: 'Whirlpool appliance repair in San Francisco. Refrigerators, washers, dryers, dishwashers, ovens & more. $60 diagnostic applied to repair. 180-day warranty.',
-    title: 'Whirlpool Appliance Repair San Francisco | FixitBay',
+    title: 'Whirlpool Appliance Repair San Francisco | FixitBay LLC',
     description: 'Whirlpool appliance repair in San Francisco. Refrigerators, washers, dryers, dishwashers, ovens & more. $60 diagnostic applied to repair. 180-day warranty.',
     intro: 'Whirlpool is the most-installed appliance brand in American homes, and the Bay Area reflects that dominance. Whether it is a top-load washer in a Daly City rental, a French-door refrigerator in a Millbrae family kitchen, or a gas dryer in a San Rafael colonial, Whirlpool appliances are everywhere. What makes Whirlpool different from premium European brands is mechanical directness: fewer proprietary components, standardized fasteners, and designs that prioritize serviceability over novelty. That translates directly into faster repairs and lower costs for homeowners.',
-    intro2: 'Because Whirlpool parts are widely manufactured and cross-compatible across model years, most Whirlpool repairs can be completed in a single visit. Door latches, water inlet valves, heating elements, drum rollers, and control boards are stocked by every major parts distributor. FixitBay technicians work on Whirlpool appliances daily across San Francisco, the Peninsula, and Marin County — they are our highest-volume brand by unit count.',
+    intro2: 'Because Whirlpool parts are widely manufactured and cross-compatible across model years, most Whirlpool repairs can be completed in a single visit. Door latches, water inlet valves, heating elements, drum rollers, and control boards are stocked by every major parts distributor. FixitBay LLC technicians work on Whirlpool appliances daily across San Francisco, the Peninsula, and Marin County — they are our highest-volume brand by unit count.',
     appliances: [
       {
         name: 'Whirlpool Refrigerators',
@@ -507,7 +507,7 @@ const brandLandingData = {
         name: 'Anna P.',
         location: 'Daly City',
         appliance: 'WASHER',
-        text: 'Our Whirlpool washer threw F5E2 errors for weeks. FixitBay diagnosed the lid switch in 20 minutes — fixed same day. The $60 diagnostic was applied to the repair.',
+        text: 'Our Whirlpool washer threw F5E2 errors for weeks. FixitBay LLC diagnosed the lid switch in 20 minutes — fixed same day. The $60 diagnostic was applied to the repair.',
       },
       {
         name: 'Marcus T.',
@@ -564,10 +564,10 @@ const brandLandingData = {
   'ge': {
     name: 'GE',
     h1: 'GE Appliance Repair',
-    title: 'GE Appliance Repair San Francisco | FixitBay',
+    title: 'GE Appliance Repair San Francisco | FixitBay LLC',
     description: 'GE appliance repair in San Francisco. Refrigerators, washers, dryers, dishwashers, ovens & more. $60 diagnostic applied to repair. 180-day warranty.',
     intro: 'GE Appliances operates four distinct product tiers — standard GE, GE Profile, GE Cafe, and Monogram — and each tier uses different internal components, control logic, and build quality. A diagnostic approach that works on a standard GE gas range will not necessarily apply to a Cafe induction cooktop, even though both carry the GE name. The control boards are different, the sensor configurations are different, and the error code systems are different. This tiered engineering is what makes GE one of the more complex brands to repair correctly.',
-    intro2: 'In our Bay Area service area, we see the full GE spectrum: standard GE units in apartment complexes and rental properties, Profile and Cafe models in renovated kitchens throughout San Francisco, and Monogram built-ins in high-end Peninsula homes. FixitBay technicians service all four GE tiers daily and understand the engineering differences between them — from the basic mechanical controls on entry-level units to the WiFi-connected smart boards on Cafe and Monogram models.',
+    intro2: 'In our Bay Area service area, we see the full GE spectrum: standard GE units in apartment complexes and rental properties, Profile and Cafe models in renovated kitchens throughout San Francisco, and Monogram built-ins in high-end Peninsula homes. FixitBay LLC technicians service all four GE tiers daily and understand the engineering differences between them — from the basic mechanical controls on entry-level units to the WiFi-connected smart boards on Cafe and Monogram models.',
     appliances: [
       {
         name: 'GE Refrigerators',
@@ -657,14 +657,14 @@ const brandLandingData = {
         a: 'Somewhat. Monogram units use commercial-grade components and panel-ready installation that requires more labor time to access. Parts also cost more than standard GE. However, given Monogram replacement costs of $5,000 to $15,000, repair almost always makes financial sense.',
       },
     ],
-    seoTitle: 'GE Appliance Repair San Francisco | FixitBay',
+    seoTitle: 'GE Appliance Repair San Francisco | FixitBay LLC',
     seoDescription: 'GE appliance repair in San Francisco. Refrigerators, washers, dryers, dishwashers, ovens & more. $60 diagnostic applied to repair. 180-day warranty.',
     reviews: [
       {
         name: 'Thomas B.',
         location: 'Marina District, SF',
         appliance: 'REFRIGERATOR',
-        text: 'GE Profile French door fridge control board died. FixitBay installed an updated revision board. Temp has been rock-solid for months. Great diagnostic work.',
+        text: 'GE Profile French door fridge control board died. FixitBay LLC installed an updated revision board. Temp has been rock-solid for months. Great diagnostic work.',
       },
       {
         name: 'Maria G.',
@@ -701,10 +701,10 @@ const brandLandingData = {
         label: 'Ice Maker Repair',
       },
     ],
-    title: 'Sub-Zero Repair San Francisco | FixitBay',
+    title: 'Sub-Zero Repair San Francisco | FixitBay LLC',
     description: 'Sub-Zero repair in San Francisco. Built-in refrigerators, freezer columns, wine coolers & ice makers. $60 diagnostic applied to repair. 180-day warranty.',
     intro: 'Sub-Zero does one thing — refrigeration — and does it at a level no other residential brand matches. Their built-in refrigerators, freezer columns, wine preservation systems, and undercounter units are engineered to last 20 years or more, use dual compressors to isolate refrigerator and freezer environments, and feature vacuum-insulated panels and NASA-derived air purification that you will not find in any commodity refrigerator. A Sub-Zero is not just a cold box; it is a precision preservation system that costs $8,000 to $20,000 to replace.',
-    intro2: 'That price tag is exactly why Sub-Zero repair almost always makes financial sense. A $400 to $800 repair on a 10-year-old Sub-Zero extends its useful life by another 5 to 10 years. FixitBay services Sub-Zero units throughout San Francisco\'s Pacific Heights, Noe Valley, Marina, and across the Peninsula and Marin County. We understand dual-compressor diagnostics, sealed-system refrigerant work, and the specific condenser maintenance that Sub-Zero units require in built-in cabinetry installations.',
+    intro2: 'That price tag is exactly why Sub-Zero repair almost always makes financial sense. A $400 to $800 repair on a 10-year-old Sub-Zero extends its useful life by another 5 to 10 years. FixitBay LLC services Sub-Zero units throughout San Francisco\'s Pacific Heights, Noe Valley, Marina, and across the Peninsula and Marin County. We understand dual-compressor diagnostics, sealed-system refrigerant work, and the specific condenser maintenance that Sub-Zero units require in built-in cabinetry installations.',
     appliances: [
       {
         name: 'Sub-Zero Built-In Refrigerators',
@@ -794,7 +794,7 @@ const brandLandingData = {
         a: 'Yes. Sub-Zero and Wolf are manufactured by the same company. Many Bay Area kitchens have both brands. We service Sub-Zero refrigeration and Wolf cooking products and can diagnose multiple units during the same visit.',
       },
     ],
-    seoTitle: 'Sub-Zero Repair San Francisco | FixitBay',
+    seoTitle: 'Sub-Zero Repair San Francisco | FixitBay LLC',
     seoDescription: 'Sub-Zero repair in San Francisco. Built-in refrigerators, freezer columns, wine coolers & ice makers. $60 diagnostic applied to repair. 180-day warranty.',
     reviews: [
       {
@@ -820,10 +820,10 @@ const brandLandingData = {
   'thermador': {
     name: 'Thermador',
     h1: 'Thermador Appliance Repair',
-    title: 'Thermador Appliance Repair San Francisco | FixitBay',
+    title: 'Thermador Appliance Repair San Francisco | FixitBay LLC',
     description: 'Thermador appliance repair in San Francisco. Ranges, ovens, cooktops, dishwashers & more. $60 diagnostic applied to repair. 180-day warranty.',
     intro: 'Thermador invented the residential wall oven, introduced the first cooktop with a downdraft ventilation system, and designed the Star Burner — a five-pointed, 56-port burner that distributes flame more evenly than any conventional round burner. Their appliances are engineering statements, and every Thermador product reflects that ambition: CrystalDry dishwashers use volcanic zeolite minerals to absorb moisture, Freedom refrigerator columns feature SoftClose hinges built to residential furniture standards, and their steam ovens include precision-calibrated boilers. This is not commodity appliance design.',
-    intro2: 'The complexity that makes Thermador exceptional also makes it unforgiving of generic repair attempts. Star Burner flame ports clog differently than standard burners and require individual cleaning of all 56 openings. CrystalDry zeolite cartridges are consumable components that most owners do not realize need periodic replacement. Steam oven boilers require descaling with specific solutions at specific intervals. FixitBay services Thermador units across San Francisco, the Peninsula, and Marin County, and we understand each of these systems at the component level.',
+    intro2: 'The complexity that makes Thermador exceptional also makes it unforgiving of generic repair attempts. Star Burner flame ports clog differently than standard burners and require individual cleaning of all 56 openings. CrystalDry zeolite cartridges are consumable components that most owners do not realize need periodic replacement. Steam oven boilers require descaling with specific solutions at specific intervals. FixitBay LLC services Thermador units across San Francisco, the Peninsula, and Marin County, and we understand each of these systems at the component level.',
     appliances: [
       {
         name: 'Thermador Ranges',
@@ -913,7 +913,7 @@ const brandLandingData = {
         a: 'We flush the steam generator with a commercial descaling solution, clear the mineral deposits from the internal passages, and reset the descale counter in the control board. If the generator is permanently scaled shut, we replace the unit.',
       },
     ],
-    seoTitle: 'Thermador Appliance Repair San Francisco | FixitBay',
+    seoTitle: 'Thermador Appliance Repair San Francisco | FixitBay LLC',
     seoDescription: 'Thermador appliance repair in San Francisco. Ranges, ovens, cooktops, dishwashers & more. $60 diagnostic applied to repair. 180-day warranty.',
     reviews: [
       {
@@ -932,17 +932,17 @@ const brandLandingData = {
         name: 'Margaret R.',
         location: 'Corte Madera',
         appliance: 'OVEN',
-        text: 'Thermador steam oven descale alert would not clear. FixitBay flushed the steam generator and cleared the mineral deposits. Works like new.',
+        text: 'Thermador steam oven descale alert would not clear. FixitBay LLC flushed the steam generator and cleared the mineral deposits. Works like new.',
       },
     ],
   },
   'viking': {
     name: 'Viking',
     h1: 'Viking Appliance Repair',
-    title: 'Viking Appliance Repair San Francisco | FixitBay',
+    title: 'Viking Appliance Repair San Francisco | FixitBay LLC',
     description: 'Viking appliance repair in San Francisco. Ranges, ovens, cooktops, refrigerators, dishwashers & more. $60 diagnostic applied to repair. 180-day warranty.',
     intro: 'Viking was the first brand to put commercial-grade cooking equipment into residential kitchens. Their Professional Series ranges produce 15,000 or more BTU per burner — two to three times the heat output of a standard residential range — housed in heavy-gauge stainless steel that weighs considerably more than anything else on the market. This commercial DNA extends to their ovens, cooktops, and ventilation hoods, all built with the same industrial-weight components and sealed-system engineering found in restaurant equipment.',
-    intro2: 'The trade-off for commercial-grade performance is commercial-grade maintenance needs. Viking burners produce more heat, which means more grease vaporization and faster port clogging than standard ranges. Their sealed burner systems require precise air-fuel mixture adjustments that standard appliance technicians rarely encounter. And their high-mass oven doors put significantly more stress on hinges and lock mechanisms over time. FixitBay services Viking ranges, ovens, cooktops, refrigerators, dishwashers, and ventilation hoods across San Francisco, the Peninsula, and Marin County.',
+    intro2: 'The trade-off for commercial-grade performance is commercial-grade maintenance needs. Viking burners produce more heat, which means more grease vaporization and faster port clogging than standard ranges. Their sealed burner systems require precise air-fuel mixture adjustments that standard appliance technicians rarely encounter. And their high-mass oven doors put significantly more stress on hinges and lock mechanisms over time. FixitBay LLC services Viking ranges, ovens, cooktops, refrigerators, dishwashers, and ventilation hoods across San Francisco, the Peninsula, and Marin County.',
     appliances: [
       {
         name: 'Viking Ranges',
@@ -1032,7 +1032,7 @@ const brandLandingData = {
         a: 'Yes. Blower motor replacements, speed control board repairs, and lighting upgrades are our most common Viking hood calls. We service wall-mount, island, and downdraft ventilation units from all Viking series.',
       },
     ],
-    seoTitle: 'Viking Appliance Repair San Francisco | FixitBay',
+    seoTitle: 'Viking Appliance Repair San Francisco | FixitBay LLC',
     seoDescription: 'Viking appliance repair in San Francisco. Ranges, ovens, cooktops, refrigerators, dishwashers & more. $60 diagnostic applied to repair. 180-day warranty.',
     reviews: [
       {
@@ -1058,10 +1058,10 @@ const brandLandingData = {
   'miele': {
     name: 'Miele',
     h1: 'Miele Appliance Repair',
-    title: 'Miele Appliance Repair San Francisco | FixitBay',
+    title: 'Miele Appliance Repair San Francisco | FixitBay LLC',
     description: 'Miele appliance repair in San Francisco. Dishwashers, washers, dryers, ovens, cooktops & more. $60 diagnostic applied to repair. 180-day warranty.',
     intro: 'Miele is the only major appliance manufacturer that designs, engineers, and assembles every component in-house in Germany — from motor windings and circuit boards to spray arms and door hinges. This vertical integration allows Miele to test every product to the equivalent of 20 years of average household use before it reaches the market. The result is appliances that routinely outlast their competitors by 5 to 10 years. But it also means that virtually every Miele component is proprietary — you cannot substitute a generic part and expect it to work correctly.',
-    intro2: 'A Miele dishwasher uses a completely different spray arm geometry, filtration system, and drying method than any other brand on the market. Their washers feature a unique honeycomb drum surface designed to create a thin film of water that protects fabrics during wash cycles. Their dryers use a heat-pump system with a self-cleaning condenser that no other manufacturer offers. FixitBay services Miele appliances across San Francisco, the Peninsula, and Marin County. We source Miele-specific parts and apply Miele-specific diagnostic procedures because this brand genuinely requires both.',
+    intro2: 'A Miele dishwasher uses a completely different spray arm geometry, filtration system, and drying method than any other brand on the market. Their washers feature a unique honeycomb drum surface designed to create a thin film of water that protects fabrics during wash cycles. Their dryers use a heat-pump system with a self-cleaning condenser that no other manufacturer offers. FixitBay LLC services Miele appliances across San Francisco, the Peninsula, and Marin County. We source Miele-specific parts and apply Miele-specific diagnostic procedures because this brand genuinely requires both.',
     appliances: [
       {
         name: 'Miele Dishwashers',
@@ -1151,7 +1151,7 @@ const brandLandingData = {
         a: 'Miele tests every product to the equivalent of 20 years of average household use — the most rigorous durability standard in the industry. With proper maintenance, many Miele dishwashers and washers exceed that mark. Repairing a Miele at 10 years is a straightforward decision.',
       },
     ],
-    seoTitle: 'Miele Appliance Repair San Francisco | FixitBay',
+    seoTitle: 'Miele Appliance Repair San Francisco | FixitBay LLC',
     seoDescription: 'Miele appliance repair in San Francisco. Dishwashers, washers, dryers, ovens, cooktops & more. $60 diagnostic applied to repair. 180-day warranty.',
     reviews: [
       {
@@ -1177,10 +1177,10 @@ const brandLandingData = {
   'kitchenaid': {
     name: 'KitchenAid',
     h1: 'KitchenAid Appliance Repair',
-    title: 'KitchenAid Appliance Repair San Francisco | FixitBay',
+    title: 'KitchenAid Appliance Repair San Francisco | FixitBay LLC',
     description: 'KitchenAid appliance repair in San Francisco. Refrigerators, dishwashers, ranges, ovens, washers & more. $60 diagnostic applied to repair. 180-day warranty.',
     intro: 'KitchenAid sits in a deliberate middle ground between mass-market brands and ultra-premium European lines. Their counter-depth refrigerators look built-in without the built-in price, their dishwashers offer third-rack flexibility at mid-range cost, and their dual-fuel ranges deliver performance features that used to be exclusive to professional-grade brands. Under the hood, KitchenAid shares many core components with its parent company Whirlpool — motors, pumps, heating elements, and compressors — which is actually an advantage for repair because parts are widely available and well-understood.',
-    intro2: 'Where KitchenAid diverges from Whirlpool is in the premium features layered on top: PrintShield stainless finishes that resist fingerprints differently than standard stainless, FreshFlow air filter systems in refrigerators, FreeFlex third-rack mechanisms in dishwashers, and EasyConvect conversion algorithms in ovens. These additions have their own unique failure modes that require specific knowledge beyond standard Whirlpool repair procedures. FixitBay services all KitchenAid appliances daily across San Francisco, the Peninsula, and Marin County.',
+    intro2: 'Where KitchenAid diverges from Whirlpool is in the premium features layered on top: PrintShield stainless finishes that resist fingerprints differently than standard stainless, FreshFlow air filter systems in refrigerators, FreeFlex third-rack mechanisms in dishwashers, and EasyConvect conversion algorithms in ovens. These additions have their own unique failure modes that require specific knowledge beyond standard Whirlpool repair procedures. FixitBay LLC services all KitchenAid appliances daily across San Francisco, the Peninsula, and Marin County.',
     appliances: [
       {
         name: 'KitchenAid Refrigerators',
@@ -1270,7 +1270,7 @@ const brandLandingData = {
         a: 'Many do. Since both brands share core components from the same manufacturing platform, a significant portion of KitchenAid repairs can use the same parts stocked for Whirlpool units. This cross-compatibility means most KitchenAid repairs can be completed in a single visit.',
       },
     ],
-    seoTitle: 'KitchenAid Appliance Repair San Francisco | FixitBay',
+    seoTitle: 'KitchenAid Appliance Repair San Francisco | FixitBay LLC',
     seoDescription: 'KitchenAid appliance repair in San Francisco. Refrigerators, dishwashers, ranges, ovens, washers & more. $60 diagnostic applied to repair. 180-day warranty.',
     reviews: [
       {

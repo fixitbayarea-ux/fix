@@ -55,7 +55,7 @@ const DEFAULT_BRANDS = [
 const DEFAULT_REVIEWS = [
   { name: 'Gayle R.', text: 'Andrei was excellent. He explained everything clearly and fixed our Sub-Zero the same day. Would definitely use again.', src: 'Google', stars: 5 },
   { name: 'Roland S.', text: 'Quickly figured out what was wrong, had the spare parts in no time and repaired it professionally at a reasonable price.', src: 'Google', stars: 5 },
-  { name: 'Michael K.', text: 'Knowledgeable, professional, fast. Answered all my questions. Highly recommend FixitBay!', src: 'Google', stars: 5 },
+  { name: 'Michael K.', text: 'Knowledgeable, professional, fast. Answered all my questions. Highly recommend FixitBay LLC!', src: 'Google', stars: 5 },
 ];
 
 const buildMobileFAQSchema = (faqs) => {
@@ -278,14 +278,14 @@ const MobileServiceLanding = ({
             fontSize: 15, fontWeight: 700, letterSpacing: '0.04em', cursor: 'pointer', fontFamily: F, marginBottom: 10,
           }}>BOOK REPAIR ONLINE</button>
 
-          <a href={`tel:${PHONE}`} onClick={() => handleCall('hero', pageSlug)} data-testid="hero-call-btn" aria-label={`Call FixitBay at ${PHONE_DISPLAY}`} style={{
+          <a href={`tel:${PHONE}`} onClick={() => handleCall('hero', pageSlug)} data-testid="hero-call-btn" aria-label={`Call FixitBay LLC at ${PHONE_DISPLAY}`} style={{
             width: '100%', minHeight: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
             background: 'transparent', color: PC.white, border: '2px solid rgba(255,255,255,0.65)', borderRadius: PC.r,
             fontSize: 15, fontWeight: 700, textDecoration: 'none', fontFamily: F,
           }}>CALL {PHONE_DISPLAY}</a>
 
           <p style={{ textAlign: 'center', margin: '8px 0 0', fontSize: 12, fontFamily: F }}>
-            <a href={`sms:${PHONE}?body=${encodeURIComponent(`Hi FixitBay, I need ${isMaintenance ? 'maintenance service' : 'a repair'}.`)}`} aria-label="Text FixitBay to schedule service" style={{ color: PC.white45, textDecoration: 'underline' }}>
+            <a href={`sms:${PHONE}?body=${encodeURIComponent(`Hi FixitBay LLC, I need ${isMaintenance ? 'maintenance service' : 'a repair'}.`)}`} aria-label="Text FixitBay LLC to schedule service" style={{ color: PC.white45, textDecoration: 'underline' }}>
               Text us for fastest scheduling
             </a>
           </p>
@@ -395,7 +395,7 @@ const MobileServiceLanding = ({
         <p style={{ fontSize: 11, fontWeight: 700, color: PC.accent, letterSpacing: '0.10em', textTransform: 'uppercase', margin: '0 0 14px', fontFamily: F }}>Your Technician</p>
         <div style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
           {techImage && (
-            <img src={techImage} alt="Andrei, FixitBay lead technician" width={72} height={72} loading="lazy" style={{ borderRadius: PC.r, objectFit: 'cover', flexShrink: 0, width: 72, height: 72 }} />
+            <img src={techImage} alt="Andrei, FixitBay LLC lead technician" width={72} height={72} loading="lazy" style={{ borderRadius: PC.r, objectFit: 'cover', flexShrink: 0, width: 72, height: 72 }} />
           )}
           <div>
             <p style={{ fontWeight: 700, fontSize: 15, color: PC.textDark, margin: '0 0 6px', fontFamily: F }}>Andrei — Lead Technician</p>
@@ -583,7 +583,7 @@ const MobileServiceLanding = ({
       {/* Back link */}
       <div style={{ padding: '14px 20px', textAlign: 'center', background: PC.navy }}>
         <a href="/" style={{ fontFamily: F, fontSize: 13, color: PC.white45, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
-          &larr; Back to FixitBay Home
+          &larr; Back to FixitBay LLC Home
         </a>
       </div>
 

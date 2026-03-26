@@ -41,7 +41,7 @@ const StoveRepairPage = () => {
     "serviceType": "Stove Repair",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     },
     "areaServed": { "@type": "City", "name": "San Francisco" }
@@ -52,7 +52,7 @@ const StoveRepairPage = () => {
       <MobileServiceLanding
         appliance="Stove"
         pageSlug="stove-repair"
-        pageTitle="Stove Repair San Francisco | Gas & Electric | FixitBay"
+        pageTitle="Stove Repair San Francisco | Gas & Electric | FixitBay LLC"
         metaDescription="Expert stove repair in San Francisco. Gas and electric stoves. $60 diagnostic applied to repair. 180-day warranty."
         heroTitle={<>Expert Stove<br />Repair in SF. Today.</>}
         heroImage="/images/technicians/range-tech.jpg"
@@ -79,7 +79,7 @@ const StoveRepairPage = () => {
     <ApplianceRepairPageNew
       serviceSchema={serviceSchema}
       appliance="Stove"
-      pageTitle="Stove Repair San Francisco | Gas & Electric | FixitBay"
+      pageTitle="Stove Repair San Francisco | Gas & Electric | FixitBay LLC"
       metaDescription="Expert stove repair in San Francisco. Gas and electric stoves. $60 diagnostic applied to repair. 180-day warranty."
       heroImage="/images/technicians/range-tech.jpg"
       heroImageAlt="FixitBay technician next to a stove in a San Francisco kitchen"

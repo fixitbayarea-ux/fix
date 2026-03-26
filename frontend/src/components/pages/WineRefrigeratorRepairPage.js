@@ -88,11 +88,11 @@ const WineRefrigeratorRepairPage = () => {
       <MobileServiceLanding
         appliance="Wine Cooler"
         pageSlug="wine-refrigerator-repair"
-        pageTitle="Wine Cooler Repair San Francisco | Same-Day | FixitBay"
+        pageTitle="Wine Cooler Repair San Francisco | Same-Day | FixitBay LLC"
         metaDescription="Specialized wine refrigerator repair across the Bay Area. Temperature, humidity, compressor issues. Same-day service. 180-day warranty."
         heroTitle={<>Wine Cooler Repair<br />Bay Area. Same Day.</>}
         heroImageAlt="wine cooler repair Bay Area"
-        heroDescription="FixitBay repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Same-day service, from $195 after $60 diagnostic."
+        heroDescription="FixitBay LLC repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Same-day service, from $195 after $60 diagnostic."
        
         issues={[
           { icon: '🌡️', label: 'Temp Wrong' },
@@ -127,9 +127,9 @@ const WineRefrigeratorRepairPage = () => {
       serviceSchema={serviceSchema}
       appliance="Wine Cooler"
       heroImageAlt="wine cooler repair Bay Area"
-      heroDescription="FixitBay repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Same-day service, from $195 after $60 diagnostic."
+      heroDescription="FixitBay LLC repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Same-day service, from $195 after $60 diagnostic."
       cmsSlug="wine-cooler-repair"
-      pageTitle="Wine Cooler Repair San Francisco | Same-Day | FixitBay"
+      pageTitle="Wine Cooler Repair San Francisco | Same-Day | FixitBay LLC"
       metaDescription="Specialized wine refrigerator repair across the Bay Area. Temperature, humidity, compressor issues. Same-day service. 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}

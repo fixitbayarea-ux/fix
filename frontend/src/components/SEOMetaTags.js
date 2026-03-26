@@ -110,7 +110,7 @@ const SEOMetaTags = ({
     setMetaName('twitter:title', finalTwitterTitle);
     setMetaName('twitter:description', finalTwitterDesc);
     setMetaName('twitter:image', finalImage);
-    setMetaName('twitter:image:alt', finalTitle || 'FixitBay Appliance Repair San Francisco');
+    setMetaName('twitter:image:alt', finalTitle || 'FixitBay LLC Appliance Repair San Francisco');
 
   }, [title, description, canonical, ogTitle, ogDescription, ogImage, keywords, noindex, ogType, twitterTitle, twitterDescription, twitterSite]);
 

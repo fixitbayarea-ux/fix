@@ -108,15 +108,15 @@ const BrandsPage = () => {
 
   /* Meta + Canonical via useEffect DOM injection */
   useEffect(() => {
-    document.title = 'Appliance Brand Repair in Bay Area | FixitBay \u2014 Bosch, Samsung, Sub-Zero & More';
+    document.title = 'Appliance Brand Repair in Bay Area | FixitBay LLC \u2014 Bosch, Samsung, Sub-Zero & More';
     const setMeta = (n, c, prop) => {
       const attr = prop ? 'property' : 'name';
       let el = document.querySelector(`meta[${attr}="${n}"]`);
       if (!el) { el = document.createElement('meta'); el.setAttribute(attr, n); document.head.appendChild(el); }
       el.setAttribute('content', c);
     };
-    setMeta('description', 'FixitBay repairs all major appliance brands in San Francisco Bay Area \u2014 Bosch, Samsung, LG, Sub-Zero, Wolf, Thermador & more. Same-day service, OEM parts, 180-day warranty. Call (760) 543-5733.');
-    setMeta('og:title', 'Appliance Brand Repair in Bay Area | FixitBay', true);
+    setMeta('description', 'FixitBay LLC repairs all major appliance brands in San Francisco Bay Area \u2014 Bosch, Samsung, LG, Sub-Zero, Wolf, Thermador & more. Same-day service, OEM parts, 180-day warranty. Call (760) 543-5733.');
+    setMeta('og:title', 'Appliance Brand Repair in Bay Area | FixitBay LLC', true);
     setMeta('og:description', 'We repair every major appliance brand in the Bay Area with OEM parts and 180-day warranty.', true);
     setMeta('og:url', 'https://fixitbay.net/brands', true);
     let canon = document.querySelector('link[rel="canonical"]');
@@ -353,7 +353,7 @@ const BrandsPage = () => {
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 36 }}>
             <div style={{ ...EYE, color: PC.accent }}>OUR ADVANTAGE</div>
-            <h2 className="brands-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.textDark }}>Why Choose FixitBay for Brand-Name Repairs</h2>
+            <h2 className="brands-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.textDark }}>Why Choose FixitBay LLC for Brand-Name Repairs</h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
             {[
@@ -382,9 +382,9 @@ const BrandsPage = () => {
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
             {[
-              { badge: 'BOSCH', text: 'Our Bosch dishwasher stopped draining. FixitBay diagnosed it in 30 minutes and had it running the same day. Genuinely impressive service.', name: 'Michael R.', loc: 'Pacific Heights, SF', init: 'M' },
+              { badge: 'BOSCH', text: 'Our Bosch dishwasher stopped draining. FixitBay LLC diagnosed it in 30 minutes and had it running the same day. Genuinely impressive service.', name: 'Michael R.', loc: 'Pacific Heights, SF', init: 'M' },
               { badge: 'SUB-ZERO', text: 'Had our Sub-Zero refrigerator compressor fail. The technician knew exactly what to do \u2014 OEM parts, clean work, and a 180-day warranty. Worth every penny.', name: 'Jennifer L.', loc: 'Marin County', init: 'J' },
-              { badge: 'SAMSUNG', text: 'Samsung washer error codes drove us crazy for weeks. FixitBay fixed the control board same day. Cheaper than I expected and fully warranted.', name: 'David K.', loc: 'Palo Alto', init: 'D' },
+              { badge: 'SAMSUNG', text: 'Samsung washer error codes drove us crazy for weeks. FixitBay LLC fixed the control board same day. Cheaper than I expected and fully warranted.', name: 'David K.', loc: 'Palo Alto', init: 'D' },
               { badge: 'WOLF', text: 'Wolf range igniter replacement in a Victorian flat \u2014 tight space, no problem. Technician came prepared with the part. Professional from start to finish.', name: 'Sarah M.', loc: 'Noe Valley, SF', init: 'S' },
             ].map((r, i) => (
               <div key={i} style={{ background: PC.navyMid, border: `1px solid ${PC.white08}`, borderRadius: PC.r, padding: 20, position: 'relative' }}>

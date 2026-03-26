@@ -36,7 +36,7 @@ const Pacifica = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair Pacifica | Coastal Same/Next-Day | FixitBay"
+        pageTitle="Appliance Repair Pacifica | Coastal Same/Next-Day | FixitBay LLC"
         metaDescription="Coastal appliance repair in Pacifica—Linda Mar, Sharp Park, Rockaway. Salt-air aware repairs. $60 diagnostic credited. 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

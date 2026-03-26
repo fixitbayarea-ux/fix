@@ -33,7 +33,7 @@ const FAQ = () => {
     },
     {
       question: "Are your technicians licensed and insured?",
-      answer: "Absolutely! All FixitBay technicians are fully licensed, bonded, and insured. We conduct thorough background checks and provide ongoing training to ensure the highest quality service. You can have complete peace of mind when we're in your home.",
+      answer: "Absolutely! All FixitBay LLC technicians are fully licensed, bonded, and insured. We conduct thorough background checks and provide ongoing training to ensure the highest quality service. You can have complete peace of mind when we're in your home.",
       icon: <Shield className="w-5 h-5" />
     }
   ];

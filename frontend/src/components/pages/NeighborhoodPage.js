@@ -251,7 +251,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
         {/* ─── 2. LOCAL INTRO ─── */}
         <section className="nh-intro" data-testid="nh-intro">
           <div className="nh-intro-inner">
-            <p>{data.name} is one of San Francisco's most distinctive neighborhoods. FixitBay technicians serve {data.name} residents with same-day appliance repair &mdash; refrigerators, washers, dryers, dishwashers, ovens and more.</p>
+            <p>{data.name} is one of San Francisco's most distinctive neighborhoods. FixitBay LLC technicians serve {data.name} residents with same-day appliance repair &mdash; refrigerators, washers, dryers, dishwashers, ovens and more.</p>
             <p>FixitBay LLC provides licensed, same-day appliance repair throughout {data.name}. Our technicians arrive with diagnostic tools and commonly needed parts to resolve most issues in a single visit. We serve every street in {data.name} &mdash; homes, condos, and apartments &mdash; covering all major brands and appliance types.</p>
             <p>{data.localIssue}</p>
           </div>
@@ -398,7 +398,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
             <a href="/service-areas">Service Areas</a>
           </div>
           <div className="nh-footer-row">
-            <a href="/" style={{ fontWeight: 700 }}>FixitBay</a>
+            <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
             <a href="tel:7605435733">(760) 543-5733</a>
             <span>&copy; 2026 FixitBay LLC</span>
           </div>

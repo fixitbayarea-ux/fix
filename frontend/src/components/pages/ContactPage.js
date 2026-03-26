@@ -87,7 +87,7 @@ const ContactPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Contact FixitBay | Appliance Repair San Francisco"
+        title="Contact FixitBay LLC | Appliance Repair San Francisco"
         description="Contact FixitBay LLC for same-day appliance repair in San Francisco Bay Area. Call (760) 543-5733 or book online. Licensed technicians, $60 diagnostic, 180-day warranty."
         canonical="https://fixitbay.net/contact"
       />
@@ -130,7 +130,7 @@ const ContactPage = () => {
             </nav>
             <div style={EYE}>GET IN TOUCH &mdash; BAY AREA</div>
             <h1 className="contact-h1" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.15, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 600, margin: '0 auto 16px' }}>
-              Contact FixitBay
+              Contact FixitBay LLC
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.78)', maxWidth: 500, margin: '0 auto 32px' }}>
               Need fast, reliable appliance repair? Same-day or next-day service available in San Francisco, Marin County &amp; Peninsula.
@@ -240,7 +240,7 @@ const ContactPage = () => {
                 <div style={EYE}>SERVICE MAP</div>
                 <div data-testid="service-area-map" style={{ borderRadius: 4, overflow: 'hidden', marginBottom: 16, border: '1px solid rgba(255,87,34,0.15)' }}>
                   <iframe
-                    title="FixitBay Service Area — San Francisco Bay Area"
+                    title="FixitBay LLC Service Area — San Francisco Bay Area"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d201879.72384241942!2d-122.47858865!3d37.7577627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000000"
                     width="100%"
                     height="200"

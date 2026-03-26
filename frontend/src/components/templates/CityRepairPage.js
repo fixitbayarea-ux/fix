@@ -309,7 +309,7 @@ const CityRepairPage = ({
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1A3B5D' }}>
-              Why {city} Residents Choose FixitBay
+              Why {city} Residents Choose FixitBay LLC
             </h2>
           </motion.div>
 

@@ -81,13 +81,13 @@ const REPAIRS = [
 const ServiceAreasHub = () => (
   <div className="service-areas-page" style={{ fontFamily: F, background: C.bg }}>
     <SEOMetaTags
-      title="Appliance Repair Service Areas | San Francisco Bay Area | FixitBay"
-      description="FixitBay serves 22 cities across San Francisco, the Peninsula, and Marin County. Find your service area and book same-day appliance repair. Call (760) 543-5733."
+      title="Appliance Repair Service Areas | San Francisco Bay Area | FixitBay LLC"
+      description="FixitBay LLC serves 22 cities across San Francisco, the Peninsula, and Marin County. Find your service area and book same-day appliance repair. Call (760) 543-5733."
       canonical="https://fixitbay.net/service-areas"
     />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
       "@context": "https://schema.org", "@type": "Service", "serviceType": "Appliance Repair Service Areas",
-      "provider": { "@type": "LocalBusiness", "name": "FixitBay", "telephone": "(760) 543-5733" },
+      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": "(760) 543-5733" },
       "areaServed": [{ "@type": "City", "name": "San Francisco" }, { "@type": "City", "name": "Daly City" }, { "@type": "City", "name": "San Rafael" }, { "@type": "City", "name": "Mill Valley" }]
     })}} />
 
@@ -130,7 +130,7 @@ const ServiceAreasHub = () => (
         <div style={{ fontWeight: 700, fontSize: 11, color: C.accent, textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: 10 }}>COVERAGE</div>
         <h2 style={{ fontWeight: 800, fontSize: 36, lineHeight: 1.15, color: C.navy, marginBottom: 20 }}>Areas We Serve</h2>
         <p style={{ fontSize: 14, fontWeight: 400, lineHeight: 1.8, color: C.text, marginBottom: 16 }}>
-          FixitBay provides professional in-home appliance repair across <strong>22 cities</strong> in San Francisco, the Peninsula, and North Bay communities. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, and more — bringing expertise and quality parts directly to your home, condo, or apartment.
+          FixitBay LLC provides professional in-home appliance repair across <strong>22 cities</strong> in San Francisco, the Peninsula, and North Bay communities. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, and more — bringing expertise and quality parts directly to your home, condo, or apartment.
         </p>
         <p style={{ fontSize: 14, fontWeight: 400, lineHeight: 1.8, color: C.text, marginBottom: 16 }}>
           We offer same-day and next-day appointments throughout the Bay Area. Whether you're in a Mission District apartment, a Pacifica coastal home, or a Mill Valley hillside residence, our team responds quickly with fully-stocked service vehicles. Every repair is backed by our comprehensive <strong>180-day warranty</strong> on parts and labor.

@@ -22,7 +22,7 @@ import FloatingButtons from '../FloatingButtons';
 
 const MarinCountyPage = () => {
   const city = "Marin County";
-  const pageTitle = "Appliance Repair Marin County | Same-Day Service | FixitBay";
+  const pageTitle = "Appliance Repair Marin County | Same-Day Service | FixitBay LLC";
   const metaDescription = "Licensed appliance repair in Marin County. Serving Mill Valley, San Rafael, Novato, Sausalito, Tiburon. $60 diagnostic, 180-day warranty. Same-day service.";
 
   const marinCities = [

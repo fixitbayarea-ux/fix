@@ -14,10 +14,10 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: "Why is my refrigerator running but not cooling?", a: "The most common causes are dirty condenser coils or a failed evaporator fan motor. Start by cleaning the coils \u2014 if the freezer is cold but the fridge compartment is warm, the evaporator fan likely needs replacement. In San Francisco, coastal humidity also accelerates gasket wear, causing cold air leaks." },
-  { q: "How much does refrigerator repair cost in San Francisco?", a: "Most refrigerator repairs cost $150\u2013$500 after the diagnostic fee. FixitBay charges a $60 diagnostic that is applied toward repair. Simple fixes like thermostat replacement start from $150. Compressor replacement on standard fridges ranges from $400\u2013$600. Sub-Zero and Viking repairs start from $555." },
+  { q: "How much does refrigerator repair cost in San Francisco?", a: "Most refrigerator repairs cost $150\u2013$500 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic that is applied toward repair. Simple fixes like thermostat replacement start from $150. Compressor replacement on standard fridges ranges from $400\u2013$600. Sub-Zero and Viking repairs start from $555." },
   { q: "Is it worth repairing a 10-year-old refrigerator?", a: "If the repair cost exceeds 50% of a new refrigerator\u2019s price, replacement usually makes more sense. The exception is premium brands \u2014 a Sub-Zero costs $5,000\u2013$15,000 new, so a $600 compressor repair is absolutely worth it even at 15+ years." },
   { q: "Can I fix a refrigerator not cooling myself?", a: "You can check three things yourself: clean the condenser coils, verify the thermostat setting (35\u201338\u00B0F), and test the door seal with a dollar bill. These cover about 40% of cases. If these don\u2019t solve it, the issue likely requires a licensed technician with diagnostic tools." },
-  { q: "How long does refrigerator repair take?", a: "Most repairs take 1\u20132 hours once the technician arrives. Parts like fan motors and thermostats are usually in stock on our truck. Compressor replacement may require ordering the part and a return visit. FixitBay offers same-day and next-day appointments Monday through Saturday." },
+  { q: "How long does refrigerator repair take?", a: "Most repairs take 1\u20132 hours once the technician arrives. Parts like fan motors and thermostats are usually in stock on our truck. Compressor replacement may require ordering the part and a return visit. FixitBay LLC offers same-day and next-day appointments Monday through Saturday." },
 ];
 
 const TOC = [
@@ -72,7 +72,7 @@ const RefrigeratorNotCooling = () => {
       id: 'article-schema',
       data: {
         "@context": "https://schema.org", "@type": "BlogPosting",
-        "headline": "Refrigerator Not Cooling? 8 Causes & Fixes | FixitBay SF",
+        "headline": "Refrigerator Not Cooling? 8 Causes & Fixes | FixitBay LLC SF",
         "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
         "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/navbar-logo-new-112.webp" } },
         "datePublished": "2026-03-23",
@@ -119,7 +119,7 @@ const RefrigeratorNotCooling = () => {
   return (
     <>
       <SEOMetaTags
-        title="Refrigerator Not Cooling? 8 Causes & Fixes | FixitBay SF"
+        title="Refrigerator Not Cooling? 8 Causes & Fixes | FixitBay LLC SF"
         description="Refrigerator not cooling? 8 common causes from dirty coils to compressor failure. SF Bay Area DIY checklist + when to call a pro. From $255 at FixitBay LLC."
         canonical="https://fixitbay.net/blog/refrigerator-not-cooling"
         ogType="article"
@@ -275,7 +275,7 @@ const RefrigeratorNotCooling = () => {
                   </div>
                 ))}
                 <p style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#1A1A1A', marginTop: 16 }}>
-                  If none of these solve it &rarr; call FixitBay: <a href="tel:7605435733" style={{ color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
+                  If none of these solve it &rarr; call FixitBay LLC: <a href="tel:7605435733" style={{ color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
                 </p>
               </div>
 
@@ -299,7 +299,7 @@ const RefrigeratorNotCooling = () => {
                   </tbody>
                 </table>
               </div>
-              <p style={P}>FixitBay <a href="/refrigerator-repair" style={{ color: '#C0362C', fontWeight: 600 }}>refrigerator repair</a> starts from $255 after $60 diagnostic. The $60 diagnostic fee is fully applied toward your repair cost.</p>
+              <p style={P}>FixitBay LLC <a href="/refrigerator-repair" style={{ color: '#C0362C', fontWeight: 600 }}>refrigerator repair</a> starts from $255 after $60 diagnostic. The $60 diagnostic fee is fully applied toward your repair cost.</p>
 
               {/* ── Andrei's Field Note ── */}
               <h2 id="field-note" style={H2S}>Andrei's Field Note</h2>

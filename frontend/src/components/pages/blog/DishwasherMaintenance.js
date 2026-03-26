@@ -17,7 +17,7 @@ const DishwasherMaintenance = () => {
   return (
     <>
       <SEOMetaTags
-        title="How to Maintain Your Dishwasher for Longer Life | FixitBay"
+        title="How to Maintain Your Dishwasher for Longer Life | FixitBay LLC"
         description="Simple dishwasher maintenance tips to prevent clogs, leaks, and odors. Clean filters, check spray arms, and maintain door seals."
         canonical="https://fixitbay.net/blog/dishwasher-maintenance"
         keywords="dishwasher maintenance, clean dishwasher filter, dishwasher care, prevent dishwasher problems, dishwasher longevity, San Francisco dishwasher service"

@@ -960,7 +960,7 @@ const ApplianceRepairPageNew = ({
         return (
           <section style={{ background: '#FFFFFF', padding: '60px 0' }}>
             <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 24px' }}>
-              <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 16 }}>Why {cityName} Residents Call FixitBay</h2>
+              <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 16 }}>Why {cityName} Residents Call FixitBay LLC</h2>
               <div style={{ ...S.body }}>
                 {cd ? (
                   <>

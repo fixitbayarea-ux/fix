@@ -110,7 +110,7 @@ const MobileCommercialRepair = () => (
       "@context": "https://schema.org",
       "@type": "Service",
       "serviceType": "Commercial Appliance Repair",
-      "provider": { "@type": "LocalBusiness", "name": "FixitBay", "telephone": PHONE_DISPLAY },
+      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": PHONE_DISPLAY },
     }}
   />
 );

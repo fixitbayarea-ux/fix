@@ -36,7 +36,7 @@ const Millbrae = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair Millbrae | Same-Day Service | FixitBay"
+        pageTitle="Appliance Repair Millbrae | Same-Day Service | FixitBay LLC"
         metaDescription="Professional appliance repair in Millbrae near BART, Caltrain. Same-day service. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

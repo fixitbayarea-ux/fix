@@ -29,7 +29,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Emergency Commercial Dishwasher Repair in San Francisco',
   paragraphs: [
-    <>When your commercial dishwasher breaks down during service, dirty dishes pile up fast. San Francisco health code requires proper sanitization of all food contact surfaces, so a non-functioning dishwasher can lead to violations and forced closure. FixitBay provides <strong>emergency same-day commercial dishwasher repair</strong> for restaurants, hotels, hospitals, and institutional kitchens.</>,
+    <>When your commercial dishwasher breaks down during service, dirty dishes pile up fast. San Francisco health code requires proper sanitization of all food contact surfaces, so a non-functioning dishwasher can lead to violations and forced closure. FixitBay LLC provides <strong>emergency same-day commercial dishwasher repair</strong> for restaurants, hotels, hospitals, and institutional kitchens.</>,
     <>Our licensed technician diagnoses under-counter units, door-type machines, and conveyor dishwashers from all major manufacturers. We test wash and rinse temperatures, inspect spray arms and pumps, check chemical dispensers, and evaluate control systems. The <strong>$100 diagnostic fee</strong> is credited toward your repair.</>,
     <>From booster heater replacements and thermostat calibrations to pump rebuilds and control board repairs, we handle the full range of commercial warewashing issues. Every repair includes our <strong>180-day warranty on parts and labor</strong>.</>,
   ],
@@ -67,7 +67,7 @@ const UniqueContent = () => (
         <div style={{ fontFamily: F, fontWeight: 700, fontSize: 11, letterSpacing: '0.14em', color: '#FF5722', textTransform: 'uppercase', marginBottom: 10 }}>COMPLIANCE</div>
         <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#0D1B2A', marginBottom: 24, lineHeight: 1.2 }}>Health Code Compliance for San Francisco Restaurants</h2>
         <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.8, marginBottom: 20 }}>
-          The San Francisco Department of Public Health enforces strict warewashing requirements for all food service establishments. A commercial dishwasher that doesn't meet temperature or chemical concentration standards can result in violations, point deductions, and in serious cases, forced closure. FixitBay helps restaurants, hotels, and institutional kitchens maintain full compliance.
+          The San Francisco Department of Public Health enforces strict warewashing requirements for all food service establishments. A commercial dishwasher that doesn't meet temperature or chemical concentration standards can result in violations, point deductions, and in serious cases, forced closure. FixitBay LLC helps restaurants, hotels, and institutional kitchens maintain full compliance.
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 24 }}>
           {[
@@ -166,7 +166,7 @@ const MobilePage = () => (
       "@context": "https://schema.org",
       "@type": "Service",
       "serviceType": "Commercial Dishwasher Repair",
-      "provider": { "@type": "LocalBusiness", "name": "FixitBay", "telephone": PHONE_DISPLAY },
+      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": PHONE_DISPLAY },
     }}
   />
 );

@@ -36,7 +36,7 @@ const SanRafael = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair San Rafael | Same-Day Service | FixitBay"
+        pageTitle="Appliance Repair San Rafael | Same-Day Service | FixitBay LLC"
         metaDescription="Professional appliance repair in San Rafael. Same-day service in Terra Linda, Marinwood, downtown. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

@@ -96,7 +96,7 @@ export const getLocalBusinessSchema = (city = "San Francisco") => {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Andrei was professional, punctual, and fixed our refrigerator perfectly. Highly recommend FixitBay!"
+        "reviewBody": "Andrei was professional, punctual, and fixed our refrigerator perfectly. Highly recommend FixitBay LLC!"
       }
     ],
     "aggregateRating": {

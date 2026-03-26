@@ -26,7 +26,7 @@ const SanBruno = () => {
   const serviceDescription = {
     title: 'Professional Appliance Repair in San Bruno, CA',
     paragraphs: [
-      'San Bruno\'s central Peninsula location between San Francisco and the South Bay makes it a strategic service area for FixitBay. From the Tanforan shopping district to Portola Highlands\' hilltop homes, we navigate San Bruno\'s neighborhoods daily. Our technicians know the area\'s mix of post-war tract homes, modern condos near BART, and hillside properties, along with the specific appliance challenges each housing type presents.',
+      'San Bruno\'s central Peninsula location between San Francisco and the South Bay makes it a strategic service area for FixitBay LLC. From the Tanforan shopping district to Portola Highlands\' hilltop homes, we navigate San Bruno\'s neighborhoods daily. Our technicians know the area\'s mix of post-war tract homes, modern condos near BART, and hillside properties, along with the specific appliance challenges each housing type presents.',
       'San Bruno\'s proximity to SFO and major highways means we can respond quickly to appliance emergencies. We serve residential properties throughout San Bruno\'s diverse neighborhoods, from Mills Park\'s family homes to downtown apartments. Our vans carry parts for common appliance failures, and we can source specialized components quickly from our Peninsula network.',
       'Same-day service is standard in San Bruno with a $60 diagnostic fee credited toward all repairs. We provide transparent estimates before starting work and back every repair with a 180-day parts and labor warranty. Our licensed technicians service all major appliance brands and handle both traditional and high-efficiency models.'
     ]
@@ -36,7 +36,7 @@ const SanBruno = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair San Bruno | Same-Day | FixitBay"
+        pageTitle="Appliance Repair San Bruno | Same-Day | FixitBay LLC"
         metaDescription="Professional appliance repair in San Bruno. Same-day service near SFO, BART, downtown. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

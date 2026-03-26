@@ -15,11 +15,11 @@ const TH = { color: '#fff', fontWeight: 700, padding: '12px 16px', textAlign: 'l
 const TD = (i) => ({ padding: '10px 16px', borderBottom: '1px solid rgba(0,0,0,0.06)', fontFamily: F, fontSize: 14, background: i % 2 === 0 ? '#F8F5F0' : '#fff' });
 
 const FAQ_ITEMS = [
-  { q: "How much does appliance repair cost in San Francisco?", a: "Most appliance repairs in San Francisco cost between $150\u2013$500 after the diagnostic fee. Simple fixes like a blown thermal fuse or clogged drain start around $150. Complex repairs like compressor replacement can reach $600\u2013$800. FixitBay charges a $60 diagnostic that is fully applied toward the repair cost." },
+  { q: "How much does appliance repair cost in San Francisco?", a: "Most appliance repairs in San Francisco cost between $150\u2013$500 after the diagnostic fee. Simple fixes like a blown thermal fuse or clogged drain start around $150. Complex repairs like compressor replacement can reach $600\u2013$800. FixitBay LLC charges a $60 diagnostic that is fully applied toward the repair cost." },
   { q: "Is the diagnostic fee worth it?", a: "Yes. The $60 diagnostic gives you an exact diagnosis and upfront repair estimate with no obligation. Companies that offer \u2018free diagnostics\u2019 typically build that cost into inflated repair prices. Our diagnostic fee ensures you get honest pricing whether you proceed with the repair or not." },
   { q: "Why is appliance repair more expensive in San Francisco?", a: "SF repair costs are 20\u201340% higher than suburban areas due to parking costs, building access logistics, older housing stock requiring extra labor, higher concentration of European luxury appliances with expensive parts, and the general cost of doing business in the city." },
   { q: "Is it cheaper to repair or replace an appliance?", a: "General rule: if the repair costs less than 50% of a new appliance and the unit is under 8\u201310 years old, repair makes sense. For luxury brands like Sub-Zero ($5,000\u2013$15,000 new), repair is almost always the better choice. For standard brands over 12 years old with major failures, replacement often wins." },
-  { q: "Does FixitBay charge extra for weekends or emergency service?", a: "FixitBay offers same-day and next-day appointments Monday through Saturday at the same pricing. No emergency surcharges, no weekend premiums. The $60 diagnostic fee and quoted repair prices apply equally regardless of when we come." },
+  { q: "Does FixitBay LLC charge extra for weekends or emergency service?", a: "FixitBay LLC offers same-day and next-day appointments Monday through Saturday at the same pricing. No emergency surcharges, no weekend premiums. The $60 diagnostic fee and quoted repair prices apply equally regardless of when we come." },
 ];
 
 const TOC = [
@@ -30,7 +30,7 @@ const TOC = [
   { id: 'repair-replace', label: 'Repair vs. Replace Guide' },
   { id: 'by-problem', label: 'Costs by Problem' },
   { id: 'advice', label: "Andrei\u2019s Pricing Advice" },
-  { id: 'compare', label: 'How FixitBay Compares' },
+  { id: 'compare', label: 'How FixitBay LLC Compares' },
   { id: 'faq', label: 'Frequently Asked Questions' },
   { id: 'related', label: 'Related Articles' },
 ];
@@ -104,7 +104,7 @@ const ApplianceRepairCostSanFrancisco = () => {
       id: 'article-schema',
       data: {
         "@context": "https://schema.org", "@type": "BlogPosting",
-        "headline": "Appliance Repair Cost San Francisco 2026 | FixitBay Guide",
+        "headline": "Appliance Repair Cost San Francisco 2026 | FixitBay LLC Guide",
         "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
         "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/navbar-logo-new-112.webp" } },
         "datePublished": "2026-03-23",
@@ -149,8 +149,8 @@ const ApplianceRepairCostSanFrancisco = () => {
   return (
     <>
       <SEOMetaTags
-        title="Appliance Repair Cost San Francisco 2026 | FixitBay Guide"
-        description="How much does appliance repair cost in San Francisco? Full 2026 pricing guide for refrigerators, washers, dryers, ovens & more. From $60 diagnostic at FixitBay."
+        title="Appliance Repair Cost San Francisco 2026 | FixitBay LLC Guide"
+        description="How much does appliance repair cost in San Francisco? Full 2026 pricing guide for refrigerators, washers, dryers, ovens & more. From $60 diagnostic at FixitBay LLC."
         canonical="https://fixitbay.net/blog/appliance-repair-cost-san-francisco"
         ogType="article"
       />
@@ -220,7 +220,7 @@ const ApplianceRepairCostSanFrancisco = () => {
                 <span style={{ fontWeight: 600, color: '#1A1A1A' }}>How much should you expect to pay for <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>appliance repair</a> in San Francisco?</span> As a licensed technician who's done over 2,000 service calls across the Bay Area, I get this question daily. The honest answer: it depends on the appliance, the problem, and whether you need standard or luxury brand parts.
               </p>
               <p style={{ ...P, marginBottom: 16 }}>
-                Below is a transparent breakdown of what we charge at FixitBay and what the market looks like in 2026. No hidden fees, no bait-and-switch pricing — just real numbers from a real technician.
+                Below is a transparent breakdown of what we charge at FixitBay LLC and what the market looks like in 2026. No hidden fees, no bait-and-switch pricing — just real numbers from a real technician.
               </p>
               <p style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#1A3B5D', fontStyle: 'italic', marginBottom: 28 }}>
                 — Andrei, Licensed Appliance Technician, FixitBay LLC
@@ -228,7 +228,7 @@ const ApplianceRepairCostSanFrancisco = () => {
 
               {/* ── Main Pricing Table ── */}
               <h2 id="pricing" style={H2S}>Complete Appliance Repair Pricing — San Francisco 2026</h2>
-              <PricingTable testId="pricing-table" headers={['Appliance', 'FixitBay Starting Price', 'Typical SF Market Range']}
+              <PricingTable testId="pricing-table" headers={['Appliance', 'FixitBay LLC Starting Price', 'Typical SF Market Range']}
                 rows={MAIN_PRICING.map((r, i) => (
                   <tr key={i}>
                     <td style={{ ...TD(i), color: '#1A1A1A', fontWeight: 600 }}>
@@ -257,7 +257,7 @@ const ApplianceRepairCostSanFrancisco = () => {
 
               {/* ── Luxury Pricing ── */}
               <h2 id="luxury" style={H2S}>Luxury & High-End Brand Repair Pricing</h2>
-              <PricingTable testId="luxury-table" headers={['Brand', 'FixitBay Starting Price', 'Why It Costs More']}
+              <PricingTable testId="luxury-table" headers={['Brand', 'FixitBay LLC Starting Price', 'Why It Costs More']}
                 rows={LUXURY_PRICING.map((r, i) => (
                   <tr key={i}>
                     <td style={{ ...TD(i), color: '#1A1A1A', fontWeight: 600 }}>
@@ -360,13 +360,13 @@ const ApplianceRepairCostSanFrancisco = () => {
                 <footer style={{ fontFamily: F, fontSize: 14, fontWeight: 700, color: '#1A3B5D' }}>— Andrei, Lead Appliance Technician, FixitBay LLC</footer>
               </blockquote>
 
-              {/* ── How FixitBay Compares ── */}
-              <h2 id="compare" style={H2S}>How FixitBay Compares</h2>
+              {/* ── How FixitBay LLC Compares ── */}
+              <h2 id="compare" style={H2S}>How FixitBay LLC Compares</h2>
               <div style={{ overflowX: 'auto', marginBottom: 16 }}>
                 <table data-testid="compare-table" style={{ width: '100%', borderCollapse: 'collapse', fontFamily: F, fontSize: 14 }}>
                   <thead><tr style={{ background: '#1A3B5D' }}>
                     <th style={TH}>Feature</th>
-                    <th style={{ ...TH, background: '#FF5722' }}>FixitBay</th>
+                    <th style={{ ...TH, background: '#FF5722' }}>FixitBay LLC</th>
                     <th style={TH}>Typical SF Companies</th>
                   </tr></thead>
                   <tbody>

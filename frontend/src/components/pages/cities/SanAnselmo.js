@@ -36,7 +36,7 @@ const SanAnselmo = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair San Anselmo | Same-Day Service | FixitBay"
+        pageTitle="Appliance Repair San Anselmo | Same-Day Service | FixitBay LLC"
         metaDescription="Professional appliance repair in San Anselmo. Same-day service downtown and in Sleepy Hollow. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

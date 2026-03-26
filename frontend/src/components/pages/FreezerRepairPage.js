@@ -62,7 +62,7 @@ const FreezerRepairPage = () => {
     "serviceType": "Freezer Repair",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     },
     "areaServed": SERVICE_CITIES_SCHEMA
@@ -73,7 +73,7 @@ const FreezerRepairPage = () => {
       <MobileServiceLanding
         appliance="Freezer"
         pageSlug="freezer-repair"
-        pageTitle="Freezer Repair San Francisco | Same-Day | FixitBay"
+        pageTitle="Freezer Repair San Francisco | Same-Day | FixitBay LLC"
         metaDescription="Expert freezer repair in San Francisco. Standalone and built-in freezers. $60 diagnostic applied to repair. 180-day warranty."
         heroTitle={<>Expert Freezer<br />Repair in SF. Today.</>}
         techImage="/images/technicians/freezer-tech.jpg"
@@ -96,7 +96,7 @@ const FreezerRepairPage = () => {
       <ApplianceRepairPageNew
       serviceSchema={serviceSchema}
       appliance="Freezer"
-      pageTitle="Freezer Repair San Francisco | Same-Day | FixitBay"
+      pageTitle="Freezer Repair San Francisco | Same-Day | FixitBay LLC"
       metaDescription="Expert freezer repair in San Francisco. Standalone and built-in freezers. $60 diagnostic applied to repair. 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}

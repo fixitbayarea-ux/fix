@@ -36,7 +36,7 @@ const Ross = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair Ross | Luxury Brands | FixitBay"
+        pageTitle="Appliance Repair Ross | Luxury Brands | FixitBay LLC"
         metaDescription="Premium appliance repair in Ross. Sub-Zero, Wolf, Thermador specialists. Luxury hillside estates. Same-day service. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

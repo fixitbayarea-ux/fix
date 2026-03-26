@@ -36,7 +36,7 @@ const Montara = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair Montara | Coastal Specialists | FixitBay"
+        pageTitle="Appliance Repair Montara | Coastal Specialists | FixitBay LLC"
         metaDescription="Coastal appliance repair in Montara. Salt-air and ocean exposure specialists. $60 diagnostic, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

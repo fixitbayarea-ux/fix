@@ -22,7 +22,7 @@ const TrustIndicators = () => {
       name: "Lisa Rodriguez",
       location: "San Jose", 
       rating: 5,
-      text: "Highly recommend FixitBay! They fixed our dishwasher perfectly and provided great warranty coverage.",
+      text: "Highly recommend FixitBay LLC! They fixed our dishwasher perfectly and provided great warranty coverage.",
       image: "https://images.unsplash.com/photo-1581094016871-d948d70c26cd"
     }
   ];

@@ -63,7 +63,7 @@ const CooktopRepairPage = () => {
     "serviceType": "Cooktop Repair",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     },
     "areaServed": SERVICE_CITIES_SCHEMA
@@ -74,7 +74,7 @@ const CooktopRepairPage = () => {
       <MobileServiceLanding
         appliance="Cooktop"
         pageSlug="cooktop-repair"
-        pageTitle="Cooktop Repair San Francisco | Gas & Electric | FixitBay"
+        pageTitle="Cooktop Repair San Francisco | Gas & Electric | FixitBay LLC"
         metaDescription="Gas, electric, and induction cooktop repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty."
         heroTitle={<>Expert Cooktop<br />Repair in SF. Today.</>}
        
@@ -111,7 +111,7 @@ const CooktopRepairPage = () => {
       serviceSchema={serviceSchema}
       appliance="Cooktop"
       cmsSlug="cooktop-repair"
-      pageTitle="Cooktop Repair San Francisco | Gas & Electric | FixitBay"
+      pageTitle="Cooktop Repair San Francisco | Gas & Electric | FixitBay LLC"
       metaDescription="Gas, electric, and induction cooktop repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}

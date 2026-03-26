@@ -251,7 +251,7 @@ const DynamicLandingPage = () => {
             </p>
 
             <motion.a
-              href="https://www.google.com/search?sca_esv=a519e401c1c67213&sxsrf=AE3TifOBkxh-FKVX9NvyCWKa2DZ8STY4qw:1753743378875&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E-_Zh_TRb_LPxpYzRDp08qjMXGmOaRGKNLUlfA_vZP00r0wXHbHmqywg5DnRvgpckZkm-WmhnUPhYWx5-ODRBinOZ4m2&q=FixitBay+LLC+Reviews&sa=X&ved=2ahUKEwju6_-Y0-COAxXSKUQIHYKwKk4Q0bkNegQIRRAC"
+              href="https://www.google.com/search?sca_esv=a519e401c1c67213&sxsrf=AE3TifOBkxh-FKVX9NvyCWKa2DZ8STY4qw:1753743378875&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E-_Zh_TRb_LPxpYzRDp08qjMXGmOaRGKNLUlfA_vZP00r0wXHbHmqywg5DnRvgpckZkm-WmhnUPhYWx5-ODRBinOZ4m2&q=FixitBay LLC+LLC+Reviews&sa=X&ved=2ahUKEwju6_-Y0-COAxXSKUQIHYKwKk4Q0bkNegQIRRAC"
               target="_blank" rel="noopener noreferrer"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}

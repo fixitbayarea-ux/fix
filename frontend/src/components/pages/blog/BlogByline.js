@@ -9,7 +9,7 @@ const F = 'Montserrat, sans-serif';
 const BlogByline = ({ dateISO, dateFormatted, readTime }) => (
   <div data-testid="blog-byline" style={{ display: 'flex', justifyContent: 'center', gap: 8, alignItems: 'center', flexWrap: 'wrap', marginBottom: 16 }}>
     <span style={{ fontFamily: F, fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.85)' }}>
-      By Andrei &middot; Lead Technician, FixitBay
+      By Andrei &middot; Lead Technician, FixitBay LLC
     </span>
     <span style={{ color: 'rgba(255,255,255,0.3)', fontSize: 13 }}>|</span>
     <time dateTime={dateISO} style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>

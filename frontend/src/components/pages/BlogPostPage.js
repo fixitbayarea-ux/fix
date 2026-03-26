@@ -33,7 +33,7 @@ const BlogPostPage = () => {
       document.title = post.meta_title || post.title;
     }
     return () => {
-      document.title = 'Appliance Repair San Francisco & Bay Area | FixitBay';
+      document.title = 'Appliance Repair San Francisco & Bay Area | FixitBay LLC';
     };
   }, [post]);
 
@@ -62,7 +62,7 @@ const BlogPostPage = () => {
 
   return (
     <div className="min-h-screen" style={{ paddingTop: '64px', background: '#F7FAFC' }}>
-      <SEOMetaTags title={post.title + ' | FixitBay Blog'} description={post.meta_description || post.excerpt} canonical={`https://fixitbay.net/blog/${post.slug}`} />
+      <SEOMetaTags title={post.title + ' | FixitBay LLC Blog'} description={post.meta_description || post.excerpt} canonical={`https://fixitbay.net/blog/${post.slug}`} />
 
       {/* ─── Back button + Breadcrumb bar ─── */}
       <div className="bg-white border-b shadow-sm">
@@ -112,7 +112,7 @@ const BlogPostPage = () => {
           </h1>
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <span className="flex items-center gap-1"><Clock className="w-4 h-4" />{post.publish_date || 'Recently'}</span>
-            <span>By {post.author || 'FixitBay Team'}</span>
+            <span>By {post.author || 'FixitBay LLC Team'}</span>
           </div>
         </header>
 

@@ -190,7 +190,7 @@ const CityServicePage = () => {
         { title: "Running Constantly", description: "Compressor won't stop, high energy bills, or unit overheating." },
       ],
       heroImage: "/images/technicians/fridge-tech.jpg",
-      heroImageAlt: `FixitBay technician repairing a refrigerator in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a refrigerator in ${cityName}`,
     },
     'washer': {
       problems: [
@@ -202,7 +202,7 @@ const CityServicePage = () => {
         { title: "Not Filling", description: "Water not entering drum, slow fill, or no water flow." },
       ],
       heroImage: "/images/technicians/washer-tech.jpg",
-      heroImageAlt: `FixitBay technician repairing a washer in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a washer in ${cityName}`,
     },
     'dryer': {
       problems: [
@@ -214,7 +214,7 @@ const CityServicePage = () => {
         { title: "Won't Tumble", description: "Drum not spinning, motor runs but no drum movement." },
       ],
       heroImage: "/images/technicians/dryer-tech.jpg",
-      heroImageAlt: `FixitBay technician repairing a dryer in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a dryer in ${cityName}`,
     },
     'dishwasher': {
       problems: [
@@ -226,7 +226,7 @@ const CityServicePage = () => {
         { title: "Making Noise", description: "Grinding, humming, or unusual sounds during operation." },
       ],
       heroImage: "/images/technicians/dishwasher-tech.jpg",
-      heroImageAlt: `FixitBay technician repairing a dishwasher in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a dishwasher in ${cityName}`,
     },
     'oven': {
       problems: [
@@ -238,7 +238,7 @@ const CityServicePage = () => {
         { title: "Self-Clean Issues", description: "Self-clean cycle not working or door locked after cleaning." },
       ],
       heroImage: "/images/technicians/oven-tech.jpg",
-      heroImageAlt: `FixitBay technician repairing an oven in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing an oven in ${cityName}`,
     },
     'ice-maker': {
       problems: [
@@ -250,7 +250,7 @@ const CityServicePage = () => {
         { title: "Small Ice Cubes", description: "Ice cubes too small, hollow, or misshapen." },
       ],
       heroImage: "/images/technicians/ice-maker-tech.jpg",
-      heroImageAlt: `FixitBay technician repairing an ice maker in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing an ice maker in ${cityName}`,
     },
     'wine-cooler': {
       problems: [
@@ -262,7 +262,7 @@ const CityServicePage = () => {
         { title: "Light Not Working", description: "Interior light burned out, flickering, or not turning on." },
       ],
       heroImage: "/images/technicians/wine-cooler-tech.jpg",
-      heroImageAlt: `FixitBay technician repairing a wine cooler in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a wine cooler in ${cityName}`,
     },
     'cooktop': {
       problems: [
@@ -274,7 +274,7 @@ const CityServicePage = () => {
         { title: "Control Issues", description: "Knobs not working, touch controls unresponsive." },
       ],
       heroImage: "/images/technicians/cooktop-tech.jpg",
-      heroImageAlt: `FixitBay technician repairing a cooktop in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a cooktop in ${cityName}`,
     },
     'range': {
       problems: [
@@ -286,7 +286,7 @@ const CityServicePage = () => {
         { title: "Self-Clean Problems", description: "Self-clean function not working or door stuck." },
       ],
       heroImage: "/images/technicians/range-tech.jpg",
-      heroImageAlt: `FixitBay technician repairing a range in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a range in ${cityName}`,
     },
     'freezer': {
       problems: [
@@ -298,7 +298,7 @@ const CityServicePage = () => {
         { title: "Temperature Fluctuations", description: "Temperature varying, items partially frozen." },
       ],
       heroImage: "/images/technicians/freezer-tech.jpg",
-      heroImageAlt: `FixitBay technician repairing a freezer in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a freezer in ${cityName}`,
     },
   };
   
@@ -353,14 +353,14 @@ const CityServicePage = () => {
     "description": `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Same-day service, $60 diagnostic applied to repair, 180-day warranty.`
   };
 
-  const pageTitle = `${serviceName} Repair ${cityName} | Same-Day | FixitBay`;
+  const pageTitle = `${serviceName} Repair ${cityName} | Same-Day | FixitBay LLC`;
   const metaDescription = `Licensed ${serviceName.toLowerCase()} repair in ${cityName}, CA. Same-day & next-day service. $60 diagnostic applied to repair. 180-day warranty on parts and labor.`;
 
   // Rich service description with local context
   const serviceDescription = {
     title: `Expert ${serviceName} Repair in ${cityName}`,
     paragraphs: [
-      <>FixitBay provides professional {serviceName.toLowerCase()} repair throughout {cityName}, serving {cityContext.neighborhoods} with same-day and next-day availability. Our licensed technicians arrive with common {serviceName.toLowerCase()} parts stocked—including thermostats, pumps, motors, and control boards—enabling us to complete most repairs during the first visit.</>,
+      <>FixitBay LLC provides professional {serviceName.toLowerCase()} repair throughout {cityName}, serving {cityContext.neighborhoods} with same-day and next-day availability. Our licensed technicians arrive with common {serviceName.toLowerCase()} parts stocked—including thermostats, pumps, motors, and control boards—enabling us to complete most repairs during the first visit.</>,
       <><strong>Local expertise matters.</strong> {cityContext.localFactor}</>,
       <><strong>{serviceName} Repair Pricing in {cityName}:</strong> Most repairs cost {pricing.range} after the $60 diagnostic fee. Common repairs include: {pricing.common}. We provide exact pricing before starting any work, and the $60 diagnostic is fully applied to your repair cost.</>,
       <>Every {serviceName.toLowerCase()} repair in {cityName} includes our comprehensive <strong>180-day warranty</strong> on parts and labor. We service all major brands including Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Viking, and Thermador. Call <a href="tel:+17605435733">(760) 543-5733</a> or <a href="/book">book online</a> for fast {serviceName.toLowerCase()} repair service in {cityName}.</>,

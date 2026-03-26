@@ -191,7 +191,7 @@ const SiteNavbar = () => {
           <a 
             href="/" 
             className="flex items-center shrink-0"
-            aria-label="FixitBay Home"
+            aria-label="FixitBay LLC Home"
             style={{
               gap: 12,
               padding: '8px 14px',
@@ -432,7 +432,7 @@ const SiteNavbar = () => {
                 textDecoration: 'none',
                 opacity: 1,
               }}
-              aria-label={`Call FixitBay at ${PHONE_DISPLAY}`}
+              aria-label={`Call FixitBay LLC at ${PHONE_DISPLAY}`}
               onClick={() => trackNavClick('phone_cta')}
             >
               <Phone className="w-4 h-4" style={{ color: '#FF5722' }} />
@@ -776,7 +776,7 @@ const SiteNavbar = () => {
               <a href="tel:+17605435733" style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, background:'transparent', color:'#FF5722', padding:'10px 24px', borderRadius:'4px', border:'2px solid #FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:'14px', textDecoration:'none' }} onClick={() => trackNavClick('mobile_menu_call')}>
                 (760) 543-5733
               </a>
-              <a href="sms:+17605435733?body=Hi%20FixitBay!%20I%20need%20appliance%20repair." style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, background:'transparent', color:'rgba(255,255,255,0.65)', padding:'10px 24px', minHeight:'44px', borderRadius:'4px', border:'1px solid rgba(255,255,255,0.15)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:'13px', textDecoration:'none' }}>
+              <a href="sms:+17605435733?body=Hi%20FixitBay LLC!%20I%20need%20appliance%20repair." style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, background:'transparent', color:'rgba(255,255,255,0.65)', padding:'10px 24px', minHeight:'44px', borderRadius:'4px', border:'1px solid rgba(255,255,255,0.15)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:'13px', textDecoration:'none' }}>
                 Text Us
               </a>
             </div>

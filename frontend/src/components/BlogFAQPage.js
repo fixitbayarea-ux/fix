@@ -57,7 +57,7 @@ const BlogFAQPage = () => {
           <li><strong>Strange noises</strong> - Could signal compressor or fan motor issues</li>
           <li><strong>Water leaking</strong> - Often a clogged drain or damaged water line</li>
         </ol>
-        <p>If you're experiencing any of these issues in San Francisco, Oakland, or anywhere in the Bay Area, FixitBay's licensed technicians can diagnose and repair your refrigerator quickly with our 180-day warranty.</p>
+        <p>If you're experiencing any of these issues in San Francisco, Oakland, or anywhere in the Bay Area, FixitBay LLC's licensed technicians can diagnose and repair your refrigerator quickly with our 180-day warranty.</p>
       `,
       keywords: 'refrigerator repair San Francisco, fridge not cooling, refrigerator problems Bay Area',
       readTime: '5 min read'
@@ -113,7 +113,7 @@ const BlogFAQPage = () => {
           <li><strong>Verify dishwasher connections:</strong> Ensure proper connection</li>
         </ol>
         
-        <h4>When to Call FixitBay:</h4>
+        <h4>When to Call FixitBay LLC:</h4>
         <p>If these steps don't resolve the issue, you may have:</p>
         <ul>
           <li>Faulty drain pump requiring replacement</li>
@@ -154,7 +154,7 @@ const BlogFAQPage = () => {
         </ul>
         
         <h4>Annual Professional Service:</h4>
-        <p>Even with regular maintenance, professional annual inspections can catch problems early. FixitBay offers comprehensive maintenance packages for Bay Area homeowners in San Francisco, Concord, and surrounding cities.</p>
+        <p>Even with regular maintenance, professional annual inspections can catch problems early. FixitBay LLC offers comprehensive maintenance packages for Bay Area homeowners in San Francisco, Concord, and surrounding cities.</p>
         
         <h4>Bay Area Climate Considerations:</h4>
         <p>The Bay Area's humid climate and hard water can affect appliance performance. Our technicians understand local conditions and provide region-specific maintenance advice.</p>
@@ -181,7 +181,7 @@ const BlogFAQPage = () => {
           <li><strong>Smoke from any appliance</strong> - Safety hazard requiring immediate response</li>
         </ul>
         
-        <h4>FixitBay Emergency Response:</h4>
+        <h4>FixitBay LLC Emergency Response:</h4>
         <p>We provide same-day emergency appliance repair throughout the San Francisco Bay Area, including:</p>
         <ul>
           <li>San Francisco and Peninsula cities</li>
@@ -225,7 +225,7 @@ const BlogFAQPage = () => {
       })}</script>
 
       <SEOMetaTags
-        title="Appliance Repair Tips & FAQ | FixitBay Bay Area"
+        title="Appliance Repair Tips & FAQ | FixitBay LLC Bay Area"
         description="Expert appliance repair tips, troubleshooting guides, and FAQ for San Francisco Bay Area homeowners. Learn when to repair vs replace, maintenance tips, and emergency procedures."
         keywords="appliance repair tips, refrigerator problems, dishwasher not draining, washer repair guide, Bay Area appliance maintenance, San Francisco appliance FAQ"
         canonical="https://fixitbay.net/blog-faq"
@@ -422,7 +422,7 @@ const BlogFAQPage = () => {
                       
                       <div className="mt-6 p-4 bg-blue-50 rounded-lg">
                         <p className="text-sm text-blue-800 font-medium">
-                          Need professional help? FixitBay provides expert appliance repair throughout the San Francisco Bay Area with same-day service and a 180-day warranty.
+                          Need professional help? FixitBay LLC provides expert appliance repair throughout the San Francisco Bay Area with same-day service and a 180-day warranty.
                         </p>
                         <div className="flex gap-3 mt-3">
                           <button

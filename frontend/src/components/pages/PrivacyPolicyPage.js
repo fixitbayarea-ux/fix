@@ -99,7 +99,7 @@ const PrivacyPolicyPage = () => {
             <article data-testid="privacy-content" style={{ background: '#fff', borderRadius: 4, padding: '40px 44px', border: '1px solid rgba(0,0,0,0.07)', boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}>
               {/* Intro */}
               <p style={{ ...P, marginBottom: 32, paddingBottom: 24, borderBottom: '1px solid rgba(0,0,0,0.08)' }}>
-                FixitBay LLC Appliance Repair ({'\u201C'}FixitBay,{'\u201D'} {'\u201C'}we,{'\u201D'} {'\u201C'}us,{'\u201D'} or {'\u201C'}our{'\u201D'}) respects your privacy. This Privacy Policy explains what information we collect, how we use it, and the choices you have when you interact with us, including through our website, ads (including lead forms), phone calls, texts, and email.
+                FixitBay LLC Appliance Repair ({'\u201C'}FixitBay LLC,{'\u201D'} {'\u201C'}we,{'\u201D'} {'\u201C'}us,{'\u201D'} or {'\u201C'}our{'\u201D'}) respects your privacy. This Privacy Policy explains what information we collect, how we use it, and the choices you have when you interact with us, including through our website, ads (including lead forms), phone calls, texts, and email.
               </p>
 
               {/* Section 1 */}
