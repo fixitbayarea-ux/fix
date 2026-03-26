@@ -102,7 +102,6 @@ const ThankYouBooking = () => {
         .ty-footer a:hover{color:rgba(255,255,255,0.8)}
 
         @media(max-width:767px){.ty-hero h1{font-size:30px}}
-        .ty-page{padding-bottom:56px}
       `}</style>
 
       <div className="ty-page">

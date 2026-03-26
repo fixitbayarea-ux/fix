@@ -834,7 +834,8 @@ h2 { font-size: 28px !important; line-height: 1.2 !important; }
   .badge { padding: 6px 10px; }
 }
 
-/* ======= MOBILE STICKY BAR ======= */
+/* ======= STICKY BOTTOM NAV CLEARANCE ======= */
+body { padding-bottom: 56px; }
 @media (max-width: 767px) {
   body { padding-bottom: 72px; }
   .navbar-mobile-phone-link { display: flex !important; }
