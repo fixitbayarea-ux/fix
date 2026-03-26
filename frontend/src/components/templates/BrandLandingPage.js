@@ -164,8 +164,8 @@ const BrandLandingPage = ({ brand }) => {
           .brand-h1 { font-size: 28px !important; line-height: 1.2 !important; }
           @media (min-width: 768px) { .brand-h1 { font-size: 46px !important; line-height: 1.15 !important; } }
           @media (max-width: 767px) { .brand-card-h3 { font-size: 16px !important; line-height: 1.4 !important; } }
-          .brand-section-h2 { font-size: 24px !important; }
-          @media (min-width: 768px) { .brand-section-h2 { font-size: 32px !important; } }
+          .brand-section-h2 { /* handled by global index.css */ }
+          @media (min-width: 768px) { .brand-section-h2 { /* handled by global index.css */ } }
 
           /* Mobile hero fixes */
           @media (max-width: 767px) {

@@ -575,7 +575,7 @@ const SanFrancisco = () => {
           [data-testid="sf-hero"] > div { padding: 48px 20px !important; }
           .sf-cta-row { flex-direction: column !important; gap: 12px !important; align-items: stretch !important; }
           .sf-cta-book, .sf-cta-call { width: 100% !important; box-sizing: border-box !important; min-width: 0 !important; display: flex !important; justify-content: center !important; }
-          h2 { font-size: 22px !important; line-height: 1.3 !important; }
+          h2 { /* handled by global index.css */ }
         }
         @media (max-width: 480px) {
         }

@@ -710,7 +710,7 @@ const ApplianceRepairPageNew = ({
             .city-cta-row { flex-direction: column !important; align-items: stretch !important; gap: 12px !important; }
             .city-cta-book { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
             .city-cta-call { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
-            .city-page-wrap h2 { font-size: 22px !important; line-height: 1.3 !important; }
+            .city-page-wrap h2 { /* handled by global index.css */ }
           }
           @media (max-width: 480px) {
           }

@@ -223,7 +223,7 @@ const ServiceAreasHub = () => (
     {/* ═══ MOBILE H2 OVERRIDE ═══ */}
     <style>{`
       @media (max-width: 1023px) { .sa-h1 { font-size: 28px !important; line-height: 1.2 !important; } }
-      @media (max-width: 767px) { .service-areas-page h2 { font-size: 22px !important; line-height: 1.3 !important; } }
+      @media (max-width: 767px) { .service-areas-page h2 { /* handled by global index.css */ } }
     `}</style>
   </div>
 );

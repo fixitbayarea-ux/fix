@@ -789,12 +789,15 @@ a.learn-btn:hover { background: var(--accent); color: #FFFFFF; }
 .fixitbay-shadow-lg { box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
 
 /* ======= RESPONSIVE TYPOGRAPHY ======= */
-@media (max-width: 1199px) { h1 { font-size: 32px; } h2 { font-size: 26px; } }
-@media (max-width: 767px) { h1 { font-size: 28px; } h2 { font-size: 22px; } body { font-size: 15px; } }
+/* Global H2 design-system tokens — override inline styles */
+h2 { font-size: 28px !important; line-height: 1.2 !important; }
+@media (max-width: 768px) { h2 { font-size: 22px !important; line-height: 1.3 !important; } }
+
+@media (max-width: 1199px) { h1 { font-size: 32px; } }
+@media (max-width: 767px) { h1 { font-size: 28px; } body { font-size: 15px; } }
 @media (max-width: 480px) {
   body { font-size: 15px; }
   h1 { font-size: clamp(24px, 6vw, 36px); }
-  h2 { font-size: clamp(20px, 5vw, 28px); }
 }
 
 @media (max-width: 380px) {
