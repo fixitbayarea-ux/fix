@@ -96,6 +96,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **SEO**: Added AggregateRating to /reviews page LocalBusiness schema (ratingValue 4.9, reviewCount 90, bestRating 5, worstRating 1). Whitelisted `reviews-localbusiness` in SchemaMarkup.js MutationObserver dedup. Updated global reviewCount to 90.
 - **SEO**: Set `noindex, follow` on `/privacy-policy` and `/site-map` pages to save crawl budget.
 - **Legal**: Created `/terms` page (Terms of Service) with 8 sections: Services Provided, Appointments & Scheduling, Diagnostic Fee, Payment Terms, 180-Day Warranty, Limitation of Liability, Governing Law (CA), Contact & Disputes. `noindex, follow`. Linked from UnifiedFooter and Privacy Policy.
+- **UI**: Fixed /blog card grid — enforced 1-col mobile (≤600px), 2-col tablet (601-900px), 3-col desktop via `index.css`. Fixed blog H3 from 15px → 17px minimum.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

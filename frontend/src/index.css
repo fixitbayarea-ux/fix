@@ -844,3 +844,28 @@ body { padding-bottom: 56px; }
 @media (min-width: 768px) {
   .navbar-mobile-phone-link { display: none !important; }
 }
+
+
+/* ======= BLOG PAGE RESPONSIVE ======= */
+/* Blog card H3 minimum size */
+.blog-grid h3,
+.blog-featured-grid h3,
+.trust-grid h3,
+article h3 {
+  font-size: 17px !important;
+  line-height: 1.3 !important;
+}
+/* Blog grids: 1col mobile, 2col tablet, 3col desktop */
+@media (max-width: 600px) {
+  .blog-grid,
+  .blog-featured-grid,
+  .trust-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .blog-grid,
+  .blog-featured-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
