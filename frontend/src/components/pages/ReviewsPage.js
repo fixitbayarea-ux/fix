@@ -49,7 +49,8 @@ const ReviewsPage = () => {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
           "bestRating": "5",
-          "reviewCount": "94"
+          "worstRating": "1",
+          "reviewCount": "90"
         },
         "review": reviews.filter(r => r.source === 'Google').slice(0, 3).map(r => ({
           "@type": "Review",

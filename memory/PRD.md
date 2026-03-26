@@ -93,6 +93,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - Verified: 0 remaining references to old email across entire codebase
 - **BUG FIX**: Migrated 2 Andrei team photos from external CDN to local `/images/team/` as WebP (34KB + 23KB). Added explicit width/height for CLS prevention. External CDN was unreliable on production Netlify deploys.
 - **SEO**: Enhanced structured data on /about — Person schema (Andrei Suprunov, hasCredential, knowsAbout) + global LocalBusiness enriched with foundingDate, numberOfEmployees, employee. Removed duplicate LocalBusiness from AboutPage (global SchemaMarkup.js is single source of truth via MutationObserver dedup).
+- **SEO**: Added AggregateRating to /reviews page LocalBusiness schema (ratingValue 4.9, reviewCount 90, bestRating 5, worstRating 1). Whitelisted `reviews-localbusiness` in SchemaMarkup.js MutationObserver dedup. Updated global reviewCount to 90.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

@@ -7,7 +7,7 @@ const SchemaMarkup = () => {
       document.querySelectorAll('script[type="application/ld+json"]').forEach(el => {
         try {
           const d = JSON.parse(el.textContent);
-          if (d['@type'] === 'LocalBusiness' && el.id !== 'local-business-schema') {
+          if (d['@type'] === 'LocalBusiness' && el.id !== 'local-business-schema' && el.id !== 'reviews-localbusiness') {
             el.remove();
           }
         } catch(e) {}
@@ -118,7 +118,7 @@ const SchemaMarkup = () => {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "94",
+        "reviewCount": "90",
         "bestRating": "5",
         "worstRating": "1"
       },
