@@ -631,7 +631,7 @@ const ApplianceRepairPageNew = ({
         <section data-testid="city-nearby" style={{ background: '#F8F5F0', padding: '60px 0' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
             <div style={S.eyebrow}>ALSO SERVING</div>
-            <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginTop: 10, marginBottom: 8 }}>Nearby Service Areas</h2>
+            <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 8 }}>Nearby Service Areas</h2>
             <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>We serve the entire Bay Area</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
               {ALL_SERVICE_CITIES.filter(c => c.slug !== citySlug && !['belvedere', 'tiburon'].includes(c.slug)).map(city => (
@@ -674,7 +674,7 @@ const ApplianceRepairPageNew = ({
             <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
               <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
                 <div style={{ ...S.eyebrow, marginBottom: 10 }}>APPLIANCE REPAIR</div>
-                <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 24 }}>Popular Repairs in {cityName}</h2>
+                <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 24 }}>Popular Repairs in {cityName}</h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4" style={{ gap: 12 }}>
                   {repairs.map(s => (
                     <Link key={s.svc} to={`/${cs}-${s.svc}-repair`} data-testid={`popular-repair-${s.svc}`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#fff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; }}>

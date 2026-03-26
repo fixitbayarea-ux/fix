@@ -35,7 +35,7 @@ const BrandsGrid = ({ cityName, testId = 'brands-section' }) => (
   <section data-testid={testId} style={{ background: '#F8F5F0', padding: '60px 0' }}>
     <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
       <div style={{ fontFamily: S_FONT, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: 10 }}>BRANDS WE SERVICE</div>
-      <h2 style={{ fontFamily: S_FONT, fontWeight: 800, fontSize: 30, lineHeight: 1.15, color: '#0D1B2A', marginBottom: 28 }}>All Major Brands</h2>
+      <h2 style={{ fontFamily: S_FONT, fontWeight: 800, fontSize: 36, lineHeight: 1.15, color: '#0D1B2A', marginBottom: 28 }}>All Major Brands</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6" style={{ gap: 12 }}>
         {COMMON_BRANDS.map(brand => {
           const link = brandLinkMap[brand];
