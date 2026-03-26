@@ -33,7 +33,7 @@ const FooterAccordion = ({ title, links }) => {
   return (
     <div className="footer-accordion-section">
       {/* Desktop: always visible */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <h4 style={{ fontFamily: F, fontWeight: 700, fontSize: 12, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: 18 }}>{title}</h4>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 10 }}>
           {links.map(l => (
@@ -41,8 +41,8 @@ const FooterAccordion = ({ title, links }) => {
           ))}
         </ul>
       </div>
-      {/* Mobile: accordion */}
-      <div className="md:hidden">
+      {/* Mobile/Tablet: accordion */}
+      <div className="lg:hidden">
         <button
           onClick={() => setOpen(!open)}
           data-testid={`footer-accordion-${title.toLowerCase()}`}
@@ -50,10 +50,9 @@ const FooterAccordion = ({ title, links }) => {
             fontFamily: F, fontWeight: 700, fontSize: 12,
             textTransform: 'uppercase', letterSpacing: '0.08em',
             color: 'rgba(255,255,255,0.5)', padding: '14px 0',
-            borderBottom: '1px solid rgba(255,255,255,0.08)',
             display: 'flex', justifyContent: 'space-between', alignItems: 'center',
             cursor: 'pointer', width: '100%', background: 'transparent', border: 'none',
-            borderBottomWidth: 1, borderBottomStyle: 'solid', borderBottomColor: 'rgba(255,255,255,0.08)',
+            borderBottom: open ? 'none' : '1px solid rgba(255,255,255,0.08)',
           }}
         >
           {title}
@@ -92,11 +91,11 @@ const FooterAccordion = ({ title, links }) => {
 const UnifiedFooter = () => (
   <footer style={{ background: '#0D1B2A', fontFamily: F }}>
     <div style={{ height: 1, background: 'rgba(255,87,34,0.2)' }} />
-    <div style={{ maxWidth: 1440, margin: '0 auto', padding: '76px 32px 56px' }}>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4" style={{ gap: 44 }}>
+    <div className="footer-inner" style={{ maxWidth: 1440, margin: '0 auto' }}>
+      <div className="footer-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
 
         {/* Col 1 — Brand (always visible) */}
-        <div>
+        <div className="footer-brand-col">
           <div className="flex items-center" style={{ gap: 14, marginBottom: 18 }}>
             <img src={navbarLogo} alt="FixitBay LLC" width="56" height="56" loading="lazy" style={{ borderRadius: 4 }} />
             <div>
@@ -132,7 +131,7 @@ const UnifiedFooter = () => (
         <FooterAccordion title="Company" links={companyLinks} />
 
         {/* Col 4 — Trust + CTA (always visible) */}
-        <div>
+        <div className="footer-trust-col">
           <div style={{ background: '#1A2F45', borderRadius: 4, padding: 32, border: '1px solid rgba(255,87,34,0.25)', marginBottom: 22 }}>
             <h4 style={{ fontSize: 16, fontWeight: 800, color: '#fff', marginBottom: 14, display: 'flex', alignItems: 'center', gap: 8 }}><ShieldCheck size={18} style={{ color: '#FF5722' }} /> Licensed &amp; Trusted</h4>
             <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.65)', fontWeight: 500, marginBottom: 6 }}>California Major Appliance Technician</p>
@@ -161,10 +160,19 @@ const UnifiedFooter = () => (
     </div>
 
     <style>{`
+      .footer-inner { padding: 76px 32px 56px; }
+      .footer-grid { gap: 44px; }
       @media (hover: hover) and (pointer: fine) {
         .ftr-link:hover { color: #FF5722 !important; }
         .ftr-cta-primary:hover { background: #FF7043 !important; }
         .ftr-cta-outline:hover { border-color: rgba(255,255,255,0.45) !important; color: #fff !important; }
+      }
+      @media (max-width: 1023px) {
+        .footer-inner { padding: 40px 24px 36px; }
+        .footer-grid { gap: 0 !important; }
+        .footer-accordion-section { border-top: 1px solid rgba(255,255,255,0.08); padding: 0 !important; }
+        .footer-brand-col { padding-bottom: 12px; }
+        .footer-trust-col { padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.08); }
       }
       @media (max-width: 767px) {
         footer [data-testid="footer-phone"] { font-size: 22px !important; justify-content: center; }
