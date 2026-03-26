@@ -143,7 +143,7 @@ const BookPage = () => {
         .bk-breadcrumb a{color:rgba(255,255,255,0.5)}
         .bk-breadcrumb a:hover{color:rgba(255,255,255,0.8)}
         .bk-breadcrumb .bk-bc-arrow{color:var(--accent);margin:0 6px}
-        .bk-hero h1{font-weight:800;font-size:44px;color:#fff;max-width:700px;margin:0 auto 12px;line-height:1.15}
+        .bk-hero h1{font-weight:800;font-size:52px !important;color:#fff;max-width:700px;margin:0 auto 12px;line-height:1.15}
         .bk-hero-sub{color:rgba(255,255,255,0.75);font-size:17px;max-width:540px;margin:0 auto 32px;line-height:1.6}
         .bk-main-cta{display:inline-block;background:var(--accent);color:#fff;font-weight:800;font-size:18px;padding:18px 48px;border-radius:4px;box-shadow:0 4px 24px rgba(255,87,34,0.4);transition:background 0.2s,box-shadow 0.2s}
         .bk-main-cta:hover{background:var(--accent-hover);box-shadow:0 6px 32px rgba(255,87,34,0.5)}
@@ -245,7 +245,7 @@ const BookPage = () => {
         }
 
         @media(max-width:767px){
-          .bk-hero h1{font-size:28px}
+          .bk-hero h1{font-size:30px !important}
           .bk-final-title{font-size:28px}
         }
       `}</style>
@@ -264,7 +264,7 @@ const BookPage = () => {
             <h1 data-testid="book-h1">Book Your Appliance Repair</h1>
             <p className="bk-hero-sub">Schedule a licensed technician online. Pick the time that works for you.</p>
 
-            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-main-cta" data-testid="book-hero-cta" aria-label="opens in new tab">Book Online Now</a>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-main-cta" data-testid="book-hero-cta" aria-label="Open booking calendar (opens in new tab)">Open Booking Calendar</a>
 
             <div className="bk-or">&mdash; or call for immediate scheduling &mdash;</div>
             <a href="tel:7605435733" className="bk-phone-hero" data-testid="book-hero-phone">(760) 543-5733</a>
