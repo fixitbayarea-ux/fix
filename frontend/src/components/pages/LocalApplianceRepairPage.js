@@ -124,6 +124,7 @@ const LocalApplianceRepairPage = () => {
             .related-grid{grid-template-columns:1fr !important}
             .stats-bar{gap:24px !important}
             .stats-bar .stat-div{display:none !important}
+            h2{font-size:22px !important;line-height:1.3 !important}
           }
           @media(max-width:480px){.how-grid{grid-template-columns:1fr !important}}
           .phone-cta:hover{background:#FF7043 !important}
