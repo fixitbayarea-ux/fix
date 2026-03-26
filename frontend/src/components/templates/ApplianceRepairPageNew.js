@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import SEOMetaTags from '../SEOMetaTags';
-import { Phone, MapPin, Wrench, Check, X, CalendarCheck, Search, ClipboardCheck, Star, Home, HelpCircle, DollarSign, Clock, ArrowRight } from 'lucide-react';
+import { Phone, MapPin, Wrench, Check, X, CalendarCheck, Search, ClipboardCheck, Home, HelpCircle, DollarSign, Clock, ArrowRight } from 'lucide-react';
 import useCMSContent from '../../hooks/useCMSContent';
 import { useSchemas } from '../../hooks/useSchema';
 import brandLocalData from '../../data/brandLocalData';
@@ -10,6 +10,10 @@ import { SERVICE_CITIES as ALL_SERVICE_CITIES } from '../../data/cities';
 import BrandsGrid from '../sections/BrandsGrid';
 import CTABanner from '../sections/CTABanner';
 import CompactFooter from '../sections/CompactFooter';
+import PricingCards from '../sections/PricingCards';
+import HousingTypes from '../sections/HousingTypes';
+import CaseStudies from '../sections/CaseStudies';
+import Testimonials from '../sections/Testimonials';
 import ProcessSteps from '../sections/ProcessSteps';
 import FAQAccordion from '../sections/FAQAccordion';
 
@@ -492,31 +496,7 @@ const ApplianceRepairPageNew = ({
         <ProcessSteps gridClassName="city-process-grid grid grid-cols-2 lg:grid-cols-4 gap-8" testId="city-process" />
 
         {/* ═══ SECTION 5 — PRICING ═══ */}
-        <section data-testid="city-pricing" style={{ background: '#1A2F45', padding: '70px 0' }}>
-          <div style={{ maxWidth: 780, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
-            <div style={{ ...S.eyebrow, color: '#FF5722', textAlign: 'center', marginBottom: 10 }}>TRANSPARENT PRICING</div>
-            <h2 style={{ ...S.h2, color: '#FFFFFF', textAlign: 'center', marginBottom: 36 }}>No Surprises. Ever.</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3" style={{ gap: 20 }}>
-              <div style={{ border: '2px solid #FF5722', background: 'rgba(255,87,34,0.06)', borderRadius: 4, padding: '32px 24px', position: 'relative' }}>
-                <span style={{ position: 'absolute', top: -12, left: '50%', transform: 'translateX(-50%)', background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 10, textTransform: 'uppercase', borderRadius: 2, padding: '3px 10px', whiteSpace: 'nowrap' }}>MOST ASKED</span>
-                <div style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FF5722', marginBottom: 8 }}>$60</div>
-                <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 16, color: '#FFFFFF', marginBottom: 8 }}>Diagnostic Fee</div>
-                <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>Applied toward repair if you proceed</p>
-              </div>
-              <div style={{ border: '1px solid rgba(255,255,255,0.10)', borderRadius: 4, padding: '32px 24px' }}>
-                <div style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', marginBottom: 8 }}>180<span style={{ color: '#FF5722' }}>-Day</span></div>
-                <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 16, color: '#FFFFFF', marginBottom: 8 }}>Warranty</div>
-                <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>On parts & labor. Same issue returns — we fix it at no charge</p>
-              </div>
-              <div style={{ border: '1px solid rgba(255,255,255,0.10)', borderRadius: 4, padding: '32px 24px' }}>
-                <div style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', marginBottom: 8 }}>$0</div>
-                <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 16, color: '#FFFFFF', marginBottom: 8 }}>Hidden Fees</div>
-                <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>No trip charges. No after-hours surcharges</p>
-              </div>
-            </div>
-            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.30)', fontStyle: 'italic', marginTop: 24 }}>Typical repairs range $150–$400 after diagnosis</p>
-          </div>
-        </section>
+        <PricingCards testId="city-pricing" />
 
         {/* ═══ SECTION 6 — CTA BANNER ═══ */}
         <CTABanner heading={`Need Appliance Repair in ${cityName} Today?`} testId="city-cta-banner" />
@@ -525,79 +505,13 @@ const ApplianceRepairPageNew = ({
         <BrandsGrid cityName={cityName} testId="city-brands" />
 
         {/* ═══ SECTION 8 — HOUSING TYPES ═══ */}
-        {cd?.housingTypes?.length > 0 && (
-          <section data-testid="city-housing" style={{ background: '#0D1B2A', padding: '70px 0' }}>
-            <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px' }}>
-              <div style={{ ...S.eyebrow, color: '#FF5722' }}>LOCAL EXPERTISE</div>
-              <h2 style={{ ...S.h2, color: '#FFFFFF', marginTop: 10, marginBottom: 28 }}>We Know {cityName} Homes</h2>
-              <div className="grid md:grid-cols-2" style={{ gap: 16 }}>
-                {cd.housingTypes.map((h, i) => (
-                  <div key={i} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 4, padding: 24, transition: 'border-color 0.2s' }} onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(255,87,34,0.40)'} onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'}>
-                    <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 15, color: '#FFFFFF', marginBottom: 8 }}>{h.type}</div>
-                    <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.60)', lineHeight: 1.70, marginBottom: 10 }}>{h.desc}</p>
-                    <div style={{ fontFamily: S.font, fontWeight: 500, fontSize: 11, color: '#FF5722', letterSpacing: '0.06em' }}>{h.areas}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
+        <HousingTypes cityName={cityName} housingTypes={cd?.housingTypes} testId="city-housing" />
 
         {/* ═══ SECTION 9 — CASE STUDIES ═══ */}
-        {cd?.caseStudies?.length > 0 && (
-          <section data-testid="city-case-studies" style={{ background: '#F8F5F0', padding: '70px 0' }}>
-            <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-              <div style={S.eyebrow}>RECENT WORK</div>
-              <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 28 }}>Recent Repairs in {cityName}</h2>
-              <div className="grid md:grid-cols-3" style={{ gap: 16 }}>
-                {cd.caseStudies.map((cs, i) => (
-                  <div key={i} style={{ background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 4, padding: 24 }}>
-                    <span style={{ display: 'inline-block', background: 'rgba(255,87,34,0.08)', color: '#FF5722', fontFamily: S.font, fontWeight: 700, fontSize: 11, textTransform: 'uppercase', padding: '3px 10px', borderRadius: 2, marginBottom: 12 }}>{cs.appliance}</span>
-                    <div style={{ fontFamily: S.font, fontWeight: 500, fontSize: 12, color: '#FF5722', marginBottom: 6 }}>{cs.neighborhood}</div>
-                    <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: '#4A5568', lineHeight: 1.6, marginBottom: 0 }}>{cs.issue}</p>
-                    <div style={{ borderTop: '1px solid rgba(0,0,0,0.08)', paddingTop: 12, marginTop: 12 }}>
-                      <span style={{ fontFamily: S.font, fontWeight: 500, fontSize: 12, color: '#4A5568' }}>{cs.timeframe}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
+        <CaseStudies cityName={cityName} caseStudies={cd?.caseStudies} testId="city-case-studies" />
 
         {/* ═══ SECTION 10 — REVIEWS ═══ */}
-        {cd?.testimonials?.length > 0 && (
-          <section data-testid="city-testimonials" style={{ background: '#0D1B2A', padding: '70px 0' }}>
-            <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-              <div style={{ ...S.eyebrow, color: '#FF5722', textAlign: 'center', marginBottom: 10 }}>WHAT CLIENTS SAY</div>
-              <h2 style={{ ...S.h2, color: '#FFFFFF', textAlign: 'center', marginBottom: 36 }}>Real People. Real Repairs.</h2>
-              <div className="grid md:grid-cols-2" style={{ gap: 16 }}>
-                {cd.testimonials.slice(0, 4).map((t, i) => (
-                  <div key={i} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 4, padding: 24 }}>
-                    <div style={{ display: 'flex', gap: 2, marginBottom: 12 }}>
-                      {[...Array(t.rating)].map((_, j) => (
-                        <Star key={j} size={14} style={{ fill: '#FFB800', color: '#FFB800' }} />
-                      ))}
-                    </div>
-                    <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.80)', lineHeight: 1.70, marginBottom: 14 }}>"{t.text}"</p>
-                    <div>
-                      <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 13, color: '#FFFFFF' }}>{t.name}</div>
-                      <div style={{ fontFamily: S.font, fontWeight: 400, fontSize: 12, color: '#FF5722' }}>{t.area}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div style={{ display: 'flex', justifyContent: 'center', gap: 24, marginTop: 32, flexWrap: 'wrap' }}>
-                <a href="https://www.google.com/maps/place/FixitBay+Appliance+Repair" target="_blank" rel="noopener noreferrer" data-testid="city-reviews-google" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#FFFFFF', textDecoration: 'none', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 4, padding: '10px 20px', transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.background = 'rgba(255,87,34,0.10)'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}>
-                  <Star size={14} style={{ fill: '#FFB800', color: '#FFB800' }} /> Read Google Reviews
-                </a>
-                <a href="https://www.thumbtack.com/ca/san-francisco/appliance-repair/fixitbay" target="_blank" rel="noopener noreferrer" data-testid="city-reviews-thumbtack" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#FFFFFF', textDecoration: 'none', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 4, padding: '10px 20px', transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.background = 'rgba(255,87,34,0.10)'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}>
-                  <Star size={14} style={{ fill: '#FFB800', color: '#FFB800' }} /> Read Thumbtack Reviews
-                </a>
-              </div>
-            </div>
-          </section>
-        )}
+        <Testimonials testimonials={cd?.testimonials} testId="city-testimonials" />
 
         {/* ═══ POPULAR REPAIRS ═══ */}
         {POPULAR_REPAIRS_MAP[citySlug]?.length > 0 && (

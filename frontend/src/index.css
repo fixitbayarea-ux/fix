@@ -59,6 +59,16 @@
   --space-section-mobile: 48px;
 }
 
+/* ═══ Shared layout utilities ═══ */
+.section-container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.section-pad { padding: 70px 0; }
+.section-pad-sm { padding: 60px 0; }
+.bg-navy { background: var(--navy); }
+.bg-navy-mid { background: var(--navy-mid); }
+.bg-cream { background: var(--cream); }
+.bg-white { background: var(--brand-white); }
+.eyebrow { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.2em; }
+
 /* ======= BODY & GLOBAL ======= */
 body {
   font-family: 'Montserrat', sans-serif;
