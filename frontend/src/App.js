@@ -1,5 +1,14 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
+
+/* Strip trailing slashes client-side (backup for server-side _redirects rule) */
+const TrailingSlashRedirect = () => {
+  const { pathname, search } = useLocation();
+  if (pathname !== '/' && pathname.endsWith('/')) {
+    return <Navigate to={pathname.slice(0, -1) + search} replace />;
+  }
+  return null;
+};
 
 import CanonicalUpdater from "./components/CanonicalUpdater";
 import SchemaMarkup from "./components/SchemaMarkup";
@@ -115,6 +124,7 @@ const CityServicePage = lazy(() => import("./components/pages/CityServicePage"))
 export default function App() {
   return (
     <BrowserRouter>
+      <TrailingSlashRedirect />
       <CanonicalUpdater />
       <SchemaMarkup />
       <UniversalBreadcrumb />

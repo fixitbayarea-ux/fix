@@ -1,4 +1,7 @@
 https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
+
+# Strip trailing slashes — 301 redirect to canonical (non-trailing) URL
+/*/ /:splat 301!
 /blog-faq /blog 301
 /appliance-repair-daly-city /daly-city-appliance-repair 301
 /appliance-repair-south-san-francisco /south-san-francisco-appliance-repair 301
