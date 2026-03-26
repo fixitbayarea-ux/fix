@@ -170,7 +170,7 @@ const ProfessionalLandingPage = () => {
           </div>
           <h2 className="lg:hidden text-3xl font-bold mb-3 text-center" style={{ color: '#FFFFFF' }}>How It Works</h2>
           <div style={{ marginTop: 56 }}>
-            <div className="grid grid-cols-2 lg:grid-cols-4" style={{ position: 'relative', gap: 24 }}>
+            <div className="hiw-steps-container" style={{ position: 'relative' }}>
               <div className="hidden lg:block" style={{ position: 'absolute', top: 80, left: '18%', right: '18%', height: 1, borderTop: '1px dashed rgba(255,87,34,0.30)', zIndex: 0 }} aria-hidden="true" />
               {[
                 { num: '01', icon: <CalendarCheck size={32} strokeWidth={1.5} />, title: 'BOOK ONLINE', desc: 'Schedule in 60 seconds, no calls' },
@@ -178,15 +178,21 @@ const ProfessionalLandingPage = () => {
                 { num: '03', icon: <SearchCheck size={32} strokeWidth={1.5} />, title: 'DIAGNOSIS', desc: 'Upfront estimate, zero surprises' },
                 { num: '04', icon: <ShieldCheck size={32} strokeWidth={1.5} />, title: 'REPAIR DONE', desc: '180-day warranty on every job' },
               ].map((step, i) => {
-                const inner = (
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', position: 'relative', zIndex: 1 }}>
+                const card = (
+                <div className="hiw-step-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', position: 'relative', zIndex: 1 }}>
                   <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 72, lineHeight: 1, color: 'rgba(255,255,255,0.05)', display: 'block' }}>{step.num}</span>
                   <div style={{ color: '#FF5722', marginTop: -8 }}>{step.icon}</div>
                   <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#FFFFFF', marginTop: 16, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{step.title}</div>
                   <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.50)', maxWidth: 160, lineHeight: 1.6, marginTop: 8 }}>{step.desc}</p>
                 </div>
                 );
-                return i === 0 ? <a key={i} href="/book" style={{ textDecoration: 'none', color: 'inherit' }}>{inner}</a> : <React.Fragment key={i}>{inner}</React.Fragment>;
+                const wrapped = i === 0 ? <a key={`step-${i}`} href="/book" style={{ textDecoration: 'none', color: 'inherit' }} className="hiw-step-card-wrap">{card}</a> : <div key={`step-${i}`} className="hiw-step-card-wrap">{card}</div>;
+                return (
+                  <React.Fragment key={i}>
+                    {wrapped}
+                    {i < 3 && <div className={`hiw-arrow ${i === 1 ? 'hiw-arrow-down' : ''}`} aria-hidden="true"><span className="hiw-arrow-h">&rarr;</span><span className="hiw-arrow-v">&darr;</span></div>}
+                  </React.Fragment>
+                );
               })}
             </div>
           </div>
@@ -260,6 +266,23 @@ const ProfessionalLandingPage = () => {
         }
         @media (prefers-reduced-motion: reduce) { .hiw-card, .svc-card, .pricing-card { transition: color 200ms, border-color 200ms, box-shadow 200ms !important; transform: none !important; } }
 
+        /* ═══ HIW Steps Layout ═══ */
+        .hiw-steps-container { display: flex; align-items: flex-start; justify-content: center; gap: 0; }
+        .hiw-step-card-wrap { flex: 1; min-width: 0; }
+        .hiw-arrow { display: flex; align-items: center; justify-content: center; padding: 0 8px; color: #FF5722; font-size: 24px; font-weight: 700; padding-top: 56px; }
+        .hiw-arrow-v { display: none; }
+        @media (max-width: 767px) {
+          .hiw-steps-container { display: grid !important; grid-template-columns: 1fr auto 1fr; gap: 4px 0; }
+          .hiw-step-card-wrap { min-width: 0; }
+          .hiw-arrow { padding: 0 4px; font-size: 18px; padding-top: 36px; }
+          .hiw-arrow-h { display: inline; }
+          .hiw-arrow-v { display: none; }
+          .hiw-arrow-down { grid-column: 1 / -1; padding: 0; justify-content: center; }
+          .hiw-arrow-down .hiw-arrow-h { display: none; }
+          .hiw-arrow-down .hiw-arrow-v { display: inline; font-size: 20px; }
+          .hiw-step-card span[style*="fontSize: 72"], .hiw-step-card span[style*="font-size: 72px"] { font-size: 48px !important; }
+        }
+
         @media (max-width: 768px) {
           * { box-sizing: border-box; }
           p, li { font-size: 14px; line-height: 1.6; }
@@ -272,7 +295,7 @@ const ProfessionalLandingPage = () => {
           .hero:not(.hero-section-root) a, .hero:not(.hero-section-root) button { width: 100%; min-height: 52px; padding: 15px 20px; font-size: 15px; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 4px; font-family: Montserrat, sans-serif; font-weight: 700; text-decoration: none; }
           .trust-badges, .hero [class*="badge"]:not(.hero-mobile-wrapper *) { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: 20px; }
           .trust-badges span, [class*="badge"] span { font-size: 12px; }
-          [class*="how-it-works"] .grid, [class*="steps"] .grid, [class*="process"] .grid { grid-template-columns: 1fr; gap: 16px; }
+          [class*="steps"] .grid, [class*="process"] .grid { grid-template-columns: 1fr; gap: 16px; }
           .intro-cta-row { flex-direction: column !important; align-items: stretch !important; }
           .intro-cta-book, .intro-cta-call { width: 100% !important; min-width: 0 !important; box-sizing: border-box; display: flex !important; justify-content: center; }
           .tabs, [class*="tab-list"], [role="tablist"] { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; gap: 8px; padding-bottom: 4px; }
