@@ -63,11 +63,11 @@ const HomeHero = () => {
             </p>
 
             {/* Desktop trust row */}
-            <div className="hero-d-flex" style={{ alignItems: 'center', gap: 20, marginTop: 24, fontFamily: 'Montserrat, sans-serif', fontWeight: 500, fontSize: 13 }}>
+            <div className="hero-d-flex trust-strip" data-testid="hero-trust-desktop" style={{ alignItems: 'center', gap: 20, marginTop: 24, fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 13, background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 8, padding: '8px 20px', color: 'rgba(255,255,255,0.9)' }}>
               <span style={{ minHeight: 44, display:'flex', alignItems:'center' }}><a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }} data-testid="hero-trust-google" aria-label="opens in new tab">&#11088; 4.9 Google</a></span>
-              <span style={{ color: 'rgba(255,255,255,0.35)' }}>&middot;</span>
+              <span style={{ color: 'rgba(255,255,255,0.3)' }}>&middot;</span>
               <span style={{ minHeight: 44, display:'flex', alignItems:'center' }}><a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }} data-testid="hero-trust-reviews" aria-label="opens in new tab">&#10003; 94 Reviews</a></span>
-              <span style={{ color: 'rgba(255,255,255,0.35)' }}>&middot;</span>
+              <span style={{ color: 'rgba(255,255,255,0.3)' }}>&middot;</span>
               <span style={{ color: '#FF5722', fontWeight: 600 }}>&#128737; License #51001</span>
             </div>
 
@@ -101,6 +101,14 @@ const HomeHero = () => {
 
             {/* ━━━ MOBILE-ONLY ELEMENTS ━━━ */}
             <div className="hero-m" data-testid="hero-mobile">
+              {/* Mobile trust strip — above CTAs */}
+              <div className="trust-strip" data-testid="hero-trust-mobile" style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'nowrap', overflowX: 'auto', background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 8, padding: '8px 16px', marginBottom: 16, fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 12, color: 'rgba(255,255,255,0.9)', whiteSpace: 'nowrap' }}>
+                <span>&#11088; 4.9 Google</span>
+                <span style={{ color: 'rgba(255,255,255,0.3)' }}>&middot;</span>
+                <span>&#10003; 94 Reviews</span>
+                <span style={{ color: 'rgba(255,255,255,0.3)' }}>&middot;</span>
+                <span>&#128737; License #51001</span>
+              </div>
               {/* Mobile urgency */}
               <p data-testid="hero-urgency-mobile" style={{ color: '#FF5722', fontSize: 13, fontWeight: 700, textAlign: 'center', marginBottom: 16, letterSpacing: '0.05em' }}>
                 &#9889; SAME-DAY SLOTS AVAILABLE TODAY
@@ -122,14 +130,6 @@ const HomeHero = () => {
               <p data-testid="hero-urgency-slots-mobile" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 12, color: 'rgba(255,255,255,0.65)', textAlign: 'center', marginTop: 2, marginBottom: 12 }}>
                 ⚡ Most slots filled by noon — book now to secure today
               </p>
-              {/* Mobile trust badges */}
-              <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: 12, marginTop: 16, fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 12, color: 'rgba(255,255,255,0.7)' }}>
-                <span>&#11088; 4.9 Google</span>
-                <span>&middot;</span>
-                <span>94 Reviews</span>
-                <span>&middot;</span>
-                <span>License #51001</span>
-              </div>
               {/* Mobile schedule note */}
               <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.35)', textAlign: 'center', marginTop: 12 }}>Same-day & next-day &middot; Mon–Sat</p>
             </div>
