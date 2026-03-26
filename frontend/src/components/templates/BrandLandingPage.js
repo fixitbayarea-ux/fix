@@ -161,7 +161,7 @@ const BrandLandingPage = ({ brand }) => {
       <div style={{ fontFamily: F, overflowX: 'hidden' }}>
         <style>{`
           * { box-sizing: border-box; }
-          .brand-h1 { font-size: 26px !important; line-height: 1.2 !important; }
+          .brand-h1 { font-size: 28px !important; line-height: 1.2 !important; }
           @media (min-width: 768px) { .brand-h1 { font-size: 46px !important; line-height: 1.15 !important; } }
           .brand-section-h2 { font-size: 24px !important; }
           @media (min-width: 768px) { .brand-section-h2 { font-size: 32px !important; } }
