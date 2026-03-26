@@ -57,21 +57,35 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - `sections/HomeExploreLinks.jsx` — Services & areas sitemap
 - `sections/HomePricing.jsx` — 3-card pricing section
 
-### Session 13 (Mar 25 2026) — Brand Logo PNG Fix
-- Replaced SVG logos with pre-rendered white PNG equivalents (320x160px, 2x retina) for all 8 brand hero sections
-- Brands: LG, Samsung, Whirlpool, GE, Bosch, KitchenAid, Viking, Thermador
-- Removed CSS `brightness(0) invert(1)` filter (PNGs are already white on transparent)
-- Added `onError` fallback to SVG, `loading="eager"`, `data-testid="brand-hero-logo"`
-- Testing: 8/8 brand pages pass — all logos load (naturalWidth=320, complete=true)
+### Session 13 (Mar 25-26 2026) — Brand Logo PNG, Global H2, Refactoring
+- Replaced SVG logos with white PNGs (320x160px, 2x retina) for 8 brand hero sections
+- Fixed aria-label leaking on CTA buttons (brand pages)
+- Fixed mobile H1 (28px) and H3 (16px) on brand pages
+- Rewrote /service-areas as standalone custom page (removed template placeholder text)
+- **Global H2 typography system**: single rule in `index.css` with `!important` — 22px mobile / 28px desktop
+- Removed 5 per-page H2 overrides (ApplianceRepairPageNew, SanFrancisco, ServiceAreasHub, LocalApplianceRepairPage, BrandLandingPage)
+- **P1 COMPLETED**: Blog schema audit — zero duplicates across all blog pages
+- **P2 COMPLETED**: Added CSS utility classes to index.css (`.section-container`, `.bg-navy`, `.bg-cream`, `.eyebrow`, `.section-pad`)
+- **P3 COMPLETED**: Extracted 4 sections from ApplianceRepairPageNew.js (1109 → 1023 lines, −8%):
+  - `PricingCards.jsx`, `HousingTypes.jsx`, `CaseStudies.jsx`, `Testimonials.jsx`
+- Fixed BrandsGrid H2 (30px→36px desktop), "Nearby Service Areas" H2 (30px→36px), "Popular Repairs" H2 (28px→36px)
+- Testing: iteration_105 — 7/7 tests passed (100%)
+
+## Shared Section Components
+- `sections/FAQAccordion.jsx` — Reusable FAQ accordion with own state
+- `sections/BrandsGrid.jsx` — 18 brand logos with hover + links
+- `sections/CTABanner.jsx` — Dark CTA banner with book + call buttons
+- `sections/CompactFooter.jsx` — Minimal footer with logo, phone, copyright
+- `sections/ProcessSteps.jsx` — 4-step process grid
+- `sections/HomeServicesGrid.jsx` — Tabbed service cards with carousel
+- `sections/HomeReviews.jsx` — Review carousel with autoplay
+- `sections/HomeExploreLinks.jsx` — Services & areas sitemap
+- `sections/HomePricing.jsx` — 3-card pricing section
+- `sections/PricingCards.jsx` — Transparent pricing (city pages)
+- `sections/HousingTypes.jsx` — Local housing expertise (city pages)
+- `sections/CaseStudies.jsx` — Recent repair case studies (city pages)
+- `sections/Testimonials.jsx` — Client review cards + external links (city pages)
 
 ## Backlog (Prioritized)
-
-### P1
-- Audit blog schema types beyond BlogPosting (FAQ, BreadcrumbList duplicates)
-
-### P2
-- Continue migrating inline styles to Tailwind/CSS variables where appropriate
-
-### P3
-- Consider extracting city-specific sections from ApplianceRepairPageNew.js (currently 1108 lines)
 - Performance audit: code-split heavy sections, lazy-load below-fold content
+- Continue migrating remaining inline styles in ApplianceRepairPageNew.js (~1023 lines) and MobileServiceLanding.js to CSS classes
