@@ -104,6 +104,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **PROMPT 01-07**: Mobile Hero CALL button differentiation, Hero Trust Strip visual box, Global brand rename "FixitBay" → "FixitBay LLC", Mobile Hero Stats 3-col grid with dividers, How It Works connector arrows, Homepage Blog section revamp with visual cards.
 - **PROMPT 08**: Mobile footer accordion optimization in `UnifiedFooter.js` — sections collapsed by default (max-height:0), smooth CSS transition, ChevronDown rotation, 0px gap between sections on mobile, border-top separators, reduced padding. Desktop 4-col grid preserved unchanged. Testing: 9/9 tests passed (iteration_106).
 - **PROMPT 09**: Fixed mobile navbar overlay menu positioning bug. Root cause: `backdrop-filter:blur()` on `<nav>` created new containing block, breaking `position:fixed` for child elements. Fix: moved mobile menu to `createPortal(document.body)`, added `body.overflow-hidden` scroll lock via useEffect with cleanup, CSS variable `--navbar-height`. Testing: 12/12 tests passed (iteration_107).
+- **PROMPT 10**: Renamed "Maintenance Plans" → "Maintenance Services" in mobile nav accordion (`SiteNavbar.jsx`) and sitemap page (`SiteMapPage.js`). URLs unchanged.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

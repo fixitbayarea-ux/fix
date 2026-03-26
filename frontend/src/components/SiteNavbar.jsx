@@ -627,7 +627,7 @@ const SiteNavbar = () => {
                 aria-expanded={mobileMaintenanceOpen}
               >
                 <span style={{ display:'flex', alignItems:'center', gap:10, color:'rgba(255,255,255,0.85)', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:14 }}>
-                  Maintenance Plans
+                  Maintenance Services
                 </span>
                 <ChevronDown className={`mob-acc-arrow w-4 h-4${mobileMaintenanceOpen ? ' open' : ''}`} style={{ color:'#FF5722' }} />
               </button>

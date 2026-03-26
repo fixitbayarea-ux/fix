@@ -201,7 +201,7 @@ export default function SiteMapPage() {
 
             {/* D: Maintenance */}
             <div data-testid="section-maintenance">
-              <SecHead icon={'\uD83D\uDEE0\uFE0F'} eyebrow="MAINTENANCE" title="Appliance Maintenance Plans" />
+              <SecHead icon={'\uD83D\uDEE0\uFE0F'} eyebrow="MAINTENANCE" title="Appliance Maintenance Services" />
               <DarkCard text={MAINT_FEATURED[0]} href={MAINT_FEATURED[1]} />
               <Grid items={MAINTENANCE} />
             </div>
