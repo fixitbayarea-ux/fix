@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -200,7 +201,7 @@ const EnergyEfficientAppliances = () => {
 
               {/* ── Refrigerator Tips ── */}
               <SectionH2 id="refrigerator-tips" badge="SAVE $50&ndash;$100/YR" title="Refrigerator Energy-Saving Tips" />
-              <p style={{ ...P, marginBottom: 20 }}>Refrigerators run 24/7, making them one of the largest energy consumers in your home. Here's how to optimize efficiency:</p>
+              <p style={{ ...P, marginBottom: 20 }}><a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>Refrigerators</a> run 24/7, making them one of the largest energy consumers in your home. Here's how to optimize efficiency:</p>
               <TipCards tips={TIPS.fridge} />
 
               {/* ── Washer Tips ── */}
@@ -224,12 +225,12 @@ const EnergyEfficientAppliances = () => {
 
               {/* ── Dryer Tips ── */}
               <SectionH2 id="dryer-tips" badge="SAVE $100&ndash;$200/YR" title="Dryer Energy-Saving Tips" />
-              <p style={{ ...P, marginBottom: 20 }}>Dryers are energy-intensive. These tips can cut drying costs by 20-30%:</p>
+              <p style={{ ...P, marginBottom: 20 }}><a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>Dryers</a> are energy-intensive. These tips can cut drying costs by 20-30%:</p>
               <TipCards tips={TIPS.dryer} />
 
               {/* ── Dishwasher Tips ── */}
               <SectionH2 id="dishwasher-tips" badge="SAVE $20&ndash;$40/YR" title="Dishwasher Energy-Saving Tips" />
-              <p style={{ ...P, marginBottom: 20 }}>Dishwashers are more energy-efficient than hand washing&mdash;when used correctly:</p>
+              <p style={{ ...P, marginBottom: 20 }}><a href="/dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>Dishwashers</a> are more energy-efficient than hand washing&mdash;when used correctly:</p>
               <TipCards tips={TIPS.dishwasher} />
 
               {/* ── Estimated Annual Savings ── */}
@@ -347,6 +348,7 @@ const EnergyEfficientAppliances = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED ARTICLES ━━━ */}
         <section data-testid="related-articles" style={{ background: '#fff', padding: '40px 24px', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>

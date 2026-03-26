@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -216,7 +217,7 @@ const ApplianceRepairCostSanFrancisco = () => {
 
               {/* Intro */}
               <p style={{ ...P, marginBottom: 16 }}>
-                <span style={{ fontWeight: 600, color: '#1A1A1A' }}>How much should you expect to pay for appliance repair in San Francisco?</span> As a licensed technician who's done over 2,000 service calls across the Bay Area, I get this question daily. The honest answer: it depends on the appliance, the problem, and whether you need standard or luxury brand parts.
+                <span style={{ fontWeight: 600, color: '#1A1A1A' }}>How much should you expect to pay for <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>appliance repair</a> in San Francisco?</span> As a licensed technician who's done over 2,000 service calls across the Bay Area, I get this question daily. The honest answer: it depends on the appliance, the problem, and whether you need standard or luxury brand parts.
               </p>
               <p style={{ ...P, marginBottom: 16 }}>
                 Below is a transparent breakdown of what we charge at FixitBay and what the market looks like in 2026. No hidden fees, no bait-and-switch pricing — just real numbers from a real technician.
@@ -488,6 +489,7 @@ const ApplianceRepairCostSanFrancisco = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED SERVICES ━━━ */}
         <section data-testid="related-services" style={{ background: '#0D1B2A', padding: '56px 24px' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>

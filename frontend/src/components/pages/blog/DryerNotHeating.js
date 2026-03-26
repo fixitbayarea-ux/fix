@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -194,13 +195,13 @@ const DryerNotHeating = () => {
 
               {/* ── Section 1 ── */}
               <h2 id="lint-vent" style={H2S}><span style={{ color: '#FF5722' }}>1.</span> Clogged Lint Screen or Dryer Vent — Most Common</h2>
-              <p style={P}>The #1 reason dryers stop heating is restricted airflow. A clogged lint screen or blocked vent hose forces the dryer to overheat and trip its safety thermostat.</p>
+              <p style={P}>The #1 reason <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>dryers stop heating</a> is restricted airflow. A clogged lint screen or blocked vent hose forces the dryer to overheat and trip its safety thermostat.</p>
               <SFTip text="Victorian and Edwardian homes in the Mission, Castro, and Haight have some of the longest dryer vent runs I've seen — 20-30 feet with multiple bends through old walls. Lint buildup in these runs is a serious fire hazard. The San Francisco Fire Department recommends professional vent cleaning annually." />
               <p style={P}><strong style={{ color: '#1A1A1A' }}>DIY fix:</strong> Clean the lint screen before every load. Pull the dryer out, disconnect the vent hose, and vacuum it thoroughly. Check the outside vent flap — if it doesn't open when the dryer runs, the vent is blocked.</p>
 
               {/* ── Section 2 ── */}
               <h2 id="thermal-fuse" style={H2S}><span style={{ color: '#FF5722' }}>2.</span> Blown Thermal Fuse — The Safety Switch</h2>
-              <p style={P}>The thermal fuse is a one-time safety device that blows when the dryer overheats. Once blown, the dryer tumbles but produces zero heat. This is the #1 professional repair we do on dryers.</p>
+              <p style={P}>The thermal fuse is a one-time safety device that blows when the dryer overheats. Once blown, the <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>dryer</a> tumbles but produces zero heat. This is the #1 professional repair we do on dryers.</p>
               <p style={P}>This almost always means the vent was clogged first — if you just replace the fuse without clearing the vent, it will blow again within weeks.</p>
               <p style={P}>Both gas and electric dryers have thermal fuses.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Professional repair:</strong> from $150–$200 (fuse + vent inspection)</p>
@@ -446,6 +447,7 @@ const DryerNotHeating = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED SERVICES ━━━ */}
         <section data-testid="related-services" style={{ background: '#0D1B2A', padding: '56px 24px' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>

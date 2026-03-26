@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -157,7 +158,7 @@ const DryerTakingTooLong = () => {
 
               {/* ── Section 1: Clogged Vent ── */}
               <h2 id="clogged-vent" style={H2S}><span style={{ color: '#FF5722' }}>1.</span> Clogged Dryer Vent (Most Common!)</h2>
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>The Problem:</strong> The dryer vent exhausts hot, moist air outside. When it's clogged with lint, airflow is restricted, and moisture can't escape. This dramatically increases drying time and creates a fire risk.</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>The Problem:</strong> The <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>dryer</a> vent exhausts hot, moist air outside. When it's clogged with lint, airflow is restricted, and moisture can't escape. This dramatically increases drying time and creates a fire risk.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Signs of a clogged vent:</strong></p>
               {['Clothes are hot but damp after a full cycle', 'Dryer exterior is unusually hot to the touch', 'Burning smell during operation', 'Laundry room feels excessively humid'].map((item, i) => (
                 <div key={i} style={{ display: 'flex', gap: 10, padding: '8px 0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
@@ -176,7 +177,7 @@ const DryerTakingTooLong = () => {
 
               {/* ── Section 3: Heating Element ── */}
               <h2 id="heating-element" style={H2S}><span style={{ color: '#FF5722' }}>3.</span> Faulty Heating Element (Electric Dryers)</h2>
-              <p style={P}>Electric dryers use a heating element to warm the air. If it's partially failed, the dryer will produce some heat but not enough to dry efficiently.</p>
+              <p style={P}>Electric dryers use a heating element to warm the air. If it's partially failed, the <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>dryer will produce some heat</a> but not enough to dry efficiently.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>How to test:</strong> Run the dryer. If it's warm but not hot, the heating element may be the issue. You'll need a multimeter to test continuity.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>When to call a pro:</strong> Heating element replacement requires disassembling the dryer and handling electrical components. Most homeowners should hire a technician.</p>
 
@@ -328,6 +329,7 @@ const DryerTakingTooLong = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED ARTICLES ━━━ */}
         <section data-testid="related-articles" style={{ background: '#fff', padding: '40px 24px', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>

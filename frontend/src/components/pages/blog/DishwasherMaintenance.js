@@ -6,6 +6,7 @@ import BlogRelatedLinks from '../../shared/BlogRelatedLinks';
 import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const DishwasherMaintenance = () => {
   const schemas = useMemo(() => [
@@ -69,7 +70,7 @@ const DishwasherMaintenance = () => {
             <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
               
               <p className="text-lg mb-6" style={{ color: '#4A5568' }}>
-                Your dishwasher is one of the hardest-working appliances in your home. With proper maintenance, a quality dishwasher should last 9-13 years. Neglect it, and you'll face frequent clogs, foul odors, poor cleaning performance, and costly repairs.
+                Your <a href="/dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>dishwasher</a> is one of the hardest-working appliances in your home. With proper maintenance, a quality dishwasher should last 9-13 years. Neglect it, and you'll face frequent clogs, foul odors, poor cleaning performance, and costly repairs.
               </p>
 
               <p className="text-lg mb-8" style={{ color: '#4A5568' }}>
@@ -214,6 +215,8 @@ const DishwasherMaintenance = () => {
                   </li>
                 </ul>
               </div>
+
+              <BlogCTA />
 
               {/* ── Related Articles ── */}
               <div data-testid="related-articles" className="mb-10">

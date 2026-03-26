@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -181,12 +182,12 @@ const IceMakerTroubleshooting = () => {
 
               {/* ── Fix 1: Water Supply Valve ── */}
               <FixH2 id="water-supply-valve" num="1" title="Check the Water Supply Valve" />
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>The Problem:</strong> If the water supply valve behind the refrigerator is turned off or only partially open, the ice maker can't get water.</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>The Problem:</strong> If the water supply valve behind the <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>refrigerator</a> is turned off or only partially open, the ice maker can't get water.</p>
               <DarkBox label="QUICK FIX">Pull the fridge out and locate the small valve on the wall or floor (usually a blue or red handle). Make sure it's fully turned to the "open" position. If it's been partially closed, this alone can restore ice production.</DarkBox>
 
               {/* ── Fix 2: Water Filter ── */}
               <FixH2 id="water-filter" num="2" title="Replace the Water Filter" />
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>The Problem:</strong> A clogged water filter is the #1 cause of slow or no ice production. Filters should be changed every 6 months (or 300 gallons).</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>The Problem:</strong> A clogged water filter is the #1 cause of slow or no <a href="/ice-maker-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>ice production</a>. Filters should be changed every 6 months (or 300 gallons).</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Signs your filter needs replacement:</strong></p>
               <CauseList items={['Slow or no ice production', 'Small, hollow, or misshapen ice cubes', 'Reduced water dispenser flow', 'Filter indicator light is on']} />
               <p style={{ ...P, marginTop: 12 }}><strong style={{ color: '#1A1A1A' }}>Solution:</strong> Replace the filter with a genuine OEM filter for your refrigerator model. Aftermarket filters often don't provide proper flow.</p>
@@ -358,6 +359,7 @@ const IceMakerTroubleshooting = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED ARTICLES ━━━ */}
         <section data-testid="related-articles" style={{ background: '#fff', padding: '40px 24px', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>

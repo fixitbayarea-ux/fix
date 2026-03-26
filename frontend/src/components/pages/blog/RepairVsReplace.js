@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -182,7 +183,7 @@ const RepairVsReplace = () => {
               </div>
 
               {/* Intro */}
-              <p style={P}>When your refrigerator stops cooling, your washer won't drain, or your oven won't heat, you face a critical decision: <strong style={{ fontFamily: F, fontWeight: 700, color: '#1A1A1A' }}>Should I repair this appliance, or is it time to replace it?</strong></p>
+              <p style={P}>When your <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>refrigerator stops cooling</a>, your <a href="/washer-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>washer won't drain</a>, or your <a href="/oven-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>oven won't heat</a>, you face a critical decision: <strong style={{ fontFamily: F, fontWeight: 700, color: '#1A1A1A' }}>Should I repair this appliance, or is it time to replace it?</strong></p>
               <p style={P}>The answer isn't always obvious. A $200 repair might seem expensive until you realize a new appliance costs $1,500. On the flip side, repairing a 15-year-old unit that's near the end of its lifespan may just delay the inevitable.</p>
               <p style={{ ...P, marginBottom: 24 }}>Here's a professional framework to help you make the smartest financial decision:</p>
 
@@ -215,7 +216,7 @@ const RepairVsReplace = () => {
 
               {/* ── Energy Efficiency ── */}
               <h2 id="energy-efficiency" style={H2S}>Factor #3: Energy Efficiency Gains</h2>
-              <p style={P}>Appliances manufactured today are 10-50% more energy-efficient than models from 10+ years ago. This is especially true for refrigerators, dishwashers, and washers.</p>
+              <p style={P}>Appliances manufactured today are 10-50% more energy-efficient than models from 10+ years ago. This is especially true for <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>refrigerators</a>, <a href="/dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>dishwashers</a>, and <a href="/washer-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>washers</a>.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Financial impact:</strong> A new Energy Star refrigerator can save $50-$100+ per year on electricity compared to a 10-year-old model. Over 10 years, that's $500-$1,000 in savings.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>When to factor this in:</strong> If your appliance is old, inefficient, and requires a costly repair, the energy savings from a new model can justify replacement even if the 50% rule is borderline.</p>
 
@@ -398,6 +399,7 @@ const RepairVsReplace = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED ARTICLES ━━━ */}
         <section data-testid="related-articles" style={{ background: '#fff', padding: '40px 24px', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>

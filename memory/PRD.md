@@ -98,6 +98,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **Legal**: Created `/terms` page (Terms of Service) with 8 sections: Services Provided, Appointments & Scheduling, Diagnostic Fee, Payment Terms, 180-Day Warranty, Limitation of Liability, Governing Law (CA), Contact & Disputes. `noindex, follow`. Linked from UnifiedFooter and Privacy Policy.
 - **UI**: Fixed /blog card grid — enforced 1-col mobile (≤600px), 2-col tablet (601-900px), 3-col desktop via `index.css`. Fixed blog H3 from 15px → 17px minimum.
 - **E-E-A-T**: Added `BlogByline` component to all 14 blog posts — "By Andrei · Lead Technician, FixitBay" + `<time datetime="...">` + readTime. Updated BlogPosting schema author name to "Andrei Suprunov" across all posts.
+- **Internal Linking**: Added 2-4 contextual service page links per blog post (refrigerator-repair, washer-repair, dryer-repair, dishwasher-repair, oven-repair, ice-maker-repair). Created `BlogCTA.js` component ("Get Expert Help — $60 Diagnostic — Book Online") and inserted into all 14 blog posts before Related Articles section.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

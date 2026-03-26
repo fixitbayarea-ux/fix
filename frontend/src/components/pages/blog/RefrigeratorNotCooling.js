@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -189,7 +190,7 @@ const RefrigeratorNotCooling = () => {
                 <span style={{ fontWeight: 600, color: '#1A1A1A' }}>A warm refrigerator puts your food — and your grocery budget — at risk.</span> Before you call for service, there are things you can check yourself. Below are the 8 most common reasons a refrigerator stops cooling, ranked from simplest DIY fix to problems that need a licensed technician.
               </p>
               <p style={{ ...P, marginBottom: 16 }}>
-                As an appliance repair tech in San Francisco for over 10 years, I see every one of these weekly — especially in older Victorian and Edwardian homes across the city.
+                As an <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>appliance repair</a> tech in San Francisco for over 10 years, I see every one of these weekly — especially in older Victorian and Edwardian homes across the city.
               </p>
               <p style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#1A3B5D', fontStyle: 'italic', marginBottom: 28 }}>
                 — Andrei, Licensed Appliance Technician, FixitBay LLC
@@ -218,7 +219,7 @@ const RefrigeratorNotCooling = () => {
 
               {/* ── Section 4 ── */}
               <h2 id="air-vents" style={H2S}><span style={{ color: '#FF5722' }}>4.</span> Blocked Air Vents</h2>
-              <p style={P}>Cold air circulates between the freezer and fridge compartments through internal vents. If food items or ice buildup block these vents, the fridge stays warm while the freezer works fine.</p>
+              <p style={P}>Cold air circulates between the freezer and fridge compartments through internal vents. If food items or <a href="/ice-maker-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>ice buildup</a> block these vents, the fridge stays warm while the freezer works fine.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>DIY fix:</strong> Rearrange food so nothing touches the back wall or vent openings. If you see ice covering the vent, defrost the freezer manually — but if ice keeps returning, you may have a defrost system problem (see #7).</p>
 
               {/* ── MID-ARTICLE CTA ── */}
@@ -422,6 +423,7 @@ const RefrigeratorNotCooling = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED SERVICES ━━━ */}
         <section data-testid="related-services" style={{ background: '#0D1B2A', padding: '56px 24px' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>

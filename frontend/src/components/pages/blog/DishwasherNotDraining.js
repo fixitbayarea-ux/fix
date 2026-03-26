@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -195,7 +196,7 @@ const DishwasherNotDraining = () => {
 
               {/* INTRO */}
               <p style={{ ...P, marginBottom: 24 }}>
-                Opening your dishwasher to find a pool of dirty water at the bottom is never fun. The good news? Most dishwasher drainage problems are caused by simple clogs that you can fix yourself in under 10 minutes. Here's what to check, in order of likelihood:
+                Opening your <a href="/dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>dishwasher</a> to find a pool of dirty water at the bottom is never fun. The good news? Most dishwasher drainage problems are caused by simple clogs that you can fix yourself in under 10 minutes. Here's what to check, in order of likelihood:
               </p>
 
               {/* ── FIX #1 ── */}
@@ -423,6 +424,7 @@ const DishwasherNotDraining = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED ARTICLES ━━━ */}
         <section data-testid="related-articles" style={{ background: '#fff', padding: '40px 24px', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>

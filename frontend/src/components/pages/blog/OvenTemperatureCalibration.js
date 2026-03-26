@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -212,7 +213,7 @@ const OvenTemperatureCalibration = () => {
 
               {/* ── Step 3 ── */}
               <StepH2 id="calibrate-diy" num="3" title="Calibrate Your Oven (DIY)" />
-              <p style={P}>Most ovens allow you to adjust the temperature calibration by +/- 35&deg;F through the control panel. The exact process varies by brand, but here's the general approach:</p>
+              <p style={P}>Most <a href="/oven-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>ovens</a> allow you to adjust the temperature calibration by +/- 35&deg;F through the control panel. The exact process varies by brand, but here's the general approach:</p>
 
               <h3 style={{ fontFamily: F, fontWeight: 700, fontSize: 17, color: '#1A1A1A', margin: '20px 0 12px' }}>Method 1: Digital Control Panels (Most Modern Ovens)</h3>
               <DarkBox label="DIGITAL METHOD" steps={[
@@ -384,6 +385,7 @@ const OvenTemperatureCalibration = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED ARTICLES ━━━ */}
         <section data-testid="related-articles" style={{ background: '#fff', padding: '40px 24px', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>

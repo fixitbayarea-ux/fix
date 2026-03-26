@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -184,11 +185,11 @@ const ApplianceLifespan = () => {
               </div>
 
               {/* Intro */}
-              <p style={{ ...P, marginBottom: 24 }}>Appliances are major investments, and knowing their expected lifespans helps you budget for replacements and make informed repair-vs-replace decisions. Here's what you can realistically expect from each major appliance&mdash;and how to maximize their longevity.</p>
+              <p style={{ ...P, marginBottom: 24 }}>Appliances are major investments, and knowing their expected lifespans helps you budget for replacements and make informed <a href="/blog/when-to-repair-vs-replace" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>repair-vs-replace decisions</a>. Here's what you can realistically expect from each major appliance&mdash;and how to maximize their longevity.</p>
 
               {/* ── Refrigerators ── */}
               <SectionH2 id="refrigerators" badge="10&ndash;13 YRS" title="Refrigerators" />
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>Average lifespan:</strong> 13 years</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Average lifespan:</strong> 13 years (<a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>refrigerator repair info</a>)</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Factors that affect lifespan:</strong></p>
               <FactorList items={[
                 <><strong style={{ color: '#1A1A1A' }}>Type:</strong> Top-freezer models last longest (15+ years). French-door and side-by-side models average 10-12 years due to more complex ice/water systems.</>,
@@ -199,7 +200,7 @@ const ApplianceLifespan = () => {
 
               {/* ── Washers ── */}
               <SectionH2 id="washers" badge="10&ndash;12 YRS" title="Washers" />
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>Average lifespan:</strong> 10-11 years</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Average lifespan:</strong> 10-11 years (<a href="/washer-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>washer repair info</a>)</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Factors that affect lifespan:</strong></p>
               <FactorList items={[
                 <><strong style={{ color: '#1A1A1A' }}>Type:</strong> Top-load washers (especially older agitator models) last 12-14 years. Front-load washers average 10-11 years due to more complex door seals and pumps.</>,
@@ -382,6 +383,7 @@ const ApplianceLifespan = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED ARTICLES ━━━ */}
         <section data-testid="related-articles" style={{ background: '#fff', padding: '40px 24px', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>

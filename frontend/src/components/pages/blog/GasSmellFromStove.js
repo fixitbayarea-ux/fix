@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -193,7 +194,7 @@ const GasSmellFromStove = () => {
 
               {/* ── Common Causes ── */}
               <h2 id="common-causes" style={H2S}>Common Causes of Gas Smells from Stoves</h2>
-              <p style={{ ...P, marginBottom: 20 }}>Not all gas smells are emergencies, but they all require immediate attention:</p>
+              <p style={{ ...P, marginBottom: 20 }}>Not all gas smells are emergencies, but they all require immediate attention. If your <a href="/oven-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>stove or oven</a> needs repair:</p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
                 {CAUSES.map((c, i) => (
                   <div key={i} style={{ display: 'flex', gap: 14, padding: '16px 18px', background: '#F8F5F0', border: '1px solid rgba(255,87,34,0.15)', borderRadius: 4 }}>
@@ -226,7 +227,7 @@ const GasSmellFromStove = () => {
 
               {/* ── When to Call ── */}
               <h2 id="when-to-call" style={H2S}>When to Call a Professional (After the Emergency is Resolved)</h2>
-              <p style={P}>After authorities clear your home as safe, you'll need a licensed appliance technician or gas technician to:</p>
+              <p style={P}>After authorities clear your home as safe, you'll need a licensed <a href="/oven-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>appliance technician</a> or gas technician to:</p>
               {PRO_CHECKLIST.map((item, i) => (
                 <div key={i} style={{ display: 'flex', gap: 10, padding: '10px 0', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
                   <div style={{ width: 20, height: 20, borderRadius: '50%', background: 'rgba(255,87,34,0.1)', color: '#FF5722', fontSize: 11, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2 }}>{'\u2713'}</div>
@@ -342,6 +343,7 @@ const GasSmellFromStove = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED ARTICLES ━━━ */}
         <section data-testid="related-articles" style={{ background: '#fff', padding: '40px 24px', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>

@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -193,7 +194,7 @@ const WasherErrorCodes = () => {
               {/* ── OE ── */}
               <ErrorH2 id="drain-error" badge="OE / 0E / 03" title="Drain Error" />
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Common brands:</strong> LG, GE, Samsung</p>
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>What it means:</strong> The washer is unable to drain water within the allotted time (usually 8-10 minutes).</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>What it means:</strong> The <a href="/washer-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>washer</a> is unable to drain water within the allotted time (usually 8-10 minutes).</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Common causes:</strong></p>
               <CauseList items={['Clogged drain pump filter (most common)', 'Kinked or clogged drain hose', 'Faulty drain pump', 'Clogged household drain pipe']} />
               <DiyBox steps={['Unplug the washer', 'Locate and clean the drain pump filter (usually behind a small panel at the front bottom)', 'Check the drain hose for kinks or clogs', 'Plug back in and test with a drain/spin cycle']} />
@@ -209,7 +210,7 @@ const WasherErrorCodes = () => {
               {/* ── LE ── */}
               <ErrorH2 id="motor-lock" badge="LE / LC / E6" title="Motor Lock Error" />
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Common brands:</strong> LG, Samsung</p>
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>What it means:</strong> The motor is unable to turn the drum, or the control board is not receiving proper feedback from the motor.</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>What it means:</strong> The motor is unable to turn the drum, or the control board is not receiving proper feedback from the motor. <a href="/washer-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>Professional washer repair</a> is recommended.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Common causes:</strong></p>
               <CauseList items={['Clothing stuck between the drum and tub', 'Seized motor bearings', 'Faulty motor or wiring', 'Control board glitch']} />
               <DiyBox label="DIY TROUBLESHOOTING" steps={['Unplug for 2 minutes to reset the control board', 'Open the door and manually rotate the drum\u2014does it turn freely? If not, something may be jammed', 'If the drum turns freely but error persists, it\u2019s likely a motor or control board issue (call a pro)']} />
@@ -344,6 +345,7 @@ const WasherErrorCodes = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED ARTICLES ━━━ */}
         <section data-testid="related-articles" style={{ background: '#fff', padding: '40px 24px', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>

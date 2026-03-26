@@ -5,6 +5,7 @@ import SEOMetaTags from '../../SEOMetaTags';
 import { useSchemas } from '../../../hooks/useSchema';
 import navbarLogo from '../../../assets/navbar-logo-new-112.webp';
 import BlogByline from './BlogByline';
+import BlogCTA from './BlogCTA';
 
 const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
@@ -173,7 +174,7 @@ const RefrigeratorWaterFilter = () => {
 
               {/* INTRO */}
               <p style={{ ...P, marginBottom: 24 }}>
-                Your refrigerator's water filter is a small component with a big job: removing contaminants like chlorine, lead, mercury, and sediment from your drinking water and ice. But filters don't last forever. Here's everything you need to know about when and how to replace yours.
+                Your <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>refrigerator's</a> water filter is a small component with a big job: removing contaminants like chlorine, lead, mercury, and sediment from your drinking water and ice. But filters don't last forever. Here's everything you need to know about when and how to replace yours.
               </p>
 
               {/* ── UNIVERSAL RULE SECTION ── */}
@@ -420,6 +421,7 @@ const RefrigeratorWaterFilter = () => {
           </div>
         </section>
 
+        <BlogCTA />
         {/* ━━━ RELATED ARTICLES ━━━ */}
         <section data-testid="related-articles" style={{ background: '#fff', padding: '40px 24px', borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>
