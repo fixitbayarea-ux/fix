@@ -256,7 +256,7 @@ const BrandLandingPage = ({ brand }) => {
 
             <div className="brand-stats-bar" style={{ display: 'flex', justifyContent: 'center', gap: 0, marginTop: 40, paddingTop: 32, borderTop: `1px solid ${PC.white10}` }}>
               {[
-                { val: '10+', unit: 'Years', label: 'Experience' },
+                { val: '3+', unit: 'Years', label: 'Experience' },
                 { val: '180', unit: '-Day', label: 'Warranty' },
                 { val: 'Same', unit: '-Day', label: 'Service' },
               ].map((s, i, arr) => (

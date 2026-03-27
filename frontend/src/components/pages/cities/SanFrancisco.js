@@ -246,20 +246,17 @@ const SanFrancisco = () => {
             <a href="/book?go=1" data-testid="sf-hero-book" className="sf-cta-book" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
             <a href="tel:+17605435733" data-testid="sf-hero-call" className="sf-cta-call" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 28px', borderRadius: 3, background: 'transparent', border: '1.5px solid rgba(255,255,255,0.30)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.30)'; e.currentTarget.style.color = '#FFFFFF'; }}>CALL (760) 543-5733</a>
           </div>
-          {/* Stats row */}
-          <div style={{ width: 48, height: 2, background: 'rgba(255,87,34,0.40)', margin: '24px 0 20px' }} />
-          <div style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
+          {/* Stats grid */}
+          <div className="city-stats-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, background: '#1A2F45', borderRadius: 12, margin: '16px 0 0', overflow: 'hidden' }}>
             {[
-              { value: '10+', label: 'Years' },
-              { value: '180-Day', label: 'Warranty' },
-              { value: 'Fast', label: 'Scheduling' },
-            ].map((stat, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'center' }}>
-                {i > 0 && <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,0.12)', margin: '0 20px' }} />}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                  <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 15, color: '#FFFFFF' }}>{stat.value}</span>
-                  <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>{stat.label}</span>
-                </div>
+              { num: '3+', line1: 'Years', line2: 'of Service' },
+              { num: '180', line1: 'Day', line2: 'Warranty' },
+              { num: '$60', line1: 'Diagnostic', line2: 'Waived*' },
+            ].map((s, i) => (
+              <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '16px 8px', borderRight: i < 2 ? '1px solid rgba(255,255,255,0.15)' : 'none' }}>
+                <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 'clamp(24px, 6vw, 36px)', lineHeight: 1, color: '#FF5722' }}>{s.num}</span>
+                <span style={{ fontFamily: S.font, fontWeight: 600, fontSize: 'clamp(11px, 3vw, 14px)', color: '#fff', textTransform: 'uppercase', letterSpacing: '1px', marginTop: 4 }}>{s.line1}</span>
+                <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 10, color: 'rgba(255,255,255,0.6)', marginTop: 2 }}>{s.line2}</span>
               </div>
             ))}
           </div>

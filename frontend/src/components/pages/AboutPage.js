@@ -148,7 +148,7 @@ const AboutPage = () => {
             <div>
               <div className="stats-grid" style={{ marginBottom: 24 }}>
                 {[
-                  { val: '10+', label: 'Years Experience' },
+                  { val: '3+', label: 'Years Experience' },
                   { val: '500+', label: 'Happy Customers' },
                   { val: '4.9\u2605', label: 'Google Rating' },
                   { val: '#51001', label: 'CA License' },

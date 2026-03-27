@@ -172,7 +172,7 @@ const LocalApplianceRepairPage = () => {
         <section data-testid="stats-bar" style={{ background: '#FF5722', padding: '20px 24px' }}>
           <div className="stats-bar" style={{ display: 'flex', justifyContent: 'center', gap: 48, flexWrap: 'wrap', maxWidth: 900, margin: '0 auto', alignItems: 'center' }}>
             {[
-              { val: '10+', label: 'Years Experience' },
+              { val: '3+', label: 'Years Experience' },
               { val: '500+', label: 'Happy Customers' },
               { val: '$60', label: 'Diagnostic Fee' },
               { val: '180', label: 'Day Warranty' },

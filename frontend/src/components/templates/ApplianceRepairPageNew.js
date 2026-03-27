@@ -431,20 +431,22 @@ const ApplianceRepairPageNew = ({
             </div>
             {/* Urgency micro-copy */}
             <p data-testid="city-hero-urgency" style={{ fontFamily: S.font, fontSize: 12, color: 'rgba(255,255,255,0.65)', marginTop: 12 }}>
-              ⚡ Most slots filled by noon — book now to secure today
+              Most slots filled by noon — book now to secure today
             </p>
-            <div style={{ width: 48, height: 2, background: 'rgba(255,87,34,0.40)', margin: '24px 0 20px' }} />
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              {[{ value: '10+', label: 'Years' }, { value: '180-Day', label: 'Warranty' }, { value: 'Fast', label: 'Scheduling' }].map((stat, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'center' }}>
-                  {i > 0 && <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,0.12)', margin: '0 20px' }} />}
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                    <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 15, color: '#FFFFFF' }}>{stat.value}</span>
-                    <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>{stat.label}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
+          </div>
+          {/* ═══ STATS GRID ═══ */}
+          <div data-testid="city-stats-grid" className="city-stats-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, background: '#1A2F45', borderRadius: 12, margin: '16px 20px 0', overflow: 'hidden' }}>
+            {[
+              { num: '3+', line1: 'Years', line2: 'of Service' },
+              { num: '180', line1: 'Day', line2: 'Warranty' },
+              { num: '$60', line1: 'Diagnostic', line2: 'Waived*' },
+            ].map((s, i) => (
+              <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '16px 8px', borderRight: i < 2 ? '1px solid rgba(255,255,255,0.15)' : 'none' }}>
+                <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 'clamp(24px, 6vw, 36px)', lineHeight: 1, color: '#FF5722' }}>{s.num}</span>
+                <span style={{ fontFamily: S.font, fontWeight: 600, fontSize: 'clamp(11px, 3vw, 14px)', color: '#fff', textTransform: 'uppercase', letterSpacing: '1px', marginTop: 4 }}>{s.line1}</span>
+                <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 10, color: 'rgba(255,255,255,0.6)', marginTop: 2 }}>{s.line2}</span>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -695,25 +697,22 @@ const ApplianceRepairPageNew = ({
                 <a href="tel:+17605435733" data-testid="service-hero-call" style={{ display: 'inline-flex', alignItems: 'center', padding: '15px 26px', borderRadius: 3, background: 'transparent', minHeight: 52, border: '2px solid rgba(255,255,255,0.65)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.65)'; e.currentTarget.style.color = '#FFFFFF'; }}>Call (760) 543-5733</a>
               </div>
               {/* Tech note */}
-              <p style={{ fontFamily: S.font, fontWeight: 500, fontSize: 12, color: 'rgba(255,255,255,0.45)', marginTop: 20 }}>Andrei — Licensed CA Appliance Technician, 10+ years</p>
-              {/* Divider + stats row */}
-              <div style={{ width: 48, height: 2, background: 'rgba(255,87,34,0.40)', margin: '20px 0' }} />
-              <div style={{ display: 'flex', alignItems: 'center', gap: 0 }}>
-                {[
-                  { value: '10+', label: 'Years' },
-                  { value: '180-Day', label: 'Warranty' },
-                  { value: 'Fast', label: 'Scheduling' },
-                ].map((stat, i) => (
-                  <div key={i} style={{ display: 'flex', alignItems: 'center' }}>
-                    {i > 0 && <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,0.12)', margin: '0 20px' }} />}
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                      <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 15, color: '#FFFFFF' }}>{stat.value}</span>
-                      <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>{stat.label}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <p style={{ fontFamily: S.font, fontWeight: 500, fontSize: 12, color: 'rgba(255,255,255,0.45)', marginTop: 20 }}>Andrei — Licensed CA Appliance Technician, 3+ years</p>
             </div>
+          </div>
+          {/* Stats grid */}
+          <div className="city-stats-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, background: '#1A2F45', borderRadius: 12, margin: '16px 20px 0', overflow: 'hidden' }}>
+            {[
+              { num: '3+', line1: 'Years', line2: 'of Service' },
+              { num: '180', line1: 'Day', line2: 'Warranty' },
+              { num: '$60', line1: 'Diagnostic', line2: 'Waived*' },
+            ].map((s, i) => (
+              <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '16px 8px', borderRight: i < 2 ? '1px solid rgba(255,255,255,0.15)' : 'none' }}>
+                <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 'clamp(24px, 6vw, 36px)', lineHeight: 1, color: '#FF5722' }}>{s.num}</span>
+                <span style={{ fontFamily: S.font, fontWeight: 600, fontSize: 'clamp(11px, 3vw, 14px)', color: '#fff', textTransform: 'uppercase', letterSpacing: '1px', marginTop: 4 }}>{s.line1}</span>
+                <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 10, color: 'rgba(255,255,255,0.6)', marginTop: 2 }}>{s.line2}</span>
+              </div>
+            ))}
           </div>
         </section>
       )}

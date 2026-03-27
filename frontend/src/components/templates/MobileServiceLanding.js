@@ -401,7 +401,7 @@ const MobileServiceLanding = ({
             <p style={{ fontWeight: 700, fontSize: 15, color: PC.textDark, margin: '0 0 6px', fontFamily: F }}>Andrei — Lead Technician</p>
             <p style={{ fontSize: 13, color: PC.textMid, margin: '0 0 10px', lineHeight: 1.5, fontFamily: F }}>Mechanical engineer with 10+ years experience. Diagnoses and fixes what others miss. BHGS License #51001.</p>
             <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-              {['Licensed & Insured', '10+ Years Exp.', 'Fast Sched.'].map((tag, i) => (
+              {['Licensed & Insured', '3+ Years Exp.', 'Fast Sched.'].map((tag, i) => (
                 <span key={i} style={{
                   background: PC.accentBg,
                   border: `1px solid ${PC.accentBorder}`,

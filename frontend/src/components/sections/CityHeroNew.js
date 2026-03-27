@@ -40,12 +40,17 @@ const CityHeroNew = ({ bgImage, cityName }) => {
             <a href="/book?go=1" data-testid="city-cta-book" style={{ fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', background: '#FF5722', color: '#FFFFFF', padding: '16px 32px', borderRadius: 3, textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>Book Repair Online</a>
             <a href="tel:+17605435733" data-testid="city-cta-call" style={{ fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', background: 'transparent', color: '#FFFFFF', border: '1.5px solid rgba(255,255,255,0.30)', padding: '16px 28px', borderRadius: 3, textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.30)'; e.currentTarget.style.color = '#FFFFFF'; }}>Call (760) 543-5733</a>
           </div>
-          {/* Stats row — inline with top border */}
-          <div style={{ display: 'flex', flexDirection: 'row', gap: 32, marginTop: 32, paddingTop: 24, borderTop: '1px solid rgba(255,255,255,0.10)' }}>
-            {[{ value: '10+', label: 'Years' }, { value: '180-Day', label: 'Warranty' }, { value: 'Fast', label: 'Scheduling' }].map((stat, i) => (
-              <div key={i} style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                <span style={{ fontFamily: S.font, fontWeight: 800, fontSize: 20, color: '#FFFFFF' }}>{stat.value}</span>
-                <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>{stat.label}</span>
+          {/* Stats grid */}
+          <div className="city-stats-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, background: '#1A2F45', borderRadius: 12, marginTop: 24, overflow: 'hidden' }}>
+            {[
+              { num: '3+', line1: 'Years', line2: 'of Service' },
+              { num: '180', line1: 'Day', line2: 'Warranty' },
+              { num: '$60', line1: 'Diagnostic', line2: 'Waived*' },
+            ].map((s, i) => (
+              <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '16px 8px', borderRight: i < 2 ? '1px solid rgba(255,255,255,0.15)' : 'none' }}>
+                <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 'clamp(24px, 6vw, 36px)', lineHeight: 1, color: '#FF5722' }}>{s.num}</span>
+                <span style={{ fontFamily: S.font, fontWeight: 600, fontSize: 'clamp(11px, 3vw, 14px)', color: '#fff', textTransform: 'uppercase', letterSpacing: '1px', marginTop: 4 }}>{s.line1}</span>
+                <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 10, color: 'rgba(255,255,255,0.6)', marginTop: 2 }}>{s.line2}</span>
               </div>
             ))}
           </div>
