@@ -124,6 +124,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 02 (Session 15)**: Updated review counts sitewide. Google: 90→95, Thumbtack: 142→153, Total: 237→253. Updated 14 files: ReviewsPage.js, SchemaMarkup.js, HomeHero.jsx, LocalApplianceRepairPage.js, ApplianceRepairPageNew.js, SanFrancisco.js, BrandsPage.js, BrandLandingPage.js, LLMInfoPage.js, NeighborhoodPage.js, StructuredData.js, schemaMarkup.js, MobileServiceLanding.js. All JSON-LD reviewCount updated to "95" (Google-verified). Meta descriptions updated.
 
+- **ПРОМТ 03 (Session 15)**: Restored review cards on /reviews page. Root cause: `useReviews` hook fetched from non-existent `/api/cms/reviews` API, returned empty array. Fix: created `/data/reviewsData.js` with 9 hardcoded verified reviews (5 Google, 3 Thumbtack, 1 Yelp), modified `useReviews.js` to use static data as default with API override. Filter tabs work: All(9), Google(5), Thumbtack(3), Yelp(1). Masonry 2-col desktop / 1-col mobile layout.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
