@@ -108,6 +108,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **PROMPT 11**: Restructured Areas dropdown (desktop) and Service Areas accordion (mobile). Grouped cities by 3 regions: San Francisco (13), Peninsula (8), Marin County (11). Desktop: 3-column grid with orange uppercase region headers, column borders. Mobile: region labels (10px, uppercase, 0.3 opacity). Data consolidated in `navbarData.js` `areasGrouped` export. Testing: 100% passed (iteration_108).
 - **PROMPT 12**: Fixed mobile navbar brand text visibility bug — removed `style={{display:'none'}}` that overrode Tailwind `flex sm:hidden`. Brand now shows "FixitBay LLC" (14px/700) + "Appliance Repair" (11px/0.75 opacity). Phone replaced with icon-only (no text) to save space. Desktop unchanged.
 - **PROMPT 13**: Fixed navbar logo — removed `rounded-full` (circle crop), set `border-radius: 4px`, `object-fit: contain`. Sizes: mobile 48×48px, desktop 56×56px. Logo no longer clipped.
+- **ПРОМТ 01 (new)**: Replaced homepage H1 from "Appliance Repair in San Francisco — Fixed Same Day" to "Appliance Repair San Francisco — Licensed & Trusted" (51 chars). Removed legally risky "Fixed Same Day" promise. SEO keywords preserved.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

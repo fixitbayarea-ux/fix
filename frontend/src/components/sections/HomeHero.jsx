@@ -49,7 +49,7 @@ const HomeHero = () => {
 
             {/* ━━━ SINGLE H1 — always in DOM ━━━ */}
             <h1 className="hero-main-h1" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, color: '#FFFFFF', margin: 0 }}>
-              Appliance Repair in San Francisco — Fixed Same Day
+              Appliance Repair San Francisco — Licensed & Trusted
             </h1>
 
             {/* Subtext */}
