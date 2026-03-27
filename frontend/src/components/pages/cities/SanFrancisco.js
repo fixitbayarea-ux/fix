@@ -241,11 +241,6 @@ const SanFrancisco = () => {
           <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>
             Same- or next-day & next-day service &middot; $60 diagnostic &middot; 180-day warranty on all repairs
           </p>
-          {/* CTAs */}
-          <div className="sf-cta-row" style={{ display: 'flex', gap: 14, marginTop: 28, flexWrap: 'wrap' }}>
-            <a href="/book?go=1" data-testid="sf-hero-book" className="sf-cta-book" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
-            <a href="tel:+17605435733" data-testid="sf-hero-call" className="sf-cta-call" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 28px', borderRadius: 3, background: 'transparent', border: '1.5px solid rgba(255,255,255,0.30)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.30)'; e.currentTarget.style.color = '#FFFFFF'; }}>CALL (760) 543-5733</a>
-          </div>
           {/* Stats grid */}
           <div className="city-stats-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, background: '#1A2F45', borderRadius: 12, margin: '16px 0 0', overflow: 'hidden' }}>
             {[
@@ -579,8 +574,6 @@ const SanFrancisco = () => {
           .sf-how-grid { grid-template-columns: 1fr 1fr !important; gap: 24px !important; }
           [data-testid="sf-hero"] { min-height: auto !important; max-height: none !important; }
           [data-testid="sf-hero"] > div { padding: 48px 20px !important; }
-          .sf-cta-row { flex-direction: column !important; gap: 12px !important; align-items: stretch !important; }
-          .sf-cta-book, .sf-cta-call { width: 100% !important; box-sizing: border-box !important; min-width: 0 !important; display: flex !important; justify-content: center !important; }
           .city-trust-strip > div { gap: 12px !important; font-size: 11px !important; }
           h2 { /* handled by global index.css */ }
         }

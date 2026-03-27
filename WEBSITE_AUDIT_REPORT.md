@@ -1,6 +1,6 @@
 # 🔍 КОМПЛЕКСНЫЙ АУДИТ САЙТА FIXITBAY
 **Дата:** 24 января 2026  
-**URL:** https://footer-collapse-ux.preview.emergentagent.com
+**URL:** https://brand-images-fix.preview.emergentagent.com
 
 ---
 

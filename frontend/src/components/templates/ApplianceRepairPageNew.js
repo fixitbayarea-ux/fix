@@ -425,10 +425,6 @@ const ApplianceRepairPageNew = ({
             </div>
             <h1 className="hero-main-h1" data-testid="city-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in<br/>{cityName}</h1>
             <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same- or next-day & next-day &middot; $60 diagnostic &middot; 180-day warranty</p>
-            <div className="city-cta-row" style={{ display: 'flex', gap: 14, marginTop: 28, flexWrap: 'wrap' }}>
-              <a href="/book?go=1" data-testid="city-hero-book" className="city-cta-book" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
-              <a href="tel:+17605435733" data-testid="city-hero-call" className="city-cta-call" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 28px', borderRadius: 3, background: 'transparent', minHeight: 52, border: '2px solid rgba(255,255,255,0.65)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.65)'; e.currentTarget.style.color = '#FFFFFF'; }}>CALL (760) 543-5733</a>
-            </div>
             {/* Urgency micro-copy */}
             <p data-testid="city-hero-urgency" style={{ fontFamily: S.font, fontSize: 12, color: 'rgba(255,255,255,0.65)', marginTop: 12 }}>
               Most slots filled by noon — book now to secure today
@@ -632,9 +628,6 @@ const ApplianceRepairPageNew = ({
             [data-testid="city-hero"] { min-height: auto !important; max-height: none !important; }
             [data-testid="city-hero"] > div { padding: 48px 20px !important; }
             [data-testid="city-hero-h1"] { max-width: 100% !important; }
-            .city-cta-row { flex-direction: column !important; align-items: stretch !important; gap: 12px !important; }
-            .city-cta-book { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
-            .city-cta-call { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
             .city-trust-strip > div { gap: 12px !important; font-size: 11px !important; }
             .city-page-wrap h2 { /* handled by global index.css */ }
           }
