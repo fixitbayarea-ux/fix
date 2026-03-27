@@ -190,8 +190,9 @@ const ProfessionalLandingPage = () => {
               ].map((step, i) => {
                 const card = (
                 <div className="hiw-step-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', position: 'relative', zIndex: 1 }}>
-                  <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 72, lineHeight: 1, color: 'rgba(255,255,255,0.05)', display: 'block' }}>{step.num}</span>
-                  <div style={{ color: '#FF5722', marginTop: -8 }}>{step.icon}</div>
+                  <span className="hiw-num-watermark" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 72, lineHeight: 1, color: 'rgba(255,255,255,0.05)', display: 'block' }}>{step.num}</span>
+                  <span className="hiw-num-pill" style={{ display: 'none', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 11, background: '#FF5722', color: '#fff', borderRadius: 12, padding: '2px 10px', marginBottom: 6 }}>{step.num}</span>
+                  <div style={{ color: '#FF5722', marginTop: -8 }} className="hiw-step-icon">{step.icon}</div>
                   <div style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#FFFFFF', marginTop: 16, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{step.title}</div>
                   <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.50)', maxWidth: 160, lineHeight: 1.6, marginTop: 8 }}>{step.desc}</p>
                 </div>
@@ -200,7 +201,8 @@ const ProfessionalLandingPage = () => {
                 return (
                   <React.Fragment key={i}>
                     {wrapped}
-                    {i < 3 && <div className={`hiw-arrow ${i === 1 ? 'hiw-arrow-down' : ''}`} aria-hidden="true"><span className="hiw-arrow-h">&rarr;</span><span className="hiw-arrow-v">&darr;</span></div>}
+                    {i < 3 && i !== 1 && <div className="hiw-arrow" aria-hidden="true"><span className="hiw-arrow-h">&rarr;</span></div>}
+                    {i === 1 && <div className="hiw-arrow hiw-arrow-down" aria-hidden="true"><div className="hiw-connector-l"></div></div>}
                   </React.Fragment>
                 );
               })}
@@ -287,16 +289,22 @@ const ProfessionalLandingPage = () => {
         .hiw-steps-container { display: flex; align-items: flex-start; justify-content: center; gap: 0; }
         .hiw-step-card-wrap { flex: 1; min-width: 0; }
         .hiw-arrow { display: flex; align-items: center; justify-content: center; padding: 0 8px; color: #FF5722; font-size: 24px; font-weight: 700; padding-top: 56px; }
-        .hiw-arrow-v { display: none; }
+        .hiw-arrow-down { display: none; }
+        .hiw-num-pill { display: none !important; }
+        .hiw-num-watermark { display: block !important; }
+        .hiw-connector-l { display: none; }
         @media (max-width: 767px) {
           .hiw-steps-container { display: grid !important; grid-template-columns: 1fr auto 1fr; gap: 4px 0; }
           .hiw-step-card-wrap { min-width: 0; }
           .hiw-arrow { padding: 0 4px; font-size: 18px; padding-top: 36px; }
           .hiw-arrow-h { display: inline; }
-          .hiw-arrow-v { display: none; }
-          .hiw-arrow-down { grid-column: 1 / -1; padding: 0; justify-content: center; }
+          .hiw-arrow-down { grid-column: 1 / -1; padding: 0; display: flex !important; justify-content: flex-end; height: 36px; position: relative; }
           .hiw-arrow-down .hiw-arrow-h { display: none; }
-          .hiw-arrow-down .hiw-arrow-v { display: inline; font-size: 20px; }
+          .hiw-connector-l { display: block !important; position: absolute; right: 25%; top: 0; width: 50%; height: 100%; border-right: 2px dashed rgba(255,87,34,0.35); border-bottom: 2px dashed rgba(255,87,34,0.35); border-radius: 0 0 10px 0; }
+          .hiw-connector-l::after { content: '\u2193'; position: absolute; bottom: -14px; left: -6px; color: #FF5722; font-size: 16px; font-weight: 700; }
+          .hiw-num-watermark { display: none !important; }
+          .hiw-num-pill { display: inline-block !important; }
+          .hiw-step-icon { margin-top: 0 !important; }
           .hiw-step-card span[style*="fontSize: 72"], .hiw-step-card span[style*="font-size: 72px"] { font-size: 48px !important; }
         }
 

@@ -111,6 +111,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **ПРОМТ 01 (new)**: Replaced homepage H1 from "Appliance Repair in San Francisco — Fixed Same Day" to "Appliance Repair San Francisco — Licensed & Trusted" (51 chars). Removed legally risky "Fixed Same Day" promise. SEO keywords preserved.
 - **ПРОМТ 02**: Global "same-day" guarantee audit. Changed ~150+ occurrences across 100+ files. Replaced guarantees with "fast scheduling", "same- or next-day appointments". Preserved honest FAQ answers, customer reviews, blog URLs.
 - **ПРОМТ 03**: Fixed mobile stats bar visual balance. "22"→"22+" (32px), "$60" stays 22px, "180-Day" split into "180"(28px)+"-Day"(14px superscript). Shortened labels: "BAY AREA", "TOWARD REPAIR". min-height:80px, center alignment. Desktop unchanged.
+- **ПРОМТ 04**: Improved How It Works mobile connector. Replaced single ↓ with L-shaped dashed connector (border-right + border-bottom + ↓ arrow). Added pill badges (01-04) with orange background on mobile, watermark numbers preserved on desktop. Desktop layout (4-col) unchanged.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
