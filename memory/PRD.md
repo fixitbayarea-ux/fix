@@ -112,6 +112,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **ПРОМТ 02**: Global "same-day" guarantee audit. Changed ~150+ occurrences across 100+ files. Replaced guarantees with "fast scheduling", "same- or next-day appointments". Preserved honest FAQ answers, customer reviews, blog URLs.
 - **ПРОМТ 03**: Fixed mobile stats bar visual balance. "22"→"22+" (32px), "$60" stays 22px, "180-Day" split into "180"(28px)+"-Day"(14px superscript). Shortened labels: "BAY AREA", "TOWARD REPAIR". min-height:80px, center alignment. Desktop unchanged.
 - **ПРОМТ 04**: Improved How It Works mobile connector. Replaced single ↓ with L-shaped dashed connector (border-right + border-bottom + ↓ arrow). Added pill badges (01-04) with orange background on mobile, watermark numbers preserved on desktop. Desktop layout (4-col) unchanged.
+- **ПРОМТ 05**: Added blog card thumbnails. Downloaded 3 stock photos (Pexels), converted to WebP (12-34KB), saved to `/public/images/`. Updated `HomeBlogSection.jsx` to render `<img>` with 16:9 ratio, loading="lazy", category tag overlay, date+readTime. Mobile: 1-col, Desktop: 3-col grid.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

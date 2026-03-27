@@ -38,17 +38,23 @@ const POSTS = [
 const BlogCard = ({ post }) => (
   <a href={`/blog/${post.slug}`} data-testid={`blog-card-${post.slug}`} className="home-blog-card" style={{ display: 'flex', flexDirection: 'column', background: '#fff', borderRadius: 6, border: '1px solid #E5E2DD', overflow: 'hidden', textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s' }}>
     <div style={{ aspectRatio: '16/9', background: '#E5E2DD', overflow: 'hidden', position: 'relative' }}>
-      <div style={{ width: '100%', height: '100%', background: 'linear-gradient(135deg, #0D1B2A 0%, #1A2D42 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <span style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: 'rgba(255,87,34,0.15)' }}>{post.category.charAt(0)}</span>
-      </div>
+      <img
+        src={post.image}
+        alt={post.title}
+        width={600}
+        height={340}
+        loading="lazy"
+        decoding="async"
+        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+      />
       <span style={{ position: 'absolute', top: 10, left: 10, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 10, padding: '3px 8px', borderRadius: 3, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{post.category}</span>
     </div>
     <div style={{ padding: '16px 18px 20px', display: 'flex', flexDirection: 'column', flex: 1 }}>
       <h3 style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#0D1B2A', lineHeight: 1.35, marginBottom: 8 }}>{post.title}</h3>
       <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568', lineHeight: 1.6, flex: 1, marginBottom: 12 }}>{post.excerpt}</p>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <time dateTime={post.date} style={{ fontFamily: F, fontWeight: 500, fontSize: 12, color: 'rgba(0,0,0,0.4)' }}>{post.dateFormatted}</time>
-        <span style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722' }}>Read More &rarr;</span>
+        <span style={{ fontFamily: F, fontWeight: 500, fontSize: 12, color: 'rgba(0,0,0,0.4)' }}>{post.dateFormatted} &middot; {post.readTime}</span>
+        <span style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722' }}>Read &rarr;</span>
       </div>
     </div>
   </a>
