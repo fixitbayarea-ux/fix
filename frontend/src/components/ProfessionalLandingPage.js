@@ -116,19 +116,28 @@ const ProfessionalLandingPage = () => {
         <div className="py-6 lg:py-16" style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px' }}>
           <div className="stats-desktop-grid" style={{ gridTemplateColumns: '1fr auto 1fr auto 1fr', alignItems: 'stretch' }}>
             {[
-              { num: '22', unit: 'Cities', title: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin', numSize: 64 },
-              { num: '$60', unit: 'Diagnostic', title: 'GOES TOWARD REPAIR', desc: 'Applied if you proceed', numSize: 64 },
-              { num: '180-Day', unit: 'Warranty', title: 'PARTS & LABOR', desc: '180-day guarantee', numSize: 36 },
+              { num: '22', numMobile: '22+', unit: 'Cities', title: 'BAY AREA', titleDesktop: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin', numSize: 64, mobileClass: 'stat-num-cities' },
+              { num: '$60', numMobile: '$60', unit: 'Diagnostic', title: 'TOWARD REPAIR', titleDesktop: 'GOES TOWARD REPAIR', desc: 'Applied if you proceed', numSize: 64, mobileClass: 'stat-num-diag' },
+              { num: '180-Day', numMobile: null, unit: 'Warranty', title: 'PARTS & LABOR', titleDesktop: 'PARTS & LABOR', desc: '180-day guarantee', numSize: 36, mobileClass: 'stat-num-warranty' },
             ].map((s, i) => (
               <React.Fragment key={i}>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: 20 }}>
                   <div className="stat-accent-bar" style={{ width: 3, alignSelf: 'stretch', background: '#FF5722', flexShrink: 0 }} />
                   <div>
                     <div style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}>
-                      <span className="stat-num" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: s.numSize, lineHeight: 1, color: '#0D1B2A', whiteSpace: 'nowrap' }}>{s.num}</span>
+                      {/* Desktop: original num */}
+                      <span className={`stat-num stat-num-desktop ${s.mobileClass}`} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: s.numSize, lineHeight: 1, color: '#0D1B2A', whiteSpace: 'nowrap' }}>{s.num}</span>
+                      {/* Mobile: custom num (hidden on desktop via CSS) */}
+                      {s.numMobile && <span className={`stat-num stat-num-mobile ${s.mobileClass}`} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: 1, color: '#0D1B2A', whiteSpace: 'nowrap', display: 'none' }}>{s.numMobile}</span>}
+                      {!s.numMobile && s.mobileClass === 'stat-num-warranty' && (
+                        <span className="stat-num stat-num-mobile stat-num-warranty" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: 1, color: '#0D1B2A', display: 'none' }}>
+                          180<span style={{ fontSize: 14, fontWeight: 600, verticalAlign: 'super', marginLeft: 1 }}>-Day</span>
+                        </span>
+                      )}
                       <span className="stat-unit" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 20, color: '#FF5722' }}>{s.unit}</span>
                     </div>
-                    <div className="stat-title" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginTop: 6, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{s.title}</div>
+                    <div className="stat-title stat-title-desktop" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginTop: 6, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{s.titleDesktop}</div>
+                    <div className="stat-title stat-title-mobile" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginTop: 6, textTransform: 'uppercase', letterSpacing: '0.08em', display: 'none' }}>{s.title}</div>
                     <div className="stat-desc" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 13, color: '#4A5568', maxWidth: 200, marginTop: 4, lineHeight: 1.5 }}>{s.desc}</div>
                   </div>
                 </div>
@@ -236,14 +245,20 @@ const ProfessionalLandingPage = () => {
         @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
         .stats-desktop-grid { display: grid; }
         @media (max-width: 1023px) {
-          .stats-desktop-grid { display: grid !important; grid-template-columns: 1fr 1px 1fr 1px 1fr; align-items: stretch; gap: 0; padding: 10px 16px; }
+          .stats-desktop-grid { display: grid !important; grid-template-columns: 1fr 1px 1fr 1px 1fr; align-items: stretch; gap: 0; padding: 10px 12px; }
           .stats-desktop-grid .stat-divider { display: block !important; width: 1px !important; background: rgba(0,0,0,0.1) !important; margin: 0 !important; align-self: stretch; }
           .stats-desktop-grid .stat-accent-bar { display: none; }
-          .stats-desktop-grid > div:not(.stat-divider) { text-align: center !important; padding: 4px 8px !important; display: flex !important; flex-direction: column !important; align-items: center !important; gap: 2px !important; overflow: hidden; }
+          .stats-desktop-grid > div:not(.stat-divider) { text-align: center !important; padding: 4px 4px !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 2px !important; overflow: hidden; min-height: 80px; }
           .stats-desktop-grid > div:not(.stat-divider) > div { align-items: center !important; }
           .stats-desktop-grid > div:not(.stat-divider) > div > div:first-child { justify-content: center !important; flex-wrap: wrap; }
-          .stats-desktop-grid .stat-num { font-size: 22px !important; font-weight: 700; color: #0D1B2A; }
+          .stats-desktop-grid .stat-num-desktop { display: none !important; }
+          .stats-desktop-grid .stat-num-mobile { display: inline !important; }
+          .stats-desktop-grid .stat-num-cities { font-size: 32px !important; font-weight: 800; color: #0D1B2A; }
+          .stats-desktop-grid .stat-num-diag { font-size: 22px !important; font-weight: 700; color: #0D1B2A; }
+          .stats-desktop-grid .stat-num-warranty { font-size: 28px !important; font-weight: 800; color: #0D1B2A; }
           .stats-desktop-grid .stat-unit { font-size: 11px !important; text-transform: uppercase; letter-spacing: 0.5px; }
+          .stats-desktop-grid .stat-title-desktop { display: none !important; }
+          .stats-desktop-grid .stat-title-mobile { display: block !important; }
           .stats-desktop-grid .stat-title { font-size: 9px !important; letter-spacing: 0.08em; }
           .stats-desktop-grid .stat-desc { display: none; }
         }
