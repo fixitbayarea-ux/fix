@@ -69,7 +69,7 @@ const NeighborhoodPage = () => {
         name: 'FixitBay LLC',
         telephone: '+17605435733',
         areaServed: { '@type': 'Place', name: `${data.name}, San Francisco, CA` },
-        aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '95' },
+        aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '95', bestRating: '5', worstRating: '1' },
       },
     },
     {

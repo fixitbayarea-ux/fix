@@ -56,7 +56,8 @@ const ReviewsPage = () => {
           "@type": "Review",
           "author": { "@type": "Person", "name": r.author },
           "reviewRating": { "@type": "Rating", "ratingValue": String(r.rating) },
-          "reviewBody": r.text
+          "reviewBody": r.text,
+          "datePublished": r.date
         }))
       }
     },
