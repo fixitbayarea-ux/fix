@@ -425,13 +425,6 @@ const ApplianceRepairPageNew = ({
             </div>
             <h1 className="hero-main-h1" data-testid="city-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in<br/>{cityName}</h1>
             <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same- or next-day & next-day &middot; $60 diagnostic &middot; 180-day warranty</p>
-            <div data-testid="city-trust-badges" style={{ display: 'flex', alignItems: 'center', gap: 24, marginTop: 20, fontFamily: S.font, fontWeight: 500, fontSize: 13, flexWrap: 'wrap' }}>
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span><span style={{ color: 'rgba(255,255,255,0.85)' }}>Licensed CA Technician</span></span>
-              <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FFB800' }}>&#11088;</span><span style={{ color: 'rgba(255,255,255,0.85)' }}>4.9 Google</span></span>
-              <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#128737;</span><span style={{ color: 'rgba(255,255,255,0.85)' }}>License #51001</span></span>
-            </div>
             <div className="city-cta-row" style={{ display: 'flex', gap: 14, marginTop: 28, flexWrap: 'wrap' }}>
               <a href="/book?go=1" data-testid="city-hero-book" className="city-cta-book" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
               <a href="tel:+17605435733" data-testid="city-hero-call" className="city-cta-call" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 28px', borderRadius: 3, background: 'transparent', minHeight: 52, border: '2px solid rgba(255,255,255,0.65)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.65)'; e.currentTarget.style.color = '#FFFFFF'; }}>CALL (760) 543-5733</a>
@@ -454,6 +447,17 @@ const ApplianceRepairPageNew = ({
             </div>
           </div>
         </section>
+
+        {/* ═══ TRUST STRIP ═══ */}
+        <div className="city-trust-strip" data-testid="city-trust-strip" style={{ background: '#0D1B2A', borderBottom: '1px solid rgba(255,255,255,0.1)', padding: '10px 24px' }}>
+          <div style={{ maxWidth: 800, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 20, flexWrap: 'wrap', fontFamily: S.font, fontWeight: 500, fontSize: 13, letterSpacing: '0.3px' }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>Licensed CA Technician</span></span>
+            <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FFB800' }}>&#11088;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>4.9 Google (94 Reviews)</span></span>
+            <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#128737;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>License #51001</span></span>
+          </div>
+        </div>
 
         {/* ═══ SECTION 2 — APPLIANCES ═══ */}
         <section data-testid="city-services" style={{ background: '#F8F5F0', padding: '70px 0' }}>
@@ -629,6 +633,7 @@ const ApplianceRepairPageNew = ({
             .city-cta-row { flex-direction: column !important; align-items: stretch !important; gap: 12px !important; }
             .city-cta-book { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
             .city-cta-call { width: 100% !important; display: flex !important; justify-content: center !important; min-width: 0 !important; }
+            .city-trust-strip > div { gap: 12px !important; font-size: 11px !important; }
             .city-page-wrap h2 { /* handled by global index.css */ }
           }
           @media (max-width: 480px) {
@@ -684,14 +689,6 @@ const ApplianceRepairPageNew = ({
               {/* Subtext */}
               <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>$60 diagnostic &middot; Same/Next-Day &middot; 180-Day Warranty</p>
               {heroDescription && <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.55)', marginTop: 12, lineHeight: 1.6, maxWidth: 480 }}>{heroDescription}</p>}
-              {/* Trust badges */}
-              <div data-testid="trust-badges" style={{ display: 'flex', alignItems: 'center', gap: 20, marginTop: 20, fontFamily: S.font, fontWeight: 500, fontSize: 12 }}>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span> <span style={{ color: 'rgba(255,255,255,0.85)' }}>Licensed CA Technician</span></span>
-                <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FFB800' }}>&#11088;</span> <span style={{ color: 'rgba(255,255,255,0.85)' }}>4.9 Google</span></span>
-                <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#128737;</span> <span style={{ color: 'rgba(255,255,255,0.85)' }}>License #51001</span></span>
-              </div>
               {/* CTAs */}
               <div style={{ display: 'flex', gap: 14, marginTop: 28, flexWrap: 'wrap' }}>
                 <a href="/book?go=1" data-testid="service-hero-book" style={{ display: 'inline-flex', alignItems: 'center', padding: '15px 30px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
@@ -719,6 +716,19 @@ const ApplianceRepairPageNew = ({
             </div>
           </div>
         </section>
+      )}
+
+      {/* ═══ TRUST STRIP (service pages) ═══ */}
+      {showServiceHero && (
+        <div className="city-trust-strip" data-testid="service-trust-strip" style={{ background: '#0D1B2A', borderBottom: '1px solid rgba(255,255,255,0.1)', padding: '10px 24px' }}>
+          <div style={{ maxWidth: 800, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 20, flexWrap: 'wrap', fontFamily: S.font, fontWeight: 500, fontSize: 13, letterSpacing: '0.3px' }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>Licensed CA Technician</span></span>
+            <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FFB800' }}>&#11088;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>4.9 Google (94 Reviews)</span></span>
+            <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#128737;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>License #51001</span></span>
+          </div>
+        </div>
       )}
 
       {/* ═══ HOW IT WORKS ═══ */}

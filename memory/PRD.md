@@ -114,6 +114,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **ПРОМТ 04**: Improved How It Works mobile connector. Replaced single ↓ with L-shaped dashed connector (border-right + border-bottom + ↓ arrow). Added pill badges (01-04) with orange background on mobile, watermark numbers preserved on desktop. Desktop layout (4-col) unchanged.
 - **ПРОМТ 05**: Added blog card thumbnails. Downloaded 3 stock photos (Pexels), converted to WebP (12-34KB). Updated `HomeBlogSection.jsx` with `<img>` 16:9 ratio, loading="lazy", category tag overlay, date+readTime.
 - **ПРОМТ 06**: Removed "Marin County Appliance Repair →" standalone link from `HomeExploreLinks.jsx`. Added Colma + Brisbane to Popular Service Areas chips. Replaced Marin County featured card in blog page with Peninsula link.
+- **ПРОМТ 07**: Moved trust badges from inside hero to standalone trust-strip div between hero and next section. Applied to `ApplianceRepairPageNew.js` (city + service heroes) and `SanFrancisco.js`. Desktop: centered single line, max-width 800px. Mobile: 11px, gap 12px, flex-wrap. Added "(94 Reviews)" to Google rating.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

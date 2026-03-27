@@ -241,14 +241,6 @@ const SanFrancisco = () => {
           <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>
             Same- or next-day & next-day service &middot; $60 diagnostic &middot; 180-day warranty on all repairs
           </p>
-          {/* Trust row */}
-          <div data-testid="sf-trust-badges" style={{ display: 'flex', alignItems: 'center', gap: 24, marginTop: 20, fontFamily: S.font, fontWeight: 500, fontSize: 13, flexWrap: 'wrap' }}>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span> <span style={{ color: 'rgba(255,255,255,0.85)' }}>Licensed CA Technician</span></span>
-            <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FFB800' }}>&#11088;</span> <span style={{ color: 'rgba(255,255,255,0.85)' }}>4.9 Google</span></span>
-            <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#128737;</span> <span style={{ color: 'rgba(255,255,255,0.85)' }}>License #51001</span></span>
-          </div>
           {/* CTAs */}
           <div className="sf-cta-row" style={{ display: 'flex', gap: 14, marginTop: 28, flexWrap: 'wrap' }}>
             <a href="/book?go=1" data-testid="sf-hero-book" className="sf-cta-book" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
@@ -273,6 +265,17 @@ const SanFrancisco = () => {
           </div>
         </div>
       </section>
+
+      {/* ═══ TRUST STRIP ═══ */}
+      <div className="city-trust-strip" data-testid="city-trust-strip" style={{ background: '#0D1B2A', borderBottom: '1px solid rgba(255,255,255,0.1)', padding: '10px 24px' }}>
+        <div style={{ maxWidth: 800, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 20, flexWrap: 'wrap', fontFamily: S.font, fontWeight: 500, fontSize: 13, letterSpacing: '0.3px' }}>
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>Licensed CA Technician</span></span>
+          <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FFB800' }}>&#11088;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>4.9 Google (94 Reviews)</span></span>
+          <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#128737;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>License #51001</span></span>
+        </div>
+      </div>
 
       {/* ═══════════════════════════════════════
           SF NEIGHBORHOODS TABS
@@ -575,6 +578,7 @@ const SanFrancisco = () => {
           [data-testid="sf-hero"] > div { padding: 48px 20px !important; }
           .sf-cta-row { flex-direction: column !important; gap: 12px !important; align-items: stretch !important; }
           .sf-cta-book, .sf-cta-call { width: 100% !important; box-sizing: border-box !important; min-width: 0 !important; display: flex !important; justify-content: center !important; }
+          .city-trust-strip > div { gap: 12px !important; font-size: 11px !important; }
           h2 { /* handled by global index.css */ }
         }
         @media (max-width: 480px) {
