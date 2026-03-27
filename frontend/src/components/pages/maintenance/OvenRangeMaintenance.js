@@ -28,7 +28,7 @@ const OvenRangeMaintenance = () => {
   const serviceDescription = {
     title: 'Professional Oven, Range & Stove Maintenance Services',
     paragraphs: [
-      'Your oven and range are essential for daily cooking, and proper maintenance ensures safe, efficient operation. Regular service prevents dangerous gas leaks, reduces energy waste, and ensures consistent cooking performance. FixitBay LLC provides comprehensive oven and range maintenance throughout San Francisco, Peninsula, and Marin County for all fuel types and brands.',
+      'Your oven and range are essential for daily cooking, and proper maintenance ensures safe, efficient operation. Regular service prevents dangerous gas leaks, reduces energy waste, and ensures consistent cooking performance. FixitBay LLC provides comprehensive oven and range maintenance throughout San Francisco, Peninsula, and Marin County for all fuel types and brands.',
       'Our certified technicians perform thorough maintenance including testing all burners and heating elements, checking gas connections for leaks, cleaning burner ports and igniters, inspecting door seals and hinges, testing temperature accuracy with precision instruments, and verifying all safety features. We service gas, electric, and dual-fuel ranges, including high-end professional-style units. For gas ranges, we also inspect control valves and perform combustion tests.',
       'During our $60 diagnostic visit, we test your oven\'s temperature accuracy, inspect heating elements or igniters, check the door seal, test all burners, and verify proper ventilation. We also look for signs of wear that could lead to future breakdowns. Regular maintenance helps prevent costly repairs, ensures food cooks evenly, reduces energy consumption, and most importantly, keeps your family safe. All our work is backed by a 180-day warranty with same- or next-day and next-day service available.'
     ]
@@ -40,7 +40,7 @@ const OvenRangeMaintenance = () => {
     "serviceType": "Oven, Range & Stove Maintenance",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay LLC",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     }
   };
@@ -50,12 +50,12 @@ const OvenRangeMaintenance = () => {
       <MobileServiceLanding
         appliance="Oven, Range & Stove"
         pageSlug="maintenance/oven-range"
-        pageTitle="Oven Maintenance | FixitBay LLC"
-        metaDescription="Professional oven maintenance in San Francisco Bay Area. Gas and electric service. Ensure safe, efficient cooking. $60 diagnostic, 180-day warranty."
+        pageTitle="Oven Maintenance | FixitBay LLC"
+        metaDescription="Professional oven maintenance in San Francisco Bay Area. Gas and electric service. Ensure safe, efficient cooking. $60 diagnostic, 180-day warranty."
         heroTitle={<>Oven<br />Maintenance. Today.</>}
         heroSubtitle="Safe, Efficient Cooking — Guaranteed"
         techImage="/images/technicians/oven-tech.jpg"
-        techImageAlt="FixitBay technician servicing an oven range in a San Francisco kitchen"
+        techImageAlt="FixitBay technician servicing an oven range in a San Francisco kitchen"
         issues={[
           { icon: '\u{1F525}', label: 'Not Heating' },
           { icon: '\u{1F321}', label: 'Temp Off' },
@@ -73,8 +73,8 @@ const OvenRangeMaintenance = () => {
   return (
     <ApplianceRepairPageNew
       appliance="Oven, Range & Stove"
-      pageTitle="Oven Maintenance | FixitBay LLC"
-      metaDescription="Professional oven maintenance in San Francisco Bay Area. Gas and electric service. Ensure safe, efficient cooking. $60 diagnostic, 180-day warranty."
+      pageTitle="Oven Maintenance | FixitBay LLC"
+      metaDescription="Professional oven maintenance in San Francisco Bay Area. Gas and electric service. Ensure safe, efficient cooking. $60 diagnostic, 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}
@@ -83,7 +83,7 @@ const OvenRangeMaintenance = () => {
       relatedServicesCategory="Kitchen"
       relatedServicesSubtitle="Expert maintenance for all your kitchen appliances"
       heroImage="/images/technicians/oven-tech.jpg"
-      heroImageAlt="FixitBay technician servicing an oven range in a San Francisco kitchen"
+      heroImageAlt="FixitBay technician servicing an oven range in a San Francisco kitchen"
       isMaintenance={true}
       serviceWord="Maintenance"
       repairVsReplace={{
@@ -97,10 +97,10 @@ const OvenRangeMaintenance = () => {
         ]
       }}
       relatedLinks={[
-        { href: '/oven-repair', label: 'Oven Repair', desc: 'Not heating, uneven temperature, timer issues' },
-        { href: '/range-repair', label: 'Range Repair', desc: 'Combined oven and cooktop service' },
+        { href: '/oven-repair', label: 'Oven Repair', desc: 'Not heating, uneven temperature, timer issues' },
+        { href: '/range-repair', label: 'Range Repair', desc: 'Combined oven and cooktop service' },
         { href: '/maintenance/cooktop', label: 'Cooktop Maintenance', desc: 'Burner and surface cleaning service' },
-        { href: '/stove-repair', label: 'Stove Repair', desc: 'Gas and electric stove service' },
+        { href: '/stove-repair', label: 'Stove Repair', desc: 'Gas and electric stove service' },
       ]}
     />
   );

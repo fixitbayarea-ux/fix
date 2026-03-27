@@ -49,7 +49,7 @@ const HomeHero = () => {
 
             {/* ━━━ SINGLE H1 — always in DOM ━━━ */}
             <h1 className="hero-main-h1" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, color: '#FFFFFF', margin: 0 }}>
-              Appliance Repair San Francisco — Licensed & Trusted
+              Appliance Repair San Francisco — Licensed & Trusted
             </h1>
 
             {/* Subtext */}
@@ -152,7 +152,7 @@ const HomeHero = () => {
             <source srcSet="/images/hero-logo-new.webp" type="image/webp" />
             <img
               src="/hero-logo-new.png"
-              alt="FixitBay Appliance Repair Logo"
+              alt="FixitBay Appliance Repair Logo"
               width="400"
               height="400"
               fetchPriority="high"

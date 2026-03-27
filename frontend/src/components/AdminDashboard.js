@@ -111,7 +111,7 @@ const AdminDashboard = ({ onLogout }) => {
                 </label>
                 <input
                   type="text"
-                  defaultValue="Professional Appliance Repair in {city} – Fast, Reliable, Affordable!"
+                  defaultValue="Professional Appliance Repair in {city} – Fast, Reliable, Affordable!"
                   className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2"
                   style={{ focusRingColor: '#C0362C' }}
                 />
@@ -216,7 +216,7 @@ const AdminDashboard = ({ onLogout }) => {
           <div className="bg-white rounded-xl p-6 shadow-lg">
             <h3 className="text-xl font-bold mb-6" style={{ color: '#1A3B5D' }}>Manage Services</h3>
             <div className="space-y-4">
-              {['Refrigerator Repair', 'Washer & Dryer Repair', 'Dishwasher Repair', 'Oven & Stove Repair', 'Disposal Replacement', 'Ice Maker Repair'].map((service, index) => (
+              {['Refrigerator Repair', 'Washer & Dryer Repair', 'Dishwasher Repair', 'Oven & Stove Repair', 'Disposal Replacement', 'Ice Maker Repair'].map((service, index) => (
                 <div key={index} className="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
                   <div>
                     <h4 className="font-semibold" style={{ color: '#1A3B5D' }}>{service}</h4>
@@ -350,7 +350,7 @@ const AdminDashboard = ({ onLogout }) => {
               />
               <div>
                 <h1 className="text-xl font-bold" style={{ color: '#1A3B5D' }}>
-                  FixitBay LLC Admin
+                  FixitBay LLC Admin
                 </h1>
                 <p className="text-sm text-gray-600">Welcome, {adminEmail}</p>
               </div>

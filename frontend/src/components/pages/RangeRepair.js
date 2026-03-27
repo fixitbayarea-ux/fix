@@ -7,14 +7,14 @@ const RangeRepair = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <>
-      <SEOMetaTags title="Range Repair | FixitBay LLC San Francisco" description="Same/next-day range repair in SF & Bay Area. Burner won't ignite, uneven heating, oven temp issues. $60 diagnostic applied to repair. 180-day warranty. Book online with FixitBay." canonical="https://fixitbay.net/range-repair" />
+      <SEOMetaTags title="Range Repair | FixitBay LLC San Francisco" description="Same/next-day range repair in SF & Bay Area. Burner won't ignite, uneven heating, oven temp issues. $60 diagnostic applied to repair. 180-day warranty. Book online with FixitBay." canonical="https://fixitbay.net/range-repair" />
 
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="relative hero py-12" style={{ background: 'linear-gradient(180deg, #A8D5FD 0%, #62C2E3 100%)' }}>
           <div className="container">
             <BackButton />
-            <h1 className="h1 mb-4">Range Repair</h1>
+            <h1 className="h1 mb-4">Range Repair</h1>
             <p className="text-lg mb-8" style={{ color: '#1A3B5D' }}>
               Professional repair for gas and electric ranges. Licensed, insured, and backed by a 180-day warranty. $60 diagnostic applied to the repair.
             </p>

@@ -8,12 +8,12 @@ const CompactFooter = ({ testId = 'compact-footer' }) => (
       <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
         <img src="/navbar-logo-new.png" alt="FixitBay" style={{ height: 36, width: 36, borderRadius: '50%', objectFit: 'cover' }} />
         <div>
-          <span style={{ fontFamily: S_FONT, fontWeight: 700, fontSize: 14, color: '#FFFFFF', display: 'block' }}>FixitBay LLC</span>
-          <span style={{ fontFamily: S_FONT, fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>Appliance Repair &amp; Maintenance</span>
+          <span style={{ fontFamily: S_FONT, fontWeight: 700, fontSize: 14, color: '#FFFFFF', display: 'block' }}>FixitBay LLC</span>
+          <span style={{ fontFamily: S_FONT, fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>Appliance Repair &amp; Maintenance</span>
         </div>
       </div>
       <a href="tel:+17605435733" style={{ fontFamily: S_FONT, fontWeight: 700, fontSize: 18, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-      <span style={{ fontFamily: S_FONT, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.30)' }}>&copy; 2026 FixitBay LLC</span>
+      <span style={{ fontFamily: S_FONT, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.30)' }}>&copy; 2026 FixitBay LLC</span>
     </div>
   </footer>
 );

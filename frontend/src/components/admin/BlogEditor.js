@@ -6,7 +6,7 @@ const BlogEditor = ({ post, onClose, onSave, backendURL }) => {
   const [form, setForm] = useState({
     title: post?.title || '',
     slug: post?.slug || '',
-    author: post?.author || 'FixitBay LLC Team',
+    author: post?.author || 'FixitBay LLC Team',
     excerpt: post?.excerpt || '',
     content: post?.content || '',
     categories: (post?.categories || []).join(', '),
@@ -112,7 +112,7 @@ const BlogEditor = ({ post, onClose, onSave, backendURL }) => {
                 type="text"
                 value={aiKeywords}
                 onChange={e => setAiKeywords(e.target.value)}
-                placeholder="Ключевые слова: dryer repair, cost, Bay Area"
+                placeholder="Ключевые слова: dryer repair, cost, Bay Area"
                 className="px-3 py-2 border rounded-lg text-sm"
               />
             </div>

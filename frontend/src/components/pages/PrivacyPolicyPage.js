@@ -56,8 +56,8 @@ const PrivacyPolicyPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Privacy Policy | FixitBay LLC Appliance Repair & Maintenance"
-        description="Privacy Policy for FixitBay LLC Appliance Repair & Maintenance – learn how we collect, use, and protect your information when you contact us for appliance repair in San Francisco, Peninsula, and Marin County."
+        title="Privacy Policy | FixitBay LLC Appliance Repair & Maintenance"
+        description="Privacy Policy for FixitBay LLC Appliance Repair & Maintenance – learn how we collect, use, and protect your information when you contact us for appliance repair in San Francisco, Peninsula, and Marin County."
         canonical="https://fixitbay.net/privacy-policy"
         noindex={true}
       />
@@ -82,7 +82,7 @@ const PrivacyPolicyPage = () => {
               <span style={{ color: 'rgba(255,255,255,0.8)' }}>Privacy Policy</span>
             </nav>
             <h1 className="pp-h1" data-testid="privacy-title" style={{ fontFamily: F, fontWeight: 800, color: '#fff', marginBottom: 8 }}>Privacy Policy</h1>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.55)', marginBottom: 16 }}>FixitBay LLC Appliance Repair &amp; Maintenance</p>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.55)', marginBottom: 16 }}>FixitBay LLC Appliance Repair &amp; Maintenance</p>
             <div style={{ display: 'flex', gap: 20, justifyContent: 'center', flexWrap: 'wrap' }}>
               <span style={{ fontFamily: F, fontWeight: 500, fontSize: 12, color: 'rgba(255,255,255,0.5)' }}>Effective date: December 24, 2025</span>
               <span style={{ fontFamily: F, fontWeight: 500, fontSize: 12, color: 'rgba(255,255,255,0.5)' }}>&middot;</span>
@@ -99,7 +99,7 @@ const PrivacyPolicyPage = () => {
             <article data-testid="privacy-content" style={{ background: '#fff', borderRadius: 4, padding: '40px 44px', border: '1px solid rgba(0,0,0,0.07)', boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}>
               {/* Intro */}
               <p style={{ ...P, marginBottom: 32, paddingBottom: 24, borderBottom: '1px solid rgba(0,0,0,0.08)' }}>
-                FixitBay LLC Appliance Repair ({'\u201C'}FixitBay LLC,{'\u201D'} {'\u201C'}we,{'\u201D'} {'\u201C'}us,{'\u201D'} or {'\u201C'}our{'\u201D'}) respects your privacy. This Privacy Policy explains what information we collect, how we use it, and the choices you have when you interact with us, including through our website, ads (including lead forms), phone calls, texts, and email.
+                FixitBay LLC Appliance Repair ({'\u201C'}FixitBay LLC,{'\u201D'} {'\u201C'}we,{'\u201D'} {'\u201C'}us,{'\u201D'} or {'\u201C'}our{'\u201D'}) respects your privacy. This Privacy Policy explains what information we collect, how we use it, and the choices you have when you interact with us, including through our website, ads (including lead forms), phone calls, texts, and email.
               </p>
 
               {/* Section 1 */}
@@ -199,11 +199,11 @@ const PrivacyPolicyPage = () => {
               <div style={lastSec}>
                 <SecH num="11" id="section-11" title="Contact Us" />
                 <div data-testid="contact-card" style={{ background: '#0D1B2A', borderRadius: 4, padding: '24px 28px', borderTop: '3px solid #FF5722' }}>
-                  <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#fff', marginBottom: 16 }}>FixitBay LLC Appliance Repair &amp; Maintenance</p>
+                  <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#fff', marginBottom: 16 }}>FixitBay LLC Appliance Repair &amp; Maintenance</p>
                   {[
                     { label: 'Phone', value: '(760) 543-5733', href: 'tel:7605435733', accent: true },
                     { label: 'Email', value: 'info@fixitbay.net', href: 'mailto:info@fixitbay.net', accent: true },
-                    { label: 'Area', value: 'San Francisco, Peninsula & Marin County' },
+                    { label: 'Area', value: 'San Francisco, Peninsula & Marin County' },
                     { label: 'Website', value: 'https://fixitbay.net', href: 'https://fixitbay.net', accent: true },
                   ].map((r, i) => (
                     <div key={i} style={{ display: 'flex', gap: 12, alignItems: 'center', padding: '8px 0', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
@@ -265,7 +265,7 @@ const PrivacyPolicyPage = () => {
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:7605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
             <a href="/terms" style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)', textDecoration: 'none' }}>Terms of Service</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
       </div>

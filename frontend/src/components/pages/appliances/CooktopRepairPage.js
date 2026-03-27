@@ -61,14 +61,14 @@ const CooktopRepairPage = () => {
   ];
 
   const localAreas = [
-    "San Francisco", "Oakland", "San Jose", "Palo Alto", "San Mateo", "Redwood City", "Mountain View", "Berkeley", "Fremont", "Daly City"
+    "San Francisco", "Oakland", "San Jose", "Palo Alto", "San Mateo", "Redwood City", "Mountain View", "Berkeley", "Fremont", "Daly City"
   ];
 
   return (
     <ApplianceRepairPage
       appliance="Cooktop"
-      pageTitle="Professional Cooktop Repair in Bay Area"
-      metaDescription="Expert cooktop repair service in San Francisco Bay Area. Gas and electric cooktop specialists, 180-day warranty, licensed technicians. Call (760) 543-5733 or book online."
+      pageTitle="Professional Cooktop Repair in Bay Area"
+      metaDescription="Expert cooktop repair service in San Francisco Bay Area. Gas and electric cooktop specialists, 180-day warranty, licensed technicians. Call (760) 543-5733 or book online."
       commonProblems={commonProblems}
       localAreas={localAreas}
       faqData={faqData}

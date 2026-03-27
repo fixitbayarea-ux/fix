@@ -34,7 +34,7 @@ const MobileBottomBar = () => {
           href="tel:+17605435733"
           style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, color:'rgba(255,255,255,0.9)', textDecoration:'none', borderRight:'1px solid rgba(255,255,255,0.10)', minHeight:56 }}
           data-testid="mobile-bar-call-btn"
-          aria-label="Call FixitBay LLC"
+          aria-label="Call FixitBay LLC"
         >
           <Phone size={17} color="rgba(255,255,255,0.9)" />
           <span style={{ fontSize:10, fontFamily:'Montserrat,sans-serif', fontWeight:600, letterSpacing:'0.07em' }}>CALL</span>
@@ -51,10 +51,10 @@ const MobileBottomBar = () => {
         </a>
 
         <a
-          href="sms:7605435733?body=Hi%20FixitBay LLC!%20I%20need%20appliance%20repair."
+          href="sms:7605435733?body=Hi%20FixitBay LLC!%20I%20need%20appliance%20repair."
           style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, color:'rgba(255,255,255,0.9)', textDecoration:'none', minHeight:56 }}
           data-testid="mobile-bar-text-btn"
-          aria-label="Text FixitBay LLC"
+          aria-label="Text FixitBay LLC"
         >
           <MessageSquare size={17} color="rgba(255,255,255,0.9)" />
           <span style={{ fontSize:10, fontFamily:'Montserrat,sans-serif', fontWeight:600, letterSpacing:'0.07em' }}>TEXT US</span>

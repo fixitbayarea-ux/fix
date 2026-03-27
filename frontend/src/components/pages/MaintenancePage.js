@@ -11,7 +11,7 @@ const MaintenancePage = ({ appliance, content }) => {
 
   return (
     <>
-      <SEOMetaTags title={`${title} Tips & Schedule | FixitBay LLC`} description={description} canonical={`https://fixitbay.net/maintenance/${slug}`} />
+      <SEOMetaTags title={`${title} Tips & Schedule | FixitBay LLC`} description={description} canonical={`https://fixitbay.net/maintenance/${slug}`} />
 
       <div className="min-h-screen" style={{ background: 'linear-gradient(135deg, #E8F4FA 0%, #F0F8FC 100%)', paddingTop: '64px' }}>
         {/* Hero Section */}
@@ -116,11 +116,11 @@ const MaintenancePage = ({ appliance, content }) => {
               </ul>
             </div>
 
-            {/* When to Call FixitBay LLC */}
+            {/* When to Call FixitBay LLC */}
             <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-2xl p-8 border-2 border-red-300">
               <h2 className="text-2xl font-bold mb-6 flex items-center gap-3" style={{ color: '#1A3B5D' }}>
                 <Phone className="w-8 h-8" style={{ color: '#C0362C' }} />
-                When to Call FixitBay LLC
+                When to Call FixitBay LLC
               </h2>
               <ul className="space-y-3">
                 {whenToCall.map((item, i) => (
@@ -141,7 +141,7 @@ const MaintenancePage = ({ appliance, content }) => {
               Need Expert {appliance} Service?
             </h2>
             <p className="text-lg text-white/90 mb-8">
-              FixitBay LLC provides professional {appliance.toLowerCase()} repair and maintenance throughout San Francisco, Peninsula, and Marin County.
+              FixitBay LLC provides professional {appliance.toLowerCase()} repair and maintenance throughout San Francisco, Peninsula, and Marin County.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

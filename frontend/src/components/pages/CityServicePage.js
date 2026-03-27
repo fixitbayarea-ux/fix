@@ -11,27 +11,27 @@ const SERVICES = ['refrigerator', 'washer', 'dryer', 'dishwasher',
 // City-specific local context for rich content
 const CITY_CONTEXT = {
   'san-francisco': {
-    region: 'San Francisco',
+    region: 'San Francisco',
     neighborhoods: 'Sunset, Richmond, Mission, Noe Valley, Marina, Pacific Heights, SoMa, Castro, North Beach, Bernal Heights',
-    localFactor: 'San Francisco\'s Victorian and Edwardian homes often have compact kitchens with built-in appliances that require experienced technicians. Our team navigates tight spaces, steep driveways, and multi-unit buildings daily—arriving with the right tools and parts for first-visit repairs.',
+    localFactor: 'San Francisco\'s Victorian and Edwardian homes often have compact kitchens with built-in appliances that require experienced technicians. Our team navigates tight spaces, steep driveways, and multi-unit buildings daily—arriving with the right tools and parts for first-visit repairs.',
     features: 'dense urban housing, Victorian homes, steep hills, fog-belt climate'
   },
   'daly-city': {
     region: 'Peninsula',
     neighborhoods: 'Westlake, Serramonte, Top of the Hill, St. Francis Heights',
-    localFactor: 'Daly City\'s coastal fog and humidity create unique challenges for appliances. Refrigerator coils collect moisture faster, dryer vents need more frequent cleaning, and gas igniters can corrode more quickly than in drier climates.',
+    localFactor: 'Daly City\'s coastal fog and humidity create unique challenges for appliances. Refrigerator coils collect moisture faster, dryer vents need more frequent cleaning, and gas igniters can corrode more quickly than in drier climates.',
     features: 'fog-belt climate, dense housing, many multi-unit buildings'
   },
   'south-san-francisco': {
     region: 'Peninsula',
     neighborhoods: 'Downtown SSF, Sunshine Gardens, Sign Hill, Westborough',
-    localFactor: 'South San Francisco homes range from historic Craftsman bungalows to modern developments. Our technicians are experienced with appliances in both older homes with limited kitchen space and newer builds with high-end integrated appliances.',
+    localFactor: 'South San Francisco homes range from historic Craftsman bungalows to modern developments. Our technicians are experienced with appliances in both older homes with limited kitchen space and newer builds with high-end integrated appliances.',
     features: 'mix of old and new homes, proximity to SFO, industrial heritage'
   },
   'san-bruno': {
     region: 'Peninsula',
     neighborhoods: 'Downtown, Crestmoor, Mills Park, Rollingwood',
-    localFactor: 'San Bruno\'s location near SFO means many busy professionals need fast, reliable appliance repair. We offer flexible scheduling and fast scheduling to accommodate work schedules.',
+    localFactor: 'San Bruno\'s location near SFO means many busy professionals need fast, reliable appliance repair. We offer flexible scheduling and fast scheduling to accommodate work schedules.',
     features: 'near SFO airport, suburban neighborhoods, Tanforan shopping area'
   },
   'pacifica': {
@@ -49,14 +49,14 @@ const CITY_CONTEXT = {
   'mill-valley': {
     region: 'Marin',
     neighborhoods: 'Downtown, Tamalpais Valley, Alto, Homestead Valley, Blithedale Canyon',
-    localFactor: 'Mill Valley\'s hillside homes and canyon properties often have limited access and narrow kitchens. Our technicians are experienced navigating challenging driveways and working in compact spaces. We also specialize in the high-end appliances common in Mill Valley—Sub-Zero, Wolf, Thermador, and Miele.',
+    localFactor: 'Mill Valley\'s hillside homes and canyon properties often have limited access and narrow kitchens. Our technicians are experienced navigating challenging driveways and working in compact spaces. We also specialize in the high-end appliances common in Mill Valley—Sub-Zero, Wolf, Thermador, and Miele.',
     features: 'hillside homes, luxury appliances, narrow roads, redwood setting'
   },
   'san-rafael': {
     region: 'Marin',
     neighborhoods: 'Terra Linda, Dominican, Downtown, Canal District, Gerstle Park, Sun Valley',
-    localFactor: 'San Rafael is Marin County\'s largest city with diverse housing—from Terra Linda tract homes to downtown Victorians to Canal District apartments. Our technicians are experienced with all building types and appliance configurations.',
-    features: 'Marin County seat, diverse housing stock, mixed neighborhoods'
+    localFactor: 'San Rafael is Marin County\'s largest city with diverse housing—from Terra Linda tract homes to downtown Victorians to Canal District apartments. Our technicians are experienced with all building types and appliance configurations.',
+    features: 'Marin County seat, diverse housing stock, mixed neighborhoods'
   },
   'sausalito': {
     region: 'Marin',
@@ -78,14 +78,14 @@ const CITY_CONTEXT = {
   },
   'belvedere': {
     region: 'Marin',
-    neighborhoods: 'Belvedere Island, West Shore Road, San Rafael Avenue',
-    localFactor: 'Belvedere\'s exclusive island community features some of the Bay Area\'s finest homes with matching high-end appliances. We provide white-glove service with appointment flexibility to accommodate homeowners\' schedules.',
+    neighborhoods: 'Belvedere Island, West Shore Road, San Rafael Avenue',
+    localFactor: 'Belvedere\'s exclusive island community features some of the Bay Area\'s finest homes with matching high-end appliances. We provide white-glove service with appointment flexibility to accommodate homeowners\' schedules.',
     features: 'island community, luxury estates, exclusive neighborhood'
   },
   'corte-madera': {
     region: 'Marin',
     neighborhoods: 'Downtown, Christmas Tree Hill, Madera Gardens',
-    localFactor: 'Corte Madera offers convenient access between Mill Valley and San Rafael. We service homes near Town Center and throughout residential neighborhoods with fast scheduling.',
+    localFactor: 'Corte Madera offers convenient access between Mill Valley and San Rafael. We service homes near Town Center and throughout residential neighborhoods with fast scheduling.',
     features: 'central Marin location, Town Center shopping, family-friendly'
   },
   'larkspur': {
@@ -115,7 +115,7 @@ const CITY_CONTEXT = {
   'san-anselmo': {
     region: 'Marin',
     neighborhoods: 'Downtown, Sleepy Hollow, Seminary',
-    localFactor: 'San Anselmo\'s charming downtown and hillside homes require technicians who know the area. We navigate Sleepy Hollow\'s winding roads and service appliances in homes of all styles.',
+    localFactor: 'San Anselmo\'s charming downtown and hillside homes require technicians who know the area. We navigate Sleepy Hollow\'s winding roads and service appliances in homes of all styles.',
     features: 'antique shops, hillside homes, family community'
   }
 };
@@ -169,7 +169,7 @@ const CityServicePage = () => {
   
   // Get city context or use default
   const cityContext = CITY_CONTEXT[citySlug] || {
-    region: 'Bay Area',
+    region: 'Bay Area',
     neighborhoods: 'all neighborhoods',
     localFactor: `Our technicians serve all of ${cityName} with same- and next-day availability. We're familiar with the area and arrive prepared with common replacement parts.`,
     features: 'residential areas'
@@ -184,13 +184,13 @@ const CityServicePage = () => {
       problems: [
         { title: "Not Cooling", description: "Refrigerator warm, not maintaining temperature, or food spoiling quickly." },
         { title: "Water Leaking", description: "Water pooling under fridge, dripping inside, or ice buildup in freezer." },
-        { title: "Ice Maker Issues", description: "Not making ice, ice dispenser jammed, or slow ice production." },
+        { title: "Ice Maker Issues", description: "Not making ice, ice dispenser jammed, or slow ice production." },
         { title: "Strange Noises", description: "Clicking, buzzing, humming, or grinding sounds from refrigerator." },
         { title: "Freezer Not Freezing", description: "Freezer section warm, ice melting, or excessive frost buildup." },
         { title: "Running Constantly", description: "Compressor won't stop, high energy bills, or unit overheating." },
       ],
       heroImage: "/images/technicians/fridge-tech.jpg",
-      heroImageAlt: `FixitBay LLC technician repairing a refrigerator in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a refrigerator in ${cityName}`,
     },
     'washer': {
       problems: [
@@ -202,7 +202,7 @@ const CityServicePage = () => {
         { title: "Not Filling", description: "Water not entering drum, slow fill, or no water flow." },
       ],
       heroImage: "/images/technicians/washer-tech.jpg",
-      heroImageAlt: `FixitBay LLC technician repairing a washer in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a washer in ${cityName}`,
     },
     'dryer': {
       problems: [
@@ -214,7 +214,7 @@ const CityServicePage = () => {
         { title: "Won't Tumble", description: "Drum not spinning, motor runs but no drum movement." },
       ],
       heroImage: "/images/technicians/dryer-tech.jpg",
-      heroImageAlt: `FixitBay LLC technician repairing a dryer in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a dryer in ${cityName}`,
     },
     'dishwasher': {
       problems: [
@@ -226,7 +226,7 @@ const CityServicePage = () => {
         { title: "Making Noise", description: "Grinding, humming, or unusual sounds during operation." },
       ],
       heroImage: "/images/technicians/dishwasher-tech.jpg",
-      heroImageAlt: `FixitBay LLC technician repairing a dishwasher in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a dishwasher in ${cityName}`,
     },
     'oven': {
       problems: [
@@ -238,19 +238,19 @@ const CityServicePage = () => {
         { title: "Self-Clean Issues", description: "Self-clean cycle not working or door locked after cleaning." },
       ],
       heroImage: "/images/technicians/oven-tech.jpg",
-      heroImageAlt: `FixitBay LLC technician repairing an oven in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing an oven in ${cityName}`,
     },
     'ice-maker': {
       problems: [
         { title: "Not Making Ice", description: "No ice production, ice maker has stopped working." },
         { title: "Water Leaking", description: "Water leaks around ice maker or water dispenser." },
         { title: "Ice Tastes Bad", description: "Ice has strange taste, smell, or discoloration." },
-        { title: "Ice Maker Jammed", description: "Ice stuck together, cubes clumped, mechanism jammed." },
+        { title: "Ice Maker Jammed", description: "Ice stuck together, cubes clumped, mechanism jammed." },
         { title: "Dispenser Not Working", description: "Ice won't dispense, mechanical jam in chute." },
         { title: "Small Ice Cubes", description: "Ice cubes too small, hollow, or misshapen." },
       ],
       heroImage: "/images/technicians/ice-maker-tech.jpg",
-      heroImageAlt: `FixitBay LLC technician repairing an ice maker in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing an ice maker in ${cityName}`,
     },
     'wine-cooler': {
       problems: [
@@ -262,7 +262,7 @@ const CityServicePage = () => {
         { title: "Light Not Working", description: "Interior light burned out, flickering, or not turning on." },
       ],
       heroImage: "/images/technicians/wine-cooler-tech.jpg",
-      heroImageAlt: `FixitBay LLC technician repairing a wine cooler in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a wine cooler in ${cityName}`,
     },
     'cooktop': {
       problems: [
@@ -274,7 +274,7 @@ const CityServicePage = () => {
         { title: "Control Issues", description: "Knobs not working, touch controls unresponsive." },
       ],
       heroImage: "/images/technicians/cooktop-tech.jpg",
-      heroImageAlt: `FixitBay LLC technician repairing a cooktop in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a cooktop in ${cityName}`,
     },
     'range': {
       problems: [
@@ -286,7 +286,7 @@ const CityServicePage = () => {
         { title: "Self-Clean Problems", description: "Self-clean function not working or door stuck." },
       ],
       heroImage: "/images/technicians/range-tech.jpg",
-      heroImageAlt: `FixitBay LLC technician repairing a range in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a range in ${cityName}`,
     },
     'freezer': {
       problems: [
@@ -298,7 +298,7 @@ const CityServicePage = () => {
         { title: "Temperature Fluctuations", description: "Temperature varying, items partially frozen." },
       ],
       heroImage: "/images/technicians/freezer-tech.jpg",
-      heroImageAlt: `FixitBay LLC technician repairing a freezer in ${cityName}`,
+      heroImageAlt: `FixitBay LLC technician repairing a freezer in ${cityName}`,
     },
   };
   
@@ -335,12 +335,12 @@ const CityServicePage = () => {
     "serviceType": `${serviceName} Repair`,
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay LLC",
+      "name": "FixitBay LLC",
       "telephone": "+17605435733",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1549 Franklin St, Unit A",
-        "addressLocality": "San Francisco",
+        "addressLocality": "San Francisco",
         "addressRegion": "CA",
         "postalCode": "94109"
       },
@@ -353,14 +353,14 @@ const CityServicePage = () => {
     "description": `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Fast scheduling, $60 diagnostic applied to repair, 180-day warranty.`
   };
 
-  const pageTitle = `${serviceName} Repair ${cityName} | Fast Scheduling | FixitBay LLC`;
+  const pageTitle = `${serviceName} Repair ${cityName} | Fast Scheduling | FixitBay LLC`;
   const metaDescription = `Licensed ${serviceName.toLowerCase()} repair in ${cityName}, CA. Same- & next-day appointments. $60 diagnostic applied to repair. 180-day warranty on parts and labor.`;
 
   // Rich service description with local context
   const serviceDescription = {
     title: `Expert ${serviceName} Repair in ${cityName}`,
     paragraphs: [
-      <>FixitBay LLC provides professional {serviceName.toLowerCase()} repair throughout {cityName}, serving {cityContext.neighborhoods} with same- or next-day and next-day availability. Our licensed technicians arrive with common {serviceName.toLowerCase()} parts stocked—including thermostats, pumps, motors, and control boards—enabling us to complete most repairs during the first visit.</>,
+      <>FixitBay LLC provides professional {serviceName.toLowerCase()} repair throughout {cityName}, serving {cityContext.neighborhoods} with same- or next-day and next-day availability. Our licensed technicians arrive with common {serviceName.toLowerCase()} parts stocked—including thermostats, pumps, motors, and control boards—enabling us to complete most repairs during the first visit.</>,
       <><strong>Local expertise matters.</strong> {cityContext.localFactor}</>,
       <><strong>{serviceName} Repair Pricing in {cityName}:</strong> Most repairs cost {pricing.range} after the $60 diagnostic fee. Common repairs include: {pricing.common}. We provide exact pricing before starting any work, and the $60 diagnostic is fully applied to your repair cost.</>,
       <>Every {serviceName.toLowerCase()} repair in {cityName} includes our comprehensive <strong>180-day warranty</strong> on parts and labor. We service all major brands including Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Viking, and Thermador. Call <a href="tel:+17605435733">(760) 543-5733</a> or <a href="/book">book online</a> for fast {serviceName.toLowerCase()} repair service in {cityName}.</>,
@@ -382,7 +382,7 @@ const CityServicePage = () => {
         issues={data.problems.slice(0, 6).map(p => ({ icon: '🔧', label: p.title }))}
         faqs={faqData}
         relatedLinks={[
-          { href: `/${citySlug}-appliance-repair`, label: `${cityName} Appliance Repair`, desc: 'All appliances' },
+          { href: `/${citySlug}-appliance-repair`, label: `${cityName} Appliance Repair`, desc: 'All appliances' },
           { href: `/${serviceSlug}-repair`, label: `${serviceName} Repair`, desc: 'All locations' },
         ]}
         schemaData={serviceSchema}
@@ -405,8 +405,8 @@ const CityServicePage = () => {
       serviceSchema={serviceSchema}
       serviceDescription={serviceDescription}
       relatedLinks={[
-        { href: `/${citySlug}-appliance-repair`, label: `${cityName} Appliance Repair`, desc: 'All appliance services' },
-        { href: `/${serviceSlug}-repair`, label: `${serviceName} Repair SF`, desc: 'All Bay Area locations' },
+        { href: `/${citySlug}-appliance-repair`, label: `${cityName} Appliance Repair`, desc: 'All appliance services' },
+        { href: `/${serviceSlug}-repair`, label: `${serviceName} Repair SF`, desc: 'All Bay Area locations' },
         { href: '/service-areas', label: 'Service Areas', desc: 'All 22 cities we serve' },
       ]}
     />

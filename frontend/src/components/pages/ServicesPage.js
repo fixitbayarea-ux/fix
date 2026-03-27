@@ -4,22 +4,22 @@ import { useSchemas } from '../../hooks/useSchema';
 
 /* ───────────────────────── DATA ───────────────────────── */
 const RESIDENTIAL_SERVICES = [
-  { href: '/refrigerator-repair', label: 'Refrigerator Repair', issues: 'Not cooling, ice buildup, water leaks, compressor noise, warm spots' },
-  { href: '/washer-repair', label: 'Washer Repair', issues: 'Not draining, vibration, leaking, error codes, door lock issues' },
-  { href: '/dryer-repair', label: 'Dryer Repair', issues: 'Not heating, long cycles, drum not spinning, burning smell' },
-  { href: '/dishwasher-repair', label: 'Dishwasher Repair', issues: 'Not draining, poor cleaning, leaking, error codes, door latch' },
-  { href: '/oven-repair', label: 'Oven & Range Repair', issues: 'Igniter failure, uneven heat, temperature drift, self-clean lock' },
-  { href: '/cooktop-repair', label: 'Cooktop Repair', issues: 'Burner not lighting, cracked glass, induction errors, gas smell' },
-  { href: '/freezer-repair', label: 'Freezer Repair', issues: 'Frost buildup, not freezing, loud compressor, door seal gaps' },
-  { href: '/ice-maker-repair', label: 'Ice Maker Repair', issues: 'No ice production, small cubes, water line clogs, leaking' },
-  { href: '/stove-repair', label: 'Stove Repair', issues: 'Gas valve issues, electric element burnout, control board faults' },
-  { href: '/range-repair', label: 'Range Repair', issues: 'Dual-fuel problems, convection fan failure, broiler not working' },
-  { href: '/garbage-disposal-repair', label: 'Garbage Disposal', issues: 'Jammed, humming, leaking from bottom, reset issues' },
-  { href: '/wine-cooler-repair', label: 'Wine Cooler Repair', issues: 'Temperature fluctuation, compressor cycling, humidity control' },
+  { href: '/refrigerator-repair', label: 'Refrigerator Repair', issues: 'Not cooling, ice buildup, water leaks, compressor noise, warm spots' },
+  { href: '/washer-repair', label: 'Washer Repair', issues: 'Not draining, vibration, leaking, error codes, door lock issues' },
+  { href: '/dryer-repair', label: 'Dryer Repair', issues: 'Not heating, long cycles, drum not spinning, burning smell' },
+  { href: '/dishwasher-repair', label: 'Dishwasher Repair', issues: 'Not draining, poor cleaning, leaking, error codes, door latch' },
+  { href: '/oven-repair', label: 'Oven & Range Repair', issues: 'Igniter failure, uneven heat, temperature drift, self-clean lock' },
+  { href: '/cooktop-repair', label: 'Cooktop Repair', issues: 'Burner not lighting, cracked glass, induction errors, gas smell' },
+  { href: '/freezer-repair', label: 'Freezer Repair', issues: 'Frost buildup, not freezing, loud compressor, door seal gaps' },
+  { href: '/ice-maker-repair', label: 'Ice Maker Repair', issues: 'No ice production, small cubes, water line clogs, leaking' },
+  { href: '/stove-repair', label: 'Stove Repair', issues: 'Gas valve issues, electric element burnout, control board faults' },
+  { href: '/range-repair', label: 'Range Repair', issues: 'Dual-fuel problems, convection fan failure, broiler not working' },
+  { href: '/garbage-disposal-repair', label: 'Garbage Disposal', issues: 'Jammed, humming, leaking from bottom, reset issues' },
+  { href: '/wine-cooler-repair', label: 'Wine Cooler Repair', issues: 'Temperature fluctuation, compressor cycling, humidity control' },
 ];
 
 const COMMERCIAL_SERVICES = [
-  { href: '/commercial-appliance-repair', label: 'Commercial Appliance Repair', issues: 'Full-service commercial equipment repair for restaurants, hotels, offices' },
+  { href: '/commercial-appliance-repair', label: 'Commercial Appliance Repair', issues: 'Full-service commercial equipment repair for restaurants, hotels, offices' },
   { href: '/commercial-refrigerator-repair', label: 'Commercial Refrigerator', issues: 'Walk-in coolers, reach-in units, undercounters \u2014 all commercial brands' },
   { href: '/commercial-washer-repair', label: 'Commercial Washer', issues: 'High-capacity laundromat and hotel laundry machines' },
   { href: '/commercial-dryer-repair', label: 'Commercial Dryer', issues: 'Industrial gas and electric dryers, stack units' },
@@ -34,7 +34,7 @@ const MAINTENANCE_SERVICES = [
   { href: '/maintenance/dishwasher', label: 'Dishwasher Maintenance', issues: 'Filter cleaning, spray arm cleaning, door seal check' },
   { href: '/maintenance/oven-range', label: 'Oven & Range Maintenance', issues: 'Calibration, igniter testing, burner tube cleaning' },
   { href: '/maintenance/cooktop', label: 'Cooktop Maintenance', issues: 'Burner cleaning, gas line check, glass surface care' },
-  { href: '/maintenance/wine-cooler', label: 'Wine Cooler Maintenance', issues: 'Compressor care, humidity calibration, seal inspection' },
+  { href: '/maintenance/wine-cooler', label: 'Wine Cooler Maintenance', issues: 'Compressor care, humidity calibration, seal inspection' },
 ];
 
 const STEPS = [
@@ -49,7 +49,7 @@ const FAQ_DATA = [
   { q: 'Can I get a fast appointment?', a: 'Yes. Requests placed before 2:00 PM typically receive fast scheduling. Next-day appointments are almost always available regardless of when you call.' },
   { q: 'What warranty do repairs include?', a: 'Every repair includes a 180-day warranty on both parts and labor. If the same problem returns within that window, we come back and fix it at no charge.' },
   { q: 'Do you repair premium brands like Sub-Zero and Wolf?', a: 'Yes. Our technicians are trained on all premium and luxury brands including Sub-Zero, Wolf, Viking, Thermador, Miele, and Bosch Benchmark. We carry specialized tools and diagnostic equipment for these brands.' },
-  { q: 'What areas do you serve?', a: 'We serve 22 cities across San Francisco, Northern San Mateo County (Peninsula), and Marin County. Our primary base is in San Francisco with typical response times of 15\u201345 minutes.' },
+  { q: 'What areas do you serve?', a: 'We serve 22 cities across San Francisco, Northern San Mateo County (Peninsula), and Marin County. Our primary base is in San Francisco with typical response times of 15\u201345 minutes.' },
 ];
 
 /* ───────────────────────── COMPONENT ───────────────────────── */
@@ -72,15 +72,15 @@ const ServicesPage = () => {
       data: {
         '@context': 'https://schema.org',
         '@type': 'ItemList',
-        name: 'Appliance Repair Services',
-        description: 'All appliance repair services offered by FixitBay LLC',
+        name: 'Appliance Repair Services',
+        description: 'All appliance repair services offered by FixitBay LLC',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'Refrigerator Repair', url: 'https://fixitbay.net/refrigerator-repair' },
-          { '@type': 'ListItem', position: 2, name: 'Washer Repair', url: 'https://fixitbay.net/washer-repair' },
-          { '@type': 'ListItem', position: 3, name: 'Dryer Repair', url: 'https://fixitbay.net/dryer-repair' },
-          { '@type': 'ListItem', position: 4, name: 'Dishwasher Repair', url: 'https://fixitbay.net/dishwasher-repair' },
-          { '@type': 'ListItem', position: 5, name: 'Oven & Range Repair', url: 'https://fixitbay.net/oven-repair' },
-          { '@type': 'ListItem', position: 6, name: 'Commercial Appliance Repair', url: 'https://fixitbay.net/commercial-appliance-repair' },
+          { '@type': 'ListItem', position: 1, name: 'Refrigerator Repair', url: 'https://fixitbay.net/refrigerator-repair' },
+          { '@type': 'ListItem', position: 2, name: 'Washer Repair', url: 'https://fixitbay.net/washer-repair' },
+          { '@type': 'ListItem', position: 3, name: 'Dryer Repair', url: 'https://fixitbay.net/dryer-repair' },
+          { '@type': 'ListItem', position: 4, name: 'Dishwasher Repair', url: 'https://fixitbay.net/dishwasher-repair' },
+          { '@type': 'ListItem', position: 5, name: 'Oven & Range Repair', url: 'https://fixitbay.net/oven-repair' },
+          { '@type': 'ListItem', position: 6, name: 'Commercial Appliance Repair', url: 'https://fixitbay.net/commercial-appliance-repair' },
         ],
       },
     },
@@ -101,11 +101,11 @@ const ServicesPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Appliance Repair Services | San Francisco | FixitBay LLC"
-        description="Complete appliance repair services in San Francisco & Bay Area. Refrigerators, washers, dryers, ovens, dishwashers, commercial equipment and more. $60 diagnostic, 180-day warranty, fast scheduling."
+        title="Appliance Repair Services | San Francisco | FixitBay LLC"
+        description="Complete appliance repair services in San Francisco & Bay Area. Refrigerators, washers, dryers, ovens, dishwashers, commercial equipment and more. $60 diagnostic, 180-day warranty, fast scheduling."
         canonical="https://fixitbay.net/services"
-        ogTitle="Appliance Repair Services \u2014 San Francisco & Bay Area | FixitBay LLC"
-        ogDescription="Complete appliance repair services in San Francisco & Bay Area. $60 diagnostic, 180-day warranty, fast scheduling."
+        ogTitle="Appliance Repair Services \u2014 San Francisco & Bay Area | FixitBay LLC"
+        ogDescription="Complete appliance repair services in San Francisco & Bay Area. $60 diagnostic, 180-day warranty, fast scheduling."
       />
 
       <style>{`
@@ -237,7 +237,7 @@ const ServicesPage = () => {
               <span>Services</span>
             </div>
             <div className="sp-eyebrow" style={{ marginBottom: 12 }}>SAN FRANCISCO &amp; BAY AREA</div>
-            <h1 data-testid="services-h1">Appliance Repair Services</h1>
+            <h1 data-testid="services-h1">Appliance Repair Services</h1>
             <p className="sp-hero-sub">$60 diagnostic fee applied to repair. Licensed technicians. 180-day warranty on parts and labor. Same- or next-day and next-day service across 22 cities.</p>
             <div className="sp-hero-ctas">
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="sp-btn-primary" data-testid="services-hero-book-btn" aria-label="opens in new tab">Book Online Now</a>
@@ -259,7 +259,7 @@ const ServicesPage = () => {
         {/* ─── 2. INTRO PARAGRAPH ─── */}
         <section className="sp-intro" data-testid="services-intro">
           <div className="sp-intro-inner">
-            <p>We repair every major residential and commercial appliance across San Francisco, the Peninsula, and Marin County. Each service page below describes the specific problems we fix, common symptoms, and what to expect during the repair. If you are not sure which service you need, <a href="/contact">contact us</a> &mdash; we will point you in the right direction.</p>
+            <p>We repair every major residential and commercial appliance across San Francisco, the Peninsula, and Marin County. Each service page below describes the specific problems we fix, common symptoms, and what to expect during the repair. If you are not sure which service you need, <a href="/contact">contact us</a> &mdash; we will point you in the right direction.</p>
           </div>
         </section>
 
@@ -269,17 +269,17 @@ const ServicesPage = () => {
             <div className="sp-icon-circle" style={{ fontWeight: 700, fontSize: 16 }}>R</div>
             <div>
               <div className="sp-eyebrow">RESIDENTIAL</div>
-              <div className="sp-section-title">Residential Appliance Repair</div>
+              <div className="sp-section-title">Residential Appliance Repair</div>
             </div>
           </div>
           <p className="sp-section-sub">These are the most common calls we receive. Kitchen and laundry appliances that have stopped working, are leaking, making unusual noises, or failing to heat or cool properly. Most residential repairs are completed in a single visit with parts from our truck.</p>
 
           {(() => {
-            const kitchen = RESIDENTIAL_SERVICES.filter(s => ['Refrigerator Repair','Dishwasher Repair','Oven & Range Repair','Cooktop Repair','Freezer Repair','Stove Repair','Range Repair'].includes(s.label));
-            const laundry = RESIDENTIAL_SERVICES.filter(s => ['Washer Repair','Dryer Repair'].includes(s.label));
-            const specialty = RESIDENTIAL_SERVICES.filter(s => ['Wine Cooler Repair','Ice Maker Repair','Garbage Disposal'].includes(s.label));
+            const kitchen = RESIDENTIAL_SERVICES.filter(s => ['Refrigerator Repair','Dishwasher Repair','Oven & Range Repair','Cooktop Repair','Freezer Repair','Stove Repair','Range Repair'].includes(s.label));
+            const laundry = RESIDENTIAL_SERVICES.filter(s => ['Washer Repair','Dryer Repair'].includes(s.label));
+            const specialty = RESIDENTIAL_SERVICES.filter(s => ['Wine Cooler Repair','Ice Maker Repair','Garbage Disposal'].includes(s.label));
             return (<>
-              <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 22, color: '#1A1A1A', margin: '0 auto 16px', maxWidth: 1100 }} data-testid="services-h2-kitchen">Kitchen Appliance Repair</h2>
+              <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 22, color: '#1A1A1A', margin: '0 auto 16px', maxWidth: 1100 }} data-testid="services-h2-kitchen">Kitchen Appliance Repair</h2>
               <div className="sp-grid" style={{ marginBottom: 32 }}>
                 {kitchen.map((s, i) => (
                   <a key={i} href={s.href} className="sp-card" data-testid={`service-card-kitchen-${i}`}>
@@ -292,7 +292,7 @@ const ServicesPage = () => {
                   </a>
                 ))}
               </div>
-              <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 22, color: '#1A1A1A', margin: '0 auto 16px', maxWidth: 1100 }} data-testid="services-h2-laundry">Laundry Appliance Repair</h2>
+              <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 22, color: '#1A1A1A', margin: '0 auto 16px', maxWidth: 1100 }} data-testid="services-h2-laundry">Laundry Appliance Repair</h2>
               <div className="sp-grid" style={{ marginBottom: 32 }}>
                 {laundry.map((s, i) => (
                   <a key={i} href={s.href} className="sp-card" data-testid={`service-card-laundry-${i}`}>
@@ -328,7 +328,7 @@ const ServicesPage = () => {
             <div className="sp-icon-circle" style={{ fontWeight: 700, fontSize: 16 }}>C</div>
             <div>
               <div className="sp-eyebrow" style={{ color: 'rgba(255,255,255,0.7)' }}>COMMERCIAL</div>
-              <div className="sp-section-title-white">Commercial Appliance Repair</div>
+              <div className="sp-section-title-white">Commercial Appliance Repair</div>
             </div>
           </div>
           <p className="sp-section-sub-white">Restaurants, laundromats, hotels, and offices rely on commercial-grade equipment that runs harder and longer than residential units. Downtime costs money. We offer priority scheduling for businesses and carry common commercial parts on every truck.</p>
@@ -417,16 +417,16 @@ const ServicesPage = () => {
             <a href="/service-areas">Service Areas</a>
             <a href="/brands">Brands We Repair</a>
             <a href="/reviews">Customer Reviews</a>
-            <a href="/san-francisco-appliance-repair">San Francisco</a>
+            <a href="/san-francisco-appliance-repair">San Francisco</a>
             <a href="/blog">Tips &amp; Guides</a>
           </div>
         </section>
 
         {/* ─── 9. FOOTER ─── */}
         <footer className="sp-footer" data-testid="services-footer">
-          <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
+          <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
           <a href="tel:7605435733">(760) 543-5733</a>
-          <span>&copy; 2026 FixitBay LLC</span>
+          <span>&copy; 2026 FixitBay LLC</span>
         </footer>
 
         {/* ─── 10. FLOATING BUTTON ─── */}

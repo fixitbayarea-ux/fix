@@ -14,7 +14,7 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: 'Why is my dryer taking 2 cycles to dry clothes?', a: "The most common cause is a clogged dryer vent or lint trap. Restricted airflow means moisture can't escape the drum, so clothes stay damp. Clean the lint trap and have the vent duct professionally cleaned if it hasn't been done in over a year." },
-  { q: 'How much does dryer repair cost in San Francisco Bay Area?', a: "Dryer repairs in the Bay Area typically cost $150\u2013$350. A heating element replacement runs $150\u2013$250. Gas valve solenoids cost $100\u2013$200. FixitBay LLC charges a $60 diagnostic fee, credited toward your repair." },
+  { q: 'How much does dryer repair cost in San Francisco Bay Area?', a: "Dryer repairs in the Bay Area typically cost $150\u2013$350. A heating element replacement runs $150\u2013$250. Gas valve solenoids cost $100\u2013$200. FixitBay LLC charges a $60 diagnostic fee, credited toward your repair." },
   { q: 'Is it safe to run a dryer that takes too long to dry?', a: "No \u2014 a dryer that runs multiple cycles is a serious fire hazard. Clogged vents are the #1 cause of dryer fires in the US. The NFPA reports nearly 17,000 dryer fires per year, mostly from lint buildup. Address the issue immediately." },
   { q: 'Can I clean my dryer vent myself?', a: "You can clean the lint trap yourself \u2014 do it after every load. For the vent duct, a DIY kit works for short straight runs. However, longer or flexible duct systems, rooftop vents, and high-rise apartment vents should be professionally cleaned annually." },
   { q: 'How do I know if my dryer vent is clogged?', a: "Four warning signs: (1) clothes are hot but still damp after a full cycle, (2) the dryer exterior feels very hot, (3) you smell burning during operation, (4) the laundry room is unusually humid after a cycle. Any of these means your vent needs immediate attention." },
@@ -75,7 +75,7 @@ const DryerTakingTooLong = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Why Is My Dryer Taking So Long to Dry?", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-01", "dateModified": "2026-01-01", "url": "https://fixitbay.net/blog/dryer-taking-too-long" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Why Is My Dryer Taking So Long to Dry?", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-01", "dateModified": "2026-01-01", "url": "https://fixitbay.net/blog/dryer-taking-too-long" } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Dryer Taking Too Long", "item": "https://fixitbay.net/blog/dryer-taking-too-long" } ] } }
   ], []);
@@ -84,7 +84,7 @@ const DryerTakingTooLong = () => {
   return (
     <>
       <SEOMetaTags
-        title="Why Is My Dryer Taking Too Long? 7 Causes | FixitBay LLC"
+        title="Why Is My Dryer Taking Too Long? 7 Causes | FixitBay LLC"
         description="Dryer taking 2-3 cycles to dry clothes? Learn 7 causes — clogged vents, bad heating element, moisture sensor — with DIY fixes."
         canonical="https://fixitbay.net/blog/dryer-taking-too-long"
         ogType="article"
@@ -121,7 +121,7 @@ const DryerTakingTooLong = () => {
             </div>
             <BlogByline dateISO="2026-01-12" dateFormatted="January 12, 2026" readTime="6 min" />
             <h1 className="dry-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 720, margin: '0 auto 16px' }}>
-              Why Is My Dryer Taking So Long to Dry? 7 Causes + DIY Fixes — Bay Area Guide
+              Why Is My Dryer Taking So Long to Dry? 7 Causes + DIY Fixes — Bay Area Guide
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto' }}>
               Long drying times waste energy and money. Discover the 7 most common causes including clogged vents, heating element issues, and moisture sensor problems. Learn DIY fixes and when to call a pro.
@@ -191,7 +191,7 @@ const DryerTakingTooLong = () => {
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
-                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
                     <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -263,7 +263,7 @@ const DryerTakingTooLong = () => {
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
                 <div style={{ ...EYE, marginBottom: 8 }}>FAST SCHEDULING</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Dryer Still Not Working? We Can Help!</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified dryer repair technicians service all brands in the SF Bay Area. Appointments available Mon–Sat!</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified dryer repair technicians service all brands in the SF Bay Area. Appointments available Mon–Sat!</p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
                   <a href="tel:+17605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call Now (760) 543-5733</a>
                   <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }} aria-label="opens in new tab">Book Repair Online</a>
@@ -276,7 +276,7 @@ const DryerTakingTooLong = () => {
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2 }}>Written by</p>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 2 }}>Andrei — Licensed Appliance Technician</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
                 </div>
               </div>
             </article>
@@ -317,7 +317,7 @@ const DryerTakingTooLong = () => {
                 {[
                   { text: 'Repair vs Replace Your Appliance', href: '/blog/when-to-repair-vs-replace' },
                   { text: '5 Reasons Your Refrigerator Isn\'t Cooling', href: '/blog/refrigerator-not-cooling' },
-                  { text: 'How Much Does Dryer Repair Cost in SF?', href: '/blog' },
+                  { text: 'How Much Does Dryer Repair Cost in SF?', href: '/blog' },
                   { text: 'Washer Not Draining? 6 Causes Explained', href: '/blog' },
                 ].map((link, i) => (
                   <Link key={i} to={link.href} className="sidebar-link" style={{ display: 'flex', gap: 8, padding: '8px 0', borderBottom: '1px solid rgba(0,0,0,0.05)', fontFamily: F, fontWeight: 500, fontSize: 13, color: '#4A5568', textDecoration: 'none', transition: 'color 0.2s' }}>
@@ -355,9 +355,9 @@ const DryerTakingTooLong = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Dryer Repair in Bay Area', body: 'Fast dryer repair for all brands. $60 diagnostic applied to your repair.', link: 'View Service', href: '/dryer-repair' },
+                { tag: 'SERVICE', title: 'Dryer Repair in Bay Area', body: 'Fast dryer repair for all brands. $60 diagnostic applied to your repair.', link: 'View Service', href: '/dryer-repair' },
                 { tag: 'ARTICLE', title: 'Repair vs Replace: When to Fix Your Appliance', body: 'Use the 50% rule to decide if repair makes financial sense.', link: 'Read Article', href: '/blog/when-to-repair-vs-replace' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: card.tag === 'SERVICE' ? '#fff' : 'rgba(255,255,255,0.7)', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
@@ -375,7 +375,7 @@ const DryerTakingTooLong = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

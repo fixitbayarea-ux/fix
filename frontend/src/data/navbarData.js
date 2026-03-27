@@ -1,20 +1,20 @@
 // Navbar dropdown data - lazy loaded for performance
 
 export const servicesItems = [
-  { name: 'Refrigerator Repair', path: '/refrigerator-repair' },
-  { name: 'Freezer Repair', path: '/freezer-repair' },
-  { name: 'Ice Maker Repair', path: '/ice-maker-repair' },
-  { name: 'Washer Repair', path: '/washer-repair' },
-  { name: 'Dryer Repair', path: '/dryer-repair' },
-  { name: 'Dishwasher Repair', path: '/dishwasher-repair' },
-  { name: 'Oven Repair', path: '/oven-repair' },
-  { name: 'Range Repair', path: '/range-repair' },
-  { name: 'Stove Repair', path: '/stove-repair' },
-  { name: 'Cooktop Repair', path: '/cooktop-repair' },
-  { name: 'Wine Cooler Repair', path: '/wine-cooler-repair' },
-  { name: 'Garbage Disposal Repair', path: '/garbage-disposal-repair' },
-  { name: 'Commercial Appliance Repair', path: '/commercial-appliance-repair' },
-  { name: 'Residential Appliance Repair', path: '/residential-appliance-repair' },
+  { name: 'Refrigerator Repair', path: '/refrigerator-repair' },
+  { name: 'Freezer Repair', path: '/freezer-repair' },
+  { name: 'Ice Maker Repair', path: '/ice-maker-repair' },
+  { name: 'Washer Repair', path: '/washer-repair' },
+  { name: 'Dryer Repair', path: '/dryer-repair' },
+  { name: 'Dishwasher Repair', path: '/dishwasher-repair' },
+  { name: 'Oven Repair', path: '/oven-repair' },
+  { name: 'Range Repair', path: '/range-repair' },
+  { name: 'Stove Repair', path: '/stove-repair' },
+  { name: 'Cooktop Repair', path: '/cooktop-repair' },
+  { name: 'Wine Cooler Repair', path: '/wine-cooler-repair' },
+  { name: 'Garbage Disposal Repair', path: '/garbage-disposal-repair' },
+  { name: 'Commercial Appliance Repair', path: '/commercial-appliance-repair' },
+  { name: 'Residential Appliance Repair', path: '/residential-appliance-repair' },
 ];
 
 export const maintenanceItems = [
@@ -24,7 +24,7 @@ export const maintenanceItems = [
   { name: 'Dishwasher Maintenance', path: '/maintenance/dishwasher' },
   { name: 'Oven Maintenance', path: '/maintenance/oven-range' },
   { name: 'Cooktop Maintenance', path: '/maintenance/cooktop' },
-  { name: 'Wine Cooler Maintenance', path: '/maintenance/wine-cooler' },
+  { name: 'Wine Cooler Maintenance', path: '/maintenance/wine-cooler' },
   { name: 'All Maintenance', path: '/maintenance', separator: true },
 ];
 
@@ -56,7 +56,7 @@ export const citiesItems = [
 // Grouped areas for structured dropdown/accordion
 export const areasGrouped = [
   {
-    region: 'San Francisco',
+    region: 'San Francisco',
     cities: [
       { name: 'SF \u2014 All Areas', path: '/san-francisco-appliance-repair' },
       { name: 'Sunset District', path: '/san-francisco/sunset-district-appliance-repair' },
@@ -76,9 +76,9 @@ export const areasGrouped = [
   {
     region: 'Peninsula',
     cities: [
-      { name: 'Daly City', path: '/daly-city-appliance-repair' },
-      { name: 'South San Francisco', path: '/south-san-francisco-appliance-repair' },
-      { name: 'San Bruno', path: '/san-bruno-appliance-repair' },
+      { name: 'Daly City', path: '/daly-city-appliance-repair' },
+      { name: 'South San Francisco', path: '/south-san-francisco-appliance-repair' },
+      { name: 'San Bruno', path: '/san-bruno-appliance-repair' },
       { name: 'Millbrae', path: '/millbrae-appliance-repair' },
       { name: 'Pacifica', path: '/pacifica-appliance-repair' },
       { name: 'Colma', path: '/colma-appliance-repair' },
@@ -87,17 +87,17 @@ export const areasGrouped = [
     ]
   },
   {
-    region: 'Marin County',
+    region: 'Marin County',
     cities: [
-      { name: 'San Rafael', path: '/san-rafael-appliance-repair' },
+      { name: 'San Rafael', path: '/san-rafael-appliance-repair' },
       { name: 'Novato', path: '/novato-appliance-repair' },
-      { name: 'Mill Valley', path: '/mill-valley-appliance-repair' },
+      { name: 'Mill Valley', path: '/mill-valley-appliance-repair' },
       { name: 'Sausalito', path: '/sausalito-appliance-repair' },
       { name: 'Tiburon', path: '/tiburon-appliance-repair' },
-      { name: 'Corte Madera', path: '/corte-madera-appliance-repair' },
+      { name: 'Corte Madera', path: '/corte-madera-appliance-repair' },
       { name: 'Larkspur', path: '/larkspur-appliance-repair' },
       { name: 'Fairfax', path: '/fairfax-appliance-repair' },
-      { name: 'San Anselmo', path: '/san-anselmo-appliance-repair' },
+      { name: 'San Anselmo', path: '/san-anselmo-appliance-repair' },
       { name: 'Ross', path: '/ross-appliance-repair' },
       { name: 'Greenbrae', path: '/greenbrae-appliance-repair' },
     ]

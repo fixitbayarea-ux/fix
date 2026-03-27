@@ -61,14 +61,14 @@ const WineRefrigeratorRepairPage = () => {
   ];
 
   const localAreas = [
-    "San Francisco", "Oakland", "San Jose", "Palo Alto", "San Mateo", "Redwood City", "Mountain View", "Berkeley", "Walnut Creek", "Napa"
+    "San Francisco", "Oakland", "San Jose", "Palo Alto", "San Mateo", "Redwood City", "Mountain View", "Berkeley", "Walnut Creek", "Napa"
   ];
 
   return (
     <ApplianceRepairPage
-      appliance="Wine Refrigerator"
-      pageTitle="Professional Wine Refrigerator Repair in Bay Area"
-      metaDescription="Expert wine cooler repair service in San Francisco Bay Area. Specializing in wine storage appliances, 180-day warranty, licensed technicians. Call (760) 543-5733 or book online."
+      appliance="Wine Refrigerator"
+      pageTitle="Professional Wine Refrigerator Repair in Bay Area"
+      metaDescription="Expert wine cooler repair service in San Francisco Bay Area. Specializing in wine storage appliances, 180-day warranty, licensed technicians. Call (760) 543-5733 or book online."
       commonProblems={commonProblems}
       localAreas={localAreas}
       faqData={faqData}

@@ -21,60 +21,60 @@ import {
 import FloatingButtons from '../FloatingButtons';
 
 const MarinCountyPage = () => {
-  const city = "Marin County";
-  const pageTitle = "Appliance Repair Marin County | Fast Scheduling | FixitBay LLC";
-  const metaDescription = "Licensed appliance repair in Marin County. Serving Mill Valley, San Rafael, Novato, Sausalito, Tiburon. $60 diagnostic, 180-day warranty. Fast scheduling.";
+  const city = "Marin County";
+  const pageTitle = "Appliance Repair Marin County | Fast Scheduling | FixitBay LLC";
+  const metaDescription = "Licensed appliance repair in Marin County. Serving Mill Valley, San Rafael, Novato, Sausalito, Tiburon. $60 diagnostic, 180-day warranty. Fast scheduling.";
 
   const marinCities = [
-    { name: "Mill Valley", href: "/mill-valley-appliance-repair" },
-    { name: "San Rafael", href: "/san-rafael-appliance-repair" },
+    { name: "Mill Valley", href: "/mill-valley-appliance-repair" },
+    { name: "San Rafael", href: "/san-rafael-appliance-repair" },
     { name: "Novato", href: "/novato-appliance-repair" },
     { name: "Sausalito", href: "/sausalito-appliance-repair" },
     { name: "Tiburon", href: "/tiburon-appliance-repair" },
-    { name: "Corte Madera", href: "/corte-madera-appliance-repair" },
+    { name: "Corte Madera", href: "/corte-madera-appliance-repair" },
     { name: "Larkspur", href: "/larkspur-appliance-repair" },
     { name: "Greenbrae", href: "/greenbrae-appliance-repair" },
     { name: "Ross", href: "/ross-appliance-repair" },
     { name: "Fairfax", href: "/fairfax-appliance-repair" },
-    { name: "San Anselmo", href: "/san-anselmo-appliance-repair" },
+    { name: "San Anselmo", href: "/san-anselmo-appliance-repair" },
     { name: "Belvedere", href: "/belvedere-appliance-repair" },
-    { name: "San Quentin", href: "/san-quentin-appliance-repair" }
+    { name: "San Quentin", href: "/san-quentin-appliance-repair" }
   ];
 
-  const localFeatures = "We understand Marin County's unique homes — from hillside estates in Tiburon and Sausalito to charming bungalows in Mill Valley and San Anselmo. Our technicians are experienced with high-end appliances common in Marin, including Sub-Zero, Wolf, Viking, Thermador, and Miele.";
+  const localFeatures = "We understand Marin County's unique homes — from hillside estates in Tiburon and Sausalito to charming bungalows in Mill Valley and San Anselmo. Our technicians are experienced with high-end appliances common in Marin, including Sub-Zero, Wolf, Viking, Thermador, and Miele.";
 
   const faqData = [
     {
-      question: "Do you provide fast appliance repair in Marin County?",
-      answer: "Yes! We offer fast appliance repair service throughout Marin County, including Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, and all surrounding areas. Our technicians know Marin well and can typically arrive within 60-90 minutes."
+      question: "Do you provide fast appliance repair in Marin County?",
+      answer: "Yes! We offer fast appliance repair service throughout Marin County, including Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, and all surrounding areas. Our technicians know Marin well and can typically arrive within 60-90 minutes."
     },
     {
-      question: "How much does appliance repair cost in Marin County?",
-      answer: "Appliance repair costs in Marin County typically range from $150-$400 depending on the issue. We charge a $60 diagnostic fee that's fully applied to your repair cost. Our upfront pricing means no surprises regardless of your Marin location."
+      question: "How much does appliance repair cost in Marin County?",
+      answer: "Appliance repair costs in Marin County typically range from $150-$400 depending on the issue. We charge a $60 diagnostic fee that's fully applied to your repair cost. Our upfront pricing means no surprises regardless of your Marin location."
     },
     {
-      question: "What areas of Marin County do you serve?",
-      answer: "We serve all of Marin County including Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo, Belvedere, and San Quentin. No matter where you are in Marin, we can reach you."
+      question: "What areas of Marin County do you serve?",
+      answer: "We serve all of Marin County including Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo, Belvedere, and San Quentin. No matter where you are in Marin, we can reach you."
     },
     {
       question: "Do you repair high-end appliances in Marin?",
       answer: "Absolutely! Our technicians are factory-trained on premium brands common in Marin homes: Sub-Zero, Wolf, Viking, Thermador, Miele, Bosch, and more. We carry specialized parts and tools for luxury appliance repairs."
     },
     {
-      question: "Are you licensed to work in Marin County?",
-      answer: "Yes, FixitBay LLC is fully licensed and insured to provide appliance repair services in Marin County. Our technicians meet all county requirements and carry proper insurance for your peace of mind."
+      question: "Are you licensed to work in Marin County?",
+      answer: "Yes, FixitBay LLC is fully licensed and insured to provide appliance repair services in Marin County. Our technicians meet all county requirements and carry proper insurance for your peace of mind."
     }
   ];
 
   const services = [
-    { name: "Refrigerator Repair", href: "/refrigerator-repair", icon: <Home className="w-6 h-6" /> },
-    { name: "Washer Repair", href: "/washer-repair", icon: <Settings className="w-6 h-6" /> },
-    { name: "Dryer Repair", href: "/dryer-repair", icon: <Settings className="w-6 h-6" /> },
-    { name: "Dishwasher Repair", href: "/dishwasher-repair", icon: <Shield className="w-6 h-6" /> },
-    { name: "Oven & Range Repair", href: "/oven-repair", icon: <Wrench className="w-6 h-6" /> },
-    { name: "Cooktop Repair", href: "/cooktop-repair", icon: <Wrench className="w-6 h-6" /> },
-    { name: "Wine Cooler Repair", href: "/wine-cooler-repair", icon: <Star className="w-6 h-6" /> },
-    { name: "Ice Maker Repair", href: "/ice-maker-repair", icon: <Star className="w-6 h-6" /> }
+    { name: "Refrigerator Repair", href: "/refrigerator-repair", icon: <Home className="w-6 h-6" /> },
+    { name: "Washer Repair", href: "/washer-repair", icon: <Settings className="w-6 h-6" /> },
+    { name: "Dryer Repair", href: "/dryer-repair", icon: <Settings className="w-6 h-6" /> },
+    { name: "Dishwasher Repair", href: "/dishwasher-repair", icon: <Shield className="w-6 h-6" /> },
+    { name: "Oven & Range Repair", href: "/oven-repair", icon: <Wrench className="w-6 h-6" /> },
+    { name: "Cooktop Repair", href: "/cooktop-repair", icon: <Wrench className="w-6 h-6" /> },
+    { name: "Wine Cooler Repair", href: "/wine-cooler-repair", icon: <Star className="w-6 h-6" /> },
+    { name: "Ice Maker Repair", href: "/ice-maker-repair", icon: <Star className="w-6 h-6" /> }
   ];
 
   const trustIndicators = [
@@ -82,7 +82,7 @@ const MarinCountyPage = () => {
     { icon: <Award className="w-5 h-5" />, text: "180-Day Warranty on All Repairs" },
     { icon: <Clock className="w-5 h-5" />, text: "Fast Scheduling Available" },
     { icon: <Star className="w-5 h-5" />, text: "5-Star Google Rating" },
-    { icon: <MapPin className="w-5 h-5" />, text: "Serving All Marin County" }
+    { icon: <MapPin className="w-5 h-5" />, text: "Serving All Marin County" }
   ];
 
   const howItWorks = [
@@ -120,8 +120,8 @@ const MarinCountyPage = () => {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "FixitBay LLC",
-    "description": "Professional appliance repair services in Marin County. Fast scheduling, licensed technicians, 180-day warranty.",
+    "name": "FixitBay LLC",
+    "description": "Professional appliance repair services in Marin County. Fast scheduling, licensed technicians, 180-day warranty.",
     "telephone": "+17605435733",
     "url": "https://fixitbay.net/marin-county-appliance-repair",
     "image": "https://fixitbay.net/images/fixitbay-logo.png",
@@ -129,7 +129,7 @@ const MarinCountyPage = () => {
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "1549 Franklin St, Unit A",
-      "addressLocality": "San Francisco",
+      "addressLocality": "San Francisco",
       "addressRegion": "CA",
       "postalCode": "94109",
       "addressCountry": "US"
@@ -141,7 +141,7 @@ const MarinCountyPage = () => {
     },
     "areaServed": {
       "@type": "County",
-      "name": "Marin County",
+      "name": "Marin County",
       "containsPlace": marinCities.map(c => ({
         "@type": "City",
         "name": c.name
@@ -163,7 +163,7 @@ const MarinCountyPage = () => {
       { id: 'breadcrumb-marin', data: buildBreadcrumbSchema([
         { name: 'Home', url: 'https://fixitbay.net/' },
         { name: 'Service Areas', url: 'https://fixitbay.net/service-areas' },
-        { name: 'Marin County', url: 'https://fixitbay.net/marin-county-appliance-repair' }
+        { name: 'Marin County', url: 'https://fixitbay.net/marin-county-appliance-repair' }
       ])},
       { id: 'faq-marin', data: buildFAQSchema(faqData) },
       { id: 'localbusiness-marin', data: localBusinessSchema }
@@ -183,9 +183,9 @@ const MarinCountyPage = () => {
         <div className="max-w-6xl mx-auto px-4">
           <BackButton />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
-            <p className="text-orange-400 font-semibold text-sm uppercase tracking-wider mb-3">Appliance Repair Marin County</p>
-            <h1 className="text-3xl md:text-5xl font-bold mb-6">Appliance Repair in Marin County — Fast Scheduling</h1>
-            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Professional appliance repair across Mill Valley, San Rafael, Novato, Sausalito, Tiburon, and all Marin County cities. Licensed technicians, $60 diagnostic, 180-day warranty.</p>
+            <p className="text-orange-400 font-semibold text-sm uppercase tracking-wider mb-3">Appliance Repair Marin County</p>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6">Appliance Repair in Marin County — Fast Scheduling</h1>
+            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Professional appliance repair across Mill Valley, San Rafael, Novato, Sausalito, Tiburon, and all Marin County cities. Licensed technicians, $60 diagnostic, 180-day warranty.</p>
             
             {/* Trust badges */}
             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -214,8 +214,8 @@ const MarinCountyPage = () => {
       {/* Marin Cities Section */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-[#0D1B2A]">Cities We Serve in Marin County</h2>
-          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">Fast appliance repair across all 13 Marin County cities. Click your city for local service details.</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-[#0D1B2A]">Cities We Serve in Marin County</h2>
+          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">Fast appliance repair across all 13 Marin County cities. Click your city for local service details.</p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {marinCities.map((c, idx) => (
               <a key={idx} href={c.href} className="flex items-center gap-2 p-4 bg-gray-50 hover:bg-orange-50 rounded-lg border border-gray-200 hover:border-orange-300 transition-colors" data-testid={`city-link-${c.name.toLowerCase().replace(/\s+/g, '-')}`}>
@@ -230,16 +230,16 @@ const MarinCountyPage = () => {
       {/* About Marin Service */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-[#0D1B2A]">Expert Appliance Repair for Marin County Homes</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-[#0D1B2A]">Expert Appliance Repair for Marin County Homes</h2>
           <p className="text-gray-700 text-lg leading-relaxed mb-6">{localFeatures}</p>
-          <p className="text-gray-700 text-lg leading-relaxed">Whether you need refrigerator repair in Mill Valley, washer repair in San Rafael, or dishwasher repair in Novato — our licensed technicians provide fast, reliable service with transparent pricing. We charge a $60 diagnostic fee (fully applied to your repair) and back every repair with our 180-day warranty.</p>
+          <p className="text-gray-700 text-lg leading-relaxed">Whether you need refrigerator repair in Mill Valley, washer repair in San Rafael, or dishwasher repair in Novato — our licensed technicians provide fast, reliable service with transparent pricing. We charge a $60 diagnostic fee (fully applied to your repair) and back every repair with our 180-day warranty.</p>
         </div>
       </section>
 
       {/* Services Grid */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[#0D1B2A]">Appliance Repair Services in Marin County</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[#0D1B2A]">Appliance Repair Services in Marin County</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {services.map((svc, idx) => (
               <a key={idx} href={svc.href} className="flex flex-col items-center p-6 bg-gray-50 hover:bg-orange-50 rounded-xl border border-gray-200 hover:border-orange-300 transition-all hover:shadow-md" data-testid={`service-${svc.name.toLowerCase().replace(/\s+/g, '-')}`}>
@@ -289,11 +289,11 @@ const MarinCountyPage = () => {
       {/* Related Content Links */}
       <section className="py-12 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-xl font-bold text-[#1A3B5D] mb-4">Learn More About Marin County Appliance Repair</h2>
+          <h2 className="text-xl font-bold text-[#1A3B5D] mb-4">Learn More About Marin County Appliance Repair</h2>
           <div className="flex flex-col gap-3">
-            <a href="/blog/appliance-repair-marin-county" className="text-[#C0362C] font-semibold hover:underline">Appliance Repair in Marin County — Complete Guide &rarr;</a>
-            <a href="/blog/same- or next-day-appliance-repair-bay-area" className="text-[#C0362C] font-semibold hover:underline">Same-Day Appliance Repair in the Bay Area — How It Works &rarr;</a>
-            <a href="/san-rafael-appliance-repair" className="text-[#C0362C] font-semibold hover:underline">San Rafael Appliance Repair &rarr;</a>
+            <a href="/blog/appliance-repair-marin-county" className="text-[#C0362C] font-semibold hover:underline">Appliance Repair in Marin County — Complete Guide &rarr;</a>
+            <a href="/blog/same- or next-day-appliance-repair-bay-area" className="text-[#C0362C] font-semibold hover:underline">Same-Day Appliance Repair in the Bay Area — How It Works &rarr;</a>
+            <a href="/san-rafael-appliance-repair" className="text-[#C0362C] font-semibold hover:underline">San Rafael Appliance Repair &rarr;</a>
             <a href="/service-areas" className="text-[#C0362C] font-semibold hover:underline">View All Service Areas &rarr;</a>
           </div>
         </div>
@@ -302,7 +302,7 @@ const MarinCountyPage = () => {
       {/* Final CTA */}
       <section className="py-16 bg-orange-500 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready for Fast Appliance Repair in Marin County?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready for Fast Appliance Repair in Marin County?</h2>
           <p className="text-lg mb-8 opacity-90">Book online or call now. $60 diagnostic, 180-day warranty, licensed technicians.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[#0D1B2A] hover:bg-[#1B3A5F] text-white font-bold py-4 px-8 rounded-lg transition-colors" aria-label="opens in new tab">

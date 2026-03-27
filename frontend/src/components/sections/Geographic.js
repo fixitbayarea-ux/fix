@@ -4,17 +4,17 @@ import { MapPin, Clock, Phone, Car } from 'lucide-react';
 
 const Geographic = () => {
   const serviceAreas = [
-    "San Francisco", "Oakland", "San Jose", "Berkeley", "Palo Alto",
-    "Daly City", "Fremont", "Sunnyvale", "Redwood City", "Mountain View",
-    "Hayward", "Santa Clara", "Union City", "Milpitas", "Cupertino",
-    "Foster City", "San Mateo", "Burlingame", "Menlo Park", "Los Altos"
+    "San Francisco", "Oakland", "San Jose", "Berkeley", "Palo Alto",
+    "Daly City", "Fremont", "Sunnyvale", "Redwood City", "Mountain View",
+    "Hayward", "Santa Clara", "Union City", "Milpitas", "Cupertino",
+    "Foster City", "San Mateo", "Burlingame", "Menlo Park", "Los Altos"
   ];
 
   const serviceFeatures = [
     {
       icon: <Clock className="w-8 h-8" />,
       title: "Same/Next Day Service",
-      description: "Emergency repairs available 24/7 across the Bay Area"
+      description: "Emergency repairs available 24/7 across the Bay Area"
     },
     {
       icon: <Car className="w-8 h-8" />,
@@ -24,7 +24,7 @@ const Geographic = () => {
     {
       icon: <MapPin className="w-8 h-8" />,
       title: "Local Coverage",
-      description: "Serving 20+ cities throughout San Francisco Bay Area"
+      description: "Serving 20+ cities throughout San Francisco Bay Area"
     },
     {
       icon: <Phone className="w-8 h-8" />,
@@ -67,10 +67,10 @@ const Geographic = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-navy-800 mb-6">
-            Serving All <span className="text-gold-gradient">Bay Area</span>
+            Serving All <span className="text-gold-gradient">Bay Area</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Professional appliance repair services available throughout San Francisco Bay Area with fast emergency response.
+            Professional appliance repair services available throughout San Francisco Bay Area with fast emergency response.
           </p>
         </motion.div>
 
@@ -88,7 +88,7 @@ const Geographic = () => {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1457030642598-b037296c9296"
-                  alt="San Francisco Bay Area"
+                  alt="San Francisco Bay Area"
                   className="w-full h-96 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-800/80 via-navy-600/40 to-transparent"></div>
@@ -97,7 +97,7 @@ const Geographic = () => {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center text-white p-8">
                     <h3 className="text-3xl font-bold mb-4">
-                      <span className="text-accent-gold">Bay Area Wide</span><br />
+                      <span className="text-accent-gold">Bay Area Wide</span><br />
                       Coverage
                     </h3>
                     <p className="text-xl text-accent-gold-light">

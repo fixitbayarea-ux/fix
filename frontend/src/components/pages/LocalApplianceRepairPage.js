@@ -11,31 +11,31 @@ const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', te
 const PROBLEMS = [
   { icon: '\uD83D\uDD0D', title: 'Finding a Reliable Local Technician', body: 'You need a nearby appliance repair company that actually answers the phone, shows up on time, and stands behind their work.' },
   { icon: '\u23F0', title: 'Delays Waiting for Out-of-Area Companies', body: 'National call centers and far-away providers often have long wait times before they can come to your neighborhood.' },
-  { icon: '\uD83C\uDFD8\uFE0F', title: 'Unique Bay Area Home Challenges', body: 'San Francisco and Bay Area housing has unique electrical, plumbing and access challenges that require local experience.' },
-  { icon: '\uD83C\uDFE2', title: 'Coordinating Service Across Multiple Cities', body: 'Families, landlords, or property managers with homes in different Bay Area cities need one trusted local partner.' },
+  { icon: '\uD83C\uDFD8\uFE0F', title: 'Unique Bay Area Home Challenges', body: 'San Francisco and Bay Area housing has unique electrical, plumbing and access challenges that require local experience.' },
+  { icon: '\uD83C\uDFE2', title: 'Coordinating Service Across Multiple Cities', body: 'Families, landlords, or property managers with homes in different Bay Area cities need one trusted local partner.' },
   { icon: '\uD83D\uDEA8', title: 'Last-Minute Breakdowns Before Events', body: 'Refrigerators, ovens or washers failing right before visitors arrive or a big gathering at home.' },
 ];
 
 const APPLIANCES = [
-  { icon: '\uD83E\uDDCA', title: 'Refrigerator Repair', issues: 'Not cooling, ice maker issues, water dispenser, compressor failure' },
-  { icon: '\uD83E\uDEE7', title: 'Washer Repair', issues: "Won't drain, error codes, vibrating, won't spin, door latch" },
-  { icon: '\uD83D\uDCA8', title: 'Dryer Repair', issues: "Not heating, taking too long, squeaking, won't start, vent issues" },
-  { icon: '\uD83C\uDF7D\uFE0F', title: 'Dishwasher Repair', issues: 'Not draining, not cleaning, leaking, door latch, heating element' },
-  { icon: '\uD83D\uDD25', title: 'Oven & Range Repair', issues: 'Not heating, temperature off, igniter issues, control board' },
-  { icon: '\uD83C\uDF73', title: 'Cooktop Repair', issues: 'Burner not lighting, element failure, gas valve, induction issues' },
-  { icon: '\uD83E\uDDCA', title: 'Freezer Repair', issues: 'Not freezing, frost buildup, compressor, temperature fluctuation' },
-  { icon: '\uD83E\uDDCA', title: 'Ice Maker Repair', issues: 'Not making ice, slow production, small cubes, water inlet valve' },
-  { icon: '\u2744\uFE0F', title: 'Wine Cooler Repair', issues: 'Temperature issues, compressor, thermostat, cooling fan' },
-  { icon: '\uD83D\uDDD1\uFE0F', title: 'Garbage Disposal Repair', issues: 'Jammed, humming, leaking, reset button issues' },
+  { icon: '\uD83E\uDDCA', title: 'Refrigerator Repair', issues: 'Not cooling, ice maker issues, water dispenser, compressor failure' },
+  { icon: '\uD83E\uDEE7', title: 'Washer Repair', issues: "Won't drain, error codes, vibrating, won't spin, door latch" },
+  { icon: '\uD83D\uDCA8', title: 'Dryer Repair', issues: "Not heating, taking too long, squeaking, won't start, vent issues" },
+  { icon: '\uD83C\uDF7D\uFE0F', title: 'Dishwasher Repair', issues: 'Not draining, not cleaning, leaking, door latch, heating element' },
+  { icon: '\uD83D\uDD25', title: 'Oven & Range Repair', issues: 'Not heating, temperature off, igniter issues, control board' },
+  { icon: '\uD83C\uDF73', title: 'Cooktop Repair', issues: 'Burner not lighting, element failure, gas valve, induction issues' },
+  { icon: '\uD83E\uDDCA', title: 'Freezer Repair', issues: 'Not freezing, frost buildup, compressor, temperature fluctuation' },
+  { icon: '\uD83E\uDDCA', title: 'Ice Maker Repair', issues: 'Not making ice, slow production, small cubes, water inlet valve' },
+  { icon: '\u2744\uFE0F', title: 'Wine Cooler Repair', issues: 'Temperature issues, compressor, thermostat, cooling fan' },
+  { icon: '\uD83D\uDDD1\uFE0F', title: 'Garbage Disposal Repair', issues: 'Jammed, humming, leaking, reset button issues' },
   { icon: '\uD83C\uDF21\uFE0F', title: 'Sub-Zero Repair', issues: 'Premium refrigeration, compressor, sealed system, control board' },
   { icon: '\uD83D\uDD27', title: 'All Major Brands', issues: 'Whirlpool, LG, Samsung, GE, Bosch, Maytag, Sub-Zero, Wolf, and more' },
 ];
 
 const FAQ_ITEMS = [
-  { q: 'Which Bay Area cities do you serve?', a: 'We serve San Francisco, the Peninsula, and Marin County, including Daly City, Pacifica, Brisbane, Mill Valley, San Rafael, Sausalito, Larkspur, and many more.' },
-  { q: 'Is your team actually local to the Bay Area?', a: 'Yes. FixitBay LLC is a local, family-owned business. Our technicians live and work in the Bay Area and understand local homes and neighborhoods.' },
+  { q: 'Which Bay Area cities do you serve?', a: 'We serve San Francisco, the Peninsula, and Marin County, including Daly City, Pacifica, Brisbane, Mill Valley, San Rafael, Sausalito, Larkspur, and many more.' },
+  { q: 'Is your team actually local to the Bay Area?', a: 'Yes. FixitBay LLC is a local, family-owned business. Our technicians live and work in the Bay Area and understand local homes and neighborhoods.' },
   { q: 'Do you offer same- or next-day local appointments?', a: 'Same- or next-day and next-day appointments are available in many neighborhoods, especially when you contact us earlier in the day.' },
-  { q: 'Can you support multiple properties or units?', a: 'Yes. We regularly help landlords, property managers, and families who have multiple homes or rental units across different Bay Area cities.' },
+  { q: 'Can you support multiple properties or units?', a: 'Yes. We regularly help landlords, property managers, and families who have multiple homes or rental units across different Bay Area cities.' },
   { q: 'What is the diagnostic fee?', a: 'We charge a $60 diagnostic fee which is credited toward your repair if you proceed with the fix.' },
 ];
 
@@ -61,23 +61,23 @@ const BRANDS = [
 ];
 
 const SERVICE_CITIES = [
-  { name: 'San Francisco', slug: 'san-francisco' }, { name: 'Daly City', slug: 'daly-city' },
-  { name: 'South San Francisco', slug: 'south-san-francisco' }, { name: 'San Bruno', slug: 'san-bruno' },
+  { name: 'San Francisco', slug: 'san-francisco' }, { name: 'Daly City', slug: 'daly-city' },
+  { name: 'South San Francisco', slug: 'south-san-francisco' }, { name: 'San Bruno', slug: 'san-bruno' },
   { name: 'Pacifica', slug: 'pacifica' }, { name: 'Millbrae', slug: 'millbrae' },
-  { name: 'Mill Valley', slug: 'mill-valley' }, { name: 'San Rafael', slug: 'san-rafael' },
+  { name: 'Mill Valley', slug: 'mill-valley' }, { name: 'San Rafael', slug: 'san-rafael' },
   { name: 'Sausalito', slug: 'sausalito' }, { name: 'Novato', slug: 'novato' },
-  { name: 'Tiburon', slug: 'tiburon' }, { name: 'Corte Madera', slug: 'corte-madera' },
+  { name: 'Tiburon', slug: 'tiburon' }, { name: 'Corte Madera', slug: 'corte-madera' },
 ];
 
 const RELATED = [
-  { title: 'Refrigerator Repair', href: '/refrigerator-repair' },
-  { title: 'Washer Repair', href: '/washer-repair' },
-  { title: 'Dryer Repair', href: '/dryer-repair' },
-  { title: 'Dishwasher Repair', href: '/dishwasher-repair' },
-  { title: 'Oven & Range Repair', href: '/oven-repair' },
-  { title: 'Cooktop Repair', href: '/cooktop-repair' },
-  { title: 'Wine Cooler Repair', href: '/wine-cooler-repair' },
-  { title: 'Ice Maker Repair', href: '/ice-maker-repair' },
+  { title: 'Refrigerator Repair', href: '/refrigerator-repair' },
+  { title: 'Washer Repair', href: '/washer-repair' },
+  { title: 'Dryer Repair', href: '/dryer-repair' },
+  { title: 'Dishwasher Repair', href: '/dishwasher-repair' },
+  { title: 'Oven & Range Repair', href: '/oven-repair' },
+  { title: 'Cooktop Repair', href: '/cooktop-repair' },
+  { title: 'Wine Cooler Repair', href: '/wine-cooler-repair' },
+  { title: 'Ice Maker Repair', href: '/ice-maker-repair' },
   { title: 'All Service Areas', href: '/service-areas' },
 ];
 
@@ -93,21 +93,21 @@ const LocalApplianceRepairPage = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'local-business-schema', data: { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "FixitBay LLC", "description": "Local appliance repair service in San Francisco and Bay Area. Fast scheduling, $60 diagnostic, 180-day warranty.", "url": "https://fixitbay.net", "telephone": "+17605435733", "priceRange": "$$", "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressRegion": "CA", "postalCode": "94109" }, "areaServed": SERVICE_CITIES.map(c => c.name), "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }, { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }], "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "94" } } },
+    { id: 'local-business-schema', data: { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "FixitBay LLC", "description": "Local appliance repair service in San Francisco and Bay Area. Fast scheduling, $60 diagnostic, 180-day warranty.", "url": "https://fixitbay.net", "telephone": "+17605435733", "priceRange": "$$", "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressRegion": "CA", "postalCode": "94109" }, "areaServed": SERVICE_CITIES.map(c => c.name), "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }, { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }], "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "94" } } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-      { "@type": "Question", "name": "Which Bay Area cities do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve San Francisco, the Peninsula, and Marin County, including Daly City, Pacifica, Brisbane, Mill Valley, San Rafael, Sausalito, Larkspur, and many more." } },
+      { "@type": "Question", "name": "Which Bay Area cities do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve San Francisco, the Peninsula, and Marin County, including Daly City, Pacifica, Brisbane, Mill Valley, San Rafael, Sausalito, Larkspur, and many more." } },
       { "@type": "Question", "name": "Do you offer same- or next-day local appointments?", "acceptedAnswer": { "@type": "Answer", "text": "Same- or next-day and next-day appointments are available in many neighborhoods, especially when you contact us earlier in the day." } },
       { "@type": "Question", "name": "What is the diagnostic fee?", "acceptedAnswer": { "@type": "Answer", "text": "We charge a $60 diagnostic fee which is credited toward your repair if you proceed with the fix." } }
     ] } },
-    { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://fixitbay.net/#services" }, { "@type": "ListItem", "position": 3, "name": "Appliance Repair", "item": "https://fixitbay.net/local-appliance-repair" }] } }
+    { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://fixitbay.net/#services" }, { "@type": "ListItem", "position": 3, "name": "Appliance Repair", "item": "https://fixitbay.net/local-appliance-repair" }] } }
   ], []);
   useSchemas(schemas);
 
   return (
     <>
       <SEOMetaTags
-        title="Local Appliance Repair | Fast Scheduling | FixitBay LLC"
-        description="Local appliance repair in San Francisco & Bay Area. $60 diagnostic, 180-day warranty, fast scheduling. Licensed CA technician. Refrigerators, washers, dryers, dishwashers, ovens and more."
+        title="Local Appliance Repair | Fast Scheduling | FixitBay LLC"
+        description="Local appliance repair in San Francisco & Bay Area. $60 diagnostic, 180-day warranty, fast scheduling. Licensed CA technician. Refrigerators, washers, dryers, dishwashers, ovens and more."
         canonical="https://fixitbay.net/local-appliance-repair"
       />
       <div style={{ fontFamily: F }}>
@@ -144,14 +144,14 @@ const LocalApplianceRepairPage = () => {
               <span style={{ color: '#FF5722', margin: '0 6px' }}>&rarr;</span>
               <a href="/#services" style={{ color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Services</a>
               <span style={{ color: '#FF5722', margin: '0 6px' }}>&rarr;</span>
-              <span style={{ color: 'rgba(255,255,255,0.8)' }}>Appliance Repair</span>
+              <span style={{ color: 'rgba(255,255,255,0.8)' }}>Appliance Repair</span>
             </nav>
             <div style={EYE}>SAN FRANCISCO &amp; BAY AREA</div>
             <h1 className="lar-h1" data-testid="hero-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.15, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 780, margin: '0 auto 16px' }}>
-              Local Appliance Repair — Fast Scheduling Across the Bay Area
+              Local Appliance Repair — Fast Scheduling Across the Bay Area
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto 32px' }}>
-              $60 diagnostic fee applied to repair. Licensed technicians. 180-day warranty. Same- or next-day and next-day service across San Francisco, Peninsula, and Marin County.
+              $60 diagnostic fee applied to repair. Licensed technicians. 180-day warranty. Same- or next-day and next-day service across San Francisco, Peninsula, and Marin County.
             </p>
             <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 15, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} aria-label="opens in new tab">Book Online Now</a>
@@ -193,7 +193,7 @@ const LocalApplianceRepairPage = () => {
           <div style={{ textAlign: 'center' }}>
             <div style={EYE}>WHY LOCAL MATTERS</div>
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 8 }}>The Problem with Out-of-Area Repair Companies</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', marginBottom: 48 }}>Bay Area homeowners deserve better than national call centers.</p>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', marginBottom: 48 }}>Bay Area homeowners deserve better than national call centers.</p>
           </div>
           <div className="prob-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20, maxWidth: 900, margin: '0 auto' }}>
             {PROBLEMS.map((p, i) => (
@@ -206,25 +206,25 @@ const LocalApplianceRepairPage = () => {
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#FF5722', textAlign: 'center', marginTop: 24 }}>FixitBay LLC solves all of these.</p>
+          <p style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#FF5722', textAlign: 'center', marginTop: 24 }}>FixitBay LLC solves all of these.</p>
         </section>
 
         {/* ━━━ 4. THE FIXITBAY DIFFERENCE ━━━ */}
         <section data-testid="fixitbay-diff" style={{ background: '#0D1B2A', padding: '72px 24px' }}>
           <div style={{ textAlign: 'center', marginBottom: 48 }}>
             <div style={EYE}>YOUR LOCAL CHOICE</div>
-            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#fff' }}>Your Local Bay Area Appliance Repair Team</h2>
+            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#fff' }}>Your Local Bay Area Appliance Repair Team</h2>
           </div>
           <div className="diff-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, maxWidth: 900, margin: '0 auto', alignItems: 'center' }}>
             <div>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8, marginBottom: 16 }}>
-                FixitBay LLC is a local, family-owned appliance repair company serving <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>San Francisco</strong>, the Peninsula, and Marin County. Our technicians live in the Bay Area and understand the unique challenges of local homes. We charge a <strong style={{ fontFamily: F, fontWeight: 700, color: '#FF5722' }}>$60 diagnostic fee</strong> (credited toward your repair).
+                FixitBay LLC is a local, family-owned appliance repair company serving <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>San Francisco</strong>, the Peninsula, and Marin County. Our technicians live in the Bay Area and understand the unique challenges of local homes. We charge a <strong style={{ fontFamily: F, fontWeight: 700, color: '#FF5722' }}>$60 diagnostic fee</strong> (credited toward your repair).
               </p>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8, marginBottom: 16 }}>
                 We repair all major household appliances — refrigerators, washers, dryers, dishwashers, ovens, cooktops, freezers, ice makers, wine coolers, and garbage disposals. Same- or next-day and next-day appointments available.
               </p>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8 }}>
-                Whether you're in <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>Pacific Heights</strong>, the <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>Sunset</strong>, or <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>Mill Valley</strong>, we'll get your appliance fixed fast with our <strong style={{ fontFamily: F, fontWeight: 700, color: '#FF5722' }}>180-day warranty</strong> on parts and labor.
+                Whether you're in <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>Pacific Heights</strong>, the <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>Sunset</strong>, or <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>Mill Valley</strong>, we'll get your appliance fixed fast with our <strong style={{ fontFamily: F, fontWeight: 700, color: '#FF5722' }}>180-day warranty</strong> on parts and labor.
               </p>
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
@@ -232,7 +232,7 @@ const LocalApplianceRepairPage = () => {
                 { num: '01', title: 'Licensed & Insured', body: 'CA License #51001. Fully insured.' },
                 { num: '02', title: 'Honest Pricing', body: '$60 diagnostic credited to repair.' },
                 { num: '03', title: '180-Day Warranty', body: 'Same issue returns? We come back free.' },
-                { num: '04', title: 'Truly Local', body: 'We live and work in the Bay Area.' },
+                { num: '04', title: 'Truly Local', body: 'We live and work in the Bay Area.' },
               ].map((c, i) => (
                 <div key={i} style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderTop: '2px solid #FF5722', borderRadius: 4, padding: 20, textAlign: 'center' }}>
                   <span style={{ fontFamily: F, fontWeight: 800, fontSize: 36, color: 'rgba(255,87,34,0.15)', lineHeight: 1, display: 'block' }}>{c.num}</span>
@@ -304,7 +304,7 @@ const LocalApplianceRepairPage = () => {
 
         {/* ━━━ 7. MID CTA STRIP ━━━ */}
         <section data-testid="mid-cta" style={{ background: '#FF5722', padding: '48px 24px', textAlign: 'center' }}>
-          <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 8 }}>Need Appliance Repair Today?</h2>
+          <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 8 }}>Need Appliance Repair Today?</h2>
           <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.85)', marginBottom: 24 }}>Call now or book online for same/next day service</p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:7605435733" style={{ background: '#fff', color: '#FF5722', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 28px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
@@ -356,8 +356,8 @@ const LocalApplianceRepairPage = () => {
         <section data-testid="service-areas" style={{ background: '#F8F5F0', padding: '72px 24px' }}>
           <div style={{ textAlign: 'center' }}>
             <div style={EYE}>WHERE WE SERVE</div>
-            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#1A1A1A', marginBottom: 8 }}>Service Areas for Appliance Repair</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 40 }}>We provide appliance repair across San Francisco, the Peninsula, and Marin County. Select your city below for local service details and availability.</p>
+            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#1A1A1A', marginBottom: 8 }}>Service Areas for Appliance Repair</h2>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 40 }}>We provide appliance repair across San Francisco, the Peninsula, and Marin County. Select your city below for local service details and availability.</p>
           </div>
           <div className="area-pills" style={{ display: 'flex', flexWrap: 'wrap', gap: 10, maxWidth: 900, margin: '0 auto', justifyContent: 'center' }}>
             {SERVICE_CITIES.map(c => (
@@ -366,7 +366,7 @@ const LocalApplianceRepairPage = () => {
           </div>
           <a href="/service-areas" style={{ display: 'block', fontFamily: F, fontWeight: 600, fontSize: 13, color: '#FF5722', textAlign: 'center', marginTop: 16, textDecoration: 'none' }}>View all 22 service cities &rarr;</a>
           <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568', textAlign: 'center', marginTop: 12 }}>
-            We serve all of <Link to="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>San Francisco</Link> and the greater Bay Area. <a href="/service-areas" style={{ color: '#FF5722', textDecoration: 'none' }}>View all service areas</a>.
+            We serve all of <Link to="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>San Francisco</Link> and the greater Bay Area. <a href="/service-areas" style={{ color: '#FF5722', textDecoration: 'none' }}>View all service areas</a>.
           </p>
         </section>
 
@@ -374,7 +374,7 @@ const LocalApplianceRepairPage = () => {
         <section data-testid="related-services" style={{ background: '#0D1B2A', padding: '56px 24px' }}>
           <div style={{ textAlign: 'center', marginBottom: 40 }}>
             <div style={EYE}>EXPLORE MORE</div>
-            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff' }}>All Appliance Repair Services</h2>
+            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff' }}>All Appliance Repair Services</h2>
           </div>
           <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 16, maxWidth: 900, margin: '0 auto' }}>
             {RELATED.map((r, i) => (
@@ -391,8 +391,8 @@ const LocalApplianceRepairPage = () => {
         {/* ━━━ 12. FINAL CTA ━━━ */}
         <section data-testid="final-cta" style={{ background: '#0D1B2A', padding: '72px 24px', textAlign: 'center' }}>
           <div style={EYE}>GET STARTED TODAY</div>
-          <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 36, color: '#fff', marginBottom: 12 }}>Local Appliance Repair You Can Count On</h2>
-          <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.7)', marginBottom: 32 }}>Same- or next-day and next-day service across San Francisco, Peninsula, and Marin County.</p>
+          <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 36, color: '#fff', marginBottom: 12 }}>Local Appliance Repair You Can Count On</h2>
+          <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.7)', marginBottom: 32 }}>Same- or next-day and next-day service across San Francisco, Peninsula, and Marin County.</p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
             <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.4)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} aria-label="opens in new tab">Book Online</a>
@@ -404,7 +404,7 @@ const LocalApplianceRepairPage = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:7605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

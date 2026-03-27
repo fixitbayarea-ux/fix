@@ -14,10 +14,10 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: "Why is my dryer not heating but still spinning?", a: "The most common cause is a blown thermal fuse \u2014 a safety device that trips when the dryer overheats, usually from a clogged vent. The dryer will tumble normally but produce no heat. For electric dryers, also check your breaker panel \u2014 a tripped 240V breaker will allow tumbling but not heating." },
-  { q: "How much does dryer repair cost in San Francisco?", a: "Most dryer repairs cost $150\u2013$300 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic applied toward repair. Thermal fuse replacement starts from $150. Heating element replacement ranges from $180\u2013$280. Gas valve solenoid repair is typically $200\u2013$260." },
+  { q: "How much does dryer repair cost in San Francisco?", a: "Most dryer repairs cost $150\u2013$300 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic applied toward repair. Thermal fuse replacement starts from $150. Heating element replacement ranges from $180\u2013$280. Gas valve solenoid repair is typically $200\u2013$260." },
   { q: "Should I repair or replace a dryer that's not heating?", a: "If your dryer is under 8 years old, repair is almost always worth it \u2014 most heating issues cost $150\u2013$280 to fix. For dryers over 12 years old where the motor or control board has failed ($300+ repair), replacement often makes more sense." },
   { q: "Is a gas dryer not heating dangerous?", a: "A gas dryer that isn\u2019t heating is not immediately dangerous \u2014 if the igniter isn\u2019t lighting, gas typically doesn\u2019t flow. However, if you smell gas near the dryer at any time, turn off the gas valve, open windows, and call your gas company immediately. Don\u2019t use the dryer until it\u2019s been inspected." },
-  { q: "How long does dryer repair take?", a: "Most dryer repairs take 45 minutes to 1.5 hours. Thermal fuses, heating elements, and igniters are common parts that our technician carries on the truck. Gas valve solenoids and control boards may occasionally require ordering. FixitBay LLC offers same- or next-day and next-day appointments Monday through Saturday." },
+  { q: "How long does dryer repair take?", a: "Most dryer repairs take 45 minutes to 1.5 hours. Thermal fuses, heating elements, and igniters are common parts that our technician carries on the truck. Gas valve solenoids and control boards may occasionally require ordering. FixitBay LLC offers same- or next-day and next-day appointments Monday through Saturday." },
 ];
 
 const TOC = [
@@ -30,7 +30,7 @@ const TOC = [
   { id: 'moisture-sensor', label: 'Faulty Moisture Sensor or Wiring' },
   { id: 'gas-vs-electric', label: 'Gas vs Electric Diagnostic Guide' },
   { id: 'checklist', label: 'DIY Checklist' },
-  { id: 'pricing', label: 'Repair Pricing \u2014 SF Bay Area' },
+  { id: 'pricing', label: 'Repair Pricing \u2014 SF Bay Area' },
   { id: 'field-note', label: "Andrei\u2019s Field Note" },
   { id: 'faq', label: 'Frequently Asked Questions' },
   { id: 'related', label: 'Related Articles' },
@@ -72,9 +72,9 @@ const DryerNotHeating = () => {
       id: 'article-schema',
       data: {
         "@context": "https://schema.org", "@type": "BlogPosting",
-        "headline": "Dryer Not Heating? 7 Causes & Fixes | FixitBay LLC SF",
-        "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
-        "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/navbar-logo-new-112.webp" } },
+        "headline": "Dryer Not Heating? 7 Causes & Fixes | FixitBay LLC SF",
+        "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
+        "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/navbar-logo-new-112.webp" } },
         "datePublished": "2026-03-23",
         "dateModified": "2026-03-23",
         "mainEntityOfPage": "https://fixitbay.net/blog/dryer-not-heating"
@@ -109,7 +109,7 @@ const DryerNotHeating = () => {
     <div style={{ background: '#0D1B2A', borderRadius: 4, padding: '14px 18px', margin: '16px 0' }}>
       <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 6 }}>
         <span style={{ width: 20, height: 20, borderRadius: '50%', background: '#FF5722', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 700, flexShrink: 0 }}>{'\u2713'}</span>
-        <span style={{ fontFamily: F, fontWeight: 700, fontSize: 12, color: 'rgba(255,255,255,0.7)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>SF Bay Area Note</span>
+        <span style={{ fontFamily: F, fontWeight: 700, fontSize: 12, color: 'rgba(255,255,255,0.7)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>SF Bay Area Note</span>
       </div>
       <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.82)', lineHeight: 1.6 }}>{text}</p>
     </div>
@@ -118,8 +118,8 @@ const DryerNotHeating = () => {
   return (
     <>
       <SEOMetaTags
-        title="Dryer Not Heating? 7 Causes & Fixes | FixitBay LLC SF"
-        description="Dryer not heating? 7 common causes for gas & electric dryers. SF Bay Area guide with DIY checks + when to call a pro. From $235 at FixitBay LLC."
+        title="Dryer Not Heating? 7 Causes & Fixes | FixitBay LLC SF"
+        description="Dryer not heating? 7 common causes for gas & electric dryers. SF Bay Area guide with DIY checks + when to call a pro. From $235 at FixitBay LLC."
         canonical="https://fixitbay.net/blog/dryer-not-heating"
         ogType="article"
       />
@@ -163,7 +163,7 @@ const DryerNotHeating = () => {
               Dryer Not Heating? 7 Common Causes for Gas & Electric Dryers
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto' }}>
-              7 causes ranked by complexity for both gas and electric dryers. SF Bay Area pricing, a real case study, and a DIY checklist before you call.
+              7 causes ranked by complexity for both gas and electric dryers. SF Bay Area pricing, a real case study, and a DIY checklist before you call.
             </p>
           </div>
         </section>
@@ -187,16 +187,16 @@ const DryerNotHeating = () => {
 
               {/* Intro */}
               <p style={{ ...P, marginBottom: 16 }}>
-                <span style={{ fontWeight: 600, color: '#1A1A1A' }}>A dryer that tumbles but won't heat is one of the most common appliance problems I see</span> — especially in San Francisco's older homes where gas dryers sit in cramped laundry closets with long vent runs. Before calling for service, check a few things yourself. Below are the 7 most common causes, from the simplest $0 fix to issues that need a licensed technician. I cover both gas and electric dryers.
+                <span style={{ fontWeight: 600, color: '#1A1A1A' }}>A dryer that tumbles but won't heat is one of the most common appliance problems I see</span> — especially in San Francisco's older homes where gas dryers sit in cramped laundry closets with long vent runs. Before calling for service, check a few things yourself. Below are the 7 most common causes, from the simplest $0 fix to issues that need a licensed technician. I cover both gas and electric dryers.
               </p>
               <p style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#1A3B5D', fontStyle: 'italic', marginBottom: 28 }}>
-                — Andrei, Licensed Appliance Technician, FixitBay LLC
+                — Andrei, Licensed Appliance Technician, FixitBay LLC
               </p>
 
               {/* ── Section 1 ── */}
               <h2 id="lint-vent" style={H2S}><span style={{ color: '#FF5722' }}>1.</span> Clogged Lint Screen or Dryer Vent — Most Common</h2>
               <p style={P}>The #1 reason <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>dryers stop heating</a> is restricted airflow. A clogged lint screen or blocked vent hose forces the dryer to overheat and trip its safety thermostat.</p>
-              <SFTip text="Victorian and Edwardian homes in the Mission, Castro, and Haight have some of the longest dryer vent runs I've seen — 20-30 feet with multiple bends through old walls. Lint buildup in these runs is a serious fire hazard. The San Francisco Fire Department recommends professional vent cleaning annually." />
+              <SFTip text="Victorian and Edwardian homes in the Mission, Castro, and Haight have some of the longest dryer vent runs I've seen — 20-30 feet with multiple bends through old walls. Lint buildup in these runs is a serious fire hazard. The San Francisco Fire Department recommends professional vent cleaning annually." />
               <p style={P}><strong style={{ color: '#1A1A1A' }}>DIY fix:</strong> Clean the lint screen before every load. Pull the dryer out, disconnect the vent hose, and vacuum it thoroughly. Check the outside vent flap — if it doesn't open when the dryer runs, the vent is blocked.</p>
 
               {/* ── Section 2 ── */}
@@ -216,7 +216,7 @@ const DryerNotHeating = () => {
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
-                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>dryer repair</a> in San Francisco & Bay Area?</p>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>dryer repair</a> in San Francisco & Bay Area?</p>
                     <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling &middot; $60 diagnostic applied to repair &middot; 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -302,12 +302,12 @@ const DryerNotHeating = () => {
                   </div>
                 ))}
                 <p style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#1A1A1A', marginTop: 16 }}>
-                  If none of these solve it &rarr; call FixitBay LLC: <a href="tel:7605435733" style={{ color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
+                  If none of these solve it &rarr; call FixitBay LLC: <a href="tel:7605435733" style={{ color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
                 </p>
               </div>
 
               {/* ── Pricing Table ── */}
-              <h2 id="pricing" style={H2S}>Dryer Repair Pricing — San Francisco Bay Area</h2>
+              <h2 id="pricing" style={H2S}>Dryer Repair Pricing — San Francisco Bay Area</h2>
               <div style={{ overflowX: 'auto', marginBottom: 16 }}>
                 <table data-testid="pricing-table" style={{ width: '100%', borderCollapse: 'collapse', fontFamily: F, fontSize: 14 }}>
                   <thead>
@@ -326,7 +326,7 @@ const DryerNotHeating = () => {
                   </tbody>
                 </table>
               </div>
-              <p style={P}>FixitBay LLC <a href="/dryer-repair" style={{ color: '#C0362C', fontWeight: 600 }}>dryer repair</a> starts from $235 after $60 diagnostic. The $60 diagnostic fee is fully applied toward your repair cost.</p>
+              <p style={P}>FixitBay LLC <a href="/dryer-repair" style={{ color: '#C0362C', fontWeight: 600 }}>dryer repair</a> starts from $235 after $60 diagnostic. The $60 diagnostic fee is fully applied toward your repair cost.</p>
 
               {/* ── Andrei's Field Note ── */}
               <h2 id="field-note" style={H2S}>Andrei's Field Note</h2>
@@ -334,7 +334,7 @@ const DryerNotHeating = () => {
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.75, fontStyle: 'italic', marginBottom: 16 }}>
                   "A customer in the Castro called about a gas dryer that heated for about 10 minutes then went cold. Classic gas valve solenoid failure — the igniter glowed every cycle but the gas never came through after the first heat-up. What made this job tricky was the dryer was wedged into a narrow closet in a 1920s Victorian with a 25-foot vent run through the wall. I replaced both solenoids ($210 total) and cleaned out the entire vent run — pulled out nearly a full grocery bag of lint. That lint was the original cause — it overheated the dryer and weakened the solenoids over time."
                 </p>
-                <footer style={{ fontFamily: F, fontSize: 14, fontWeight: 700, color: '#1A3B5D' }}>— Andrei, Lead Appliance Technician, FixitBay LLC</footer>
+                <footer style={{ fontFamily: F, fontSize: 14, fontWeight: 700, color: '#1A3B5D' }}>— Andrei, Lead Appliance Technician, FixitBay LLC</footer>
               </blockquote>
 
               {/* ── FAQ ── */}
@@ -378,8 +378,8 @@ const DryerNotHeating = () => {
               {/* ── Bottom CTA ── */}
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
                 <div style={{ ...EYE, marginBottom: 8 }}>PROFESSIONAL HELP</div>
-                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Need Expert <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Dryer Repair</a> in the Bay Area?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians diagnose and repair all dryer brands — <a href="/blog/same- or next-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>fast scheduling</a> available across <a href="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>San Francisco</a> and the Bay Area.</p>
+                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Need Expert <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Dryer Repair</a> in the Bay Area?</h3>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians diagnose and repair all dryer brands — <a href="/blog/same- or next-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>fast scheduling</a> available across <a href="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>San Francisco</a> and the Bay Area.</p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
                   <a href="tel:+17605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
                   <a href="/book" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }}>Book Online Now</a>
@@ -392,7 +392,7 @@ const DryerNotHeating = () => {
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2 }}>Written by</p>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 2 }}>Andrei — Lead Appliance Technician</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
                 </div>
               </div>
             </article>
@@ -433,11 +433,11 @@ const DryerNotHeating = () => {
                 <div style={{ ...EYE, marginBottom: 12 }}>OUR REPAIR SERVICES</div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                   {[
-                    { label: 'Dryer Repair', href: '/dryer-repair' },
-                    { label: 'Washer Repair', href: '/washer-repair' },
-                    { label: 'Refrigerator Repair', href: '/refrigerator-repair' },
-                    { label: 'Dishwasher Repair', href: '/dishwasher-repair' },
-                    { label: 'Oven Repair', href: '/oven-repair' },
+                    { label: 'Dryer Repair', href: '/dryer-repair' },
+                    { label: 'Washer Repair', href: '/washer-repair' },
+                    { label: 'Refrigerator Repair', href: '/refrigerator-repair' },
+                    { label: 'Dishwasher Repair', href: '/dishwasher-repair' },
+                    { label: 'Oven Repair', href: '/oven-repair' },
                   ].map(s => (
                     <Link key={s.label} to={s.href} className="sidebar-pill" style={{ background: '#fff', border: '1px solid rgba(255,87,34,0.25)', color: '#FF5722', fontFamily: F, fontWeight: 600, fontSize: 12, padding: '6px 14px', borderRadius: 4, textDecoration: 'none', transition: 'all 0.2s' }}>{s.label}</Link>
                   ))}
@@ -455,9 +455,9 @@ const DryerNotHeating = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services & Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Dryer Repair in Bay Area', body: 'Fast dryer repair for gas & electric. All brands. $60 diagnostic applied.', link: 'View Service', href: '/dryer-repair' },
+                { tag: 'SERVICE', title: 'Dryer Repair in Bay Area', body: 'Fast dryer repair for gas & electric. All brands. $60 diagnostic applied.', link: 'View Service', href: '/dryer-repair' },
                 { tag: 'ARTICLE', title: 'Dryer Taking Too Long to Dry', body: 'Still damp after a full cycle? Common causes and fixes for slow dryers.', link: 'Read Article', href: '/blog/dryer-taking-too-long' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
@@ -475,7 +475,7 @@ const DryerNotHeating = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

@@ -6,14 +6,14 @@ const F = 'Montserrat, sans-serif';
 const PHONE = '(760) 543-5733';
 
 const servicesLinks = [
-  { href: '/refrigerator-repair', label: 'Refrigerator Repair' },
-  { href: '/washer-repair', label: 'Washer Repair' },
-  { href: '/dryer-repair', label: 'Dryer Repair' },
-  { href: '/dishwasher-repair', label: 'Dishwasher Repair' },
-  { href: '/oven-repair', label: 'Oven Repair' },
-  { href: '/cooktop-repair', label: 'Cooktop Repair' },
-  { href: '/ice-maker-repair', label: 'Ice Maker Repair' },
-  { href: '/wine-cooler-repair', label: 'Wine Cooler Repair' },
+  { href: '/refrigerator-repair', label: 'Refrigerator Repair' },
+  { href: '/washer-repair', label: 'Washer Repair' },
+  { href: '/dryer-repair', label: 'Dryer Repair' },
+  { href: '/dishwasher-repair', label: 'Dishwasher Repair' },
+  { href: '/oven-repair', label: 'Oven Repair' },
+  { href: '/cooktop-repair', label: 'Cooktop Repair' },
+  { href: '/ice-maker-repair', label: 'Ice Maker Repair' },
+  { href: '/wine-cooler-repair', label: 'Wine Cooler Repair' },
   { href: '/commercial-appliance-repair', label: 'Commercial Repair' },
 ];
 
@@ -97,14 +97,14 @@ const UnifiedFooter = () => (
         {/* Col 1 — Brand (always visible) */}
         <div className="footer-brand-col">
           <div className="flex items-center" style={{ gap: 14, marginBottom: 18 }}>
-            <img src={navbarLogo} alt="FixitBay LLC" width="56" height="56" loading="lazy" style={{ borderRadius: 4 }} />
+            <img src={navbarLogo} alt="FixitBay LLC" width="56" height="56" loading="lazy" style={{ borderRadius: 4 }} />
             <div>
-              <p style={{ fontSize: 22, fontWeight: 800, color: '#fff', lineHeight: 1.15 }}>FixitBay LLC</p>
-              <p style={{ fontSize: 14, fontWeight: 600, color: 'rgba(255,255,255,0.65)' }}>Appliance Repair &amp; Maintenance</p>
+              <p style={{ fontSize: 22, fontWeight: 800, color: '#fff', lineHeight: 1.15 }}>FixitBay LLC</p>
+              <p style={{ fontSize: 14, fontWeight: 600, color: 'rgba(255,255,255,0.65)' }}>Appliance Repair &amp; Maintenance</p>
             </div>
           </div>
           <p style={{ fontSize: 14, lineHeight: 1.7, color: 'rgba(255,255,255,0.65)', marginBottom: 22, fontWeight: 500 }}>
-            Licensed in-home appliance repair for San Francisco, the Peninsula, and Marin County.
+            Licensed in-home appliance repair for San Francisco, the Peninsula, and Marin County.
           </p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             <a href="tel:+17605435733" className="flex items-center" style={{ gap: 10, color: '#FF5722', fontSize: 20, fontWeight: 700, textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }} data-testid="footer-phone">
@@ -119,7 +119,7 @@ const UnifiedFooter = () => (
             </div>
             <div className="flex items-start" style={{ gap: 10 }}>
               <MapPin size={16} style={{ color: '#FF5722', flexShrink: 0, marginTop: 3 }} />
-              <span style={{ color: 'rgba(255,255,255,0.65)', fontSize: 15, fontWeight: 500 }}>1549 Franklin St, Unit A, San Francisco, CA 94109</span>
+              <span style={{ color: 'rgba(255,255,255,0.65)', fontSize: 15, fontWeight: 500 }}>1549 Franklin St, Unit A, San Francisco, CA 94109</span>
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@ const UnifiedFooter = () => (
     {/* Legal bar */}
     <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)' }}>
       <div style={{ maxWidth: 1440, margin: '0 auto', padding: '20px 32px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
-        <p style={{ fontFamily: F, fontSize: 12, color: 'rgba(255,255,255,0.30)', fontWeight: 400 }}>&copy; 2026 FixitBay LLC. All rights reserved.</p>
+        <p style={{ fontFamily: F, fontSize: 12, color: 'rgba(255,255,255,0.30)', fontWeight: 400 }}>&copy; 2026 FixitBay LLC. All rights reserved.</p>
         <a href="/privacy-policy" style={{ fontFamily: F, fontSize: 12, color: 'rgba(255,255,255,0.30)', fontWeight: 400, textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>Privacy Policy</a>
         <span style={{ color: 'rgba(255,255,255,0.15)', fontSize: 12 }}>&middot;</span>
         <a href="/terms" style={{ fontFamily: F, fontSize: 12, color: 'rgba(255,255,255,0.30)', fontWeight: 400, textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>Terms of Service</a>

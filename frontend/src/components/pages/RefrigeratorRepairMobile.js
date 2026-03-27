@@ -82,7 +82,7 @@ const RefrigeratorRepairMobile = () => {
 
   const faqs = [
     { q: 'How much does it cost?', a: '$60 diagnostic visit, fully applied to repair cost. Most repairs: $150–$400. Upfront quote before any work — no surprises.' },
-    { q: 'How fast can you come?', a: 'Same- or next-day and next-day service across San Francisco, Peninsula, and Marin. Most urgent cooling issues handled the same day.' },
+    { q: 'How fast can you come?', a: 'Same- or next-day and next-day service across San Francisco, Peninsula, and Marin. Most urgent cooling issues handled the same day.' },
     { q: 'Do you offer a warranty?', a: '180-day warranty on all parts and labor. If the same issue returns, we fix it free.' },
     { q: 'What brands do you fix?', a: 'All major brands: Sub-Zero, Viking, Thermador, Samsung, LG, Whirlpool, GE, Bosch, Miele, KitchenAid, Frigidaire, and more.' },
     { q: 'Do you repair built-in fridges?', a: 'Yes — French door, side-by-side, built-in, counter-depth, under-counter, and commercial units.' },
@@ -97,7 +97,7 @@ const RefrigeratorRepairMobile = () => {
   return (
     <div data-testid="mobile-landing-refrigerator" style={{ fontFamily: "'Montserrat', sans-serif", background: '#fff', paddingBottom: 82 }}>
 
-      <SEOMetaTags title="Refrigerator Repair San Francisco | Fast Scheduling | FixitBay LLC" description="Fast refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733." canonical="https://fixitbay.net/refrigerator-repair" />
+      <SEOMetaTags title="Refrigerator Repair San Francisco | Fast Scheduling | FixitBay LLC" description="Fast refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733." canonical="https://fixitbay.net/refrigerator-repair" />
 
       {/* ── HEADER ── */}
       <header data-testid="mobile-header" style={{
@@ -106,7 +106,7 @@ const RefrigeratorRepairMobile = () => {
       }}>
         <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none' }}>
           <img src="/fixitbay-logo-round.png" alt="FixitBay" width={36} height={36} style={{ borderRadius: '50%' }} />
-          <span style={{ fontWeight: 800, fontSize: 16, color: '#1A3B5D', letterSpacing: '-0.3px' }}>FixitBay LLC</span>
+          <span style={{ fontWeight: 800, fontSize: 16, color: '#1A3B5D', letterSpacing: '-0.3px' }}>FixitBay LLC</span>
         </a>
         <a href={`tel:${PHONE}`} onClick={() => handleCall('header')} data-testid="header-call-btn" style={{
           display: 'flex', alignItems: 'center', gap: 6, background: '#C0362C', color: '#fff', borderRadius: 10,
@@ -139,7 +139,7 @@ const RefrigeratorRepairMobile = () => {
           Refrigerator<br />Repair
         </h1>
         <p style={{ fontSize: 17, fontWeight: 500, color: 'rgba(255,255,255,0.85)', margin: '0 0 16px', lineHeight: 1.3 }}>
-          in San Francisco & Bay Area
+          in San Francisco & Bay Area
         </p>
 
         {/* Trust row */}
@@ -215,7 +215,7 @@ const RefrigeratorRepairMobile = () => {
           {[
             { icon: <Thermometer size={18} color="#C0362C" />, label: 'Not Cooling' },
             { icon: <Droplets size={18} color="#3B82F6" />, label: 'Leaking Water' },
-            { icon: <Snowflake size={18} color="#06B6D4" />, label: 'Ice Maker Issue' },
+            { icon: <Snowflake size={18} color="#06B6D4" />, label: 'Ice Maker Issue' },
             { icon: <Volume2 size={18} color="#F59E0B" />, label: 'Strange Noise' },
             { icon: <Power size={18} color="#8B5CF6" />, label: "Won't Start" },
             { icon: <Thermometer size={18} color="#10B981" />, label: 'Freezer Problem' },
@@ -242,7 +242,7 @@ const RefrigeratorRepairMobile = () => {
       <section data-testid="how-it-works" style={{ padding: '28px 20px', background: '#fff' }}>
         <h2 style={{ fontSize: 18, fontWeight: 700, color: '#1A3B5D', margin: '0 0 20px' }}>How it works</h2>
         {[
-          { n: '1', title: 'You call or book online', desc: 'Same/next-day slots across SF & Bay Area. Takes 30 seconds.' },
+          { n: '1', title: 'You call or book online', desc: 'Same/next-day slots across SF & Bay Area. Takes 30 seconds.' },
           { n: '2', title: 'We diagnose on-site', desc: '$60 diagnostic fee — waived with repair. No hidden charges.' },
           { n: '3', title: 'Repair + 180-day warranty', desc: 'Upfront quote. Quality parts. Warranty on parts and labor.' },
         ].map((step, i) => (
@@ -270,11 +270,11 @@ const RefrigeratorRepairMobile = () => {
         background: 'linear-gradient(135deg, #0F2A47 0%, #1A3B5D 100%)',
         color: '#fff',
       }}>
-        <h2 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 16px' }}>Why FixitBay LLC</h2>
+        <h2 style={{ fontSize: 18, fontWeight: 700, margin: '0 0 16px' }}>Why FixitBay LLC</h2>
         {[
           { icon: <Shield size={20} color="#34D399" />, title: 'Licensed & Insured', desc: 'CA License #51001. Full liability coverage.' },
           { icon: <Award size={20} color="#FBBF24" />, title: '180-Day Warranty', desc: 'On every repair — parts and labor.' },
-          { icon: <Clock size={20} color="#60A5FA" />, title: 'Same/Next-Day', desc: 'Mon–Sat. Fast response across Bay Area.' },
+          { icon: <Clock size={20} color="#60A5FA" />, title: 'Same/Next-Day', desc: 'Mon–Sat. Fast response across Bay Area.' },
           { icon: <CheckCircle2 size={20} color="#A78BFA" />, title: 'Upfront Pricing', desc: '$60 diagnostic applied to repair. No surprises.' },
         ].map((item, i) => (
           <div key={i} style={{ display: 'flex', gap: 12, marginBottom: 16, alignItems: 'flex-start' }}>
@@ -355,7 +355,7 @@ const RefrigeratorRepairMobile = () => {
           <MapPin size={20} color="#C0362C" /> We come to you
         </h2>
         <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 10 }}>
-          {['San Francisco', 'Peninsula', 'Marin County'].map((area) => (
+          {['San Francisco', 'Peninsula', 'Marin County'].map((area) => (
             <span key={area} style={{
               padding: '8px 16px', background: '#F1F5F9', borderRadius: 20,
               fontSize: 13, fontWeight: 600, color: '#1E293B', border: '1px solid #E2E8F0',
@@ -405,7 +405,7 @@ const RefrigeratorRepairMobile = () => {
       {/* Back link */}
       <div style={{ padding: '14px 20px', textAlign: 'center', background: '#fff' }}>
         <a href="/" style={{ fontSize: 13, color: '#94A3B8', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
-          <ArrowLeft size={14} /> Back to FixitBay LLC Home
+          <ArrowLeft size={14} /> Back to FixitBay LLC Home
         </a>
       </div>
 

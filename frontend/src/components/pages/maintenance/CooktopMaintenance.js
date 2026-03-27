@@ -28,7 +28,7 @@ const CooktopMaintenance = () => {
   const serviceDescription = {
     title: 'Expert Cooktop Maintenance for Gas, Electric & Induction Models',
     paragraphs: [
-      'Whether you have a gas, electric, or induction cooktop, regular maintenance ensures safe operation, even heating, and extended appliance life. Proper care prevents gas leaks, electrical hazards, and costly breakdowns. FixitBay LLC provides professional cooktop maintenance services throughout San Francisco, Peninsula, and Marin County for all cooktop types and brands.',
+      'Whether you have a gas, electric, or induction cooktop, regular maintenance ensures safe operation, even heating, and extended appliance life. Proper care prevents gas leaks, electrical hazards, and costly breakdowns. FixitBay LLC provides professional cooktop maintenance services throughout San Francisco, Peninsula, and Marin County for all cooktop types and brands.',
       'Our certified technicians perform comprehensive maintenance including cleaning and testing all burners or heating elements, checking gas connections for leaks (gas cooktops), cleaning burner ports and igniters, testing induction sensors (induction cooktops), inspecting control knobs and switches, verifying proper ignition and flame patterns, and ensuring safe electrical connections. We service standard drop-in cooktops, built-in models, and high-end professional-grade units.',
       'During our $60 diagnostic visit, we test each burner or heating zone, inspect for gas leaks or electrical issues, clean accessible components, and verify all controls function properly. For gas cooktops, we check flame color and strength. For electric and induction models, we test heating consistency and sensor accuracy. Regular maintenance prevents dangerous gas leaks, ensures even cooking, reduces energy waste, and extends your cooktop\'s lifespan. All work is backed by our 180-day warranty with flexible same- or next-day and next-day scheduling.'
     ]
@@ -40,7 +40,7 @@ const CooktopMaintenance = () => {
     "serviceType": "Cooktop Maintenance",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay LLC",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     }
   };
@@ -50,8 +50,8 @@ const CooktopMaintenance = () => {
       <MobileServiceLanding
         appliance="Cooktop"
         pageSlug="maintenance/cooktop"
-        pageTitle="Cooktop Maintenance | Gas, Electric & Induction | FixitBay LLC"
-        metaDescription="Professional cooktop maintenance in San Francisco Bay Area. Service for gas, electric, and induction cooktops. $60 diagnostic, 180-day warranty. FixitBay LLC."
+        pageTitle="Cooktop Maintenance | Gas, Electric & Induction | FixitBay LLC"
+        metaDescription="Professional cooktop maintenance in San Francisco Bay Area. Service for gas, electric, and induction cooktops. $60 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Cooktop<br />Maintenance. Today.</>}
         heroSubtitle="Gas, Electric & Induction Service"
         issues={[
@@ -71,8 +71,8 @@ const CooktopMaintenance = () => {
   return (
     <ApplianceRepairPageNew
       appliance="Cooktop"
-      pageTitle="Cooktop Maintenance | Gas, Electric & Induction | FixitBay LLC"
-      metaDescription="Professional cooktop maintenance in San Francisco Bay Area. Service for gas, electric, and induction cooktops. $60 diagnostic, 180-day warranty. FixitBay LLC."
+      pageTitle="Cooktop Maintenance | Gas, Electric & Induction | FixitBay LLC"
+      metaDescription="Professional cooktop maintenance in San Francisco Bay Area. Service for gas, electric, and induction cooktops. $60 diagnostic, 180-day warranty. FixitBay LLC."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}
@@ -93,10 +93,10 @@ const CooktopMaintenance = () => {
         ]
       }}
       relatedLinks={[
-        { href: '/cooktop-repair', label: 'Cooktop Repair', desc: 'Burner, igniter, and surface issues' },
+        { href: '/cooktop-repair', label: 'Cooktop Repair', desc: 'Burner, igniter, and surface issues' },
         { href: '/maintenance/oven-range', label: 'Oven Maintenance', desc: 'Calibration and safety inspection' },
-        { href: '/range-repair', label: 'Range Repair', desc: 'Combined oven and cooktop service' },
-        { href: '/stove-repair', label: 'Stove Repair', desc: 'Gas and electric stove repairs' },
+        { href: '/range-repair', label: 'Range Repair', desc: 'Combined oven and cooktop service' },
+        { href: '/stove-repair', label: 'Stove Repair', desc: 'Gas and electric stove repairs' },
       ]}
     />
 

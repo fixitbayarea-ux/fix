@@ -3,13 +3,13 @@ import { MapPin } from 'lucide-react';
 
 // Service cities data - URLs are placeholders for easy replacement
 const serviceCities = [
-  // San Francisco
-  { key: 'san-francisco', name: 'San Francisco', region: 'San Francisco', href: 'SAN_FRANCISCO_URL_PLACEHOLDER' },
+  // San Francisco
+  { key: 'san-francisco', name: 'San Francisco', region: 'San Francisco', href: 'SAN_FRANCISCO_URL_PLACEHOLDER' },
   
   // Peninsula
-  { key: 'daly-city', name: 'Daly City', region: 'Peninsula', href: 'DALY_CITY_URL_PLACEHOLDER' },
-  { key: 'south-san-francisco', name: 'South San Francisco', region: 'Peninsula', href: 'SOUTH_SF_URL_PLACEHOLDER' },
-  { key: 'san-bruno', name: 'San Bruno', region: 'Peninsula', href: 'SAN_BRUNO_URL_PLACEHOLDER' },
+  { key: 'daly-city', name: 'Daly City', region: 'Peninsula', href: 'DALY_CITY_URL_PLACEHOLDER' },
+  { key: 'south-san-francisco', name: 'South San Francisco', region: 'Peninsula', href: 'SOUTH_SF_URL_PLACEHOLDER' },
+  { key: 'san-bruno', name: 'San Bruno', region: 'Peninsula', href: 'SAN_BRUNO_URL_PLACEHOLDER' },
   { key: 'brisbane', name: 'Brisbane', region: 'Peninsula', href: 'BRISBANE_URL_PLACEHOLDER' },
   { key: 'colma', name: 'Colma', region: 'Peninsula', href: 'COLMA_URL_PLACEHOLDER' },
   { key: 'millbrae', name: 'Millbrae', region: 'Peninsula', href: 'MILLBRAE_URL_PLACEHOLDER' },
@@ -17,7 +17,7 @@ const serviceCities = [
   { key: 'montara', name: 'Montara', region: 'Peninsula', href: 'MONTARA_URL_PLACEHOLDER' },
   
   // North Bay
-  { key: 'san-rafael', name: 'San Rafael', region: 'North Bay', href: 'SAN_RAFAEL_URL_PLACEHOLDER' },
+  { key: 'san-rafael', name: 'San Rafael', region: 'North Bay', href: 'SAN_RAFAEL_URL_PLACEHOLDER' },
   { key: 'sausalito', name: 'Sausalito', region: 'North Bay', href: 'SAUSALITO_URL_PLACEHOLDER' },
   { key: 'tiburon', name: 'Tiburon', region: 'North Bay', href: 'TIBURON_URL_PLACEHOLDER' },
   { key: 'larkspur', name: 'Larkspur', region: 'North Bay', href: 'LARKSPUR_URL_PLACEHOLDER' },
@@ -36,7 +36,7 @@ const ServiceAreaMap = () => {
 
   // Group cities by region
   const cityGroups = {
-    'San Francisco': serviceCities.filter(c => c.region === 'San Francisco'),
+    'San Francisco': serviceCities.filter(c => c.region === 'San Francisco'),
     'Peninsula': serviceCities.filter(c => c.region === 'Peninsula'),
     'North Bay': serviceCities.filter(c => c.region === 'North Bay'),
   };
@@ -50,7 +50,7 @@ const ServiceAreaMap = () => {
             Where We Serve
           </h2>
           <p className="text-base md:text-lg" style={{color:'#4A5568'}}>
-            San Francisco, Peninsula, and North Bay (up to San Rafael)
+            San Francisco, Peninsula, and North Bay (up to San Rafael)
           </p>
         </div>
 
@@ -69,7 +69,7 @@ const ServiceAreaMap = () => {
                 {/* Background */}
                 <rect width="400" height="500" fill="#F0F8FF" />
 
-                {/* San Francisco (top area) */}
+                {/* San Francisco (top area) */}
                 <path
                   d="M 120 80 L 180 60 L 240 80 L 260 120 L 240 160 L 200 180 L 160 180 L 120 160 L 100 120 Z"
                   fill={hoveredArea === 'san-francisco' ? '#C0362C' : '#4285F4'}
@@ -85,7 +85,7 @@ const ServiceAreaMap = () => {
                   onClick={() => handleAreaClick(getCityByKey('san-francisco')?.href)}
                   tabIndex={0}
                   role="link"
-                  aria-label="San Francisco - Click to view details"
+                  aria-label="San Francisco - Click to view details"
                   onKeyDown={(e) => {
                     if (e.key === 'Enter') handleAreaClick(getCityByKey('san-francisco')?.href);
                   }}
@@ -113,7 +113,7 @@ const ServiceAreaMap = () => {
                   }}
                 />
 
-                {/* North Bay (San Rafael area - top right) */}
+                {/* North Bay (San Rafael area - top right) */}
                 <path
                   d="M 260 120 L 320 100 L 360 120 L 380 160 L 370 200 L 340 220 L 300 220 L 270 200 L 260 160 Z"
                   fill={hoveredArea === 'san-rafael' ? '#C0362C' : '#FBBC05'}
@@ -129,14 +129,14 @@ const ServiceAreaMap = () => {
                   onClick={() => handleAreaClick(getCityByKey('san-rafael')?.href)}
                   tabIndex={0}
                   role="link"
-                  aria-label="San Rafael - Click to view details"
+                  aria-label="San Rafael - Click to view details"
                   onKeyDown={(e) => {
                     if (e.key === 'Enter') handleAreaClick(getCityByKey('san-rafael')?.href);
                   }}
                 />
 
                 {/* City pins/labels */}
-                {/* San Francisco Pin */}
+                {/* San Francisco Pin */}
                 <g
                   className="cursor-pointer"
                   onMouseEnter={() => setHoveredArea('san-francisco')}
@@ -144,15 +144,15 @@ const ServiceAreaMap = () => {
                   onClick={() => handleAreaClick(getCityByKey('san-francisco')?.href)}
                   tabIndex={0}
                   role="link"
-                  aria-label="San Francisco"
+                  aria-label="San Francisco"
                 >
                   <circle cx="180" cy="120" r="8" fill="#C0362C" stroke="white" strokeWidth="2" />
                   <text x="180" y="150" textAnchor="middle" fontSize="14" fontWeight="bold" fill="#1A3B5D">
-                    San Francisco
+                    San Francisco
                   </text>
                 </g>
 
-                {/* Daly City Pin */}
+                {/* Daly City Pin */}
                 <g
                   className="cursor-pointer"
                   onMouseEnter={() => setHoveredArea('daly-city')}
@@ -160,15 +160,15 @@ const ServiceAreaMap = () => {
                   onClick={() => handleAreaClick(getCityByKey('daly-city')?.href)}
                   tabIndex={0}
                   role="link"
-                  aria-label="Daly City"
+                  aria-label="Daly City"
                 >
                   <circle cx="160" cy="220" r="6" fill="#C0362C" stroke="white" strokeWidth="2" />
                   <text x="160" y="240" textAnchor="middle" fontSize="11" fill="#1A3B5D">
-                    Daly City
+                    Daly City
                   </text>
                 </g>
 
-                {/* San Bruno Pin */}
+                {/* San Bruno Pin */}
                 <g
                   className="cursor-pointer"
                   onMouseEnter={() => setHoveredArea('san-bruno')}
@@ -176,11 +176,11 @@ const ServiceAreaMap = () => {
                   onClick={() => handleAreaClick(getCityByKey('san-bruno')?.href)}
                   tabIndex={0}
                   role="link"
-                  aria-label="San Bruno"
+                  aria-label="San Bruno"
                 >
                   <circle cx="180" cy="300" r="6" fill="#C0362C" stroke="white" strokeWidth="2" />
                   <text x="180" y="320" textAnchor="middle" fontSize="11" fill="#1A3B5D">
-                    San Bruno
+                    San Bruno
                   </text>
                 </g>
 
@@ -216,7 +216,7 @@ const ServiceAreaMap = () => {
                   </text>
                 </g>
 
-                {/* San Rafael Pin */}
+                {/* San Rafael Pin */}
                 <g
                   className="cursor-pointer"
                   onMouseEnter={() => setHoveredArea('san-rafael')}
@@ -224,11 +224,11 @@ const ServiceAreaMap = () => {
                   onClick={() => handleAreaClick(getCityByKey('san-rafael')?.href)}
                   tabIndex={0}
                   role="link"
-                  aria-label="San Rafael"
+                  aria-label="San Rafael"
                 >
                   <circle cx="320" cy="160" r="6" fill="#C0362C" stroke="white" strokeWidth="2" />
                   <text x="320" y="180" textAnchor="middle" fontSize="11" fill="#1A3B5D">
-                    San Rafael
+                    San Rafael
                   </text>
                 </g>
               </svg>

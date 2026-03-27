@@ -21,7 +21,7 @@ const WasherRepairPage = () => {
 
   const faqData = [
     {
-      question: "How much does washer repair cost in San Francisco?",
+      question: "How much does washer repair cost in San Francisco?",
       answer: "Washer repair costs vary by issue. Common repairs like replacing a door latch, drain pump, or water inlet valve typically range from $150-$280. More complex repairs involving the drum, motor, or transmission may cost $300-$500. Our $60 diagnostic fee is fully applied to your repair cost. We provide clear, upfront pricing before starting any work."
     },
     {
@@ -30,11 +30,11 @@ const WasherRepairPage = () => {
     },
     {
       question: "Can you fix both front-load and top-load washers?",
-      answer: "Yes! We repair all washer types including front-load, top-load, high-efficiency (HE), and stackable washer/dryer combos. Our technicians are trained on all major brands and models sold in the Bay Area."
+      answer: "Yes! We repair all washer types including front-load, top-load, high-efficiency (HE), and stackable washer/dryer combos. Our technicians are trained on all major brands and models sold in the Bay Area."
     },
     {
       question: "How quickly can you fix a washer that won't drain or spin?",
-      answer: "We offer same- or next-day and next-day service for urgent washer issues across the Bay Area. Most drainage and spinning problems—like clogged pumps, broken belts, or faulty lid switches—can be diagnosed and repaired within 1-2 hours. Our vans carry common washer parts for faster repairs."
+      answer: "We offer same- or next-day and next-day service for urgent washer issues across the Bay Area. Most drainage and spinning problems—like clogged pumps, broken belts, or faulty lid switches—can be diagnosed and repaired within 1-2 hours. Our vans carry common washer parts for faster repairs."
     },
     {
       question: "What brands of washers do you repair?",
@@ -49,7 +49,7 @@ const WasherRepairPage = () => {
       answer: "Absolutely! We service washers in all living situations—single-family homes, apartments, condos, and townhomes. Our technicians work efficiently in tight laundry spaces and high-rise buildings."
     },
     {
-      question: "How much does washer repair cost in San Francisco?",
+      question: "How much does washer repair cost in San Francisco?",
       answer: "Washer repair typically costs $150–$350 for most common issues — pump replacement, control board, drum bearing. Our $60 diagnostic is applied to the repair total."
     },
     {
@@ -67,7 +67,7 @@ const WasherRepairPage = () => {
     "provider": { "@id": "https://fixitbay.net/#organization" },
     "areaServed": SERVICE_CITIES_SCHEMA,
     "url": "https://fixitbay.net/washer-repair",
-    "description": "Fast washing machine repair across the Bay Area — SF, Peninsula, and Marin. Front-load, top-load, and high-efficiency models. All major brands including Whirlpool, Samsung, LG, GE, Maytag, and Bosch. $60 diagnostic credited toward repair. 180-day warranty."
+    "description": "Fast washing machine repair across the Bay Area — SF, Peninsula, and Marin. Front-load, top-load, and high-efficiency models. All major brands including Whirlpool, Samsung, LG, GE, Maytag, and Bosch. $60 diagnostic credited toward repair. 180-day warranty."
   };
 
   if (isMobile) {
@@ -75,14 +75,14 @@ const WasherRepairPage = () => {
       <MobileServiceLanding
         appliance="Washer"
         pageSlug="washer-repair"
-        pageTitle="Washer Repair Bay Area | Fast Scheduling | FixitBay LLC"
-        metaDescription="Expert washing machine repair across the Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty."
-        heroTitle={<>Expert Washer<br />Repair. Bay Area.</>}
+        pageTitle="Washer Repair Bay Area | Fast Scheduling | FixitBay LLC"
+        metaDescription="Expert washing machine repair across the Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty."
+        heroTitle={<>Expert Washer<br />Repair. Bay Area.</>}
         heroImage="/images/technicians/washer-tech.jpg"
-        heroImageAlt="FixitBay technician next to a washing machine in a Bay Area home"
+        heroImageAlt="FixitBay technician next to a washing machine in a Bay Area home"
         heroImagePosition="65% center"
         techImage="/images/technicians/washer-tech.jpg"
-        techImageAlt="FixitBay technician next to a washing machine in a Bay Area home"
+        techImageAlt="FixitBay technician next to a washing machine in a Bay Area home"
         issues={[
           { icon: '🔄', label: 'Not Spinning' },
           { icon: '💧', label: 'Won\'t Drain' },
@@ -103,8 +103,8 @@ const WasherRepairPage = () => {
           ]
         }}
         relatedLinks={[
-          { href: '/dryer-repair', label: 'Dryer Repair', desc: 'Not heating, loud noises, or won\'t start' },
-          { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining or dishes still dirty' },
+          { href: '/dryer-repair', label: 'Dryer Repair', desc: 'Not heating, loud noises, or won\'t start' },
+          { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining or dishes still dirty' },
         ]}
         schemaData={serviceSchema}
       />
@@ -116,24 +116,24 @@ const WasherRepairPage = () => {
       serviceSchema={serviceSchema}
       appliance="Washer"
       cmsSlug="washer-repair"
-      pageTitle="Washer Repair Bay Area | Fast Scheduling | FixitBay LLC"
-      metaDescription="Expert washing machine repair across the Bay Area — SF, Peninsula & Marin. $60 diagnostic applied to repair. 180-day warranty."
+      pageTitle="Washer Repair Bay Area | Fast Scheduling | FixitBay LLC"
+      metaDescription="Expert washing machine repair across the Bay Area — SF, Peninsula & Marin. $60 diagnostic applied to repair. 180-day warranty."
       heroImage="/images/technicians/washer-tech.jpg"
-      heroImageAlt="FixitBay technician next to a washing machine in a Bay Area home"
+      heroImageAlt="FixitBay technician next to a washing machine in a Bay Area home"
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={{
-        title: "Expert Washer Repair Across the Bay Area",
+        title: "Expert Washer Repair Across the Bay Area",
         paragraphs: [
-          <>When your washing machine won't spin, drain, or start, FixitBay LLC delivers fast, reliable repair service throughout the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most washer issues on the same visit. We charge a <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—transparent pricing from start to finish.</>,
+          <>When your washing machine won't spin, drain, or start, FixitBay LLC delivers fast, reliable repair service throughout the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most washer issues on the same visit. We charge a <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—transparent pricing from start to finish.</>,
           <>Our washer repair process includes a thorough inspection of the motor, drum, drain pump, belts, hoses, door seal, control board, and water inlet valves. We test all cycles, check for leaks, and identify the root cause of issues like failure to spin, drain problems, excessive shaking, or error codes. Whether you have a front-load, top-load, or high-efficiency model, we have the expertise to restore it.</>,
-          <>We service all major washer brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts, allowing us to complete most repairs during the first visit. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From Bay Area apartments to Peninsula homes, we've got your laundry covered.</>,
-          <><strong>Looking for washer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-washer-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Washer Repair</a> page for local details and availability.</>
+          <>We service all major washer brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts, allowing us to complete most repairs during the first visit. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From Bay Area apartments to Peninsula homes, we've got your laundry covered.</>,
+          <><strong>Looking for washer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-washer-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Washer Repair</a> page for local details and availability.</>
         ]
       }}
       repairVsReplace={{
         title: "When to Repair vs. Replace Your Washing Machine",
-        intro: "A washer breakdown doesn't always mean you need a new one. Here's what our Bay Area technicians recommend.",
+        intro: "A washer breakdown doesn't always mean you need a new one. Here's what our Bay Area technicians recommend.",
         items: [
           { action: 'repair', condition: 'Under 8 years old with a single mechanical issue', recommendation: 'Door latches, drain pumps, belts, and water inlet valves are straightforward fixes ($150–$280). These repairs extend your washer\'s life by several years.' },
           { action: 'repair', condition: 'Washer shakes violently or walks across the floor', recommendation: 'This is usually a leveling issue, worn shock absorbers, or an unbalanced drum — all repairable without replacing the whole machine.' },
@@ -142,9 +142,9 @@ const WasherRepairPage = () => {
         ]
       }}
       relatedLinks={[
-        { href: '/dryer-repair', label: 'Dryer Repair', desc: 'Not heating, loud noises, or won\'t start' },
-        { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or dishes still dirty' },
-        { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, ice maker issues, or leaking' },
+        { href: '/dryer-repair', label: 'Dryer Repair', desc: 'Not heating, loud noises, or won\'t start' },
+        { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or dishes still dirty' },
+        { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, ice maker issues, or leaking' },
       ]}
     />
   );

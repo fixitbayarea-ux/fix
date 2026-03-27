@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" 
-          alt="San Francisco Golden Gate Bridge"
+          alt="San Francisco Golden Gate Bridge"
           width="1920" height="1280"
           loading="lazy"
           className="w-full h-full object-cover opacity-20"
@@ -66,9 +66,9 @@ const Hero = () => {
             transition={{ delay: 0.4 }}
             className="text-4xl md:text-hero font-bold text-white leading-tight text-shadow max-w-5xl mx-auto"
           >
-            🚑 <span className="text-gold-gradient">24/7 Emergency</span> Appliance Repair in 
+            🚑 <span className="text-gold-gradient">24/7 Emergency</span> Appliance Repair in 
             <br className="hidden md:block" />
-            <span className="text-accent-gold"> San Francisco & Bay Area</span>
+            <span className="text-accent-gold"> San Francisco & Bay Area</span>
             <br className="hidden md:block" />
             – Fast, Reliable, Affordable!
           </motion.h1>

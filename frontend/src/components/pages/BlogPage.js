@@ -105,7 +105,7 @@ const BlogPage = () => {
     },
     {
       slug: 'ice-maker-troubleshooting',
-      title: 'Ice Maker Not Working? Top 10 Fixes',
+      title: 'Ice Maker Not Working? Top 10 Fixes',
       excerpt: 'No ice, slow ice production, or small/hollow cubes? Troubleshoot water supply, ice maker module, and water filter issues. Most ice maker problems have simple solutions you can fix yourself.',
       content: 'Check water supply first, then filter, then ice maker module. Water filter should be changed every 6 months.',
       date: 'January 5, 2026',
@@ -215,7 +215,7 @@ const BlogPage = () => {
 
   return (
     <>
-      <SEOMetaTags title="Appliance Repair Tips & Expert Advice | FixitBay Blog" description="Expert appliance repair tips, maintenance guides, and troubleshooting advice from FixitBay LLC. Learn how to fix and maintain refrigerators, washers, dryers, dishwashers & more." canonical="https://fixitbay.net/blog" />
+      <SEOMetaTags title="Appliance Repair Tips & Expert Advice | FixitBay Blog" description="Expert appliance repair tips, maintenance guides, and troubleshooting advice from FixitBay LLC. Learn how to fix and maintain refrigerators, washers, dryers, dishwashers & more." canonical="https://fixitbay.net/blog" />
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}
@@ -229,7 +229,7 @@ const BlogPage = () => {
           <div className="max-w-6xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{ background: 'rgba(255, 255, 255, 0.15)' }}>
               <BookOpen className="w-5 h-5 text-white" />
-              <span className="text-white font-semibold">Appliance Repair Tips & Advice</span>
+              <span className="text-white font-semibold">Appliance Repair Tips & Advice</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
               Expert Tips to Keep Your Appliances Running
@@ -418,7 +418,7 @@ const BlogPage = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-3" style={{ color: '#1A3B5D' }}>Always Updated</h3>
                 <p style={{ color: '#4A5568' }}>
-                  Fresh content based on the latest appliance technology and common issues we see in Bay Area homes.
+                  Fresh content based on the latest appliance technology and common issues we see in Bay Area homes.
                 </p>
               </div>
             </div>
@@ -432,7 +432,7 @@ const BlogPage = () => {
               Need Professional Help?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Can't fix it yourself? Our certified technicians are here to help with fast, reliable service in San Francisco Bay Area.
+              Can't fix it yourself? Our certified technicians are here to help with fast, reliable service in San Francisco Bay Area.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

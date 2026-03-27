@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   { q: 'Does washing clothes in cold water really save money?', a: "Yes \u2014 significantly. Up to 90% of washer energy goes to heating water. Modern detergents clean just as effectively in cold water for most loads. Switching to cold water for regular loads saves $60\u2013$100/year. Use hot water only for heavily soiled items or sanitizing loads like baby clothes or towels." },
   { q: 'How often should I clean my dryer vent to save energy?', a: "Clean the lint trap after every single load \u2014 a clogged lint trap increases drying time by 30%. The vent duct (the hose running from your dryer to outside) should be professionally cleaned once a year. A clogged duct can double drying time and waste $100\u2013$200/year in electricity, and creates a serious fire risk." },
   { q: 'Does a dirty refrigerator use more electricity?', a: "Yes. Condenser coils covered in dust force the compressor to work 5\u201310% harder, increasing energy use and shortening the compressor\u2019s life. Clean coils every 6 months \u2014 it takes 10 minutes and saves $50\u2013$100/year. Also check door seals: worn gaskets let cold air escape, forcing the fridge to run constantly." },
-  { q: 'Can a professional tune-up reduce my appliance energy bills?', a: "Absolutely. A professional maintenance visit includes cleaning condenser coils, checking door seals, inspecting the drain pump, and verifying the heating element efficiency. Appliances running at peak efficiency use 10\u201320% less energy than poorly maintained ones. FixitBay LLC\u2019s $60 diagnostic includes an efficiency check for all major appliances." },
+  { q: 'Can a professional tune-up reduce my appliance energy bills?', a: "Absolutely. A professional maintenance visit includes cleaning condenser coils, checking door seals, inspecting the drain pump, and verifying the heating element efficiency. Appliances running at peak efficiency use 10\u201320% less energy than poorly maintained ones. FixitBay LLC\u2019s $60 diagnostic includes an efficiency check for all major appliances." },
 ];
 
 const TOC = [
@@ -102,7 +102,7 @@ const EnergyEfficientAppliances = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to Make Your Appliances More Energy Efficient", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-01", "dateModified": "2026-01-01", "url": "https://fixitbay.net/blog/energy-efficient-appliances" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to Make Your Appliances More Energy Efficient", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-01", "dateModified": "2026-01-01", "url": "https://fixitbay.net/blog/energy-efficient-appliances" } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Energy Efficient Appliances", "item": "https://fixitbay.net/blog/energy-efficient-appliances" }] } }
   ], []);
@@ -111,7 +111,7 @@ const EnergyEfficientAppliances = () => {
   return (
     <>
       <SEOMetaTags
-        title="Make Your Appliances More Energy Efficient | FixitBay LLC"
+        title="Make Your Appliances More Energy Efficient | FixitBay LLC"
         description="Proven tips to reduce appliance energy bills by 10-25%. Refrigerator, washer, dryer, and dishwasher efficiency guide. Save $230-$440/year."
         canonical="https://fixitbay.net/blog/energy-efficient-appliances"
         ogType="article"
@@ -213,7 +213,7 @@ const EnergyEfficientAppliances = () => {
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
-                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
                     <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -287,7 +287,7 @@ const EnergyEfficientAppliances = () => {
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2 }}>Written by</p>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 2 }}>Andrei &mdash; Licensed Appliance Technician</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
                 </div>
               </div>
             </article>
@@ -357,7 +357,7 @@ const EnergyEfficientAppliances = () => {
               {[
                 { title: 'How Long Do Appliances Last? Average Lifespan Guide', href: '/blog/appliance-lifespan' },
                 { title: 'Repair vs. Replace: When to Fix Your Appliance', href: '/blog/when-to-repair-vs-replace' },
-                { title: 'Appliance Repair Cost in San Francisco 2026', href: '/blog/appliance-repair-cost-san-francisco' },
+                { title: 'Appliance Repair Cost in San Francisco 2026', href: '/blog/appliance-repair-cost-san-francisco' },
               ].map((a, i) => (
                 <Link key={i} to={a.href} data-testid={`related-article-${i}`} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.06)', borderRadius: 4, textDecoration: 'none' }}>
                   <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#0D1B2A' }}>{a.title}</span>
@@ -377,7 +377,7 @@ const EnergyEfficientAppliances = () => {
               {[
                 { tag: 'SERVICE', title: 'Appliance Tune-Up & Maintenance', body: 'Professional maintenance adds 3\u20135 years and restores peak efficiency. All major brands.', link: 'View Services', href: '/services' },
                 { tag: 'ARTICLE', title: 'How Long Should Your Appliances Last?', body: 'Lifespan guide for all major appliances with maintenance tips.', link: 'Read Article', href: '/blog/appliance-lifespan' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: card.tag === 'SERVICE' ? '#fff' : 'rgba(255,255,255,0.7)', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
@@ -395,7 +395,7 @@ const EnergyEfficientAppliances = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

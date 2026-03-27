@@ -4,7 +4,7 @@ import CityRepairPage from '../templates/CityRepairPage';
 const DublinRepairPage = () => {
   const cityData = {
     city: "Dublin",
-    pageTitle: "Appliance Repair in Dublin, CA – Fast, Reliable, Affordable!",
+    pageTitle: "Appliance Repair in Dublin, CA – Fast, Reliable, Affordable!",
     metaDescription: "Expert appliance repair in Dublin, CA. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733 or book online now!",
     neighborhoods: [
       "East Dublin",
@@ -36,7 +36,7 @@ const DublinRepairPage = () => {
       },
       {
         question: "Are your technicians licensed to work in Dublin?",
-        answer: "Yes, all our technicians are fully licensed, insured, and bonded to work throughout Dublin and the entire Bay Area. We're a local family-owned business serving the Tri-Valley."
+        answer: "Yes, all our technicians are fully licensed, insured, and bonded to work throughout Dublin and the entire Bay Area. We're a local family-owned business serving the Tri-Valley."
       }
     ]
   };

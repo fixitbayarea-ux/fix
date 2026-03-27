@@ -21,16 +21,16 @@ const ALL_NEIGHBORHOODS = [
 ];
 
 const SERVICES = [
-  { href: '/refrigerator-repair', label: 'Refrigerator Repair' },
-  { href: '/washer-repair', label: 'Washer Repair' },
-  { href: '/dryer-repair', label: 'Dryer Repair' },
-  { href: '/dishwasher-repair', label: 'Dishwasher Repair' },
-  { href: '/oven-repair', label: 'Oven & Range Repair' },
-  { href: '/cooktop-repair', label: 'Cooktop Repair' },
-  { href: '/freezer-repair', label: 'Freezer Repair' },
-  { href: '/ice-maker-repair', label: 'Ice Maker Repair' },
-  { href: '/stove-repair', label: 'Stove Repair' },
-  { href: '/garbage-disposal-repair', label: 'Garbage Disposal' },
+  { href: '/refrigerator-repair', label: 'Refrigerator Repair' },
+  { href: '/washer-repair', label: 'Washer Repair' },
+  { href: '/dryer-repair', label: 'Dryer Repair' },
+  { href: '/dishwasher-repair', label: 'Dishwasher Repair' },
+  { href: '/oven-repair', label: 'Oven & Range Repair' },
+  { href: '/cooktop-repair', label: 'Cooktop Repair' },
+  { href: '/freezer-repair', label: 'Freezer Repair' },
+  { href: '/ice-maker-repair', label: 'Ice Maker Repair' },
+  { href: '/stove-repair', label: 'Stove Repair' },
+  { href: '/garbage-disposal-repair', label: 'Garbage Disposal' },
 ];
 
 function splitCall(str) {
@@ -52,8 +52,8 @@ const NeighborhoodPage = () => {
 
   if (!data) return <div style={{ paddingTop: 100, textAlign: 'center', fontFamily: 'Montserrat,sans-serif' }}>Neighborhood not found.</div>;
 
-  const title = `Appliance Repair in ${data.name} San Francisco | FixitBay LLC`;
-  const desc = `Fast appliance repair in ${data.name}, San Francisco. $60 diagnostic, 180-day warranty. Licensed CA technician #51001. Book online or call (760) 543-5733.`;
+  const title = `Appliance Repair in ${data.name} San Francisco | FixitBay LLC`;
+  const desc = `Fast appliance repair in ${data.name}, San Francisco. $60 diagnostic, 180-day warranty. Licensed CA technician #51001. Book online or call (760) 543-5733.`;
   const canonical = `https://fixitbay.net/san-francisco/${data.slug}-appliance-repair`;
   const faqItems = data.quickFaq || data.faq || [];
   const calls = data.topCalls || data.commonProblems || [];
@@ -66,9 +66,9 @@ const NeighborhoodPage = () => {
       data: {
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
-        name: 'FixitBay LLC',
+        name: 'FixitBay LLC',
         telephone: '+17605435733',
-        areaServed: { '@type': 'Place', name: `${data.name}, San Francisco, CA` },
+        areaServed: { '@type': 'Place', name: `${data.name}, San Francisco, CA` },
         aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '94' },
       },
     },
@@ -87,8 +87,8 @@ const NeighborhoodPage = () => {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://fixitbay.net/' },
-          { '@type': 'ListItem', position: 2, name: 'San Francisco', item: 'https://fixitbay.net/san-francisco-appliance-repair' },
-          { '@type': 'ListItem', position: 3, name: `${data.name} Appliance Repair`, item: `https://fixitbay.net/san-francisco/${data.slug}-appliance-repair` },
+          { '@type': 'ListItem', position: 2, name: 'San Francisco', item: 'https://fixitbay.net/san-francisco-appliance-repair' },
+          { '@type': 'ListItem', position: 3, name: `${data.name} Appliance Repair`, item: `https://fixitbay.net/san-francisco/${data.slug}-appliance-repair` },
         ],
       },
     },
@@ -224,12 +224,12 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
             <div className="nh-breadcrumb" data-testid="nh-breadcrumb">
               <a href="/">Home</a>
               <span className="nh-bc-arrow">&rarr;</span>
-              <a href="/san-francisco-appliance-repair">San Francisco</a>
+              <a href="/san-francisco-appliance-repair">San Francisco</a>
               <span className="nh-bc-arrow">&rarr;</span>
               <span>{data.name}</span>
             </div>
             <div className="nh-eyebrow" style={{ marginBottom: 12 }}>SAN FRANCISCO &middot; {data.name.toUpperCase()}</div>
-            <h1 data-testid="nh-h1">Appliance Repair in<br />{data.name}</h1>
+            <h1 data-testid="nh-h1">Appliance Repair in<br />{data.name}</h1>
             <p className="nh-hero-sub">Licensed fast, reliable service for every street in {data.name}. $60 diagnostic, 180-day warranty.</p>
             <div className="nh-hero-ctas">
               <a href="/book" className="nh-btn-primary" data-testid="nh-hero-book-btn">Book Repair Online</a>
@@ -251,8 +251,8 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
         {/* ─── 2. LOCAL INTRO ─── */}
         <section className="nh-intro" data-testid="nh-intro">
           <div className="nh-intro-inner">
-            <p>{data.name} is one of San Francisco's most distinctive neighborhoods. FixitBay LLC technicians serve {data.name} residents with fast appliance repair &mdash; refrigerators, washers, dryers, dishwashers, ovens and more.</p>
-            <p>FixitBay LLC provides licensed, fast appliance repair throughout {data.name}. Our technicians arrive with diagnostic tools and commonly needed parts to resolve most issues in a single visit. We serve every street in {data.name} &mdash; homes, condos, and apartments &mdash; covering all major brands and appliance types.</p>
+            <p>{data.name} is one of San Francisco's most distinctive neighborhoods. FixitBay LLC technicians serve {data.name} residents with fast appliance repair &mdash; refrigerators, washers, dryers, dishwashers, ovens and more.</p>
+            <p>FixitBay LLC provides licensed, fast appliance repair throughout {data.name}. Our technicians arrive with diagnostic tools and commonly needed parts to resolve most issues in a single visit. We serve every street in {data.name} &mdash; homes, condos, and apartments &mdash; covering all major brands and appliance types.</p>
             <p>{data.localIssue}</p>
           </div>
         </section>
@@ -385,22 +385,22 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
             {otherNeighborhoods.map(n => (
               <a key={n.slug} href={`/san-francisco/${n.slug}-appliance-repair`} className="nh-other-pill">{n.name}</a>
             ))}
-            <a href="/san-francisco-appliance-repair" className="nh-other-pill nh-other-pill-all">All San Francisco &rarr;</a>
+            <a href="/san-francisco-appliance-repair" className="nh-other-pill nh-other-pill-all">All San Francisco &rarr;</a>
           </div>
         </section>
 
         {/* ─── 11. FOOTER ─── */}
         <footer className="nh-footer" data-testid="nh-footer">
           <div className="nh-footer-links">
-            <a href="/san-francisco-appliance-repair">San Francisco</a>
+            <a href="/san-francisco-appliance-repair">San Francisco</a>
             <a href="/services">All Services</a>
             <a href="/brands">Brands</a>
             <a href="/service-areas">Service Areas</a>
           </div>
           <div className="nh-footer-row">
-            <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
+            <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
             <a href="tel:7605435733">(760) 543-5733</a>
-            <span>&copy; 2026 FixitBay LLC</span>
+            <span>&copy; 2026 FixitBay LLC</span>
           </div>
         </footer>
       </div>

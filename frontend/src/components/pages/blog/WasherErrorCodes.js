@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   { q: 'How do I clear a UE error code on my washer?', a: "UE means unbalanced load. Open the door, redistribute the clothes evenly, and restart the spin cycle. If washing a single heavy item (comforter, bath mat), add 1\u20132 towels to balance the load. Also check that the washer is level on the floor \u2014 use a bubble level on top." },
   { q: 'What causes an LE or E6 error on LG washers?', a: "LE is a motor lock error. First, unplug for 2 minutes to reset the control board. Then open the door and try to manually rotate the drum \u2014 if it won't turn, clothing may be jammed between the drum and tub. If the drum turns freely but the code returns, the motor or control board needs professional repair." },
   { q: 'Why does my washer keep showing a door error (dE / DC)?', a: "Door errors mean the washer can't confirm the door is fully closed and locked. Try opening and firmly closing the door until you hear a click. Check for clothing caught in the door seal. If the latch is visibly damaged or the error persists after a reset, the door lock assembly needs replacement \u2014 about a $100\u2013$200 repair." },
-  { q: 'How much does washer repair cost in San Francisco Bay Area?', a: "Washer repairs in the Bay Area typically cost $150\u2013$350 depending on the error and part needed. Drain pump replacement: $150\u2013$250. Control board: $200\u2013$350. Motor repair: $200\u2013$300. FixitBay LLC charges $60 for diagnostics, credited toward your repair." },
+  { q: 'How much does washer repair cost in San Francisco Bay Area?', a: "Washer repairs in the Bay Area typically cost $150\u2013$350 depending on the error and part needed. Drain pump replacement: $150\u2013$250. Control board: $200\u2013$350. Motor repair: $200\u2013$300. FixitBay LLC charges $60 for diagnostics, credited toward your repair." },
   { q: 'Can I fix washer error codes myself or do I need a technician?', a: "It depends on the code. DIY-friendly: UE (rebalance load), OE with clogged filter, dE from clothing caught in door, IE with closed water valves. Always call a pro for: LE/motor errors, persistent OE after filter clean, F codes, and any error after multiple failed resets \u2014 these involve electrical components and internal parts." },
 ];
 
@@ -94,7 +94,7 @@ const WasherErrorCodes = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Common Washer Error Codes & What They Mean", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-02-10", "dateModified": "2026-02-10", "url": "https://fixitbay.net/blog/washer-error-codes" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Common Washer Error Codes & What They Mean", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-02-10", "dateModified": "2026-02-10", "url": "https://fixitbay.net/blog/washer-error-codes" } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Washer Error Codes", "item": "https://fixitbay.net/blog/washer-error-codes" } ] } }
   ], []);
@@ -103,7 +103,7 @@ const WasherErrorCodes = () => {
   return (
     <>
       <SEOMetaTags
-        title="Washer Error Codes: OE, UE, LE, dE, IE Explained | FixitBay LLC"
+        title="Washer Error Codes: OE, UE, LE, dE, IE Explained | FixitBay LLC"
         description="What does OE, UE, LE or dE mean on your Samsung, LG, Whirlpool or GE washer? Full error code guide with DIY fixes and when to call a pro."
         canonical="https://fixitbay.net/blog/washer-error-codes"
         ogType="article"
@@ -219,7 +219,7 @@ const WasherErrorCodes = () => {
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
-                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
                     <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -292,7 +292,7 @@ const WasherErrorCodes = () => {
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2 }}>Written by</p>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 2 }}>Andrei — Licensed Appliance Technician</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
                 </div>
               </div>
             </article>
@@ -334,7 +334,7 @@ const WasherErrorCodes = () => {
                   { text: 'Why Is My Dryer Taking So Long?', href: '/blog/dryer-taking-too-long' },
                   { text: 'Repair vs Replace Your Appliance', href: '/blog/when-to-repair-vs-replace' },
                   { text: '5 Reasons Refrigerator Isn\'t Cooling', href: '/blog/refrigerator-not-cooling' },
-                  { text: 'How Much Does Washer Repair Cost?', href: '/blog' },
+                  { text: 'How Much Does Washer Repair Cost?', href: '/blog' },
                 ].map((link, i) => (
                   <Link key={i} to={link.href} className="sidebar-link" style={{ display: 'flex', gap: 8, padding: '8px 0', borderBottom: '1px solid rgba(0,0,0,0.05)', fontFamily: F, fontWeight: 500, fontSize: 13, color: '#4A5568', textDecoration: 'none', transition: 'color 0.2s' }}>
                     <span style={{ color: '#FF5722', fontWeight: 700, flexShrink: 0 }}>&rarr;</span>{link.text}
@@ -372,9 +372,9 @@ const WasherErrorCodes = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Washer Repair in Bay Area', body: 'Expert washer repair for all brands. $60 diagnostic applied to repair.', link: 'View Service', href: '/washer-repair' },
-                { tag: 'ARTICLE', title: 'Why Is My Dryer Taking So Long to Dry?', body: '7 causes with DIY fixes and when to call a Bay Area technician.', link: 'Read Article', href: '/blog/dryer-taking-too-long' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'Washer Repair in Bay Area', body: 'Expert washer repair for all brands. $60 diagnostic applied to repair.', link: 'View Service', href: '/washer-repair' },
+                { tag: 'ARTICLE', title: 'Why Is My Dryer Taking So Long to Dry?', body: '7 causes with DIY fixes and when to call a Bay Area technician.', link: 'Read Article', href: '/blog/dryer-taking-too-long' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: card.tag === 'SERVICE' ? '#fff' : 'rgba(255,255,255,0.7)', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
@@ -392,7 +392,7 @@ const WasherErrorCodes = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

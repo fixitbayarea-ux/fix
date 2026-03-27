@@ -1,5 +1,5 @@
 /**
- * Central brand data for FixitBay LLC.
+ * Central brand data for FixitBay LLC.
  * All brand logos, links, specialties in one place.
  */
 

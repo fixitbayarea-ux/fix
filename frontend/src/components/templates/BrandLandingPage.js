@@ -29,26 +29,26 @@ const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', te
 
 const SERVICE_AREAS = {
   sf: { label: 'SAN FRANCISCO', cities: [
-    { href: '/san-francisco-appliance-repair', label: 'San Francisco' },
-    { href: '/daly-city-appliance-repair', label: 'Daly City' },
-    { href: '/south-san-francisco-appliance-repair', label: 'South San Francisco' },
+    { href: '/san-francisco-appliance-repair', label: 'San Francisco' },
+    { href: '/daly-city-appliance-repair', label: 'Daly City' },
+    { href: '/south-san-francisco-appliance-repair', label: 'South San Francisco' },
     { href: '/colma-appliance-repair', label: 'Colma' },
     { href: '/brisbane-appliance-repair', label: 'Brisbane' },
   ]},
   peninsula: { label: 'PENINSULA', cities: [
-    { href: '/san-bruno-appliance-repair', label: 'San Bruno' },
+    { href: '/san-bruno-appliance-repair', label: 'San Bruno' },
     { href: '/millbrae-appliance-repair', label: 'Millbrae' },
     { href: '/pacifica-appliance-repair', label: 'Pacifica' },
-    { href: '/san-mateo-appliance-repair', label: 'San Mateo' },
+    { href: '/san-mateo-appliance-repair', label: 'San Mateo' },
     { href: '/burlingame-appliance-repair', label: 'Burlingame' },
   ]},
   northBay: { label: 'NORTH BAY', cities: [
     { href: '/sausalito-appliance-repair', label: 'Sausalito' },
-    { href: '/mill-valley-appliance-repair', label: 'Mill Valley' },
-    { href: '/san-rafael-appliance-repair', label: 'San Rafael' },
+    { href: '/mill-valley-appliance-repair', label: 'Mill Valley' },
+    { href: '/san-rafael-appliance-repair', label: 'San Rafael' },
     { href: '/novato-appliance-repair', label: 'Novato' },
     { href: '/tiburon-appliance-repair', label: 'Tiburon' },
-    { href: '/corte-madera-appliance-repair', label: 'Corte Madera' },
+    { href: '/corte-madera-appliance-repair', label: 'Corte Madera' },
   ]},
 };
 
@@ -120,7 +120,7 @@ const BrandLandingPage = ({ brand }) => {
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://fixitbay.net/' },
           { '@type': 'ListItem', position: 2, name: 'Brands', item: 'https://fixitbay.net/brands' },
-          { '@type': 'ListItem', position: 3, name: `${brand.name} Appliance Repair`, item: `https://fixitbay.net/${slug}-appliance-repair` },
+          { '@type': 'ListItem', position: 3, name: `${brand.name} Appliance Repair`, item: `https://fixitbay.net/${slug}-appliance-repair` },
         ],
       },
     },
@@ -129,9 +129,9 @@ const BrandLandingPage = ({ brand }) => {
       data: {
         "@context": "https://schema.org",
         "@type": "Service",
-        "serviceType": `${brand.name} Appliance Repair`,
-        "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC" },
-        "areaServed": "San Francisco Bay Area"
+        "serviceType": `${brand.name} Appliance Repair`,
+        "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC" },
+        "areaServed": "San Francisco Bay Area"
       }
     },
     {
@@ -224,7 +224,7 @@ const BrandLandingPage = ({ brand }) => {
             <div style={{ ...EYE, textAlign: 'center', color: PC.white45 }}>{brand.name.toUpperCase()} APPLIANCE REPAIR &mdash; BAY AREA</div>
 
             <h1 className="brand-h1" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.15, color: PC.white, maxWidth: 720, margin: '0 auto 16px' }}>
-              {brand.h1} in San Francisco &amp; Bay Area
+              {brand.h1} in San Francisco &amp; Bay Area
             </h1>
 
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: PC.white60, maxWidth: 540, margin: '0 auto 4px' }}>
@@ -365,8 +365,8 @@ const BrandLandingPage = ({ brand }) => {
         <section data-testid="service-areas-section" style={{ background: PC.navy, padding: '48px 20px' }}>
           <div style={{ maxWidth: 900, margin: '0 auto' }}>
             <div style={{ ...EYE, color: PC.white45 }}>Where We Serve</div>
-            <h2 className="brand-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.white, marginBottom: 6 }}>{brand.name} Repair Across the Bay Area</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: PC.white45, marginBottom: 28 }}>We repair {brand.name} appliances across San Francisco, the Peninsula, and Marin County.</p>
+            <h2 className="brand-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.white, marginBottom: 6 }}>{brand.name} Repair Across the Bay Area</h2>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: PC.white45, marginBottom: 28 }}>We repair {brand.name} appliances across San Francisco, the Peninsula, and Marin County.</p>
             <div className="brand-grid-3">
               {Object.values(brand.serviceAreas || SERVICE_AREAS).map((region, ri) => (
                 <div key={ri} style={{ padding: 20, background: PC.white08, border: `1px solid ${PC.white10}`, borderRadius: PC.r }}>
@@ -385,8 +385,8 @@ const BrandLandingPage = ({ brand }) => {
         {/* 7. WHY FIXITBAY */}
         <section data-testid="why-section" style={{ background: PC.cream, padding: '48px 20px' }}>
           <div style={{ maxWidth: 880, margin: '0 auto' }}>
-            <div style={{ ...EYE, color: PC.accent }}>Why Choose FixitBay LLC</div>
-            <h2 className="brand-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.textDark, marginBottom: 28 }}>Why Choose FixitBay LLC for {brand.name} Repair</h2>
+            <div style={{ ...EYE, color: PC.accent }}>Why Choose FixitBay LLC</div>
+            <h2 className="brand-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.textDark, marginBottom: 28 }}>Why Choose FixitBay LLC for {brand.name} Repair</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16, maxWidth: 880, margin: '0 auto' }}>
               {WHY_CARDS.map((w, i) => (
                 <div key={i} className="why-card" style={{ background: PC.white, borderRadius: PC.r, padding: '24px 20px', borderLeft: `3px solid ${PC.accent}`, borderTop: '1px solid rgba(255,87,34,0.15)', borderRight: '1px solid rgba(255,87,34,0.15)', borderBottom: '1px solid rgba(255,87,34,0.15)', display: 'flex', alignItems: 'flex-start', gap: 20 }}>
@@ -408,7 +408,7 @@ const BrandLandingPage = ({ brand }) => {
               <div style={{ textAlign: 'center', marginBottom: 32 }}>
                 <div style={{ ...EYE, color: PC.white45, textAlign: 'center' }}>What Customers Say</div>
                 <h2 className="brand-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.white }}>What {brand.name} Owners Say</h2>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: PC.white45, marginTop: 8 }}>Real customers, real {brand.name} repairs across the Bay Area</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: PC.white45, marginTop: 8 }}>Real customers, real {brand.name} repairs across the Bay Area</p>
               </div>
               <div className="brand-grid-3">
                 {brand.reviews.map((r, i) => (
@@ -436,7 +436,7 @@ const BrandLandingPage = ({ brand }) => {
         <section data-testid="faq-section" style={{ background: PC.cream, padding: '48px 20px' }}>
           <div style={{ maxWidth: 720, margin: '0 auto' }}>
             <div style={{ ...EYE, color: PC.accent }}>FAQ</div>
-            <h2 className="brand-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.textDark, marginBottom: 24 }}>{brand.name} Appliance Repair FAQ</h2>
+            <h2 className="brand-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.textDark, marginBottom: 24 }}>{brand.name} Appliance Repair FAQ</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               {brand.faq.map((faq, i) => {
                 const isOpen = openFaq === i;
@@ -480,12 +480,12 @@ const BrandLandingPage = ({ brand }) => {
             <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
               <img src="/navbar-logo-new.png" alt="FixitBay" style={{ height: 36, width: 36, borderRadius: '50%', objectFit: 'cover' }} loading="lazy" />
               <div>
-                <span style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: PC.white, display: 'block' }}>FixitBay LLC</span>
-                <span style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: PC.white45 }}>Appliance Repair &amp; Maintenance</span>
+                <span style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: PC.white, display: 'block' }}>FixitBay LLC</span>
+                <span style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: PC.white45 }}>Appliance Repair &amp; Maintenance</span>
               </div>
             </div>
             <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 18, color: PC.accent, textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: PC.white45 }}>&copy; 2026 FixitBay LLC</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: PC.white45 }}>&copy; 2026 FixitBay LLC</span>
           </div>
         </footer>
 

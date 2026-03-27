@@ -4,15 +4,15 @@ import ApplianceRepairPage from '../templates/ApplianceRepairPage';
 const BuiltInRefrigeratorRepairPage = () => {
   const applianceData = {
     appliance: "Built-In Refrigerator",
-    pageTitle: "Built-In Refrigerator Repair – Premium Kitchen Appliance Service",
-    metaDescription: "Expert built-in refrigerator repair in the Bay Area. Premium kitchen appliance specialists. Licensed technicians, 180-day warranty. Call (760) 543-5733!",
+    pageTitle: "Built-In Refrigerator Repair – Premium Kitchen Appliance Service",
+    metaDescription: "Expert built-in refrigerator repair in the Bay Area. Premium kitchen appliance specialists. Licensed technicians, 180-day warranty. Call (760) 543-5733!",
     commonProblems: [
       {
         title: "Temperature Control Issues",
         description: "Built-in units require precise temperature control. We repair advanced climate systems, multi-zone controls, and electronic temperature management."
       },
       {
-        title: "Ice Maker and Water Dispenser Problems",
+        title: "Ice Maker and Water Dispenser Problems",
         description: "Integrated ice and water systems can malfunction. We repair dispensers, filters, pumps, and ice production components."
       },
       {
@@ -33,8 +33,8 @@ const BuiltInRefrigeratorRepairPage = () => {
       }
     ],
     localAreas: [
-      "Palo Alto", "Los Altos", "Saratoga", "Los Gatos", "Atherton", "Menlo Park",
-      "Hillsborough", "Burlingame", "San Mateo", "Foster City", "Redwood City", "Cupertino"
+      "Palo Alto", "Los Altos", "Saratoga", "Los Gatos", "Atherton", "Menlo Park",
+      "Hillsborough", "Burlingame", "San Mateo", "Foster City", "Redwood City", "Cupertino"
     ],
     faqData: [
       {

@@ -33,7 +33,7 @@ const BlogPostPage = () => {
       document.title = post.meta_title || post.title;
     }
     return () => {
-      document.title = 'Appliance Repair San Francisco & Bay Area | FixitBay LLC';
+      document.title = 'Appliance Repair San Francisco & Bay Area | FixitBay LLC';
     };
   }, [post]);
 
@@ -53,8 +53,8 @@ const BlogPostPage = () => {
     "headline": post.title,
     "description": post.excerpt || post.meta_description,
     "image": img.src,
-    "author": { "@type": "Organization", "name": "FixitBay LLC", "@id": "https://fixitbay.net/#organization" },
-    "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/logo.png" } },
+    "author": { "@type": "Organization", "name": "FixitBay LLC", "@id": "https://fixitbay.net/#organization" },
+    "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/logo.png" } },
     "datePublished": post.publish_date || post.created_at,
     "dateModified": post.updated_at || post.created_at,
     "mainEntityOfPage": `https://fixitbay.net/blog/${post.slug}`
@@ -62,7 +62,7 @@ const BlogPostPage = () => {
 
   return (
     <div className="min-h-screen" style={{ paddingTop: '64px', background: '#F7FAFC' }}>
-      <SEOMetaTags title={post.title + ' | FixitBay LLC Blog'} description={post.meta_description || post.excerpt} canonical={`https://fixitbay.net/blog/${post.slug}`} />
+      <SEOMetaTags title={post.title + ' | FixitBay LLC Blog'} description={post.meta_description || post.excerpt} canonical={`https://fixitbay.net/blog/${post.slug}`} />
 
       {/* ─── Back button + Breadcrumb bar ─── */}
       <div className="bg-white border-b shadow-sm">
@@ -112,7 +112,7 @@ const BlogPostPage = () => {
           </h1>
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <span className="flex items-center gap-1"><Clock className="w-4 h-4" />{post.publish_date || 'Recently'}</span>
-            <span>By {post.author || 'FixitBay LLC Team'}</span>
+            <span>By {post.author || 'FixitBay LLC Team'}</span>
           </div>
         </header>
 
@@ -135,8 +135,8 @@ const BlogPostPage = () => {
 
         {/* CTA */}
         <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 text-center mb-10">
-          <h2 className="text-2xl font-bold mb-3" style={{ color: '#1A3B5D' }}>Need Appliance Repair?</h2>
-          <p className="text-gray-600 mb-6">Fast scheduling available across the Bay Area. $60 diagnostic applied to repair.</p>
+          <h2 className="text-2xl font-bold mb-3" style={{ color: '#1A3B5D' }}>Need Appliance Repair?</h2>
+          <p className="text-gray-600 mb-6">Fast scheduling available across the Bay Area. $60 diagnostic applied to repair.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="/book?go=1"
               className="px-6 py-3 font-bold rounded-lg text-white" style={{ backgroundColor: '#C0362C' }}>

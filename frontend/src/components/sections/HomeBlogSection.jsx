@@ -72,7 +72,7 @@ const HomeBlogSection = () => (
       <div style={{ textAlign: 'center', marginBottom: 40 }}>
         <div style={{ fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 }}>FROM OUR BLOG</div>
         <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#0D1B2A', marginBottom: 8 }}>Tips, Guides &amp; Local Insights</h2>
-        <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568' }}>For Bay Area homeowners who want to keep their appliances running longer.</p>
+        <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568' }}>For Bay Area homeowners who want to keep their appliances running longer.</p>
       </div>
       <div className="home-blog-grid">
         {POSTS.map(post => <BlogCard key={post.slug} post={post} />)}

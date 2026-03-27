@@ -66,8 +66,8 @@ const FAQ_ITEMS = [
   { q: 'What does a gas leak smell like?', a: "Natural gas itself is odorless. Gas companies add mercaptan, a chemical that smells like rotten eggs or sulfur, as a safety warning. If you detect this smell\u2014even faintly\u2014take it seriously. A brief whiff when lighting a burner can be normal; a persistent or strong smell is an emergency." },
   { q: 'Can a gas stove leak without the burners being on?', a: "Yes. Gas can leak from the flex line connecting the stove to the wall, from a faulty regulator, or from a worn gas valve even when all burners are off. If you smell gas but no burners are on, this is more serious\u2014evacuate and call your gas company immediately." },
   { q: 'How quickly is a gas leak dangerous?', a: "Very quickly. Natural gas concentrations of 5-15% in air are explosive. In an enclosed kitchen, dangerous levels can build within minutes. Never delay evacuation to investigate. Get everyone out first, then call 911 from outside the building." },
-  { q: 'Can I repair a gas line myself to save money?', a: "No\u2014never. Gas line work must be performed by a licensed technician. In California, improper gas line repairs can void your homeowner\u2019s insurance and are illegal without proper licensing. FixitBay LLC technicians are licensed CA technicians (License #51001) trained in gas appliance safety." },
-  { q: 'How much does a gas stove safety inspection cost?', a: "FixitBay LLC\u2019s standard diagnostic fee is $60, which is applied toward any repair if you proceed. A gas safety inspection includes checking all connections, testing for leaks with electronic detection equipment, and inspecting valves, regulators, and igniters. Appointments are available Mon\u2013Sat." },
+  { q: 'Can I repair a gas line myself to save money?', a: "No\u2014never. Gas line work must be performed by a licensed technician. In California, improper gas line repairs can void your homeowner\u2019s insurance and are illegal without proper licensing. FixitBay LLC technicians are licensed CA technicians (License #51001) trained in gas appliance safety." },
+  { q: 'How much does a gas stove safety inspection cost?', a: "FixitBay LLC\u2019s standard diagnostic fee is $60, which is applied toward any repair if you proceed. A gas safety inspection includes checking all connections, testing for leaks with electronic detection equipment, and inspecting valves, regulators, and igniters. Appointments are available Mon\u2013Sat." },
 ];
 
 const CheckRow = ({ label, text }) => (
@@ -89,7 +89,7 @@ const GasSmellFromStove = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Smell Gas From Your Stove? Do This Immediately", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-03-01", "dateModified": "2026-03-01", "url": "https://fixitbay.net/blog/gas-smell-from-stove" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Smell Gas From Your Stove? Do This Immediately", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-03-01", "dateModified": "2026-03-01", "url": "https://fixitbay.net/blog/gas-smell-from-stove" } },
     { id: 'howto-schema', data: { "@context": "https://schema.org", "@type": "HowTo", "name": "What to Do If You Smell Gas From Your Stove", "description": "Emergency protocol for gas leaks from kitchen appliances", "step": EMERGENCY_STEPS.map((s, i) => ({ "@type": "HowToStep", "position": i + 1, "name": s.replace(/^DO NOT /, '').substring(0, 40), "text": s })) } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Gas Smell From Stove", "item": "https://fixitbay.net/blog/gas-smell-from-stove" }] } }
@@ -99,7 +99,7 @@ const GasSmellFromStove = () => {
   return (
     <>
       <SEOMetaTags
-        title="Smell Gas From Your Stove? Do This Immediately | FixitBay LLC"
+        title="Smell Gas From Your Stove? Do This Immediately | FixitBay LLC"
         description="Smell gas from your stove or range? Immediate safety steps: evacuate, call 911, what NOT to do. Common gas leak causes and prevention tips."
         canonical="https://fixitbay.net/blog/gas-smell-from-stove"
         ogType="article"
@@ -211,7 +211,7 @@ const GasSmellFromStove = () => {
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
-                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
                     <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -308,7 +308,7 @@ const GasSmellFromStove = () => {
                   </div>
                 ))}
                 <div style={{ background: '#C0392B', fontFamily: F, fontWeight: 800, fontSize: 14, padding: 14, borderRadius: 4, color: '#fff', textAlign: 'center', marginTop: 14 }}>CALL 911 &mdash; GAS EMERGENCY</div>
-                <a href="tel:+17605435733" className="phone-cta" style={{ display: 'block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: 12, borderRadius: 4, textAlign: 'center', textDecoration: 'none', marginTop: 8, transition: 'background 0.2s' }}>Call FixitBay LLC: (760) 543-5733</a>
+                <a href="tel:+17605435733" className="phone-cta" style={{ display: 'block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: 12, borderRadius: 4, textAlign: 'center', textDecoration: 'none', marginTop: 8, transition: 'background 0.2s' }}>Call FixitBay LLC: (760) 543-5733</a>
               </div>
 
               {/* Widget 2: Book Inspection */}
@@ -369,9 +369,9 @@ const GasSmellFromStove = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Oven & Range Repair', body: 'Gas and electric oven repair. Licensed technicians, fast scheduling, 180-day warranty.', link: 'View Service', href: '/oven-repair' },
+                { tag: 'SERVICE', title: 'Oven & Range Repair', body: 'Gas and electric oven repair. Licensed technicians, fast scheduling, 180-day warranty.', link: 'View Service', href: '/oven-repair' },
                 { tag: 'ARTICLE', title: 'Oven Temperature Calibration Guide', body: 'Is your oven running hot or cold? Step-by-step calibration instructions.', link: 'Read Article', href: '/blog/oven-temperature-calibration' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: card.tag === 'SERVICE' ? '#fff' : 'rgba(255,255,255,0.7)', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
@@ -389,7 +389,7 @@ const GasSmellFromStove = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

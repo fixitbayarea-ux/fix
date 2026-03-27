@@ -53,8 +53,8 @@ const TermsPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Terms of Service | FixitBay LLC Appliance Repair"
-        description="Terms of Service for FixitBay LLC — appointment scheduling, diagnostic fee, payment terms, 180-day warranty, and liability for appliance repair in San Francisco Bay Area."
+        title="Terms of Service | FixitBay LLC Appliance Repair"
+        description="Terms of Service for FixitBay LLC — appointment scheduling, diagnostic fee, payment terms, 180-day warranty, and liability for appliance repair in San Francisco Bay Area."
         canonical="https://fixitbay.net/terms"
         noindex={true}
       />
@@ -78,7 +78,7 @@ const TermsPage = () => {
               <span style={{ color: 'rgba(255,255,255,0.8)' }}>Terms of Service</span>
             </nav>
             <h1 className="tos-h1" data-testid="terms-h1" style={{ fontFamily: F, fontWeight: 800, color: '#fff', marginBottom: 12 }}>Terms of Service</h1>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.7)', marginBottom: 4 }}>FixitBay LLC Appliance Repair &amp; Maintenance</p>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.7)', marginBottom: 4 }}>FixitBay LLC Appliance Repair &amp; Maintenance</p>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.45)' }}>Effective date: March 26, 2026 &middot; Last updated: March 26, 2026</p>
           </div>
         </section>
@@ -89,7 +89,7 @@ const TermsPage = () => {
             {/* Main content */}
             <div style={{ background: '#fff', borderRadius: 4, padding: '40px 36px', border: '1px solid rgba(255,87,34,0.1)' }}>
               <p style={P}>
-                These Terms of Service ("Terms") govern your use of the services provided by <span style={B}>FixitBay LLC</span> ("FixitBay LLC," "we," "us," or "our"), a California limited liability company. By scheduling a repair, contacting us, or using our website, you agree to be bound by these Terms.
+                These Terms of Service ("Terms") govern your use of the services provided by <span style={B}>FixitBay LLC</span> ("FixitBay LLC," "we," "us," or "our"), a California limited liability company. By scheduling a repair, contacting us, or using our website, you agree to be bound by these Terms.
               </p>
 
               <div style={{ height: 1, background: 'rgba(0,0,0,0.07)', margin: '32px 0' }} />
@@ -98,7 +98,7 @@ const TermsPage = () => {
               <div style={secStyle}>
                 <SecH num="01" title="Services Provided" id="section-1" />
                 <p style={P}>
-                  FixitBay LLC provides residential appliance repair and maintenance services in the San Francisco Bay Area, including San Francisco, the Peninsula (Daly City to Millbrae), and Marin County. Our services include, but are not limited to, repair and maintenance of:
+                  FixitBay LLC provides residential appliance repair and maintenance services in the San Francisco Bay Area, including San Francisco, the Peninsula (Daly City to Millbrae), and Marin County. Our services include, but are not limited to, repair and maintenance of:
                 </p>
                 <div style={{ marginTop: 12 }}>
                   <Li>Refrigerators and freezers</Li>
@@ -109,7 +109,7 @@ const TermsPage = () => {
                   <Li>Garbage disposals</Li>
                 </div>
                 <p style={{ ...P, marginTop: 16 }}>
-                  All services are performed by licensed and insured technicians. FixitBay LLC holds California BHGS License #51001.
+                  All services are performed by licensed and insured technicians. FixitBay LLC holds California BHGS License #51001.
                 </p>
               </div>
 
@@ -163,7 +163,7 @@ const TermsPage = () => {
               <div style={secStyle}>
                 <SecH num="05" title="Warranty" id="section-5" />
                 <p style={P}>
-                  All repairs performed by FixitBay LLC are covered by a <span style={B}>180-day warranty</span> on both parts and labor, beginning on the date the repair is completed.
+                  All repairs performed by FixitBay LLC are covered by a <span style={B}>180-day warranty</span> on both parts and labor, beginning on the date the repair is completed.
                 </p>
                 <p style={SUB}>Coverage</p>
                 <div style={{ marginTop: 4 }}>
@@ -186,10 +186,10 @@ const TermsPage = () => {
               <div style={secStyle}>
                 <SecH num="06" title="Limitation of Liability" id="section-6" />
                 <p style={P}>
-                  To the fullest extent permitted by California law, FixitBay LLC's total liability for any claim arising out of or related to our services shall not exceed the amount paid by you for the specific repair giving rise to the claim.
+                  To the fullest extent permitted by California law, FixitBay LLC's total liability for any claim arising out of or related to our services shall not exceed the amount paid by you for the specific repair giving rise to the claim.
                 </p>
                 <p style={{ ...P, marginTop: 12 }}>
-                  FixitBay LLC shall not be liable for any indirect, incidental, consequential, or punitive damages, including but not limited to loss of use, lost profits, food spoilage, water damage from pre-existing conditions, or damage arising from circumstances beyond our reasonable control.
+                  FixitBay LLC shall not be liable for any indirect, incidental, consequential, or punitive damages, including but not limited to loss of use, lost profits, food spoilage, water damage from pre-existing conditions, or damage arising from circumstances beyond our reasonable control.
                 </p>
                 <p style={{ ...P, marginTop: 12 }}>
                   Nothing in these Terms limits liability that cannot be excluded or limited under applicable law, including liability for fraud or gross negligence.
@@ -200,7 +200,7 @@ const TermsPage = () => {
               <div style={secStyle}>
                 <SecH num="07" title="Governing Law" id="section-7" />
                 <p style={P}>
-                  These Terms shall be governed by and construed in accordance with the laws of the <span style={B}>State of California</span>, without regard to conflict of law principles. Any dispute arising under these Terms shall be resolved in the state or federal courts located in San Francisco County, California.
+                  These Terms shall be governed by and construed in accordance with the laws of the <span style={B}>State of California</span>, without regard to conflict of law principles. Any dispute arising under these Terms shall be resolved in the state or federal courts located in San Francisco County, California.
                 </p>
               </div>
 
@@ -211,9 +211,9 @@ const TermsPage = () => {
                   If you have questions, concerns, or a dispute regarding our services or these Terms, please contact us directly. We are committed to resolving issues promptly and fairly.
                 </p>
                 <div style={{ background: '#F8F5F0', borderRadius: 4, border: '1px solid rgba(255,87,34,0.12)', padding: '20px 24px', marginTop: 16 }}>
-                  <p style={{ ...P, marginBottom: 8 }}><span style={B}>FixitBay LLC</span></p>
+                  <p style={{ ...P, marginBottom: 8 }}><span style={B}>FixitBay LLC</span></p>
                   <p style={{ ...P, marginBottom: 4 }}>1549 Franklin Street, Unit A</p>
-                  <p style={{ ...P, marginBottom: 4 }}>San Francisco, CA 94109</p>
+                  <p style={{ ...P, marginBottom: 4 }}>San Francisco, CA 94109</p>
                   <p style={{ ...P, marginBottom: 4 }}>Phone: <a href="tel:+17605435733" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>(760) 543-5733</a></p>
                   <p style={P}>Email: <a href="mailto:info@fixitbay.net" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>info@fixitbay.net</a></p>
                 </div>
@@ -249,7 +249,7 @@ const TermsPage = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:7605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
       </div>

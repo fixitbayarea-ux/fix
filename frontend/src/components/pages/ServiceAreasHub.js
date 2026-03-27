@@ -18,17 +18,17 @@ const C = { navy: '#0D1B2A', accent: '#FF5722', text: '#4A5568', bg: '#F8F5F0', 
 
 const REGIONS = [
   {
-    name: 'San Francisco',
+    name: 'San Francisco',
     desc: 'All neighborhoods — fast scheduling available citywide.',
-    cities: [{ name: 'San Francisco', slug: 'san-francisco' }],
+    cities: [{ name: 'San Francisco', slug: 'san-francisco' }],
   },
   {
     name: 'Peninsula',
-    desc: 'Coastal and suburban communities south of San Francisco.',
+    desc: 'Coastal and suburban communities south of San Francisco.',
     cities: [
-      { name: 'Daly City', slug: 'daly-city' },
-      { name: 'South San Francisco', slug: 'south-san-francisco' },
-      { name: 'San Bruno', slug: 'san-bruno' },
+      { name: 'Daly City', slug: 'daly-city' },
+      { name: 'South San Francisco', slug: 'south-san-francisco' },
+      { name: 'San Bruno', slug: 'san-bruno' },
       { name: 'Pacifica', slug: 'pacifica' },
       { name: 'Millbrae', slug: 'millbrae' },
       { name: 'Colma', slug: 'colma' },
@@ -37,58 +37,58 @@ const REGIONS = [
     ],
   },
   {
-    name: 'North Bay / Marin County',
-    desc: 'Marin County towns — from Sausalito to Novato.',
+    name: 'North Bay / Marin County',
+    desc: 'Marin County towns — from Sausalito to Novato.',
     marinHub: true,
     cities: [
-      { name: 'San Rafael', slug: 'san-rafael' },
+      { name: 'San Rafael', slug: 'san-rafael' },
       { name: 'Novato', slug: 'novato' },
-      { name: 'Mill Valley', slug: 'mill-valley' },
+      { name: 'Mill Valley', slug: 'mill-valley' },
       { name: 'Sausalito', slug: 'sausalito' },
       { name: 'Belvedere', slug: 'belvedere' },
       { name: 'Tiburon', slug: 'tiburon' },
-      { name: 'Corte Madera', slug: 'corte-madera' },
-      { name: 'San Quentin', slug: 'san-quentin' },
+      { name: 'Corte Madera', slug: 'corte-madera' },
+      { name: 'San Quentin', slug: 'san-quentin' },
       { name: 'Larkspur', slug: 'larkspur' },
       { name: 'Greenbrae', slug: 'greenbrae' },
       { name: 'Ross', slug: 'ross' },
       { name: 'Fairfax', slug: 'fairfax' },
-      { name: 'San Anselmo', slug: 'san-anselmo' },
+      { name: 'San Anselmo', slug: 'san-anselmo' },
     ],
   },
 ];
 
 const FAQ_DATA = [
-  { question: 'Do you offer fast scheduling in my city?', answer: 'Yes. We serve most Bay Area cities with same or next-day service, subject to availability. Our service area covers San Francisco, the entire Peninsula (from Daly City to San Bruno), and North Bay communities (from San Rafael to Sausalito). Call (760) 543-5733 or book online to see today\'s available time windows for your specific city.' },
+  { question: 'Do you offer fast scheduling in my city?', answer: 'Yes. We serve most Bay Area cities with same or next-day service, subject to availability. Our service area covers San Francisco, the entire Peninsula (from Daly City to San Bruno), and North Bay communities (from San Rafael to Sausalito). Call (760) 543-5733 or book online to see today\'s available time windows for your specific city.' },
   { question: 'Is the $60 diagnostic fee applied to the repair?', answer: 'Yes. If you proceed with the repair, the $60 diagnostic is fully credited toward your final invoice. This means you only pay for the repair itself—the diagnostic visit is essentially free when you move forward with the work.' },
-  { question: 'What cities do you serve in the Bay Area?', answer: 'We provide appliance repair service in 22 cities across three regions: San Francisco (including all neighborhoods), Peninsula cities (Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara), and North Bay communities (San Rafael, Novato, Mill Valley, Sausalito, Belvedere, Tiburon, Corte Madera, San Quentin, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo).' },
-  { question: 'What warranty do you provide?', answer: 'Every repair includes our comprehensive 180-day warranty on both parts and labor. This warranty is valid across all cities we serve—whether you\'re in San Francisco, Peninsula, or North Bay. If the same issue returns within 180 days, we\'ll come back at no additional charge to make it right.' },
+  { question: 'What cities do you serve in the Bay Area?', answer: 'We provide appliance repair service in 22 cities across three regions: San Francisco (including all neighborhoods), Peninsula cities (Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara), and North Bay communities (San Rafael, Novato, Mill Valley, Sausalito, Belvedere, Tiburon, Corte Madera, San Quentin, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo).' },
+  { question: 'What warranty do you provide?', answer: 'Every repair includes our comprehensive 180-day warranty on both parts and labor. This warranty is valid across all cities we serve—whether you\'re in San Francisco, Peninsula, or North Bay. If the same issue returns within 180 days, we\'ll come back at no additional charge to make it right.' },
   { question: 'Which brands do you service?', answer: 'We work on all major appliance brands including Whirlpool, GE, KitchenAid, LG, Samsung, Bosch, Frigidaire, Maytag, Thermador, Viking, Sub-Zero, Miele, and more. Our technicians carry common parts for most brands, allowing us to complete repairs during the first visit in any city we serve.' },
   { question: 'Do you repair gas and electric appliances?', answer: 'Yes. Our licensed technicians service both gas and electric appliances including ovens, ranges, cooktops, and dryers. We follow strict safety protocols for gas appliance repairs and perform leak testing to ensure your home\'s safety across all service areas.' },
-  { question: 'Are you licensed and insured?', answer: 'Yes. FixitBay LLC is fully licensed and insured. Our technicians follow safety best practices in every home, condo, and apartment we service across San Francisco, Peninsula, and North Bay. We carry liability insurance to protect you and your property.' },
-  { question: 'Do you service apartments and condos?', answer: 'Absolutely! We service single-family homes, apartments, condos, townhomes, and multi-family buildings across all our service areas. Our technicians are experienced working in high-rise buildings, gated communities, and managed properties throughout the Bay Area.' },
+  { question: 'Are you licensed and insured?', answer: 'Yes. FixitBay LLC is fully licensed and insured. Our technicians follow safety best practices in every home, condo, and apartment we service across San Francisco, Peninsula, and North Bay. We carry liability insurance to protect you and your property.' },
+  { question: 'Do you service apartments and condos?', answer: 'Absolutely! We service single-family homes, apartments, condos, townhomes, and multi-family buildings across all our service areas. Our technicians are experienced working in high-rise buildings, gated communities, and managed properties throughout the Bay Area.' },
 ];
 
 const REPAIRS = [
-  { name: 'Refrigerator Repair', path: '/refrigerator-repair', image: refrigeratorImg },
-  { name: 'Washer Repair', path: '/washer-repair', image: washerImg },
-  { name: 'Dryer Repair', path: '/dryer-repair', image: dryerImg },
-  { name: 'Dishwasher Repair', path: '/dishwasher-repair', image: dishwasherImg },
-  { name: 'Oven Repair', path: '/oven-repair', image: ovenImg },
-  { name: 'Ice Maker Repair', path: '/ice-maker-repair', image: iceMakerImg },
+  { name: 'Refrigerator Repair', path: '/refrigerator-repair', image: refrigeratorImg },
+  { name: 'Washer Repair', path: '/washer-repair', image: washerImg },
+  { name: 'Dryer Repair', path: '/dryer-repair', image: dryerImg },
+  { name: 'Dishwasher Repair', path: '/dishwasher-repair', image: dishwasherImg },
+  { name: 'Oven Repair', path: '/oven-repair', image: ovenImg },
+  { name: 'Ice Maker Repair', path: '/ice-maker-repair', image: iceMakerImg },
 ];
 
 const ServiceAreasHub = () => (
   <div className="service-areas-page" style={{ fontFamily: F, background: C.bg }}>
     <SEOMetaTags
-      title="Appliance Repair Service Areas | San Francisco Bay Area | FixitBay LLC"
-      description="FixitBay LLC serves 22 cities across San Francisco, the Peninsula, and Marin County. Find your service area and book fast appliance repair. Call (760) 543-5733."
+      title="Appliance Repair Service Areas | San Francisco Bay Area | FixitBay LLC"
+      description="FixitBay LLC serves 22 cities across San Francisco, the Peninsula, and Marin County. Find your service area and book fast appliance repair. Call (760) 543-5733."
       canonical="https://fixitbay.net/service-areas"
     />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-      "@context": "https://schema.org", "@type": "Service", "serviceType": "Appliance Repair Service Areas",
-      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": "(760) 543-5733" },
-      "areaServed": [{ "@type": "City", "name": "San Francisco" }, { "@type": "City", "name": "Daly City" }, { "@type": "City", "name": "San Rafael" }, { "@type": "City", "name": "Mill Valley" }]
+      "@context": "https://schema.org", "@type": "Service", "serviceType": "Appliance Repair Service Areas",
+      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": "(760) 543-5733" },
+      "areaServed": [{ "@type": "City", "name": "San Francisco" }, { "@type": "City", "name": "Daly City" }, { "@type": "City", "name": "San Rafael" }, { "@type": "City", "name": "Mill Valley" }]
     })}} />
 
     {/* ═══ HERO ═══ */}
@@ -105,10 +105,10 @@ const ServiceAreasHub = () => (
           <span style={{ width: 36, height: 2, background: C.accent, display: 'inline-block' }} />
         </div>
         <h1 className="sa-h1" style={{ fontWeight: 800, fontSize: 46, color: C.white, lineHeight: 1.12, maxWidth: 720, margin: '0 auto 16px' }}>
-          Appliance Repair Service Areas &mdash; San Francisco Bay Area
+          Appliance Repair Service Areas &mdash; San Francisco Bay Area
         </h1>
         <p style={{ fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', maxWidth: 600, margin: '0 auto 28px' }}>
-          22 cities across San Francisco, the Peninsula, and Marin County. Same- or next-day &amp; next-day service available.
+          22 cities across San Francisco, the Peninsula, and Marin County. Same- or next-day &amp; next-day service available.
         </p>
         <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
           <a href="/book?go=1" data-testid="sa-hero-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 30px', borderRadius: 3, background: C.accent, color: C.white, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none' }} aria-label="BOOK REPAIR ONLINE (opens in new tab)">BOOK REPAIR ONLINE</a>
@@ -130,10 +130,10 @@ const ServiceAreasHub = () => (
         <div style={{ fontWeight: 700, fontSize: 11, color: C.accent, textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: 10 }}>COVERAGE</div>
         <h2 style={{ fontWeight: 800, fontSize: 36, lineHeight: 1.15, color: C.navy, marginBottom: 20 }}>Areas We Serve</h2>
         <p style={{ fontSize: 14, fontWeight: 400, lineHeight: 1.8, color: C.text, marginBottom: 16 }}>
-          FixitBay LLC provides professional in-home appliance repair across <strong>22 cities</strong> in San Francisco, the Peninsula, and North Bay communities. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, and more — bringing expertise and quality parts directly to your home, condo, or apartment.
+          FixitBay LLC provides professional in-home appliance repair across <strong>22 cities</strong> in San Francisco, the Peninsula, and North Bay communities. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, and more — bringing expertise and quality parts directly to your home, condo, or apartment.
         </p>
         <p style={{ fontSize: 14, fontWeight: 400, lineHeight: 1.8, color: C.text, marginBottom: 16 }}>
-          We offer same- or next-day and next-day appointments throughout the Bay Area. Whether you're in a Mission District apartment, a Pacifica coastal home, or a Mill Valley hillside residence, our team responds quickly with fully-stocked service vehicles. Every repair is backed by our comprehensive <strong>180-day warranty</strong> on parts and labor.
+          We offer same- or next-day and next-day appointments throughout the Bay Area. Whether you're in a Mission District apartment, a Pacifica coastal home, or a Mill Valley hillside residence, our team responds quickly with fully-stocked service vehicles. Every repair is backed by our comprehensive <strong>180-day warranty</strong> on parts and labor.
         </p>
       </div>
     </section>
@@ -151,7 +151,7 @@ const ServiceAreasHub = () => (
               <p style={{ fontSize: 12, color: C.text, marginBottom: 16 }}>{region.desc}</p>
               {region.marinHub && (
                 <a href="/marin-county-appliance-repair" data-testid="marin-hub-link" style={{ display: 'block', padding: '10px 16px', marginBottom: 12, background: 'rgba(255,87,34,0.06)', border: '1px solid rgba(255,87,34,0.20)', borderRadius: 3, fontWeight: 700, fontSize: 13, color: C.accent, textDecoration: 'none', textAlign: 'center' }}>
-                  All Marin County Repair &rarr;
+                  All Marin County Repair &rarr;
                 </a>
               )}
               <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -191,7 +191,7 @@ const ServiceAreasHub = () => (
               onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(0,0,0,0.08)'}
             >
               <div style={{ height: 140, overflow: 'hidden' }}>
-                <img src={svc.image} alt={`${svc.name} in San Francisco Bay Area`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" width="400" height="140" />
+                <img src={svc.image} alt={`${svc.name} in San Francisco Bay Area`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" width="400" height="140" />
               </div>
               <div style={{ padding: '14px 16px', textAlign: 'center' }}>
                 <div style={{ fontWeight: 700, fontSize: 14, color: C.navy }}>{svc.name} &rarr;</div>
@@ -212,7 +212,7 @@ const ServiceAreasHub = () => (
     </section>
 
     {/* ═══ CTA ═══ */}
-    <CTABanner heading="Need Appliance Repair Today?" testId="sa-cta-banner" />
+    <CTABanner heading="Need Appliance Repair Today?" testId="sa-cta-banner" />
 
     {/* ═══ FAQ ═══ */}
     <FAQAccordion faqs={FAQ_DATA} background={C.white} testIdPrefix="sa-faq" />

@@ -59,7 +59,7 @@ const FAQ = [
   { q: 'Do you use genuine brand parts?', a: "We always use OEM (Original Equipment Manufacturer) parts or high-quality equivalents. For premium brands, we source genuine parts from authorized distributors to maintain your appliance's quality and warranty." },
   { q: 'Can you repair older appliance models?', a: 'Yes! We service both current and older appliance models. Our technicians have experience with vintage appliances and can often source discontinued parts through our extensive supplier network.' },
   { q: 'What warranty do you provide on brand repairs?', a: "All repairs include our standard 180-day parts and labor warranty, regardless of brand. If the same issue recurs within that period, we'll fix it at no additional charge." },
-  { q: 'Which brands do you repair most often in San Francisco?', a: 'Our most common repairs in SF are Bosch dishwashers, Samsung refrigerators, LG washers, Sub-Zero refrigerators in Pacific Heights, and Wolf ranges in luxury homes. We carry parts for all these brands on our vans.' },
+  { q: 'Which brands do you repair most often in San Francisco?', a: 'Our most common repairs in SF are Bosch dishwashers, Samsung refrigerators, LG washers, Sub-Zero refrigerators in Pacific Heights, and Wolf ranges in luxury homes. We carry parts for all these brands on our vans.' },
   { q: 'Do you repair both old and new appliance models?', a: 'Yes \u2014 we repair appliances from the 1990s through the latest smart models. Older units often need harder-to-find parts; we source them through our supplier network. New smart appliances require diagnostic tools we carry for brands like Samsung, LG, and Bosch.' },
   { q: 'How long does a typical brand-name appliance repair take?', a: 'Most repairs are completed in a single visit: 1\u20132 hours for standard brands like Whirlpool or GE, 2\u20134 hours for premium brands like Sub-Zero or Wolf that require careful disassembly. We always call ahead if additional parts need to be ordered.' },
   { q: 'Is it better to repair or replace my appliance?', a: "A good rule of thumb: if the repair cost is less than 50% of the replacement cost, repair is usually worth it. Premium brands like Sub-Zero, Wolf, and Miele are almost always worth repairing \u2014 they're built to last 20+ years with proper maintenance. Standard brands like Whirlpool or GE are worth repairing if they're under 10 years old. Our technician will give you an honest recommendation after the $60 diagnostic \u2014 no pressure." },
@@ -108,16 +108,16 @@ const BrandsPage = () => {
 
   /* Meta + Canonical via useEffect DOM injection */
   useEffect(() => {
-    document.title = 'Appliance Brand Repair in Bay Area | FixitBay LLC \u2014 Bosch, Samsung, Sub-Zero & More';
+    document.title = 'Appliance Brand Repair in Bay Area | FixitBay LLC \u2014 Bosch, Samsung, Sub-Zero & More';
     const setMeta = (n, c, prop) => {
       const attr = prop ? 'property' : 'name';
       let el = document.querySelector(`meta[${attr}="${n}"]`);
       if (!el) { el = document.createElement('meta'); el.setAttribute(attr, n); document.head.appendChild(el); }
       el.setAttribute('content', c);
     };
-    setMeta('description', 'FixitBay LLC repairs all major appliance brands in San Francisco Bay Area \u2014 Bosch, Samsung, LG, Sub-Zero, Wolf, Thermador & more. Fast scheduling, OEM parts, 180-day warranty. Call (760) 543-5733.');
-    setMeta('og:title', 'Appliance Brand Repair in Bay Area | FixitBay LLC', true);
-    setMeta('og:description', 'We repair every major appliance brand in the Bay Area with OEM parts and 180-day warranty.', true);
+    setMeta('description', 'FixitBay LLC repairs all major appliance brands in San Francisco Bay Area \u2014 Bosch, Samsung, LG, Sub-Zero, Wolf, Thermador & more. Fast scheduling, OEM parts, 180-day warranty. Call (760) 543-5733.');
+    setMeta('og:title', 'Appliance Brand Repair in Bay Area | FixitBay LLC', true);
+    setMeta('og:description', 'We repair every major appliance brand in the Bay Area with OEM parts and 180-day warranty.', true);
     setMeta('og:url', 'https://fixitbay.net/brands', true);
     let canon = document.querySelector('link[rel="canonical"]');
     if (!canon) { canon = document.createElement('link'); canon.rel = 'canonical'; document.head.appendChild(canon); }
@@ -130,7 +130,7 @@ const BrandsPage = () => {
       { id: 'brands-breadcrumb', data: {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://fixitbay.net/"},{"@type":"ListItem","position":2,"name":"Brands We Repair","item":"https://fixitbay.net/brands"}]} },
       { id: 'brands-itemlist', data: {"@context":"https://schema.org","@type":"ItemList","name":"Appliance Brands We Repair","itemListElement":[{"@type":"ListItem","position":1,"name":"Sub-Zero","url":"https://fixitbay.net/sub-zero-appliance-repair"},{"@type":"ListItem","position":2,"name":"Wolf","url":"https://fixitbay.net/wolf-appliance-repair"},{"@type":"ListItem","position":3,"name":"Thermador","url":"https://fixitbay.net/thermador-appliance-repair"},{"@type":"ListItem","position":4,"name":"Miele","url":"https://fixitbay.net/miele-appliance-repair"},{"@type":"ListItem","position":5,"name":"Viking","url":"https://fixitbay.net/viking-appliance-repair"},{"@type":"ListItem","position":6,"name":"Whirlpool","url":"https://fixitbay.net/whirlpool-appliance-repair"},{"@type":"ListItem","position":7,"name":"LG","url":"https://fixitbay.net/lg-appliance-repair"},{"@type":"ListItem","position":8,"name":"Samsung","url":"https://fixitbay.net/samsung-appliance-repair"},{"@type":"ListItem","position":9,"name":"GE","url":"https://fixitbay.net/ge-appliance-repair"},{"@type":"ListItem","position":10,"name":"Bosch","url":"https://fixitbay.net/bosch-appliance-repair"},{"@type":"ListItem","position":11,"name":"KitchenAid","url":"https://fixitbay.net/kitchenaid-appliance-repair"},{"@type":"ListItem","position":12,"name":"Maytag","url":"https://fixitbay.net/maytag-appliance-repair"},{"@type":"ListItem","position":13,"name":"Frigidaire","url":"https://fixitbay.net/frigidaire-appliance-repair"},{"@type":"ListItem","position":14,"name":"Kenmore","url":"https://fixitbay.net/kenmore-appliance-repair"}]} },
       { id: 'brands-faq', data: {"@context":"https://schema.org","@type":"FAQPage","mainEntity":FAQ.map(f=>({"@type":"Question","name":f.q,"acceptedAnswer":{"@type":"Answer","text":f.a}}))} },
-      { id: 'brands-localbusiness', data: {"@context":"https://schema.org","@type":"LocalBusiness","name":"FixitBay LLC","description":"Appliance repair service in San Francisco Bay Area specializing in all major brands including Bosch, Samsung, Sub-Zero, Wolf, Whirlpool, LG, GE, Miele, Viking and Thermador.","telephone":"+17605435733","url":"https://fixitbay.com","areaServed":"San Francisco Bay Area","priceRange":"$$","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"94"}} },
+      { id: 'brands-localbusiness', data: {"@context":"https://schema.org","@type":"LocalBusiness","name":"FixitBay LLC","description":"Appliance repair service in San Francisco Bay Area specializing in all major brands including Bosch, Samsung, Sub-Zero, Wolf, Whirlpool, LG, GE, Miele, Viking and Thermador.","telephone":"+17605435733","url":"https://fixitbay.com","areaServed":"San Francisco Bay Area","priceRange":"$$","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"94"}} },
     ];
     schemas.forEach(({ id, data }) => {
       let el = document.getElementById(id);
@@ -143,13 +143,13 @@ const BrandsPage = () => {
   const SERVICES = [
     { name:'Refrigerator', img:refrigeratorImg, issues:'Not cooling, water leaks, ice maker issues', link:'/refrigerator-repair' },
     { name:'Freezer', img:freezerImg, issues:'Not freezing, frost buildup, temperature issues', link:'/freezer-repair' },
-    { name:'Ice Maker', img:iceMakerImg, issues:'Not making ice, water leaking, jammed', link:'/ice-maker-repair' },
+    { name:'Ice Maker', img:iceMakerImg, issues:'Not making ice, water leaking, jammed', link:'/ice-maker-repair' },
     { name:'Dishwasher', img:dishwasherImg, issues:'Not draining, leaking, won\'t start', link:'/dishwasher-repair' },
     { name:'Oven', img:ovenImg, issues:'Not heating, temperature issues', link:'/oven-repair' },
     { name:'Stove & Cooktop', img:cooktopImg, issues:'Burners not working, igniter problems', link:'/stove-repair' },
     { name:'Washer', img:washerImg, issues:'Not spinning, leaking, error codes', link:'/washer-repair' },
     { name:'Dryer', img:dryerImg, issues:'Not heating, won\'t start, noisy', link:'/dryer-repair' },
-    { name:'Wine Cooler', img:wineCoolerImg, issues:'Temperature off, compressor noise, not cooling', link:'/wine-cooler-repair' },
+    { name:'Wine Cooler', img:wineCoolerImg, issues:'Temperature off, compressor noise, not cooling', link:'/wine-cooler-repair' },
   ];
   const carouselVisible = isMobile ? 1 : 3;
   const maxIdx = Math.max(0, SERVICES.length - carouselVisible);
@@ -229,7 +229,7 @@ const BrandsPage = () => {
       <section data-testid="brands-hero" style={{ background: "linear-gradient(rgba(13,27,42,0.97),rgba(13,27,42,0.97)), url('/background_new2.png')", backgroundSize: 'cover', backgroundPosition: 'center 60%', padding: '80px 20px 60px', color: PC.white }}>
         <div style={{ maxWidth: 780, margin: '0 auto', textAlign: 'center' }}>
           <div style={EYE}>APPLIANCE BRAND REPAIR — BAY AREA</div>
-          <h1 className="brands-hero-h1" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.15, margin: '16px 0 0', color: PC.white }}>We Repair Every Major Appliance Brand in the Bay Area</h1>
+          <h1 className="brands-hero-h1" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.15, margin: '16px 0 0', color: PC.white }}>We Repair Every Major Appliance Brand in the Bay Area</h1>
           <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: PC.white60, marginTop: 14 }}>From everyday Whirlpool to luxury Sub-Zero — our certified technicians service every brand with OEM parts and 180-day warranty.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: 8, flexWrap: 'wrap', marginTop: 20, marginBottom: 24 }}>
             {[
@@ -332,7 +332,7 @@ const BrandsPage = () => {
                 {['Whirlpool', 'GE', 'Samsung', 'LG', 'Maytag', 'Frigidaire', 'Kenmore'].map(b => <span key={b} style={{ fontFamily: F, fontWeight: 600, fontSize: 11, color: PC.accent, background: PC.accentBg, padding: '3px 10px', borderRadius: 3 }}>{b}</span>)}
               </div>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: PC.white70, lineHeight: 1.7, marginBottom: 10 }}>
-                <a href="/whirlpool-appliance-repair" style={{ color: PC.accent }}>Whirlpool</a>, <a href="/ge-appliance-repair" style={{ color: PC.accent }}>GE</a>, <a href="/samsung-appliance-repair" style={{ color: PC.accent }}>Samsung</a>, <a href="/lg-appliance-repair" style={{ color: PC.accent }}>LG</a>, <a href="/maytag-appliance-repair" style={{ color: PC.accent }}>Maytag</a>, <a href="/frigidaire-appliance-repair" style={{ color: PC.accent }}>Frigidaire</a>, and <a href="/kenmore-appliance-repair" style={{ color: PC.accent }}>Kenmore</a> are the workhorses of most Bay Area homes. Parts are widely available, and most repairs are straightforward. These brands typically last 10-15 years with proper maintenance.
+                <a href="/whirlpool-appliance-repair" style={{ color: PC.accent }}>Whirlpool</a>, <a href="/ge-appliance-repair" style={{ color: PC.accent }}>GE</a>, <a href="/samsung-appliance-repair" style={{ color: PC.accent }}>Samsung</a>, <a href="/lg-appliance-repair" style={{ color: PC.accent }}>LG</a>, <a href="/maytag-appliance-repair" style={{ color: PC.accent }}>Maytag</a>, <a href="/frigidaire-appliance-repair" style={{ color: PC.accent }}>Frigidaire</a>, and <a href="/kenmore-appliance-repair" style={{ color: PC.accent }}>Kenmore</a> are the workhorses of most Bay Area homes. Parts are widely available, and most repairs are straightforward. These brands typically last 10-15 years with proper maintenance.
               </p>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: PC.white70, lineHeight: 1.7 }}>
                 <strong style={{ color: PC.white }}>When to use a general service page:</strong> If you need a standard <a href="/refrigerator-repair" style={{ color: PC.accent }}>refrigerator</a>, <a href="/washer-repair" style={{ color: PC.accent }}>washer</a>, or <a href="/oven-repair" style={{ color: PC.accent }}>oven</a> repair and your brand is not premium, start with the appliance type page for faster booking.
@@ -353,13 +353,13 @@ const BrandsPage = () => {
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 36 }}>
             <div style={{ ...EYE, color: PC.accent }}>OUR ADVANTAGE</div>
-            <h2 className="brands-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.textDark }}>Why Choose FixitBay LLC for Brand-Name Repairs</h2>
+            <h2 className="brands-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.textDark }}>Why Choose FixitBay LLC for Brand-Name Repairs</h2>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
             {[
               { icon: <Wrench size={22} />, title: 'Brand-Specific Expertise', text: "Our technicians receive ongoing training on the latest models from all major manufacturers. We understand the unique engineering of each brand, from Samsung's smart features to Sub-Zero's dual refrigeration systems." },
               { icon: <Shield size={22} />, title: 'Genuine OEM Parts', text: 'We use Original Equipment Manufacturer parts or high-quality equivalents. For premium brands like Wolf and Thermador, we source directly from authorized distributors to maintain quality standards.' },
-              { icon: <Clock size={22} />, title: 'Fast Scheduling', text: 'We offer same- and next-day appointments throughout San Francisco Bay Area. Our vans are stocked with common parts for faster repairs on major brands.' },
+              { icon: <Clock size={22} />, title: 'Fast Scheduling', text: 'We offer same- and next-day appointments throughout San Francisco Bay Area. Our vans are stocked with common parts for faster repairs on major brands.' },
               { icon: <Award size={22} />, title: '180-Day Warranty', text: 'Every repair includes our comprehensive 180-day warranty on parts and labor, regardless of brand. We stand behind our work with confidence.' },
             ].map((f, i) => (
               <div key={i} style={{ background: PC.white, border: '1px solid rgba(255,87,34,0.20)', borderRadius: PC.r, padding: 24 }}>
@@ -377,14 +377,14 @@ const BrandsPage = () => {
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 36 }}>
             <div style={EYE}>VERIFIED REVIEWS</div>
-            <h2 className="brands-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.white }}>What Bay Area Customers Say About Brand Repairs</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: PC.white60, marginTop: 10 }}>Real experiences from customers across San Francisco Bay Area</p>
+            <h2 className="brands-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.white }}>What Bay Area Customers Say About Brand Repairs</h2>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: PC.white60, marginTop: 10 }}>Real experiences from customers across San Francisco Bay Area</p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 16 }}>
             {[
-              { badge: 'BOSCH', text: 'Our Bosch dishwasher stopped draining. FixitBay LLC diagnosed it in 30 minutes and had it running the same day. Genuinely impressive service.', name: 'Michael R.', loc: 'Pacific Heights, SF', init: 'M' },
-              { badge: 'SUB-ZERO', text: 'Had our Sub-Zero refrigerator compressor fail. The technician knew exactly what to do \u2014 OEM parts, clean work, and a 180-day warranty. Worth every penny.', name: 'Jennifer L.', loc: 'Marin County', init: 'J' },
-              { badge: 'SAMSUNG', text: 'Samsung washer error codes drove us crazy for weeks. FixitBay LLC fixed the control board same day. Cheaper than I expected and fully warranted.', name: 'David K.', loc: 'Palo Alto', init: 'D' },
+              { badge: 'BOSCH', text: 'Our Bosch dishwasher stopped draining. FixitBay LLC diagnosed it in 30 minutes and had it running the same day. Genuinely impressive service.', name: 'Michael R.', loc: 'Pacific Heights, SF', init: 'M' },
+              { badge: 'SUB-ZERO', text: 'Had our Sub-Zero refrigerator compressor fail. The technician knew exactly what to do \u2014 OEM parts, clean work, and a 180-day warranty. Worth every penny.', name: 'Jennifer L.', loc: 'Marin County', init: 'J' },
+              { badge: 'SAMSUNG', text: 'Samsung washer error codes drove us crazy for weeks. FixitBay LLC fixed the control board same day. Cheaper than I expected and fully warranted.', name: 'David K.', loc: 'Palo Alto', init: 'D' },
               { badge: 'WOLF', text: 'Wolf range igniter replacement in a Victorian flat \u2014 tight space, no problem. Technician came prepared with the part. Professional from start to finish.', name: 'Sarah M.', loc: 'Noe Valley, SF', init: 'S' },
             ].map((r, i) => (
               <div key={i} style={{ background: PC.navyMid, border: `1px solid ${PC.white08}`, borderRadius: PC.r, padding: 20, position: 'relative' }}>
@@ -472,7 +472,7 @@ const BrandsPage = () => {
           </div>
           <p style={{ marginTop: 24, fontFamily: F, fontSize: 13 }}>
             <a href="/services" style={{ color: PC.accent }}>All repair services</a>{' \u00b7 '}
-            <a href="/san-francisco-appliance-repair" style={{ color: PC.accent }}>San Francisco appliance repair</a>{' \u00b7 '}
+            <a href="/san-francisco-appliance-repair" style={{ color: PC.accent }}>San Francisco appliance repair</a>{' \u00b7 '}
             <a href="/commercial-appliance-repair" style={{ color: PC.accent }}>Commercial repair</a>{' \u00b7 '}
             <a href="/service-areas" style={{ color: PC.accent }}>Service areas</a>{' \u00b7 '}
             <a href="/freezer-repair" style={{ color: PC.accent }}>Freezer repair</a>
@@ -498,12 +498,12 @@ const BrandsPage = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <img src="/navbar-logo-new.png" alt="FixitBay" style={{ height: 36, width: 36, borderRadius: '50%', objectFit: 'cover' }} loading="lazy" />
             <div>
-              <span style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: PC.white, display: 'block' }}>FixitBay LLC</span>
-              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: PC.white45 }}>Appliance Repair &amp; Maintenance</span>
+              <span style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: PC.white, display: 'block' }}>FixitBay LLC</span>
+              <span style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: PC.white45 }}>Appliance Repair &amp; Maintenance</span>
             </div>
           </div>
           <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 18, color: PC.accent, textDecoration: 'none' }}>(760) 543-5733</a>
-          <span style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: PC.white45 }}>&copy; 2026 FixitBay LLC</span>
+          <span style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: PC.white45 }}>&copy; 2026 FixitBay LLC</span>
         </div>
       </footer>
 

@@ -10,17 +10,17 @@ import BlogCTA from './BlogCTA';
 
 const DishwasherMaintenance = () => {
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to Maintain Your Dishwasher for Longer Life", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-18", "dateModified": "2026-01-18", "url": "https://fixitbay.net/blog/dishwasher-maintenance" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to Maintain Your Dishwasher for Longer Life", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-18", "dateModified": "2026-01-18", "url": "https://fixitbay.net/blog/dishwasher-maintenance" } },
   ], []);
   useSchemas(schemas);
 
   return (
     <>
       <SEOMetaTags
-        title="How to Maintain Your Dishwasher for Longer Life | FixitBay LLC"
+        title="How to Maintain Your Dishwasher for Longer Life | FixitBay LLC"
         description="Simple dishwasher maintenance tips to prevent clogs, leaks, and odors. Clean filters, check spray arms, and maintain door seals."
         canonical="https://fixitbay.net/blog/dishwasher-maintenance"
-        keywords="dishwasher maintenance, clean dishwasher filter, dishwasher care, prevent dishwasher problems, dishwasher longevity, San Francisco dishwasher service"
+        keywords="dishwasher maintenance, clean dishwasher filter, dishwasher care, prevent dishwasher problems, dishwasher longevity, San Francisco dishwasher service"
         ogType="article"
       />
 
@@ -132,7 +132,7 @@ const DishwasherMaintenance = () => {
               {/* ── MID-ARTICLE CTA ── */}
               <div data-testid="mid-cta" className="flex items-center justify-between flex-wrap gap-4 rounded p-6 my-8" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722' }}>
                 <div>
-                  <p className="font-bold text-white text-base mb-1">Need appliance repair in San Francisco?</p>
+                  <p className="font-bold text-white text-base mb-1">Need appliance repair in San Francisco?</p>
                   <p className="text-sm" style={{ color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
                 </div>
                 <div className="flex gap-3 flex-wrap">
@@ -239,7 +239,7 @@ const DishwasherMaintenance = () => {
                   Dishwasher Not Performing? We Can Help!
                 </h3>
                 <p className="text-lg text-white/90 mb-6">
-                  Even with maintenance, dishwashers eventually need professional repairs. Our certified technicians service all major brands in SF Bay Area.
+                  Even with maintenance, dishwashers eventually need professional repairs. Our certified technicians service all major brands in SF Bay Area.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a 
@@ -266,7 +266,7 @@ const DishwasherMaintenance = () => {
             </div>
           </div>
         </section>
-      <BlogRelatedLinks serviceHref="/dishwasher-repair" serviceLabel="Dishwasher Repair" />
+      <BlogRelatedLinks serviceHref="/dishwasher-repair" serviceLabel="Dishwasher Repair" />
         </article>
     </>
   );

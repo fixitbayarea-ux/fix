@@ -6,7 +6,7 @@ const TrustIndicators = () => {
   const testimonials = [
     {
       name: "Sarah Johnson",
-      location: "San Francisco",
+      location: "San Francisco",
       rating: 5,
       text: "Amazing service! Fixed my refrigerator same day and saved me hundreds. Professional and honest team.",
       image: "https://images.unsplash.com/photo-1649768870222-17848797d6b4"
@@ -15,14 +15,14 @@ const TrustIndicators = () => {
       name: "Mike Chen", 
       location: "Oakland",
       rating: 5,
-      text: "Best appliance repair in Bay Area! Quick response, fair pricing, and excellent workmanship.",
+      text: "Best appliance repair in Bay Area! Quick response, fair pricing, and excellent workmanship.",
       image: "https://images.unsplash.com/photo-1649769069590-268b0b994462" 
     },
     {
       name: "Lisa Rodriguez",
       location: "San Jose", 
       rating: 5,
-      text: "Highly recommend FixitBay LLC! They fixed our dishwasher perfectly and provided great warranty coverage.",
+      text: "Highly recommend FixitBay LLC! They fixed our dishwasher perfectly and provided great warranty coverage.",
       image: "https://images.unsplash.com/photo-1581094016871-d948d70c26cd"
     }
   ];
@@ -77,10 +77,10 @@ const TrustIndicators = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-navy-800 mb-6">
-            Trusted by <span className="text-gold-gradient">Bay Area Families</span>
+            Trusted by <span className="text-gold-gradient">Bay Area Families</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Over 1,200 satisfied customers trust us with their appliance repairs. See why we're the #1 choice in the Bay Area.
+            Over 1,200 satisfied customers trust us with their appliance repairs. See why we're the #1 choice in the Bay Area.
           </p>
         </motion.div>
 

@@ -27,10 +27,10 @@ const RangeRepairPage = () => {
   ];
 
   const serviceDescription = {
-    title: 'Professional Range Repair in San Francisco',
+    title: 'Professional Range Repair in San Francisco',
     paragraphs: [
-      'A kitchen range combines the convenience of a stovetop with a full oven in one unit — and when either section fails, it disrupts your entire cooking routine. FixitBay LLC provides expert range repair throughout San Francisco, the Peninsula, and Marin County. We service freestanding ranges, slide-in ranges, drop-in ranges, and professional-style units from every major manufacturer.',
-      'Our licensed technicians are trained to work on gas ranges, electric ranges, and dual-fuel models. We diagnose and repair igniters, heating elements, temperature sensors, convection fans, gas valves, control boards, and door mechanisms. San Francisco\'s diverse housing — from compact apartment kitchens to expansive chef\'s kitchens — means we encounter every range type and configuration. We bring the right tools and parts for each.',
+      'A kitchen range combines the convenience of a stovetop with a full oven in one unit — and when either section fails, it disrupts your entire cooking routine. FixitBay LLC provides expert range repair throughout San Francisco, the Peninsula, and Marin County. We service freestanding ranges, slide-in ranges, drop-in ranges, and professional-style units from every major manufacturer.',
+      'Our licensed technicians are trained to work on gas ranges, electric ranges, and dual-fuel models. We diagnose and repair igniters, heating elements, temperature sensors, convection fans, gas valves, control boards, and door mechanisms. San Francisco\'s diverse housing — from compact apartment kitchens to expansive chef\'s kitchens — means we encounter every range type and configuration. We bring the right tools and parts for each.',
       'Every service call begins with our $60 diagnostic fee, which is credited in full toward your repair. We stock common parts for popular range brands and complete most repairs on the first visit. For specialty or pro-grade range parts, we source from authorized distributors and schedule a return visit at no additional trip charge. All repairs are backed by our 180-day warranty on parts and labor.'
     ]
   };
@@ -38,13 +38,13 @@ const RangeRepairPage = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Range Repair",
+    "serviceType": "Range Repair",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay LLC",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     },
-    "areaServed": { "@type": "City", "name": "San Francisco" }
+    "areaServed": { "@type": "City", "name": "San Francisco" }
   };
 
   if (isMobile) {
@@ -52,14 +52,14 @@ const RangeRepairPage = () => {
       <MobileServiceLanding
         appliance="Range"
         pageSlug="range-repair"
-        pageTitle="Range Repair San Francisco | Gas & Electric | FixitBay LLC"
-        metaDescription="Expert range repair in San Francisco. Gas and electric ranges. $60 diagnostic applied to repair. 180-day warranty."
+        pageTitle="Range Repair San Francisco | Gas & Electric | FixitBay LLC"
+        metaDescription="Expert range repair in San Francisco. Gas and electric ranges. $60 diagnostic applied to repair. 180-day warranty."
         heroTitle={<>Expert Range<br />Repair in SF. Today.</>}
         heroImage="/images/technicians/range-tech.jpg"
-        heroImageAlt="FixitBay technician next to a gas range in a San Francisco kitchen"
+        heroImageAlt="FixitBay technician next to a gas range in a San Francisco kitchen"
         heroImagePosition="center center"
         techImage="/images/technicians/range-tech.jpg"
-        techImageAlt="FixitBay technician next to a gas range in a San Francisco kitchen"
+        techImageAlt="FixitBay technician next to a gas range in a San Francisco kitchen"
         heroSubtitle="Gas, Electric & Dual-Fuel Ranges"
         issues={[
           { icon: '🔥', label: 'Oven Cold' },
@@ -79,10 +79,10 @@ const RangeRepairPage = () => {
     <ApplianceRepairPageNew
       serviceSchema={serviceSchema}
       appliance="Range"
-      pageTitle="Range Repair San Francisco | Gas & Electric | FixitBay LLC"
-      metaDescription="Expert range repair in San Francisco. Gas and electric ranges. $60 diagnostic applied to repair. 180-day warranty."
+      pageTitle="Range Repair San Francisco | Gas & Electric | FixitBay LLC"
+      metaDescription="Expert range repair in San Francisco. Gas and electric ranges. $60 diagnostic applied to repair. 180-day warranty."
       heroImage="/images/technicians/range-tech.jpg"
-      heroImageAlt="FixitBay technician next to a gas range in a San Francisco kitchen"
+      heroImageAlt="FixitBay technician next to a gas range in a San Francisco kitchen"
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}
@@ -97,10 +97,10 @@ const RangeRepairPage = () => {
         ]
       }}
       relatedLinks={[
-        { href: '/oven-repair', label: 'Oven Repair', desc: 'Temperature issues, not heating, or timer problems' },
-        { href: '/stove-repair', label: 'Stove Repair', desc: 'Burner issues, igniter problems, gas leaks' },
-        { href: '/cooktop-repair', label: 'Cooktop Repair', desc: 'Electric, gas, or induction cooktop service' },
-        { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or cleaning issues' },
+        { href: '/oven-repair', label: 'Oven Repair', desc: 'Temperature issues, not heating, or timer problems' },
+        { href: '/stove-repair', label: 'Stove Repair', desc: 'Burner issues, igniter problems, gas leaks' },
+        { href: '/cooktop-repair', label: 'Cooktop Repair', desc: 'Electric, gas, or induction cooktop service' },
+        { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or cleaning issues' },
       ]}
     />
 

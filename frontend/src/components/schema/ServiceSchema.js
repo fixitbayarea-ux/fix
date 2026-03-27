@@ -5,7 +5,7 @@ const ServiceSchema = ({ serviceType, city, serviceName }) => {
     const serviceSchema = {
       "@context": "https://schema.org",
       "@type": "Service",
-      "serviceType": serviceType || "Appliance Repair",
+      "serviceType": serviceType || "Appliance Repair",
       "name": serviceName || `${serviceType} in ${city}`,
       "provider": {
         "@id": "https://fixitbay.net/#organization"

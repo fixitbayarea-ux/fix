@@ -23,7 +23,7 @@ const RefrigeratorMaintenance = () => {
       description: 'Grinding, buzzing, or clicking sounds often signal compressor issues, fan problems, or loose components. We pinpoint the source and restore quiet operation.'
     },
     {
-      title: 'Ice Maker Malfunctions',
+      title: 'Ice Maker Malfunctions',
       description: 'If your ice maker stops producing ice, makes small or hollow cubes, or leaks water, we service the water inlet valve, ice mold, and control module.'
     },
     {
@@ -68,9 +68,9 @@ const RefrigeratorMaintenance = () => {
   ];
 
   const serviceDescription = {
-    title: 'Professional Refrigerator Maintenance in the Bay Area',
+    title: 'Professional Refrigerator Maintenance in the Bay Area',
     paragraphs: [
-      'Your refrigerator is one of the hardest-working appliances in your home, running 24/7 to keep your food fresh and safe. Regular maintenance is essential to prevent costly breakdowns, reduce energy consumption, and extend the lifespan of your unit. At FixitBay LLC, we provide comprehensive refrigerator maintenance services throughout San Francisco, Peninsula, and Marin County.',
+      'Your refrigerator is one of the hardest-working appliances in your home, running 24/7 to keep your food fresh and safe. Regular maintenance is essential to prevent costly breakdowns, reduce energy consumption, and extend the lifespan of your unit. At FixitBay LLC, we provide comprehensive refrigerator maintenance services throughout San Francisco, Peninsula, and Marin County.',
       'Our certified technicians perform thorough inspections and cleaning of critical components including condenser coils, evaporator fans, door seals, and temperature controls. We also test the defrost system, check refrigerant levels, and ensure all electrical connections are secure. Whether you have a standard top-freezer model, a French door refrigerator, or a high-end built-in unit, we have the expertise to keep it running at peak efficiency.',
       'During our maintenance visit, we provide a $60 diagnostic assessment that includes testing temperature accuracy, inspecting door seals for air leaks, cleaning accessible coils, and checking the ice maker and water dispenser (if equipped). This proactive approach helps identify potential issues before they lead to food spoilage or complete system failure. All our work is backed by a 180-day warranty, and we offer same- or next-day and next-day service appointments to fit your schedule.'
     ]
@@ -82,7 +82,7 @@ const RefrigeratorMaintenance = () => {
     "serviceType": "Refrigerator Maintenance",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay LLC",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     }
   };
@@ -92,18 +92,18 @@ const RefrigeratorMaintenance = () => {
       <MobileServiceLanding
         appliance="Refrigerator"
         pageSlug="maintenance/refrigerator"
-        pageTitle="Refrigerator Maintenance | FixitBay LLC"
-        metaDescription="Professional refrigerator maintenance in San Francisco Bay Area. Keep your fridge running efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+        pageTitle="Refrigerator Maintenance | FixitBay LLC"
+        metaDescription="Professional refrigerator maintenance in San Francisco Bay Area. Keep your fridge running efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
         heroTitle={<>Refrigerator<br />Maintenance. Today.</>}
         heroSubtitle="Prevent Breakdowns — Keep Food Fresh"
         techImage="/images/technicians/fridge-tech.jpg"
-        techImageAlt="FixitBay technician next to a refrigerator in a San Francisco home"
+        techImageAlt="FixitBay technician next to a refrigerator in a San Francisco home"
         issues={[
           { icon: '\u{1F321}', label: 'Temp Issues' },
           { icon: '\u{2744}', label: 'Frost Buildup' },
           { icon: '\u{1F4A7}', label: 'Leaking' },
           { icon: '\u{1F50A}', label: 'Noisy' },
-          { icon: '\u{1F9CA}', label: 'Ice Maker' },
+          { icon: '\u{1F9CA}', label: 'Ice Maker' },
           { icon: '\u{1F6AA}', label: 'Door Seals' },
         ]}
         faqs={faqData}
@@ -115,8 +115,8 @@ const RefrigeratorMaintenance = () => {
   return (
     <ApplianceRepairPageNew
       appliance="Refrigerator"
-      pageTitle="Refrigerator Maintenance | FixitBay LLC"
-      metaDescription="Professional refrigerator maintenance in San Francisco Bay Area. Keep your fridge running efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+      pageTitle="Refrigerator Maintenance | FixitBay LLC"
+      metaDescription="Professional refrigerator maintenance in San Francisco Bay Area. Keep your fridge running efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}
@@ -125,7 +125,7 @@ const RefrigeratorMaintenance = () => {
       relatedServicesCategory="Kitchen"
       relatedServicesSubtitle="Expert maintenance for all your kitchen appliances"
       heroImage="/images/technicians/fridge-tech.jpg"
-      heroImageAlt="FixitBay technician next to a refrigerator in a San Francisco home"
+      heroImageAlt="FixitBay technician next to a refrigerator in a San Francisco home"
       isMaintenance={true}
       serviceWord="Maintenance"
       repairVsReplace={{
@@ -139,10 +139,10 @@ const RefrigeratorMaintenance = () => {
         ]
       }}
       relatedLinks={[
-        { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Emergency cooling failures and leaks' },
+        { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Emergency cooling failures and leaks' },
         { href: '/maintenance/dishwasher', label: 'Dishwasher Maintenance', desc: 'Filter cleaning and spray arm service' },
         { href: '/maintenance/washer', label: 'Washer Maintenance', desc: 'Hose inspection and drum cleaning' },
-        { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Frost buildup and temperature issues' },
+        { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Frost buildup and temperature issues' },
       ]}
     />
   );

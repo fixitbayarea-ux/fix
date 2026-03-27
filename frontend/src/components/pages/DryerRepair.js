@@ -7,14 +7,14 @@ const DryerRepair = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <>
-      <SEOMetaTags title="Dryer Repair | FixitBay LLC San Francisco" description="Professional dryer repair in San Francisco, Peninsula & Marin. Not heating, drum not spinning, sensor or vent issues. $60 diagnostic applied to repair. 180-day warranty. Book online with FixitBay." canonical="https://fixitbay.net/dryer-repair" />
+      <SEOMetaTags title="Dryer Repair | FixitBay LLC San Francisco" description="Professional dryer repair in San Francisco, Peninsula & Marin. Not heating, drum not spinning, sensor or vent issues. $60 diagnostic applied to repair. 180-day warranty. Book online with FixitBay." canonical="https://fixitbay.net/dryer-repair" />
 
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
         <section className="relative hero py-12" style={{ background: 'linear-gradient(180deg, #A8D5FD 0%, #62C2E3 100%)' }}>
           <div className="container">
             <BackButton />
-            <h1 className="h1 mb-4">Dryer Repair</h1>
+            <h1 className="h1 mb-4">Dryer Repair</h1>
             <p className="text-lg mb-8" style={{ color: '#1A3B5D' }}>
               Same/next-day dryer repair for all brands. Transparent pricing, licensed technicians, and a 180-day warranty on parts and labor.
             </p>
@@ -52,12 +52,12 @@ const DryerRepair = () => {
               <h2 className="h2" style={{color:'#1A3B5D'}}>Service Areas</h2>
               <ul className="mt-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-2">
                 {[
-                  { name:'Mill Valley', href:'/mill-valley-appliance-repair' },
+                  { name:'Mill Valley', href:'/mill-valley-appliance-repair' },
                   { name:'Pacifica', href:'/pacifica-appliance-repair' },
                   { name:'Colma', href:'/colma-appliance-repair' },
-                  { name:'Daly City', href:'/daly-city-appliance-repair' },
+                  { name:'Daly City', href:'/daly-city-appliance-repair' },
                   { name:'South SF', href:'/south-san-francisco-appliance-repair' },
-                  { name:'San Bruno', href:'/san-bruno-appliance-repair' },
+                  { name:'San Bruno', href:'/san-bruno-appliance-repair' },
                   { name:'Millbrae', href:'/millbrae-appliance-repair' },
                   { name:'Brisbane', href:'/brisbane-appliance-repair' }
                 ].map(c => (

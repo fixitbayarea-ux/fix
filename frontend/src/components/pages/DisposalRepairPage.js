@@ -43,7 +43,7 @@ const DisposalRepairPage = () => {
 
   const faqData = [
     {
-      question: "How much does garbage disposal repair cost in the Bay Area?",
+      question: "How much does garbage disposal repair cost in the Bay Area?",
       answer: "Garbage disposal repairs typically cost $125-$250 depending on the issue. Simple fixes like resetting tripped circuits ($100-$150), unjamming blades ($125-$175), or fixing leaks at connections ($140-$180) are more affordable. Motor replacement or chronic jam issues ($200-$250) cost more. We charge a $60 diagnostic fee (waived with repair) and provide upfront pricing."
     },
     {
@@ -71,7 +71,7 @@ const DisposalRepairPage = () => {
     "serviceType": "Disposal Repair",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay LLC",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     },
     "areaServed": SERVICE_CITIES_SCHEMA
@@ -80,10 +80,10 @@ const DisposalRepairPage = () => {
   if (isMobile) {
     return (
       <MobileServiceLanding
-        appliance="Garbage Disposal"
+        appliance="Garbage Disposal"
         pageSlug="disposal-repair"
-        pageTitle="Garbage Disposal Repair San Francisco | Fast Scheduling | FixitBay LLC"
-        metaDescription="Garbage disposal repair in SF & Bay Area. Jammed, leaking, humming, won't turn on. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay LLC."
+        pageTitle="Garbage Disposal Repair San Francisco | Fast Scheduling | FixitBay LLC"
+        metaDescription="Garbage disposal repair in SF & Bay Area. Jammed, leaking, humming, won't turn on. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay LLC."
         heroTitle={<>Expert Disposal<br />Repair in SF. Today.</>}
         issues={[
           { icon: '🔧', label: 'Jammed' },
@@ -102,14 +102,14 @@ const DisposalRepairPage = () => {
   return (
       <ApplianceRepairPageNew
       serviceSchema={serviceSchema}
-      appliance="Garbage Disposal"
+      appliance="Garbage Disposal"
       cmsSlug="garbage-disposal-repair"
-      pageTitle="Garbage Disposal Repair in San Francisco | FixitBay LLC"
-      metaDescription="Professional garbage disposal repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty. Fast scheduling."
+      pageTitle="Garbage Disposal Repair in San Francisco | FixitBay LLC"
+      metaDescription="Professional garbage disposal repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty. Fast scheduling."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={{
-        title: "Fast Garbage Disposal Repair & Replacement",
+        title: "Fast Garbage Disposal Repair & Replacement",
         paragraphs: [
           <>Garbage disposal problems can disrupt your kitchen routine. Our technicians provide same/next day service to diagnose jammed blades, electrical issues, leaks, and motor failures. We charge a <strong>$60 diagnostic fee</strong> (waived with repair or replacement) and provide honest recommendations on whether repair or replacement makes better financial sense for your situation.</>,
           <>Our disposal repair process includes testing the reset button, inspecting mounting gaskets, checking electrical connections, and unjamming blades using proper tools. We clear drain lines, tighten leaking connections, and replace worn components. For units beyond cost-effective repair, we offer professional disposal replacement and installation with upgraded models that match your needs.</>,
@@ -117,7 +117,7 @@ const DisposalRepairPage = () => {
         ]
       }}
       repairVsReplace={{
-        title: "When to Repair vs. Replace Your Garbage Disposal",
+        title: "When to Repair vs. Replace Your Garbage Disposal",
         intro: "Garbage disposals are affordable appliances, but repair is often the smarter first step.",
         items: [
           { action: 'repair', condition: 'Jammed blades or humming but not spinning', recommendation: 'Most jams are cleared in 30 minutes for $80–$150. The motor is fine — the blades just need freeing.' },
@@ -127,9 +127,9 @@ const DisposalRepairPage = () => {
         ]
       }}
       relatedLinks={[
-        { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Often connected to the same drain line' },
-        { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker issues' },
-        { href: '/washer-repair', label: 'Washer Repair', desc: 'Won\'t drain, spin, or fill with water' },
+        { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Often connected to the same drain line' },
+        { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker issues' },
+        { href: '/washer-repair', label: 'Washer Repair', desc: 'Won\'t drain, spin, or fill with water' },
         { href: '/residential-appliance-repair', label: 'Residential Repair', desc: 'Full home appliance service' },
       ]}
     />

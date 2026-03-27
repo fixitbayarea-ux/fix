@@ -4,7 +4,7 @@ import CityRepairPage from '../templates/CityRepairPage';
 const LivermoreRepairPage = () => {
   const cityData = {
     city: "Livermore",
-    pageTitle: "Appliance Repair in Livermore, CA – Fast, Reliable, Affordable!",
+    pageTitle: "Appliance Repair in Livermore, CA – Fast, Reliable, Affordable!",
     metaDescription: "Expert appliance repair in Livermore, CA. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733 or book online now!",
     neighborhoods: [
       "Downtown Livermore",
@@ -36,7 +36,7 @@ const LivermoreRepairPage = () => {
       },
       {
         question: "Are your technicians licensed to work in Livermore?",
-        answer: "Yes, all our technicians are fully licensed, insured, and bonded to work throughout Livermore and the entire Bay Area. We're a local family-owned business serving the Tri-Valley."
+        answer: "Yes, all our technicians are fully licensed, insured, and bonded to work throughout Livermore and the entire Bay Area. We're a local family-owned business serving the Tri-Valley."
       }
     ]
   };

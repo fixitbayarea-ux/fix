@@ -49,7 +49,7 @@ const BlogFAQPage = () => {
       question: 'Why is my refrigerator not cooling properly?',
       answer: 'A refrigerator not cooling properly can be caused by several issues. First, check if the temperature settings are correct (37°F for fridge, 0°F for freezer). Clean the condenser coils on the back or bottom of the unit, as dirty coils make the compressor work harder. Ensure proper airflow by not overcrowding shelves and check that door seals are tight. If these steps don\'t help, you may have a failing compressor, thermostat, or refrigerant leak that requires professional repair.',
       content: `
-        <h3>Top 5 Refrigerator Issues Bay Area Homeowners Face:</h3>
+        <h3>Top 5 Refrigerator Issues Bay Area Homeowners Face:</h3>
         <ol>
           <li><strong>Temperature fluctuations</strong> - Often caused by faulty thermostats or blocked vents</li>
           <li><strong>Ice maker problems</strong> - Usually water supply or filter issues</li>
@@ -57,9 +57,9 @@ const BlogFAQPage = () => {
           <li><strong>Strange noises</strong> - Could signal compressor or fan motor issues</li>
           <li><strong>Water leaking</strong> - Often a clogged drain or damaged water line</li>
         </ol>
-        <p>If you're experiencing any of these issues in San Francisco, Oakland, or anywhere in the Bay Area, FixitBay LLC's licensed technicians can diagnose and repair your refrigerator quickly with our 180-day warranty.</p>
+        <p>If you're experiencing any of these issues in San Francisco, Oakland, or anywhere in the Bay Area, FixitBay LLC's licensed technicians can diagnose and repair your refrigerator quickly with our 180-day warranty.</p>
       `,
-      keywords: 'refrigerator repair San Francisco, fridge not cooling, refrigerator problems Bay Area',
+      keywords: 'refrigerator repair San Francisco, fridge not cooling, refrigerator problems Bay Area',
       readTime: '5 min read'
     },
     {
@@ -70,7 +70,7 @@ const BlogFAQPage = () => {
       question: 'How do I know if my washer is worth repairing?',
       answer: 'Consider repair if your washer is under 8 years old, the repair cost is less than 50% of replacement cost, and it\'s a quality brand. Replace if it\'s over 10 years old, needs frequent repairs, or has major component failure like the transmission or motor.',
       content: `
-        <h3>Washer Repair Decision Guide for Bay Area Residents:</h3>
+        <h3>Washer Repair Decision Guide for Bay Area Residents:</h3>
         
         <h4>Repair When:</h4>
         <ul>
@@ -90,9 +90,9 @@ const BlogFAQPage = () => {
           <li>Rust or structural damage</li>
         </ul>
         
-        <p>In the competitive San Francisco Bay Area market, making the right choice saves money. Our technicians provide honest assessments to help Concord and all Bay Area customers make informed decisions.</p>
+        <p>In the competitive San Francisco Bay Area market, making the right choice saves money. Our technicians provide honest assessments to help Concord and all Bay Area customers make informed decisions.</p>
       `,
-      keywords: 'washer repair vs replace, washing machine repair Bay Area, appliance repair Concord',
+      keywords: 'washer repair vs replace, washing machine repair Bay Area, appliance repair Concord',
       readTime: '7 min read'
     },
     {
@@ -103,7 +103,7 @@ const BlogFAQPage = () => {
       question: 'Why won\'t my dishwasher drain completely?',
       answer: 'Common causes include clogged filters, blocked garbage disposal, kinked drain hose, or faulty drain pump. Start by cleaning the dishwasher filter at the bottom of the tub, run your garbage disposal, and check that the drain hose isn\'t bent. If the problem persists, you may need professional service to replace the drain pump or clear internal blockages.',
       content: `
-        <h3>Dishwasher Drainage Issues: A Bay Area Homeowner's Guide</h3>
+        <h3>Dishwasher Drainage Issues: A Bay Area Homeowner's Guide</h3>
         
         <h4>Step-by-Step Troubleshooting:</h4>
         <ol>
@@ -113,7 +113,7 @@ const BlogFAQPage = () => {
           <li><strong>Verify dishwasher connections:</strong> Ensure proper connection</li>
         </ol>
         
-        <h4>When to Call FixitBay LLC:</h4>
+        <h4>When to Call FixitBay LLC:</h4>
         <p>If these steps don't resolve the issue, you may have:</p>
         <ul>
           <li>Faulty drain pump requiring replacement</li>
@@ -122,9 +122,9 @@ const BlogFAQPage = () => {
           <li>Plumbing connection problems</li>
         </ul>
         
-        <p>Our licensed technicians serve San Francisco, Oakland, and the entire Bay Area with fast, reliable service for dishwasher repairs.</p>
+        <p>Our licensed technicians serve San Francisco, Oakland, and the entire Bay Area with fast, reliable service for dishwasher repairs.</p>
       `,
-      keywords: 'dishwasher not draining, dishwasher repair San Francisco, appliance service Bay Area',
+      keywords: 'dishwasher not draining, dishwasher repair San Francisco, appliance service Bay Area',
       readTime: '4 min read'
     },
     {
@@ -135,7 +135,7 @@ const BlogFAQPage = () => {
       question: 'How can I make my appliances last longer?',
       answer: 'Regular maintenance is key: clean filters monthly, check seals and gaskets, keep vents clear, use appropriate detergents, don\'t overload machines, and schedule annual professional inspections. These simple steps can extend appliance life by 3-5 years.',
       content: `
-        <h3>Seasonal Appliance Maintenance Checklist for Bay Area Homes</h3>
+        <h3>Seasonal Appliance Maintenance Checklist for Bay Area Homes</h3>
         
         <h4>Monthly Tasks:</h4>
         <ul>
@@ -154,23 +154,23 @@ const BlogFAQPage = () => {
         </ul>
         
         <h4>Annual Professional Service:</h4>
-        <p>Even with regular maintenance, professional annual inspections can catch problems early. FixitBay LLC offers comprehensive maintenance packages for Bay Area homeowners in San Francisco, Concord, and surrounding cities.</p>
+        <p>Even with regular maintenance, professional annual inspections can catch problems early. FixitBay LLC offers comprehensive maintenance packages for Bay Area homeowners in San Francisco, Concord, and surrounding cities.</p>
         
-        <h4>Bay Area Climate Considerations:</h4>
-        <p>The Bay Area's humid climate and hard water can affect appliance performance. Our technicians understand local conditions and provide region-specific maintenance advice.</p>
+        <h4>Bay Area Climate Considerations:</h4>
+        <p>The Bay Area's humid climate and hard water can affect appliance performance. Our technicians understand local conditions and provide region-specific maintenance advice.</p>
       `,
-      keywords: 'appliance maintenance tips, Bay Area appliance service, extend appliance lifespan',
+      keywords: 'appliance maintenance tips, Bay Area appliance service, extend appliance lifespan',
       readTime: '8 min read'
     },
     {
       id: 5,
       type: 'faq',
       category: 'general',
-      title: 'Emergency Appliance Repair: What Constitutes an Emergency?',
+      title: 'Emergency Appliance Repair: What Constitutes an Emergency?',
       question: 'When should I call for emergency appliance repair?',
       answer: 'Call for emergency service if you smell gas, see sparks or smoke, have electrical issues, experience major water leaks, or complete refrigerator failure with food spoilage risk. These situations require immediate professional attention for safety and to prevent property damage.',
       content: `
-        <h3>Appliance Emergencies in the Bay Area: When to Act Fast</h3>
+        <h3>Appliance Emergencies in the Bay Area: When to Act Fast</h3>
         
         <h4>Immediate Emergency Situations:</h4>
         <ul>
@@ -181,10 +181,10 @@ const BlogFAQPage = () => {
           <li><strong>Smoke from any appliance</strong> - Safety hazard requiring immediate response</li>
         </ul>
         
-        <h4>FixitBay LLC Emergency Response:</h4>
-        <p>We provide fast emergency appliance repair throughout the San Francisco Bay Area, including:</p>
+        <h4>FixitBay LLC Emergency Response:</h4>
+        <p>We provide fast emergency appliance repair throughout the San Francisco Bay Area, including:</p>
         <ul>
-          <li>San Francisco and Peninsula cities</li>
+          <li>San Francisco and Peninsula cities</li>
           <li>Oakland and East Bay communities</li>
           <li>San Jose and South Bay areas</li>
           <li>Concord and North Bay regions</li>
@@ -198,7 +198,7 @@ const BlogFAQPage = () => {
           <li>Gather appliance model and serial numbers</li>
         </ol>
       `,
-      keywords: 'emergency appliance repair, appliance service Bay Area, appliance repair San Francisco',
+      keywords: 'emergency appliance repair, appliance service Bay Area, appliance repair San Francisco',
       readTime: '6 min read'
     }
   ];
@@ -225,11 +225,11 @@ const BlogFAQPage = () => {
       })}</script>
 
       <SEOMetaTags
-        title="Appliance Repair Tips & FAQ | FixitBay LLC Bay Area"
-        description="Expert appliance repair tips, troubleshooting guides, and FAQ for San Francisco Bay Area homeowners. Learn when to repair vs replace, maintenance tips, and emergency procedures."
-        keywords="appliance repair tips, refrigerator problems, dishwasher not draining, washer repair guide, Bay Area appliance maintenance, San Francisco appliance FAQ"
+        title="Appliance Repair Tips & FAQ | FixitBay LLC Bay Area"
+        description="Expert appliance repair tips, troubleshooting guides, and FAQ for San Francisco Bay Area homeowners. Learn when to repair vs replace, maintenance tips, and emergency procedures."
+        keywords="appliance repair tips, refrigerator problems, dishwasher not draining, washer repair guide, Bay Area appliance maintenance, San Francisco appliance FAQ"
         canonical="https://fixitbay.net/blog-faq"
-        structuredData={getLocalBusinessSchema("San Francisco")}
+        structuredData={getLocalBusinessSchema("San Francisco")}
       />
 
       {/* Header (removed extra header wrapper to avoid duplication) */}
@@ -238,13 +238,13 @@ const BlogFAQPage = () => {
           <div className="flex items-center gap-4">
             <picture>
               <source srcSet="/images/logo.webp" type="image/webp" />
-              <img src="/images/logo.png" alt="FixitBay LLC appliance repair logo" width="48" height="48" loading="lazy" className="w-12 h-12 rounded-full" />
+              <img src="/images/logo.png" alt="FixitBay LLC appliance repair logo" width="48" height="48" loading="lazy" className="w-12 h-12 rounded-full" />
             </picture>
             <div>
               <h1 className="text-lg font-bold" style={{ color: '#1A3B5D' }}>
-                <a href="/" className="hover:opacity-80">FixitBay LLC</a>
+                <a href="/" className="hover:opacity-80">FixitBay LLC</a>
               </h1>
-              <p className="text-xs text-gray-600">Appliance Repair Tips & Expert FAQ</p>
+              <p className="text-xs text-gray-600">Appliance Repair Tips & Expert FAQ</p>
             </div>
           </div>
           
@@ -270,7 +270,7 @@ const BlogFAQPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl font-bold mb-6 text-white"
           >
-            Appliance Repair Tips & Expert FAQ
+            Appliance Repair Tips & Expert FAQ
           </motion.h1>
           
           {/* Breadcrumbs */}
@@ -288,7 +288,7 @@ const BlogFAQPage = () => {
             transition={{ delay: 0.2 }}
             className="text-xl text-white/90 mb-8 leading-relaxed"
           >
-            Expert advice, troubleshooting guides, and frequently asked questions from Bay Area's trusted appliance repair specialists
+            Expert advice, troubleshooting guides, and frequently asked questions from Bay Area's trusted appliance repair specialists
           </motion.p>
 
           {/* Search Bar */}
@@ -350,7 +350,7 @@ const BlogFAQPage = () => {
               {['refrigerator', 'washer', 'dishwasher', 'general'].map((catId, catIndex) => {
                 const catItems = filteredContent.filter(i => i.category === catId);
                 if (catItems.length === 0) return null;
-                const catLabel = { refrigerator: 'Refrigerator Repair Tips', washer: 'Washer & Dryer Repair Tips', dishwasher: 'Dishwasher Repair Tips', general: 'General Appliance Tips' }[catId];
+                const catLabel = { refrigerator: 'Refrigerator Repair Tips', washer: 'Washer & Dryer Repair Tips', dishwasher: 'Dishwasher Repair Tips', general: 'General Appliance Tips' }[catId];
                 return (
                   <React.Fragment key={catId}>
                   <div>
@@ -422,7 +422,7 @@ const BlogFAQPage = () => {
                       
                       <div className="mt-6 p-4 bg-blue-50 rounded-lg">
                         <p className="text-sm text-blue-800 font-medium">
-                          Need professional help? FixitBay LLC provides expert appliance repair throughout the San Francisco Bay Area with fast scheduling and a 180-day warranty.
+                          Need professional help? FixitBay LLC provides expert appliance repair throughout the San Francisco Bay Area with fast scheduling and a 180-day warranty.
                         </p>
                         <div className="flex gap-3 mt-3">
                           <button
@@ -454,7 +454,7 @@ const BlogFAQPage = () => {
                       margin: '32px 0'
                     }}>
                       <p style={{color:'#fff', fontWeight:'600', fontSize:'16px', marginBottom:'6px'}}>
-                        Need appliance repair in San Francisco?
+                        Need appliance repair in San Francisco?
                       </p>
                       <p style={{color:'rgba(255,255,255,0.7)', fontSize:'14px', marginBottom:'16px'}}>
                         Fast scheduling · $60 diagnostic · 180-day warranty
@@ -492,7 +492,7 @@ const BlogFAQPage = () => {
               Still Need Professional Help?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Our expert technicians are ready to solve any appliance problem in the Bay Area
+              Our expert technicians are ready to solve any appliance problem in the Bay Area
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -526,12 +526,12 @@ const BlogFAQPage = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <img src="/navbar-logo-new.png" alt="FixitBay" style={{ height: 36, width: 36, borderRadius: '50%', objectFit: 'cover' }} />
             <div>
-              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 14, color: '#FFFFFF', display: 'block' }}>FixitBay LLC</span>
-              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>Appliance Repair &amp; Maintenance</span>
+              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 14, color: '#FFFFFF', display: 'block' }}>FixitBay LLC</span>
+              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>Appliance Repair &amp; Maintenance</span>
             </div>
           </div>
           <a href="tel:+17605435733" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 18, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-          <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.30)' }}>&copy; 2026 FixitBay LLC</span>
+          <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.30)' }}>&copy; 2026 FixitBay LLC</span>
         </div>
       </footer>
 

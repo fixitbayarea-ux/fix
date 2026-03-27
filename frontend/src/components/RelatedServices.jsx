@@ -2,17 +2,17 @@ import React, { useEffect, useMemo, useState } from 'react';
 import './RelatedServices.css';
 
 const CARD_INDEX = {
-  'refrigerator': { title: 'Refrigerator Repair', url: '/refrigerator-repair', alt: 'Technician repairing refrigerator in San Francisco', img: 'refrigerator' },
-  'washer-dryer': { title: 'Washer & Dryer Repair', url: '/washer-repair', alt: 'Washer and dryer service in laundry room', img: 'washer-dryer' },
-  'dryer': { title: 'Dryer Repair', url: '/dryer-repair', alt: 'Technician fixing home dryer', img: 'dryer' },
-  'dishwasher': { title: 'Dishwasher Repair', url: '/dishwasher-repair', alt: 'Technician repairing dishwasher', img: 'dishwasher' },
-  'oven-stove': { title: 'Oven & Stove Repair', url: '/oven-repair', alt: 'Oven and stove service', img: 'oven-stove' },
-  'cooktop': { title: 'Cooktop Repair', url: '/cooktop-repair', alt: 'Cooktop element replacement', img: 'cooktop' },
-  'ice-maker': { title: 'Ice Maker Repair', url: '/ice-maker-repair', alt: 'Ice maker service', img: 'ice-maker' },
+  'refrigerator': { title: 'Refrigerator Repair', url: '/refrigerator-repair', alt: 'Technician repairing refrigerator in San Francisco', img: 'refrigerator' },
+  'washer-dryer': { title: 'Washer & Dryer Repair', url: '/washer-repair', alt: 'Washer and dryer service in laundry room', img: 'washer-dryer' },
+  'dryer': { title: 'Dryer Repair', url: '/dryer-repair', alt: 'Technician fixing home dryer', img: 'dryer' },
+  'dishwasher': { title: 'Dishwasher Repair', url: '/dishwasher-repair', alt: 'Technician repairing dishwasher', img: 'dishwasher' },
+  'oven-stove': { title: 'Oven & Stove Repair', url: '/oven-repair', alt: 'Oven and stove service', img: 'oven-stove' },
+  'cooktop': { title: 'Cooktop Repair', url: '/cooktop-repair', alt: 'Cooktop element replacement', img: 'cooktop' },
+  'ice-maker': { title: 'Ice Maker Repair', url: '/ice-maker-repair', alt: 'Ice maker service', img: 'ice-maker' },
   'wine-fridge': { title: 'Wine Fridge Repair', url: '/wine-fridge-repair', alt: 'Wine cooler maintenance', img: 'wine-fridge' },
-  'garbage-disposal': { title: 'Garbage Disposal Repair', url: '/garbage-disposal-repair', alt: 'Kitchen disposal repair', img: 'garbage-disposal' },
-  'commercial': { title: 'Commercial Appliance Repair', url: '/commercial-appliance-repair', alt: 'Commercial kitchen equipment repair', img: 'commercial' },
-  'residential': { title: 'Residential Appliance Repair', url: '/residential-appliance-repair', alt: 'Home appliance repair service', img: 'residential' }
+  'garbage-disposal': { title: 'Garbage Disposal Repair', url: '/garbage-disposal-repair', alt: 'Kitchen disposal repair', img: 'garbage-disposal' },
+  'commercial': { title: 'Commercial Appliance Repair', url: '/commercial-appliance-repair', alt: 'Commercial kitchen equipment repair', img: 'commercial' },
+  'residential': { title: 'Residential Appliance Repair', url: '/residential-appliance-repair', alt: 'Home appliance repair service', img: 'residential' }
 };
 
 const ROUTE_MAP = {

@@ -199,11 +199,11 @@ const SiteNavbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex justify-between items-center" style={{ minHeight: '48px' }}>
           
-          {/* LEFT: Logo + FixitBay LLC + Appliance Repair & Maintenance */}
+          {/* LEFT: Logo + FixitBay LLC + Appliance Repair & Maintenance */}
           <a 
             href="/" 
             className="flex items-center shrink-0"
-            aria-label="FixitBay LLC Home"
+            aria-label="FixitBay LLC Home"
             style={{
               gap: 12,
               padding: '8px 14px',
@@ -227,7 +227,7 @@ const SiteNavbar = () => {
               src={navbarLogo56}
               srcSet={`${navbarLogo56} 56w, ${navbarLogo112} 112w, ${navbarLogo256} 256w`}
               sizes="56px"
-              alt="FixitBay Appliance Repair"
+              alt="FixitBay Appliance Repair"
               width="160"
               height="56"
               loading="eager"
@@ -242,13 +242,13 @@ const SiteNavbar = () => {
             />
             {/* Mobile: tagline */}
             <div className="flex sm:hidden flex-col leading-tight">
-              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 14, color: '#FFFFFF' }}>FixitBay LLC</span>
-              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.75)' }}>Appliance Repair</span>
+              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 14, color: '#FFFFFF' }}>FixitBay LLC</span>
+              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.75)' }}>Appliance Repair</span>
             </div>
             {/* Desktop: tagline */}
             <div className="hidden sm:flex flex-col leading-tight">
-              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 16, color: '#FFFFFF' }}>FixitBay LLC</span>
-              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.50)' }}>Appliance Repair & Maintenance</span>
+              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 16, color: '#FFFFFF' }}>FixitBay LLC</span>
+              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.50)' }}>Appliance Repair & Maintenance</span>
             </div>
           </a>
 
@@ -317,7 +317,7 @@ const SiteNavbar = () => {
               aria-current={isActive('/san-francisco-appliance-repair') ? 'page' : undefined}
               data-testid="nav-sf-link"
             >
-              San Francisco
+              San Francisco
             </a>
 
             {/* 3. Brands Dropdown */}
@@ -443,7 +443,7 @@ const SiteNavbar = () => {
                 textDecoration: 'none',
                 opacity: 1,
               }}
-              aria-label={`Call FixitBay LLC at ${PHONE_DISPLAY}`}
+              aria-label={`Call FixitBay LLC at ${PHONE_DISPLAY}`}
               onClick={() => trackNavClick('phone_cta')}
             >
               <Phone className="w-4 h-4" style={{ color: '#FF5722' }} />
@@ -515,7 +515,7 @@ const SiteNavbar = () => {
                 color: '#FF5722',
                 textDecoration: 'none',
               }}
-              aria-label={`Call FixitBay LLC at ${PHONE_DISPLAY}`}
+              aria-label={`Call FixitBay LLC at ${PHONE_DISPLAY}`}
               onClick={() => trackNavClick('phone_mobile')}
             >
               <Phone className="w-5 h-5" style={{ color: '#FF5722' }} />
@@ -571,7 +571,7 @@ const SiteNavbar = () => {
                 Home
               </a>
               <a href="/san-francisco-appliance-repair" style={{ display:'flex', alignItems:'center', gap:10, padding:'6px 16px', minHeight:'44px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_sf'); }}>
-                San Francisco
+                San Francisco
               </a>
               <a href="/reviews" style={{ display:'flex', alignItems:'center', gap:10, padding:'6px 16px', minHeight:'44px', color:'rgba(255,255,255,0.80)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:14, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick('mobile_reviews'); }}>
                 Reviews
@@ -594,18 +594,18 @@ const SiteNavbar = () => {
               </button>
               {mobileServicesOpen && <div style={{ padding:'2px 0 4px', background:'rgba(255,255,255,0.02)' }}>
                   {[
-                    { name:'Refrigerator Repair', path:'/refrigerator-repair' },
-                    { name:'Washer Repair', path:'/washer-repair' },
-                    { name:'Dryer Repair', path:'/dryer-repair' },
-                    { name:'Dishwasher Repair', path:'/dishwasher-repair' },
-                    { name:'Oven Repair', path:'/oven-repair' },
-                    { name:'Range Repair', path:'/range-repair' },
-                    { name:'Stove Repair', path:'/stove-repair' },
-                    { name:'Cooktop Repair', path:'/cooktop-repair' },
-                    { name:'Ice Maker Repair', path:'/ice-maker-repair' },
-                    { name:'Freezer Repair', path:'/freezer-repair' },
-                    { name:'Wine Cooler Repair', path:'/wine-cooler-repair' },
-                    { name:'Garbage Disposal', path:'/garbage-disposal-repair' },
+                    { name:'Refrigerator Repair', path:'/refrigerator-repair' },
+                    { name:'Washer Repair', path:'/washer-repair' },
+                    { name:'Dryer Repair', path:'/dryer-repair' },
+                    { name:'Dishwasher Repair', path:'/dishwasher-repair' },
+                    { name:'Oven Repair', path:'/oven-repair' },
+                    { name:'Range Repair', path:'/range-repair' },
+                    { name:'Stove Repair', path:'/stove-repair' },
+                    { name:'Cooktop Repair', path:'/cooktop-repair' },
+                    { name:'Ice Maker Repair', path:'/ice-maker-repair' },
+                    { name:'Freezer Repair', path:'/freezer-repair' },
+                    { name:'Wine Cooler Repair', path:'/wine-cooler-repair' },
+                    { name:'Garbage Disposal', path:'/garbage-disposal-repair' },
                   ].map(item => (
                     <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'flex', alignItems:'center', gap:10, padding:'6px 16px 6px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick(item.name, 'services'); }}>
                       {item.name}
@@ -638,7 +638,7 @@ const SiteNavbar = () => {
                     { name:'Dishwasher Maintenance', path:'/maintenance/dishwasher' },
                     { name:'Oven & Range Maintenance', path:'/maintenance/oven-range' },
                     { name:'Cooktop Maintenance', path:'/maintenance/cooktop' },
-                    { name:'Wine Cooler Maintenance', path:'/maintenance/wine-cooler' },
+                    { name:'Wine Cooler Maintenance', path:'/maintenance/wine-cooler' },
                   ].map(item => (
                     <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'flex', alignItems:'center', padding:'6px 16px 6px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick(item.name, 'maintenance'); }}>
                       {item.name}
@@ -744,7 +744,7 @@ const SiteNavbar = () => {
               <a href="tel:+17605435733" style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, background:'transparent', color:'#FF5722', padding:'10px 24px', borderRadius:'4px', border:'2px solid #FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:'14px', textDecoration:'none' }} onClick={() => trackNavClick('mobile_menu_call')}>
                 (760) 543-5733
               </a>
-              <a href="sms:+17605435733?body=Hi%20FixitBay LLC!%20I%20need%20appliance%20repair." style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, background:'transparent', color:'rgba(255,255,255,0.65)', padding:'10px 24px', minHeight:'44px', borderRadius:'4px', border:'1px solid rgba(255,255,255,0.15)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:'13px', textDecoration:'none' }}>
+              <a href="sms:+17605435733?body=Hi%20FixitBay LLC!%20I%20need%20appliance%20repair." style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:8, background:'transparent', color:'rgba(255,255,255,0.65)', padding:'10px 24px', minHeight:'44px', borderRadius:'4px', border:'1px solid rgba(255,255,255,0.15)', fontFamily:'Montserrat,sans-serif', fontWeight:600, fontSize:'13px', textDecoration:'none' }}>
                 Text Us
               </a>
             </div>

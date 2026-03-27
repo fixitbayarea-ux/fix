@@ -27,7 +27,7 @@ const Testimonials = ({ testimonials, testId = 'testimonials' }) => {
           ))}
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', gap: 24, marginTop: 32, flexWrap: 'wrap' }}>
-          <a href="https://www.google.com/maps/place/FixitBay LLC+Appliance+Repair" target="_blank" rel="noopener noreferrer" data-testid="reviews-google" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: F, fontWeight: 600, fontSize: 13, color: '#FFF', textDecoration: 'none', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 4, padding: '10px 20px' }} aria-label="Read Google Reviews (opens in new tab)">
+          <a href="https://www.google.com/maps/place/FixitBay LLC+Appliance+Repair" target="_blank" rel="noopener noreferrer" data-testid="reviews-google" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: F, fontWeight: 600, fontSize: 13, color: '#FFF', textDecoration: 'none', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 4, padding: '10px 20px' }} aria-label="Read Google Reviews (opens in new tab)">
             <Star size={14} style={{ fill: '#FFB800', color: '#FFB800' }} /> Read Google Reviews
           </a>
           <a href="https://www.thumbtack.com/ca/san-francisco/appliance-repair/fixitbay" target="_blank" rel="noopener noreferrer" data-testid="reviews-thumbtack" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontFamily: F, fontWeight: 600, fontSize: 13, color: '#FFF', textDecoration: 'none', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 4, padding: '10px 20px' }} aria-label="Read Thumbtack Reviews (opens in new tab)">

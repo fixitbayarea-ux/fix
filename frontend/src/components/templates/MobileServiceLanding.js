@@ -55,7 +55,7 @@ const DEFAULT_BRANDS = [
 const DEFAULT_REVIEWS = [
   { name: 'Gayle R.', text: 'Andrei was excellent. He explained everything clearly and fixed our Sub-Zero the same day. Would definitely use again.', src: 'Google', stars: 5 },
   { name: 'Roland S.', text: 'Quickly figured out what was wrong, had the spare parts in no time and repaired it professionally at a reasonable price.', src: 'Google', stars: 5 },
-  { name: 'Michael K.', text: 'Knowledgeable, professional, fast. Answered all my questions. Highly recommend FixitBay LLC!', src: 'Google', stars: 5 },
+  { name: 'Michael K.', text: 'Knowledgeable, professional, fast. Answered all my questions. Highly recommend FixitBay LLC!', src: 'Google', stars: 5 },
 ];
 
 const buildMobileFAQSchema = (faqs) => {
@@ -81,27 +81,27 @@ const buildMobileFAQSchema = (faqs) => {
 const buildMobileServiceSchema = (serviceName) => ({
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": `${serviceName} Repair San Francisco Bay Area`,
+  "name": `${serviceName} Repair San Francisco Bay Area`,
   "serviceType": `${serviceName} Repair`,
   "provider": {
     "@type": "LocalBusiness",
-    "name": "FixitBay LLC",
+    "name": "FixitBay LLC",
     "telephone": "+17605435733",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "1549 Franklin St, Unit A",
-      "addressLocality": "San Francisco",
+      "addressLocality": "San Francisco",
       "addressRegion": "CA",
       "postalCode": "94109"
     },
     "priceRange": "$$"
   },
   "areaServed": [
-    "San Francisco", "Daly City", "South San Francisco", "San Bruno",
+    "San Francisco", "Daly City", "South San Francisco", "San Bruno",
     "Pacifica", "Millbrae", "Colma", "Brisbane", "Montara",
-    "Mill Valley", "San Rafael", "Sausalito", "Belvedere", "Tiburon",
-    "Corte Madera", "San Quentin", "Larkspur", "Greenbrae", "Ross",
-    "Fairfax", "San Anselmo", "Novato"
+    "Mill Valley", "San Rafael", "Sausalito", "Belvedere", "Tiburon",
+    "Corte Madera", "San Quentin", "Larkspur", "Greenbrae", "Ross",
+    "Fairfax", "San Anselmo", "Novato"
   ]
 });
 
@@ -192,7 +192,7 @@ const MobileServiceLanding = ({
   return (
     <main
       role="main"
-      aria-label={`${appliance} repair service in San Francisco`}
+      aria-label={`${appliance} repair service in San Francisco`}
       style={{ fontFamily: F, background: PC.navy, minHeight: '100vh', color: PC.white }}
       data-testid={`${pageSlug}-page`}
     >
@@ -212,7 +212,7 @@ const MobileServiceLanding = ({
           <picture>
             <source srcSet={`${HERO_AVIF_640} 640w, ${HERO_AVIF_960} 960w`} sizes="100vw" type="image/avif" />
             <source srcSet={`${HERO_WEBP_640} 640w, ${HERO_WEBP_960} 960w`} sizes="100vw" type="image/webp" />
-            <img src={HERO_WEBP_640} alt={`${appliance || 'Appliance'} repair technician at work in San Francisco`} width={640} height={640} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.15 }} />
+            <img src={HERO_WEBP_640} alt={`${appliance || 'Appliance'} repair technician at work in San Francisco`} width={640} height={640} style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.15 }} />
           </picture>
           )}
         </div>
@@ -229,7 +229,7 @@ const MobileServiceLanding = ({
             </div>
           </nav>
 
-          <p style={{ fontSize: 11, fontWeight: 700, color: PC.white45, letterSpacing: '0.10em', textTransform: 'uppercase', margin: '0 0 10px', fontFamily: F }}>San Francisco &amp; Bay Area</p>
+          <p style={{ fontSize: 11, fontWeight: 700, color: PC.white45, letterSpacing: '0.10em', textTransform: 'uppercase', margin: '0 0 10px', fontFamily: F }}>San Francisco &amp; Bay Area</p>
 
           <h1 style={{ fontFamily: F, fontSize: 28, fontWeight: 800, lineHeight: 1.2, color: PC.white, margin: '0 0 10px' }}>{heroTitle}</h1>
           <p style={{ fontFamily: F, fontSize: 14, color: PC.white60, margin: '0 0 18px', fontWeight: 500, lineHeight: 1.5 }}>{heroSubtitle}</p>
@@ -278,14 +278,14 @@ const MobileServiceLanding = ({
             fontSize: 15, fontWeight: 700, letterSpacing: '0.04em', cursor: 'pointer', fontFamily: F, marginBottom: 10,
           }}>BOOK REPAIR ONLINE</button>
 
-          <a href={`tel:${PHONE}`} onClick={() => handleCall('hero', pageSlug)} data-testid="hero-call-btn" aria-label={`Call FixitBay LLC at ${PHONE_DISPLAY}`} style={{
+          <a href={`tel:${PHONE}`} onClick={() => handleCall('hero', pageSlug)} data-testid="hero-call-btn" aria-label={`Call FixitBay LLC at ${PHONE_DISPLAY}`} style={{
             width: '100%', minHeight: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
             background: 'transparent', color: PC.white, border: '2px solid rgba(255,255,255,0.65)', borderRadius: PC.r,
             fontSize: 15, fontWeight: 700, textDecoration: 'none', fontFamily: F,
           }}>CALL {PHONE_DISPLAY}</a>
 
           <p style={{ textAlign: 'center', margin: '8px 0 0', fontSize: 12, fontFamily: F }}>
-            <a href={`sms:${PHONE}?body=${encodeURIComponent(`Hi FixitBay LLC, I need ${isMaintenance ? 'maintenance service' : 'a repair'}.`)}`} aria-label="Text FixitBay LLC to schedule service" style={{ color: PC.white45, textDecoration: 'underline' }}>
+            <a href={`sms:${PHONE}?body=${encodeURIComponent(`Hi FixitBay LLC, I need ${isMaintenance ? 'maintenance service' : 'a repair'}.`)}`} aria-label="Text FixitBay LLC to schedule service" style={{ color: PC.white45, textDecoration: 'underline' }}>
               Text us for fastest scheduling
             </a>
           </p>
@@ -363,8 +363,8 @@ const MobileServiceLanding = ({
       {/* ═══ 6. SERVICE AREAS ═══ */}
       <section style={{ background: PC.navy, padding: '32px 20px' }} aria-label="Service areas" data-testid="local-seo">
         <p style={{ fontSize: 11, fontWeight: 700, color: PC.white45, letterSpacing: '0.10em', textTransform: 'uppercase', margin: '0 0 6px' }}>Where We Work</p>
-        <h2 style={{ fontSize: 22, fontWeight: 800, color: PC.white, margin: '0 0 10px' }}>San Francisco &middot; Peninsula &middot; Marin</h2>
-        <p style={{ fontSize: 13, color: PC.white60, margin: '0 0 16px', lineHeight: 1.6 }}>Fast, reliable service across the Bay Area — no travel surcharge within SF city limits.</p>
+        <h2 style={{ fontSize: 22, fontWeight: 800, color: PC.white, margin: '0 0 10px' }}>San Francisco &middot; Peninsula &middot; Marin</h2>
+        <p style={{ fontSize: 13, color: PC.white60, margin: '0 0 16px', lineHeight: 1.6 }}>Fast, reliable service across the Bay Area — no travel surcharge within SF city limits.</p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12, marginBottom: 16 }}>
           <div style={{ background: PC.white08, border: `1px solid ${PC.white10}`, borderTop: `3px solid ${PC.accent}`, borderRadius: PC.r, padding: '12px 10px' }}>
             <p style={{ fontWeight: 700, fontSize: 12, color: PC.white, margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>SF</p>
@@ -374,13 +374,13 @@ const MobileServiceLanding = ({
           </div>
           <div style={{ background: PC.white08, border: `1px solid ${PC.white10}`, borderTop: `3px solid ${PC.accent}`, borderRadius: PC.r, padding: '12px 10px' }}>
             <p style={{ fontWeight: 700, fontSize: 12, color: PC.white, margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Peninsula</p>
-            {['Daly City', 'South SF', 'San Mateo', 'Millbrae', 'Pacifica'].map((t, i) => (
+            {['Daly City', 'South SF', 'San Mateo', 'Millbrae', 'Pacifica'].map((t, i) => (
               <p key={i} style={{ fontSize: 11, color: PC.white60, margin: '0 0 3px', lineHeight: 1.4 }}>&middot; {t}</p>
             ))}
           </div>
           <div style={{ background: PC.white08, border: `1px solid ${PC.white10}`, borderTop: `3px solid ${PC.accent}`, borderRadius: PC.r, padding: '12px 10px' }}>
             <p style={{ fontWeight: 700, fontSize: 12, color: PC.white, margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Marin</p>
-            {['San Rafael', 'Novato', 'Mill Valley', 'Sausalito', 'Tiburon'].map((t, i) => (
+            {['San Rafael', 'Novato', 'Mill Valley', 'Sausalito', 'Tiburon'].map((t, i) => (
               <p key={i} style={{ fontSize: 11, color: PC.white60, margin: '0 0 3px', lineHeight: 1.4 }}>&middot; {t}</p>
             ))}
           </div>
@@ -395,7 +395,7 @@ const MobileServiceLanding = ({
         <p style={{ fontSize: 11, fontWeight: 700, color: PC.accent, letterSpacing: '0.10em', textTransform: 'uppercase', margin: '0 0 14px', fontFamily: F }}>Your Technician</p>
         <div style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
           {techImage && (
-            <img src={techImage} alt="Andrei, FixitBay LLC lead technician" width={72} height={72} loading="lazy" style={{ borderRadius: PC.r, objectFit: 'cover', flexShrink: 0, width: 72, height: 72 }} />
+            <img src={techImage} alt="Andrei, FixitBay LLC lead technician" width={72} height={72} loading="lazy" style={{ borderRadius: PC.r, objectFit: 'cover', flexShrink: 0, width: 72, height: 72 }} />
           )}
           <div>
             <p style={{ fontWeight: 700, fontSize: 15, color: PC.textDark, margin: '0 0 6px', fontFamily: F }}>Andrei — Lead Technician</p>
@@ -583,7 +583,7 @@ const MobileServiceLanding = ({
       {/* Back link */}
       <div style={{ padding: '14px 20px', textAlign: 'center', background: PC.navy }}>
         <a href="/" style={{ fontFamily: F, fontSize: 13, color: PC.white45, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
-          &larr; Back to FixitBay LLC Home
+          &larr; Back to FixitBay LLC Home
         </a>
       </div>
 

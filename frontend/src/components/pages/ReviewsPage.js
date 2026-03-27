@@ -43,7 +43,7 @@ const ReviewsPage = () => {
       data: {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "FixitBay LLC",
+        "name": "FixitBay LLC",
         "telephone": "+17605435733",
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -78,8 +78,8 @@ const ReviewsPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Customer Reviews | FixitBay LLC Appliance Repair SF"
-        description="Read verified customer reviews for FixitBay LLC appliance repair in San Francisco Bay Area. 4.9 stars, 237 reviews across Google, Thumbtack & Yelp. Fast scheduling, 180-day warranty. Call (760) 543-5733."
+        title="Customer Reviews | FixitBay LLC Appliance Repair SF"
+        description="Read verified customer reviews for FixitBay LLC appliance repair in San Francisco Bay Area. 4.9 stars, 237 reviews across Google, Thumbtack & Yelp. Fast scheduling, 180-day warranty. Call (760) 543-5733."
         canonical="https://fixitbay.net/reviews"
       />
 
@@ -109,10 +109,10 @@ const ReviewsPage = () => {
             </nav>
             <div style={EYE}>VERIFIED CUSTOMER REVIEWS</div>
             <h1 className="rv-h1" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.15, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 700, margin: '0 auto 16px' }}>
-              Customer Reviews — FixitBay LLC Appliance Repair San Francisco
+              Customer Reviews — FixitBay LLC Appliance Repair San Francisco
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.78)', maxWidth: 540, margin: '0 auto 32px' }}>
-              See why families across San Francisco, the Peninsula, and Marin County trust FixitBay LLC for appliance repair.
+              See why families across San Francisco, the Peninsula, and Marin County trust FixitBay LLC for appliance repair.
             </p>
             <div>
               <div style={{ color: '#FF5722', fontSize: 28, letterSpacing: 4, marginBottom: 12 }}>{'\u2605\u2605\u2605\u2605\u2605'}</div>
@@ -132,7 +132,7 @@ const ReviewsPage = () => {
               { val: '4.9', label: 'Average Rating' },
               { val: '237', label: 'Total Reviews' },
               { val: '100%', label: 'Would Recommend' },
-              { val: 'Since 2023', label: 'Serving Bay Area' },
+              { val: 'Since 2023', label: 'Serving Bay Area' },
             ].map((s, i, arr) => (
               <div key={i} style={{ textAlign: 'center', padding: '0 48px', borderRight: i < arr.length - 1 ? '1px solid rgba(255,255,255,0.25)' : 'none' }}>
                 <div style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#fff' }}>{s.val}</div>
@@ -147,7 +147,7 @@ const ReviewsPage = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', textAlign: 'center' }}>
             <div style={EYE}>ALL REVIEWS</div>
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 6 }}>What Our Customers Say</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>Real feedback from verified customers across the Bay Area</p>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>Real feedback from verified customers across the Bay Area</p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 8, flexWrap: 'wrap' }}>
               {FILTER_TABS.map(tab => {
                 const isActive = activeFilter === tab;
@@ -270,7 +270,7 @@ const ReviewsPage = () => {
         <section data-testid="reviews-trust" style={{ background: '#F8F5F0', padding: '64px 24px' }}>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>
             <div style={EYE}>WHY CUSTOMERS TRUST US</div>
-            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 28 }}>What Makes FixitBay LLC Different</h2>
+            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 28 }}>What Makes FixitBay LLC Different</h2>
             <div className="grid md:grid-cols-3" style={{ gap: 16 }}>
               {TRUST_CARDS.map((c, i) => (
                 <div key={i} className="trust-card" style={{
@@ -296,7 +296,7 @@ const ReviewsPage = () => {
             <div style={{ ...EYE, textAlign: 'center' }}>JOIN OUR CUSTOMERS</div>
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 40, color: '#fff', marginBottom: 12 }}>Ready to Experience 5-Star Service?</h2>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.75)', marginBottom: 32 }}>
-              Join hundreds of satisfied Bay Area homeowners. Schedule your repair today.
+              Join hundreds of satisfied Bay Area homeowners. Schedule your repair today.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="cta-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '16px 36px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>

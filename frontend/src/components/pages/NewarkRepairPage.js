@@ -4,7 +4,7 @@ import CityRepairPage from '../templates/CityRepairPage';
 const NewarkRepairPage = () => {
   const cityData = {
     city: "Newark",
-    pageTitle: "Appliance Repair in Newark, CA – Fast, Reliable, Affordable!",
+    pageTitle: "Appliance Repair in Newark, CA – Fast, Reliable, Affordable!",
     metaDescription: "Expert appliance repair in Newark, CA. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733 or book online now!",
     neighborhoods: [
       "Old Town",
@@ -36,7 +36,7 @@ const NewarkRepairPage = () => {
       },
       {
         question: "Are your technicians licensed to work in Newark?",
-        answer: "Yes, all our technicians are fully licensed, insured, and bonded to work throughout Newark and the entire Bay Area. We're a local family-owned business serving Alameda County."
+        answer: "Yes, all our technicians are fully licensed, insured, and bonded to work throughout Newark and the entire Bay Area. We're a local family-owned business serving Alameda County."
       }
     ]
   };

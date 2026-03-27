@@ -10,7 +10,7 @@ const ServiceAreaMapLibre = React.memo(() => {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   const serviceCities = SERVICE_CITIES.filter(city =>
-    ['San Francisco', 'Peninsula', 'North Bay'].includes(city.region)
+    ['San Francisco', 'Peninsula', 'North Bay'].includes(city.region)
   );
 
   const cityGroups = serviceCities.reduce((acc, city) => {
@@ -96,9 +96,9 @@ const ServiceAreaMapLibre = React.memo(() => {
           <div className="hidden lg:block" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: 10 }}>OUR SERVICE AREA</div>
           <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 38, fontWeight: 800, color: '#0D1B2A' }}>Where We Serve</h2>
           <p className="hidden lg:block mx-auto" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 16, lineHeight: 1.65, color: '#4A5568', maxWidth: 600, fontWeight: 500, marginTop: 12 }}>
-            Serving San Francisco, the Peninsula, and Marin County.
+            Serving San Francisco, the Peninsula, and Marin County.
           </p>
-          <p className="lg:hidden text-sm" style={{ color: '#4A5568' }}>Professional appliance repair throughout the Bay Area</p>
+          <p className="lg:hidden text-sm" style={{ color: '#4A5568' }}>Professional appliance repair throughout the Bay Area</p>
         </div>
 
         <div className="grid lg:grid-cols-2" style={{ gap: 28 }}>
@@ -109,7 +109,7 @@ const ServiceAreaMapLibre = React.memo(() => {
               className="w-full overflow-hidden"
               style={{ flex: 1, minHeight: 420, borderRadius: 4, background: isIntersecting ? '#f3f4f6' : '#e5e7eb' }}
               role="img"
-              aria-label="Service area map showing cities in San Francisco Bay Area"
+              aria-label="Service area map showing cities in San Francisco Bay Area"
               data-testid="service-area-map"
             >
               {!isIntersecting && (

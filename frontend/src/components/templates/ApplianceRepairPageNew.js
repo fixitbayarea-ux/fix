@@ -47,27 +47,27 @@ const buildFAQSchema = (faqData) => {
 const buildServiceSchema = (serviceName) => ({
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": `${serviceName} Repair San Francisco Bay Area`,
+  "name": `${serviceName} Repair San Francisco Bay Area`,
   "serviceType": `${serviceName} Repair`,
   "provider": {
     "@type": "LocalBusiness",
-    "name": "FixitBay LLC",
+    "name": "FixitBay LLC",
     "telephone": "+17605435733",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "1549 Franklin St, Unit A",
-      "addressLocality": "San Francisco",
+      "addressLocality": "San Francisco",
       "addressRegion": "CA",
       "postalCode": "94109"
     },
     "priceRange": "$$"
   },
   "areaServed": [
-    "San Francisco", "Daly City", "South San Francisco", "San Bruno",
+    "San Francisco", "Daly City", "South San Francisco", "San Bruno",
     "Pacifica", "Millbrae", "Colma", "Brisbane", "Montara",
-    "Mill Valley", "San Rafael", "Sausalito", "Belvedere", "Tiburon",
-    "Corte Madera", "San Quentin", "Larkspur", "Greenbrae", "Ross",
-    "Fairfax", "San Anselmo", "Novato"
+    "Mill Valley", "San Rafael", "Sausalito", "Belvedere", "Tiburon",
+    "Corte Madera", "San Quentin", "Larkspur", "Greenbrae", "Ross",
+    "Fairfax", "San Anselmo", "Novato"
   ]
 });
 
@@ -86,25 +86,25 @@ const POPULAR_REPAIRS_MAP = {
   'corte-madera': ['refrigerator', 'dryer'],
 };
 const SERVICE_DISPLAY_NAMES = {
-  refrigerator: 'Refrigerator Repair',
-  washer: 'Washer Repair',
-  dryer: 'Dryer Repair',
-  dishwasher: 'Dishwasher Repair',
-  oven: 'Oven Repair',
+  refrigerator: 'Refrigerator Repair',
+  washer: 'Washer Repair',
+  dryer: 'Dryer Repair',
+  dishwasher: 'Dishwasher Repair',
+  oven: 'Oven Repair',
 };
 
 const SERVICE_CITIES = [
-  { slug: 'san-francisco', name: 'San Francisco' }, { slug: 'daly-city', name: 'Daly City' },
-  { slug: 'south-san-francisco', name: 'South San Francisco' }, { slug: 'san-bruno', name: 'San Bruno' },
+  { slug: 'san-francisco', name: 'San Francisco' }, { slug: 'daly-city', name: 'Daly City' },
+  { slug: 'south-san-francisco', name: 'South San Francisco' }, { slug: 'san-bruno', name: 'San Bruno' },
   { slug: 'pacifica', name: 'Pacifica' }, { slug: 'millbrae', name: 'Millbrae' },
-  { slug: 'mill-valley', name: 'Mill Valley' }, { slug: 'san-rafael', name: 'San Rafael' },
+  { slug: 'mill-valley', name: 'Mill Valley' }, { slug: 'san-rafael', name: 'San Rafael' },
   { slug: 'sausalito', name: 'Sausalito' }, { slug: 'novato', name: 'Novato' },
-  { slug: 'tiburon', name: 'Tiburon' }, { slug: 'corte-madera', name: 'Corte Madera' },
+  { slug: 'tiburon', name: 'Tiburon' }, { slug: 'corte-madera', name: 'Corte Madera' },
 ];
 const CITY_GROUPS = {
-  'San Francisco': ['San Francisco', 'Daly City', 'South San Francisco', 'Colma', 'Brisbane'],
-  'Peninsula': ['San Bruno', 'Millbrae', 'Pacifica', 'Montara'],
-  'North Bay / Marin': ['Sausalito', 'Mill Valley', 'Tiburon', 'Belvedere Tiburon', 'Corte Madera', 'San Rafael', 'Larkspur', 'Greenbrae', 'Novato', 'San Quentin', 'Ross', 'Fairfax', 'San Anselmo'],
+  'San Francisco': ['San Francisco', 'Daly City', 'South San Francisco', 'Colma', 'Brisbane'],
+  'Peninsula': ['San Bruno', 'Millbrae', 'Pacifica', 'Montara'],
+  'North Bay / Marin': ['Sausalito', 'Mill Valley', 'Tiburon', 'Belvedere Tiburon', 'Corte Madera', 'San Rafael', 'Larkspur', 'Greenbrae', 'Novato', 'San Quentin', 'Ross', 'Fairfax', 'San Anselmo'],
 };
 
 // Geographic proximity map - 5 nearest cities for internal linking clusters
@@ -175,12 +175,12 @@ Object.entries(CITY_SERVICE_LINKS).forEach(([city, services]) => {
 });
 
 const CITY_DISPLAY_NAMES = {
-  'san-francisco': 'San Francisco', 'daly-city': 'Daly City',
-  'san-rafael': 'San Rafael', 'mill-valley': 'Mill Valley',
-  'novato': 'Novato', 'south-san-francisco': 'South San Francisco',
-  'san-bruno': 'San Bruno', 'pacifica': 'Pacifica',
+  'san-francisco': 'San Francisco', 'daly-city': 'Daly City',
+  'san-rafael': 'San Rafael', 'mill-valley': 'Mill Valley',
+  'novato': 'Novato', 'south-san-francisco': 'South San Francisco',
+  'san-bruno': 'San Bruno', 'pacifica': 'Pacifica',
   'millbrae': 'Millbrae', 'sausalito': 'Sausalito',
-  'tiburon': 'Tiburon', 'corte-madera': 'Corte Madera',
+  'tiburon': 'Tiburon', 'corte-madera': 'Corte Madera',
 };
 
 /* ═══ Shared Inline Styles ═══ */
@@ -255,10 +255,10 @@ const ApplianceRepairPageNew = ({
     if (relatedLinks) return relatedLinks;
     if (isCity) {
       const nearby = nearbyLookup[cityName] || [];
-      return [{ href: '/service-areas', label: 'All Service Areas' }, { href: '/brands', label: 'Brands We Repair' }, { href: '/services', label: 'All Services' }, ...nearby.map(n => ({ ...n, label: `${n.label} Appliance Repair` }))];
+      return [{ href: '/service-areas', label: 'All Service Areas' }, { href: '/brands', label: 'Brands We Repair' }, { href: '/services', label: 'All Services' }, ...nearby.map(n => ({ ...n, label: `${n.label} Appliance Repair` }))];
     }
-    if (isBrand) return [{ href: '/refrigerator-repair', label: 'Refrigerator Repair' }, { href: '/washer-repair', label: 'Washer Repair' }, { href: '/dishwasher-repair', label: 'Dishwasher Repair' }, { href: '/oven-repair', label: 'Oven Repair' }, { href: '/brands', label: 'All Brands' }, { href: '/services', label: 'All Services' }];
-    if (isCommercial) return [{ href: '/commercial-appliance-repair', label: 'Commercial Appliance Repair' }, { href: '/commercial-refrigerator-repair', label: 'Commercial Refrigerator Repair' }, { href: '/services', label: 'All Services' }];
+    if (isBrand) return [{ href: '/refrigerator-repair', label: 'Refrigerator Repair' }, { href: '/washer-repair', label: 'Washer Repair' }, { href: '/dishwasher-repair', label: 'Dishwasher Repair' }, { href: '/oven-repair', label: 'Oven Repair' }, { href: '/brands', label: 'All Brands' }, { href: '/services', label: 'All Services' }];
+    if (isCommercial) return [{ href: '/commercial-appliance-repair', label: 'Commercial Appliance Repair' }, { href: '/commercial-refrigerator-repair', label: 'Commercial Refrigerator Repair' }, { href: '/services', label: 'All Services' }];
     if (isMaintenance) {
       const al = appliance.toLowerCase();
       const mr = al.includes('refrigerator') ? '/refrigerator-repair' : al.includes('washer') ? '/washer-repair' : al.includes('dryer') ? '/dryer-repair' : al.includes('dishwasher') ? '/dishwasher-repair' : al.includes('oven') || al.includes('range') ? '/oven-repair' : null;
@@ -310,8 +310,8 @@ const ApplianceRepairPageNew = ({
       data: {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        "name": `How to Get Your ${appliance} Repaired in San Francisco`,
-        "description": `Book fast ${appliance.toLowerCase()} repair with FixitBay LLC. $60 diagnostic applied to repair cost. 180-day warranty.`,
+        "name": `How to Get Your ${appliance} Repaired in San Francisco`,
+        "description": `Book fast ${appliance.toLowerCase()} repair with FixitBay LLC. $60 diagnostic applied to repair cost. 180-day warranty.`,
         "totalTime": "P1D",
         "estimatedCost": {
           "@type": "MonetaryAmount",
@@ -355,10 +355,10 @@ const ApplianceRepairPageNew = ({
         data: {
           '@context': 'https://schema.org',
           '@type': 'Service',
-          name: `Appliance Repair in ${cityName}`,
+          name: `Appliance Repair in ${cityName}`,
           provider: {
             '@type': 'LocalBusiness',
-            name: 'FixitBay LLC',
+            name: 'FixitBay LLC',
             telephone: '+17605435733',
           },
           areaServed: {
@@ -389,8 +389,8 @@ const ApplianceRepairPageNew = ({
   }, [appliance, breadcrumbLabel, breadcrumbHref, isTopLevel, cityName, pageTitle, faqData, serviceSchema]);
   useSchemas(pageSchemas);
 
-  const displayName = cityName ? `Appliance Repair in ${cityName}` : (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? appliance : `${appliance} ${serviceWord}`);
-  const displayH1 = customH1 || (cityName ? `Expert Appliance Repair in ${cityName}` : (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? `Expert ${appliance} in San\u00A0Francisco` : (appliance === 'Dishwasher' ? `Expert ${appliance} ${serviceWord} in the Bay\u00A0Area` : `Expert ${appliance} ${serviceWord} in San\u00A0Francisco`)));
+  const displayName = cityName ? `Appliance Repair in ${cityName}` : (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? appliance : `${appliance} ${serviceWord}`);
+  const displayH1 = customH1 || (cityName ? `Expert Appliance Repair in ${cityName}` : (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? `Expert ${appliance} in San\u00A0Francisco` : (appliance === 'Dishwasher' ? `Expert ${appliance} ${serviceWord} in the Bay\u00A0Area` : `Expert ${appliance} ${serviceWord} in San\u00A0Francisco`)));
 
 
   /* ═══════════════════════════════════════════════════════════
@@ -423,7 +423,7 @@ const ApplianceRepairPageNew = ({
               <span style={{ width: 36, height: 2, background: '#FF5722', display: 'inline-block' }} />
               <span style={{ ...S.eyebrow, letterSpacing: '0.22em' }}>{cityName.toUpperCase()} APPLIANCE REPAIR</span>
             </div>
-            <h1 className="hero-main-h1" data-testid="city-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in<br/>{cityName}</h1>
+            <h1 className="hero-main-h1" data-testid="city-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in<br/>{cityName}</h1>
             <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same- or next-day & next-day &middot; $60 diagnostic &middot; 180-day warranty</p>
             {/* Urgency micro-copy */}
             <p data-testid="city-hero-urgency" style={{ fontFamily: S.font, fontSize: 12, color: 'rgba(255,255,255,0.65)', marginTop: 12 }}>
@@ -506,7 +506,7 @@ const ApplianceRepairPageNew = ({
         <PricingCards testId="city-pricing" />
 
         {/* ═══ SECTION 6 — CTA BANNER ═══ */}
-        <CTABanner heading={`Need Appliance Repair in ${cityName} Today?`} testId="city-cta-banner" />
+        <CTABanner heading={`Need Appliance Repair in ${cityName} Today?`} testId="city-cta-banner" />
 
         {/* ═══ SECTION 7 — BRANDS ═══ */}
         <BrandsGrid cityName={cityName} testId="city-brands" />
@@ -553,7 +553,7 @@ const ApplianceRepairPageNew = ({
           <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
             <div style={S.eyebrow}>ALSO SERVING</div>
             <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 8 }}>Nearby Service Areas</h2>
-            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>We serve the entire Bay Area</p>
+            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>We serve the entire Bay Area</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
               {ALL_SERVICE_CITIES.filter(c => c.slug !== citySlug && !['belvedere', 'tiburon'].includes(c.slug)).map(city => (
                 <Link key={city.slug} to={city.path} style={{ fontFamily: S.font, fontWeight: 500, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.10)', borderRadius: 20, padding: '10px 16px', whiteSpace: 'nowrap', transition: 'all 0.15s ease', minHeight: 44, display: 'inline-flex', alignItems: 'center' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#0D1B2A'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.10)'; }}>
@@ -570,7 +570,7 @@ const ApplianceRepairPageNew = ({
         {/* ═══ SECTION 13 — FINAL CTA ═══ */}
         <section data-testid="city-final-cta" style={{ background: '#0D1B2A', borderTop: '3px solid #FF5722', padding: '70px 0', textAlign: 'center' }}>
           <div style={{ maxWidth: 700, margin: '0 auto', padding: '0 24px' }}>
-            <h3 style={{ fontFamily: S.font, fontWeight: 800, fontSize: 40, color: '#FFFFFF', lineHeight: 1.15, marginBottom: 12 }}>Need Appliance Repair in {cityName}?</h3>
+            <h3 style={{ fontFamily: S.font, fontWeight: 800, fontSize: 40, color: '#FFFFFF', lineHeight: 1.15, marginBottom: 12 }}>Need Appliance Repair in {cityName}?</h3>
             <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 12, marginBottom: 28 }}>Same- or next-day & next-day appointments available across all neighborhoods</p>
             <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href="/book?go=1" data-testid="city-final-book" style={{ display: 'inline-flex', alignItems: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
@@ -588,8 +588,8 @@ const ApplianceRepairPageNew = ({
             : [
                 { label: 'Refrigerator', svc: 'refrigerator' }, { label: 'Washer', svc: 'washer' },
                 { label: 'Dryer', svc: 'dryer' }, { label: 'Dishwasher', svc: 'dishwasher' },
-                { label: 'Oven & Range', svc: 'oven' }, { label: 'Wine Cooler', svc: 'wine-cooler' },
-                { label: 'Ice Maker', svc: 'ice-maker' },
+                { label: 'Oven & Range', svc: 'oven' }, { label: 'Wine Cooler', svc: 'wine-cooler' },
+                { label: 'Ice Maker', svc: 'ice-maker' },
               ];
           return (
             <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
@@ -643,7 +643,7 @@ const ApplianceRepairPageNew = ({
     <div style={{ fontFamily: S.font, background: '#F8F5F0' }}>
       <SEOMetaTags
         title={effectiveTitle}
-        description={effectiveDescription || `Professional ${appliance.toLowerCase()} repair in San Francisco, Peninsula, and Marin County. Licensed technicians, 180-day warranty, fast scheduling.`}
+        description={effectiveDescription || `Professional ${appliance.toLowerCase()} repair in San Francisco, Peninsula, and Marin County. Licensed technicians, 180-day warranty, fast scheduling.`}
         canonical={`https://fixitbay.net${currentPath}`}
         ogImage="https://fixitbay.net/images/og-cover.png"
         noindex={noindex}
@@ -711,7 +711,7 @@ const ApplianceRepairPageNew = ({
       )}
 
       {/* ═══ TRUST STRIP (service pages) ═══ */}
-      {showServiceHero && (
+      {!isCity && !hideHero && (
         <div className="city-trust-strip" data-testid="service-trust-strip" style={{ background: '#0D1B2A', borderBottom: '1px solid rgba(255,255,255,0.1)', padding: '10px 24px' }}>
           <div style={{ maxWidth: 800, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 20, flexWrap: 'wrap', fontFamily: S.font, fontWeight: 500, fontSize: 13, letterSpacing: '0.3px' }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>Licensed CA Technician</span></span>
@@ -830,7 +830,7 @@ const ApplianceRepairPageNew = ({
           <div style={{ maxWidth: 780, margin: '0 auto' }}>
             <div style={{ color: '#FF5722', fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 6, fontFamily: 'Montserrat, sans-serif' }}>PRICING</div>
             <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 26, color: '#0D1B2A', marginBottom: 6 }}>
-              {appliance} Repair Cost in San Francisco
+              {appliance} Repair Cost in San Francisco
             </h2>
             <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#6B7280', marginBottom: 20 }}>
               Written estimate before any work begins. $60 diagnostic applied to repair cost.
@@ -893,10 +893,10 @@ const ApplianceRepairPageNew = ({
             <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
               <div style={{ ...S.eyebrow, marginBottom: 10 }}>COVERAGE</div>
               <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 10 }}>Service Areas for {appliance} {serviceWord}</h2>
-              <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>We serve San Francisco, Peninsula &amp; North Bay / Marin County</p>
-              <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#4A5568', marginBottom: 16, lineHeight: 1.7 }}>We provide {appliance.toLowerCase()} {serviceWord.toLowerCase()} throughout San Francisco, Peninsula, and Marin County — including Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara, Mill Valley, San Rafael, Sausalito, Novato, Corte Madera, Larkspur, Greenbrae, Tiburon, Fairfax, San Anselmo, and Ross. Same- or next-day and next-day appointments available across all service areas.</p>
+              <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>We serve San Francisco, Peninsula &amp; North Bay / Marin County</p>
+              <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#4A5568', marginBottom: 16, lineHeight: 1.7 }}>We provide {appliance.toLowerCase()} {serviceWord.toLowerCase()} throughout San Francisco, Peninsula, and Marin County — including Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara, Mill Valley, San Rafael, Sausalito, Novato, Corte Madera, Larkspur, Greenbrae, Tiburon, Fairfax, San Anselmo, and Ross. Same- or next-day and next-day appointments available across all service areas.</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'flex-start' }}>
-                {['San Francisco','Daly City','South San Francisco','Colma','Brisbane','San Bruno','Millbrae','Pacifica','Montara','Sausalito','Mill Valley','Tiburon','Belvedere','Corte Madera','San Rafael','Larkspur','Greenbrae','Novato','Ross','Fairfax','San Anselmo'].map(city => {
+                {['San Francisco','Daly City','South San Francisco','Colma','Brisbane','San Bruno','Millbrae','Pacifica','Montara','Sausalito','Mill Valley','Tiburon','Belvedere','Corte Madera','San Rafael','Larkspur','Greenbrae','Novato','Ross','Fairfax','San Anselmo'].map(city => {
                   const slug = city.toLowerCase().replace(/\s+/g, '-');
                   const href = hasCityServiceRoutes && CITY_SERVICE_SLUGS.includes(slug) ? `/${slug}-${svcSlug}-repair` : `/${slug}-appliance-repair`;
                   return (
@@ -962,7 +962,7 @@ const ApplianceRepairPageNew = ({
         return (
           <section style={{ background: '#FFFFFF', padding: '60px 0' }}>
             <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 24px' }}>
-              <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 16 }}>Why {cityName} Residents Call FixitBay LLC</h2>
+              <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 16 }}>Why {cityName} Residents Call FixitBay LLC</h2>
               <div style={{ ...S.body }}>
                 {cd ? (
                   <>

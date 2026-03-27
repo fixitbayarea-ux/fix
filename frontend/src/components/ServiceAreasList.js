@@ -3,15 +3,15 @@ import React from 'react';
 const ServiceAreasList = () => {
   const regions = [
     {
-      name: 'San Francisco',
-      cities: [{ name: 'San Francisco', slug: 'san-francisco' }]
+      name: 'San Francisco',
+      cities: [{ name: 'San Francisco', slug: 'san-francisco' }]
     },
     {
       name: 'Peninsula',
       cities: [
-        { name: 'Daly City', slug: 'daly-city' },
-        { name: 'South San Francisco', slug: 'south-san-francisco' },
-        { name: 'San Bruno', slug: 'san-bruno' },
+        { name: 'Daly City', slug: 'daly-city' },
+        { name: 'South San Francisco', slug: 'south-san-francisco' },
+        { name: 'San Bruno', slug: 'san-bruno' },
         { name: 'Pacifica', slug: 'pacifica' },
         { name: 'Millbrae', slug: 'millbrae' },
         { name: 'Colma', slug: 'colma' },
@@ -20,20 +20,20 @@ const ServiceAreasList = () => {
       ]
     },
     {
-      name: 'North Bay / Marin County',
+      name: 'North Bay / Marin County',
       cities: [
-        { name: 'San Rafael', slug: 'san-rafael' },
+        { name: 'San Rafael', slug: 'san-rafael' },
         { name: 'Novato', slug: 'novato' },
-        { name: 'Mill Valley', slug: 'mill-valley' },
+        { name: 'Mill Valley', slug: 'mill-valley' },
         { name: 'Sausalito', slug: 'sausalito' },
-        { name: 'Belvedere Tiburon', slug: 'belvedere' },
-        { name: 'Corte Madera', slug: 'corte-madera' },
-        { name: 'San Quentin', slug: 'san-quentin' },
+        { name: 'Belvedere Tiburon', slug: 'belvedere' },
+        { name: 'Corte Madera', slug: 'corte-madera' },
+        { name: 'San Quentin', slug: 'san-quentin' },
         { name: 'Larkspur', slug: 'larkspur' },
         { name: 'Greenbrae', slug: 'greenbrae' },
         { name: 'Ross', slug: 'ross' },
         { name: 'Fairfax', slug: 'fairfax' },
-        { name: 'San Anselmo', slug: 'san-anselmo' },
+        { name: 'San Anselmo', slug: 'san-anselmo' },
       ]
     }
   ];

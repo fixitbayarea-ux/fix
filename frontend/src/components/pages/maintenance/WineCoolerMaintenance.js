@@ -26,9 +26,9 @@ const WineCoolerMaintenance = () => {
   ];
 
   const serviceDescription = {
-    title: 'Professional Wine Cooler Maintenance & Repair',
+    title: 'Professional Wine Cooler Maintenance & Repair',
     paragraphs: [
-      'Your wine collection represents a significant investment, and proper storage conditions are essential to preserve quality and value. Wine coolers require specialized maintenance to maintain precise temperature and humidity levels. FixitBay LLC provides expert wine cooler maintenance and repair services throughout San Francisco, Peninsula, and Marin County for all brands and models.',
+      'Your wine collection represents a significant investment, and proper storage conditions are essential to preserve quality and value. Wine coolers require specialized maintenance to maintain precise temperature and humidity levels. FixitBay LLC provides expert wine cooler maintenance and repair services throughout San Francisco, Peninsula, and Marin County for all brands and models.',
       'Our certified technicians understand wine storage requirements and perform comprehensive maintenance including testing and calibrating temperature controls, inspecting and cleaning condenser coils, checking door seals for proper closure, testing humidity levels, inspecting cooling systems, and verifying proper ventilation. We service both single-zone and dual-zone wine coolers, from compact countertop units to large built-in installations. We also handle specialized features like UV-protected glass doors and vibration dampening systems.',
       'During our $60 diagnostic visit, we verify your wine cooler maintains consistent temperature, check door seals for air leaks, test the cooling system, clean accessible coils, and inspect all controls. We also assess interior lighting, shelving condition, and overall unit performance. Regular maintenance prevents temperature fluctuations that can ruin wine, extends your cooler\'s lifespan, and ensures your collection is stored under ideal conditions. All our work is backed by a 180-day warranty, and we offer convenient same- or next-day and next-day service appointments.'
     ]
@@ -37,10 +37,10 @@ const WineCoolerMaintenance = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Wine Cooler Maintenance",
+    "serviceType": "Wine Cooler Maintenance",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay LLC",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     }
   };
@@ -48,11 +48,11 @@ const WineCoolerMaintenance = () => {
   if (isMobile) {
     return (
       <MobileServiceLanding
-        appliance="Wine Cooler"
+        appliance="Wine Cooler"
         pageSlug="maintenance/wine-cooler"
-        pageTitle="Wine Cooler Maintenance & Repair | FixitBay LLC"
-        metaDescription="Professional wine cooler maintenance in San Francisco Bay Area. Protect your wine collection with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
-        heroTitle={<>Wine Cooler<br />Maintenance. Today.</>}
+        pageTitle="Wine Cooler Maintenance & Repair | FixitBay LLC"
+        metaDescription="Professional wine cooler maintenance in San Francisco Bay Area. Protect your wine collection with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+        heroTitle={<>Wine Cooler<br />Maintenance. Today.</>}
         heroSubtitle="Protect Your Collection"
         issues={[
           { icon: '\u{1F321}', label: 'Temp Issues' },
@@ -70,9 +70,9 @@ const WineCoolerMaintenance = () => {
 
   return (
     <ApplianceRepairPageNew
-      appliance="Wine Cooler"
-      pageTitle="Wine Cooler Maintenance & Repair | FixitBay LLC"
-      metaDescription="Professional wine cooler maintenance in San Francisco Bay Area. Protect your wine collection with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+      appliance="Wine Cooler"
+      pageTitle="Wine Cooler Maintenance & Repair | FixitBay LLC"
+      metaDescription="Professional wine cooler maintenance in San Francisco Bay Area. Protect your wine collection with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}
@@ -83,7 +83,7 @@ const WineCoolerMaintenance = () => {
       isMaintenance={true}
       serviceWord="Maintenance"
       repairVsReplace={{
-        title: "Wine Cooler Maintenance vs. Repair",
+        title: "Wine Cooler Maintenance vs. Repair",
         intro: "Protect your wine collection with regular maintenance. Here's when service pays off most.",
         items: [
           { action: 'repair', condition: 'Annual condenser coil cleaning', recommendation: 'Dust on coils forces the compressor to overwork. A $60 cleaning visit prevents $300+ compressor failures and protects your wine.' },
@@ -93,10 +93,10 @@ const WineCoolerMaintenance = () => {
         ]
       }}
       relatedLinks={[
-        { href: '/wine-cooler-repair', label: 'Wine Cooler Repair', desc: 'Temperature issues, vibration, or compressor failure' },
-        { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker problems' },
+        { href: '/wine-cooler-repair', label: 'Wine Cooler Repair', desc: 'Temperature issues, vibration, or compressor failure' },
+        { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker problems' },
         { href: '/maintenance/refrigerator', label: 'Fridge Maintenance', desc: 'Coil cleaning and seal inspection' },
-        { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Temperature and frost issues' },
+        { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Temperature and frost issues' },
       ]}
     />
 

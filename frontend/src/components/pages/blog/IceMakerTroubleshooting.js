@@ -16,7 +16,7 @@ const FAQ_ITEMS = [
   { q: 'Why is my ice maker not making ice even though the water works?', a: "The most common hidden causes are: (1) shutoff arm stuck in \u2018up\u2019 position \u2014 check and lower it manually, (2) water filter clogged \u2014 replace if older than 6 months, (3) freezer above 10\u00b0F \u2014 ice makers need 0\u20135\u00b0F to work properly. Try resetting the ice maker by holding the reset button for 3\u20135 seconds." },
   { q: 'How do I reset my ice maker?', a: "Most ice makers have a reset button \u2014 usually a small button on the side or front of the ice maker unit. Press and hold for 3\u20135 seconds until you hear the motor cycle. Wait 3\u20134 hours for ice to form. If there\u2019s no reset button, turn the ice maker off for 30 seconds, then back on. For Samsung and LG, check the control panel for an ice maker on/off toggle." },
   { q: 'Why is my ice maker making small or hollow ice cubes?', a: "Small or hollow cubes almost always indicate low water pressure or a clogged water filter. The ice mold isn\u2019t filling completely. Replace the water filter first (should be every 6 months or 300 gallons). If the filter is new, check water pressure \u2014 it should be at least 20 PSI. Low home water pressure needs a plumber, not an appliance tech." },
-  { q: 'How much does ice maker repair cost in San Francisco Bay Area?', a: "Ice maker repairs in the Bay Area typically cost $150\u2013$300. Water inlet valve replacement: $100\u2013$200. Ice maker module replacement: $150\u2013$250. Full unit replacement: $200\u2013$350 installed. DIY unit replacement costs $80\u2013$200 in parts. FixitBay LLC charges $60 diagnostic, applied to your repair." },
+  { q: 'How much does ice maker repair cost in San Francisco Bay Area?', a: "Ice maker repairs in the Bay Area typically cost $150\u2013$300. Water inlet valve replacement: $100\u2013$200. Ice maker module replacement: $150\u2013$250. Full unit replacement: $200\u2013$350 installed. DIY unit replacement costs $80\u2013$200 in parts. FixitBay LLC charges $60 diagnostic, applied to your repair." },
   { q: 'Is it worth repairing an ice maker or should I replace the fridge?', a: "Ice maker repair is almost always worth it if the refrigerator itself is under 10 years old. The ice maker is a replaceable component \u2014 even a full unit replacement ($80\u2013$200 in parts) is far cheaper than a new fridge. Only consider fridge replacement if the compressor or sealed system is failing alongside the ice maker." },
 ];
 
@@ -24,13 +24,13 @@ const TOC = [
   { id: 'water-supply-valve', label: 'Check the Water Supply Valve' },
   { id: 'water-filter', label: 'Replace the Water Filter' },
   { id: 'freezer-temperature', label: 'Verify the Freezer Temperature' },
-  { id: 'ice-maker-arm', label: 'Check the Ice Maker Arm or Sensor' },
+  { id: 'ice-maker-arm', label: 'Check the Ice Maker Arm or Sensor' },
   { id: 'water-inlet-valve', label: 'Inspect the Water Inlet Valve' },
   { id: 'frozen-fill-tube', label: 'Thaw a Frozen Fill Tube' },
-  { id: 'reset-module', label: 'Reset the Ice Maker Module' },
-  { id: 'clean-ice-maker', label: 'Clean the Ice Maker and Ice Bin' },
-  { id: 'motor-failure', label: 'Check for Ice Maker Motor Failure' },
-  { id: 'replace-unit', label: 'Replace the Entire Ice Maker Unit' },
+  { id: 'reset-module', label: 'Reset the Ice Maker Module' },
+  { id: 'clean-ice-maker', label: 'Clean the Ice Maker and Ice Bin' },
+  { id: 'motor-failure', label: 'Check for Ice Maker Motor Failure' },
+  { id: 'replace-unit', label: 'Replace the Entire Ice Maker Unit' },
   { id: 'checklist', label: 'Quick Diagnostic Checklist' },
   { id: 'faq', label: 'FAQ' },
 ];
@@ -89,16 +89,16 @@ const IceMakerTroubleshooting = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Ice Maker Not Working? Top 10 Fixes", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-01", "dateModified": "2026-01-01", "url": "https://fixitbay.net/blog/ice-maker-troubleshooting" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Ice Maker Not Working? Top 10 Fixes", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-01", "dateModified": "2026-01-01", "url": "https://fixitbay.net/blog/ice-maker-troubleshooting" } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) } },
-    { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Ice Maker Troubleshooting", "item": "https://fixitbay.net/blog/ice-maker-troubleshooting" }] } }
+    { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Ice Maker Troubleshooting", "item": "https://fixitbay.net/blog/ice-maker-troubleshooting" }] } }
   ], []);
   useSchemas(schemas);
 
   return (
     <>
       <SEOMetaTags
-        title="Ice Maker Not Working? Top 10 Fixes | FixitBay LLC"
+        title="Ice Maker Not Working? Top 10 Fixes | FixitBay LLC"
         description="Ice maker not making ice? Try these 10 fixes first — water filter, supply valve, frozen fill tube, reset, and more. DIY troubleshooting guide."
         canonical="https://fixitbay.net/blog/ice-maker-troubleshooting"
         ogType="article"
@@ -136,7 +136,7 @@ const IceMakerTroubleshooting = () => {
             </div>
             <BlogByline dateISO="2026-01-05" dateFormatted="January 5, 2026" readTime="7 min" />
             <h1 className="ice-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 720, margin: '0 auto 16px' }}>
-              Ice Maker Not Working? Top 10 Fixes — Bay Area Troubleshooting Guide
+              Ice Maker Not Working? Top 10 Fixes — Bay Area Troubleshooting Guide
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', maxWidth: 640, margin: '0 auto' }}>
               No ice, slow ice production, or small/hollow cubes? Troubleshoot water supply, ice maker module, and water filter issues. Most ice maker problems have simple solutions you can fix yourself.
@@ -153,7 +153,7 @@ const IceMakerTroubleshooting = () => {
 
               {/* Symptom Quick Picker */}
               <div data-testid="symptom-picker" style={{ background: '#0D1B2A', borderRadius: 4, padding: '20px 24px', marginBottom: 24 }}>
-                <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#fff', marginBottom: 14 }}>What's Your Ice Maker Doing?</p>
+                <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#fff', marginBottom: 14 }}>What's Your Ice Maker Doing?</p>
                 <div className="symptom-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
                   {[
                     { icon: '\u274C', symptom: 'No Ice at All', hint: '\u2192 Fixes 1, 2, 3, 7' },
@@ -197,8 +197,8 @@ const IceMakerTroubleshooting = () => {
               <p style={P}><strong style={{ color: '#1A1A1A' }}>The Problem:</strong> Ice makers require freezer temperatures between 0-5&deg;F to function properly. If your freezer is too warm, ice won't form.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Quick check:</strong> Use a freezer thermometer to verify the temperature. If it's above 10&deg;F, adjust your temperature control. Wait 24 hours and recheck ice production.</p>
 
-              {/* ── Fix 4: Ice Maker Arm ── */}
-              <FixH2 id="ice-maker-arm" num="4" title="Check the Ice Maker Arm or Sensor" />
+              {/* ── Fix 4: Ice Maker Arm ── */}
+              <FixH2 id="ice-maker-arm" num="4" title="Check the Ice Maker Arm or Sensor" />
               <p style={P}><strong style={{ color: '#1A1A1A' }}>The Problem:</strong> Most ice makers have a shutoff arm (a wire or plastic arm) or an optical sensor that stops ice production when the bin is full. If this arm is stuck in the "up" (off) position, the ice maker won't make ice.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Solution:</strong> Gently lower the shutoff arm. It should move freely and spring back. If it's stuck or feels stiff, it may need lubrication or replacement. For sensor-based models, ensure the sensor lens is clean (wipe with a soft cloth).</p>
 
@@ -212,7 +212,7 @@ const IceMakerTroubleshooting = () => {
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
-                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
                     <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -228,7 +228,7 @@ const IceMakerTroubleshooting = () => {
               <p style={P}><strong style={{ color: '#1A1A1A' }}>DIY Fix:</strong> Use a hairdryer on low heat to gently warm the fill tube (located behind or beneath the ice maker). Do NOT use high heat or get too close to plastic parts. Once thawed, test the ice maker.</p>
 
               {/* ── Fix 7: Reset Module ── */}
-              <FixH2 id="reset-module" num="7" title="Reset the Ice Maker Module" />
+              <FixH2 id="reset-module" num="7" title="Reset the Ice Maker Module" />
               <p style={P}><strong style={{ color: '#1A1A1A' }}>The Problem:</strong> Sometimes the ice maker module (the mechanical/electrical unit) gets stuck mid-cycle or experiences a control glitch.</p>
               <DarkBox label="HOW TO RESET" steps={[
                 'Locate the reset button on the ice maker (usually a small button on the side or front)',
@@ -238,19 +238,19 @@ const IceMakerTroubleshooting = () => {
               ]} />
               <p style={P}><strong style={{ color: '#1A1A1A' }}>No reset button?</strong> Turn the ice maker off for 30 seconds, then turn it back on.</p>
 
-              {/* ── Fix 8: Clean Ice Maker ── */}
-              <FixH2 id="clean-ice-maker" num="8" title="Clean the Ice Maker and Ice Bin" />
+              {/* ── Fix 8: Clean Ice Maker ── */}
+              <FixH2 id="clean-ice-maker" num="8" title="Clean the Ice Maker and Ice Bin" />
               <p style={P}><strong style={{ color: '#1A1A1A' }}>The Problem:</strong> Mineral buildup, mold, or ice clumping can interfere with the ice maker's ability to eject cubes and fill the bin properly.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Solution:</strong> Remove the ice bin, wash it with warm soapy water, and dry thoroughly. Wipe down the ice maker itself with a damp cloth. This can resolve issues with cubes sticking together or partial ejection.</p>
 
               {/* ── Fix 9: Motor Failure ── */}
-              <FixH2 id="motor-failure" num="9" title="Check for Ice Maker Motor Failure" />
+              <FixH2 id="motor-failure" num="9" title="Check for Ice Maker Motor Failure" />
               <p style={P}><strong style={{ color: '#1A1A1A' }}>The Problem:</strong> The ice maker motor is responsible for rotating the ice mold and ejecting cubes. If it's failed, you'll have water in the mold but no ice ejection.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>How to test:</strong> Manually press the reset button to trigger a cycle. If the motor doesn't turn or you hear clicking but no movement, the motor may be dead.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>When to call a pro:</strong> Motor replacement requires disassembling the ice maker unit&mdash;best left to a technician.</p>
 
               {/* ── Fix 10: Replace Unit ── */}
-              <FixH2 id="replace-unit" num="10" title="Replace the Entire Ice Maker Unit" />
+              <FixH2 id="replace-unit" num="10" title="Replace the Entire Ice Maker Unit" />
               <p style={P}><strong style={{ color: '#1A1A1A' }}>When all else fails:</strong> If you've tried everything above and the ice maker still doesn't work, the entire module may need replacement. This is common in ice makers that are 8-10 years old.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Cost:</strong> Replacement ice maker units cost $80-$200 depending on the model. Installation is straightforward for many homeowners (requires basic tools), but you can also hire a technician for guaranteed proper installation.</p>
 
@@ -270,7 +270,7 @@ const IceMakerTroubleshooting = () => {
               {/* ── FAQ ── */}
               <div id="faq" data-testid="faq-section" style={{ background: '#F8F5F0', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 28, margin: '32px 0' }}>
                 <div style={EYE}>FAQ</div>
-                <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#1A1A1A', marginBottom: 20 }}>Ice Maker Problems &mdash; Answered</h2>
+                <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#1A1A1A', marginBottom: 20 }}>Ice Maker Problems &mdash; Answered</h2>
                 {FAQ_ITEMS.map((faq, i) => {
                   const isOpen = openFaq === i;
                   return (
@@ -288,8 +288,8 @@ const IceMakerTroubleshooting = () => {
               {/* ── Bottom CTA ── */}
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
                 <div style={{ ...EYE, marginBottom: 8 }}>ICE MAKER REPAIR EXPERTS</div>
-                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Ice Maker Still Not Working?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians repair and replace ice makers for all refrigerator brands. Fast scheduling in SF Bay Area!</p>
+                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Ice Maker Still Not Working?</h3>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians repair and replace ice makers for all refrigerator brands. Fast scheduling in SF Bay Area!</p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
                   <a href="tel:+17605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
                   <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }} aria-label="opens in new tab">Book Repair</a>
@@ -302,7 +302,7 @@ const IceMakerTroubleshooting = () => {
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2 }}>Written by</p>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 2 }}>Andrei &mdash; Licensed Appliance Technician</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
                 </div>
               </div>
             </article>
@@ -312,7 +312,7 @@ const IceMakerTroubleshooting = () => {
               {/* Widget 1: Book Repair */}
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>EXPERT ICE MAKER REPAIR</div>
-                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Ice Maker Still Dead?</h3>
+                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Ice Maker Still Dead?</h3>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$60 diagnostic applied to repair. 180-day warranty on all work.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
                 {['All Brands: Samsung, LG, Whirlpool, GE', 'Fast Scheduling', 'Licensed CA Technician'].map(item => (
@@ -385,9 +385,9 @@ const IceMakerTroubleshooting = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Ice Maker Repair in Bay Area', body: 'Expert ice maker repair for all refrigerator brands. $60 diagnostic applied.', link: 'View Service', href: '/ice-maker-repair' },
-                { tag: 'ARTICLE', title: '5 Reasons Your Refrigerator Isn\'t Cooling', body: 'DIY fixes and when to call a technician in the Bay Area.', link: 'Read Article', href: '/blog/refrigerator-not-cooling' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'Ice Maker Repair in Bay Area', body: 'Expert ice maker repair for all refrigerator brands. $60 diagnostic applied.', link: 'View Service', href: '/ice-maker-repair' },
+                { tag: 'ARTICLE', title: '5 Reasons Your Refrigerator Isn\'t Cooling', body: 'DIY fixes and when to call a technician in the Bay Area.', link: 'Read Article', href: '/blog/refrigerator-not-cooling' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: card.tag === 'SERVICE' ? '#fff' : 'rgba(255,255,255,0.7)', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
@@ -405,7 +405,7 @@ const IceMakerTroubleshooting = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

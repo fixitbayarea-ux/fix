@@ -39,14 +39,14 @@ const CityRepairPage = ({
   }, []);
 
   const services = [
-    { name: "Refrigerator Repair", href: "/refrigerator-repair", icon: <Home className="w-6 h-6" /> },
-    { name: "Washer & Dryer Repair", href: "/washer-repair", icon: <Settings className="w-6 h-6" /> },
-    { name: "Dryer Repair", href: "/dryer-repair", icon: <Settings className="w-6 h-6" /> },
-    { name: "Dishwasher Repair", href: "/dishwasher-repair", icon: <Shield className="w-6 h-6" /> },
-    { name: "Oven & Stove / Range Repair", href: "/oven-repair", icon: <Wrench className="w-6 h-6" /> },
-    { name: "Cooktop Repair", href: "/cooktop-repair", icon: <Wrench className="w-6 h-6" /> },
-    { name: "Garbage Disposal Repair", href: "/garbage-disposal-repair", icon: <Settings className="w-6 h-6" /> },
-    { name: "Ice Maker Repair", href: "/ice-maker-repair", icon: <Star className="w-6 h-6" /> }
+    { name: "Refrigerator Repair", href: "/refrigerator-repair", icon: <Home className="w-6 h-6" /> },
+    { name: "Washer & Dryer Repair", href: "/washer-repair", icon: <Settings className="w-6 h-6" /> },
+    { name: "Dryer Repair", href: "/dryer-repair", icon: <Settings className="w-6 h-6" /> },
+    { name: "Dishwasher Repair", href: "/dishwasher-repair", icon: <Shield className="w-6 h-6" /> },
+    { name: "Oven & Stove / Range Repair", href: "/oven-repair", icon: <Wrench className="w-6 h-6" /> },
+    { name: "Cooktop Repair", href: "/cooktop-repair", icon: <Wrench className="w-6 h-6" /> },
+    { name: "Garbage Disposal Repair", href: "/garbage-disposal-repair", icon: <Settings className="w-6 h-6" /> },
+    { name: "Ice Maker Repair", href: "/ice-maker-repair", icon: <Star className="w-6 h-6" /> }
   ];
 
   const trustIndicators = [
@@ -54,7 +54,7 @@ const CityRepairPage = ({
     { icon: <Award className="w-5 h-5" />, text: "180-Day Warranty on All Repairs" },
     { icon: <Clock className="w-5 h-5" />, text: "Same/Next Day Service Available" },
     { icon: <Star className="w-5 h-5" />, text: "5-Star Google Rating" },
-    { icon: <MapPin className="w-5 h-5" />, text: "Local Bay Area Family Business" }
+    { icon: <MapPin className="w-5 h-5" />, text: "Local Bay Area Family Business" }
   ];
 
   const howItWorks = [
@@ -104,7 +104,7 @@ const CityRepairPage = ({
         data: buildBreadcrumbSchema([
           { name: 'Home', url: 'https://fixitbay.net/' },
           { name: 'Cities We Serve', url: 'https://fixitbay.net/site-map' },
-          { name: `${city || 'City'} Appliance Repair`, url: `https://fixitbay.net/${(city || '').toLowerCase().replace(/\s+/g, '-')}-appliance-repair` }
+          { name: `${city || 'City'} Appliance Repair`, url: `https://fixitbay.net/${(city || '').toLowerCase().replace(/\s+/g, '-')}-appliance-repair` }
         ])
       }
     ];
@@ -159,13 +159,13 @@ const CityRepairPage = ({
   return (
     <>
       <SEOMetaTags
-        title={`${pageTitle} | FixItBay Appliance Repair`}
-        description={`Licensed & insured technicians offering fast appliance repair in ${city}. FixItBay provides fast, local appliance repair and maintenance throughout the San Francisco Bay Area. 180-day warranty on parts and labor.`}
+        title={`${pageTitle} | FixItBay Appliance Repair`}
+        description={`Licensed & insured technicians offering fast appliance repair in ${city}. FixItBay provides fast, local appliance repair and maintenance throughout the San Francisco Bay Area. 180-day warranty on parts and labor.`}
         canonical={`https://fixitbay.net/${city.toLowerCase().replace(/\s+/g, '-')}-appliance-repair`}
         ogImage="https://fixitbay.net/images/og-cover.png"
         noindex={false}
       />
-      <ServiceSchema serviceType="Appliance Repair" city={city} serviceName={`Appliance Repair in ${city}`} />
+      <ServiceSchema serviceType="Appliance Repair" city={city} serviceName={`Appliance Repair in ${city}`} />
       
       {/* Schemas injected via useSchemas hook above */}
       <div className="min-h-screen bg-white font-montserrat pb-[72px] lg:pb-0">
@@ -193,7 +193,7 @@ const CityRepairPage = ({
                 width="120"
                 height="120"
                 loading="lazy"
-                alt={`Appliance repair in ${city} – FixitBay LLC`}
+                alt={`Appliance repair in ${city} – FixitBay LLC`}
                 className="w-24 h-24 rounded-full mx-auto shadow-2xl bg-white p-2"
               />
             </picture>
@@ -212,7 +212,7 @@ const CityRepairPage = ({
               animate={{ opacity: 1, y: 0 }}
               className="hero-main-h1 text-4xl md:text-5xl font-bold mb-6 text-white"
             >
-              {`Appliance Repair in ${city}`}
+              {`Appliance Repair in ${city}`}
             </motion.h1>
 
             <motion.p
@@ -221,7 +221,7 @@ const CityRepairPage = ({
               transition={{ delay: 0.2 }}
               className="text-xl text-white/90 mb-8 leading-relaxed"
             >
-              When appliances break down in {city}, FixitBay LLC is your trusted local repair service! Our licensed technicians provide fast, reliable appliance repair throughout {city} and the surrounding Bay Area. We handle refrigerators (fridges), washers (washing machines), dryers, dishwashers, ovens/stoves/ranges, cooktops, ice makers, wine coolers, and disposals — with fast scheduling available.
+              When appliances break down in {city}, FixitBay LLC is your trusted local repair service! Our licensed technicians provide fast, reliable appliance repair throughout {city} and the surrounding Bay Area. We handle refrigerators (fridges), washers (washing machines), dryers, dishwashers, ovens/stoves/ranges, cooktops, ice makers, wine coolers, and disposals — with fast scheduling available.
             </motion.p>
 
             <motion.div
@@ -263,7 +263,7 @@ const CityRepairPage = ({
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1A3B5D' }}>
-              Appliance Repair Services in {city}
+              Appliance Repair Services in {city}
             </h2>
             <p className="text-xl text-gray-600">
               Professional repair for all major appliances in your {city} home
@@ -309,7 +309,7 @@ const CityRepairPage = ({
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1A3B5D' }}>
-              Why {city} Residents Choose FixitBay LLC
+              Why {city} Residents Choose FixitBay LLC
             </h2>
           </motion.div>
 
@@ -435,7 +435,7 @@ const CityRepairPage = ({
         <section className="py-16 bg-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center" style={{ color: '#1A3B5D' }}>
-              About Appliance Repair in {city}
+              About Appliance Repair in {city}
             </h2>
             <div className="prose prose-lg max-w-none space-y-4">
               {localContent.map((para, idx) => (
@@ -493,10 +493,10 @@ const CityRepairPage = ({
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Need Appliance Repair in {city}?
+              Need Appliance Repair in {city}?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Don't let broken appliances disrupt your {city} home. Call FixitBay LLC now for fast, reliable repair service with our 180-day warranty.
+              Don't let broken appliances disrupt your {city} home. Call FixitBay LLC now for fast, reliable repair service with our 180-day warranty.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -528,10 +528,10 @@ const CityRepairPage = ({
       {(() => {
         const cs = city.toLowerCase().replace(/\s+/g, '-');
         const repairs = [
-          { label: 'Refrigerator Repair', svc: 'refrigerator' }, { label: 'Washer Repair', svc: 'washer' },
-          { label: 'Dryer Repair', svc: 'dryer' }, { label: 'Dishwasher Repair', svc: 'dishwasher' },
-          { label: 'Oven & Range Repair', svc: 'oven' }, { label: 'Wine Cooler Repair', svc: 'wine-cooler' },
-          { label: 'Ice Maker Repair', svc: 'ice-maker' },
+          { label: 'Refrigerator Repair', svc: 'refrigerator' }, { label: 'Washer Repair', svc: 'washer' },
+          { label: 'Dryer Repair', svc: 'dryer' }, { label: 'Dishwasher Repair', svc: 'dishwasher' },
+          { label: 'Oven & Range Repair', svc: 'oven' }, { label: 'Wine Cooler Repair', svc: 'wine-cooler' },
+          { label: 'Ice Maker Repair', svc: 'ice-maker' },
         ];
         return (
           <section style={{ background: '#F8F5F0', padding: '48px 0' }}>
@@ -553,7 +553,7 @@ const CityRepairPage = ({
       <footer className="py-8 bg-gray-800 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-gray-300">
-            © 2026 FixitBay LLC. Licensed & Insured Appliance Repair Company serving {city} and the San Francisco Bay Area.
+            © 2026 FixitBay LLC. Licensed & Insured Appliance Repair Company serving {city} and the San Francisco Bay Area.
           </p>
         </div>
       </footer>

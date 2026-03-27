@@ -55,7 +55,7 @@ const CUSTOM_CITY_PAGES = {
   'greenbrae': Greenbrae
 };
 
-// List of valid Bay Area cities (derived from shared SERVICE_CITIES)
+// List of valid Bay Area cities (derived from shared SERVICE_CITIES)
 const VALID_CITIES = SERVICE_CITIES.map(c => c.slug.toLowerCase());
 
 const slugToCity = (slug) => slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
@@ -97,7 +97,7 @@ const CityRepairRoute = () => {
   // Fallback to generic city page
   const cityName = slugToCity(citySlug);
 
-  const pageTitle = `Appliance Repair ${cityName} | FixItBay Appliance Repair & Maintenance`;
+  const pageTitle = `Appliance Repair ${cityName} | FixItBay Appliance Repair & Maintenance`;
   const metaDescription = `Same/next-day appliance repair in ${cityName}. $60 diagnostic credited to repair. 180-day warranty. Book online or call (760) 543-5733.`;
 
   const neighborhoods = [cityName + ' Downtown', 'Central', 'East', 'West'];

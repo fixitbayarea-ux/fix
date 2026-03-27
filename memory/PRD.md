@@ -118,8 +118,9 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **ПРОМТ 08**: Fixed false "10+ Years" → "3+ Years" across all components (7 files). Redesigned city stats from inline flex to 3-column grid with `#1A2F45` background, border-radius 12px, dividers, clamp() font sizes.
 - **ПРОМТ 09**: SF Neighborhoods tabs — replaced horizontal scroll (`overflow-x: auto`) with grid layout. Mobile: `auto-fill, minmax(140px, 1fr)` (2 cols, all 10 districts visible). Desktop: `repeat(5, 1fr)`. Chips styled as pills with hover/active states. Tab content unchanged.
 
-### Session 15 (Mar 27 2026) — Brand Image Fix
+### Session 15 (Mar 27 2026) — Brand Image Fix + Non-Breaking Spaces
 - **ПРОМТ 10 FIX**: Fixed invisible Thermador logo on city pages. Root cause: `thermador.png` was a white-on-transparent PNG (320×160, created for dark hero backgrounds) — invisible on light card backgrounds. Changed to `thermador.svg` in SanFrancisco.js, BrandsGrid.jsx, LocalApplianceRepairPage.js. All 18 brand logos now render correctly. Zero 404 errors in console.
+- **ПРОМТ 01 (Session 15)**: Non-breaking spaces (`\u00A0`) injected into 170 files (3488 replacements). Protected phrases: FixitBay LLC, San Francisco, Bay Area, Daly City, San Mateo, Palo Alto, Santa Clara, Redwood City, Marin County, San Bruno, San Rafael, Mill Valley, Corte Madera, San Quentin, San Anselmo, Belvedere Tiburon, South San Francisco, Appliance Repair, Refrigerator Repair, Washer Repair, Dryer Repair, Dishwasher Repair, Cooktop Repair, Freezer Repair, Range Repair, Stove Repair, Oven Repair, Ice Maker, Wine Cooler, Garbage Disposal, Wall Oven, Wine Refrigerator. Also added `.nowrap` CSS utility class to index.css. Fixed pre-existing `showServiceHero` undefined bug in ApplianceRepairPageNew.js (replaced with `!isCity && !hideHero`). Fixed literal `/ /g` → `/\s+/g` in AboutPage.js slug generation for \u00A0 compatibility.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

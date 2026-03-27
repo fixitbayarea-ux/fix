@@ -60,6 +60,7 @@
 }
 
 /* ═══ Shared layout utilities ═══ */
+.nowrap { white-space: nowrap; }
 .section-container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
 .section-pad { padding: 70px 0; }
 .section-pad-sm { padding: 60px 0; }

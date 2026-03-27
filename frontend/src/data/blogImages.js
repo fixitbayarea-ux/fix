@@ -91,7 +91,7 @@ const CATEGORY_IMAGES = {
 
 const DEFAULT_IMAGE = {
   src: 'https://images.unsplash.com/photo-1770063817031-f3b98dff347f?w=800&h=450&fit=crop&auto=format',
-  alt: 'Modern kitchen with stainless steel appliances — FixitBay LLC blog'
+  alt: 'Modern kitchen with stainless steel appliances — FixitBay LLC blog'
 };
 
 export function getBlogImage(slug, categories) {

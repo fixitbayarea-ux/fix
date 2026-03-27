@@ -4,7 +4,7 @@ import CityRepairPage from '../templates/CityRepairPage';
 const CupertinoRepairPage = () => {
   const cityData = {
     city: "Cupertino",
-    pageTitle: "Appliance Repair in Cupertino, CA – Fast, Reliable, Affordable!",
+    pageTitle: "Appliance Repair in Cupertino, CA – Fast, Reliable, Affordable!",
     metaDescription: "Expert appliance repair in Cupertino, CA. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733 or book online now!",
     neighborhoods: [
       "Monta Vista",
@@ -36,7 +36,7 @@ const CupertinoRepairPage = () => {
       },
       {
         question: "Are your technicians licensed to work in Cupertino?",
-        answer: "Yes, all our technicians are fully licensed, insured, and bonded to work throughout Cupertino and the entire Bay Area. We're a local family-owned business serving Silicon Valley."
+        answer: "Yes, all our technicians are fully licensed, insured, and bonded to work throughout Cupertino and the entire Bay Area. We're a local family-owned business serving Silicon Valley."
       }
     ]
   };

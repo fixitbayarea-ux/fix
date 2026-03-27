@@ -14,10 +14,10 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: 'What is the 50% rule for appliance repair?', a: "The 50% rule states: if the repair cost exceeds 50% of the appliance's replacement cost, and the appliance is past 50% of its expected lifespan, replacement is usually smarter. For a $1,200 refrigerator, that means don't spend more than $600 on repairs." },
-  { q: 'How do I know if my appliance is worth repairing in the Bay Area?', a: "Three key factors: age (under 10 years is generally repairable), repair cost vs replacement cost (50% rule), and repair history (2+ repairs in a year is a red flag). FixitBay LLC technicians give honest assessments \u2014 we'll tell you if replacement makes more financial sense." },
+  { q: 'How do I know if my appliance is worth repairing in the Bay Area?', a: "Three key factors: age (under 10 years is generally repairable), repair cost vs replacement cost (50% rule), and repair history (2+ repairs in a year is a red flag). FixitBay LLC technicians give honest assessments \u2014 we'll tell you if replacement makes more financial sense." },
   { q: 'Is it ever worth repairing a 15-year-old appliance?', a: "Rarely for standard brands. However, premium appliances like Sub-Zero, Wolf, and Thermador are built to last 20\u201325 years and are almost always worth repairing \u2014 replacement parts are available, and new models cost $5,000\u2013$15,000+." },
   { q: 'What appliances are most worth repairing?', a: "Refrigerators and washing machines have the best repair-to-replace value if under 10 years old. Dishwashers and dryers are borderline at 8+ years. Microwaves are almost never worth professional repair \u2014 replacement is usually cheaper." },
-  { q: 'Does FixitBay LLC give honest repair vs replace advice?', a: "Always. Our $60 diagnostic includes an honest assessment of whether the repair makes financial sense. If we think replacement is smarter, we'll tell you \u2014 even if that means we don't do the repair. Our reputation is built on trust, not unnecessary repairs." },
+  { q: 'Does FixitBay LLC give honest repair vs replace advice?', a: "Always. Our $60 diagnostic includes an honest assessment of whether the repair makes financial sense. If we think replacement is smarter, we'll tell you \u2014 even if that means we don't do the repair. Our reputation is built on trust, not unnecessary repairs." },
 ];
 
 const TOC = [
@@ -73,8 +73,8 @@ const RepairVsReplace = () => {
       data: {
         "@context": "https://schema.org", "@type": "BlogPosting",
         "headline": "Repair vs Replace: When to Fix Your Appliance",
-        "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
-        "publisher": { "@type": "Organization", "name": "FixitBay LLC" },
+        "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
+        "publisher": { "@type": "Organization", "name": "FixitBay LLC" },
         "datePublished": "2026-01-01",
         "dateModified": "2026-01-01",
         "url": "https://fixitbay.net/blog/when-to-repair-vs-replace"
@@ -114,7 +114,7 @@ const RepairVsReplace = () => {
   return (
     <>
       <SEOMetaTags
-        title="When to Repair vs Replace Your Appliance | FixitBay LLC"
+        title="When to Repair vs Replace Your Appliance | FixitBay LLC"
         description="Should you repair or replace your appliance? Use the 50% rule with our expert guide — age, costs, energy efficiency, and real examples."
         canonical="https://fixitbay.net/blog/when-to-repair-vs-replace"
         ogType="article"
@@ -157,7 +157,7 @@ const RepairVsReplace = () => {
             </div>
             <BlogByline dateISO="2026-01-15" dateFormatted="January 15, 2026" readTime="6 min" />
             <h1 className="rvr-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 720, margin: '0 auto 16px' }}>
-              Repair vs Replace: When to Fix Your Appliance — Bay Area Expert Guide
+              Repair vs Replace: When to Fix Your Appliance — Bay Area Expert Guide
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto' }}>
               Not sure if it's worth repairing your old appliance? Use our expert guide based on the 50% rule, age considerations, and repair costs. Make the right financial decision for your home.
@@ -224,7 +224,7 @@ const RepairVsReplace = () => {
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
-                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
                     <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -338,7 +338,7 @@ const RepairVsReplace = () => {
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2 }}>Written by</p>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 2 }}>Andrei — Licensed Appliance Technician</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
                 </div>
               </div>
             </article>
@@ -385,7 +385,7 @@ const RepairVsReplace = () => {
                 <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#1A1A1A', paddingBottom: 12, borderBottom: '1px solid rgba(0,0,0,0.08)', marginBottom: 16 }}>Related Articles</p>
                 {[
                   { text: '5 Reasons Your Refrigerator Isn\'t Cooling', href: '/blog/refrigerator-not-cooling' },
-                  { text: 'Refrigerator Repair Costs in SF Bay Area', href: '/blog/refrigerator-repair-cost-san-francisco-2026' },
+                  { text: 'Refrigerator Repair Costs in SF Bay Area', href: '/blog/refrigerator-repair-cost-san-francisco-2026' },
                   { text: 'How Long Do Appliances Last?', href: '/blog/appliance-lifespan' },
                   { text: 'Common Washer Error Codes Explained', href: '/blog/washer-error-codes' },
                 ].map((link, i) => (
@@ -408,7 +408,7 @@ const RepairVsReplace = () => {
               {[
                 { title: 'How Long Do Appliances Last? Average Lifespan Guide', href: '/blog/appliance-lifespan' },
                 { title: 'Energy-Efficient Appliances: Worth the Cost?', href: '/blog/energy-efficient-appliances' },
-                { title: 'Appliance Repair Cost in San Francisco 2026', href: '/blog/appliance-repair-cost-san-francisco' },
+                { title: 'Appliance Repair Cost in San Francisco 2026', href: '/blog/appliance-repair-cost-san-francisco' },
               ].map((a, i) => (
                 <Link key={i} to={a.href} data-testid={`related-article-${i}`} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.06)', borderRadius: 4, textDecoration: 'none' }}>
                   <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#0D1B2A' }}>{a.title}</span>
@@ -426,9 +426,9 @@ const RepairVsReplace = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Appliance Repair in Bay Area', body: 'Fast repair for all major brands. $60 diagnostic, 180-day warranty.', link: 'View Services', href: '/services' },
-                { tag: 'ARTICLE', title: '5 Reasons Your Refrigerator Isn\'t Cooling', body: 'DIY fixes and when to call a professional in the Bay Area.', link: 'Read Article', href: '/blog/refrigerator-not-cooling' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'Appliance Repair in Bay Area', body: 'Fast repair for all major brands. $60 diagnostic, 180-day warranty.', link: 'View Services', href: '/services' },
+                { tag: 'ARTICLE', title: '5 Reasons Your Refrigerator Isn\'t Cooling', body: 'DIY fixes and when to call a professional in the Bay Area.', link: 'Read Article', href: '/blog/refrigerator-not-cooling' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: card.tag === 'SERVICE' ? '#fff' : 'rgba(255,255,255,0.7)', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
@@ -446,7 +446,7 @@ const RepairVsReplace = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

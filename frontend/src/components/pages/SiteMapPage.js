@@ -10,18 +10,18 @@ const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', te
 const COMPANY = [
   ['Home', '/'], ['About Us', '/about'], ['Contact', '/contact'], ['Reviews', '/reviews'],
   ['Services', '/services'], ['Service Areas', '/service-areas'], ['All Brands', '/brands'],
-  ['Local Appliance Repair', '/local-appliance-repair'], ['Residential Repair', '/residential-appliance-repair'],
+  ['Local Appliance Repair', '/local-appliance-repair'], ['Residential Repair', '/residential-appliance-repair'],
   ['Book Online', '/book'], ['Privacy Policy', '/privacy-policy'],
 ];
 const SERVICES = [
-  ['Refrigerator Repair', '/refrigerator-repair'], ['Washer Repair', '/washer-repair'],
-  ['Dryer Repair', '/dryer-repair'], ['Dishwasher Repair', '/dishwasher-repair'],
-  ['Oven Repair', '/oven-repair'], ['Stove Repair', '/stove-repair'],
-  ['Range Repair', '/range-repair'], ['Cooktop Repair', '/cooktop-repair'],
-  ['Ice Maker Repair', '/ice-maker-repair'], ['Wine Cooler Repair', '/wine-cooler-repair'],
-  ['Freezer Repair', '/freezer-repair'], ['Garbage Disposal Repair', '/garbage-disposal-repair'],
+  ['Refrigerator Repair', '/refrigerator-repair'], ['Washer Repair', '/washer-repair'],
+  ['Dryer Repair', '/dryer-repair'], ['Dishwasher Repair', '/dishwasher-repair'],
+  ['Oven Repair', '/oven-repair'], ['Stove Repair', '/stove-repair'],
+  ['Range Repair', '/range-repair'], ['Cooktop Repair', '/cooktop-repair'],
+  ['Ice Maker Repair', '/ice-maker-repair'], ['Wine Cooler Repair', '/wine-cooler-repair'],
+  ['Freezer Repair', '/freezer-repair'], ['Garbage Disposal Repair', '/garbage-disposal-repair'],
 ];
-const COMMERCIAL_FEATURED = ['Commercial Appliance Repair', '/commercial-appliance-repair'];
+const COMMERCIAL_FEATURED = ['Commercial Appliance Repair', '/commercial-appliance-repair'];
 const COMMERCIAL = [
   ['Commercial Refrigerator', '/commercial-refrigerator-repair'], ['Commercial Dishwasher', '/commercial-dishwasher-repair'],
   ['Commercial Washer', '/commercial-washer-repair'], ['Commercial Dryer', '/commercial-dryer-repair'],
@@ -32,7 +32,7 @@ const MAINTENANCE = [
   ['Refrigerator Maintenance', '/maintenance/refrigerator'], ['Washer Maintenance', '/maintenance/washer'],
   ['Dryer Maintenance', '/maintenance/dryer'], ['Dishwasher Maintenance', '/maintenance/dishwasher'],
   ['Oven & Range Maintenance', '/maintenance/oven-range'], ['Cooktop Maintenance', '/maintenance/cooktop'],
-  ['Wine Cooler Maintenance', '/maintenance/wine-cooler'],
+  ['Wine Cooler Maintenance', '/maintenance/wine-cooler'],
 ];
 const BRANDS_FEATURED = ['Browse All Brands', '/brands'];
 const BRANDS = [
@@ -45,20 +45,20 @@ const BRANDS = [
   ['Sub-Zero Repair', '/sub-zero-appliance-repair'], ['Wolf Repair', '/wolf-appliance-repair'],
 ];
 const SF_PEN = [
-  ['San Francisco', '/san-francisco-appliance-repair'], ['Daly City', '/daly-city-appliance-repair'],
-  ['South San Francisco', '/south-san-francisco-appliance-repair'], ['San Bruno', '/san-bruno-appliance-repair'],
+  ['San Francisco', '/san-francisco-appliance-repair'], ['Daly City', '/daly-city-appliance-repair'],
+  ['South San Francisco', '/south-san-francisco-appliance-repair'], ['San Bruno', '/san-bruno-appliance-repair'],
   ['Pacifica', '/pacifica-appliance-repair'], ['Millbrae', '/millbrae-appliance-repair'],
   ['Colma', '/colma-appliance-repair'], ['Brisbane', '/brisbane-appliance-repair'],
   ['Montara', '/montara-appliance-repair'],
 ];
 const MARIN = [
-  ['San Rafael', '/san-rafael-appliance-repair'], ['Novato', '/novato-appliance-repair'],
-  ['Mill Valley', '/mill-valley-appliance-repair'], ['Sausalito', '/sausalito-appliance-repair'],
+  ['San Rafael', '/san-rafael-appliance-repair'], ['Novato', '/novato-appliance-repair'],
+  ['Mill Valley', '/mill-valley-appliance-repair'], ['Sausalito', '/sausalito-appliance-repair'],
   ['Belvedere', '/belvedere-appliance-repair'], ['Tiburon', '/tiburon-appliance-repair'],
-  ['Corte Madera', '/corte-madera-appliance-repair'], ['San Quentin', '/san-quentin-appliance-repair'],
+  ['Corte Madera', '/corte-madera-appliance-repair'], ['San Quentin', '/san-quentin-appliance-repair'],
   ['Larkspur', '/larkspur-appliance-repair'], ['Greenbrae', '/greenbrae-appliance-repair'],
   ['Ross', '/ross-appliance-repair'], ['Fairfax', '/fairfax-appliance-repair'],
-  ['San Anselmo', '/san-anselmo-appliance-repair'],
+  ['San Anselmo', '/san-anselmo-appliance-repair'],
 ];
 const SF_HOODS = [
   ['Sunset District', '/san-francisco/sunset-district-appliance-repair'],
@@ -82,7 +82,7 @@ const BLOG = [
   ['Dryer Taking Too Long', '/blog/dryer-taking-too-long'],
   ['Washer Error Codes', '/blog/washer-error-codes'],
   ['Oven Temperature Calibration', '/blog/oven-temperature-calibration'],
-  ['Ice Maker Troubleshooting', '/blog/ice-maker-troubleshooting'],
+  ['Ice Maker Troubleshooting', '/blog/ice-maker-troubleshooting'],
   ['Appliance Lifespan Guide', '/blog/appliance-lifespan'],
   ['Energy Efficient Appliances', '/blog/energy-efficient-appliances'],
   ['Gas Smell from Stove', '/blog/gas-smell-from-stove'],
@@ -143,8 +143,8 @@ export default function SiteMapPage() {
   return (
     <>
       <SEOMetaTags
-        title="Site Map | FixitBay LLC — All Pages"
-        description="Complete site map for FixitBay LLC. 100+ pages including appliance repair services, brand pages, Bay Area cities, SF neighborhoods, and blog articles."
+        title="Site Map | FixitBay LLC — All Pages"
+        description="Complete site map for FixitBay LLC. 100+ pages including appliance repair services, brand pages, Bay Area cities, SF neighborhoods, and blog articles."
         canonical="https://fixitbay.net/site-map"
         noindex={true}
       />
@@ -188,13 +188,13 @@ export default function SiteMapPage() {
 
             {/* B: Services */}
             <div data-testid="section-services">
-              <SecHead icon={'\uD83D\uDD27'} eyebrow="SERVICES" title="Appliance Repair Services" />
+              <SecHead icon={'\uD83D\uDD27'} eyebrow="SERVICES" title="Appliance Repair Services" />
               <Grid items={SERVICES} />
             </div>
 
             {/* C: Commercial */}
             <div data-testid="section-commercial">
-              <SecHead icon={'\uD83C\uDFED'} eyebrow="COMMERCIAL" title="Commercial Appliance Repair" />
+              <SecHead icon={'\uD83C\uDFED'} eyebrow="COMMERCIAL" title="Commercial Appliance Repair" />
               <DarkCard text={COMMERCIAL_FEATURED[0]} href={COMMERCIAL_FEATURED[1]} />
               <Grid items={COMMERCIAL} />
             </div>
@@ -217,8 +217,8 @@ export default function SiteMapPage() {
             <div data-testid="section-cities">
               <SecHead icon={'\uD83D\uDCCD'} eyebrow="SERVICE AREAS" title="Cities We Serve" />
               <div className="city-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20 }}>
-                <CityGroup title="San Francisco & Peninsula" cities={SF_PEN} />
-                <CityGroup title="Marin County" cities={MARIN} />
+                <CityGroup title="San Francisco & Peninsula" cities={SF_PEN} />
+                <CityGroup title="Marin County" cities={MARIN} />
                 <CityGroup title="SF Neighborhoods" cities={SF_HOODS} />
               </div>
             </div>
@@ -247,7 +247,7 @@ export default function SiteMapPage() {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:7605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
       </div>

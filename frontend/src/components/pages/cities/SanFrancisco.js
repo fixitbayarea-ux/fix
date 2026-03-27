@@ -19,11 +19,11 @@ const S = {
 /* ═══ Schema ═══ */
 const sfServiceSchema = {
   "@context": "https://schema.org", "@type": "Service",
-  "serviceType": "Appliance Repair",
+  "serviceType": "Appliance Repair",
   "provider": { "@id": "https://fixitbay.net/#organization" },
-  "areaServed": { "@type": "City", "name": "San Francisco, CA" },
+  "areaServed": { "@type": "City", "name": "San Francisco, CA" },
   "url": "https://fixitbay.net/san-francisco-appliance-repair",
-  "description": "Fast appliance repair throughout San Francisco. $60 diagnostic credited toward repair. 180-day warranty."
+  "description": "Fast appliance repair throughout San Francisco. $60 diagnostic credited toward repair. 180-day warranty."
 };
 const buildBreadcrumbSchema = (items) => ({
   "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -82,7 +82,7 @@ const NEIGHBORHOOD_TABS = [
     issues: [
       { title: 'Sub-Zero Compressor Issues', desc: 'Premium built-in refrigerators in Pacific Heights require factory-trained technicians and specialty parts.' },
       { title: 'Wolf Range Burner Problems', desc: 'High-end gas ranges need precise calibration. We carry Wolf-specific components on every Pac Heights call.' },
-      { title: 'Wine Cooler Temperature Drift', desc: 'Built-in wine storage units in luxury kitchens are sensitive to ambient temperature and vibration.' },
+      { title: 'Wine Cooler Temperature Drift', desc: 'Built-in wine storage units in luxury kitchens are sensitive to ambient temperature and vibration.' },
     ],
     info: 'Pacific Heights homes feature premium appliances from Sub-Zero, Wolf, Thermador, Viking, and Miele. Our technicians are factory-trained on all luxury brands and carry specialty parts. We coordinate with property managers and follow all building access protocols.'
   },
@@ -100,7 +100,7 @@ const NEIGHBORHOOD_TABS = [
       { title: 'Dryer Moisture Buildup', desc: 'Coastal dampness causes condensation in dryer vent lines, reducing efficiency and creating lint hazards.' },
       { title: 'Freezer Frost Accumulation', desc: 'Temperature fluctuations from fog-to-sun transitions cause excessive frost buildup in freezer compartments.' },
     ],
-    info: 'The Richmond District sits in San Francisco\'s fog belt, with persistent marine moisture that affects every appliance in the home. Our technicians understand these climate-specific challenges and come prepared with extra seals, gaskets, and moisture-resistant components.'
+    info: 'The Richmond District sits in San Francisco\'s fog belt, with persistent marine moisture that affects every appliance in the home. Our technicians understand these climate-specific challenges and come prepared with extra seals, gaskets, and moisture-resistant components.'
   },
   { id: 'sunset', label: 'Sunset', nhSlug: 'sunset-district', nhLabel: 'Sunset District',
     issues: [
@@ -112,7 +112,7 @@ const NEIGHBORHOOD_TABS = [
   },
   { id: 'noe-valley', label: 'Noe Valley', nhSlug: 'noe-valley', nhLabel: 'Noe Valley',
     issues: [
-      { title: 'High-End Dishwasher Repairs', desc: 'Noe Valley\'s renovated kitchens often feature Bosch and Miele dishwashers requiring specialized diagnostics.' },
+      { title: 'High-End Dishwasher Repairs', desc: 'Noe Valley\'s renovated kitchens often feature Bosch and Miele dishwashers requiring specialized diagnostics.' },
       { title: 'Refrigerator Compressor Noise', desc: 'Open-plan kitchen renovations amplify compressor noise, requiring careful diagnosis to distinguish normal from failing.' },
       { title: 'Cooktop Glass Cracks', desc: 'Induction and ceramic cooktops in remodeled Noe Valley homes are prone to thermal stress cracks.' },
     ],
@@ -122,7 +122,7 @@ const NEIGHBORHOOD_TABS = [
     issues: [
       { title: 'Appliance Corrosion', desc: 'Salt air from the bay corrodes electrical connections and metal components in Marina-district appliances.' },
       { title: 'Gas Line Pressure Issues', desc: 'Marina\'s landfill-built terrain causes subtle shifts that affect gas line connections over time.' },
-      { title: 'Ice Maker Water Line Clogs', desc: 'Mineral-rich water supply in the Marina clogs ice maker valves and supply lines.' },
+      { title: 'Ice Maker Water Line Clogs', desc: 'Mineral-rich water supply in the Marina clogs ice maker valves and supply lines.' },
     ],
     info: 'The Marina District\'s proximity to the bay brings salt air that accelerates component wear. Our technicians apply anti-corrosion treatments and use marine-grade connectors when needed. We\'re familiar with the parking constraints and building layouts throughout the Marina.'
   },
@@ -149,45 +149,45 @@ const COMMON_PROBLEMS = [
   { title: 'Refrigerator Not Cooling', description: 'Compressor failures, thermostat issues, and condenser coil problems. SF\'s coastal humidity accelerates seal and gasket wear in every neighborhood.' },
   { title: 'Washer Drainage Issues', description: 'Older Victorian plumbing creates water pressure and drainage problems. Narrow drain lines and aging pipes cause failures in modern washers.' },
   { title: 'Oven Temperature Problems', description: 'Gas ovens require calibration due to elevation differences across SF neighborhoods. Igniter failures are common in homes with older gas lines.' },
-  { title: 'Ice Maker Malfunctions', description: 'Mineral-rich water clogs supply lines and valves. Built-in units in luxury kitchens are especially prone to water filter and valve issues.' },
+  { title: 'Ice Maker Malfunctions', description: 'Mineral-rich water clogs supply lines and valves. Built-in units in luxury kitchens are especially prone to water filter and valve issues.' },
   { title: 'Range Burner Issues', description: 'Gas burner igniter failures and flame adjustment problems. Persistent fog moisture affects electronic ignition systems throughout the city.' },
   { title: 'Cooktop Element Failure', description: 'Electric and induction cooktop element burnout, cracked glass surfaces, and control board failures in both older and newly renovated kitchens.' },
 ];
 
 /* ═══ FAQ ═══ */
 const FAQ_DATA = [
-  { q: 'Do you offer fast scheduling in San Francisco?', a: 'Yes. We provide fast appointments for most San Francisco service calls when you contact us before noon, and next-day availability for afternoon requests. We serve every SF neighborhood including Sunset, Richmond, Mission, SOMA, Nob Hill, Pacific Heights, and all others.' },
-  { q: 'How much does appliance repair cost in San Francisco?', a: 'Our diagnostic fee is $60, which is fully credited toward your repair if you choose to proceed. Final costs depend on the appliance type and parts required. We always provide a written upfront estimate before starting any work — no surprises.' },
+  { q: 'Do you offer fast scheduling in San Francisco?', a: 'Yes. We provide fast appointments for most San Francisco service calls when you contact us before noon, and next-day availability for afternoon requests. We serve every SF neighborhood including Sunset, Richmond, Mission, SOMA, Nob Hill, Pacific Heights, and all others.' },
+  { q: 'How much does appliance repair cost in San Francisco?', a: 'Our diagnostic fee is $60, which is fully credited toward your repair if you choose to proceed. Final costs depend on the appliance type and parts required. We always provide a written upfront estimate before starting any work — no surprises.' },
   { q: 'How quickly can you reach my neighborhood?', a: 'We typically arrive within a 2-hour window for fast appointments. Our technicians know SF traffic patterns, parking challenges, and the fastest routes to every neighborhood from the Avenues to the Bayshore.' },
-  { q: 'Do you charge extra for parking or steep hill access?', a: 'No. Our $60 diagnostic fee covers the visit regardless of parking difficulty or building access. We carry city parking permits and are experienced navigating San Francisco\'s hills and tight streets.' },
-  { q: 'Can you service appliances in older Victorian homes?', a: 'Absolutely. We have extensive experience in San Francisco\'s historic Victorian, Edwardian, and earthquake cottage homes. Our technicians bring compact tools designed for navigating steep stairs and tight kitchen spaces.' },
+  { q: 'Do you charge extra for parking or steep hill access?', a: 'No. Our $60 diagnostic fee covers the visit regardless of parking difficulty or building access. We carry city parking permits and are experienced navigating San Francisco\'s hills and tight streets.' },
+  { q: 'Can you service appliances in older Victorian homes?', a: 'Absolutely. We have extensive experience in San Francisco\'s historic Victorian, Edwardian, and earthquake cottage homes. Our technicians bring compact tools designed for navigating steep stairs and tight kitchen spaces.' },
   { q: 'Do you service high-rise apartment buildings?', a: 'Yes. We service appliances in all SF high-rise buildings downtown, SOMA, and throughout the city. We coordinate with building management for freight elevator access and follow all HOA protocols.' },
   { q: 'Can you work in buildings with no elevator?', a: 'Yes. Our technicians regularly service appliances in walkup apartments across Pacific Heights, Russian Hill, and Nob Hill. We carry replacement parts up multiple flights as needed.' },
-  { q: 'What brands do you repair in San Francisco?', a: 'We repair all major brands: Sub-Zero, Wolf, Thermador, Viking, Bosch, Miele, LG, Samsung, GE, Whirlpool, Maytag, KitchenAid, Frigidaire, Kenmore, Amana, Electrolux, Jenn-Air, Fisher & Paykel, and more.' },
-  { q: 'What if you don\'t have the part on the truck?', a: 'We stock the most common parts for Bay Area appliances on every service call. If a specialty part is needed, we order it (usually arrives next business day) and schedule a return visit at no additional trip charge.' },
+  { q: 'What brands do you repair in San Francisco?', a: 'We repair all major brands: Sub-Zero, Wolf, Thermador, Viking, Bosch, Miele, LG, Samsung, GE, Whirlpool, Maytag, KitchenAid, Frigidaire, Kenmore, Amana, Electrolux, Jenn-Air, Fisher & Paykel, and more.' },
+  { q: 'What if you don\'t have the part on the truck?', a: 'We stock the most common parts for Bay Area appliances on every service call. If a specialty part is needed, we order it (usually arrives next business day) and schedule a return visit at no additional trip charge.' },
   { q: 'What warranty do you offer?', a: 'Every repair includes a 180-day warranty on parts and labor. If the same issue recurs within that period, we return and fix it at no additional cost.' },
 ];
 
 /* ═══ Nearby Cities ═══ */
 const NEARBY_CITIES = [
-  { name: 'Daly City', slug: 'daly-city' },
-  { name: 'South San Francisco', slug: 'south-san-francisco' },
+  { name: 'Daly City', slug: 'daly-city' },
+  { name: 'South San Francisco', slug: 'south-san-francisco' },
   { name: 'Brisbane', slug: 'brisbane' },
   { name: 'Colma', slug: 'colma' },
   { name: 'Pacifica', slug: 'pacifica' },
-  { name: 'San Bruno', slug: 'san-bruno' },
+  { name: 'San Bruno', slug: 'san-bruno' },
   { name: 'Millbrae', slug: 'millbrae' },
   { name: 'Sausalito', slug: 'sausalito' },
-  { name: 'Mill Valley', slug: 'mill-valley' },
+  { name: 'Mill Valley', slug: 'mill-valley' },
   { name: 'Tiburon', slug: 'tiburon' },
-  { name: 'Corte Madera', slug: 'corte-madera' },
-  { name: 'San Rafael', slug: 'san-rafael' },
+  { name: 'Corte Madera', slug: 'corte-madera' },
+  { name: 'San Rafael', slug: 'san-rafael' },
   { name: 'Novato', slug: 'novato' },
 ];
 
 /* ═══════════════════════════════════════════ */
 const SanFrancisco = () => {
-  const sfData = cityLocalData['San Francisco'];
+  const sfData = cityLocalData['San Francisco'];
   const [openFaq, setOpenFaq] = useState(null);
   const [activeTab, setActiveTab] = useState('mission');
   const [showStickyBtn, setShowStickyBtn] = useState(false);
@@ -202,7 +202,7 @@ const SanFrancisco = () => {
     { id: 'sf-breadcrumb', data: buildBreadcrumbSchema([
       { name: 'Home', url: 'https://fixitbay.net/' },
       { name: 'Service Areas', url: 'https://fixitbay.net/service-areas' },
-      { name: 'San Francisco', url: 'https://fixitbay.net/san-francisco-appliance-repair' }
+      { name: 'San Francisco', url: 'https://fixitbay.net/san-francisco-appliance-repair' }
     ])},
     { id: 'sf-faq', data: buildFAQSchema(FAQ_DATA) },
     { id: 'sf-service', data: sfServiceSchema },
@@ -214,8 +214,8 @@ const SanFrancisco = () => {
   return (
     <div className="pb-[72px] lg:pb-0" style={{ fontFamily: S.font, background: '#F8F5F0' }}>
       <SEOMetaTags
-        title="Appliance Repair San Francisco | Fast Scheduling | FixitBay LLC"
-        description="Professional appliance repair in San Francisco. Fast scheduling available. Licensed technicians, 180-day warranty. Serving all SF neighborhoods. Call (760) 543-5733."
+        title="Appliance Repair San Francisco | Fast Scheduling | FixitBay LLC"
+        description="Professional appliance repair in San Francisco. Fast scheduling available. Licensed technicians, 180-day warranty. Serving all SF neighborhoods. Call (760) 543-5733."
         canonical="https://fixitbay.net/san-francisco-appliance-repair"
         ogImage="https://fixitbay.net/images/og-cover.png"
       />
@@ -236,7 +236,7 @@ const SanFrancisco = () => {
             <span style={S.eyebrow}>APPLIANCE REPAIR &middot; SAN FRANCISCO, CA</span>
           </div>
           {/* H1 */}
-          <h1 className="hero-main-h1" data-testid="sf-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in San&nbsp;Francisco</h1>
+          <h1 className="hero-main-h1" data-testid="sf-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in San&nbsp;Francisco</h1>
           {/* Subtext */}
           <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>
             Same- or next-day & next-day service &middot; $60 diagnostic &middot; 180-day warranty on all repairs
@@ -358,9 +358,9 @@ const SanFrancisco = () => {
       <section data-testid="sf-problems" style={{ background: '#F8F5F0', padding: '70px 0' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px' }}>
           <div style={{ ...S.eyebrow, marginBottom: 10 }}>WHAT WE FIX</div>
-          <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 0 }}>Common Appliance Repair Problems</h2>
+          <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 0 }}>Common Appliance Repair Problems</h2>
           <p style={{ maxWidth: 720, margin: '16px auto 40px', fontFamily: S.font, fontSize: 13, fontWeight: 400, lineHeight: 1.80, color: '#4A5568' }}>
-            San Francisco homeowners face unique appliance challenges. The city's marine climate, Victorian-era plumbing, and diverse building types create conditions that accelerate component wear and cause failures uncommon in other cities.
+            San Francisco homeowners face unique appliance challenges. The city's marine climate, Victorian-era plumbing, and diverse building types create conditions that accelerate component wear and cause failures uncommon in other cities.
           </p>
           <div className="grid md:grid-cols-2" style={{ gap: 16 }}>
             {COMMON_PROBLEMS.map((p, i) => (
@@ -378,7 +378,7 @@ const SanFrancisco = () => {
           ═══════════════════════════════════════ */}
       <section data-testid="sf-cta-banner" style={{ background: '#0D1B2A', borderTop: '3px solid #FF5722', borderBottom: '3px solid #FF5722', padding: '60px 0', textAlign: 'center' }}>
         <div style={{ maxWidth: 700, margin: '0 auto', padding: '0 24px' }}>
-          <h2 style={{ ...S.h2, color: '#FFFFFF', marginBottom: 12 }}>Need Appliance Repair Today?</h2>
+          <h2 style={{ ...S.h2, color: '#FFFFFF', marginBottom: 12 }}>Need Appliance Repair Today?</h2>
           <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginBottom: 28 }}>Same- or next-day & next-day appointments available</p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:+17605435733" data-testid="sf-cta-call" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 30px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none' }}>
@@ -521,13 +521,13 @@ const SanFrancisco = () => {
       {/* ═══ POPULAR REPAIRS IN SAN FRANCISCO ═══ */}
       <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-          <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 24 }}>Popular Repairs in San Francisco</h2>
+          <h2 style={{ ...S.h2, fontSize: 28, color: '#0D1B2A', marginBottom: 24 }}>Popular Repairs in San Francisco</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4" style={{ gap: 12 }}>
             {[
-              { label: 'Refrigerator Repair', svc: 'refrigerator' }, { label: 'Washer Repair', svc: 'washer' },
-              { label: 'Dryer Repair', svc: 'dryer' }, { label: 'Dishwasher Repair', svc: 'dishwasher' },
-              { label: 'Oven & Range Repair', svc: 'oven' }, { label: 'Wine Cooler Repair', svc: 'wine-cooler' },
-              { label: 'Ice Maker Repair', svc: 'ice-maker' },
+              { label: 'Refrigerator Repair', svc: 'refrigerator' }, { label: 'Washer Repair', svc: 'washer' },
+              { label: 'Dryer Repair', svc: 'dryer' }, { label: 'Dishwasher Repair', svc: 'dishwasher' },
+              { label: 'Oven & Range Repair', svc: 'oven' }, { label: 'Wine Cooler Repair', svc: 'wine-cooler' },
+              { label: 'Ice Maker Repair', svc: 'ice-maker' },
             ].map(s => (
               <Link key={s.svc} to={`/san-francisco-${s.svc}-repair`} data-testid={`popular-repair-${s.svc}`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#fff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; }}>
                 <Wrench size={14} style={{ color: '#FF5722' }} /> {s.label}
@@ -545,12 +545,12 @@ const SanFrancisco = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <img src="/navbar-logo-new.png" alt="FixitBay" style={{ height: 36, width: 36, borderRadius: '50%', objectFit: 'cover' }} />
             <div>
-              <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 14, color: '#FFFFFF', display: 'block' }}>FixitBay LLC</span>
-              <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>Appliance Repair & Maintenance</span>
+              <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 14, color: '#FFFFFF', display: 'block' }}>FixitBay LLC</span>
+              <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>Appliance Repair & Maintenance</span>
             </div>
           </div>
           <a href="tel:+17605435733" style={{ fontFamily: S.font, fontWeight: 700, fontSize: 18, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-          <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.30)' }}>&copy; 2026 FixitBay LLC</span>
+          <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.30)' }}>&copy; 2026 FixitBay LLC</span>
         </div>
       </footer>
 

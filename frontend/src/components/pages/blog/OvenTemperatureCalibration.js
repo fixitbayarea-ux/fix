@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   { q: 'Why is my oven burning food on the recommended temperature?', a: "Most likely your oven is running hot \u2014 common in ovens 5+ years old as the temperature sensor drifts. Test with an oven thermometer. If it\u2019s 25\u201335\u00b0F over set temp, you can calibrate it yourself using the control panel. If it\u2019s 50\u00b0F+ off, the temperature sensor or control board may need replacement." },
   { q: 'Can I calibrate any oven brand myself?', a: "Yes \u2014 most modern ovens (GE, Whirlpool, Samsung, LG, Bosch, KitchenAid) allow \u00b135\u00b0F offset adjustment through the control panel. Older dial/knob ovens have a calibration screw behind the temperature knob. Always check your owner\u2019s manual for brand-specific steps \u2014 incorrect adjustment can void warranties." },
   { q: 'How often should I calibrate my oven?', a: "Test your oven temperature once a year using an oven thermometer. Most ovens drift gradually over time \u2014 especially after power surges, heavy use, or cleaning cycles. If you notice consistent burning or undercooking, test it immediately rather than waiting for your annual check." },
-  { q: 'How much does oven temperature sensor replacement cost in Bay Area?', a: "Oven temperature sensor replacement in the SF Bay Area typically costs $150\u2013$250 including parts and labor. Control board replacement runs $200\u2013$400 depending on the brand. FixitBay LLC charges $60 diagnostic (credited to repair) and provides a written estimate before any work begins." },
+  { q: 'How much does oven temperature sensor replacement cost in Bay Area?', a: "Oven temperature sensor replacement in the SF Bay Area typically costs $150\u2013$250 including parts and labor. Control board replacement runs $200\u2013$400 depending on the brand. FixitBay LLC charges $60 diagnostic (credited to repair) and provides a written estimate before any work begins." },
 ];
 
 const TOC = [
@@ -75,7 +75,7 @@ const OvenTemperatureCalibration = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to Calibrate Oven Temperature", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-01", "dateModified": "2026-01-01", "url": "https://fixitbay.net/blog/oven-temperature-calibration" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to Calibrate Oven Temperature", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-01", "dateModified": "2026-01-01", "url": "https://fixitbay.net/blog/oven-temperature-calibration" } },
     { id: 'howto-schema', data: { "@context": "https://schema.org", "@type": "HowTo", "name": "How to Calibrate Your Oven Temperature", "description": "Step-by-step guide to test and calibrate oven temperature accuracy for all major oven brands.", "step": [{ "@type": "HowToStep", "name": "Test Your Oven's Accuracy", "text": "Place oven thermometer on center rack, set to 350\u00b0F, wait 20 minutes, read without opening door." }, { "@type": "HowToStep", "name": "Decide if Calibration is Needed", "text": "If off by 15\u00b0F or more, calibrate. If off by 50\u00b0F+, call a professional." }, { "@type": "HowToStep", "name": "Calibrate Your Oven", "text": "Use control panel offset for digital ovens, or calibration screw for older dial/knob models." }, { "@type": "HowToStep", "name": "Retest After Calibration", "text": "Repeat thermometer test at 350\u00b0F to confirm accuracy." }], "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician" } } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Oven Temperature Calibration", "item": "https://fixitbay.net/blog/oven-temperature-calibration" }] } }
@@ -85,7 +85,7 @@ const OvenTemperatureCalibration = () => {
   return (
     <>
       <SEOMetaTags
-        title="How to Calibrate Your Oven Temperature | FixitBay LLC"
+        title="How to Calibrate Your Oven Temperature | FixitBay LLC"
         description="Oven burning or undercooking food? Learn to test and calibrate oven temperature in 4 steps — works for GE, Samsung, LG, Bosch, Whirlpool."
         canonical="https://fixitbay.net/blog/oven-temperature-calibration"
         ogType="article"
@@ -246,7 +246,7 @@ const OvenTemperatureCalibration = () => {
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
-                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
                     <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -315,7 +315,7 @@ const OvenTemperatureCalibration = () => {
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
                 <div style={{ ...EYE, marginBottom: 8 }}>EXPERT OVEN REPAIR</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Oven Still Not Accurate? We Can Help!</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified oven repair technicians diagnose and fix temperature issues for all major brands. Fast scheduling in SF Bay Area.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified oven repair technicians diagnose and fix temperature issues for all major brands. Fast scheduling in SF Bay Area.</p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
                   <a href="tel:+17605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
                   <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }} aria-label="opens in new tab">Book Repair</a>
@@ -328,7 +328,7 @@ const OvenTemperatureCalibration = () => {
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2 }}>Written by</p>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 2 }}>Andrei &mdash; Licensed Appliance Technician</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
                 </div>
               </div>
             </article>
@@ -411,9 +411,9 @@ const OvenTemperatureCalibration = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Oven Repair in Bay Area', body: 'Expert oven repair for all brands. Temperature issues, elements, control boards.', link: 'View Service', href: '/oven-repair' },
+                { tag: 'SERVICE', title: 'Oven Repair in Bay Area', body: 'Expert oven repair for all brands. Temperature issues, elements, control boards.', link: 'View Service', href: '/oven-repair' },
                 { tag: 'ARTICLE', title: 'Repair vs Replace: When to Fix Your Appliance', body: 'Use the 50% rule to decide if oven repair makes financial sense.', link: 'Read Article', href: '/blog/when-to-repair-vs-replace' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: card.tag === 'SERVICE' ? '#fff' : 'rgba(255,255,255,0.7)', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
@@ -431,7 +431,7 @@ const OvenTemperatureCalibration = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

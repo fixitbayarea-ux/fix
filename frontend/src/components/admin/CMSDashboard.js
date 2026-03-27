@@ -105,7 +105,7 @@ const CMSDashboard = () => {
       <header className="bg-white shadow-md">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <div>
-            <h1 className="text-2xl font-bold text-gray-800">FixitBay LLC CMS</h1>
+            <h1 className="text-2xl font-bold text-gray-800">FixitBay LLC CMS</h1>
             <p className="text-sm text-gray-600">Управление контентом сайта</p>
           </div>
           <div className="flex gap-4 items-center">

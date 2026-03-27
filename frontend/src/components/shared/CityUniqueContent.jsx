@@ -145,7 +145,7 @@ const CityUniqueContent = ({ cityName, data }) => {
                   className="flex items-center gap-2 px-4 py-2 bg-white rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all text-sm font-medium"
                   style={{ color: '#1A3B5D' }}
                 >
-                  {ns.name} Appliance Repair
+                  {ns.name} Appliance Repair
                   <ArrowRight className="w-3 h-3" />
                 </Link>
               ))}

@@ -136,7 +136,7 @@ const neighborhoodData = {
     slug: 'pacific-heights',
     zip: '94115',
     housing: 'large single-family homes and luxury apartments, many with professional-grade kitchens featuring Wolf, Sub-Zero, and Thermador',
-    localIssue: 'Pacific Heights has the highest concentration of premium appliances in San Francisco. These homes often have multiple refrigerators, double ovens, and wine storage — all requiring specialized maintenance.',
+    localIssue: 'Pacific Heights has the highest concentration of premium appliances in San Francisco. These homes often have multiple refrigerators, double ovens, and wine storage — all requiring specialized maintenance.',
     parking: 'Residential streets like Broadway, Jackson, and Washington have permit-only zones. We carry Zone-H permits and park on cross streets (Divisadero, Scott, Pierce). Circular driveways on some large homes provide direct access.',
     topCalls: [
       'Sub-Zero 48-inch side-by-side warm on the fridge side — failed evaporator fan motor',

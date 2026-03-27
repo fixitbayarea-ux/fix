@@ -6,7 +6,7 @@ import axios from 'axios';
 const ServicePageEditor = ({ page, onClose, onSave, backendURL }) => {
   const [formData, setFormData] = useState({
     title: '',
-    subtitle: 'San Francisco & Bay Area',
+    subtitle: 'San Francisco & Bay Area',
     meta_title: '',
     meta_description: '',
     h1: '',

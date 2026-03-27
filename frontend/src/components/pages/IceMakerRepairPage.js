@@ -10,10 +10,10 @@ const IceMakerRepairPage = () => {
     { title: "Not Making Ice", description: "No ice production, ice maker stopped working, or very slow ice production." },
     { title: "Water Leaking", description: "Water leaks around ice maker, dripping from dispenser, or puddles in freezer." },
     { title: "Ice Tastes Bad", description: "Ice has strange taste, smells bad, or tastes like plastic." },
-    { title: "Ice Maker Jammed", description: "Ice stuck in maker, cubes clumped together, or dispenser blocked." },
+    { title: "Ice Maker Jammed", description: "Ice stuck in maker, cubes clumped together, or dispenser blocked." },
     { title: "Dispenser Not Working", description: "Ice won't dispense, dispenser motor failure, or mechanical jam." },
     { title: "Small or Misshapen Ice", description: "Ice cubes too small, hollow, or irregularly shaped." },
-    { title: "Ice Maker Overfilling", description: "Too much ice, ice overflows, or won't stop making ice." },
+    { title: "Ice Maker Overfilling", description: "Too much ice, ice overflows, or won't stop making ice." },
     { title: "Strange Noises", description: "Grinding, buzzing, or clicking sounds from ice maker." },
     { title: "Water Line Frozen", description: "Water line frozen, no water reaching ice maker, or slow fill." },
     { title: "Ice Cloudy or White", description: "Ice not clear, cloudy appearance, or white residue." }
@@ -21,8 +21,8 @@ const IceMakerRepairPage = () => {
 
   const faqData = [
     {
-      question: "How much does ice maker repair cost in San Francisco?",
-      answer: "Ice maker repair typically costs $150–$250 after the $60 diagnostic fee. Common repairs: water inlet valve replacement ($100–$150), ice maker module ($120–$200), auger motor ($80–$150). The $60 diagnostic is fully applied toward repair cost. We serve all 22 cities across the Bay Area."
+      question: "How much does ice maker repair cost in San Francisco?",
+      answer: "Ice maker repair typically costs $150–$250 after the $60 diagnostic fee. Common repairs: water inlet valve replacement ($100–$150), ice maker module ($120–$200), auger motor ($80–$150). The $60 diagnostic is fully applied toward repair cost. We serve all 22 cities across the Bay Area."
     },
     {
       question: "Is it worth repairing an ice maker?",
@@ -34,7 +34,7 @@ const IceMakerRepairPage = () => {
     },
     {
       question: "How quickly can you fix an ice maker that stopped working?",
-      answer: "We offer same- or next-day and next-day service for urgent ice maker issues across the Bay Area. Most problems—like frozen water lines, bad inlet valves, or jammed ice makers—can be diagnosed and repaired within 1-2 hours. Our vans carry common ice maker parts for faster repairs."
+      answer: "We offer same- or next-day and next-day service for urgent ice maker issues across the Bay Area. Most problems—like frozen water lines, bad inlet valves, or jammed ice makers—can be diagnosed and repaired within 1-2 hours. Our vans carry common ice maker parts for faster repairs."
     },
     {
       question: "What brands of ice makers do you repair?",
@@ -63,10 +63,10 @@ const IceMakerRepairPage = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Ice Maker Repair",
+    "serviceType": "Ice Maker Repair",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay LLC",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     },
     "areaServed": SERVICE_CITIES_SCHEMA
@@ -75,17 +75,17 @@ const IceMakerRepairPage = () => {
   if (isMobile) {
     return (
       <MobileServiceLanding
-        appliance="Ice Maker"
+        appliance="Ice Maker"
         pageSlug="ice-maker-repair"
-        pageTitle="Ice Maker Repair Bay Area | Fast Scheduling | FixitBay LLC"
-        metaDescription="Ice maker repair across the Bay Area: from $150 after $60 diagnostic. Fast, reliable service across 22 cities. Licensed & insured. 180-day warranty."
-        heroTitle={<>Ice Maker Repair<br />Bay Area. Fast & Local.</>}
+        pageTitle="Ice Maker Repair Bay Area | Fast Scheduling | FixitBay LLC"
+        metaDescription="Ice maker repair across the Bay Area: from $150 after $60 diagnostic. Fast, reliable service across 22 cities. Licensed & insured. 180-day warranty."
+        heroTitle={<>Ice Maker Repair<br />Bay Area. Fast & Local.</>}
         heroSubtitle="Cost & Fast Scheduling"
         heroImage="/images/technicians/ice-maker-tech.jpg"
-        heroImageAlt="FixitBay technician repairing an ice maker in a Bay Area home"
+        heroImageAlt="FixitBay technician repairing an ice maker in a Bay Area home"
         heroImagePosition="center top"
         techImage="/images/technicians/ice-maker-tech.jpg"
-        techImageAlt="FixitBay technician repairing an ice maker in a Bay Area home"
+        techImageAlt="FixitBay technician repairing an ice maker in a Bay Area home"
         issues={[
           { icon: '🧊', label: 'No Ice' },
           { icon: '💧', label: 'Leaking' },
@@ -96,7 +96,7 @@ const IceMakerRepairPage = () => {
         ]}
         faqs={faqData}
         repairVsReplace={{
-          title: "Repair vs. Replace Your Ice Maker",
+          title: "Repair vs. Replace Your Ice Maker",
           intro: "Ice maker issues are usually tied to the refrigerator's age and condition.",
           items: [
             { action: 'repair', condition: 'Stopped making ice but fridge works fine', recommendation: 'Frozen water line or bad inlet valve costs $150–$280 to fix.' },
@@ -106,8 +106,8 @@ const IceMakerRepairPage = () => {
           ]
         }}
         relatedLinks={[
-          { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling or temperature issues' },
-          { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Not freezing or frost buildup' },
+          { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling or temperature issues' },
+          { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Not freezing or frost buildup' },
         ]}
         schemaData={serviceSchema}
       />
@@ -117,26 +117,26 @@ const IceMakerRepairPage = () => {
   return (
       <ApplianceRepairPageNew
       serviceSchema={serviceSchema}
-      appliance="Ice Maker"
-      customH1="Expert Ice Maker Repair in the Bay Area"
+      appliance="Ice Maker"
+      customH1="Expert Ice Maker Repair in the Bay Area"
       cmsSlug="ice-maker-repair"
-      pageTitle="Ice Maker Repair Bay Area | Fast Scheduling | FixitBay LLC"
-      metaDescription="Ice maker repair across the Bay Area: from $150 after $60 diagnostic. Fast, reliable service across 22 cities. Licensed & insured. 180-day warranty."
+      pageTitle="Ice Maker Repair Bay Area | Fast Scheduling | FixitBay LLC"
+      metaDescription="Ice maker repair across the Bay Area: from $150 after $60 diagnostic. Fast, reliable service across 22 cities. Licensed & insured. 180-day warranty."
       heroImage="/images/technicians/ice-maker-tech.jpg"
-      heroImageAlt="FixitBay technician repairing an ice maker in a Bay Area home"
+      heroImageAlt="FixitBay technician repairing an ice maker in a Bay Area home"
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={{
-        title: "Expert Ice Maker Repair Across the Bay Area",
+        title: "Expert Ice Maker Repair Across the Bay Area",
         paragraphs: [
-          <>When your ice maker stops making ice, leaks water, or produces bad-tasting cubes, FixitBay LLC provides professional repair service across the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most ice maker issues on the same visit. We charge a straightforward <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—transparent pricing, every time.</>,
+          <>When your ice maker stops making ice, leaks water, or produces bad-tasting cubes, FixitBay LLC provides professional repair service across the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most ice maker issues on the same visit. We charge a straightforward <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—transparent pricing, every time.</>,
           <>Our ice maker repair process includes a complete inspection of the water inlet valve, ice maker assembly, water line, water filter, temperature controls, dispenser motor, and freezer conditions. We test water flow, check for frozen lines, and identify the root cause of issues like no ice production, water leaks, jammed dispensers, or poor ice quality. Whether you have a built-in ice maker or a refrigerator ice maker, we have the expertise.</>,
-          <>We service ice makers in all major refrigerator brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like water inlet valves, ice maker assemblies, and filters, enabling most repairs on the first visit. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From Bay Area apartments to Marin County homes, we keep your ice flowing.</>,
-          <><strong>Looking for ice maker repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-ice-maker-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Ice Maker Repair</a> page for local details and availability.</>
+          <>We service ice makers in all major refrigerator brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like water inlet valves, ice maker assemblies, and filters, enabling most repairs on the first visit. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From Bay Area apartments to Marin County homes, we keep your ice flowing.</>,
+          <><strong>Looking for ice maker repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-ice-maker-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Ice Maker Repair</a> page for local details and availability.</>
         ]
       }}
       repairVsReplace={{
-        title: "When to Repair vs. Replace Your Ice Maker",
+        title: "When to Repair vs. Replace Your Ice Maker",
         intro: "Ice maker issues are usually tied to the refrigerator's age and condition. Here's how to decide.",
         items: [
           { action: 'repair', condition: 'Ice maker stopped producing ice but fridge works fine', recommendation: 'A frozen water line, bad inlet valve, or failed ice maker assembly costs $150–$280 to fix. The refrigerator itself is usually in great shape.' },
@@ -146,9 +146,9 @@ const IceMakerRepairPage = () => {
         ]
       }}
       relatedLinks={[
-        { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or temperature issues' },
-        { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Not freezing, frost buildup, or temperature problems' },
-        { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or not cleaning' },
+        { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or temperature issues' },
+        { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Not freezing, frost buildup, or temperature problems' },
+        { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or not cleaning' },
       ]}
     />
   );

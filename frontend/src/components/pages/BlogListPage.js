@@ -12,28 +12,28 @@ const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', te
 
 /* ── hardcoded blog posts ── */
 const STATIC_POSTS = [
-  { slug: 'refrigerator-not-cooling', title: "Refrigerator Not Cooling? 8 Causes & What to Do", excerpt: 'A warm refrigerator puts your food at risk. 8 common causes ranked from DIY fix to pro repair, with SF Bay Area pricing and a real technician case study.', publish_date: '2026-03-23', categories: ['Refrigerator'], readTime: '8 min' },
+  { slug: 'refrigerator-not-cooling', title: "Refrigerator Not Cooling? 8 Causes & What to Do", excerpt: 'A warm refrigerator puts your food at risk. 8 common causes ranked from DIY fix to pro repair, with SF Bay Area pricing and a real technician case study.', publish_date: '2026-03-23', categories: ['Refrigerator'], readTime: '8 min' },
   { slug: 'dishwasher-maintenance', title: 'How to Maintain Your Dishwasher for Longer Life', excerpt: 'Simple maintenance tips to prevent clogs, leaks, and odors. Learn how to clean filters, check spray arms, and maintain door seals.', publish_date: '2026-01-18', categories: ['Dishwasher'], readTime: '7 min' },
   { slug: 'when-to-repair-vs-replace', title: 'Repair vs Replace: When to Fix Your Appliance', excerpt: "Not sure if it's worth repairing your old appliance? Use our expert guide based on the 50% rule, age considerations, and repair costs.", publish_date: '2026-01-15', categories: ['Expert Advice'], readTime: '6 min' },
   { slug: 'dryer-taking-too-long', title: 'Why Is My Dryer Taking So Long to Dry?', excerpt: 'Long drying times waste energy and money. Discover the 7 most common causes including clogged vents, heating element issues, and moisture sensor problems.', publish_date: '2026-01-12', categories: ['Dryer'], readTime: '6 min' },
   { slug: 'washer-error-codes', title: 'Common Washer Error Codes & What They Mean', excerpt: 'Decode OE, UE, LE, and other error codes from Samsung, LG, Whirlpool, and GE washers. Learn what each code means and simple troubleshooting steps.', publish_date: '2026-02-10', categories: ['Washer', 'Error Codes'], readTime: '8 min' },
   { slug: 'oven-temperature-calibration', title: 'How to Calibrate Your Oven Temperature', excerpt: 'Is your oven cooking unevenly or burning food? Learn how to test oven temperature accuracy with a thermometer and calibrate for perfect results.', publish_date: '2026-01-08', categories: ['Oven'], readTime: '5 min' },
-  { slug: 'ice-maker-troubleshooting', title: 'Ice Maker Not Working? Top 10 Fixes', excerpt: 'No ice, slow ice production, or small/hollow cubes? Troubleshoot water supply, ice maker module, and water filter issues.', publish_date: '2026-01-05', categories: ['Refrigerator'], readTime: '7 min' },
+  { slug: 'ice-maker-troubleshooting', title: 'Ice Maker Not Working? Top 10 Fixes', excerpt: 'No ice, slow ice production, or small/hollow cubes? Troubleshoot water supply, ice maker module, and water filter issues.', publish_date: '2026-01-05', categories: ['Refrigerator'], readTime: '7 min' },
   { slug: 'appliance-lifespan', title: 'How Long Should Your Appliances Last?', excerpt: 'Expected lifespans for refrigerators, washers, dryers, dishwashers, and ovens. Learn when to start planning for replacement.', publish_date: '2026-01-03', categories: ['Expert Advice'], readTime: '6 min' },
   { slug: 'energy-efficient-appliances', title: 'How to Make Your Appliances More Energy Efficient', excerpt: 'Save money on electricity with these proven tips. Small changes can reduce energy bills by 10-25% annually.', publish_date: '2026-01-01', categories: ['Expert Advice', 'Maintenance Tips'], readTime: '7 min' },
   { slug: 'gas-smell-from-stove', title: 'Smell Gas From Your Stove? Do This Immediately', excerpt: "Gas leaks are dangerous. Learn the immediate safety steps to take if you smell gas, when to call emergency services, and how to prevent gas leaks.", publish_date: '2026-03-01', categories: ['Safety'], readTime: '4 min' },
   { slug: 'refrigerator-water-filter', title: 'When to Change Your Refrigerator Water Filter', excerpt: 'Old filters reduce water flow, ice production, and water quality. Learn how often to change filters by brand and signs for replacement.', publish_date: '2026-01-01', categories: ['Refrigerator', 'Maintenance Tips'], readTime: '5 min' },
   { slug: 'dishwasher-not-draining', title: 'Dishwasher Not Draining? 7 Quick Fixes', excerpt: 'Standing water after a cycle? Check these 7 common causes: clogged filter, blocked drain hose, garbage disposal connection, and air gap.', publish_date: '2026-02-20', categories: ['Dishwasher'], readTime: '6 min' },
-  { slug: 'dryer-not-heating', title: 'Dryer Not Heating? 7 Causes for Gas & Electric Dryers', excerpt: 'A dryer that tumbles but won\'t heat is one of the most common problems. 7 causes ranked by complexity with SF Bay Area pricing and a real technician case study.', publish_date: '2026-03-23', categories: ['Dryer'], readTime: '8 min' },
-  { slug: 'appliance-repair-cost-san-francisco', title: 'Appliance Repair Cost in San Francisco 2026 — Complete Price Guide', excerpt: 'How much does appliance repair cost in San Francisco? 3 pricing tables, luxury brand rates, a repair-vs-replace guide, and real numbers from a licensed technician.', publish_date: '2026-03-23', categories: ['Expert Advice', 'San Francisco'], readTime: '10 min' },
-  { slug: 'same- or next-day-appliance-repair-bay-area', title: 'Same-Day Appliance Repair in the Bay Area — How It Works', excerpt: 'Need your appliance fixed today? Learn how FixitBay LLC delivers fast repair across SF, Peninsula & Marin. $60 diagnostic, 180-day warranty.', publish_date: '2026-02-15', categories: ['Expert Advice', 'San Francisco'], readTime: '5 min' },
-  { slug: 'appliance-repair-marin-county', title: 'Appliance Repair in Marin County — Complete Guide', excerpt: 'Everything you need to know about appliance repair in Marin County. Coverage areas, pricing, common issues in Marin homes, and how to book.', publish_date: '2026-02-01', categories: ['Expert Advice', 'Marin County'], readTime: '6 min' },
+  { slug: 'dryer-not-heating', title: 'Dryer Not Heating? 7 Causes for Gas & Electric Dryers', excerpt: 'A dryer that tumbles but won\'t heat is one of the most common problems. 7 causes ranked by complexity with SF Bay Area pricing and a real technician case study.', publish_date: '2026-03-23', categories: ['Dryer'], readTime: '8 min' },
+  { slug: 'appliance-repair-cost-san-francisco', title: 'Appliance Repair Cost in San Francisco 2026 — Complete Price Guide', excerpt: 'How much does appliance repair cost in San Francisco? 3 pricing tables, luxury brand rates, a repair-vs-replace guide, and real numbers from a licensed technician.', publish_date: '2026-03-23', categories: ['Expert Advice', 'San Francisco'], readTime: '10 min' },
+  { slug: 'same- or next-day-appliance-repair-bay-area', title: 'Same-Day Appliance Repair in the Bay Area — How It Works', excerpt: 'Need your appliance fixed today? Learn how FixitBay LLC delivers fast repair across SF, Peninsula & Marin. $60 diagnostic, 180-day warranty.', publish_date: '2026-02-15', categories: ['Expert Advice', 'San Francisco'], readTime: '5 min' },
+  { slug: 'appliance-repair-marin-county', title: 'Appliance Repair in Marin County — Complete Guide', excerpt: 'Everything you need to know about appliance repair in Marin County. Coverage areas, pricing, common issues in Marin homes, and how to book.', publish_date: '2026-02-01', categories: ['Expert Advice', 'Marin County'], readTime: '6 min' },
 ];
 
 const TRUST_CARDS = [
   { num: '01', title: 'Certified Technicians', body: 'Written by licensed professionals with years of hands-on repair experience across all major appliance brands.' },
   { num: '02', title: 'Practical Tips', body: 'Real-world solutions you can apply today. DIY fixes, maintenance schedules, and when to call a pro.' },
-  { num: '03', title: 'Always Updated', body: 'Fresh content based on the latest appliance technology and common issues we see in Bay Area homes.' },
+  { num: '03', title: 'Always Updated', body: 'Fresh content based on the latest appliance technology and common issues we see in Bay Area homes.' },
 ];
 
 const BlogListPage = () => {
@@ -94,13 +94,13 @@ const BlogListPage = () => {
       data: {
         "@context": "https://schema.org",
         "@type": "Blog",
-        "name": "FixitBay LLC Appliance Repair Tips & Advice",
-        "description": "Expert appliance repair tips, cost guides, and maintenance advice from certified Bay Area technicians.",
+        "name": "FixitBay LLC Appliance Repair Tips & Advice",
+        "description": "Expert appliance repair tips, cost guides, and maintenance advice from certified Bay Area technicians.",
         "url": "https://fixitbay.net/blog",
-        "publisher": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": "+17605435733" },
+        "publisher": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": "+17605435733" },
         "blogPost": allPosts.slice(0, 10).map(p => ({
           "@type": "BlogPosting", "headline": p.title, "description": p.excerpt,
-          "datePublished": p.publish_date, "author": { "@type": "Organization", "name": "FixitBay LLC" }
+          "datePublished": p.publish_date, "author": { "@type": "Organization", "name": "FixitBay LLC" }
         }))
       }
     },
@@ -122,8 +122,8 @@ const BlogListPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Appliance Repair Tips & Guides | FixitBay LLC Blog \u2014 Bay Area"
-        description="Free appliance repair tips, cost guides, and error code troubleshooting from certified technicians in San Francisco Bay Area. Learn when to repair vs replace, DIY fixes, and maintenance advice."
+        title="Appliance Repair Tips & Guides | FixitBay LLC Blog \u2014 Bay Area"
+        description="Free appliance repair tips, cost guides, and error code troubleshooting from certified technicians in San Francisco Bay Area. Learn when to repair vs replace, DIY fixes, and maintenance advice."
         canonical="https://fixitbay.net/blog"
       />
 
@@ -287,7 +287,7 @@ const BlogListPage = () => {
               Repair Tips &amp; Guides
             </h2>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>
-              Step-by-step troubleshooting and cost breakdowns from licensed Bay Area technicians.
+              Step-by-step troubleshooting and cost breakdowns from licensed Bay Area technicians.
             </p>
             {loading ? (
               <div style={{ textAlign: 'center', padding: '48px 0' }}>
@@ -358,7 +358,7 @@ const BlogListPage = () => {
           <div style={{ maxWidth: 700, margin: '0 auto' }}>
             <div style={{ fontFamily: F, fontWeight: 700, fontSize: 11, color: 'rgba(255,255,255,0.45)', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 }}>FREE TIPS &amp; GUIDES</div>
             <h2 className="blog-section-h2" style={{ fontFamily: F, fontWeight: 800, color: '#fff', marginBottom: 12 }}>Common Appliance Problems — Answered</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginBottom: 28 }}>Our certified technicians are here with fast, reliable service in San Francisco Bay Area.</p>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginBottom: 28 }}>Our certified technicians are here with fast, reliable service in San Francisco Bay Area.</p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="blog-cta-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', border: 'none' }} aria-label="opens in new tab">
                 Schedule Repair Now

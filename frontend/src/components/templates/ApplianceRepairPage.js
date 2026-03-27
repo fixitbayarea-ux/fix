@@ -76,7 +76,7 @@ const ApplianceRepairPage = ({
     { icon: <Award className="w-5 h-5" />, text: "180-Day Warranty on All Repairs" },
     { icon: <Clock className="w-5 h-5" />, text: "Same/Next Day Service Available" },
     { icon: <Star className="w-5 h-5" />, text: "5-Star Google Rating" },
-    { icon: <MapPin className="w-5 h-5" />, text: "Local San Francisco Family Business" }
+    { icon: <MapPin className="w-5 h-5" />, text: "Local San Francisco Family Business" }
   ];
 
   const howItWorks = [
@@ -107,7 +107,7 @@ const ApplianceRepairPage = ({
     <div className="min-h-screen bg-white font-montserrat" style={{ paddingTop: '64px' }}>
       <SEOMetaTags
         title={pageTitle || `${appliance} Repair`}
-        description={metaDescription || `Professional ${appliance.toLowerCase()} repair services in San Francisco, Peninsula, and Marin County. Licensed technicians, 180-day warranty, fast scheduling.`}
+        description={metaDescription || `Professional ${appliance.toLowerCase()} repair services in San Francisco, Peninsula, and Marin County. Licensed technicians, 180-day warranty, fast scheduling.`}
         canonical={`https://fixitbay.net${currentPath}`}
         ogImage="https://fixitbay.net/images/og-cover.png"
       />
@@ -124,7 +124,7 @@ const ApplianceRepairPage = ({
             {/* Round logo */}
             <picture>
               <source srcSet="/images/logo.webp" type="image/webp" />
-              <img src="/images/logo.png" width="120" height="120" loading="lazy" alt={`${appliance} repair technician – FixitBay LLC`} className="w-24 h-24 rounded-full mx-auto shadow-2xl bg-white p-2" />
+              <img src="/images/logo.png" width="120" height="120" loading="lazy" alt={`${appliance} repair technician – FixitBay LLC`} className="w-24 h-24 rounded-full mx-auto shadow-2xl bg-white p-2" />
             </picture>
 
             {/* Breadcrumbs (visual) */}
@@ -140,7 +140,7 @@ const ApplianceRepairPage = ({
             <p className="text-white/90 mb-8">Fast, Reliable, Affordable!</p>
 
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-xl text-white/90 mb-8 leading-relaxed">
-              When your {appliance.toLowerCase()} breaks down, FixitBay LLC is here to help! Our licensed technicians provide fast, reliable {appliance.toLowerCase()} repair services in San Francisco, Peninsula, and Marin County. We're a local family-owned business with a 180-day warranty.
+              When your {appliance.toLowerCase()} breaks down, FixitBay LLC is here to help! Our licensed technicians provide fast, reliable {appliance.toLowerCase()} repair services in San Francisco, Peninsula, and Marin County. We're a local family-owned business with a 180-day warranty.
             </motion.p>
 
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -159,7 +159,7 @@ const ApplianceRepairPage = ({
       <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1A3B5D' }}>Why Choose FixitBay LLC for {appliance} Repair?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1A3B5D' }}>Why Choose FixitBay LLC for {appliance} Repair?</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {trustIndicators.map((indicator, index) => (
@@ -200,7 +200,7 @@ const ApplianceRepairPage = ({
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-3" style={{ color: '#1A3B5D' }}>Brands & Models We Service</h2>
-            <p className="text-gray-600">We repair most major appliance brands in San Francisco, Peninsula, and Marin County</p>
+            <p className="text-gray-600">We repair most major appliance brands in San Francisco, Peninsula, and Marin County</p>
           </div>
           <div className="flex flex-wrap gap-3 justify-center">
             {COMMON_BRANDS.map((brand) => {
@@ -211,7 +211,7 @@ const ApplianceRepairPage = ({
                   href={href}
                   className="inline-flex items-center justify-center px-4 py-2 rounded-full text-sm font-semibold bg-white shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
                   style={{ color: '#1A3B5D', border: '1px solid #E5E7EB' }}
-                  aria-label={`${brand} appliance repair in San Francisco, Peninsula & Marin`}
+                  aria-label={`${brand} appliance repair in San Francisco, Peninsula & Marin`}
                 >
                   {brand}
                 </a>
@@ -244,7 +244,7 @@ const ApplianceRepairPage = ({
       </section>
 
       {/* FAQ Section */}
-      <SEOMetaTags title={pageTitle} description={metaDescription || "Licensed & Insured Appliance Repair in San Francisco, Peninsula & Marin County"} canonical={`https://fixitbay.net${currentPath}`} ogTitle={pageTitle} ogDescription={metaDescription || "Licensed & Insured Appliance Repair in San Francisco, Peninsula & Marin County"} ogImage="https://fixitbay.net/images/og-cover.png" />
+      <SEOMetaTags title={pageTitle} description={metaDescription || "Licensed & Insured Appliance Repair in San Francisco, Peninsula & Marin County"} canonical={`https://fixitbay.net${currentPath}`} ogTitle={pageTitle} ogDescription={metaDescription || "Licensed & Insured Appliance Repair in San Francisco, Peninsula & Marin County"} ogImage="https://fixitbay.net/images/og-cover.png" />
 
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -270,7 +270,7 @@ const ApplianceRepairPage = ({
             <p className="text-xl text-gray-600 mb-8">Local {appliance.toLowerCase()} repair experts you can trust in your neighborhood</p>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                We serve customers in San Francisco, Peninsula (to Millbrae), and Marin County with fast, professional appliance repair backed by our 180-day warranty.
+                We serve customers in San Francisco, Peninsula (to Millbrae), and Marin County with fast, professional appliance repair backed by our 180-day warranty.
               </p>
               <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
                 <div className="flex items-center gap-2"><Star className="w-4 h-4 text-yellow-500" /><span>1,200+ Local Repairs Completed</span></div>
@@ -287,7 +287,7 @@ const ApplianceRepairPage = ({
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Fix Your {appliance}?</h2>
-            <p className="text-xl text-white/90 mb-8">Don't let a broken {appliance.toLowerCase()} disrupt your day. Call FixitBay LLC now for fast, reliable repair service with our 180-day warranty.</p>
+            <p className="text-xl text-white/90 mb-8">Don't let a broken {appliance.toLowerCase()} disrupt your day. Call FixitBay LLC now for fast, reliable repair service with our 180-day warranty.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button onClick={handleCallNow} whileHover={{ scale: 1.05 }} className="flex items-center justify-center gap-2 px-8 py-4 text-lg font-bold rounded-lg transition-all duration-300" style={{ backgroundColor: '#C0362C', color: 'white' }}>
                 <Phone className="w-5 h-5" /> Call (760) 543-5733
@@ -305,7 +305,7 @@ const ApplianceRepairPage = ({
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 id="related-heading" className="text-3xl md:text-4xl font-bold mb-3" style={{ color: '#1A3B5D' }}>Related Appliance Services</h2>
-            <p className="text-gray-600">Explore more services we offer in San Francisco, Peninsula, and Marin County.</p>
+            <p className="text-gray-600">Explore more services we offer in San Francisco, Peninsula, and Marin County.</p>
           </div>
           <RelatedServices />
         </div>
@@ -317,12 +317,12 @@ const ApplianceRepairPage = ({
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <img src="/navbar-logo-new.png" alt="FixitBay" style={{ height: 36, width: 36, borderRadius: '50%', objectFit: 'cover' }} />
             <div>
-              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 14, color: '#FFFFFF', display: 'block' }}>FixitBay LLC</span>
-              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>Appliance Repair &amp; Maintenance</span>
+              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 14, color: '#FFFFFF', display: 'block' }}>FixitBay LLC</span>
+              <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.40)' }}>Appliance Repair &amp; Maintenance</span>
             </div>
           </div>
           <a href="tel:+17605435733" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 18, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-          <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.30)' }}>&copy; 2026 FixitBay LLC</span>
+          <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.30)' }}>&copy; 2026 FixitBay LLC</span>
         </div>
       </footer>
       <FloatingButtons />

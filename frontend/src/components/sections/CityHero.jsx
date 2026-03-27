@@ -39,7 +39,7 @@ const socialButtons = [
  * CityHero — same layout as HomeHero but with a city-specific background image.
  * Props:
  *   bgImage  {string}  — imported WebP image for the city background
- *   cityName {string}  — city name shown in the subtle H1 overlay (e.g. "Daly City")
+ *   cityName {string}  — city name shown in the subtle H1 overlay (e.g. "Daly City")
  */
 const CityHero = ({ bgImage, cityName }) => {
   return (
@@ -60,7 +60,7 @@ const CityHero = ({ bgImage, cityName }) => {
       {/* Overlay for contrast — same as HomeHero */}
       <div className="heroOverlay" aria-hidden="true" />
 
-      {/* H1 overlay — "Appliance Repair in {City}" */}
+      {/* H1 overlay — "Appliance Repair in {City}" */}
       <div
         className="absolute top-0 left-0 right-0 z-20 pt-20 pb-2"
         style={{
@@ -72,7 +72,7 @@ const CityHero = ({ bgImage, cityName }) => {
             className="text-center text-[15px] sm:text-[16px] md:text-[18px] font-medium leading-snug tracking-normal"
             style={{ color: '#6B7280', opacity: 0.9 }}
           >
-            Appliance Repair in {cityName}
+            Appliance Repair in {cityName}
           </h1>
         </div>
       </div>
@@ -90,7 +90,7 @@ const CityHero = ({ bgImage, cityName }) => {
           <img
             className="heroLogo"
             src={logoWebP}
-            alt="FixitBay Appliance Repair Logo"
+            alt="FixitBay Appliance Repair Logo"
             aria-hidden="true"
             width="920"
             height="920"

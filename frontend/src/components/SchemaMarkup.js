@@ -41,9 +41,9 @@ const SchemaMarkup = () => {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "@id": "https://fixitbay.net/#organization",
-      "name": "FixitBay LLC",
-      "alternateName": "FixitBay LLC Appliance Repair",
-      "description": "Professional appliance repair in San Francisco Bay Area. Licensed technician Andrei provides same- or next-day appointments for refrigerators, washers, dryers, dishwashers, ovens, cooktops, wine coolers, ice makers, and garbage disposals. $60 diagnostic applied to repair. 180-day warranty on all parts and labor.",
+      "name": "FixitBay LLC",
+      "alternateName": "FixitBay LLC Appliance Repair",
+      "description": "Professional appliance repair in San Francisco Bay Area. Licensed technician Andrei provides same- or next-day appointments for refrigerators, washers, dryers, dishwashers, ovens, cooktops, wine coolers, ice makers, and garbage disposals. $60 diagnostic applied to repair. 180-day warranty on all parts and labor.",
       "url": "https://fixitbay.net",
       "telephone": "+17605435733",
       "email": "info@fixitbay.net",
@@ -53,7 +53,7 @@ const SchemaMarkup = () => {
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1549 Franklin Street Unit A",
-        "addressLocality": "San Francisco",
+        "addressLocality": "San Francisco",
         "addressRegion": "CA",
         "postalCode": "94109",
         "addressCountry": "US"
@@ -78,41 +78,41 @@ const SchemaMarkup = () => {
         }
       ],
       "areaServed": [
-        {"@type":"City","name":"San Francisco"},
-        {"@type":"City","name":"Daly City"},
-        {"@type":"City","name":"South San Francisco"},
-        {"@type":"City","name":"San Bruno"},
+        {"@type":"City","name":"San Francisco"},
+        {"@type":"City","name":"Daly City"},
+        {"@type":"City","name":"South San Francisco"},
+        {"@type":"City","name":"San Bruno"},
         {"@type":"City","name":"Pacifica"},
         {"@type":"City","name":"Millbrae"},
         {"@type":"City","name":"Colma"},
         {"@type":"City","name":"Brisbane"},
         {"@type":"City","name":"Montara"},
-        {"@type":"City","name":"Mill Valley"},
-        {"@type":"City","name":"San Rafael"},
+        {"@type":"City","name":"Mill Valley"},
+        {"@type":"City","name":"San Rafael"},
         {"@type":"City","name":"Sausalito"},
         {"@type":"City","name":"Novato"},
-        {"@type":"City","name":"Corte Madera"},
+        {"@type":"City","name":"Corte Madera"},
         {"@type":"City","name":"Larkspur"},
         {"@type":"City","name":"Greenbrae"},
         {"@type":"City","name":"Ross"},
         {"@type":"City","name":"Fairfax"},
-        {"@type":"City","name":"San Anselmo"},
+        {"@type":"City","name":"San Anselmo"},
         {"@type":"City","name":"Tiburon"},
         {"@type":"City","name":"Belvedere"},
-        {"@type":"City","name":"San Quentin"}
+        {"@type":"City","name":"San Quentin"}
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Appliance Repair Services",
+        "name": "Appliance Repair Services",
         "itemListElement": [
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Refrigerator Repair","url":"https://fixitbay.net/refrigerator-repair"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Washer Repair","url":"https://fixitbay.net/washer-repair"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Dryer Repair","url":"https://fixitbay.net/dryer-repair"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Dishwasher Repair","url":"https://fixitbay.net/dishwasher-repair"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Oven Repair","url":"https://fixitbay.net/oven-repair"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Ice Maker Repair","url":"https://fixitbay.net/ice-maker-repair"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Wine Cooler Repair","url":"https://fixitbay.net/wine-cooler-repair"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Garbage Disposal Repair","url":"https://fixitbay.net/garbage-disposal-repair"}}
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Refrigerator Repair","url":"https://fixitbay.net/refrigerator-repair"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Washer Repair","url":"https://fixitbay.net/washer-repair"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Dryer Repair","url":"https://fixitbay.net/dryer-repair"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Dishwasher Repair","url":"https://fixitbay.net/dishwasher-repair"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Oven Repair","url":"https://fixitbay.net/oven-repair"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Ice Maker Repair","url":"https://fixitbay.net/ice-maker-repair"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Wine Cooler Repair","url":"https://fixitbay.net/wine-cooler-repair"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Garbage Disposal Repair","url":"https://fixitbay.net/garbage-disposal-repair"}}
         ]
       },
       "aggregateRating": {
@@ -137,7 +137,7 @@ const SchemaMarkup = () => {
       "employee": {
         "@type": "Person",
         "name": "Andrei Suprunov",
-        "jobTitle": "Lead Appliance Repair Technician"
+        "jobTitle": "Lead Appliance Repair Technician"
       }
     });
       document.head.appendChild(script);

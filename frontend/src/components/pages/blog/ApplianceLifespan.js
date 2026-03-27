@@ -14,7 +14,7 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: 'How long do refrigerators last on average?', a: "Most refrigerators last 10\u201313 years, with top-freezer models often reaching 15+ years. French-door and side-by-side models average 10\u201312 years due to more complex ice/water systems. Regular maintenance \u2014 cleaning condenser coils every 6 months and replacing water filters \u2014 can extend lifespan by 3\u20135 years." },
-  { q: 'What makes appliances wear out faster in the Bay Area?', a: "San Francisco\u2019s coastal humidity accelerates corrosion on metal components, particularly in refrigerators and dryers. Mineral-rich Bay Area water causes buildup in dishwashers and washing machines. Homes with hard water should clean appliance filters more frequently \u2014 every 3 months instead of every 6." },
+  { q: 'What makes appliances wear out faster in the Bay Area?', a: "San Francisco\u2019s coastal humidity accelerates corrosion on metal components, particularly in refrigerators and dryers. Mineral-rich Bay Area water causes buildup in dishwashers and washing machines. Homes with hard water should clean appliance filters more frequently \u2014 every 3 months instead of every 6." },
   { q: 'Is it better to repair or replace an appliance that\u2019s 10 years old?', a: "Use the 50% rule: if repair cost exceeds 50% of replacement cost AND the appliance is past 50% of its expected lifespan, replacement usually makes more sense. However, premium brands (Sub-Zero, Wolf, Thermador) are built to 20\u201325 year lifespans and are almost always worth repairing. Our technicians give honest advice after the $60 diagnostic." },
   { q: 'How can I extend my appliance\u2019s lifespan?', a: "Five proven ways: (1) Clean condenser coils on refrigerators every 6 months, (2) clean dryer vent duct annually, (3) run dishwasher cleaning cycles monthly, (4) don\u2019t overload washers or dryers \u2014 fill max 3/4 full, (5) schedule professional maintenance every 2\u20133 years for high-use appliances. Proper maintenance adds 3\u20135 years on average." },
   { q: 'What appliance brands last the longest?', a: "For longevity, Sub-Zero and Wolf are in a class of their own \u2014 built for 20\u201325+ year lifespans with available parts for decades. Among standard brands, Whirlpool, Maytag, and LG consistently score well for reliability at 12\u201315 years with proper maintenance. Samsung and French-door models from any brand tend to have shorter lifespans due to complex electronics and ice systems." },
@@ -99,7 +99,7 @@ const ApplianceLifespan = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "How Long Should Your Appliances Last?", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-01", "dateModified": "2026-01-01", "url": "https://fixitbay.net/blog/appliance-lifespan" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "How Long Should Your Appliances Last?", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-01", "dateModified": "2026-01-01", "url": "https://fixitbay.net/blog/appliance-lifespan" } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Appliance Lifespan", "item": "https://fixitbay.net/blog/appliance-lifespan" }] } }
   ], []);
@@ -108,7 +108,7 @@ const ApplianceLifespan = () => {
   return (
     <>
       <SEOMetaTags
-        title="How Long Do Appliances Last? Lifespan Guide | FixitBay LLC"
+        title="How Long Do Appliances Last? Lifespan Guide | FixitBay LLC"
         description="How long do refrigerators, washers, dryers, dishwashers, and ovens last? Expert lifespan guide with maintenance tips to extend appliance life."
         canonical="https://fixitbay.net/blog/appliance-lifespan"
         ogType="article"
@@ -146,7 +146,7 @@ const ApplianceLifespan = () => {
             </div>
             <BlogByline dateISO="2026-01-03" dateFormatted="January 3, 2026" readTime="6 min" />
             <h1 className="life-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 760, margin: '0 auto 16px' }}>
-              How Long Should Your Appliances Last? — Expected Lifespan Guide for Bay Area Homes
+              How Long Should Your Appliances Last? — Expected Lifespan Guide for Bay Area Homes
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', maxWidth: 640, margin: '0 auto' }}>
               Expected lifespans for refrigerators, washers, dryers, dishwashers, and ovens. Learn when to start planning for replacement and how proper maintenance extends appliance life by years.
@@ -224,7 +224,7 @@ const ApplianceLifespan = () => {
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
-                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
                     <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -322,7 +322,7 @@ const ApplianceLifespan = () => {
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2 }}>Written by</p>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 2 }}>Andrei &mdash; Licensed Appliance Technician</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
                 </div>
               </div>
             </article>
@@ -392,7 +392,7 @@ const ApplianceLifespan = () => {
               {[
                 { title: 'Repair vs. Replace: When to Fix Your Appliance', href: '/blog/when-to-repair-vs-replace' },
                 { title: 'Energy-Efficient Appliances: Worth the Cost?', href: '/blog/energy-efficient-appliances' },
-                { title: 'Appliance Repair Cost in San Francisco 2026', href: '/blog/appliance-repair-cost-san-francisco' },
+                { title: 'Appliance Repair Cost in San Francisco 2026', href: '/blog/appliance-repair-cost-san-francisco' },
               ].map((a, i) => (
                 <Link key={i} to={a.href} data-testid={`related-article-${i}`} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.06)', borderRadius: 4, textDecoration: 'none' }}>
                   <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#0D1B2A' }}>{a.title}</span>
@@ -410,9 +410,9 @@ const ApplianceLifespan = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'All Appliance Repair in Bay Area', body: 'Fast repair for all major appliance brands. $60 diagnostic applied to repair.', link: 'View Services', href: '/services' },
+                { tag: 'SERVICE', title: 'All Appliance Repair in Bay Area', body: 'Fast repair for all major appliance brands. $60 diagnostic applied to repair.', link: 'View Services', href: '/services' },
                 { tag: 'ARTICLE', title: 'Repair vs Replace: When to Fix Your Appliance', body: 'Use the 50% rule to make the smartest financial decision.', link: 'Read Article', href: '/blog/when-to-repair-vs-replace' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: card.tag === 'SERVICE' ? '#fff' : 'rgba(255,255,255,0.7)', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
@@ -430,7 +430,7 @@ const ApplianceLifespan = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

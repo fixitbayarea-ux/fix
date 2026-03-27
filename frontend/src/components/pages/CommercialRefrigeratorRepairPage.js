@@ -14,22 +14,22 @@ const commonProblems = [
   { title: 'Refrigerant Leak in Commercial System', description: 'Commercial refrigeration systems losing refrigerant charge over time, leading to gradual cooling loss and increased energy consumption. Requires professional leak detection and repair.' },
   { title: 'Condenser Fan Motor Failure', description: 'Condenser fan motors burning out from grease and dust buildup in restaurant environments, causing the compressor to overheat and shut down on high-pressure safety.' },
   { title: 'Digital Controller Error Codes', description: 'Modern commercial refrigeration units displaying error codes on digital controllers. Codes vary by manufacturer and can indicate sensor failures, defrost issues, or compressor problems.' },
-  { title: 'Health Code Temperature Violations', description: 'Walk-in coolers, prep tables, or display cases failing to maintain below 41°F as required by San Francisco Department of Public Health regulations.' },
+  { title: 'Health Code Temperature Violations', description: 'Walk-in coolers, prep tables, or display cases failing to maintain below 41°F as required by San Francisco Department of Public Health regulations.' },
 ];
 
 const faqData = [
-  { question: 'Do you repair all types of commercial refrigerators?', answer: 'Yes. We service walk-in coolers, walk-in freezers, reach-in refrigerators, under-counter units, prep tables, bar coolers, display cases, blast chillers, and ice cream freezers. We work with restaurants, grocery stores, delis, bakeries, hotels, and commercial kitchens throughout San Francisco, the Peninsula, and Marin County.' },
+  { question: 'Do you repair all types of commercial refrigerators?', answer: 'Yes. We service walk-in coolers, walk-in freezers, reach-in refrigerators, under-counter units, prep tables, bar coolers, display cases, blast chillers, and ice cream freezers. We work with restaurants, grocery stores, delis, bakeries, hotels, and commercial kitchens throughout San Francisco, the Peninsula, and Marin County.' },
   { question: 'How quickly can you respond to a walk-in cooler emergency?', answer: 'We offer emergency priority service for commercial refrigeration failures. A walk-in cooler breakdown puts thousands of dollars in inventory at risk, so we prioritize these calls. In most cases, our technician arrives within 2-4 hours of your call.' },
   { question: 'What commercial refrigeration brands do you repair?', answer: 'We repair True, Traulsen, Turbo Air, Beverage-Air, Hoshizaki, Delfield, Victory, Master-Bilt, Continental, Arctic Air, Everest, Atosa, and all other major commercial refrigeration brands. Our technician carries common parts for these brands.' },
-  { question: 'Can you help with health code refrigeration violations?', answer: 'Absolutely. We understand San Francisco health department requirements and can perform emergency temperature remediation, calibrate thermostats, replace failed components, and provide documentation to help resolve violations.' },
+  { question: 'Can you help with health code refrigeration violations?', answer: 'Absolutely. We understand San Francisco health department requirements and can perform emergency temperature remediation, calibrate thermostats, replace failed components, and provide documentation to help resolve violations.' },
   { question: 'Is there a warranty on commercial refrigerator repairs?', answer: 'Yes. All commercial refrigerator repairs include our 180-day warranty on parts and labor. If the same issue recurs within the warranty period, we return at no additional charge.' },
   { question: 'How much does commercial refrigerator repair cost?', answer: 'We charge a $100 diagnostic fee for commercial refrigeration, which is credited toward your repair if you proceed. Most common repairs range from $250-$600 depending on the issue and parts needed. We always provide an upfront quote before starting work.' },
 ];
 
 const serviceDescription = {
-  title: 'Emergency Commercial Refrigeration Repair in San Francisco',
+  title: 'Emergency Commercial Refrigeration Repair in San Francisco',
   paragraphs: [
-    <>When your commercial refrigerator fails, every minute counts. Food inventory worth thousands of dollars is at risk, and health code violations can shut down your business. FixitBay LLC provides <strong>emergency commercial refrigeration repair</strong> for restaurants, grocery stores, delis, hotels, and commercial kitchens throughout San Francisco, the Peninsula, and Marin County.</>,
+    <>When your commercial refrigerator fails, every minute counts. Food inventory worth thousands of dollars is at risk, and health code violations can shut down your business. FixitBay LLC provides <strong>emergency commercial refrigeration repair</strong> for restaurants, grocery stores, delis, hotels, and commercial kitchens throughout San Francisco, the Peninsula, and Marin County.</>,
     <>Our licensed technician arrives with diagnostic equipment and common replacement parts for walk-in coolers, reach-in refrigerators, prep tables, display cases, and bar refrigeration. We charge a <strong>$100 diagnostic fee</strong> (credited toward your repair) and provide an upfront written estimate before any work begins.</>,
     <>From compressor replacements and refrigerant recharges to thermostat calibration and door gasket replacements, we handle the full spectrum of commercial refrigeration repair. Every job includes our <strong>180-day warranty on parts and labor</strong>, giving you confidence that the repair will last.</>,
   ],
@@ -43,7 +43,7 @@ const UniqueContent = () => (
         <div style={{ fontFamily: F, fontWeight: 700, fontSize: 11, letterSpacing: '0.14em', color: '#FF5722', textTransform: 'uppercase', marginBottom: 10 }}>BRANDS WE SERVICE</div>
         <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#0D1B2A', marginBottom: 24, lineHeight: 1.2 }}>Commercial Refrigerator Brands We Service</h2>
         <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.8, marginBottom: 24 }}>
-          San Francisco restaurants and food service businesses rely on commercial refrigeration from dozens of manufacturers. Our technician has hands-on experience with every major brand, carrying common parts and understanding the unique engineering of each system. Whether you have a True two-door reach-in, a Hoshizaki under-counter, or a Turbo Air display case, we know how to diagnose and repair it efficiently.
+          San Francisco restaurants and food service businesses rely on commercial refrigeration from dozens of manufacturers. Our technician has hands-on experience with every major brand, carrying common parts and understanding the unique engineering of each system. Whether you have a True two-door reach-in, a Hoshizaki under-counter, or a Turbo Air display case, we know how to diagnose and repair it efficiently.
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 16, marginBottom: 24 }}>
           {[
@@ -78,7 +78,7 @@ const UniqueContent = () => (
           <div style={{ background: '#fff', borderRadius: 4, padding: '24px 28px', borderLeft: '3px solid #FF5722' }}>
             <h3 style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#0D1B2A', marginBottom: 8 }}>Walk-In Cooler Temperature Rising Above 41°F</h3>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.7 }}>
-              The most urgent commercial refrigeration issue. When a walk-in cooler can't maintain temperature below 41°F, food safety is immediately compromised. Common causes include compressor failure (motor windings burned out or valves leaking), low refrigerant from a system leak, severely dirty condenser coils reducing heat exchange, or a failed evaporator fan motor. In San Francisco's busy restaurant district, we see this most often during summer months when ambient temperatures stress aging compressor systems. Our emergency response includes temporary cooling recommendations to protect your inventory while we diagnose and repair the root cause.
+              The most urgent commercial refrigeration issue. When a walk-in cooler can't maintain temperature below 41°F, food safety is immediately compromised. Common causes include compressor failure (motor windings burned out or valves leaking), low refrigerant from a system leak, severely dirty condenser coils reducing heat exchange, or a failed evaporator fan motor. In San Francisco's busy restaurant district, we see this most often during summer months when ambient temperatures stress aging compressor systems. Our emergency response includes temporary cooling recommendations to protect your inventory while we diagnose and repair the root cause.
             </p>
           </div>
 
@@ -92,26 +92,26 @@ const UniqueContent = () => (
           <div style={{ background: '#fff', borderRadius: 4, padding: '24px 28px', borderLeft: '3px solid #FF5722' }}>
             <h3 style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#0D1B2A', marginBottom: 8 }}>Display Case Compressor Short-Cycling</h3>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.7 }}>
-              Glass-door merchandisers and open display cases in delis and grocery stores sometimes develop a pattern where the compressor turns on and off rapidly (short-cycling). This dramatically shortens compressor life and increases energy costs. Causes include a failing start relay or capacitor, an overcharge or undercharge of refrigerant, a dirty condenser restricting airflow, or a faulty thermostat. Many San Francisco delis with older Turbo Air and True display cases experience this issue. Our repair restores proper cycling to extend equipment life.
+              Glass-door merchandisers and open display cases in delis and grocery stores sometimes develop a pattern where the compressor turns on and off rapidly (short-cycling). This dramatically shortens compressor life and increases energy costs. Causes include a failing start relay or capacitor, an overcharge or undercharge of refrigerant, a dirty condenser restricting airflow, or a faulty thermostat. Many San Francisco delis with older Turbo Air and True display cases experience this issue. Our repair restores proper cycling to extend equipment life.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    {/* ── Why Restaurants Trust FixitBay LLC ── */}
+    {/* ── Why Restaurants Trust FixitBay LLC ── */}
     <section style={{ background: '#0D1B2A', padding: '70px 0' }}>
       <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px' }}>
         <div style={{ fontFamily: F, fontWeight: 700, fontSize: 11, letterSpacing: '0.14em', color: '#FF5722', textTransform: 'uppercase', marginBottom: 10 }}>WHY CHOOSE US</div>
-        <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#FFFFFF', marginBottom: 24, lineHeight: 1.2 }}>Why Restaurants Trust FixitBay LLC</h2>
+        <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#FFFFFF', marginBottom: 24, lineHeight: 1.2 }}>Why Restaurants Trust FixitBay LLC</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}>
           {[
-            { title: 'Emergency Fast Response', text: 'We understand that a broken walk-in cooler means thousands of dollars in spoiling inventory. San Francisco restaurants call us because we prioritize commercial emergencies and typically arrive within 2-4 hours.' },
-            { title: 'Health Code Expertise', text: 'Our technician understands San Francisco Department of Public Health temperature requirements. We can help you remediate violations, calibrate equipment, and document repairs for inspector follow-up visits.' },
+            { title: 'Emergency Fast Response', text: 'We understand that a broken walk-in cooler means thousands of dollars in spoiling inventory. San Francisco restaurants call us because we prioritize commercial emergencies and typically arrive within 2-4 hours.' },
+            { title: 'Health Code Expertise', text: 'Our technician understands San Francisco Department of Public Health temperature requirements. We can help you remediate violations, calibrate equipment, and document repairs for inspector follow-up visits.' },
             { title: 'Parts for All Major Brands', text: 'We carry common replacement parts for True, Beverage-Air, Turbo Air, Hoshizaki, and other leading commercial refrigeration brands. Many repairs are completed in a single visit.' },
             { title: '180-Day Warranty', text: 'Every commercial refrigerator repair includes a 180-day warranty on parts and labor. If the same issue recurs, we return at no charge. Your business depends on reliable refrigeration — so does our reputation.' },
-            { title: 'Licensed & Insured', text: 'FixitBay LLC is a licensed appliance repair company (CA License #51001). We carry full liability insurance, giving you peace of mind when we service equipment at your commercial property.' },
-            { title: 'Transparent Pricing', text: '$100 diagnostic fee credited toward repair. Written quote before work starts. No hidden charges, no surprises. San Francisco business owners appreciate our straightforward approach.' },
+            { title: 'Licensed & Insured', text: 'FixitBay LLC is a licensed appliance repair company (CA License #51001). We carry full liability insurance, giving you peace of mind when we service equipment at your commercial property.' },
+            { title: 'Transparent Pricing', text: '$100 diagnostic fee credited toward repair. Written quote before work starts. No hidden charges, no surprises. San Francisco business owners appreciate our straightforward approach.' },
           ].map(item => (
             <div key={item.title} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 4, padding: '24px' }}>
               <div style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#FF5722', marginBottom: 8 }}>{item.title}</div>
@@ -127,8 +127,8 @@ const UniqueContent = () => (
 const DesktopPage = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Refrigerator"
-    pageTitle="Commercial Refrigerator Repair – Walk-In Coolers, Reach-In Units & Display Cases"
-    metaDescription="Commercial refrigerator repair in San Francisco, Peninsula & Marin County. Walk-in coolers, reach-in units, display cases. Emergency priority service, $100 diagnostic fee, 180-day warranty. True, Beverage-Air, Turbo Air, Hoshizaki."
+    pageTitle="Commercial Refrigerator Repair – Walk-In Coolers, Reach-In Units & Display Cases"
+    metaDescription="Commercial refrigerator repair in San Francisco, Peninsula & Marin County. Walk-in coolers, reach-in units, display cases. Emergency priority service, $100 diagnostic fee, 180-day warranty. True, Beverage-Air, Turbo Air, Hoshizaki."
     commonProblems={commonProblems}
     faqData={faqData}
     relatedServicesCategory="Commercial"
@@ -170,9 +170,9 @@ const MobilePage = () => (
   <MobileServiceLanding
     appliance="Commercial Refrigerator"
     pageSlug="commercial-refrigerator-repair"
-    pageTitle="Commercial Refrigerator Repair – Walk-In Coolers & Reach-In Units"
-    metaDescription="Commercial refrigerator repair in San Francisco & Bay Area. Walk-in coolers, reach-in units. Fast scheduling, 180-day warranty."
-    heroTitle={<>Commercial Fridge<br />Repair — Bay Area.</>}
+    pageTitle="Commercial Refrigerator Repair – Walk-In Coolers & Reach-In Units"
+    metaDescription="Commercial refrigerator repair in San Francisco & Bay Area. Walk-in coolers, reach-in units. Fast scheduling, 180-day warranty."
+    heroTitle={<>Commercial Fridge<br />Repair — Bay Area.</>}
     heroSubtitle="Priority Service for Businesses"
     issues={mobileIssues}
     faqs={mobileFaqs}
@@ -180,8 +180,8 @@ const MobilePage = () => (
     schemaData={{
       "@context": "https://schema.org",
       "@type": "Service",
-      "serviceType": "Commercial Refrigerator Repair",
-      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": PHONE_DISPLAY },
+      "serviceType": "Commercial Refrigerator Repair",
+      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": PHONE_DISPLAY },
     }}
   />
 );

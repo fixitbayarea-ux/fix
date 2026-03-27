@@ -26,9 +26,9 @@ const DishwasherMaintenance = () => {
   ];
 
   const serviceDescription = {
-    title: 'Expert Dishwasher Maintenance in San Francisco Bay Area',
+    title: 'Expert Dishwasher Maintenance in San Francisco Bay Area',
     paragraphs: [
-      'Your dishwasher saves you countless hours of manual labor, but only when it\'s working properly. Regular maintenance ensures sparkling clean dishes, prevents leaks and breakdowns, and extends the life of your appliance. FixitBay LLC provides professional dishwasher maintenance services throughout San Francisco, Peninsula, and Marin County for all major brands and models.',
+      'Your dishwasher saves you countless hours of manual labor, but only when it\'s working properly. Regular maintenance ensures sparkling clean dishes, prevents leaks and breakdowns, and extends the life of your appliance. FixitBay LLC provides professional dishwasher maintenance services throughout San Francisco, Peninsula, and Marin County for all major brands and models.',
       'Our certified technicians perform comprehensive maintenance including cleaning and inspecting filters, checking spray arms for clogs, testing drain pumps, inspecting door seals for leaks, cleaning the interior and detergent dispenser, and running diagnostic cycles. We also test heating elements, water inlet valves, and electronic controls to ensure every component functions correctly. Whether you have a standard built-in dishwasher or a drawer-style model, we maintain optimal cleaning performance.',
       'During our $60 diagnostic visit, we thoroughly inspect your dishwasher, test all cycles, check for leaks, and identify any parts showing wear. We also verify proper water temperature, test the drying system, and ensure the drain functions completely. Our preventive maintenance helps you avoid costly repairs, reduces water waste, and guarantees consistently clean dishes. All our work is backed by a 180-day warranty, and we offer flexible same- or next-day and next-day service appointments.'
     ]
@@ -40,7 +40,7 @@ const DishwasherMaintenance = () => {
     "serviceType": "Dishwasher Maintenance",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay LLC",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     }
   };
@@ -50,14 +50,14 @@ const DishwasherMaintenance = () => {
       <MobileServiceLanding
         appliance="Dishwasher"
         pageSlug="maintenance/dishwasher"
-        pageTitle="Dishwasher Maintenance | FixitBay LLC"
-        metaDescription="Professional dishwasher maintenance in San Francisco Bay Area. Keep your dishwasher cleaning efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+        pageTitle="Dishwasher Maintenance | FixitBay LLC"
+        metaDescription="Professional dishwasher maintenance in San Francisco Bay Area. Keep your dishwasher cleaning efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
         heroTitle={<>Dishwasher<br />Maintenance. Today.</>}
         heroImage="/images/technicians/dishwasher-tech.jpg"
-        heroImageAlt="FixitBay technician servicing a dishwasher in San Francisco"
+        heroImageAlt="FixitBay technician servicing a dishwasher in San Francisco"
         heroImagePosition="center center"
         techImage="/images/technicians/dishwasher-tech.jpg"
-        techImageAlt="FixitBay technician servicing a dishwasher in San Francisco"
+        techImageAlt="FixitBay technician servicing a dishwasher in San Francisco"
         heroSubtitle="Sparkling Dishes — Prevent Breakdowns"
         issues={[
           { icon: '\u{1F4A7}', label: 'Not Cleaning' },
@@ -76,10 +76,10 @@ const DishwasherMaintenance = () => {
   return (
     <ApplianceRepairPageNew
       appliance="Dishwasher"
-      pageTitle="Dishwasher Maintenance | FixitBay LLC"
-      metaDescription="Professional dishwasher maintenance in San Francisco Bay Area. Keep your dishwasher cleaning efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+      pageTitle="Dishwasher Maintenance | FixitBay LLC"
+      metaDescription="Professional dishwasher maintenance in San Francisco Bay Area. Keep your dishwasher cleaning efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
       heroImage="/images/technicians/dishwasher-tech.jpg"
-      heroImageAlt="FixitBay technician servicing a dishwasher in San Francisco"
+      heroImageAlt="FixitBay technician servicing a dishwasher in San Francisco"
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}
@@ -100,7 +100,7 @@ const DishwasherMaintenance = () => {
         ]
       }}
       relatedLinks={[
-        { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or poor cleaning' },
+        { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or poor cleaning' },
         { href: '/maintenance/refrigerator', label: 'Fridge Maintenance', desc: 'Coil cleaning and seal inspection' },
         { href: '/garbage-disposal-repair', label: 'Disposal Repair', desc: 'Connected to dishwasher drain line' },
         { href: '/maintenance/cooktop', label: 'Cooktop Maintenance', desc: 'Burner and surface cleaning service' },

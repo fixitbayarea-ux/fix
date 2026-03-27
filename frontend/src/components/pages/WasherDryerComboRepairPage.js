@@ -5,7 +5,7 @@ const WasherDryerComboRepairPage = () => {
   const applianceData = {
     appliance: "Washer Dryer Combo",
     pageTitle: "Washer Dryer Combo Repair – All-in-One Laundry Solutions",
-    metaDescription: "Expert washer dryer combo repair in the Bay Area. All-in-one laundry appliance specialists. Licensed technicians, 180-day warranty. Call (760) 543-5733!",
+    metaDescription: "Expert washer dryer combo repair in the Bay Area. All-in-one laundry appliance specialists. Licensed technicians, 180-day warranty. Call (760) 543-5733!",
     commonProblems: [
       {
         title: "Not Switching Between Wash and Dry Cycles",
@@ -33,8 +33,8 @@ const WasherDryerComboRepairPage = () => {
       }
     ],
     localAreas: [
-      "San Francisco", "Mountain View", "Palo Alto", "Sunnyvale", "Santa Clara", "Oakland",
-      "Berkeley", "Fremont", "San Mateo", "Redwood City", "Hayward", "Union City"
+      "San Francisco", "Mountain View", "Palo Alto", "Sunnyvale", "Santa Clara", "Oakland",
+      "Berkeley", "Fremont", "San Mateo", "Redwood City", "Hayward", "Union City"
     ],
     faqData: [
       {

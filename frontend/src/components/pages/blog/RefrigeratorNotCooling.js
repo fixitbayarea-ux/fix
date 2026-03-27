@@ -13,11 +13,11 @@ const H2S = { fontFamily: F, fontWeight: 800, fontSize: 22, color: '#1A1A1A', bo
 const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.8, marginBottom: 12 };
 
 const FAQ_ITEMS = [
-  { q: "Why is my refrigerator running but not cooling?", a: "The most common causes are dirty condenser coils or a failed evaporator fan motor. Start by cleaning the coils \u2014 if the freezer is cold but the fridge compartment is warm, the evaporator fan likely needs replacement. In San Francisco, coastal humidity also accelerates gasket wear, causing cold air leaks." },
-  { q: "How much does refrigerator repair cost in San Francisco?", a: "Most refrigerator repairs cost $150\u2013$500 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic that is applied toward repair. Simple fixes like thermostat replacement start from $150. Compressor replacement on standard fridges ranges from $400\u2013$600. Sub-Zero and Viking repairs start from $555." },
+  { q: "Why is my refrigerator running but not cooling?", a: "The most common causes are dirty condenser coils or a failed evaporator fan motor. Start by cleaning the coils \u2014 if the freezer is cold but the fridge compartment is warm, the evaporator fan likely needs replacement. In San Francisco, coastal humidity also accelerates gasket wear, causing cold air leaks." },
+  { q: "How much does refrigerator repair cost in San Francisco?", a: "Most refrigerator repairs cost $150\u2013$500 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic that is applied toward repair. Simple fixes like thermostat replacement start from $150. Compressor replacement on standard fridges ranges from $400\u2013$600. Sub-Zero and Viking repairs start from $555." },
   { q: "Is it worth repairing a 10-year-old refrigerator?", a: "If the repair cost exceeds 50% of a new refrigerator\u2019s price, replacement usually makes more sense. The exception is premium brands \u2014 a Sub-Zero costs $5,000\u2013$15,000 new, so a $600 compressor repair is absolutely worth it even at 15+ years." },
   { q: "Can I fix a refrigerator not cooling myself?", a: "You can check three things yourself: clean the condenser coils, verify the thermostat setting (35\u201338\u00B0F), and test the door seal with a dollar bill. These cover about 40% of cases. If these don\u2019t solve it, the issue likely requires a licensed technician with diagnostic tools." },
-  { q: "How long does refrigerator repair take?", a: "Most repairs take 1\u20132 hours once the technician arrives. Parts like fan motors and thermostats are usually in stock on our truck. Compressor replacement may require ordering the part and a return visit. FixitBay LLC offers same- or next-day and next-day appointments Monday through Saturday." },
+  { q: "How long does refrigerator repair take?", a: "Most repairs take 1\u20132 hours once the technician arrives. Parts like fan motors and thermostats are usually in stock on our truck. Compressor replacement may require ordering the part and a return visit. FixitBay LLC offers same- or next-day and next-day appointments Monday through Saturday." },
 ];
 
 const TOC = [
@@ -30,7 +30,7 @@ const TOC = [
   { id: 'defrost', label: 'Defrost System Failure' },
   { id: 'compressor', label: 'Compressor Failure or Refrigerant Leak' },
   { id: 'checklist', label: 'DIY Checklist Before Calling a Technician' },
-  { id: 'pricing', label: 'Repair Pricing \u2014 SF Bay Area' },
+  { id: 'pricing', label: 'Repair Pricing \u2014 SF Bay Area' },
   { id: 'field-note', label: "Andrei\u2019s Field Note" },
   { id: 'faq', label: 'Frequently Asked Questions' },
   { id: 'related', label: 'Related Articles' },
@@ -72,9 +72,9 @@ const RefrigeratorNotCooling = () => {
       id: 'article-schema',
       data: {
         "@context": "https://schema.org", "@type": "BlogPosting",
-        "headline": "Refrigerator Not Cooling? 8 Causes & Fixes | FixitBay LLC SF",
-        "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
-        "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/navbar-logo-new-112.webp" } },
+        "headline": "Refrigerator Not Cooling? 8 Causes & Fixes | FixitBay LLC SF",
+        "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
+        "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/navbar-logo-new-112.webp" } },
         "datePublished": "2026-03-23",
         "dateModified": "2026-03-23",
         "mainEntityOfPage": "https://fixitbay.net/blog/refrigerator-not-cooling"
@@ -110,7 +110,7 @@ const RefrigeratorNotCooling = () => {
     <div style={{ background: '#0D1B2A', borderRadius: 4, padding: '14px 18px', margin: '16px 0' }}>
       <div style={{ display: 'flex', gap: 8, alignItems: 'center', marginBottom: 6 }}>
         <span style={{ width: 20, height: 20, borderRadius: '50%', background: '#FF5722', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 700, flexShrink: 0 }}>{'\u2713'}</span>
-        <span style={{ fontFamily: F, fontWeight: 700, fontSize: 12, color: 'rgba(255,255,255,0.7)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>SF Bay Area Note</span>
+        <span style={{ fontFamily: F, fontWeight: 700, fontSize: 12, color: 'rgba(255,255,255,0.7)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>SF Bay Area Note</span>
       </div>
       <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.82)', lineHeight: 1.6 }}>{text}</p>
     </div>
@@ -119,8 +119,8 @@ const RefrigeratorNotCooling = () => {
   return (
     <>
       <SEOMetaTags
-        title="Refrigerator Not Cooling? 8 Causes & Fixes | FixitBay LLC SF"
-        description="Refrigerator not cooling? 8 common causes from dirty coils to compressor failure. SF Bay Area DIY checklist + when to call a pro. From $255 at FixitBay LLC."
+        title="Refrigerator Not Cooling? 8 Causes & Fixes | FixitBay LLC SF"
+        description="Refrigerator not cooling? 8 common causes from dirty coils to compressor failure. SF Bay Area DIY checklist + when to call a pro. From $255 at FixitBay LLC."
         canonical="https://fixitbay.net/blog/refrigerator-not-cooling"
         ogType="article"
       />
@@ -163,7 +163,7 @@ const RefrigeratorNotCooling = () => {
               Refrigerator Not Cooling? 8 Common Causes & What to Do
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto' }}>
-              8 causes ranked from simplest DIY fix to problems that need a licensed technician. SF Bay Area pricing, a real case study, and a checklist before you call.
+              8 causes ranked from simplest DIY fix to problems that need a licensed technician. SF Bay Area pricing, a real case study, and a checklist before you call.
             </p>
           </div>
         </section>
@@ -190,10 +190,10 @@ const RefrigeratorNotCooling = () => {
                 <span style={{ fontWeight: 600, color: '#1A1A1A' }}>A warm refrigerator puts your food — and your grocery budget — at risk.</span> Before you call for service, there are things you can check yourself. Below are the 8 most common reasons a refrigerator stops cooling, ranked from simplest DIY fix to problems that need a licensed technician.
               </p>
               <p style={{ ...P, marginBottom: 16 }}>
-                As an <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>appliance repair</a> tech in San Francisco for over 10 years, I see every one of these weekly — especially in older Victorian and Edwardian homes across the city.
+                As an <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>appliance repair</a> tech in San Francisco for over 10 years, I see every one of these weekly — especially in older Victorian and Edwardian homes across the city.
               </p>
               <p style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#1A3B5D', fontStyle: 'italic', marginBottom: 28 }}>
-                — Andrei, Licensed Appliance Technician, FixitBay LLC
+                — Andrei, Licensed Appliance Technician, FixitBay LLC
               </p>
 
               {/* ── Section 1 ── */}
@@ -213,7 +213,7 @@ const RefrigeratorNotCooling = () => {
               <h2 id="door-gasket" style={H2S}><span style={{ color: '#FF5722' }}>3.</span> Damaged Door Gasket (Seal)</h2>
               <p style={P}>The rubber gasket around your door keeps cold air in. When it cracks, hardens, or warps, cold air leaks constantly.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Dollar bill test:</strong> Close the door on a dollar bill. If it slides out easily, the seal is too weak.</p>
-              <SFTip text="Salt air and fog humidity accelerate rubber deterioration. I replace more door gaskets in Pacifica and the Outer Sunset than anywhere else in the Bay Area. If your fridge is near a window that faces the ocean, check gaskets every year." />
+              <SFTip text="Salt air and fog humidity accelerate rubber deterioration. I replace more door gaskets in Pacifica and the Outer Sunset than anywhere else in the Bay Area. If your fridge is near a window that faces the ocean, check gaskets every year." />
               <p style={P}><strong style={{ color: '#1A1A1A' }}>DIY check:</strong> Run the dollar bill test. Clean gaskets with warm soapy water.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Professional replacement:</strong> from $80–$150 installed.</p>
 
@@ -226,7 +226,7 @@ const RefrigeratorNotCooling = () => {
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
-                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>refrigerator repair</a> in San Francisco & Bay Area?</p>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>refrigerator repair</a> in San Francisco & Bay Area?</p>
                     <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling &middot; $60 diagnostic applied to repair &middot; 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -275,12 +275,12 @@ const RefrigeratorNotCooling = () => {
                   </div>
                 ))}
                 <p style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#1A1A1A', marginTop: 16 }}>
-                  If none of these solve it &rarr; call FixitBay LLC: <a href="tel:7605435733" style={{ color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
+                  If none of these solve it &rarr; call FixitBay LLC: <a href="tel:7605435733" style={{ color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
                 </p>
               </div>
 
               {/* ── Pricing Table ── */}
-              <h2 id="pricing" style={H2S}>Refrigerator Repair Pricing — San Francisco Bay Area</h2>
+              <h2 id="pricing" style={H2S}>Refrigerator Repair Pricing — San Francisco Bay Area</h2>
               <div style={{ overflowX: 'auto', marginBottom: 16 }}>
                 <table data-testid="pricing-table" style={{ width: '100%', borderCollapse: 'collapse', fontFamily: F, fontSize: 14 }}>
                   <thead>
@@ -299,15 +299,15 @@ const RefrigeratorNotCooling = () => {
                   </tbody>
                 </table>
               </div>
-              <p style={P}>FixitBay LLC <a href="/refrigerator-repair" style={{ color: '#C0362C', fontWeight: 600 }}>refrigerator repair</a> starts from $255 after $60 diagnostic. The $60 diagnostic fee is fully applied toward your repair cost.</p>
+              <p style={P}>FixitBay LLC <a href="/refrigerator-repair" style={{ color: '#C0362C', fontWeight: 600 }}>refrigerator repair</a> starts from $255 after $60 diagnostic. The $60 diagnostic fee is fully applied toward your repair cost.</p>
 
               {/* ── Andrei's Field Note ── */}
               <h2 id="field-note" style={H2S}>Andrei's Field Note</h2>
               <blockquote data-testid="field-note" style={{ borderLeft: '4px solid #FF5722', padding: '20px 24px', margin: '0 0 24px', background: '#FAFAF7', borderRadius: '0 8px 8px 0' }}>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.75, fontStyle: 'italic', marginBottom: 16 }}>
-                  "Two weeks ago I got a call from a family in the Sunset District — their Samsung fridge was warm but the freezer worked fine. Classic evaporator fan failure, right? But when I pulled the panel, the fan was actually fine. The real problem was a frozen-over evaporator coil caused by a failed defrost thermostat. San Francisco's humidity made it worse — the coil had a solid inch of ice. I replaced the defrost thermostat ($185 total), and the fridge was back to 37°F within four hours. This is why proper diagnosis matters — the wrong guess could mean replacing a $250 fan motor that was never broken."
+                  "Two weeks ago I got a call from a family in the Sunset District — their Samsung fridge was warm but the freezer worked fine. Classic evaporator fan failure, right? But when I pulled the panel, the fan was actually fine. The real problem was a frozen-over evaporator coil caused by a failed defrost thermostat. San Francisco's humidity made it worse — the coil had a solid inch of ice. I replaced the defrost thermostat ($185 total), and the fridge was back to 37°F within four hours. This is why proper diagnosis matters — the wrong guess could mean replacing a $250 fan motor that was never broken."
                 </p>
-                <footer style={{ fontFamily: F, fontSize: 14, fontWeight: 700, color: '#1A3B5D' }}>— Andrei, Lead Appliance Technician, FixitBay LLC</footer>
+                <footer style={{ fontFamily: F, fontSize: 14, fontWeight: 700, color: '#1A3B5D' }}>— Andrei, Lead Appliance Technician, FixitBay LLC</footer>
               </blockquote>
 
               {/* ── FAQ Section ── */}
@@ -351,8 +351,8 @@ const RefrigeratorNotCooling = () => {
               {/* ── Bottom CTA ── */}
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
                 <div style={{ ...EYE, marginBottom: 8 }}>PROFESSIONAL HELP</div>
-                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Need Expert <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Refrigerator Repair</a> in the Bay Area?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians diagnose and repair all refrigerator brands — <a href="/blog/same- or next-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>fast scheduling</a> available across <a href="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>San Francisco</a> and the Bay Area.</p>
+                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Need Expert <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Refrigerator Repair</a> in the Bay Area?</h3>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians diagnose and repair all refrigerator brands — <a href="/blog/same- or next-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>fast scheduling</a> available across <a href="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>San Francisco</a> and the Bay Area.</p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
                   <a href="tel:+17605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
                   <a href="/book" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }}>Book Online Now</a>
@@ -365,7 +365,7 @@ const RefrigeratorNotCooling = () => {
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2 }}>Written by</p>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 2 }}>Andrei — Lead Appliance Technician</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
                 </div>
               </div>
             </article>
@@ -409,11 +409,11 @@ const RefrigeratorNotCooling = () => {
                 <div style={{ ...EYE, marginBottom: 12 }}>OUR REPAIR SERVICES</div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                   {[
-                    { label: 'Refrigerator Repair', href: '/refrigerator-repair' },
-                    { label: 'Freezer Repair', href: '/freezer-repair' },
-                    { label: 'Ice Maker Repair', href: '/ice-maker-repair' },
-                    { label: 'Washer Repair', href: '/washer-repair' },
-                    { label: 'Dishwasher Repair', href: '/dishwasher-repair' },
+                    { label: 'Refrigerator Repair', href: '/refrigerator-repair' },
+                    { label: 'Freezer Repair', href: '/freezer-repair' },
+                    { label: 'Ice Maker Repair', href: '/ice-maker-repair' },
+                    { label: 'Washer Repair', href: '/washer-repair' },
+                    { label: 'Dishwasher Repair', href: '/dishwasher-repair' },
                   ].map(s => (
                     <Link key={s.label} to={s.href} className="sidebar-pill" style={{ background: '#fff', border: '1px solid rgba(255,87,34,0.25)', color: '#FF5722', fontFamily: F, fontWeight: 600, fontSize: 12, padding: '6px 14px', borderRadius: 4, textDecoration: 'none', transition: 'all 0.2s' }}>{s.label}</Link>
                   ))}
@@ -431,9 +431,9 @@ const RefrigeratorNotCooling = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services & Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Refrigerator Repair in Bay Area', body: 'Fast refrigerator repair for all brands. $60 diagnostic applied.', link: 'View Service', href: '/refrigerator-repair' },
-                { tag: 'ARTICLE', title: 'How Much Does Refrigerator Repair Cost in SF?', body: 'Average costs $200\u2013$550 in Bay Area. Full breakdown by problem type.', link: 'Read Article', href: '/blog/refrigerator-repair-cost-san-francisco-2026' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'Refrigerator Repair in Bay Area', body: 'Fast refrigerator repair for all brands. $60 diagnostic applied.', link: 'View Service', href: '/refrigerator-repair' },
+                { tag: 'ARTICLE', title: 'How Much Does Refrigerator Repair Cost in SF?', body: 'Average costs $200\u2013$550 in Bay Area. Full breakdown by problem type.', link: 'Read Article', href: '/blog/refrigerator-repair-cost-san-francisco-2026' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
@@ -451,7 +451,7 @@ const RefrigeratorNotCooling = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

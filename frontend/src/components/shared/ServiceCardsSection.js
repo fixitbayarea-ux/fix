@@ -27,8 +27,8 @@ const servicesData = [
   { name: 'Oven', category: 'Kitchen', description: 'Not heating, temperature issues', path: '/oven-repair', image: ovenImg },
   { name: 'Stove & Cooktop', category: 'Kitchen', description: 'Burners not working, igniter problems', path: '/cooktop-repair', image: cooktopImg },
   { name: 'Range', category: 'Kitchen', description: 'Combo oven and stove repair', path: '/oven-repair', image: rangeImg },
-  { name: 'Garbage Disposal', category: 'Kitchen', description: 'Jammed, leaking, or humming', path: '/garbage-disposal-repair', image: disposalImg },
-  { name: 'Wine Cooler', category: 'Kitchen', description: 'Temperature not holding, not cooling', path: '/wine-cooler-repair', image: wineCoolerImg },
+  { name: 'Garbage Disposal', category: 'Kitchen', description: 'Jammed, leaking, or humming', path: '/garbage-disposal-repair', image: disposalImg },
+  { name: 'Wine Cooler', category: 'Kitchen', description: 'Temperature not holding, not cooling', path: '/wine-cooler-repair', image: wineCoolerImg },
   
   // Laundry
   { name: 'Washer', category: 'Laundry', description: 'Not spinning, draining, or filling', path: '/washer-repair', image: washerImg },
@@ -111,7 +111,7 @@ const ServiceCard = ({ service }) => {
 const ServiceCardsSection = ({ 
   currentService = null, 
   maxCards = 8, 
-  sectionTitle = "Professional Appliance Repair Services",
+  sectionTitle = "Professional Appliance Repair Services",
   sectionSubtitle = "Expert repair for all major home appliances",
   category = null // Filter by category: 'Kitchen', 'Laundry', or 'Commercial'
 }) => {

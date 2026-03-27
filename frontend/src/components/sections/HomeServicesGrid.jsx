@@ -36,13 +36,13 @@ import commercialDryerImgWebP from '../../assets/services/commercial-dryer.webp'
 const servicesData = [
   { name: 'Refrigerator', category: 'Kitchen', description: 'Not cooling, water leaks, ice maker issues', path: '/refrigerator-repair', image: refrigeratorImg, imageWebP: refrigeratorImgWebP },
   { name: 'Freezer', category: 'Kitchen', description: 'Not freezing, frost buildup, temperature issues', path: '/freezer-repair', image: freezerImg, imageWebP: freezerImgWebP },
-  { name: 'Ice Maker', category: 'Kitchen', description: 'Not making ice, water leaking, jammed', path: '/ice-maker-repair', image: iceMakerImg, imageWebP: iceMakerImgWebP },
+  { name: 'Ice Maker', category: 'Kitchen', description: 'Not making ice, water leaking, jammed', path: '/ice-maker-repair', image: iceMakerImg, imageWebP: iceMakerImgWebP },
   { name: 'Dishwasher', category: 'Kitchen', description: 'Not draining, leaking, won\'t start', path: '/dishwasher-repair', image: dishwasherImg, imageWebP: dishwasherImgWebP },
   { name: 'Oven', category: 'Kitchen', description: 'Not heating, temperature issues', path: '/oven-repair', image: ovenImg, imageWebP: ovenImgWebP },
   { name: 'Stove & Cooktop', category: 'Kitchen', description: 'Burners not working, igniter problems', path: '/cooktop-repair', image: cooktopImg, imageWebP: cooktopImgWebP },
   { name: 'Range', category: 'Kitchen', description: 'Combo oven and stove repair', path: '/oven-repair', image: rangeImg, imageWebP: rangeImgWebP },
-  { name: 'Garbage Disposal', category: 'Kitchen', description: 'Jammed, leaking, or humming', path: '/garbage-disposal-repair', image: disposalImg, imageWebP: disposalImgWebP },
-  { name: 'Wine Cooler', category: 'Kitchen', description: 'Temperature not holding, not cooling', path: '/wine-cooler-repair', image: wineCoolerImg, imageWebP: wineCoolerImgWebP },
+  { name: 'Garbage Disposal', category: 'Kitchen', description: 'Jammed, leaking, or humming', path: '/garbage-disposal-repair', image: disposalImg, imageWebP: disposalImgWebP },
+  { name: 'Wine Cooler', category: 'Kitchen', description: 'Temperature not holding, not cooling', path: '/wine-cooler-repair', image: wineCoolerImg, imageWebP: wineCoolerImgWebP },
   { name: 'Washer', category: 'Laundry', description: 'Not spinning, draining, or filling', path: '/washer-repair', image: washerImg, imageWebP: washerImgWebP },
   { name: 'Dryer', category: 'Laundry', description: 'Not heating, tumbling, or turning on', path: '/dryer-repair', image: dryerImg, imageWebP: dryerImgWebP },
   { name: 'Commercial Refrigerator', category: 'Commercial', description: 'Walk-in coolers, reach-in units, display cases', path: '/commercial-refrigerator-repair', image: commercialRefrigeratorImg, imageWebP: commercialRefrigeratorImgWebP },
@@ -76,7 +76,7 @@ const HomeServicesGrid = () => {
         <div className="text-center" style={{ marginBottom: 36 }}>
           <div className="hidden lg:block" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: 12 }}>WHAT WE FIX</div>
           <h2 className="hidden lg:block" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 38, fontWeight: 800, color: '#0D1B2A', marginBottom: 20 }}>Every Major Appliance. Every Major Brand.</h2>
-          <h2 className="lg:hidden text-3xl font-bold mb-3" style={{ color: '#0D1B2A' }}>Professional Appliance Repair Services</h2>
+          <h2 className="lg:hidden text-3xl font-bold mb-3" style={{ color: '#0D1B2A' }}>Professional Appliance Repair Services</h2>
         </div>
         {/* Tabs */}
         <div className="flex justify-center mb-10 overflow-x-auto pb-2 scrollbar-hide">
@@ -90,7 +90,7 @@ const HomeServicesGrid = () => {
         <div key={activeCategory} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 animate-fadeIn" style={{ gap: 28 }}>
           {filteredServices.map(svc => (
             <a key={svc.name} href={svc.path} rel={svc.name === 'Dishwasher' ? 'nofollow' : undefined} className="svc-card group flex flex-col bg-white overflow-hidden" style={{ borderRadius: 4, border: '1px solid rgba(0,0,0,0.08)', textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s', cursor: 'pointer' }} data-testid={`svc-card-${svc.name.toLowerCase().replace(/\s+/g, '-')}`}>
-              <div className="relative overflow-hidden" style={{ height: 200 }}><picture><source srcSet={svc.imageWebP} type="image/webp" /><img src={svc.image} alt={`${svc.name} repair — FixitBay LLC`} className="w-full h-full object-cover transition-transform duration-200 group-hover:scale-[1.03]" width="800" height="533" loading="lazy" decoding="async" /></picture></div>
+              <div className="relative overflow-hidden" style={{ height: 200 }}><picture><source srcSet={svc.imageWebP} type="image/webp" /><img src={svc.image} alt={`${svc.name} repair — FixitBay LLC`} className="w-full h-full object-cover transition-transform duration-200 group-hover:scale-[1.03]" width="800" height="533" loading="lazy" decoding="async" /></picture></div>
               <div className="flex flex-col flex-grow" style={{ padding: '20px 24px 24px' }}>
                 <h3 style={{ display: 'flex', alignItems: 'center', gap: 8, fontFamily: 'Montserrat, sans-serif', fontSize: 17, fontWeight: 700, color: '#0D1B2A', marginBottom: 8 }}>
                   <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#FF5722', flexShrink: 0 }} />

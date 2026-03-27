@@ -28,11 +28,11 @@ const ThankYouBooking = () => {
   return (
     <>
       <SEOMetaTags
-        title="Booking Confirmed \u2014 Thank You | FixitBay LLC"
-        description="Your FixitBay LLC appliance repair appointment is confirmed. Here is what to expect and how to prepare for your technician visit."
+        title="Booking Confirmed \u2014 Thank You | FixitBay LLC"
+        description="Your FixitBay LLC appliance repair appointment is confirmed. Here is what to expect and how to prepare for your technician visit."
         canonical="https://fixitbay.net/thank-you-booking"
-        ogTitle="Booking Confirmed \u2014 Thank You | FixitBay LLC"
-        ogDescription="Your FixitBay LLC appliance repair appointment is confirmed."
+        ogTitle="Booking Confirmed \u2014 Thank You | FixitBay LLC"
+        ogDescription="Your FixitBay LLC appliance repair appointment is confirmed."
         noindex={true}
       />
 
@@ -112,7 +112,7 @@ const ThankYouBooking = () => {
             <div className="ty-check"><span>{'\u2713'}</span></div>
             <div className="ty-eyebrow" style={{ marginBottom: 12 }}>BOOKING CONFIRMED</div>
             <h1 data-testid="ty-h1">You&rsquo;re All Set!</h1>
-            <p className="ty-hero-sub">Thank you for choosing FixitBay LLC. Your appointment is confirmed. We will call you 30 minutes before our technician arrives.</p>
+            <p className="ty-hero-sub">Thank you for choosing FixitBay LLC. Your appointment is confirmed. We will call you 30 minutes before our technician arrives.</p>
             <div className="ty-hero-btns">
               <a href="tel:7605435733" className="ty-btn-primary" data-testid="ty-hero-call" onClick={() => trackClick('call')}>Call Us: (760) 543-5733</a>
               <a href="mailto:info@fixitbay.net" className="ty-btn-secondary" data-testid="ty-hero-email">info@fixitbay.net</a>
@@ -155,7 +155,7 @@ const ThankYouBooking = () => {
               <div className="ty-contact-icon">T</div>
               <div className="ty-contact-title">Send a Text</div>
               <div className="ty-contact-body">Text us your name and appointment time and we will confirm any changes right away.</div>
-              <a href="sms:7605435733?body=Hi%20FixitBay LLC%2C%20I%20need%20to%20reschedule" className="ty-contact-btn" onClick={() => trackClick('sms')}>Text Now</a>
+              <a href="sms:7605435733?body=Hi%20FixitBay LLC%2C%20I%20need%20to%20reschedule" className="ty-contact-btn" onClick={() => trackClick('sms')}>Text Now</a>
             </div>
             <div className="ty-contact-card" data-testid="ty-contact-email">
               <div className="ty-contact-icon">E</div>
@@ -190,9 +190,9 @@ const ThankYouBooking = () => {
         <section className="ty-review" data-testid="ty-review">
           <div className="ty-eyebrow" style={{ marginBottom: 8 }}>AFTER YOUR REPAIR</div>
           <div style={{ fontWeight: 800, fontSize: 26, color: '#1A1A1A', marginBottom: 8 }}>Happy with the Service?</div>
-          <p style={{ color: '#4A5568', fontSize: 14, marginBottom: 32 }}>A quick review helps other Bay Area homeowners find honest local repair.</p>
+          <p style={{ color: '#4A5568', fontSize: 14, marginBottom: 32 }}>A quick review helps other Bay Area homeowners find honest local repair.</p>
           <div className="ty-review-btns">
-            <a href="https://www.google.com/maps/place/FixitBay LLC" target="_blank" rel="noopener noreferrer" className="ty-review-btn" style={{ background: '#4285F4' }} data-testid="ty-review-google" aria-label="opens in new tab">Review on Google</a>
+            <a href="https://www.google.com/maps/place/FixitBay LLC" target="_blank" rel="noopener noreferrer" className="ty-review-btn" style={{ background: '#4285F4' }} data-testid="ty-review-google" aria-label="opens in new tab">Review on Google</a>
             <a href="https://www.yelp.com/biz/fixitbay" target="_blank" rel="noopener noreferrer" className="ty-review-btn" style={{ background: '#D32323' }} data-testid="ty-review-yelp" aria-label="opens in new tab">Review on Yelp</a>
             <a href="https://www.thumbtack.com/fixitbay" target="_blank" rel="noopener noreferrer" className="ty-review-btn" style={{ background: '#009fd9' }} data-testid="ty-review-thumbtack" aria-label="opens in new tab">Review on Thumbtack</a>
           </div>
@@ -209,16 +209,16 @@ const ThankYouBooking = () => {
             <a href="/service-areas" className="ty-related-pill">Service Areas</a>
             <a href="/reviews" className="ty-related-pill">Customer Reviews</a>
             <a href="/blog" className="ty-related-pill">Tips & Guides</a>
-            <a href="/about" className="ty-related-pill">About FixitBay LLC</a>
-            <a href="/san-francisco-appliance-repair" className="ty-related-pill">San Francisco</a>
+            <a href="/about" className="ty-related-pill">About FixitBay LLC</a>
+            <a href="/san-francisco-appliance-repair" className="ty-related-pill">San Francisco</a>
           </div>
         </section>
 
         {/* ─── 7. FOOTER ─── */}
         <footer className="ty-footer" data-testid="ty-footer">
-          <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
+          <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
           <a href="tel:7605435733">(760) 543-5733</a>
-          <span>&copy; 2026 FixitBay LLC</span>
+          <span>&copy; 2026 FixitBay LLC</span>
         </footer>
       </div>
     </>

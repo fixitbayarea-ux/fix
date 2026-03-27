@@ -51,13 +51,13 @@ const ContactPage = () => {
       data: {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "FixitBay LLC",
+        "name": "FixitBay LLC",
         "telephone": "+17605435733",
         "email": "info@fixitbay.net",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "1549 Franklin Street, Unit A",
-          "addressLocality": "San Francisco",
+          "addressLocality": "San Francisco",
           "addressRegion": "CA",
           "postalCode": "94109",
           "addressCountry": "US"
@@ -66,7 +66,7 @@ const ContactPage = () => {
           { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "18:00" },
           { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }
         ],
-        "areaServed": ["San Francisco", "Marin County", "San Francisco Peninsula"]
+        "areaServed": ["San Francisco", "Marin County", "San Francisco Peninsula"]
       }
     },
     {
@@ -87,8 +87,8 @@ const ContactPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Contact FixitBay LLC | Appliance Repair San Francisco"
-        description="Contact FixitBay LLC for fast appliance repair in San Francisco Bay Area. Call (760) 543-5733 or book online. Licensed technicians, $60 diagnostic, 180-day warranty."
+        title="Contact FixitBay LLC | Appliance Repair San Francisco"
+        description="Contact FixitBay LLC for fast appliance repair in San Francisco Bay Area. Call (760) 543-5733 or book online. Licensed technicians, $60 diagnostic, 180-day warranty."
         canonical="https://fixitbay.net/contact"
       />
 
@@ -130,10 +130,10 @@ const ContactPage = () => {
             </nav>
             <div style={EYE}>GET IN TOUCH &mdash; BAY AREA</div>
             <h1 className="contact-h1" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.15, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 600, margin: '0 auto 16px' }}>
-              Contact FixitBay LLC
+              Contact FixitBay LLC
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.78)', maxWidth: 500, margin: '0 auto 32px' }}>
-              Need fast, reliable appliance repair? Same- or next-day appointments available in San Francisco, Marin County &amp; Peninsula.
+              Need fast, reliable appliance repair? Same- or next-day appointments available in San Francisco, Marin County &amp; Peninsula.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
               <a href="tel:+17605435733" data-testid="hero-call-btn" className="hero-cta" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>
@@ -199,7 +199,7 @@ const ContactPage = () => {
                 <div className="info-card" data-testid="card-address" style={{ background: '#fff', borderRadius: 4, padding: '24px 20px', border: '1px solid rgba(255,87,34,0.15)', borderLeft: '3px solid #FF5722', transition: 'box-shadow 0.2s' }}>
                   <div style={EYE}>MAILING ADDRESS</div>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 2 }}>1549 Franklin Street, Unit A</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 8 }}>San Francisco, CA 94109</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 8 }}>San Francisco, CA 94109</p>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: '#FF5722', fontStyle: 'italic' }}>Field service only — we come to you. This address is for mail only.</p>
                 </div>
                 {/* Hours */}
@@ -225,11 +225,11 @@ const ContactPage = () => {
                 <div style={EYE}>SERVICE AREA</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 22, color: '#1A1A1A', marginBottom: 12 }}>We Come to You</h3>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.7, marginBottom: 0 }}>
-                  Contact FixitBay LLC today for same- or next-day or next-day service. Our licensed and insured technicians are ready to fix your refrigerator, washer, dryer, dishwasher, oven, and other appliances with a comprehensive 180-day warranty on all repairs.
+                  Contact FixitBay LLC today for same- or next-day or next-day service. Our licensed and insured technicians are ready to fix your refrigerator, washer, dryer, dishwasher, oven, and other appliances with a comprehensive 180-day warranty on all repairs.
                 </p>
                 <div style={{ height: 1, background: 'rgba(255,87,34,0.15)', margin: '20px 0' }} />
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                  {['San Francisco', 'Peninsula (Daly City to Millbrae)', 'Marin County (San Rafael, Novato, Mill Valley, Sausalito, and more)'].map(area => (
+                  {['San Francisco', 'Peninsula (Daly City to Millbrae)', 'Marin County (San Rafael, Novato, Mill Valley, Sausalito, and more)'].map(area => (
                     <div key={area} style={{ display: 'flex', gap: 8, alignItems: 'flex-start' }}>
                       <div style={{ width: 6, height: 6, borderRadius: '50%', background: '#FF5722', marginTop: 6, flexShrink: 0 }} />
                       <span style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568' }}>{area}</span>
@@ -240,7 +240,7 @@ const ContactPage = () => {
                 <div style={EYE}>SERVICE MAP</div>
                 <div data-testid="service-area-map" style={{ borderRadius: 4, overflow: 'hidden', marginBottom: 16, border: '1px solid rgba(255,87,34,0.15)' }}>
                   <iframe
-                    title="FixitBay LLC Service Area — San Francisco Bay Area"
+                    title="FixitBay LLC Service Area — San Francisco Bay Area"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d201879.72384241942!2d-122.47858865!3d37.7577627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000000"
                     width="100%"
                     height="200"
@@ -437,7 +437,7 @@ const ContactPage = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:+17605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

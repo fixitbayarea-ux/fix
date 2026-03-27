@@ -16,7 +16,7 @@ const BOLD = { fontFamily: F, fontWeight: 700, color: '#1A1A1A' };
 const TOC = [
   { id: 'fix-1-clogged-filter', label: 'Clogged Filter (Most Common)' },
   { id: 'fix-2-drain-hose', label: 'Kinked or Clogged Drain Hose' },
-  { id: 'fix-3-disposal-plug', label: 'Garbage Disposal Knockout Plug' },
+  { id: 'fix-3-disposal-plug', label: 'Garbage Disposal Knockout Plug' },
   { id: 'fix-4-air-gap', label: 'Clogged Air Gap' },
   { id: 'fix-5-household-drain', label: 'Clogged Household Drain' },
   { id: 'fix-6-drain-pump', label: 'Faulty Drain Pump' },
@@ -39,7 +39,7 @@ const FAQ_ITEMS = [
   { q: 'How do I know if my dishwasher drain pump is bad?', a: 'During the drain cycle (typically near the end of the wash cycle), listen for a humming or whirring sound\u2014that\u2019s the pump working. Silence during the drain cycle often means the pump isn\u2019t running. A loud grinding or buzzing sound suggests the pump is running but obstructed. If the pump sounds fine but water still won\u2019t drain, the pump may have an electrical failure and needs professional diagnosis.' },
   { q: 'My dishwasher just installed \u2014 why won\u2019t it drain?', a: 'If your dishwasher was just installed and has never drained properly, the garbage disposal knockout plug is almost certainly the issue. When a dishwasher drains into a garbage disposal, the installer must remove a small plastic plug from the disposal\u2019s inlet port. If it\u2019s still in place, water has nowhere to go. Look under the sink, find the disposal\u2019s dishwasher inlet, and check if the plug is still inserted.' },
   { q: 'Can I use my dishwasher if it\u2019s not draining properly?', a: 'We recommend fixing the drainage issue before running more cycles. Standing water can become a breeding ground for bacteria and mold, leading to unpleasant odors. More importantly, if the drain pump is running against a stubborn clog, continued use can burn out the motor\u2014turning an easy $60 repair into a $200+ pump replacement.' },
-  { q: 'How much does dishwasher drain repair cost in the Bay Area?', a: 'If the fix is cleaning the filter or clearing a hose kink, it\u2019s a free DIY repair. If the issue requires professional service\u2014like replacing a drain pump, check valve, or drain solenoid\u2014FixitBay LLC charges a $60 diagnostic fee that\u2019s applied toward the repair cost. Most drain pump replacements run $150\u2013$250 total, parts and labor included, with a 180-day warranty.' },
+  { q: 'How much does dishwasher drain repair cost in the Bay Area?', a: 'If the fix is cleaning the filter or clearing a hose kink, it\u2019s a free DIY repair. If the issue requires professional service\u2014like replacing a drain pump, check valve, or drain solenoid\u2014FixitBay LLC charges a $60 diagnostic fee that\u2019s applied toward the repair cost. Most drain pump replacements run $150\u2013$250 total, parts and labor included, with a 180-day warranty.' },
 ];
 
 const DarkBox = ({ label, steps }) => (
@@ -88,7 +88,7 @@ const DishwasherNotDraining = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Dishwasher Not Draining? 7 Quick Fixes", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-02-20", "dateModified": "2026-02-20", "url": "https://fixitbay.net/blog/dishwasher-not-draining" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Dishwasher Not Draining? 7 Quick Fixes", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-02-20", "dateModified": "2026-02-20", "url": "https://fixitbay.net/blog/dishwasher-not-draining" } },
     { id: 'howto-schema', data: { "@context": "https://schema.org", "@type": "HowTo", "name": "How to Fix a Dishwasher That Won't Drain", "description": "7 fixes for dishwasher drainage problems, ordered by likelihood", "totalTime": "PT10M", "step": [
       { "@type": "HowToStep", "position": 1, "name": "Clean the dishwasher filter", "text": "Remove and rinse the cylindrical filter at the bottom of the tub under hot water with a soft brush." },
       { "@type": "HowToStep", "position": 2, "name": "Check the drain hose for kinks", "text": "Inspect the drain hose for bends, kinks, or visible damage. Ensure it forms a high loop secured to the underside of the counter." },
@@ -101,7 +101,7 @@ const DishwasherNotDraining = () => {
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
       { "@type": "Question", "name": "Why is there standing water at the bottom of my dishwasher?", "acceptedAnswer": { "@type": "Answer", "text": "Most commonly a clogged filter. Clean the cylindrical filter at the bottom of the tub. If clean, check the drain hose for kinks. These two fixes solve 80% of drainage problems." } },
       { "@type": "Question", "name": "My dishwasher just installed \u2014 why won't it drain?", "acceptedAnswer": { "@type": "Answer", "text": "Almost certainly the garbage disposal knockout plug. The installer must remove this plastic plug from the disposal's dishwasher inlet port. Check under the sink." } },
-      { "@type": "Question", "name": "How much does dishwasher drain repair cost?", "acceptedAnswer": { "@type": "Answer", "text": "Filter cleaning and hose clearing are free DIY fixes. Professional drain pump replacement runs $150-$250 total with FixitBay LLC's $60 diagnostic applied to the repair. 180-day warranty included." } }
+      { "@type": "Question", "name": "How much does dishwasher drain repair cost?", "acceptedAnswer": { "@type": "Answer", "text": "Filter cleaning and hose clearing are free DIY fixes. Professional drain pump replacement runs $150-$250 total with FixitBay LLC's $60 diagnostic applied to the repair. 180-day warranty included." } }
     ] } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Dishwasher Not Draining", "item": "https://fixitbay.net/blog/dishwasher-not-draining" }] } }
   ], []);
@@ -110,7 +110,7 @@ const DishwasherNotDraining = () => {
   return (
     <>
       <SEOMetaTags
-        title="Dishwasher Not Draining? 7 Quick Fixes | FixitBay LLC"
+        title="Dishwasher Not Draining? 7 Quick Fixes | FixitBay LLC"
         description="Dishwasher won't drain? Check these 7 causes: clogged filter, kinked hose, disposal plug, air gap, faulty pump. Most fixes take under 10 minutes."
         canonical="https://fixitbay.net/blog/dishwasher-not-draining"
         ogType="article"
@@ -230,7 +230,7 @@ const DishwasherNotDraining = () => {
               <Callout icon={'\u26A1'} label="Pro tip:" text='The drain hose should form a "high loop" (secured to the underside of the counter) to prevent backflow. If yours doesn&apos;t, this could be the issue.' />
 
               {/* ── FIX #3 ── */}
-              <FixH2 num={3} id="fix-3-disposal-plug" title="Garbage Disposal Knockout Plug Not Removed" />
+              <FixH2 num={3} id="fix-3-disposal-plug" title="Garbage Disposal Knockout Plug Not Removed" />
               <p style={{ ...P, marginBottom: 16 }}>
                 <strong style={BOLD}>The Problem:</strong> If your dishwasher drains into a garbage disposal, the installer must remove a small knockout plug from the disposal's dishwasher inlet. If this plug wasn't removed during installation, water can't drain.
               </p>
@@ -260,7 +260,7 @@ const DishwasherNotDraining = () => {
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
-                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
                     <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
@@ -271,7 +271,7 @@ const DishwasherNotDraining = () => {
               </div>
 
               {/* ── FIX #5 ── */}
-              <FixH2 num={5} id="fix-5-household-drain" title="Clogged Household Drain or Garbage Disposal" />
+              <FixH2 num={5} id="fix-5-household-drain" title="Clogged Household Drain or Garbage Disposal" />
               <p style={{ ...P, marginBottom: 16 }}>
                 <strong style={BOLD}>The Problem:</strong> Your dishwasher drains into your home's plumbing. If the sink drain or garbage disposal is clogged, water has nowhere to go and backs up into the dishwasher.
               </p>
@@ -349,7 +349,7 @@ const DishwasherNotDraining = () => {
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
                 <div style={EYE}>CERTIFIED DISHWASHER REPAIR</div>
                 <p style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Still Having Drainage Issues?</p>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified dishwasher technicians diagnose and repair all drainage problems. We service all major brands in SF Bay Area—appointments available Mon–Sat!</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified dishwasher technicians diagnose and repair all drainage problems. We service all major brands in SF Bay Area—appointments available Mon–Sat!</p>
                 <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
                   <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
                   <a href="/book?go=1" target="_blank" rel="noopener noreferrer" style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.4)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none' }} aria-label="opens in new tab">Book Repair Online</a>
@@ -362,7 +362,7 @@ const DishwasherNotDraining = () => {
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Written by</p>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A' }}>Andrei — Licensed Appliance Technician</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years dishwasher repair in Bay Area</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA Technician &middot; License #51001 &middot; 10+ years dishwasher repair in Bay Area</p>
                 </div>
               </div>
             </article>
@@ -383,7 +383,7 @@ const DishwasherNotDraining = () => {
                 ))}
                 <div style={{ marginBottom: 20 }} />
                 <a href="tel:7605435733" className="phone-cta" data-testid="sidebar-phone" style={{ display: 'block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: 14, borderRadius: 4, textAlign: 'center', textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
-                <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ display: 'block', background: 'transparent', border: '1px solid rgba(255,255,255,0.25)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: 14, borderRadius: 4, textAlign: 'center', textDecoration: 'none', marginTop: 8, transition: 'background 0.2s' }} aria-label="opens in new tab">Book Dishwasher Repair</a>
+                <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ display: 'block', background: 'transparent', border: '1px solid rgba(255,255,255,0.25)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: 14, borderRadius: 4, textAlign: 'center', textDecoration: 'none', marginTop: 8, transition: 'background 0.2s' }} aria-label="opens in new tab">Book Dishwasher Repair</a>
               </div>
 
               {/* Widget 2: Quick Diagnosis */}
@@ -450,9 +450,9 @@ const DishwasherNotDraining = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Dishwasher Repair', body: 'All brands and models. Drainage, door latch, heating element, control board. Fast scheduling.', link: 'View Service', href: '/dishwasher-repair' },
+                { tag: 'SERVICE', title: 'Dishwasher Repair', body: 'All brands and models. Drainage, door latch, heating element, control board. Fast scheduling.', link: 'View Service', href: '/dishwasher-repair' },
                 { tag: 'ARTICLE', title: 'Common Washer Error Codes Explained', body: 'Decode your washing machine\u2019s error codes and learn what to fix.', link: 'Read Article', href: '/blog/washer-error-codes' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: card.tag === 'SERVICE' ? '#fff' : 'rgba(255,255,255,0.7)', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
@@ -470,7 +470,7 @@ const DishwasherNotDraining = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:7605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 

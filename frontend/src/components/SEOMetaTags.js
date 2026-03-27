@@ -21,8 +21,8 @@ const SEOMetaTags = ({
 }) => {
   useEffect(() => {
     const defaultImage = 'https://fixitbay.net/images/og-cover.png';
-    const finalTitle = title || 'FixitBay LLC - Professional Appliance Repair San Francisco Bay Area';
-    const finalDesc = description || 'Expert appliance repair services in San Francisco Bay Area. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733.';
+    const finalTitle = title || 'FixitBay LLC - Professional Appliance Repair San Francisco Bay Area';
+    const finalDesc = description || 'Expert appliance repair services in San Francisco Bay Area. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733.';
     const finalCanonical = canonical || 'https://fixitbay.net';
     const finalImage = ogImage || defaultImage;
     const finalOgTitle = ogTitle || finalTitle;
@@ -77,7 +77,7 @@ const SEOMetaTags = ({
 
     // Geo meta tags (all pages)
     setMetaName('geo.region', 'US-CA');
-    setMetaName('geo.placename', 'San Francisco, California');
+    setMetaName('geo.placename', 'San Francisco, California');
     setMetaName('geo.position', '37.7749;-122.4194');
     setMetaName('ICBM', '37.7749, -122.4194');
 
@@ -102,7 +102,7 @@ const SEOMetaTags = ({
     setMetaProperty('og:image:type', 'image/png');
     setMetaProperty('og:url', finalCanonical);
     setMetaProperty('og:type', ogType || 'website');
-    setMetaProperty('og:site_name', 'FixitBay LLC');
+    setMetaProperty('og:site_name', 'FixitBay LLC');
 
     // Twitter
     setMetaName('twitter:card', 'summary_large_image');
@@ -110,7 +110,7 @@ const SEOMetaTags = ({
     setMetaName('twitter:title', finalTwitterTitle);
     setMetaName('twitter:description', finalTwitterDesc);
     setMetaName('twitter:image', finalImage);
-    setMetaName('twitter:image:alt', finalTitle || 'FixitBay LLC Appliance Repair San Francisco');
+    setMetaName('twitter:image:alt', finalTitle || 'FixitBay LLC Appliance Repair San Francisco');
 
   }, [title, description, canonical, ogTitle, ogDescription, ogImage, keywords, noindex, ogType, twitterTitle, twitterDescription, twitterSite]);
 

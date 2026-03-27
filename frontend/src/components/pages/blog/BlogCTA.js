@@ -14,7 +14,7 @@ const BlogCTA = () => (
         Not sure whether to repair or replace?
       </h2>
       <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.7)', lineHeight: 1.7, marginBottom: 28 }}>
-        Get a <strong style={{ color: '#FF5722' }}>$60 diagnostic</strong> from a licensed Bay Area technician and an honest recommendation. If you approve the repair, the diagnostic fee is applied to the total cost.
+        Get a <strong style={{ color: '#FF5722' }}>$60 diagnostic</strong> from a licensed Bay Area technician and an honest recommendation. If you approve the repair, the diagnostic fee is applied to the total cost.
       </p>
       <a
         href="/book"

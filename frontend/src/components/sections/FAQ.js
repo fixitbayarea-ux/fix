@@ -7,18 +7,18 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "How much does appliance repair cost in San Francisco?",
+      question: "How much does appliance repair cost in San Francisco?",
       answer: "Our pricing is transparent and upfront! Diagnostic fees start at $89, which is waived when you choose our repair service. Most common repairs range from $150-$400 depending on the appliance and parts needed. We provide written estimates before any work begins, so there are never any surprises.",
       icon: <DollarSign className="w-5 h-5" />
     },
     {
       question: "Do you offer fast appliance repair service?",
-      answer: "Yes! We specialize in fast emergency appliance repair throughout the Bay Area. Our mobile service vans are fully stocked with common parts, and our technicians can typically arrive within 60 minutes of your call. For non-emergency repairs, we offer flexible scheduling options.",
+      answer: "Yes! We specialize in fast emergency appliance repair throughout the Bay Area. Our mobile service vans are fully stocked with common parts, and our technicians can typically arrive within 60 minutes of your call. For non-emergency repairs, we offer flexible scheduling options.",
       icon: <Clock className="w-5 h-5" />
     },
     {
-      question: "What areas do you service in the Bay Area?",
-      answer: "We proudly serve all major Bay Area cities including San Francisco, Oakland, San Jose, Berkeley, Palo Alto, Daly City, Fremont, Sunnyvale, Redwood City, and many more. Our service area covers the entire San Francisco Bay Area with 24/7 emergency coverage.",
+      question: "What areas do you service in the Bay Area?",
+      answer: "We proudly serve all major Bay Area cities including San Francisco, Oakland, San Jose, Berkeley, Palo Alto, Daly City, Fremont, Sunnyvale, Redwood City, and many more. Our service area covers the entire San Francisco Bay Area with 24/7 emergency coverage.",
       icon: <Phone className="w-5 h-5" />
     },
     {
@@ -33,7 +33,7 @@ const FAQ = () => {
     },
     {
       question: "Are your technicians licensed and insured?",
-      answer: "Absolutely! All FixitBay LLC technicians are fully licensed, bonded, and insured. We conduct thorough background checks and provide ongoing training to ensure the highest quality service. You can have complete peace of mind when we're in your home.",
+      answer: "Absolutely! All FixitBay LLC technicians are fully licensed, bonded, and insured. We conduct thorough background checks and provide ongoing training to ensure the highest quality service. You can have complete peace of mind when we're in your home.",
       icon: <Shield className="w-5 h-5" />
     }
   ];
@@ -53,7 +53,7 @@ const FAQ = () => {
             Frequently Asked <span className="text-gold-gradient">Questions</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get instant answers to common questions about our appliance repair services in the Bay Area.
+            Get instant answers to common questions about our appliance repair services in the Bay Area.
           </p>
         </motion.div>
 

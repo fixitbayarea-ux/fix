@@ -26,9 +26,9 @@ const WasherMaintenance = () => {
   ];
 
   const serviceDescription = {
-    title: 'Expert Washing Machine Maintenance in San Francisco Bay Area',
+    title: 'Expert Washing Machine Maintenance in San Francisco Bay Area',
     paragraphs: [
-      'Your washing machine handles one of your home\'s most essential tasks, processing countless loads of laundry year after year. Regular maintenance is crucial to prevent leaks, reduce breakdowns, and ensure your clothes come out clean every time. FixitBay LLC provides professional washer maintenance services throughout San Francisco, Peninsula, and Marin County for all major brands and models.',
+      'Your washing machine handles one of your home\'s most essential tasks, processing countless loads of laundry year after year. Regular maintenance is crucial to prevent leaks, reduce breakdowns, and ensure your clothes come out clean every time. FixitBay LLC provides professional washer maintenance services throughout San Francisco, Peninsula, and Marin County for all major brands and models.',
       'Our certified technicians perform comprehensive maintenance including cleaning pump filters, inspecting inlet and drain hoses, testing door seals for leaks, checking drive belts, and running diagnostic cycles. We also clean detergent dispensers, remove buildup from the drum, and verify that all safety features function correctly. Whether you have a traditional top-loader or a modern front-load HE washer, we keep it running at peak performance.',
       'During our $60 diagnostic visit, we examine all critical components, identify any wear or damage, and recommend preventive measures. We also check leveling to prevent vibration, test water temperature controls, and ensure the washer drains completely. Our maintenance service helps you avoid expensive repairs, extends your washer\'s lifespan, and maintains optimal cleaning performance. All our work comes with a 180-day warranty and flexible same- or next-day or next-day scheduling.'
     ]
@@ -40,7 +40,7 @@ const WasherMaintenance = () => {
     "serviceType": "Washer Maintenance",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay LLC",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     }
   };
@@ -50,14 +50,14 @@ const WasherMaintenance = () => {
       <MobileServiceLanding
         appliance="Washer"
         pageSlug="maintenance/washer"
-        pageTitle="Washer Maintenance | FixitBay LLC"
-        metaDescription="Professional washing machine maintenance in San Francisco Bay Area. Prevent leaks and breakdowns with expert washer service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+        pageTitle="Washer Maintenance | FixitBay LLC"
+        metaDescription="Professional washing machine maintenance in San Francisco Bay Area. Prevent leaks and breakdowns with expert washer service from FixitBay LLC. $60 diagnostic, 180-day warranty."
         heroTitle={<>Washer<br />Maintenance. Today.</>}
         heroImage="/images/technicians/washer-tech.jpg"
-        heroImageAlt="FixitBay technician servicing a washing machine in San Francisco"
+        heroImageAlt="FixitBay technician servicing a washing machine in San Francisco"
         heroImagePosition="65% center"
         techImage="/images/technicians/washer-tech.jpg"
-        techImageAlt="FixitBay technician servicing a washing machine in San Francisco"
+        techImageAlt="FixitBay technician servicing a washing machine in San Francisco"
         heroSubtitle="Prevent Leaks — Extend Washer Life"
         issues={[
           { icon: '\u{1F4A7}', label: 'Won\'t Drain' },
@@ -76,10 +76,10 @@ const WasherMaintenance = () => {
   return (
     <ApplianceRepairPageNew
       appliance="Washer"
-      pageTitle="Washer Maintenance | FixitBay LLC"
-      metaDescription="Professional washing machine maintenance in San Francisco Bay Area. Prevent leaks and breakdowns with expert washer service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+      pageTitle="Washer Maintenance | FixitBay LLC"
+      metaDescription="Professional washing machine maintenance in San Francisco Bay Area. Prevent leaks and breakdowns with expert washer service from FixitBay LLC. $60 diagnostic, 180-day warranty."
       heroImage="/images/technicians/washer-tech.jpg"
-      heroImageAlt="FixitBay technician servicing a washing machine in San Francisco"
+      heroImageAlt="FixitBay technician servicing a washing machine in San Francisco"
       heroImagePosition="65% center"
       commonProblems={commonProblems}
       faqData={faqData}
@@ -91,7 +91,7 @@ const WasherMaintenance = () => {
       isMaintenance={true}
       serviceWord="Maintenance"
       repairVsReplace={{
-        title: "Maintenance vs. Emergency Washer Repair",
+        title: "Maintenance vs. Emergency Washer Repair",
         intro: "Regular washer maintenance prevents costly water damage and extends machine life.",
         items: [
           { action: 'repair', condition: 'Annual hose and connection inspection', recommendation: 'Burst washer hoses cause $5,000+ in water damage. A $60 maintenance check catches weak hoses before they fail.' },
@@ -101,7 +101,7 @@ const WasherMaintenance = () => {
         ]
       }}
       relatedLinks={[
-        { href: '/washer-repair', label: 'Washer Repair', desc: 'Emergency washer breakdowns and leaks' },
+        { href: '/washer-repair', label: 'Washer Repair', desc: 'Emergency washer breakdowns and leaks' },
         { href: '/maintenance/dryer', label: 'Dryer Maintenance', desc: 'Vent cleaning and heating element check' },
         { href: '/maintenance/dishwasher', label: 'Dishwasher Maintenance', desc: 'Filter and spray arm cleaning service' },
         { href: '/maintenance/refrigerator', label: 'Fridge Maintenance', desc: 'Coil cleaning and seal inspection' },

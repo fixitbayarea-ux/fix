@@ -3,9 +3,9 @@ import ApplianceRepairPage from '../templates/ApplianceRepairPage';
 
 const WallOvenRepairPage = () => {
   const applianceData = {
-    appliance: "Wall Oven",
-    pageTitle: "Wall Oven Repair Service – Built-In Oven Specialists Bay Area",
-    metaDescription: "Expert wall oven repair in the Bay Area. Built-in oven specialists. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733!",
+    appliance: "Wall Oven",
+    pageTitle: "Wall Oven Repair Service – Built-In Oven Specialists Bay Area",
+    metaDescription: "Expert wall oven repair in the Bay Area. Built-in oven specialists. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733!",
     commonProblems: [
       {
         title: "Oven Not Heating to Temperature",
@@ -33,8 +33,8 @@ const WallOvenRepairPage = () => {
       }
     ],
     localAreas: [
-      "Palo Alto", "Los Altos", "Saratoga", "Los Gatos", "Cupertino", "Mountain View",
-      "Redwood City", "Burlingame", "San Mateo", "Foster City", "Menlo Park", "Atherton"
+      "Palo Alto", "Los Altos", "Saratoga", "Los Gatos", "Cupertino", "Mountain View",
+      "Redwood City", "Burlingame", "San Mateo", "Foster City", "Menlo Park", "Atherton"
     ],
     faqData: [
       {

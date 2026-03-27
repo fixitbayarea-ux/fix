@@ -4,8 +4,8 @@ import ApplianceRepairPage from '../templates/ApplianceRepairPage';
 const StackedWasherDryerRepairPage = () => {
   const applianceData = {
     appliance: "Stacked Washer Dryer",
-    pageTitle: "Stacked Washer Dryer Repair – Space-Saving Laundry Solutions",
-    metaDescription: "Expert stacked washer dryer repair in San Francisco, Peninsula & Marin County. Maximize your laundry space with professional service. Licensed technicians, 180-day warranty. Call (760) 543-5733!",
+    pageTitle: "Stacked Washer Dryer Repair – Space-Saving Laundry Solutions",
+    metaDescription: "Expert stacked washer dryer repair in San Francisco, Peninsula & Marin County. Maximize your laundry space with professional service. Licensed technicians, 180-day warranty. Call (760) 543-5733!",
     commonProblems: [
       {
         title: "Washer Not Draining or Spinning",
@@ -33,8 +33,8 @@ const StackedWasherDryerRepairPage = () => {
       }
     ],
     localAreas: [
-      "San Francisco", "Oakland", "Berkeley", "Mountain View", "Palo Alto", "Sunnyvale",
-      "Santa Clara", "Fremont", "Hayward", "San Mateo", "Redwood City", "Daly City"
+      "San Francisco", "Oakland", "Berkeley", "Mountain View", "Palo Alto", "Sunnyvale",
+      "Santa Clara", "Fremont", "Hayward", "San Mateo", "Redwood City", "Daly City"
     ],
     faqData: [
       {

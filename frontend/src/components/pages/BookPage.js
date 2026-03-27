@@ -17,7 +17,7 @@ const WHY_CARDS = [
   { num: '01', title: 'No Surprise Fees', body: '$60 diagnostic is the only upfront cost. Written estimate before we touch anything. $0 hidden charges.' },
   { num: '02', title: 'Licensed Technician', body: 'CA License #51001. Not a subcontractor. Andrei personally handles every repair.' },
   { num: '03', title: '180-Day Warranty', body: 'If the same issue comes back within 180 days, we return at no charge. No questions asked.' },
-  { num: '04', title: 'Fast Scheduling', body: 'Book before 2 PM for next-available slots. Next-day always available across 22 Bay Area cities.' },
+  { num: '04', title: 'Fast Scheduling', body: 'Book before 2 PM for next-available slots. Next-day always available across 22 Bay Area cities.' },
 ];
 
 const REVIEWS = [
@@ -31,7 +31,7 @@ const FAQ_DATA = [
   { q: 'Can I get a fast appointment?', a: 'Yes. Book before 2 PM and we can usually schedule a same- or next-day visit. Call (760) 543-5733 for urgent scheduling requests.' },
   { q: 'Is the $60 diagnostic fee required?', a: 'Yes, it covers the technician visit and full inspection. If you approve the repair, the $60 is fully credited \u2014 so it costs you nothing extra.' },
   { q: 'What if I need to reschedule?', a: 'Call or text (760) 543-5733 at least 2 hours before your appointment. We are flexible and will find a new time that works for you.' },
-  { q: 'Do you service my area?', a: 'We cover San Francisco, Peninsula (Daly City, San Bruno, Millbrae, Pacifica), and Marin County (Mill Valley, San Rafael, Sausalito, Tiburon, Novato and more).' },
+  { q: 'Do you service my area?', a: 'We cover San Francisco, Peninsula (Daly City, San Bruno, Millbrae, Pacifica), and Marin County (Mill Valley, San Rafael, Sausalito, Tiburon, Novato and more).' },
   { q: 'What if the repair takes more than one visit?', a: 'Most repairs are completed on the first visit. If we need to order a part, we return at no additional diagnostic charge. All work is covered by our 180-day warranty.' },
 ];
 
@@ -76,9 +76,9 @@ const BookPage = () => {
       data: isAutoRedirect ? null : {
         '@context': 'https://schema.org',
         '@type': 'Service',
-        name: 'Appliance Repair Booking',
-        provider: { '@type': 'LocalBusiness', name: 'FixitBay LLC', telephone: '+17605435733' },
-        areaServed: 'San Francisco Bay Area',
+        name: 'Appliance Repair Booking',
+        provider: { '@type': 'LocalBusiness', name: 'FixitBay LLC', telephone: '+17605435733' },
+        areaServed: 'San Francisco Bay Area',
         availableChannel: { '@type': 'ServiceChannel', serviceUrl: 'https://fixitbay.net/book', servicePhone: '+17605435733' },
         offers: { '@type': 'Offer', price: '60', priceCurrency: 'USD', description: 'Diagnostic fee, credited toward repair' },
       },
@@ -120,10 +120,10 @@ const BookPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Book Appliance Repair Online | Fast Scheduling | FixitBay LLC"
-        description="Book appliance repair online in San Francisco & Bay Area. Same- or next-day appointments available. $60 diagnostic, 180-day warranty. Licensed technician. Click to schedule."
+        title="Book Appliance Repair Online | Fast Scheduling | FixitBay LLC"
+        description="Book appliance repair online in San Francisco & Bay Area. Same- or next-day appointments available. $60 diagnostic, 180-day warranty. Licensed technician. Click to schedule."
         canonical="https://fixitbay.net/book"
-        ogTitle="Book Appliance Repair Online | Fast Scheduling | FixitBay LLC"
+        ogTitle="Book Appliance Repair Online | Fast Scheduling | FixitBay LLC"
         ogDescription="Book appliance repair online. Same- or next-day appointments available. $60 diagnostic, 180-day warranty."
         noindex={true}
       />
@@ -261,7 +261,7 @@ const BookPage = () => {
               <span>Book Online</span>
             </div>
             <div className="bk-eyebrow" style={{ marginBottom: 12 }}>SAME- &amp; NEXT-DAY AVAILABLE</div>
-            <h1 data-testid="book-h1">Book Your Appliance Repair</h1>
+            <h1 data-testid="book-h1">Book Your Appliance Repair</h1>
             <p className="bk-hero-sub">Schedule a licensed technician online. Pick the time that works for you.</p>
 
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-main-cta" data-testid="book-hero-cta" aria-label="Open booking calendar (opens in new tab)">Open Booking Calendar</a>
@@ -305,8 +305,8 @@ const BookPage = () => {
           <p style={{ color: '#4A5568', fontSize: 15, marginBottom: 40 }}>Book before 2 PM for same- or next-day appointments</p>
 
           <div className="bk-card" data-testid="book-widget-card">
-            <div className="bk-card-title">FixitBay LLC</div>
-            <div className="bk-card-sub">Licensed Appliance Repair</div>
+            <div className="bk-card-title">FixitBay LLC</div>
+            <div className="bk-card-sub">Licensed Appliance Repair</div>
 
             <div className="bk-mini-trust">
               <span>{'\u2713'} $60 Diagnostic</span>
@@ -327,7 +327,7 @@ const BookPage = () => {
         {/* ─── 4. WHY BOOK WITH FIXITBAY ─── */}
         <section className="bk-why" data-testid="book-why-section">
           <div className="bk-eyebrow" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 8 }}>WHY CHOOSE US</div>
-          <h2 style={{ color: '#fff', fontWeight: 800, fontSize: 32, marginBottom: 48 }}>Why Homeowners Book FixitBay LLC</h2>
+          <h2 style={{ color: '#fff', fontWeight: 800, fontSize: 32, marginBottom: 48 }}>Why Homeowners Book FixitBay LLC</h2>
           <div className="bk-why-grid">
             {WHY_CARDS.map((c, i) => (
               <div key={i} className="bk-why-card" data-testid={`book-why-card-${i}`}>
@@ -345,7 +345,7 @@ const BookPage = () => {
         <section className="bk-reviews" data-testid="book-reviews-section">
           <div className="bk-eyebrow" style={{ marginBottom: 8 }}>REVIEWS</div>
           <h2 style={{ fontWeight: 800, fontSize: 28, color: '#1A1A1A', marginBottom: 8 }}>What Customers Say</h2>
-          <p style={{ color: '#4A5568', fontSize: 14, marginBottom: 36 }}>Verified reviews from Bay Area homeowners</p>
+          <p style={{ color: '#4A5568', fontSize: 14, marginBottom: 36 }}>Verified reviews from Bay Area homeowners</p>
           <div className="bk-reviews-grid">
             {REVIEWS.map((r, i) => (
               <div key={i} className="bk-review-card" data-testid={`book-review-${i}`}>
@@ -383,7 +383,7 @@ const BookPage = () => {
         {/* ─── 7. FINAL CTA ─── */}
         <section className="bk-final" data-testid="book-final-cta">
           <div className="bk-final-title">Ready to Book?</div>
-          <div className="bk-final-sub">Same- and next-day appointments available across the Bay Area.</div>
+          <div className="bk-final-sub">Same- and next-day appointments available across the Bay Area.</div>
           <div className="bk-final-btns">
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-btn-white" data-testid="book-final-book-btn" aria-label="opens in new tab">Book Online Now</a>
             <a href="tel:7605435733" className="bk-btn-outline" data-testid="book-final-call-btn">(760) 543-5733</a>
@@ -399,9 +399,9 @@ const BookPage = () => {
             <a href="/reviews">Reviews</a>
           </div>
           <div className="bk-footer-row">
-            <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
+            <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
             <a href="tel:7605435733">(760) 543-5733</a>
-            <span>&copy; 2026 FixitBay LLC</span>
+            <span>&copy; 2026 FixitBay LLC</span>
           </div>
         </footer>
 

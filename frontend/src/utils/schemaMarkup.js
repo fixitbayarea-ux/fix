@@ -1,16 +1,16 @@
-export const getLocalBusinessSchema = (city = "San Francisco") => {
+export const getLocalBusinessSchema = (city = "San Francisco") => {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "FixitBay LLC",
+    "name": "FixitBay LLC",
     "image": "https://customer-assets.emergentagent.com/job_emergency-repair-1/artifacts/3s7loh5z_IMG_9175.PNG",
-    "description": `Professional appliance repair services in ${city} and the San Francisco Bay Area. Licensed technicians providing expert repair for refrigerators, washers, dryers, dishwashers, ovens, and all major appliances.`,
+    "description": `Professional appliance repair services in ${city} and the San Francisco Bay Area. Licensed technicians providing expert repair for refrigerators, washers, dryers, dishwashers, ovens, and all major appliances.`,
     "telephone": "+1-760-543-5733",
     "email": "info@fixitbay.net",
     "url": "https://fixitbay.net",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "San Francisco",
+      "addressLocality": "San Francisco",
       "addressRegion": "CA",
       "addressCountry": "US"
     },
@@ -22,7 +22,7 @@ export const getLocalBusinessSchema = (city = "San Francisco") => {
     "areaServed": [
       {
         "@type": "City",
-        "name": "San Francisco",
+        "name": "San Francisco",
         "addressRegion": "CA"
       },
       {
@@ -42,20 +42,20 @@ export const getLocalBusinessSchema = (city = "San Francisco") => {
       },
       {
         "@type": "City",
-        "name": "Palo Alto",
+        "name": "Palo Alto",
         "addressRegion": "CA"
       }
     ],
-    "serviceType": "Appliance Repair Service",
+    "serviceType": "Appliance Repair Service",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Appliance Repair Services",
+      "name": "Appliance Repair Services",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Refrigerator Repair",
+            "name": "Refrigerator Repair",
             "description": "Professional refrigerator repair services for all brands and models"
           }
         },
@@ -63,7 +63,7 @@ export const getLocalBusinessSchema = (city = "San Francisco") => {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Washer and Dryer Repair", 
+            "name": "Washer and Dryer Repair", 
             "description": "Expert washer and dryer repair services with fast scheduling"
           }
         },
@@ -71,7 +71,7 @@ export const getLocalBusinessSchema = (city = "San Francisco") => {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Dishwasher Repair",
+            "name": "Dishwasher Repair",
             "description": "Professional dishwasher repair and maintenance services"
           }
         },
@@ -79,7 +79,7 @@ export const getLocalBusinessSchema = (city = "San Francisco") => {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Oven and Stove Repair",
+            "name": "Oven and Stove Repair",
             "description": "Expert oven, stove, and cooktop repair services"
           }
         }
@@ -96,7 +96,7 @@ export const getLocalBusinessSchema = (city = "San Francisco") => {
           "@type": "Rating",
           "ratingValue": "5"
         },
-        "reviewBody": "Andrei was professional, punctual, and fixed our refrigerator perfectly. Highly recommend FixitBay LLC!"
+        "reviewBody": "Andrei was professional, punctual, and fixed our refrigerator perfectly. Highly recommend FixitBay LLC!"
       }
     ],
     "aggregateRating": {
@@ -151,15 +151,15 @@ export const getBreadcrumbSchema = (items) => {
   };
 };
 
-export const getServiceSchema = (serviceName, city = "San Francisco") => {
+export const getServiceSchema = (serviceName, city = "San Francisco") => {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
     "name": `${serviceName} in ${city}`,
-    "description": `Professional ${serviceName.toLowerCase()} services in ${city} and the Bay Area by licensed technicians.`,
+    "description": `Professional ${serviceName.toLowerCase()} services in ${city} and the Bay Area by licensed technicians.`,
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay LLC",
+      "name": "FixitBay LLC",
       "telephone": "+1-760-543-5733",
       "url": "https://fixitbay.net"
     },

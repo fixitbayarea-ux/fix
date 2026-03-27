@@ -3,12 +3,12 @@ import SEOMetaTags from '../SEOMetaTags';
 
 const POPULAR_PAGES = [
   { title: 'Book a Repair', sub: 'Schedule your appointment', href: '/book' },
-  { title: 'Homepage', sub: 'FixitBay LLC appliance repair', href: '/' },
+  { title: 'Homepage', sub: 'FixitBay LLC appliance repair', href: '/' },
   { title: 'All Services', sub: 'Residential & commercial repair', href: '/services' },
-  { title: 'Refrigerator Repair', sub: 'Not cooling, ice maker, leaks', href: '/refrigerator-repair' },
-  { title: 'Washer Repair', sub: 'Won\u2019t drain, error codes, vibration', href: '/washer-repair' },
-  { title: 'Dryer Repair', sub: 'Not heating, long cycles', href: '/dryer-repair' },
-  { title: 'Service Areas', sub: 'SF, Peninsula, Marin County', href: '/service-areas' },
+  { title: 'Refrigerator Repair', sub: 'Not cooling, ice maker, leaks', href: '/refrigerator-repair' },
+  { title: 'Washer Repair', sub: 'Won\u2019t drain, error codes, vibration', href: '/washer-repair' },
+  { title: 'Dryer Repair', sub: 'Not heating, long cycles', href: '/dryer-repair' },
+  { title: 'Service Areas', sub: 'SF, Peninsula, Marin County', href: '/service-areas' },
   { title: 'All Brands', sub: 'Whirlpool, LG, Sub-Zero and more', href: '/brands' },
   { title: 'Blog & Guides', sub: 'DIY tips and repair guides', href: '/blog' },
 ];
@@ -19,8 +19,8 @@ export default function NotFound404() {
   return (
     <>
       <SEOMetaTags
-        title="Page Not Found | FixitBay LLC"
-        description="Page not found. Browse FixitBay LLC appliance repair services, book a repair, or call (760) 543-5733."
+        title="Page Not Found | FixitBay LLC"
+        description="Page not found. Browse FixitBay LLC appliance repair services, book a repair, or call (760) 543-5733."
         noindex={true}
       />
 
@@ -105,9 +105,9 @@ export default function NotFound404() {
 
         {/* ─── 3. FOOTER ─── */}
         <footer className="nf-footer" data-testid="nf-footer">
-          <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
+          <a href="/" style={{ fontWeight: 700 }}>FixitBay LLC</a>
           <a href="tel:7605435733">(760) 543-5733</a>
-          <span>&copy; 2026 FixitBay LLC</span>
+          <span>&copy; 2026 FixitBay LLC</span>
         </footer>
       </div>
     </>

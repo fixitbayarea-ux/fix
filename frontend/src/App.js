@@ -278,7 +278,7 @@ export default function App() {
         <Route path="/marin-county-appliance-repair" element={<MarinCountyPage />} />
         
         {/* City+Service combination pages — 17 cities × 7 services = 119 routes */}
-        {/* San Francisco */}
+        {/* San Francisco */}
         <Route path="/san-francisco-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/san-francisco-washer-repair" element={<CityServicePage />} />
         <Route path="/san-francisco-dryer-repair" element={<CityServicePage />} />
@@ -286,7 +286,7 @@ export default function App() {
         <Route path="/san-francisco-oven-repair" element={<CityServicePage />} />
         <Route path="/san-francisco-wine-cooler-repair" element={<CityServicePage />} />
         <Route path="/san-francisco-ice-maker-repair" element={<CityServicePage />} />
-        {/* Daly City */}
+        {/* Daly City */}
         <Route path="/daly-city-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/daly-city-washer-repair" element={<CityServicePage />} />
         <Route path="/daly-city-dryer-repair" element={<CityServicePage />} />
@@ -294,7 +294,7 @@ export default function App() {
         <Route path="/daly-city-oven-repair" element={<CityServicePage />} />
         <Route path="/daly-city-wine-cooler-repair" element={<CityServicePage />} />
         <Route path="/daly-city-ice-maker-repair" element={<CityServicePage />} />
-        {/* South San Francisco */}
+        {/* South San Francisco */}
         <Route path="/south-san-francisco-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/south-san-francisco-washer-repair" element={<CityServicePage />} />
         <Route path="/south-san-francisco-dryer-repair" element={<CityServicePage />} />
@@ -302,7 +302,7 @@ export default function App() {
         <Route path="/south-san-francisco-oven-repair" element={<CityServicePage />} />
         <Route path="/south-san-francisco-wine-cooler-repair" element={<CityServicePage />} />
         <Route path="/south-san-francisco-ice-maker-repair" element={<CityServicePage />} />
-        {/* San Bruno */}
+        {/* San Bruno */}
         <Route path="/san-bruno-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/san-bruno-washer-repair" element={<CityServicePage />} />
         <Route path="/san-bruno-dryer-repair" element={<CityServicePage />} />
@@ -326,7 +326,7 @@ export default function App() {
         <Route path="/millbrae-oven-repair" element={<CityServicePage />} />
         <Route path="/millbrae-wine-cooler-repair" element={<CityServicePage />} />
         <Route path="/millbrae-ice-maker-repair" element={<CityServicePage />} />
-        {/* Mill Valley */}
+        {/* Mill Valley */}
         <Route path="/mill-valley-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/mill-valley-washer-repair" element={<CityServicePage />} />
         <Route path="/mill-valley-dryer-repair" element={<CityServicePage />} />
@@ -334,7 +334,7 @@ export default function App() {
         <Route path="/mill-valley-oven-repair" element={<CityServicePage />} />
         <Route path="/mill-valley-wine-cooler-repair" element={<CityServicePage />} />
         <Route path="/mill-valley-ice-maker-repair" element={<CityServicePage />} />
-        {/* San Rafael */}
+        {/* San Rafael */}
         <Route path="/san-rafael-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/san-rafael-washer-repair" element={<CityServicePage />} />
         <Route path="/san-rafael-dryer-repair" element={<CityServicePage />} />
@@ -358,7 +358,7 @@ export default function App() {
         <Route path="/novato-oven-repair" element={<CityServicePage />} />
         <Route path="/novato-wine-cooler-repair" element={<CityServicePage />} />
         <Route path="/novato-ice-maker-repair" element={<CityServicePage />} />
-        {/* Corte Madera */}
+        {/* Corte Madera */}
         <Route path="/corte-madera-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/corte-madera-washer-repair" element={<CityServicePage />} />
         <Route path="/corte-madera-dryer-repair" element={<CityServicePage />} />
@@ -414,7 +414,7 @@ export default function App() {
         <Route path="/fairfax-oven-repair" element={<CityServicePage />} />
         <Route path="/fairfax-wine-cooler-repair" element={<CityServicePage />} />
         <Route path="/fairfax-ice-maker-repair" element={<CityServicePage />} />
-        {/* San Anselmo */}
+        {/* San Anselmo */}
         <Route path="/san-anselmo-refrigerator-repair" element={<CityServicePage />} />
         <Route path="/san-anselmo-washer-repair" element={<CityServicePage />} />
         <Route path="/san-anselmo-dryer-repair" element={<CityServicePage />} />

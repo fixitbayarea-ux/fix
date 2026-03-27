@@ -5,9 +5,9 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "https://fixitbay.net/#organization",
-    "name": "FixitBay LLC",
-    "alternateName": "FixitBay LLC Appliance Repair",
-    "description": "Professional appliance repair services in San Francisco Bay Area. Licensed & insured technicians providing fast scheduling. Service-area business - we come to you.",
+    "name": "FixitBay LLC",
+    "alternateName": "FixitBay LLC Appliance Repair",
+    "description": "Professional appliance repair services in San Francisco Bay Area. Licensed & insured technicians providing fast scheduling. Service-area business - we come to you.",
     "url": "https://fixitbay.net",
     "telephone": "+17605435733",
     "priceRange": "$$",
@@ -16,24 +16,24 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "1549 Franklin Street, Unit A",
-      "addressLocality": "San Francisco",
+      "addressLocality": "San Francisco",
       "addressRegion": "CA",
       "postalCode": "94109",
       "addressCountry": "US"
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Appliance Repair Services",
+      "name": "Appliance Repair Services",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "url": "https://fixitbay.net/refrigerator-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washer Repair", "url": "https://fixitbay.net/washer-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "url": "https://fixitbay.net/dryer-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "url": "https://fixitbay.net/dishwasher-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven & Range Repair", "url": "https://fixitbay.net/oven-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "url": "https://fixitbay.net/cooktop-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "url": "https://fixitbay.net/ice-maker-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "url": "https://fixitbay.net/wine-cooler-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garbage Disposal Repair", "url": "https://fixitbay.net/garbage-disposal-repair" } }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "url": "https://fixitbay.net/refrigerator-repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washer Repair", "url": "https://fixitbay.net/washer-repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "url": "https://fixitbay.net/dryer-repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "url": "https://fixitbay.net/dishwasher-repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven & Range Repair", "url": "https://fixitbay.net/oven-repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "url": "https://fixitbay.net/cooktop-repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "url": "https://fixitbay.net/ice-maker-repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "url": "https://fixitbay.net/wine-cooler-repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garbage Disposal Repair", "url": "https://fixitbay.net/garbage-disposal-repair" } }
       ]
     },
     "geo": {
@@ -42,28 +42,28 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
       "longitude": -122.4232
     },
     "areaServed": [
-      { "@type": "City", "name": "San Francisco", "containedInPlace": { "@type": "State", "name": "California" } },
-      { "@type": "City", "name": "Daly City", "containedInPlace": { "@type": "State", "name": "California" } },
-      { "@type": "City", "name": "South San Francisco", "containedInPlace": { "@type": "State", "name": "California" } },
-      { "@type": "City", "name": "San Bruno", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "San Francisco", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "Daly City", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "South San Francisco", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "San Bruno", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Pacifica", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Millbrae", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Colma", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Brisbane", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Montara", "containedInPlace": { "@type": "State", "name": "California" } },
-      { "@type": "City", "name": "Mill Valley", "containedInPlace": { "@type": "State", "name": "California" } },
-      { "@type": "City", "name": "San Rafael", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "Mill Valley", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "San Rafael", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Novato", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Sausalito", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Belvedere", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Tiburon", "containedInPlace": { "@type": "State", "name": "California" } },
-      { "@type": "City", "name": "Corte Madera", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "City", "name": "Corte Madera", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Larkspur", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Greenbrae", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Ross", "containedInPlace": { "@type": "State", "name": "California" } },
       { "@type": "City", "name": "Fairfax", "containedInPlace": { "@type": "State", "name": "California" } },
-      { "@type": "City", "name": "San Anselmo", "containedInPlace": { "@type": "State", "name": "California" } },
-      { "@type": "Place", "name": "San Francisco Bay Area" }
+      { "@type": "City", "name": "San Anselmo", "containedInPlace": { "@type": "State", "name": "California" } },
+      { "@type": "Place", "name": "San Francisco Bay Area" }
     ],
     "openingHoursSpecification": [
       {
@@ -101,7 +101,7 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
       "@type": "Review",
       "author": { "@type": "Person", "name": "Gayle Rabbitt" },
       "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "reviewBody": "Andrei was excellent. He explained and checked everything. I highly recommend him and FixitBay LLC!",
+      "reviewBody": "Andrei was excellent. He explained and checked everything. I highly recommend him and FixitBay LLC!",
       "publisher": { "@type": "Organization", "name": "Google" }
     },
     {

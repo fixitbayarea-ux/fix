@@ -4,7 +4,7 @@ import CityRepairPage from '../templates/CityRepairPage';
 const SanLeandroRepairPage = () => {
   const cityData = {
     city: "San Leandro",
-    pageTitle: "Appliance Repair in San Leandro, CA – Fast, Reliable, Affordable!",
+    pageTitle: "Appliance Repair in San Leandro, CA – Fast, Reliable, Affordable!",
     metaDescription: "Expert appliance repair in San Leandro, CA. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733 or book online now!",
     neighborhoods: [
       "Downtown San Leandro",
@@ -36,7 +36,7 @@ const SanLeandroRepairPage = () => {
       },
       {
         question: "Are your technicians licensed to work in San Leandro?",
-        answer: "Yes, all our technicians are fully licensed, insured, and bonded to work throughout San Leandro and the entire Bay Area. We're a local family-owned business serving Alameda County."
+        answer: "Yes, all our technicians are fully licensed, insured, and bonded to work throughout San Leandro and the entire Bay Area. We're a local family-owned business serving Alameda County."
       }
     ]
   };

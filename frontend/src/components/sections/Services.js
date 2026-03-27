@@ -5,28 +5,28 @@ import { Wrench, Zap, Settings, Home, Phone } from 'lucide-react';
 const Services = () => {
   const services = [
     {
-      title: "Refrigerator Repair",
+      title: "Refrigerator Repair",
       description: "Expert repair for all refrigerator brands. From cooling issues to ice maker problems.",
       image: "https://images.unsplash.com/photo-1487770931682-b80013ed9cc9",
       icon: <Home className="w-8 h-8" />,
       features: ["Same/next day service", "All brands", "Warranty included"]
     },
     {
-      title: "Washer & Dryer Repair", 
+      title: "Washer & Dryer Repair", 
       description: "Professional washer and dryer repair. Get your laundry routine back on track fast.",
       image: "https://images.unsplash.com/photo-1632283572415-5da3717fa4d1",
       icon: <Settings className="w-8 h-8" />,
       features: ["Front & top load", "All models", "Quick turnaround"]
     },
     {
-      title: "Dishwasher Repair",
+      title: "Dishwasher Repair",
       description: "Complete dishwasher repair services. From leaks to cleaning performance issues.",
       image: "https://images.unsplash.com/photo-1586798271456-a9f41b3fef9f",
       icon: <Zap className="w-8 h-8" />,
       features: ["Leak repair", "Deep cleaning", "Performance optimization"]
     },
     {
-      title: "Oven & Stove Repair",
+      title: "Oven & Stove Repair",
       description: "Professional oven and stove repair. Gas and electric models serviced expertly.",
       image: "https://images.pexels.com/photos/321550/pexels-photo-321550.jpeg",
       icon: <Wrench className="w-8 h-8" />,
@@ -70,7 +70,7 @@ const Services = () => {
             Professional Appliance <span className="text-gold-gradient">Repair Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Expert technicians ready to fix your appliances with fast, reliable service across the Bay Area
+            Expert technicians ready to fix your appliances with fast, reliable service across the Bay Area
           </p>
         </motion.div>
 

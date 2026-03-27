@@ -4,7 +4,7 @@ import CityRepairPage from '../templates/CityRepairPage';
 const NovatoRepairPage = () => {
   const cityData = {
     city: "Novato",
-    pageTitle: "Appliance Repair in Novato, CA – Fast, Reliable, Affordable!",
+    pageTitle: "Appliance Repair in Novato, CA – Fast, Reliable, Affordable!",
     metaDescription: "Expert appliance repair in Novato, CA. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733 or book online now!",
     neighborhoods: [
       "Downtown Novato",
@@ -16,7 +16,7 @@ const NovatoRepairPage = () => {
       "Atherton Ranch",
       "Oak Creek"
     ],
-    localFeatures: "Novato residents trust our friendly service and North Bay values. We appreciate the relaxed lifestyle and natural beauty of this Marin County community.",
+    localFeatures: "Novato residents trust our friendly service and North Bay values. We appreciate the relaxed lifestyle and natural beauty of this Marin County community.",
     faqData: [
       {
         question: "Do you offer fast appliance repair in Novato?",
@@ -36,7 +36,7 @@ const NovatoRepairPage = () => {
       },
       {
         question: "Are your technicians licensed to work in Novato?",
-        answer: "Yes, all our technicians are fully licensed, insured, and bonded to work throughout Novato and the entire Bay Area. We're a local family-owned business serving Marin County."
+        answer: "Yes, all our technicians are fully licensed, insured, and bonded to work throughout Novato and the entire Bay Area. We're a local family-owned business serving Marin County."
       }
     ]
   };

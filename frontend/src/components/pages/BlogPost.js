@@ -51,7 +51,7 @@ const BlogPost = () => {
         </ul>
 
         <h2>When to Call a Professional</h2>
-        <p>Call FixitBay LLC if you experience:</p>
+        <p>Call FixitBay LLC if you experience:</p>
         <ul>
           <li>Compressor won't start or makes unusual noises</li>
           <li>Refrigerant leak (you'll see frost buildup or hear hissing)</li>
@@ -62,7 +62,7 @@ const BlogPost = () => {
 
         <div class="cta-box">
           <h3>Need Help With Your Refrigerator?</h3>
-          <p>Our certified technicians diagnose and repair all refrigerator brands in San Francisco Bay Area. Fast scheduling available!</p>
+          <p>Our certified technicians diagnose and repair all refrigerator brands in San Francisco Bay Area. Fast scheduling available!</p>
         </div>
       `,
       keywords: 'refrigerator not cooling, fridge not cold, refrigerator repair, dirty condenser coils, compressor failure, door seal repair'
@@ -162,7 +162,7 @@ const BlogPost = () => {
 
         <div class="cta-box">
           <h3>Dishwasher Not Performing Well?</h3>
-          <p>Even with great maintenance, dishwashers eventually need professional service. We repair all brands in San Francisco Bay Area with fast scheduling.</p>
+          <p>Even with great maintenance, dishwashers eventually need professional service. We repair all brands in San Francisco Bay Area with fast scheduling.</p>
         </div>
       `,
       keywords: 'dishwasher maintenance, clean dishwasher filter, dishwasher care tips, extend dishwasher life, dishwasher not cleaning'
@@ -354,7 +354,7 @@ const BlogPost = () => {
         </ul>
 
         <h3>When to Call a Professional</h3>
-        <p>Contact FixitBay LLC if:</p>
+        <p>Contact FixitBay LLC if:</p>
         <ul>
           <li>Cleaning the vent doesn't improve drying time</li>
           <li>Dryer doesn't heat at all</li>
@@ -365,7 +365,7 @@ const BlogPost = () => {
 
         <div class="cta-box">
           <h3>Dryer Still Not Drying Efficiently?</h3>
-          <p>We diagnose and repair all dryer brands in San Francisco Bay Area. We also provide professional dryer vent cleaning for safety and efficiency.</p>
+          <p>We diagnose and repair all dryer brands in San Francisco Bay Area. We also provide professional dryer vent cleaning for safety and efficiency.</p>
         </div>
       `,
       keywords: 'dryer taking too long, dryer not drying, clogged dryer vent, dryer vent cleaning, heating element replacement'
@@ -395,13 +395,13 @@ const BlogPost = () => {
       keywords: 'oven calibration, oven temperature wrong, calibrate oven, oven thermometer'
     },
     'ice-maker-troubleshooting': {
-      title: 'Ice Maker Not Working? Top 10 Fixes',
+      title: 'Ice Maker Not Working? Top 10 Fixes',
       metaDescription: 'No ice? Slow production? Small cubes? Troubleshoot water supply, ice maker module, water filter. Most ice maker problems are easy fixes.',
       date: 'January 5, 2026',
       readTime: '7 min',
       category: 'Refrigerator',
       icon: '🧊',
-      content: '<h2>Fix Your Ice Maker</h2><p>Check water supply, filter, and ice maker module. Most issues have simple solutions...</p>',
+      content: '<h2>Fix Your Ice Maker</h2><p>Check water supply, filter, and ice maker module. Most issues have simple solutions...</p>',
       keywords: 'ice maker not working, ice maker troubleshooting, no ice production, small ice cubes'
     },
     'appliance-lifespan': {
@@ -480,7 +480,7 @@ const BlogPost = () => {
 
   return (
     <>
-      <SEOMetaTags title={`${article.title} | FixitBay LLC Blog`} description={article.metaDescription} canonical={`https://fixitbay.net/blog/${slug}`} />
+      <SEOMetaTags title={`${article.title} | FixitBay LLC Blog`} description={article.metaDescription} canonical={`https://fixitbay.net/blog/${slug}`} />
 
       <article className="min-h-screen bg-gray-50" style={{ paddingTop: '80px' }}>
         {/* Header */}
@@ -538,10 +538,10 @@ const BlogPost = () => {
         <div className="py-16 px-4" style={{ background: 'linear-gradient(135deg, #032D55 0%, #1A3B5D 100%)' }}>
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4 text-white">
-              Need Professional Appliance Repair?
+              Need Professional Appliance Repair?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Fast service available in San Francisco Bay Area. Call now or book online!
+              Fast service available in San Francisco Bay Area. Call now or book online!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

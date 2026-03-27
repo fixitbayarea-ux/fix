@@ -48,7 +48,7 @@ const FreezerRepairPage = () => {
     },
     {
       question: "How quickly can you repair a freezer that stopped working and food is thawing?",
-      answer: "We understand freezer emergencies are time-sensitive to prevent food spoilage. We offer emergency priority service in San Francisco, Peninsula, and Marin County. Most freezer repairs (thermostat, fan, defrost system) take 1-2 hours. Call us immediately and we'll prioritize your freezer repair to save your frozen food."
+      answer: "We understand freezer emergencies are time-sensitive to prevent food spoilage. We offer emergency priority service in San Francisco, Peninsula, and Marin County. Most freezer repairs (thermostat, fan, defrost system) take 1-2 hours. Call us immediately and we'll prioritize your freezer repair to save your frozen food."
     },
     {
       question: "Does your freezer repair warranty cover compressor and cooling system failures?",
@@ -59,10 +59,10 @@ const FreezerRepairPage = () => {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Freezer Repair",
+    "serviceType": "Freezer Repair",
     "provider": {
       "@type": "LocalBusiness",
-      "name": "FixitBay LLC",
+      "name": "FixitBay LLC",
       "telephone": "(760) 543-5733"
     },
     "areaServed": SERVICE_CITIES_SCHEMA
@@ -73,11 +73,11 @@ const FreezerRepairPage = () => {
       <MobileServiceLanding
         appliance="Freezer"
         pageSlug="freezer-repair"
-        pageTitle="Freezer Repair San Francisco | Fast Scheduling | FixitBay LLC"
-        metaDescription="Expert freezer repair in San Francisco. Standalone and built-in freezers. $60 diagnostic applied to repair. 180-day warranty."
+        pageTitle="Freezer Repair San Francisco | Fast Scheduling | FixitBay LLC"
+        metaDescription="Expert freezer repair in San Francisco. Standalone and built-in freezers. $60 diagnostic applied to repair. 180-day warranty."
         heroTitle={<>Expert Freezer<br />Repair in SF. Today.</>}
         techImage="/images/technicians/freezer-tech.jpg"
-        techImageAlt="FixitBay technician repairing a freezer in a San Francisco home"
+        techImageAlt="FixitBay technician repairing a freezer in a San Francisco home"
         issues={[
           { icon: '🌡️', label: 'Not Freezing' },
           { icon: '❄️', label: 'Frost Buildup' },
@@ -96,14 +96,14 @@ const FreezerRepairPage = () => {
       <ApplianceRepairPageNew
       serviceSchema={serviceSchema}
       appliance="Freezer"
-      pageTitle="Freezer Repair San Francisco | Fast Scheduling | FixitBay LLC"
-      metaDescription="Expert freezer repair in San Francisco. Standalone and built-in freezers. $60 diagnostic applied to repair. 180-day warranty."
+      pageTitle="Freezer Repair San Francisco | Fast Scheduling | FixitBay LLC"
+      metaDescription="Expert freezer repair in San Francisco. Standalone and built-in freezers. $60 diagnostic applied to repair. 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       heroImage="/images/technicians/freezer-tech.jpg"
-      heroImageAlt="FixitBay technician repairing a freezer in a San Francisco home"
+      heroImageAlt="FixitBay technician repairing a freezer in a San Francisco home"
       serviceDescription={{
-        title: "Emergency Freezer Repair Service",
+        title: "Emergency Freezer Repair Service",
         paragraphs: [
           <>Freezer failures require urgent attention to prevent food spoilage. Our licensed technicians provide emergency priority service for both upright and chest freezers. We diagnose temperature control failures, compressor issues, defrost system malfunctions, and door seal problems. We charge a <strong>$60 diagnostic fee</strong> (waived with repair) and prioritize your service to save your frozen food.</>,
           <>Our freezer repair process includes testing thermostats, checking compressor operation, inspecting evaporator fans, and examining defrost timers. We use specialized tools to detect refrigerant leaks and measure temperature accuracy. Most freezer repairs—from thermostat replacement to defrost system fixes—are completed during our first visit with parts stocked for all major brands.</>,
@@ -121,9 +121,9 @@ const FreezerRepairPage = () => {
         ]
       }}
       relatedLinks={[
-        { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker issues' },
-        { href: '/ice-maker-repair', label: 'Ice Maker Repair', desc: 'No ice, jammed dispenser, or leaking' },
-        { href: '/wine-cooler-repair', label: 'Wine Cooler Repair', desc: 'Temperature problems or compressor failures' },
+        { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker issues' },
+        { href: '/ice-maker-repair', label: 'Ice Maker Repair', desc: 'No ice, jammed dispenser, or leaking' },
+        { href: '/wine-cooler-repair', label: 'Wine Cooler Repair', desc: 'Temperature problems or compressor failures' },
         { href: '/commercial-appliance-repair', label: 'Commercial Repair', desc: 'Walk-in coolers, commercial freezers' },
       ]}
     />

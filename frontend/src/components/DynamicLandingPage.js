@@ -16,7 +16,7 @@ import {
 } from 'lucide-react';
 
 const DynamicLandingPage = () => {
-  const [currentCity, setCurrentCity] = useState('San Francisco');
+  const [currentCity, setCurrentCity] = useState('San Francisco');
 
   // City detection logic - can be enhanced with geolocation or URL parsing
   useEffect(() => {
@@ -27,7 +27,7 @@ const DynamicLandingPage = () => {
       setCurrentCity(cityParam);
     } else {
       // Default fallback cities
-      const cities = ['San Francisco', 'Larkspur', 'Sausalito', 'San Rafael', 'Mill Valley', 'Novato'];
+      const cities = ['San Francisco', 'Larkspur', 'Sausalito', 'San Rafael', 'Mill Valley', 'Novato'];
       const randomCity = cities[Math.floor(Math.random() * cities.length)];
       setCurrentCity(randomCity);
     }
@@ -35,7 +35,7 @@ const DynamicLandingPage = () => {
 
   const services = [
     {
-      title: "Refrigerator Repair",
+      title: "Refrigerator Repair",
       description: "Keep your food fresh with expert refrigerator repair services",
       icon: <Refrigerator className="w-8 h-8" />
     },
@@ -65,7 +65,7 @@ const DynamicLandingPage = () => {
       icon: <Snowflake className="w-8 h-8" />
     },
     {
-      title: "Ice Maker",
+      title: "Ice Maker",
       description: "Never run out of ice with our professional ice maker repair",
       icon: <CheckCircle className="w-8 h-8" />
     }
@@ -107,7 +107,7 @@ const DynamicLandingPage = () => {
             className="hero-main-h1 text-4xl md:text-6xl font-bold mb-8"
             style={{ color: '#C0362C' }}
           >
-            Appliance Repair in {currentCity}, CA –<br />
+            Appliance Repair in {currentCity}, CA –<br />
             <span className="text-gray-800">Fast, Reliable, Affordable!</span>
           </motion.h1>
 
@@ -179,7 +179,7 @@ const DynamicLandingPage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Professional Appliance Repair Services
+              Professional Appliance Repair Services
             </h2>
             <p className="text-xl text-gray-600">
               Expert repair services for all major appliance brands
@@ -247,11 +247,11 @@ const DynamicLandingPage = () => {
             </h3>
             
             <p className="text-lg text-gray-600 mb-8">
-              Rated 5 stars on Google by local homeowners in {currentCity} and the Bay Area.
+              Rated 5 stars on Google by local homeowners in {currentCity} and the Bay Area.
             </p>
 
             <motion.a
-              href="https://www.google.com/search?sca_esv=a519e401c1c67213&sxsrf=AE3TifOBkxh-FKVX9NvyCWKa2DZ8STY4qw:1753743378875&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E-_Zh_TRb_LPxpYzRDp08qjMXGmOaRGKNLUlfA_vZP00r0wXHbHmqywg5DnRvgpckZkm-WmhnUPhYWx5-ODRBinOZ4m2&q=FixitBay LLC+LLC+Reviews&sa=X&ved=2ahUKEwju6_-Y0-COAxXSKUQIHYKwKk4Q0bkNegQIRRAC"
+              href="https://www.google.com/search?sca_esv=a519e401c1c67213&sxsrf=AE3TifOBkxh-FKVX9NvyCWKa2DZ8STY4qw:1753743378875&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E-_Zh_TRb_LPxpYzRDp08qjMXGmOaRGKNLUlfA_vZP00r0wXHbHmqywg5DnRvgpckZkm-WmhnUPhYWx5-ODRBinOZ4m2&q=FixitBay LLC+LLC+Reviews&sa=X&ved=2ahUKEwju6_-Y0-COAxXSKUQIHYKwKk4Q0bkNegQIRRAC"
               target="_blank" rel="noopener noreferrer"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
@@ -288,9 +288,9 @@ const DynamicLandingPage = () => {
       <footer className="py-12 bg-gray-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-4">FixItBay Appliance Repair</h3>
+            <h3 className="text-2xl font-bold mb-4">FixItBay Appliance Repair</h3>
             <p className="text-gray-300 mb-6">
-              Serving San Francisco, Peninsula & Marin County
+              Serving San Francisco, Peninsula & Marin County
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
@@ -316,7 +316,7 @@ const DynamicLandingPage = () => {
             </div>
 
             <div className="text-sm text-gray-400">
-              © 2024 FixItBay LLC. Licensed & Insured Appliance Repair Company.
+              © 2024 FixItBay LLC. Licensed & Insured Appliance Repair Company.
             </div>
           </div>
         </div>

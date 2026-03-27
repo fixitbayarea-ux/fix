@@ -20,16 +20,16 @@ const desktopCommonProblems = [
 
 const desktopFaqData = [
   { question: 'Do you offer priority service for commercial clients?', answer: 'Yes. We understand downtime is expensive for businesses. Commercial repair calls are prioritized for same- or next-day or next-day response whenever possible to keep your business running. We offer flexible scheduling including early morning, evening, and weekend appointments to minimize disruption to your operations.' },
-  { question: 'What types of commercial appliances do you repair?', answer: 'We repair commercial refrigeration (walk-in coolers, reach-in refrigerators, prep tables, display cases), restaurant equipment (commercial ovens, ranges, fryers), commercial laundry equipment (industrial washers and dryers for hotels, laundromats, multi-family buildings), and office break-room appliances used in Bay Area businesses.' },
+  { question: 'What types of commercial appliances do you repair?', answer: 'We repair commercial refrigeration (walk-in coolers, reach-in refrigerators, prep tables, display cases), restaurant equipment (commercial ovens, ranges, fryers), commercial laundry equipment (industrial washers and dryers for hotels, laundromats, multi-family buildings), and office break-room appliances used in Bay Area businesses.' },
   { question: 'Can you work outside of normal business hours?', answer: 'Absolutely. We offer flexible scheduling and can arrange early morning (before opening), evening (after closing), or weekend appointments to minimize disruption to your operations. Emergency service is available for critical equipment failures affecting business operations.' },
   { question: 'Do you provide invoices and documentation for business records?', answer: 'Yes. Every commercial repair includes detailed documentation of work performed, parts used, labor hours, and warranty coverage for your accounting and compliance needs. We provide itemized invoices suitable for business expense tracking and tax purposes.' },
   { question: 'Is there a warranty on commercial repairs?', answer: 'Most commercial repairs are backed by our 180-day parts and labor warranty. We stand behind our work and will return if the same problem reappears within the warranty period at no additional charge. For high-use commercial equipment, we also offer extended maintenance contracts.' },
 ];
 
 const desktopServiceDescription = {
-  title: 'Priority Commercial Appliance Repair Service',
+  title: 'Priority Commercial Appliance Repair Service',
   paragraphs: [
-    <>Commercial appliance failures can halt operations and impact revenue. Our licensed technicians provide priority same- or next-day or next-day service for Bay Area businesses. We diagnose commercial refrigeration failures, restaurant equipment issues, and industrial laundry breakdowns. We charge a <strong>$100 diagnostic fee</strong> (credited toward your repair) and understand that minimizing downtime is critical for your bottom line.</>,
+    <>Commercial appliance failures can halt operations and impact revenue. Our licensed technicians provide priority same- or next-day or next-day service for Bay Area businesses. We diagnose commercial refrigeration failures, restaurant equipment issues, and industrial laundry breakdowns. We charge a <strong>$100 diagnostic fee</strong> (credited toward your repair) and understand that minimizing downtime is critical for your bottom line.</>,
     <>Our commercial repair process covers walk-in coolers, reach-in refrigerators, commercial ovens, ranges, fryers, industrial washers and dryers, and prep tables. We perform comprehensive diagnostics using professional-grade tools, check compliance with health codes, and ensure safety systems function properly. Most commercial repairs are completed on the first visit with parts stocked for common commercial equipment from brands like True, Hobart, Hoshizaki, and Turbo Air.</>,
     <>Whether your commercial refrigerator isn't holding temperature, your restaurant oven stopped heating, or your laundromat dryers won't run, we'll get your equipment operational fast. We provide flexible scheduling including early morning, evening, and weekend appointments to work around your business hours. Every commercial repair includes detailed documentation for your records and our <strong>180-day warranty</strong> on parts and labor.</>,
   ],
@@ -39,8 +39,8 @@ const desktopServiceDescription = {
 const DesktopCommercialRepair = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Appliance"
-    pageTitle="Commercial Appliance Repair for Bay Area Businesses"
-    metaDescription="Commercial appliance repair for Bay Area businesses. Priority scheduling, licensed technicians, and 180-day warranty on commercial refrigeration, laundry and kitchen equipment. Call (760) 543-5733 or book online."
+    pageTitle="Commercial Appliance Repair for Bay Area Businesses"
+    metaDescription="Commercial appliance repair for Bay Area businesses. Priority scheduling, licensed technicians, and 180-day warranty on commercial refrigeration, laundry and kitchen equipment. Call (760) 543-5733 or book online."
     commonProblems={desktopCommonProblems}
     faqData={desktopFaqData}
     relatedServicesCategory="Commercial"
@@ -49,7 +49,7 @@ const DesktopCommercialRepair = () => (
     isCommercial={true}
     repairVsReplace={{
       title: "Repair vs. Replace Commercial Equipment",
-      intro: "Downtime costs money. Here's how Bay Area businesses decide.",
+      intro: "Downtime costs money. Here's how Bay Area businesses decide.",
       items: [
         { action: 'repair', condition: 'Equipment under 7 years with isolated issue', recommendation: 'Single-component failures (thermostat, motor, gasket) cost $200–$500 to fix vs. $3,000+ for commercial replacement.' },
         { action: 'repair', condition: 'Refrigeration unit running warm', recommendation: 'Often a condenser coil cleaning, fan motor, or thermostat fix ($150–$350). Quick turnaround minimizes food safety risk.' },
@@ -59,9 +59,9 @@ const DesktopCommercialRepair = () => (
     }}
     relatedLinks={[
       { href: '/residential-appliance-repair', label: 'Residential Repair', desc: 'Home kitchen and laundry appliance service' },
-      { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'All types including commercial-grade units' },
-      { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Commercial and residential dishwashers' },
-      { href: '/washer-repair', label: 'Washer Repair', desc: 'Commercial laundry and home washers' },
+      { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'All types including commercial-grade units' },
+      { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Commercial and residential dishwashers' },
+      { href: '/washer-repair', label: 'Washer Repair', desc: 'Commercial laundry and home washers' },
     ]}
   />
 );
@@ -98,8 +98,8 @@ const MobileCommercialRepair = () => (
   <MobileServiceLanding
     appliance="Commercial Appliance"
     pageSlug="commercial-appliance-repair"
-    pageTitle="Commercial Appliance Repair for Bay Area Businesses"
-    metaDescription="Commercial appliance repair for Bay Area businesses. Priority scheduling, licensed technicians, and 180-day warranty. Call (760) 543-5733 or book online."
+    pageTitle="Commercial Appliance Repair for Bay Area Businesses"
+    metaDescription="Commercial appliance repair for Bay Area businesses. Priority scheduling, licensed technicians, and 180-day warranty. Call (760) 543-5733 or book online."
     heroTitle={<>Commercial Appliance<br />Repair. Priority Service.</>}
     heroSubtitle="Same- or Next-Day Appointments for Businesses"
    
@@ -109,8 +109,8 @@ const MobileCommercialRepair = () => (
     schemaData={{
       "@context": "https://schema.org",
       "@type": "Service",
-      "serviceType": "Commercial Appliance Repair",
-      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": PHONE_DISPLAY },
+      "serviceType": "Commercial Appliance Repair",
+      "provider": { "@type": "LocalBusiness", "name": "FixitBay LLC", "telephone": PHONE_DISPLAY },
     }}
   />
 );

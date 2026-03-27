@@ -1,25 +1,25 @@
 import React from 'react';
 
 const cities = [
-  { name: 'San Francisco', href: '/san-francisco-appliance-repair' },
-  { name: 'Daly City', href: '/daly-city-appliance-repair' },
+  { name: 'San Francisco', href: '/san-francisco-appliance-repair' },
+  { name: 'Daly City', href: '/daly-city-appliance-repair' },
   { name: 'South SF', href: '/south-san-francisco-appliance-repair' },
-  { name: 'San Bruno', href: '/san-bruno-appliance-repair' },
+  { name: 'San Bruno', href: '/san-bruno-appliance-repair' },
   { name: 'Pacifica', href: '/pacifica-appliance-repair' },
   { name: 'Millbrae', href: '/millbrae-appliance-repair' },
   { name: 'Colma', href: '/colma-appliance-repair' },
   { name: 'Brisbane', href: '/brisbane-appliance-repair' },
   { name: 'Montara', href: '/montara-appliance-repair' },
-  { name: 'Mill Valley', href: '/mill-valley-appliance-repair' },
-  { name: 'San Rafael', href: '/san-rafael-appliance-repair' },
+  { name: 'Mill Valley', href: '/mill-valley-appliance-repair' },
+  { name: 'San Rafael', href: '/san-rafael-appliance-repair' },
   { name: 'Sausalito', href: '/sausalito-appliance-repair' },
-  { name: 'Belvedere Tiburon', href: '/belvedere-tiburon-appliance-repair' },
-  { name: 'Corte Madera', href: '/corte-madera-appliance-repair' },
+  { name: 'Belvedere Tiburon', href: '/belvedere-tiburon-appliance-repair' },
+  { name: 'Corte Madera', href: '/corte-madera-appliance-repair' },
   { name: 'Larkspur', href: '/larkspur-appliance-repair' },
   { name: 'Greenbrae', href: '/greenbrae-appliance-repair' },
   { name: 'Ross', href: '/ross-appliance-repair' },
   { name: 'Fairfax', href: '/fairfax-appliance-repair' },
-  { name: 'San Anselmo', href: '/san-anselmo-appliance-repair' },
+  { name: 'San Anselmo', href: '/san-anselmo-appliance-repair' },
   { name: 'Novato', href: '/novato-appliance-repair' },
 ];
 

@@ -9,9 +9,9 @@ const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', te
 
 const REVIEWS = [
   { id: 'g-1', author: 'jennifer mushnick', date: '5 days ago', rating: 5, text: "Andrei was great\u2014diagnosed issues with our oven, was communicative, and professional. His assessment of the problem with the igniter seems accurate and we will see if this resolves the problem. He was informed and thorough explaining the issue. Not sure about pricing because this was arranged through our property management company. So far, great experience!", service: 'Stove, cooktop & oven repair' },
-  { id: 'g-2', author: 'Ms Tee', date: '1 week ago', rating: 5, text: "I would recommend FixitBay LLC. It\u2019s a professional service. I called about a dryer that wasn\u2019t working. Andrei was punctual and came the day after I called him. He took his time and looked all over the unit. He explained what had to be done and I agreed to the service. The parts arrived a few days earlier than expected and he let me know. He came the following day and again skillfully and patiently took his time to complete the job. Appreciate the service.", service: 'Dryer repair', price: '$300\u2013350' },
+  { id: 'g-2', author: 'Ms Tee', date: '1 week ago', rating: 5, text: "I would recommend FixitBay LLC. It\u2019s a professional service. I called about a dryer that wasn\u2019t working. Andrei was punctual and came the day after I called him. He took his time and looked all over the unit. He explained what had to be done and I agreed to the service. The parts arrived a few days earlier than expected and he let me know. He came the following day and again skillfully and patiently took his time to complete the job. Appreciate the service.", service: 'Dryer repair', price: '$300\u2013350' },
   { id: 'g-3', author: 'Karen Dzienkowski', date: '1 week ago', rating: 5, text: "Andrei was great! Fixed it the first visit and came back to install a new thermostat the next day because he didn\u2019t have that part day 1. Reasonable price to fix a 20 yo fridge too! Highly recommend", service: 'Refrigerator repair' },
-  { id: 'g-4', author: 'Gayle Rabbitt', date: '3 weeks ago', rating: 5, text: "Andrei was excellent. He explained and checked everything. He quickly realized the leak was from the utility sink next to the washer and shut off the hoses so leak stopped. I\u2019d definitely contact FixitBay LLC if have a problem with any appliance. Again Andrei was wonderful again. He came next day and fixed problem I caused for a reasonable price. I highly recommend him and FixitBay LLC!", service: 'Washing machine repair', price: '$50\u2013100' },
+  { id: 'g-4', author: 'Gayle Rabbitt', date: '3 weeks ago', rating: 5, text: "Andrei was excellent. He explained and checked everything. He quickly realized the leak was from the utility sink next to the washer and shut off the hoses so leak stopped. I\u2019d definitely contact FixitBay LLC if have a problem with any appliance. Again Andrei was wonderful again. He came next day and fixed problem I caused for a reasonable price. I highly recommend him and FixitBay LLC!", service: 'Washing machine repair', price: '$50\u2013100' },
   { id: 'g-5', author: 'Emily Chen', date: '3 weeks ago', rating: 5, text: "One of the smoothest repair experiences I\u2019ve had. Our dryer was leaving black marks on our clothes so we needed to clean out its inside from lint. Regular dryer maintenance. Super easy to book online and continue communicating over text with Andrei. Andrei gave an initial diagnosis and quote based on photos I sent, showed up on time, and was in/out within 2 hours. He gave clear tips on what to do next time this came up in a few years. Andrei was also careful to protect and keep our place clean while he was doing his work. Takes credit card. Prompt invoices. Very responsive. Would highly recommend!", service: 'Dryer vent cleaning, Dryer repair', price: '$350\u2013400' },
   { id: 'g-6', author: 'Michael Kagan', date: '3 weeks ago', rating: 5, text: "Andrei from FixItBay is great. He\u2019s knowledgeable, professional, fast, and answered any questions I had about my fridge and dishwasher. He\u2019s saved me twice already and I\u2019ll definitely call him in the future if I need help!", service: 'Dishwasher repair, Refrigerator/freezer repair' },
 ];
@@ -20,10 +20,10 @@ const GOOGLE_SVG = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
 
 const GoogleIcon = () => <span dangerouslySetInnerHTML={{ __html: GOOGLE_SVG }} />;
 
-const PENINSULA = ['Daly City', 'South San Francisco', 'San Bruno', 'Pacifica', 'Colma', 'Brisbane', 'Millbrae', 'Montara'];
-const MARIN = ['Mill Valley', 'San Rafael', 'Sausalito', 'Belvedere Tiburon', 'Corte Madera', 'San Quentin', 'Larkspur', 'Greenbrae', 'Ross', 'Fairfax', 'San Anselmo', 'Novato'];
+const PENINSULA = ['Daly City', 'South San Francisco', 'San Bruno', 'Pacifica', 'Colma', 'Brisbane', 'Millbrae', 'Montara'];
+const MARIN = ['Mill Valley', 'San Rafael', 'Sausalito', 'Belvedere Tiburon', 'Corte Madera', 'San Quentin', 'Larkspur', 'Greenbrae', 'Ross', 'Fairfax', 'San Anselmo', 'Novato'];
 
-const citySlug = (name) => `/${name.toLowerCase().replace(/ /g, '-')}-appliance-repair`;
+const citySlug = (name) => `/${name.toLowerCase().replace(/\s+/g, '-')}-appliance-repair`;
 
 const AboutPage = () => {
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
@@ -50,16 +50,16 @@ const AboutPage = () => {
 
   const schemas = useMemo(() => [
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://fixitbay.net/about" }] } },
-    { id: 'person-schema', data: { "@context": "https://schema.org", "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Repair Technician", "worksFor": { "@type": "LocalBusiness", "name": "FixitBay LLC" }, "description": "Licensed CA appliance repair technician (License #51001). Mechanical engineer with 10+ years experience. Former cargo ship boatswain.", "hasCredential": "BHGS License #51001", "knowsAbout": ["appliance repair", "refrigerator repair", "washer repair", "dryer repair", "dishwasher repair", "oven repair"] } },
-    { id: 'video-schema', data: { "@context": "https://schema.org", "@type": "VideoObject", "name": "FixitBay Appliance Repair San Francisco — How It Works", "description": "Licensed appliance repair in San Francisco & Bay Area. Fast scheduling, $60 diagnostic, 180-day warranty. Call (760) 543-5733.", "thumbnailUrl": "https://img.youtube.com/vi/WBEc8Lz2saA/maxresdefault.jpg", "uploadDate": "2024-01-01", "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA", "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net" } } }
+    { id: 'person-schema', data: { "@context": "https://schema.org", "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Repair Technician", "worksFor": { "@type": "LocalBusiness", "name": "FixitBay LLC" }, "description": "Licensed CA appliance repair technician (License #51001). Mechanical engineer with 10+ years experience. Former cargo ship boatswain.", "hasCredential": "BHGS License #51001", "knowsAbout": ["appliance repair", "refrigerator repair", "washer repair", "dryer repair", "dishwasher repair", "oven repair"] } },
+    { id: 'video-schema', data: { "@context": "https://schema.org", "@type": "VideoObject", "name": "FixitBay Appliance Repair San Francisco — How It Works", "description": "Licensed appliance repair in San Francisco & Bay Area. Fast scheduling, $60 diagnostic, 180-day warranty. Call (760) 543-5733.", "thumbnailUrl": "https://img.youtube.com/vi/WBEc8Lz2saA/maxresdefault.jpg", "uploadDate": "2024-01-01", "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA", "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net" } } }
   ], []);
   useSchemas(schemas);
 
   return (
     <>
       <SEOMetaTags
-        title="About FixitBay LLC | Licensed Appliance Repair SF Bay Area"
-        description="Meet Andrei, FixitBay LLC's licensed appliance repair technician (CA License #51001). Mechanical engineer, 10+ years experience, 4.9 Google rating. Serving San Francisco and Bay Area."
+        title="About FixitBay LLC | Licensed Appliance Repair SF Bay Area"
+        description="Meet Andrei, FixitBay LLC's licensed appliance repair technician (CA License #51001). Mechanical engineer, 10+ years experience, 4.9 Google rating. Serving San Francisco and Bay Area."
         canonical="https://fixitbay.net/about"
       />
       <div style={{ fontFamily: F }}>
@@ -100,10 +100,10 @@ const AboutPage = () => {
             </nav>
             <div style={EYE}>ABOUT FIXITBAY LLC</div>
             <h1 className="about-h1" data-testid="about-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', maxWidth: 700, margin: '0 auto 16px' }}>
-              Licensed Appliance Repair You Can Actually Trust
+              Licensed Appliance Repair You Can Actually Trust
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.78)', maxWidth: 600, margin: '0 auto 24px' }}>
-              Your trusted local appliance repair partner in San Francisco &amp; Bay Area. Family-owned, licensed, and committed to honest service.
+              Your trusted local appliance repair partner in San Francisco &amp; Bay Area. Family-owned, licensed, and committed to honest service.
             </p>
             <div className="hero-badges">
               {[
@@ -125,14 +125,14 @@ const AboutPage = () => {
         <section data-testid="meet-andrei" style={{ background: '#F8F5F0', padding: '48px 20px' }}>
           <div style={{ textAlign: 'center', marginBottom: 32 }}>
             <div style={EYE}>MEET OUR LEAD TECHNICIAN</div>
-            <h2 className="about-h2" style={{ fontFamily: F, fontWeight: 800, color: '#1A1A1A' }}>Meet Andrei — Your Bay Area Appliance Technician</h2>
+            <h2 className="about-h2" style={{ fontFamily: F, fontWeight: 800, color: '#1A1A1A' }}>Meet Andrei — Your Bay Area Appliance Technician</h2>
           </div>
           <div className="meet-grid" style={{ maxWidth: 1000, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, alignItems: 'center' }}>
             {/* Left: Photos */}
             <div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
                 <div style={{ borderRadius: 4, overflow: 'hidden', aspectRatio: '1/1', boxShadow: '0 4px 20px rgba(0,0,0,0.12)' }}>
-                  <img src="/images/team/andrei-lead-tech.webp" alt="Andrei - Lead Appliance Repair Technician" width={747} height={1024} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
+                  <img src="/images/team/andrei-lead-tech.webp" alt="Andrei - Lead Appliance Repair Technician" width={747} height={1024} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
                 </div>
                 <div style={{ borderRadius: 4, overflow: 'hidden', aspectRatio: '1/1', boxShadow: '0 4px 20px rgba(0,0,0,0.12)' }}>
                   <img src="/images/team/andrei-working.webp" alt="Andrei working on appliance repair" width={585} height={1024} style={{ width: '100%', height: '100%', objectFit: 'cover' }} loading="lazy" />
@@ -140,7 +140,7 @@ const AboutPage = () => {
               </div>
               <div style={{ display: 'flex', justifyContent: 'center', gap: 8, alignItems: 'center', marginTop: 12 }}>
                 <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#FF5722' }} />
-                <span style={{ fontFamily: F, fontWeight: 600, fontSize: 12, color: '#4A5568' }}>Andrei — Lead Technician &middot; SF Bay Area</span>
+                <span style={{ fontFamily: F, fontWeight: 600, fontSize: 12, color: '#4A5568' }}>Andrei — Lead Technician &middot; SF Bay Area</span>
               </div>
             </div>
 
@@ -165,13 +165,13 @@ const AboutPage = () => {
                   About Andrei
                 </div>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568', lineHeight: 1.8, marginBottom: 12 }}>
-                  Andrei is a trained mechanical engineer who worked as a boatswain on cargo ships — where he learned to fix complex systems while the floor was literally moving under his feet. After moving to San Francisco, he saw how many people needed honest, hands-on appliance repair.
+                  Andrei is a trained mechanical engineer who worked as a boatswain on cargo ships — where he learned to fix complex systems while the floor was literally moving under his feet. After moving to San Francisco, he saw how many people needed honest, hands-on appliance repair.
                 </p>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568', lineHeight: 1.8, marginBottom: 12 }}>
-                  His first client was his own landlord upstairs. He fixed his fridge, and that's when he knew this was the right path. Today, Andrei brings that same precision and calm to every repair — from Victorian flats to high-rise condos across the Bay Area.
+                  His first client was his own landlord upstairs. He fixed his fridge, and that's when he knew this was the right path. Today, Andrei brings that same precision and calm to every repair — from Victorian flats to high-rise condos across the Bay Area.
                 </p>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568', lineHeight: 1.8 }}>
-                  Andrei's commitment to quality service and customer satisfaction has made him a trusted name in the San Francisco Bay Area. He brings precision, professionalism, and a personal touch to every repair job.
+                  Andrei's commitment to quality service and customer satisfaction has made him a trusted name in the San Francisco Bay Area. He brings precision, professionalism, and a personal touch to every repair job.
                 </p>
               </div>
 
@@ -180,7 +180,7 @@ const AboutPage = () => {
                 <p style={{ fontFamily: F, fontWeight: 500, fontSize: 13, color: 'rgba(255,255,255,0.85)', lineHeight: 1.7, fontStyle: 'italic' }}>
                   We're not a large corporate chain — we're your neighbors, and we treat every home and every appliance with the same care we'd give our own.
                 </p>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.5)', marginTop: 10 }}>— Andrei, FixitBay LLC</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.5)', marginTop: 10 }}>— Andrei, FixitBay LLC</p>
               </div>
             </div>
           </div>
@@ -191,12 +191,12 @@ const AboutPage = () => {
           <div style={{ textAlign: 'center' }}>
             <div style={EYE}>SEE THE WORK</div>
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#fff', marginBottom: 8 }}>See How Our Repair Process Works</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.6)', marginBottom: 40 }}>Watch our licensed technicians diagnose and fix appliances across the Bay Area — from initial inspection to final testing.</p>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.6)', marginBottom: 40 }}>Watch our licensed technicians diagnose and fix appliances across the Bay Area — from initial inspection to final testing.</p>
           </div>
           <div className="video-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, maxWidth: 900, margin: '0 auto' }}>
             {[
-              { id: 'WBEc8Lz2saA', alt: 'Watch how FixitBay LLC repairs appliances in San Francisco', caption: 'Professional Repair Service' },
-              { id: 'ottiV_KfcUI', alt: 'FixitBay LLC expert technician at work in Bay Area', caption: 'Expert Technician at Work' },
+              { id: 'WBEc8Lz2saA', alt: 'Watch how FixitBay LLC repairs appliances in San Francisco', caption: 'Professional Repair Service' },
+              { id: 'ottiV_KfcUI', alt: 'FixitBay LLC expert technician at work in Bay Area', caption: 'Expert Technician at Work' },
             ].map((v, i) => (
               <div key={i} style={{ borderRadius: 8, overflow: 'hidden', border: '1px solid rgba(255,87,34,0.2)', boxShadow: '0 4px 24px rgba(0,0,0,0.3)' }}>
                 <a href={`https://www.youtube.com/watch?v=${v.id}`} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textDecoration: 'none' }} aria-label="opens in new tab">
@@ -220,7 +220,7 @@ const AboutPage = () => {
             ))}
           </div>
           <p data-testid="video-description" style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.55)', textAlign: 'center', maxWidth: 700, margin: '24px auto 0', lineHeight: 1.7 }}>
-            Every FixitBay LLC repair starts with a thorough $60 diagnostic — we identify the root cause, explain the issue, and provide a written estimate before any work begins. All repairs include our 180-day warranty on parts and labor.
+            Every FixitBay LLC repair starts with a thorough $60 diagnostic — we identify the root cause, explain the issue, and provide a written estimate before any work begins. All repairs include our 180-day warranty on parts and labor.
           </p>
           <div style={{ textAlign: 'center', marginTop: 32 }}>
             <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="phone-cta" style={{ display: 'inline-block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} aria-label="opens in new tab">Book Your Repair Today</a>
@@ -231,9 +231,9 @@ const AboutPage = () => {
         <section data-testid="our-story" style={{ background: '#F8F5F0', padding: '72px 24px' }}>
           <div style={{ maxWidth: 860, margin: '0 auto' }}>
             <div style={EYE}>OUR STORY</div>
-            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 32 }}>Why FixitBay LLC Exists</h2>
+            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 32 }}>Why FixitBay LLC Exists</h2>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.8, marginBottom: 16 }}>
-              FixitBay LLC is a local, family-owned appliance repair business proudly serving San Francisco and the greater Bay Area. We understand how frustrating it can be when your refrigerator stops cooling, your washer won't drain, or your oven won't heat up. That's why we're committed to providing fast, reliable, and honest appliance repair services.
+              FixitBay LLC is a local, family-owned appliance repair business proudly serving San Francisco and the greater Bay Area. We understand how frustrating it can be when your refrigerator stops cooling, your washer won't drain, or your oven won't heat up. That's why we're committed to providing fast, reliable, and honest appliance repair services.
             </p>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.8, marginBottom: 16 }}>
               Founded on the principles of transparency and quality service, we believe in doing things right the first time. Our lead technician, Andrei, brings years of experience and a genuine passion for helping families get their homes running smoothly again.
@@ -250,14 +250,14 @@ const AboutPage = () => {
         <section data-testid="why-choose-us" id="why" style={{ background: '#fff', padding: '0 24px 72px' }}>
           <div style={{ textAlign: 'center', marginBottom: 32 }}>
             <div style={EYE}>WHY FIXITBAY</div>
-            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A' }}>Why Homeowners in SF Choose FixitBay LLC</h2>
+            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A' }}>Why Homeowners in SF Choose FixitBay LLC</h2>
           </div>
           <div className="why-grid" style={{ maxWidth: 1000, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
             {[
               { num: '01', title: 'Licensed & Insured', body: 'Fully licensed CA Technician (License #51001). Insured for your protection. Professional service you can trust.' },
               { num: '02', title: 'Honest, Transparent Pricing', body: '$60 diagnostic fee fully applied to your repair cost \u2014 you never pay it twice. Upfront written estimate before any work begins. No surprises.' },
               { num: '03', title: '180-Day Warranty', body: 'All repairs backed by a 180-day warranty on parts and labor. If the same issue returns within 180 days, we come back at no charge.' },
-              { num: '04', title: 'Truly Local Service', body: 'Serving San Francisco, Marin County, and Peninsula communities. We\u2019re your neighbors \u2014 not a call center franchise.' },
+              { num: '04', title: 'Truly Local Service', body: 'Serving San Francisco, Marin County, and Peninsula communities. We\u2019re your neighbors \u2014 not a call center franchise.' },
             ].map((card, i) => (
               <div key={i} style={{ background: '#F8F5F0', border: '1px solid rgba(255,87,34,0.15)', borderTop: '3px solid #FF5722', borderRadius: 4, padding: 28 }}>
                 <div style={{ fontFamily: F, fontWeight: 800, fontSize: 42, color: 'rgba(255,87,34,0.12)', lineHeight: 1, marginBottom: 8 }}>{card.num}</div>
@@ -300,7 +300,7 @@ const AboutPage = () => {
             <div style={{ marginBottom: 32 }}>
               <p style={{ fontFamily: F, fontWeight: 800, fontSize: 13, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.15em', textAlign: 'center', marginBottom: 16, paddingBottom: 8, borderBottom: '1px solid rgba(255,87,34,0.2)' }}>SAN FRANCISCO</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
-                <Link to="/san-francisco-appliance-repair" style={{ background: '#F8F5F0', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 3, padding: '5px 14px', fontFamily: F, fontWeight: 500, fontSize: 13, color: '#FF5722', textDecoration: 'none', whiteSpace: 'nowrap' }}>San Francisco</Link>
+                <Link to="/san-francisco-appliance-repair" style={{ background: '#F8F5F0', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 3, padding: '5px 14px', fontFamily: F, fontWeight: 500, fontSize: 13, color: '#FF5722', textDecoration: 'none', whiteSpace: 'nowrap' }}>San Francisco</Link>
               </div>
             </div>
             {/* Peninsula */}
@@ -329,8 +329,8 @@ const AboutPage = () => {
         <section data-testid="reviews-section" style={{ background: '#fff', padding: '72px 24px' }}>
           <div style={{ textAlign: 'center', marginBottom: 40 }}>
             <div style={EYE}>REVIEWS</div>
-            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 8 }}>Real Reviews from Bay Area Customers</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568' }}>Real reviews from satisfied customers across San Francisco and the Bay Area</p>
+            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 8 }}>Real Reviews from Bay Area Customers</h2>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568' }}>Real reviews from satisfied customers across San Francisco and the Bay Area</p>
           </div>
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>
             {/* Desktop: 2 cards */}
@@ -411,7 +411,7 @@ const AboutPage = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:7605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 
