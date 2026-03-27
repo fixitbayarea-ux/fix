@@ -234,7 +234,7 @@ const BrandLandingPage = ({ brand }) => {
             <div className="brand-trust-bar" style={{ display: 'flex', justifyContent: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 24, marginTop: 4 }}>
               {[
                 { top: 'Licensed CA', bottom: 'Technician' },
-                { top: '4.9 \u2B50', bottom: '94 Reviews' },
+                { top: '4.9 \u2B50', bottom: '95 Reviews' },
                 { top: 'License', bottom: '#51001' },
                 { top: 'Fast', bottom: 'Scheduling' },
               ].map((b, i) => (

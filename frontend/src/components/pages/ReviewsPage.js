@@ -50,7 +50,7 @@ const ReviewsPage = () => {
           "ratingValue": "4.9",
           "bestRating": "5",
           "worstRating": "1",
-          "reviewCount": "90"
+          "reviewCount": "95"
         },
         "review": reviews.filter(r => r.source === 'Google').slice(0, 3).map(r => ({
           "@type": "Review",
@@ -79,7 +79,7 @@ const ReviewsPage = () => {
     <>
       <SEOMetaTags
         title="Customer Reviews | FixitBay LLC Appliance Repair SF"
-        description="Read verified customer reviews for FixitBay LLC appliance repair in San Francisco Bay Area. 4.9 stars, 237 reviews across Google, Thumbtack & Yelp. Fast scheduling, 180-day warranty. Call (760) 543-5733."
+        description="Read verified customer reviews for FixitBay LLC appliance repair in San Francisco Bay Area. 4.9 stars, 253 reviews across Google, Thumbtack & Yelp. Fast scheduling, 180-day warranty. Call (760) 543-5733."
         canonical="https://fixitbay.net/reviews"
       />
 
@@ -117,8 +117,8 @@ const ReviewsPage = () => {
             <div>
               <div style={{ color: '#FF5722', fontSize: 28, letterSpacing: 4, marginBottom: 12 }}>{'\u2605\u2605\u2605\u2605\u2605'}</div>
               <div style={{ display: 'flex', justifyContent: 'center', gap: 20, flexWrap: 'wrap', marginBottom: 10 }}>
-                <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#fff' }}>Google <span style={{ color: 'rgba(255,255,255,0.6)' }}>90 reviews &middot; 5 / 5</span></span>
-                <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#fff' }}>Thumbtack <span style={{ color: 'rgba(255,255,255,0.6)' }}>142 reviews &middot; 4.9 / 5</span></span>
+                <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#fff' }}>Google <span style={{ color: 'rgba(255,255,255,0.6)' }}>95 reviews &middot; 5 / 5</span></span>
+                <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#fff' }}>Thumbtack <span style={{ color: 'rgba(255,255,255,0.6)' }}>153 reviews &middot; 4.9 / 5</span></span>
                 <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#fff' }}>Yelp <span style={{ color: 'rgba(255,255,255,0.6)' }}>5 reviews &middot; 5 / 5</span></span>
               </div>
             </div>
@@ -130,7 +130,7 @@ const ReviewsPage = () => {
           <div className="stats-row" style={{ maxWidth: 900, margin: '0 auto', display: 'flex', justifyContent: 'center', gap: 0 }}>
             {[
               { val: '4.9', label: 'Average Rating' },
-              { val: '237', label: 'Total Reviews' },
+              { val: '253', label: 'Total Reviews' },
               { val: '100%', label: 'Would Recommend' },
               { val: 'Since 2023', label: 'Serving Bay Area' },
             ].map((s, i, arr) => (

@@ -66,7 +66,7 @@ const HomeHero = () => {
             <div className="hero-d-flex trust-strip" data-testid="hero-trust-desktop" style={{ alignItems: 'center', gap: 20, marginTop: 24, fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 13, background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 8, padding: '8px 20px', color: 'rgba(255,255,255,0.9)' }}>
               <span style={{ minHeight: 44, display:'flex', alignItems:'center' }}><a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }} data-testid="hero-trust-google" aria-label="opens in new tab">&#11088; 4.9 Google</a></span>
               <span style={{ color: 'rgba(255,255,255,0.3)' }}>&middot;</span>
-              <span style={{ minHeight: 44, display:'flex', alignItems:'center' }}><a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }} data-testid="hero-trust-reviews" aria-label="opens in new tab">&#10003; 94 Reviews</a></span>
+              <span style={{ minHeight: 44, display:'flex', alignItems:'center' }}><a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }} data-testid="hero-trust-reviews" aria-label="opens in new tab">&#10003; 95 Reviews</a></span>
               <span style={{ color: 'rgba(255,255,255,0.3)' }}>&middot;</span>
               <span style={{ color: '#FF5722', fontWeight: 600 }}>&#128737; License #51001</span>
             </div>
@@ -105,7 +105,7 @@ const HomeHero = () => {
               <div className="trust-strip" data-testid="hero-trust-mobile" style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'nowrap', overflowX: 'auto', background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 8, padding: '8px 16px', marginBottom: 16, fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 12, color: 'rgba(255,255,255,0.9)', whiteSpace: 'nowrap' }}>
                 <span>&#11088; 4.9 Google</span>
                 <span style={{ color: 'rgba(255,255,255,0.3)' }}>&middot;</span>
-                <span>&#10003; 94 Reviews</span>
+                <span>&#10003; 95 Reviews</span>
                 <span style={{ color: 'rgba(255,255,255,0.3)' }}>&middot;</span>
                 <span>&#128737; License #51001</span>
               </div>
