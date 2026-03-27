@@ -12,8 +12,8 @@ const FAQ = () => {
       icon: <DollarSign className="w-5 h-5" />
     },
     {
-      question: "Do you offer same-day appliance repair service?",
-      answer: "Yes! We specialize in same-day emergency appliance repair throughout the Bay Area. Our mobile service vans are fully stocked with common parts, and our technicians can typically arrive within 60 minutes of your call. For non-emergency repairs, we offer flexible scheduling options.",
+      question: "Do you offer fast appliance repair service?",
+      answer: "Yes! We specialize in fast emergency appliance repair throughout the Bay Area. Our mobile service vans are fully stocked with common parts, and our technicians can typically arrive within 60 minutes of your call. For non-emergency repairs, we offer flexible scheduling options.",
       icon: <Clock className="w-5 h-5" />
     },
     {

@@ -5,7 +5,7 @@ const CupertinoRepairPage = () => {
   const cityData = {
     city: "Cupertino",
     pageTitle: "Appliance Repair in Cupertino, CA – Fast, Reliable, Affordable!",
-    metaDescription: "Expert appliance repair in Cupertino, CA. Licensed technicians, 180-day warranty, same-day service. Call (760) 543-5733 or book online now!",
+    metaDescription: "Expert appliance repair in Cupertino, CA. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733 or book online now!",
     neighborhoods: [
       "Monta Vista",
       "Rancho Rinconada", 
@@ -19,8 +19,8 @@ const CupertinoRepairPage = () => {
     localFeatures: "Cupertino families appreciate our attention to detail and premium service quality. We're proud to serve this prestigious Silicon Valley community known for excellent schools.",
     faqData: [
       {
-        question: "Do you offer same-day appliance repair in Cupertino?",
-        answer: "Yes! We provide same-day appliance repair service throughout Cupertino, including Monta Vista, Rancho Rinconada, Garden Gate, and all surrounding neighborhoods. Call us before 2 PM for same-day availability."
+        question: "Do you offer fast appliance repair in Cupertino?",
+        answer: "Yes! We provide fast appliance repair service throughout Cupertino, including Monta Vista, Rancho Rinconada, Garden Gate, and all surrounding neighborhoods. Call us before 2 PM for fast scheduling."
       },
       {
         question: "What appliance brands do you repair in Cupertino?",

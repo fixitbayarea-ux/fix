@@ -15,8 +15,8 @@ const SanBruno = () => {
   ];
 
   const faqData = [
-    { question: 'Do you service all San Bruno neighborhoods?', answer: 'Yes! We serve all San Bruno areas including downtown, Tanforan, Mills Park, Portola Highlands, Rollingwood, and neighborhoods near SFO with same-day availability.' },
-    { question: 'How close are you to San Bruno for fast service?', answer: 'We provide rapid response to San Bruno, typically arriving within 1-2 hours for same-day appointments via Highway 101, 280, and El Camino Real.' },
+    { question: 'Do you service all San Bruno neighborhoods?', answer: 'Yes! We serve all San Bruno areas including downtown, Tanforan, Mills Park, Portola Highlands, Rollingwood, and neighborhoods near SFO with fast scheduling.' },
+    { question: 'How close are you to San Bruno for fast service?', answer: 'We provide rapid response to San Bruno, typically arriving within 1-2 hours for scheduled appointments via Highway 101, 280, and El Camino Real.' },
     { question: 'Do you service apartments near BART and Caltrain?', answer: 'Yes. We regularly service apartments, condos, and townhomes throughout San Bruno including properties near transit stations.' },
     { question: 'What\'s your diagnostic fee in San Bruno?', answer: 'Our diagnostic fee is $60, which is fully credited toward your repair if you proceed. This covers the visit, testing, and written estimate.' },
     { question: 'Are you licensed in San Mateo County?', answer: 'Yes. FixitBay LLC is fully licensed and insured to provide appliance repair services throughout San Bruno and San Mateo County.' },
@@ -28,7 +28,7 @@ const SanBruno = () => {
     paragraphs: [
       'San Bruno\'s central Peninsula location between San Francisco and the South Bay makes it a strategic service area for FixitBay LLC. From the Tanforan shopping district to Portola Highlands\' hilltop homes, we navigate San Bruno\'s neighborhoods daily. Our technicians know the area\'s mix of post-war tract homes, modern condos near BART, and hillside properties, along with the specific appliance challenges each housing type presents.',
       'San Bruno\'s proximity to SFO and major highways means we can respond quickly to appliance emergencies. We serve residential properties throughout San Bruno\'s diverse neighborhoods, from Mills Park\'s family homes to downtown apartments. Our vans carry parts for common appliance failures, and we can source specialized components quickly from our Peninsula network.',
-      'Same-day service is standard in San Bruno with a $60 diagnostic fee credited toward all repairs. We provide transparent estimates before starting work and back every repair with a 180-day parts and labor warranty. Our licensed technicians service all major appliance brands and handle both traditional and high-efficiency models.'
+      'Fast scheduling is standard in San Bruno with a $60 diagnostic fee credited toward all repairs. We provide transparent estimates before starting work and back every repair with a 180-day parts and labor warranty. Our licensed technicians service all major appliance brands and handle both traditional and high-efficiency models.'
     ]
   };
 
@@ -36,8 +36,8 @@ const SanBruno = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair San Bruno | Same-Day | FixitBay LLC"
-        metaDescription="Professional appliance repair in San Bruno. Same-day service near SFO, BART, downtown. Licensed technicians, 180-day warranty. Call (760) 543-5733."
+        pageTitle="Appliance Repair San Bruno | Fast Scheduling | FixitBay LLC"
+        metaDescription="Professional appliance repair in San Bruno. Fast scheduling near SFO, BART, downtown. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

@@ -29,7 +29,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Emergency Commercial Dishwasher Repair in San Francisco',
   paragraphs: [
-    <>When your commercial dishwasher breaks down during service, dirty dishes pile up fast. San Francisco health code requires proper sanitization of all food contact surfaces, so a non-functioning dishwasher can lead to violations and forced closure. FixitBay LLC provides <strong>emergency same-day commercial dishwasher repair</strong> for restaurants, hotels, hospitals, and institutional kitchens.</>,
+    <>When your commercial dishwasher breaks down during service, dirty dishes pile up fast. San Francisco health code requires proper sanitization of all food contact surfaces, so a non-functioning dishwasher can lead to violations and forced closure. FixitBay LLC provides <strong>emergency commercial dishwasher repair</strong> for restaurants, hotels, hospitals, and institutional kitchens.</>,
     <>Our licensed technician diagnoses under-counter units, door-type machines, and conveyor dishwashers from all major manufacturers. We test wash and rinse temperatures, inspect spray arms and pumps, check chemical dispensers, and evaluate control systems. The <strong>$100 diagnostic fee</strong> is credited toward your repair.</>,
     <>From booster heater replacements and thermostat calibrations to pump rebuilds and control board repairs, we handle the full range of commercial warewashing issues. Every repair includes our <strong>180-day warranty on parts and labor</strong>.</>,
   ],
@@ -113,7 +113,7 @@ const DesktopPage = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Dishwasher"
     pageTitle="Commercial Dishwasher Repair – Restaurant, Hotel & Institutional Units"
-    metaDescription="Commercial dishwasher repair in San Francisco, Peninsula & Marin County. Under-counter, door-type, conveyor dishwashers. Health code compliance. Same-day service, $100 diagnostic, 180-day warranty. Hobart, Champion, Jackson."
+    metaDescription="Commercial dishwasher repair in San Francisco, Peninsula & Marin County. Under-counter, door-type, conveyor dishwashers. Health code compliance. Fast scheduling, $100 diagnostic, 180-day warranty. Hobart, Champion, Jackson."
     commonProblems={commonProblems}
     faqData={faqData}
     relatedServicesCategory="Commercial"
@@ -135,7 +135,7 @@ const mobileIssues = [
 
 const mobileFaqs = [
   { q: 'Do you repair all types of commercial dishwashers?', a: 'Yes — under-counter, door-type, conveyor, and flight-type units for restaurants, hotels, and institutional kitchens.' },
-  { q: 'How fast can you respond?', a: 'Same-day or next-day priority service for commercial kitchen equipment.' },
+  { q: 'How fast can you respond?', a: 'Same- or next-day or next-day priority service for commercial kitchen equipment.' },
   { q: 'What brands do you repair?', a: 'Hobart, Champion, Jackson, Electrolux Professional, CMA, Winterhalter, and all major commercial dishwasher brands.' },
   { q: 'Is there a warranty?', a: '180-day warranty on parts and labor for all commercial dishwasher repairs.' },
 ];
@@ -156,7 +156,7 @@ const MobilePage = () => (
     appliance="Commercial Dishwasher"
     pageSlug="commercial-dishwasher-repair"
     pageTitle="Commercial Dishwasher Repair – Restaurant & Hotel Units"
-    metaDescription="Commercial dishwasher repair in San Francisco & Bay Area. Same-day service, 180-day warranty."
+    metaDescription="Commercial dishwasher repair in San Francisco & Bay Area. Fast scheduling, 180-day warranty."
     heroTitle={<>Commercial Dishwasher<br />Repair. Fast Service.</>}
     heroSubtitle="Priority Service for Restaurants & Hotels"
     issues={mobileIssues}

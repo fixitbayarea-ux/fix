@@ -111,7 +111,7 @@ const MobileServiceLanding = ({
   pageTitle,
   metaDescription,
   heroTitle,
-  heroSubtitle = 'Same-Day/Next-Day Service Guaranteed',
+  heroSubtitle = 'Same- or Next-Day Appointments Guaranteed',
   issues = [],
   faqs = [],
   brands = DEFAULT_BRANDS,
@@ -238,7 +238,7 @@ const MobileServiceLanding = ({
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 20 }}>
             {[
               { top: '4.9 \u2B50', bottom: '94 Reviews' },
-              { top: 'Same-Day', bottom: 'Service' },
+              { top: 'Fast', bottom: 'Scheduling' },
               { top: '180-Day', bottom: 'Warranty' },
               { top: 'License', bottom: '#51001' },
             ].map((b, i) => (
@@ -344,7 +344,7 @@ const MobileServiceLanding = ({
         <h2 style={{ fontSize: 22, fontWeight: 800, color: PC.textDark, margin: '0 0 18px', fontFamily: F }}>4 Steps to a Fixed Appliance</h2>
         <div>
           {[
-            { n: '1', title: 'Book in 30 Seconds', desc: 'Pick a time online or call us. Same-day slots available.' },
+            { n: '1', title: 'Book in 30 Seconds', desc: 'Pick a time online or call us. Same- or next-day slots available.' },
             { n: '2', title: 'We Diagnose On-Site', desc: `$60 diagnostic — applied to your ${actionWord}. No hidden fees.` },
             { n: '3', title: 'Professional Repair', desc: 'Quality parts. Upfront pricing before any work begins.' },
             { n: '4', title: '180-Day Warranty', desc: 'If the same issue returns within 180 days, we come back at no charge.' },
@@ -364,11 +364,11 @@ const MobileServiceLanding = ({
       <section style={{ background: PC.navy, padding: '32px 20px' }} aria-label="Service areas" data-testid="local-seo">
         <p style={{ fontSize: 11, fontWeight: 700, color: PC.white45, letterSpacing: '0.10em', textTransform: 'uppercase', margin: '0 0 6px' }}>Where We Work</p>
         <h2 style={{ fontSize: 22, fontWeight: 800, color: PC.white, margin: '0 0 10px' }}>San Francisco &middot; Peninsula &middot; Marin</h2>
-        <p style={{ fontSize: 13, color: PC.white60, margin: '0 0 16px', lineHeight: 1.6 }}>Same-day service across the Bay Area — no travel surcharge within SF city limits.</p>
+        <p style={{ fontSize: 13, color: PC.white60, margin: '0 0 16px', lineHeight: 1.6 }}>Fast, reliable service across the Bay Area — no travel surcharge within SF city limits.</p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12, marginBottom: 16 }}>
           <div style={{ background: PC.white08, border: `1px solid ${PC.white10}`, borderTop: `3px solid ${PC.accent}`, borderRadius: PC.r, padding: '12px 10px' }}>
             <p style={{ fontWeight: 700, fontSize: 12, color: PC.white, margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>SF</p>
-            {['All neighborhoods', 'Same-day', 'No surcharge'].map((t, i) => (
+            {['All neighborhoods', 'Same- or next-day', 'No surcharge'].map((t, i) => (
               <p key={i} style={{ fontSize: 11, color: PC.white60, margin: '0 0 3px', lineHeight: 1.4 }}>&middot; {t}</p>
             ))}
           </div>
@@ -401,7 +401,7 @@ const MobileServiceLanding = ({
             <p style={{ fontWeight: 700, fontSize: 15, color: PC.textDark, margin: '0 0 6px', fontFamily: F }}>Andrei — Lead Technician</p>
             <p style={{ fontSize: 13, color: PC.textMid, margin: '0 0 10px', lineHeight: 1.5, fontFamily: F }}>Mechanical engineer with 10+ years experience. Diagnoses and fixes what others miss. BHGS License #51001.</p>
             <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-              {['Licensed & Insured', '10+ Years Exp.', 'Same-Day'].map((tag, i) => (
+              {['Licensed & Insured', '10+ Years Exp.', 'Fast Sched.'].map((tag, i) => (
                 <span key={i} style={{
                   background: PC.accentBg,
                   border: `1px solid ${PC.accentBorder}`,
@@ -572,7 +572,7 @@ const MobileServiceLanding = ({
         <p style={{ color: PC.accent, fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', margin: '0 0 10px', fontFamily: F }}>Schedule Today</p>
         <h2 style={{ fontFamily: F, fontSize: 24, fontWeight: 800, color: PC.white, lineHeight: 1.2, margin: '0 0 8px' }}>Get Your {appliance} Running Like New</h2>
         <p style={{ fontFamily: F, fontSize: 13, color: PC.white45, margin: '0 0 8px' }}>Licensed technician &middot; Genuine parts &middot; One-visit resolution</p>
-        <p style={{ fontFamily: F, fontSize: 12, color: PC.white45, margin: '0 0 28px' }}>Same-day &middot; 180-day warranty &middot; $60 diagnostic</p>
+        <p style={{ fontFamily: F, fontSize: 12, color: PC.white45, margin: '0 0 28px' }}>Same- or next-day &middot; 180-day warranty &middot; $60 diagnostic</p>
         <button onClick={() => handleBook('final', pageSlug)} data-testid="final-book-btn" aria-label="Book appliance repair service online" style={{
           width: '100%', minHeight: 56, display: 'flex', alignItems: 'center', justifyContent: 'center',
           background: PC.accent, color: PC.white, border: 'none', borderRadius: PC.r,

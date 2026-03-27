@@ -103,7 +103,7 @@ const CityRepairRoute = () => {
   const neighborhoods = [cityName + ' Downtown', 'Central', 'East', 'West'];
   const localFeatures = `We proudly serve ${cityName} neighborhoods with licensed, insured technicians.`;
   const faqData = [
-    { question: `Do you offer same-day service in ${cityName}?`, answer: `Yes, we provide same/next-day appointments in ${cityName}.` },
+    { question: `Do you offer fast scheduling in ${cityName}?`, answer: `Yes, we provide same/next-day appointments in ${cityName}.` },
     { question: `What is your diagnostic fee in ${cityName}?`, answer: `Our diagnostic is $60 and it is applied toward the repair if you proceed.` }
   ];
 

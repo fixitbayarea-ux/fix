@@ -7,17 +7,17 @@ const BOOKING_URL = 'https://book.housecallpro.com/book/FixitBay-LLC/336ac28909f
 
 /* ───────────────────── DATA ───────────────────── */
 const STEPS = [
-  { num: '1', title: 'Pick a Time', body: 'Choose same-day or next-day. Slots fill fast \u2014 book early.' },
+  { num: '1', title: 'Pick a Time', body: 'Choose same- or next-day or next-day. Slots fill fast \u2014 book early.' },
   { num: '2', title: 'We Confirm', body: 'You get a confirmation with your technician\u2019s name and ETA.' },
   { num: '3', title: '$60 Diagnostic', body: 'Tech arrives, inspects, identifies the problem. Fee credited to repair.' },
-  { num: '4', title: 'Fixed Same Day', body: 'Most repairs done in one visit. 180-day warranty included.' },
+  { num: '4', title: 'Repaired On-Site', body: 'Most repairs done in one visit. 180-day warranty included.' },
 ];
 
 const WHY_CARDS = [
   { num: '01', title: 'No Surprise Fees', body: '$60 diagnostic is the only upfront cost. Written estimate before we touch anything. $0 hidden charges.' },
   { num: '02', title: 'Licensed Technician', body: 'CA License #51001. Not a subcontractor. Andrei personally handles every repair.' },
   { num: '03', title: '180-Day Warranty', body: 'If the same issue comes back within 180 days, we return at no charge. No questions asked.' },
-  { num: '04', title: 'Same-Day Service', body: 'Book before 2 PM for same-day slots. Next-day always available across 22 Bay Area cities.' },
+  { num: '04', title: 'Fast Scheduling', body: 'Book before 2 PM for next-available slots. Next-day always available across 22 Bay Area cities.' },
 ];
 
 const REVIEWS = [
@@ -28,11 +28,11 @@ const REVIEWS = [
 
 const FAQ_DATA = [
   { q: 'What happens after I book online?', a: 'You receive a confirmation with your appointment window. Our technician will call 30 minutes before arrival.' },
-  { q: 'Can I get same-day service?', a: 'Yes. Book before 2 PM and we can usually send someone the same day. Call (760) 543-5733 for urgent same-day requests.' },
+  { q: 'Can I get a fast appointment?', a: 'Yes. Book before 2 PM and we can usually schedule a same- or next-day visit. Call (760) 543-5733 for urgent scheduling requests.' },
   { q: 'Is the $60 diagnostic fee required?', a: 'Yes, it covers the technician visit and full inspection. If you approve the repair, the $60 is fully credited \u2014 so it costs you nothing extra.' },
   { q: 'What if I need to reschedule?', a: 'Call or text (760) 543-5733 at least 2 hours before your appointment. We are flexible and will find a new time that works for you.' },
   { q: 'Do you service my area?', a: 'We cover San Francisco, Peninsula (Daly City, San Bruno, Millbrae, Pacifica), and Marin County (Mill Valley, San Rafael, Sausalito, Tiburon, Novato and more).' },
-  { q: 'What if the repair takes more than one visit?', a: 'Most repairs are completed same day. If we need to order a part, we return at no additional diagnostic charge. All work is covered by our 180-day warranty.' },
+  { q: 'What if the repair takes more than one visit?', a: 'Most repairs are completed on the first visit. If we need to order a part, we return at no additional diagnostic charge. All work is covered by our 180-day warranty.' },
 ];
 
 /* ───────────────────── COMPONENT ───────────────────── */
@@ -120,11 +120,11 @@ const BookPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Book Appliance Repair Online | Same-Day | FixitBay LLC"
-        description="Book appliance repair online in San Francisco & Bay Area. Same-day and next-day available. $60 diagnostic, 180-day warranty. Licensed technician. Click to schedule."
+        title="Book Appliance Repair Online | Fast Scheduling | FixitBay LLC"
+        description="Book appliance repair online in San Francisco & Bay Area. Same- or next-day appointments available. $60 diagnostic, 180-day warranty. Licensed technician. Click to schedule."
         canonical="https://fixitbay.net/book"
-        ogTitle="Book Appliance Repair Online | Same-Day | FixitBay LLC"
-        ogDescription="Book appliance repair online. Same-day and next-day available. $60 diagnostic, 180-day warranty."
+        ogTitle="Book Appliance Repair Online | Fast Scheduling | FixitBay LLC"
+        ogDescription="Book appliance repair online. Same- or next-day appointments available. $60 diagnostic, 180-day warranty."
         noindex={true}
       />
 
@@ -260,7 +260,7 @@ const BookPage = () => {
               <span className="bk-bc-arrow">&rarr;</span>
               <span>Book Online</span>
             </div>
-            <div className="bk-eyebrow" style={{ marginBottom: 12 }}>SAME-DAY &amp; NEXT-DAY AVAILABLE</div>
+            <div className="bk-eyebrow" style={{ marginBottom: 12 }}>SAME- &amp; NEXT-DAY AVAILABLE</div>
             <h1 data-testid="book-h1">Book Your Appliance Repair</h1>
             <p className="bk-hero-sub">Schedule a licensed technician online. Pick the time that works for you.</p>
 
@@ -302,7 +302,7 @@ const BookPage = () => {
         <section className="bk-widget" data-testid="book-widget-section">
           <div className="bk-eyebrow" style={{ marginBottom: 8 }}>ONLINE BOOKING</div>
           <h2 style={{ fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 8 }}>Choose Your Time Slot</h2>
-          <p style={{ color: '#4A5568', fontSize: 15, marginBottom: 40 }}>Same-day available if you book before 2 PM</p>
+          <p style={{ color: '#4A5568', fontSize: 15, marginBottom: 40 }}>Book before 2 PM for same- or next-day appointments</p>
 
           <div className="bk-card" data-testid="book-widget-card">
             <div className="bk-card-title">FixitBay LLC</div>
@@ -310,7 +310,7 @@ const BookPage = () => {
 
             <div className="bk-mini-trust">
               <span>{'\u2713'} $60 Diagnostic</span>
-              <span>{'\u2713'} Same-Day</span>
+              <span>{'\u2713'} Fast</span>
               <span>{'\u2713'} 180-Day Warranty</span>
             </div>
 
@@ -383,7 +383,7 @@ const BookPage = () => {
         {/* ─── 7. FINAL CTA ─── */}
         <section className="bk-final" data-testid="book-final-cta">
           <div className="bk-final-title">Ready to Book?</div>
-          <div className="bk-final-sub">Same-day and next-day appointments available across the Bay Area.</div>
+          <div className="bk-final-sub">Same- and next-day appointments available across the Bay Area.</div>
           <div className="bk-final-btns">
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="bk-btn-white" data-testid="book-final-book-btn" aria-label="opens in new tab">Book Online Now</a>
             <a href="tel:7605435733" className="bk-btn-outline" data-testid="book-final-call-btn">(760) 543-5733</a>

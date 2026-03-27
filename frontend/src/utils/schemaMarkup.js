@@ -64,7 +64,7 @@ export const getLocalBusinessSchema = (city = "San Francisco") => {
           "itemOffered": {
             "@type": "Service",
             "name": "Washer and Dryer Repair", 
-            "description": "Expert washer and dryer repair services with same-day availability"
+            "description": "Expert washer and dryer repair services with fast scheduling"
           }
         },
         {

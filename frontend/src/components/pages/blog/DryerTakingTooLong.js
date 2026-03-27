@@ -192,7 +192,7 @@ const DryerTakingTooLong = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Same-day service · $60 diagnostic · 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
@@ -261,9 +261,9 @@ const DryerTakingTooLong = () => {
 
               {/* ── Bottom CTA ── */}
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
-                <div style={{ ...EYE, marginBottom: 8 }}>SAME-DAY SERVICE</div>
+                <div style={{ ...EYE, marginBottom: 8 }}>FAST SCHEDULING</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Dryer Still Not Working? We Can Help!</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified dryer repair technicians service all brands in the SF Bay Area. Same-day appointments available!</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified dryer repair technicians service all brands in the SF Bay Area. Appointments available Mon–Sat!</p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
                   <a href="tel:+17605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call Now (760) 543-5733</a>
                   <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }} aria-label="opens in new tab">Book Repair Online</a>
@@ -285,11 +285,11 @@ const DryerTakingTooLong = () => {
             <aside data-testid="sidebar" style={{ position: 'sticky', top: 80 }}>
               {/* Widget 1: Book Repair */}
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
-                <div style={EYE}>SAME-DAY DRYER REPAIR</div>
+                <div style={EYE}>EXPERT DRYER REPAIR</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Dryer Not Drying Fast Enough?</h3>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$60 diagnostic applied to repair. 180-day warranty on all work.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
-                {['Licensed CA Technician', 'Electric & Gas Dryers', 'Same-Day Available'].map(item => (
+                {['Licensed CA Technician', 'Electric & Gas Dryers', 'Fast Scheduling'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
                     <span style={{ color: '#FF5722', fontFamily: F, fontWeight: 700, fontSize: 13 }}>{'\u2713'}</span>
                     <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>{item}</span>
@@ -355,7 +355,7 @@ const DryerTakingTooLong = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Dryer Repair in Bay Area', body: 'Same-day dryer repair for all brands. $60 diagnostic applied to your repair.', link: 'View Service', href: '/dryer-repair' },
+                { tag: 'SERVICE', title: 'Dryer Repair in Bay Area', body: 'Fast dryer repair for all brands. $60 diagnostic applied to your repair.', link: 'View Service', href: '/dryer-repair' },
                 { tag: 'ARTICLE', title: 'Repair vs Replace: When to Fix Your Appliance', body: 'Use the 50% rule to decide if repair makes financial sense.', link: 'Read Article', href: '/blog/when-to-repair-vs-replace' },
                 { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (

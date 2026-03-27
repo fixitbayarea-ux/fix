@@ -5,7 +5,7 @@ const WallOvenRepairPage = () => {
   const applianceData = {
     appliance: "Wall Oven",
     pageTitle: "Wall Oven Repair Service – Built-In Oven Specialists Bay Area",
-    metaDescription: "Expert wall oven repair in the Bay Area. Built-in oven specialists. Licensed technicians, 180-day warranty, same-day service. Call (760) 543-5733!",
+    metaDescription: "Expert wall oven repair in the Bay Area. Built-in oven specialists. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733!",
     commonProblems: [
       {
         title: "Oven Not Heating to Temperature",
@@ -54,8 +54,8 @@ const WallOvenRepairPage = () => {
         answer: "For ovens under 10 years old, repair is usually cost-effective. We provide honest assessments and cost comparisons to help you decide."
       },
       {
-        question: "Do you offer same-day wall oven repair?",
-        answer: "Yes! We understand kitchen disruptions are inconvenient. We offer same-day service and carry common parts for faster repairs."
+        question: "Do you offer fast wall oven repair?",
+        answer: "Yes! We understand kitchen disruptions are inconvenient. We offer fast scheduling and carry common parts for faster repairs."
       }
     ]
   };

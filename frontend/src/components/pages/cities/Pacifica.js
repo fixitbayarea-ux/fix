@@ -17,7 +17,7 @@ const Pacifica = () => {
   const faqData = [
     { question: 'Do you work around coastal humidity/salt-air issues?', answer: 'Yes. We consider marine layer moisture and salt-air when inspecting igniters, burners, terminals, vents, and coils to prevent recurring failures specific to Pacifica\'s coastal climate.' },
     { question: 'Can you clean/repair dryer vents in Pacifica homes?', answer: 'Yes. We address moisture-laden vent runs, improve airflow, and recommend periodic vent maintenance to reduce dry times and heat strain in Pacifica\'s humid conditions.' },
-    { question: 'Do you offer same-day availability in Pacifica?', answer: 'Yes! We offer same/next-day appointments across Pacifica: Linda Mar, Sharp Park, Rockaway, Vallemar, Pacific Manor, Fairmont, and Pedro Point.' },
+    { question: 'Do you offer fast scheduling in Pacifica?', answer: 'Yes! We offer same/next-day appointments across Pacifica: Linda Mar, Sharp Park, Rockaway, Vallemar, Pacific Manor, Fairmont, and Pedro Point.' },
     { question: 'Do you service garage fridges/freezers in coastal areas?', answer: 'Yes. We test ambient conditions and advise on performance adjustments when appliances are placed in humid/coastal garages common in Pacifica.' },
     { question: 'What brands do you handle in Pacifica?', answer: 'We service all major brands: LG, Samsung, Whirlpool, GE, Kenmore, Frigidaire, Maytag, Bosch, Thermador, Viking, KitchenAid, Sub-Zero, Wolf, Miele, and more.' },
     { question: 'What warranty is included?', answer: 'Every completed repair includes a 180-day parts and labor warranty, covering both the repair and parts against coastal environment factors.' }
@@ -28,7 +28,7 @@ const Pacifica = () => {
     paragraphs: [
       'Pacifica\'s dramatic Pacific coastline creates one of the Bay Area\'s most challenging environments for home appliances. From Linda Mar\'s surf-side homes to Pedro Point\'s clifftop properties, marine layer fog, salt air, and coastal humidity take a toll on refrigerators, dryers, and gas appliances. Our technicians specialize in diagnosing and preventing the corrosion, moisture, and airflow issues unique to Pacifica\'s oceanfront location.',
       'We serve all Pacifica neighborhoods daily: Sharp Park, Rockaway Beach, Vallemar, Pacific Manor, Fairmont, and the coastal Highway 1 corridor. Our vans carry parts that resist corrosion and moisture damage, and we stock components that commonly fail in Pacifica\'s salty marine environment. We understand challenges like moisture-laden dryer vents, corroded gas igniters, and humidity-stressed refrigerators.',
-      'Same-day service is available throughout Pacifica with a $60 diagnostic fee credited toward repairs. We provide transparent estimates, use corrosion-resistant parts when beneficial, and back every repair with a 180-day warranty. Our licensed technicians are coastal climate specialists familiar with preventing recurring issues in Pacifica homes.'
+      'Fast scheduling is available throughout Pacifica with a $60 diagnostic fee credited toward repairs. We provide transparent estimates, use corrosion-resistant parts when beneficial, and back every repair with a 180-day warranty. Our licensed technicians are coastal climate specialists familiar with preventing recurring issues in Pacifica homes.'
     ]
   };
 

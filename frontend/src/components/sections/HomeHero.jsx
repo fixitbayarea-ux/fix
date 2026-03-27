@@ -54,12 +54,12 @@ const HomeHero = () => {
 
             {/* Subtext */}
             <p className="hero-subtext" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 15, lineHeight: 1.5 }}>
-              Same-day service across SF, Peninsula &amp; Marin.<br />$60 diagnostic applied to repair cost.
+              Same- or next-day appointments across SF, Peninsula &amp; Marin.<br />$60 diagnostic applied to repair cost.
             </p>
 
             {/* Desktop urgency */}
             <p className="hero-d" data-testid="hero-urgency-desktop" style={{ color: '#FF5722', fontSize: 13, fontWeight: 700, marginTop: 16, letterSpacing: '0.05em' }}>
-              &#9889; SAME-DAY SLOTS AVAILABLE TODAY
+              &#9889; SLOTS AVAILABLE TODAY — BOOK NOW
             </p>
 
             {/* Desktop trust row */}
@@ -95,7 +95,7 @@ const HomeHero = () => {
                 ⚡ Most slots filled by noon — book now to secure today
               </p>
               <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.38)', margin: '4px 0 0 0', lineHeight: 1.6 }}>
-                Same-day &amp; next-day &middot; Mon–Sat
+                Same- or next-day &amp; next-day &middot; Mon–Sat
               </p>
             </div>
 
@@ -111,7 +111,7 @@ const HomeHero = () => {
               </div>
               {/* Mobile urgency */}
               <p data-testid="hero-urgency-mobile" style={{ color: '#FF5722', fontSize: 13, fontWeight: 700, textAlign: 'center', marginBottom: 16, letterSpacing: '0.05em' }}>
-                &#9889; SAME-DAY SLOTS AVAILABLE TODAY
+                &#9889; SLOTS AVAILABLE TODAY — BOOK NOW
               </p>
               {/* Mobile CTAs — stacked full width */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 10 }}>
@@ -124,14 +124,14 @@ const HomeHero = () => {
               </div>
               {/* Mobile reassurance micro-copy */}
               <p data-testid="hero-reassurance-mobile" style={{ fontSize: 13, color: 'rgba(255,255,255,0.85)', textAlign: 'center', marginTop: 8 }}>
-                Same-day available &middot; Licensed &amp; insured &middot; No fix, no fee
+                Fast scheduling &middot; Licensed &amp; insured &middot; No fix, no fee
               </p>
               {/* Mobile urgency micro-copy */}
               <p data-testid="hero-urgency-slots-mobile" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 12, color: 'rgba(255,255,255,0.65)', textAlign: 'center', marginTop: 2, marginBottom: 12 }}>
                 ⚡ Most slots filled by noon — book now to secure today
               </p>
               {/* Mobile schedule note */}
-              <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.35)', textAlign: 'center', marginTop: 12 }}>Same-day & next-day &middot; Mon–Sat</p>
+              <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.35)', textAlign: 'center', marginTop: 12 }}>Same- or next-day & next-day &middot; Mon–Sat</p>
             </div>
           </div>
         </div>

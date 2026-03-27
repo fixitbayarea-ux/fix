@@ -19,7 +19,7 @@ const FAQ_ITEMS = [
   { q: "Is the diagnostic fee worth it?", a: "Yes. The $60 diagnostic gives you an exact diagnosis and upfront repair estimate with no obligation. Companies that offer \u2018free diagnostics\u2019 typically build that cost into inflated repair prices. Our diagnostic fee ensures you get honest pricing whether you proceed with the repair or not." },
   { q: "Why is appliance repair more expensive in San Francisco?", a: "SF repair costs are 20\u201340% higher than suburban areas due to parking costs, building access logistics, older housing stock requiring extra labor, higher concentration of European luxury appliances with expensive parts, and the general cost of doing business in the city." },
   { q: "Is it cheaper to repair or replace an appliance?", a: "General rule: if the repair costs less than 50% of a new appliance and the unit is under 8\u201310 years old, repair makes sense. For luxury brands like Sub-Zero ($5,000\u2013$15,000 new), repair is almost always the better choice. For standard brands over 12 years old with major failures, replacement often wins." },
-  { q: "Does FixitBay LLC charge extra for weekends or emergency service?", a: "FixitBay LLC offers same-day and next-day appointments Monday through Saturday at the same pricing. No emergency surcharges, no weekend premiums. The $60 diagnostic fee and quoted repair prices apply equally regardless of when we come." },
+  { q: "Does FixitBay LLC charge extra for weekends or emergency service?", a: "FixitBay LLC offers same- or next-day and next-day appointments Monday through Saturday at the same pricing. No emergency surcharges, no weekend premiums. The $60 diagnostic fee and quoted repair prices apply equally regardless of when we come." },
 ];
 
 const TOC = [
@@ -74,7 +74,7 @@ const PROBLEM_PRICING = [
 
 const COMPARE = [
   { feat: 'Diagnostic fee', us: '$60 (applied to repair)', them: '$50\u2013$120 (often NOT applied)' },
-  { feat: 'Same-day service', us: 'Yes, Mon\u2013Sat', them: 'Often 2\u20133 day wait' },
+  { feat: 'Fast scheduling', us: 'Yes, Mon\u2013Sat', them: 'Often 2\u20133 day wait' },
   { feat: 'Warranty', us: '180 days parts & labor', them: '30\u201390 days typical' },
   { feat: 'Upfront pricing', us: 'Yes, before work starts', them: 'Sometimes quoted after' },
   { feat: 'Licensed CA technician', us: 'Yes, License #51001', them: 'Varies' },
@@ -246,7 +246,7 @@ const ApplianceRepairCostSanFrancisco = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need an appliance repair estimate?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>$60 diagnostic applied to repair &middot; <a href="/blog/same-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>Same-day service</a> &middot; 180-day warranty &middot; 22 Bay Area cities</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>$60 diagnostic applied to repair &middot; <a href="/blog/same- or next-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>fast scheduling</a> &middot; 180-day warranty &middot; 22 Bay Area cities</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
@@ -289,7 +289,7 @@ const ApplianceRepairCostSanFrancisco = () => {
               <div data-testid="diagnostic-flow" style={{ background: '#0D1B2A', borderRadius: 4, padding: '28px 24px', marginBottom: 16 }}>
                 <div className="diag-flow" style={{ display: 'flex', gap: 0, alignItems: 'stretch' }}>
                   {[
-                    { step: '1', label: 'Book', desc: 'Online or call \u2192 We arrive same-day or next-day' },
+                    { step: '1', label: 'Book', desc: 'Online or call \u2192 We arrive same- or next-day or next-day' },
                     { step: '2', label: 'Diagnose', desc: 'Technician diagnoses the problem \u2192 $60 diagnostic fee' },
                     { step: '3', label: 'Estimate', desc: 'You get an upfront estimate \u2192 No surprises' },
                     { step: '4', label: 'Decide', desc: 'Approve \u2192 $60 credited toward total\nDecline \u2192 You only pay $60' },
@@ -423,7 +423,7 @@ const ApplianceRepairCostSanFrancisco = () => {
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
                 <div style={{ ...EYE, marginBottom: 8 }}>GET YOUR ESTIMATE</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Ready for a <a href="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Professional Diagnosis</a>?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>$60 diagnostic applied to repair. <a href="/blog/same-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>Same-day service</a> across San Francisco, <a href="/marin-county-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Marin County</a>, and the Peninsula.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>$60 diagnostic applied to repair. <a href="/blog/same- or next-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>fast scheduling</a> across San Francisco, <a href="/marin-county-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Marin County</a>, and the Peninsula.</p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
                   <a href="tel:+17605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
                   <a href="/book" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }}>Book Online Now</a>
@@ -448,7 +448,7 @@ const ApplianceRepairCostSanFrancisco = () => {
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>$60 Diagnostic</h3>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>Applied to repair. 180-day warranty. No hidden fees.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
-                {['Licensed CA Technician', 'Same-Day Available', '22 Bay Area Cities', '180-Day Warranty'].map(item => (
+                {['Licensed CA Technician', 'Fast Scheduling', '22 Bay Area Cities', '180-Day Warranty'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
                     <span style={{ color: '#FF5722', fontFamily: F, fontWeight: 700 }}>{'\u2713'}</span>
                     <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>{item}</span>
@@ -497,9 +497,9 @@ const ApplianceRepairCostSanFrancisco = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services & Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Same-day available.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
                 { tag: 'ARTICLE', title: 'Refrigerator Not Cooling? 8 Causes', body: '8 causes from dirty coils to compressor failure. DIY checklist + pro costs.', link: 'Read Article', href: '/blog/refrigerator-not-cooling' },
-                { tag: 'SERVICE', title: 'Marin County Appliance Repair', body: 'Same-day service in Mill Valley, San Rafael, Novato & more.', link: 'View Service', href: '/marin-county-appliance-repair' },
+                { tag: 'SERVICE', title: 'Marin County Appliance Repair', body: 'Fast scheduling in Mill Valley, San Rafael, Novato & more.', link: 'View Service', href: '/marin-county-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>

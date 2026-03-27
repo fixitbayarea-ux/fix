@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   { q: "How much does refrigerator repair cost in San Francisco?", a: "Most refrigerator repairs cost $150\u2013$500 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic that is applied toward repair. Simple fixes like thermostat replacement start from $150. Compressor replacement on standard fridges ranges from $400\u2013$600. Sub-Zero and Viking repairs start from $555." },
   { q: "Is it worth repairing a 10-year-old refrigerator?", a: "If the repair cost exceeds 50% of a new refrigerator\u2019s price, replacement usually makes more sense. The exception is premium brands \u2014 a Sub-Zero costs $5,000\u2013$15,000 new, so a $600 compressor repair is absolutely worth it even at 15+ years." },
   { q: "Can I fix a refrigerator not cooling myself?", a: "You can check three things yourself: clean the condenser coils, verify the thermostat setting (35\u201338\u00B0F), and test the door seal with a dollar bill. These cover about 40% of cases. If these don\u2019t solve it, the issue likely requires a licensed technician with diagnostic tools." },
-  { q: "How long does refrigerator repair take?", a: "Most repairs take 1\u20132 hours once the technician arrives. Parts like fan motors and thermostats are usually in stock on our truck. Compressor replacement may require ordering the part and a return visit. FixitBay LLC offers same-day and next-day appointments Monday through Saturday." },
+  { q: "How long does refrigerator repair take?", a: "Most repairs take 1\u20132 hours once the technician arrives. Parts like fan motors and thermostats are usually in stock on our truck. Compressor replacement may require ordering the part and a return visit. FixitBay LLC offers same- or next-day and next-day appointments Monday through Saturday." },
 ];
 
 const TOC = [
@@ -227,7 +227,7 @@ const RefrigeratorNotCooling = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>refrigerator repair</a> in San Francisco & Bay Area?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Same-day service &middot; $60 diagnostic applied to repair &middot; 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling &middot; $60 diagnostic applied to repair &middot; 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
@@ -352,7 +352,7 @@ const RefrigeratorNotCooling = () => {
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
                 <div style={{ ...EYE, marginBottom: 8 }}>PROFESSIONAL HELP</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Need Expert <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Refrigerator Repair</a> in the Bay Area?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians diagnose and repair all refrigerator brands — <a href="/blog/same-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>same-day service</a> available across <a href="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>San Francisco</a> and the Bay Area.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians diagnose and repair all refrigerator brands — <a href="/blog/same- or next-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>fast scheduling</a> available across <a href="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>San Francisco</a> and the Bay Area.</p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
                   <a href="tel:+17605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
                   <a href="/book" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }}>Book Online Now</a>
@@ -374,11 +374,11 @@ const RefrigeratorNotCooling = () => {
             <aside data-testid="sidebar" style={{ position: 'sticky', top: 80 }}>
               {/* Widget 1: Book Repair */}
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
-                <div style={EYE}>SAME-DAY SERVICE</div>
+                <div style={EYE}>FAST SCHEDULING</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Fridge Not Cooling?</h3>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$60 diagnostic applied to repair. 180-day warranty.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
-                {['Licensed CA Technician', 'Same-Day Available', 'All Major Brands'].map(item => (
+                {['Licensed CA Technician', 'Fast Scheduling', 'All Major Brands'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
                     <span style={{ color: '#FF5722', fontFamily: F, fontWeight: 700 }}>{'\u2713'}</span>
                     <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>{item}</span>
@@ -431,9 +431,9 @@ const RefrigeratorNotCooling = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services & Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Refrigerator Repair in Bay Area', body: 'Same-day refrigerator repair for all brands. $60 diagnostic applied.', link: 'View Service', href: '/refrigerator-repair' },
+                { tag: 'SERVICE', title: 'Refrigerator Repair in Bay Area', body: 'Fast refrigerator repair for all brands. $60 diagnostic applied.', link: 'View Service', href: '/refrigerator-repair' },
                 { tag: 'ARTICLE', title: 'How Much Does Refrigerator Repair Cost in SF?', body: 'Average costs $200\u2013$550 in Bay Area. Full breakdown by problem type.', link: 'Read Article', href: '/blog/refrigerator-repair-cost-san-francisco-2026' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Same-day available.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>

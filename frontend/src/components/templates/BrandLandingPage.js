@@ -107,7 +107,7 @@ const BrandLandingPage = ({ brand }) => {
     );
   };
 
-  const whyCard03Body = `Same-day appointments available for ${brand.name} repairs requested before 2 PM. Next-day guaranteed.`;
+  const whyCard03Body = `Same- or next-day appointments available for ${brand.name} repairs requested before 2 PM. Next-day guaranteed.`;
 
   const dotCount = maxIdx + 1;
 
@@ -228,7 +228,7 @@ const BrandLandingPage = ({ brand }) => {
             </h1>
 
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: PC.white60, maxWidth: 540, margin: '0 auto 4px' }}>
-              Same-day &amp; next-day service &middot; $60 diagnostic applied toward repair &middot; 180-day warranty on all {brand.name} repairs
+              Same- or next-day &amp; next-day service &middot; $60 diagnostic applied toward repair &middot; 180-day warranty on all {brand.name} repairs
             </p>
 
             <div className="brand-trust-bar" style={{ display: 'flex', justifyContent: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 24, marginTop: 4 }}>
@@ -236,7 +236,7 @@ const BrandLandingPage = ({ brand }) => {
                 { top: 'Licensed CA', bottom: 'Technician' },
                 { top: '4.9 \u2B50', bottom: '94 Reviews' },
                 { top: 'License', bottom: '#51001' },
-                { top: 'Same-Day', bottom: 'Service' },
+                { top: 'Fast', bottom: 'Scheduling' },
               ].map((b, i) => (
                 <div key={i} style={{ background: PC.white08, border: `1px solid ${PC.white15}`, borderRadius: PC.r, padding: '7px 14px', textAlign: 'center' }}>
                   <span style={{ fontSize: 12, fontWeight: 700, color: PC.white, display: 'block', fontFamily: F }}>{b.top}</span>
@@ -459,7 +459,7 @@ const BrandLandingPage = ({ brand }) => {
           <div style={{ maxWidth: 700, margin: '0 auto' }}>
             <div style={{ ...EYE, textAlign: 'center', color: PC.white45 }}>GET STARTED TODAY</div>
             <h2 className="brand-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.white, marginBottom: 12 }}>Schedule Your {brand.name} Repair</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: PC.white60, marginBottom: 32 }}>$60 diagnostic credited toward repair &middot; 180-day warranty &middot; Same-day appointments available</p>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: PC.white60, marginBottom: 32 }}>$60 diagnostic credited toward repair &middot; 180-day warranty &middot; Same- or next-day appointments available</p>
             <div style={{ display: 'inline-block', background: PC.white08, border: `1px solid ${PC.white10}`, borderRadius: PC.r, padding: '14px 32px', marginBottom: 32 }}>
               <span style={{ fontFamily: F, fontWeight: 500, fontSize: 14, color: PC.white45 }}>Mon&ndash;Fri 8AM&ndash;6PM &middot; Sat 8AM&ndash;3PM &middot; Sun Closed</span>
             </div>

@@ -5,7 +5,7 @@ const SanLeandroRepairPage = () => {
   const cityData = {
     city: "San Leandro",
     pageTitle: "Appliance Repair in San Leandro, CA – Fast, Reliable, Affordable!",
-    metaDescription: "Expert appliance repair in San Leandro, CA. Licensed technicians, 180-day warranty, same-day service. Call (760) 543-5733 or book online now!",
+    metaDescription: "Expert appliance repair in San Leandro, CA. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733 or book online now!",
     neighborhoods: [
       "Downtown San Leandro",
       "Marina Park", 
@@ -19,8 +19,8 @@ const SanLeandroRepairPage = () => {
     localFeatures: "San Leandro residents appreciate our straightforward approach and community commitment. We're proud to serve this diverse, working East Bay community with integrity.",
     faqData: [
       {
-        question: "Do you offer same-day appliance repair in San Leandro?",
-        answer: "Yes! We provide same-day appliance repair service throughout San Leandro, including Downtown, Marina Park, Estudillo Estates, and all surrounding neighborhoods. Call us before 2 PM for same-day availability."
+        question: "Do you offer fast appliance repair in San Leandro?",
+        answer: "Yes! We provide fast appliance repair service throughout San Leandro, including Downtown, Marina Park, Estudillo Estates, and all surrounding neighborhoods. Call us before 2 PM for fast scheduling."
       },
       {
         question: "What appliance brands do you repair in San Leandro?",

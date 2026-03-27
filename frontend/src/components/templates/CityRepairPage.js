@@ -160,7 +160,7 @@ const CityRepairPage = ({
     <>
       <SEOMetaTags
         title={`${pageTitle} | FixItBay Appliance Repair`}
-        description={`Licensed & insured technicians offering same-day appliance repair in ${city}. FixItBay provides fast, local appliance repair and maintenance throughout the San Francisco Bay Area. 180-day warranty on parts and labor.`}
+        description={`Licensed & insured technicians offering fast appliance repair in ${city}. FixItBay provides fast, local appliance repair and maintenance throughout the San Francisco Bay Area. 180-day warranty on parts and labor.`}
         canonical={`https://fixitbay.net/${city.toLowerCase().replace(/\s+/g, '-')}-appliance-repair`}
         ogImage="https://fixitbay.net/images/og-cover.png"
         noindex={false}
@@ -221,7 +221,7 @@ const CityRepairPage = ({
               transition={{ delay: 0.2 }}
               className="text-xl text-white/90 mb-8 leading-relaxed"
             >
-              When appliances break down in {city}, FixitBay LLC is your trusted local repair service! Our licensed technicians provide fast, reliable appliance repair throughout {city} and the surrounding Bay Area. We handle refrigerators (fridges), washers (washing machines), dryers, dishwashers, ovens/stoves/ranges, cooktops, ice makers, wine coolers, and disposals — with same-day service available.
+              When appliances break down in {city}, FixitBay LLC is your trusted local repair service! Our licensed technicians provide fast, reliable appliance repair throughout {city} and the surrounding Bay Area. We handle refrigerators (fridges), washers (washing machines), dryers, dishwashers, ovens/stoves/ranges, cooktops, ice makers, wine coolers, and disposals — with fast scheduling available.
             </motion.p>
 
             <motion.div
@@ -291,7 +291,7 @@ const CityRepairPage = ({
                   </h3>
                 </div>
                 <p className="text-gray-600 text-sm">
-                  Expert {service.name.toLowerCase()} service in {city} with same-day availability.
+                  Expert {service.name.toLowerCase()} service in {city} with fast scheduling.
                 </p>
               </motion.a>
             ))}

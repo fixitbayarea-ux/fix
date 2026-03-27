@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   { q: "How much does dryer repair cost in San Francisco?", a: "Most dryer repairs cost $150\u2013$300 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic applied toward repair. Thermal fuse replacement starts from $150. Heating element replacement ranges from $180\u2013$280. Gas valve solenoid repair is typically $200\u2013$260." },
   { q: "Should I repair or replace a dryer that's not heating?", a: "If your dryer is under 8 years old, repair is almost always worth it \u2014 most heating issues cost $150\u2013$280 to fix. For dryers over 12 years old where the motor or control board has failed ($300+ repair), replacement often makes more sense." },
   { q: "Is a gas dryer not heating dangerous?", a: "A gas dryer that isn\u2019t heating is not immediately dangerous \u2014 if the igniter isn\u2019t lighting, gas typically doesn\u2019t flow. However, if you smell gas near the dryer at any time, turn off the gas valve, open windows, and call your gas company immediately. Don\u2019t use the dryer until it\u2019s been inspected." },
-  { q: "How long does dryer repair take?", a: "Most dryer repairs take 45 minutes to 1.5 hours. Thermal fuses, heating elements, and igniters are common parts that our technician carries on the truck. Gas valve solenoids and control boards may occasionally require ordering. FixitBay LLC offers same-day and next-day appointments Monday through Saturday." },
+  { q: "How long does dryer repair take?", a: "Most dryer repairs take 45 minutes to 1.5 hours. Thermal fuses, heating elements, and igniters are common parts that our technician carries on the truck. Gas valve solenoids and control boards may occasionally require ordering. FixitBay LLC offers same- or next-day and next-day appointments Monday through Saturday." },
 ];
 
 const TOC = [
@@ -217,7 +217,7 @@ const DryerNotHeating = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>dryer repair</a> in San Francisco & Bay Area?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Same-day service &middot; $60 diagnostic applied to repair &middot; 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling &middot; $60 diagnostic applied to repair &middot; 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
@@ -379,7 +379,7 @@ const DryerNotHeating = () => {
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
                 <div style={{ ...EYE, marginBottom: 8 }}>PROFESSIONAL HELP</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Need Expert <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Dryer Repair</a> in the Bay Area?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians diagnose and repair all dryer brands — <a href="/blog/same-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>same-day service</a> available across <a href="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>San Francisco</a> and the Bay Area.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians diagnose and repair all dryer brands — <a href="/blog/same- or next-day-appliance-repair-bay-area" style={{ color: '#FF5722', textDecoration: 'none' }}>fast scheduling</a> available across <a href="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>San Francisco</a> and the Bay Area.</p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
                   <a href="tel:+17605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
                   <a href="/book" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }}>Book Online Now</a>
@@ -400,11 +400,11 @@ const DryerNotHeating = () => {
             {/* ━━━ RIGHT — SIDEBAR ━━━ */}
             <aside data-testid="sidebar" style={{ position: 'sticky', top: 80 }}>
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
-                <div style={EYE}>SAME-DAY SERVICE</div>
+                <div style={EYE}>FAST SCHEDULING</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Dryer Not Heating?</h3>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$60 diagnostic applied to repair. 180-day warranty.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
-                {['Licensed CA Technician', 'Gas & Electric Dryers', 'Same-Day Available'].map(item => (
+                {['Licensed CA Technician', 'Gas & Electric Dryers', 'Fast Scheduling'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
                     <span style={{ color: '#FF5722', fontFamily: F, fontWeight: 700 }}>{'\u2713'}</span>
                     <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>{item}</span>
@@ -455,9 +455,9 @@ const DryerNotHeating = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services & Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Dryer Repair in Bay Area', body: 'Same-day dryer repair for gas & electric. All brands. $60 diagnostic applied.', link: 'View Service', href: '/dryer-repair' },
+                { tag: 'SERVICE', title: 'Dryer Repair in Bay Area', body: 'Fast dryer repair for gas & electric. All brands. $60 diagnostic applied.', link: 'View Service', href: '/dryer-repair' },
                 { tag: 'ARTICLE', title: 'Dryer Taking Too Long to Dry', body: 'Still damp after a full cycle? Common causes and fixes for slow dryers.', link: 'Read Article', href: '/blog/dryer-taking-too-long' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Same-day available.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>

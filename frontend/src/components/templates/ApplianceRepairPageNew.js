@@ -311,7 +311,7 @@ const ApplianceRepairPageNew = ({
         "@context": "https://schema.org",
         "@type": "HowTo",
         "name": `How to Get Your ${appliance} Repaired in San Francisco`,
-        "description": `Book same-day ${appliance.toLowerCase()} repair with FixitBay LLC. $60 diagnostic applied to repair cost. 180-day warranty.`,
+        "description": `Book fast ${appliance.toLowerCase()} repair with FixitBay LLC. $60 diagnostic applied to repair cost. 180-day warranty.`,
         "totalTime": "P1D",
         "estimatedCost": {
           "@type": "MonetaryAmount",
@@ -330,7 +330,7 @@ const ApplianceRepairPageNew = ({
             "@type": "HowToStep",
             "position": 2,
             "name": "Technician Arrives",
-            "text": "A licensed California technician arrives same-day or next-day with professional tools."
+            "text": "A licensed California technician arrives fast or next-day with professional tools."
           },
           {
             "@type": "HowToStep",
@@ -365,7 +365,7 @@ const ApplianceRepairPageNew = ({
             '@type': 'City',
             name: cityName,
           },
-          description: `Same-day appliance repair in ${cityName}. $60 diagnostic fee applied to repair. 180-day warranty on parts and labor.`,
+          description: `Fast appliance repair in ${cityName}. $60 diagnostic fee applied to repair. 180-day warranty on parts and labor.`,
           offers: {
             '@type': 'Offer',
             price: '60',
@@ -405,7 +405,7 @@ const ApplianceRepairPageNew = ({
       <div className="city-page-wrap" style={{ fontFamily: S.font }}>
         <SEOMetaTags
           title={effectiveTitle}
-          description={effectiveDescription || `Professional appliance repair in ${cityName}. Same-day service. Licensed technicians, 180-day warranty. Call (760) 543-5733.`}
+          description={effectiveDescription || `Professional appliance repair in ${cityName}. Fast scheduling. Licensed technicians, 180-day warranty. Call (760) 543-5733.`}
           canonical={`https://fixitbay.net${currentPath}`}
           ogImage="https://fixitbay.net/images/og-cover.png"
           noindex={noindex}
@@ -424,7 +424,7 @@ const ApplianceRepairPageNew = ({
               <span style={{ ...S.eyebrow, letterSpacing: '0.22em' }}>{cityName.toUpperCase()} APPLIANCE REPAIR</span>
             </div>
             <h1 className="hero-main-h1" data-testid="city-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in<br/>{cityName}</h1>
-            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same-day & next-day &middot; $60 diagnostic &middot; 180-day warranty</p>
+            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same- or next-day & next-day &middot; $60 diagnostic &middot; 180-day warranty</p>
             <div data-testid="city-trust-badges" style={{ display: 'flex', alignItems: 'center', gap: 24, marginTop: 20, fontFamily: S.font, fontWeight: 500, fontSize: 13, flexWrap: 'wrap' }}>
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span><span style={{ color: 'rgba(255,255,255,0.85)' }}>Licensed CA Technician</span></span>
               <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
@@ -442,7 +442,7 @@ const ApplianceRepairPageNew = ({
             </p>
             <div style={{ width: 48, height: 2, background: 'rgba(255,87,34,0.40)', margin: '24px 0 20px' }} />
             <div style={{ display: 'flex', alignItems: 'center' }}>
-              {[{ value: '10+', label: 'Years' }, { value: '180-Day', label: 'Warranty' }, { value: 'Same-Day', label: 'Service' }].map((stat, i) => (
+              {[{ value: '10+', label: 'Years' }, { value: '180-Day', label: 'Warranty' }, { value: 'Fast', label: 'Scheduling' }].map((stat, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center' }}>
                   {i > 0 && <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,0.12)', margin: '0 20px' }} />}
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
@@ -569,7 +569,7 @@ const ApplianceRepairPageNew = ({
         <section data-testid="city-final-cta" style={{ background: '#0D1B2A', borderTop: '3px solid #FF5722', padding: '70px 0', textAlign: 'center' }}>
           <div style={{ maxWidth: 700, margin: '0 auto', padding: '0 24px' }}>
             <h3 style={{ fontFamily: S.font, fontWeight: 800, fontSize: 40, color: '#FFFFFF', lineHeight: 1.15, marginBottom: 12 }}>Need Appliance Repair in {cityName}?</h3>
-            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 12, marginBottom: 28 }}>Same-day & next-day appointments available across all neighborhoods</p>
+            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 12, marginBottom: 28 }}>Same- or next-day & next-day appointments available across all neighborhoods</p>
             <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href="/book?go=1" data-testid="city-final-book" style={{ display: 'inline-flex', alignItems: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
               <a href="tel:+17605435733" data-testid="city-final-call" style={{ display: 'inline-flex', alignItems: 'center', padding: '16px 28px', borderRadius: 3, background: 'transparent', minHeight: 52, border: '2px solid rgba(255,255,255,0.65)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.65)'; e.currentTarget.style.color = '#FFFFFF'; }}>CALL (760) 543-5733</a>
@@ -643,7 +643,7 @@ const ApplianceRepairPageNew = ({
     <div style={{ fontFamily: S.font, background: '#F8F5F0' }}>
       <SEOMetaTags
         title={effectiveTitle}
-        description={effectiveDescription || `Professional ${appliance.toLowerCase()} repair in San Francisco, Peninsula, and Marin County. Licensed technicians, 180-day warranty, same-day service.`}
+        description={effectiveDescription || `Professional ${appliance.toLowerCase()} repair in San Francisco, Peninsula, and Marin County. Licensed technicians, 180-day warranty, fast scheduling.`}
         canonical={`https://fixitbay.net${currentPath}`}
         ogImage="https://fixitbay.net/images/og-cover.png"
         noindex={noindex}
@@ -705,7 +705,7 @@ const ApplianceRepairPageNew = ({
                 {[
                   { value: '10+', label: 'Years' },
                   { value: '180-Day', label: 'Warranty' },
-                  { value: 'Same-Day', label: 'Service' },
+                  { value: 'Fast', label: 'Scheduling' },
                 ].map((stat, i) => (
                   <div key={i} style={{ display: 'flex', alignItems: 'center' }}>
                     {i > 0 && <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,0.12)', margin: '0 20px' }} />}
@@ -729,7 +729,7 @@ const ApplianceRepairPageNew = ({
           <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 48 }}>Simple. Fast. Professional.</h2>
           <div className="service-how-grid grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { num: '01', icon: <CalendarCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'Book Online', text: 'Schedule same-day or next-day at your convenience.' },
+              { num: '01', icon: <CalendarCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'Book Online', text: 'Schedule your appointment at your convenience.' },
               { num: '02', icon: <Search size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Diagnose', text: '$60 diagnostic visit — applied to repair if you proceed.' },
               { num: '03', icon: <ClipboardCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'You Approve', text: 'Upfront estimate before any work begins. No surprises.' },
               { num: '04', icon: <Wrench size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Fix It', text: 'Professional repair with 180-day warranty on parts and labor.' },
@@ -753,10 +753,10 @@ const ApplianceRepairPageNew = ({
           <h2 style={{ ...S.h2, color: '#FFFFFF', marginBottom: 36 }}>How Your {serviceWord} Visit Works</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
             {[
-              { n: 1, t: 'Book Online or Call', d: `Schedule your ${serviceWord.toLowerCase()} at a time that works. Same-day and next-day available.` },
+              { n: 1, t: 'Book Online or Call', d: `Schedule your ${serviceWord.toLowerCase()} at a time that works. Same- or next-day and next-day available.` },
               { n: 2, t: 'Diagnostic Visit', d: `Licensed technician arrives on time, inspects your ${appliance.toLowerCase()}, identifies the problem. $60 fee applies.` },
               { n: 3, t: 'Upfront Quote', d: 'Clear written estimate before work begins. $60 diagnostic credited if you proceed.' },
-              { n: 4, t: `Professional ${serviceWord}`, d: 'Issue fixed with quality parts. Most jobs same day. 180-day warranty included.' },
+              { n: 4, t: `Professional ${serviceWord}`, d: 'Issue fixed with quality parts. Most jobs completed in one visit. 180-day warranty included.' },
             ].map(s => (
               <div key={s.n} style={{ display: 'flex', gap: 16, borderLeft: '2px solid rgba(255,87,34,0.25)', paddingLeft: 20 }}>
                 <div style={{ width: 32, height: 32, borderRadius: '50%', background: '#FF5722', color: '#fff', fontFamily: S.font, fontWeight: 800, fontSize: 15, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>{s.n}</div>
@@ -892,7 +892,7 @@ const ApplianceRepairPageNew = ({
               <div style={{ ...S.eyebrow, marginBottom: 10 }}>COVERAGE</div>
               <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 10 }}>Service Areas for {appliance} {serviceWord}</h2>
               <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>We serve San Francisco, Peninsula &amp; North Bay / Marin County</p>
-              <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#4A5568', marginBottom: 16, lineHeight: 1.7 }}>We provide {appliance.toLowerCase()} {serviceWord.toLowerCase()} throughout San Francisco, Peninsula, and Marin County — including Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara, Mill Valley, San Rafael, Sausalito, Novato, Corte Madera, Larkspur, Greenbrae, Tiburon, Fairfax, San Anselmo, and Ross. Same-day and next-day appointments available across all service areas.</p>
+              <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#4A5568', marginBottom: 16, lineHeight: 1.7 }}>We provide {appliance.toLowerCase()} {serviceWord.toLowerCase()} throughout San Francisco, Peninsula, and Marin County — including Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara, Mill Valley, San Rafael, Sausalito, Novato, Corte Madera, Larkspur, Greenbrae, Tiburon, Fairfax, San Anselmo, and Ross. Same- or next-day and next-day appointments available across all service areas.</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'flex-start' }}>
                 {['San Francisco','Daly City','South San Francisco','Colma','Brisbane','San Bruno','Millbrae','Pacifica','Montara','Sausalito','Mill Valley','Tiburon','Belvedere','Corte Madera','San Rafael','Larkspur','Greenbrae','Novato','Ross','Fairfax','San Anselmo'].map(city => {
                   const slug = city.toLowerCase().replace(/\s+/g, '-');
@@ -922,7 +922,7 @@ const ApplianceRepairPageNew = ({
             <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
               <div style={{ ...S.eyebrow, marginBottom: 10 }}>LOCAL SERVICE</div>
               <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 10 }}>{appliance} Repair by City</h2>
-              <p style={{ fontFamily: S.font, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>Same-day {appliance.toLowerCase()} repair available in these cities:</p>
+              <p style={{ fontFamily: S.font, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>Same- or next-day {appliance.toLowerCase()} repair available in these cities:</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
                 {cities.map(citySlug => (
                   <Link key={citySlug} to={`/${citySlug}-${svcSlug}-repair`} data-testid={`city-service-link-${citySlug}`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 18px', display: 'inline-flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#FF5722'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.background = '#F8F5F0'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.09)'; }}>
@@ -970,7 +970,7 @@ const ApplianceRepairPageNew = ({
                     <p><strong>ZIP codes:</strong> {cd.zipCodes.join(', ')}</p>
                   </>
                 ) : (
-                  <p>We provide fast appliance repair across {cityName}. Most repairs completed same-day.</p>
+                  <p>We provide fast appliance repair across {cityName}. Most repairs completed fast.</p>
                 )}
               </div>
             </div>

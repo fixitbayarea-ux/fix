@@ -23,7 +23,7 @@ const sfServiceSchema = {
   "provider": { "@id": "https://fixitbay.net/#organization" },
   "areaServed": { "@type": "City", "name": "San Francisco, CA" },
   "url": "https://fixitbay.net/san-francisco-appliance-repair",
-  "description": "Same-day appliance repair throughout San Francisco. $60 diagnostic credited toward repair. 180-day warranty."
+  "description": "Fast appliance repair throughout San Francisco. $60 diagnostic credited toward repair. 180-day warranty."
 };
 const buildBreadcrumbSchema = (items) => ({
   "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -156,9 +156,9 @@ const COMMON_PROBLEMS = [
 
 /* ═══ FAQ ═══ */
 const FAQ_DATA = [
-  { q: 'Do you offer same-day service in San Francisco?', a: 'Yes. We provide same-day appointments for most San Francisco service calls when you contact us before noon, and next-day availability for afternoon requests. We serve every SF neighborhood including Sunset, Richmond, Mission, SOMA, Nob Hill, Pacific Heights, and all others.' },
+  { q: 'Do you offer fast scheduling in San Francisco?', a: 'Yes. We provide fast appointments for most San Francisco service calls when you contact us before noon, and next-day availability for afternoon requests. We serve every SF neighborhood including Sunset, Richmond, Mission, SOMA, Nob Hill, Pacific Heights, and all others.' },
   { q: 'How much does appliance repair cost in San Francisco?', a: 'Our diagnostic fee is $60, which is fully credited toward your repair if you choose to proceed. Final costs depend on the appliance type and parts required. We always provide a written upfront estimate before starting any work — no surprises.' },
-  { q: 'How quickly can you reach my neighborhood?', a: 'We typically arrive within a 2-hour window for same-day appointments. Our technicians know SF traffic patterns, parking challenges, and the fastest routes to every neighborhood from the Avenues to the Bayshore.' },
+  { q: 'How quickly can you reach my neighborhood?', a: 'We typically arrive within a 2-hour window for fast appointments. Our technicians know SF traffic patterns, parking challenges, and the fastest routes to every neighborhood from the Avenues to the Bayshore.' },
   { q: 'Do you charge extra for parking or steep hill access?', a: 'No. Our $60 diagnostic fee covers the visit regardless of parking difficulty or building access. We carry city parking permits and are experienced navigating San Francisco\'s hills and tight streets.' },
   { q: 'Can you service appliances in older Victorian homes?', a: 'Absolutely. We have extensive experience in San Francisco\'s historic Victorian, Edwardian, and earthquake cottage homes. Our technicians bring compact tools designed for navigating steep stairs and tight kitchen spaces.' },
   { q: 'Do you service high-rise apartment buildings?', a: 'Yes. We service appliances in all SF high-rise buildings downtown, SOMA, and throughout the city. We coordinate with building management for freight elevator access and follow all HOA protocols.' },
@@ -214,8 +214,8 @@ const SanFrancisco = () => {
   return (
     <div className="pb-[72px] lg:pb-0" style={{ fontFamily: S.font, background: '#F8F5F0' }}>
       <SEOMetaTags
-        title="Appliance Repair San Francisco | Same-Day Service | FixitBay LLC"
-        description="Professional appliance repair in San Francisco. Same-day service available. Licensed technicians, 180-day warranty. Serving all SF neighborhoods. Call (760) 543-5733."
+        title="Appliance Repair San Francisco | Fast Scheduling | FixitBay LLC"
+        description="Professional appliance repair in San Francisco. Fast scheduling available. Licensed technicians, 180-day warranty. Serving all SF neighborhoods. Call (760) 543-5733."
         canonical="https://fixitbay.net/san-francisco-appliance-repair"
         ogImage="https://fixitbay.net/images/og-cover.png"
       />
@@ -239,7 +239,7 @@ const SanFrancisco = () => {
           <h1 className="hero-main-h1" data-testid="sf-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in San&nbsp;Francisco</h1>
           {/* Subtext */}
           <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>
-            Same-day & next-day service &middot; $60 diagnostic &middot; 180-day warranty on all repairs
+            Same- or next-day & next-day service &middot; $60 diagnostic &middot; 180-day warranty on all repairs
           </p>
           {/* Trust row */}
           <div data-testid="sf-trust-badges" style={{ display: 'flex', alignItems: 'center', gap: 24, marginTop: 20, fontFamily: S.font, fontWeight: 500, fontSize: 13, flexWrap: 'wrap' }}>
@@ -260,7 +260,7 @@ const SanFrancisco = () => {
             {[
               { value: '10+', label: 'Years' },
               { value: '180-Day', label: 'Warranty' },
-              { value: 'Same-Day', label: 'Service' },
+              { value: 'Fast', label: 'Scheduling' },
             ].map((stat, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'center' }}>
                 {i > 0 && <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,0.12)', margin: '0 20px' }} />}
@@ -337,7 +337,7 @@ const SanFrancisco = () => {
           <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 48 }}>Simple. Fast. Professional.</h2>
           <div className="sf-how-grid grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { num: '01', icon: <CalendarCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'Book Online', text: 'Schedule same-day or next-day at your convenience.' },
+              { num: '01', icon: <CalendarCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'Book Online', text: 'Schedule your appointment at your convenience.' },
               { num: '02', icon: <Search size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Diagnose', text: '$60 diagnostic visit — applied to repair if you proceed.' },
               { num: '03', icon: <ClipboardCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'You Approve', text: 'Upfront estimate before any work begins. No surprises.' },
               { num: '04', icon: <Wrench size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Fix It', text: 'Professional repair with 180-day warranty on parts and labor.' },
@@ -380,7 +380,7 @@ const SanFrancisco = () => {
       <section data-testid="sf-cta-banner" style={{ background: '#0D1B2A', borderTop: '3px solid #FF5722', borderBottom: '3px solid #FF5722', padding: '60px 0', textAlign: 'center' }}>
         <div style={{ maxWidth: 700, margin: '0 auto', padding: '0 24px' }}>
           <h2 style={{ ...S.h2, color: '#FFFFFF', marginBottom: 12 }}>Need Appliance Repair Today?</h2>
-          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginBottom: 28 }}>Same-day & next-day appointments available</p>
+          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginBottom: 28 }}>Same- or next-day & next-day appointments available</p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:+17605435733" data-testid="sf-cta-call" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 30px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none' }}>
               <Phone size={16} /> Call (760) 543-5733

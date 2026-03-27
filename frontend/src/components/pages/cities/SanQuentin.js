@@ -15,9 +15,9 @@ const SanQuentin = () => {
   ];
 
   const faqData = [
-    { question: 'Do you serve all San Quentin neighborhoods?', answer: 'Yes! We provide same-day appliance repair throughout San Quentin residential areas.' },
+    { question: 'Do you serve all San Quentin neighborhoods?', answer: 'Yes! We provide fast appliance repair throughout San Quentin residential areas.' },
     { question: 'Can you service waterfront homes?', answer: 'Absolutely. We understand humidity challenges affecting appliances in San Quentin waterfront properties.' },
-    { question: 'What\'s your response time to San Quentin?', answer: 'We typically arrive within 1-2 hours for same-day appointments via Highway 101.' },
+    { question: 'What\'s your response time to San Quentin?', answer: 'We typically arrive within 1-2 hours for scheduled appointments via Highway 101.' },
     { question: 'What brands do you repair?', answer: 'We repair all major brands: Whirlpool, GE, Samsung, LG, Bosch, KitchenAid, and more.' },
     { question: 'Are you licensed in Marin County?', answer: 'Yes. FixitBay LLC is fully licensed and insured for appliance repair in San Quentin and throughout Marin County.' },
     { question: 'Do you offer warranties?', answer: 'Yes. Every repair includes a 180-day parts and labor warranty.' }
@@ -28,7 +28,7 @@ const SanQuentin = () => {
     paragraphs: [
       'San Quentin\'s waterfront location along the Richmond-San Rafael Bridge corridor provides bay views and convenient Peninsula access. Our technicians serve San Quentin residential areas, understanding the challenges of waterfront living and the humidity that affects appliance performance.',
       'We navigate San Quentin efficiently via Highway 101 and local routes. Our vans carry parts for common appliance failures, and we understand the specific issues that arise in waterfront homes including humidity-related problems and salt-air exposure.',
-      'Same-day service is available in San Quentin with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
+      'Fast scheduling is available in San Quentin with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
     ]
   };
 
@@ -36,8 +36,8 @@ const SanQuentin = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair San Quentin | Same-Day Service | FixitBay LLC"
-        metaDescription="Professional appliance repair in San Quentin. Waterfront home specialists. Same-day service. Licensed technicians. Call (760) 543-5733."
+        pageTitle="Appliance Repair San Quentin | Fast Scheduling | FixitBay LLC"
+        metaDescription="Professional appliance repair in San Quentin. Waterfront home specialists. Fast scheduling. Licensed technicians. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

@@ -19,7 +19,7 @@ const SOCIAL_LINKS = [
 
 const STEPS = [
   { num: '1', title: 'You Call or Book', body: 'Call (760) 543-5733 or book online. Tell us your appliance and the issue.' },
-  { num: '2', title: 'We Confirm Same Day', body: 'We confirm your appointment window — usually same-day or next morning.' },
+  { num: '2', title: 'We Confirm Quickly', body: 'We confirm your appointment window — usually same- or next-day.' },
   { num: '3', title: 'Tech Arrives On Time', body: 'Licensed technician arrives with parts for most common repairs.' },
   { num: '4', title: 'Fixed with Warranty', body: 'Repair completed with a 180-day warranty on parts and labor.' },
 ];
@@ -88,7 +88,7 @@ const ContactPage = () => {
     <>
       <SEOMetaTags
         title="Contact FixitBay LLC | Appliance Repair San Francisco"
-        description="Contact FixitBay LLC for same-day appliance repair in San Francisco Bay Area. Call (760) 543-5733 or book online. Licensed technicians, $60 diagnostic, 180-day warranty."
+        description="Contact FixitBay LLC for fast appliance repair in San Francisco Bay Area. Call (760) 543-5733 or book online. Licensed technicians, $60 diagnostic, 180-day warranty."
         canonical="https://fixitbay.net/contact"
       />
 
@@ -133,7 +133,7 @@ const ContactPage = () => {
               Contact FixitBay LLC
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.78)', maxWidth: 500, margin: '0 auto 32px' }}>
-              Need fast, reliable appliance repair? Same-day or next-day service available in San Francisco, Marin County &amp; Peninsula.
+              Need fast, reliable appliance repair? Same- or next-day appointments available in San Francisco, Marin County &amp; Peninsula.
             </p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
               <a href="tel:+17605435733" data-testid="hero-call-btn" className="hero-cta" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>
@@ -178,7 +178,7 @@ const ContactPage = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto' }}>
             <div style={EYE}>HOW TO REACH US</div>
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 6 }}>We're Ready to Help</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', marginBottom: 40 }}>Contact us by phone, email, or book online — we respond same day.</p>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', marginBottom: 40 }}>Contact us by phone, email, or book online — we respond quickly.</p>
 
             <div className="contact-main-grid" style={{ display: 'grid', gridTemplateColumns: '60% 40%', gap: 24 }}>
               {/* LEFT — Info Cards */}
@@ -187,7 +187,7 @@ const ContactPage = () => {
                 <div className="info-card" data-testid="card-phone" style={{ background: '#fff', borderRadius: 4, padding: '24px 20px', border: '1px solid rgba(255,87,34,0.15)', borderLeft: '3px solid #FF5722', transition: 'box-shadow 0.2s' }}>
                   <div style={EYE}>PHONE</div>
                   <a href="tel:+17605435733" className="phone-link" style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#1A1A1A', textDecoration: 'none', display: 'block', marginBottom: 6, transition: 'color 0.2s' }}>(760) 543-5733</a>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Call for same-day appointments</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Call for fast appointments</p>
                 </div>
                 {/* Email */}
                 <div className="info-card" data-testid="card-email" style={{ background: '#fff', borderRadius: 4, padding: '24px 20px', border: '1px solid rgba(255,87,34,0.15)', borderLeft: '3px solid #FF5722', transition: 'box-shadow 0.2s' }}>
@@ -225,7 +225,7 @@ const ContactPage = () => {
                 <div style={EYE}>SERVICE AREA</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 22, color: '#1A1A1A', marginBottom: 12 }}>We Come to You</h3>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.7, marginBottom: 0 }}>
-                  Contact FixitBay LLC today for same-day or next-day service. Our licensed and insured technicians are ready to fix your refrigerator, washer, dryer, dishwasher, oven, and other appliances with a comprehensive 180-day warranty on all repairs.
+                  Contact FixitBay LLC today for same- or next-day or next-day service. Our licensed and insured technicians are ready to fix your refrigerator, washer, dryer, dishwasher, oven, and other appliances with a comprehensive 180-day warranty on all repairs.
                 </p>
                 <div style={{ height: 1, background: 'rgba(255,87,34,0.15)', margin: '20px 0' }} />
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
@@ -417,7 +417,7 @@ const ContactPage = () => {
           <div style={{ maxWidth: 700, margin: '0 auto' }}>
             <div style={{ ...EYE, color: '#FF5722' }}>READY TO BOOK?</div>
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 40, color: '#fff', marginBottom: 12 }}>Schedule Your Repair Today</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.75)', marginBottom: 32 }}>$60 diagnostic credited toward repair &middot; 180-day warranty &middot; Same-day available</p>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.75)', marginBottom: 32 }}>$60 diagnostic credited toward repair &middot; 180-day warranty &middot; Fast scheduling</p>
             <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 4, padding: '14px 32px', marginBottom: 32 }}>
               <span style={{ fontFamily: F, fontWeight: 500, fontSize: 14, color: 'rgba(255,255,255,0.65)' }}>Mon&ndash;Fri 8AM&ndash;6PM &middot; Sat 8AM&ndash;3PM &middot; Sun Closed</span>
             </div>

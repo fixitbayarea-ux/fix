@@ -432,7 +432,7 @@ const BlogPage = () => {
               Need Professional Help?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Can't fix it yourself? Our certified technicians are here to help with same-day service in San Francisco Bay Area.
+              Can't fix it yourself? Our certified technicians are here to help with fast, reliable service in San Francisco Bay Area.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

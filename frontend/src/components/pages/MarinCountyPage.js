@@ -22,8 +22,8 @@ import FloatingButtons from '../FloatingButtons';
 
 const MarinCountyPage = () => {
   const city = "Marin County";
-  const pageTitle = "Appliance Repair Marin County | Same-Day Service | FixitBay LLC";
-  const metaDescription = "Licensed appliance repair in Marin County. Serving Mill Valley, San Rafael, Novato, Sausalito, Tiburon. $60 diagnostic, 180-day warranty. Same-day service.";
+  const pageTitle = "Appliance Repair Marin County | Fast Scheduling | FixitBay LLC";
+  const metaDescription = "Licensed appliance repair in Marin County. Serving Mill Valley, San Rafael, Novato, Sausalito, Tiburon. $60 diagnostic, 180-day warranty. Fast scheduling.";
 
   const marinCities = [
     { name: "Mill Valley", href: "/mill-valley-appliance-repair" },
@@ -45,8 +45,8 @@ const MarinCountyPage = () => {
 
   const faqData = [
     {
-      question: "Do you provide same-day appliance repair in Marin County?",
-      answer: "Yes! We offer same-day appliance repair service throughout Marin County, including Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, and all surrounding areas. Our technicians know Marin well and can typically arrive within 60-90 minutes."
+      question: "Do you provide fast appliance repair in Marin County?",
+      answer: "Yes! We offer fast appliance repair service throughout Marin County, including Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, and all surrounding areas. Our technicians know Marin well and can typically arrive within 60-90 minutes."
     },
     {
       question: "How much does appliance repair cost in Marin County?",
@@ -80,7 +80,7 @@ const MarinCountyPage = () => {
   const trustIndicators = [
     { icon: <CheckCircle className="w-5 h-5" />, text: "Licensed & Insured Technicians" },
     { icon: <Award className="w-5 h-5" />, text: "180-Day Warranty on All Repairs" },
-    { icon: <Clock className="w-5 h-5" />, text: "Same-Day Service Available" },
+    { icon: <Clock className="w-5 h-5" />, text: "Fast Scheduling Available" },
     { icon: <Star className="w-5 h-5" />, text: "5-Star Google Rating" },
     { icon: <MapPin className="w-5 h-5" />, text: "Serving All Marin County" }
   ];
@@ -121,7 +121,7 @@ const MarinCountyPage = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "FixitBay LLC",
-    "description": "Professional appliance repair services in Marin County. Same-day service, licensed technicians, 180-day warranty.",
+    "description": "Professional appliance repair services in Marin County. Fast scheduling, licensed technicians, 180-day warranty.",
     "telephone": "+17605435733",
     "url": "https://fixitbay.net/marin-county-appliance-repair",
     "image": "https://fixitbay.net/images/fixitbay-logo.png",
@@ -184,7 +184,7 @@ const MarinCountyPage = () => {
           <BackButton />
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
             <p className="text-orange-400 font-semibold text-sm uppercase tracking-wider mb-3">Appliance Repair Marin County</p>
-            <h1 className="text-3xl md:text-5xl font-bold mb-6">Appliance Repair in Marin County — Same-Day Service</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-6">Appliance Repair in Marin County — Fast Scheduling</h1>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Professional appliance repair across Mill Valley, San Rafael, Novato, Sausalito, Tiburon, and all Marin County cities. Licensed technicians, $60 diagnostic, 180-day warranty.</p>
             
             {/* Trust badges */}
@@ -215,7 +215,7 @@ const MarinCountyPage = () => {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-[#0D1B2A]">Cities We Serve in Marin County</h2>
-          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">Same-day appliance repair across all 13 Marin County cities. Click your city for local service details.</p>
+          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">Fast appliance repair across all 13 Marin County cities. Click your city for local service details.</p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {marinCities.map((c, idx) => (
               <a key={idx} href={c.href} className="flex items-center gap-2 p-4 bg-gray-50 hover:bg-orange-50 rounded-lg border border-gray-200 hover:border-orange-300 transition-colors" data-testid={`city-link-${c.name.toLowerCase().replace(/\s+/g, '-')}`}>
@@ -292,7 +292,7 @@ const MarinCountyPage = () => {
           <h2 className="text-xl font-bold text-[#1A3B5D] mb-4">Learn More About Marin County Appliance Repair</h2>
           <div className="flex flex-col gap-3">
             <a href="/blog/appliance-repair-marin-county" className="text-[#C0362C] font-semibold hover:underline">Appliance Repair in Marin County — Complete Guide &rarr;</a>
-            <a href="/blog/same-day-appliance-repair-bay-area" className="text-[#C0362C] font-semibold hover:underline">Same-Day Appliance Repair in the Bay Area — How It Works &rarr;</a>
+            <a href="/blog/same- or next-day-appliance-repair-bay-area" className="text-[#C0362C] font-semibold hover:underline">Same-Day Appliance Repair in the Bay Area — How It Works &rarr;</a>
             <a href="/san-rafael-appliance-repair" className="text-[#C0362C] font-semibold hover:underline">San Rafael Appliance Repair &rarr;</a>
             <a href="/service-areas" className="text-[#C0362C] font-semibold hover:underline">View All Service Areas &rarr;</a>
           </div>
@@ -302,7 +302,7 @@ const MarinCountyPage = () => {
       {/* Final CTA */}
       <section className="py-16 bg-orange-500 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready for Same-Day Appliance Repair in Marin County?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready for Fast Appliance Repair in Marin County?</h2>
           <p className="text-lg mb-8 opacity-90">Book online or call now. $60 diagnostic, 180-day warranty, licensed technicians.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[#0D1B2A] hover:bg-[#1B3A5F] text-white font-bold py-4 px-8 rounded-lg transition-colors" aria-label="opens in new tab">

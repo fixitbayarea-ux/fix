@@ -2,7 +2,7 @@ import React from 'react';
 
 const S_FONT = 'Montserrat, sans-serif';
 
-const CTABanner = ({ heading, subtext = 'Same-day & next-day appointments available', testId = 'cta-banner' }) => (
+const CTABanner = ({ heading, subtext = 'Same- or next-day & next-day appointments available', testId = 'cta-banner' }) => (
   <section data-testid={testId} style={{ background: '#0D1B2A', borderTop: '3px solid #FF5722', borderBottom: '3px solid #FF5722', padding: '60px 0', textAlign: 'center' }}>
     <div style={{ maxWidth: 700, margin: '0 auto', padding: '0 24px' }}>
       <h2 style={{ fontFamily: S_FONT, fontWeight: 800, fontSize: 36, lineHeight: 1.15, color: '#FFFFFF', marginBottom: 12 }}>{heading}</h2>

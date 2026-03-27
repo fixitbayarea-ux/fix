@@ -11,7 +11,7 @@ export const SERVICE_PRICING = {
   'Cooktop':       { from: 230, repairs: 'Igniter $100–$180 · burner assembly $120–$200 · induction element $180–$300 · control board $200–$350', luxury: 'Viking from $295 · Thermador from $425' },
   'Wine Cooler':   { from: 195, repairs: 'Compressor $250–$450 · thermostat $120–$200 · fan motor $100–$180 · door seal $80–$150 · control board $180–$300', luxury: null },
   'Wine Refrigerator': { from: 195, repairs: 'Compressor $250–$450 · thermostat $120–$200 · fan motor $100–$180 · door seal $80–$150', luxury: null },
-  'Garbage Disposal': { from: 195, repairs: 'Motor repair · jam clearing · leak repair · full replacement. Most repairs completed same-day', luxury: null },
+  'Garbage Disposal': { from: 195, repairs: 'Motor repair · jam clearing · leak repair · full replacement. Most repairs completed fast', luxury: null },
   'Commercial':    { from: 445, repairs: 'Refrigerators, freezers, ovens, dishwashers, laundry equipment. Fast turnaround for businesses', luxury: null },
   'Residential':   { from: 195, repairs: 'All major home appliances. Refrigerators, washers, dryers, ovens, dishwashers', luxury: null },
 };

@@ -16,7 +16,7 @@ const neighborhoodData = {
     ],
     localNotes: 'Most Sunset homes are two-story row houses built between 1935 and 1965. Kitchens are compact, often with original cabinetry remodeled around newer appliances. In-law units below typically have a separate refrigerator and compact washer-dryer. Electrical panels are frequently 100-amp, which can limit high-draw appliances like induction cooktops.',
     quickFaq: [
-      { q: 'Can you reach the Outer Sunset same-day?', a: 'Yes. We cover everything from 19th Avenue to Ocean Beach. Same-day slots are available for requests before 2 PM — typical arrival is 20 minutes from our shop.' },
+      { q: 'Can you reach the Outer Sunset fast?', a: 'Yes. We cover everything from 19th Avenue to Ocean Beach. Same- or next-day slots are available for requests before 2 PM — typical arrival is 20 minutes from our shop.' },
       { q: 'Why does my dryer take so long in the Sunset?', a: 'Sunset row houses route dryer vents through long interior wall chases. Combined with coastal humidity, lint compacts faster. We clean the full run and measure airflow to confirm the fix.' },
       { q: 'Do you work on in-law unit appliances?', a: 'Yes. Book both units at once and we can often reduce the combined diagnostic fee. We service compact stackables, under-counter fridges, and all standard appliances.' },
     ],
@@ -128,7 +128,7 @@ const neighborhoodData = {
     quickFaq: [
       { q: 'Does salt air really damage my appliances?', a: 'Yes. Within four blocks of the Bay, we see noticeably faster corrosion on condenser coils, burner caps, and stainless panels. Annual condenser cleaning and wiping metal surfaces with a light oil help extend life.' },
       { q: 'My dishwasher leaves white film on glasses. Is that the water?', a: 'Likely. Marina water carries more dissolved minerals than the rest of the city. We check the spray arms and recommend rinse-aid settings. Sometimes the inlet valve screen is partially blocked with scale.' },
-      { q: 'How fast can you reach the Marina?', a: 'The Marina is roughly 8 minutes from our Franklin Street shop. It is one of the closest neighborhoods we cover — same-day appointments are almost always available.' },
+      { q: 'How fast can you reach the Marina?', a: 'The Marina is roughly 8 minutes from our Franklin Street shop. It is one of the closest neighborhoods we cover — fast appointments are almost always available.' },
     ],
   },
   'pacific-heights': {

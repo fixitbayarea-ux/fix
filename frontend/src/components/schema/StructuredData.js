@@ -7,7 +7,7 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
     "@id": "https://fixitbay.net/#organization",
     "name": "FixitBay LLC",
     "alternateName": "FixitBay LLC Appliance Repair",
-    "description": "Professional appliance repair services in San Francisco Bay Area. Licensed & insured technicians providing same-day service. Service-area business - we come to you.",
+    "description": "Professional appliance repair services in San Francisco Bay Area. Licensed & insured technicians providing fast scheduling. Service-area business - we come to you.",
     "url": "https://fixitbay.net",
     "telephone": "+17605435733",
     "priceRange": "$$",

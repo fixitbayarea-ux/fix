@@ -10,8 +10,8 @@ const SanFranciscoRepairPage = () => {
 
   const faqData = [
     {
-      question: "Do you provide same-day appliance repair in San Francisco?",
-      answer: "Yes! We offer same-day appliance repair service throughout San Francisco, including all neighborhoods from the Mission to Pacific Heights. Our technicians know the city well and can typically arrive within 60 minutes of your call."
+      question: "Do you provide fast appliance repair in San Francisco?",
+      answer: "Yes! We offer fast appliance repair service throughout San Francisco, including all neighborhoods from the Mission to Pacific Heights. Our technicians know the city well and can typically arrive within 60 minutes of your call."
     },
     {
       question: "How much does appliance repair cost in San Francisco?",

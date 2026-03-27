@@ -26,7 +26,7 @@ const STATIC_POSTS = [
   { slug: 'dishwasher-not-draining', title: 'Dishwasher Not Draining? 7 Quick Fixes', excerpt: 'Standing water after a cycle? Check these 7 common causes: clogged filter, blocked drain hose, garbage disposal connection, and air gap.', publish_date: '2026-02-20', categories: ['Dishwasher'], readTime: '6 min' },
   { slug: 'dryer-not-heating', title: 'Dryer Not Heating? 7 Causes for Gas & Electric Dryers', excerpt: 'A dryer that tumbles but won\'t heat is one of the most common problems. 7 causes ranked by complexity with SF Bay Area pricing and a real technician case study.', publish_date: '2026-03-23', categories: ['Dryer'], readTime: '8 min' },
   { slug: 'appliance-repair-cost-san-francisco', title: 'Appliance Repair Cost in San Francisco 2026 — Complete Price Guide', excerpt: 'How much does appliance repair cost in San Francisco? 3 pricing tables, luxury brand rates, a repair-vs-replace guide, and real numbers from a licensed technician.', publish_date: '2026-03-23', categories: ['Expert Advice', 'San Francisco'], readTime: '10 min' },
-  { slug: 'same-day-appliance-repair-bay-area', title: 'Same-Day Appliance Repair in the Bay Area — How It Works', excerpt: 'Need your appliance fixed today? Learn how FixitBay LLC delivers same-day repair across SF, Peninsula & Marin. $60 diagnostic, 180-day warranty.', publish_date: '2026-02-15', categories: ['Expert Advice', 'San Francisco'], readTime: '5 min' },
+  { slug: 'same- or next-day-appliance-repair-bay-area', title: 'Same-Day Appliance Repair in the Bay Area — How It Works', excerpt: 'Need your appliance fixed today? Learn how FixitBay LLC delivers fast repair across SF, Peninsula & Marin. $60 diagnostic, 180-day warranty.', publish_date: '2026-02-15', categories: ['Expert Advice', 'San Francisco'], readTime: '5 min' },
   { slug: 'appliance-repair-marin-county', title: 'Appliance Repair in Marin County — Complete Guide', excerpt: 'Everything you need to know about appliance repair in Marin County. Coverage areas, pricing, common issues in Marin homes, and how to book.', publish_date: '2026-02-01', categories: ['Expert Advice', 'Marin County'], readTime: '6 min' },
 ];
 
@@ -358,7 +358,7 @@ const BlogListPage = () => {
           <div style={{ maxWidth: 700, margin: '0 auto' }}>
             <div style={{ fontFamily: F, fontWeight: 700, fontSize: 11, color: 'rgba(255,255,255,0.45)', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 }}>FREE TIPS &amp; GUIDES</div>
             <h2 className="blog-section-h2" style={{ fontFamily: F, fontWeight: 800, color: '#fff', marginBottom: 12 }}>Common Appliance Problems — Answered</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginBottom: 28 }}>Our certified technicians are here with same-day service in San Francisco Bay Area.</p>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginBottom: 28 }}>Our certified technicians are here with fast, reliable service in San Francisco Bay Area.</p>
             <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="blog-cta-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', border: 'none' }} aria-label="opens in new tab">
                 Schedule Repair Now
@@ -385,7 +385,7 @@ const BlogListPage = () => {
           <div className="flex md:hidden" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 999, background: '#1A2F45', borderTop: '2px solid #FF5722', padding: '10px 12px', gap: 8, justifyContent: 'center' }}>
             <a href="tel:+17605435733" data-testid="mobile-call" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none' }}>CALL</a>
             <button onClick={() => window.open('/book?go=1', '_blank')} data-testid="mobile-book" style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: '#0D1B2A', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '8px 0', borderRadius: 4, border: '1px solid rgba(255,255,255,0.15)', cursor: 'pointer' }}>
-              <span style={{ fontSize: 9, color: 'rgba(255,255,255,0.45)', display: 'block', textAlign: 'center', marginBottom: 1 }}>Same-Day</span>
+              <span style={{ fontSize: 9, color: 'rgba(255,255,255,0.45)', display: 'block', textAlign: 'center', marginBottom: 1 }}>Fast</span>
               BOOK ONLINE
             </button>
             <a href="sms:7605435733?body=Hello%20FixitBay!" data-testid="mobile-text" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.15)' }}>TEXT US</a>

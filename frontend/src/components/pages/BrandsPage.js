@@ -115,7 +115,7 @@ const BrandsPage = () => {
       if (!el) { el = document.createElement('meta'); el.setAttribute(attr, n); document.head.appendChild(el); }
       el.setAttribute('content', c);
     };
-    setMeta('description', 'FixitBay LLC repairs all major appliance brands in San Francisco Bay Area \u2014 Bosch, Samsung, LG, Sub-Zero, Wolf, Thermador & more. Same-day service, OEM parts, 180-day warranty. Call (760) 543-5733.');
+    setMeta('description', 'FixitBay LLC repairs all major appliance brands in San Francisco Bay Area \u2014 Bosch, Samsung, LG, Sub-Zero, Wolf, Thermador & more. Fast scheduling, OEM parts, 180-day warranty. Call (760) 543-5733.');
     setMeta('og:title', 'Appliance Brand Repair in Bay Area | FixitBay LLC', true);
     setMeta('og:description', 'We repair every major appliance brand in the Bay Area with OEM parts and 180-day warranty.', true);
     setMeta('og:url', 'https://fixitbay.net/brands', true);
@@ -359,7 +359,7 @@ const BrandsPage = () => {
             {[
               { icon: <Wrench size={22} />, title: 'Brand-Specific Expertise', text: "Our technicians receive ongoing training on the latest models from all major manufacturers. We understand the unique engineering of each brand, from Samsung's smart features to Sub-Zero's dual refrigeration systems." },
               { icon: <Shield size={22} />, title: 'Genuine OEM Parts', text: 'We use Original Equipment Manufacturer parts or high-quality equivalents. For premium brands like Wolf and Thermador, we source directly from authorized distributors to maintain quality standards.' },
-              { icon: <Clock size={22} />, title: 'Fast Same-Day Service', text: 'We offer same-day and next-day appointments throughout San Francisco Bay Area. Our vans are stocked with common parts for faster repairs on major brands.' },
+              { icon: <Clock size={22} />, title: 'Fast Scheduling', text: 'We offer same- and next-day appointments throughout San Francisco Bay Area. Our vans are stocked with common parts for faster repairs on major brands.' },
               { icon: <Award size={22} />, title: '180-Day Warranty', text: 'Every repair includes our comprehensive 180-day warranty on parts and labor, regardless of brand. We stand behind our work with confidence.' },
             ].map((f, i) => (
               <div key={i} style={{ background: PC.white, border: '1px solid rgba(255,87,34,0.20)', borderRadius: PC.r, padding: 24 }}>
@@ -484,7 +484,7 @@ const BrandsPage = () => {
       <section data-testid="brands-final-cta" style={{ background: PC.navy, borderTop: `3px solid ${PC.accent}`, padding: '56px 20px', textAlign: 'center' }}>
         <div style={{ maxWidth: 700, margin: '0 auto' }}>
           <h2 className="brands-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.white, marginBottom: 12 }}>Ready to Fix Your Appliance?</h2>
-          <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: PC.white60, marginBottom: 28 }}>Get same-day service from certified technicians who know your brand inside and out.</p>
+          <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: PC.white60, marginBottom: 28 }}>Get fast, reliable service from certified technicians who know your brand inside and out.</p>
           <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
             <a href="tel:+17605435733" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', padding: '16px 32px', borderRadius: PC.r, textDecoration: 'none', letterSpacing: '0.04em', border: 'none' }}>Call (760) 543-5733</a>
             <a href="/book?go=1" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'transparent', color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', padding: '16px 32px', borderRadius: PC.r, textDecoration: 'none', border: `2px solid ${PC.white15}`, letterSpacing: '0.04em' }} aria-label="opens in new tab">Book Online</a>
@@ -513,7 +513,7 @@ const BrandsPage = () => {
         <div className="brands-mobile-bar" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 999, background: PC.navyMid, borderTop: `2px solid ${PC.accent}`, padding: '10px 12px', gap: 8, justifyContent: 'center' }}>
           <a href="tel:+17605435733" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: PC.r, textDecoration: 'none' }}>CALL</a>
           <button onClick={() => window.open('/book?go=1', '_blank')} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: PC.navy, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '8px 0', borderRadius: PC.r, border: `1px solid ${PC.white15}`, cursor: 'pointer' }}>
-            <span style={{ fontSize: 9, color: PC.white45, display: 'block', textAlign: 'center', marginBottom: 1 }}>Same-Day</span>
+            <span style={{ fontSize: 9, color: PC.white45, display: 'block', textAlign: 'center', marginBottom: 1 }}>Fast</span>
             BOOK ONLINE
           </button>
           <a href="sms:7605435733?body=Hello%20FixitBay!" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: 'transparent', color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: PC.r, textDecoration: 'none', border: `2px solid ${PC.white15}` }}>TEXT US</a>

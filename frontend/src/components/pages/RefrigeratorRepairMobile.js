@@ -82,7 +82,7 @@ const RefrigeratorRepairMobile = () => {
 
   const faqs = [
     { q: 'How much does it cost?', a: '$60 diagnostic visit, fully applied to repair cost. Most repairs: $150–$400. Upfront quote before any work — no surprises.' },
-    { q: 'How fast can you come?', a: 'Same-day and next-day service across San Francisco, Peninsula, and Marin. Most urgent cooling issues handled the same day.' },
+    { q: 'How fast can you come?', a: 'Same- or next-day and next-day service across San Francisco, Peninsula, and Marin. Most urgent cooling issues handled the same day.' },
     { q: 'Do you offer a warranty?', a: '180-day warranty on all parts and labor. If the same issue returns, we fix it free.' },
     { q: 'What brands do you fix?', a: 'All major brands: Sub-Zero, Viking, Thermador, Samsung, LG, Whirlpool, GE, Bosch, Miele, KitchenAid, Frigidaire, and more.' },
     { q: 'Do you repair built-in fridges?', a: 'Yes — French door, side-by-side, built-in, counter-depth, under-counter, and commercial units.' },
@@ -97,7 +97,7 @@ const RefrigeratorRepairMobile = () => {
   return (
     <div data-testid="mobile-landing-refrigerator" style={{ fontFamily: "'Montserrat', sans-serif", background: '#fff', paddingBottom: 82 }}>
 
-      <SEOMetaTags title="Refrigerator Repair San Francisco | Same-Day Service | FixitBay LLC" description="Fast refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733." canonical="https://fixitbay.net/refrigerator-repair" />
+      <SEOMetaTags title="Refrigerator Repair San Francisco | Fast Scheduling | FixitBay LLC" description="Fast refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733." canonical="https://fixitbay.net/refrigerator-repair" />
 
       {/* ── HEADER ── */}
       <header data-testid="mobile-header" style={{
@@ -131,7 +131,7 @@ const RefrigeratorRepairMobile = () => {
           marginBottom: 14,
         }}>
           <Clock size={13} color="#fff" />
-          <span style={{ fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '0.3px' }}>SAME-DAY SERVICE AVAILABLE</span>
+          <span style={{ fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '0.3px' }}>FAST SCHEDULING AVAILABLE</span>
         </div>
 
         {/* H1 */}
@@ -385,7 +385,7 @@ const RefrigeratorRepairMobile = () => {
           Don't wait
         </p>
         <h2 style={{ fontSize: 22, fontWeight: 800, margin: '0 0 6px' }}>Your fridge can't fix itself</h2>
-        <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', margin: '0 0 22px' }}>Same-day service &bull; 180-day warranty</p>
+        <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', margin: '0 0 22px' }}>Fast scheduling &bull; 180-day warranty</p>
         <button onClick={() => handleBook('final')} data-testid="final-book-btn" style={{
           width: '100%', padding: 16, marginBottom: 10,
           background: '#C0362C', color: '#fff', border: 'none', borderRadius: 14,

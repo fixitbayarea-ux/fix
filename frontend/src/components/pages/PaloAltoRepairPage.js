@@ -10,8 +10,8 @@ const PaloAltoRepairPage = () => {
 
   const faqData = [
     {
-      question: "Do you provide same-day appliance repair in Palo Alto?",
-      answer: "Yes! We offer same-day appliance repair service throughout Palo Alto, from Stanford to downtown. Our technicians are familiar with Palo Alto's tree-lined streets and can navigate efficiently to reach you quickly."
+      question: "Do you provide fast appliance repair in Palo Alto?",
+      answer: "Yes! We offer fast appliance repair service throughout Palo Alto, from Stanford to downtown. Our technicians are familiar with Palo Alto's tree-lined streets and can navigate efficiently to reach you quickly."
     },
     {
       question: "What's the cost of appliance repair in Palo Alto?",

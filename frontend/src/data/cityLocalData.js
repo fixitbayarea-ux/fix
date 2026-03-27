@@ -19,9 +19,9 @@ const cityLocalData = {
       { type: 'Luxury Homes & Penthouses', desc: 'Premium Sub-Zero, Wolf, and Thermador appliances. Our technicians are factory-trained on high-end brands and carry specialty parts.', areas: 'Pacific Heights, Presidio Heights, Sea Cliff' },
     ],
     caseStudies: [
-      { appliance: 'Sub-Zero Refrigerator', neighborhood: 'Pacific Heights', issue: 'Compressor failure in a built-in unit; replaced with factory part and recalibrated temperature controls.', timeframe: 'Same-day repair' },
+      { appliance: 'Sub-Zero Refrigerator', neighborhood: 'Pacific Heights', issue: 'Compressor failure in a built-in unit; replaced with factory part and recalibrated temperature controls.', timeframe: 'Fast repair' },
       { appliance: 'Bosch Dishwasher', neighborhood: 'Sunset District', issue: 'Drain pump seized from mineral buildup due to SF\'s hard water; cleaned and replaced pump assembly.', timeframe: '2-hour repair' },
-      { appliance: 'Samsung Washer', neighborhood: 'Mission District', issue: 'Washer vibrating excessively in a Victorian flat; leveled unit and replaced worn shock absorbers on narrow staircase install.', timeframe: 'Same-day repair' },
+      { appliance: 'Samsung Washer', neighborhood: 'Mission District', issue: 'Washer vibrating excessively in a Victorian flat; leveled unit and replaced worn shock absorbers on narrow staircase install.', timeframe: 'Fast repair' },
     ],
     testimonials: [
       { name: 'Sarah M.', area: 'Pacific Heights', text: 'Had a Sub-Zero emergency on Thanksgiving morning. They came within an hour and saved our dinner party. Incredibly professional.', rating: 5 },
@@ -34,7 +34,7 @@ const cityLocalData = {
       { name: 'South San Francisco', slug: 'south-san-francisco-appliance-repair' },
       { name: 'Brisbane', slug: 'brisbane-appliance-repair' },
     ],
-    nearbyDescription: 'We provide same-day appliance repair across all San Francisco neighborhoods including Sunset, Richmond, Mission, SOMA, Pacific Heights, Marina, Noe Valley, and more. Our technicians are based in SF and serve the entire city with fast response times.',
+    nearbyDescription: 'We provide fast appliance repair across all San Francisco neighborhoods including Sunset, Richmond, Mission, SOMA, Pacific Heights, Marina, Noe Valley, and more. Our technicians are based in SF and serve the entire city with fast response times.',
   },
 
   'Daly City': {
@@ -51,7 +51,7 @@ const cityLocalData = {
     ],
     caseStudies: [
       { appliance: 'LG Dryer', neighborhood: 'Westlake', issue: 'Extended dry cycles caused by moisture-clogged vent; cleaned vent run and replaced thermal fuse.', timeframe: '90-minute repair' },
-      { appliance: 'GE Refrigerator', neighborhood: 'Serramonte', issue: 'Door gasket failing from humidity causing condensation inside; replaced gasket and adjusted door alignment.', timeframe: 'Same-day repair' },
+      { appliance: 'GE Refrigerator', neighborhood: 'Serramonte', issue: 'Door gasket failing from humidity causing condensation inside; replaced gasket and adjusted door alignment.', timeframe: 'Fast repair' },
       { appliance: 'Whirlpool Dishwasher', neighborhood: 'Top of the Hill', issue: 'Spray arm clogged by mineral deposits from local water; descaled system and replaced worn spray arm.', timeframe: '1-hour repair' },
     ],
     testimonials: [
@@ -66,7 +66,7 @@ const cityLocalData = {
       { name: 'South San Francisco', slug: 'south-san-francisco-appliance-repair' },
       { name: 'Pacifica', slug: 'pacifica-appliance-repair' },
     ],
-    nearbyDescription: 'We provide same-day appliance repair throughout Daly City including Westlake, Serramonte, and Crocker Amazon. We also serve neighboring South San Francisco, Colma, and Brisbane with the same fast response times.',
+    nearbyDescription: 'We provide fast appliance repair throughout Daly City including Westlake, Serramonte, and Crocker Amazon. We also serve neighboring South San Francisco, Colma, and Brisbane with the same fast response times.',
   },
 
   'South San Francisco': {
@@ -81,13 +81,13 @@ const cityLocalData = {
       { type: 'Modern Condos & Apartments', desc: 'Newer builds with smart appliances near the biotech corridor. We stock Samsung, LG Wi-Fi module parts.', areas: 'Oyster Point, Lindenville, near BART' },
     ],
     caseStudies: [
-      { appliance: 'Samsung Smart Fridge', neighborhood: 'Oyster Point', issue: 'Wi-Fi module and ice maker failure in a new-build condo; replaced both components and reconnected smart features.', timeframe: 'Same-day repair' },
+      { appliance: 'Samsung Smart Fridge', neighborhood: 'Oyster Point', issue: 'Wi-Fi module and ice maker failure in a new-build condo; replaced both components and reconnected smart features.', timeframe: 'Fast repair' },
       { appliance: 'Maytag Washer', neighborhood: 'Westborough', issue: 'Bearing failure causing loud spinning noise; replaced bearing kit and tub seal in older home.', timeframe: '2-hour repair' },
       { appliance: 'KitchenAid Oven', neighborhood: 'Sign Hill', issue: 'Temperature sensor reading 50°F too low; calibrated oven and replaced faulty sensor probe.', timeframe: '1-hour repair' },
     ],
     testimonials: [
       { name: 'David C.', area: 'Westborough', text: 'Our Samsung fridge stopped making ice and lost Wi-Fi. They fixed both issues in one visit. Very knowledgeable about smart appliances.', rating: 5 },
-      { name: 'Priya N.', area: 'Oyster Point', text: 'Moved to a new condo and oven wasn\'t heating right. Same-day fix — turned out to be a sensor issue. Great service.', rating: 5 },
+      { name: 'Priya N.', area: 'Oyster Point', text: 'Moved to a new condo and oven wasn\'t heating right. Same- or next-day fix — turned out to be a sensor issue. Great service.', rating: 5 },
       { name: 'Maria G.', area: 'Sunshine Gardens', text: 'Washer was leaking all over the floor. Technician arrived within 2 hours and replaced the pump seal. Excellent work.', rating: 5 },
       { name: 'Tom H.', area: 'Lindenville', text: 'Our LG dryer stopped heating. Quick diagnosis — bad heating element. Fixed the same day. Highly recommend.', rating: 5 },
     ],
@@ -96,7 +96,7 @@ const cityLocalData = {
       { name: 'Daly City', slug: 'daly-city-appliance-repair' },
       { name: 'Brisbane', slug: 'brisbane-appliance-repair' },
     ],
-    nearbyDescription: 'We provide same-day appliance repair throughout South San Francisco including Westborough, Sign Hill, and the Oyster Point biotech corridor. We also serve neighboring San Bruno, Daly City, and Brisbane.',
+    nearbyDescription: 'We provide fast appliance repair throughout South San Francisco including Westborough, Sign Hill, and the Oyster Point biotech corridor. We also serve neighboring San Bruno, Daly City, and Brisbane.',
   },
 
   'San Bruno': {
@@ -111,7 +111,7 @@ const cityLocalData = {
       { type: 'Newer Townhomes & Condos', desc: 'Modern units near shopping with compact laundry closets and integrated kitchen designs.', areas: 'Near Tanforan, Bayhill, Downtown' },
     ],
     caseStudies: [
-      { appliance: 'Frigidaire Refrigerator', neighborhood: 'Crestmoor', issue: 'Evaporator fan motor failure from power surge; replaced motor and installed surge protection recommendation.', timeframe: 'Same-day repair' },
+      { appliance: 'Frigidaire Refrigerator', neighborhood: 'Crestmoor', issue: 'Evaporator fan motor failure from power surge; replaced motor and installed surge protection recommendation.', timeframe: 'Fast repair' },
       { appliance: 'LG Washer', neighborhood: 'Mills Park', issue: 'Front-loader door lock mechanism jammed; replaced door latch assembly in tight laundry closet.', timeframe: '1-hour repair' },
       { appliance: 'GE Gas Range', neighborhood: 'Rollingwood', issue: 'Burner igniter clicking continuously after a power outage; replaced igniter module and tested all burners.', timeframe: '90-minute repair' },
     ],
@@ -126,7 +126,7 @@ const cityLocalData = {
       { name: 'Millbrae', slug: 'millbrae-appliance-repair' },
       { name: 'Brisbane', slug: 'brisbane-appliance-repair' },
     ],
-    nearbyDescription: 'We provide same-day appliance repair across San Bruno including Crestmoor, Mills Park, and Rollingwood. We also serve neighboring South San Francisco, Millbrae, and Brisbane with quick response times.',
+    nearbyDescription: 'We provide fast appliance repair across San Bruno including Crestmoor, Mills Park, and Rollingwood. We also serve neighboring South San Francisco, Millbrae, and Brisbane with quick response times.',
   },
 
   'Pacifica': {
@@ -142,7 +142,7 @@ const cityLocalData = {
     ],
     caseStudies: [
       { appliance: 'Whirlpool Dryer', neighborhood: 'Linda Mar', issue: 'Salt air corroded heating element connections; cleaned contacts, replaced element, sealed connections against moisture.', timeframe: '2-hour repair' },
-      { appliance: 'Viking Range', neighborhood: 'Rockaway Beach', issue: 'Coastal moisture caused gas valve sticking; cleaned and lubricated gas valve assembly, tested all burners.', timeframe: 'Same-day repair' },
+      { appliance: 'Viking Range', neighborhood: 'Rockaway Beach', issue: 'Coastal moisture caused gas valve sticking; cleaned and lubricated gas valve assembly, tested all burners.', timeframe: 'Fast repair' },
       { appliance: 'Kenmore Refrigerator', neighborhood: 'Sharp Park', issue: 'Condenser coils heavily corroded from salt air; cleaned coils, replaced corroded fan motor.', timeframe: '90-minute repair' },
     ],
     testimonials: [
@@ -156,7 +156,7 @@ const cityLocalData = {
       { name: 'San Bruno', slug: 'san-bruno-appliance-repair' },
       { name: 'Montara', slug: 'montara-appliance-repair' },
     ],
-    nearbyDescription: 'We provide same-day appliance repair throughout Pacifica including Linda Mar, Rockaway Beach, Sharp Park, and Pedro Point. We also serve neighboring Daly City, San Bruno, and Montara along the coast.',
+    nearbyDescription: 'We provide fast appliance repair throughout Pacifica including Linda Mar, Rockaway Beach, Sharp Park, and Pedro Point. We also serve neighboring Daly City, San Bruno, and Montara along the coast.',
   },
 
   'Millbrae': {
@@ -172,7 +172,7 @@ const cityLocalData = {
       { type: 'Transit-Area Condos', desc: 'Modern units near BART/Caltrain with compact layouts. We schedule around commuter hours.', areas: 'Near Millbrae Station' },
     ],
     caseStudies: [
-      { appliance: 'Thermador Range', neighborhood: 'Mills Estate', issue: 'Dual-fuel range oven not reaching temperature; replaced igniter and recalibrated thermostat in luxury kitchen.', timeframe: 'Same-day repair' },
+      { appliance: 'Thermador Range', neighborhood: 'Mills Estate', issue: 'Dual-fuel range oven not reaching temperature; replaced igniter and recalibrated thermostat in luxury kitchen.', timeframe: 'Fast repair' },
       { appliance: 'Bosch Washer', neighborhood: 'Meadows', issue: 'Error code E27 — drain pump failure; replaced pump and cleaned filter trap.', timeframe: '1-hour repair' },
       { appliance: 'Sub-Zero Wine Cooler', neighborhood: 'Millbrae Highlands', issue: 'Temperature fluctuating between zones; replaced thermostat sensor and sealed door gasket.', timeframe: '2-hour repair' },
     ],
@@ -186,7 +186,7 @@ const cityLocalData = {
       { name: 'San Bruno', slug: 'san-bruno-appliance-repair' },
       { name: 'South San Francisco', slug: 'south-san-francisco-appliance-repair' },
     ],
-    nearbyDescription: 'We provide same-day appliance repair in Millbrae including Meadows, Mills Estate, and Green Hills. We also serve neighboring San Bruno and South San Francisco with flexible scheduling for transit commuters.',
+    nearbyDescription: 'We provide fast appliance repair in Millbrae including Meadows, Mills Estate, and Green Hills. We also serve neighboring San Bruno and South San Francisco with flexible scheduling for transit commuters.',
   },
 
   'Colma': {
@@ -203,7 +203,7 @@ const cityLocalData = {
     caseStudies: [
       { appliance: 'Samsung Washer', neighborhood: 'Sterling Park', issue: 'Front-loader vibrating on spin cycle in condo; rebalanced drum, replaced worn spider arm bracket.', timeframe: '90-minute repair' },
       { appliance: 'GE Dishwasher', neighborhood: 'Village in the Park', issue: 'Not cleaning dishes — clogged wash impeller from hard water; descaled and replaced impeller.', timeframe: '1-hour repair' },
-      { appliance: 'LG Refrigerator', neighborhood: 'Downtown Colma', issue: 'Ice maker overflowing; replaced faulty water inlet valve and adjusted fill level.', timeframe: 'Same-day repair' },
+      { appliance: 'LG Refrigerator', neighborhood: 'Downtown Colma', issue: 'Ice maker overflowing; replaced faulty water inlet valve and adjusted fill level.', timeframe: 'Fast repair' },
     ],
     testimonials: [
       { name: 'Diana P.', area: 'Sterling Park', text: 'Washer was shaking our whole condo. Fixed quickly and explained what caused it. No more complaints from the neighbors!', rating: 5 },
@@ -216,7 +216,7 @@ const cityLocalData = {
       { name: 'South San Francisco', slug: 'south-san-francisco-appliance-repair' },
       { name: 'Brisbane', slug: 'brisbane-appliance-repair' },
     ],
-    nearbyDescription: 'We provide same-day appliance repair in Colma including Sterling Park and Village in the Park. We also serve neighboring Daly City, South San Francisco, and Brisbane — typically arriving within 15 minutes from our SF base.',
+    nearbyDescription: 'We provide fast appliance repair in Colma including Sterling Park and Village in the Park. We also serve neighboring Daly City, South San Francisco, and Brisbane — typically arriving within 15 minutes from our SF base.',
   },
 
   'Brisbane': {
@@ -246,7 +246,7 @@ const cityLocalData = {
       { name: 'Daly City', slug: 'daly-city-appliance-repair' },
       { name: 'South San Francisco', slug: 'south-san-francisco-appliance-repair' },
     ],
-    nearbyDescription: 'We provide same-day appliance repair in Brisbane including Brisbane Acres and Sierra Point. We also serve neighboring San Francisco, Daly City, and South San Francisco — just 10 minutes from our SF base.',
+    nearbyDescription: 'We provide fast appliance repair in Brisbane including Brisbane Acres and Sierra Point. We also serve neighboring San Francisco, Daly City, and South San Francisco — just 10 minutes from our SF base.',
   },
 
   'Montara': {
@@ -261,7 +261,7 @@ const cityLocalData = {
       { type: 'Rural Properties', desc: 'Larger lots along Highway 1 with well water and unique infrastructure. We come fully stocked to avoid return trips.', areas: 'Chart House area' },
     ],
     caseStudies: [
-      { appliance: 'Viking Refrigerator', neighborhood: 'Montara', issue: 'Salt corrosion on condenser coils in ocean-front home; deep-cleaned coils, replaced corroded fan relay.', timeframe: 'Same-day repair' },
+      { appliance: 'Viking Refrigerator', neighborhood: 'Montara', issue: 'Salt corrosion on condenser coils in ocean-front home; deep-cleaned coils, replaced corroded fan relay.', timeframe: 'Fast repair' },
       { appliance: 'GE Dryer', neighborhood: 'Moss Beach border', issue: 'Moisture from ocean air caused thermal fuse failure; replaced fuse, sealed vent exit against saltwater spray.', timeframe: '90-minute repair' },
       { appliance: 'Frigidaire Dishwasher', neighborhood: 'Chart House area', issue: 'Control board corroded from humidity; replaced electronic control board and sealed connections.', timeframe: '2-hour repair' },
     ],
@@ -293,7 +293,7 @@ const cityLocalData = {
     caseStudies: [
       { appliance: 'Wolf Range', neighborhood: 'Blithedale Canyon', issue: 'Rodent-chewed igniter wiring in canyon home; replaced wiring harness, sealed entry points, tested all burners.', timeframe: '2-hour repair' },
       { appliance: 'Miele Dishwasher', neighborhood: 'Downtown Mill Valley', issue: 'Circulation pump motor failure; sourced factory Miele part and completed precision repair.', timeframe: 'Next-day repair (part sourcing)' },
-      { appliance: 'Sub-Zero Freezer', neighborhood: 'Tamalpais Valley', issue: 'Defrost system failure in 36-inch built-in; replaced defrost timer and heater element.', timeframe: 'Same-day repair' },
+      { appliance: 'Sub-Zero Freezer', neighborhood: 'Tamalpais Valley', issue: 'Defrost system failure in 36-inch built-in; replaced defrost timer and heater element.', timeframe: 'Fast repair' },
     ],
     testimonials: [
       { name: 'Patricia D.', area: 'Blithedale Canyon', text: 'Mice chewed through our Wolf range wiring in the canyon. They found the damage, fixed it, and showed us how to prevent it. Lifesavers.', rating: 5 },
@@ -306,7 +306,7 @@ const cityLocalData = {
       { name: 'Corte Madera', slug: 'corte-madera-appliance-repair' },
       { name: 'Tiburon', slug: 'tiburon-appliance-repair' },
     ],
-    nearbyDescription: 'We provide same-day appliance repair in Mill Valley, Tamalpais Valley, and Strawberry. We also serve neighboring Sausalito, Corte Madera, and Tiburon — typically reaching you within 60-90 minutes from SF.',
+    nearbyDescription: 'We provide fast appliance repair in Mill Valley, Tamalpais Valley, and Strawberry. We also serve neighboring Sausalito, Corte Madera, and Tiburon — typically reaching you within 60-90 minutes from SF.',
   },
 
   'San Rafael': {
@@ -323,7 +323,7 @@ const cityLocalData = {
       { type: 'Waterfront Condos', desc: 'Modern units along the Canal with compact layouts and newer appliance models.', areas: 'Canal District, Peacock Gap' },
     ],
     caseStudies: [
-      { appliance: 'GE Profile Refrigerator', neighborhood: 'Terra Linda', issue: 'Compressor overheating during San Rafael heat wave; replaced start relay and cleaned condenser coils.', timeframe: 'Same-day repair' },
+      { appliance: 'GE Profile Refrigerator', neighborhood: 'Terra Linda', issue: 'Compressor overheating during San Rafael heat wave; replaced start relay and cleaned condenser coils.', timeframe: 'Fast repair' },
       { appliance: 'Samsung Washer', neighborhood: 'Canal District', issue: 'Front-loader leaking from worn door boot seal; replaced boot gasket and tested multiple cycles.', timeframe: '90-minute repair' },
       { appliance: 'Thermador Cooktop', neighborhood: 'Gerstle Park', issue: 'Induction burner not recognizing cookware; replaced faulty induction coil module.', timeframe: '2-hour repair' },
     ],
@@ -355,7 +355,7 @@ const cityLocalData = {
     ],
     caseStudies: [
       { appliance: 'Bosch Dishwasher', neighborhood: 'Houseboat Community', issue: 'Drain pump corroded from marine humidity; replaced pump with marine-grade sealant on connections.', timeframe: '2-hour repair' },
-      { appliance: 'Wolf Oven', neighborhood: 'Spring Street', issue: 'Convection fan motor bearing worn; replaced motor in hillside kitchen with limited access.', timeframe: 'Same-day repair' },
+      { appliance: 'Wolf Oven', neighborhood: 'Spring Street', issue: 'Convection fan motor bearing worn; replaced motor in hillside kitchen with limited access.', timeframe: 'Fast repair' },
       { appliance: 'Whirlpool Refrigerator', neighborhood: 'Downtown Sausalito', issue: 'Compressor struggling in sun-exposed kitchen; cleaned coils, added ventilation recommendation, replaced thermostat.', timeframe: '90-minute repair' },
     ],
     testimonials: [
@@ -414,7 +414,7 @@ const cityLocalData = {
       { type: 'Hillside Estates', desc: 'Homes on steep terrain with challenging access. We plan routes and parking in advance for every appointment.', areas: 'Reed Heights, Old St. Hilary' },
     ],
     caseStudies: [
-      { appliance: 'Viking Professional Range', neighborhood: 'Paradise Cay', issue: 'Dual-fuel range oven igniter failure plus burner adjustment; complete ignition system service.', timeframe: 'Same-day repair' },
+      { appliance: 'Viking Professional Range', neighborhood: 'Paradise Cay', issue: 'Dual-fuel range oven igniter failure plus burner adjustment; complete ignition system service.', timeframe: 'Fast repair' },
       { appliance: 'Sub-Zero Wine Storage', neighborhood: 'Downtown Tiburon', issue: 'Temperature zone 2 running warm; replaced evaporator fan and thermostat sensor in 150-bottle unit.', timeframe: '2-hour repair' },
       { appliance: 'Bosch Washer', neighborhood: 'Reed Heights', issue: 'E04 error code — door lock failure; replaced door lock mechanism and control module.', timeframe: '90-minute repair' },
     ],
@@ -460,7 +460,7 @@ const cityLocalData = {
       { name: 'Mill Valley', slug: 'mill-valley-appliance-repair' },
       { name: 'Tiburon', slug: 'tiburon-appliance-repair' },
     ],
-    nearbyDescription: 'We provide same-day appliance repair in Corte Madera including Christmas Tree Hill, Chapman Park, and Madera Gardens. We also serve neighboring Larkspur, Mill Valley, and Tiburon.',
+    nearbyDescription: 'We provide fast appliance repair in Corte Madera including Christmas Tree Hill, Chapman Park, and Madera Gardens. We also serve neighboring Larkspur, Mill Valley, and Tiburon.',
   },
 
   'San Quentin': {
@@ -474,7 +474,7 @@ const cityLocalData = {
       { type: 'Waterfront Properties', desc: 'Bay-side homes with humidity exposure. We service appliances in this compact community and offer neighbor discounts.', areas: 'San Quentin Village, Point San Quentin' },
     ],
     caseStudies: [
-      { appliance: 'Whirlpool Refrigerator', neighborhood: 'San Quentin Village', issue: 'Ice buildup on evaporator from humidity; replaced defrost heater and thermostat.', timeframe: 'Same-day repair' },
+      { appliance: 'Whirlpool Refrigerator', neighborhood: 'San Quentin Village', issue: 'Ice buildup on evaporator from humidity; replaced defrost heater and thermostat.', timeframe: 'Fast repair' },
       { appliance: 'Kenmore Dryer', neighborhood: 'Point San Quentin', issue: 'Drum belt broken; replaced belt and rollers, cleaned lint from all internal components.', timeframe: '1-hour repair' },
     ],
     testimonials: [
@@ -519,7 +519,7 @@ const cityLocalData = {
       { name: 'San Rafael', slug: 'san-rafael-appliance-repair' },
       { name: 'Greenbrae', slug: 'greenbrae-appliance-repair' },
     ],
-    nearbyDescription: 'We provide same-day appliance repair in Larkspur including Downtown Larkspur, Madrone Canyon, and Baltimore Park. We also serve neighboring Corte Madera, San Rafael, and Greenbrae with flexible scheduling.',
+    nearbyDescription: 'We provide fast appliance repair in Larkspur including Downtown Larkspur, Madrone Canyon, and Baltimore Park. We also serve neighboring Corte Madera, San Rafael, and Greenbrae with flexible scheduling.',
   },
 
   'Greenbrae': {
@@ -594,7 +594,7 @@ const cityLocalData = {
       { type: 'Craftsman Bungalows', desc: 'Charming downtown homes with character kitchens. Older wiring sometimes needs attention alongside appliance repair.', areas: 'Downtown Fairfax, Manor' },
     ],
     caseStudies: [
-      { appliance: 'Kenmore Refrigerator', neighborhood: 'Cascade Canyon', issue: 'Power supply issues from aging home wiring; replaced start components and recommended electrician for panel upgrade.', timeframe: 'Same-day repair' },
+      { appliance: 'Kenmore Refrigerator', neighborhood: 'Cascade Canyon', issue: 'Power supply issues from aging home wiring; replaced start components and recommended electrician for panel upgrade.', timeframe: 'Fast repair' },
       { appliance: 'Whirlpool Washer', neighborhood: 'Downtown Fairfax', issue: 'Water not filling; replaced water inlet valve and cleaned sediment-clogged supply line screens.', timeframe: '1-hour repair' },
       { appliance: 'GE Gas Dryer', neighborhood: 'Oak Manor', issue: 'No heat — gas igniter cracked; replaced igniter and tested all safety components.', timeframe: '90-minute repair' },
     ],
@@ -649,7 +649,7 @@ const cityLocalData = {
     landmarks: ['Hamilton Field historic hangars', 'Stafford Lake', 'Marin Country Club'],
     driveTime: '30-42 min via Golden Gate Bridge + 101',
     housingType: 'Suburban homes in Hamilton, ranch properties in Indian Valley, waterfront in Bel Marin Keys',
-    localTip: 'Novato is our furthest North Bay city — we batch appointments here for same-day efficiency.',
+    localTip: 'Novato is our furthest North Bay city — we batch appointments here for fast efficiency.',
     housingTypes: [
       { type: 'Suburban Homes', desc: 'Family neighborhoods with heavy-use appliances. Standard layouts make for efficient service visits.', areas: 'Hamilton, Downtown Novato, Ignacio' },
       { type: 'Ranch Properties', desc: 'Larger lots with well water and rural infrastructure. We come prepared for unique plumbing challenges.', areas: 'Indian Valley, Pacheco Valle' },
@@ -657,11 +657,11 @@ const cityLocalData = {
     ],
     caseStudies: [
       { appliance: 'Maytag Washer', neighborhood: 'Hamilton', issue: 'Washer shaking violently during spin; replaced all four shock absorbers and rebalanced drum.', timeframe: '90-minute repair' },
-      { appliance: 'Thermador Refrigerator', neighborhood: 'Bel Marin Keys', issue: 'Freedom Refrigerator column not cooling; replaced evaporator and recharged sealed system.', timeframe: 'Same-day repair' },
+      { appliance: 'Thermador Refrigerator', neighborhood: 'Bel Marin Keys', issue: 'Freedom Refrigerator column not cooling; replaced evaporator and recharged sealed system.', timeframe: 'Fast repair' },
       { appliance: 'Whirlpool Gas Oven', neighborhood: 'Indian Valley', issue: 'Oven igniter glowing but not lighting; igniter weakened below threshold — replaced with new igniter.', timeframe: '1-hour repair' },
     ],
     testimonials: [
-      { name: 'Peter L.', area: 'Hamilton', text: 'They came all the way to Novato and fixed our washer fast. Appreciated the same-day service this far north.', rating: 5 },
+      { name: 'Peter L.', area: 'Hamilton', text: 'They came all the way to Novato and fixed our washer fast. Appreciated the fast scheduling this far north.', rating: 5 },
       { name: 'Ann S.', area: 'Bel Marin Keys', text: 'Thermador column fridge — not many techs know these. They did, and fixed it right. Expert-level knowledge.', rating: 5 },
       { name: 'Sharon V.', area: 'Hamilton', text: 'LG washer had an error code we couldn\'t figure out. Tech diagnosed bad pressure switch in minutes. Fixed same day.', rating: 5 },
       { name: 'Raymond D.', area: 'Ignacio', text: 'Oven was heating unevenly — one side burning, other raw. Bake element had a hot spot. Replaced and baking evenly.', rating: 5 },
@@ -670,7 +670,7 @@ const cityLocalData = {
       { name: 'San Rafael', slug: 'san-rafael-appliance-repair' },
       { name: 'San Anselmo', slug: 'san-anselmo-appliance-repair' },
     ],
-    nearbyDescription: 'We provide appliance repair throughout Novato including Hamilton, Ignacio, and Novato\'s downtown neighborhoods. We serve all of northern Marin County with same-day and next-day availability.',
+    nearbyDescription: 'We provide appliance repair throughout Novato including Hamilton, Ignacio, and Novato\'s downtown neighborhoods. We serve all of northern Marin County with fast and next-day availability.',
   },
 };
 

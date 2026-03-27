@@ -15,9 +15,9 @@ const SanAnselmo = () => {
   ];
 
   const faqData = [
-    { question: 'Do you serve all San Anselmo neighborhoods?', answer: 'Yes! We serve downtown San Anselmo, Sleepy Hollow, and all surrounding neighborhoods with same-day service.' },
+    { question: 'Do you serve all San Anselmo neighborhoods?', answer: 'Yes! We serve downtown San Anselmo, Sleepy Hollow, and all surrounding neighborhoods with fast scheduling.' },
     { question: 'Can you service homes near the antique district?', answer: 'Absolutely. We regularly service homes and businesses throughout downtown San Anselmo including the historic antique district.' },
-    { question: 'What\'s your response time to San Anselmo?', answer: 'We typically arrive within 1-2 hours for same-day appointments via Highway 101 and Sir Francis Drake Boulevard.' },
+    { question: 'What\'s your response time to San Anselmo?', answer: 'We typically arrive within 1-2 hours for scheduled appointments via Highway 101 and Sir Francis Drake Boulevard.' },
     { question: 'What brands do you repair?', answer: 'We repair all major brands: Whirlpool, GE, Samsung, LG, Bosch, KitchenAid, and more.' },
     { question: 'Are you licensed in Marin County?', answer: 'Yes. FixitBay LLC is fully licensed and insured for appliance repair in San Anselmo and throughout Marin County.' },
     { question: 'Do you offer warranties?', answer: 'Yes. Every repair includes a 180-day parts and labor warranty.' }
@@ -28,7 +28,7 @@ const SanAnselmo = () => {
     paragraphs: [
       'San Anselmo\'s charming downtown antique district and tree-lined residential streets make it a beloved Central Marin community. Our technicians serve all San Anselmo neighborhoods from the downtown business district to Sleepy Hollow and surrounding residential areas. We understand San Anselmo\'s mix of historic homes and modern properties.',
       'We navigate San Anselmo efficiently via Sir Francis Drake Boulevard and Red Hill Avenue, accessing downtown and residential neighborhoods quickly. Our vans carry parts for common appliance failures in San Anselmo\'s diverse housing stock, and we can source specialized components from our Bay Area network.',
-      'Same-day service is available throughout San Anselmo with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
+      'Fast scheduling is available throughout San Anselmo with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
     ]
   };
 
@@ -36,8 +36,8 @@ const SanAnselmo = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair San Anselmo | Same-Day Service | FixitBay LLC"
-        metaDescription="Professional appliance repair in San Anselmo. Same-day service downtown and in Sleepy Hollow. Licensed technicians, 180-day warranty. Call (760) 543-5733."
+        pageTitle="Appliance Repair San Anselmo | Fast Scheduling | FixitBay LLC"
+        metaDescription="Professional appliance repair in San Anselmo. Fast scheduling downtown and in Sleepy Hollow. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

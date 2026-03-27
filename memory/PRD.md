@@ -109,6 +109,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **PROMPT 12**: Fixed mobile navbar brand text visibility bug — removed `style={{display:'none'}}` that overrode Tailwind `flex sm:hidden`. Brand now shows "FixitBay LLC" (14px/700) + "Appliance Repair" (11px/0.75 opacity). Phone replaced with icon-only (no text) to save space. Desktop unchanged.
 - **PROMPT 13**: Fixed navbar logo — removed `rounded-full` (circle crop), set `border-radius: 4px`, `object-fit: contain`. Sizes: mobile 48×48px, desktop 56×56px. Logo no longer clipped.
 - **ПРОМТ 01 (new)**: Replaced homepage H1 from "Appliance Repair in San Francisco — Fixed Same Day" to "Appliance Repair San Francisco — Licensed & Trusted" (51 chars). Removed legally risky "Fixed Same Day" promise. SEO keywords preserved.
+- **ПРОМТ 02**: Global "same-day" guarantee audit. Changed ~150+ occurrences across 100+ files. Replaced "same-day service" guarantees with "fast scheduling", "same- or next-day appointments", "fast repair". Preserved honest FAQ answers ("We offer same-day and next-day appointments"), customer reviews, and blog URLs. Updated SEO meta, schema descriptions, hero text, badges, eyebrows.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

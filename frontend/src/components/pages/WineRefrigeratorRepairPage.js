@@ -35,11 +35,11 @@ const WineRefrigeratorRepairPage = () => {
   const faqData = [
     {
       question: "Do you repair all wine refrigerator and cooler brands?",
-      answer: "Yes! We service all major wine refrigerator brands—Sub-Zero, Vintec, EuroCave, Wine Enthusiast, NewAir, Kalamera, Phiestina, EdgeStar, and more. Our technicians are trained on single-zone, dual-zone, and multi-zone wine coolers with separate temperature controls for red and white wines. We stock thermostats, door gaskets, and compressor parts for same-day repairs."
+      answer: "Yes! We service all major wine refrigerator brands—Sub-Zero, Vintec, EuroCave, Wine Enthusiast, NewAir, Kalamera, Phiestina, EdgeStar, and more. Our technicians are trained on single-zone, dual-zone, and multi-zone wine coolers with separate temperature controls for red and white wines. We stock thermostats, door gaskets, and compressor parts for on-site repairs."
     },
     {
       question: "How quickly can you repair a wine refrigerator that's warming up?",
-      answer: "We understand wine storage is time-critical to protect your collection from spoilage. We offer same-day emergency service across the Bay Area — SF, Peninsula, and Marin County. Most wine cooler repairs (thermostat, compressor, door seal) take 1-2 hours. Call us immediately to prevent wine damage from temperature fluctuations."
+      answer: "We understand wine storage is time-critical to protect your collection from spoilage. We offer emergency priority service across the Bay Area — SF, Peninsula, and Marin County. Most wine cooler repairs (thermostat, compressor, door seal) take 1-2 hours. Call us immediately to prevent wine damage from temperature fluctuations."
     },
     {
       question: "Can you repair built-in and freestanding wine refrigerators?",
@@ -88,11 +88,11 @@ const WineRefrigeratorRepairPage = () => {
       <MobileServiceLanding
         appliance="Wine Cooler"
         pageSlug="wine-refrigerator-repair"
-        pageTitle="Wine Cooler Repair San Francisco | Same-Day | FixitBay LLC"
-        metaDescription="Specialized wine refrigerator repair across the Bay Area. Temperature, humidity, compressor issues. Same-day service. 180-day warranty."
-        heroTitle={<>Wine Cooler Repair<br />Bay Area. Same Day.</>}
+        pageTitle="Wine Cooler Repair San Francisco | Fast Scheduling | FixitBay LLC"
+        metaDescription="Specialized wine refrigerator repair across the Bay Area. Temperature, humidity, compressor issues. Fast scheduling. 180-day warranty."
+        heroTitle={<>Wine Cooler Repair<br />Bay Area. Fast & Local.</>}
         heroImageAlt="wine cooler repair Bay Area"
-        heroDescription="FixitBay LLC repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Same-day service, from $195 after $60 diagnostic."
+        heroDescription="FixitBay LLC repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Fast scheduling, from $195 after $60 diagnostic."
        
         issues={[
           { icon: '🌡️', label: 'Temp Wrong' },
@@ -127,17 +127,17 @@ const WineRefrigeratorRepairPage = () => {
       serviceSchema={serviceSchema}
       appliance="Wine Cooler"
       heroImageAlt="wine cooler repair Bay Area"
-      heroDescription="FixitBay LLC repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Same-day service, from $195 after $60 diagnostic."
+      heroDescription="FixitBay LLC repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Fast scheduling, from $195 after $60 diagnostic."
       cmsSlug="wine-cooler-repair"
-      pageTitle="Wine Cooler Repair San Francisco | Same-Day | FixitBay LLC"
-      metaDescription="Specialized wine refrigerator repair across the Bay Area. Temperature, humidity, compressor issues. Same-day service. 180-day warranty."
+      pageTitle="Wine Cooler Repair San Francisco | Fast Scheduling | FixitBay LLC"
+      metaDescription="Specialized wine refrigerator repair across the Bay Area. Temperature, humidity, compressor issues. Fast scheduling. 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={{
         title: "Specialized Wine Cooler Repair Service",
         paragraphs: [
           <>Wine refrigerators require precise temperature and humidity control to protect valuable wine collections. Our technicians specialize in diagnosing single-zone, dual-zone, and built-in wine coolers. We identify thermostat failures, compressor issues, humidity control problems, and vibration concerns. We charge a <strong>$60 diagnostic fee</strong> (waived with repair) and respond urgently to prevent wine damage from temperature fluctuations.</>,
-          <>Our wine cooler repair process includes calibrating temperature controls, testing compressor performance, checking humidity sensors, inspecting door gaskets for proper sealing, and examining UV-filtered lighting systems. We understand the critical importance of maintaining optimal red wine (55-65°F) and white wine (45-55°F) storage temperatures. Most wine refrigerator repairs are completed same-day to minimize risk to your collection.</>,
+          <>Our wine cooler repair process includes calibrating temperature controls, testing compressor performance, checking humidity sensors, inspecting door gaskets for proper sealing, and examining UV-filtered lighting systems. We understand the critical importance of maintaining optimal red wine (55-65°F) and white wine (45-55°F) storage temperatures. Most wine refrigerator repairs are completed on-site to minimize risk to your collection.</>,
           <>Whether your wine cooler has inconsistent temperatures, excessive vibration, or humidity problems, we'll restore proper function. We service all wine refrigerator brands including Sub-Zero, Vintec, EuroCave, Wine Enthusiast, and NewAir. Every wine cooler repair includes our <strong>180-day warranty</strong> on parts and labor, protecting your investment.</>,
           <><strong>Looking for wine cooler repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-wine-cooler-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Wine Cooler Repair</a> page for local details and availability.</>
         ]
@@ -228,7 +228,7 @@ const WineRefrigeratorRepairPage = () => {
         <div style={{ maxWidth: 800, margin: '0 auto' }}>
           <h2 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '1.3rem', fontWeight: 800, color: '#1A3B5D', marginBottom: 20 }}>From the Field</h2>
           <blockquote style={{ borderLeft: '4px solid #FF5722', padding: '20px 24px', margin: 0, background: '#FAFAF7', borderRadius: '0 8px 8px 0' }}>
-            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 15, lineHeight: 1.75, color: '#4A5568', fontStyle: 'italic', margin: '0 0 16px 0' }}>"Last month in Pacific Heights, a customer's Sub-Zero wine unit was cycling on/off every 3 minutes — a classic compressor overload symptom worsened by a blocked condenser coil. The unit sat in a tight undercounter cavity with only 1 inch of ventilation clearance instead of the required 3 inches. We cleaned the condenser, improved the airflow, and the unit has been running perfectly since. Same-day fix, 180-day warranty."</p>
+            <p style={{ fontFamily: 'Inter,sans-serif', fontSize: 15, lineHeight: 1.75, color: '#4A5568', fontStyle: 'italic', margin: '0 0 16px 0' }}>"Last month in Pacific Heights, a customer's Sub-Zero wine unit was cycling on/off every 3 minutes — a classic compressor overload symptom worsened by a blocked condenser coil. The unit sat in a tight undercounter cavity with only 1 inch of ventilation clearance instead of the required 3 inches. We cleaned the condenser, improved the airflow, and the unit has been running perfectly since. On-site fix, 180-day warranty."</p>
             <footer style={{ fontFamily: 'Montserrat,sans-serif', fontSize: 14, fontWeight: 700, color: '#1A3B5D' }}>— Andrei, Lead Appliance Technician, FixitBay LLC</footer>
           </blockquote>
         </div>
@@ -239,7 +239,7 @@ const WineRefrigeratorRepairPage = () => {
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <h2 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '1.1rem', fontWeight: 700, color: '#1A3B5D', marginBottom: 16 }}>Related Resources</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16 }}>
-            <a href="/blog/same-day-appliance-repair-bay-area" style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none' }}>Same-Day Repair Guide &rarr;</a>
+            <a href="/blog/same- or next-day-appliance-repair-bay-area" style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none' }}>Same-Day Repair Guide &rarr;</a>
             <a href="/marin-county-appliance-repair" style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none' }}>Marin County Appliance Repair &rarr;</a>
             <a href="/blog/appliance-repair-marin-county" style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none' }}>Appliance Repair in Marin County &rarr;</a>
           </div>

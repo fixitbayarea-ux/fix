@@ -529,7 +529,7 @@ const brandLandingData = {
       },
       {
         q: 'My Whirlpool washer shakes across the floor during spin. What causes that?',
-        a: 'Top-load washers shake when suspension rods stretch or the tub bearing wears out. Front-loaders shake from deteriorated shock absorbers. Both are same-day repairs that resolve the problem permanently.',
+        a: 'Top-load washers shake when suspension rods stretch or the tub bearing wears out. Front-loaders shake from deteriorated shock absorbers. Both are fast repairs that resolve the problem permanently.',
       },
       {
         q: 'How often should I clean my dryer exhaust vent?',
@@ -557,7 +557,7 @@ const brandLandingData = {
       },
       {
         q: 'What areas do you serve for Whirlpool repair?',
-        a: 'We serve San Francisco, Daly City, South SF, San Bruno, Millbrae, Pacifica, Sausalito, Mill Valley, San Rafael, Novato, Tiburon, and Corte Madera. Same-day available in most areas when you call before noon.',
+        a: 'We serve San Francisco, Daly City, South SF, San Bruno, Millbrae, Pacifica, Sausalito, Mill Valley, San Rafael, Novato, Tiburon, and Corte Madera. Same- or next-day available in most areas when you call before noon.',
       },
     ],
   },

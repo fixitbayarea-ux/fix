@@ -5,7 +5,7 @@ const NovatoRepairPage = () => {
   const cityData = {
     city: "Novato",
     pageTitle: "Appliance Repair in Novato, CA – Fast, Reliable, Affordable!",
-    metaDescription: "Expert appliance repair in Novato, CA. Licensed technicians, 180-day warranty, same-day service. Call (760) 543-5733 or book online now!",
+    metaDescription: "Expert appliance repair in Novato, CA. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733 or book online now!",
     neighborhoods: [
       "Downtown Novato",
       "Bel Marin Keys", 
@@ -19,8 +19,8 @@ const NovatoRepairPage = () => {
     localFeatures: "Novato residents trust our friendly service and North Bay values. We appreciate the relaxed lifestyle and natural beauty of this Marin County community.",
     faqData: [
       {
-        question: "Do you offer same-day appliance repair in Novato?",
-        answer: "Yes! We provide same-day appliance repair service throughout Novato, including Downtown, Bel Marin Keys, Indian Valley, and all surrounding neighborhoods. Call us before 2 PM for same-day availability."
+        question: "Do you offer fast appliance repair in Novato?",
+        answer: "Yes! We provide fast appliance repair service throughout Novato, including Downtown, Bel Marin Keys, Indian Valley, and all surrounding neighborhoods. Call us before 2 PM for fast scheduling."
       },
       {
         question: "What appliance brands do you repair in Novato?",

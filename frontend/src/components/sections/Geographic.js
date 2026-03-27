@@ -70,7 +70,7 @@ const Geographic = () => {
             Serving All <span className="text-gold-gradient">Bay Area</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Professional appliance repair services available throughout San Francisco Bay Area with same-day emergency response.
+            Professional appliance repair services available throughout San Francisco Bay Area with fast emergency response.
           </p>
         </motion.div>
 

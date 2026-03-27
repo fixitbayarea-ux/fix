@@ -21,7 +21,7 @@ const faqData = [
   { question: 'Do you repair both coin-operated and card-operated commercial washers?', answer: 'Yes. We service coin-operated, card-operated, and app-controlled commercial washers. We also repair the payment mechanisms themselves — coin slides, coin acceptors, card readers, and network-connected payment systems used in modern laundromat equipment.' },
   { question: 'What commercial washer brands do you repair?', answer: 'We repair Speed Queen, Maytag Commercial, Dexter, Huebsch, Wascomat, Electrolux Professional, Whirlpool Commercial, Continental Girbau, IPSO, and UniMac. Our technician carries common parts for Speed Queen and Dexter units, the two most common brands in San Francisco laundromats.' },
   { question: 'Can you service large-capacity washer-extractors?', answer: 'Yes. We work on commercial washer-extractors from 20 lb to 125 lb capacity, including soft-mount and hard-mount configurations used in hotels, hospitals, and industrial laundry operations.' },
-  { question: 'How quickly can you respond to a laundromat washer breakdown?', answer: 'We prioritize commercial laundry equipment for same-day or next-day service. A broken washer in a laundromat directly costs revenue, so we treat these as urgent calls.' },
+  { question: 'How quickly can you respond to a laundromat washer breakdown?', answer: 'We prioritize commercial laundry equipment for same- or next-day or next-day service. A broken washer in a laundromat directly costs revenue, so we treat these as urgent calls.' },
   { question: 'Can you repair washers in multi-family buildings?', answer: 'Yes. We service commercial washers in apartment buildings, condominiums, and housing complexes throughout San Francisco. We work with property managers and HOAs to schedule service at convenient times.' },
   { question: 'Is there a warranty on commercial washer repairs?', answer: 'Yes. All commercial washer repairs include our 180-day warranty on parts and labor. If the same issue recurs, we return at no additional charge.' },
 ];
@@ -29,7 +29,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Commercial Washer Repair for Laundromats, Hotels & Healthcare',
   paragraphs: [
-    <>Commercial washer breakdowns cost real money — a single out-of-service machine in a busy San Francisco laundromat can mean $50-$100+ per day in lost revenue. Hotels fall behind on linen service. Healthcare facilities risk sanitation compliance. FixitBay LLC provides <strong>priority same-day commercial washer repair</strong> to minimize downtime.</>,
+    <>Commercial washer breakdowns cost real money — a single out-of-service machine in a busy San Francisco laundromat can mean $50-$100+ per day in lost revenue. Hotels fall behind on linen service. Healthcare facilities risk sanitation compliance. FixitBay LLC provides <strong>priority commercial washer repair</strong> to minimize downtime.</>,
     <>Our licensed technician diagnoses front-load and top-load commercial washers from all major brands. We test motors, pumps, bearings, control boards, valves, and payment systems. We carry common replacement parts for Speed Queen, Dexter, and Maytag Commercial units. The <strong>$100 diagnostic fee</strong> is credited toward your repair.</>,
     <>Whether your laundromat washer won't spin, your hotel washer-extractor is leaking, or your coin-op machine won't accept payment, we'll restore operation fast. Every repair includes our <strong>180-day warranty on parts and labor</strong>.</>,
   ],
@@ -113,7 +113,7 @@ const DesktopPage = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Washer"
     pageTitle="Commercial Washer Repair – Laundromat, Hotel & Healthcare Equipment"
-    metaDescription="Commercial washer repair in San Francisco, Peninsula & Marin County. Coin-op, card-op, industrial washers for laundromats, hotels, healthcare. Same-day service, $100 diagnostic, 180-day warranty. Speed Queen, Dexter, Maytag Commercial."
+    metaDescription="Commercial washer repair in San Francisco, Peninsula & Marin County. Coin-op, card-op, industrial washers for laundromats, hotels, healthcare. Fast scheduling, $100 diagnostic, 180-day warranty. Speed Queen, Dexter, Maytag Commercial."
     commonProblems={commonProblems}
     faqData={faqData}
     relatedServicesCategory="Commercial"
@@ -135,7 +135,7 @@ const mobileIssues = [
 
 const mobileFaqs = [
   { q: 'Do you repair coin-op and card-op washers?', a: 'Yes — all types including coin-operated, card-operated, and app-controlled units for laundromats, hotels, and multi-family properties.' },
-  { q: 'How fast can you respond?', a: 'Same-day or next-day priority service for commercial laundry equipment.' },
+  { q: 'How fast can you respond?', a: 'Same- or next-day or next-day priority service for commercial laundry equipment.' },
   { q: 'What brands do you repair?', a: 'Speed Queen, Maytag Commercial, Dexter, Huebsch, Wascomat, and all major commercial washer brands.' },
   { q: 'Is there a warranty?', a: '180-day warranty on parts and labor for all commercial washer repairs.' },
 ];
@@ -156,7 +156,7 @@ const MobilePage = () => (
     appliance="Commercial Washer"
     pageSlug="commercial-washer-repair"
     pageTitle="Commercial Washer Repair – Laundromat & Multi-Family Units"
-    metaDescription="Commercial washer repair in San Francisco & Bay Area. Coin-op, card-op washers. Same-day service, 180-day warranty."
+    metaDescription="Commercial washer repair in San Francisco & Bay Area. Coin-op, card-op washers. Fast scheduling, 180-day warranty."
     heroTitle={<>Commercial Washer<br />Repair. Fast Fix.</>}
     heroSubtitle="Priority Service for Laundromats & Hotels"
     issues={mobileIssues}

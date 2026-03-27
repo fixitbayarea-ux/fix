@@ -29,7 +29,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Commercial Oven Repair — Convection, Pizza, Combi & Range',
   paragraphs: [
-    <>A broken commercial oven can shut down a restaurant kitchen in minutes. Bakeries can't bake, pizzerias can't make pizza, and hotels fall behind on banquet service. FixitBay LLC provides <strong>emergency same-day commercial oven repair</strong> for every type of commercial cooking equipment in San Francisco, the Peninsula, and Marin County.</>,
+    <>A broken commercial oven can shut down a restaurant kitchen in minutes. Bakeries can't bake, pizzerias can't make pizza, and hotels fall behind on banquet service. FixitBay LLC provides <strong>emergency commercial oven repair</strong> for every type of commercial cooking equipment in San Francisco, the Peninsula, and Marin County.</>,
     <>Our licensed technician has hands-on experience with convection ovens, deck ovens, pizza ovens, combi ovens, conveyor ovens, commercial ranges, and related cooking equipment from all major manufacturers. We test thermostats, calibrate temperature controls, inspect gas burners and igniters, check heating elements, and evaluate fan motors and convection systems. The <strong>$100 diagnostic fee</strong> is credited toward your repair.</>,
     <>From a Rational combi oven with a failed steam generator to a Bakers Pride pizza deck that won't hold temperature, we handle the full spectrum of commercial cooking equipment repair. Every job includes our <strong>180-day warranty on parts and labor</strong>.</>,
   ],
@@ -117,7 +117,7 @@ const DesktopPage = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Oven"
     pageTitle="Commercial Oven Repair – Convection, Pizza, Combi Ovens & Range Hoods"
-    metaDescription="Commercial oven repair in San Francisco, Peninsula & Marin County. Convection, pizza, combi ovens, commercial ranges. Same-day service, $100 diagnostic, 180-day warranty. Vulcan, Blodgett, Rational, Bakers Pride."
+    metaDescription="Commercial oven repair in San Francisco, Peninsula & Marin County. Convection, pizza, combi ovens, commercial ranges. Fast scheduling, $100 diagnostic, 180-day warranty. Vulcan, Blodgett, Rational, Bakers Pride."
     commonProblems={commonProblems}
     faqData={faqData}
     relatedServicesCategory="Commercial"
@@ -139,7 +139,7 @@ const mobileIssues = [
 
 const mobileFaqs = [
   { q: 'Do you repair all types of commercial ovens?', a: 'Yes — convection, deck, pizza, combi, conveyor ovens, commercial ranges, griddles, and range hoods.' },
-  { q: 'How fast can you respond?', a: 'Same-day or next-day priority service for commercial kitchen equipment.' },
+  { q: 'How fast can you respond?', a: 'Same- or next-day or next-day priority service for commercial kitchen equipment.' },
   { q: 'What brands do you repair?', a: 'Vulcan, Blodgett, Rational, Alto-Shaam, Bakers Pride, Garland, and all major commercial oven brands.' },
   { q: 'Is there a warranty?', a: '180-day warranty on parts and labor for all commercial oven repairs.' },
 ];
@@ -160,8 +160,8 @@ const MobilePage = () => (
     appliance="Commercial Oven"
     pageSlug="commercial-oven-repair"
     pageTitle="Commercial Oven Repair – Restaurant & Bakery Equipment"
-    metaDescription="Commercial oven repair in San Francisco & Bay Area. Convection, deck, combi ovens. Same-day service, 180-day warranty."
-    heroTitle={<>Commercial Oven<br />Repair. Same Day.</>}
+    metaDescription="Commercial oven repair in San Francisco & Bay Area. Convection, deck, combi ovens. Fast scheduling, 180-day warranty."
+    heroTitle={<>Commercial Oven<br />Repair — Bay Area.</>}
     heroSubtitle="Priority Service for Restaurants & Bakeries"
     issues={mobileIssues}
     faqs={mobileFaqs}

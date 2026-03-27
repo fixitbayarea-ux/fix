@@ -43,7 +43,7 @@ const SchemaMarkup = () => {
       "@id": "https://fixitbay.net/#organization",
       "name": "FixitBay LLC",
       "alternateName": "FixitBay LLC Appliance Repair",
-      "description": "Professional appliance repair in San Francisco Bay Area. Licensed technician Andrei provides same-day service for refrigerators, washers, dryers, dishwashers, ovens, cooktops, wine coolers, ice makers, and garbage disposals. $60 diagnostic applied to repair. 180-day warranty on all parts and labor.",
+      "description": "Professional appliance repair in San Francisco Bay Area. Licensed technician Andrei provides same- or next-day appointments for refrigerators, washers, dryers, dishwashers, ovens, cooktops, wine coolers, ice makers, and garbage disposals. $60 diagnostic applied to repair. 180-day warranty on all parts and labor.",
       "url": "https://fixitbay.net",
       "telephone": "+17605435733",
       "email": "info@fixitbay.net",

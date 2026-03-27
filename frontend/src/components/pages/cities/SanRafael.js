@@ -15,8 +15,8 @@ const SanRafael = () => {
   ];
 
   const faqData = [
-    { question: 'Do you service all San Rafael neighborhoods?', answer: 'Yes! We serve downtown San Rafael, Terra Linda, Marinwood, Sun Valley, Peacock Gap, Dominican, and all other San Rafael areas with same-day service.' },
-    { question: 'How quickly can you reach San Rafael?', answer: 'We typically arrive within 1-2 hours for same-day appointments, accessing San Rafael via Highway 101 and local routes.' },
+    { question: 'Do you service all San Rafael neighborhoods?', answer: 'Yes! We serve downtown San Rafael, Terra Linda, Marinwood, Sun Valley, Peacock Gap, Dominican, and all other San Rafael areas with fast scheduling.' },
+    { question: 'How quickly can you reach San Rafael?', answer: 'We typically arrive within 1-2 hours for scheduled appointments, accessing San Rafael via Highway 101 and local routes.' },
     { question: 'Do you service apartments near downtown?', answer: 'Absolutely. We regularly service apartments, condos, and homes throughout downtown San Rafael and surrounding neighborhoods.' },
     { question: 'What brands do you repair?', answer: 'We repair all major brands: Whirlpool, GE, Samsung, LG, Bosch, KitchenAid, Thermador, Viking, Sub-Zero, and more.' },
     { question: 'Are you licensed in Marin County?', answer: 'Yes. FixitBay LLC is fully licensed and insured to provide appliance repair throughout San Rafael and Marin County.' },
@@ -28,7 +28,7 @@ const SanRafael = () => {
     paragraphs: [
       'San Rafael, as Marin County\'s largest city, presents diverse appliance service needs from downtown apartments to hillside estates. Our technicians navigate San Rafael daily, from Fourth Street\'s commercial district to Terra Linda\'s residential neighborhoods and Marinwood\'s family homes. We understand San Rafael\'s mix of housing styles and the specific appliance challenges each area faces.',
       'We serve San Rafael\'s varied communities: downtown living spaces, mid-century homes in Terra Linda, hillside properties in Dominican, and waterfront residences along the canal. Our team is experienced with both standard residential appliances and the premium brands common in San Rafael\'s upscale neighborhoods. We stock parts for frequent failures and source specialized components quickly.',
-      'Same-day service is available throughout San Rafael with a $60 diagnostic fee credited toward repairs. We provide detailed estimates before starting work and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands and handle both traditional and high-efficiency models.'
+      'Fast scheduling is available throughout San Rafael with a $60 diagnostic fee credited toward repairs. We provide detailed estimates before starting work and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands and handle both traditional and high-efficiency models.'
     ]
   };
 
@@ -36,8 +36,8 @@ const SanRafael = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair San Rafael | Same-Day Service | FixitBay LLC"
-        metaDescription="Professional appliance repair in San Rafael. Same-day service in Terra Linda, Marinwood, downtown. Licensed technicians, 180-day warranty. Call (760) 543-5733."
+        pageTitle="Appliance Repair San Rafael | Fast Scheduling | FixitBay LLC"
+        metaDescription="Professional appliance repair in San Rafael. Fast scheduling in Terra Linda, Marinwood, downtown. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

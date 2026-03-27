@@ -22,14 +22,14 @@ const faqData = [
   { question: 'What are the most common commercial dryer issues?', answer: 'In our San Francisco service area, the top three commercial dryer issues are: (1) gas valve solenoid failure causing no heat, (2) restricted exhaust venting causing extended dry times, and (3) worn drum seals allowing cold air infiltration. Together, these account for about 70% of our commercial dryer service calls.' },
   { question: 'What commercial dryer brands do you repair?', answer: 'We repair Speed Queen, Dexter, Maytag Commercial, Huebsch, American Dryer Corporation (ADC), Electrolux Professional, IPSO, UniMac, Wascomat, and Continental Girbau commercial dryers.' },
   { question: 'Can you service commercial dryer venting systems?', answer: 'Yes. We inspect and repair commercial dryer venting, including cleaning lint accumulation, replacing damaged duct sections, ensuring proper termination, and verifying airflow meets manufacturer specifications. Proper venting is critical for dryer performance and fire safety.' },
-  { question: 'How quickly can you respond to a laundromat dryer breakdown?', answer: 'We prioritize commercial laundry equipment for same-day or next-day service. In a laundromat, every down dryer means lost revenue and unhappy customers, so we treat these as urgent calls.' },
+  { question: 'How quickly can you respond to a laundromat dryer breakdown?', answer: 'We prioritize commercial laundry equipment for same- or next-day or next-day service. In a laundromat, every down dryer means lost revenue and unhappy customers, so we treat these as urgent calls.' },
   { question: 'Is there a warranty on commercial dryer repairs?', answer: 'Yes. All commercial dryer repairs include our 180-day warranty on parts and labor.' },
 ];
 
 const serviceDescription = {
   title: 'Commercial Dryer Repair — Gas, Electric & Stack Dryers',
   paragraphs: [
-    <>A non-heating commercial dryer is one of the most costly breakdowns for laundromat owners. Customers leave, revenue drops, and negative reviews pile up. FixitBay LLC provides <strong>priority same-day commercial dryer repair</strong> for gas and electric dryers in laundromats, hotels, healthcare facilities, and multi-family buildings throughout San Francisco, the Peninsula, and Marin County.</>,
+    <>A non-heating commercial dryer is one of the most costly breakdowns for laundromat owners. Customers leave, revenue drops, and negative reviews pile up. FixitBay LLC provides <strong>priority commercial dryer repair</strong> for gas and electric dryers in laundromats, hotels, healthcare facilities, and multi-family buildings throughout San Francisco, the Peninsula, and Marin County.</>,
     <>Our licensed technician diagnoses gas valve solenoids, igniters, heating elements, thermostats, drum bearings, belts, motors, and control boards. We carry common parts for Speed Queen and Dexter dryers — the two most popular brands in Bay Area commercial laundry. The <strong>$100 diagnostic fee</strong> is credited toward your repair.</>,
     <>Whether your laundromat gas dryer won't heat, your hotel stack dryer is taking too long, or your apartment building dryer won't start, we'll fix it fast. Every repair includes our <strong>180-day warranty on parts and labor</strong>.</>,
   ],
@@ -120,7 +120,7 @@ const DesktopPage = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Dryer"
     pageTitle="Commercial Dryer Repair – Gas, Electric & Stack Dryers for Laundromats"
-    metaDescription="Commercial dryer repair in San Francisco, Peninsula & Marin County. Gas & electric, single and stack dryers for laundromats, hotels, apartments. Same-day service, $100 diagnostic, 180-day warranty. Speed Queen, Dexter, Maytag Commercial."
+    metaDescription="Commercial dryer repair in San Francisco, Peninsula & Marin County. Gas & electric, single and stack dryers for laundromats, hotels, apartments. Fast scheduling, $100 diagnostic, 180-day warranty. Speed Queen, Dexter, Maytag Commercial."
     commonProblems={commonProblems}
     faqData={faqData}
     relatedServicesCategory="Commercial"
@@ -142,7 +142,7 @@ const mobileIssues = [
 
 const mobileFaqs = [
   { q: 'Do you repair gas and electric commercial dryers?', a: 'Yes — both gas and electric, including single, double-stack, and triple-stack configurations.' },
-  { q: 'How fast can you respond?', a: 'Same-day or next-day priority service for commercial laundry equipment.' },
+  { q: 'How fast can you respond?', a: 'Same- or next-day or next-day priority service for commercial laundry equipment.' },
   { q: 'What brands do you repair?', a: 'Speed Queen, Dexter, Maytag Commercial, Huebsch, ADC, and all major commercial dryer brands.' },
   { q: 'Is there a warranty?', a: '180-day warranty on parts and labor for all commercial dryer repairs.' },
 ];
@@ -163,8 +163,8 @@ const MobilePage = () => (
     appliance="Commercial Dryer"
     pageSlug="commercial-dryer-repair"
     pageTitle="Commercial Dryer Repair – Laundromat & Hotel Dryers"
-    metaDescription="Commercial dryer repair in San Francisco & Bay Area. Gas & electric dryers. Same-day service, 180-day warranty."
-    heroTitle={<>Commercial Dryer<br />Repair. Same Day.</>}
+    metaDescription="Commercial dryer repair in San Francisco & Bay Area. Gas & electric dryers. Fast scheduling, 180-day warranty."
+    heroTitle={<>Commercial Dryer<br />Repair — Bay Area.</>}
     heroSubtitle="Priority Service for Laundromats & Hotels"
     issues={mobileIssues}
     faqs={mobileFaqs}

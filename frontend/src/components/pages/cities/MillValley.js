@@ -15,7 +15,7 @@ const MillValley = () => {
   ];
 
   const faqData = [
-    { question: 'Do you offer same-day service in Mill Valley?', answer: 'Yes. We provide same/next-day appointments across Mill Valley, including Tamalpais Valley, Almonte, Strawberry, Boyle Park, and Scott Valley, navigating hillside streets easily.' },
+    { question: 'Do you offer fast scheduling in Mill Valley?', answer: 'Yes. We provide same/next-day appointments across Mill Valley, including Tamalpais Valley, Almonte, Strawberry, Boyle Park, and Scott Valley, navigating hillside streets easily.' },
     { question: 'How does the $60 diagnostic work?', answer: 'If you proceed with the repair, the $60 diagnostic is fully credited toward your repair total. If no repair is performed, the diagnostic covers the visit and troubleshooting.' },
     { question: 'Which brands do you stock parts for in Mill Valley?', answer: 'We carry common parts for LG, Samsung, Whirlpool, GE, Maytag, KitchenAid, Bosch, and more. For premium brands common in Mill Valley (Sub-Zero, Thermador), we source fast from local suppliers.' },
     { question: 'Do you service built-in and panel-ready fridges?', answer: 'Yes. We regularly work on built-in and panel-ready refrigerators (Sub-Zero, Thermador, KitchenAid, Bosch) in Mill Valley\'s hillside homes and condos.' },
@@ -28,7 +28,7 @@ const MillValley = () => {
     paragraphs: [
       'Mill Valley\'s dramatic hillside setting beneath Mount Tamalpais creates unique challenges for home appliances. Steep terrain, redwood microclimates, and elevation changes affect everything from refrigerator cooling to dryer venting. Our technicians navigate Mill Valley\'s winding roads daily, from downtown\'s commercial district to Tam Valley\'s hillside homes, understanding both the geography and the upscale appliances common in this affluent Marin community.',
       'We service Mill Valley\'s mix of mid-century modern homes, contemporary hillside properties, and downtown condos. Many Mill Valley homes feature premium appliances like Sub-Zero refrigerators, Wolf ranges, and Bosch dishwashers, which we specialize in servicing. We also handle challenges specific to hillside homes: water pressure variations, complex dryer vent routing, and appliances stressed by uneven floors and temperature gradients.',
-      'Same-day service is available throughout Mill Valley with a $60 diagnostic fee credited toward repairs. We stock parts for common failures and can source premium brand components quickly. Every repair includes a 180-day warranty, and our licensed technicians are experienced with both standard and luxury appliances found in Mill Valley homes.'
+      'Fast scheduling is available throughout Mill Valley with a $60 diagnostic fee credited toward repairs. We stock parts for common failures and can source premium brand components quickly. Every repair includes a 180-day warranty, and our licensed technicians are experienced with both standard and luxury appliances found in Mill Valley homes.'
     ]
   };
 

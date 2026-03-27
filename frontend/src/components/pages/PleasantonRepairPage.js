@@ -5,7 +5,7 @@ const PleasantonRepairPage = () => {
   const cityData = {
     city: "Pleasanton",
     pageTitle: "Appliance Repair in Pleasanton, CA – Fast, Reliable, Affordable!",
-    metaDescription: "Expert appliance repair in Pleasanton, CA. Licensed technicians, 180-day warranty, same-day service. Call (760) 543-5733 or book online now!",
+    metaDescription: "Expert appliance repair in Pleasanton, CA. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733 or book online now!",
     neighborhoods: [
       "Downtown Pleasanton",
       "Ruby Hill", 
@@ -19,8 +19,8 @@ const PleasantonRepairPage = () => {
     localFeatures: "Pleasanton residents trust our premium service and attention to detail. We understand the high standards of this beautiful Tri-Valley community.",
     faqData: [
       {
-        question: "Do you offer same-day appliance repair in Pleasanton?",
-        answer: "Yes! We provide same-day appliance repair service throughout Pleasanton, including Downtown, Ruby Hill, Kottinger Ranch, and all surrounding neighborhoods. Call us before 2 PM for same-day availability."
+        question: "Do you offer fast appliance repair in Pleasanton?",
+        answer: "Yes! We provide fast appliance repair service throughout Pleasanton, including Downtown, Ruby Hill, Kottinger Ranch, and all surrounding neighborhoods. Call us before 2 PM for fast scheduling."
       },
       {
         question: "What appliance brands do you repair in Pleasanton?",

@@ -53,7 +53,7 @@ const NeighborhoodPage = () => {
   if (!data) return <div style={{ paddingTop: 100, textAlign: 'center', fontFamily: 'Montserrat,sans-serif' }}>Neighborhood not found.</div>;
 
   const title = `Appliance Repair in ${data.name} San Francisco | FixitBay LLC`;
-  const desc = `Same-day appliance repair in ${data.name}, San Francisco. $60 diagnostic, 180-day warranty. Licensed CA technician #51001. Book online or call (760) 543-5733.`;
+  const desc = `Fast appliance repair in ${data.name}, San Francisco. $60 diagnostic, 180-day warranty. Licensed CA technician #51001. Book online or call (760) 543-5733.`;
   const canonical = `https://fixitbay.net/san-francisco/${data.slug}-appliance-repair`;
   const faqItems = data.quickFaq || data.faq || [];
   const calls = data.topCalls || data.commonProblems || [];
@@ -230,7 +230,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
             </div>
             <div className="nh-eyebrow" style={{ marginBottom: 12 }}>SAN FRANCISCO &middot; {data.name.toUpperCase()}</div>
             <h1 data-testid="nh-h1">Appliance Repair in<br />{data.name}</h1>
-            <p className="nh-hero-sub">Licensed same-day service for every street in {data.name}. $60 diagnostic, 180-day warranty.</p>
+            <p className="nh-hero-sub">Licensed fast, reliable service for every street in {data.name}. $60 diagnostic, 180-day warranty.</p>
             <div className="nh-hero-ctas">
               <a href="/book" className="nh-btn-primary" data-testid="nh-hero-book-btn">Book Repair Online</a>
               <a href="tel:7605435733" className="nh-btn-secondary" data-testid="nh-hero-call-btn">(760) 543-5733</a>
@@ -238,7 +238,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
             <div className="nh-trust" data-testid="nh-trust-badges">
               {[
                 '\u2713 Licensed CA Technician #51001',
-                '\u2713 Same-Day Available',
+                '\u2713 Fast Scheduling',
                 '\u2713 $60 Diagnostic \u00B7 Applied to Repair',
                 '\u2713 180-Day Warranty',
               ].map((t, i) => (
@@ -251,8 +251,8 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
         {/* ─── 2. LOCAL INTRO ─── */}
         <section className="nh-intro" data-testid="nh-intro">
           <div className="nh-intro-inner">
-            <p>{data.name} is one of San Francisco's most distinctive neighborhoods. FixitBay LLC technicians serve {data.name} residents with same-day appliance repair &mdash; refrigerators, washers, dryers, dishwashers, ovens and more.</p>
-            <p>FixitBay LLC provides licensed, same-day appliance repair throughout {data.name}. Our technicians arrive with diagnostic tools and commonly needed parts to resolve most issues in a single visit. We serve every street in {data.name} &mdash; homes, condos, and apartments &mdash; covering all major brands and appliance types.</p>
+            <p>{data.name} is one of San Francisco's most distinctive neighborhoods. FixitBay LLC technicians serve {data.name} residents with fast appliance repair &mdash; refrigerators, washers, dryers, dishwashers, ovens and more.</p>
+            <p>FixitBay LLC provides licensed, fast appliance repair throughout {data.name}. Our technicians arrive with diagnostic tools and commonly needed parts to resolve most issues in a single visit. We serve every street in {data.name} &mdash; homes, condos, and apartments &mdash; covering all major brands and appliance types.</p>
             <p>{data.localIssue}</p>
           </div>
         </section>
@@ -371,7 +371,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
         <section className="nh-cta" data-testid="nh-final-cta">
           <div className="nh-eyebrow" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 8 }}>GET STARTED</div>
           <div className="nh-cta-title">Ready to Book in {data.name}?</div>
-          <p className="nh-cta-sub">Schedule a licensed technician to your {data.name} home. $60 diagnostic credited toward your repair, 180-day warranty on parts and labor, and same-day appointments available for calls placed before 2 PM.</p>
+          <p className="nh-cta-sub">Schedule a licensed technician to your {data.name} home. $60 diagnostic credited toward your repair, 180-day warranty on parts and labor, and appointments often available same- or next-day for calls placed before 2 PM.</p>
           <div className="nh-cta-btns">
             <a href="/book" className="nh-btn-primary" data-testid="nh-cta-book-btn">Book Online</a>
             <a href="tel:7605435733" className="nh-cta-sec" data-testid="nh-cta-call-btn">(760) 543-5733</a>

@@ -31,7 +31,7 @@ const StoveRepairPage = () => {
     paragraphs: [
       'Your stovetop is the workhorse of your kitchen — from morning coffee to family dinners, it sees daily use. When burners fail, flames weaken, or controls malfunction, cooking becomes frustrating or even dangerous. FixitBay LLC provides fast, professional stove repair throughout San Francisco, the Peninsula, and Marin County for all fuel types and brands.',
       'Our licensed technicians diagnose and repair gas stoves (including pilot light and electronic ignition systems), electric coil stoves, smooth-top ceramic stoves, and induction cooktops. We handle everything from simple igniter replacements to complex control board repairs. San Francisco\'s older homes often have unique gas line configurations — our techs are experienced with the specific challenges of Victorian and Edwardian kitchens.',
-      'Every repair starts with our $60 diagnostic, which is credited toward the final cost. We carry common parts for major brands and complete most repairs in a single visit. All work is backed by our 180-day warranty on parts and labor, with same-day and next-day appointments available throughout the Bay Area.'
+      'Every repair starts with our $60 diagnostic, which is credited toward the final cost. We carry common parts for major brands and complete most repairs in a single visit. All work is backed by our 180-day warranty on parts and labor, with same- or next-day and next-day appointments available throughout the Bay Area.'
     ]
   };
 
@@ -60,7 +60,7 @@ const StoveRepairPage = () => {
         heroImagePosition="center center"
         techImage="/images/technicians/range-tech.jpg"
         techImageAlt="FixitBay technician next to a stove in a San Francisco kitchen"
-        heroSubtitle="Gas & Electric — Same-Day Service"
+        heroSubtitle="Gas & Electric — Fast Scheduling"
         issues={[
           { icon: '🔥', label: 'Won\'t Ignite' },
           { icon: '🌡️', label: 'Weak Flame' },

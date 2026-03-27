@@ -31,7 +31,7 @@ const CITY_CONTEXT = {
   'san-bruno': {
     region: 'Peninsula',
     neighborhoods: 'Downtown, Crestmoor, Mills Park, Rollingwood',
-    localFactor: 'San Bruno\'s location near SFO means many busy professionals need fast, reliable appliance repair. We offer flexible scheduling and same-day service to accommodate work schedules.',
+    localFactor: 'San Bruno\'s location near SFO means many busy professionals need fast, reliable appliance repair. We offer flexible scheduling and fast scheduling to accommodate work schedules.',
     features: 'near SFO airport, suburban neighborhoods, Tanforan shopping area'
   },
   'pacifica': {
@@ -67,7 +67,7 @@ const CITY_CONTEXT = {
   'novato': {
     region: 'Marin',
     neighborhoods: 'Downtown, Hamilton, Ignacio, Bel Marin Keys, San Marin, Vintage Oaks',
-    localFactor: 'Novato is Marin\'s northernmost city with a mix of suburban neighborhoods and the Hamilton community. We cover all of Novato with no extra travel charges, offering same-day service throughout the area.',
+    localFactor: 'Novato is Marin\'s northernmost city with a mix of suburban neighborhoods and the Hamilton community. We cover all of Novato with no extra travel charges, offering fast scheduling throughout the area.',
     features: 'North Marin, suburban, Hamilton former Air Force base'
   },
   'tiburon': {
@@ -85,7 +85,7 @@ const CITY_CONTEXT = {
   'corte-madera': {
     region: 'Marin',
     neighborhoods: 'Downtown, Christmas Tree Hill, Madera Gardens',
-    localFactor: 'Corte Madera offers convenient access between Mill Valley and San Rafael. We service homes near Town Center and throughout residential neighborhoods with same-day availability.',
+    localFactor: 'Corte Madera offers convenient access between Mill Valley and San Rafael. We service homes near Town Center and throughout residential neighborhoods with fast scheduling.',
     features: 'central Marin location, Town Center shopping, family-friendly'
   },
   'larkspur': {
@@ -171,7 +171,7 @@ const CityServicePage = () => {
   const cityContext = CITY_CONTEXT[citySlug] || {
     region: 'Bay Area',
     neighborhoods: 'all neighborhoods',
-    localFactor: `Our technicians serve all of ${cityName} with same-day and next-day availability. We're familiar with the area and arrive prepared with common replacement parts.`,
+    localFactor: `Our technicians serve all of ${cityName} with same- and next-day availability. We're familiar with the area and arrive prepared with common replacement parts.`,
     features: 'residential areas'
   };
   
@@ -311,8 +311,8 @@ const CityServicePage = () => {
       answer: `${serviceName} repair in ${cityName} typically costs ${pricing.range} after our $60 diagnostic fee. Common repairs include: ${pricing.common}. The $60 diagnostic is fully applied to your repair cost when you proceed. We provide exact pricing before starting any work—no surprises.`
     },
     {
-      question: `Do you offer same-day ${serviceName.toLowerCase()} repair in ${cityName}?`,
-      answer: `Yes! We offer same-day ${serviceName.toLowerCase()} repair throughout ${cityName}, including ${cityContext.neighborhoods}. Call (760) 543-5733 before noon for same-day availability, or book online for next-day appointments. Our technicians typically arrive within 2-4 hours of booking.`
+      question: `Do you offer quick ${serviceName.toLowerCase()} repair in ${cityName}?`,
+      answer: `Yes! We offer fast ${serviceName.toLowerCase()} repair throughout ${cityName}, including ${cityContext.neighborhoods}. Call (760) 543-5733 before noon for fast scheduling, or book online for next-day appointments. Our technicians typically arrive within 2-4 hours of booking.`
     },
     {
       question: `What ${serviceName.toLowerCase()} brands do you service in ${cityName}?`,
@@ -350,17 +350,17 @@ const CityServicePage = () => {
       "@type": "City",
       "name": cityName
     },
-    "description": `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Same-day service, $60 diagnostic applied to repair, 180-day warranty.`
+    "description": `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Fast scheduling, $60 diagnostic applied to repair, 180-day warranty.`
   };
 
-  const pageTitle = `${serviceName} Repair ${cityName} | Same-Day | FixitBay LLC`;
-  const metaDescription = `Licensed ${serviceName.toLowerCase()} repair in ${cityName}, CA. Same-day & next-day service. $60 diagnostic applied to repair. 180-day warranty on parts and labor.`;
+  const pageTitle = `${serviceName} Repair ${cityName} | Fast Scheduling | FixitBay LLC`;
+  const metaDescription = `Licensed ${serviceName.toLowerCase()} repair in ${cityName}, CA. Same- & next-day appointments. $60 diagnostic applied to repair. 180-day warranty on parts and labor.`;
 
   // Rich service description with local context
   const serviceDescription = {
     title: `Expert ${serviceName} Repair in ${cityName}`,
     paragraphs: [
-      <>FixitBay LLC provides professional {serviceName.toLowerCase()} repair throughout {cityName}, serving {cityContext.neighborhoods} with same-day and next-day availability. Our licensed technicians arrive with common {serviceName.toLowerCase()} parts stocked—including thermostats, pumps, motors, and control boards—enabling us to complete most repairs during the first visit.</>,
+      <>FixitBay LLC provides professional {serviceName.toLowerCase()} repair throughout {cityName}, serving {cityContext.neighborhoods} with same- or next-day and next-day availability. Our licensed technicians arrive with common {serviceName.toLowerCase()} parts stocked—including thermostats, pumps, motors, and control boards—enabling us to complete most repairs during the first visit.</>,
       <><strong>Local expertise matters.</strong> {cityContext.localFactor}</>,
       <><strong>{serviceName} Repair Pricing in {cityName}:</strong> Most repairs cost {pricing.range} after the $60 diagnostic fee. Common repairs include: {pricing.common}. We provide exact pricing before starting any work, and the $60 diagnostic is fully applied to your repair cost.</>,
       <>Every {serviceName.toLowerCase()} repair in {cityName} includes our comprehensive <strong>180-day warranty</strong> on parts and labor. We service all major brands including Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Viking, and Thermador. Call <a href="tel:+17605435733">(760) 543-5733</a> or <a href="/book">book online</a> for fast {serviceName.toLowerCase()} repair service in {cityName}.</>,
@@ -375,7 +375,7 @@ const CityServicePage = () => {
         pageTitle={pageTitle}
         metaDescription={metaDescription}
         heroTitle={<>{serviceName} Repair<br />{cityName}</>}
-        heroSubtitle={`Same-Day Service • ${pricing.range}`}
+        heroSubtitle={`Fast Scheduling • ${pricing.range}`}
         heroDescription={`Serving ${cityContext.neighborhoods}. ${cityContext.localFactor.split('.')[0]}.`}
         techImage={data.heroImage}
         techImageAlt={data.heroImageAlt}

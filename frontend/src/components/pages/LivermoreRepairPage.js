@@ -5,7 +5,7 @@ const LivermoreRepairPage = () => {
   const cityData = {
     city: "Livermore",
     pageTitle: "Appliance Repair in Livermore, CA – Fast, Reliable, Affordable!",
-    metaDescription: "Expert appliance repair in Livermore, CA. Licensed technicians, 180-day warranty, same-day service. Call (760) 543-5733 or book online now!",
+    metaDescription: "Expert appliance repair in Livermore, CA. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733 or book online now!",
     neighborhoods: [
       "Downtown Livermore",
       "Jensen Tract", 
@@ -19,8 +19,8 @@ const LivermoreRepairPage = () => {
     localFeatures: "Livermore residents love our dependable service and wine country hospitality. We understand the unique character of this Tri-Valley gem.",
     faqData: [
       {
-        question: "Do you offer same-day appliance repair in Livermore?",
-        answer: "Yes! We provide same-day appliance repair service throughout Livermore, including Downtown, Jensen Tract, Springtown, and all surrounding neighborhoods. Call us before 2 PM for same-day availability."
+        question: "Do you offer fast appliance repair in Livermore?",
+        answer: "Yes! We provide fast appliance repair service throughout Livermore, including Downtown, Jensen Tract, Springtown, and all surrounding neighborhoods. Call us before 2 PM for fast scheduling."
       },
       {
         question: "What appliance brands do you repair in Livermore?",

@@ -59,7 +59,7 @@ const CHECKLIST = [
 const FAQ_ITEMS = [
   { q: 'What happens if I don\'t change my refrigerator water filter?', a: 'An overdue filter becomes a breeding ground for bacteria and stops removing contaminants. You\'ll notice reduced water flow, bad-tasting water, and smaller ice cubes. The filter media saturates and can no longer capture chlorine, lead, or sediment. Beyond water quality, a clogged filter strains the water inlet valve and ice maker motor, potentially causing expensive repairs.' },
   { q: 'Can I run my refrigerator without a water filter?', a: 'Most refrigerators will dispense water and make ice without a filter installed if you insert a bypass plug (usually included with the fridge). However, you\'ll be drinking unfiltered tap water. If your Bay Area tap water has high mineral content or you\'re on older plumbing, we recommend always keeping a working filter installed.' },
-  { q: 'Why is my water flow still slow after replacing the filter?', a: 'If slow flow continues after a new filter, the problem is likely elsewhere\u2014most often a failing water inlet valve or kinked water supply line. The water inlet valve is a solenoid valve that opens to allow water flow; they wear out after several years. FixitBay LLC technicians can diagnose and replace water inlet valves same-day. Call (760) 543-5733.' },
+  { q: 'Why is my water flow still slow after replacing the filter?', a: 'If slow flow continues after a new filter, the problem is likely elsewhere\u2014most often a failing water inlet valve or kinked water supply line. The water inlet valve is a solenoid valve that opens to allow water flow; they wear out after several years. FixitBay LLC technicians can diagnose and replace water inlet valves quickly. Call (760) 543-5733.' },
   { q: 'Are aftermarket refrigerator filters safe?', a: 'Yes, if they are NSF/ANSI 42 and 53 certified. This certification means the filter meets federal drinking water standards for contaminant reduction. Avoid uncertified cheap filters from unknown brands\u2014they may not filter effectively and can leak. When in doubt, OEM filters guarantee fit and performance.' },
   { q: 'My refrigerator doesn\'t have a filter indicator. How do I know when to change it?', a: 'Set a calendar reminder every 6 months from the day you install each filter\u2014write the date on the filter itself with a permanent marker. Watch for signs: slow dispenser flow, smaller ice cubes, any change in taste or smell. If your household uses more than 1-2 gallons of water per day, consider changing every 4-5 months instead of waiting for 6.' },
 ];
@@ -231,7 +231,7 @@ const RefrigeratorWaterFilter = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Same-day service · $60 diagnostic · 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
@@ -346,7 +346,7 @@ const RefrigeratorWaterFilter = () => {
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
                 <div style={EYE}>CERTIFIED REFRIGERATOR REPAIR</div>
                 <p style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Need Help with Your Refrigerator?</p>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians can replace water filters, fix water dispensers, and diagnose any refrigerator issues. Same-day service in SF Bay Area!</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians can replace water filters, fix water dispensers, and diagnose any refrigerator issues. Fast scheduling in SF Bay Area!</p>
                 <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
                   <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
                   <a href="/book?go=1" target="_blank" rel="noopener noreferrer" style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.4)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none' }} aria-label="opens in new tab">Book Service</a>
@@ -369,10 +369,10 @@ const RefrigeratorWaterFilter = () => {
               {/* Widget 1: Book Service */}
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>REFRIGERATOR PROBLEMS?</div>
-                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Same-Day Repair Available</h3>
+                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Fast Repair Available</h3>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>Water dispenser, ice maker, cooling issues. $60 diagnostic applied to repair.</p>
                 <div style={{ borderBottom: '1px solid rgba(255,255,255,0.08)', marginBottom: 16 }} />
-                {['All Refrigerator Brands', 'Same-Day Available', '180-Day Warranty'].map(item => (
+                {['All Refrigerator Brands', 'Fast Scheduling', '180-Day Warranty'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
                     <span style={{ color: '#FF5722', fontFamily: F, fontWeight: 700, fontSize: 13 }}>{'\u2713'}</span>
                     <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>{item}</span>
@@ -447,9 +447,9 @@ const RefrigeratorWaterFilter = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Refrigerator Repair', body: 'All refrigerator brands and models. Water dispenser, ice maker, cooling issues. Same-day service.', link: 'View Service', href: '/refrigerator-repair' },
+                { tag: 'SERVICE', title: 'Refrigerator Repair', body: 'All refrigerator brands and models. Water dispenser, ice maker, cooling issues. Fast scheduling.', link: 'View Service', href: '/refrigerator-repair' },
                 { tag: 'ARTICLE', title: '5 Reasons Your Refrigerator Isn\'t Cooling', body: 'Diagnose why your fridge stopped keeping food cold. Common causes and fixes.', link: 'Read Article', href: '/blog/refrigerator-not-cooling' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Same-day available.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: card.tag === 'SERVICE' ? '#fff' : 'rgba(255,255,255,0.7)', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>

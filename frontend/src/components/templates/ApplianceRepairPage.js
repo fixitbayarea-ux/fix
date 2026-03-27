@@ -107,7 +107,7 @@ const ApplianceRepairPage = ({
     <div className="min-h-screen bg-white font-montserrat" style={{ paddingTop: '64px' }}>
       <SEOMetaTags
         title={pageTitle || `${appliance} Repair`}
-        description={metaDescription || `Professional ${appliance.toLowerCase()} repair services in San Francisco, Peninsula, and Marin County. Licensed technicians, 180-day warranty, same-day service.`}
+        description={metaDescription || `Professional ${appliance.toLowerCase()} repair services in San Francisco, Peninsula, and Marin County. Licensed technicians, 180-day warranty, fast scheduling.`}
         canonical={`https://fixitbay.net${currentPath}`}
         ogImage="https://fixitbay.net/images/og-cover.png"
       />

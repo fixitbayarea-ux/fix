@@ -19,7 +19,7 @@ const commonProblems = [
 
 const faqData = [
   { question: 'Do you repair all types of commercial refrigerators?', answer: 'Yes. We service walk-in coolers, walk-in freezers, reach-in refrigerators, under-counter units, prep tables, bar coolers, display cases, blast chillers, and ice cream freezers. We work with restaurants, grocery stores, delis, bakeries, hotels, and commercial kitchens throughout San Francisco, the Peninsula, and Marin County.' },
-  { question: 'How quickly can you respond to a walk-in cooler emergency?', answer: 'We offer same-day emergency service for commercial refrigeration failures. A walk-in cooler breakdown puts thousands of dollars in inventory at risk, so we prioritize these calls. In most cases, our technician arrives within 2-4 hours of your call.' },
+  { question: 'How quickly can you respond to a walk-in cooler emergency?', answer: 'We offer emergency priority service for commercial refrigeration failures. A walk-in cooler breakdown puts thousands of dollars in inventory at risk, so we prioritize these calls. In most cases, our technician arrives within 2-4 hours of your call.' },
   { question: 'What commercial refrigeration brands do you repair?', answer: 'We repair True, Traulsen, Turbo Air, Beverage-Air, Hoshizaki, Delfield, Victory, Master-Bilt, Continental, Arctic Air, Everest, Atosa, and all other major commercial refrigeration brands. Our technician carries common parts for these brands.' },
   { question: 'Can you help with health code refrigeration violations?', answer: 'Absolutely. We understand San Francisco health department requirements and can perform emergency temperature remediation, calibrate thermostats, replace failed components, and provide documentation to help resolve violations.' },
   { question: 'Is there a warranty on commercial refrigerator repairs?', answer: 'Yes. All commercial refrigerator repairs include our 180-day warranty on parts and labor. If the same issue recurs within the warranty period, we return at no additional charge.' },
@@ -29,7 +29,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Emergency Commercial Refrigeration Repair in San Francisco',
   paragraphs: [
-    <>When your commercial refrigerator fails, every minute counts. Food inventory worth thousands of dollars is at risk, and health code violations can shut down your business. FixitBay LLC provides <strong>emergency same-day commercial refrigeration repair</strong> for restaurants, grocery stores, delis, hotels, and commercial kitchens throughout San Francisco, the Peninsula, and Marin County.</>,
+    <>When your commercial refrigerator fails, every minute counts. Food inventory worth thousands of dollars is at risk, and health code violations can shut down your business. FixitBay LLC provides <strong>emergency commercial refrigeration repair</strong> for restaurants, grocery stores, delis, hotels, and commercial kitchens throughout San Francisco, the Peninsula, and Marin County.</>,
     <>Our licensed technician arrives with diagnostic equipment and common replacement parts for walk-in coolers, reach-in refrigerators, prep tables, display cases, and bar refrigeration. We charge a <strong>$100 diagnostic fee</strong> (credited toward your repair) and provide an upfront written estimate before any work begins.</>,
     <>From compressor replacements and refrigerant recharges to thermostat calibration and door gasket replacements, we handle the full spectrum of commercial refrigeration repair. Every job includes our <strong>180-day warranty on parts and labor</strong>, giving you confidence that the repair will last.</>,
   ],
@@ -106,7 +106,7 @@ const UniqueContent = () => (
         <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#FFFFFF', marginBottom: 24, lineHeight: 1.2 }}>Why Restaurants Trust FixitBay LLC</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}>
           {[
-            { title: 'Emergency Same-Day Response', text: 'We understand that a broken walk-in cooler means thousands of dollars in spoiling inventory. San Francisco restaurants call us because we prioritize commercial emergencies and typically arrive within 2-4 hours.' },
+            { title: 'Emergency Fast Response', text: 'We understand that a broken walk-in cooler means thousands of dollars in spoiling inventory. San Francisco restaurants call us because we prioritize commercial emergencies and typically arrive within 2-4 hours.' },
             { title: 'Health Code Expertise', text: 'Our technician understands San Francisco Department of Public Health temperature requirements. We can help you remediate violations, calibrate equipment, and document repairs for inspector follow-up visits.' },
             { title: 'Parts for All Major Brands', text: 'We carry common replacement parts for True, Beverage-Air, Turbo Air, Hoshizaki, and other leading commercial refrigeration brands. Many repairs are completed in a single visit.' },
             { title: '180-Day Warranty', text: 'Every commercial refrigerator repair includes a 180-day warranty on parts and labor. If the same issue recurs, we return at no charge. Your business depends on reliable refrigeration — so does our reputation.' },
@@ -128,7 +128,7 @@ const DesktopPage = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Refrigerator"
     pageTitle="Commercial Refrigerator Repair – Walk-In Coolers, Reach-In Units & Display Cases"
-    metaDescription="Commercial refrigerator repair in San Francisco, Peninsula & Marin County. Walk-in coolers, reach-in units, display cases. Same-day emergency service, $100 diagnostic fee, 180-day warranty. True, Beverage-Air, Turbo Air, Hoshizaki."
+    metaDescription="Commercial refrigerator repair in San Francisco, Peninsula & Marin County. Walk-in coolers, reach-in units, display cases. Emergency priority service, $100 diagnostic fee, 180-day warranty. True, Beverage-Air, Turbo Air, Hoshizaki."
     commonProblems={commonProblems}
     faqData={faqData}
     relatedServicesCategory="Commercial"
@@ -150,7 +150,7 @@ const mobileIssues = [
 
 const mobileFaqs = [
   { q: 'Do you repair all types of commercial refrigerators?', a: 'Yes — walk-in coolers, reach-in units, prep tables, display cases, and bar refrigeration for restaurants, grocery stores, and hotels.' },
-  { q: 'How fast can you respond?', a: 'Same-day or next-day priority service for commercial refrigeration emergencies.' },
+  { q: 'How fast can you respond?', a: 'Same- or next-day or next-day priority service for commercial refrigeration emergencies.' },
   { q: 'What brands do you repair?', a: 'True, Traulsen, Turbo Air, Beverage-Air, Hoshizaki, and all major commercial refrigeration brands.' },
   { q: 'Is there a warranty?', a: '180-day warranty on parts and labor for all commercial refrigerator repairs.' },
 ];
@@ -171,8 +171,8 @@ const MobilePage = () => (
     appliance="Commercial Refrigerator"
     pageSlug="commercial-refrigerator-repair"
     pageTitle="Commercial Refrigerator Repair – Walk-In Coolers & Reach-In Units"
-    metaDescription="Commercial refrigerator repair in San Francisco & Bay Area. Walk-in coolers, reach-in units. Same-day service, 180-day warranty."
-    heroTitle={<>Commercial Fridge<br />Repair. Same Day.</>}
+    metaDescription="Commercial refrigerator repair in San Francisco & Bay Area. Walk-in coolers, reach-in units. Fast scheduling, 180-day warranty."
+    heroTitle={<>Commercial Fridge<br />Repair — Bay Area.</>}
     heroSubtitle="Priority Service for Businesses"
     issues={mobileIssues}
     faqs={mobileFaqs}

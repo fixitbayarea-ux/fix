@@ -34,7 +34,7 @@ const APPLIANCES = [
 const FAQ_ITEMS = [
   { q: 'Which Bay Area cities do you serve?', a: 'We serve San Francisco, the Peninsula, and Marin County, including Daly City, Pacifica, Brisbane, Mill Valley, San Rafael, Sausalito, Larkspur, and many more.' },
   { q: 'Is your team actually local to the Bay Area?', a: 'Yes. FixitBay LLC is a local, family-owned business. Our technicians live and work in the Bay Area and understand local homes and neighborhoods.' },
-  { q: 'Do you offer same-day local appointments?', a: 'Same-day and next-day appointments are available in many neighborhoods, especially when you contact us earlier in the day.' },
+  { q: 'Do you offer same- or next-day local appointments?', a: 'Same- or next-day and next-day appointments are available in many neighborhoods, especially when you contact us earlier in the day.' },
   { q: 'Can you support multiple properties or units?', a: 'Yes. We regularly help landlords, property managers, and families who have multiple homes or rental units across different Bay Area cities.' },
   { q: 'What is the diagnostic fee?', a: 'We charge a $60 diagnostic fee which is credited toward your repair if you proceed with the fix.' },
 ];
@@ -93,10 +93,10 @@ const LocalApplianceRepairPage = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'local-business-schema', data: { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "FixitBay LLC", "description": "Local appliance repair service in San Francisco and Bay Area. Same-day service, $60 diagnostic, 180-day warranty.", "url": "https://fixitbay.net", "telephone": "+17605435733", "priceRange": "$$", "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressRegion": "CA", "postalCode": "94109" }, "areaServed": SERVICE_CITIES.map(c => c.name), "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }, { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }], "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "94" } } },
+    { id: 'local-business-schema', data: { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "FixitBay LLC", "description": "Local appliance repair service in San Francisco and Bay Area. Fast scheduling, $60 diagnostic, 180-day warranty.", "url": "https://fixitbay.net", "telephone": "+17605435733", "priceRange": "$$", "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressRegion": "CA", "postalCode": "94109" }, "areaServed": SERVICE_CITIES.map(c => c.name), "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }, { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }], "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "94" } } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
       { "@type": "Question", "name": "Which Bay Area cities do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve San Francisco, the Peninsula, and Marin County, including Daly City, Pacifica, Brisbane, Mill Valley, San Rafael, Sausalito, Larkspur, and many more." } },
-      { "@type": "Question", "name": "Do you offer same-day local appointments?", "acceptedAnswer": { "@type": "Answer", "text": "Same-day and next-day appointments are available in many neighborhoods, especially when you contact us earlier in the day." } },
+      { "@type": "Question", "name": "Do you offer same- or next-day local appointments?", "acceptedAnswer": { "@type": "Answer", "text": "Same- or next-day and next-day appointments are available in many neighborhoods, especially when you contact us earlier in the day." } },
       { "@type": "Question", "name": "What is the diagnostic fee?", "acceptedAnswer": { "@type": "Answer", "text": "We charge a $60 diagnostic fee which is credited toward your repair if you proceed with the fix." } }
     ] } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://fixitbay.net/#services" }, { "@type": "ListItem", "position": 3, "name": "Appliance Repair", "item": "https://fixitbay.net/local-appliance-repair" }] } }
@@ -106,8 +106,8 @@ const LocalApplianceRepairPage = () => {
   return (
     <>
       <SEOMetaTags
-        title="Local Appliance Repair | Same-Day | FixitBay LLC"
-        description="Local appliance repair in San Francisco & Bay Area. $60 diagnostic, 180-day warranty, same-day service. Licensed CA technician. Refrigerators, washers, dryers, dishwashers, ovens and more."
+        title="Local Appliance Repair | Fast Scheduling | FixitBay LLC"
+        description="Local appliance repair in San Francisco & Bay Area. $60 diagnostic, 180-day warranty, fast scheduling. Licensed CA technician. Refrigerators, washers, dryers, dishwashers, ovens and more."
         canonical="https://fixitbay.net/local-appliance-repair"
       />
       <div style={{ fontFamily: F }}>
@@ -148,17 +148,17 @@ const LocalApplianceRepairPage = () => {
             </nav>
             <div style={EYE}>SAN FRANCISCO &amp; BAY AREA</div>
             <h1 className="lar-h1" data-testid="hero-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.15, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 780, margin: '0 auto 16px' }}>
-              Local Appliance Repair — Same-Day Service Across the Bay Area
+              Local Appliance Repair — Fast Scheduling Across the Bay Area
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto 32px' }}>
-              $60 diagnostic fee applied to repair. Licensed technicians. 180-day warranty. Same-day and next-day service across San Francisco, Peninsula, and Marin County.
+              $60 diagnostic fee applied to repair. Licensed technicians. 180-day warranty. Same- or next-day and next-day service across San Francisco, Peninsula, and Marin County.
             </p>
             <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 15, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} aria-label="opens in new tab">Book Online Now</a>
               <a href="tel:7605435733" className="hero-sec" style={{ background: 'transparent', border: '2px solid rgba(255,255,255,0.5)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 15, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'border-color 0.2s' }}>(760) 543-5733</a>
             </div>
             <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap', marginTop: 28 }}>
-              {['Licensed CA Technician #51001', '4.9 Google \u00B7 94 Reviews', '180-Day Warranty', 'Same-Day Available'].map((b, i) => (
+              {['Licensed CA Technician #51001', '4.9 Google \u00B7 94 Reviews', '180-Day Warranty', 'Fast Scheduling'].map((b, i) => (
                 <div key={i} style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
                   <span style={{ color: '#FF5722', fontFamily: F, fontWeight: 700, fontSize: 13 }}>{'\u2713'}</span>
                   <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.8)' }}>{b}</span>
@@ -221,7 +221,7 @@ const LocalApplianceRepairPage = () => {
                 FixitBay LLC is a local, family-owned appliance repair company serving <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>San Francisco</strong>, the Peninsula, and Marin County. Our technicians live in the Bay Area and understand the unique challenges of local homes. We charge a <strong style={{ fontFamily: F, fontWeight: 700, color: '#FF5722' }}>$60 diagnostic fee</strong> (credited toward your repair).
               </p>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8, marginBottom: 16 }}>
-                We repair all major household appliances — refrigerators, washers, dryers, dishwashers, ovens, cooktops, freezers, ice makers, wine coolers, and garbage disposals. Same-day and next-day appointments available.
+                We repair all major household appliances — refrigerators, washers, dryers, dishwashers, ovens, cooktops, freezers, ice makers, wine coolers, and garbage disposals. Same- or next-day and next-day appointments available.
               </p>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8 }}>
                 Whether you're in <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>Pacific Heights</strong>, the <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>Sunset</strong>, or <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>Mill Valley</strong>, we'll get your appliance fixed fast with our <strong style={{ fontFamily: F, fontWeight: 700, color: '#FF5722' }}>180-day warranty</strong> on parts and labor.
@@ -269,10 +269,10 @@ const LocalApplianceRepairPage = () => {
           <div style={{ background: '#0D1B2A', borderRadius: 4, padding: 32, maxWidth: 720, margin: '32px auto 0' }}>
             <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 20, textAlign: 'center' }}>How Your Repair Visit Works</p>
             {[
-              { n: 1, t: 'Book Online or Call', d: 'Schedule your repair at a time that works. Same-day and next-day available.' },
+              { n: 1, t: 'Book Online or Call', d: 'Schedule your repair at a time that works. Same- or next-day and next-day available.' },
               { n: 2, t: 'Diagnostic Visit ($60)', d: 'Licensed technician arrives on time, inspects your appliance, identifies the problem. $60 fee applies.' },
               { n: 3, t: 'Upfront Quote', d: 'Clear written estimate before work begins. $60 diagnostic credited if you proceed.' },
-              { n: 4, t: 'Professional Repair \u2014 180-day warranty', d: 'Issue fixed with quality parts. Most jobs same day. 180-day warranty included.' },
+              { n: 4, t: 'Professional Repair \u2014 180-day warranty', d: 'Issue fixed with quality parts. Most jobs completed in one visit. 180-day warranty included.' },
             ].map((s, i) => (
               <div key={i} style={{ display: 'flex', gap: 14, padding: '12px 0', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
                 <div style={{ width: 28, height: 28, borderRadius: '50%', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 800, fontSize: 12, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>{s.n}</div>
@@ -392,7 +392,7 @@ const LocalApplianceRepairPage = () => {
         <section data-testid="final-cta" style={{ background: '#0D1B2A', padding: '72px 24px', textAlign: 'center' }}>
           <div style={EYE}>GET STARTED TODAY</div>
           <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 36, color: '#fff', marginBottom: 12 }}>Local Appliance Repair You Can Count On</h2>
-          <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.7)', marginBottom: 32 }}>Same-day and next-day service across San Francisco, Peninsula, and Marin County.</p>
+          <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.7)', marginBottom: 32 }}>Same- or next-day and next-day service across San Francisco, Peninsula, and Marin County.</p>
           <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
             <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.4)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} aria-label="opens in new tab">Book Online</a>

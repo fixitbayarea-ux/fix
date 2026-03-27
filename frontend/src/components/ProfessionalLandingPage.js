@@ -27,13 +27,13 @@ const HomepageSchemas = () => {
       "@context": "https://schema.org", "@type": "FAQPage",
       "mainEntity": [
         { "@type": "Question", "name": "How much does appliance repair cost in the Bay Area?", "acceptedAnswer": { "@type": "Answer", "text": "Our diagnostic fee is $60, which is applied toward the repair if you choose to proceed. Most common repairs range from $150 to $400 depending on the appliance type and issue. We always provide an upfront estimate before starting any work." } },
-        { "@type": "Question", "name": "Do you offer same-day appliance repair?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! We offer same-day and next-day appointments throughout San Francisco, Peninsula, and Marin County. Call us at (760) 543-5733 or book online to check availability for your area." } },
+        { "@type": "Question", "name": "Do you offer fast appliance repair?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! We offer same- or next-day and next-day appointments throughout San Francisco, Peninsula, and Marin County. Call us at (760) 543-5733 or book online to check availability for your area." } },
         { "@type": "Question", "name": "What areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve 21 cities across San Francisco, the Peninsula (Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara), and Marin County (Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo, Belvedere)." } },
         { "@type": "Question", "name": "What brands do you repair?", "acceptedAnswer": { "@type": "Answer", "text": "We repair all major brands including Samsung, LG, Whirlpool, GE, Maytag, KitchenAid, Bosch, Frigidaire, Sub-Zero, Viking, Wolf, Thermador, Miele, and many more." } },
         { "@type": "Question", "name": "Do you provide a warranty on repairs?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, every repair comes with a 180-day warranty on both parts and labor. If the same issue recurs within the warranty period, we will fix it at no additional cost." } },
         { "@type": "Question", "name": "What appliances do you repair?", "acceptedAnswer": { "@type": "Answer", "text": "We repair refrigerators, washers, dryers, dishwashers, ovens and ranges, cooktops, ice makers, wine coolers, garbage disposals, and commercial appliances." } },
         { "@type": "Question", "name": "Are your technicians licensed and insured?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, all our technicians are licensed by the State of California (License #51001) and fully insured." } },
-        { "@type": "Question", "name": "How do I schedule a repair?", "acceptedAnswer": { "@type": "Answer", "text": "You can schedule online through our booking page or call us directly at (760) 543-5733. We offer flexible scheduling including same-day and next-day appointments, Monday through Saturday." } }
+        { "@type": "Question", "name": "How do I schedule a repair?", "acceptedAnswer": { "@type": "Answer", "text": "You can schedule online through our booking page or call us directly at (760) 543-5733. We offer flexible scheduling including same- or next-day and next-day appointments, Monday through Saturday." } }
       ]
     };
     const ids = ['homepage-breadcrumb-schema', 'homepage-faq-schema'];
@@ -50,13 +50,13 @@ const HomepageSchemas = () => {
 
 const faqs = [
   { question: "How much does appliance repair cost in the Bay Area?", answer: "Our diagnostic fee is $60, which is applied toward the repair if you choose to proceed. Most common repairs range from $150 to $400 depending on the appliance type and issue. We always provide an upfront estimate before starting any work." },
-  { question: "Do you offer same-day appliance repair?", answer: "Yes! We offer same-day and next-day appointments throughout San Francisco, Peninsula, and Marin County. Book online to check availability for your area." },
+  { question: "Do you offer fast appliance repair?", answer: "Yes! We offer same- or next-day and next-day appointments throughout San Francisco, Peninsula, and Marin County. Book online to check availability for your area." },
   { question: "What areas do you serve?", answer: "We serve San Francisco, the Peninsula, and Marin County — including Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, San Rafael, Mill Valley, Novato, and nearby communities." },
   { question: "What brands do you repair?", answer: "We repair all major brands including Samsung, LG, Whirlpool, GE, Maytag, KitchenAid, Bosch, Frigidaire, Sub-Zero, Viking, Wolf, Thermador, Miele, and many more." },
   { question: "Do you provide a warranty on repairs?", answer: "Yes — every repair includes a 180-day warranty on parts and labor. If the same issue returns within the warranty period, we fix it at no additional cost." },
   { question: "What appliances do you repair?", answer: "Refrigerators, washers, dryers, dishwashers, ovens, cooktops, ice makers, wine coolers, garbage disposals, and commercial appliances." },
   { question: "Are your technicians licensed and insured?", answer: "All technicians are licensed by the State of California (License #51001) and fully insured." },
-  { question: "How do I schedule a repair?", answer: "Book online through our booking page. Same-day and next-day appointments are available Monday through Saturday." }
+  { question: "How do I schedule a repair?", answer: "Book online through our booking page. Same- or next-day and next-day appointments are available Monday through Saturday." }
 ];
 
 const ProfessionalLandingPage = () => {
@@ -107,7 +107,7 @@ const ProfessionalLandingPage = () => {
 
   return (
     <div className="min-h-screen pb-[72px] lg:pb-0" style={{ background: '#fff', fontFamily: 'Montserrat, system-ui, -apple-system, sans-serif' }}>
-      <SEOMetaTags title="Appliance Repair San Francisco & Bay Area | FixitBay LLC" description="Professional appliance repair in San Francisco Bay Area. Same-day service for refrigerators, washers, dryers, dishwashers. Call (760) 543-5733 or book online." canonical="https://fixitbay.net/" keywords="appliance repair San Francisco, refrigerator repair, washer repair, same day appliance repair Bay Area, FixitBay LLC" ogTitle="Appliance Repair San Francisco & Bay Area | FixitBay LLC" ogDescription="Professional appliance repair in San Francisco Bay Area. Same-day service for refrigerators, washers, dryers, dishwashers. Call (760) 543-5733 or book online." ogImage="https://fixitbay.net/images/og-cover.png" twitterSite="@fixitbay" twitterTitle="Appliance Repair SF Bay Area | FixitBay LLC" twitterDescription="Same-day appliance repair in San Francisco. $60 diagnostic, 180-day warranty, licensed CA technician." />
+      <SEOMetaTags title="Appliance Repair San Francisco & Bay Area | FixitBay LLC" description="Professional appliance repair in San Francisco Bay Area. Same- or next-day appointments for refrigerators, washers, dryers, dishwashers. Call (760) 543-5733 or book online." canonical="https://fixitbay.net/" keywords="appliance repair San Francisco, refrigerator repair, washer repair, appliance repair Bay Area, FixitBay LLC" ogTitle="Appliance Repair San Francisco & Bay Area | FixitBay LLC" ogDescription="Professional appliance repair in San Francisco Bay Area. Same- or next-day appointments for refrigerators, washers, dryers, dishwashers. Call (760) 543-5733 or book online." ogImage="https://fixitbay.net/images/og-cover.png" twitterSite="@fixitbay" twitterTitle="Appliance Repair SF Bay Area | FixitBay LLC" twitterDescription="Licensed appliance repair in San Francisco. $60 diagnostic, 180-day warranty, fast scheduling." />
       <HomepageSchemas />
       <HomeHero />
 
@@ -144,9 +144,9 @@ const ProfessionalLandingPage = () => {
         <div style={{ maxWidth: 1380, margin: '0 auto', padding: '0 16px' }}>
           <div className="grid gap-4">
             {[
-              { title: 'In-Home Repairs Across SF, Peninsula & Marin', body: 'Looking for appliance repair near me in San Francisco? FixitBay LLC provides same-day, in-home service across all SF neighborhoods. We repair refrigerators, freezers, ice makers, dishwashers, ovens, cooktops, washers, dryers, wine coolers, and more.', iconBg: '#F0EBE5', iconColor: '#0D1B2A', icon: <HomeIcon size={22} strokeWidth={2} /> },
+              { title: 'In-Home Repairs Across SF, Peninsula & Marin', body: 'Looking for appliance repair near me in San Francisco? FixitBay LLC provides fast, in-home service across all SF neighborhoods. We repair refrigerators, freezers, ice makers, dishwashers, ovens, cooktops, washers, dryers, wine coolers, and more.', iconBg: '#F0EBE5', iconColor: '#0D1B2A', icon: <HomeIcon size={22} strokeWidth={2} /> },
               { title: 'Clear Pricing Before Work Starts', body: 'Your $60 diagnostic visit is applied toward the repair if you proceed. You approve the estimate first.', iconBg: '#F8F5F0', iconColor: '#8B5A2B', icon: <DollarSign size={22} strokeWidth={2} /> },
-              { title: 'Fast Scheduling, Local Service', body: 'Same-day and next-day appointments available Monday through Saturday.', iconBg: '#FECACA', iconColor: '#FF5722', icon: <CalendarCheck size={22} strokeWidth={2} /> },
+              { title: 'Fast Scheduling, Local Service', body: 'Same- or next-day and next-day appointments available Monday through Saturday.', iconBg: '#FECACA', iconColor: '#FF5722', icon: <CalendarCheck size={22} strokeWidth={2} /> },
             ].map(c => (
               <div key={c.title} className="rounded-2xl p-5 border border-gray-200 bg-white shadow-sm">
                 <div style={{ width: 44, height: 44, borderRadius: 12, background: c.iconBg, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 12, color: c.iconColor }}>{c.icon}</div>

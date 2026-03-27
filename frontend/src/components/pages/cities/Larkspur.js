@@ -15,9 +15,9 @@ const Larkspur = () => {
   ];
 
   const faqData = [
-    { question: 'Do you serve all Larkspur neighborhoods?', answer: 'Yes! We serve downtown Larkspur, Greenbrae, and all surrounding areas including properties near the ferry terminal with same-day service.' },
+    { question: 'Do you serve all Larkspur neighborhoods?', answer: 'Yes! We serve downtown Larkspur, Greenbrae, and all surrounding areas including properties near the ferry terminal with fast scheduling.' },
     { question: 'Can you service condos near downtown?', answer: 'Absolutely. We regularly service apartments and condos throughout Larkspur including downtown properties and Greenbrae area.' },
-    { question: 'What\'s your response time to Larkspur?', answer: 'We typically arrive within 1-2 hours for same-day appointments via Highway 101.' },
+    { question: 'What\'s your response time to Larkspur?', answer: 'We typically arrive within 1-2 hours for scheduled appointments via Highway 101.' },
     { question: 'What brands do you repair?', answer: 'We repair all major brands: Whirlpool, GE, Samsung, LG, Bosch, KitchenAid, and more.' },
     { question: 'Are you licensed in Marin County?', answer: 'Yes. FixitBay LLC is fully licensed and insured for appliance repair in Larkspur and throughout Marin County.' },
     { question: 'Do you offer warranties?', answer: 'Yes. Every repair includes a 180-day parts and labor warranty.' }
@@ -28,7 +28,7 @@ const Larkspur = () => {
     paragraphs: [
       'Larkspur\'s historic downtown and convenient ferry access make it a sought-after Central Marin community. Our technicians serve all Larkspur neighborhoods from downtown\'s charming historic district to residential areas near Greenbrae. We understand Larkspur\'s mix of older homes and modern condos, along with the appliances common in each.',
       'We navigate Larkspur efficiently via Highway 101 and Magnolia Avenue, accessing downtown, residential neighborhoods, and the ferry terminal area quickly. Our vans carry parts for common appliance failures, and we maintain a network for sourcing specialized components.',
-      'Same-day service is available throughout Larkspur with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
+      'Fast scheduling is available throughout Larkspur with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
     ]
   };
 
@@ -36,8 +36,8 @@ const Larkspur = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair Larkspur | Same-Day Service | FixitBay LLC"
-        metaDescription="Professional appliance repair in Larkspur. Same-day service downtown and near ferry. Licensed technicians, 180-day warranty. Call (760) 543-5733."
+        pageTitle="Appliance Repair Larkspur | Fast Scheduling | FixitBay LLC"
+        metaDescription="Professional appliance repair in Larkspur. Fast scheduling downtown and near ferry. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

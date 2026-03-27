@@ -19,7 +19,7 @@ const SouthSanFrancisco = () => {
     { question: 'Which SSF areas do you cover?', answer: 'We serve all South San Francisco neighborhoods: Sign Hill, Buri Buri, Avalon Park, Winston Manor, Sunshine Gardens, and areas near Grand Avenue and Highway 101.' },
     { question: 'Do you work around business hours?', answer: 'Yes! We offer flexible scheduling including evenings and weekends for SSF professionals and families.' },
     { question: 'Can you service apartments near BART/Caltrain?', answer: 'Absolutely. We regularly service apartments and condos throughout SSF including high-density housing near transit stations.' },
-    { question: 'What\'s your arrival time in SSF?', answer: 'We typically arrive within 1-2 hours for same-day appointments via 101, 280, and local routes.' },
+    { question: 'What\'s your arrival time in SSF?', answer: 'We typically arrive within 1-2 hours for scheduled appointments via 101, 280, and local routes.' },
     { question: 'Are you licensed in San Mateo County?', answer: 'Yes. FixitBay LLC is fully licensed and insured for appliance repair in South San Francisco and San Mateo County.' }
   ];
 
@@ -28,7 +28,7 @@ const SouthSanFrancisco = () => {
     paragraphs: [
       'South San Francisco\'s position between San Francisco and the Peninsula creates a diverse service area from hilltop homes to bayfront apartments. As "The Industrial City," SSF combines residential neighborhoods with biotech campuses, requiring appliance expertise for both homes and light commercial spaces. Our technicians navigate SSF daily, from Sign Hill\'s elevated streets to Grand Avenue\'s commercial corridor.',
       'We serve SSF\'s mix of post-war single-family homes, modern townhomes, and apartment complexes near BART and Caltrain. Our team understands challenges unique to SSF housing—from 1950s tract homes in Buri Buri to new developments near Oyster Point. We stock parts for standard residential appliances and light commercial break room equipment common in SSF workplaces.',
-      'Same-day service is available throughout South San Francisco with a $60 diagnostic fee credited toward repairs. We provide upfront estimates and back every repair with a 180-day warranty. Our licensed technicians repair all major brands and are familiar with both traditional and high-efficiency models.'
+      'Fast scheduling is available throughout South San Francisco with a $60 diagnostic fee credited toward repairs. We provide upfront estimates and back every repair with a 180-day warranty. Our licensed technicians repair all major brands and are familiar with both traditional and high-efficiency models.'
     ]
   };
 
@@ -36,8 +36,8 @@ const SouthSanFrancisco = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair South San Francisco | Same-Day | FixitBay LLC"
-        metaDescription="Professional appliance repair in South San Francisco. Same-day service for homes and businesses. Licensed technicians, 180-day warranty. Call (760) 543-5733."
+        pageTitle="Appliance Repair South San Francisco | Fast Scheduling | FixitBay LLC"
+        metaDescription="Professional appliance repair in South San Francisco. Fast scheduling for homes and businesses. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

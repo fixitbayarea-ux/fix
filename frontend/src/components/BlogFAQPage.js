@@ -122,7 +122,7 @@ const BlogFAQPage = () => {
           <li>Plumbing connection problems</li>
         </ul>
         
-        <p>Our licensed technicians serve San Francisco, Oakland, and the entire Bay Area with same-day service for dishwasher repairs.</p>
+        <p>Our licensed technicians serve San Francisco, Oakland, and the entire Bay Area with fast, reliable service for dishwasher repairs.</p>
       `,
       keywords: 'dishwasher not draining, dishwasher repair San Francisco, appliance service Bay Area',
       readTime: '4 min read'
@@ -175,14 +175,14 @@ const BlogFAQPage = () => {
         <h4>Immediate Emergency Situations:</h4>
         <ul>
           <li><strong>Gas smell from range or dryer</strong> - Turn off gas, evacuate, call immediately</li>
-          <li><strong>Sparks or electrical issues</strong> - Unplug and call for same-day service</li>
+          <li><strong>Sparks or electrical issues</strong> - Unplug and call for emergency service</li>
           <li><strong>Major water leaks</strong> - Turn off water supply, call emergency service</li>
           <li><strong>Complete refrigerator failure</strong> - Risk of food spoilage requires urgent attention</li>
           <li><strong>Smoke from any appliance</strong> - Safety hazard requiring immediate response</li>
         </ul>
         
         <h4>FixitBay LLC Emergency Response:</h4>
-        <p>We provide same-day emergency appliance repair throughout the San Francisco Bay Area, including:</p>
+        <p>We provide fast emergency appliance repair throughout the San Francisco Bay Area, including:</p>
         <ul>
           <li>San Francisco and Peninsula cities</li>
           <li>Oakland and East Bay communities</li>
@@ -198,7 +198,7 @@ const BlogFAQPage = () => {
           <li>Gather appliance model and serial numbers</li>
         </ol>
       `,
-      keywords: 'emergency appliance repair, same day appliance service Bay Area, appliance repair San Francisco',
+      keywords: 'emergency appliance repair, appliance service Bay Area, appliance repair San Francisco',
       readTime: '6 min read'
     }
   ];
@@ -422,7 +422,7 @@ const BlogFAQPage = () => {
                       
                       <div className="mt-6 p-4 bg-blue-50 rounded-lg">
                         <p className="text-sm text-blue-800 font-medium">
-                          Need professional help? FixitBay LLC provides expert appliance repair throughout the San Francisco Bay Area with same-day service and a 180-day warranty.
+                          Need professional help? FixitBay LLC provides expert appliance repair throughout the San Francisco Bay Area with fast scheduling and a 180-day warranty.
                         </p>
                         <div className="flex gap-3 mt-3">
                           <button
@@ -457,7 +457,7 @@ const BlogFAQPage = () => {
                         Need appliance repair in San Francisco?
                       </p>
                       <p style={{color:'rgba(255,255,255,0.7)', fontSize:'14px', marginBottom:'16px'}}>
-                        Same-day service · $60 diagnostic · 180-day warranty
+                        Fast scheduling · $60 diagnostic · 180-day warranty
                       </p>
                       <div style={{display:'flex', gap:'12px', flexWrap:'wrap'}}>
                         <a href="tel:7605435733" style={{

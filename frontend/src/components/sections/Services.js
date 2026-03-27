@@ -70,7 +70,7 @@ const Services = () => {
             Professional Appliance <span className="text-gold-gradient">Repair Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Expert technicians ready to fix your appliances with same-day service across the Bay Area
+            Expert technicians ready to fix your appliances with fast, reliable service across the Bay Area
           </p>
         </motion.div>
 

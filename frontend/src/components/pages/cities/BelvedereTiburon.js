@@ -18,7 +18,7 @@ const BelvedereTiburon = () => {
     { question: 'Do you service luxury appliance brands?', answer: 'Yes! We specialize in premium brands: Sub-Zero, Wolf, Thermador, Viking, Miele, Bosch, and all major manufacturers.' },
     { question: 'Can you service waterfront homes?', answer: 'Absolutely. We understand coastal humidity and salt-air challenges affecting appliances in Belvedere Tiburon waterfront properties.' },
     { question: 'Do you handle built-in appliances?', answer: 'Yes. We regularly service built-in refrigerators, wine coolers, and integrated appliances common in luxury homes.' },
-    { question: 'What\'s your response time?', answer: 'We typically arrive within 1-2 hours for same-day appointments to Belvedere and Tiburon.' },
+    { question: 'What\'s your response time?', answer: 'We typically arrive within 1-2 hours for scheduled appointments to Belvedere and Tiburon.' },
     { question: 'Are you licensed in Marin County?', answer: 'Yes. FixitBay LLC is fully licensed and insured for appliance repair in Belvedere, Tiburon, and throughout Marin County.' },
     { question: 'What warranty do you offer?', answer: 'Every repair includes a 180-day parts and labor warranty covering premium appliances.' }
   ];
@@ -28,7 +28,7 @@ const BelvedereTiburon = () => {
     paragraphs: [
       'Belvedere and Tiburon\'s waterfront peninsula represents some of Marin County\'s most exclusive real estate, featuring luxury homes with premium appliances. Our technicians specialize in high-end brands like Sub-Zero, Wolf, Thermador, and Miele, common in these affluent communities. We understand both the appliances and the service expectations of Belvedere Tiburon homeowners.',
       'We navigate the peninsula regularly, servicing waterfront estates, hillside homes with bay views, and downtown Tiburon properties. Our team handles challenges unique to waterfront living: humidity, salt air, and the premium integrated appliances found in luxury kitchens. We carry specialized tools and can source high-end parts quickly.',
-      'Same-day service is available throughout Belvedere and Tiburon with a $60 diagnostic fee credited toward repairs. We provide detailed estimates for premium appliances and back every repair with a 180-day warranty. Our technicians are luxury appliance specialists experienced with integrated installations.'
+      'Fast scheduling is available throughout Belvedere and Tiburon with a $60 diagnostic fee credited toward repairs. We provide detailed estimates for premium appliances and back every repair with a 180-day warranty. Our technicians are luxury appliance specialists experienced with integrated installations.'
     ]
   };
 
@@ -37,7 +37,7 @@ const BelvedereTiburon = () => {
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
         pageTitle="Appliance Repair Belvedere Tiburon | FixitBay LLC"
-        metaDescription="Premium appliance repair in Belvedere and Tiburon. Sub-Zero, Wolf, Miele specialists. Waterfront home experts. Same-day service. Call (760) 543-5733."
+        metaDescription="Premium appliance repair in Belvedere and Tiburon. Sub-Zero, Wolf, Miele specialists. Waterfront home experts. Fast scheduling. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

@@ -45,7 +45,7 @@ const brandLocalData = {
       'TurboWash washer vibrating excessively — spider arm or shock absorber failure',
       'ThinQ Wi-Fi connectivity dropping — usually firmware update needed',
     ],
-    partsAvailability: 'We carry LG Linear Compressor kits, TurboWash motors, QuadWash spray arms, and door hinge assemblies. LG parts widely available — most repairs completed same day.',
+    partsAvailability: 'We carry LG Linear Compressor kits, TurboWash motors, QuadWash spray arms, and door hinge assemblies. LG parts widely available — most repairs completed on the first visit.',
     warrantyNote: 'LG\'s Linear Compressor has a 10-year limited warranty. We check your model\'s warranty status as part of our diagnostic.',
     relatedBrands: [
       { name: 'Samsung', slug: 'samsung-appliance-repair' },

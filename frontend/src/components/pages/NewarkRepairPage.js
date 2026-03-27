@@ -5,7 +5,7 @@ const NewarkRepairPage = () => {
   const cityData = {
     city: "Newark",
     pageTitle: "Appliance Repair in Newark, CA – Fast, Reliable, Affordable!",
-    metaDescription: "Expert appliance repair in Newark, CA. Licensed technicians, 180-day warranty, same-day service. Call (760) 543-5733 or book online now!",
+    metaDescription: "Expert appliance repair in Newark, CA. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733 or book online now!",
     neighborhoods: [
       "Old Town",
       "Cedar Boulevard", 
@@ -19,8 +19,8 @@ const NewarkRepairPage = () => {
     localFeatures: "Newark residents choose us for our personal service and small-town values. We appreciate the quiet, family-friendly character of this East Bay community.",
     faqData: [
       {
-        question: "Do you offer same-day appliance repair in Newark?",
-        answer: "Yes! We provide same-day appliance repair service throughout Newark, including Old Town, Cedar Boulevard, Musser, and all surrounding neighborhoods. Call us before 2 PM for same-day availability."
+        question: "Do you offer fast appliance repair in Newark?",
+        answer: "Yes! We provide fast appliance repair service throughout Newark, including Old Town, Cedar Boulevard, Musser, and all surrounding neighborhoods. Call us before 2 PM for fast scheduling."
       },
       {
         question: "What appliance brands do you repair in Newark?",

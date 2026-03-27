@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import SEOMetaTags from '../SEOMetaTags';
 
 const POPULAR_PAGES = [
-  { title: 'Book a Repair', sub: 'Schedule same-day or next-day', href: '/book' },
+  { title: 'Book a Repair', sub: 'Schedule your appointment', href: '/book' },
   { title: 'Homepage', sub: 'FixitBay LLC appliance repair', href: '/' },
   { title: 'All Services', sub: 'Residential & commercial repair', href: '/services' },
   { title: 'Refrigerator Repair', sub: 'Not cooling, ice maker, leaks', href: '/refrigerator-repair' },

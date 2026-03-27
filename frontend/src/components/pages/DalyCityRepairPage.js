@@ -10,8 +10,8 @@ const DalyCityRepairPage = () => {
 
   const faqData = [
     {
-      question: "Do you offer same-day appliance repair in Daly City?",
-      answer: "Yes! We provide same-day appliance repair service throughout Daly City, from Westlake to Serramonte. Our technicians are familiar with all Daly City neighborhoods and can typically arrive within an hour."
+      question: "Do you offer fast appliance repair in Daly City?",
+      answer: "Yes! We provide fast appliance repair service throughout Daly City, from Westlake to Serramonte. Our technicians are familiar with all Daly City neighborhoods and can typically arrive within an hour."
     },
     {
       question: "How much does appliance repair cost in Daly City?",

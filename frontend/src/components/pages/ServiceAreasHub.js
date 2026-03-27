@@ -19,7 +19,7 @@ const C = { navy: '#0D1B2A', accent: '#FF5722', text: '#4A5568', bg: '#F8F5F0', 
 const REGIONS = [
   {
     name: 'San Francisco',
-    desc: 'All neighborhoods — same-day service available citywide.',
+    desc: 'All neighborhoods — fast scheduling available citywide.',
     cities: [{ name: 'San Francisco', slug: 'san-francisco' }],
   },
   {
@@ -59,7 +59,7 @@ const REGIONS = [
 ];
 
 const FAQ_DATA = [
-  { question: 'Do you offer same-day service in my city?', answer: 'Yes. We serve most Bay Area cities with same or next-day service, subject to availability. Our service area covers San Francisco, the entire Peninsula (from Daly City to San Bruno), and North Bay communities (from San Rafael to Sausalito). Call (760) 543-5733 or book online to see today\'s available time windows for your specific city.' },
+  { question: 'Do you offer fast scheduling in my city?', answer: 'Yes. We serve most Bay Area cities with same or next-day service, subject to availability. Our service area covers San Francisco, the entire Peninsula (from Daly City to San Bruno), and North Bay communities (from San Rafael to Sausalito). Call (760) 543-5733 or book online to see today\'s available time windows for your specific city.' },
   { question: 'Is the $60 diagnostic fee applied to the repair?', answer: 'Yes. If you proceed with the repair, the $60 diagnostic is fully credited toward your final invoice. This means you only pay for the repair itself—the diagnostic visit is essentially free when you move forward with the work.' },
   { question: 'What cities do you serve in the Bay Area?', answer: 'We provide appliance repair service in 22 cities across three regions: San Francisco (including all neighborhoods), Peninsula cities (Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara), and North Bay communities (San Rafael, Novato, Mill Valley, Sausalito, Belvedere, Tiburon, Corte Madera, San Quentin, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo).' },
   { question: 'What warranty do you provide?', answer: 'Every repair includes our comprehensive 180-day warranty on both parts and labor. This warranty is valid across all cities we serve—whether you\'re in San Francisco, Peninsula, or North Bay. If the same issue returns within 180 days, we\'ll come back at no additional charge to make it right.' },
@@ -82,7 +82,7 @@ const ServiceAreasHub = () => (
   <div className="service-areas-page" style={{ fontFamily: F, background: C.bg }}>
     <SEOMetaTags
       title="Appliance Repair Service Areas | San Francisco Bay Area | FixitBay LLC"
-      description="FixitBay LLC serves 22 cities across San Francisco, the Peninsula, and Marin County. Find your service area and book same-day appliance repair. Call (760) 543-5733."
+      description="FixitBay LLC serves 22 cities across San Francisco, the Peninsula, and Marin County. Find your service area and book fast appliance repair. Call (760) 543-5733."
       canonical="https://fixitbay.net/service-areas"
     />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -108,7 +108,7 @@ const ServiceAreasHub = () => (
           Appliance Repair Service Areas &mdash; San Francisco Bay Area
         </h1>
         <p style={{ fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', maxWidth: 600, margin: '0 auto 28px' }}>
-          22 cities across San Francisco, the Peninsula, and Marin County. Same-day &amp; next-day service available.
+          22 cities across San Francisco, the Peninsula, and Marin County. Same- or next-day &amp; next-day service available.
         </p>
         <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
           <a href="/book?go=1" data-testid="sa-hero-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 30px', borderRadius: 3, background: C.accent, color: C.white, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none' }} aria-label="BOOK REPAIR ONLINE (opens in new tab)">BOOK REPAIR ONLINE</a>
@@ -133,7 +133,7 @@ const ServiceAreasHub = () => (
           FixitBay LLC provides professional in-home appliance repair across <strong>22 cities</strong> in San Francisco, the Peninsula, and North Bay communities. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, and more — bringing expertise and quality parts directly to your home, condo, or apartment.
         </p>
         <p style={{ fontSize: 14, fontWeight: 400, lineHeight: 1.8, color: C.text, marginBottom: 16 }}>
-          We offer same-day and next-day appointments throughout the Bay Area. Whether you're in a Mission District apartment, a Pacifica coastal home, or a Mill Valley hillside residence, our team responds quickly with fully-stocked service vehicles. Every repair is backed by our comprehensive <strong>180-day warranty</strong> on parts and labor.
+          We offer same- or next-day and next-day appointments throughout the Bay Area. Whether you're in a Mission District apartment, a Pacifica coastal home, or a Mill Valley hillside residence, our team responds quickly with fully-stocked service vehicles. Every repair is backed by our comprehensive <strong>180-day warranty</strong> on parts and labor.
         </p>
       </div>
     </section>

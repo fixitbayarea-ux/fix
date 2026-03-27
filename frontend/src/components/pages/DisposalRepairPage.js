@@ -56,7 +56,7 @@ const DisposalRepairPage = () => {
     },
     {
       question: "Do you repair all garbage disposal brands?",
-      answer: "Yes! We repair and install all major garbage disposal brands including InSinkErator, Waste King, KitchenAid, Moen, Badger, Evolution models, and others. We stock common parts like reset switches, mounting gaskets, and disposal wrenches, allowing us to fix most issues same day."
+      answer: "Yes! We repair and install all major garbage disposal brands including InSinkErator, Waste King, KitchenAid, Moen, Badger, Evolution models, and others. We stock common parts like reset switches, mounting gaskets, and disposal wrenches, allowing us to fix most issues quickly."
     },
     {
       question: "Does your garbage disposal repair warranty cover leaks and motor failures?",
@@ -82,7 +82,7 @@ const DisposalRepairPage = () => {
       <MobileServiceLanding
         appliance="Garbage Disposal"
         pageSlug="disposal-repair"
-        pageTitle="Garbage Disposal Repair San Francisco | Same-Day | FixitBay LLC"
+        pageTitle="Garbage Disposal Repair San Francisco | Fast Scheduling | FixitBay LLC"
         metaDescription="Garbage disposal repair in SF & Bay Area. Jammed, leaking, humming, won't turn on. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay LLC."
         heroTitle={<>Expert Disposal<br />Repair in SF. Today.</>}
         issues={[
@@ -105,7 +105,7 @@ const DisposalRepairPage = () => {
       appliance="Garbage Disposal"
       cmsSlug="garbage-disposal-repair"
       pageTitle="Garbage Disposal Repair in San Francisco | FixitBay LLC"
-      metaDescription="Professional garbage disposal repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty. Same-day service."
+      metaDescription="Professional garbage disposal repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty. Fast scheduling."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={{

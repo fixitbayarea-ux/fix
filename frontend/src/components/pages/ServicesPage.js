@@ -38,7 +38,7 @@ const MAINTENANCE_SERVICES = [
 ];
 
 const STEPS = [
-  { num: '1', title: 'Book', body: 'Schedule online or call. Same-day slots available before 2 PM.' },
+  { num: '1', title: 'Book', body: 'Schedule online or call. Flexible slots available Mon-Sat..' },
   { num: '2', title: 'Diagnose', body: '$60 diagnostic visit. Technician inspects and identifies the problem.' },
   { num: '3', title: 'Approve', body: 'Written estimate before any work. $60 credited toward the repair.' },
   { num: '4', title: 'Fixed', body: 'Repair completed with OEM parts. 180-day warranty on everything.' },
@@ -46,7 +46,7 @@ const STEPS = [
 
 const FAQ_DATA = [
   { q: 'How much does a diagnostic visit cost?', a: '$60. This covers the technician\u2019s visit and full inspection. If you approve the repair, the $60 is credited toward the total cost \u2014 so the diagnostic is essentially free when you proceed.' },
-  { q: 'Can I get same-day service?', a: 'Yes. Requests placed before 2:00 PM typically receive same-day service. Next-day appointments are almost always available regardless of when you call.' },
+  { q: 'Can I get a fast appointment?', a: 'Yes. Requests placed before 2:00 PM typically receive fast scheduling. Next-day appointments are almost always available regardless of when you call.' },
   { q: 'What warranty do repairs include?', a: 'Every repair includes a 180-day warranty on both parts and labor. If the same problem returns within that window, we come back and fix it at no charge.' },
   { q: 'Do you repair premium brands like Sub-Zero and Wolf?', a: 'Yes. Our technicians are trained on all premium and luxury brands including Sub-Zero, Wolf, Viking, Thermador, Miele, and Bosch Benchmark. We carry specialized tools and diagnostic equipment for these brands.' },
   { q: 'What areas do you serve?', a: 'We serve 22 cities across San Francisco, Northern San Mateo County (Peninsula), and Marin County. Our primary base is in San Francisco with typical response times of 15\u201345 minutes.' },
@@ -91,7 +91,7 @@ const ServicesPage = () => {
         '@type': 'FAQPage',
         mainEntity: [
           { '@type': 'Question', name: 'How much does a diagnostic visit cost?', acceptedAnswer: { '@type': 'Answer', text: '$60. This covers the technician visit and full inspection. If you approve the repair, the $60 is credited toward the total cost.' } },
-          { '@type': 'Question', name: 'Can I get same-day service?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Same-day slots are available when you contact us before 2 PM.' } },
+          { '@type': 'Question', name: 'Can I get a fast appointment?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We often have same- or next-day slots when you contact us before 2 PM.' } },
           { '@type': 'Question', name: 'What warranty do repairs include?', acceptedAnswer: { '@type': 'Answer', text: 'All repairs include a 180-day warranty on parts and labor.' } },
         ],
       },
@@ -102,10 +102,10 @@ const ServicesPage = () => {
     <>
       <SEOMetaTags
         title="Appliance Repair Services | San Francisco | FixitBay LLC"
-        description="Complete appliance repair services in San Francisco & Bay Area. Refrigerators, washers, dryers, ovens, dishwashers, commercial equipment and more. $60 diagnostic, 180-day warranty, same-day service."
+        description="Complete appliance repair services in San Francisco & Bay Area. Refrigerators, washers, dryers, ovens, dishwashers, commercial equipment and more. $60 diagnostic, 180-day warranty, fast scheduling."
         canonical="https://fixitbay.net/services"
         ogTitle="Appliance Repair Services \u2014 San Francisco & Bay Area | FixitBay LLC"
-        ogDescription="Complete appliance repair services in San Francisco & Bay Area. $60 diagnostic, 180-day warranty, same-day service."
+        ogDescription="Complete appliance repair services in San Francisco & Bay Area. $60 diagnostic, 180-day warranty, fast scheduling."
       />
 
       <style>{`
@@ -238,7 +238,7 @@ const ServicesPage = () => {
             </div>
             <div className="sp-eyebrow" style={{ marginBottom: 12 }}>SAN FRANCISCO &amp; BAY AREA</div>
             <h1 data-testid="services-h1">Appliance Repair Services</h1>
-            <p className="sp-hero-sub">$60 diagnostic fee applied to repair. Licensed technicians. 180-day warranty on parts and labor. Same-day and next-day service across 22 cities.</p>
+            <p className="sp-hero-sub">$60 diagnostic fee applied to repair. Licensed technicians. 180-day warranty on parts and labor. Same- or next-day and next-day service across 22 cities.</p>
             <div className="sp-hero-ctas">
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="sp-btn-primary" data-testid="services-hero-book-btn" aria-label="opens in new tab">Book Online Now</a>
               <a href="tel:7605435733" className="sp-btn-secondary" data-testid="services-hero-call-btn">(760) 543-5733</a>
@@ -408,7 +408,7 @@ const ServicesPage = () => {
         <section className="sp-cta" data-testid="services-final-cta">
           <div className="sp-eyebrow" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 8 }}>GET STARTED</div>
           <div className="sp-cta-title">Not Sure Which Service You Need?</div>
-          <p className="sp-cta-sub">Call us and describe the problem. We will book the right technician for same-day or next-day service &mdash; no guessing required.</p>
+          <p className="sp-cta-sub">Call us and describe the problem. We will book the right technician for same- or next-day or next-day service &mdash; no guessing required.</p>
           <div className="sp-cta-btns">
             <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="sp-btn-primary" data-testid="services-cta-book-btn" aria-label="opens in new tab">Book Online</a>
             <a href="tel:7605435733" className="sp-btn-secondary" style={{ borderWidth: 1, borderColor: 'rgba(255,255,255,0.4)' }} data-testid="services-cta-call-btn">(760) 543-5733</a>

@@ -34,7 +34,7 @@ const WasherRepairPage = () => {
     },
     {
       question: "How quickly can you fix a washer that won't drain or spin?",
-      answer: "We offer same-day and next-day service for urgent washer issues across the Bay Area. Most drainage and spinning problems—like clogged pumps, broken belts, or faulty lid switches—can be diagnosed and repaired within 1-2 hours. Our vans carry common washer parts for faster repairs."
+      answer: "We offer same- or next-day and next-day service for urgent washer issues across the Bay Area. Most drainage and spinning problems—like clogged pumps, broken belts, or faulty lid switches—can be diagnosed and repaired within 1-2 hours. Our vans carry common washer parts for faster repairs."
     },
     {
       question: "What brands of washers do you repair?",
@@ -67,7 +67,7 @@ const WasherRepairPage = () => {
     "provider": { "@id": "https://fixitbay.net/#organization" },
     "areaServed": SERVICE_CITIES_SCHEMA,
     "url": "https://fixitbay.net/washer-repair",
-    "description": "Same-day washing machine repair across the Bay Area — SF, Peninsula, and Marin. Front-load, top-load, and high-efficiency models. All major brands including Whirlpool, Samsung, LG, GE, Maytag, and Bosch. $60 diagnostic credited toward repair. 180-day warranty."
+    "description": "Fast washing machine repair across the Bay Area — SF, Peninsula, and Marin. Front-load, top-load, and high-efficiency models. All major brands including Whirlpool, Samsung, LG, GE, Maytag, and Bosch. $60 diagnostic credited toward repair. 180-day warranty."
   };
 
   if (isMobile) {
@@ -75,7 +75,7 @@ const WasherRepairPage = () => {
       <MobileServiceLanding
         appliance="Washer"
         pageSlug="washer-repair"
-        pageTitle="Washer Repair Bay Area | Same-Day Service | FixitBay LLC"
+        pageTitle="Washer Repair Bay Area | Fast Scheduling | FixitBay LLC"
         metaDescription="Expert washing machine repair across the Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty."
         heroTitle={<>Expert Washer<br />Repair. Bay Area.</>}
         heroImage="/images/technicians/washer-tech.jpg"
@@ -116,7 +116,7 @@ const WasherRepairPage = () => {
       serviceSchema={serviceSchema}
       appliance="Washer"
       cmsSlug="washer-repair"
-      pageTitle="Washer Repair Bay Area | Same-Day Service | FixitBay LLC"
+      pageTitle="Washer Repair Bay Area | Fast Scheduling | FixitBay LLC"
       metaDescription="Expert washing machine repair across the Bay Area — SF, Peninsula & Marin. $60 diagnostic applied to repair. 180-day warranty."
       heroImage="/images/technicians/washer-tech.jpg"
       heroImageAlt="FixitBay technician next to a washing machine in a Bay Area home"

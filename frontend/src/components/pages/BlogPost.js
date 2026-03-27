@@ -62,7 +62,7 @@ const BlogPost = () => {
 
         <div class="cta-box">
           <h3>Need Help With Your Refrigerator?</h3>
-          <p>Our certified technicians diagnose and repair all refrigerator brands in San Francisco Bay Area. Same-day service available!</p>
+          <p>Our certified technicians diagnose and repair all refrigerator brands in San Francisco Bay Area. Fast scheduling available!</p>
         </div>
       `,
       keywords: 'refrigerator not cooling, fridge not cold, refrigerator repair, dirty condenser coils, compressor failure, door seal repair'
@@ -162,7 +162,7 @@ const BlogPost = () => {
 
         <div class="cta-box">
           <h3>Dishwasher Not Performing Well?</h3>
-          <p>Even with great maintenance, dishwashers eventually need professional service. We repair all brands in San Francisco Bay Area with same-day availability.</p>
+          <p>Even with great maintenance, dishwashers eventually need professional service. We repair all brands in San Francisco Bay Area with fast scheduling.</p>
         </div>
       `,
       keywords: 'dishwasher maintenance, clean dishwasher filter, dishwasher care tips, extend dishwasher life, dishwasher not cleaning'
@@ -365,7 +365,7 @@ const BlogPost = () => {
 
         <div class="cta-box">
           <h3>Dryer Still Not Drying Efficiently?</h3>
-          <p>We diagnose and repair all dryer brands same-day in San Francisco Bay Area. We also provide professional dryer vent cleaning for safety and efficiency.</p>
+          <p>We diagnose and repair all dryer brands in San Francisco Bay Area. We also provide professional dryer vent cleaning for safety and efficiency.</p>
         </div>
       `,
       keywords: 'dryer taking too long, dryer not drying, clogged dryer vent, dryer vent cleaning, heating element replacement'
@@ -541,7 +541,7 @@ const BlogPost = () => {
               Need Professional Appliance Repair?
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Same-day service available in San Francisco Bay Area. Call now or book online!
+              Fast service available in San Francisco Bay Area. Call now or book online!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
