@@ -281,27 +281,31 @@ const SanFrancisco = () => {
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
           <div style={{ ...S.eyebrow, color: '#FF5722', textAlign: 'center', marginBottom: 10 }}>SAN FRANCISCO NEIGHBORHOODS</div>
           <h2 style={{ ...S.h2, color: '#FFFFFF', textAlign: 'center', marginBottom: 36 }}>We Serve Every SF Neighborhood</h2>
-          {/* Tabs */}
-          <div data-testid="sf-tabs-row" style={{ display: 'flex', gap: 24, overflowX: 'auto', paddingBottom: 2, marginBottom: 36, WebkitOverflowScrolling: 'touch' }} className="sf-tabs-scroll">
-            {NEIGHBORHOOD_TABS.map(tab => (
+          {/* Tabs — grid layout */}
+          <div data-testid="sf-tabs-row" className="sf-tabs-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))', gap: 8, marginBottom: 36 }}>
+            {NEIGHBORHOOD_TABS.map(tab => {
+              const isActive = activeTab === tab.id;
+              return (
               <button
                 key={tab.id}
                 data-testid={`sf-tab-${tab.id}`}
                 onClick={() => setActiveTab(tab.id)}
+                className={isActive ? 'sf-tab-active' : 'sf-tab-idle'}
                 style={{
-                  fontFamily: S.font, fontWeight: 600, fontSize: 13,
-                  color: activeTab === tab.id ? '#FFFFFF' : 'rgba(255,255,255,0.45)',
-                  background: 'transparent', border: 'none', cursor: 'pointer',
-                  padding: '0 0 8px', whiteSpace: 'nowrap',
-                  borderBottom: activeTab === tab.id ? '2px solid #FF5722' : '2px solid transparent',
-                  transition: 'color 0.2s, border-color 0.2s',
+                  fontFamily: S.font, fontWeight: 500, fontSize: 13,
+                  color: isActive ? '#FFFFFF' : '#0D1B2A',
+                  background: isActive ? '#FF5722' : '#FFFFFF',
+                  border: isActive ? '1px solid #FF5722' : '1px solid #E5E7EB',
+                  borderRadius: 20, cursor: 'pointer',
+                  padding: '8px 12px', textAlign: 'center',
+                  whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis',
+                  transition: 'background 0.2s, color 0.2s, border-color 0.2s',
                 }}
-                onMouseEnter={e => { if (activeTab !== tab.id) e.currentTarget.style.color = 'rgba(255,255,255,0.80)'; }}
-                onMouseLeave={e => { if (activeTab !== tab.id) e.currentTarget.style.color = 'rgba(255,255,255,0.45)'; }}
               >
                 {tab.label}
               </button>
-            ))}
+              );
+            })}
           </div>
           {/* Tab panel */}
           <div data-testid="sf-tab-panel" className="grid md:grid-cols-2" style={{ gap: 24 }}>
@@ -564,8 +568,10 @@ const SanFrancisco = () => {
 
       {/* Mobile responsive */}
       <style>{`
-        .sf-tabs-scroll { scrollbar-width: none; -ms-overflow-style: none; }
-        .sf-tabs-scroll::-webkit-scrollbar { display: none; }
+        .sf-tab-idle:hover { background: #FF5722 !important; color: #fff !important; border-color: #FF5722 !important; }
+        @media (min-width: 1024px) {
+          .sf-tabs-grid { grid-template-columns: repeat(5, 1fr) !important; gap: 10px; }
+        }
         @media (max-width: 1023px) {
           .hero-main-h1 { font-size: 28px !important; line-height: 1.2 !important; }
         }

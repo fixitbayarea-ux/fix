@@ -115,7 +115,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **ПРОМТ 05**: Added blog card thumbnails. Downloaded 3 stock photos (Pexels), converted to WebP (12-34KB). Updated `HomeBlogSection.jsx` with `<img>` 16:9 ratio, loading="lazy", category tag overlay, date+readTime.
 - **ПРОМТ 06**: Removed "Marin County Appliance Repair →" standalone link from `HomeExploreLinks.jsx`. Added Colma + Brisbane to Popular Service Areas chips. Replaced Marin County featured card in blog page with Peninsula link.
 - **ПРОМТ 07**: Moved trust badges from inside hero to standalone trust-strip div between hero and next section. Applied to `ApplianceRepairPageNew.js` (city + service heroes) and `SanFrancisco.js`. Desktop: centered single line, max-width 800px. Mobile: 11px, gap 12px, flex-wrap. Added "(94 Reviews)" to Google rating.
-- **ПРОМТ 08**: Fixed false "10+ Years" → "3+ Years" across all components (7 files). Redesigned city stats from inline flex to 3-column grid with `#1A2F45` background, border-radius 12px, dividers, clamp() font sizes. Applied to `ApplianceRepairPageNew.js`, `CityHeroNew.js`, `SanFrancisco.js`. Numbers: 3+ (Years/of Service), 180 (Day/Warranty), $60 (Diagnostic/Waived*).
+- **ПРОМТ 08**: Fixed false "10+ Years" → "3+ Years" across all components (7 files). Redesigned city stats from inline flex to 3-column grid with `#1A2F45` background, border-radius 12px, dividers, clamp() font sizes.
+- **ПРОМТ 09**: SF Neighborhoods tabs — replaced horizontal scroll (`overflow-x: auto`) with grid layout. Mobile: `auto-fill, minmax(140px, 1fr)` (2 cols, all 10 districts visible). Desktop: `repeat(5, 1fr)`. Chips styled as pills with hover/active states. Tab content unchanged.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
