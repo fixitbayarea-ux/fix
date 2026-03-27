@@ -499,7 +499,7 @@ const ApplianceRepairCostSanFrancisco = () => {
               {[
                 { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
                 { tag: 'ARTICLE', title: 'Refrigerator Not Cooling? 8 Causes', body: '8 causes from dirty coils to compressor failure. DIY checklist + pro costs.', link: 'Read Article', href: '/blog/refrigerator-not-cooling' },
-                { tag: 'SERVICE', title: 'Marin County Appliance Repair', body: 'Fast scheduling in Mill Valley, San Rafael, Novato & more.', link: 'View Service', href: '/marin-county-appliance-repair' },
+                { tag: 'SERVICE', title: 'Peninsula Appliance Repair', body: 'Fast scheduling in Daly City, South San Francisco, San Bruno & more.', link: 'View Service', href: '/daly-city-appliance-repair' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>

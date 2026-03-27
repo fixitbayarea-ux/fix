@@ -26,14 +26,13 @@ const HomeExploreLinks = () => (
           <h3 style={{ fontSize: 18, fontWeight: 800, color: '#0D1B2A', marginBottom: 14 }}>Popular Service Areas</h3>
           <div className="flex flex-wrap" style={{ gap: 10 }}>
             {[
-              { href: '/san-francisco-appliance-repair', label: 'San Francisco' }, { href: '/daly-city-appliance-repair', label: 'Daly City' }, { href: '/south-san-francisco-appliance-repair', label: 'South San Francisco' }, { href: '/san-bruno-appliance-repair', label: 'San Bruno' }, { href: '/pacifica-appliance-repair', label: 'Pacifica' }, { href: '/millbrae-appliance-repair', label: 'Millbrae' }, { href: '/san-rafael-appliance-repair', label: 'San Rafael' }, { href: '/mill-valley-appliance-repair', label: 'Mill Valley' }, { href: '/sausalito-appliance-repair', label: 'Sausalito' }, { href: '/novato-appliance-repair', label: 'Novato' },
+              { href: '/san-francisco-appliance-repair', label: 'San Francisco' }, { href: '/daly-city-appliance-repair', label: 'Daly City' }, { href: '/south-san-francisco-appliance-repair', label: 'South San Francisco' }, { href: '/san-bruno-appliance-repair', label: 'San Bruno' }, { href: '/pacifica-appliance-repair', label: 'Pacifica' }, { href: '/millbrae-appliance-repair', label: 'Millbrae' }, { href: '/san-rafael-appliance-repair', label: 'San Rafael' }, { href: '/mill-valley-appliance-repair', label: 'Mill Valley' }, { href: '/sausalito-appliance-repair', label: 'Sausalito' }, { href: '/novato-appliance-repair', label: 'Novato' }, { href: '/colma-appliance-repair', label: 'Colma' }, { href: '/brisbane-appliance-repair', label: 'Brisbane' },
             ].map(l => (
               <a key={l.href} href={l.href} className="r2-chip" style={{ fontSize: 14, fontWeight: 600, padding: '10px 16px', borderRadius: 4, background: '#fff', border: '1px solid #E5E2DD', color: '#0D1B2A', textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s', minHeight: 44, display: 'inline-flex', alignItems: 'center' }}>{l.label}</a>
             ))}
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 4, marginTop: 18 }}>
             <a href="/service-areas" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 15, fontWeight: 700, color: '#FF5722', textDecoration: 'none', minHeight: 44 }}>View all service areas &rarr;</a>
-            <a href="/marin-county-appliance-repair" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none', minHeight: 44 }}>Marin County Appliance Repair &rarr;</a>
           </div>
           <div style={{ marginTop: 18, borderTop: '1px solid #E5E2DD', paddingTop: 14 }}>
             <a href="/blog" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, fontSize: 15, fontWeight: 700, color: '#FF5722', textDecoration: 'none', minHeight: 44 }}>Visit Our Blog &rarr;</a>
