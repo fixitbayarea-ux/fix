@@ -114,6 +114,7 @@ export const getLocalBusinessSchema = (city = "San Francisco") => {
       "https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644",
       "https://tr.co/andrei-s--35"
     ],
+    "award": "Nextdoor Neighborhood Fave 2025 — Bay Area Appliance Repair",
     "makesOffer": [
       {
         "@type": "Offer",

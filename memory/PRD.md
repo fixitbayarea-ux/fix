@@ -128,6 +128,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 04 (Session 15)**: Completed JSON-LD schema audit. Fixed index.html reviewCount 94→95, MarinCountyPage.js 127→95. Added bestRating/worstRating to BrandsPage, LocalApplianceRepairPage, NeighborhoodPage schemas. Added datePublished to ReviewsPage review schema objects. All schemas now consistent: reviewCount="95", bestRating="5", worstRating="1".
 
+- **ПРОМТ 05 (Session 15)**: Added "Awards & Recognition" section to /reviews page with Nextdoor Neighborhood Fave 2025 card (responsive: horizontal desktop, vertical mobile). Added "Nextdoor Fave 2025" badge to homepage trust strip. Added `"award"` field to JSON-LD in ReviewsPage.js, SchemaMarkup.js, index.html, schemaMarkup.js. Award images stored in `/public/images/awards/`.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

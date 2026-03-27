@@ -69,6 +69,8 @@ const HomeHero = () => {
               <span style={{ minHeight: 44, display:'flex', alignItems:'center' }}><a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }} data-testid="hero-trust-reviews" aria-label="opens in new tab">&#10003; 95 Reviews</a></span>
               <span style={{ color: 'rgba(255,255,255,0.3)' }}>&middot;</span>
               <span style={{ color: '#FF5722', fontWeight: 600 }}>&#128737; License #51001</span>
+              <span style={{ color: 'rgba(255,255,255,0.3)' }}>&middot;</span>
+              <span className="nowrap" style={{ color: '#4CAF50', fontWeight: 600 }}>&#127942; Nextdoor Fave 2025</span>
             </div>
 
             {/* Desktop CTAs */}

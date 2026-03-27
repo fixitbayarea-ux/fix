@@ -45,6 +45,7 @@ const ReviewsPage = () => {
         "@type": "LocalBusiness",
         "name": "FixitBay LLC",
         "telephone": "+17605435733",
+        "award": "Nextdoor Neighborhood Fave 2025 — Bay Area Appliance Repair",
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
@@ -98,6 +99,7 @@ const ReviewsPage = () => {
           @media(max-width:767px){.stats-row{display:grid !important;grid-template-columns:1fr 1fr !important;gap:0 !important}.stats-row>div{border-right:none !important;padding:16px 24px !important}.stats-row>div:nth-child(1),.stats-row>div:nth-child(2){border-bottom:1px solid rgba(255,255,255,0.25)}}
           .rv-h1{font-size:46px !important}
           @media(max-width:767px){.rv-h1{font-size:28px !important}}
+          @media(max-width:600px){.award-card{flex-direction:column !important;text-align:center !important;max-width:320px !important}}
         `}</style>
 
         {/* ━━━ 1. HERO ━━━ */}
@@ -140,6 +142,45 @@ const ReviewsPage = () => {
                 <div style={{ fontFamily: F, fontWeight: 500, fontSize: 12, color: 'rgba(255,255,255,0.8)', marginTop: 4 }}>{s.label}</div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* ━━━ 2.5 AWARDS & RECOGNITION ━━━ */}
+        <section data-testid="reviews-awards" style={{ background: '#F8F5F0', padding: '48px 24px 0' }}>
+          <div style={{ maxWidth: 1000, margin: '0 auto', textAlign: 'center' }}>
+            <div style={EYE}>RECOGNITION</div>
+            <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 6 }}>Awards &amp; Recognition</h2>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 32 }}>
+              Recognized as Bay Area's favorite appliance repair service
+            </p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 24 }}>
+              <div className="award-card" data-testid="award-nextdoor" style={{
+                background: '#fff', borderRadius: 16, padding: 28, maxWidth: 500,
+                display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 24,
+                boxShadow: '0 2px 16px rgba(0,0,0,0.07)', border: '1px solid rgba(0,0,0,0.06)',
+                textAlign: 'left',
+              }}>
+                <img
+                  src="/images/awards/nextdoor-fave-2025-nd-square.png"
+                  alt="Nextdoor Neighborhood Fave 2025 Winner — FixitBay LLC"
+                  width="120"
+                  height="120"
+                  loading="lazy"
+                  style={{ borderRadius: 12, objectFit: 'contain', flexShrink: 0 }}
+                />
+                <div>
+                  <h3 style={{ fontFamily: F, fontWeight: 700, fontSize: 17, color: '#1A1A1A', marginBottom: 4 }}>
+                    Nextdoor Neighborhood Fave
+                  </h3>
+                  <p style={{ fontFamily: F, fontWeight: 600, fontSize: 13, color: '#FF5722', marginBottom: 8 }}>
+                    2025 Winner &middot; Bay Area
+                  </p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568', lineHeight: 1.6 }}>
+                    Voted by Nextdoor neighbors as the favorite appliance repair service in the San Francisco Bay Area.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

@@ -130,6 +130,7 @@ const SchemaMarkup = () => {
         "https://www.bbb.org/us/ca/san-francisco/profile/appliance-repair/fixitbay-llc"
       ],
       "foundingDate": "2023",
+      "award": "Nextdoor Neighborhood Fave 2025 — Bay Area Appliance Repair",
       "numberOfEmployees": {
         "@type": "QuantitativeValue",
         "value": 3
