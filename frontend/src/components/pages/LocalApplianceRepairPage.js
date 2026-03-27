@@ -50,7 +50,7 @@ const BRANDS = [
   { name: 'Bosch', logo: '/images/brands/bosch.svg', href: '/bosch-appliance-repair' },
   { name: 'Kenmore', logo: '/images/brands/kenmore.png', href: '/kenmore-appliance-repair', h: 70 },
   { name: 'Amana', logo: '/images/brands/amana.svg', href: '/brands' },
-  { name: 'Thermador', logo: '/images/brands/thermador.png', href: '/thermador-appliance-repair' },
+  { name: 'Thermador', logo: '/images/brands/thermador.svg', href: '/thermador-appliance-repair' },
   { name: 'Viking', logo: '/images/brands/viking.svg', href: '/viking-appliance-repair' },
   { name: 'Sub-Zero', logo: '/images/brands/sub-zero.svg', href: '/sub-zero-appliance-repair' },
   { name: 'Wolf', logo: '/images/brands/wolf.svg', href: '/wolf-appliance-repair' },

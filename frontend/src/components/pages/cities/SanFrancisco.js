@@ -43,7 +43,7 @@ const BRAND_LOGOS = {
   'KitchenAid':'/images/brands/kitchenaid.svg','LG':'/images/brands/lg.svg',
   'Maytag':'/images/brands/maytag.svg','Miele':'/images/brands/miele.svg',
   'Samsung':'/images/brands/samsung.svg','Sub-Zero':'/images/brands/sub-zero.svg',
-  'Thermador':'/images/brands/thermador.png','Viking':'/images/brands/viking.svg',
+  'Thermador':'/images/brands/thermador.svg','Viking':'/images/brands/viking.svg',
   'Whirlpool':'/images/brands/whirlpool.jpg','Wolf':'/images/brands/wolf.svg',
 };
 const BRAND_LINKS = {

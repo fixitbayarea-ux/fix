@@ -118,6 +118,9 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **ПРОМТ 08**: Fixed false "10+ Years" → "3+ Years" across all components (7 files). Redesigned city stats from inline flex to 3-column grid with `#1A2F45` background, border-radius 12px, dividers, clamp() font sizes.
 - **ПРОМТ 09**: SF Neighborhoods tabs — replaced horizontal scroll (`overflow-x: auto`) with grid layout. Mobile: `auto-fill, minmax(140px, 1fr)` (2 cols, all 10 districts visible). Desktop: `repeat(5, 1fr)`. Chips styled as pills with hover/active states. Tab content unchanged.
 
+### Session 15 (Mar 27 2026) — Brand Image Fix
+- **ПРОМТ 10 FIX**: Fixed invisible Thermador logo on city pages. Root cause: `thermador.png` was a white-on-transparent PNG (320×160, created for dark hero backgrounds) — invisible on light card backgrounds. Changed to `thermador.svg` in SanFrancisco.js, BrandsGrid.jsx, LocalApplianceRepairPage.js. All 18 brand logos now render correctly. Zero 404 errors in console.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
