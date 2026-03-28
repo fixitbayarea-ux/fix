@@ -185,6 +185,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 ### Session 18 (Mar 28 2026) — Build Fix + Video Thumbnails
 - **BUG FIX**: Fixed production build failure caused by syntax error in `AboutPage.js` line 91. Root cause: `@media` CSS rule placed outside template literal during Session 17 git rollback. Build: 233/233 pages pass.
 - **ПРОМТ 18**: Replaced plain text video links on /about with proper YouTube thumbnail cards. Changed `maxresdefault.jpg` → `hqdefault.jpg` (more reliable). Added explicit `height: 180px` + `objectFit: cover` to images. Replaced `<div>` wrapper with `<a>` tag (`video-thumbnail-card` class). Added SVG play overlay, hover effects (box-shadow + translateY), and styled captions. Added 6 CSS rules for `.video-thumbnail-card`, `.video-thumb-wrapper`, `.play-overlay`, `.video-caption`.
+- **ПРОМТ 19**: Replaced Google Maps iframe on /contact with custom styled service area map component. Shows 3 labeled regions (San Francisco, Peninsula, Marin County) with orange dots, city lists, footer with "Field service only" note and "Open in Google Maps →" link. Inline styles matching site aesthetic (#FF5722 accent, #f8f4f0 background, 12px border-radius).
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

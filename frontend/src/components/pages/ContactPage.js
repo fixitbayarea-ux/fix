@@ -238,17 +238,26 @@ const ContactPage = () => {
                 </div>
                 <div style={{ height: 1, background: 'rgba(255,87,34,0.15)', margin: '20px 0' }} />
                 <div style={EYE}>SERVICE MAP</div>
-                <div data-testid="service-area-map" style={{ borderRadius: 4, overflow: 'hidden', marginBottom: 16, border: '1px solid rgba(255,87,34,0.15)' }}>
-                  <iframe
-                    title="FixitBay LLC Service Area — San Francisco Bay Area"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d201879.72384241942!2d-122.47858865!3d37.7577627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000000"
-                    width="100%"
-                    height="200"
-                    style={{ border: 0, display: 'block' }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  />
+                <div data-testid="service-area-map" className="service-area-map" style={{ background: '#f8f4f0', borderRadius: 12, padding: '20px 24px', border: '1px solid rgba(255,87,34,0.15)' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 16, marginBottom: 16 }}>
+                    {[
+                      { name: 'San Francisco', cities: 'All neighborhoods' },
+                      { name: 'Peninsula', cities: 'Daly City · SSF · San Bruno · Millbrae · Pacifica · Colma · Brisbane · Montara' },
+                      { name: 'Marin County', cities: 'Sausalito · Mill Valley · San Rafael · Novato · Tiburon · Corte Madera · Larkspur · Greenbrae · Fairfax · San Anselmo · Ross · Belvedere' },
+                    ].map((r, i) => (
+                      <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+                        <div style={{ width: 12, height: 12, borderRadius: '50%', background: '#FF5722', flexShrink: 0, marginTop: 4 }} />
+                        <div>
+                          <div style={{ fontSize: 15, fontWeight: 700, color: '#1a1a1a', fontFamily: F }}>{r.name}</div>
+                          <div style={{ fontSize: 12, color: '#666', marginTop: 2, lineHeight: 1.5, fontFamily: F }}>{r.cities}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: 12, borderTop: '1px solid rgba(0,0,0,0.08)', fontSize: 12, color: '#888', fontFamily: F }}>
+                    <span>Field service only — we come to you</span>
+                    <a href="https://maps.google.com/?q=San+Francisco+Bay+Area" target="_blank" rel="noopener noreferrer" style={{ color: '#FF5722', fontWeight: 600, textDecoration: 'none', fontSize: 12, fontFamily: F }} aria-label="opens in new tab">Open in Google Maps →</a>
+                  </div>
                 </div>
                 <div style={{ height: 1, background: 'rgba(255,87,34,0.15)', margin: '20px 0' }} />
                 <div style={EYE}>FIND US ONLINE</div>
