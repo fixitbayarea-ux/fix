@@ -258,7 +258,7 @@ const BrandLandingPage = ({ brand }) => {
               {[
                 { val: '3+', unit: 'Years', label: 'Experience' },
                 { val: '180', unit: '-Day', label: 'Warranty' },
-                { val: 'Same', unit: '-Day', label: 'Service' },
+                { val: 'Same/Next', unit: '-Day', label: 'Service' },
               ].map((s, i, arr) => (
                 <div key={i} style={{ textAlign: 'center', paddingRight: i < arr.length - 1 ? 40 : 0, borderRight: i < arr.length - 1 ? `1px solid ${PC.white15}` : 'none', paddingLeft: i > 0 ? 40 : 0 }}>
                   <div className="brand-stat-val" style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: PC.white }}>{s.val}<span style={{ color: PC.accent }}>{s.unit}</span></div>

@@ -176,6 +176,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 14 (Session 17)**: Global cleanup of "next-day" duplication. Removed 25 instances across 18 files — patterns: `"next-day & next-day"`, `"next-day &amp; next-day"`, `"next-day and next-day"`, `"next-day or next-day"` → all replaced with `"next-day"`. Affected files include ContactPage, BrandLandingPage, all Commercial pages, BlogCTA, SanFrancisco, CityHeroNew, CTABanner, HomeHero, and others.
 
+- **ПРОМТ 15 (Session 17)**: Changed stats bar on brand pages from "Same-Day Service" to "Same/Next-Day Service" in `BrandLandingPage.js`. Only BrandLandingPage had this stats bar pattern.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
