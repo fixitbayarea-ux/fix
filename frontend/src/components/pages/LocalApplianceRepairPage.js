@@ -82,10 +82,17 @@ const RELATED = [
 ];
 
 const LocalApplianceRepairPage = () => {
+  const [showFloat, setShowFloat] = useState(false);
   const [openFaq, setOpenFaq] = useState(-1);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
-const schemas = useMemo(() => [
+  useEffect(() => {
+    const h = () => setShowFloat(window.scrollY > 300);
+    window.addEventListener('scroll', h, { passive: true });
+    return () => window.removeEventListener('scroll', h);
+  }, []);
+
+  const schemas = useMemo(() => [
     { id: 'local-business-schema', data: { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "FixitBay LLC", "description": "Local appliance repair service in San Francisco and Bay Area. Fast scheduling, $60 diagnostic, 180-day warranty.", "url": "https://fixitbay.net", "telephone": "+17605435733", "priceRange": "$$", "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressRegion": "CA", "postalCode": "94109" }, "areaServed": SERVICE_CITIES.map(c => c.name), "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }, { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }], "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "95", "bestRating": "5", "worstRating": "1" } } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
       { "@type": "Question", "name": "Which Bay Area cities do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve San Francisco, the Peninsula, and Marin County, including Daly City, Pacifica, Brisbane, Mill Valley, San Rafael, Sausalito, Larkspur, and many more." } },
@@ -401,7 +408,8 @@ const schemas = useMemo(() => [
           </div>
         </footer>
 
-        {/* ━━━ 14. FLOATING + MOBILE ━━━ */}} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR</a>}
+        {/* ━━━ 14. FLOATING + MOBILE ━━━ */}
+        {showFloat && <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="float-btn" className="hidden md:flex" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '14px 20px', borderRadius: 4, boxShadow: '0 4px 20px rgba(255,87,34,0.45)', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR</a>}
       </div>
     </>
   );

@@ -55,8 +55,17 @@ const FAQ_DATA = [
 /* ───────────────────────── COMPONENT ───────────────────────── */
 const ServicesPage = () => {
   const [openFaq, setOpenFaq] = useState(-1);
+  const [showFloat, setShowFloat] = useState(false);
+
   useEffect(() => { window.scrollTo(0, 0); }, []);
-/* ── SEO schemas ── */
+
+  useEffect(() => {
+    const onScroll = () => setShowFloat(window.scrollY > 300);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  /* ── SEO schemas ── */
   useSchemas([
     {
       id: 'services-itemlist-schema',
@@ -421,6 +430,7 @@ const ServicesPage = () => {
         </footer>
 
         {/* ─── 10. FLOATING BUTTON ─── */}
+        <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className={`sp-float${showFloat ? '' : ' hidden'}`} data-testid="services-floating-book-btn" aria-label="opens in new tab">BOOK REPAIR</a>
 
         {/* ─── MOBILE STICKY BAR ─── */}
         <div className="sp-mobile-bar" data-testid="services-mobile-bar">

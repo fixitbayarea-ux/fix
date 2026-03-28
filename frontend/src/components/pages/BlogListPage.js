@@ -41,6 +41,8 @@ const BlogListPage = () => {
   const [loading, setLoading] = useState(true);
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
+  const [showFloat, setShowFloat] = useState(false);
+
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   useEffect(() => {
@@ -50,7 +52,14 @@ const BlogListPage = () => {
       .catch(() => {})
       .finally(() => setLoading(false));
   }, []);
-const allPosts = useMemo(() => {
+
+  useEffect(() => {
+    const h = () => setShowFloat(window.scrollY > 300);
+    window.addEventListener('scroll', h, { passive: true });
+    return () => window.removeEventListener('scroll', h);
+  }, []);
+
+  const allPosts = useMemo(() => {
     const cmsMap = new Set(cmsPosts.map(p => p.slug));
     return [...cmsPosts, ...STATIC_POSTS.filter(p => !cmsMap.has(p.slug))];
   }, [cmsPosts]);
@@ -169,9 +178,8 @@ const allPosts = useMemo(() => {
 
           @keyframes spin { to { transform: rotate(360deg); } }
 
-          
-        `}  @media (max-width: 767px) { body { padding-bottom: 72px; } }
-        </style>
+          @media (max-width: 767px) { body { padding-bottom: 72px; } }
+        `}</style>
 
         {/* ━━━ 1. HERO ━━━ */}
         <section data-testid="blog-hero" style={{ background: "linear-gradient(rgba(13,27,42,0.94),rgba(13,27,42,0.94)),url('/background_new2.webp')", backgroundSize: 'cover', backgroundPosition: 'center 60%', minHeight: 460, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '72px 20px 48px', color: '#fff' }}>
@@ -366,8 +374,23 @@ const allPosts = useMemo(() => {
         <UnifiedFooter />
 
         {/* ━━━ 8. FLOATING BUTTON ━━━ */}
+        {showFloat && (
+          <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="float-btn" className="hidden md:flex" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '14px 20px', borderRadius: 4, boxShadow: '0 4px 20px rgba(255,87,34,0.45)', textDecoration: 'none' }} aria-label="opens in new tab">
+            BOOK REPAIR
+          </a>
+        )}
 
         {/* ━━━ 9. MOBILE STICKY BAR ━━━ */}
+        {showFloat && (
+          <div className="flex md:hidden" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 999, background: '#1A2F45', borderTop: '2px solid #FF5722', padding: '10px 12px', gap: 8, justifyContent: 'center' }}>
+            <a href="tel:+17605435733" data-testid="mobile-call" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none' }}>CALL</a>
+            <button onClick={() => window.open('/book?go=1', '_blank')} data-testid="mobile-book" style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: '#0D1B2A', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '8px 0', borderRadius: 4, border: '1px solid rgba(255,255,255,0.15)', cursor: 'pointer' }}>
+              <span style={{ fontSize: 9, color: 'rgba(255,255,255,0.45)', display: 'block', textAlign: 'center', marginBottom: 1 }}>Fast</span>
+              BOOK ONLINE
+            </button>
+            <a href="sms:7605435733?body=Hello%20FixitBay!" data-testid="mobile-text" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none', border: '2px solid rgba(255,255,255,0.15)' }}>TEXT US</a>
+          </div>
+        )}
       </div>
     </>
   );

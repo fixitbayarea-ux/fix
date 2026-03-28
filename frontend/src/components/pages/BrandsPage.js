@@ -85,13 +85,21 @@ const REPAIR_LINKS = [
 
 const BrandsPage = () => {
   const [activeCategory, setActiveCategory] = useState('all');
+  const [showFloat, setShowFloat] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
   const [logoErrors, setLogoErrors] = useState({});
   const [carouselIdx, setCarouselIdx] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const carouselRef = useRef(null);
   const intervalRef = useRef(null);
-useEffect(() => {
+
+  useEffect(() => {
+    const h = () => setShowFloat(window.scrollY > 300);
+    window.addEventListener('scroll', h, { passive: true });
+    return () => window.removeEventListener('scroll', h);
+  }, []);
+
+  useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 768);
     check();
     window.addEventListener('resize', check);
@@ -198,7 +206,7 @@ useEffect(() => {
         @media (max-width: 767px) { .brand-card-guide { opacity: 1; } }
         .carousel-track-item { min-width: calc(100% - 0px) !important; }
         @media (min-width: 768px) { .carousel-track-item { min-width: calc(33.333% - 13.333px) !important; } }
-        
+        @media (max-width: 767px) { body { padding-bottom: 72px; } }
         .brands-filter-tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; flex-wrap: nowrap !important; justify-content: flex-start !important; }
         .brands-filter-tabs::-webkit-scrollbar { display: none; }
         .brands-section-h2 { font-size: 24px !important; }
@@ -215,8 +223,7 @@ useEffect(() => {
         .brands-mobile-bar { display: flex !important; }
         @media (min-width: 768px) { .brands-mobile-bar { display: none !important; } }
         @media (max-width: 767px) { .brands-footer { padding: 20px !important; } .brands-footer-inner { flex-direction: column !important; text-align: center !important; align-items: center !important; } }
-      `}@media (max-width: 767px) { body { padding-bottom: 72px; } }
-        </style>
+      `}</style>
 
       {/* 1. HERO */}
       <section data-testid="brands-hero" style={{ background: "linear-gradient(rgba(13,27,42,0.97),rgba(13,27,42,0.97)), url('/background_new2.png')", backgroundSize: 'cover', backgroundPosition: 'center 60%', padding: '80px 20px 60px', color: PC.white }}>
@@ -501,6 +508,17 @@ useEffect(() => {
       </footer>
 
       {/* 10. FLOATING BUTTON + MOBILE BAR */}
+      {showFloat && <>
+        <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="brands-float-btn" className="brands-float-btn" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, alignItems: 'center', gap: 8, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '16px 24px', borderRadius: PC.r, boxShadow: '0 4px 16px rgba(0,0,0,0.3)', textDecoration: 'none' }} aria-label="opens in new tab">BOOK REPAIR</a>
+        <div className="brands-mobile-bar" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 999, background: PC.navyMid, borderTop: `2px solid ${PC.accent}`, padding: '10px 12px', gap: 8, justifyContent: 'center' }}>
+          <a href="tel:+17605435733" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: PC.accent, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: PC.r, textDecoration: 'none' }}>CALL</a>
+          <button onClick={() => window.open('/book?go=1', '_blank')} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', background: PC.navy, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '8px 0', borderRadius: PC.r, border: `1px solid ${PC.white15}`, cursor: 'pointer' }}>
+            <span style={{ fontSize: 9, color: PC.white45, display: 'block', textAlign: 'center', marginBottom: 1 }}>Fast</span>
+            BOOK ONLINE
+          </button>
+          <a href="sms:7605435733?body=Hello%20FixitBay!" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, background: 'transparent', color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: PC.r, textDecoration: 'none', border: `2px solid ${PC.white15}` }}>TEXT US</a>
+        </div>
+      </>}
     </div>
   );
 };

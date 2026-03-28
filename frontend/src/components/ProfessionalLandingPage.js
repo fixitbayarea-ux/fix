@@ -74,6 +74,14 @@ const ProfessionalLandingPage = () => {
   const [mapRef, isMapInView] = useInView({ rootMargin: '300px' });
   const [reviewsRef, isReviewsInView] = useInView({ rootMargin: '200px' });
 
+  /* Sticky Call Now — show after scrolling past hero */
+  const [showCallBtn, setShowCallBtn] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setShowCallBtn(window.scrollY > window.innerHeight * 0.85);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   /* GEO meta & preconnect */
   useEffect(() => {
     const metas = [
@@ -98,7 +106,7 @@ const ProfessionalLandingPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen pb-[72px] lg:pb-0 " style={{ background: '#fff', fontFamily: 'Montserrat, system-ui, -apple-system, sans-serif' }}>
+    <div className="min-h-screen pb-[72px] lg:pb-0" style={{ background: '#fff', fontFamily: 'Montserrat, system-ui, -apple-system, sans-serif' }}>
       <SEOMetaTags title="Appliance Repair San Francisco & Bay Area | FixitBay LLC" description="Professional appliance repair in San Francisco Bay Area. Same- or next-day appointments for refrigerators, washers, dryers, dishwashers. Call (760) 543-5733 or book online." canonical="https://fixitbay.net/" keywords="appliance repair San Francisco, refrigerator repair, washer repair, appliance repair Bay Area, FixitBay LLC" ogTitle="Appliance Repair San Francisco & Bay Area | FixitBay LLC" ogDescription="Professional appliance repair in San Francisco Bay Area. Same- or next-day appointments for refrigerators, washers, dryers, dishwashers. Call (760) 543-5733 or book online." ogImage="https://fixitbay.net/images/og-cover.png" twitterSite="@fixitbay" twitterTitle="Appliance Repair SF Bay Area | FixitBay LLC" twitterDescription="Licensed appliance repair in San Francisco. $60 diagnostic, 180-day warranty, fast scheduling." />
       <HomepageSchemas />
       <HomeHero />
@@ -123,7 +131,7 @@ const ProfessionalLandingPage = () => {
                       {s.numMobile && <span className={`stat-num stat-num-mobile ${s.mobileClass}`} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: 1, color: '#0D1B2A', whiteSpace: 'nowrap', display: 'none' }}>{s.numMobile}</span>}
                       {!s.numMobile && s.mobileClass === 'stat-num-warranty' && (
                         <span className="stat-num stat-num-mobile stat-num-warranty" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: 1, color: '#0D1B2A', display: 'none' }}>
-                          180<span style={{ fontSize: '0.55em', fontWeight: 600, verticalAlign: 'middle' }}>-Day</span>
+                          180<span style={{ fontSize: 14, fontWeight: 600, verticalAlign: 'super', marginLeft: 1 }}>-Day</span>
                         </span>
                       )}
                       <span className="stat-unit" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 20, color: '#FF5722' }}>{s.unit}</span>
@@ -193,7 +201,7 @@ const ProfessionalLandingPage = () => {
                 return (
                   <React.Fragment key={i}>
                     {wrapped}
-                    {i < 3 && i !== 1 && <div className="hiw-arrow" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF5722" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>}
+                    {i < 3 && i !== 1 && <div className="hiw-arrow" aria-hidden="true"><span className="hiw-arrow-h">&rarr;</span></div>}
                     {i === 1 && <div className="hiw-arrow hiw-arrow-down" aria-hidden="true"><div className="hiw-connector-l"></div></div>}
                   </React.Fragment>
                 );
@@ -242,18 +250,18 @@ const ProfessionalLandingPage = () => {
           .stats-desktop-grid { display: grid !important; grid-template-columns: 1fr 1px 1fr 1px 1fr; align-items: stretch; gap: 0; padding: 10px 12px; }
           .stats-desktop-grid .stat-divider { display: block !important; width: 1px !important; background: rgba(0,0,0,0.1) !important; margin: 0 !important; align-self: stretch; }
           .stats-desktop-grid .stat-accent-bar { display: none; }
-          .stats-desktop-grid > div:not(.stat-divider) { text-align: center !important; padding: 6px 4px !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 2px !important; overflow: hidden; min-height: 80px; }
+          .stats-desktop-grid > div:not(.stat-divider) { text-align: center !important; padding: 4px 4px !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 2px !important; overflow: hidden; min-height: 80px; }
           .stats-desktop-grid > div:not(.stat-divider) > div { align-items: center !important; }
           .stats-desktop-grid > div:not(.stat-divider) > div > div:first-child { justify-content: center !important; flex-wrap: wrap; }
           .stats-desktop-grid .stat-num-desktop { display: none !important; }
           .stats-desktop-grid .stat-num-mobile { display: inline !important; }
-          .stats-desktop-grid .stat-num-cities { font-size: clamp(22px, 5vw, 30px) !important; font-weight: 800; color: #0D1B2A; }
-          .stats-desktop-grid .stat-num-diag { font-size: clamp(22px, 5vw, 30px) !important; font-weight: 800; color: #0D1B2A; }
-          .stats-desktop-grid .stat-num-warranty { font-size: clamp(22px, 5vw, 30px) !important; font-weight: 800; color: #0D1B2A; }
-          .stats-desktop-grid .stat-unit { font-size: 12px !important; text-transform: uppercase; letter-spacing: 0.5px; }
+          .stats-desktop-grid .stat-num-cities { font-size: 32px !important; font-weight: 800; color: #0D1B2A; }
+          .stats-desktop-grid .stat-num-diag { font-size: 22px !important; font-weight: 700; color: #0D1B2A; }
+          .stats-desktop-grid .stat-num-warranty { font-size: 28px !important; font-weight: 800; color: #0D1B2A; }
+          .stats-desktop-grid .stat-unit { font-size: 11px !important; text-transform: uppercase; letter-spacing: 0.5px; }
           .stats-desktop-grid .stat-title-desktop { display: none !important; }
           .stats-desktop-grid .stat-title-mobile { display: block !important; }
-          .stats-desktop-grid .stat-title { font-size: 10px !important; letter-spacing: 0.06em; }
+          .stats-desktop-grid .stat-title { font-size: 9px !important; letter-spacing: 0.08em; }
           .stats-desktop-grid .stat-desc { display: none; }
         }
         .animate-fadeIn { animation: fadeIn 0.3s ease-out both; }
@@ -280,8 +288,7 @@ const ProfessionalLandingPage = () => {
         /* ═══ HIW Steps Layout ═══ */
         .hiw-steps-container { display: flex; align-items: flex-start; justify-content: center; gap: 0; }
         .hiw-step-card-wrap { flex: 1; min-width: 0; }
-        .hiw-arrow { display: flex; align-items: center; justify-content: center; padding: 0 4px; color: #FF5722; padding-top: 56px; }
-        .hiw-arrow svg { background: rgba(255,87,34,0.08); border-radius: 50%; padding: 6px; width: 32px; height: 32px; }
+        .hiw-arrow { display: flex; align-items: center; justify-content: center; padding: 0 8px; color: #FF5722; font-size: 24px; font-weight: 700; padding-top: 56px; }
         .hiw-arrow-down { display: none; }
         .hiw-num-pill { display: none !important; }
         .hiw-num-watermark { display: block !important; }
@@ -289,12 +296,11 @@ const ProfessionalLandingPage = () => {
         @media (max-width: 767px) {
           .hiw-steps-container { display: grid !important; grid-template-columns: 1fr auto 1fr; gap: 4px 0; }
           .hiw-step-card-wrap { min-width: 0; }
-          .hiw-arrow { padding: 0 2px; padding-top: 36px; }
+          .hiw-arrow { padding: 0 4px; font-size: 18px; padding-top: 36px; }
           .hiw-arrow-h { display: inline; }
           .hiw-arrow-down { grid-column: 1 / -1; padding: 0; display: flex !important; justify-content: flex-end; height: 36px; position: relative; }
           .hiw-arrow-down .hiw-arrow-h { display: none; }
-          .hiw-arrow-down svg { display: none; }
-          .hiw-connector-l { display: block !important; position: absolute; right: 25%; top: 0; width: 50%; height: 100%; border-right: 2px solid rgba(255,87,34,0.30); border-bottom: 2px solid rgba(255,87,34,0.30); border-radius: 0 0 16px 0; }
+          .hiw-connector-l { display: block !important; position: absolute; right: 25%; top: 0; width: 50%; height: 100%; border-right: 2px dashed rgba(255,87,34,0.35); border-bottom: 2px dashed rgba(255,87,34,0.35); border-radius: 0 0 10px 0; }
           .hiw-connector-l::after { content: '\u2193'; position: absolute; bottom: -14px; left: -6px; color: #FF5722; font-size: 16px; font-weight: 700; }
           .hiw-num-watermark { display: none !important; }
           .hiw-num-pill { display: inline-block !important; }
@@ -364,6 +370,29 @@ const ProfessionalLandingPage = () => {
       `}</style>
 
       {/* Sticky Call Now — desktop only */}
+      {showCallBtn && (
+        <a
+          href="tel:+17605435733"
+          data-testid="sticky-call-btn"
+          className="hidden md:flex"
+          style={{
+            position: 'fixed', right: 24, bottom: 40, zIndex: 90,
+            background: '#FF5722', color: '#FFFFFF',
+            fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 14,
+            textTransform: 'uppercase', textDecoration: 'none',
+            letterSpacing: '0.08em', minWidth: 140,
+            padding: '16px 28px', borderRadius: 4,
+            boxShadow: '0 4px 20px rgba(255,87,34,0.55)',
+            transition: 'all 0.2s ease',
+            alignItems: 'center', justifyContent: 'center',
+          }}
+          onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 6px 28px rgba(255,87,34,0.75)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+          onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 20px rgba(255,87,34,0.55)'; e.currentTarget.style.transform = 'translateY(0)'; }}
+        >
+          <Phone size={16} style={{ marginRight: 6 }} /> CALL NOW
+        </a>
+      )}
+
       <Suspense fallback={<div style={{ minHeight: 400 }} />}><UnifiedFooter /></Suspense>
     </div>
   );

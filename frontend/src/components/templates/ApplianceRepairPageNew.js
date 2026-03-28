@@ -243,6 +243,14 @@ const ApplianceRepairPageNew = ({
   const location = useLocation();
   const currentPath = location.pathname.replace(/\/+$/, '') || '/';
 
+  const [showStickyBtn, setShowStickyBtn] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setShowStickyBtn(window.scrollY > 300);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   const autoRelatedLinks = (() => {
     if (relatedLinks) return relatedLinks;
     if (isCity) {
@@ -602,6 +610,13 @@ const ApplianceRepairPageNew = ({
 
         {/* ═══ SECTION 14 — FOOTER ═══ */}
         <CompactFooter testId="city-footer" />
+
+        {/* Floating sticky Book Repair */}
+        {showStickyBtn && (
+          <a href="/book?go=1" data-testid="city-sticky-book" className="hidden md:inline-flex" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '16px 24px', borderRadius: 4, boxShadow: '0 4px 20px rgba(255,87,34,0.45)', textDecoration: 'none', alignItems: 'center', gap: 8, transition: 'all 0.2s ease' }} onMouseEnter={e => { e.currentTarget.style.background = '#FF7043'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(255,87,34,0.65)'; e.currentTarget.style.transform = 'translateY(-2px)'; }} onMouseLeave={e => { e.currentTarget.style.background = '#FF5722'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(255,87,34,0.45)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+            BOOK REPAIR
+          </a>
+        )}
 
         <style>{`
           .city-svc-btn:hover { background: #FF5722 !important; }
@@ -991,6 +1006,29 @@ const ApplianceRepairPageNew = ({
           .service-how-grid { grid-template-columns: 1fr 1fr !important; gap: 16px !important; }
         }
       `}</style>
+
+      {/* Floating sticky Book Repair button */}
+      {showStickyBtn && (
+        <a
+          href="/book?go=1"
+          data-testid="sticky-book-btn"
+          className="hidden md:inline-flex"
+          style={{
+            position: 'fixed', bottom: 32, right: 32, zIndex: 999,
+            background: '#FF5722', color: '#FFFFFF',
+            fontFamily: S.font, fontWeight: 700, fontSize: 13,
+            textTransform: 'uppercase', letterSpacing: '0.08em',
+            padding: '16px 24px', borderRadius: 4,
+            boxShadow: '0 4px 20px rgba(255,87,34,0.45)',
+            textDecoration: 'none', alignItems: 'center', gap: 8,
+            transition: 'all 0.2s ease'
+          }}
+          onMouseEnter={e => { e.currentTarget.style.background = '#FF7043'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(255,87,34,0.65)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
+          onMouseLeave={e => { e.currentTarget.style.background = '#FF5722'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(255,87,34,0.45)'; e.currentTarget.style.transform = 'translateY(0)'; }}
+        >
+          <CalendarCheck size={16} /> BOOK REPAIR
+        </a>
+      )}
     </div>
   );
 };

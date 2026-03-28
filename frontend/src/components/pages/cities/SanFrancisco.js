@@ -190,6 +190,13 @@ const SanFrancisco = () => {
   const sfData = cityLocalData['San Francisco'];
   const [openFaq, setOpenFaq] = useState(null);
   const [activeTab, setActiveTab] = useState('mission');
+  const [showStickyBtn, setShowStickyBtn] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setShowStickyBtn(window.scrollY > 580);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   const pageSchemas = useMemo(() => [
     { id: 'sf-breadcrumb', data: buildBreadcrumbSchema([
@@ -205,7 +212,7 @@ const SanFrancisco = () => {
   const currentTab = NEIGHBORHOOD_TABS.find(t => t.id === activeTab) || NEIGHBORHOOD_TABS[0];
 
   return (
-    <div className="" className="pb-[72px] lg:pb-0" style={{ fontFamily: S.font, background: '#F8F5F0' }}>
+    <div className="pb-[72px] lg:pb-0" style={{ fontFamily: S.font, background: '#F8F5F0' }}>
       <SEOMetaTags
         title="Appliance Repair San Francisco | Fast Scheduling | FixitBay LLC"
         description="Professional appliance repair in San Francisco. Fast scheduling available. Licensed technicians, 180-day warranty. Serving all SF neighborhoods. Call (760) 543-5733."
@@ -546,6 +553,13 @@ const SanFrancisco = () => {
           <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.30)' }}>&copy; 2026 FixitBay LLC</span>
         </div>
       </footer>
+
+      {/* Floating sticky Book Repair */}
+      {showStickyBtn && (
+        <a href="/book?go=1" data-testid="sf-sticky-book" className="hidden md:inline-flex" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '16px 24px', borderRadius: 4, boxShadow: '0 4px 20px rgba(255,87,34,0.45)', textDecoration: 'none', alignItems: 'center', gap: 8, transition: 'all 0.2s ease' }} onMouseEnter={e => { e.currentTarget.style.background = '#FF7043'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(255,87,34,0.65)'; e.currentTarget.style.transform = 'translateY(-2px)'; }} onMouseLeave={e => { e.currentTarget.style.background = '#FF5722'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(255,87,34,0.45)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
+          <CalendarCheck size={16} /> BOOK REPAIR
+        </a>
+      )}
 
       {/* Mobile responsive */}
       <style>{`

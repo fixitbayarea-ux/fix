@@ -158,7 +158,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 05 (Session 17)**: Fixed FAQ Q2 and Q8 on homepage. Q2: removed "and next-day" duplicate, added "Monday through Saturday" + "today's availability". Q8: replaced generic booking text with 4 contact methods (online, phone/text, Google, email). Added `whiteSpace: 'pre-line'` to FAQAccordion.jsx for multi-line answers. Global cleanup: removed 40 instances of "same- or next-day and next-day" → "same- or next-day" across 33 files. Updated JSON-LD FAQ schema.
 
-- **ПРОМТ 06 (Session 17)**: Removed ALL floating sticky "BOOK REPAIR" / "CALL NOW" buttons that appear on scroll across the entire site. Cleaned from: `ApplianceRepairPageNew.js` (2 instances), `SanFrancisco.js`, `ProfessionalLandingPage.js` (CALL NOW), `BrandsPage.js`, `LocalApplianceRepairPage.js`, `BlogListPage.js`, `ServicesPage.js`, `BookPage.js`, and 13 blog pages. Removed associated `showStickyBtn`/`showCallBtn`/`showFloat` useState + useEffect scroll listeners. Mobile bottom bar (CALL | BOOK ONLINE | TEXT US) preserved unchanged.
+- **ПРОМТ 06 (Session 17)**: Hidden floating sticky "BOOK REPAIR" buttons on mobile only (`hidden md:inline-flex`). Added `className` to 3 files: `ApplianceRepairPageNew.js` (2 instances), `SanFrancisco.js`. `ProfessionalLandingPage.js` (CALL NOW) already had `hidden md:flex`. Removed mobile-only floating bottom bars (`showFloat && <div className="flex md:hidden"...>`) from 9 files (LocalApplianceRepairPage, 8 blog pages). Desktop floating buttons preserved on all pages.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

@@ -91,10 +91,17 @@ const SectionH2 = ({ id, badge, title }) => (
 );
 
 const EnergyEfficientAppliances = () => {
-const [openFaq, setOpenFaq] = useState(-1);
+  const [showFloat, setShowFloat] = useState(false);
+  const [openFaq, setOpenFaq] = useState(-1);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
-const schemas = useMemo(() => [
+  useEffect(() => {
+    const h = () => setShowFloat(window.scrollY > 300);
+    window.addEventListener('scroll', h, { passive: true });
+    return () => window.removeEventListener('scroll', h);
+  }, []);
+
+  const schemas = useMemo(() => [
     { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to Make Your Appliances More Energy Efficient", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-01-01", "dateModified": "2026-01-01", "url": "https://fixitbay.net/blog/energy-efficient-appliances" } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Energy Efficient Appliances", "item": "https://fixitbay.net/blog/energy-efficient-appliances" }] } }
@@ -393,6 +400,7 @@ const schemas = useMemo(() => [
         </footer>
 
         {/* ━━━ 7. FLOATING + MOBILE ━━━ */}
+        {showFloat && <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="float-btn" className="hidden md:flex" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '14px 20px', borderRadius: 4, boxShadow: '0 4px 20px rgba(255,87,34,0.45)', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR</a>}
       </div>
     </>
   );
