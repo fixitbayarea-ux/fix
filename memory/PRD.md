@@ -160,6 +160,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 06 (Session 17)**: Hidden floating sticky "BOOK REPAIR" buttons on mobile only (`hidden md:inline-flex`). Added `className` to 3 files: `ApplianceRepairPageNew.js` (2 instances), `SanFrancisco.js`. `ProfessionalLandingPage.js` (CALL NOW) already had `hidden md:flex`. Removed mobile-only floating bottom bars (`showFloat && <div className="flex md:hidden"...>`) from 9 files (LocalApplianceRepairPage, 8 blog pages). Desktop floating buttons preserved on all pages.
 
+- **ПРОМТ 07 (Session 17)**: Fixed brand logos rendering at 0px height on service/city pages. Added explicit `width={120} height={54}` attributes and `height` style to `<img>` tags in `BrandsGrid.jsx` and `SanFrancisco.js`. Root cause: SVG files without explicit width/height on `<svg>` tag + CSS `maxHeight` without `height` caused browser to render 0px. All 18 brand logos now render correctly on both platforms.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

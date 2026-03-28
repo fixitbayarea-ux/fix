@@ -487,7 +487,7 @@ const SanFrancisco = () => {
               const logo = BRAND_LOGOS[brand];
               const cell = (
                 <div style={{ background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 4, padding: '10px 12px', display: 'flex', alignItems: 'center', justifyContent: 'center', height: 96, transition: 'border-color 0.2s', cursor: 'pointer' }} onMouseEnter={e => e.currentTarget.style.borderColor = '#FF5722'} onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(0,0,0,0.08)'}>
-                  {logo && <img src={logo} alt={`${brand} logo`} style={{ maxHeight: BRAND_LOGO_OVERRIDE[brand] || BRAND_LOGO_H, width: '100%', objectFit: 'contain' }} loading="lazy" />}
+                  {logo && <img src={logo} alt={`${brand} logo`} width={120} height={BRAND_LOGO_OVERRIDE[brand] || BRAND_LOGO_H} style={{ height: BRAND_LOGO_OVERRIDE[brand] || BRAND_LOGO_H, maxHeight: BRAND_LOGO_OVERRIDE[brand] || BRAND_LOGO_H, width: '100%', objectFit: 'contain' }} loading="lazy" />}
                 </div>
               );
               return link
