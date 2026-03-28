@@ -528,12 +528,14 @@ const MobileServiceLanding = ({
           <p style={{ fontFamily: F, fontSize: 13, color: PC.textMid, margin: '0 0 16px', lineHeight: 1.5 }}>{repairVsReplace.intro}</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
             {repairVsReplace.items.map((item, idx) => (
-              <div key={idx} style={{ background: PC.white, border: '1px solid rgba(0,0,0,0.08)', borderLeft: `3px solid ${PC.accent}`, borderRadius: PC.r, padding: 14, display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+              <div key={idx} style={{ background: PC.white, border: '1px solid rgba(0,0,0,0.08)', borderLeft: `3px solid ${item.action === 'repair' ? PC.accent : '#DC2626'}`, borderRadius: PC.r, padding: 14, display: 'flex', gap: 12, alignItems: 'flex-start' }}>
                 <div style={{
-                  background: PC.accentBg, color: PC.accent, fontWeight: 700, fontSize: 13,
+                  background: item.action === 'repair' ? PC.accentBg : 'rgba(220,38,38,0.10)',
+                  color: item.action === 'repair' ? PC.accent : '#DC2626',
+                  fontWeight: 700, fontSize: 13,
                   width: 28, height: 28, borderRadius: '50%', flexShrink: 0,
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
-                }}>{item.action === 'repair' ? '\u2713' : '\u2192'}</div>
+                }}>{item.action === 'repair' ? '\u2713' : '\u2717'}</div>
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: PC.textDark, margin: '0 0 2px' }}>{item.condition}</p>
                   <p style={{ fontFamily: F, fontSize: 12, color: PC.textMid, margin: 0, lineHeight: 1.5 }}>{item.recommendation}</p>

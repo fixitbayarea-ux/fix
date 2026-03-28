@@ -144,6 +144,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 07 (Session 16)**: Updated FAQ prices across ~30 files. General repair range $150-$400→$250-$650. Specific repairs: thermostat→$295, ice maker→$295, evaporator fan→$285, door seal→$250. Removed compressor references. Updated blog pages (RefrigeratorNotCooling, DryerNotHeating, DishwasherNotDraining, WasherErrorCodes, DryerTakingTooLong, ApplianceRepairCostSanFrancisco), CooktopRepairPage, DisposalRepairPage, FreezerRepairPage, city pages, and all FAQ sections.
 
+- **ПРОМТ 08 (Session 16)**: Replaced → with ✗ (red cross) for "replace" items in repair vs replace guide. Mobile: `\u2192`→`\u2717` with red color `#DC2626`. Desktop: grey `<X>`→red `#DC2626`. Added red left-border for replace cards. Applied to both MobileServiceLanding.js and ApplianceRepairPageNew.js.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

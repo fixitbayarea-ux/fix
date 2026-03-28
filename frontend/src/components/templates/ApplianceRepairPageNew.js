@@ -810,8 +810,8 @@ const ApplianceRepairPageNew = ({
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
               {repairVsReplace.items.map((item, i) => (
                 <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
-                  <div style={{ width: 24, height: 24, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2, background: item.action === 'repair' ? 'rgba(255,87,34,0.10)' : 'rgba(74,85,104,0.10)' }}>
-                    {item.action === 'repair' ? <Check size={14} style={{ color: '#FF5722' }} /> : <X size={14} style={{ color: '#4A5568' }} />}
+                  <div style={{ width: 24, height: 24, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2, background: item.action === 'repair' ? 'rgba(255,87,34,0.10)' : 'rgba(220,38,38,0.10)' }}>
+                    {item.action === 'repair' ? <Check size={14} style={{ color: '#FF5722' }} /> : <X size={14} style={{ color: '#DC2626' }} />}
                   </div>
                   <div>
                     <div style={{ fontFamily: S.font, fontWeight: item.action === 'repair' ? 700 : 500, fontSize: 15, color: item.action === 'repair' ? '#0D1B2A' : '#4A5568' }}>{item.condition}</div>
