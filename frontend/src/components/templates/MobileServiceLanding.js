@@ -437,7 +437,6 @@ const MobileServiceLanding = ({
         <h2 style={{ fontSize: 22, fontWeight: 800, color: PC.textDark, margin: '0 0 16px', fontFamily: F }}>No Hidden Fees</h2>
 
         <div style={{ background: PC.white, border: `2px solid ${PC.accent}`, borderRadius: PC.r, padding: '22px 20px', textAlign: 'center', marginBottom: 12, position: 'relative', overflow: 'hidden' }}>
-          <span style={{ position: 'absolute', top: 0, right: 0, background: PC.accent, color: PC.white, fontSize: 10, fontWeight: 700, padding: '4px 10px', borderBottomLeftRadius: PC.r, borderTopRightRadius: PC.r, letterSpacing: '0.08em' }}>NO HIDDEN FEES</span>
           <span style={{ fontFamily: F, fontSize: 48, fontWeight: 800, color: PC.accent, display: 'block', lineHeight: 1, marginTop: 8 }}>$60</span>
           <span style={{ fontFamily: F, fontSize: 14, color: PC.textMid, display: 'block', marginBottom: 16 }}>diagnostic visit</span>
           {[`Upfront pricing — no surprises`, `$60 credited toward ${actionWord}`, '180-day warranty included', `No fix, no ${actionWord} charge`].map((item, i) => (
@@ -451,7 +450,7 @@ const MobileServiceLanding = ({
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           {[
             { title: '180-Day Warranty', desc: 'Coverage on all parts and labor.' },
-            { title: 'No Hidden Fees', desc: 'You approve the estimate before work starts.' },
+            { title: 'Upfront Estimates', desc: 'You approve the price before any work starts.' },
           ].map((card, i) => (
             <div key={i} style={{ background: PC.white, border: '1px solid rgba(0,0,0,0.08)', borderRadius: PC.r, padding: 16 }}>
               <p style={{ fontFamily: F, fontSize: 15, fontWeight: 700, color: PC.textDark, margin: '0 0 4px' }}>{card.title}</p>

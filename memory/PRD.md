@@ -138,6 +138,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 04 (Session 16)**: Fixed stale review counts in MobileServiceLanding.js: Google 82→95, Thumbtack 117→153.
 
+- **ПРОМТ 05 (Session 16)**: Removed duplicate "NO HIDDEN FEES" badge from pricing section in MobileServiceLanding.js. Renamed third occurrence card to "Upfront Estimates". Now only 1 instance of "No Hidden Fees" (H2) in pricing section.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
