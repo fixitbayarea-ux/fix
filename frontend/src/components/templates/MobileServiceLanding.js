@@ -341,12 +341,12 @@ const MobileServiceLanding = ({
       {/* ═══ 5. HOW IT WORKS ═══ */}
       <section style={{ background: PC.cream, padding: '32px 20px' }} aria-label="How our service works" data-testid="how-it-works">
         <p style={{ fontSize: 11, fontWeight: 700, color: PC.accent, letterSpacing: '0.10em', textTransform: 'uppercase', margin: '0 0 6px', fontFamily: F }}>How It Works</p>
-        <h2 style={{ fontSize: 22, fontWeight: 800, color: PC.textDark, margin: '0 0 18px', fontFamily: F }}>4 Steps to a Fixed Appliance</h2>
+        <h2 style={{ fontSize: 22, fontWeight: 800, color: PC.textDark, margin: '0 0 18px', fontFamily: F }}>{isMaintenance ? '4 Steps to a Well-Maintained Appliance' : '4 Steps to a Fixed Appliance'}</h2>
         <div>
           {[
             { n: '1', title: 'Book in 30 Seconds', desc: 'Pick a time online or call us. Same- or next-day slots available.' },
             { n: '2', title: 'We Diagnose On-Site', desc: `$60 diagnostic — applied to your ${actionWord}. No hidden fees.` },
-            { n: '3', title: 'Professional Repair', desc: 'Quality parts. Upfront pricing before any work begins.' },
+            { n: '3', title: isMaintenance ? 'Professional Maintenance' : 'Professional Repair', desc: isMaintenance ? 'Genuine parts and manufacturer specs. Upfront pricing before any work begins.' : 'Quality parts. Upfront pricing before any work begins.' },
             { n: '4', title: '180-Day Warranty', desc: 'If the same issue returns within 180 days, we come back at no charge.' },
           ].map((step, i) => (
             <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start', background: PC.white, border: '1px solid rgba(0,0,0,0.08)', borderLeft: `3px solid ${PC.accent}`, borderRadius: PC.r, padding: 16, marginBottom: 8 }}>
