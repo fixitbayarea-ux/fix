@@ -208,14 +208,14 @@ const BrandLandingPage = ({ brand }) => {
               <span style={{ color: PC.white60 }}>{brand.name}</span>
             </nav>
 
-            <div style={{ display: 'inline-flex', alignItems: 'center', marginBottom: 20 }}>
+            <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 160, height: 80, marginBottom: 20 }}>
               <img
                 src={heroPng}
                 alt={`${brand.name} brand logo`}
-                width="80"
+                width="160"
                 height="80"
                 data-testid="brand-hero-logo"
-                style={{ width: 80, height: 80, objectFit: 'contain', opacity: 0.85 }}
+                style={{ width: '100%', height: '100%', maxWidth: 160, maxHeight: 80, objectFit: 'contain', opacity: 0.85 }}
                 loading="eager"
                 onError={(e) => { if (logo && e.target.src !== logo) { e.target.src = logo; e.target.style.filter = 'brightness(0) invert(1)'; } }}
               />
@@ -228,7 +228,7 @@ const BrandLandingPage = ({ brand }) => {
             </h1>
 
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: PC.white60, maxWidth: 540, margin: '0 auto 4px' }}>
-              Same- or next-day &amp; next-day service &middot; $60 diagnostic applied toward repair &middot; 180-day warranty on all {brand.name} repairs
+              Same- or next-day service &middot; $60 diagnostic applied toward repair &middot; 180-day warranty on all {brand.name} repairs
             </p>
 
             <div className="brand-trust-bar" style={{ display: 'flex', justifyContent: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 24, marginTop: 4 }}>

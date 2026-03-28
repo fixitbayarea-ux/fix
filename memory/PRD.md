@@ -172,6 +172,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 12 (Session 17)**: Fixed HIW section on /maintenance/* mobile pages (`MobileServiceLanding.js`). Heading: "4 Steps to a Fixed Appliance" → "4 Steps to a Well-Maintained Appliance" (dynamic via `isMaintenance`). Step 3: "Professional Repair" → "Professional Maintenance" with updated description. Repair pages unaffected.
 
+- **ПРОМТ 13 (Session 17)**: Enlarged brand hero logo from 80×80px to 160×80px container with `object-fit: contain` in `BrandLandingPage.js`. Applied to all brand pages. Also fixed one remaining `"next-day &amp; next-day"` duplicate.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
