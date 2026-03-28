@@ -87,9 +87,8 @@ const AboutPage = () => {
           .toc-link { transition: all 0.15s; }
           .toc-link:hover { color: #FF7043 !important; padding-left: 4px; }
           .city-pill:hover { color: #FF5722 !important; }
-          
-        `}  @media (max-width: 767px) { body { padding-bottom: 72px; } }
-        </style>
+          @media (max-width: 767px) { body { padding-bottom: 72px; } }
+        `}</style>
 
         {/* ━━━ 1. HERO ━━━ */}
         <section data-testid="about-hero" style={{ background: "linear-gradient(rgba(13,27,42,0.94),rgba(13,27,42,0.94)),url('/background_new2.webp')", backgroundSize: 'cover', backgroundPosition: 'center 60%', minHeight: 380, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '72px 20px 48px', color: '#fff' }}>

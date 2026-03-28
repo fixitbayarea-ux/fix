@@ -182,6 +182,9 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 17 (Session 17)**: Updated "Where We Serve" city lists on all brand pages (`BrandLandingPage.js`). Removed San Mateo & Burlingame. Added Montara (Peninsula), Larkspur, Greenbrae, Fairfax, San Anselmo, Ross, Belvedere (Marin). Renamed "NORTH BAY" → "MARIN COUNTY". Changed SF entry to "San Francisco & All Neighborhoods".
 
+### Session 18 (Mar 28 2026) — Build Fix
+- **BUG FIX**: Fixed production build failure caused by syntax error in `AboutPage.js` line 91. Root cause: during Session 17 PROMPT 06 git rollback/CSS restoration, the `@media (max-width: 767px) { body { padding-bottom: 72px; } }` CSS rule was accidentally placed AFTER the closing backtick of the template literal, outside the `<style>` tag's JS expression. Fix: moved the `@media` rule back inside the template literal. Build: 233/233 pages pass.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
