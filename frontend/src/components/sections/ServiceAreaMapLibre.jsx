@@ -120,8 +120,7 @@ const ServiceAreaMapLibre = React.memo(() => {
 
           {/* Cities List */}
           <div style={{ borderRadius: 4, border: '1px solid #E5E2DD', background: '#fff', padding: 28 }} data-testid="service-area-cities">
-            <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 22, fontWeight: 800, color: '#0D1B2A', marginBottom: 8 }}>Service Areas</h3>
-            <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#4A5568', marginBottom: 28, fontWeight: 500 }}>Click a city to view its local service page.</p>
+            <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 22, fontWeight: 800, color: '#0D1B2A', marginBottom: 28 }}>Service Areas</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>
               {Object.entries(cityGroups).map(([region, cities]) => (
                 <div key={region}>

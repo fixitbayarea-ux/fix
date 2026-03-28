@@ -154,6 +154,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 03 (Session 17)**: Added 3 scroll-hint elements to mobile reviews carousel in HomeReviews.jsx: (1) text hint "← Swipe to read all reviews →" below carousel, (2) right fade gradient (`::after` pseudo-element matching section background `#0D1B2A`), (3) JS `onScroll` handler hiding fade at scroll end via `.scrolled-end` class. Desktop unaffected (`@media min-width:1024px` + `lg:hidden`).
 
+- **ПРОМТ 04 (Session 17)**: Removed "Click a city" hints from 3 files: `ServiceAreaMapLibre.jsx` ("Click a city to view its local service page."), `ServiceAreasHub.js` ("Click on any city below..."), `MarinCountyPage.js` ("Click your city for local service details."). Adjusted heading margins to compensate for removed paragraphs.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

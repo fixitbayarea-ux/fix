@@ -214,8 +214,7 @@ const MarinCountyPage = () => {
       {/* Marin Cities Section */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-[#0D1B2A]">Cities We Serve in Marin County</h2>
-          <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">Fast appliance repair across all 13 Marin County cities. Click your city for local service details.</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 text-[#0D1B2A]">Cities We Serve in Marin County</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {marinCities.map((c, idx) => (
               <a key={idx} href={c.href} className="flex items-center gap-2 p-4 bg-gray-50 hover:bg-orange-50 rounded-lg border border-gray-200 hover:border-orange-300 transition-colors" data-testid={`city-link-${c.name.toLowerCase().replace(/\s+/g, '-')}`}>

@@ -142,8 +142,7 @@ const ServiceAreasHub = () => (
     <section data-testid="sa-cities" style={{ background: C.bg, padding: '70px 0' }}>
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
         <div style={{ fontWeight: 700, fontSize: 11, color: C.accent, textTransform: 'uppercase', letterSpacing: '0.2em', marginBottom: 10 }}>FIND YOUR CITY</div>
-        <h2 style={{ fontWeight: 800, fontSize: 36, lineHeight: 1.15, color: C.navy, marginBottom: 8 }}>Cities We Serve</h2>
-        <p style={{ fontSize: 14, color: C.text, marginBottom: 32 }}>Click on any city below to view specific service information and local repair details.</p>
+        <h2 style={{ fontWeight: 800, fontSize: 36, lineHeight: 1.15, color: C.navy, marginBottom: 32 }}>Cities We Serve</h2>
         <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: 24 }}>
           {REGIONS.map(region => (
             <div key={region.name} style={{ background: C.white, borderRadius: 4, padding: 24, border: '1px solid rgba(0,0,0,0.08)' }}>
