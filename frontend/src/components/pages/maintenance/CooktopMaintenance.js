@@ -82,6 +82,22 @@ const CooktopMaintenance = () => {
       relatedServicesSubtitle="Expert maintenance for all your kitchen appliances"
       isMaintenance={true}
       serviceWord="Maintenance"
+      maintenancePricing={[
+        { service: 'Burner cleaning & inspection', price: 'from $65' },
+        { service: 'Igniter check (gas models)', price: 'from $55' },
+        { service: 'Surface & control cleaning', price: 'from $55' },
+        { service: 'Gas line leak check', price: 'from $65' },
+        { service: 'Full maintenance check (all of the above)', price: 'from $119' },
+      ]}
+      maintenanceSchedule={{
+        title: 'When to Call for Cooktop Maintenance',
+        intro: 'Clean burners and proper gas connections ensure safe, efficient cooking every day.',
+        items: [
+          { interval: 'Monthly', title: 'Burner Cleaning', description: 'Remove burner caps and grates, clean ports of grease and food debris. Clogged ports cause uneven flames and poor heat distribution.' },
+          { interval: 'Every 6 months', title: 'Gas Connection Inspection', description: 'For gas cooktops, check supply line and connections for micro-leaks using a soapy water test or electronic detector.' },
+          { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician inspects all burners, igniters, gas valves, electric elements, and control knobs. Ensures safe, efficient operation.' },
+        ]
+      }}
       repairVsReplace={{
         title: "Cooktop Maintenance vs. Emergency Repair",
         intro: "Gas, electric, and induction cooktops all benefit from regular professional service.",

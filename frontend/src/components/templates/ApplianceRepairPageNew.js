@@ -233,7 +233,7 @@ const ApplianceRepairPageNew = ({
   relatedServicesCategory = null, relatedServicesSubtitle = null,
   hideHero = false, noPaddingTop = false, cmsSlug = null, cityName = null,
   serviceSchema = null, noindex, heroImage = null, heroImageAlt = '', heroImagePosition = 'center 15%',
-  repairVsReplace = null, relatedLinks = null, hideHowItWorks = false, customH1 = null, heroDescription = null, children
+  repairVsReplace = null, relatedLinks = null, hideHowItWorks = false, customH1 = null, heroDescription = null, maintenancePricing = null, maintenanceSchedule = null, children
 }) => {
   const isMaintenance = breadcrumbCategoryHref === '/maintenance';
   const serviceWord = isMaintenance ? 'Maintenance' : 'Repair';
@@ -390,7 +390,7 @@ const ApplianceRepairPageNew = ({
   useSchemas(pageSchemas);
 
   const displayName = cityName ? `Appliance Repair in ${cityName}` : (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? appliance : `${appliance} ${serviceWord}`);
-  const displayH1 = customH1 || (cityName ? `Expert Appliance Repair in ${cityName}` : (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? `Expert ${appliance} in San\u00A0Francisco` : (appliance === 'Dishwasher' ? `Expert ${appliance} ${serviceWord} in the Bay\u00A0Area` : `Expert ${appliance} ${serviceWord} in San\u00A0Francisco`)));
+  const displayH1 = customH1 || (cityName ? `Expert Appliance Repair in ${cityName}` : (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? `Expert ${appliance} in San Francisco` : (appliance === 'Dishwasher' ? `Expert ${appliance} ${serviceWord} in the Bay\u00A0Area` : `Expert ${appliance} ${serviceWord} in San Francisco`)));
 
 
   /* ═══════════════════════════════════════════════════════════
@@ -573,7 +573,7 @@ const ApplianceRepairPageNew = ({
             <h3 style={{ fontFamily: S.font, fontWeight: 800, fontSize: 40, color: '#FFFFFF', lineHeight: 1.15, marginBottom: 12 }}>Need Appliance Repair in {cityName}?</h3>
             <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 12, marginBottom: 28 }}>Same- or next-day & next-day appointments available across all neighborhoods</p>
             <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-              <a href="/book?go=1" data-testid="city-final-book" style={{ display: 'inline-flex', alignItems: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
+              <a href="/book?go=1" data-testid="city-final-book" style={{ display: 'inline-flex', alignItems: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>{`BOOK ${serviceWord.toUpperCase()} ONLINE`}</a>
               <a href="tel:+17605435733" data-testid="city-final-call" style={{ display: 'inline-flex', alignItems: 'center', padding: '16px 28px', borderRadius: 3, background: 'transparent', minHeight: 52, border: '2px solid rgba(255,255,255,0.65)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.65)'; e.currentTarget.style.color = '#FFFFFF'; }}>CALL (760) 543-5733</a>
             </div>
           </div>
@@ -614,7 +614,7 @@ const ApplianceRepairPageNew = ({
         {/* Floating sticky Book Repair */}
         {showStickyBtn && (
           <a href="/book?go=1" data-testid="city-sticky-book" className="hidden md:inline-flex" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '16px 24px', borderRadius: 4, boxShadow: '0 4px 20px rgba(255,87,34,0.45)', textDecoration: 'none', alignItems: 'center', gap: 8, transition: 'all 0.2s ease' }} onMouseEnter={e => { e.currentTarget.style.background = '#FF7043'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(255,87,34,0.65)'; e.currentTarget.style.transform = 'translateY(-2px)'; }} onMouseLeave={e => { e.currentTarget.style.background = '#FF5722'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(255,87,34,0.45)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
-            BOOK REPAIR
+            {`BOOK ${serviceWord.toUpperCase()}`}
           </a>
         )}
 
@@ -686,7 +686,7 @@ const ApplianceRepairPageNew = ({
               {heroDescription && <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.55)', marginTop: 12, lineHeight: 1.6, maxWidth: 480 }}>{heroDescription}</p>}
               {/* CTAs */}
               <div style={{ display: 'flex', gap: 14, marginTop: 28, flexWrap: 'wrap' }}>
-                <a href="/book?go=1" data-testid="service-hero-book" style={{ display: 'inline-flex', alignItems: 'center', padding: '15px 30px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR ONLINE</a>
+                <a href="/book?go=1" data-testid="service-hero-book" style={{ display: 'inline-flex', alignItems: 'center', padding: '15px 30px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>{`BOOK ${serviceWord.toUpperCase()} ONLINE`}</a>
                 <a href="tel:+17605435733" data-testid="service-hero-call" style={{ display: 'inline-flex', alignItems: 'center', padding: '15px 26px', borderRadius: 3, background: 'transparent', minHeight: 52, border: '2px solid rgba(255,255,255,0.65)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.65)'; e.currentTarget.style.color = '#FFFFFF'; }}>Call (760) 543-5733</a>
               </div>
               {/* Tech note */}
@@ -825,15 +825,38 @@ const ApplianceRepairPageNew = ({
       )}
 
       {/* ═══ PRICING ═══ */}
-      {SERVICE_PRICING[appliance] && (
+      {maintenancePricing ? (
         <section data-testid="pricing-section" style={{ background: '#F8F5F0', padding: '40px 20px' }}>
           <div style={{ maxWidth: 780, margin: '0 auto' }}>
             <div style={{ color: '#FF5722', fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 6, fontFamily: 'Montserrat, sans-serif' }}>PRICING</div>
             <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 26, color: '#0D1B2A', marginBottom: 6 }}>
-              {appliance} Repair Cost in San Francisco
+              {appliance} Maintenance Cost
             </h2>
             <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#6B7280', marginBottom: 20 }}>
-              Written estimate before any work begins. $60 diagnostic applied to repair cost.
+              Written estimate before any work begins. $60 diagnostic applied to maintenance cost.
+            </p>
+            <div style={{ background: '#fff', borderRadius: 6, padding: '20px 24px', border: '1px solid #e5e7eb', marginBottom: 12 }}>
+              {maintenancePricing.map((item, i) => (
+                <div key={i} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 0', borderBottom: i < maintenancePricing.length - 1 ? '1px solid #f0f0f0' : 'none' }}>
+                  <span style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#0D1B2A', fontWeight: i === maintenancePricing.length - 1 ? 700 : 400 }}>{item.service}</span>
+                  <span style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#FF5722', fontWeight: 600, whiteSpace: 'nowrap', marginLeft: 16 }}>{item.price}</span>
+                </div>
+              ))}
+            </div>
+            <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 12, color: '#9CA3AF', fontStyle: 'italic', margin: 0 }}>
+              * Final cost depends on model and condition. You receive a written estimate before work begins.
+            </p>
+          </div>
+        </section>
+      ) : SERVICE_PRICING[appliance] && (
+        <section data-testid="pricing-section" style={{ background: '#F8F5F0', padding: '40px 20px' }}>
+          <div style={{ maxWidth: 780, margin: '0 auto' }}>
+            <div style={{ color: '#FF5722', fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 6, fontFamily: 'Montserrat, sans-serif' }}>PRICING</div>
+            <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 26, color: '#0D1B2A', marginBottom: 6 }}>
+              {appliance} {serviceWord} Cost in San Francisco
+            </h2>
+            <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#6B7280', marginBottom: 20 }}>
+              Written estimate before any work begins. $60 diagnostic applied to {serviceWord.toLowerCase()} cost.
             </p>
             <div style={{ background: '#fff', borderRadius: 6, padding: '20px 24px', border: '1px solid #e5e7eb', marginBottom: 12 }}>
               <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#0D1B2A', lineHeight: 1.9, margin: '0 0 10px' }}>
@@ -852,6 +875,30 @@ const ApplianceRepairPageNew = ({
             <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 12, color: '#9CA3AF', fontStyle: 'italic', margin: 0 }}>
               * Final cost depends on model and parts required. You receive a written estimate before work begins.
             </p>
+          </div>
+        </section>
+      )}
+
+      {/* ═══ MAINTENANCE SCHEDULE ═══ */}
+      {maintenanceSchedule && (
+        <section data-testid="maintenance-schedule" style={{ background: '#FFFFFF', padding: '60px 20px' }}>
+          <div style={{ maxWidth: 780, margin: '0 auto' }}>
+            <div style={{ color: '#FF5722', fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 8, fontFamily: 'Montserrat, sans-serif' }}>SCHEDULE</div>
+            <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 26, color: '#0D1B2A', marginBottom: 6 }}>
+              {maintenanceSchedule.title}
+            </h2>
+            <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#6B7280', marginBottom: 28 }}>
+              {maintenanceSchedule.intro}
+            </p>
+            <div style={{ display: 'grid', gap: 16, gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))' }}>
+              {maintenanceSchedule.items.map((item, i) => (
+                <div key={i} style={{ background: '#F8F5F0', borderRadius: 10, padding: '20px 24px', borderLeft: '4px solid #FF5722' }}>
+                  <div style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#FF5722', marginBottom: 8 }}>{item.interval}</div>
+                  <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginBottom: 6 }}>{item.title}</h3>
+                  <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 13, color: '#4A5568', lineHeight: 1.6, margin: 0 }}>{item.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       )}
@@ -1026,7 +1073,7 @@ const ApplianceRepairPageNew = ({
           onMouseEnter={e => { e.currentTarget.style.background = '#FF7043'; e.currentTarget.style.boxShadow = '0 6px 28px rgba(255,87,34,0.65)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
           onMouseLeave={e => { e.currentTarget.style.background = '#FF5722'; e.currentTarget.style.boxShadow = '0 4px 20px rgba(255,87,34,0.45)'; e.currentTarget.style.transform = 'translateY(0)'; }}
         >
-          <CalendarCheck size={16} /> BOOK REPAIR
+          <CalendarCheck size={16} /> {`BOOK ${serviceWord.toUpperCase()}`}
         </a>
       )}
     </div>

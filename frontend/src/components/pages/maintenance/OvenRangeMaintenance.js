@@ -86,6 +86,24 @@ const OvenRangeMaintenance = () => {
       heroImageAlt="FixitBay technician servicing an oven range in a San Francisco kitchen"
       isMaintenance={true}
       serviceWord="Maintenance"
+      maintenancePricing={[
+        { service: 'Burner inspection & cleaning', price: 'from $75' },
+        { service: 'Door seal inspection & replacement', price: 'from $85' },
+        { service: 'Temperature calibration', price: 'from $65' },
+        { service: 'Convection fan cleaning', price: 'from $75' },
+        { service: 'Igniter check (gas models)', price: 'from $65' },
+        { service: 'Full maintenance check (all of the above)', price: 'from $139' },
+      ]}
+      maintenanceSchedule={{
+        title: 'When to Call for Oven Maintenance',
+        intro: 'Regular oven maintenance ensures even cooking, energy efficiency, and safety — especially for gas models.',
+        items: [
+          { interval: 'Every 3 months', title: 'Burner & Element Inspection', description: 'Check electric elements for hot spots and gas burners for even flame. Uneven heating ruins meals and wastes energy.' },
+          { interval: 'Every 6 months', title: 'Door Seal Check', description: "A damaged oven door seal lets heat escape, raising energy costs and causing uneven cooking. Replace if you feel heat escaping." },
+          { interval: 'Annually', title: 'Temperature Calibration', description: 'Ovens drift from their set temperature over time. Professional calibration ensures your oven bakes at the temperature it displays.' },
+          { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician tests all burners/elements, calibrates temperature, inspects gas connections, cleans the convection fan, and checks safety controls.' },
+        ]
+      }}
       repairVsReplace={{
         title: "Oven Maintenance vs. Emergency Repair",
         intro: "Regular oven maintenance ensures safe cooking and accurate temperatures.",

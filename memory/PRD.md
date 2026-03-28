@@ -168,6 +168,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 10 (Session 17)**: Updated "Repair vs. Replace" content on /freezer-repair. Section already existed via `repairVsReplace` prop in `ApplianceRepairPageNew.js` template. Updated 4 items to user-specified content: built-in/combo units, standalone under 10yo, compressor on old unit, multiple failures/15+ years. Updated template to render `repairVsReplace.title` dynamically instead of hardcoded "Repair vs. Replace?".
 
+- **ПРОМТ 11 (Session 17)**: Fixed all 7 maintenance pages PRICING sections. (1) Added `maintenancePricing` prop to template — shows service/price table instead of repair parts pricing. (2) Added `maintenanceSchedule` prop — new "SCHEDULE" section with interval-based maintenance cards (grid layout, orange left border). (3) Made CTA buttons dynamic: "BOOK MAINTENANCE ONLINE" on maintenance pages, "BOOK REPAIR ONLINE" on repair pages. (4) Made PRICING heading dynamic: `{appliance} {serviceWord} Cost`. Applied to all 7 files: RefrigeratorMaintenance, WasherMaintenance, DryerMaintenance, DishwasherMaintenance, OvenRangeMaintenance, CooktopMaintenance, WineCoolerMaintenance.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

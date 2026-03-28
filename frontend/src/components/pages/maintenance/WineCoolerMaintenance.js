@@ -82,6 +82,22 @@ const WineCoolerMaintenance = () => {
       relatedServicesSubtitle="Expert maintenance for all your kitchen appliances"
       isMaintenance={true}
       serviceWord="Maintenance"
+      maintenancePricing={[
+        { service: 'Condenser coil cleaning', price: 'from $75' },
+        { service: 'Door seal inspection', price: 'from $55' },
+        { service: 'Temperature calibration', price: 'from $65' },
+        { service: 'Vibration & leveling check', price: 'from $45' },
+        { service: 'Full maintenance check (all of the above)', price: 'from $119' },
+      ]}
+      maintenanceSchedule={{
+        title: 'When to Call for Wine Cooler Maintenance',
+        intro: 'Proper maintenance protects your wine collection from temperature fluctuations and humidity issues.',
+        items: [
+          { interval: 'Every 6 months', title: 'Condenser Coil Cleaning', description: 'Dusty coils reduce cooling efficiency and force the compressor to overwork. Essential for maintaining stable wine storage temperatures.' },
+          { interval: 'Annually', title: 'Door Seal & Humidity Check', description: 'A damaged seal allows warm air in, causing condensation and temperature swings that damage wine. Check for gaps or mold.' },
+          { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician calibrates temperature zones, inspects the compressor, checks humidity levels, and ensures vibration damping is working properly.' },
+        ]
+      }}
       repairVsReplace={{
         title: "Wine Cooler Maintenance vs. Repair",
         intro: "Protect your wine collection with regular maintenance. Here's when service pays off most.",

@@ -128,6 +128,26 @@ const RefrigeratorMaintenance = () => {
       heroImageAlt="FixitBay technician next to a refrigerator in a San Francisco home"
       isMaintenance={true}
       serviceWord="Maintenance"
+      maintenancePricing={[
+        { service: 'Condenser coil cleaning', price: 'from $85' },
+        { service: 'Water filter replacement', price: 'from $45 + filter cost' },
+        { service: 'Door gasket inspection & replacement', price: 'from $120' },
+        { service: 'Thermostat calibration', price: 'from $65' },
+        { service: 'Ice maker cleaning & tune-up', price: 'from $75' },
+        { service: 'Water line inspection', price: 'from $55' },
+        { service: 'Full maintenance check (all of the above)', price: 'from $149' },
+      ]}
+      maintenanceSchedule={{
+        title: 'When to Call for Refrigerator Maintenance',
+        intro: 'Preventive maintenance keeps your refrigerator running efficiently and catches issues before they become costly repairs.',
+        items: [
+          { interval: 'Every 6 months', title: 'Condenser Coil Cleaning', description: 'Dusty coils make the compressor work harder, shortening its lifespan and raising energy bills. Clean every 6 months in pet-owning households, annually otherwise.' },
+          { interval: 'Every 6 months', title: 'Water Filter Replacement', description: 'For refrigerators with water dispensers or ice makers. Replace every 6 months or after 200 gallons to maintain water quality.' },
+          { interval: 'Annually', title: 'Door Gasket Inspection', description: "A worn gasket lets cold air escape, forcing the compressor to overwork. Check annually \u2014 replace if torn, brittle, or if a dollar bill slips out easily." },
+          { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician inspects thermostat calibration, compressor operation, ice maker function, water line integrity, and door seals in one visit.' },
+          { interval: 'Every 2\u20133 years', title: 'Drain Pan & Drain Line Cleaning', description: 'Prevents mold growth and drainage issues. Especially important in humid climates.' },
+        ]
+      }}
       repairVsReplace={{
         title: "Maintenance vs. Emergency Repair",
         intro: "Preventive maintenance saves money and prevents food spoilage. Here's why it matters.",

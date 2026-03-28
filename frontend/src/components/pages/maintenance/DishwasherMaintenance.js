@@ -89,6 +89,24 @@ const DishwasherMaintenance = () => {
       relatedServicesSubtitle="Expert maintenance for all your kitchen appliances"
       isMaintenance={true}
       serviceWord="Maintenance"
+      maintenancePricing={[
+        { service: 'Filter & trap cleaning', price: 'from $55' },
+        { service: 'Spray arm inspection & cleaning', price: 'from $65' },
+        { service: 'Door seal inspection', price: 'from $55' },
+        { service: 'Drain cleaning & flush', price: 'from $75' },
+        { service: 'Rinse aid & detergent check', price: 'from $35' },
+        { service: 'Full maintenance check (all of the above)', price: 'from $129' },
+      ]}
+      maintenanceSchedule={{
+        title: 'When to Call for Dishwasher Maintenance',
+        intro: 'A clean dishwasher cleans better. Regular maintenance prevents odors, clogs, and poor wash results.',
+        items: [
+          { interval: 'Monthly', title: 'Filter Cleaning', description: 'Remove and rinse the bottom filter to prevent food buildup, bad odors, and drainage issues. Most models have an easy-twist filter.' },
+          { interval: 'Every 3 months', title: 'Spray Arm Inspection', description: 'Check spray arm holes for food debris or mineral deposits. Clogged holes reduce water pressure and leave dishes dirty.' },
+          { interval: 'Annually', title: 'Door Seal & Drain Check', description: 'Inspect the door gasket for mold or tears. Clear the drain of debris. Prevents leaks and ensures proper drainage.' },
+          { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician inspects pump operation, water inlet valve, heating element, spray arms, and runs a diagnostic cycle.' },
+        ]
+      }}
       repairVsReplace={{
         title: "Dishwasher Maintenance vs. Emergency Repair",
         intro: "A well-maintained dishwasher lasts 12+ years and cleans better. Here's why regular service pays off.",

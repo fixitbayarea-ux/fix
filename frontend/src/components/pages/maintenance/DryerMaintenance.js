@@ -90,6 +90,24 @@ const DryerMaintenance = () => {
       relatedServicesSubtitle="Complete maintenance services for your laundry appliances"
       isMaintenance={true}
       serviceWord="Maintenance"
+      maintenancePricing={[
+        { service: 'Lint trap deep cleaning', price: 'from $55' },
+        { service: 'Vent duct inspection & cleaning', price: 'from $95' },
+        { service: 'Drum seal inspection', price: 'from $65' },
+        { service: 'Heating element check', price: 'from $75' },
+        { service: 'Moisture sensor calibration', price: 'from $65' },
+        { service: 'Full maintenance check (all of the above)', price: 'from $139' },
+      ]}
+      maintenanceSchedule={{
+        title: 'When to Call for Dryer Maintenance',
+        intro: 'Clogged vents are a leading cause of house fires. Regular dryer maintenance is essential for safety and efficiency.',
+        items: [
+          { interval: 'After every load', title: 'Lint Trap Cleaning', description: 'Clean the lint screen after every load. A clogged lint trap reduces airflow, increases drying time, and is a fire hazard.' },
+          { interval: 'Annually', title: 'Vent Duct Cleaning', description: 'Professional vent cleaning removes built-up lint from the entire duct system. Reduces fire risk and cuts drying time by up to 30%.' },
+          { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician inspects the heating element, drum seals, belt condition, moisture sensors, and exhaust system for safe, efficient operation.' },
+          { interval: 'Every 2 years', title: 'Drum Seal & Belt Inspection', description: 'Worn seals and belts cause noisy operation and uneven drying. Replacing them proactively prevents mid-cycle breakdowns.' },
+        ]
+      }}
       repairVsReplace={{
         title: "Dryer Maintenance vs. Emergency Repair",
         intro: "Dryer vent buildup is the #1 cause of home appliance fires. Preventive maintenance saves lives and money.",

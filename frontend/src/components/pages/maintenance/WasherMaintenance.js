@@ -90,6 +90,24 @@ const WasherMaintenance = () => {
       relatedServicesSubtitle="Complete maintenance services for your laundry appliances"
       isMaintenance={true}
       serviceWord="Maintenance"
+      maintenancePricing={[
+        { service: 'Drum cleaning & deodorizing', price: 'from $75' },
+        { service: 'Inlet hose inspection & replacement', price: 'from $65' },
+        { service: 'Door seal check & cleaning', price: 'from $55' },
+        { service: 'Detergent drawer deep clean', price: 'from $45' },
+        { service: 'Drain pump filter cleaning', price: 'from $55' },
+        { service: 'Full maintenance check (all of the above)', price: 'from $139' },
+      ]}
+      maintenanceSchedule={{
+        title: 'When to Call for Washer Maintenance',
+        intro: 'Regular maintenance prevents odors, leaks, and extends the life of your washing machine.',
+        items: [
+          { interval: 'Monthly', title: 'Drum Cleaning Cycle', description: 'Run a hot empty cycle with washer cleaner to prevent mold, mildew, and odor buildup inside the drum and gasket.' },
+          { interval: 'Every 6 months', title: 'Inlet Hose Inspection', description: 'Check hoses for bulges, cracks, or weak connections. Burst hoses cause major water damage. Replace rubber hoses every 5 years.' },
+          { interval: 'Annually', title: 'Door Seal & Gasket Check', description: 'Front-loader gaskets trap moisture and debris. Clean monthly, inspect annually for tears or mold that could cause leaks.' },
+          { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician inspects drum bearings, drain pump, inlet valves, belt tension, and leveling for optimal performance.' },
+        ]
+      }}
       repairVsReplace={{
         title: "Maintenance vs. Emergency Washer Repair",
         intro: "Regular washer maintenance prevents costly water damage and extends machine life.",
