@@ -37,16 +37,16 @@ const TOC = [
 
 const MAIN_PRICING = [
   { appliance: 'Diagnostic / Service Call', fixitbay: '$60 (applied to repair)', market: '$50\u2013$120' },
-  { appliance: 'Refrigerator', fixitbay: 'from $255', market: '$200\u2013$600', href: '/refrigerator-repair' },
-  { appliance: 'Freezer', fixitbay: 'from $255', market: '$200\u2013$550', href: '/freezer-repair' },
-  { appliance: 'Ice Maker', fixitbay: 'from $150', market: '$120\u2013$350', href: '/ice-maker-repair' },
+  { appliance: 'Refrigerator', fixitbay: 'from $250', market: '$200\u2013$600', href: '/refrigerator-repair' },
+  { appliance: 'Freezer', fixitbay: 'from $250', market: '$200\u2013$550', href: '/freezer-repair' },
+  { appliance: 'Ice Maker', fixitbay: 'from $250', market: '$120\u2013$350', href: '/ice-maker-repair' },
   { appliance: 'Washer', fixitbay: 'from $240', market: '$180\u2013$450', href: '/washer-repair' },
   { appliance: 'Dryer', fixitbay: 'from $235', market: '$170\u2013$400', href: '/dryer-repair' },
-  { appliance: 'Dishwasher', fixitbay: 'from $195', market: '$150\u2013$350', href: '/dishwasher-repair' },
+  { appliance: 'Dishwasher', fixitbay: 'from $250', market: '$150\u2013$350', href: '/dishwasher-repair' },
   { appliance: 'Oven / Range / Stove', fixitbay: 'from $230', market: '$180\u2013$500', href: '/oven-repair' },
   { appliance: 'Cooktop', fixitbay: 'from $230', market: '$180\u2013$450', href: '/cooktop-repair' },
-  { appliance: 'Wine Cooler', fixitbay: 'from $195', market: '$150\u2013$400', href: '/wine-cooler-repair' },
-  { appliance: 'Garbage Disposal', fixitbay: 'from $195', market: '$130\u2013$300', href: '/garbage-disposal-repair' },
+  { appliance: 'Wine Cooler', fixitbay: 'from $250', market: '$150\u2013$400', href: '/wine-cooler-repair' },
+  { appliance: 'Garbage Disposal', fixitbay: 'from $250', market: '$130\u2013$300', href: '/garbage-disposal-repair' },
 ];
 
 const LUXURY_PRICING = [
@@ -68,8 +68,8 @@ const PROBLEM_PRICING = [
   { problem: 'Dishwasher not draining \u2014 pump', cost: 'from $150' },
   { problem: 'Oven not heating \u2014 igniter', cost: 'from $180' },
   { problem: 'Ice maker not working \u2014 valve or motor', cost: 'from $150' },
-  { problem: 'Wine cooler temp fluctuating', cost: 'from $150' },
-  { problem: 'Garbage disposal jammed/humming', cost: 'from $120' },
+  { problem: 'Wine cooler temp fluctuating', cost: 'from $285' },
+  { problem: 'Garbage disposal jammed/humming', cost: 'from $195' },
 ];
 
 const COMPARE = [

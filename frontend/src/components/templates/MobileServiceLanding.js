@@ -482,6 +482,9 @@ const MobileServiceLanding = ({
                   <strong>Luxury brands:</strong> {p.luxury}.
                 </p>
               )}
+              <p style={{ fontFamily: F, fontSize: 11, color: '#6B7280', fontStyle: 'italic', margin: '10px 0 0', lineHeight: 1.5 }}>
+                * Prices include parts and labor. Final cost depends on model and parts availability.
+              </p>
             </div>
           </section>
         );

@@ -837,7 +837,8 @@ const ApplianceRepairPageNew = ({
             </p>
             <div style={{ background: '#fff', borderRadius: 6, padding: '20px 24px', border: '1px solid #e5e7eb', marginBottom: 12 }}>
               <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#0D1B2A', lineHeight: 1.9, margin: '0 0 10px' }}>
-                <strong>Starting from ${SERVICE_PRICING[appliance].from}</strong> after $60 diagnostic fee.
+                <strong>Starting from ${SERVICE_PRICING[appliance].from}</strong> after $60 diagnostic.
+                <br /><span style={{ fontSize: 11, color: '#4A5568', fontStyle: 'italic' }}>* Prices include parts and labor. Final cost depends on model and parts availability.</span>
               </p>
               <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#4A5568', lineHeight: 1.8, margin: 0 }}>
                 {SERVICE_PRICING[appliance].repairs}.
