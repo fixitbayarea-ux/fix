@@ -130,6 +130,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 05 (Session 15)**: Added "Awards & Recognition" section to /reviews page with Nextdoor Neighborhood Fave 2025 card (responsive: horizontal desktop, vertical mobile). Added "Nextdoor Fave 2025" badge to homepage trust strip. Added `"award"` field to JSON-LD in ReviewsPage.js, SchemaMarkup.js, index.html, schemaMarkup.js. Award images stored in `/public/images/awards/`.
 
+- **ПРОМТ 01-fix (Session 16)**: Fixed tiny brand logos on all mobile service pages. Root cause: `MobileServiceLanding.js` had `maxHeight: 28px` + `width: 75%`. Changed to `height: 40px` + `width: 100%` + `minHeight: 64px` cells + `gap: 12px`. Applied to all service pages via shared template.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

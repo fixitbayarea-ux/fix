@@ -313,11 +313,11 @@ const MobileServiceLanding = ({
       {/* ═══ 3. WE SERVICE (brands) ═══ */}
       <section style={{ background: PC.navy, padding: '28px 20px' }} aria-label="Brands we service" data-testid="brands-section">
         <p style={{ fontSize: 11, fontWeight: 700, color: PC.white45, letterSpacing: '0.10em', textTransform: 'uppercase', margin: '0 0 14px', fontFamily: F }}>Appliances We Service</p>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12, maxWidth: 360, margin: '0 auto' }}>
           {brands.map(b => (
             <a key={b.name} href={b.href} data-testid={`brand-link-${b.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}
-              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', padding: '10px 4px', background: PC.navyMid, border: `1px solid ${PC.white10}`, borderRadius: PC.r, aspectRatio: '2/1' }}>
-              <img src={b.logo} alt={`${b.name} logo`} width={72} height={b.h || 38} loading="lazy" style={{ maxHeight: 28, width: '75%', objectFit: 'contain', filter: 'brightness(0) invert(1) opacity(0.65)' }} />
+              style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', padding: '12px 6px', background: PC.navyMid, border: `1px solid ${PC.white10}`, borderRadius: PC.r, minHeight: 64 }}>
+              <img src={b.logo} alt={`${b.name} logo`} width={72} height={48} loading="lazy" style={{ height: 40, width: '100%', objectFit: 'contain', filter: 'brightness(0) invert(1) opacity(0.7)' }} />
             </a>
           ))}
         </div>
