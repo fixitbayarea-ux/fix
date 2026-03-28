@@ -212,7 +212,7 @@ const SanFrancisco = () => {
   const currentTab = NEIGHBORHOOD_TABS.find(t => t.id === activeTab) || NEIGHBORHOOD_TABS[0];
 
   return (
-    <div className="pb-[72px] lg:pb-0" style={{ fontFamily: S.font, background: '#F8F5F0' }}>
+    <div className="" style={{ fontFamily: S.font, background: '#F8F5F0' }}>
       <SEOMetaTags
         title="Appliance Repair San Francisco | Fast Scheduling | FixitBay LLC"
         description="Professional appliance repair in San Francisco. Fast scheduling available. Licensed technicians, 180-day warranty. Serving all SF neighborhoods. Call (760) 543-5733."

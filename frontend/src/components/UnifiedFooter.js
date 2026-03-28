@@ -177,7 +177,7 @@ const UnifiedFooter = () => (
       @media (max-width: 767px) {
         footer [data-testid="footer-phone"] { font-size: 22px !important; justify-content: center; }
         footer .ftr-cta-primary { width: 100% !important; }
-        footer > div:last-child { padding-bottom: 90px !important; }
+        
         footer > div:last-child > div { justify-content: center !important; text-align: center; flex-direction: column; align-items: center; }
       }
     `}</style>

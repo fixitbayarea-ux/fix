@@ -178,7 +178,7 @@ const BlogListPage = () => {
 
           @keyframes spin { to { transform: rotate(360deg); } }
 
-          @media (max-width: 767px) { body { padding-bottom: 72px; } }
+          
         `}</style>
 
         {/* ━━━ 1. HERO ━━━ */}

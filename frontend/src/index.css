@@ -836,10 +836,9 @@ h1 { font-size: 44px; line-height: 1.15; }
   .badge { padding: 6px 10px; }
 }
 
-/* ======= STICKY BOTTOM NAV CLEARANCE ======= */
-body { padding-bottom: 56px; }
+/* ======= LAYOUT CLEARANCE ======= */
+body { padding-bottom: 0; }
 @media (max-width: 767px) {
-  body { padding-bottom: 72px; }
   .navbar-mobile-phone-link { display: flex !important; }
 }
 @media (min-width: 768px) {

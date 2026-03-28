@@ -87,7 +87,7 @@ const AboutPage = () => {
           .toc-link { transition: all 0.15s; }
           .toc-link:hover { color: #FF7043 !important; padding-left: 4px; }
           .city-pill:hover { color: #FF5722 !important; }
-          @media (max-width: 767px) { body { padding-bottom: 72px; } }
+          
         `}</style>
 
         {/* ━━━ 1. HERO ━━━ */}

@@ -206,7 +206,7 @@ const BrandsPage = () => {
         @media (max-width: 767px) { .brand-card-guide { opacity: 1; } }
         .carousel-track-item { min-width: calc(100% - 0px) !important; }
         @media (min-width: 768px) { .carousel-track-item { min-width: calc(33.333% - 13.333px) !important; } }
-        @media (max-width: 767px) { body { padding-bottom: 72px; } }
+        
         .brands-filter-tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; flex-wrap: nowrap !important; justify-content: flex-start !important; }
         .brands-filter-tabs::-webkit-scrollbar { display: none; }
         .brands-section-h2 { font-size: 24px !important; }

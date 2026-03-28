@@ -158,6 +158,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 05 (Session 17)**: Fixed FAQ Q2 and Q8 on homepage. Q2: removed "and next-day" duplicate, added "Monday through Saturday" + "today's availability". Q8: replaced generic booking text with 4 contact methods (online, phone/text, Google, email). Added `whiteSpace: 'pre-line'` to FAQAccordion.jsx for multi-line answers. Global cleanup: removed 40 instances of "same- or next-day and next-day" → "same- or next-day" across 33 files. Updated JSON-LD FAQ schema.
 
+- **ПРОМТ 06 (Session 17)**: Removed fixed bottom CTA bar (CALL | BOOK ONLINE | TEXT US) from all mobile pages. Deleted `<StickyCTA />` from App.js, removed import. Cleaned up compensating `pb-[72px]` and `padding-bottom: 72px/90px` from 8 files (ProfessionalLandingPage, DynamicLandingPage, SanFrancisco, CityRepairPage, AboutPage, BrandsPage, BlogListPage, UnifiedFooter) and index.css.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
