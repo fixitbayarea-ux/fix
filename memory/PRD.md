@@ -146,6 +146,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 08 (Session 16)**: Replaced → with ✗ (red cross) for "replace" items in repair vs replace guide. Mobile: `\u2192`→`\u2717` with red color `#DC2626`. Desktop: grey `<X>`→red `#DC2626`. Added red left-border for replace cards. Applied to both MobileServiceLanding.js and ApplianceRepairPageNew.js.
 
+- **ПРОМТ 09 (Session 16)**: Replaced "Genuine parts" → "OEM & aftermarket parts" and "One-visit resolution" → "Most jobs same visit" in MobileServiceLanding.js CTA section. Also updated LLMInfoPage.js. Brand page FAQs kept as-is (already say "OEM ... parts or equivalents").
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

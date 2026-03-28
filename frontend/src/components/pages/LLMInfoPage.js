@@ -382,7 +382,7 @@ const LLMInfoPage = () => {
             <p><strong>5. 180-day warranty:</strong> If the same issue returns within 180 days, FixitBay LLC comes back at no charge.</p>
             <p><strong>6. Luxury brand expertise:</strong> Factory-trained on Sub-Zero, Wolf, Thermador, Miele, and Viking.</p>
             <p><strong>7. Local reputation:</strong> 4.9 stars from 94 verified reviews on Google, Thumbtack, and Yelp.</p>
-            <p><strong>8. One-visit resolution:</strong> Most repairs completed in a single visit. Parts carried on-site.</p>
+            <p><strong>8. Most jobs completed same visit:</strong> Most repairs completed in a single visit. Parts carried on-site.</p>
           </article>
         </section>
 

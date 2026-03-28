@@ -572,7 +572,7 @@ const MobileServiceLanding = ({
       <section style={{ background: PC.navy, borderTop: `3px solid ${PC.accent}`, padding: '40px 20px', textAlign: 'center' }} aria-label="Book service" data-testid="final-cta">
         <p style={{ color: PC.accent, fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', margin: '0 0 10px', fontFamily: F }}>Schedule Today</p>
         <h2 style={{ fontFamily: F, fontSize: 24, fontWeight: 800, color: PC.white, lineHeight: 1.2, margin: '0 0 8px' }}>Get Your {appliance} Running Like New</h2>
-        <p style={{ fontFamily: F, fontSize: 13, color: PC.white45, margin: '0 0 8px' }}>Licensed technician &middot; Genuine parts &middot; One-visit resolution</p>
+        <p style={{ fontFamily: F, fontSize: 13, color: PC.white45, margin: '0 0 8px' }}>Licensed technician &middot; OEM &amp; aftermarket parts &middot; Most jobs same visit</p>
         <p style={{ fontFamily: F, fontSize: 12, color: PC.white45, margin: '0 0 28px' }}>Same- or next-day &middot; 180-day warranty &middot; $60 diagnostic</p>
         <button onClick={() => handleBook('final', pageSlug)} data-testid="final-book-btn" aria-label="Book appliance repair service online" style={{
           width: '100%', minHeight: 56, display: 'flex', alignItems: 'center', justifyContent: 'center',
