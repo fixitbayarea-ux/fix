@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import useReviews from '../../hooks/useReviews';
 
 const GoogleIcon = ({ size = 20 }) => (
@@ -79,15 +79,64 @@ const HomeReviews = React.forwardRef((_props, ref) => {
           <a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 13, color: '#FF5722', textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }} aria-label="opens in new tab">Read all Google reviews &rarr;</a>
           <a href="https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644" target="_blank" rel="noopener noreferrer" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 13, color: '#FF5722', textDecoration: 'none', minHeight: 44, display: 'inline-flex', alignItems: 'center' }} aria-label="opens in new tab">Read Thumbtack reviews &rarr;</a>
         </div>
-        {/* Mobile */}
-        <div className="lg:hidden overflow-x-auto pb-4 scrollbar-hide -mx-4"><div className="flex gap-4 px-4" style={{ scrollSnapType: 'x mandatory' }}>{reviews.map(r => (
-          <div key={r.id} className="flex-shrink-0 rounded-lg p-6 border border-white/10" style={{ width: '90vw', maxWidth: 400, scrollSnapAlign: 'center', background: 'rgba(255,255,255,0.05)' }}>
-            <div className="flex items-center justify-between mb-4"><div className="flex items-center gap-2">{r.source === 'Google' ? <GoogleIcon size={18} /> : <ThumbIcon size={18} />}<span className="font-semibold text-sm" style={{ color: '#fff' }}>{r.source}</span></div></div>
-            {r.rating && <div className="flex items-center mb-3">{[...Array(r.rating)].map((_, i) => <span key={i} style={{ color: '#FF5722', fontSize: 14 }}>&#9733;</span>)}</div>}
-            <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.75)' }}>"{r.text}"</p>
-            <div className="pt-4 border-t border-white/10"><p className="font-semibold text-sm mb-1" style={{ color: '#fff' }}>{r.author}</p><a href={r.source === 'Google' ? 'https://share.google/Q48c6OXAIB7u60fNv' : 'https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644'} target="_blank" rel="noopener noreferrer" className="text-xs font-medium" style={{ color: '#FF5722', minHeight: 44, display: 'inline-flex', alignItems: 'center' }} aria-label="opens in new tab">Read on {r.source} &rarr;</a></div>
+        {/* Mobile carousel with scroll hints */}
+        <style>{`
+          .reviews-carousel-wrapper {
+            position: relative;
+            overflow: hidden;
+          }
+          .reviews-carousel-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 48px;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba(13,27,42,0.95));
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            z-index: 2;
+          }
+          .reviews-carousel-wrapper.scrolled-end::after {
+            opacity: 0;
+          }
+          @media (min-width: 1024px) {
+            .reviews-carousel-wrapper::after { display: none; }
+          }
+        `}</style>
+        <div className="lg:hidden reviews-carousel-wrapper -mx-4" data-testid="reviews-carousel-wrapper">
+          <div
+            className="overflow-x-auto pb-4 scrollbar-hide"
+            style={{ scrollSnapType: 'x mandatory' }}
+            onScroll={(e) => {
+              const el = e.target;
+              const isAtEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 10;
+              el.parentElement?.classList.toggle('scrolled-end', isAtEnd);
+            }}
+            data-testid="reviews-carousel-scroll"
+          >
+            <div className="flex gap-4 px-4">
+              {reviews.map(r => (
+                <div key={r.id} className="flex-shrink-0 rounded-lg p-6 border border-white/10" style={{ width: '90vw', maxWidth: 400, scrollSnapAlign: 'center', background: 'rgba(255,255,255,0.05)' }}>
+                  <div className="flex items-center justify-between mb-4"><div className="flex items-center gap-2">{r.source === 'Google' ? <GoogleIcon size={18} /> : <ThumbIcon size={18} />}<span className="font-semibold text-sm" style={{ color: '#fff' }}>{r.source}</span></div></div>
+                  {r.rating && <div className="flex items-center mb-3">{[...Array(r.rating)].map((_, i) => <span key={i} style={{ color: '#FF5722', fontSize: 14 }}>&#9733;</span>)}</div>}
+                  <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.75)' }}>"{r.text}"</p>
+                  <div className="pt-4 border-t border-white/10"><p className="font-semibold text-sm mb-1" style={{ color: '#fff' }}>{r.author}</p><a href={r.source === 'Google' ? 'https://share.google/Q48c6OXAIB7u60fNv' : 'https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644'} target="_blank" rel="noopener noreferrer" className="text-xs font-medium" style={{ color: '#FF5722', minHeight: 44, display: 'inline-flex', alignItems: 'center' }} aria-label="opens in new tab">Read on {r.source} &rarr;</a></div>
+                </div>
+              ))}
+            </div>
           </div>
-        ))}</div></div>
+        </div>
+        <p className="lg:hidden" data-testid="reviews-swipe-hint" style={{
+          textAlign: 'center',
+          fontSize: 12,
+          color: 'rgba(255,255,255,0.4)',
+          marginTop: 12,
+          userSelect: 'none',
+          fontFamily: 'Montserrat, sans-serif'
+        }}>
+          &#8592; Swipe to read all reviews &#8594;
+        </p>
       </div>
     </section>
   );

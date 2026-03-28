@@ -150,6 +150,10 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 01 (Session 17)**: Fixed stats bar visual alignment on homepage mobile. Unified font sizes for stat numbers to `clamp(22px, 5vw, 30px)`. Increased title font from 9px→10px, unit from 11px→12px. Fixed "180-Day" suffix to use `0.55em` with `verticalAlign: middle`. All 3 stat cells now visually balanced.
 
+- **ПРОМТ 02 (Session 17)**: Upgraded "How It Works" arrows on homepage from text arrows (→) and CSS dashed borders to polished SVG icons (ArrowRight + ArrowDownCurved) in ProfessionalLandingPage.js.
+
+- **ПРОМТ 03 (Session 17)**: Added 3 scroll-hint elements to mobile reviews carousel in HomeReviews.jsx: (1) text hint "← Swipe to read all reviews →" below carousel, (2) right fade gradient (`::after` pseudo-element matching section background `#0D1B2A`), (3) JS `onScroll` handler hiding fade at scroll end via `.scrolled-end` class. Desktop unaffected (`@media min-width:1024px` + `lg:hidden`).
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

@@ -201,7 +201,7 @@ const ProfessionalLandingPage = () => {
                 return (
                   <React.Fragment key={i}>
                     {wrapped}
-                    {i < 3 && i !== 1 && <div className="hiw-arrow" aria-hidden="true"><span className="hiw-arrow-h">&rarr;</span></div>}
+                    {i < 3 && i !== 1 && <div className="hiw-arrow" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF5722" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>}
                     {i === 1 && <div className="hiw-arrow hiw-arrow-down" aria-hidden="true"><div className="hiw-connector-l"></div></div>}
                   </React.Fragment>
                 );
@@ -288,7 +288,8 @@ const ProfessionalLandingPage = () => {
         /* ═══ HIW Steps Layout ═══ */
         .hiw-steps-container { display: flex; align-items: flex-start; justify-content: center; gap: 0; }
         .hiw-step-card-wrap { flex: 1; min-width: 0; }
-        .hiw-arrow { display: flex; align-items: center; justify-content: center; padding: 0 8px; color: #FF5722; font-size: 24px; font-weight: 700; padding-top: 56px; }
+        .hiw-arrow { display: flex; align-items: center; justify-content: center; padding: 0 4px; color: #FF5722; padding-top: 56px; }
+        .hiw-arrow svg { background: rgba(255,87,34,0.08); border-radius: 50%; padding: 6px; width: 32px; height: 32px; }
         .hiw-arrow-down { display: none; }
         .hiw-num-pill { display: none !important; }
         .hiw-num-watermark { display: block !important; }
@@ -296,11 +297,12 @@ const ProfessionalLandingPage = () => {
         @media (max-width: 767px) {
           .hiw-steps-container { display: grid !important; grid-template-columns: 1fr auto 1fr; gap: 4px 0; }
           .hiw-step-card-wrap { min-width: 0; }
-          .hiw-arrow { padding: 0 4px; font-size: 18px; padding-top: 36px; }
+          .hiw-arrow { padding: 0 2px; padding-top: 36px; }
           .hiw-arrow-h { display: inline; }
           .hiw-arrow-down { grid-column: 1 / -1; padding: 0; display: flex !important; justify-content: flex-end; height: 36px; position: relative; }
           .hiw-arrow-down .hiw-arrow-h { display: none; }
-          .hiw-connector-l { display: block !important; position: absolute; right: 25%; top: 0; width: 50%; height: 100%; border-right: 2px dashed rgba(255,87,34,0.35); border-bottom: 2px dashed rgba(255,87,34,0.35); border-radius: 0 0 10px 0; }
+          .hiw-arrow-down svg { display: none; }
+          .hiw-connector-l { display: block !important; position: absolute; right: 25%; top: 0; width: 50%; height: 100%; border-right: 2px solid rgba(255,87,34,0.30); border-bottom: 2px solid rgba(255,87,34,0.30); border-radius: 0 0 16px 0; }
           .hiw-connector-l::after { content: '\u2193'; position: absolute; bottom: -14px; left: -6px; color: #FF5722; font-size: 16px; font-weight: 700; }
           .hiw-num-watermark { display: none !important; }
           .hiw-num-pill { display: inline-block !important; }
