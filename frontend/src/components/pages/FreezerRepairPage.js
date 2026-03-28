@@ -36,7 +36,7 @@ const FreezerRepairPage = () => {
   const faqData = [
     {
       question: "Why is my freezer not freezing properly and how much to fix it?",
-      answer: "Freezers fail to freeze due to faulty thermostats ($125-$175), malfunctioning defrost systems ($150-$250), failed evaporator fans ($140-$200), or refrigerant leaks ($300-$500). Our technicians test temperature control, inspect defrost cycles, check fan operation, and test for leaks. Most freezer cooling repairs are completed on the first visit with parts stocked in our vans."
+      answer: "Freezers fail to freeze due to faulty thermostats ($250-$295), malfunctioning defrost systems ($250-$295), failed evaporator fans ($250-$285), or refrigerant leaks ($350-$550). Our technicians test temperature control, inspect defrost cycles, check fan operation, and test for leaks. Most freezer cooling repairs are completed on the first visit with parts stocked in our vans."
     },
     {
       question: "Is it worth repairing a 10-year-old chest or upright freezer?",
@@ -115,7 +115,7 @@ const FreezerRepairPage = () => {
         intro: "Standalone and built-in freezers are built to last — here's how to decide based on what our technicians see.",
         items: [
           { action: 'repair', condition: 'Under 12 years old with a single failure', recommendation: 'Thermostat, defrost timer, or fan motor replacements cost $125–$300 — much less than a new $600+ freezer.' },
-          { action: 'repair', condition: 'Door seal is damaged or worn', recommendation: 'A gasket replacement ($80–$150) restores efficiency and prevents frost buildup. Quick, affordable fix.' },
+          { action: 'repair', condition: 'Door seal is damaged or worn', recommendation: 'A gasket replacement ($195–$295) restores efficiency and prevents frost buildup. Quick, affordable fix.' },
           { action: 'replace', condition: 'Compressor failure on a 15+ year unit', recommendation: 'Compressor replacement costs $400–$700. For older freezers, investing in a newer, energy-efficient model saves long-term.' },
           { action: 'replace', condition: 'Repeated refrigerant leaks', recommendation: 'Multiple leak repairs add up fast. If the sealed system has failed, replacement is the more cost-effective path.' },
         ]

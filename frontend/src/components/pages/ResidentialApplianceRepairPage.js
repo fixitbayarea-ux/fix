@@ -105,7 +105,7 @@ const ResidentialApplianceRepairPage = () => {
         title: "When to Repair vs. Replace Home Appliances",
         intro: "Smart guidance from our Bay Area technicians on your home appliances.",
         items: [
-          { action: 'repair', condition: 'Appliance under 8 years with one issue', recommendation: 'Single-component failures (pump, motor, thermostat) typically cost $150–$350. That\'s 15–25% of replacement cost.' },
+          { action: 'repair', condition: 'Appliance under 8 years with one issue', recommendation: 'Single-component failures (pump, motor, thermostat) typically cost $250–$450. That\'s 15–25% of replacement cost.' },
           { action: 'repair', condition: 'High-end or premium brand appliance', recommendation: 'Sub-Zero, Viking, Wolf, and Miele appliances are built to last 20+ years. Repair almost always makes sense.' },
           { action: 'replace', condition: 'Budget appliance with major failure after 8+ years', recommendation: 'When repair costs exceed 50% of a new unit, upgrading gives you better efficiency, features, and a full warranty.' },
           { action: 'replace', condition: 'Frequent breakdowns across the household', recommendation: 'If multiple appliances are failing, consider a phased upgrade plan. Our technicians can help prioritize.' },

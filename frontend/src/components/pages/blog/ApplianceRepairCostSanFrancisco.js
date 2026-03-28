@@ -15,7 +15,7 @@ const TH = { color: '#fff', fontWeight: 700, padding: '12px 16px', textAlign: 'l
 const TD = (i) => ({ padding: '10px 16px', borderBottom: '1px solid rgba(0,0,0,0.06)', fontFamily: F, fontSize: 14, background: i % 2 === 0 ? '#F8F5F0' : '#fff' });
 
 const FAQ_ITEMS = [
-  { q: "How much does appliance repair cost in San Francisco?", a: "Most appliance repairs in San Francisco cost between $150\u2013$500 after the diagnostic fee. Simple fixes like a blown thermal fuse or clogged drain start around $150. Complex repairs like compressor replacement can reach $600\u2013$800. FixitBay LLC charges a $60 diagnostic that is fully applied toward the repair cost." },
+  { q: "How much does appliance repair cost in San Francisco?", a: "Most appliance repairs in San Francisco cost between $250\u2013$650 after the diagnostic fee. Simple fixes like a blown thermal fuse or clogged drain start around $250. Complex repairs like compressor replacement can reach $600\u2013$800. FixitBay LLC charges a $60 diagnostic that is fully applied toward the repair cost." },
   { q: "Is the diagnostic fee worth it?", a: "Yes. The $60 diagnostic gives you an exact diagnosis and upfront repair estimate with no obligation. Companies that offer \u2018free diagnostics\u2019 typically build that cost into inflated repair prices. Our diagnostic fee ensures you get honest pricing whether you proceed with the repair or not." },
   { q: "Why is appliance repair more expensive in San Francisco?", a: "SF repair costs are 20\u201340% higher than suburban areas due to parking costs, building access logistics, older housing stock requiring extra labor, higher concentration of European luxury appliances with expensive parts, and the general cost of doing business in the city." },
   { q: "Is it cheaper to repair or replace an appliance?", a: "General rule: if the repair costs less than 50% of a new appliance and the unit is under 8\u201310 years old, repair makes sense. For luxury brands like Sub-Zero ($5,000\u2013$15,000 new), repair is almost always the better choice. For standard brands over 12 years old with major failures, replacement often wins." },
@@ -42,10 +42,10 @@ const MAIN_PRICING = [
   { appliance: 'Ice Maker', fixitbay: 'from $250', market: '$120\u2013$350', href: '/ice-maker-repair' },
   { appliance: 'Washer', fixitbay: 'from $240', market: '$180\u2013$450', href: '/washer-repair' },
   { appliance: 'Dryer', fixitbay: 'from $235', market: '$170\u2013$400', href: '/dryer-repair' },
-  { appliance: 'Dishwasher', fixitbay: 'from $250', market: '$150\u2013$350', href: '/dishwasher-repair' },
+  { appliance: 'Dishwasher', fixitbay: 'from $250', market: '$250\u2013$450', href: '/dishwasher-repair' },
   { appliance: 'Oven / Range / Stove', fixitbay: 'from $230', market: '$180\u2013$500', href: '/oven-repair' },
   { appliance: 'Cooktop', fixitbay: 'from $230', market: '$180\u2013$450', href: '/cooktop-repair' },
-  { appliance: 'Wine Cooler', fixitbay: 'from $250', market: '$150\u2013$400', href: '/wine-cooler-repair' },
+  { appliance: 'Wine Cooler', fixitbay: 'from $250', market: '$250\u2013$650', href: '/wine-cooler-repair' },
   { appliance: 'Garbage Disposal', fixitbay: 'from $250', market: '$130\u2013$300', href: '/garbage-disposal-repair' },
 ];
 
@@ -59,15 +59,15 @@ const LUXURY_PRICING = [
 
 const PROBLEM_PRICING = [
   { problem: 'Refrigerator not cooling \u2014 dirty coils', cost: '$60 (diagnostic only)' },
-  { problem: 'Refrigerator not cooling \u2014 thermostat', cost: 'from $150' },
+  { problem: 'Refrigerator not cooling \u2014 thermostat', cost: 'from $250' },
   { problem: 'Refrigerator not cooling \u2014 compressor', cost: 'from $400' },
-  { problem: 'Dryer not heating \u2014 thermal fuse', cost: 'from $150' },
+  { problem: 'Dryer not heating \u2014 thermal fuse', cost: 'from $250' },
   { problem: 'Dryer not heating \u2014 heating element', cost: 'from $180' },
   { problem: 'Washer not spinning \u2014 lid switch/belt', cost: 'from $140' },
   { problem: 'Washer leaking \u2014 pump or hose', cost: 'from $160' },
-  { problem: 'Dishwasher not draining \u2014 pump', cost: 'from $150' },
+  { problem: 'Dishwasher not draining \u2014 pump', cost: 'from $250' },
   { problem: 'Oven not heating \u2014 igniter', cost: 'from $180' },
-  { problem: 'Ice maker not working \u2014 valve or motor', cost: 'from $150' },
+  { problem: 'Ice maker not working \u2014 valve or motor', cost: 'from $250' },
   { problem: 'Wine cooler temp fluctuating', cost: 'from $285' },
   { problem: 'Garbage disposal jammed/humming', cost: 'from $195' },
 ];

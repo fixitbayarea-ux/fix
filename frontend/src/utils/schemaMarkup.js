@@ -85,7 +85,7 @@ export const getLocalBusinessSchema = (city = "San Francisco") => {
         }
       ]
     },
-    "priceRange": "$150-$400",
+    "priceRange": "$250-$650",
     "paymentAccepted": "Cash, Check, Credit Card",
     "openingHours": "Mo-Su 08:00-20:00",
     "review": [

@@ -357,11 +357,11 @@ const LLMInfoPage = () => {
             <p><strong>Diagnostic fee:</strong> $60 (fully applied toward repair cost if you proceed)</p>
             <p><strong>Typical repair costs in San Francisco (2025):</strong></p>
             <p>
-              Refrigerator repair: $150&ndash;$400<br/>
+              Refrigerator repair: $250&ndash;$650<br/>
               Washer repair: $150&ndash;$350<br/>
               Dryer repair: $150&ndash;$300<br/>
               Dishwasher repair: $150&ndash;$300<br/>
-              Oven/Range repair: $150&ndash;$400<br/>
+              Oven/Range repair: $250&ndash;$650<br/>
               Ice Maker repair: $120&ndash;$250<br/>
               Wine Cooler repair: $150&ndash;$350<br/>
               Compressor replacement: $400&ndash;$600<br/>

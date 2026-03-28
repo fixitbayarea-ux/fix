@@ -8,7 +8,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "How much does appliance repair cost in San Francisco?",
-      answer: "Our pricing is transparent and upfront! Diagnostic fees start at $89, which is waived when you choose our repair service. Most common repairs range from $150-$400 depending on the appliance and parts needed. We provide written estimates before any work begins, so there are never any surprises.",
+      answer: "Our pricing is transparent and upfront! Diagnostic fees start at $89, which is waived when you choose our repair service. Most common repairs range from $250-$650 depending on the appliance and parts needed. We provide written estimates before any work begins, so there are never any surprises.",
       icon: <DollarSign className="w-5 h-5" />
     },
     {

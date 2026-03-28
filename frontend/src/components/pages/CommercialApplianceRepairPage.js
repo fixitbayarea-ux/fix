@@ -52,7 +52,7 @@ const DesktopCommercialRepair = () => (
       intro: "Downtime costs money. Here's how Bay Area businesses decide.",
       items: [
         { action: 'repair', condition: 'Equipment under 7 years with isolated issue', recommendation: 'Single-component failures (thermostat, motor, gasket) cost $200–$500 to fix vs. $3,000+ for commercial replacement.' },
-        { action: 'repair', condition: 'Refrigeration unit running warm', recommendation: 'Often a condenser coil cleaning, fan motor, or thermostat fix ($150–$350). Quick turnaround minimizes food safety risk.' },
+        { action: 'repair', condition: 'Refrigeration unit running warm', recommendation: 'Often a condenser coil cleaning, fan motor, or thermostat fix ($250–$450). Quick turnaround minimizes food safety risk.' },
         { action: 'replace', condition: 'Compressor failure on 10+ year unit', recommendation: 'Commercial compressor replacement runs $800–$1,500. For aging units, newer models offer better energy efficiency and reliability.' },
         { action: 'replace', condition: 'Recurring breakdowns affecting operations', recommendation: 'Repeated service calls cost more in downtime and lost product than investing in reliable new equipment.' },
       ]

@@ -122,11 +122,11 @@ const CITY_CONTEXT = {
 
 // Service-specific pricing data
 const SERVICE_PRICING = {
-  'refrigerator': { range: '$180–$450', common: 'thermostat $150–$200, compressor $400–$600, ice maker $150–$280' },
+  'refrigerator': { range: '$250–$650', common: 'thermostat from $295, evaporator fan from $285, ice maker from $295' },
   'washer': { range: '$150–$350', common: 'pump $120–$180, motor $200–$350, control board $180–$280' },
   'dryer': { range: '$120–$300', common: 'heating element $100–$150, belt $80–$120, thermal fuse $70–$100' },
   'dishwasher': { range: '$140–$320', common: 'pump $150–$220, control board $180–$280, door latch $80–$120' },
-  'oven': { range: '$150–$400', common: 'igniter $120–$180, heating element $140–$220, thermostat $150–$250' },
+  'oven': { range: '$250–$650', common: 'igniter $120–$180, heating element $140–$220, thermostat $150–$250' },
   'wine-cooler': { range: '$150–$350', common: 'compressor $250–$400, thermostat $120–$180, fan motor $100–$150' },
   'ice-maker': { range: '$150–$280', common: 'water inlet valve $100–$150, module $120–$200, auger motor $80–$150' },
   'cooktop': { range: '$140–$350', common: 'igniter $100–$160, element $120–$200, control switch $140–$220' },

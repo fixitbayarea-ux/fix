@@ -142,6 +142,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 06 (Session 16)**: Updated entire price list in servicePricing.js. Removed compressor from Refrigerator repairs. Updated: Thermostat→$295, Ice maker→$295, Evaporator fan→$285, Door seal→$250. Luxury: Viking $325→$450, Built-in $445→$500. "Starting from" $255→$250. Added pricing disclaimer footnote in both mobile and desktop templates. Updated blog pricing page (ApplianceRepairCostSanFrancisco.js).
 
+- **ПРОМТ 07 (Session 16)**: Updated FAQ prices across ~30 files. General repair range $150-$400→$250-$650. Specific repairs: thermostat→$295, ice maker→$295, evaporator fan→$285, door seal→$250. Removed compressor references. Updated blog pages (RefrigeratorNotCooling, DryerNotHeating, DishwasherNotDraining, WasherErrorCodes, DryerTakingTooLong, ApplianceRepairCostSanFrancisco), CooktopRepairPage, DisposalRepairPage, FreezerRepairPage, city pages, and all FAQ sections.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

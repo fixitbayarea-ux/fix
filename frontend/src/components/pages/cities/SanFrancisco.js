@@ -417,7 +417,7 @@ const SanFrancisco = () => {
               <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>No trip charges. No after-hours surcharges</p>
             </div>
           </div>
-          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.35)', fontStyle: 'italic', marginTop: 24 }}>Typical repairs range $150–$400 after diagnosis</p>
+          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.35)', fontStyle: 'italic', marginTop: 24 }}>Typical repairs range $250–$650 after diagnosis</p>
         </div>
       </section>
 

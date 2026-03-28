@@ -14,7 +14,7 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: "Why is my refrigerator running but not cooling?", a: "The most common causes are dirty condenser coils or a failed evaporator fan motor. Start by cleaning the coils \u2014 if the freezer is cold but the fridge compartment is warm, the evaporator fan likely needs replacement. In San Francisco, coastal humidity also accelerates gasket wear, causing cold air leaks." },
-  { q: "How much does refrigerator repair cost in San Francisco?", a: "Most refrigerator repairs cost $150\u2013$500 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic that is applied toward repair. Simple fixes like thermostat replacement start from $150. Compressor replacement on standard fridges ranges from $400\u2013$600. Sub-Zero and Viking repairs start from $555." },
+  { q: "How much does refrigerator repair cost in San Francisco?", a: "Most refrigerator repairs cost $250\u2013$650 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic that is applied toward repair. Common repairs like thermostat replacement start from $295. Compressor replacement on standard fridges ranges from $450\u2013$555. Sub-Zero and Viking repairs start from $555." },
   { q: "Is it worth repairing a 10-year-old refrigerator?", a: "If the repair cost exceeds 50% of a new refrigerator\u2019s price, replacement usually makes more sense. The exception is premium brands \u2014 a Sub-Zero costs $5,000\u2013$15,000 new, so a $600 compressor repair is absolutely worth it even at 15+ years." },
   { q: "Can I fix a refrigerator not cooling myself?", a: "You can check three things yourself: clean the condenser coils, verify the thermostat setting (35\u201338\u00B0F), and test the door seal with a dollar bill. These cover about 40% of cases. If these don\u2019t solve it, the issue likely requires a licensed technician with diagnostic tools." },
   { q: "How long does refrigerator repair take?", a: "Most repairs take 1\u20132 hours once the technician arrives. Parts like fan motors and thermostats are usually in stock on our truck. Compressor replacement may require ordering the part and a return visit. FixitBay LLC offers same- or next-day and next-day appointments Monday through Saturday." },
@@ -47,10 +47,10 @@ const CHECKLIST = [
 
 const PRICING = [
   { problem: 'Condenser coil cleaning', cost: 'Included in $60 diagnostic' },
-  { problem: 'Thermostat/sensor replacement', cost: 'from $150' },
+  { problem: 'Thermostat/sensor replacement', cost: 'from $295' },
   { problem: 'Door gasket replacement', cost: 'from $80' },
   { problem: 'Evaporator fan motor', cost: 'from $180' },
-  { problem: 'Start relay replacement', cost: 'from $150' },
+  { problem: 'Start relay replacement', cost: 'from $295' },
   { problem: 'Defrost system repair', cost: 'from $180' },
   { problem: 'Refrigerant recharge', cost: 'from $300' },
   { problem: 'Compressor replacement', cost: 'from $400' },
@@ -207,7 +207,7 @@ const RefrigeratorNotCooling = () => {
               <p style={P}>Sometimes someone bumps the temperature dial — especially in homes with kids. Check that your fridge is set between 35–38°F and your freezer at 0°F.</p>
               <p style={P}>If the setting looks correct but the temperature doesn't match — the thermostat sensor may be faulty. On digital models, check for error codes on the display panel.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>DIY check:</strong> Verify the dial. Place a thermometer inside for 24 hours.</p>
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>Professional repair needed if sensor is bad:</strong> from $150</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Professional repair needed if sensor is bad:</strong> from $295</p>
 
               {/* ── Section 3 ── */}
               <h2 id="door-gasket" style={H2S}><span style={{ color: '#FF5722' }}>3.</span> Damaged Door Gasket (Seal)</h2>
@@ -247,7 +247,7 @@ const RefrigeratorNotCooling = () => {
               <h2 id="start-relay" style={H2S}><span style={{ color: '#FF5722' }}>6.</span> Faulty Start Relay or Overload Protector</h2>
               <p style={P}>The start relay helps the compressor kick on. When it fails, you'll hear a repeating click-buzz-click pattern every few minutes — the compressor tries to start but immediately shuts off.</p>
               <p style={P}>This is a common failure on 8–15 year old fridges. The part itself is inexpensive ($30–$60), but diagnosis requires testing with a multimeter.</p>
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>Professional repair:</strong> from $150–$200 (part + labor)</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Professional repair:</strong> from $295–$350 (part + labor)</p>
 
               {/* ── Section 7 ── */}
               <h2 id="defrost" style={H2S}><span style={{ color: '#FF5722' }}>7.</span> Defrost System Failure</h2>

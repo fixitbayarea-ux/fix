@@ -44,7 +44,7 @@ const CooktopRepairPage = () => {
     },
     {
       question: "How much does cooktop repair cost?",
-      answer: "Cooktop repairs typically range from $150-$400. Simple fixes like cleaning igniters or replacing knobs are less expensive, while glass top replacement or control board repairs cost more. We provide free diagnostics with repair service."
+      answer: "Cooktop repairs typically range from $250-$650. Simple fixes like cleaning igniters or replacing knobs are less expensive, while glass top replacement or control board repairs cost more. We provide free diagnostics with repair service."
     },
     {
       question: "Can you repair cracked glass cooktops?",

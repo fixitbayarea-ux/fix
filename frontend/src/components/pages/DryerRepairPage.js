@@ -134,7 +134,7 @@ const DryerRepairPage = () => {
           title: "When to Repair vs. Replace Your Dryer",
           intro: "Dryers are built to last, but every machine has limits. Here's how our technicians help Bay Area homeowners decide.",
           items: [
-            { action: 'repair', condition: 'Dryer under 10 years old with a heating issue', recommendation: 'Heating elements, thermal fuses, and thermostats are the most common failures. These parts cost $150–$250 to replace and your dryer should run for several more years.' },
+            { action: 'repair', condition: 'Dryer under 10 years old with a heating issue', recommendation: 'Heating elements, thermal fuses, and thermostats are the most common failures. These parts cost $250–$350 to replace and your dryer should run for several more years.' },
             { action: 'repair', condition: 'Loud thumping or squealing noises', recommendation: 'Worn drum rollers, a frayed belt, or a failing idler pulley are affordable fixes ($120–$200). Ignoring them risks damaging the drum or motor.' },
             { action: 'replace', condition: 'Motor failure on a 12+ year old dryer', recommendation: 'Motor replacement costs $300–$500. If the dryer is nearing end-of-life, investing in a new energy-efficient model makes more sense long-term.' },
             { action: 'repair', condition: 'Dryer takes forever to dry clothes', recommendation: 'This is usually a clogged vent or a weak heating element — both repairable. Clearing the vent also reduces fire risk, which is critical in SF\'s dense housing.' },

@@ -44,7 +44,7 @@ const DisposalRepairPage = () => {
   const faqData = [
     {
       question: "How much does garbage disposal repair cost in the Bay Area?",
-      answer: "Garbage disposal repairs typically cost $125-$250 depending on the issue. Simple fixes like resetting tripped circuits ($100-$150), unjamming blades ($125-$175), or fixing leaks at connections ($140-$180) are more affordable. Motor replacement or chronic jam issues ($200-$250) cost more. We charge a $60 diagnostic fee (waived with repair) and provide upfront pricing."
+      answer: "Garbage disposal repairs typically cost $195-$350 depending on the issue. Simple fixes like resetting tripped circuits ($150-$195), unjamming blades ($175-$225), or fixing leaks at connections ($195-$250) are more affordable. Motor replacement or chronic jam issues ($250-$350) cost more. We charge a $60 diagnostic fee (waived with repair) and provide upfront pricing."
     },
     {
       question: "Should I repair or replace my garbage disposal that keeps jamming?",
@@ -120,7 +120,7 @@ const DisposalRepairPage = () => {
         title: "When to Repair vs. Replace Your Garbage Disposal",
         intro: "Garbage disposals are affordable appliances, but repair is often the smarter first step.",
         items: [
-          { action: 'repair', condition: 'Jammed blades or humming but not spinning', recommendation: 'Most jams are cleared in 30 minutes for $80–$150. The motor is fine — the blades just need freeing.' },
+          { action: 'repair', condition: 'Jammed blades or humming but not spinning', recommendation: 'Most jams are cleared in 30 minutes for $150–$250. The motor is fine — the blades just need freeing.' },
           { action: 'repair', condition: 'Leaking from the bottom flange', recommendation: 'A loose mount or worn gasket costs $90–$140 to fix. Much cheaper than a full replacement.' },
           { action: 'replace', condition: 'Motor burned out or won\'t turn on', recommendation: 'Motor replacement costs nearly as much as a new disposal ($150–$250 installed). Upgrade to a quieter, more powerful model.' },
           { action: 'replace', condition: 'Unit is 10+ years old with chronic jams', recommendation: 'Older disposals lose grinding power. A new 3/4 HP unit ($180–$300 installed) handles food waste better and runs quieter.' },

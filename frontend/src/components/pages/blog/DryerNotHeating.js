@@ -14,8 +14,8 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: "Why is my dryer not heating but still spinning?", a: "The most common cause is a blown thermal fuse \u2014 a safety device that trips when the dryer overheats, usually from a clogged vent. The dryer will tumble normally but produce no heat. For electric dryers, also check your breaker panel \u2014 a tripped 240V breaker will allow tumbling but not heating." },
-  { q: "How much does dryer repair cost in San Francisco?", a: "Most dryer repairs cost $150\u2013$300 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic applied toward repair. Thermal fuse replacement starts from $150. Heating element replacement ranges from $180\u2013$280. Gas valve solenoid repair is typically $200\u2013$260." },
-  { q: "Should I repair or replace a dryer that's not heating?", a: "If your dryer is under 8 years old, repair is almost always worth it \u2014 most heating issues cost $150\u2013$280 to fix. For dryers over 12 years old where the motor or control board has failed ($300+ repair), replacement often makes more sense." },
+  { q: "How much does dryer repair cost in San Francisco?", a: "Most dryer repairs cost $250\u2013$400 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic applied toward repair. Thermal fuse replacement starts from $250. Heating element replacement ranges from $265\u2013$350. Gas valve solenoid repair is typically $295\u2013$350." },
+  { q: "Should I repair or replace a dryer that's not heating?", a: "If your dryer is under 8 years old, repair is almost always worth it \u2014 most heating issues cost $150\u2013$280 to fix. For dryers over 12 years old where the motor or control board has failed ($350+ repair), replacement often makes more sense." },
   { q: "Is a gas dryer not heating dangerous?", a: "A gas dryer that isn\u2019t heating is not immediately dangerous \u2014 if the igniter isn\u2019t lighting, gas typically doesn\u2019t flow. However, if you smell gas near the dryer at any time, turn off the gas valve, open windows, and call your gas company immediately. Don\u2019t use the dryer until it\u2019s been inspected." },
   { q: "How long does dryer repair take?", a: "Most dryer repairs take 45 minutes to 1.5 hours. Thermal fuses, heating elements, and igniters are common parts that our technician carries on the truck. Gas valve solenoids and control boards may occasionally require ordering. FixitBay LLC offers same- or next-day and next-day appointments Monday through Saturday." },
 ];
@@ -47,11 +47,11 @@ const CHECKLIST = [
 
 const PRICING = [
   { problem: 'Vent cleaning + inspection', cost: 'from $80' },
-  { problem: 'Thermal fuse replacement', cost: 'from $150' },
+  { problem: 'Thermal fuse replacement', cost: 'from $250' },
   { problem: 'Heating element (electric)', cost: 'from $180' },
   { problem: 'Igniter replacement (gas)', cost: 'from $180' },
   { problem: 'Gas valve solenoid', cost: 'from $200' },
-  { problem: 'Cycling/hi-limit thermostat', cost: 'from $150' },
+  { problem: 'Cycling/hi-limit thermostat', cost: 'from $250' },
   { problem: 'Timer or control board', cost: 'from $180' },
   { problem: 'Moisture sensor', cost: 'from $120' },
 ];
@@ -204,13 +204,13 @@ const DryerNotHeating = () => {
               <p style={P}>The thermal fuse is a one-time safety device that blows when the dryer overheats. Once blown, the <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>dryer</a> tumbles but produces zero heat. This is the #1 professional repair we do on dryers.</p>
               <p style={P}>This almost always means the vent was clogged first — if you just replace the fuse without clearing the vent, it will blow again within weeks.</p>
               <p style={P}>Both gas and electric dryers have thermal fuses.</p>
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>Professional repair:</strong> from $150–$200 (fuse + vent inspection)</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Professional repair:</strong> from $250–$295 (fuse + vent inspection)</p>
 
               {/* ── Section 3 ── */}
               <h2 id="heating-element" style={H2S}><span style={{ color: '#FF5722' }}>3.</span> Faulty Heating Element (Electric Dryers)</h2>
               <p style={P}>Electric dryers use a coiled heating element that glows red-hot. Over time, the coil breaks or develops open spots. Symptom: dryer runs but air is room temperature — no warmth at all.</p>
               <p style={P}>You can sometimes confirm this by looking through the back panel — a working element glows orange. If it's dark while running, the element is broken.</p>
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>Professional repair:</strong> from $180–$280</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Professional repair:</strong> from $265–$350</p>
 
               {/* ── MID-ARTICLE CTA ── */}
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
@@ -237,7 +237,7 @@ const DryerNotHeating = () => {
               <h2 id="thermostat" style={H2S}><span style={{ color: '#FF5722' }}>5.</span> Cycling Thermostat or Hi-Limit Thermostat</h2>
               <p style={P}>The cycling thermostat regulates temperature by turning the heating element or gas burner on and off. When it fails, the dryer may not heat at all or may overheat.</p>
               <p style={P}>The hi-limit thermostat is a backup safety device. If it trips, the dryer won't heat until it's replaced.</p>
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>Professional repair:</strong> from $150–$220</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Professional repair:</strong> from $250–$295</p>
 
               {/* ── Section 6 ── */}
               <h2 id="timer-board" style={H2S}><span style={{ color: '#FF5722' }}>6.</span> Broken Timer or Control Board</h2>

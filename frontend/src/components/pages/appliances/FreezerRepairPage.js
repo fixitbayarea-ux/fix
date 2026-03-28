@@ -44,7 +44,7 @@ const FreezerRepairPage = () => {
     },
     {
       question: "How much does freezer repair cost?",
-      answer: "Freezer repairs typically range from $150-$400. Simple fixes like replacing door seals are less expensive, while compressor or control system repairs cost more. We provide free diagnostics with repair service."
+      answer: "Freezer repairs typically range from $250-$650. Simple fixes like replacing door seals are less expensive, while compressor or control system repairs cost more. We provide free diagnostics with repair service."
     },
     {
       question: "Is it worth repairing an old freezer?",

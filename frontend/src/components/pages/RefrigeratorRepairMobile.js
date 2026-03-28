@@ -81,7 +81,7 @@ const RefrigeratorRepairMobile = () => {
   }, []);
 
   const faqs = [
-    { q: 'How much does it cost?', a: '$60 diagnostic visit, fully applied to repair cost. Most repairs: $150–$400. Upfront quote before any work — no surprises.' },
+    { q: 'How much does it cost?', a: '$60 diagnostic visit, fully applied to your repair cost. Most repairs: $250–$650 including parts and labor. Written quote before any work — no surprises.' },
     { q: 'How fast can you come?', a: 'Same- or next-day and next-day service across San Francisco, Peninsula, and Marin. Most urgent cooling issues handled the same day.' },
     { q: 'Do you offer a warranty?', a: '180-day warranty on all parts and labor. If the same issue returns, we fix it free.' },
     { q: 'What brands do you fix?', a: 'All major brands: Sub-Zero, Viking, Thermador, Samsung, LG, Whirlpool, GE, Bosch, Miele, KitchenAid, Frigidaire, and more.' },
@@ -344,7 +344,7 @@ const RefrigeratorRepairMobile = () => {
             Applied to repair if you proceed. Final quote given <strong>before</strong> any work.
           </p>
           <p style={{ fontSize: 13, color: '#94A3B8', margin: 0 }}>
-            Typical repairs: $150–$400
+            Typical repairs: $250–$650
           </p>
         </div>
       </section>

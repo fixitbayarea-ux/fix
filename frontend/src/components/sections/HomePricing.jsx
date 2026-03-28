@@ -22,7 +22,7 @@ const HomePricing = () => (
           </div>
         ))}
       </div>
-      <p className="hidden lg:block text-center" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 13, color: 'rgba(255,255,255,0.35)', fontWeight: 400, fontStyle: 'italic', marginTop: 32 }}>Typical repairs range $150&ndash;$400 after diagnosis</p>
+      <p className="hidden lg:block text-center" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 13, color: 'rgba(255,255,255,0.35)', fontWeight: 400, fontStyle: 'italic', marginTop: 32 }}>Typical repairs range $250&ndash;$650 after diagnosis</p>
     </div>
   </section>
 );

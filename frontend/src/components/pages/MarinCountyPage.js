@@ -50,7 +50,7 @@ const MarinCountyPage = () => {
     },
     {
       question: "How much does appliance repair cost in Marin County?",
-      answer: "Appliance repair costs in Marin County typically range from $150-$400 depending on the issue. We charge a $60 diagnostic fee that's fully applied to your repair cost. Our upfront pricing means no surprises regardless of your Marin location."
+      answer: "Appliance repair costs in Marin County typically range from $250-$650 depending on the issue. We charge a $60 diagnostic fee that's fully applied to your repair cost. Our upfront pricing means no surprises regardless of your Marin location."
     },
     {
       question: "What areas of Marin County do you serve?",

@@ -36,7 +36,7 @@ const CooktopRepairPage = () => {
   const faqData = [
     {
       question: "Do you repair gas, electric, and induction cooktops?",
-      answer: "Yes! Our certified technicians repair all cooktop types—gas cooktops ($150-$400 for igniter/valve repairs), electric coil and smooth-top cooktops ($140-$300 for element replacements), and induction cooktops ($200-$450 for control board/sensor fixes). We're trained on all major brands and carry parts for on-site repairs."
+      answer: "Yes! Our certified technicians repair all cooktop types—gas cooktops ($250-$400 for igniter/valve repairs), electric coil and smooth-top cooktops ($250-$350 for element replacements), and induction cooktops ($300-$500 for control board/sensor fixes). We're trained on all major brands and carry parts for on-site repairs."
     },
     {
       question: "My gas cooktop smells like gas or won't ignite. Is this dangerous?",
@@ -44,7 +44,7 @@ const CooktopRepairPage = () => {
     },
     {
       question: "How much does cooktop repair cost in the Bay Area?",
-      answer: "Cooktop repairs range from $140-$450 depending on the type and issue. Gas igniter replacements ($150-$220), electric element swaps ($140-$200), and control valve fixes ($180-$280) are common. Induction cooktop control board repairs ($250-$450) or glass surface replacements ($300-$600) cost more. We charge a $60 diagnostic fee (waived with repair)."
+      answer: "Cooktop repairs range from $250-$550 depending on the type and issue. Gas igniter replacements ($250-$295), electric element swaps ($250-$295), and control valve fixes ($285-$395) are common. Induction cooktop control board repairs ($350-$500) or glass surface replacements ($400-$650) cost more. We charge a $60 diagnostic fee (waived with repair)."
     },
     {
       question: "Can you repair professional-grade and commercial cooktops?",
@@ -91,7 +91,7 @@ const CooktopRepairPage = () => {
           title: "Repair vs. Replace Your Cooktop",
           intro: "Cooktops are simpler than full ranges, so repairs are often straightforward.",
           items: [
-            { action: 'repair', condition: 'Gas burner won\'t ignite or weak flame', recommendation: 'Igniter and valve replacements cost $150–$250. Most common cooktop repair.' },
+            { action: 'repair', condition: 'Gas burner won\'t ignite or weak flame', recommendation: 'Igniter and valve replacements cost $250–$350. Most common cooktop repair.' },
             { action: 'repair', condition: 'One electric element not heating', recommendation: 'Individual element replacement runs $140–$200.' },
             { action: 'replace', condition: 'Cracked glass on older smooth-top model', recommendation: 'Glass replacement costs $300–$600, near the price of a new cooktop.' },
             { action: 'repair', condition: 'Induction cooktop shows error codes', recommendation: 'Board or sensor issues $200–$400. Induction cooktops are expensive to replace.' },
