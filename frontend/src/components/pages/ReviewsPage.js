@@ -154,11 +154,11 @@ const ReviewsPage = () => {
               Recognized as Bay Area's favorite appliance repair service
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 24 }}>
-              <div className="award-card" data-testid="award-nextdoor" style={{
+              <a href="https://nextdoor.com/page/fixitbay-san-francisco-ca/" target="_blank" rel="noopener noreferrer" aria-label="View FixitBay on Nextdoor — Neighborhood Fave 2025" className="award-card" data-testid="award-nextdoor" style={{
                 background: '#fff', borderRadius: 16, padding: 28, maxWidth: 500,
                 display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 24,
                 boxShadow: '0 2px 16px rgba(0,0,0,0.07)', border: '1px solid rgba(0,0,0,0.06)',
-                textAlign: 'left',
+                textAlign: 'left', textDecoration: 'none', color: 'inherit', cursor: 'pointer', transition: 'border-color 0.2s',
               }}>
                 <img
                   src="/images/awards/nextdoor-fave-2025-nd-square.png"
@@ -179,7 +179,7 @@ const ReviewsPage = () => {
                     Voted by Nextdoor neighbors as the favorite appliance repair service in the San Francisco Bay Area.
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>

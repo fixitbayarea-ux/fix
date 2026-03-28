@@ -164,6 +164,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 08 (Session 17)**: Made platform labels in /reviews hero clickable. Replaced `<span>` with `<a>` for Google (share.google), Thumbtack, and Yelp links. Added `target="_blank"`, `rel="noopener noreferrer"`, `aria-label`, and `cursor: pointer`. No visual change — same look, now clickable.
 
+- **ПРОМТ 09 (Session 17)**: Fixed Nextdoor award card on /reviews — changed from `<div>` to `<a>` with correct href `https://nextdoor.com/page/fixitbay-san-francisco-ca/`. Added `target="_blank"`, `rel="noopener noreferrer"`, `aria-label`. Entire card is now clickable.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
