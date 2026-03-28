@@ -182,8 +182,9 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 17 (Session 17)**: Updated "Where We Serve" city lists on all brand pages (`BrandLandingPage.js`). Removed San Mateo & Burlingame. Added Montara (Peninsula), Larkspur, Greenbrae, Fairfax, San Anselmo, Ross, Belvedere (Marin). Renamed "NORTH BAY" → "MARIN COUNTY". Changed SF entry to "San Francisco & All Neighborhoods".
 
-### Session 18 (Mar 28 2026) — Build Fix
-- **BUG FIX**: Fixed production build failure caused by syntax error in `AboutPage.js` line 91. Root cause: during Session 17 PROMPT 06 git rollback/CSS restoration, the `@media (max-width: 767px) { body { padding-bottom: 72px; } }` CSS rule was accidentally placed AFTER the closing backtick of the template literal, outside the `<style>` tag's JS expression. Fix: moved the `@media` rule back inside the template literal. Build: 233/233 pages pass.
+### Session 18 (Mar 28 2026) — Build Fix + Video Thumbnails
+- **BUG FIX**: Fixed production build failure caused by syntax error in `AboutPage.js` line 91. Root cause: `@media` CSS rule placed outside template literal during Session 17 git rollback. Build: 233/233 pages pass.
+- **ПРОМТ 18**: Replaced plain text video links on /about with proper YouTube thumbnail cards. Changed `maxresdefault.jpg` → `hqdefault.jpg` (more reliable). Added explicit `height: 180px` + `objectFit: cover` to images. Replaced `<div>` wrapper with `<a>` tag (`video-thumbnail-card` class). Added SVG play overlay, hover effects (box-shadow + translateY), and styled captions. Added 6 CSS rules for `.video-thumbnail-card`, `.video-thumb-wrapper`, `.play-overlay`, `.video-caption`.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

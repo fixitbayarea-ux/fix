@@ -51,7 +51,7 @@ const AboutPage = () => {
   const schemas = useMemo(() => [
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://fixitbay.net/about" }] } },
     { id: 'person-schema', data: { "@context": "https://schema.org", "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Repair Technician", "worksFor": { "@type": "LocalBusiness", "name": "FixitBay LLC" }, "description": "Licensed CA appliance repair technician (License #51001) with 3+ years of hands-on appliance repair experience in the Bay Area. Former cargo ship mechanical engineer.", "hasCredential": "BHGS License #51001", "knowsAbout": ["appliance repair", "refrigerator repair", "washer repair", "dryer repair", "dishwasher repair", "oven repair"] } },
-    { id: 'video-schema', data: { "@context": "https://schema.org", "@type": "VideoObject", "name": "FixitBay Appliance Repair San Francisco — How It Works", "description": "Licensed appliance repair in San Francisco & Bay Area. Fast scheduling, $60 diagnostic, 180-day warranty. Call (760) 543-5733.", "thumbnailUrl": "https://img.youtube.com/vi/WBEc8Lz2saA/maxresdefault.jpg", "uploadDate": "2024-01-01", "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA", "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net" } } }
+    { id: 'video-schema', data: { "@context": "https://schema.org", "@type": "VideoObject", "name": "FixitBay Appliance Repair San Francisco — How It Works", "description": "Licensed appliance repair in San Francisco & Bay Area. Fast scheduling, $60 diagnostic, 180-day warranty. Call (760) 543-5733.", "thumbnailUrl": "https://img.youtube.com/vi/WBEc8Lz2saA/hqdefault.jpg", "uploadDate": "2024-01-01", "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA", "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net" } } }
   ], []);
   useSchemas(schemas);
 
@@ -87,6 +87,11 @@ const AboutPage = () => {
           .toc-link { transition: all 0.15s; }
           .toc-link:hover { color: #FF7043 !important; padding-left: 4px; }
           .city-pill:hover { color: #FF5722 !important; }
+          .video-thumbnail-card { position: relative; text-decoration: none; color: inherit; display: block; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,87,34,0.2); transition: box-shadow 0.2s, transform 0.2s; }
+          .video-thumbnail-card:hover { box-shadow: 0 4px 16px rgba(255,87,34,0.15); transform: translateY(-2px); }
+          .video-thumb-wrapper { position: relative; }
+          .play-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+          .video-caption { padding: 10px 12px; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.85); font-family: 'Montserrat', sans-serif; margin: 0; }
           @media (max-width: 767px) { body { padding-bottom: 72px; } }
         `}</style>
 
@@ -198,25 +203,25 @@ const AboutPage = () => {
               { id: 'WBEc8Lz2saA', alt: 'Watch how FixitBay LLC repairs appliances in San Francisco', caption: 'Professional Repair Service' },
               { id: 'ottiV_KfcUI', alt: 'FixitBay LLC expert technician at work in Bay Area', caption: 'Expert Technician at Work' },
             ].map((v, i) => (
-              <div key={i} style={{ borderRadius: 8, overflow: 'hidden', border: '1px solid rgba(255,87,34,0.2)', boxShadow: '0 4px 24px rgba(0,0,0,0.3)' }}>
-                <a href={`https://www.youtube.com/watch?v=${v.id}`} target="_blank" rel="noopener noreferrer" style={{ display: 'block', textDecoration: 'none' }} aria-label="opens in new tab">
-                  <div style={{ position: 'relative' }}>
-                    <img
-                      src={`https://img.youtube.com/vi/${v.id}/maxresdefault.jpg`}
-                      alt={v.alt}
-                      style={{ width: '100%', display: 'block', borderRadius: '8px 8px 0 0' }}
-                      loading="lazy"
-                    />
-                    <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 64, height: 64, background: 'rgba(255,87,34,0.9)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <div style={{ width: 0, height: 0, borderTop: '12px solid transparent', borderBottom: '12px solid transparent', borderLeft: '20px solid #fff', marginLeft: 4 }} />
-                    </div>
+              <a key={i} href={`https://www.youtube.com/watch?v=${v.id}`} target="_blank" rel="noopener noreferrer" className="video-thumbnail-card" aria-label={`${v.caption} (opens in new tab)`}>
+                <div className="video-thumb-wrapper">
+                  <img
+                    src={`https://img.youtube.com/vi/${v.id}/hqdefault.jpg`}
+                    alt={v.alt}
+                    width={450}
+                    height={180}
+                    style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: '8px 8px 0 0', display: 'block' }}
+                    loading="lazy"
+                  />
+                  <div className="play-overlay">
+                    <svg viewBox="0 0 24 24" width="48" height="48" fill="white">
+                      <circle cx="12" cy="12" r="12" fill="rgba(0,0,0,0.6)" />
+                      <polygon points="10,8 16,12 10,16" fill="white" />
+                    </svg>
                   </div>
-                  <div style={{ padding: '12px 16px', background: '#1A2F45' }}>
-                    <p style={{ fontFamily: F, fontWeight: 600, fontSize: 13, color: 'rgba(255,255,255,0.75)', marginBottom: 4 }}>{v.caption}</p>
-                    <p style={{ fontFamily: F, fontWeight: 500, fontSize: 12, color: '#FF5722' }}>▶ Watch: How Our Repair Process Works</p>
-                  </div>
-                </a>
-              </div>
+                </div>
+                <p className="video-caption">{v.caption}</p>
+              </a>
             ))}
           </div>
           <p data-testid="video-description" style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.55)', textAlign: 'center', maxWidth: 700, margin: '24px auto 0', lineHeight: 1.7 }}>
