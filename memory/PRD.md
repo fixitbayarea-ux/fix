@@ -148,6 +148,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 09 (Session 16)**: Replaced "Genuine parts" → "OEM & aftermarket parts" and "One-visit resolution" → "Most jobs same visit" in MobileServiceLanding.js CTA section. Also updated LLMInfoPage.js. Brand page FAQs kept as-is (already say "OEM ... parts or equivalents").
 
+- **ПРОМТ 01 (Session 17)**: Fixed stats bar visual alignment on homepage mobile. Unified font sizes for stat numbers to `clamp(22px, 5vw, 30px)`. Increased title font from 9px→10px, unit from 11px→12px. Fixed "180-Day" suffix to use `0.55em` with `verticalAlign: middle`. All 3 stat cells now visually balanced.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

@@ -131,7 +131,7 @@ const ProfessionalLandingPage = () => {
                       {s.numMobile && <span className={`stat-num stat-num-mobile ${s.mobileClass}`} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: 1, color: '#0D1B2A', whiteSpace: 'nowrap', display: 'none' }}>{s.numMobile}</span>}
                       {!s.numMobile && s.mobileClass === 'stat-num-warranty' && (
                         <span className="stat-num stat-num-mobile stat-num-warranty" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: 1, color: '#0D1B2A', display: 'none' }}>
-                          180<span style={{ fontSize: 14, fontWeight: 600, verticalAlign: 'super', marginLeft: 1 }}>-Day</span>
+                          180<span style={{ fontSize: '0.55em', fontWeight: 600, verticalAlign: 'middle' }}>-Day</span>
                         </span>
                       )}
                       <span className="stat-unit" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 20, color: '#FF5722' }}>{s.unit}</span>
@@ -250,18 +250,18 @@ const ProfessionalLandingPage = () => {
           .stats-desktop-grid { display: grid !important; grid-template-columns: 1fr 1px 1fr 1px 1fr; align-items: stretch; gap: 0; padding: 10px 12px; }
           .stats-desktop-grid .stat-divider { display: block !important; width: 1px !important; background: rgba(0,0,0,0.1) !important; margin: 0 !important; align-self: stretch; }
           .stats-desktop-grid .stat-accent-bar { display: none; }
-          .stats-desktop-grid > div:not(.stat-divider) { text-align: center !important; padding: 4px 4px !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 2px !important; overflow: hidden; min-height: 80px; }
+          .stats-desktop-grid > div:not(.stat-divider) { text-align: center !important; padding: 6px 4px !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 2px !important; overflow: hidden; min-height: 80px; }
           .stats-desktop-grid > div:not(.stat-divider) > div { align-items: center !important; }
           .stats-desktop-grid > div:not(.stat-divider) > div > div:first-child { justify-content: center !important; flex-wrap: wrap; }
           .stats-desktop-grid .stat-num-desktop { display: none !important; }
           .stats-desktop-grid .stat-num-mobile { display: inline !important; }
-          .stats-desktop-grid .stat-num-cities { font-size: 32px !important; font-weight: 800; color: #0D1B2A; }
-          .stats-desktop-grid .stat-num-diag { font-size: 22px !important; font-weight: 700; color: #0D1B2A; }
-          .stats-desktop-grid .stat-num-warranty { font-size: 28px !important; font-weight: 800; color: #0D1B2A; }
-          .stats-desktop-grid .stat-unit { font-size: 11px !important; text-transform: uppercase; letter-spacing: 0.5px; }
+          .stats-desktop-grid .stat-num-cities { font-size: clamp(22px, 5vw, 30px) !important; font-weight: 800; color: #0D1B2A; }
+          .stats-desktop-grid .stat-num-diag { font-size: clamp(22px, 5vw, 30px) !important; font-weight: 800; color: #0D1B2A; }
+          .stats-desktop-grid .stat-num-warranty { font-size: clamp(22px, 5vw, 30px) !important; font-weight: 800; color: #0D1B2A; }
+          .stats-desktop-grid .stat-unit { font-size: 12px !important; text-transform: uppercase; letter-spacing: 0.5px; }
           .stats-desktop-grid .stat-title-desktop { display: none !important; }
           .stats-desktop-grid .stat-title-mobile { display: block !important; }
-          .stats-desktop-grid .stat-title { font-size: 9px !important; letter-spacing: 0.08em; }
+          .stats-desktop-grid .stat-title { font-size: 10px !important; letter-spacing: 0.06em; }
           .stats-desktop-grid .stat-desc { display: none; }
         }
         .animate-fadeIn { animation: fadeIn 0.3s ease-out both; }
