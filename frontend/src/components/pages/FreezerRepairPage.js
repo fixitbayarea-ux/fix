@@ -112,12 +112,12 @@ const FreezerRepairPage = () => {
       }}
       repairVsReplace={{
         title: "When to Repair vs. Replace Your Freezer",
-        intro: "Standalone and built-in freezers are built to last — here's how to decide based on what our technicians see.",
+        intro: "A quick guide based on what we see every day in Bay Area homes.",
         items: [
-          { action: 'repair', condition: 'Under 12 years old with a single failure', recommendation: 'Thermostat, defrost timer, or fan motor replacements cost $125–$300 — much less than a new $600+ freezer.' },
-          { action: 'repair', condition: 'Door seal is damaged or worn', recommendation: 'A gasket replacement ($195–$295) restores efficiency and prevents frost buildup. Quick, affordable fix.' },
-          { action: 'replace', condition: 'Compressor failure on a 15+ year unit', recommendation: 'Compressor replacement costs $400–$700. For older freezers, investing in a newer, energy-efficient model saves long-term.' },
-          { action: 'replace', condition: 'Repeated refrigerant leaks', recommendation: 'Multiple leak repairs add up fast. If the sealed system has failed, replacement is the more cost-effective path.' },
+          { action: 'repair', condition: 'Built-in or combo unit', recommendation: 'If the freezer section is part of your refrigerator or a built-in unit, replacement is not an option \u2014 repair is always the right call.' },
+          { action: 'repair', condition: 'Standalone freezer under 10 years old', recommendation: 'Single-component failures (thermostat, defrost heater, evaporator fan) typically cost $250\u2013$400 to fix \u2014 well below the $400\u2013$800 replacement cost of a comparable unit.' },
+          { action: 'replace', condition: 'Compressor failure on an old unit', recommendation: 'Compressor replacement on a 12+ year old chest or upright freezer rarely makes financial sense. A new unit may be the better investment.' },
+          { action: 'replace', condition: 'Multiple failures or unit over 15 years old', recommendation: 'If you\u2019ve had 2+ repairs in the past year or the unit is very old, cumulative costs often exceed the price of a new freezer.' },
         ]
       }}
       relatedLinks={[
