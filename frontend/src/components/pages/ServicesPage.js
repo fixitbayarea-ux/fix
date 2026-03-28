@@ -238,7 +238,7 @@ const ServicesPage = () => {
             </div>
             <div className="sp-eyebrow" style={{ marginBottom: 12 }}>SAN FRANCISCO &amp; BAY AREA</div>
             <h1 data-testid="services-h1">Appliance Repair Services</h1>
-            <p className="sp-hero-sub">$60 diagnostic fee applied to repair. Licensed technicians. 180-day warranty on parts and labor. Same- or next-day and next-day service across 22 cities.</p>
+            <p className="sp-hero-sub">$60 diagnostic fee applied to repair. Licensed technicians. 180-day warranty on parts and labor. Same- or next-day service across 22 cities.</p>
             <div className="sp-hero-ctas">
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="sp-btn-primary" data-testid="services-hero-book-btn" aria-label="opens in new tab">Book Online Now</a>
               <a href="tel:7605435733" className="sp-btn-secondary" data-testid="services-hero-call-btn">(760) 543-5733</a>

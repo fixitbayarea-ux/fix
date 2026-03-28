@@ -156,6 +156,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 04 (Session 17)**: Removed "Click a city" hints from 3 files: `ServiceAreaMapLibre.jsx` ("Click a city to view its local service page."), `ServiceAreasHub.js` ("Click on any city below..."), `MarinCountyPage.js` ("Click your city for local service details."). Adjusted heading margins to compensate for removed paragraphs.
 
+- **ПРОМТ 05 (Session 17)**: Fixed FAQ Q2 and Q8 on homepage. Q2: removed "and next-day" duplicate, added "Monday through Saturday" + "today's availability". Q8: replaced generic booking text with 4 contact methods (online, phone/text, Google, email). Added `whiteSpace: 'pre-line'` to FAQAccordion.jsx for multi-line answers. Global cleanup: removed 40 instances of "same- or next-day and next-day" → "same- or next-day" across 33 files. Updated JSON-LD FAQ schema.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

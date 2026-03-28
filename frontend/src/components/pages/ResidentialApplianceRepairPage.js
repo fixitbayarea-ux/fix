@@ -59,7 +59,7 @@ const ResidentialApplianceRepairPage = () => {
     },
     {
       question: 'How quickly can you come to my Bay Area home for appliance repair?',
-      answer: 'We offer same- or next-day and next-day appointments throughout San Francisco, Peninsula, and Marin County. When you book online or call (760) 543-5733, we will offer the earliest available time slot for your address. For urgent repairs affecting food storage or laundry needs, we prioritize scheduling to minimize inconvenience.'
+      answer: 'We offer same- or next-day appointments throughout San Francisco, Peninsula, and Marin County. When you book online or call (760) 543-5733, we will offer the earliest available time slot for your address. For urgent repairs affecting food storage or laundry needs, we prioritize scheduling to minimize inconvenience.'
     }
   ];
 

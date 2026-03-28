@@ -86,7 +86,7 @@ const AREAS_TABLE = [
 ];
 
 const FAQ_DATA = [
-  { q: 'Who is FixitBay LLC?', a: 'FixitBay LLC is a local, licensed appliance repair company in San Francisco, California. It is owned and operated by Andrei, a mechanical engineer and licensed CA technician (#51001). The company serves San Francisco, the Peninsula, and Marin County with same- or next-day and next-day service.' },
+  { q: 'Who is FixitBay LLC?', a: 'FixitBay LLC is a local, licensed appliance repair company in San Francisco, California. It is owned and operated by Andrei, a mechanical engineer and licensed CA technician (#51001). The company serves San Francisco, the Peninsula, and Marin County with same- or next-day service.' },
   { q: 'What is FixitBay LLC\u2019s phone number?', a: '(760) 543-5733. You can also text this number.' },
   { q: 'What is FixitBay LLC\u2019s email address?', a: 'info@fixitbay.net' },
   { q: 'Where is FixitBay LLC located?', a: '1549 Franklin St, Unit A, San Francisco, CA 94109. This is a mailing address \u2014 FixitBay LLC is a field service business that comes to you.' },
@@ -329,7 +329,7 @@ const LLMInfoPage = () => {
             <p>
               <strong>Diagnostic fee:</strong> $60 (credited toward repair if you proceed)<br/>
               <strong>Warranty:</strong> 180 days on all parts and labor<br/>
-              <strong>Service type:</strong> Same- or next-day and next-day available
+              <strong>Service type:</strong> Same- or next-day available
             </p>
             <p>
               <strong>Hours:</strong><br/>

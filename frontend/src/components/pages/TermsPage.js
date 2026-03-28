@@ -118,7 +118,7 @@ const TermsPage = () => {
                 <SecH num="02" title="Appointments & Scheduling" id="section-2" />
                 <p style={SUB}>Booking</p>
                 <p style={P}>
-                  Appointments can be scheduled by phone at <span style={B}>(760) 543-5733</span>, via text, or through our online booking system at fixitbay.net/book. We offer same- or next-day and next-day appointment windows, subject to availability.
+                  Appointments can be scheduled by phone at <span style={B}>(760) 543-5733</span>, via text, or through our online booking system at fixitbay.net/book. We offer same- or next-day appointment windows, subject to availability.
                 </p>
                 <p style={SUB}>Cancellations</p>
                 <p style={P}>

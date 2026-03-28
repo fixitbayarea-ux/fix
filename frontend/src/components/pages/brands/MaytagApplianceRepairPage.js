@@ -18,7 +18,7 @@ const commonProblems = [
 const faqData = [
   { question: 'All Maytag models?', answer: 'Yes — we repair all Maytag appliances including commercial-grade residential models.' },
   { question: 'Genuine Maytag parts?', answer: 'OEM Maytag/Whirlpool parts or high-quality equivalents.' },
-  { question: 'Same- or next-day Maytag repair?', answer: 'Yes — same- or next-day and next-day throughout SF, Peninsula, and Marin County.' },
+  { question: 'Same- or next-day Maytag repair?', answer: 'Yes — same- or next-day throughout SF, Peninsula, and Marin County.' },
   { question: 'Warranty?', answer: '180-day parts and labor warranty on all Maytag repairs.' },
 ];
 const serviceDescription = {
@@ -26,7 +26,7 @@ const serviceDescription = {
   paragraphs: [
     "Maytag is known for dependable, heavy-duty appliances. Our technicians repair all Maytag models. $60 diagnostic fee credited toward repairs.",
     "We specialize in Maytag's commercial-grade residential technology and heavy-duty wash systems.",
-    "Same- or next-day and next-day service throughout SF Bay Area. 180-day warranty on parts and labor.",
+    "Same- or next-day service throughout SF Bay Area. 180-day warranty on parts and labor.",
   ],
 };
 const DesktopPage = () => (<ApplianceRepairPageNew appliance="Maytag Appliance" pageTitle="Maytag Appliance Repair San Francisco | FixitBay LLC" metaDescription="Maytag appliance repair in San Francisco & Bay Area. Fast scheduling, 180-day warranty. Call (760) 543-5733." commonProblems={commonProblems} faqData={faqData} serviceDescription={serviceDescription} breadcrumbCategoryName="Brands" breadcrumbCategoryHref="/brands" relatedServicesCategory="Laundry" relatedServicesSubtitle="Expert Maytag repair" />);

@@ -34,7 +34,7 @@ const IceMakerRepairPage = () => {
     },
     {
       question: "How quickly can you fix an ice maker that stopped working?",
-      answer: "We offer same- or next-day and next-day service for urgent ice maker issues across the Bay Area. Most problems—like frozen water lines, bad inlet valves, or jammed ice makers—can be diagnosed and repaired within 1-2 hours. Our vans carry common ice maker parts for faster repairs."
+      answer: "We offer same- or next-day service for urgent ice maker issues across the Bay Area. Most problems—like frozen water lines, bad inlet valves, or jammed ice makers—can be diagnosed and repaired within 1-2 hours. Our vans carry common ice maker parts for faster repairs."
     },
     {
       question: "What brands of ice makers do you repair?",

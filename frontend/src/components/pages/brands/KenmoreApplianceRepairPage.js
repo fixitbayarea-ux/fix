@@ -26,7 +26,7 @@ const serviceDescription = {
   paragraphs: [
     "Kenmore has been in American homes for decades. We repair all Kenmore models including the Elite premium line. $60 diagnostic credited toward repairs.",
     "Kenmore appliances use components from various manufacturers — we source all parts quickly from our network.",
-    "Same- or next-day and next-day service throughout SF Bay Area. 180-day warranty on parts and labor.",
+    "Same- or next-day service throughout SF Bay Area. 180-day warranty on parts and labor.",
   ],
 };
 const DesktopPage = () => (<ApplianceRepairPageNew appliance="Kenmore Appliance" pageTitle="Kenmore Appliance Repair San Francisco | FixitBay LLC" metaDescription="Kenmore appliance repair in San Francisco & Bay Area. Elite specialists. Fast scheduling, 180-day warranty. Call (760) 543-5733." commonProblems={commonProblems} faqData={faqData} serviceDescription={serviceDescription} breadcrumbCategoryName="Brands" breadcrumbCategoryHref="/brands" relatedServicesCategory="Kitchen" relatedServicesSubtitle="Expert Kenmore repair" />);

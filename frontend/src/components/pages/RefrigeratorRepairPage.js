@@ -21,7 +21,7 @@ const desktopCommonProblems = [
 
 const desktopFaqData = [
   { question: "How much does refrigerator repair cost?", answer: "$60 diagnostic visit, fully applied to your repair cost. Most repairs run $250–$650, including parts and labor. You get an upfront written quote before any work begins — no surprises." },
-  { question: "How fast can you come?", answer: "Same- or next-day and next-day service across the Bay Area — SF, Peninsula, and Marin County. Most urgent cooling issues are handled the same day." },
+  { question: "How fast can you come?", answer: "Same- or next-day service across the Bay Area — SF, Peninsula, and Marin County. Most urgent cooling issues are handled the same day." },
   { question: "What brands do you repair?", answer: "All major brands: Sub-Zero, Viking, Thermador, Samsung, LG, Whirlpool, GE, Bosch, Miele, KitchenAid, Frigidaire, Maytag, and more." },
   { question: "Do you offer a warranty?", answer: "Yes — every repair comes with a 180-day warranty on parts and labor. If the same issue returns, we fix it at no additional charge." },
   { question: "Do you repair built-in refrigerators?", answer: "Yes — French door, side-by-side, built-in, counter-depth, under-counter, and commercial units. All types and configurations." },
@@ -107,7 +107,7 @@ const mobileIssues = [
 
 const mobileFaqs = [
   { q: 'How much does refrigerator repair cost?', a: '$60 diagnostic visit, fully applied to repair cost. Most repairs run $250–$650. You get an upfront quote before any work begins — no surprises.' },
-  { q: 'How fast can you come?', a: 'Same- or next-day and next-day service across the Bay Area — SF, Peninsula, and Marin County. Most urgent cooling issues are handled the same day.' },
+  { q: 'How fast can you come?', a: 'Same- or next-day service across the Bay Area — SF, Peninsula, and Marin County. Most urgent cooling issues are handled the same day.' },
   { q: 'What brands do you repair?', a: 'All major brands: Sub-Zero, Viking, Thermador, Samsung, LG, Whirlpool, GE, Bosch, Miele, KitchenAid, Frigidaire, Maytag, and more.' },
   { q: 'Do you offer a warranty?', a: 'Yes — every repair comes with a 180-day warranty on parts and labor. If the same issue returns, we fix it at no additional charge.' },
   { q: 'Do you repair built-in refrigerators?', a: 'Yes — French door, side-by-side, built-in, counter-depth, under-counter, and commercial units.' },

@@ -755,7 +755,7 @@ const ApplianceRepairPageNew = ({
           <h2 style={{ ...S.h2, color: '#FFFFFF', marginBottom: 36 }}>How Your {serviceWord} Visit Works</h2>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
             {[
-              { n: 1, t: 'Book Online or Call', d: `Schedule your ${serviceWord.toLowerCase()} at a time that works. Same- or next-day and next-day available.` },
+              { n: 1, t: 'Book Online or Call', d: `Schedule your ${serviceWord.toLowerCase()} at a time that works. Same- or next-day available.` },
               { n: 2, t: 'Diagnostic Visit', d: `Licensed technician arrives on time, inspects your ${appliance.toLowerCase()}, identifies the problem. $60 fee applies.` },
               { n: 3, t: 'Upfront Quote', d: 'Clear written estimate before work begins. $60 diagnostic credited if you proceed.' },
               { n: 4, t: `Professional ${serviceWord}`, d: 'Issue fixed with quality parts. Most jobs completed in one visit. 180-day warranty included.' },
@@ -895,7 +895,7 @@ const ApplianceRepairPageNew = ({
               <div style={{ ...S.eyebrow, marginBottom: 10 }}>COVERAGE</div>
               <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 10 }}>Service Areas for {appliance} {serviceWord}</h2>
               <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>We serve San Francisco, Peninsula &amp; North Bay / Marin County</p>
-              <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#4A5568', marginBottom: 16, lineHeight: 1.7 }}>We provide {appliance.toLowerCase()} {serviceWord.toLowerCase()} throughout San Francisco, Peninsula, and Marin County — including Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara, Mill Valley, San Rafael, Sausalito, Novato, Corte Madera, Larkspur, Greenbrae, Tiburon, Fairfax, San Anselmo, and Ross. Same- or next-day and next-day appointments available across all service areas.</p>
+              <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#4A5568', marginBottom: 16, lineHeight: 1.7 }}>We provide {appliance.toLowerCase()} {serviceWord.toLowerCase()} throughout San Francisco, Peninsula, and Marin County — including Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara, Mill Valley, San Rafael, Sausalito, Novato, Corte Madera, Larkspur, Greenbrae, Tiburon, Fairfax, San Anselmo, and Ross. Same- or next-day appointments available across all service areas.</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'flex-start' }}>
                 {['San Francisco','Daly City','South San Francisco','Colma','Brisbane','San Bruno','Millbrae','Pacifica','Montara','Sausalito','Mill Valley','Tiburon','Belvedere','Corte Madera','San Rafael','Larkspur','Greenbrae','Novato','Ross','Fairfax','San Anselmo'].map(city => {
                   const slug = city.toLowerCase().replace(/\s+/g, '-');

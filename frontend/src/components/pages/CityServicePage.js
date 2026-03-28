@@ -360,7 +360,7 @@ const CityServicePage = () => {
   const serviceDescription = {
     title: `Expert ${serviceName} Repair in ${cityName}`,
     paragraphs: [
-      <>FixitBay LLC provides professional {serviceName.toLowerCase()} repair throughout {cityName}, serving {cityContext.neighborhoods} with same- or next-day and next-day availability. Our licensed technicians arrive with common {serviceName.toLowerCase()} parts stocked—including thermostats, pumps, motors, and control boards—enabling us to complete most repairs during the first visit.</>,
+      <>FixitBay LLC provides professional {serviceName.toLowerCase()} repair throughout {cityName}, serving {cityContext.neighborhoods} with same- or next-day availability. Our licensed technicians arrive with common {serviceName.toLowerCase()} parts stocked—including thermostats, pumps, motors, and control boards—enabling us to complete most repairs during the first visit.</>,
       <><strong>Local expertise matters.</strong> {cityContext.localFactor}</>,
       <><strong>{serviceName} Repair Pricing in {cityName}:</strong> Most repairs cost {pricing.range} after the $60 diagnostic fee. Common repairs include: {pricing.common}. We provide exact pricing before starting any work, and the $60 diagnostic is fully applied to your repair cost.</>,
       <>Every {serviceName.toLowerCase()} repair in {cityName} includes our comprehensive <strong>180-day warranty</strong> on parts and labor. We service all major brands including Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Viking, and Thermador. Call <a href="tel:+17605435733">(760) 543-5733</a> or <a href="/book">book online</a> for fast {serviceName.toLowerCase()} repair service in {cityName}.</>,

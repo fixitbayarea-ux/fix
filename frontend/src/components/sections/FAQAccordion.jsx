@@ -24,7 +24,7 @@ const FAQAccordion = ({ faqs, background = '#F8F5F0', testIdPrefix = 'faq' }) =>
               <span style={{ fontFamily: S_FONT, fontSize: 22, color: '#FF5722', flexShrink: 0 }}>{openIdx === i ? '\u00D7' : '+'}</span>
             </button>
             <div id={`${testIdPrefix}-panel-${i}`} role="region" style={{ maxHeight: openIdx === i ? 500 : 0, overflow: 'hidden', transition: 'max-height 0.3s ease' }}>
-              <div style={{ fontFamily: S_FONT, fontSize: 14, lineHeight: 1.7, color: '#4A5568', paddingTop: 14, borderLeft: '2px solid #FF5722', paddingLeft: 16 }}>{faq.answer}</div>
+              <div style={{ fontFamily: S_FONT, fontSize: 14, lineHeight: 1.7, color: '#4A5568', paddingTop: 14, borderLeft: '2px solid #FF5722', paddingLeft: 16, whiteSpace: 'pre-line' }}>{faq.answer}</div>
             </div>
           </div>
         ))}

@@ -34,7 +34,7 @@ const WasherRepairPage = () => {
     },
     {
       question: "How quickly can you fix a washer that won't drain or spin?",
-      answer: "We offer same- or next-day and next-day service for urgent washer issues across the Bay Area. Most drainage and spinning problems—like clogged pumps, broken belts, or faulty lid switches—can be diagnosed and repaired within 1-2 hours. Our vans carry common washer parts for faster repairs."
+      answer: "We offer same- or next-day service for urgent washer issues across the Bay Area. Most drainage and spinning problems—like clogged pumps, broken belts, or faulty lid switches—can be diagnosed and repaired within 1-2 hours. Our vans carry common washer parts for faster repairs."
     },
     {
       question: "What brands of washers do you repair?",

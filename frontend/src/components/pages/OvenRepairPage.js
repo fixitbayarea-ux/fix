@@ -34,7 +34,7 @@ const OvenRepairPage = () => {
     },
     {
       question: "How quickly can you fix an oven that's not heating?",
-      answer: "We offer same- or next-day and next-day service for urgent oven issues across the Bay Area. Most heating problems—like bad igniters, broken heating elements, or faulty sensors—can be diagnosed and repaired within 1-2 hours. Our vans carry common oven parts for faster repairs."
+      answer: "We offer same- or next-day service for urgent oven issues across the Bay Area. Most heating problems—like bad igniters, broken heating elements, or faulty sensors—can be diagnosed and repaired within 1-2 hours. Our vans carry common oven parts for faster repairs."
     },
     {
       question: "What brands of ovens do you repair?",

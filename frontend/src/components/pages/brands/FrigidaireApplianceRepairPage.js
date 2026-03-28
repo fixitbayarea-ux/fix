@@ -18,7 +18,7 @@ const commonProblems = [
 const faqData = [
   { question: 'All Frigidaire models?', answer: 'Yes — standard, Gallery, and Professional lines. All appliance types.' },
   { question: 'Genuine Frigidaire parts?', answer: 'OEM Frigidaire/Electrolux parts or high-quality equivalents.' },
-  { question: 'Fast scheduling?', answer: 'Yes — same- or next-day and next-day throughout SF, Peninsula, and Marin County.' },
+  { question: 'Fast scheduling?', answer: 'Yes — same- or next-day throughout SF, Peninsula, and Marin County.' },
   { question: 'Warranty?', answer: '180-day parts and labor warranty on all Frigidaire repairs.' },
 ];
 const serviceDescription = {
@@ -26,7 +26,7 @@ const serviceDescription = {
   paragraphs: [
     "Frigidaire, part of the Electrolux family, offers reliable appliances for every home. We repair all Frigidaire lines. $60 diagnostic credited toward repairs.",
     "We service Frigidaire Gallery and Professional premium lines with genuine parts.",
-    "Same- or next-day and next-day service throughout SF Bay Area. 180-day warranty on parts and labor.",
+    "Same- or next-day service throughout SF Bay Area. 180-day warranty on parts and labor.",
   ],
 };
 const DesktopPage = () => (<ApplianceRepairPageNew appliance="Frigidaire Appliance" pageTitle="Frigidaire Appliance Repair San Francisco | FixitBay LLC" metaDescription="Frigidaire appliance repair in San Francisco & Bay Area. Fast scheduling, 180-day warranty. Call (760) 543-5733." commonProblems={commonProblems} faqData={faqData} serviceDescription={serviceDescription} breadcrumbCategoryName="Brands" breadcrumbCategoryHref="/brands" relatedServicesCategory="Kitchen" relatedServicesSubtitle="Expert Frigidaire repair" />);

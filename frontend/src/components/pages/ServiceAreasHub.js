@@ -133,7 +133,7 @@ const ServiceAreasHub = () => (
           FixitBay LLC provides professional in-home appliance repair across <strong>22 cities</strong> in San Francisco, the Peninsula, and North Bay communities. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, and more — bringing expertise and quality parts directly to your home, condo, or apartment.
         </p>
         <p style={{ fontSize: 14, fontWeight: 400, lineHeight: 1.8, color: C.text, marginBottom: 16 }}>
-          We offer same- or next-day and next-day appointments throughout the Bay Area. Whether you're in a Mission District apartment, a Pacifica coastal home, or a Mill Valley hillside residence, our team responds quickly with fully-stocked service vehicles. Every repair is backed by our comprehensive <strong>180-day warranty</strong> on parts and labor.
+          We offer same- or next-day appointments throughout the Bay Area. Whether you're in a Mission District apartment, a Pacifica coastal home, or a Mill Valley hillside residence, our team responds quickly with fully-stocked service vehicles. Every repair is backed by our comprehensive <strong>180-day warranty</strong> on parts and labor.
         </p>
       </div>
     </section>

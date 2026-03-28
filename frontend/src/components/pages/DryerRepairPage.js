@@ -34,7 +34,7 @@ const DryerRepairPage = () => {
     },
     {
       question: "How quickly can you fix a dryer that's not heating?",
-      answer: "We offer same- or next-day and next-day service for urgent dryer issues across the Bay Area. Most heating problems—like bad heating elements, blown thermal fuses, or clogged vents—can be diagnosed and repaired within 1-2 hours. Our vans carry common dryer parts for fast repairs."
+      answer: "We offer same- or next-day service for urgent dryer issues across the Bay Area. Most heating problems—like bad heating elements, blown thermal fuses, or clogged vents—can be diagnosed and repaired within 1-2 hours. Our vans carry common dryer parts for fast repairs."
     },
     {
       question: "What brands of dryers do you repair?",

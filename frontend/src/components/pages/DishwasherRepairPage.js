@@ -30,7 +30,7 @@ const DishwasherRepairPage = () => {
     },
     {
       question: "How quickly can you fix a dishwasher that's leaking?",
-      answer: "We offer same- or next-day and next-day service for urgent dishwasher issues across the Bay Area. Most leak problems—like worn door seals, loose hose connections, or damaged spray arms—can be diagnosed and repaired within 1-2 hours. Our vans carry common dishwasher parts for faster repairs."
+      answer: "We offer same- or next-day service for urgent dishwasher issues across the Bay Area. Most leak problems—like worn door seals, loose hose connections, or damaged spray arms—can be diagnosed and repaired within 1-2 hours. Our vans carry common dishwasher parts for faster repairs."
     },
     {
       question: "What brands of dishwashers do you repair?",

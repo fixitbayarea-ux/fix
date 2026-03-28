@@ -19,7 +19,7 @@ const FAQ_ITEMS = [
   { q: "Is the diagnostic fee worth it?", a: "Yes. The $60 diagnostic gives you an exact diagnosis and upfront repair estimate with no obligation. Companies that offer \u2018free diagnostics\u2019 typically build that cost into inflated repair prices. Our diagnostic fee ensures you get honest pricing whether you proceed with the repair or not." },
   { q: "Why is appliance repair more expensive in San Francisco?", a: "SF repair costs are 20\u201340% higher than suburban areas due to parking costs, building access logistics, older housing stock requiring extra labor, higher concentration of European luxury appliances with expensive parts, and the general cost of doing business in the city." },
   { q: "Is it cheaper to repair or replace an appliance?", a: "General rule: if the repair costs less than 50% of a new appliance and the unit is under 8\u201310 years old, repair makes sense. For luxury brands like Sub-Zero ($5,000\u2013$15,000 new), repair is almost always the better choice. For standard brands over 12 years old with major failures, replacement often wins." },
-  { q: "Does FixitBay LLC charge extra for weekends or emergency service?", a: "FixitBay LLC offers same- or next-day and next-day appointments Monday through Saturday at the same pricing. No emergency surcharges, no weekend premiums. The $60 diagnostic fee and quoted repair prices apply equally regardless of when we come." },
+  { q: "Does FixitBay LLC charge extra for weekends or emergency service?", a: "FixitBay LLC offers same- or next-day appointments Monday through Saturday at the same pricing. No emergency surcharges, no weekend premiums. The $60 diagnostic fee and quoted repair prices apply equally regardless of when we come." },
 ];
 
 const TOC = [
