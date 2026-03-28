@@ -422,6 +422,38 @@ export default function App() {
         <Route path="/san-anselmo-oven-repair" element={<CityServicePage />} />
         <Route path="/san-anselmo-wine-cooler-repair" element={<CityServicePage />} />
         <Route path="/san-anselmo-ice-maker-repair" element={<CityServicePage />} />
+        {/* Colma */}
+        <Route path="/colma-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/colma-washer-repair" element={<CityServicePage />} />
+        <Route path="/colma-dryer-repair" element={<CityServicePage />} />
+        <Route path="/colma-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/colma-oven-repair" element={<CityServicePage />} />
+        <Route path="/colma-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/colma-ice-maker-repair" element={<CityServicePage />} />
+        {/* Brisbane */}
+        <Route path="/brisbane-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/brisbane-washer-repair" element={<CityServicePage />} />
+        <Route path="/brisbane-dryer-repair" element={<CityServicePage />} />
+        <Route path="/brisbane-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/brisbane-oven-repair" element={<CityServicePage />} />
+        <Route path="/brisbane-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/brisbane-ice-maker-repair" element={<CityServicePage />} />
+        {/* Montara */}
+        <Route path="/montara-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/montara-washer-repair" element={<CityServicePage />} />
+        <Route path="/montara-dryer-repair" element={<CityServicePage />} />
+        <Route path="/montara-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/montara-oven-repair" element={<CityServicePage />} />
+        <Route path="/montara-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/montara-ice-maker-repair" element={<CityServicePage />} />
+        {/* San Quentin */}
+        <Route path="/san-quentin-refrigerator-repair" element={<CityServicePage />} />
+        <Route path="/san-quentin-washer-repair" element={<CityServicePage />} />
+        <Route path="/san-quentin-dryer-repair" element={<CityServicePage />} />
+        <Route path="/san-quentin-dishwasher-repair" element={<CityServicePage />} />
+        <Route path="/san-quentin-oven-repair" element={<CityServicePage />} />
+        <Route path="/san-quentin-wine-cooler-repair" element={<CityServicePage />} />
+        <Route path="/san-quentin-ice-maker-repair" element={<CityServicePage />} />
         
         <Route path="/whirlpool-appliance-repair" element={<WhirlpoolApplianceRepairPage />} />
         <Route path="/lg-appliance-repair" element={<LGApplianceRepairPage />} />

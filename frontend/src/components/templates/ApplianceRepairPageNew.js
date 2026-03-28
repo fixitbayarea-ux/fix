@@ -898,7 +898,7 @@ const ApplianceRepairPageNew = ({
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'flex-start' }}>
                 {['San Francisco','Daly City','South San Francisco','Colma','Brisbane','San Bruno','Millbrae','Pacifica','Montara','Sausalito','Mill Valley','Tiburon','Belvedere','Corte Madera','San Rafael','Larkspur','Greenbrae','Novato','Ross','Fairfax','San Anselmo'].map(city => {
                   const slug = city.toLowerCase().replace(/\s+/g, '-');
-                  const href = hasCityServiceRoutes && CITY_SERVICE_SLUGS.includes(slug) ? `/${slug}-${svcSlug}-repair` : `/${slug}-appliance-repair`;
+                  const href = `/${slug}-${svcSlug}-repair`;
                   return (
                     <Link key={city} to={href} style={{ fontFamily: S.font, fontWeight: 500, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.10)', borderRadius: 20, padding: '7px 16px', whiteSpace: 'nowrap', cursor: 'pointer', transition: 'all 0.15s ease' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#0D1B2A'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.10)'; }}>
                       {city}

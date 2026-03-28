@@ -366,24 +366,21 @@ const MobileServiceLanding = ({
         <h2 style={{ fontSize: 22, fontWeight: 800, color: PC.white, margin: '0 0 10px' }}>San Francisco &middot; Peninsula &middot; Marin</h2>
         <p style={{ fontSize: 13, color: PC.white60, margin: '0 0 16px', lineHeight: 1.6 }}>Fast, reliable service across the Bay Area — no travel surcharge within SF city limits.</p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 12, marginBottom: 16 }}>
-          <div style={{ background: PC.white08, border: `1px solid ${PC.white10}`, borderTop: `3px solid ${PC.accent}`, borderRadius: PC.r, padding: '12px 10px' }}>
-            <p style={{ fontWeight: 700, fontSize: 12, color: PC.white, margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>SF</p>
-            {['All neighborhoods', 'Same- or next-day', 'No surcharge'].map((t, i) => (
-              <p key={i} style={{ fontSize: 11, color: PC.white60, margin: '0 0 3px', lineHeight: 1.4 }}>&middot; {t}</p>
-            ))}
-          </div>
-          <div style={{ background: PC.white08, border: `1px solid ${PC.white10}`, borderTop: `3px solid ${PC.accent}`, borderRadius: PC.r, padding: '12px 10px' }}>
-            <p style={{ fontWeight: 700, fontSize: 12, color: PC.white, margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Peninsula</p>
-            {['Daly City', 'South SF', 'San Mateo', 'Millbrae', 'Pacifica'].map((t, i) => (
-              <p key={i} style={{ fontSize: 11, color: PC.white60, margin: '0 0 3px', lineHeight: 1.4 }}>&middot; {t}</p>
-            ))}
-          </div>
-          <div style={{ background: PC.white08, border: `1px solid ${PC.white10}`, borderTop: `3px solid ${PC.accent}`, borderRadius: PC.r, padding: '12px 10px' }}>
-            <p style={{ fontWeight: 700, fontSize: 12, color: PC.white, margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Marin</p>
-            {['San Rafael', 'Novato', 'Mill Valley', 'Sausalito', 'Tiburon'].map((t, i) => (
-              <p key={i} style={{ fontSize: 11, color: PC.white60, margin: '0 0 3px', lineHeight: 1.4 }}>&middot; {t}</p>
-            ))}
-          </div>
+          {[
+            { label: 'SF', cities: [{ name: 'San Francisco', slug: 'san-francisco' }], extra: ['Same- or next-day', 'No surcharge'] },
+            { label: 'Peninsula', cities: [{ name: 'Daly City', slug: 'daly-city' }, { name: 'South SF', slug: 'south-san-francisco' }, { name: 'San Bruno', slug: 'san-bruno' }, { name: 'Millbrae', slug: 'millbrae' }, { name: 'Pacifica', slug: 'pacifica' }] },
+            { label: 'Marin', cities: [{ name: 'San Rafael', slug: 'san-rafael' }, { name: 'Novato', slug: 'novato' }, { name: 'Mill Valley', slug: 'mill-valley' }, { name: 'Sausalito', slug: 'sausalito' }, { name: 'Tiburon', slug: 'tiburon' }] },
+          ].map(group => (
+            <div key={group.label} style={{ background: PC.white08, border: `1px solid ${PC.white10}`, borderTop: `3px solid ${PC.accent}`, borderRadius: PC.r, padding: '12px 10px' }}>
+              <p style={{ fontWeight: 700, fontSize: 12, color: PC.white, margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{group.label}</p>
+              {group.cities.map(c => (
+                <a key={c.slug} href={`/${c.slug}-${pageSlug}`} style={{ fontSize: 11, color: PC.white60, margin: '0 0 3px', lineHeight: 1.4, display: 'block', textDecoration: 'none' }}>&middot; {c.name}</a>
+              ))}
+              {group.extra?.map((t, i) => (
+                <p key={i} style={{ fontSize: 11, color: PC.white60, margin: '0 0 3px', lineHeight: 1.4 }}>&middot; {t}</p>
+              ))}
+            </div>
+          ))}
         </div>
         <a href="/service-areas" data-testid="view-all-areas" style={{ fontSize: 13, color: PC.accent, fontWeight: 700, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 4 }}>
           View all service areas &rarr;

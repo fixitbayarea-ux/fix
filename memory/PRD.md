@@ -132,6 +132,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 01-fix (Session 16)**: Fixed tiny brand logos on all mobile service pages. Root cause: `MobileServiceLanding.js` had `maxHeight: 28px` + `width: 75%`. Changed to `height: 40px` + `width: 100%` + `minHeight: 64px` cells + `gap: 12px`. Applied to all service pages via shared template.
 
+- **ПРОМТ 02 (Session 16)**: Fixed generic city links on service pages. Added 28 CityServicePage routes for colma/brisbane/montara/san-quentin in App.js. Converted static city text to clickable `<a>` links in MobileServiceLanding.js using `pageSlug` for service-specific URLs. Removed fallback to generic `appliance-repair` in desktop template. All 21 cities now link to `/{city}-{service}-repair`.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
