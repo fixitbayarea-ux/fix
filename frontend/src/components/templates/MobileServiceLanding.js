@@ -416,7 +416,7 @@ const MobileServiceLanding = ({
       <section style={{ background: PC.navy, padding: '32px 20px' }} aria-label="Customer reviews" data-testid="reviews-section">
         <h2 style={{ fontSize: 22, fontWeight: 800, color: PC.white, margin: '0 0 6px', textAlign: 'center', fontFamily: F }}>What SF Customers Say</h2>
         <p style={{ fontFamily: F, fontSize: 13, color: PC.white60, margin: '0 0 24px', textAlign: 'center' }}>
-          <span style={{ color: PC.accent }}>&#9733;</span> 4.9 / 5 &middot; Google: 82 &middot; Thumbtack: 117
+          <span style={{ color: PC.accent }}>&#9733;</span> 4.9 / 5 &middot; Google: 95 &middot; Thumbtack: 153
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
           {reviews.map((r, i) => (
