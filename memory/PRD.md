@@ -134,6 +134,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 02 (Session 16)**: Fixed generic city links on service pages. Added 28 CityServicePage routes for colma/brisbane/montara/san-quentin in App.js. Converted static city text to clickable `<a>` links in MobileServiceLanding.js using `pageSlug` for service-specific URLs. Removed fallback to generic `appliance-repair` in desktop template. All 21 cities now link to `/{city}-{service}-repair`.
 
+- **ПРОМТ 03 (Session 16)**: Fixed Andrei's experience from "10+ years" to "3+ years" across 14 files: MobileServiceLanding.js, AboutPage.js (schema + meta), and 11 blog author bios. Also changed "Mechanical engineer" to "Licensed CA appliance technician" and "Certified" to "Licensed" throughout.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

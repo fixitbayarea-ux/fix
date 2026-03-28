@@ -190,7 +190,7 @@ const RefrigeratorNotCooling = () => {
                 <span style={{ fontWeight: 600, color: '#1A1A1A' }}>A warm refrigerator puts your food — and your grocery budget — at risk.</span> Before you call for service, there are things you can check yourself. Below are the 8 most common reasons a refrigerator stops cooling, ranked from simplest DIY fix to problems that need a licensed technician.
               </p>
               <p style={{ ...P, marginBottom: 16 }}>
-                As an <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>appliance repair</a> tech in San Francisco for over 10 years, I see every one of these weekly — especially in older Victorian and Edwardian homes across the city.
+                As an <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>appliance repair</a> tech in San Francisco for over 3 years, I see every one of these weekly — especially in older Victorian and Edwardian homes across the city.
               </p>
               <p style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#1A3B5D', fontStyle: 'italic', marginBottom: 28 }}>
                 — Andrei, Licensed Appliance Technician, FixitBay LLC
@@ -365,7 +365,7 @@ const RefrigeratorNotCooling = () => {
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 2 }}>Written by</p>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 2 }}>Andrei — Lead Appliance Technician</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Certified CA technician &middot; License #51001 &middot; 10+ years experience in Bay Area</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Licensed CA technician &middot; License #51001 &middot; 3+ years experience in Bay Area</p>
                 </div>
               </div>
             </article>

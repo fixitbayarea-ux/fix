@@ -50,7 +50,7 @@ const AboutPage = () => {
 
   const schemas = useMemo(() => [
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://fixitbay.net/about" }] } },
-    { id: 'person-schema', data: { "@context": "https://schema.org", "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Repair Technician", "worksFor": { "@type": "LocalBusiness", "name": "FixitBay LLC" }, "description": "Licensed CA appliance repair technician (License #51001). Mechanical engineer with 10+ years experience. Former cargo ship boatswain.", "hasCredential": "BHGS License #51001", "knowsAbout": ["appliance repair", "refrigerator repair", "washer repair", "dryer repair", "dishwasher repair", "oven repair"] } },
+    { id: 'person-schema', data: { "@context": "https://schema.org", "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Repair Technician", "worksFor": { "@type": "LocalBusiness", "name": "FixitBay LLC" }, "description": "Licensed CA appliance repair technician (License #51001) with 3+ years of hands-on appliance repair experience in the Bay Area. Former cargo ship mechanical engineer.", "hasCredential": "BHGS License #51001", "knowsAbout": ["appliance repair", "refrigerator repair", "washer repair", "dryer repair", "dishwasher repair", "oven repair"] } },
     { id: 'video-schema', data: { "@context": "https://schema.org", "@type": "VideoObject", "name": "FixitBay Appliance Repair San Francisco — How It Works", "description": "Licensed appliance repair in San Francisco & Bay Area. Fast scheduling, $60 diagnostic, 180-day warranty. Call (760) 543-5733.", "thumbnailUrl": "https://img.youtube.com/vi/WBEc8Lz2saA/maxresdefault.jpg", "uploadDate": "2024-01-01", "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA", "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net" } } }
   ], []);
   useSchemas(schemas);
@@ -59,7 +59,7 @@ const AboutPage = () => {
     <>
       <SEOMetaTags
         title="About FixitBay LLC | Licensed Appliance Repair SF Bay Area"
-        description="Meet Andrei, FixitBay LLC's licensed appliance repair technician (CA License #51001). Mechanical engineer, 10+ years experience, 4.9 Google rating. Serving San Francisco and Bay Area."
+        description="Meet Andrei, FixitBay LLC's licensed appliance repair technician (CA License #51001). Licensed technician, 3+ years experience, 4.9 Google rating. Serving San Francisco and Bay Area."
         canonical="https://fixitbay.net/about"
       />
       <div style={{ fontFamily: F }}>

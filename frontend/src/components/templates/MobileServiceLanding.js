@@ -332,7 +332,7 @@ const MobileServiceLanding = ({
             <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '45%', background: `linear-gradient(to bottom, transparent, ${PC.navyMid})` }} />
             <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '16px 20px' }}>
               <p style={{ fontWeight: 700, fontSize: 14, color: PC.white, margin: '0 0 2px', fontFamily: F }}>Andrei — Lead Technician</p>
-              <p style={{ fontSize: 12, color: PC.white60, margin: 0, fontFamily: F }}>Mechanical engineer &middot; BHGS License #51001</p>
+              <p style={{ fontSize: 12, color: PC.white60, margin: 0, fontFamily: F }}>Licensed CA Technician &middot; License #51001</p>
             </div>
           </div>
         </section>
@@ -396,7 +396,7 @@ const MobileServiceLanding = ({
           )}
           <div>
             <p style={{ fontWeight: 700, fontSize: 15, color: PC.textDark, margin: '0 0 6px', fontFamily: F }}>Andrei — Lead Technician</p>
-            <p style={{ fontSize: 13, color: PC.textMid, margin: '0 0 10px', lineHeight: 1.5, fontFamily: F }}>Mechanical engineer with 10+ years experience. Diagnoses and fixes what others miss. BHGS License #51001.</p>
+            <p style={{ fontSize: 13, color: PC.textMid, margin: '0 0 10px', lineHeight: 1.5, fontFamily: F }}>Licensed CA appliance technician with 3+ years of hands-on repair experience in the Bay Area. Diagnoses and fixes what others miss. License #51001.</p>
             <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
               {['Licensed & Insured', '3+ Years Exp.', 'Fast Sched.'].map((tag, i) => (
                 <span key={i} style={{
