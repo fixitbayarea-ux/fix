@@ -7,7 +7,7 @@ const BOOKING_URL = 'https://book.housecallpro.com/book/FixitBay-LLC/336ac28909f
 
 /* ───────────────────── DATA ───────────────────── */
 const STEPS = [
-  { num: '1', title: 'Pick a Time', body: 'Choose same- or next-day or next-day. Slots fill fast \u2014 book early.' },
+  { num: '1', title: 'Pick a Time', body: 'Choose same- or next-day. Slots fill fast \u2014 book early.' },
   { num: '2', title: 'We Confirm', body: 'You get a confirmation with your technician\u2019s name and ETA.' },
   { num: '3', title: '$60 Diagnostic', body: 'Tech arrives, inspects, identifies the problem. Fee credited to repair.' },
   { num: '4', title: 'Repaired On-Site', body: 'Most repairs done in one visit. 180-day warranty included.' },

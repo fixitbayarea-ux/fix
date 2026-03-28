@@ -97,7 +97,7 @@ const HomeHero = () => {
                 ⚡ Most slots filled by noon — book now to secure today
               </p>
               <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.38)', margin: '4px 0 0 0', lineHeight: 1.6 }}>
-                Same- or next-day &amp; next-day &middot; Mon–Sat
+                Same- or next-day &middot; Mon–Sat
               </p>
             </div>
 
@@ -133,7 +133,7 @@ const HomeHero = () => {
                 ⚡ Most slots filled by noon — book now to secure today
               </p>
               {/* Mobile schedule note */}
-              <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.35)', textAlign: 'center', marginTop: 12 }}>Same- or next-day & next-day &middot; Mon–Sat</p>
+              <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.35)', textAlign: 'center', marginTop: 12 }}>Same- or next-day &middot; Mon–Sat</p>
             </div>
           </div>
         </div>

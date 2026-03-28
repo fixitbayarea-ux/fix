@@ -36,7 +36,7 @@ const BlogCTA = () => (
         Book Online &mdash; $60 Diagnostic
       </a>
       <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.4)', marginTop: 12 }}>
-        Same- or next-day &amp; next-day appointments &middot; 180-day warranty
+        Same- or next-day appointments &middot; 180-day warranty
       </p>
     </div>
   </section>

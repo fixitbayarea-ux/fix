@@ -424,7 +424,7 @@ const ApplianceRepairPageNew = ({
               <span style={{ ...S.eyebrow, letterSpacing: '0.22em' }}>{cityName.toUpperCase()} APPLIANCE REPAIR</span>
             </div>
             <h1 className="hero-main-h1" data-testid="city-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in<br/>{cityName}</h1>
-            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same- or next-day & next-day &middot; $60 diagnostic &middot; 180-day warranty</p>
+            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same- or next-day &middot; $60 diagnostic &middot; 180-day warranty</p>
             {/* Urgency micro-copy */}
             <p data-testid="city-hero-urgency" style={{ fontFamily: S.font, fontSize: 12, color: 'rgba(255,255,255,0.65)', marginTop: 12 }}>
               Most slots filled by noon — book now to secure today
@@ -571,7 +571,7 @@ const ApplianceRepairPageNew = ({
         <section data-testid="city-final-cta" style={{ background: '#0D1B2A', borderTop: '3px solid #FF5722', padding: '70px 0', textAlign: 'center' }}>
           <div style={{ maxWidth: 700, margin: '0 auto', padding: '0 24px' }}>
             <h3 style={{ fontFamily: S.font, fontWeight: 800, fontSize: 40, color: '#FFFFFF', lineHeight: 1.15, marginBottom: 12 }}>Need Appliance Repair in {cityName}?</h3>
-            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 12, marginBottom: 28 }}>Same- or next-day & next-day appointments available across all neighborhoods</p>
+            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 12, marginBottom: 28 }}>Same- or next-day appointments available across all neighborhoods</p>
             <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href="/book?go=1" data-testid="city-final-book" style={{ display: 'inline-flex', alignItems: 'center', padding: '16px 32px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>{`BOOK ${serviceWord.toUpperCase()} ONLINE`}</a>
               <a href="tel:+17605435733" data-testid="city-final-call" style={{ display: 'inline-flex', alignItems: 'center', padding: '16px 28px', borderRadius: 3, background: 'transparent', minHeight: 52, border: '2px solid rgba(255,255,255,0.65)', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none', transition: 'border-color 0.2s, color 0.2s' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.color = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.65)'; e.currentTarget.style.color = '#FFFFFF'; }}>CALL (760) 543-5733</a>

@@ -174,6 +174,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 13 (Session 17)**: Enlarged brand hero logo from 80×80px to 160×80px container with `object-fit: contain` in `BrandLandingPage.js`. Applied to all brand pages. Also fixed one remaining `"next-day &amp; next-day"` duplicate.
 
+- **ПРОМТ 14 (Session 17)**: Global cleanup of "next-day" duplication. Removed 25 instances across 18 files — patterns: `"next-day & next-day"`, `"next-day &amp; next-day"`, `"next-day and next-day"`, `"next-day or next-day"` → all replaced with `"next-day"`. Affected files include ContactPage, BrandLandingPage, all Commercial pages, BlogCTA, SanFrancisco, CityHeroNew, CTABanner, HomeHero, and others.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

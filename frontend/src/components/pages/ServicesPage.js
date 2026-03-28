@@ -408,7 +408,7 @@ const ServicesPage = () => {
         <section className="sp-cta" data-testid="services-final-cta">
           <div className="sp-eyebrow" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 8 }}>GET STARTED</div>
           <div className="sp-cta-title">Not Sure Which Service You Need?</div>
-          <p className="sp-cta-sub">Call us and describe the problem. We will book the right technician for same- or next-day or next-day service &mdash; no guessing required.</p>
+          <p className="sp-cta-sub">Call us and describe the problem. We will book the right technician for same- or next-day service &mdash; no guessing required.</p>
           <div className="sp-cta-btns">
             <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="sp-btn-primary" data-testid="services-cta-book-btn" aria-label="opens in new tab">Book Online</a>
             <a href="tel:7605435733" className="sp-btn-secondary" style={{ borderWidth: 1, borderColor: 'rgba(255,255,255,0.4)' }} data-testid="services-cta-call-btn">(760) 543-5733</a>

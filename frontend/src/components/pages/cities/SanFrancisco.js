@@ -239,7 +239,7 @@ const SanFrancisco = () => {
           <h1 className="hero-main-h1" data-testid="sf-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in San&nbsp;Francisco</h1>
           {/* Subtext */}
           <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>
-            Same- or next-day & next-day service &middot; $60 diagnostic &middot; 180-day warranty on all repairs
+            Same- or next-day service &middot; $60 diagnostic &middot; 180-day warranty on all repairs
           </p>
           {/* Stats grid */}
           <div className="city-stats-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, background: '#1A2F45', borderRadius: 12, margin: '16px 0 0', overflow: 'hidden' }}>
@@ -379,7 +379,7 @@ const SanFrancisco = () => {
       <section data-testid="sf-cta-banner" style={{ background: '#0D1B2A', borderTop: '3px solid #FF5722', borderBottom: '3px solid #FF5722', padding: '60px 0', textAlign: 'center' }}>
         <div style={{ maxWidth: 700, margin: '0 auto', padding: '0 24px' }}>
           <h2 style={{ ...S.h2, color: '#FFFFFF', marginBottom: 12 }}>Need Appliance Repair Today?</h2>
-          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginBottom: 28 }}>Same- or next-day & next-day appointments available</p>
+          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginBottom: 28 }}>Same- or next-day appointments available</p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
             <a href="tel:+17605435733" data-testid="sf-cta-call" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 30px', borderRadius: 3, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none' }}>
               <Phone size={16} /> Call (760) 543-5733

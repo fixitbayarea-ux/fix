@@ -139,7 +139,7 @@ const mobileIssues = [
 
 const mobileFaqs = [
   { q: 'Do you repair all types of commercial ovens?', a: 'Yes — convection, deck, pizza, combi, conveyor ovens, commercial ranges, griddles, and range hoods.' },
-  { q: 'How fast can you respond?', a: 'Same- or next-day or next-day priority service for commercial kitchen equipment.' },
+  { q: 'How fast can you respond?', a: 'Same- or next-day priority service for commercial kitchen equipment.' },
   { q: 'What brands do you repair?', a: 'Vulcan, Blodgett, Rational, Alto-Shaam, Bakers Pride, Garland, and all major commercial oven brands.' },
   { q: 'Is there a warranty?', a: '180-day warranty on parts and labor for all commercial oven repairs.' },
 ];

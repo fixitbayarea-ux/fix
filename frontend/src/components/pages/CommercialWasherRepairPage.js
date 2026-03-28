@@ -21,7 +21,7 @@ const faqData = [
   { question: 'Do you repair both coin-operated and card-operated commercial washers?', answer: 'Yes. We service coin-operated, card-operated, and app-controlled commercial washers. We also repair the payment mechanisms themselves — coin slides, coin acceptors, card readers, and network-connected payment systems used in modern laundromat equipment.' },
   { question: 'What commercial washer brands do you repair?', answer: 'We repair Speed Queen, Maytag Commercial, Dexter, Huebsch, Wascomat, Electrolux Professional, Whirlpool Commercial, Continental Girbau, IPSO, and UniMac. Our technician carries common parts for Speed Queen and Dexter units, the two most common brands in San Francisco laundromats.' },
   { question: 'Can you service large-capacity washer-extractors?', answer: 'Yes. We work on commercial washer-extractors from 20 lb to 125 lb capacity, including soft-mount and hard-mount configurations used in hotels, hospitals, and industrial laundry operations.' },
-  { question: 'How quickly can you respond to a laundromat washer breakdown?', answer: 'We prioritize commercial laundry equipment for same- or next-day or next-day service. A broken washer in a laundromat directly costs revenue, so we treat these as urgent calls.' },
+  { question: 'How quickly can you respond to a laundromat washer breakdown?', answer: 'We prioritize commercial laundry equipment for same- or next-day service. A broken washer in a laundromat directly costs revenue, so we treat these as urgent calls.' },
   { question: 'Can you repair washers in multi-family buildings?', answer: 'Yes. We service commercial washers in apartment buildings, condominiums, and housing complexes throughout San Francisco. We work with property managers and HOAs to schedule service at convenient times.' },
   { question: 'Is there a warranty on commercial washer repairs?', answer: 'Yes. All commercial washer repairs include our 180-day warranty on parts and labor. If the same issue recurs, we return at no additional charge.' },
 ];
@@ -135,7 +135,7 @@ const mobileIssues = [
 
 const mobileFaqs = [
   { q: 'Do you repair coin-op and card-op washers?', a: 'Yes — all types including coin-operated, card-operated, and app-controlled units for laundromats, hotels, and multi-family properties.' },
-  { q: 'How fast can you respond?', a: 'Same- or next-day or next-day priority service for commercial laundry equipment.' },
+  { q: 'How fast can you respond?', a: 'Same- or next-day priority service for commercial laundry equipment.' },
   { q: 'What brands do you repair?', a: 'Speed Queen, Maytag Commercial, Dexter, Huebsch, Wascomat, and all major commercial washer brands.' },
   { q: 'Is there a warranty?', a: '180-day warranty on parts and labor for all commercial washer repairs.' },
 ];

@@ -26,7 +26,7 @@ const CityHeroNew = ({ bgImage, cityName }) => {
           {/* H1 */}
           <h1 style={{ fontFamily: S.font, fontWeight: 800, fontSize: 58, color: '#FFFFFF', lineHeight: 1.08, marginTop: 14 }}>Appliance Repair in&nbsp;{cityName}</h1>
           {/* Subtext */}
-          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same- or next-day &amp; next-day service &middot; $60 diagnostic &middot; 180-day warranty on all repairs</p>
+          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same- or next-day service &middot; $60 diagnostic &middot; 180-day warranty on all repairs</p>
           {/* Trust row */}
           <div data-testid="city-trust-badges" style={{ display: 'flex', alignItems: 'center', gap: 20, marginTop: 18, fontFamily: S.font, fontWeight: 500, fontSize: 12 }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span> <span style={{ color: 'rgba(255,255,255,0.80)' }}>Licensed CA Technician</span></span>

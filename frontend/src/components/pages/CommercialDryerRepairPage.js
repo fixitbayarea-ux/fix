@@ -22,7 +22,7 @@ const faqData = [
   { question: 'What are the most common commercial dryer issues?', answer: 'In our San Francisco service area, the top three commercial dryer issues are: (1) gas valve solenoid failure causing no heat, (2) restricted exhaust venting causing extended dry times, and (3) worn drum seals allowing cold air infiltration. Together, these account for about 70% of our commercial dryer service calls.' },
   { question: 'What commercial dryer brands do you repair?', answer: 'We repair Speed Queen, Dexter, Maytag Commercial, Huebsch, American Dryer Corporation (ADC), Electrolux Professional, IPSO, UniMac, Wascomat, and Continental Girbau commercial dryers.' },
   { question: 'Can you service commercial dryer venting systems?', answer: 'Yes. We inspect and repair commercial dryer venting, including cleaning lint accumulation, replacing damaged duct sections, ensuring proper termination, and verifying airflow meets manufacturer specifications. Proper venting is critical for dryer performance and fire safety.' },
-  { question: 'How quickly can you respond to a laundromat dryer breakdown?', answer: 'We prioritize commercial laundry equipment for same- or next-day or next-day service. In a laundromat, every down dryer means lost revenue and unhappy customers, so we treat these as urgent calls.' },
+  { question: 'How quickly can you respond to a laundromat dryer breakdown?', answer: 'We prioritize commercial laundry equipment for same- or next-day service. In a laundromat, every down dryer means lost revenue and unhappy customers, so we treat these as urgent calls.' },
   { question: 'Is there a warranty on commercial dryer repairs?', answer: 'Yes. All commercial dryer repairs include our 180-day warranty on parts and labor.' },
 ];
 
@@ -142,7 +142,7 @@ const mobileIssues = [
 
 const mobileFaqs = [
   { q: 'Do you repair gas and electric commercial dryers?', a: 'Yes — both gas and electric, including single, double-stack, and triple-stack configurations.' },
-  { q: 'How fast can you respond?', a: 'Same- or next-day or next-day priority service for commercial laundry equipment.' },
+  { q: 'How fast can you respond?', a: 'Same- or next-day priority service for commercial laundry equipment.' },
   { q: 'What brands do you repair?', a: 'Speed Queen, Dexter, Maytag Commercial, Huebsch, ADC, and all major commercial dryer brands.' },
   { q: 'Is there a warranty?', a: '180-day warranty on parts and labor for all commercial dryer repairs.' },
 ];

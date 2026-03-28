@@ -135,7 +135,7 @@ const mobileIssues = [
 
 const mobileFaqs = [
   { q: 'Do you repair all types of commercial dishwashers?', a: 'Yes — under-counter, door-type, conveyor, and flight-type units for restaurants, hotels, and institutional kitchens.' },
-  { q: 'How fast can you respond?', a: 'Same- or next-day or next-day priority service for commercial kitchen equipment.' },
+  { q: 'How fast can you respond?', a: 'Same- or next-day priority service for commercial kitchen equipment.' },
   { q: 'What brands do you repair?', a: 'Hobart, Champion, Jackson, Electrolux Professional, CMA, Winterhalter, and all major commercial dishwasher brands.' },
   { q: 'Is there a warranty?', a: '180-day warranty on parts and labor for all commercial dishwasher repairs.' },
 ];

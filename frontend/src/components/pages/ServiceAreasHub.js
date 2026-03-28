@@ -108,7 +108,7 @@ const ServiceAreasHub = () => (
           Appliance Repair Service Areas &mdash; San Francisco Bay Area
         </h1>
         <p style={{ fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', maxWidth: 600, margin: '0 auto 28px' }}>
-          22 cities across San Francisco, the Peninsula, and Marin County. Same- or next-day &amp; next-day service available.
+          22 cities across San Francisco, the Peninsula, and Marin County. Same- or next-day service available.
         </p>
         <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
           <a href="/book?go=1" data-testid="sa-hero-book" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '15px 30px', borderRadius: 3, background: C.accent, color: C.white, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', textDecoration: 'none' }} aria-label="BOOK REPAIR ONLINE (opens in new tab)">BOOK REPAIR ONLINE</a>

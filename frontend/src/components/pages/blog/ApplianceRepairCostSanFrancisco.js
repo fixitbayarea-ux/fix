@@ -289,7 +289,7 @@ const ApplianceRepairCostSanFrancisco = () => {
               <div data-testid="diagnostic-flow" style={{ background: '#0D1B2A', borderRadius: 4, padding: '28px 24px', marginBottom: 16 }}>
                 <div className="diag-flow" style={{ display: 'flex', gap: 0, alignItems: 'stretch' }}>
                   {[
-                    { step: '1', label: 'Book', desc: 'Online or call \u2192 We arrive same- or next-day or next-day' },
+                    { step: '1', label: 'Book', desc: 'Online or call \u2192 We arrive same- or next-day' },
                     { step: '2', label: 'Diagnose', desc: 'Technician diagnoses the problem \u2192 $60 diagnostic fee' },
                     { step: '3', label: 'Estimate', desc: 'You get an upfront estimate \u2192 No surprises' },
                     { step: '4', label: 'Decide', desc: 'Approve \u2192 $60 credited toward total\nDecline \u2192 You only pay $60' },

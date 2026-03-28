@@ -150,7 +150,7 @@ const mobileIssues = [
 
 const mobileFaqs = [
   { q: 'Do you repair all types of commercial refrigerators?', a: 'Yes — walk-in coolers, reach-in units, prep tables, display cases, and bar refrigeration for restaurants, grocery stores, and hotels.' },
-  { q: 'How fast can you respond?', a: 'Same- or next-day or next-day priority service for commercial refrigeration emergencies.' },
+  { q: 'How fast can you respond?', a: 'Same- or next-day priority service for commercial refrigeration emergencies.' },
   { q: 'What brands do you repair?', a: 'True, Traulsen, Turbo Air, Beverage-Air, Hoshizaki, and all major commercial refrigeration brands.' },
   { q: 'Is there a warranty?', a: '180-day warranty on parts and labor for all commercial refrigerator repairs.' },
 ];
