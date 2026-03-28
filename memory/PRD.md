@@ -178,6 +178,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 15 (Session 17)**: Changed stats bar on brand pages from "Same-Day Service" to "Same/Next-Day Service" in `BrandLandingPage.js`. Only BrandLandingPage had this stats bar pattern.
 
+- **ПРОМТ 16 (Session 17)**: Made entire service cards clickable on brand pages. Wrapped card `<div>` with `<a>` tag using same href as "VIEW SERVICE →" button. Changed button from `<a>` to `<span>`. Added hover effect: `box-shadow + translateY(-2px)` on `.brand-svc-card:hover`.
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

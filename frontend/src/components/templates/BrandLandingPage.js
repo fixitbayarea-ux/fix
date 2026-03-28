@@ -189,6 +189,7 @@ const BrandLandingPage = ({ brand }) => {
           .why-card:hover { box-shadow: 0 4px 20px rgba(255,87,34,0.12) !important; }
           .svc-btn { transition: background 0.2s; }
           .svc-btn:hover { background: #FF5722 !important; color: #fff !important; }
+          .brand-svc-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.12); transform: translateY(-2px); }
           .brand-grid-2 { display: grid !important; grid-template-columns: 1fr !important; gap: 16px; }
           @media (min-width: 640px) { .brand-grid-2 { grid-template-columns: 1fr 1fr !important; } }
           .brand-grid-3 { display: grid !important; grid-template-columns: 1fr !important; gap: 16px; }
@@ -293,7 +294,7 @@ const BrandLandingPage = ({ brand }) => {
                 <div className="carousel-track" style={{ transform: `translateX(-${carouselIdx * (100 / visible)}%)` }}>
                   {cards.map((card, i) => (
                     <div key={i} className="carousel-card" style={{ width: `${100 / visible}%`, padding: '0 8px', boxSizing: 'border-box' }}>
-                      <div style={{ background: PC.white, borderRadius: PC.r, overflow: 'hidden', border: '1px solid rgba(0,0,0,0.08)', height: '100%', display: 'flex', flexDirection: 'column' }}>
+                      <a href={card.href || '#'} className="brand-svc-card" style={{ background: PC.white, borderRadius: PC.r, overflow: 'hidden', border: '1px solid rgba(0,0,0,0.08)', height: '100%', display: 'flex', flexDirection: 'column', textDecoration: 'none', color: 'inherit', cursor: 'pointer', transition: 'box-shadow 0.2s ease, transform 0.2s ease' }}>
                         {card.image && (
                           <img src={card.image} alt={card.carouselTitle || card.name} style={{ width: '100%', height: 180, objectFit: 'cover', display: 'block' }} loading="lazy" />
                         )}
@@ -305,11 +306,11 @@ const BrandLandingPage = ({ brand }) => {
                             <span style={{ background: PC.accentBg, color: PC.accent, padding: '4px 10px', borderRadius: PC.r, fontFamily: F, fontWeight: 600, fontSize: 11 }}>$60 Diagnostic</span>
                           </div>
                           <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: PC.textMid, marginBottom: 14 }}>180-Day Warranty</p>
-                          <a href={card.href || '#'} className="svc-btn" data-testid={`carousel-card-${i}-btn`} style={{ display: 'block', textAlign: 'center', background: PC.navy, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, padding: 12, borderRadius: PC.r, textDecoration: 'none', marginTop: 'auto' }}>
+                          <span className="svc-btn" data-testid={`carousel-card-${i}-btn`} style={{ display: 'block', textAlign: 'center', background: PC.navy, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, padding: 12, borderRadius: PC.r, textDecoration: 'none', marginTop: 'auto' }}>
                             VIEW SERVICE &rarr;
-                          </a>
+                          </span>
                         </div>
-                      </div>
+                      </a>
                     </div>
                   ))}
                 </div>
