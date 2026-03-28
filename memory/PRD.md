@@ -180,6 +180,8 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМТ 16 (Session 17)**: Made entire service cards clickable on brand pages. Wrapped card `<div>` with `<a>` tag using same href as "VIEW SERVICE →" button. Changed button from `<a>` to `<span>`. Added hover effect: `box-shadow + translateY(-2px)` on `.brand-svc-card:hover`.
 
+- **ПРОМТ 17 (Session 17)**: Updated "Where We Serve" city lists on all brand pages (`BrandLandingPage.js`). Removed San Mateo & Burlingame. Added Montara (Peninsula), Larkspur, Greenbrae, Fairfax, San Anselmo, Ross, Belvedere (Marin). Renamed "NORTH BAY" → "MARIN COUNTY". Changed SF entry to "San Francisco & All Neighborhoods".
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

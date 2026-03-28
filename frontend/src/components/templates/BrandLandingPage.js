@@ -29,9 +29,9 @@ const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', te
 
 const SERVICE_AREAS = {
   sf: { label: 'SAN FRANCISCO', cities: [
-    { href: '/san-francisco-appliance-repair', label: 'San Francisco' },
+    { href: '/san-francisco-appliance-repair', label: 'San Francisco & All Neighborhoods' },
     { href: '/daly-city-appliance-repair', label: 'Daly City' },
-    { href: '/south-san-francisco-appliance-repair', label: 'South San Francisco' },
+    { href: '/south-san-francisco-appliance-repair', label: 'South San Francisco' },
     { href: '/colma-appliance-repair', label: 'Colma' },
     { href: '/brisbane-appliance-repair', label: 'Brisbane' },
   ]},
@@ -39,16 +39,21 @@ const SERVICE_AREAS = {
     { href: '/san-bruno-appliance-repair', label: 'San Bruno' },
     { href: '/millbrae-appliance-repair', label: 'Millbrae' },
     { href: '/pacifica-appliance-repair', label: 'Pacifica' },
-    { href: '/san-mateo-appliance-repair', label: 'San Mateo' },
-    { href: '/burlingame-appliance-repair', label: 'Burlingame' },
+    { href: '/montara-appliance-repair', label: 'Montara' },
   ]},
-  northBay: { label: 'NORTH BAY', cities: [
+  northBay: { label: 'MARIN COUNTY', cities: [
     { href: '/sausalito-appliance-repair', label: 'Sausalito' },
     { href: '/mill-valley-appliance-repair', label: 'Mill Valley' },
     { href: '/san-rafael-appliance-repair', label: 'San Rafael' },
     { href: '/novato-appliance-repair', label: 'Novato' },
     { href: '/tiburon-appliance-repair', label: 'Tiburon' },
     { href: '/corte-madera-appliance-repair', label: 'Corte Madera' },
+    { href: '/larkspur-appliance-repair', label: 'Larkspur' },
+    { href: '/greenbrae-appliance-repair', label: 'Greenbrae' },
+    { href: '/fairfax-appliance-repair', label: 'Fairfax' },
+    { href: '/san-anselmo-appliance-repair', label: 'San Anselmo' },
+    { href: '/ross-appliance-repair', label: 'Ross' },
+    { href: '/belvedere-appliance-repair', label: 'Belvedere' },
   ]},
 };
 
