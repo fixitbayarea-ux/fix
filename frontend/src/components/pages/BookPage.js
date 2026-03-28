@@ -41,8 +41,6 @@ const BookPage = () => {
   const [isAutoRedirect, setIsAutoRedirect] = useState(false);
   const [fallback, setFallback] = useState(false);
   const [openFaq, setOpenFaq] = useState(-1);
-  const [showFloat, setShowFloat] = useState(false);
-
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   /* Defer searchParams read to avoid hydration mismatch with react-snap */
@@ -406,7 +404,6 @@ const BookPage = () => {
         </footer>
 
         {/* ─── 9. FLOATING BUTTON ─── */}
-        <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className={`bk-float${showFloat ? '' : ' hidden'}`} data-testid="book-floating-btn" aria-label="opens in new tab">BOOK REPAIR</a>
 
         {/* ─── MOBILE STICKY BAR ─── */}
         <div className="bk-mobile-bar" data-testid="book-mobile-bar">

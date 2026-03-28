@@ -89,17 +89,10 @@ const WHY_SF = [
 ];
 
 const ApplianceRepairCostSanFrancisco = () => {
-  const [showFloat, setShowFloat] = useState(false);
-  const [openFaq, setOpenFaq] = useState(-1);
+const [openFaq, setOpenFaq] = useState(-1);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
-  useEffect(() => {
-    const h = () => setShowFloat(window.scrollY > 300);
-    window.addEventListener('scroll', h, { passive: true });
-    return () => window.removeEventListener('scroll', h);
-  }, []);
-
-  const schemas = useMemo(() => [
+const schemas = useMemo(() => [
     {
       id: 'article-schema',
       data: {
@@ -521,18 +514,6 @@ const ApplianceRepairCostSanFrancisco = () => {
           </div>
         </footer>
 
-        {showFloat && (
-          <a href="/book" data-testid="float-btn" className="hidden md:flex" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '14px 20px', borderRadius: 4, boxShadow: '0 4px 20px rgba(255,87,34,0.45)', textDecoration: 'none' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>
-            BOOK REPAIR
-          </a>
-        )}
-        {showFloat && (
-          <div className="flex md:hidden" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 999, background: '#0D1B2A', borderTop: '1px solid rgba(255,87,34,0.3)', padding: '10px 12px', gap: 8, justifyContent: 'center' }}>
-            <a href="tel:+17605435733" data-testid="mobile-call" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none' }}>CALL</a>
-            <a href="/book" data-testid="mobile-book" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none' }}>BOOK ONLINE</a>
-            <a href="sms:7605435733?body=Hello%20FixitBay!" data-testid="mobile-text" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,87,34,0.4)' }}>TEXT US</a>
-          </div>
-        )}
       </div>
     </>
   );

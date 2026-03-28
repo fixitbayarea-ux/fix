@@ -12,6 +12,7 @@ const TrailingSlashRedirect = () => {
 
 import CanonicalUpdater from "./components/CanonicalUpdater";
 import SchemaMarkup from "./components/SchemaMarkup";
+import StickyCTA from "./components/StickyCTA";
 import SiteNavbar from "./components/SiteNavbar";
 import UniversalBreadcrumb from "./components/UniversalBreadcrumb";
 
@@ -136,7 +137,8 @@ export default function App() {
         Skip to main content
       </a>
       <SiteNavbar />
-      <main id="main-content">
+      <StickyCTA />
+      <main id="main-content" className="pb-[72px] md:pb-0">
         <Suspense fallback={
           <div className="min-h-screen flex items-center justify-center">
             <div className="text-center">

@@ -80,7 +80,7 @@ const DynamicLandingPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white font-montserrat ">
+    <div className="min-h-screen bg-white font-montserrat pb-[72px] lg:pb-0 ">
       <style>{`
         @media (max-width: 1023px) {
           .hero-main-h1 { font-size: 28px !important; line-height: 1.2 !important; }

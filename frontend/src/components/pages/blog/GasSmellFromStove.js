@@ -78,17 +78,10 @@ const CheckRow = ({ label, text }) => (
 );
 
 const GasSmellFromStove = () => {
-  const [showFloat, setShowFloat] = useState(false);
-  const [openFaq, setOpenFaq] = useState(-1);
+const [openFaq, setOpenFaq] = useState(-1);
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
-  useEffect(() => {
-    const h = () => setShowFloat(window.scrollY > 300);
-    window.addEventListener('scroll', h, { passive: true });
-    return () => window.removeEventListener('scroll', h);
-  }, []);
-
-  const schemas = useMemo(() => [
+const schemas = useMemo(() => [
     { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Smell Gas From Your Stove? Do This Immediately", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-03-01", "dateModified": "2026-03-01", "url": "https://fixitbay.net/blog/gas-smell-from-stove" } },
     { id: 'howto-schema', data: { "@context": "https://schema.org", "@type": "HowTo", "name": "What to Do If You Smell Gas From Your Stove", "description": "Emergency protocol for gas leaks from kitchen appliances", "step": EMERGENCY_STEPS.map((s, i) => ({ "@type": "HowToStep", "position": i + 1, "name": s.replace(/^DO NOT /, '').substring(0, 40), "text": s })) } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a } })) } },
@@ -394,12 +387,6 @@ const GasSmellFromStove = () => {
         </footer>
 
         {/* ━━━ 7. FLOATING + MOBILE ━━━ */}
-        {showFloat && <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="float-btn" className="hidden md:flex" style={{ position: 'fixed', bottom: 32, right: 32, zIndex: 999, alignItems: 'center', gap: 8, background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, textTransform: 'uppercase', letterSpacing: '0.08em', padding: '14px 20px', borderRadius: 4, boxShadow: '0 4px 20px rgba(255,87,34,0.45)', textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>BOOK REPAIR</a>}
-        {showFloat && <div className="flex md:hidden" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 999, background: '#0D1B2A', borderTop: '1px solid rgba(255,87,34,0.3)', padding: '10px 12px', gap: 8, justifyContent: 'center' }}>
-          <a href="tel:+17605435733" data-testid="mobile-call" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none' }}>CALL</a>
-          <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="mobile-book" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none' }} aria-label="opens in new tab">BOOK ONLINE</a>
-          <a href="sms:7605435733?body=Hello%20FixitBay!" data-testid="mobile-text" style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 0', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,87,34,0.4)' }}>TEXT US</a>
-        </div>}
       </div>
     </>
   );

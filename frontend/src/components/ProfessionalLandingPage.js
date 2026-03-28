@@ -74,14 +74,6 @@ const ProfessionalLandingPage = () => {
   const [mapRef, isMapInView] = useInView({ rootMargin: '300px' });
   const [reviewsRef, isReviewsInView] = useInView({ rootMargin: '200px' });
 
-  /* Sticky Call Now — show after scrolling past hero */
-  const [showCallBtn, setShowCallBtn] = useState(false);
-  useEffect(() => {
-    const onScroll = () => setShowCallBtn(window.scrollY > window.innerHeight * 0.85);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
-
   /* GEO meta & preconnect */
   useEffect(() => {
     const metas = [
@@ -106,7 +98,7 @@ const ProfessionalLandingPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen " style={{ background: '#fff', fontFamily: 'Montserrat, system-ui, -apple-system, sans-serif' }}>
+    <div className="min-h-screen pb-[72px] lg:pb-0 " style={{ background: '#fff', fontFamily: 'Montserrat, system-ui, -apple-system, sans-serif' }}>
       <SEOMetaTags title="Appliance Repair San Francisco & Bay Area | FixitBay LLC" description="Professional appliance repair in San Francisco Bay Area. Same- or next-day appointments for refrigerators, washers, dryers, dishwashers. Call (760) 543-5733 or book online." canonical="https://fixitbay.net/" keywords="appliance repair San Francisco, refrigerator repair, washer repair, appliance repair Bay Area, FixitBay LLC" ogTitle="Appliance Repair San Francisco & Bay Area | FixitBay LLC" ogDescription="Professional appliance repair in San Francisco Bay Area. Same- or next-day appointments for refrigerators, washers, dryers, dishwashers. Call (760) 543-5733 or book online." ogImage="https://fixitbay.net/images/og-cover.png" twitterSite="@fixitbay" twitterTitle="Appliance Repair SF Bay Area | FixitBay LLC" twitterDescription="Licensed appliance repair in San Francisco. $60 diagnostic, 180-day warranty, fast scheduling." />
       <HomepageSchemas />
       <HomeHero />
@@ -372,29 +364,6 @@ const ProfessionalLandingPage = () => {
       `}</style>
 
       {/* Sticky Call Now — desktop only */}
-      {showCallBtn && (
-        <a
-          href="tel:+17605435733"
-          data-testid="sticky-call-btn"
-          className="hidden md:flex"
-          style={{
-            position: 'fixed', right: 24, bottom: 40, zIndex: 90,
-            background: '#FF5722', color: '#FFFFFF',
-            fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 14,
-            textTransform: 'uppercase', textDecoration: 'none',
-            letterSpacing: '0.08em', minWidth: 140,
-            padding: '16px 28px', borderRadius: 4,
-            boxShadow: '0 4px 20px rgba(255,87,34,0.55)',
-            transition: 'all 0.2s ease',
-            alignItems: 'center', justifyContent: 'center',
-          }}
-          onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 6px 28px rgba(255,87,34,0.75)'; e.currentTarget.style.transform = 'translateY(-2px)'; }}
-          onMouseLeave={e => { e.currentTarget.style.boxShadow = '0 4px 20px rgba(255,87,34,0.55)'; e.currentTarget.style.transform = 'translateY(0)'; }}
-        >
-          <Phone size={16} style={{ marginRight: 6 }} /> CALL NOW
-        </a>
-      )}
-
       <Suspense fallback={<div style={{ minHeight: 400 }} />}><UnifiedFooter /></Suspense>
     </div>
   );
