@@ -207,6 +207,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 ### Session 18 (Mar 29 2026) — Prompt 40 Verification
 - **ПРОМТ 40**: Verified San Francisco hub page content expansion. 3 new sections confirmed rendering correctly: (1) "San Francisco Neighborhoods We Serve" — 30-neighborhood grid with MapPin icons, (2) "Why SF Appliances Need Expert Care" — 3-paragraph local expertise content, (3) "Appliance Repair Cost Guide for San Francisco" — 7-row pricing table. Build: 233/233 pages passed. Visual verification: all sections render on desktop.
 - **ПРОМТ 41**: Added dynamic "Serving [City] Customers" section to city-service page template (e.g., /daly-city-refrigerator-repair). Section appears between "How Your Repair Visit Works" and "Common Problems". Created expandable `CITY_SERVING_DATA` config in CityServicePage.js with 3 initial entries (Daly City, Greenbrae, San Francisco) containing neighborhoods and local notes. New `servingCity` prop passed to ApplianceRepairPageNew template. Build: 233/233 pages passed.
+- **ПРОМТ 42**: Fixed BreadcrumbList schema on service pages. Was showing 2 levels with wrong 3rd-level URL (homepage). Now correctly shows 3 levels: Home → Services → [Service Name] with proper canonical URL (e.g., `https://fixitbay.net/refrigerator-repair`). Fixed `name` field from full pageTitle to clean `${appliance} ${serviceWord}`. Build: 233/233.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

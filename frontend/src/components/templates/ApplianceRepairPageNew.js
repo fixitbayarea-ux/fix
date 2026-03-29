@@ -373,7 +373,7 @@ const ApplianceRepairPageNew = ({
       crumbs.push({ name: breadcrumbLabel, url: breadcrumbHref.startsWith('/') ? `https://fixitbay.net${breadcrumbHref}` : 'https://fixitbay.net/#services' });
     }
     if (!isSelfReferencing) {
-      crumbs.push({ name: cityName || pageTitle || `${appliance} Repair`, url: 'https://fixitbay.net/' });
+      crumbs.push({ name: cityName || `${appliance} ${serviceWord}`, url: `https://fixitbay.net${currentPath}` });
     }
     const schemas = [{
       id: `breadcrumb-schema-${appliance}`,
