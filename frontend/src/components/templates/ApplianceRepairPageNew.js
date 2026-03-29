@@ -471,7 +471,7 @@ const ApplianceRepairPageNew = ({
   useSchemas(pageSchemas);
 
   const displayName = cityName ? `Appliance Repair in ${cityName}` : (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? appliance : `${appliance} ${serviceWord}`);
-  const displayH1 = customH1 || (cityName ? `Expert Appliance Repair in ${cityName}` : (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? `Expert ${appliance} in San Francisco` : (appliance === 'Dishwasher' ? `Expert ${appliance} ${serviceWord} in the Bay\u00A0Area` : `Expert ${appliance} ${serviceWord} in San Francisco`)));
+  const displayH1 = customH1 || (cityName ? `Expert Appliance Repair in ${cityName}` : (appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? `Expert ${appliance} in the San Francisco Bay Area` : `Expert ${appliance} ${serviceWord} in the San Francisco Bay Area`));
 
 
   /* ═══════════════════════════════════════════════════════════
