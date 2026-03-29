@@ -340,7 +340,7 @@ const ApplianceRepairPageNew = ({
         "@context": "https://schema.org",
         "@type": "HowTo",
         "name": `How to Get Your ${appliance} Repaired in San Francisco`,
-        "description": `Book fast ${appliance.toLowerCase()} repair with FixitBay LLC. $60 diagnostic applied to repair cost. 180-day warranty.`,
+        "description": `Book fast ${appliance.toLowerCase()} ${serviceWord.toLowerCase()} with FixitBay LLC. $60 diagnostic applied to ${serviceWord.toLowerCase()} cost. 180-day warranty.`,
         "totalTime": "P1D",
         "estimatedCost": {
           "@type": "MonetaryAmount",
@@ -747,13 +747,13 @@ const ApplianceRepairPageNew = ({
       <section data-testid="how-it-works" style={{ background: '#F8F5F0', padding: '70px 0' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
           <div style={{ ...S.eyebrow, marginBottom: 10 }}>THE PROCESS</div>
-          <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 48 }}>Simple. Fast. Professional.</h2>
+          <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 48 }}>{isMaintenance ? '4 Steps to a Well-Maintained Appliance' : 'Simple. Fast. Professional.'}</h2>
           <div className="service-how-grid grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { num: '01', icon: <CalendarCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'Book Online', text: 'Schedule your appointment at your convenience.' },
-              { num: '02', icon: <Search size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Diagnose', text: '$60 diagnostic visit — applied to repair if you proceed.' },
+              { num: '02', icon: <Search size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Diagnose', text: `$60 diagnostic visit — applied to ${serviceWord.toLowerCase()} if you proceed.` },
               { num: '03', icon: <ClipboardCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'You Approve', text: 'Upfront estimate before any work begins. No surprises.' },
-              { num: '04', icon: <Wrench size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Fix It', text: 'Professional repair with 180-day warranty on parts and labor.' },
+              { num: '04', icon: <Wrench size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: isMaintenance ? 'Professional Maintenance' : 'We Fix It', text: isMaintenance ? 'Genuine parts and manufacturer specs. 180-day warranty on parts and labor.' : 'Professional repair with 180-day warranty on parts and labor.' },
             ].map(s => (
               <div key={s.num} data-testid={`how-step-${s.num}`}>
                 <div style={{ fontFamily: S.font, fontWeight: 800, fontSize: 72, color: 'rgba(255,87,34,0.18)', lineHeight: 1 }}>{s.num}</div>
@@ -777,7 +777,7 @@ const ApplianceRepairPageNew = ({
               { n: 1, t: 'Book Online or Call', d: `Schedule your ${serviceWord.toLowerCase()} at a time that works. Same- or next-day available.` },
               { n: 2, t: 'Diagnostic Visit', d: `Licensed technician arrives on time, inspects your ${appliance.toLowerCase()}, identifies the problem. $60 fee applies.` },
               { n: 3, t: 'Upfront Quote', d: 'Clear written estimate before work begins. $60 diagnostic credited if you proceed.' },
-              { n: 4, t: `Professional ${serviceWord}`, d: 'Issue fixed with quality parts. Most jobs completed in one visit. 180-day warranty included.' },
+              { n: 4, t: `Professional ${serviceWord}`, d: isMaintenance ? 'Genuine parts and manufacturer specs. Most jobs completed in one visit. 180-day warranty included.' : 'Issue fixed with quality parts. Most jobs completed in one visit. 180-day warranty included.' },
             ].map(s => (
               <div key={s.n} style={{ display: 'flex', gap: 16, borderLeft: '2px solid rgba(255,87,34,0.25)', paddingLeft: 20 }}>
                 <div style={{ width: 32, height: 32, borderRadius: '50%', background: '#FF5722', color: '#fff', fontFamily: S.font, fontWeight: 800, fontSize: 15, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>{s.n}</div>

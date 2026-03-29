@@ -276,7 +276,7 @@ const MobileServiceLanding = ({
             width: '100%', minHeight: 52, display: 'flex', alignItems: 'center', justifyContent: 'center',
             background: PC.accent, color: PC.white, border: 'none', borderRadius: PC.r,
             fontSize: 15, fontWeight: 700, letterSpacing: '0.04em', cursor: 'pointer', fontFamily: F, marginBottom: 10,
-          }}>BOOK REPAIR ONLINE</button>
+          }}>BOOK {isMaintenance ? 'MAINTENANCE' : 'REPAIR'} ONLINE</button>
 
           <a href={`tel:${PHONE}`} onClick={() => handleCall('hero', pageSlug)} data-testid="hero-call-btn" aria-label={`Call FixitBay LLC at ${PHONE_DISPLAY}`} style={{
             width: '100%', minHeight: 48, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
