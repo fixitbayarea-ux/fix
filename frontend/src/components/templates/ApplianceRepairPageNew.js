@@ -1027,8 +1027,8 @@ const ApplianceRepairPageNew = ({
         </section>
       )}
 
-      {/* ═══ SERVICE AREAS ═══ */}
-      {!isCity && !isBrand && (() => {
+      {/* ═══ SERVICE AREAS (commercial & maintenance only) ═══ */}
+      {!isCity && !isBrand && (isCommercial || isMaintenance) && (() => {
         const CITY_SERVICE_SLUGS = ['san-francisco','daly-city','south-san-francisco','san-bruno','pacifica','millbrae','mill-valley','san-rafael','sausalito','novato','corte-madera','tiburon','belvedere','larkspur','greenbrae','ross','fairfax','san-anselmo'];
         const CITY_SERVICE_SVCS = ['refrigerator','washer','dryer','dishwasher','oven','wine-cooler','ice-maker'];
         const svcSlug = appliance ? appliance.toLowerCase().replace(/\s+/g, '-').replace(/-appliance$/, '') : '';
