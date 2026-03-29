@@ -537,6 +537,73 @@ const SanFrancisco = () => {
         </div>
       </section>
 
+      {/* ═══ SECTION: SF NEIGHBORHOODS WE SERVE ═══ */}
+      <section style={{ background: '#F8F5F0', padding: '70px 0' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+          <div style={S.eyebrow}>COVERAGE</div>
+          <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 24 }}>San Francisco Neighborhoods We Serve</h2>
+          <p style={{ ...S.body, marginBottom: 28 }}>Our technicians know every corner of San Francisco. We provide same- or next-day appliance repair in all of these neighborhoods and surrounding areas:</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10 }}>
+            {['SOMA','Mission District','Castro','Noe Valley','Sunset District','Richmond District','Pacific Heights','Marina','North Beach','Nob Hill','Russian Hill','Tenderloin','Bayview','Excelsior','Visitacion Valley','Bernal Heights','Potrero Hill','Haight-Ashbury','Western Addition','Outer Sunset','Inner Sunset','Inner Richmond','Outer Richmond','Glen Park','Twin Peaks','Diamond Heights','Dogpatch','Hayes Valley','Cole Valley','Duboce Triangle'].map(nh => (
+              <div key={nh} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 3, padding: '10px 14px', display: 'flex', alignItems: 'center', gap: 8 }}>
+                <MapPin size={12} style={{ color: '#FF5722', flexShrink: 0 }} /> {nh}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ SECTION: WHY SF APPLIANCES NEED EXPERT CARE ═══ */}
+      <section style={{ background: '#FFFFFF', padding: '70px 0' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+          <div style={S.eyebrow}>LOCAL EXPERTISE</div>
+          <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 24 }}>Why San Francisco Appliances Need Expert Care</h2>
+          <div style={{ ...S.body, maxWidth: 800 }}>
+            <p style={{ marginBottom: 16 }}>San Francisco's coastal fog and persistent humidity create conditions that accelerate appliance wear in ways most homeowners don't expect. Door seals on refrigerators and dishwashers degrade faster in neighborhoods like the Sunset, Richmond, and Ocean Beach corridor, where salt air is a constant presence. Condenser coils collect moisture-laden dust that reduces cooling efficiency, and dryer vent systems in fog-belt homes require more frequent cleaning to prevent mold and lint accumulation.</p>
+            <p style={{ marginBottom: 16 }}>The city's iconic Victorian and Edwardian architecture presents another layer of complexity. Homes built before 1920 often have electrical systems that were retrofitted decades ago — ungrounded outlets, undersized circuits, and aging gas lines that create pressure irregularities. Modern high-efficiency appliances connected to these older systems can experience error codes, tripped breakers, and intermittent failures that confuse general handymen.</p>
+            <p>Our technicians carry multimeters, gas pressure gauges, and leveling equipment on every San Francisco service call. We understand that a dishwasher not draining in a Nob Hill Victorian is a different problem than the same symptom in a SOMA high-rise — and we diagnose accordingly.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ SECTION: COST GUIDE ═══ */}
+      <section style={{ background: '#0D1B2A', padding: '70px 0' }}>
+        <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+          <div style={{ ...S.eyebrow, color: '#FF5722' }}>COST GUIDE</div>
+          <h2 style={{ ...S.h2, color: '#FFFFFF', marginTop: 10, marginBottom: 8 }}>Appliance Repair Cost Guide for San Francisco</h2>
+          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.6)', marginBottom: 28 }}>Estimated repair costs vary by issue complexity. $60 diagnostic is applied toward any repair.</p>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: S.font }}>
+              <thead>
+                <tr style={{ borderBottom: '2px solid rgba(255,255,255,0.15)' }}>
+                  <th style={{ textAlign: 'left', padding: '12px 16px', fontWeight: 700, fontSize: 13, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Appliance</th>
+                  <th style={{ textAlign: 'left', padding: '12px 16px', fontWeight: 700, fontSize: 13, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Common Repairs</th>
+                  <th style={{ textAlign: 'right', padding: '12px 16px', fontWeight: 700, fontSize: 13, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Est. Range</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { appliance: 'Refrigerator', repairs: 'Compressor, thermostat, fan motor, gasket', range: '$150 – $450' },
+                  { appliance: 'Washer', repairs: 'Pump, belt, control board, bearings', range: '$120 – $350' },
+                  { appliance: 'Dryer', repairs: 'Heating element, thermal fuse, belt, rollers', range: '$100 – $300' },
+                  { appliance: 'Dishwasher', repairs: 'Pump, spray arm, door latch, control board', range: '$100 – $300' },
+                  { appliance: 'Oven / Range', repairs: 'Igniter, element, thermostat, control board', range: '$120 – $400' },
+                  { appliance: 'Cooktop', repairs: 'Burner, element, switch, glass top', range: '$100 – $350' },
+                  { appliance: 'Wine Cooler', repairs: 'Compressor, thermostat, fan, door seal', range: '$150 – $400' },
+                ].map((row, i) => (
+                  <tr key={i} style={{ borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
+                    <td style={{ padding: '14px 16px', fontWeight: 700, fontSize: 14, color: '#FFFFFF' }}>{row.appliance}</td>
+                    <td style={{ padding: '14px 16px', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.65)' }}>{row.repairs}</td>
+                    <td style={{ padding: '14px 16px', fontWeight: 700, fontSize: 14, color: '#FF5722', textAlign: 'right' }}>{row.range}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 12, color: 'rgba(255,255,255,0.35)', marginTop: 16 }}>* Prices are estimates. Final cost depends on parts and labor. Written quote provided before work begins.</p>
+        </div>
+      </section>
+
       {/* ═══════════════════════════════════════
           FOOTER
           ═══════════════════════════════════════ */}
