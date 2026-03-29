@@ -611,35 +611,6 @@ const ApplianceRepairPageNew = ({
           </div>
         </section>
 
-        {/* ═══ POPULAR REPAIRS IN CITY ═══ */}
-        {(() => {
-          const cs = cityName.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-');
-          const cityServices = CITY_SERVICE_LINKS[cs];
-          const repairs = cityServices
-            ? cityServices.map(svc => ({ label: SERVICE_LABELS[svc] || (svc.charAt(0).toUpperCase() + svc.slice(1)), svc }))
-            : [
-                { label: 'Refrigerator', svc: 'refrigerator' }, { label: 'Washer', svc: 'washer' },
-                { label: 'Dryer', svc: 'dryer' }, { label: 'Dishwasher', svc: 'dishwasher' },
-                { label: 'Oven & Range', svc: 'oven' }, { label: 'Wine Cooler', svc: 'wine-cooler' },
-                { label: 'Ice Maker', svc: 'ice-maker' },
-              ];
-          return (
-            <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
-              <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-                <div style={{ ...S.eyebrow, marginBottom: 10 }}>APPLIANCE REPAIR</div>
-                <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 24 }}>Popular Repairs in {cityName}</h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4" style={{ gap: 12 }}>
-                  {repairs.map(s => (
-                    <Link key={s.svc} to={`/${cs}-${s.svc}-repair`} data-testid={`popular-repair-${s.svc}`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#fff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; }}>
-                      <Wrench size={14} style={{ color: '#FF5722' }} /> {s.label} Repair
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </section>
-          );
-        })()}
-
         {/* ═══ SECTION 14 — FOOTER ═══ */}
         <CompactFooter testId="city-footer" />
 
