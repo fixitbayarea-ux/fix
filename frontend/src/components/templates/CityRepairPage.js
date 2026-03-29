@@ -45,8 +45,7 @@ const CityRepairPage = ({
     { name: "Dishwasher Repair", href: "/dishwasher-repair", icon: <Shield className="w-6 h-6" /> },
     { name: "Oven & Stove / Range Repair", href: "/oven-repair", icon: <Wrench className="w-6 h-6" /> },
     { name: "Cooktop Repair", href: "/cooktop-repair", icon: <Wrench className="w-6 h-6" /> },
-    { name: "Garbage Disposal Repair", href: "/garbage-disposal-repair", icon: <Settings className="w-6 h-6" /> },
-    { name: "Ice Maker Repair", href: "/ice-maker-repair", icon: <Star className="w-6 h-6" /> }
+{ name: "Ice Maker Repair", href: "/ice-maker-repair", icon: <Star className="w-6 h-6" /> }
   ];
 
   const trustIndicators = [

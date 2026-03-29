@@ -14,7 +14,6 @@ const RESIDENTIAL_SERVICES = [
   { href: '/ice-maker-repair', label: 'Ice Maker Repair', issues: 'No ice production, small cubes, water line clogs, leaking' },
   { href: '/stove-repair', label: 'Stove Repair', issues: 'Gas valve issues, electric element burnout, control board faults' },
   { href: '/range-repair', label: 'Range Repair', issues: 'Dual-fuel problems, convection fan failure, broiler not working' },
-  { href: '/garbage-disposal-repair', label: 'Garbage Disposal', issues: 'Jammed, humming, leaking from bottom, reset issues' },
   { href: '/wine-cooler-repair', label: 'Wine Cooler Repair', issues: 'Temperature fluctuation, compressor cycling, humidity control' },
 ];
 

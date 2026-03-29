@@ -35,7 +35,6 @@ const KEY_SERVICES = [
   'ice-maker-repair',
   'cooktop-repair',
   'wine-cooler-repair',
-  'garbage-disposal-repair',
   'freezer-repair',
   'stove-repair',
   'range-repair'
@@ -71,7 +70,6 @@ const CORE_SERVICES_FOR_CITY = [
   { href: '/cooktop-repair', label: 'Cooktop Repair' },
   { href: '/freezer-repair', label: 'Freezer Repair' },
   { href: '/ice-maker-repair', label: 'Ice Maker Repair' },
-  { href: '/garbage-disposal-repair', label: 'Garbage Disposal' },
   { href: '/wine-cooler-repair', label: 'Wine Cooler Repair' },
 ];
 
@@ -168,7 +166,6 @@ const defaultInternalLinks = [
   '/ice-maker-repair',
   '/cooktop-repair',
   '/wine-cooler-repair',
-  '/garbage-disposal-repair',
   '/commercial-appliance-repair',
   '/maintenance',
   '/san-francisco-appliance-repair',
@@ -682,7 +679,7 @@ function getSEOContent(route) {
         <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why Brand-Specific Repair Matters</h2>
         <p style="margin-bottom:1rem;">Different brands use different compressor systems, control boards, and engineering approaches. A Samsung refrigerator ice maker has different failure modes than a Sub-Zero. A Bosch dishwasher drain pump is engineered differently than a GE. Our technicians don't use a one-size-fits-all approach — we diagnose based on the specific brand's known issues and repair patterns.</p>
         <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Appliance Types We Repair</h2>
-        <p style="margin-bottom:1rem;">Across all brands, we service: <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerators</a>, <a href="/washer-repair" style="color:#C0362C;font-weight:bold;">washers</a>, <a href="/dryer-repair" style="color:#C0362C;font-weight:bold;">dryers</a>, <a href="/dishwasher-repair" style="color:#C0362C;font-weight:bold;">dishwashers</a>, <a href="/oven-repair" style="color:#C0362C;font-weight:bold;">ovens</a>, <a href="/range-repair" style="color:#C0362C;font-weight:bold;">ranges</a>, <a href="/cooktop-repair" style="color:#C0362C;font-weight:bold;">cooktops</a>, <a href="/stove-repair" style="color:#C0362C;font-weight:bold;">stoves</a>, <a href="/ice-maker-repair" style="color:#C0362C;font-weight:bold;">ice makers</a>, <a href="/wine-cooler-repair" style="color:#C0362C;font-weight:bold;">wine coolers</a>, <a href="/freezer-repair" style="color:#C0362C;font-weight:bold;">freezers</a>, and garbage disposals.</p>
+        <p style="margin-bottom:1rem;">Across all brands, we service: <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerators</a>, <a href="/washer-repair" style="color:#C0362C;font-weight:bold;">washers</a>, <a href="/dryer-repair" style="color:#C0362C;font-weight:bold;">dryers</a>, <a href="/dishwasher-repair" style="color:#C0362C;font-weight:bold;">dishwashers</a>, <a href="/oven-repair" style="color:#C0362C;font-weight:bold;">ovens</a>, <a href="/range-repair" style="color:#C0362C;font-weight:bold;">ranges</a>, <a href="/cooktop-repair" style="color:#C0362C;font-weight:bold;">cooktops</a>, <a href="/stove-repair" style="color:#C0362C;font-weight:bold;">stoves</a>, <a href="/ice-maker-repair" style="color:#C0362C;font-weight:bold;">ice makers</a>, <a href="/wine-cooler-repair" style="color:#C0362C;font-weight:bold;">wine coolers</a>, <a href="/freezer-repair" style="color:#C0362C;font-weight:bold;">freezers</a>.</p>
         <p style="margin-bottom:1rem;">Every repair is backed by our 180-day warranty on parts and labor. $60 diagnostic fee fully credited toward repair cost.</p>
         <p>Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day brand-specific repair.</p>
       `,
@@ -1418,40 +1415,7 @@ function getSEOContent(route) {
         `,
         links: ['/', '/refrigerator-repair', '/freezer-repair', '/dishwasher-repair', '/service-areas', '/reviews', '/contact']
       },
-      'garbage-disposal': {
-        title: 'Garbage Disposal Repair San Francisco | Same-Day | FixitBay',
-        desc: 'Garbage disposal repair in SF & Bay Area. Jammed, leaking, humming, won\'t turn on. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay.',
-        h1: 'Garbage Disposal Repair in San Francisco & Bay Area',
-        content: `
-          <p style="margin-bottom:1rem;">When your garbage disposal jams, leaks, or won't turn on, FixitBay provides same-day repair across the Bay Area — from San Francisco to Marin County and the Peninsula. Our licensed technicians diagnose and fix jammed blades, electrical failures, leaks, motor issues, and drainage problems. We also provide professional garbage disposal installation and replacement when repair isn't cost-effective.</p>
-          <p style="margin-bottom:1rem;">We repair and install all major garbage disposal brands including InSinkErator, Waste King, Moen, KitchenAid, Badger, and GE. Whether you have a 1/3 HP apartment unit or a 1 HP Evolution model, our technicians carry common disposal parts — reset switches, mounting gaskets, disposal wrenches, and splash guards — for same-day repairs.</p>
-          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common Garbage Disposal Problems We Fix</h2>
-          <ul style="margin-bottom:1rem;padding-left:1.5rem;">
-            <li style="margin-bottom:0.5rem;"><strong>Disposal jammed or stuck</strong> — foreign objects, fibrous foods, or dull blades prevent the grinding plate from turning. We clear jams safely and inspect for blade wear.</li>
-            <li style="margin-bottom:0.5rem;"><strong>Won't turn on (no power)</strong> — faulty reset switch, tripped breaker, or wiring issue. We diagnose electrical problems and replace defective components.</li>
-            <li style="margin-bottom:0.5rem;"><strong>Humming but not spinning</strong> — the motor energizes but the flywheel is stuck. Often caused by a small object wedged between the impeller and shredder ring.</li>
-            <li style="margin-bottom:0.5rem;"><strong>Leaking from bottom or connections</strong> — worn mounting gasket, cracked housing, or loose drain connections cause water to pool under the sink.</li>
-            <li style="margin-bottom:0.5rem;"><strong>Slow draining or backing up</strong> — clogged drain line, blocked dishwasher connection, or partially jammed grinding chamber restricts water flow.</li>
-            <li style="margin-bottom:0.5rem;"><strong>Bad odors</strong> — food buildup and bacterial growth inside the grinding chamber. We clean the unit and advise on prevention.</li>
-          </ul>
-          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Garbage Disposal Repair Pricing</h2>
-          <p style="margin-bottom:1rem;">Most garbage disposal repairs cost <strong>$100–$250 after the $60 diagnostic fee</strong>. Simple jams and resets run $80–$150. Leak repairs cost $90–$180. Motor replacement or full disposal replacement runs $150–$350 installed, depending on the model and horsepower. The $60 diagnostic is fully applied to your repair cost, and every job is backed by our 180-day warranty.</p>
-          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Garbage Disposal</h2>
-          <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Jammed blades or humming — most jams are cleared in 15–30 minutes for $80–$150. The motor is fine.</p>
-          <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Leaking from the flange or drain connection — a worn gasket or loose fitting costs $90–$140 to fix.</p>
-          <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Motor burned out or unit won't turn on — motor replacement often costs as much as a new disposal ($150–$300 installed).</p>
-          <p style="margin-bottom:1rem;"><strong>Replace:</strong> Unit is 10+ years old with chronic jams — a new 3/4 HP disposal runs $180–$300 installed and handles food waste far better.</p>
-          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Frequently Asked Questions</h2>
-          <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">How much does garbage disposal repair cost in the Bay Area?</p><p style="color:#4A5568;font-size:0.875rem;">Most repairs cost $100–$250 after the $60 diagnostic. Jams and resets run $80–$150. Leak repairs $90–$180. Full replacement with a new unit $150–$350 installed.</p></div>
-          <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Should I repair or replace my garbage disposal?</p><p style="color:#4A5568;font-size:0.875rem;">For units under 8 years old with occasional jams, repair is almost always worthwhile. For disposals 10+ years old with motor issues or chronic jams, a new unit is the better investment.</p></div>
-          <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">What brands of garbage disposals do you repair?</p><p style="color:#4A5568;font-size:0.875rem;">We repair all major brands: InSinkErator, Waste King, Moen, KitchenAid, Badger, GE, and more. We also install new disposals from all manufacturers.</p></div>
-          <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Do you offer same-day garbage disposal repair?</p><p style="color:#4A5568;font-size:0.875rem;">Yes — call before noon for same-day service in most Bay Area cities. We serve 22 cities across San Francisco, the Peninsula, and Marin County.</p></div>
-          <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
-          <p>We also offer <a href="/dishwasher-repair" style="color:#C0362C;font-weight:bold;">dishwasher repair</a> (often connected to the same drain line), <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerator repair</a>, and <a href="/washer-repair" style="color:#C0362C;font-weight:bold;">washer repair</a> across the Bay Area.</p>
-        `,
-        links: ['/', '/dishwasher-repair', '/refrigerator-repair', '/washer-repair', '/service-areas', '/reviews', '/contact']
-      },
-      'wine-cooler': {
+'wine-cooler': {
         title: 'Wine Cooler Repair San Francisco | Same-Day | FixitBay',
         desc: 'Wine cooler and wine fridge repair across SF Bay Area. Temperature and humidity issues. Same-day service. 180-day warranty. Call (760) 543-5733.',
         h1: 'Wine Cooler Repair in the Bay Area',
@@ -1665,10 +1629,10 @@ function getSEOContent(route) {
         }
       ],
       content: `
-        <p style="margin-bottom: 1rem;">FixitBay provides professional appliance repair services in San Francisco & Bay Area. We repair refrigerators, washers, dryers, ovens, dishwashers, cooktops, freezers, ice makers, wine coolers, garbage disposals, and more.</p>
+        <p style="margin-bottom: 1rem;">FixitBay provides professional appliance repair services in San Francisco & Bay Area. We repair refrigerators, washers, dryers, ovens, dishwashers, cooktops, freezers, ice makers, wine coolers and more.</p>
         <p style="margin-bottom: 1rem;">All repairs come with a $60 diagnostic fee credited toward the repair and a 180-day warranty on parts and labor. Same-day and next-day appointments available for most services.</p>
         <h2 style="font-size:1.2em;font-weight:bold;margin:1.5rem 0 0.5rem;">Core Residential Repair</h2>
-        <p><a href="/refrigerator-repair">Refrigerator Repair</a> · <a href="/washer-repair">Washer Repair</a> · <a href="/dryer-repair">Dryer Repair</a> · <a href="/dishwasher-repair">Dishwasher Repair</a> · <a href="/oven-repair">Oven Repair</a> · <a href="/cooktop-repair">Cooktop Repair</a> · <a href="/garbage-disposal-repair">Garbage Disposal Repair</a></p>
+        <p><a href="/refrigerator-repair">Refrigerator Repair</a> · <a href="/washer-repair">Washer Repair</a> · <a href="/dryer-repair">Dryer Repair</a> · <a href="/dishwasher-repair">Dishwasher Repair</a> · <a href="/oven-repair">Oven Repair</a> · <a href="/cooktop-repair">Cooktop Repair</a> · </p>
         <h2 style="font-size:1.2em;font-weight:bold;margin:1.5rem 0 0.5rem;">Commercial Repair</h2>
         <p><a href="/commercial-appliance-repair">Commercial Appliance Repair</a> · <a href="/commercial-refrigerator-repair">Commercial Refrigerator</a> · <a href="/commercial-washer-repair">Commercial Washer</a> · <a href="/commercial-dryer-repair">Commercial Dryer</a> · <a href="/commercial-dishwasher-repair">Commercial Dishwasher</a> · <a href="/commercial-oven-repair">Commercial Oven</a></p>
         <h2 style="font-size:1.2em;font-weight:bold;margin:1.5rem 0 0.5rem;">Maintenance</h2>

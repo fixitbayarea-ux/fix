@@ -606,8 +606,7 @@ const SiteNavbar = () => {
                     { name:'Ice Maker Repair', path:'/ice-maker-repair' },
                     { name:'Freezer Repair', path:'/freezer-repair' },
                     { name:'Wine Cooler Repair', path:'/wine-cooler-repair' },
-                    { name:'Garbage Disposal', path:'/garbage-disposal-repair' },
-                  ].map(item => (
+                                      ].map(item => (
                     <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'flex', alignItems:'center', gap:10, padding:'6px 16px 6px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); trackNavClick(item.name, 'services'); }}>
                       {item.name}
                     </a>

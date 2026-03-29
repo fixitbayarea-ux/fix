@@ -46,7 +46,6 @@ const StoveRepairPage = lazy(() => import("./components/pages/StoveRepairPage"))
 const RangeRepairPage = lazy(() => import("./components/pages/RangeRepairPage"));
 const CooktopRepairPage = lazy(() => import("./components/pages/CooktopRepairPage"));
 const WineRefrigeratorRepairPage = lazy(() => import("./components/pages/WineRefrigeratorRepairPage"));
-const DisposalRepairPage = lazy(() => import("./components/pages/DisposalRepairPage"));
 
 // Hubs / misc
 const ServiceAreasHub = lazy(() => import("./components/pages/ServiceAreasHub"));
@@ -482,8 +481,6 @@ export default function App() {
         <Route path="/oven-repair" element={<OvenRepairPage />} />
         <Route path="/cooktop-repair" element={<CooktopRepairPage />} />
         <Route path="/wine-cooler-repair" element={<WineRefrigeratorRepairPage />} />
-        <Route path="/garbage-disposal-repair" element={<DisposalRepairPage />} />
-        <Route path="/disposal-repair" element={<Navigate to="/garbage-disposal-repair" replace />} />
 
         {/* Cities (prefix + suffix support) */}
         <Route path="/appliance-repair-:city" element={<CityRepairRoute />} />

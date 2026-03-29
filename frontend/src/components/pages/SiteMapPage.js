@@ -19,7 +19,7 @@ const SERVICES = [
   ['Oven Repair', '/oven-repair'], ['Stove Repair', '/stove-repair'],
   ['Range Repair', '/range-repair'], ['Cooktop Repair', '/cooktop-repair'],
   ['Ice Maker Repair', '/ice-maker-repair'], ['Wine Cooler Repair', '/wine-cooler-repair'],
-  ['Freezer Repair', '/freezer-repair'], ['Garbage Disposal Repair', '/garbage-disposal-repair'],
+  ['Freezer Repair', '/freezer-repair'],
 ];
 const COMMERCIAL_FEATURED = ['Commercial Appliance Repair', '/commercial-appliance-repair'];
 const COMMERCIAL = [

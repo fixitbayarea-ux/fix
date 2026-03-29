@@ -12,8 +12,7 @@ export const servicesItems = [
   { name: 'Stove Repair', path: '/stove-repair' },
   { name: 'Cooktop Repair', path: '/cooktop-repair' },
   { name: 'Wine Cooler Repair', path: '/wine-cooler-repair' },
-  { name: 'Garbage Disposal Repair', path: '/garbage-disposal-repair' },
-  { name: 'Commercial Appliance Repair', path: '/commercial-appliance-repair' },
+{ name: 'Commercial Appliance Repair', path: '/commercial-appliance-repair' },
   { name: 'Residential Appliance Repair', path: '/residential-appliance-repair' },
 ];
 

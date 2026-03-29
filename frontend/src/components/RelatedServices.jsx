@@ -10,7 +10,6 @@ const CARD_INDEX = {
   'cooktop': { title: 'Cooktop Repair', url: '/cooktop-repair', alt: 'Cooktop element replacement', img: 'cooktop' },
   'ice-maker': { title: 'Ice Maker Repair', url: '/ice-maker-repair', alt: 'Ice maker service', img: 'ice-maker' },
   'wine-fridge': { title: 'Wine Fridge Repair', url: '/wine-fridge-repair', alt: 'Wine cooler maintenance', img: 'wine-fridge' },
-  'garbage-disposal': { title: 'Garbage Disposal Repair', url: '/garbage-disposal-repair', alt: 'Kitchen disposal repair', img: 'garbage-disposal' },
   'commercial': { title: 'Commercial Appliance Repair', url: '/commercial-appliance-repair', alt: 'Commercial kitchen equipment repair', img: 'commercial' },
   'residential': { title: 'Residential Appliance Repair', url: '/residential-appliance-repair', alt: 'Home appliance repair service', img: 'residential' }
 };

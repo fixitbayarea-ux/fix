@@ -8,7 +8,6 @@ import dishwasherImg from '../../assets/services/dishwasher.jpg';
 import ovenImg from '../../assets/services/oven.jpg';
 import cooktopImg from '../../assets/services/cooktop.jpg';
 import rangeImg from '../../assets/services/range.jpg';
-import disposalImg from '../../assets/services/disposal.jpg';
 import wineCoolerImg from '../../assets/services/wine-cooler.jpg';
 import washerImg from '../../assets/services/washer.jpg';
 import dryerImg from '../../assets/services/dryer.jpg';
@@ -24,7 +23,6 @@ import dishwasherImgWebP from '../../assets/services/dishwasher.webp';
 import ovenImgWebP from '../../assets/services/oven.webp';
 import cooktopImgWebP from '../../assets/services/cooktop.webp';
 import rangeImgWebP from '../../assets/services/range.webp';
-import disposalImgWebP from '../../assets/services/disposal.webp';
 import wineCoolerImgWebP from '../../assets/services/wine-cooler.webp';
 import washerImgWebP from '../../assets/services/washer.webp';
 import dryerImgWebP from '../../assets/services/dryer.webp';
@@ -41,8 +39,7 @@ const servicesData = [
   { name: 'Oven', category: 'Kitchen', description: 'Not heating, temperature issues', path: '/oven-repair', image: ovenImg, imageWebP: ovenImgWebP },
   { name: 'Stove & Cooktop', category: 'Kitchen', description: 'Burners not working, igniter problems', path: '/cooktop-repair', image: cooktopImg, imageWebP: cooktopImgWebP },
   { name: 'Range', category: 'Kitchen', description: 'Combo oven and stove repair', path: '/oven-repair', image: rangeImg, imageWebP: rangeImgWebP },
-  { name: 'Garbage Disposal', category: 'Kitchen', description: 'Jammed, leaking, or humming', path: '/garbage-disposal-repair', image: disposalImg, imageWebP: disposalImgWebP },
-  { name: 'Wine Cooler', category: 'Kitchen', description: 'Temperature not holding, not cooling', path: '/wine-cooler-repair', image: wineCoolerImg, imageWebP: wineCoolerImgWebP },
+{ name: 'Wine Cooler', category: 'Kitchen', description: 'Temperature not holding, not cooling', path: '/wine-cooler-repair', image: wineCoolerImg, imageWebP: wineCoolerImgWebP },
   { name: 'Washer', category: 'Laundry', description: 'Not spinning, draining, or filling', path: '/washer-repair', image: washerImg, imageWebP: washerImgWebP },
   { name: 'Dryer', category: 'Laundry', description: 'Not heating, tumbling, or turning on', path: '/dryer-repair', image: dryerImg, imageWebP: dryerImgWebP },
   { name: 'Commercial Refrigerator', category: 'Commercial', description: 'Walk-in coolers, reach-in units, display cases', path: '/commercial-refrigerator-repair', image: commercialRefrigeratorImg, imageWebP: commercialRefrigeratorImgWebP },

@@ -221,7 +221,7 @@ const LocalApplianceRepairPage = () => {
                 FixitBay LLC is a local, family-owned appliance repair company serving <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>San Francisco</strong>, the Peninsula, and Marin County. Our technicians live in the Bay Area and understand the unique challenges of local homes. We charge a <strong style={{ fontFamily: F, fontWeight: 700, color: '#FF5722' }}>$60 diagnostic fee</strong> (credited toward your repair).
               </p>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8, marginBottom: 16 }}>
-                We repair all major household appliances — refrigerators, washers, dryers, dishwashers, ovens, cooktops, freezers, ice makers, wine coolers, and garbage disposals. Same- or next-day appointments available.
+                We repair all major household appliances — refrigerators, washers, dryers, dishwashers, ovens, cooktops, freezers, ice makers, wine coolers. Same- or next-day appointments available.
               </p>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8 }}>
                 Whether you're in <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>Pacific Heights</strong>, the <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>Sunset</strong>, or <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>Mill Valley</strong>, we'll get your appliance fixed fast with our <strong style={{ fontFamily: F, fontWeight: 700, color: '#FF5722' }}>180-day warranty</strong> on parts and labor.

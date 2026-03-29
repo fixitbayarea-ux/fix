@@ -963,7 +963,7 @@ const ApplianceRepairPageNew = ({
                   {pricingTable.rows.map((row, i) => (
                     <tr key={i} style={{ borderBottom: '1px solid rgba(0,0,0,0.08)' }}>
                       <td style={{ padding: '14px 16px', fontWeight: 500, fontSize: 14, color: '#0D1B2A' }}>{row.repair}</td>
-                      <td style={{ textAlign: 'right', padding: '14px 16px', fontWeight: 700, fontSize: 15, color: '#0D1B2A' }}>${row.price}</td>
+                      <td style={{ textAlign: 'right', padding: '14px 16px', fontWeight: 700, fontSize: 15, color: '#0D1B2A' }}>from ${row.price}</td>
                     </tr>
                   ))}
                   <tr style={{ borderTop: '2px solid #0D1B2A', background: 'rgba(255,87,34,0.04)' }}>

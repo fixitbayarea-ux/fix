@@ -46,7 +46,6 @@ const MAIN_PRICING = [
   { appliance: 'Oven / Range / Stove', fixitbay: 'from $230', market: '$180\u2013$500', href: '/oven-repair' },
   { appliance: 'Cooktop', fixitbay: 'from $230', market: '$180\u2013$450', href: '/cooktop-repair' },
   { appliance: 'Wine Cooler', fixitbay: 'from $250', market: '$250\u2013$650', href: '/wine-cooler-repair' },
-  { appliance: 'Garbage Disposal', fixitbay: 'from $250', market: '$130\u2013$300', href: '/garbage-disposal-repair' },
 ];
 
 const LUXURY_PRICING = [

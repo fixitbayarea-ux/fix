@@ -11,7 +11,6 @@ import wineCoolerImg from '../../assets/services/wine-cooler.jpg';
 import washerImg from '../../assets/services/washer.jpg';
 import dryerImg from '../../assets/services/dryer.jpg';
 import freezerImg from '../../assets/services/freezer.jpg';
-import disposalImg from '../../assets/services/disposal.jpg';
 import commercialRefrigeratorImg from '../../assets/services/commercial-refrigerator.jpg';
 import commercialDishwasherImg from '../../assets/services/commercial-dishwasher.jpg';
 import commercialWasherImg from '../../assets/services/commercial-washer.jpg';
@@ -60,14 +59,7 @@ const MaintenanceServicesSection = () => {
       path: '/maintenance/cooktop',
       image: cooktopImg 
     },
-    { 
-      name: 'Garbage Disposal Maintenance', 
-      category: 'Kitchen', 
-      description: 'Blade sharpening, leak check, motor inspection',
-      path: '/maintenance/disposal',
-      image: disposalImg 
-    },
-    { 
+{ 
       name: 'Wine Cooler Maintenance', 
       category: 'Kitchen', 
       description: 'Temperature calibration, vibration check, seal inspection',

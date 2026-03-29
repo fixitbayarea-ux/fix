@@ -60,11 +60,10 @@ const SERVICE_CONTENT = {
       from: 250,
       rows: [
         { repair: 'Control board', price: 350 },
-        { repair: 'Drum bearing', price: 295 },
-        { repair: 'Water pump', price: 285 },
         { repair: 'Door latch (front-load)', price: 250 },
-        { repair: 'Drain pump', price: 285 },
+        { repair: 'Drain pump', price: 295 },
         { repair: 'Drive belt', price: 250 },
+        { repair: 'Door boot/gasket replacement', price: 310 },
       ],
       luxury: [],
     },
@@ -104,7 +103,7 @@ const SERVICE_CONTENT = {
         { repair: 'Thermal fuse', price: 250 },
         { repair: 'Drum belt', price: 250 },
         { repair: 'Control board', price: 350 },
-        { repair: 'Gas valve (gas dryers)', price: 295 },
+        { repair: 'Gas valve (gas dryers)', price: 325 },
         { repair: 'Drum rollers', price: 275 },
       ],
       luxury: [],
@@ -143,10 +142,8 @@ const SERVICE_CONTENT = {
       rows: [
         { repair: 'Drain pump', price: 285 },
         { repair: 'Door latch assembly', price: 250 },
-        { repair: 'Spray arm', price: 250 },
-        { repair: 'Water inlet valve', price: 265 },
-        { repair: 'Control board', price: 350 },
-        { repair: 'Door gasket', price: 250 },
+        { repair: 'Water inlet valve', price: 285 },
+        { repair: 'Control board', price: 385 },
       ],
       luxury: [
         { brand: 'Bosch', from: 315 },
@@ -232,7 +229,7 @@ const SERVICE_CONTENT = {
       rows: [
         { repair: 'Igniter (gas)', price: 285 },
         { repair: 'Bake element', price: 265 },
-        { repair: 'Burner assembly', price: 285 },
+        { repair: 'Burner assembly', price: 325 },
         { repair: 'Control board', price: 350 },
         { repair: 'Surface element (electric)', price: 265 },
         { repair: 'Oven sensor', price: 265 },
@@ -275,11 +272,10 @@ const SERVICE_CONTENT = {
       from: 250,
       rows: [
         { repair: 'Igniter', price: 265 },
-        { repair: 'Burner assembly', price: 285 },
+        { repair: 'Burner assembly', price: 325 },
         { repair: 'Gas valve', price: 295 },
         { repair: 'Control board', price: 350 },
         { repair: 'Surface element', price: 265 },
-        { repair: 'Infinite switch', price: 250 },
       ],
       luxury: [
         { brand: 'Viking', from: 450 },
@@ -319,11 +315,9 @@ const SERVICE_CONTENT = {
       from: 250,
       rows: [
         { repair: 'Igniter (gas)', price: 265 },
-        { repair: 'Burner assembly', price: 285 },
+        { repair: 'Burner assembly', price: 325 },
         { repair: 'Induction element', price: 350 },
         { repair: 'Control board', price: 350 },
-        { repair: 'Infinite switch', price: 250 },
-        { repair: 'Glass-top surface', price: 450 },
       ],
       luxury: [
         { brand: 'Viking', from: 450 },
@@ -445,7 +439,6 @@ const SERVICE_CONTENT = {
         { repair: 'Fan motor', price: 265 },
         { repair: 'Door seal', price: 250 },
         { repair: 'Control board', price: 350 },
-        { repair: 'Compressor', price: 495 },
         { repair: 'Temperature sensor', price: 265 },
       ],
       luxury: [],
@@ -475,46 +468,6 @@ const SERVICE_CONTENT = {
     ],
   },
 
-  /* ═══════════════════════ GARBAGE DISPOSAL ═══════════════════════ */
-  'Garbage Disposal': {
-    pricingTable: {
-      diagnostic: 60,
-      from: 195,
-      rows: [
-        { repair: 'Jam clearing', price: 125 },
-        { repair: 'Leak repair (flange)', price: 175 },
-        { repair: 'Reset / electrical fix', price: 150 },
-        { repair: 'Full unit replacement', price: 350 },
-        { repair: 'Splash guard', price: 125 },
-        { repair: 'Drain line clearing', price: 175 },
-      ],
-      luxury: [],
-    },
-    comparisonTable: {
-      title: 'Disposal Repair vs. Replacement \u2014 How to Decide',
-      intro: 'Garbage disposals are compact and affordable. Here\u2019s when repair vs. replacement makes sense.',
-      rows: [
-        { situation: 'Age under 6 years', repair: true, replace: false, note: 'Disposals last 8\u201312 years. Jams, switch failures, and leaks in younger units are quick, affordable fixes.' },
-        { situation: 'Jammed or humming but not spinning', repair: true, replace: false, note: 'A stuck flywheel is the most common disposal issue. Manual clearing and reset usually fixes it immediately.' },
-        { situation: 'Motor burned out', repair: false, replace: true, note: 'Motor replacement on a disposal costs nearly as much as a new unit. A fresh installation is usually the better option.' },
-        { situation: 'Leaking from bottom', repair: false, replace: true, note: 'A bottom leak indicates a cracked internal seal or housing. Replacement is more cost-effective than repair.' },
-      ],
-    },
-    symptomsChecklist: [
-      { symptom: 'Humming but not grinding', meaning: 'The motor is receiving power, but the flywheel is jammed \u2014 usually by a bone, utensil, or hard food debris.' },
-      { symptom: 'Won\u2019t turn on at all', meaning: 'Often a tripped reset button, blown internal fuse, faulty wall switch, or a failed motor.' },
-      { symptom: 'Leaking from the top flange', meaning: 'The mounting ring or plumber\u2019s putty seal between the sink and disposal has loosened over time.' },
-      { symptom: 'Slow draining', meaning: 'Grinding chamber partially clogged with grease or food buildup. The drain line may also need clearing.' },
-      { symptom: 'Loud metallic grinding', meaning: 'A foreign object (utensil, bottle cap, small bone) is caught between the grinding plate and chamber wall.' },
-      { symptom: 'Bad odor from disposal', meaning: 'Food residue stuck in the grinding chamber or splash guard. A thorough cleaning with ice and citrus usually resolves it.' },
-    ],
-    diagnosisSteps: [
-      { step: 1, title: 'Full Diagnostic Inspection', description: 'We test the motor, check for flywheel jams, inspect the mounting assembly, examine all drain connections, and evaluate the electrical switch and wiring.' },
-      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Written estimate on the spot. For repairs, we carry splash guards, mounting hardware, and switch components. If replacement is needed, we offer same-day installation with quality InSinkErator and Waste King units.' },
-      { step: 3, title: 'Professional Repair & Verification', description: 'After repair, we test grinding performance, check for leaks at every connection, and verify the drain flows freely. Every repair is backed by our 180-day warranty.' },
-    ],
-  },
-
   /* ═══════════════════════════════════════════════════════════════
      MAINTENANCE PAGES
      ═══════════════════════════════════════════════════════════════ */
@@ -522,15 +475,11 @@ const SERVICE_CONTENT = {
   'Refrigerator Maintenance': {
     pricingTable: {
       diagnostic: 60,
-      from: 149,
+      from: 255,
       rows: [
-        { repair: 'Condenser coil cleaning', price: 85 },
-        { repair: 'Water filter replacement', price: 45 },
-        { repair: 'Door gasket inspection & replacement', price: 120 },
-        { repair: 'Thermostat calibration', price: 65 },
-        { repair: 'Ice maker cleaning & tune-up', price: 75 },
-        { repair: 'Water line inspection', price: 55 },
-        { repair: 'Full maintenance check (all above)', price: 149 },
+        { repair: 'Condenser coil cleaning', price: 255 },
+        { repair: 'Door gasket replacement', price: 255 },
+        { repair: 'Water line inspection', price: 265 },
       ],
       luxury: [],
     },
@@ -561,14 +510,12 @@ const SERVICE_CONTENT = {
   'Washer Maintenance': {
     pricingTable: {
       diagnostic: 60,
-      from: 149,
+      from: 215,
       rows: [
-        { repair: 'Drum & tub cleaning', price: 75 },
-        { repair: 'Inlet hose inspection & replacement', price: 85 },
-        { repair: 'Drain pump filter cleaning', price: 65 },
-        { repair: 'Belt & bearing inspection', price: 75 },
-        { repair: 'Door seal cleaning (front-load)', price: 55 },
-        { repair: 'Full maintenance check (all above)', price: 149 },
+        { repair: 'Inlet hose replacement', price: 255 },
+        { repair: 'Drain pump filter cleaning', price: 215 },
+        { repair: 'Belt & bearing inspection', price: 250 },
+        { repair: 'Door seal replacement (front-load)', price: 255 },
       ],
       luxury: [],
     },
@@ -599,14 +546,11 @@ const SERVICE_CONTENT = {
   'Dryer Maintenance': {
     pricingTable: {
       diagnostic: 60,
-      from: 149,
+      from: 250,
       rows: [
-        { repair: 'Vent cleaning & inspection', price: 95 },
-        { repair: 'Lint trap deep clean', price: 55 },
-        { repair: 'Belt & roller inspection', price: 75 },
-        { repair: 'Heating element check', price: 65 },
-        { repair: 'Gas connection safety check', price: 75 },
-        { repair: 'Full maintenance check (all above)', price: 149 },
+        { repair: 'Vent cleaning & inspection', price: 250 },
+        { repair: 'Professional dryer cleaning', price: 290 },
+        { repair: 'Belt & roller replacement', price: 265 },
       ],
       luxury: [],
     },
@@ -637,14 +581,10 @@ const SERVICE_CONTENT = {
   'Dishwasher Maintenance': {
     pricingTable: {
       diagnostic: 60,
-      from: 149,
+      from: 250,
       rows: [
-        { repair: 'Filter & spray arm cleaning', price: 65 },
-        { repair: 'Door gasket inspection', price: 55 },
-        { repair: 'Water inlet valve test', price: 65 },
-        { repair: 'Drain line clearing', price: 75 },
-        { repair: 'Heating element check', price: 55 },
-        { repair: 'Full maintenance check (all above)', price: 149 },
+        { repair: 'Filter & spray arm cleaning', price: 250 },
+        { repair: 'Drain line clearing', price: 265 },
       ],
       luxury: [],
     },
@@ -675,14 +615,11 @@ const SERVICE_CONTENT = {
   'Oven Maintenance': {
     pricingTable: {
       diagnostic: 60,
-      from: 149,
+      from: 250,
       rows: [
-        { repair: 'Burner & igniter inspection', price: 75 },
-        { repair: 'Temperature calibration', price: 65 },
-        { repair: 'Door seal inspection', price: 55 },
-        { repair: 'Gas connection safety check', price: 75 },
-        { repair: 'Heating element test', price: 65 },
-        { repair: 'Full maintenance check (all above)', price: 149 },
+        { repair: 'Burner & igniter inspection', price: 255 },
+        { repair: 'Gas connection safety check', price: 250 },
+        { repair: 'Heating element test', price: 255 },
       ],
       luxury: [],
     },
@@ -713,14 +650,11 @@ const SERVICE_CONTENT = {
   'Cooktop Maintenance': {
     pricingTable: {
       diagnostic: 60,
-      from: 149,
+      from: 45,
       rows: [
-        { repair: 'Burner cleaning & inspection', price: 65 },
-        { repair: 'Igniter testing & cleaning', price: 55 },
-        { repair: 'Gas connection check', price: 75 },
-        { repair: 'Glass surface inspection', price: 55 },
+        { repair: 'Igniter testing & cleaning', price: 250 },
+        { repair: 'Gas connection check', price: 250 },
         { repair: 'Control knob & switch test', price: 45 },
-        { repair: 'Full maintenance check (all above)', price: 149 },
       ],
       luxury: [],
     },

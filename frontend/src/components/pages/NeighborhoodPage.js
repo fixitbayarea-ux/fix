@@ -30,7 +30,6 @@ const SERVICES = [
   { href: '/freezer-repair', label: 'Freezer Repair' },
   { href: '/ice-maker-repair', label: 'Ice Maker Repair' },
   { href: '/stove-repair', label: 'Stove Repair' },
-  { href: '/garbage-disposal-repair', label: 'Garbage Disposal' },
 ];
 
 function splitCall(str) {

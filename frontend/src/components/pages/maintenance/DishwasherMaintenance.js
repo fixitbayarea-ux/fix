@@ -107,7 +107,6 @@ const DishwasherMaintenance = () => {
       relatedLinks={[
         { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or poor cleaning' },
         { href: '/maintenance/refrigerator', label: 'Fridge Maintenance', desc: 'Coil cleaning and seal inspection' },
-        { href: '/garbage-disposal-repair', label: 'Disposal Repair', desc: 'Connected to dishwasher drain line' },
         { href: '/maintenance/cooktop', label: 'Cooktop Maintenance', desc: 'Burner and surface cleaning service' },
       ]}
     />

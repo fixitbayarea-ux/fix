@@ -8,7 +8,6 @@ import dishwasherImg from '../../assets/services/dishwasher.jpg';
 import ovenImg from '../../assets/services/oven.jpg';
 import cooktopImg from '../../assets/services/cooktop.jpg';
 import rangeImg from '../../assets/services/range.jpg';
-import disposalImg from '../../assets/services/disposal.jpg';
 import wineCoolerImg from '../../assets/services/wine-cooler.jpg';
 import washerImg from '../../assets/services/washer.jpg';
 import dryerImg from '../../assets/services/dryer.jpg';
@@ -27,8 +26,7 @@ const servicesData = [
   { name: 'Oven', category: 'Kitchen', description: 'Not heating, temperature issues', path: '/oven-repair', image: ovenImg },
   { name: 'Stove & Cooktop', category: 'Kitchen', description: 'Burners not working, igniter problems', path: '/cooktop-repair', image: cooktopImg },
   { name: 'Range', category: 'Kitchen', description: 'Combo oven and stove repair', path: '/oven-repair', image: rangeImg },
-  { name: 'Garbage Disposal', category: 'Kitchen', description: 'Jammed, leaking, or humming', path: '/garbage-disposal-repair', image: disposalImg },
-  { name: 'Wine Cooler', category: 'Kitchen', description: 'Temperature not holding, not cooling', path: '/wine-cooler-repair', image: wineCoolerImg },
+{ name: 'Wine Cooler', category: 'Kitchen', description: 'Temperature not holding, not cooling', path: '/wine-cooler-repair', image: wineCoolerImg },
   
   // Laundry
   { name: 'Washer', category: 'Laundry', description: 'Not spinning, draining, or filling', path: '/washer-repair', image: washerImg },
