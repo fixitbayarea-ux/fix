@@ -950,22 +950,22 @@ const ApplianceRepairPageNew = ({
       )}
 
       {/* ═══ SERVICE AREAS ═══ */}
-      {!isCity && !isBrand && !isCommercial && (() => {
+      {!isCity && !isBrand && (() => {
         const CITY_SERVICE_SLUGS = ['san-francisco','daly-city','south-san-francisco','san-bruno','pacifica','millbrae','mill-valley','san-rafael','sausalito','novato','corte-madera','tiburon','belvedere','larkspur','greenbrae','ross','fairfax','san-anselmo'];
         const CITY_SERVICE_SVCS = ['refrigerator','washer','dryer','dishwasher','oven','wine-cooler','ice-maker'];
         const svcSlug = appliance ? appliance.toLowerCase().replace(/\s+/g, '-').replace(/-appliance$/, '') : '';
-        const hasCityServiceRoutes = CITY_SERVICE_SVCS.includes(svcSlug);
+        const hasCityServiceRoutes = !isCommercial && CITY_SERVICE_SVCS.includes(svcSlug);
         return (
           <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
             <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
               <div style={{ ...S.eyebrow, marginBottom: 10 }}>COVERAGE</div>
-              <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 10 }}>Service Areas for {appliance} {serviceWord}</h2>
-              <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>We serve San Francisco, Peninsula &amp; North Bay / Marin County</p>
+              <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 10 }}>{isCommercial ? 'Commercial Service Areas' : `Service Areas for ${appliance} ${serviceWord}`}</h2>
+              <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>{isCommercial ? 'We provide commercial appliance repair for restaurants, cafes, hotels, and property managers across San Francisco, the Peninsula, and Marin County.' : 'We serve San Francisco, Peninsula & North Bay / Marin County'}</p>
               <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#4A5568', marginBottom: 16, lineHeight: 1.7 }}>We provide {appliance.toLowerCase()} {serviceWord.toLowerCase()} throughout San Francisco, Peninsula, and Marin County — including Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara, Mill Valley, San Rafael, Sausalito, Novato, Corte Madera, Larkspur, Greenbrae, Tiburon, Fairfax, San Anselmo, and Ross. Same- or next-day appointments available across all service areas.</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'flex-start' }}>
                 {['San Francisco','Daly City','South San Francisco','Colma','Brisbane','San Bruno','Millbrae','Pacifica','Montara','Sausalito','Mill Valley','Tiburon','Belvedere','Corte Madera','San Rafael','Larkspur','Greenbrae','Novato','Ross','Fairfax','San Anselmo'].map(city => {
                   const slug = city.toLowerCase().replace(/\s+/g, '-');
-                  const href = `/${slug}-${svcSlug}-repair`;
+                  const href = isCommercial ? `/${slug}-appliance-repair` : `/${slug}-${svcSlug}-repair`;
                   return (
                     <Link key={city} to={href} style={{ fontFamily: S.font, fontWeight: 500, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.10)', borderRadius: 20, padding: '7px 16px', whiteSpace: 'nowrap', cursor: 'pointer', transition: 'all 0.15s ease' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#0D1B2A'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.10)'; }}>
                       {city}
