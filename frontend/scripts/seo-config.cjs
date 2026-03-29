@@ -1340,18 +1340,26 @@ function getSEOContent(route) {
         links: ['/', '/washer-repair', '/refrigerator-repair', '/oven-repair', '/service-areas', '/reviews', '/contact']
       },
       'dishwasher': {
-        title: 'Dishwasher Repair Bay Area | Same-Day Service | FixitBay',
-        desc: 'Dishwasher repair across the Bay Area. Leaks, draining, won\'t start. Same-day service, $60 diagnostic applied to repair. Call FixitBay.',
-        h1: 'Dishwasher Repair in the Bay Area',
+        title: 'Dishwasher Repair San Francisco | FixitBay',
+        desc: 'Expert dishwasher repair in San Francisco. Leaks, draining, won\'t start. Same- or next-day appointments, $60 diagnostic applied to repair. FixitBay LLC.',
+        h1: 'Dishwasher Repair in San Francisco | Same-Day Service',
         content: `
-          <p style="margin-bottom:1rem;">When your dishwasher won't drain, leaks water, or leaves dishes dirty, FixitBay delivers professional repair across the Bay Area — from San Francisco to Marin County and the Peninsula. Our technicians fix drain pumps, spray arms, heating elements, door seals, control boards, and more.</p>
-          <p style="margin-bottom:1rem;">We service all major brands including Bosch, Samsung, LG, GE, Whirlpool, KitchenAid, Miele, and Thermador. $60 diagnostic credited toward repair. 180-day warranty.</p>
-          <p style="margin-bottom:1rem;"><strong>Looking for dishwasher repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-dishwasher-repair" style="color:#C0362C;font-weight:bold;">San Francisco Dishwasher Repair</a> page for local details, neighborhood coverage, and SF-specific availability.</p>
+          <p style="margin-bottom:1rem;">FixitBay LLC is San Francisco's trusted dishwasher repair service. We handle everything from clogged drain pumps and leaking door seals to faulty control boards and error codes. San Francisco's older Victorian and Edwardian homes often have tight kitchen layouts and aging plumbing — our technicians are experienced with these challenges.</p>
+          <p style="margin-bottom:1rem;">We serve every San Francisco neighborhood with same- or next-day appointment availability. Our response time averages under 4 hours for urgent dishwasher leaks. All major brands: Bosch, Samsung, LG, GE, Whirlpool, KitchenAid, Miele, and Thermador. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;"><strong>Need dishwasher repair in a specific San Francisco neighborhood?</strong> Visit our <a href="/san-francisco-dishwasher-repair" style="color:#C0362C;font-weight:bold;">San Francisco Dishwasher Repair</a> page for detailed neighborhood coverage and local availability.</p>
           <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Dishwasher</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Under 8 years old, won't drain or clean — clogged filters, bad drain pumps cost $150–$280.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Door latch broken or seal leaking — gaskets $80–$180 installed.</p>
           <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Motor or control board failure on 10+ year unit — $300–$450 repair on aging machine.</p>
           <p style="margin-bottom:1rem;"><strong>Replace:</strong> Cracked tub or inner drum corrosion — rarely cost-effective to repair.</p>
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why SF Residents Choose FixitBay</h2>
+          <ul style="margin-bottom:1rem;padding-left:20px;">
+            <li>Licensed & insured — CA contractor, 3+ years serving the Bay Area</li>
+            <li>$60 diagnostic fee applied toward your repair — no hidden costs</li>
+            <li>Same- or next-day appointments, Monday through Saturday</li>
+            <li>Experienced with SF's Victorian-era kitchens and compact condo layouts</li>
+            <li>180-day warranty on all parts and labor</li>
+          </ul>
           <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
           <p>We also offer <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerator repair</a>, <a href="/oven-repair" style="color:#C0362C;font-weight:bold;">oven repair</a>, and <a href="/washer-repair" style="color:#C0362C;font-weight:bold;">washer repair</a> across the Bay Area.</p>
         `,
