@@ -314,7 +314,7 @@ const ApplianceRepairPageNew = ({
   relatedServicesCategory = null, relatedServicesSubtitle = null,
   hideHero = false, noPaddingTop = false, cmsSlug = null, cityName = null,
   serviceSchema = null, noindex, heroImage = null, heroImageAlt = '', heroImagePosition = 'center 15%',
-  repairVsReplace = null, relatedLinks = null, hideHowItWorks = false, customH1 = null, heroDescription = null, maintenancePricing = null, maintenanceSchedule = null, pricingCityName = null, servingCity = null, children
+  repairVsReplace = null, relatedLinks = null, hideHowItWorks = false, customH1 = null, heroDescription = null, maintenancePricing = null, maintenanceSchedule = null, pricingCityName = null, servingCity = null, comparisonTable = null, symptomsChecklist = null, diagnosisSteps = null, children
 }) => {
   const isMaintenance = breadcrumbCategoryHref === '/maintenance';
   const serviceWord = isMaintenance ? 'Maintenance' : 'Repair';
@@ -857,6 +857,86 @@ const ApplianceRepairPageNew = ({
                   <div>
                     <div style={{ fontFamily: S.font, fontWeight: item.action === 'repair' ? 700 : 500, fontSize: 15, color: item.action === 'repair' ? '#0D1B2A' : '#4A5568' }}>{item.condition}</div>
                     <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: '#4A5568', marginTop: 4 }}>{item.recommendation}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ═══ COMPARISON TABLE ═══ */}
+      {comparisonTable && (
+        <section data-testid="comparison-table" style={{ background: '#FFFFFF', padding: '70px 0' }}>
+          <div style={{ maxWidth: 820, margin: '0 auto', padding: '0 24px' }}>
+            <div style={{ ...S.eyebrow, marginBottom: 10 }}>REPAIR OR REPLACE?</div>
+            <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 12 }}>{comparisonTable.title}</h2>
+            <p style={{ ...S.body, marginBottom: 28 }}>{comparisonTable.intro}</p>
+            <div style={{ overflowX: 'auto' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: S.font }}>
+                <thead>
+                  <tr style={{ borderBottom: '2px solid #0D1B2A' }}>
+                    <th style={{ textAlign: 'left', padding: '12px 16px', fontWeight: 700, fontSize: 13, color: '#0D1B2A', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Situation</th>
+                    <th style={{ textAlign: 'center', padding: '12px 16px', fontWeight: 700, fontSize: 13, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.06em', width: 90 }}>Repair</th>
+                    <th style={{ textAlign: 'center', padding: '12px 16px', fontWeight: 700, fontSize: 13, color: '#DC2626', textTransform: 'uppercase', letterSpacing: '0.06em', width: 90 }}>Replace</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {comparisonTable.rows.map((row, i) => (
+                    <tr key={i} style={{ borderBottom: '1px solid rgba(0,0,0,0.08)' }}>
+                      <td style={{ padding: '14px 16px' }}>
+                        <div style={{ fontWeight: 600, fontSize: 14, color: '#0D1B2A' }}>{row.situation}</div>
+                        <div style={{ fontSize: 13, color: '#4A5568', marginTop: 4, lineHeight: 1.5 }}>{row.note}</div>
+                      </td>
+                      <td style={{ textAlign: 'center', padding: '14px 16px', fontSize: 18 }}>{row.repair ? <Check size={20} style={{ color: '#FF5722' }} /> : <span style={{ color: 'rgba(0,0,0,0.15)' }}>&mdash;</span>}</td>
+                      <td style={{ textAlign: 'center', padding: '14px 16px', fontSize: 18 }}>{row.replace ? <X size={20} style={{ color: '#DC2626' }} /> : <span style={{ color: 'rgba(0,0,0,0.15)' }}>&mdash;</span>}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ═══ SYMPTOMS CHECKLIST ═══ */}
+      {symptomsChecklist && (
+        <section data-testid="symptoms-checklist" style={{ background: '#F8F5F0', padding: '70px 0' }}>
+          <div style={{ maxWidth: 820, margin: '0 auto', padding: '0 24px' }}>
+            <div style={{ ...S.eyebrow, marginBottom: 10 }}>SYMPTOMS GUIDE</div>
+            <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 28 }}>{appliance} Symptoms Checklist</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+              {symptomsChecklist.map((item, i) => (
+                <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 4, padding: '16px 20px' }}>
+                  <div style={{ width: 28, height: 28, borderRadius: '50%', background: 'rgba(255,87,34,0.10)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2 }}>
+                    <Wrench size={14} style={{ color: '#FF5722' }} />
+                  </div>
+                  <div>
+                    <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 14, color: '#0D1B2A', marginBottom: 4 }}>{item.symptom}</div>
+                    <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: '#4A5568', lineHeight: 1.6, margin: 0 }}>{item.meaning}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ═══ DIAGNOSIS PROCESS ═══ */}
+      {diagnosisSteps && (
+        <section data-testid="diagnosis-process" style={{ background: '#0D1B2A', padding: '70px 0' }}>
+          <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 24px' }}>
+            <div style={{ ...S.eyebrow, color: '#FF5722', marginBottom: 10 }}>OUR PROCESS</div>
+            <h2 style={{ ...S.h2, color: '#FFFFFF', marginBottom: 36 }}>How We Diagnose and Fix {appliance}s</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>
+              {diagnosisSteps.map((s) => (
+                <div key={s.step} style={{ display: 'flex', gap: 20, alignItems: 'flex-start' }}>
+                  <div style={{ width: 48, height: 48, borderRadius: '50%', border: '2px solid #FF5722', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <span style={{ fontFamily: S.font, fontWeight: 800, fontSize: 20, color: '#FF5722' }}>{s.step}</span>
+                  </div>
+                  <div>
+                    <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 16, color: '#FFFFFF', marginBottom: 6 }}>{s.title}</div>
+                    <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.65)', lineHeight: 1.7, margin: 0 }}>{s.description}</p>
                   </div>
                 </div>
               ))}
