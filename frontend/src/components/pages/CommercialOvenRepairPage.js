@@ -2,6 +2,7 @@ import React from 'react';
 import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const F = "'Montserrat', sans-serif";
 const PHONE_DISPLAY = '(760) 543-5733';
@@ -122,6 +123,10 @@ const DesktopPage = () => (
     faqData={faqData}
     relatedServicesCategory="Commercial"
     relatedServicesSubtitle="Expert repair for commercial appliances"
+    pricingTable={SERVICE_CONTENT['Commercial Oven'].pricingTable}
+    comparisonTable={SERVICE_CONTENT['Commercial Oven'].comparisonTable}
+    symptomsChecklist={SERVICE_CONTENT['Commercial Oven'].symptomsChecklist}
+    diagnosisSteps={SERVICE_CONTENT['Commercial Oven'].diagnosisSteps}
     serviceDescription={serviceDescription}
   >
     <UniqueContent />

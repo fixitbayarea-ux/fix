@@ -2,6 +2,7 @@ import React from 'react';
 import ApplianceRepairPageNew from '../../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../../templates/MobileServiceLanding';
 import { useIsMobile } from '../../../hooks/useIsMobile';
+import SERVICE_CONTENT from '../../../data/serviceContentData';
 
 const WasherMaintenance = () => {
   const isMobile = useIsMobile();
@@ -90,14 +91,6 @@ const WasherMaintenance = () => {
       relatedServicesSubtitle="Complete maintenance services for your laundry appliances"
       isMaintenance={true}
       serviceWord="Maintenance"
-      maintenancePricing={[
-        { service: 'Drum cleaning & deodorizing', price: 'from $75' },
-        { service: 'Inlet hose inspection & replacement', price: 'from $65' },
-        { service: 'Door seal check & cleaning', price: 'from $55' },
-        { service: 'Detergent drawer deep clean', price: 'from $45' },
-        { service: 'Drain pump filter cleaning', price: 'from $55' },
-        { service: 'Full maintenance check (all of the above)', price: 'from $139' },
-      ]}
       maintenanceSchedule={{
         title: 'When to Call for Washer Maintenance',
         intro: 'Regular maintenance prevents odors, leaks, and extends the life of your washing machine.',
@@ -108,6 +101,10 @@ const WasherMaintenance = () => {
           { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician inspects drum bearings, drain pump, inlet valves, belt tension, and leveling for optimal performance.' },
         ]
       }}
+      pricingTable={SERVICE_CONTENT['Washer Maintenance'].pricingTable}
+      comparisonTable={SERVICE_CONTENT['Washer Maintenance'].comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT['Washer Maintenance'].symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT['Washer Maintenance'].diagnosisSteps}
       relatedLinks={[
         { href: '/washer-repair', label: 'Washer Repair', desc: 'Emergency washer breakdowns and leaks' },
         { href: '/maintenance/dryer', label: 'Dryer Maintenance', desc: 'Vent cleaning and heating element check' },

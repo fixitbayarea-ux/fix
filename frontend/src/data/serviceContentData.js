@@ -514,6 +514,475 @@ const SERVICE_CONTENT = {
       { step: 3, title: 'Professional Repair & Verification', description: 'After repair, we test grinding performance, check for leaks at every connection, and verify the drain flows freely. Every repair is backed by our 180-day warranty.' },
     ],
   },
+
+  /* ═══════════════════════════════════════════════════════════════
+     MAINTENANCE PAGES
+     ═══════════════════════════════════════════════════════════════ */
+
+  'Refrigerator Maintenance': {
+    pricingTable: {
+      diagnostic: 60,
+      from: 149,
+      rows: [
+        { repair: 'Condenser coil cleaning', price: 85 },
+        { repair: 'Water filter replacement', price: 45 },
+        { repair: 'Door gasket inspection & replacement', price: 120 },
+        { repair: 'Thermostat calibration', price: 65 },
+        { repair: 'Ice maker cleaning & tune-up', price: 75 },
+        { repair: 'Water line inspection', price: 55 },
+        { repair: 'Full maintenance check (all above)', price: 149 },
+      ],
+      luxury: [],
+    },
+    comparisonTable: {
+      title: 'Maintenance vs. Waiting for a Breakdown',
+      intro: 'Preventive maintenance costs a fraction of emergency repair. Here\u2019s the comparison.',
+      rows: [
+        { situation: 'Annual coil cleaning ($85)', repair: true, replace: false, note: 'Prevents compressor strain that leads to $600\u2013$900 compressor replacement.' },
+        { situation: 'Door gasket replacement ($120)', repair: true, replace: false, note: 'A worn seal forces the compressor to overwork, increasing energy bills by 10\u201315%.' },
+        { situation: 'Thermostat calibration ($65)', repair: true, replace: false, note: 'Prevents food spoilage from incorrect temperatures and extends component life.' },
+        { situation: 'Skipping maintenance entirely', repair: false, replace: true, note: 'Neglected refrigerators fail 3\u20135 years earlier. Emergency repairs average $350\u2013$650.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Higher energy bills', meaning: 'Dirty condenser coils or worn gaskets force the compressor to run longer, consuming more electricity.' },
+      { symptom: 'Food spoiling faster', meaning: 'Temperature inconsistencies from a miscalibrated thermostat or failing door seal.' },
+      { symptom: 'Frost buildup in freezer', meaning: 'Defrost system needs inspection \u2014 the heater, timer, or thermostat may be drifting.' },
+      { symptom: 'Fridge running louder', meaning: 'Condenser fan or evaporator fan bearings wearing out. Cleaning and lubrication can extend life.' },
+      { symptom: 'Water pooling under fridge', meaning: 'Clogged drain line or cracked drain pan \u2014 a routine maintenance item that prevents mold.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full System Inspection', description: 'We check thermostat calibration, compressor cycling, condenser coil condition, evaporator fan operation, door gasket seals, and defrost system function.' },
+      { step: 2, title: 'Cleaning & Calibration', description: 'We clean condenser coils, clear drain lines, inspect and clean the ice maker, replace the water filter if needed, and recalibrate the thermostat for optimal temperature.' },
+      { step: 3, title: 'Report & Recommendations', description: 'You receive a written report of findings with recommendations for any parts that should be replaced soon. We flag potential issues before they become emergencies.' },
+    ],
+  },
+
+  'Washer Maintenance': {
+    pricingTable: {
+      diagnostic: 60,
+      from: 149,
+      rows: [
+        { repair: 'Drum & tub cleaning', price: 75 },
+        { repair: 'Inlet hose inspection & replacement', price: 85 },
+        { repair: 'Drain pump filter cleaning', price: 65 },
+        { repair: 'Belt & bearing inspection', price: 75 },
+        { repair: 'Door seal cleaning (front-load)', price: 55 },
+        { repair: 'Full maintenance check (all above)', price: 149 },
+      ],
+      luxury: [],
+    },
+    comparisonTable: {
+      title: 'Maintenance vs. Waiting for a Breakdown',
+      intro: 'Washing machine maintenance prevents flooding, mold, and expensive repairs.',
+      rows: [
+        { situation: 'Annual hose inspection ($85)', repair: true, replace: false, note: 'Burst hoses are the #1 cause of washer-related flooding. Replacement hoses cost far less than water damage.' },
+        { situation: 'Drum cleaning every 3 months ($75)', repair: true, replace: false, note: 'Prevents mold, mildew, and odors \u2014 especially in front-load washers.' },
+        { situation: 'Drain pump filter cleaning ($65)', repair: true, replace: false, note: 'A clogged filter causes slow draining and pump strain. Cleaning extends pump life by years.' },
+        { situation: 'Skipping maintenance entirely', repair: false, replace: true, note: 'Neglected washers develop bearing failures ($350+) and pump failures ($285+) within 6\u20138 years.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Musty smell from washer', meaning: 'Mold growing in the door gasket folds, drum, or detergent dispenser. Needs thorough cleaning.' },
+      { symptom: 'Clothes not getting clean', meaning: 'Detergent buildup, clogged spray jets, or a worn agitator reducing wash effectiveness.' },
+      { symptom: 'Washer vibrating excessively', meaning: 'Suspension springs or shock absorbers wearing out. Leveling and inspection needed.' },
+      { symptom: 'Slow to fill or drain', meaning: 'Inlet screens or drain filter clogged with sediment and debris.' },
+      { symptom: 'Rubber particles on clothes', meaning: 'Door boot seal deteriorating. Needs cleaning or replacement before it tears completely.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full System Inspection', description: 'We check hoses for bulging or cracks, inspect the drain pump filter, test the door latch, examine suspension components, and check for leaks at all connection points.' },
+      { step: 2, title: 'Cleaning & Service', description: 'We clean the drum, door gasket folds, detergent dispenser, drain pump filter, and inlet screens. Front-load washers get a deep clean cycle to eliminate mold and odors.' },
+      { step: 3, title: 'Report & Recommendations', description: 'Written report with findings. We flag worn hoses, weakening door seals, and components approaching end of life so you can plan ahead.' },
+    ],
+  },
+
+  'Dryer Maintenance': {
+    pricingTable: {
+      diagnostic: 60,
+      from: 149,
+      rows: [
+        { repair: 'Vent cleaning & inspection', price: 95 },
+        { repair: 'Lint trap deep clean', price: 55 },
+        { repair: 'Belt & roller inspection', price: 75 },
+        { repair: 'Heating element check', price: 65 },
+        { repair: 'Gas connection safety check', price: 75 },
+        { repair: 'Full maintenance check (all above)', price: 149 },
+      ],
+      luxury: [],
+    },
+    comparisonTable: {
+      title: 'Maintenance vs. Waiting for a Breakdown',
+      intro: 'Dryer maintenance prevents fires, saves energy, and extends equipment life.',
+      rows: [
+        { situation: 'Annual vent cleaning ($95)', repair: true, replace: false, note: 'Clogged vents cause 15,000+ house fires per year. Regular cleaning is the #1 dryer safety measure.' },
+        { situation: 'Belt & roller check ($75)', repair: true, replace: false, note: 'Catching a fraying belt before it snaps prevents drum damage and emergency service calls.' },
+        { situation: 'Heating element inspection ($65)', repair: true, replace: false, note: 'A failing element wastes energy and extends dry times. Early detection saves on utility bills.' },
+        { situation: 'Skipping maintenance entirely', repair: false, replace: true, note: 'Blocked vents cause thermal fuse failures ($250+) and create serious fire hazards.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Clothes taking longer to dry', meaning: 'Almost always a restricted vent or clogged lint screen reducing airflow.' },
+      { symptom: 'Dryer hot to the touch', meaning: 'Exhaust heat not venting properly. Check vent for blockage immediately \u2014 fire risk.' },
+      { symptom: 'Burning smell during use', meaning: 'Lint accumulation near heating element. Needs immediate professional cleaning.' },
+      { symptom: 'Loud thumping or squealing', meaning: 'Drum rollers or belt wearing out. Maintenance can extend their life before replacement is needed.' },
+      { symptom: 'Lint on clothes after drying', meaning: 'Lint screen damaged or lint trap housing has gaps allowing lint to recirculate.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full System Inspection', description: 'We inspect the entire exhaust vent from dryer to exterior wall, test heating element performance, check belt and drum roller condition, and verify gas connections (gas dryers).' },
+      { step: 2, title: 'Deep Cleaning', description: 'We clean the exhaust vent, lint trap housing, interior lint buildup around the heating element, and the exterior vent hood. Airflow measurements confirm proper venting.' },
+      { step: 3, title: 'Report & Recommendations', description: 'Written report with vent airflow measurements, component condition notes, and recommendations for parts approaching end of life.' },
+    ],
+  },
+
+  'Dishwasher Maintenance': {
+    pricingTable: {
+      diagnostic: 60,
+      from: 149,
+      rows: [
+        { repair: 'Filter & spray arm cleaning', price: 65 },
+        { repair: 'Door gasket inspection', price: 55 },
+        { repair: 'Water inlet valve test', price: 65 },
+        { repair: 'Drain line clearing', price: 75 },
+        { repair: 'Heating element check', price: 55 },
+        { repair: 'Full maintenance check (all above)', price: 149 },
+      ],
+      luxury: [],
+    },
+    comparisonTable: {
+      title: 'Maintenance vs. Waiting for a Breakdown',
+      intro: 'Dishwasher maintenance keeps dishes clean and prevents leaks.',
+      rows: [
+        { situation: 'Monthly filter cleaning ($65)', repair: true, replace: false, note: 'Clogged filters are the #1 cause of poor cleaning performance and bad odors.' },
+        { situation: 'Annual gasket inspection ($55)', repair: true, replace: false, note: 'A failing gasket leaks during every cycle. Catching it early prevents water damage to cabinetry.' },
+        { situation: 'Drain line clearing ($75)', repair: true, replace: false, note: 'Prevents standing water, odors, and drain pump strain that leads to pump failure ($285+).' },
+        { situation: 'Skipping maintenance entirely', repair: false, replace: true, note: 'Neglected dishwashers develop pump failures, control board corrosion, and leak damage within 5\u20137 years.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Dishes still dirty after cycle', meaning: 'Clogged filter, blocked spray arm jets, or low water temperature reducing cleaning effectiveness.' },
+      { symptom: 'Standing water in bottom', meaning: 'Drain filter or drain hose partially clogged. Needs cleaning to restore proper drainage.' },
+      { symptom: 'Bad odor when opening door', meaning: 'Food debris trapped in filter, door gasket folds, or spray arm nozzles.' },
+      { symptom: 'White film on glassware', meaning: 'Hard water mineral deposits. Rinse aid dispenser may need refilling or adjustment.' },
+      { symptom: 'Spots of rust inside', meaning: 'Rack tine coating worn through. Rack repair or replacement prevents rust from spreading to dishes.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full System Inspection', description: 'We inspect the filter, spray arms, door gasket, water inlet valve, drain pump, heating element, and rinse aid dispenser.' },
+      { step: 2, title: 'Cleaning & Service', description: 'We deep-clean the filter assembly, clear spray arm nozzles, clean the door gasket, flush the drain line, and test water temperature and fill levels.' },
+      { step: 3, title: 'Report & Recommendations', description: 'Written findings with component condition notes. We flag worn gaskets, weakening spray arms, and parts approaching replacement age.' },
+    ],
+  },
+
+  'Oven Maintenance': {
+    pricingTable: {
+      diagnostic: 60,
+      from: 149,
+      rows: [
+        { repair: 'Burner & igniter inspection', price: 75 },
+        { repair: 'Temperature calibration', price: 65 },
+        { repair: 'Door seal inspection', price: 55 },
+        { repair: 'Gas connection safety check', price: 75 },
+        { repair: 'Heating element test', price: 65 },
+        { repair: 'Full maintenance check (all above)', price: 149 },
+      ],
+      luxury: [],
+    },
+    comparisonTable: {
+      title: 'Maintenance vs. Waiting for a Breakdown',
+      intro: 'Oven and range maintenance ensures accurate cooking and gas safety.',
+      rows: [
+        { situation: 'Annual temperature calibration ($65)', repair: true, replace: false, note: 'An oven off by 25\u00b0F ruins baking results. Calibration restores accuracy.' },
+        { situation: 'Gas connection safety check ($75)', repair: true, replace: false, note: 'Detects micro-leaks at fittings before they become dangerous. Essential for gas ovens and ranges.' },
+        { situation: 'Door seal inspection ($55)', repair: true, replace: false, note: 'A worn seal lets heat escape, increasing cook times and energy waste by up to 20%.' },
+        { situation: 'Skipping maintenance entirely', repair: false, replace: true, note: 'Igniter failures ($285), element burnouts ($265), and gas leaks are preventable with annual checks.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Uneven baking results', meaning: 'Temperature sensor drift or a failing convection fan. Calibration or sensor replacement fixes this.' },
+      { symptom: 'Longer preheat times', meaning: 'Igniter weakening (gas) or heating element degrading (electric). Still works but nearing failure.' },
+      { symptom: 'Gas odor when oven is off', meaning: 'Gas leak at valve or connection. Turn off gas supply and call for immediate service.' },
+      { symptom: 'Oven door not sealing tightly', meaning: 'Hinges loosening or gasket wearing. Heat loss increases cook times and energy bills.' },
+      { symptom: 'Self-clean not working', meaning: 'Door lock mechanism or high-limit thermostat may be failing.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full System Inspection', description: 'We test all burners, igniters, heating elements, temperature sensors, door seals, and gas connections. Temperature accuracy is verified with a calibrated probe.' },
+      { step: 2, title: 'Cleaning & Calibration', description: 'We clean burner ports, inspect igniter condition, calibrate the thermostat, lubricate door hinges, and perform a gas leak check at all connections.' },
+      { step: 3, title: 'Report & Recommendations', description: 'Written findings covering component condition, temperature accuracy, and any parts approaching end of life.' },
+    ],
+  },
+
+  'Cooktop Maintenance': {
+    pricingTable: {
+      diagnostic: 60,
+      from: 149,
+      rows: [
+        { repair: 'Burner cleaning & inspection', price: 65 },
+        { repair: 'Igniter testing & cleaning', price: 55 },
+        { repair: 'Gas connection check', price: 75 },
+        { repair: 'Glass surface inspection', price: 55 },
+        { repair: 'Control knob & switch test', price: 45 },
+        { repair: 'Full maintenance check (all above)', price: 149 },
+      ],
+      luxury: [],
+    },
+    comparisonTable: {
+      title: 'Maintenance vs. Waiting for a Breakdown',
+      intro: 'Cooktop maintenance keeps burners efficient and prevents safety hazards.',
+      rows: [
+        { situation: 'Burner port cleaning ($65)', repair: true, replace: false, note: 'Clogged ports cause uneven flame and hot spots. Regular cleaning maintains even heat distribution.' },
+        { situation: 'Gas connection safety check ($75)', repair: true, replace: false, note: 'Detects leaks before they become dangerous. Critical for all gas cooktops.' },
+        { situation: 'Glass surface inspection ($55)', repair: true, replace: false, note: 'Catching micro-cracks early prevents electrical hazards on glass-ceramic cooktops.' },
+        { situation: 'Skipping maintenance entirely', repair: false, replace: true, note: 'Neglected gas burners develop carbon buildup that damages igniters ($265+) and valves ($295+).' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Uneven or yellow flame', meaning: 'Burner ports clogged with food debris or grease. Cleaning restores proper blue flame.' },
+      { symptom: 'Clicking but no ignition', meaning: 'Igniter electrode dirty or misaligned. Cleaning and adjustment usually resolves it.' },
+      { symptom: 'Burner takes long to heat', meaning: 'Partially blocked gas flow or a weakening electric element approaching failure.' },
+      { symptom: 'Scratches on glass surface', meaning: 'Improper cleaning technique. We can recommend proper care products and methods.' },
+      { symptom: 'Knobs feel loose', meaning: 'Valve stem or knob shaft wearing. Should be inspected to prevent gas control issues.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full System Inspection', description: 'We test each burner zone, inspect igniters, check gas connections, examine the glass surface (if applicable), and test all control switches and knobs.' },
+      { step: 2, title: 'Cleaning & Service', description: 'We deep-clean burner ports, clean and align igniters, perform a gas leak check, and inspect wiring connections under the cooktop.' },
+      { step: 3, title: 'Report & Recommendations', description: 'Written report covering burner condition, igniter health, gas connection integrity, and any components needing attention.' },
+    ],
+  },
+
+  'Wine Cooler Maintenance': {
+    pricingTable: {
+      diagnostic: 60,
+      from: 149,
+      rows: [
+        { repair: 'Condenser coil cleaning', price: 75 },
+        { repair: 'Door seal inspection', price: 55 },
+        { repair: 'Temperature calibration', price: 65 },
+        { repair: 'Fan & vibration check', price: 65 },
+        { repair: 'Humidity level assessment', price: 55 },
+        { repair: 'Full maintenance check (all above)', price: 149 },
+      ],
+      luxury: [],
+    },
+    comparisonTable: {
+      title: 'Maintenance vs. Waiting for a Breakdown',
+      intro: 'Your wine collection is an investment. Maintenance protects it.',
+      rows: [
+        { situation: 'Annual coil cleaning ($75)', repair: true, replace: false, note: 'Dirty coils cause temperature fluctuations that damage wine. A $75 cleaning protects bottles worth thousands.' },
+        { situation: 'Door seal check ($55)', repair: true, replace: false, note: 'A worn seal lets humid air in, causing condensation and label damage. Early detection prevents collection loss.' },
+        { situation: 'Temperature calibration ($65)', repair: true, replace: false, note: 'Even 2\u20133\u00b0F drift can affect wine aging. Annual calibration maintains optimal storage conditions.' },
+        { situation: 'Skipping maintenance entirely', repair: false, replace: true, note: 'A compressor failure in an unchecked unit can cost $495+ to repair \u2014 plus spoiled wine.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Temperature fluctuating', meaning: 'Dirty condenser coils, failing fan motor, or worn door seal preventing stable conditions.' },
+      { symptom: 'Condensation on glass door', meaning: 'Anti-condensation heater failing or door gasket not sealing properly.' },
+      { symptom: 'Vibration or humming', meaning: 'Compressor mounts loosening or unit not level. Vibration disturbs wine sediment and aging.' },
+      { symptom: 'Interior light flickering', meaning: 'LED strip or door switch failing. Excessive heat from a failing light can affect nearby bottles.' },
+      { symptom: 'Musty odor inside', meaning: 'Mold forming from humidity imbalance. Needs cleaning and humidity level adjustment.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full System Inspection', description: 'We check compressor operation, temperature accuracy across all zones, door seal integrity, condenser coil condition, fan operation, and vibration levels.' },
+      { step: 2, title: 'Cleaning & Calibration', description: 'We clean condenser coils, verify temperature in each zone, inspect and clean the door gasket, check humidity levels, and ensure the unit is level and vibration-free.' },
+      { step: 3, title: 'Report & Recommendations', description: 'Written report with temperature readings, component condition, and recommendations for optimal wine storage conditions.' },
+    ],
+  },
+
+  /* ═══════════════════════════════════════════════════════════════
+     COMMERCIAL PAGES
+     ═══════════════════════════════════════════════════════════════ */
+
+  'Commercial Refrigerator': {
+    pricingTable: {
+      diagnostic: 100,
+      from: 250,
+      rows: [
+        { repair: 'Walk-in cooler compressor', price: 650 },
+        { repair: 'Reach-in thermostat', price: 295 },
+        { repair: 'Evaporator fan motor', price: 325 },
+        { repair: 'Door gasket (walk-in)', price: 350 },
+        { repair: 'Condenser fan motor', price: 295 },
+        { repair: 'Digital controller', price: 395 },
+        { repair: 'Defrost heater', price: 285 },
+      ],
+      luxury: [],
+    },
+    comparisonTable: {
+      title: 'Repair vs. Replacement \u2014 Commercial Refrigeration',
+      intro: 'Commercial units are expensive to replace. Most repairs extend life by years.',
+      rows: [
+        { situation: 'Unit under 10 years old', repair: true, replace: false, note: 'Commercial refrigeration is built to last 15\u201320 years. Single-component failures are almost always worth repairing.' },
+        { situation: 'Compressor failure on newer unit', repair: true, replace: false, note: 'Commercial compressor replacement ($650\u2013$1,200) is significant but far less than a $5,000\u2013$15,000 new unit.' },
+        { situation: 'Multiple system failures on 15+ year unit', repair: false, replace: true, note: 'When compressor, controls, and seals all need work, combined costs may approach replacement value.' },
+        { situation: 'Refrigerant leak (repairable)', repair: true, replace: false, note: 'Leak detection and repair ($350\u2013$600) saves the entire system. Only replace if the leak is in an inaccessible location.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Walk-in not holding temperature', meaning: 'Compressor failure, low refrigerant, dirty condenser coils, or failed evaporator fan \u2014 requires emergency priority service.' },
+      { symptom: 'Reach-in freezing up', meaning: 'Defrost system failure: timer, heater element, or termination thermostat not cycling properly.' },
+      { symptom: 'Compressor short-cycling', meaning: 'Start relay, overcharge/undercharge, dirty condenser, or faulty thermostat causing rapid on-off cycling.' },
+      { symptom: 'Display case condensation', meaning: 'Anti-sweat heaters failing or door gaskets not sealing. Affects product visibility and food safety.' },
+      { symptom: 'Digital controller error codes', meaning: 'Sensor failure, defrost issue, or compressor fault. Our tech reads all major brand codes on-site.' },
+      { symptom: 'Rising energy bills', meaning: 'System working harder due to dirty coils, worn seals, or low refrigerant. A tune-up often cuts costs 15\u201325%.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Emergency Diagnostic', description: 'We arrive with diagnostic equipment to test compressor operation, refrigerant pressures, electrical components, defrost systems, and temperature accuracy. Walk-in cooler emergencies get priority scheduling.' },
+      { step: 2, title: 'Parts & Written Quote', description: 'We stock common commercial parts (fan motors, thermostats, defrost components) on our truck. Compressors and controllers for True, Beverage-Air, Turbo Air, and Hoshizaki are available next business day.' },
+      { step: 3, title: 'Repair & Verification', description: 'After repair, we monitor temperature recovery, verify compressor cycling, and confirm the unit reaches and holds the required temperature. All commercial repairs include our 180-day warranty.' },
+    ],
+  },
+
+  'Commercial Washer': {
+    pricingTable: {
+      diagnostic: 100,
+      from: 295,
+      rows: [
+        { repair: 'Commercial drain pump', price: 395 },
+        { repair: 'Bearing & seal kit', price: 495 },
+        { repair: 'Control board', price: 450 },
+        { repair: 'Door lock assembly', price: 325 },
+        { repair: 'Water inlet valve', price: 295 },
+        { repair: 'Drive motor', price: 550 },
+      ],
+      luxury: [],
+    },
+    comparisonTable: {
+      title: 'Repair vs. Replacement \u2014 Commercial Washers',
+      intro: 'Commercial washers handle heavy loads daily. Here\u2019s when repair makes sense.',
+      rows: [
+        { situation: 'Unit under 8 years old', repair: true, replace: false, note: 'Commercial washers last 10\u201315 years with proper maintenance. Most single repairs pay for themselves quickly.' },
+        { situation: 'Bearing or seal failure', repair: true, replace: false, note: 'Bearing kits ($495) restore the machine to like-new condition. Far cheaper than $3,000\u2013$8,000 replacement.' },
+        { situation: 'Multiple failures on aging unit', repair: false, replace: true, note: 'If motor, bearings, and electronics all need work, the cumulative cost may justify a new machine.' },
+        { situation: 'Control board or pump issue', repair: true, replace: false, note: 'Individual component repairs ($295\u2013$450) are straightforward and extend machine life significantly.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Not draining completely', meaning: 'Clogged drain pump filter, failed pump motor, or kinked drain hose. Common in high-volume laundry operations.' },
+      { symptom: 'Excessive vibration', meaning: 'Worn shock absorbers or unbalanced drum. Heavy commercial loads accelerate suspension wear.' },
+      { symptom: 'Door won\u2019t lock', meaning: 'Failed door lock actuator or interlock switch. Machine won\u2019t start until the door lock is replaced.' },
+      { symptom: 'Water temperature wrong', meaning: 'Mixing valve or inlet valve failure. Hot/cold supply not blending correctly for selected cycle.' },
+      { symptom: 'Error codes flashing', meaning: 'Electronic fault codes indicate specific component failures. Our tech diagnoses all commercial washer brands.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Commercial Diagnostic', description: 'We test the motor, pump, bearings, door lock, inlet valves, control board, and all sensors. Vibration testing identifies suspension issues.' },
+      { step: 2, title: 'Parts & Written Quote', description: 'We carry common commercial washer parts. Specialty components for Speed Queen, Maytag Commercial, and UniMac are available next business day.' },
+      { step: 3, title: 'Repair & Verification', description: 'After repair, we run a complete cycle testing fill, wash, drain, and spin. We verify proper operation under load. 180-day warranty on all repairs.' },
+    ],
+  },
+
+  'Commercial Dryer': {
+    pricingTable: {
+      diagnostic: 100,
+      from: 295,
+      rows: [
+        { repair: 'Heating element / gas burner', price: 395 },
+        { repair: 'Drum bearing & seal', price: 450 },
+        { repair: 'Control board', price: 425 },
+        { repair: 'Belt & tension assembly', price: 325 },
+        { repair: 'Gas valve assembly', price: 395 },
+        { repair: 'Exhaust blower motor', price: 375 },
+      ],
+      luxury: [],
+    },
+    comparisonTable: {
+      title: 'Repair vs. Replacement \u2014 Commercial Dryers',
+      intro: 'Commercial dryers take heavy abuse. Most component failures are repairable.',
+      rows: [
+        { situation: 'Unit under 10 years old', repair: true, replace: false, note: 'Commercial dryers last 12\u201318 years. Heating element and belt repairs keep them running efficiently.' },
+        { situation: 'Heating element or gas burner', repair: true, replace: false, note: 'The most common commercial dryer repair ($395). Restores full heating performance.' },
+        { situation: 'Drum bearing failure', repair: true, replace: false, note: 'Bearing replacement ($450) is cost-effective compared to $4,000\u2013$10,000 for a new commercial dryer.' },
+        { situation: 'Multiple failures on 15+ year unit', repair: false, replace: true, note: 'When motor, bearings, and controls all need work, a newer, more efficient machine is the better investment.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Not heating', meaning: 'Gas valve, igniter, or heating element failure. The #1 commercial dryer service call.' },
+      { symptom: 'Long dry times', meaning: 'Restricted exhaust vent, lint buildup in the cabinet, or a weakening heating element.' },
+      { symptom: 'Loud banging or squealing', meaning: 'Drum rollers, bearings, or belt wearing out from heavy commercial use.' },
+      { symptom: 'Shuts off mid-cycle', meaning: 'Thermal fuse tripping from overheating \u2014 usually a vent restriction or failed blower motor.' },
+      { symptom: 'Gas smell during operation', meaning: 'Gas valve or connection issue. Shut down the dryer and call for immediate service.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Commercial Diagnostic', description: 'We test the heating system, gas connections, drum bearings, belt condition, blower motor, and exhaust airflow. Temperature and airflow are measured at the vent outlet.' },
+      { step: 2, title: 'Parts & Written Quote', description: 'We stock common commercial dryer parts including heating elements, igniters, belts, and thermal fuses. Heavy-duty parts for Speed Queen and Maytag Commercial ship next day.' },
+      { step: 3, title: 'Repair & Verification', description: 'After repair, we run a full heat cycle, measure exhaust temperature, and verify proper drum rotation and airflow. 180-day warranty on all commercial dryer repairs.' },
+    ],
+  },
+
+  'Commercial Oven': {
+    pricingTable: {
+      diagnostic: 100,
+      from: 295,
+      rows: [
+        { repair: 'Gas valve assembly', price: 425 },
+        { repair: 'Igniter / pilot assembly', price: 350 },
+        { repair: 'Thermostat / temperature control', price: 375 },
+        { repair: 'Convection fan motor', price: 395 },
+        { repair: 'Door hinge & gasket', price: 295 },
+        { repair: 'Control board', price: 450 },
+      ],
+      luxury: [],
+    },
+    comparisonTable: {
+      title: 'Repair vs. Replacement \u2014 Commercial Ovens',
+      intro: 'Commercial ovens are built heavy-duty. Most repairs are far cheaper than replacement.',
+      rows: [
+        { situation: 'Unit under 12 years old', repair: true, replace: false, note: 'Commercial ovens last 15\u201325 years. Individual component repairs are almost always worthwhile.' },
+        { situation: 'Igniter or gas valve failure', repair: true, replace: false, note: 'Common repairs ($350\u2013$425) that restore full heating. A fraction of a $5,000\u2013$20,000 new oven.' },
+        { situation: 'Temperature control issues', repair: true, replace: false, note: 'Thermostat replacement or calibration ($375) restores cooking accuracy.' },
+        { situation: 'Structural damage or firebox cracks', repair: false, replace: true, note: 'Major structural issues compromise safety. Replacement is the responsible choice.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Not reaching temperature', meaning: 'Igniter weakening, gas valve not opening fully, or thermostat calibration drift.' },
+      { symptom: 'Uneven cooking', meaning: 'Convection fan motor failing, baffle damage, or hot spots from igniter position issues.' },
+      { symptom: 'Pilot keeps going out', meaning: 'Thermocouple failure, draft issues, or gas pressure inconsistency.' },
+      { symptom: 'Gas smell when oven is off', meaning: 'Gas valve not seating completely. Shut off gas and call immediately.' },
+      { symptom: 'Door not closing tightly', meaning: 'Worn hinges or gasket in a high-use commercial environment. Heat loss increases cook times and energy costs.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Commercial Diagnostic', description: 'We test igniters, gas valves, thermostats, convection motors, safety controls, and door seals. Gas pressure and temperature accuracy are measured with professional instruments.' },
+      { step: 2, title: 'Parts & Written Quote', description: 'We carry common commercial oven parts. Components for Vulcan, Garland, Blodgett, and other restaurant brands are available next business day.' },
+      { step: 3, title: 'Repair & Verification', description: 'After repair, we verify temperature accuracy, test all heating modes, check gas connections for leaks, and confirm proper door seal. 180-day warranty.' },
+    ],
+  },
+
+  'Commercial Dishwasher': {
+    pricingTable: {
+      diagnostic: 100,
+      from: 295,
+      rows: [
+        { repair: 'Wash pump motor', price: 450 },
+        { repair: 'Drain pump', price: 350 },
+        { repair: 'Heating element / booster', price: 395 },
+        { repair: 'Door gasket & latch', price: 295 },
+        { repair: 'Spray arm assembly', price: 325 },
+        { repair: 'Control board', price: 425 },
+      ],
+      luxury: [],
+    },
+    comparisonTable: {
+      title: 'Repair vs. Replacement \u2014 Commercial Dishwashers',
+      intro: 'Commercial dishwashers run dozens of cycles daily. Most failures are repairable.',
+      rows: [
+        { situation: 'Unit under 8 years old', repair: true, replace: false, note: 'Commercial dishwashers last 10\u201315 years. Component repairs keep them running through heavy use.' },
+        { situation: 'Pump or heating element', repair: true, replace: false, note: 'Pump and heater repairs ($350\u2013$450) restore wash performance. Far less than $4,000\u2013$12,000 replacement.' },
+        { situation: 'Sanitizing temp not reached', repair: true, replace: false, note: 'Booster heater or thermostat repair ensures health code compliance at a fraction of replacement cost.' },
+        { situation: 'Multiple major failures', repair: false, replace: true, note: 'When pump, heater, and controls all fail on an aging unit, a new energy-efficient machine often saves more long-term.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Dishes not clean', meaning: 'Wash pump weakening, spray arms clogged, or water temperature too low for proper sanitization.' },
+      { symptom: 'Not draining', meaning: 'Drain pump failure, clogged drain screen, or blocked drain hose. Common in high-volume kitchens.' },
+      { symptom: 'Water not hot enough', meaning: 'Booster heater failure. Sanitization requires 180\u00b0F final rinse \u2014 a health code requirement.' },
+      { symptom: 'Leaking from door', meaning: 'Door gasket worn from hundreds of daily open/close cycles. Needs replacement.' },
+      { symptom: 'Machine won\u2019t start cycle', meaning: 'Door interlock switch, control board, or fill valve failure preventing cycle initiation.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Commercial Diagnostic', description: 'We test the wash pump, drain pump, heating element, booster heater, fill valve, door latch, and control board. Water temperature is measured at wash and rinse stages.' },
+      { step: 2, title: 'Parts & Written Quote', description: 'We carry common commercial dishwasher parts. Components for Hobart, Jackson, CMA, and Ecolab are available next business day.' },
+      { step: 3, title: 'Repair & Verification', description: 'After repair, we run a complete wash cycle, verify sanitization temperature reaches 180\u00b0F, check for leaks, and confirm proper drain function. 180-day warranty.' },
+    ],
+  },
+
+
 };
 
 export default SERVICE_CONTENT;

@@ -2,6 +2,7 @@ import React from 'react';
 import ApplianceRepairPageNew from '../../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../../templates/MobileServiceLanding';
 import { useIsMobile } from '../../../hooks/useIsMobile';
+import SERVICE_CONTENT from '../../../data/serviceContentData';
 
 const OvenRangeMaintenance = () => {
   const isMobile = useIsMobile();
@@ -86,14 +87,6 @@ const OvenRangeMaintenance = () => {
       heroImageAlt="FixitBay technician servicing an oven range in a San Francisco kitchen"
       isMaintenance={true}
       serviceWord="Maintenance"
-      maintenancePricing={[
-        { service: 'Burner inspection & cleaning', price: 'from $75' },
-        { service: 'Door seal inspection & replacement', price: 'from $85' },
-        { service: 'Temperature calibration', price: 'from $65' },
-        { service: 'Convection fan cleaning', price: 'from $75' },
-        { service: 'Igniter check (gas models)', price: 'from $65' },
-        { service: 'Full maintenance check (all of the above)', price: 'from $139' },
-      ]}
       maintenanceSchedule={{
         title: 'When to Call for Oven Maintenance',
         intro: 'Regular oven maintenance ensures even cooking, energy efficiency, and safety — especially for gas models.',
@@ -104,6 +97,10 @@ const OvenRangeMaintenance = () => {
           { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician tests all burners/elements, calibrates temperature, inspects gas connections, cleans the convection fan, and checks safety controls.' },
         ]
       }}
+      pricingTable={SERVICE_CONTENT['Oven Maintenance'].pricingTable}
+      comparisonTable={SERVICE_CONTENT['Oven Maintenance'].comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT['Oven Maintenance'].symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT['Oven Maintenance'].diagnosisSteps}
       relatedLinks={[
         { href: '/oven-repair', label: 'Oven Repair', desc: 'Not heating, uneven temperature, timer issues' },
         { href: '/range-repair', label: 'Range Repair', desc: 'Combined oven and cooktop service' },

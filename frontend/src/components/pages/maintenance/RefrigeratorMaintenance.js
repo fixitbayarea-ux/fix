@@ -2,6 +2,7 @@ import React from 'react';
 import ApplianceRepairPageNew from '../../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../../templates/MobileServiceLanding';
 import { useIsMobile } from '../../../hooks/useIsMobile';
+import SERVICE_CONTENT from '../../../data/serviceContentData';
 
 const RefrigeratorMaintenance = () => {
   const isMobile = useIsMobile();
@@ -128,15 +129,6 @@ const RefrigeratorMaintenance = () => {
       heroImageAlt="FixitBay technician next to a refrigerator in a San Francisco home"
       isMaintenance={true}
       serviceWord="Maintenance"
-      maintenancePricing={[
-        { service: 'Condenser coil cleaning', price: 'from $85' },
-        { service: 'Water filter replacement', price: 'from $45 + filter cost' },
-        { service: 'Door gasket inspection & replacement', price: 'from $120' },
-        { service: 'Thermostat calibration', price: 'from $65' },
-        { service: 'Ice maker cleaning & tune-up', price: 'from $75' },
-        { service: 'Water line inspection', price: 'from $55' },
-        { service: 'Full maintenance check (all of the above)', price: 'from $149' },
-      ]}
       maintenanceSchedule={{
         title: 'When to Call for Refrigerator Maintenance',
         intro: 'Preventive maintenance keeps your refrigerator running efficiently and catches issues before they become costly repairs.',
@@ -148,6 +140,10 @@ const RefrigeratorMaintenance = () => {
           { interval: 'Every 2\u20133 years', title: 'Drain Pan & Drain Line Cleaning', description: 'Prevents mold growth and drainage issues. Especially important in humid climates.' },
         ]
       }}
+      pricingTable={SERVICE_CONTENT['Refrigerator Maintenance'].pricingTable}
+      comparisonTable={SERVICE_CONTENT['Refrigerator Maintenance'].comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT['Refrigerator Maintenance'].symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT['Refrigerator Maintenance'].diagnosisSteps}
       relatedLinks={[
         { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Emergency cooling failures and leaks' },
         { href: '/maintenance/dishwasher', label: 'Dishwasher Maintenance', desc: 'Filter cleaning and spray arm service' },

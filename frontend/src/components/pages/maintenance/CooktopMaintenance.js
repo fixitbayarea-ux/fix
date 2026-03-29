@@ -2,6 +2,7 @@ import React from 'react';
 import ApplianceRepairPageNew from '../../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../../templates/MobileServiceLanding';
 import { useIsMobile } from '../../../hooks/useIsMobile';
+import SERVICE_CONTENT from '../../../data/serviceContentData';
 
 const CooktopMaintenance = () => {
   const isMobile = useIsMobile();
@@ -82,13 +83,6 @@ const CooktopMaintenance = () => {
       relatedServicesSubtitle="Expert maintenance for all your kitchen appliances"
       isMaintenance={true}
       serviceWord="Maintenance"
-      maintenancePricing={[
-        { service: 'Burner cleaning & inspection', price: 'from $65' },
-        { service: 'Igniter check (gas models)', price: 'from $55' },
-        { service: 'Surface & control cleaning', price: 'from $55' },
-        { service: 'Gas line leak check', price: 'from $65' },
-        { service: 'Full maintenance check (all of the above)', price: 'from $119' },
-      ]}
       maintenanceSchedule={{
         title: 'When to Call for Cooktop Maintenance',
         intro: 'Clean burners and proper gas connections ensure safe, efficient cooking every day.',
@@ -98,6 +92,10 @@ const CooktopMaintenance = () => {
           { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician inspects all burners, igniters, gas valves, electric elements, and control knobs. Ensures safe, efficient operation.' },
         ]
       }}
+      pricingTable={SERVICE_CONTENT['Cooktop Maintenance'].pricingTable}
+      comparisonTable={SERVICE_CONTENT['Cooktop Maintenance'].comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT['Cooktop Maintenance'].symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT['Cooktop Maintenance'].diagnosisSteps}
       relatedLinks={[
         { href: '/cooktop-repair', label: 'Cooktop Repair', desc: 'Burner, igniter, and surface issues' },
         { href: '/maintenance/oven-range', label: 'Oven Maintenance', desc: 'Calibration and safety inspection' },

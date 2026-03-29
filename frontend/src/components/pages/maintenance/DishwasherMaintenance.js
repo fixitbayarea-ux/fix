@@ -2,6 +2,7 @@ import React from 'react';
 import ApplianceRepairPageNew from '../../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../../templates/MobileServiceLanding';
 import { useIsMobile } from '../../../hooks/useIsMobile';
+import SERVICE_CONTENT from '../../../data/serviceContentData';
 
 const DishwasherMaintenance = () => {
   const isMobile = useIsMobile();
@@ -89,14 +90,6 @@ const DishwasherMaintenance = () => {
       relatedServicesSubtitle="Expert maintenance for all your kitchen appliances"
       isMaintenance={true}
       serviceWord="Maintenance"
-      maintenancePricing={[
-        { service: 'Filter & trap cleaning', price: 'from $55' },
-        { service: 'Spray arm inspection & cleaning', price: 'from $65' },
-        { service: 'Door seal inspection', price: 'from $55' },
-        { service: 'Drain cleaning & flush', price: 'from $75' },
-        { service: 'Rinse aid & detergent check', price: 'from $35' },
-        { service: 'Full maintenance check (all of the above)', price: 'from $129' },
-      ]}
       maintenanceSchedule={{
         title: 'When to Call for Dishwasher Maintenance',
         intro: 'A clean dishwasher cleans better. Regular maintenance prevents odors, clogs, and poor wash results.',
@@ -107,6 +100,10 @@ const DishwasherMaintenance = () => {
           { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician inspects pump operation, water inlet valve, heating element, spray arms, and runs a diagnostic cycle.' },
         ]
       }}
+      pricingTable={SERVICE_CONTENT['Dishwasher Maintenance'].pricingTable}
+      comparisonTable={SERVICE_CONTENT['Dishwasher Maintenance'].comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT['Dishwasher Maintenance'].symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT['Dishwasher Maintenance'].diagnosisSteps}
       relatedLinks={[
         { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or poor cleaning' },
         { href: '/maintenance/refrigerator', label: 'Fridge Maintenance', desc: 'Coil cleaning and seal inspection' },

@@ -2,6 +2,7 @@ import React from 'react';
 import ApplianceRepairPageNew from '../../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../../templates/MobileServiceLanding';
 import { useIsMobile } from '../../../hooks/useIsMobile';
+import SERVICE_CONTENT from '../../../data/serviceContentData';
 
 const WineCoolerMaintenance = () => {
   const isMobile = useIsMobile();
@@ -82,13 +83,6 @@ const WineCoolerMaintenance = () => {
       relatedServicesSubtitle="Expert maintenance for all your kitchen appliances"
       isMaintenance={true}
       serviceWord="Maintenance"
-      maintenancePricing={[
-        { service: 'Condenser coil cleaning', price: 'from $75' },
-        { service: 'Door seal inspection', price: 'from $55' },
-        { service: 'Temperature calibration', price: 'from $65' },
-        { service: 'Vibration & leveling check', price: 'from $45' },
-        { service: 'Full maintenance check (all of the above)', price: 'from $119' },
-      ]}
       maintenanceSchedule={{
         title: 'When to Call for Wine Cooler Maintenance',
         intro: 'Proper maintenance protects your wine collection from temperature fluctuations and humidity issues.',
@@ -98,6 +92,10 @@ const WineCoolerMaintenance = () => {
           { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician calibrates temperature zones, inspects the compressor, checks humidity levels, and ensures vibration damping is working properly.' },
         ]
       }}
+      pricingTable={SERVICE_CONTENT['Wine Cooler Maintenance'].pricingTable}
+      comparisonTable={SERVICE_CONTENT['Wine Cooler Maintenance'].comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT['Wine Cooler Maintenance'].symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT['Wine Cooler Maintenance'].diagnosisSteps}
       relatedLinks={[
         { href: '/wine-cooler-repair', label: 'Wine Cooler Repair', desc: 'Temperature issues, vibration, or compressor failure' },
         { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker problems' },

@@ -2,6 +2,7 @@ import React from 'react';
 import ApplianceRepairPageNew from '../../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../../templates/MobileServiceLanding';
 import { useIsMobile } from '../../../hooks/useIsMobile';
+import SERVICE_CONTENT from '../../../data/serviceContentData';
 
 const DryerMaintenance = () => {
   const isMobile = useIsMobile();
@@ -90,14 +91,6 @@ const DryerMaintenance = () => {
       relatedServicesSubtitle="Complete maintenance services for your laundry appliances"
       isMaintenance={true}
       serviceWord="Maintenance"
-      maintenancePricing={[
-        { service: 'Lint trap deep cleaning', price: 'from $55' },
-        { service: 'Vent duct inspection & cleaning', price: 'from $95' },
-        { service: 'Drum seal inspection', price: 'from $65' },
-        { service: 'Heating element check', price: 'from $75' },
-        { service: 'Moisture sensor calibration', price: 'from $65' },
-        { service: 'Full maintenance check (all of the above)', price: 'from $139' },
-      ]}
       maintenanceSchedule={{
         title: 'When to Call for Dryer Maintenance',
         intro: 'Clogged vents are a leading cause of house fires. Regular dryer maintenance is essential for safety and efficiency.',
@@ -108,6 +101,10 @@ const DryerMaintenance = () => {
           { interval: 'Every 2 years', title: 'Drum Seal & Belt Inspection', description: 'Worn seals and belts cause noisy operation and uneven drying. Replacing them proactively prevents mid-cycle breakdowns.' },
         ]
       }}
+      pricingTable={SERVICE_CONTENT['Dryer Maintenance'].pricingTable}
+      comparisonTable={SERVICE_CONTENT['Dryer Maintenance'].comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT['Dryer Maintenance'].symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT['Dryer Maintenance'].diagnosisSteps}
       relatedLinks={[
         { href: '/dryer-repair', label: 'Dryer Repair', desc: 'No heat, won\'t tumble, or making noise' },
         { href: '/maintenance/washer', label: 'Washer Maintenance', desc: 'Hose inspection and drum cleaning' },
