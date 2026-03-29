@@ -256,6 +256,58 @@ const getCityServiceHref = (citySlug, item) => {
   return item.href;
 };
 
+const TABBED_SERVICES = {
+  Kitchen: [
+    { name: 'Refrigerator', svc: 'refrigerator', desc: 'Not cooling, leaking, noisy compressor, ice buildup', href: '/refrigerator-repair' },
+    { name: 'Freezer', svc: 'freezer', desc: 'Not freezing, frost buildup, temperature problems', href: '/freezer-repair' },
+    { name: 'Ice Maker', svc: 'ice-maker', desc: 'No ice production, water line clogs, slow output', href: '/ice-maker-repair' },
+    { name: 'Dishwasher', svc: 'dishwasher', desc: 'Not cleaning, leaking, drainage issues', href: '/dishwasher-repair' },
+    { name: 'Oven & Range', svc: 'oven', desc: 'Uneven heating, igniter failure, door seal', href: '/oven-repair' },
+    { name: 'Cooktop', svc: 'cooktop', desc: 'Burner not lighting, element failure, cracked glass', href: '/cooktop-repair' },
+    { name: 'Wine Cooler', svc: 'wine-cooler', desc: 'Temperature swings, compressor noise, door seal', href: '/wine-cooler-repair' },
+  ],
+  Laundry: [
+    { name: 'Washer', svc: 'washer', desc: 'Won\'t drain, vibration, error codes, leaks', href: '/washer-repair' },
+    { name: 'Dryer', svc: 'dryer', desc: 'Not heating, long dry times, lint buildup, drum noise', href: '/dryer-repair' },
+  ],
+  Commercial: [
+    { name: 'Commercial Appliance Repair', svc: 'commercial-appliance', desc: 'Restaurants, cafes, hotels, property managers', href: '/commercial-appliance-repair' },
+  ],
+};
+
+const CityServicesTabbed = ({ citySlug }) => {
+  const [activeTab, setActiveTab] = useState('Kitchen');
+  const tabs = Object.keys(TABBED_SERVICES);
+  const items = TABBED_SERVICES[activeTab] || [];
+  return (
+    <section data-testid="city-services" style={{ background: '#F8F5F0', padding: '70px 0' }}>
+      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
+        <div style={S.eyebrow}>WHAT WE FIX</div>
+        <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 24 }}>Every Major Appliance</h2>
+        <div style={{ display: 'flex', gap: 8, marginBottom: 28 }}>
+          {tabs.map(tab => (
+            <button key={tab} data-testid={`tab-${tab.toLowerCase()}`} onClick={() => setActiveTab(tab)} style={{ fontFamily: S.font, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 3, border: '1.5px solid', borderColor: activeTab === tab ? '#FF5722' : 'rgba(0,0,0,0.12)', background: activeTab === tab ? '#FF5722' : '#FFFFFF', color: activeTab === tab ? '#FFFFFF' : '#0D1B2A', cursor: 'pointer', transition: 'all 0.2s', textTransform: 'uppercase', letterSpacing: '0.06em' }}>{tab}</button>
+          ))}
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4" style={{ gap: 14 }}>
+          {items.map(item => {
+            const svcHref = getCityServiceHref(citySlug, item);
+            return (
+              <a key={item.svc} href={svcHref} data-testid={`city-svc-${item.svc}`} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 4, padding: 20, textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s', cursor: 'pointer' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(255,87,34,0.10)'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.08)'; e.currentTarget.style.boxShadow = 'none'; }}>
+                <div>
+                  <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginBottom: 6 }}><span style={{ color: '#FF5722', marginRight: 8 }}>&bull;</span>{item.name} Repair</div>
+                  <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.6, marginBottom: 14 }}>{item.desc}</p>
+                </div>
+                <span className="city-svc-btn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minHeight: 44, background: 'transparent', color: '#FF5722', border: '1.5px solid #FF5722', fontFamily: S.font, fontWeight: 700, fontSize: 14, padding: '10px 16px', borderRadius: 3, textAlign: 'center', transition: 'background 0.2s, color 0.2s' }}>View Service</span>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const ApplianceRepairPageNew = ({
   appliance, pageTitle, metaDescription, commonProblems = [], faqData = [],
   serviceDescription = null, breadcrumbCategoryName = 'Services', breadcrumbCategoryHref = '/#services',
@@ -486,27 +538,8 @@ const ApplianceRepairPageNew = ({
           </div>
         </div>
 
-        {/* ═══ SECTION 2 — APPLIANCES ═══ */}
-        <section data-testid="city-services" style={{ background: '#F8F5F0', padding: '70px 0' }}>
-          <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-            <div style={S.eyebrow}>WHAT WE FIX</div>
-            <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 28 }}>Every Major Appliance</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4" style={{ gap: 14 }}>
-              {CITY_APPLIANCE_SERVICES.map((item) => {
-                const svcHref = getCityServiceHref(citySlug, item);
-                return (
-                <a key={svcHref} href={svcHref} data-testid={`city-svc-${item.svc}`} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 4, padding: 20, textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s', cursor: 'pointer' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(255,87,34,0.10)'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.08)'; e.currentTarget.style.boxShadow = 'none'; }}>
-                  <div>
-                    <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginBottom: 6 }}><span style={{ color: '#FF5722', marginRight: 8 }}>&bull;</span>{item.name}</div>
-                    <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.6, marginBottom: 14 }}>{item.desc}</p>
-                  </div>
-                  <span className="city-svc-btn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minHeight: 44, background: 'transparent', color: '#FF5722', border: '1.5px solid #FF5722', fontFamily: S.font, fontWeight: 700, fontSize: 14, padding: '10px 16px', borderRadius: 3, textAlign: 'center', transition: 'background 0.2s, color 0.2s' }}>View Service</span>
-                </a>
-              );
-              })}
-            </div>
-          </div>
-        </section>
+        {/* ═══ SECTION 2 — APPLIANCES (TABBED) ═══ */}
+        <CityServicesTabbed citySlug={citySlug} />
 
         {/* ═══ SECTION 3 — PROBLEMS ═══ */}
         {commonProblems.length > 0 && (
