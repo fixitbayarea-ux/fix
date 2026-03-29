@@ -200,6 +200,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **ПРОМТ 33**: Updated homepage meta description in `index.html` to under 155 chars: "Professional appliance repair in the SF Bay Area. Same- or next-day appointments. $60 diagnostic applied to repair. 180-day warranty. Licensed & insured."
 - **ПРОМТ 34**: Fixed H1 geographic mismatch on all service pages. Changed `displayH1` logic from "in San Francisco" to "in the San Francisco Bay Area" for all non-city service pages (washer, dryer, dishwasher, oven, cooktop, ice-maker, wine-cooler, etc.). Now matches `<title>` which already said "Bay Area".
 - **ПРОМТ 35**: Fixed pricing H2 "Repair Cost in San Francisco" on city-service pages. Added `pricingCityName` prop to `ApplianceRepairPageNew`. `CityServicePage` now passes `pricingCityName={cityName}`. H2 dynamically shows "[Appliance] Repair Cost in [City Name]" (e.g., "Refrigerator Repair Cost in Greenbrae"). Generic service pages fallback to "the San Francisco Bay Area".
+- **ПРОМТ 36**: Updated /commercial-appliance-repair: title → "Commercial Appliance Repair Bay Area | FixitBay LLC", H1 → "Expert Commercial Appliance Repair in the Bay Area" via `customH1`. Replaced residential relatedLinks with 5 commercial equivalents (commercial-refrigerator, dishwasher, oven, dryer, laundry). Service Areas section already present from ПРОМТ 25.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

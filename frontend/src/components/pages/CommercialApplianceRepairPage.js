@@ -39,13 +39,14 @@ const desktopServiceDescription = {
 const DesktopCommercialRepair = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Appliance"
-    pageTitle="Commercial Appliance Repair for Bay Area Businesses"
+    pageTitle="Commercial Appliance Repair Bay Area | FixitBay LLC"
     metaDescription="Commercial appliance repair for Bay Area businesses. Priority scheduling, licensed technicians, and 180-day warranty on commercial refrigeration, laundry and kitchen equipment. Call (760) 543-5733 or book online."
     commonProblems={desktopCommonProblems}
     faqData={desktopFaqData}
     relatedServicesCategory="Commercial"
     relatedServicesSubtitle="Expert repair for commercial appliances"
     serviceDescription={desktopServiceDescription}
+    customH1="Expert Commercial Appliance Repair in the Bay Area"
     isCommercial={true}
     repairVsReplace={{
       title: "Repair vs. Replace Commercial Equipment",
@@ -58,10 +59,11 @@ const DesktopCommercialRepair = () => (
       ]
     }}
     relatedLinks={[
-      { href: '/residential-appliance-repair', label: 'Residential Repair', desc: 'Home kitchen and laundry appliance service' },
-      { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'All types including commercial-grade units' },
-      { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Commercial and residential dishwashers' },
-      { href: '/washer-repair', label: 'Washer Repair', desc: 'Commercial laundry and home washers' },
+      { href: '/commercial-refrigerator-repair', label: 'Commercial Refrigerator Repair', desc: 'Walk-in coolers, reach-in units, display cases' },
+      { href: '/commercial-dishwasher-repair', label: 'Commercial Dishwasher Repair', desc: 'High-volume rack systems, undercounter units' },
+      { href: '/commercial-oven-repair', label: 'Commercial Oven & Range Repair', desc: 'Convection ovens, commercial ranges, salamanders' },
+      { href: '/commercial-dryer-repair', label: 'Commercial Dryer Repair', desc: 'Industrial dryers for hotels, laundromats' },
+      { href: '/commercial-laundry-repair', label: 'Commercial Laundry Repair', desc: 'Industrial washers for multi-family buildings' },
     ]}
   />
 );
@@ -98,7 +100,7 @@ const MobileCommercialRepair = () => (
   <MobileServiceLanding
     appliance="Commercial Appliance"
     pageSlug="commercial-appliance-repair"
-    pageTitle="Commercial Appliance Repair for Bay Area Businesses"
+    pageTitle="Commercial Appliance Repair Bay Area | FixitBay LLC"
     metaDescription="Commercial appliance repair for Bay Area businesses. Priority scheduling, licensed technicians, and 180-day warranty. Call (760) 543-5733 or book online."
     heroTitle={<>Commercial Appliance<br />Repair. Priority Service.</>}
     heroSubtitle="Same- or Next-Day Appointments for Businesses"
