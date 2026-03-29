@@ -4,10 +4,10 @@ const F = 'Montserrat, sans-serif';
 
 const PricingCards = ({ testId = 'pricing' }) => (
   <section data-testid={testId} className="bg-navy-mid section-pad">
-    <div style={{ maxWidth: 780, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
+    <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px', textAlign: 'center' }}>
       <div className="eyebrow" style={{ textAlign: 'center', marginBottom: 10 }}>TRANSPARENT PRICING</div>
       <h2 style={{ fontFamily: F, fontWeight: 800, color: '#FFFFFF', textAlign: 'center', marginBottom: 36 }}>No Surprises. Ever.</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-3" style={{ gap: 20 }}>
+      <div className="pricing-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
         <div style={{ border: '2px solid #FF5722', background: 'rgba(255,87,34,0.06)', borderRadius: 4, padding: '32px 24px', position: 'relative' }}>
           <span style={{ position: 'absolute', top: -12, left: '50%', transform: 'translateX(-50%)', background: '#FF5722', color: '#FFF', fontFamily: F, fontWeight: 700, fontSize: 10, textTransform: 'uppercase', borderRadius: 2, padding: '3px 10px', whiteSpace: 'nowrap' }}>MOST ASKED</span>
           <div style={{ fontFamily: F, fontWeight: 800, fontSize: 52, color: '#FF5722', marginBottom: 8 }}>$60</div>
