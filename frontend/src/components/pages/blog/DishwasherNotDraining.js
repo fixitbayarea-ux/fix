@@ -14,32 +14,32 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 const BOLD = { fontFamily: F, fontWeight: 700, color: '#1A1A1A' };
 
 const TOC = [
-  { id: 'fix-1-clogged-filter', label: 'Clogged Filter (Most Common)' },
-  { id: 'fix-2-drain-hose', label: 'Kinked or Clogged Drain Hose' },
-  { id: 'fix-3-disposal-plug', label: 'Garbage Disposal Knockout Plug' },
-  { id: 'fix-4-air-gap', label: 'Clogged Air Gap' },
-  { id: 'fix-5-household-drain', label: 'Clogged Household Drain' },
-  { id: 'fix-6-drain-pump', label: 'Faulty Drain Pump' },
-  { id: 'fix-7-check-valve', label: 'Faulty Check Valve or Drain Solenoid' },
+  { id: 'cause-1', label: 'Cause 1: Clogged Filter' },
+  { id: 'cause-2', label: 'Cause 2: Blocked Drain Hose' },
+  { id: 'cause-3', label: 'Cause 3: Faulty Drain Pump' },
+  { id: 'cause-4', label: 'Cause 4: Garbage Disposal Connection' },
+  { id: 'cause-5', label: 'Cause 5: Kinked or Improperly Installed Hose' },
+  { id: 'cause-6', label: 'Cause 6: Check Valve Issue' },
+  { id: 'cause-7', label: 'Cause 7: Control Board Failure' },
   { id: 'quick-checklist', label: 'Quick Troubleshooting Checklist' },
   { id: 'faq', label: 'FAQ' },
 ];
 
 const CHECKLIST = [
-  'Clean the filter (most common fix)',
-  'Check drain hose for kinks',
-  'Verify garbage disposal knockout plug was removed (new installations)',
-  'Clean air gap (if equipped)',
-  'Run garbage disposal and check sink drainage',
-  'Listen for drain pump operation during cycle',
+  'Clean the filter (solves 60% of cases)',
+  'Inspect drain hose for kinks or clogs',
+  'Listen for drain pump during cycle',
+  'Check garbage disposal knockout plug (new installs)',
+  'Verify high-loop on drain hose under counter',
+  'Test for check valve failure (partial draining)',
 ];
 
 const FAQ_ITEMS = [
   { q: 'Why is there standing water at the bottom of my dishwasher after a cycle?', a: 'The most common cause is a clogged filter\u2014the cylindrical filter at the bottom of the tub traps food particles and should be cleaned monthly. If the filter is clean, check the drain hose for kinks or clogs, then verify your garbage disposal connection. In our experience, 80% of drainage problems are fixed by cleaning the filter or clearing a blocked drain hose\u2014both easy DIY repairs under 10 minutes.' },
   { q: 'How do I know if my dishwasher drain pump is bad?', a: 'During the drain cycle (typically near the end of the wash cycle), listen for a humming or whirring sound\u2014that\u2019s the pump working. Silence during the drain cycle often means the pump isn\u2019t running. A loud grinding or buzzing sound suggests the pump is running but obstructed. If the pump sounds fine but water still won\u2019t drain, the pump may have an electrical failure and needs professional diagnosis.' },
-  { q: 'My dishwasher just installed \u2014 why won\u2019t it drain?', a: 'If your dishwasher was just installed and has never drained properly, the garbage disposal knockout plug is almost certainly the issue. When a dishwasher drains into a garbage disposal, the installer must remove a small plastic plug from the disposal\u2019s inlet port. If it\u2019s still in place, water has nowhere to go. Look under the sink, find the disposal\u2019s dishwasher inlet, and check if the plug is still inserted.' },
-  { q: 'Can I use my dishwasher if it\u2019s not draining properly?', a: 'We recommend fixing the drainage issue before running more cycles. Standing water can become a breeding ground for bacteria and mold, leading to unpleasant odors. More importantly, if the drain pump is running against a stubborn clog, continued use can burn out the motor\u2014turning an easy $60 repair into a $200+ pump replacement.' },
-  { q: 'How much does dishwasher drain repair cost in the Bay Area?', a: 'If the fix is cleaning the filter or clearing a hose kink, it\u2019s a free DIY repair. If the issue requires professional service\u2014like replacing a drain pump, check valve, or drain solenoid\u2014FixitBay LLC charges a $60 diagnostic fee that\u2019s applied toward the repair cost. Most drain pump replacements run $250\u2013$350 total, parts and labor included, with a 180-day warranty.' },
+  { q: 'My dishwasher was just installed \u2014 why won\u2019t it drain?', a: 'If your dishwasher was just installed and has never drained properly, the garbage disposal knockout plug is almost certainly the issue. When a dishwasher drains into a garbage disposal, the installer must remove a small plastic plug from the disposal\u2019s inlet port. If it\u2019s still in place, water has nowhere to go.' },
+  { q: 'Can I use my dishwasher if it\u2019s not draining properly?', a: 'We recommend fixing the drainage issue before running more cycles. Standing water can become a breeding ground for bacteria and mold. More importantly, if the drain pump is running against a stubborn clog, continued use can burn out the motor\u2014turning an easy $60 repair into a $200+ pump replacement.' },
+  { q: 'How much does dishwasher drain repair cost in the Bay Area?', a: 'If the fix is cleaning the filter or clearing a hose kink, it\u2019s a free DIY repair. If the issue requires professional service\u2014like replacing a drain pump, check valve, or control board\u2014FixitBay charges a $60 diagnostic fee applied toward the repair cost. Most drain pump replacements run $250\u2013$350 total, parts and labor included, with a 180-day warranty.' },
 ];
 
 const DarkBox = ({ label, steps }) => (
@@ -66,10 +66,10 @@ const Callout = ({ icon, label, text }) => (
   </div>
 );
 
-const FixH2 = ({ num, title, id }) => (
+const CauseH2 = ({ num, title, id }) => (
   <div id={id} style={{ margin: '36px 0 0' }}>
     <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-      <span style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 800, fontSize: 12, padding: '4px 12px', borderRadius: 3, flexShrink: 0, whiteSpace: 'nowrap' }}>FIX #{num}</span>
+      <span style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 800, fontSize: 12, padding: '4px 12px', borderRadius: 3, flexShrink: 0, whiteSpace: 'nowrap' }}>CAUSE {num}</span>
       <h2 style={H2S}>{title}</h2>
     </div>
     <div style={{ borderBottom: '2px solid rgba(255,87,34,0.2)', marginBottom: 16, marginTop: 8 }} />
@@ -88,20 +88,16 @@ const DishwasherNotDraining = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Dishwasher Not Draining? 7 Quick Fixes", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-02-20", "dateModified": "2026-02-20", "url": "https://fixitbay.net/blog/dishwasher-not-draining" } },
-    { id: 'howto-schema', data: { "@context": "https://schema.org", "@type": "HowTo", "name": "How to Fix a Dishwasher That Won't Drain", "description": "7 fixes for dishwasher drainage problems, ordered by likelihood", "totalTime": "PT10M", "step": [
-      { "@type": "HowToStep", "position": 1, "name": "Clean the dishwasher filter", "text": "Remove and rinse the cylindrical filter at the bottom of the tub under hot water with a soft brush." },
-      { "@type": "HowToStep", "position": 2, "name": "Check the drain hose for kinks", "text": "Inspect the drain hose for bends, kinks, or visible damage. Ensure it forms a high loop secured to the underside of the counter." },
-      { "@type": "HowToStep", "position": 3, "name": "Check garbage disposal knockout plug", "text": "If newly installed, verify the knockout plug was removed from the disposal's dishwasher inlet port." },
-      { "@type": "HowToStep", "position": 4, "name": "Clean the air gap", "text": "Remove the chrome cap and clean debris from inside the air gap cylinder with a small brush." },
-      { "@type": "HowToStep", "position": 5, "name": "Check household drain", "text": "Run the garbage disposal and test the sink drain. If the sink drains slowly, the household drain may be clogged." },
-      { "@type": "HowToStep", "position": 6, "name": "Diagnose the drain pump", "text": "Listen during the drain cycle for a humming sound. No sound means the pump is not running. Call a pro if the pump needs replacement." },
-      { "@type": "HowToStep", "position": 7, "name": "Check the check valve or drain solenoid", "text": "If all else checks out and water still won't drain, the check valve or solenoid may be faulty. This requires professional diagnosis." }
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Dishwasher Not Draining? 7 Causes & How to Fix It", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-02-20", "dateModified": "2026-03-29", "url": "https://fixitbay.net/blog/dishwasher-not-draining" } },
+    { id: 'howto-schema', data: { "@context": "https://schema.org", "@type": "HowTo", "name": "How to Fix a Dishwasher That Won't Drain", "description": "Step-by-step instructions for the 3 most common causes of a dishwasher not draining: clogged filter, blocked drain hose, and faulty drain pump.", "totalTime": "PT15M", "step": [
+      { "@type": "HowToStep", "position": 1, "name": "Clean the dishwasher filter", "text": "Remove the bottom dish rack. Locate the cylindrical filter at the bottom center of the tub. Twist and lift to remove. Rinse under hot water with a soft brush. Clean the filter housing of debris. Reinstall by twisting back into place. Run a rinse cycle to test." },
+      { "@type": "HowToStep", "position": 2, "name": "Check the drain hose for blockages", "text": "Pull the dishwasher out slightly or remove the kickplate. Inspect the drain hose for kinks, bends, or visible damage. Disconnect at the sink drain or disposal (bucket underneath). Run water through the hose to check for clogs. Verify the hose has a high loop secured under the counter. Reconnect and test." },
+      { "@type": "HowToStep", "position": 3, "name": "Diagnose the drain pump", "text": "During the drain cycle, listen for a humming or whirring sound. No sound means the pump is not running. A loud grinding or buzzing suggests the pump is obstructed. Access the pump beneath the filter and check for broken glass, food debris, or small objects. If the pump is clear but still not working, it needs professional replacement." }
     ] } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
       { "@type": "Question", "name": "Why is there standing water at the bottom of my dishwasher?", "acceptedAnswer": { "@type": "Answer", "text": "Most commonly a clogged filter. Clean the cylindrical filter at the bottom of the tub. If clean, check the drain hose for kinks. These two fixes solve 80% of drainage problems." } },
-      { "@type": "Question", "name": "My dishwasher just installed \u2014 why won't it drain?", "acceptedAnswer": { "@type": "Answer", "text": "Almost certainly the garbage disposal knockout plug. The installer must remove this plastic plug from the disposal's dishwasher inlet port. Check under the sink." } },
-      { "@type": "Question", "name": "How much does dishwasher drain repair cost?", "acceptedAnswer": { "@type": "Answer", "text": "Filter cleaning and hose clearing are free DIY fixes. Professional drain pump replacement runs $250-$350 total with FixitBay LLC's $60 diagnostic applied to the repair. 180-day warranty included." } }
+      { "@type": "Question", "name": "How do I know if my dishwasher drain pump is bad?", "acceptedAnswer": { "@type": "Answer", "text": "Listen during the drain cycle. You should hear a humming or whirring sound. Silence means the pump is not running. Grinding or buzzing means it's obstructed. If clear but not working, it needs replacement." } },
+      { "@type": "Question", "name": "How much does dishwasher drain repair cost?", "acceptedAnswer": { "@type": "Answer", "text": "Filter cleaning and hose clearing are free DIY fixes. Professional drain pump replacement runs $250-$350 total with FixitBay's $60 diagnostic applied to the repair. 180-day warranty included." } }
     ] } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Dishwasher Not Draining", "item": "https://fixitbay.net/blog/dishwasher-not-draining" }] } }
   ], []);
@@ -110,8 +106,8 @@ const DishwasherNotDraining = () => {
   return (
     <>
       <SEOMetaTags
-        title="Dishwasher Not Draining? 7 Quick Fixes | FixitBay LLC"
-        description="Dishwasher won't drain? Check these 7 causes: clogged filter, kinked hose, disposal plug, air gap, faulty pump. Most fixes take under 10 minutes."
+        title="Dishwasher Not Draining? 7 Causes & Fixes | FixitBay"
+        description="Dishwasher won't drain? 7 common causes: clogged filter, blocked hose, faulty pump, disposal connection. Step-by-step fixes. Most take under 15 minutes."
         canonical="https://fixitbay.net/blog/dishwasher-not-draining"
         ogType="article"
       />
@@ -147,12 +143,12 @@ const DishwasherNotDraining = () => {
             <div style={{ display: 'flex', justifyContent: 'center', gap: 20, alignItems: 'center', flexWrap: 'wrap', marginBottom: 16 }}>
               <span style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 11, padding: '4px 12px', borderRadius: 3 }}>Dishwasher</span>
             </div>
-            <BlogByline dateISO="2024-12-20" dateFormatted="December 20, 2024" readTime="6 min" />
+            <BlogByline dateISO="2024-12-20" dateFormatted="December 20, 2024" readTime="7 min" />
             <h1 className="dnd-h1" data-testid="article-title" style={{ fontFamily: F, fontWeight: 800, lineHeight: 1.2, color: '#fff', textShadow: '0 2px 24px rgba(0,0,0,0.5)', maxWidth: 720, margin: '0 auto 16px' }}>
-              Dishwasher Not Draining? 7 Quick Fixes You Can Try Right Now
+              Dishwasher Not Draining? 7 Causes &amp; How to Fix It
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto' }}>
-              Standing water after a cycle? Check these 7 common causes: clogged filter, blocked drain hose, garbage disposal connection, and air gap. Most are easy DIY fixes.
+              Standing water after a cycle? Here are 7 common causes and step-by-step fixes — most take under 15 minutes.
             </p>
           </div>
         </section>
@@ -164,14 +160,19 @@ const DishwasherNotDraining = () => {
             {/* ━━━ 3. LEFT — ARTICLE CONTENT ━━━ */}
             <article data-testid="article-content" style={{ background: '#fff', borderRadius: 4, padding: '40px 36px', border: '1px solid rgba(0,0,0,0.07)', boxShadow: '0 2px 16px rgba(0,0,0,0.04)' }}>
 
+              {/* ★ FEATURED SNIPPET PARAGRAPH ★ */}
+              <p data-testid="snippet-answer" style={{ fontFamily: F, fontWeight: 500, fontSize: 16, color: '#1A1A1A', lineHeight: 1.8, marginBottom: 28, padding: '20px 24px', background: '#F8F5F0', borderLeft: '4px solid #FF5722', borderRadius: 4 }}>
+                A dishwasher that won't drain is usually caused by a clogged filter, blocked drain hose, faulty drain pump, or garbage disposal connection issue. Most cases can be fixed in under 15 minutes without tools. Here are the 7 most common causes and step-by-step instructions to fix each one.
+              </p>
+
               {/* QUICK DIAGNOSIS BANNER */}
               <div data-testid="diagnosis-banner" style={{ background: '#0D1B2A', borderRadius: 4, padding: '20px 24px', marginBottom: 24 }}>
                 <p style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#fff', marginBottom: 14 }}>Most Likely Cause First</p>
                 <div className="diag-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 10 }}>
                   {[
-                    { label: 'DIY \u2014 EASY', fixes: ['Fix #1 Clogged Filter', 'Fix #2 Drain Hose', 'Fix #4 Air Gap'] },
-                    { label: 'DIY \u2014 MODERATE', fixes: ['Fix #3 Disposal Plug', 'Fix #5 Household Drain'] },
-                    { label: 'CALL A PRO', fixes: ['Fix #6 Drain Pump', 'Fix #7 Check Valve'] },
+                    { label: 'DIY \u2014 EASY', fixes: ['#1 Clogged Filter', '#2 Blocked Drain Hose', '#4 Disposal Connection'] },
+                    { label: 'DIY \u2014 MODERATE', fixes: ['#5 Kinked Hose', '#6 Check Valve'] },
+                    { label: 'CALL A PRO', fixes: ['#3 Faulty Drain Pump', '#7 Control Board'] },
                   ].map((col, ci) => (
                     <div key={ci} style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 4, padding: 14, textAlign: 'center' }}>
                       <p style={{ fontFamily: F, fontWeight: 700, fontSize: 11, color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 8 }}>{col.label}</p>
@@ -181,134 +182,133 @@ const DishwasherNotDraining = () => {
                     </div>
                   ))}
                 </div>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.45)', textAlign: 'center', marginTop: 10 }}>Check in order — #1 solves 60% of all cases</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: 'rgba(255,255,255,0.45)', textAlign: 'center', marginTop: 10 }}>Check in order — Cause #1 solves 60% of all cases</p>
               </div>
 
               {/* TOC */}
               <div data-testid="toc" style={{ background: '#F8F5F0', borderLeft: '3px solid #FF5722', borderRadius: 4, padding: '20px 24px', marginBottom: 32 }}>
-                <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#1A1A1A', marginBottom: 12 }}>7 Fixes to Check</p>
+                <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#1A1A1A', marginBottom: 12 }}>In This Article</p>
                 {TOC.map((t, i) => (
                   <a key={t.id} href={`#${t.id}`} className="toc-link" style={{ fontFamily: F, fontWeight: 500, fontSize: 13, color: '#FF5722', textDecoration: 'none', display: 'block', padding: '3px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
-                    {i < 7 ? `${i + 1}. ${t.label}` : `+ ${t.label}`}
+                    {i < 7 ? t.label : `+ ${t.label}`}
                   </a>
                 ))}
               </div>
 
-              {/* INTRO */}
-              <p style={{ ...P, marginBottom: 24 }}>
-                Opening your <a href="/dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>dishwasher</a> to find a pool of dirty water at the bottom is never fun. The good news? Most dishwasher drainage problems are caused by simple clogs that you can fix yourself in under 10 minutes. Here's what to check, in order of likelihood:
+              {/* ── CAUSE #1: Clogged Filter ── */}
+              <CauseH2 num={1} id="cause-1" title="Clogged Filter (How to Clean It)" />
+              <p style={P}>
+                <strong style={BOLD}>Why it happens:</strong> The filter at the bottom of the <a href="/dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>dishwasher</a> traps food particles to prevent them from recirculating onto your dishes. When the filter clogs with debris, water can't drain through it. This is the #1 cause of standing water — and the easiest to fix.
               </p>
-
-              {/* ── FIX #1 ── */}
-              <FixH2 num={1} id="fix-1-clogged-filter" title="Clogged Filter (Most Common!)" />
-              <p style={{ ...P, marginBottom: 16 }}>
-                <strong style={BOLD}>The Problem:</strong> The filter at the bottom of the dishwasher traps food particles. When it's clogged with debris, water can't drain properly. This is the #1 cause of standing water—and the easiest to fix.
-              </p>
-              <DarkBox label="HOW TO FIX (5 MINUTES):" steps={[
-                'Remove the bottom dish rack',
+              <DarkBox label="HOW TO FIX (5 MINUTES)" steps={[
+                'Remove the bottom dish rack to access the filter',
                 'Locate the cylindrical filter at the bottom center of the tub',
-                'Twist and lift the filter assembly to remove it',
-                'Rinse the filter under hot running water, scrubbing with a soft brush to remove all debris',
-                'Check the filter housing (the well where the filter sits) for large debris and wipe clean',
-                'Reinstall the filter by twisting it back into place',
-                'Run a rinse cycle to test',
+                'Twist counterclockwise and lift the filter assembly out',
+                'Rinse under hot running water, scrubbing with a soft brush to remove all debris',
+                'Check the filter well for large debris and wipe clean',
+                'Reinstall the filter by twisting clockwise until it locks',
+                'Run a rinse cycle to test drainage',
               ]} />
-              <Callout icon={'\uD83D\uDCA1'} label="Prevention:" text="Clean the filter monthly to prevent future clogs." />
+              <Callout icon={'\uD83D\uDCA1'} label="Prevention:" text="Clean your dishwasher filter once a month to prevent future clogs. This single habit prevents 60% of drainage issues." />
 
-              {/* ── FIX #2 ── */}
-              <FixH2 num={2} id="fix-2-drain-hose" title="Kinked or Clogged Drain Hose" />
-              <p style={{ ...P, marginBottom: 16 }}>
-                <strong style={BOLD}>The Problem:</strong> The drain hose connects your dishwasher to the garbage disposal or sink drain. If it's kinked, clogged, or improperly installed, water can't flow out.
+              {/* ── CAUSE #2: Blocked Drain Hose ── */}
+              <CauseH2 num={2} id="cause-2" title="Blocked Drain Hose" />
+              <p style={P}>
+                <strong style={BOLD}>Why it happens:</strong> The drain hose connects your dishwasher to the garbage disposal or sink drain pipe. Food particles, grease, and debris can accumulate inside the hose over time, creating a blockage. A kinked hose also restricts water flow.
               </p>
-              <DarkBox label="HOW TO CHECK:" steps={[
-                'Pull the dishwasher out slightly to access the back (you may need to remove the kickplate)',
-                'Inspect the drain hose for kinks, bends, or visible damage',
-                'Disconnect the hose from the sink drain or disposal (place a bucket underneath first!)',
-                'Check for clogs by running water through the hose or using a plumber\u2019s snake',
-                'Reconnect securely and test',
+              <DarkBox label="HOW TO FIX (10 MINUTES)" steps={[
+                'Pull the dishwasher out slightly or remove the kickplate to access the hose',
+                'Inspect the full length of the drain hose for kinks, bends, or visible damage',
+                'Disconnect the hose at the sink drain or disposal (place a bucket underneath first)',
+                'Run water through the hose or use a plumber\u2019s snake to clear any clogs',
+                'Reconnect the hose securely and test with a rinse cycle',
               ]} />
-              <Callout icon={'\u26A1'} label="Pro tip:" text='The drain hose should form a "high loop" (secured to the underside of the counter) to prevent backflow. If yours doesn&apos;t, this could be the issue.' />
+              <Callout icon={'\u26A1'} label="Pro tip:" text='The drain hose must form a "high loop" secured to the underside of the countertop. Without this loop, dirty water can siphon back into the dishwasher.' />
 
-              {/* ── FIX #3 ── */}
-              <FixH2 num={3} id="fix-3-disposal-plug" title="Garbage Disposal Knockout Plug Not Removed" />
-              <p style={{ ...P, marginBottom: 16 }}>
-                <strong style={BOLD}>The Problem:</strong> If your dishwasher drains into a garbage disposal, the installer must remove a small knockout plug from the disposal's dishwasher inlet. If this plug wasn't removed during installation, water can't drain.
+              {/* ── CAUSE #3: Faulty Drain Pump ── */}
+              <CauseH2 num={3} id="cause-3" title="Faulty Drain Pump" />
+              <p style={P}>
+                <strong style={BOLD}>Why it happens:</strong> The drain pump actively pushes water out of the dishwasher through the drain hose. If the pump motor fails, gets jammed by debris, or has an electrical fault, water simply stays in the tub.
               </p>
-              <DarkBox label="HOW TO CHECK:" steps={[
-                'Look under the sink at the garbage disposal',
+              <p style={P}>
+                <strong style={BOLD}>How to diagnose:</strong> During the drain cycle (near the end of the wash), listen carefully. A healthy pump makes a humming or whirring sound. Complete silence means the pump isn't running. A loud grinding or buzzing suggests the impeller is jammed.
+              </p>
+              <p style={P}>
+                <strong style={BOLD}>DIY check:</strong> Access the pump beneath the filter and check for obstructions — broken glass, food debris, or small objects caught in the impeller. Carefully remove any debris you find.
+              </p>
+              <div style={{ padding: '10px 14px', background: 'rgba(13,27,42,0.04)', borderLeft: '3px solid #0D1B2A', borderRadius: 4 }}>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.8 }}>
+                  <strong style={BOLD}>When to call a pro:</strong> If the pump is clear of debris but still not running, it needs replacement. Drain pump replacement typically costs $250–$350 including parts and labor. <a href="/san-francisco-dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>Schedule a repair in San Francisco</a>.
+                </p>
+              </div>
+
+              {/* ── CAUSE #4: Garbage Disposal Connection ── */}
+              <CauseH2 num={4} id="cause-4" title="Garbage Disposal Connection" />
+              <p style={P}>
+                <strong style={BOLD}>Why it happens:</strong> If your dishwasher drains into a garbage disposal, the installer must remove a small plastic knockout plug from the disposal's dishwasher inlet port. If this plug wasn't removed during installation, water has nowhere to go. This is the most common cause on newly installed dishwashers.
+              </p>
+              <DarkBox label="HOW TO FIX (5 MINUTES)" steps={[
+                'Look under the sink and locate the garbage disposal',
                 'Find the small dishwasher inlet port on the side of the disposal',
-                'If the dishwasher was recently installed and has never drained properly, the knockout plug is likely still in place',
-                'To remove: Insert a screwdriver into the inlet and use a hammer to knock out the plastic plug',
-                'Retrieve the plug from inside the disposal (it will fall inside)',
+                'If the dishwasher was recently installed and has never drained, the knockout plug is likely still in place',
+                'Insert a screwdriver into the inlet and tap with a hammer to knock out the plastic plug',
+                'Retrieve the plug from inside the disposal before using it',
               ]} />
-              <Callout icon={'\uD83D\uDCA1'} label="Note:" text="This is a one-time fix. If your dishwasher drained fine before and just stopped, skip this step." />
-
-              {/* ── FIX #4 ── */}
-              <FixH2 num={4} id="fix-4-air-gap" title="Clogged Air Gap" />
-              <p style={{ ...P, marginBottom: 16 }}>
-                <strong style={BOLD}>The Problem:</strong> Some dishwashers use an air gap—a small chrome or plastic cylinder on the sink or countertop near the faucet. It prevents dirty sink water from flowing back into the dishwasher. If the air gap is clogged, water can't drain.
+              <p style={P}>
+                <strong style={BOLD}>Also check:</strong> Even on older installations, the disposal itself can be clogged. Run the disposal for 15 seconds with hot water to clear any buildup before testing the dishwasher again.
               </p>
-              <DarkBox label="HOW TO CLEAN (3 MINUTES):" steps={[
-                'Remove the chrome cap on top of the air gap (it usually twists or pulls off)',
-                'Check inside for debris or buildup',
-                'Use a small bottle brush or toothbrush to scrub the inside clean',
-                'Rinse with water and replace the cap',
-                'Run a cycle to test drainage',
-              ]} />
 
               {/* ── MID-ARTICLE CTA ── */}
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
-                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Not sure what's causing it?</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Our SF technicians diagnose and fix it same day. $60 diagnostic · 180-day warranty.</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                    <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
-                    <a href="/book" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)' }}>Book online →</a>
+                    <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
+                    <a href="/book" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)' }}>Book a Repair &rarr;</a>
                   </div>
                 </div>
               </div>
 
-              {/* ── FIX #5 ── */}
-              <FixH2 num={5} id="fix-5-household-drain" title="Clogged Household Drain or Garbage Disposal" />
-              <p style={{ ...P, marginBottom: 16 }}>
-                <strong style={BOLD}>The Problem:</strong> Your dishwasher drains into your home's plumbing. If the sink drain or garbage disposal is clogged, water has nowhere to go and backs up into the dishwasher.
+              {/* ── CAUSE #5: Kinked or Improperly Installed Hose ── */}
+              <CauseH2 num={5} id="cause-5" title="Kinked or Improperly Installed Hose" />
+              <p style={P}>
+                <strong style={BOLD}>Why it happens:</strong> Even if the hose isn't clogged internally, it can be kinked where it bends behind the dishwasher, or crushed where it passes through the cabinet wall. Improper installation — like routing the hose without a high loop — also causes drainage failures and backflow.
               </p>
-              <DarkBox label="HOW TO TEST & FIX:" steps={[
-                '<strong style="font-family:Montserrat,sans-serif;font-weight:700;color:rgba(255,255,255,0.95)">Garbage disposal:</strong> Run the disposal for 15 seconds with hot water to clear any clogs',
-                '<strong style="font-family:Montserrat,sans-serif;font-weight:700;color:rgba(255,255,255,0.95)">Sink drain:</strong> Fill the sink with water and see if it drains slowly. If yes, the drain is partially clogged. Use a plunger or drain snake.',
-                'Once the sink drains freely, test the dishwasher again',
+              <DarkBox label="HOW TO CHECK" steps={[
+                'Pull the dishwasher forward a few inches to inspect the hose routing',
+                'Look for sharp bends, kinks, or spots where the hose is pinched by the dishwasher body or cabinet',
+                'Verify the hose makes a high loop (secured to the underside of the counter) before connecting to the drain',
+                'If the hose is damaged or flattened, replace it — new drain hoses cost $15–$25 at hardware stores',
               ]} />
 
-              {/* ── FIX #6 ── */}
-              <FixH2 num={6} id="fix-6-drain-pump" title="Faulty Drain Pump" />
-              <p style={{ ...P, marginBottom: 16 }}>
-                <strong style={BOLD}>The Problem:</strong> The drain pump actively pushes water out of the dishwasher. If it's clogged, jammed, or electrically failed, water won't drain.
+              {/* ── CAUSE #6: Check Valve Issue ── */}
+              <CauseH2 num={6} id="cause-6" title="Check Valve Issue" />
+              <p style={P}>
+                <strong style={BOLD}>Why it happens:</strong> Many dishwashers have a check valve (also called a flapper valve) that prevents dirty water from flowing back into the tub after draining. If the valve is stuck closed, cracked, or clogged with debris, water can't exit — or drains only partially.
               </p>
-              <p style={{ ...P, marginBottom: 16 }}>
-                <strong style={BOLD}>How to diagnose:</strong> During the drain cycle, listen for the pump. You should hear a humming or whirring sound. If you hear nothing, or hear a loud grinding/buzzing, the pump may be faulty.
-              </p>
-              <p style={{ ...P, marginBottom: 16 }}>
-                <strong style={BOLD}>DIY check:</strong> Access the pump (usually beneath the filter) and check for obstructions like broken glass, food, or small objects. Carefully remove any debris.
+              <p style={P}>
+                <strong style={BOLD}>How to suspect this:</strong> You've cleaned the filter, checked the hose, the pump runs normally, but water still drains very slowly or only partially empties.
               </p>
               <div style={{ padding: '10px 14px', background: 'rgba(13,27,42,0.04)', borderLeft: '3px solid #0D1B2A', borderRadius: 4 }}>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.8 }}>
-                  <strong style={BOLD}>When to call a pro:</strong> If the pump is clear but still not working, it likely needs replacement. This requires electrical and plumbing work—best handled by a technician.
+                  <strong style={BOLD}>When to call a pro:</strong> Diagnosing and replacing a check valve requires disassembly of the pump housing. This is a job for a trained technician. Our <a href="/dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>dishwasher repair service</a> covers all valve and pump issues.
                 </p>
               </div>
 
-              {/* ── FIX #7 ── */}
-              <FixH2 num={7} id="fix-7-check-valve" title="Faulty Check Valve or Drain Solenoid" />
-              <p style={{ ...P, marginBottom: 16 }}>
-                <strong style={BOLD}>The Problem:</strong> Some dishwashers use a check valve (prevents backflow) or drain solenoid (controls drain flow). If these components fail, drainage is impaired.
+              {/* ── CAUSE #7: Control Board Failure ── */}
+              <CauseH2 num={7} id="cause-7" title="Control Board Failure" />
+              <p style={P}>
+                <strong style={BOLD}>Why it happens:</strong> The electronic control board sends the signal to the drain pump to turn on at the right time in the cycle. If the board has a faulty relay, burned circuit, or software glitch, it may never send that signal — even though the pump itself is fine.
               </p>
-              <p style={{ ...P, marginBottom: 12 }}>
-                <strong style={BOLD}>When to suspect this:</strong> You've checked everything else, the pump runs but water doesn't drain, or water drains partially but slowly.
+              <p style={P}>
+                <strong style={BOLD}>How to suspect this:</strong> You've ruled out all other causes. The pump works when tested directly but doesn't activate during a normal cycle. Other cycle functions may also be erratic — skipping rinse, stopping mid-cycle, or displaying error codes.
               </p>
               <div style={{ padding: '10px 14px', background: 'rgba(13,27,42,0.04)', borderLeft: '3px solid #0D1B2A', borderRadius: 4 }}>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.8 }}>
-                  <strong style={BOLD}>When to call a pro:</strong> Diagnosing and replacing these components requires disassembly and technical knowledge. Call a professional.
+                  <strong style={BOLD}>When to call a pro:</strong> Control board diagnosis requires specialized testing equipment. Replacement boards cost $250–$400 depending on the brand. A technician can confirm whether it's the board or a wiring issue.
                 </p>
               </div>
 
@@ -347,12 +347,14 @@ const DishwasherNotDraining = () => {
 
               {/* ── BOTTOM CTA ── */}
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
-                <div style={EYE}>CERTIFIED DISHWASHER REPAIR</div>
-                <p style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Still Having Drainage Issues?</p>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified dishwasher technicians diagnose and repair all drainage problems. We service all major brands in SF Bay Area—appointments available Mon–Sat!</p>
+                <div style={EYE}>PROFESSIONAL DISHWASHER REPAIR</div>
+                <p style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Not Sure What's Causing the Issue?</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20, maxWidth: 540, margin: '0 auto 20px' }}>
+                  Our San Francisco technicians can diagnose and fix it same day. $60 diagnostic applied to your repair. All brands, all models. <a href="/dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>Dishwasher repair</a> &middot; <a href="/san-francisco-dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>SF dishwasher repair</a>.
+                </p>
                 <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
                   <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
-                  <a href="/book?go=1" target="_blank" rel="noopener noreferrer" style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.4)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none' }} aria-label="opens in new tab">Book Repair Online</a>
+                  <a href="/book?go=1" target="_blank" rel="noopener noreferrer" style={{ background: 'transparent', border: '1px solid rgba(255,255,255,0.4)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none' }} aria-label="opens in new tab">Book a Repair &rarr;</a>
                 </div>
               </div>
 
@@ -362,7 +364,7 @@ const DishwasherNotDraining = () => {
                 <div>
                   <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Written by</p>
                   <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A' }}>Andrei — Licensed Appliance Technician</p>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Licensed CA Technician &middot; License #51001 &middot; 3+ years dishwasher repair in Bay Area</p>
+                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: '#4A5568' }}>Licensed CA Technician &middot; License #51001 &middot; 3+ years dishwasher repair in Bay Area</p>
                 </div>
               </div>
             </article>
@@ -372,10 +374,10 @@ const DishwasherNotDraining = () => {
               {/* Widget 1: Book Repair */}
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>DISHWASHER NOT DRAINING?</div>
-                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Fast Repair Available</h3>
+                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Same-Day Repair Available</h3>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>All brands and models. $60 diagnostic applied to repair. 180-day warranty.</p>
                 <div style={{ borderBottom: '1px solid rgba(255,255,255,0.08)', marginBottom: 16 }} />
-                {['All Dishwasher Brands', 'Fast Scheduling', '180-Day Warranty on Parts & Labor'].map(item => (
+                {['All Dishwasher Brands', 'Same-Day Scheduling', '180-Day Warranty on Parts & Labor'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
                     <span style={{ color: '#FF5722', fontFamily: F, fontWeight: 700, fontSize: 13 }}>{'\u2713'}</span>
                     <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>{item}</span>
@@ -383,37 +385,34 @@ const DishwasherNotDraining = () => {
                 ))}
                 <div style={{ marginBottom: 20 }} />
                 <a href="tel:7605435733" className="phone-cta" data-testid="sidebar-phone" style={{ display: 'block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: 14, borderRadius: 4, textAlign: 'center', textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
-                <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ display: 'block', background: 'transparent', border: '1px solid rgba(255,255,255,0.25)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: 14, borderRadius: 4, textAlign: 'center', textDecoration: 'none', marginTop: 8, transition: 'background 0.2s' }} aria-label="opens in new tab">Book Dishwasher Repair</a>
+                <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ display: 'block', background: 'transparent', border: '1px solid rgba(255,255,255,0.25)', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: 14, borderRadius: 4, textAlign: 'center', textDecoration: 'none', marginTop: 8, transition: 'background 0.2s' }} aria-label="opens in new tab">Book Dishwasher Repair</a>
               </div>
 
               {/* Widget 2: Quick Diagnosis */}
               <div style={{ background: '#fff', borderRadius: 4, padding: 20, border: '1px solid rgba(255,87,34,0.2)', marginTop: 20 }}>
                 <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#1A1A1A', paddingBottom: 12, borderBottom: '1px solid rgba(0,0,0,0.08)', marginBottom: 14 }}>Diagnose by Symptom</p>
                 {[
-                  { symptom: 'Standing water, new dishwasher', fix: 'Check disposal knockout plug (#3)' },
-                  { symptom: 'Water pools, old dishwasher', fix: 'Clean filter first (#1)' },
-                  { symptom: 'Pump hums, water stays', fix: 'Clogged filter or hose (#1, #2)' },
-                  { symptom: 'No pump sound at all', fix: 'Faulty drain pump (#6)' },
-                  { symptom: 'Drains slow, sink also slow', fix: 'Household drain clog (#5)' },
+                  { symptom: 'Standing water, new dishwasher', fix: 'Disposal knockout plug (Cause #4)' },
+                  { symptom: 'Water pools, older unit', fix: 'Clean filter first (Cause #1)' },
+                  { symptom: 'Pump hums but water stays', fix: 'Clogged hose or pump (Cause #2, #3)' },
+                  { symptom: 'No pump sound at all', fix: 'Faulty pump or control board (#3, #7)' },
+                  { symptom: 'Drains slow, sink also slow', fix: 'Disposal / household drain (#4)' },
                 ].map((r, i) => (
                   <div key={i} style={{ padding: '10px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
                     <span style={{ fontFamily: F, fontWeight: 600, fontSize: 12, color: '#1A1A1A', display: 'block', marginBottom: 4 }}>{r.symptom}</span>
                     <span style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#FF5722' }}>{'\u2192'} {r.fix}</span>
                   </div>
                 ))}
-                <div style={{ background: 'rgba(255,87,34,0.06)', borderRadius: 4, padding: '10px 12px', marginTop: 10 }}>
-                  <p style={{ fontFamily: F, fontWeight: 400, fontSize: 11, color: '#4A5568', lineHeight: 1.5 }}>Fix #1 (filter cleaning) solves 60% of all cases — try it first</p>
-                </div>
               </div>
 
               {/* Widget 3: Related Articles */}
               <div style={{ background: '#F8F5F0', borderRadius: 4, padding: 20, border: '1px solid rgba(255,87,34,0.15)', marginTop: 20 }}>
                 <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#1A1A1A', paddingBottom: 12, borderBottom: '1px solid rgba(0,0,0,0.08)', marginBottom: 16 }}>Related Articles</p>
                 {[
+                  { text: 'How to Maintain Your Dishwasher', href: '/blog/dishwasher-maintenance' },
                   { text: 'Common Washer Error Codes Explained', href: '/blog/washer-error-codes' },
                   { text: 'Why Is My Dryer Taking So Long?', href: '/blog/dryer-taking-too-long' },
                   { text: 'Repair vs Replace Your Appliance', href: '/blog/when-to-repair-vs-replace' },
-                  { text: 'How Long Should Appliances Last?', href: '/blog/appliance-lifespan' },
                 ].map((link, i) => (
                   <Link key={i} to={link.href} className="sidebar-link" style={{ display: 'flex', gap: 8, padding: '8px 0', borderBottom: '1px solid rgba(0,0,0,0.05)', fontFamily: F, fontWeight: 500, fontSize: 13, color: '#4A5568', textDecoration: 'none', transition: 'color 0.2s' }}>
                     <span style={{ color: '#FF5722', fontWeight: 700, flexShrink: 0 }}>&rarr;</span>{link.text}
@@ -436,7 +435,7 @@ const DishwasherNotDraining = () => {
               ].map((a, i) => (
                 <Link key={i} to={a.href} data-testid={`related-article-${i}`} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px 20px', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.06)', borderRadius: 4, textDecoration: 'none' }}>
                   <span style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#0D1B2A' }}>{a.title}</span>
-                  <span style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', flexShrink: 0, marginLeft: 16 }}>Read article →</span>
+                  <span style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', flexShrink: 0, marginLeft: 16 }}>Read article &rarr;</span>
                 </Link>
               ))}
             </div>
@@ -450,9 +449,9 @@ const DishwasherNotDraining = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Dishwasher Repair', body: 'All brands and models. Drainage, door latch, heating element, control board. Fast scheduling.', link: 'View Service', href: '/dishwasher-repair' },
-                { tag: 'ARTICLE', title: 'Common Washer Error Codes Explained', body: 'Decode your washing machine\u2019s error codes and learn what to fix.', link: 'Read Article', href: '/blog/washer-error-codes' },
-                { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
+                { tag: 'SERVICE', title: 'Dishwasher Repair', body: 'All brands and models. Drainage, door latch, heating element, control board. Same-day scheduling.', link: 'View Service', href: '/dishwasher-repair' },
+                { tag: 'SERVICE', title: 'SF Dishwasher Repair', body: 'Fast dishwasher repair across all San Francisco neighborhoods.', link: 'View Service', href: '/san-francisco-dishwasher-repair' },
+                { tag: 'ARTICLE', title: 'Dishwasher Maintenance Guide', body: 'How to keep your dishwasher running efficiently and prevent future drainage issues.', link: 'Read Article', href: '/blog/dishwasher-maintenance' },
               ].map((card, i) => (
                 <Link key={i} to={card.href} className="related-card" style={{ background: '#1A2F45', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 24, textDecoration: 'none', transition: 'border-color 0.2s', display: 'block' }}>
                   <span style={{ display: 'inline-block', background: card.tag === 'SERVICE' ? '#FF5722' : 'rgba(255,255,255,0.1)', color: card.tag === 'SERVICE' ? '#fff' : 'rgba(255,255,255,0.7)', fontFamily: F, fontWeight: 700, fontSize: 9, padding: '3px 8px', borderRadius: 3, letterSpacing: '0.08em', marginBottom: 12 }}>{card.tag}</span>
@@ -470,7 +469,7 @@ const DishwasherNotDraining = () => {
           <div style={{ maxWidth: 1000, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 24, flexWrap: 'wrap' }}>
             <img src={navbarLogo} alt="FixitBay" style={{ height: 28, width: 'auto' }} />
             <a href="tel:7605435733" style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textDecoration: 'none' }}>(760) 543-5733</a>
-            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
+            <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>&copy; 2026 FixitBay LLC. All rights reserved.</span>
           </div>
         </footer>
 
