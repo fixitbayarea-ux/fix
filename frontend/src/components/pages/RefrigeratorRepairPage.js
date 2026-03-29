@@ -74,6 +74,7 @@ const DesktopRefrigeratorRepair = () => (
       serviceSchema={refrigeratorServiceSchema}
       heroImage="/images/technicians/fridge-tech.jpg"
       heroImageAlt="FixitBay technician next to a refrigerator in a Bay Area home"
+      pricingTable={SERVICE_CONTENT.Refrigerator.pricingTable}
       comparisonTable={SERVICE_CONTENT.Refrigerator.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Refrigerator.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Refrigerator.diagnosisSteps}

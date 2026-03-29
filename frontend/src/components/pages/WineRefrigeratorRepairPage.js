@@ -104,7 +104,8 @@ const WineRefrigeratorRepairPage = () => {
           { icon: '💡', label: 'Light Out' },
         ]}
         faqs={faqData}
-        comparisonTable={SERVICE_CONTENT['Wine Cooler'].comparisonTable}
+        pricingTable={SERVICE_CONTENT['Wine Cooler'].pricingTable}
+      comparisonTable={SERVICE_CONTENT['Wine Cooler'].comparisonTable}
       symptomsChecklist={SERVICE_CONTENT['Wine Cooler'].symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT['Wine Cooler'].diagnosisSteps}
       relatedLinks={[
@@ -136,6 +137,7 @@ const WineRefrigeratorRepairPage = () => {
           <><strong>Looking for wine cooler repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-wine-cooler-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Wine Cooler Repair</a> page for local details and availability.</>
         ]
       }}
+      pricingTable={SERVICE_CONTENT['Wine Cooler'].pricingTable}
       comparisonTable={SERVICE_CONTENT['Wine Cooler'].comparisonTable}
       symptomsChecklist={SERVICE_CONTENT['Wine Cooler'].symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT['Wine Cooler'].diagnosisSteps}

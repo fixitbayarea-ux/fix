@@ -96,7 +96,8 @@ const IceMakerRepairPage = () => {
           { icon: '👃', label: 'Bad Taste' },
         ]}
         faqs={faqData}
-        comparisonTable={SERVICE_CONTENT['Ice Maker'].comparisonTable}
+        pricingTable={SERVICE_CONTENT['Ice Maker'].pricingTable}
+      comparisonTable={SERVICE_CONTENT['Ice Maker'].comparisonTable}
       symptomsChecklist={SERVICE_CONTENT['Ice Maker'].symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT['Ice Maker'].diagnosisSteps}
       relatedLinks={[
@@ -129,6 +130,7 @@ const IceMakerRepairPage = () => {
           <><strong>Looking for ice maker repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-ice-maker-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Ice Maker Repair</a> page for local details and availability.</>
         ]
       }}
+      pricingTable={SERVICE_CONTENT['Ice Maker'].pricingTable}
       comparisonTable={SERVICE_CONTENT['Ice Maker'].comparisonTable}
       symptomsChecklist={SERVICE_CONTENT['Ice Maker'].symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT['Ice Maker'].diagnosisSteps}

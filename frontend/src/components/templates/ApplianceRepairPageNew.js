@@ -314,7 +314,7 @@ const ApplianceRepairPageNew = ({
   relatedServicesCategory = null, relatedServicesSubtitle = null,
   hideHero = false, noPaddingTop = false, cmsSlug = null, cityName = null,
   serviceSchema = null, noindex, heroImage = null, heroImageAlt = '', heroImagePosition = 'center 15%',
-  relatedLinks = null, hideHowItWorks = false, customH1 = null, heroDescription = null, maintenancePricing = null, maintenanceSchedule = null, pricingCityName = null, servingCity = null, comparisonTable = null, symptomsChecklist = null, diagnosisSteps = null, children
+  relatedLinks = null, hideHowItWorks = false, customH1 = null, heroDescription = null, maintenancePricing = null, maintenanceSchedule = null, pricingCityName = null, servingCity = null, comparisonTable = null, symptomsChecklist = null, diagnosisSteps = null, pricingTable = null, children
 }) => {
   const isMaintenance = breadcrumbCategoryHref === '/maintenance';
   const serviceWord = isMaintenance ? 'Maintenance' : 'Repair';
@@ -945,12 +945,57 @@ const ApplianceRepairPageNew = ({
             </p>
           </div>
         </section>
+      ) : pricingTable ? (
+        <section data-testid="pricing-section" style={{ background: '#F8F5F0', padding: '60px 0' }}>
+          <div style={{ maxWidth: 820, margin: '0 auto', padding: '0 24px' }}>
+            <div style={{ ...S.eyebrow, marginBottom: 10 }}>PRICING</div>
+            <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 8 }}>{appliance} {serviceWord} Cost in {pricingCityName || cityName || 'the San Francisco Bay Area'}</h2>
+            <p style={{ ...S.body, marginBottom: 24 }}>$60 diagnostic fee &mdash; applied to your {serviceWord.toLowerCase()} if you proceed. Written estimate before any work begins.</p>
+            <div style={{ overflowX: 'auto' }}>
+              <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: S.font }}>
+                <thead>
+                  <tr style={{ borderBottom: '2px solid #0D1B2A' }}>
+                    <th style={{ textAlign: 'left', padding: '12px 16px', fontWeight: 700, fontSize: 13, color: '#0D1B2A', textTransform: 'uppercase', letterSpacing: '0.06em' }}>Repair</th>
+                    <th style={{ textAlign: 'right', padding: '12px 16px', fontWeight: 700, fontSize: 13, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.06em', width: 120 }}>Starting From</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {pricingTable.rows.map((row, i) => (
+                    <tr key={i} style={{ borderBottom: '1px solid rgba(0,0,0,0.08)' }}>
+                      <td style={{ padding: '14px 16px', fontWeight: 500, fontSize: 14, color: '#0D1B2A' }}>{row.repair}</td>
+                      <td style={{ textAlign: 'right', padding: '14px 16px', fontWeight: 700, fontSize: 15, color: '#0D1B2A' }}>${row.price}</td>
+                    </tr>
+                  ))}
+                  <tr style={{ borderTop: '2px solid #0D1B2A', background: 'rgba(255,87,34,0.04)' }}>
+                    <td style={{ padding: '14px 16px', fontWeight: 700, fontSize: 14, color: '#0D1B2A' }}>Diagnostic visit</td>
+                    <td style={{ textAlign: 'right', padding: '14px 16px', fontWeight: 700, fontSize: 15, color: '#FF5722' }}>${pricingTable.diagnostic}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            {pricingTable.luxury && pricingTable.luxury.length > 0 && (
+              <div style={{ marginTop: 24 }}>
+                <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 13, color: '#0D1B2A', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 12 }}>Luxury / Premium Brands</div>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+                  {pricingTable.luxury.map((item, i) => (
+                    <div key={i} style={{ fontFamily: S.font, fontSize: 13, color: '#4A5568', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.10)', borderRadius: 4, padding: '8px 16px' }}>
+                      <span style={{ fontWeight: 600, color: '#0D1B2A' }}>{item.brand}</span> from <span style={{ fontWeight: 700, color: '#FF5722' }}>${item.from}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+            <p style={{ fontFamily: S.font, fontSize: 12, color: '#9CA3AF', fontStyle: 'italic', marginTop: 20 }}>
+              * Prices include parts and labor. Final cost depends on model and parts required.
+            </p>
+          </div>
+        </section>
       ) : SERVICE_PRICING[appliance] && (
         <section data-testid="pricing-section" style={{ background: '#F8F5F0', padding: '40px 20px' }}>
           <div style={{ maxWidth: 780, margin: '0 auto' }}>
             <div style={{ color: '#FF5722', fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 6, fontFamily: 'Montserrat, sans-serif' }}>PRICING</div>
             <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 26, color: '#0D1B2A', marginBottom: 6 }}>
-              {isMaintenance ? `${appliance} Maintenance Service Cost` : `${appliance} ${serviceWord} Cost in ${pricingCityName || cityName || 'the San Francisco Bay Area'}`}
+              {isMaintenance ? `${appliance} Maintenance Service Cost` : `${appliance} ${serviceWord} Cost in ${pricingCityName || cityName || 'the San Francisco Bay Area'}`}
             </h2>
             <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#6B7280', marginBottom: 20 }}>
               Written estimate before any work begins. $60 diagnostic applied to {serviceWord.toLowerCase()} cost.

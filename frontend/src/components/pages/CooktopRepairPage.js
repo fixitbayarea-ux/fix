@@ -88,7 +88,8 @@ const CooktopRepairPage = () => {
           { icon: '🔊', label: 'Clicking' },
         ]}
         faqs={faqData}
-        comparisonTable={SERVICE_CONTENT.Cooktop.comparisonTable}
+        pricingTable={SERVICE_CONTENT.Cooktop.pricingTable}
+      comparisonTable={SERVICE_CONTENT.Cooktop.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Cooktop.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Cooktop.diagnosisSteps}
       relatedLinks={[
@@ -117,6 +118,7 @@ const CooktopRepairPage = () => {
           <>Whether your cooktop burners won't ignite, electric elements don't heat, or you smell gas, we'll diagnose and repair it safely. We service all cooktop types including professional-grade models from Wolf, Viking, Thermador, and Bosch. Every cooktop repair is backed by our <strong>180-day warranty</strong> on parts and labor.</>
         ]
       }}
+      pricingTable={SERVICE_CONTENT.Cooktop.pricingTable}
       comparisonTable={SERVICE_CONTENT.Cooktop.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Cooktop.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Cooktop.diagnosisSteps}

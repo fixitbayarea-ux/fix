@@ -8,6 +8,25 @@ const SERVICE_CONTENT = {
 
   /* ═══════════════════════ REFRIGERATOR ═══════════════════════ */
   Refrigerator: {
+    pricingTable: {
+      diagnostic: 60,
+      from: 250,
+      rows: [
+        { repair: 'Thermostat replacement', price: 295 },
+        { repair: 'Ice maker repair', price: 295 },
+        { repair: 'Evaporator fan motor', price: 285 },
+        { repair: 'Door seal / gasket', price: 250 },
+        { repair: 'Compressor start relay', price: 265 },
+        { repair: 'Control board', price: 350 },
+      ],
+      luxury: [
+        { brand: 'Sub-Zero', from: 555 },
+        { brand: 'Viking', from: 450 },
+        { brand: 'Thermador', from: 495 },
+        { brand: 'Miele', from: 445 },
+        { brand: 'Built-in models', from: 500 },
+      ],
+    },
     comparisonTable: {
       title: 'Refrigerator Repair vs. Replacement \u2014 How to Decide',
       intro: 'Not every breakdown means you need a new refrigerator. Use this guide to make a cost-effective decision.',
@@ -36,6 +55,19 @@ const SERVICE_CONTENT = {
 
   /* ═══════════════════════ WASHER ═══════════════════════ */
   Washer: {
+    pricingTable: {
+      diagnostic: 60,
+      from: 250,
+      rows: [
+        { repair: 'Control board', price: 350 },
+        { repair: 'Drum bearing', price: 295 },
+        { repair: 'Water pump', price: 285 },
+        { repair: 'Door latch (front-load)', price: 250 },
+        { repair: 'Drain pump', price: 285 },
+        { repair: 'Drive belt', price: 250 },
+      ],
+      luxury: [],
+    },
     comparisonTable: {
       title: 'Washer Repair vs. Replacement \u2014 How to Decide',
       intro: 'A broken washer is disruptive, but replacement isn\u2019t always the answer. Here\u2019s how to decide.',
@@ -64,6 +96,19 @@ const SERVICE_CONTENT = {
 
   /* ═══════════════════════ DRYER ═══════════════════════ */
   Dryer: {
+    pricingTable: {
+      diagnostic: 60,
+      from: 250,
+      rows: [
+        { repair: 'Heating element', price: 265 },
+        { repair: 'Thermal fuse', price: 250 },
+        { repair: 'Drum belt', price: 250 },
+        { repair: 'Control board', price: 350 },
+        { repair: 'Gas valve (gas dryers)', price: 295 },
+        { repair: 'Drum rollers', price: 275 },
+      ],
+      luxury: [],
+    },
     comparisonTable: {
       title: 'Dryer Repair vs. Replacement \u2014 How to Decide',
       intro: 'Dryers are mechanically simpler than washers, which means repairs are often very cost-effective.',
@@ -92,6 +137,23 @@ const SERVICE_CONTENT = {
 
   /* ═══════════════════════ DISHWASHER ═══════════════════════ */
   Dishwasher: {
+    pricingTable: {
+      diagnostic: 60,
+      from: 250,
+      rows: [
+        { repair: 'Drain pump', price: 285 },
+        { repair: 'Door latch assembly', price: 250 },
+        { repair: 'Spray arm', price: 250 },
+        { repair: 'Water inlet valve', price: 265 },
+        { repair: 'Control board', price: 350 },
+        { repair: 'Door gasket', price: 250 },
+      ],
+      luxury: [
+        { brand: 'Bosch', from: 315 },
+        { brand: 'Miele', from: 395 },
+        { brand: 'Thermador', from: 315 },
+      ],
+    },
     comparisonTable: {
       title: 'Dishwasher Repair vs. Replacement \u2014 How to Decide',
       intro: 'Dishwashers are one of the most cost-effective appliances to repair. Here\u2019s when it makes sense.',
@@ -119,6 +181,24 @@ const SERVICE_CONTENT = {
 
   /* ═══════════════════════ OVEN ═══════════════════════ */
   Oven: {
+    pricingTable: {
+      diagnostic: 60,
+      from: 250,
+      rows: [
+        { repair: 'Igniter (gas)', price: 285 },
+        { repair: 'Bake element', price: 265 },
+        { repair: 'Temperature sensor', price: 265 },
+        { repair: 'Control board', price: 350 },
+        { repair: 'Door hinge', price: 250 },
+        { repair: 'Convection fan motor', price: 295 },
+      ],
+      luxury: [
+        { brand: 'Viking', from: 450 },
+        { brand: 'Thermador', from: 495 },
+        { brand: 'Miele', from: 640 },
+        { brand: 'Wolf', from: 395 },
+      ],
+    },
     comparisonTable: {
       title: 'Oven Repair vs. Replacement \u2014 How to Decide',
       intro: 'Ovens are built to last, and most repairs cost significantly less than a replacement.',
@@ -146,6 +226,23 @@ const SERVICE_CONTENT = {
 
   /* ═══════════════════════ RANGE ═══════════════════════ */
   Range: {
+    pricingTable: {
+      diagnostic: 60,
+      from: 250,
+      rows: [
+        { repair: 'Igniter (gas)', price: 285 },
+        { repair: 'Bake element', price: 265 },
+        { repair: 'Burner assembly', price: 285 },
+        { repair: 'Control board', price: 350 },
+        { repair: 'Surface element (electric)', price: 265 },
+        { repair: 'Oven sensor', price: 265 },
+      ],
+      luxury: [
+        { brand: 'Viking', from: 450 },
+        { brand: 'Thermador', from: 495 },
+        { brand: 'Wolf', from: 395 },
+      ],
+    },
     comparisonTable: {
       title: 'Range Repair vs. Replacement \u2014 How to Decide',
       intro: 'Ranges combine cooktop and oven in one unit. Most failures affect only one section and are very repairable.',
@@ -173,6 +270,23 @@ const SERVICE_CONTENT = {
 
   /* ═══════════════════════ STOVE ═══════════════════════ */
   Stove: {
+    pricingTable: {
+      diagnostic: 60,
+      from: 250,
+      rows: [
+        { repair: 'Igniter', price: 265 },
+        { repair: 'Burner assembly', price: 285 },
+        { repair: 'Gas valve', price: 295 },
+        { repair: 'Control board', price: 350 },
+        { repair: 'Surface element', price: 265 },
+        { repair: 'Infinite switch', price: 250 },
+      ],
+      luxury: [
+        { brand: 'Viking', from: 450 },
+        { brand: 'Thermador', from: 495 },
+        { brand: 'Wolf', from: 395 },
+      ],
+    },
     comparisonTable: {
       title: 'Stove Repair vs. Replacement \u2014 How to Decide',
       intro: 'Stoves are durable appliances. Most common failures are straightforward and affordable to repair.',
@@ -200,6 +314,22 @@ const SERVICE_CONTENT = {
 
   /* ═══════════════════════ COOKTOP ═══════════════════════ */
   Cooktop: {
+    pricingTable: {
+      diagnostic: 60,
+      from: 250,
+      rows: [
+        { repair: 'Igniter (gas)', price: 265 },
+        { repair: 'Burner assembly', price: 285 },
+        { repair: 'Induction element', price: 350 },
+        { repair: 'Control board', price: 350 },
+        { repair: 'Infinite switch', price: 250 },
+        { repair: 'Glass-top surface', price: 450 },
+      ],
+      luxury: [
+        { brand: 'Viking', from: 450 },
+        { brand: 'Thermador', from: 495 },
+      ],
+    },
     comparisonTable: {
       title: 'Cooktop Repair vs. Replacement \u2014 How to Decide',
       intro: 'Built-in cooktops are designed to last and are more cost-effective to repair than replace.',
@@ -227,6 +357,19 @@ const SERVICE_CONTENT = {
 
   /* ═══════════════════════ FREEZER ═══════════════════════ */
   Freezer: {
+    pricingTable: {
+      diagnostic: 60,
+      from: 250,
+      rows: [
+        { repair: 'Defrost heater', price: 285 },
+        { repair: 'Thermostat', price: 295 },
+        { repair: 'Evaporator fan motor', price: 285 },
+        { repair: 'Door seal / gasket', price: 250 },
+        { repair: 'Start relay', price: 265 },
+        { repair: 'Temperature control board', price: 325 },
+      ],
+      luxury: [],
+    },
     comparisonTable: {
       title: 'Freezer Repair vs. Replacement \u2014 How to Decide',
       intro: 'Standalone freezers are simple machines. Most repairs are affordable and extend unit life significantly.',
@@ -254,6 +397,19 @@ const SERVICE_CONTENT = {
 
   /* ═══════════════════════ ICE MAKER ═══════════════════════ */
   'Ice Maker': {
+    pricingTable: {
+      diagnostic: 60,
+      from: 250,
+      rows: [
+        { repair: 'Water inlet valve', price: 265 },
+        { repair: 'Ice maker assembly', price: 295 },
+        { repair: 'Thermostat', price: 265 },
+        { repair: 'Water line', price: 250 },
+        { repair: 'Ejector motor', price: 275 },
+        { repair: 'Control module', price: 325 },
+      ],
+      luxury: [],
+    },
     comparisonTable: {
       title: 'Ice Maker Repair vs. Replacement \u2014 How to Decide',
       intro: 'Standalone and built-in ice makers are precision appliances. Here\u2019s when repair makes sense.',
@@ -281,6 +437,19 @@ const SERVICE_CONTENT = {
 
   /* ═══════════════════════ WINE COOLER ═══════════════════════ */
   'Wine Cooler': {
+    pricingTable: {
+      diagnostic: 60,
+      from: 250,
+      rows: [
+        { repair: 'Thermostat', price: 285 },
+        { repair: 'Fan motor', price: 265 },
+        { repair: 'Door seal', price: 250 },
+        { repair: 'Control board', price: 350 },
+        { repair: 'Compressor', price: 495 },
+        { repair: 'Temperature sensor', price: 265 },
+      ],
+      luxury: [],
+    },
     comparisonTable: {
       title: 'Wine Cooler Repair vs. Replacement \u2014 How to Decide',
       intro: 'Wine coolers protect a valuable investment. Here\u2019s how to decide between repair and replacement.',
@@ -308,6 +477,19 @@ const SERVICE_CONTENT = {
 
   /* ═══════════════════════ GARBAGE DISPOSAL ═══════════════════════ */
   'Garbage Disposal': {
+    pricingTable: {
+      diagnostic: 60,
+      from: 195,
+      rows: [
+        { repair: 'Jam clearing', price: 125 },
+        { repair: 'Leak repair (flange)', price: 175 },
+        { repair: 'Reset / electrical fix', price: 150 },
+        { repair: 'Full unit replacement', price: 350 },
+        { repair: 'Splash guard', price: 125 },
+        { repair: 'Drain line clearing', price: 175 },
+      ],
+      luxury: [],
+    },
     comparisonTable: {
       title: 'Disposal Repair vs. Replacement \u2014 How to Decide',
       intro: 'Garbage disposals are compact and affordable. Here\u2019s when repair vs. replacement makes sense.',

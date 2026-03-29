@@ -89,7 +89,8 @@ const DishwasherRepairPage = () => {
           { icon: '🧊', label: 'Not Drying' },
         ]}
         faqs={faqData}
-        comparisonTable={SERVICE_CONTENT.Dishwasher.comparisonTable}
+        pricingTable={SERVICE_CONTENT.Dishwasher.pricingTable}
+      comparisonTable={SERVICE_CONTENT.Dishwasher.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Dishwasher.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Dishwasher.diagnosisSteps}
       relatedLinks={[
@@ -120,6 +121,7 @@ const DishwasherRepairPage = () => {
           <><strong>Looking for dishwasher repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-dishwasher-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Dishwasher Repair</a> page for local details, neighborhood coverage, and availability.</>
         ]
       }}
+      pricingTable={SERVICE_CONTENT.Dishwasher.pricingTable}
       comparisonTable={SERVICE_CONTENT.Dishwasher.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Dishwasher.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Dishwasher.diagnosisSteps}

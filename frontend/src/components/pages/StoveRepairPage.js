@@ -87,6 +87,7 @@ const StoveRepairPage = () => {
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}
+      pricingTable={SERVICE_CONTENT.Stove.pricingTable}
       comparisonTable={SERVICE_CONTENT.Stove.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Stove.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Stove.diagnosisSteps}

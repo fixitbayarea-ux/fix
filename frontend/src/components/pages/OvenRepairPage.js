@@ -88,7 +88,8 @@ const OvenRepairPage = () => {
           { icon: '🔊', label: 'Strange Noise' },
         ]}
         faqs={faqData}
-        comparisonTable={SERVICE_CONTENT.Oven.comparisonTable}
+        pricingTable={SERVICE_CONTENT.Oven.pricingTable}
+      comparisonTable={SERVICE_CONTENT.Oven.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Oven.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Oven.diagnosisSteps}
       relatedLinks={[
@@ -120,6 +121,7 @@ const OvenRepairPage = () => {
           <><strong>Looking for oven repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-oven-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Oven Repair</a> page for local details and availability.</>
         ]
       }}
+      pricingTable={SERVICE_CONTENT.Oven.pricingTable}
       comparisonTable={SERVICE_CONTENT.Oven.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Oven.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Oven.diagnosisSteps}

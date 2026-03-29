@@ -87,6 +87,7 @@ const RangeRepairPage = () => {
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}
+      pricingTable={SERVICE_CONTENT.Range.pricingTable}
       comparisonTable={SERVICE_CONTENT.Range.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Range.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Range.diagnosisSteps}

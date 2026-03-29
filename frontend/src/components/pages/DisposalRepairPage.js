@@ -117,6 +117,7 @@ const DisposalRepairPage = () => {
           <>Whether your disposal won't turn on, makes grinding noises, or leaks under the sink, we'll fix it quickly. We service all major brands including InSinkErator, Waste King, Moen, and KitchenAid. Every garbage disposal repair and installation includes our <strong>180-day warranty</strong> on parts and labor for worry-free operation.</>
         ]
       }}
+      pricingTable={SERVICE_CONTENT['Garbage Disposal'].pricingTable}
       comparisonTable={SERVICE_CONTENT['Garbage Disposal'].comparisonTable}
       symptomsChecklist={SERVICE_CONTENT['Garbage Disposal'].symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT['Garbage Disposal'].diagnosisSteps}

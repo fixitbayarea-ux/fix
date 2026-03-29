@@ -91,7 +91,8 @@ const DryerRepairPage = () => {
           { icon: '🔧', label: 'Won\'t Tumble' },
         ]}
         faqs={faqData}
-        comparisonTable={SERVICE_CONTENT.Dryer.comparisonTable}
+        pricingTable={SERVICE_CONTENT.Dryer.pricingTable}
+      comparisonTable={SERVICE_CONTENT.Dryer.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Dryer.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Dryer.diagnosisSteps}
       relatedLinks={[
@@ -124,7 +125,8 @@ const DryerRepairPage = () => {
             <><strong>Looking for dryer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-dryer-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Dryer Repair</a> page for local details and availability.</>
           ]
         }}
-        comparisonTable={SERVICE_CONTENT.Dryer.comparisonTable}
+        pricingTable={SERVICE_CONTENT.Dryer.pricingTable}
+      comparisonTable={SERVICE_CONTENT.Dryer.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Dryer.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Dryer.diagnosisSteps}
       relatedLinks={[

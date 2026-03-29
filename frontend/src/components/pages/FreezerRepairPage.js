@@ -111,6 +111,7 @@ const FreezerRepairPage = () => {
           <>Whether your freezer isn't freezing properly, has excessive frost buildup, or stopped running completely, we'll diagnose and fix it fast. We service standalone freezers, chest freezers, and built-in freezer units from Frigidaire, GE, Whirlpool, Kenmore, and more. Every freezer repair includes our <strong>180-day warranty</strong> on parts and labor.</>
         ]
       }}
+      pricingTable={SERVICE_CONTENT.Freezer.pricingTable}
       comparisonTable={SERVICE_CONTENT.Freezer.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Freezer.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Freezer.diagnosisSteps}

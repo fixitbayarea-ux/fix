@@ -93,7 +93,8 @@ const WasherRepairPage = () => {
           { icon: '📳', label: 'Shaking' },
         ]}
         faqs={faqData}
-        comparisonTable={SERVICE_CONTENT.Washer.comparisonTable}
+        pricingTable={SERVICE_CONTENT.Washer.pricingTable}
+      comparisonTable={SERVICE_CONTENT.Washer.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Washer.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Washer.diagnosisSteps}
       relatedLinks={[
@@ -125,6 +126,7 @@ const WasherRepairPage = () => {
           <><strong>Looking for washer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-washer-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Washer Repair</a> page for local details and availability.</>
         ]
       }}
+      pricingTable={SERVICE_CONTENT.Washer.pricingTable}
       comparisonTable={SERVICE_CONTENT.Washer.comparisonTable}
       symptomsChecklist={SERVICE_CONTENT.Washer.symptomsChecklist}
       diagnosisSteps={SERVICE_CONTENT.Washer.diagnosisSteps}
