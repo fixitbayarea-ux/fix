@@ -145,19 +145,29 @@ const nearbyLookup = Object.fromEntries(
 );
 
 // City+service cross-linking data
+const ALL_CITY_SERVICES = ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven', 'cooktop', 'wine-cooler', 'ice-maker'];
 const CITY_SERVICE_LINKS = {
-  'san-francisco': ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven'],
-  'daly-city': ['refrigerator', 'washer', 'dryer'],
-  'san-rafael': ['refrigerator', 'washer', 'dryer', 'dishwasher'],
-  'mill-valley': ['refrigerator', 'dryer'],
-  'novato': ['refrigerator', 'washer'],
-  'south-san-francisco': ['refrigerator', 'washer', 'dryer'],
-  'san-bruno': ['refrigerator', 'washer'],
-  'pacifica': ['refrigerator', 'dryer'],
-  'millbrae': ['refrigerator', 'washer'],
-  'sausalito': ['refrigerator'],
-  'tiburon': ['refrigerator'],
-  'corte-madera': ['refrigerator', 'dryer'],
+  'san-francisco': ALL_CITY_SERVICES,
+  'daly-city': ALL_CITY_SERVICES,
+  'south-san-francisco': ALL_CITY_SERVICES,
+  'san-bruno': ALL_CITY_SERVICES,
+  'millbrae': ALL_CITY_SERVICES,
+  'pacifica': ALL_CITY_SERVICES,
+  'colma': ALL_CITY_SERVICES,
+  'brisbane': ALL_CITY_SERVICES,
+  'montara': ALL_CITY_SERVICES,
+  'sausalito': ALL_CITY_SERVICES,
+  'mill-valley': ALL_CITY_SERVICES,
+  'san-rafael': ALL_CITY_SERVICES,
+  'novato': ALL_CITY_SERVICES,
+  'tiburon': ALL_CITY_SERVICES,
+  'corte-madera': ALL_CITY_SERVICES,
+  'larkspur': ALL_CITY_SERVICES,
+  'greenbrae': ALL_CITY_SERVICES,
+  'fairfax': ALL_CITY_SERVICES,
+  'san-anselmo': ALL_CITY_SERVICES,
+  'ross': ALL_CITY_SERVICES,
+  'belvedere': ALL_CITY_SERVICES,
 };
 
 const SERVICE_LABELS = {
@@ -176,12 +186,22 @@ Object.entries(CITY_SERVICE_LINKS).forEach(([city, services]) => {
 
 const CITY_DISPLAY_NAMES = {
   'san-francisco': 'San Francisco', 'daly-city': 'Daly City',
-  'san-rafael': 'San Rafael', 'mill-valley': 'Mill Valley',
-  'novato': 'Novato', 'south-san-francisco': 'South San Francisco',
-  'san-bruno': 'San Bruno', 'pacifica': 'Pacifica',
-  'millbrae': 'Millbrae', 'sausalito': 'Sausalito',
+  'south-san-francisco': 'South San Francisco', 'san-bruno': 'San Bruno',
+  'millbrae': 'Millbrae', 'pacifica': 'Pacifica',
+  'colma': 'Colma', 'brisbane': 'Brisbane', 'montara': 'Montara',
+  'sausalito': 'Sausalito', 'mill-valley': 'Mill Valley',
+  'san-rafael': 'San Rafael', 'novato': 'Novato',
   'tiburon': 'Tiburon', 'corte-madera': 'Corte Madera',
+  'larkspur': 'Larkspur', 'greenbrae': 'Greenbrae',
+  'fairfax': 'Fairfax', 'san-anselmo': 'San Anselmo',
+  'ross': 'Ross', 'belvedere': 'Belvedere',
 };
+
+const CITY_REGIONS = [
+  { label: 'San Francisco', slugs: ['san-francisco'] },
+  { label: 'Peninsula', slugs: ['daly-city', 'south-san-francisco', 'san-bruno', 'millbrae', 'pacifica', 'colma', 'brisbane', 'montara'] },
+  { label: 'Marin County', slugs: ['sausalito', 'mill-valley', 'san-rafael', 'novato', 'tiburon', 'corte-madera', 'larkspur', 'greenbrae', 'fairfax', 'san-anselmo', 'ross', 'belvedere'] },
+];
 
 /* ═══ Shared Inline Styles ═══ */
 const S = {
@@ -962,23 +982,33 @@ const ApplianceRepairPageNew = ({
       })()}
 
       {/* ═══ BY CITY CROSS-LINKS ═══ */}
-      {!isCity && !isBrand && !isCommercial && !isMaintenance && (() => {
+      {!isBrand && !isCommercial && !isMaintenance && (() => {
         const svcSlug = appliance ? appliance.toLowerCase().replace(/\s+/g, '-').replace(/-appliance$/, '') : '';
-        const cities = SERVICE_CITY_LINKS[svcSlug] || [];
-        if (cities.length === 0) return null;
+        const currentCitySlug = isCity ? cityName.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-') : (cmsSlug ? cmsSlug.replace(`-${svcSlug}-repair`, '') : '');
+        const hasAnyCities = CITY_REGIONS.some(r => r.slugs.some(s => s !== currentCitySlug && CITY_SERVICE_LINKS[s]?.includes(svcSlug)));
+        if (!hasAnyCities) return null;
         return (
           <section style={{ background: '#FFFFFF', padding: '60px 0' }}>
             <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
               <div style={{ ...S.eyebrow, marginBottom: 10 }}>LOCAL SERVICE</div>
               <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 10 }}>{appliance} Repair by City</h2>
               <p style={{ fontFamily: S.font, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>Same- or next-day {appliance.toLowerCase()} repair available in these cities:</p>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-                {cities.map(citySlug => (
-                  <Link key={citySlug} to={`/${citySlug}-${svcSlug}-repair`} data-testid={`city-service-link-${citySlug}`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 18px', display: 'inline-flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#FF5722'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.background = '#F8F5F0'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.09)'; }}>
-                    <MapPin size={13} /> {CITY_DISPLAY_NAMES[citySlug]} {appliance} Repair
-                  </Link>
-                ))}
-              </div>
+              {CITY_REGIONS.map(region => {
+                const regionCities = region.slugs.filter(s => s !== currentCitySlug && CITY_SERVICE_LINKS[s]?.includes(svcSlug));
+                if (regionCities.length === 0) return null;
+                return (
+                  <div key={region.label} style={{ marginBottom: 20 }}>
+                    <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: 10 }}>{region.label}</div>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+                      {regionCities.map(cs => (
+                        <Link key={cs} to={`/${cs}-${svcSlug}-repair`} data-testid={`city-service-link-${cs}`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 18px', display: 'inline-flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#FF5722'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.background = '#F8F5F0'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.09)'; }}>
+                          <MapPin size={13} /> {CITY_DISPLAY_NAMES[cs]} {appliance} Repair
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </section>
         );
