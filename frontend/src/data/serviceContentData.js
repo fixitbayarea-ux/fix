@@ -685,14 +685,11 @@ const SERVICE_CONTENT = {
   'Wine Cooler Maintenance': {
     pricingTable: {
       diagnostic: 60,
-      from: 149,
+      from: 255,
       rows: [
-        { repair: 'Condenser coil cleaning', price: 75 },
-        { repair: 'Door seal inspection', price: 55 },
-        { repair: 'Temperature calibration', price: 65 },
-        { repair: 'Fan & vibration check', price: 65 },
-        { repair: 'Humidity level assessment', price: 55 },
-        { repair: 'Full maintenance check (all above)', price: 149 },
+        { repair: 'Condenser coil cleaning', price: 265 },
+        { repair: 'Door gasket replacement', price: 255 },
+        { repair: 'Water line inspection', price: 265 },
       ],
       luxury: [],
     },
