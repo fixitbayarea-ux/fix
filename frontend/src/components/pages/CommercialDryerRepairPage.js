@@ -120,7 +120,7 @@ const UniqueContent = () => (
 const DesktopPage = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Dryer"
-    pageTitle="Commercial Dryer Repair – Gas, Electric & Stack Dryers for Laundromats"
+    pageTitle="Commercial Dryer Repair Bay Area | FixitBay"
     metaDescription="Commercial dryer repair in San Francisco, Peninsula & Marin County. Gas & electric, single and stack dryers for laundromats, hotels, apartments. Fast scheduling, $100 diagnostic, 180-day warranty. Speed Queen, Dexter, Maytag Commercial."
     commonProblems={commonProblems}
     faqData={faqData}

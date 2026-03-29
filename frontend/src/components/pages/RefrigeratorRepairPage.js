@@ -66,7 +66,7 @@ const DesktopRefrigeratorRepair = () => (
       appliance="Refrigerator"
       customH1="Expert Refrigerator Repair in the Bay Area"
       heroDescription="Serving the SF Bay Area since 2023. Over 500 refrigerators repaired across 22 cities. Most repairs completed on the first visit."
-      pageTitle="Refrigerator Repair Bay Area | Fast Scheduling | FixitBay LLC"
+      pageTitle="Refrigerator Repair in SF Bay Area | FixitBay"
       metaDescription="Expert refrigerator repair across the Bay Area. Cooling issues, leaks, ice buildup. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay LLC."
       commonProblems={desktopCommonProblems}
       faqData={desktopFaqData}
@@ -116,7 +116,7 @@ const MobileRefrigeratorRepair = () => (
   <MobileServiceLanding
     appliance="Refrigerator"
     pageSlug="refrigerator-repair"
-    pageTitle="Refrigerator Repair Bay Area | Fast Scheduling | FixitBay LLC"
+    pageTitle="Refrigerator Repair in SF Bay Area | FixitBay"
     metaDescription="Expert refrigerator repair across the Bay Area — SF, Peninsula & Marin. $60 diagnostic applied to repair. 180-day warranty."
     heroTitle={<>Refrigerator Repair<br />Bay Area. Fast & Local.</>}
     heroSubtitle="Fast & Local — Most Repairs Completed on First Visit"

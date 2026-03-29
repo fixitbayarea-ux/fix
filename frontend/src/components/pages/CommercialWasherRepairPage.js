@@ -113,7 +113,7 @@ const UniqueContent = () => (
 const DesktopPage = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Washer"
-    pageTitle="Commercial Washer Repair – Laundromat, Hotel & Healthcare Equipment"
+    pageTitle="Commercial Washer Repair Bay Area | FixitBay"
     metaDescription="Commercial washer repair in San Francisco, Peninsula & Marin County. Coin-op, card-op, industrial washers for laundromats, hotels, healthcare. Fast scheduling, $100 diagnostic, 180-day warranty. Speed Queen, Dexter, Maytag Commercial."
     commonProblems={commonProblems}
     faqData={faqData}

@@ -113,7 +113,7 @@ const UniqueContent = () => (
 const DesktopPage = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Dishwasher"
-    pageTitle="Commercial Dishwasher Repair – Restaurant, Hotel & Institutional Units"
+    pageTitle="Commercial Dishwasher Repair Bay Area | FixitBay"
     metaDescription="Commercial dishwasher repair in San Francisco, Peninsula & Marin County. Under-counter, door-type, conveyor dishwashers. Health code compliance. Fast scheduling, $100 diagnostic, 180-day warranty. Hobart, Champion, Jackson."
     commonProblems={commonProblems}
     faqData={faqData}

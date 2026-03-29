@@ -36,7 +36,7 @@ const CorteMadera = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair Corte Madera | Fast Scheduling | FixitBay LLC"
+        pageTitle="Appliance Repair in Corte Madera | FixitBay"
         metaDescription="Professional appliance repair in Corte Madera. Fast scheduling near The Village. Licensed technicians, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

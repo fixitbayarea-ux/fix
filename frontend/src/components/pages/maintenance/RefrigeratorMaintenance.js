@@ -93,7 +93,7 @@ const RefrigeratorMaintenance = () => {
       <MobileServiceLanding
         appliance="Refrigerator"
         pageSlug="maintenance/refrigerator"
-        pageTitle="Refrigerator Maintenance San Francisco Bay Area | FixitBay LLC"
+        pageTitle="Refrigerator Maintenance Bay Area | FixitBay"
         metaDescription="Professional refrigerator maintenance in San Francisco Bay Area. Keep your fridge running efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
         heroTitle={<>Refrigerator<br />Maintenance. Today.</>}
         heroSubtitle="Prevent Breakdowns — Keep Food Fresh"
@@ -116,7 +116,7 @@ const RefrigeratorMaintenance = () => {
   return (
     <ApplianceRepairPageNew
       appliance="Refrigerator"
-      pageTitle="Refrigerator Maintenance San Francisco Bay Area | FixitBay LLC"
+      pageTitle="Refrigerator Maintenance Bay Area | FixitBay"
       metaDescription="Professional refrigerator maintenance in San Francisco Bay Area. Keep your fridge running efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}

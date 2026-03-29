@@ -36,7 +36,7 @@ const SanQuentin = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Appliance Repair San Quentin | Fast Scheduling | FixitBay LLC"
+        pageTitle="Appliance Repair in San Quentin | FixitBay"
         metaDescription="Professional appliance repair in San Quentin. Waterfront home specialists. Fast scheduling. Licensed technicians. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}

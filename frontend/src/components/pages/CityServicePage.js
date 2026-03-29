@@ -369,7 +369,7 @@ const CityServicePage = () => {
     "description": `Professional ${serviceName.toLowerCase()} repair in ${cityName}. Fast scheduling, $60 diagnostic applied to repair, 180-day warranty.`
   };
 
-  const pageTitle = `${serviceName} Repair ${cityName} | Fast Scheduling | FixitBay LLC`;
+  const pageTitle = `${serviceName} Repair in ${cityName} | FixitBay`;
   const metaDescription = `Licensed ${serviceName.toLowerCase()} repair in ${cityName}, CA. Same- & next-day appointments. $60 diagnostic applied to repair. 180-day warranty on parts and labor.`;
 
   // Rich service description with local context

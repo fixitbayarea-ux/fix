@@ -74,7 +74,7 @@ const FreezerRepairPage = () => {
       <MobileServiceLanding
         appliance="Freezer"
         pageSlug="freezer-repair"
-        pageTitle="Freezer Repair San Francisco | Fast Scheduling | FixitBay LLC"
+        pageTitle="Freezer Repair in San Francisco | FixitBay"
         metaDescription="Expert freezer repair in San Francisco. Standalone and built-in freezers. $60 diagnostic applied to repair. 180-day warranty."
         heroTitle={<>Expert Freezer<br />Repair in SF. Today.</>}
         techImage="/images/technicians/freezer-tech.jpg"
@@ -97,7 +97,7 @@ const FreezerRepairPage = () => {
       <ApplianceRepairPageNew
       serviceSchema={serviceSchema}
       appliance="Freezer"
-      pageTitle="Freezer Repair San Francisco | Fast Scheduling | FixitBay LLC"
+      pageTitle="Freezer Repair in San Francisco | FixitBay"
       metaDescription="Expert freezer repair in San Francisco. Standalone and built-in freezers. $60 diagnostic applied to repair. 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}

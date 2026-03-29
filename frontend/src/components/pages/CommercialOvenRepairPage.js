@@ -117,7 +117,7 @@ const UniqueContent = () => (
 const DesktopPage = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Oven"
-    pageTitle="Commercial Oven Repair – Convection, Pizza, Combi Ovens & Range Hoods"
+    pageTitle="Commercial Oven Repair Bay Area | FixitBay"
     metaDescription="Commercial oven repair in San Francisco, Peninsula & Marin County. Convection, pizza, combi ovens, commercial ranges. Fast scheduling, $100 diagnostic, 180-day warranty. Vulcan, Blodgett, Rational, Bakers Pride."
     commonProblems={commonProblems}
     faqData={faqData}

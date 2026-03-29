@@ -128,7 +128,7 @@ const UniqueContent = () => (
 const DesktopPage = () => (
   <ApplianceRepairPageNew
     appliance="Commercial Refrigerator"
-    pageTitle="Commercial Refrigerator Repair – Walk-In Coolers, Reach-In Units & Display Cases"
+    pageTitle="Commercial Refrigerator Repair Bay Area | FixitBay"
     metaDescription="Commercial refrigerator repair in San Francisco, Peninsula & Marin County. Walk-in coolers, reach-in units, display cases. Emergency priority service, $100 diagnostic fee, 180-day warranty. True, Beverage-Air, Turbo Air, Hoshizaki."
     commonProblems={commonProblems}
     faqData={faqData}
@@ -175,7 +175,7 @@ const MobilePage = () => (
   <MobileServiceLanding
     appliance="Commercial Refrigerator"
     pageSlug="commercial-refrigerator-repair"
-    pageTitle="Commercial Refrigerator Repair – Walk-In Coolers & Reach-In Units"
+    pageTitle="Commercial Fridge Repair Bay Area | FixitBay"
     metaDescription="Commercial refrigerator repair in San Francisco & Bay Area. Walk-in coolers, reach-in units. Fast scheduling, 180-day warranty."
     heroTitle={<>Commercial Fridge<br />Repair — Bay Area.</>}
     heroSubtitle="Priority Service for Businesses"
