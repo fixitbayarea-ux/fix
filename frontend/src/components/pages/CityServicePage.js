@@ -8,6 +8,22 @@ import { useIsMobile } from '../../hooks/useIsMobile';
 const SERVICES = ['refrigerator', 'washer', 'dryer', 'dishwasher', 
   'oven', 'wine-cooler', 'ice-maker', 'cooktop', 'range', 'freezer'];
 
+// City-specific "Serving [City] Customers" section data — expandable
+const CITY_SERVING_DATA = {
+  'daly-city': {
+    neighborhoods: ['Westlake', 'Serramonte', 'Crocker Amazon'],
+    note: "Daly City's coastal proximity means appliances often deal with salt air and humidity, which accelerates wear on seals, coils, and electrical connections."
+  },
+  'greenbrae': {
+    neighborhoods: ['Kentfield', 'Larkspur Landing'],
+    note: "Marin's foggy mornings and warm afternoons create temperature cycling that stresses refrigerator compressors and causes condensation issues in dryers and freezers."
+  },
+  'san-francisco': {
+    neighborhoods: ['SOMA', 'Mission', 'Castro', 'Sunset', 'Richmond'],
+    note: "SF's Victorian-era homes often have older electrical panels that require careful handling when servicing modern high-efficiency appliances."
+  },
+};
+
 // City-specific local context for rich content
 const CITY_CONTEXT = {
   'san-francisco': {
@@ -367,6 +383,14 @@ const CityServicePage = () => {
     ]
   };
 
+  // Get city serving data for "Serving [City] Customers" section
+  const servingData = CITY_SERVING_DATA[citySlug];
+  const servingCity = servingData ? {
+    name: cityName,
+    neighborhoods: servingData.neighborhoods,
+    note: servingData.note,
+  } : null;
+
   if (isMobile) {
     return (
       <MobileServiceLanding
@@ -405,6 +429,7 @@ const CityServicePage = () => {
       faqData={faqData}
       serviceSchema={serviceSchema}
       serviceDescription={serviceDescription}
+      servingCity={servingCity}
       relatedLinks={[
         { href: `/${citySlug}-appliance-repair`, label: `${cityName} Appliance Repair`, desc: 'All appliance services' },
         { href: `/${serviceSlug}-repair`, label: `${serviceName} Repair SF`, desc: 'All Bay Area locations' },

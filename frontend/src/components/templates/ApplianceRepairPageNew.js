@@ -314,7 +314,7 @@ const ApplianceRepairPageNew = ({
   relatedServicesCategory = null, relatedServicesSubtitle = null,
   hideHero = false, noPaddingTop = false, cmsSlug = null, cityName = null,
   serviceSchema = null, noindex, heroImage = null, heroImageAlt = '', heroImagePosition = 'center 15%',
-  repairVsReplace = null, relatedLinks = null, hideHowItWorks = false, customH1 = null, heroDescription = null, maintenancePricing = null, maintenanceSchedule = null, pricingCityName = null, children
+  repairVsReplace = null, relatedLinks = null, hideHowItWorks = false, customH1 = null, heroDescription = null, maintenancePricing = null, maintenanceSchedule = null, pricingCityName = null, servingCity = null, children
 }) => {
   const isMaintenance = breadcrumbCategoryHref === '/maintenance';
   const serviceWord = isMaintenance ? 'Maintenance' : 'Repair';
@@ -794,6 +794,24 @@ const ApplianceRepairPageNew = ({
           </div>
         </div>
       </section>
+
+      {/* ═══ SERVING [CITY] CUSTOMERS ═══ */}
+      {servingCity && (
+        <section data-testid="serving-city" style={{ background: '#F8F5F0', padding: '60px 0' }}>
+          <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 24px' }}>
+            <div style={{ ...S.eyebrow, marginBottom: 10 }}>LOCAL SERVICE</div>
+            <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 16 }}>Serving {servingCity.name} Customers</h2>
+            <div style={{ ...S.body, lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 12 }}>
+                We provide {appliance.toLowerCase()} {serviceWord.toLowerCase()} throughout {servingCity.name}, including {servingCity.neighborhoods.join(', ')} and surrounding areas. {servingCity.note}
+              </p>
+              <p>
+                Our technicians arrive with common {appliance.toLowerCase()} parts stocked for first-visit resolution. $60 diagnostic — applied to your {serviceWord.toLowerCase()} if you proceed.
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ═══ COMMON PROBLEMS ═══ */}
       {commonProblems.length > 0 && (
