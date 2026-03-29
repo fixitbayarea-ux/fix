@@ -314,7 +314,7 @@ const ApplianceRepairPageNew = ({
   relatedServicesCategory = null, relatedServicesSubtitle = null,
   hideHero = false, noPaddingTop = false, cmsSlug = null, cityName = null,
   serviceSchema = null, noindex, heroImage = null, heroImageAlt = '', heroImagePosition = 'center 15%',
-  repairVsReplace = null, relatedLinks = null, hideHowItWorks = false, customH1 = null, heroDescription = null, maintenancePricing = null, maintenanceSchedule = null, children
+  repairVsReplace = null, relatedLinks = null, hideHowItWorks = false, customH1 = null, heroDescription = null, maintenancePricing = null, maintenanceSchedule = null, pricingCityName = null, children
 }) => {
   const isMaintenance = breadcrumbCategoryHref === '/maintenance';
   const serviceWord = isMaintenance ? 'Maintenance' : 'Repair';
@@ -876,7 +876,7 @@ const ApplianceRepairPageNew = ({
           <div style={{ maxWidth: 780, margin: '0 auto' }}>
             <div style={{ color: '#FF5722', fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 6, fontFamily: 'Montserrat, sans-serif' }}>PRICING</div>
             <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 26, color: '#0D1B2A', marginBottom: 6 }}>
-              {appliance} {serviceWord} Cost in San Francisco
+              {appliance} {serviceWord} Cost in {pricingCityName || cityName || 'the San Francisco Bay Area'}
             </h2>
             <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#6B7280', marginBottom: 20 }}>
               Written estimate before any work begins. $60 diagnostic applied to {serviceWord.toLowerCase()} cost.

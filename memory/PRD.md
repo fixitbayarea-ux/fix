@@ -199,6 +199,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **ПРОМТ 31**: Added `ScrollToTop` component to fix missing scroll-to-top on React Router navigation. Created `ScrollToTop.js` with `useLocation` + `window.scrollTo({ top: 0, behavior: 'instant' })`. Added as first child inside `<BrowserRouter>` in `App.js`. Affects all page transitions site-wide.
 - **ПРОМТ 33**: Updated homepage meta description in `index.html` to under 155 chars: "Professional appliance repair in the SF Bay Area. Same- or next-day appointments. $60 diagnostic applied to repair. 180-day warranty. Licensed & insured."
 - **ПРОМТ 34**: Fixed H1 geographic mismatch on all service pages. Changed `displayH1` logic from "in San Francisco" to "in the San Francisco Bay Area" for all non-city service pages (washer, dryer, dishwasher, oven, cooktop, ice-maker, wine-cooler, etc.). Now matches `<title>` which already said "Bay Area".
+- **ПРОМТ 35**: Fixed pricing H2 "Repair Cost in San Francisco" on city-service pages. Added `pricingCityName` prop to `ApplianceRepairPageNew`. `CityServicePage` now passes `pricingCityName={cityName}`. H2 dynamically shows "[Appliance] Repair Cost in [City Name]" (e.g., "Refrigerator Repair Cost in Greenbrae"). Generic service pages fallback to "the San Francisco Bay Area".
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

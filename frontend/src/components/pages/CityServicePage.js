@@ -394,6 +394,7 @@ const CityServicePage = () => {
     <ApplianceRepairPageNew
       appliance={serviceName}
       customH1={`${serviceName} Repair in ${cityName}`}
+      pricingCityName={cityName}
       heroDescription={`Serving ${cityContext.neighborhoods}. ${cityContext.localFactor.split('.')[0]}.`}
       cmsSlug={`${citySlug}-${serviceSlug}-repair`}
       pageTitle={pageTitle}
