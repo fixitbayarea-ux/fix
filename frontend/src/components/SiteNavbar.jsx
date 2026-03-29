@@ -39,6 +39,7 @@ const SiteNavbar = () => {
   const [mobileBrandsOpen, setMobileBrandsOpen] = useState(false);
   const [mobileMoreOpen, setMobileMoreOpen] = useState(false);
   const [mobileAreasOpen, setMobileAreasOpen] = useState(false);
+  const [mobileAreaRegion, setMobileAreaRegion] = useState(null);
   const [citiesDropdownOpen, setCitiesDropdownOpen] = useState(false);
   
   // State for lazy-loaded data
@@ -697,7 +698,7 @@ const SiteNavbar = () => {
               <button type="button"
                 className={`mob-acc-trigger w-full${mobileAreasOpen ? ' open' : ''}`}
                 style={{ display:'flex', alignItems:'center', justifyContent:'space-between', padding:'6px 16px', minHeight:'44px', background:'transparent', border:'none', cursor:'pointer', width:'100%' }}
-                onClick={() => { setMobileAreasOpen(!mobileAreasOpen); setMobileServicesOpen(false); setMobileMaintenanceOpen(false); setMobileBrandsOpen(false); setMobileMoreOpen(false); }}
+                onClick={() => { setMobileAreasOpen(!mobileAreasOpen); setMobileAreaRegion(null); setMobileServicesOpen(false); setMobileMaintenanceOpen(false); setMobileBrandsOpen(false); setMobileMoreOpen(false); }}
                 aria-expanded={mobileAreasOpen}
               >
                 <span style={{ display:'flex', alignItems:'center', gap:10, color:'rgba(255,255,255,0.85)', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:14 }}>
@@ -707,16 +708,23 @@ const SiteNavbar = () => {
               </button>
               {mobileAreasOpen && <div style={{ padding:'2px 0 4px', background:'rgba(255,255,255,0.02)' }}>
                   {areasGrouped.map((group) => (
-                    <React.Fragment key={group.region}>
-                      <p className="area-group-label" style={{ padding:'6px 16px 1px 28px', fontFamily:'Montserrat,sans-serif', fontSize:10, fontWeight:700, letterSpacing:'0.10em', color:'rgba(255,255,255,0.30)', textTransform:'uppercase', marginTop:8, marginBottom:0 }}>{group.region}</p>
-                      {group.cities.map(item => (
-                        <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'block', padding:'5px 16px 5px 28px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
-                          {item.name}
-                        </a>
-                      ))}
-                    </React.Fragment>
+                    <div key={group.region} style={{ borderBottom:'1px solid rgba(255,255,255,0.04)' }}>
+                      <button type="button" onClick={() => setMobileAreaRegion(mobileAreaRegion === group.region ? null : group.region)} style={{ display:'flex', alignItems:'center', justifyContent:'space-between', width:'100%', padding:'8px 16px 8px 28px', background:'transparent', border:'none', cursor:'pointer' }}>
+                        <span style={{ fontFamily:'Montserrat,sans-serif', fontSize:13, fontWeight:700, color:'rgba(255,255,255,0.80)' }}>{group.region}</span>
+                        <ChevronDown className="w-3.5 h-3.5" style={{ color:'#FF5722', transition:'transform 0.2s', transform: mobileAreaRegion === group.region ? 'rotate(180deg)' : 'rotate(0)' }} />
+                      </button>
+                      {mobileAreaRegion === group.region && (
+                        <div style={{ paddingBottom:6 }}>
+                          {group.cities.map(item => (
+                            <a key={item.path} href={item.path} className="mob-sub-item" style={{ display:'block', padding:'5px 16px 5px 40px', color:'rgba(255,255,255,0.65)', fontFamily:'Montserrat,sans-serif', fontWeight:500, fontSize:13, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
+                              {item.name}
+                            </a>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   ))}
-                  <a href="/service-areas" style={{ display:'flex', alignItems:'center', gap:8, padding:'6px 16px 6px 28px', color:'#FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:12, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
+                  <a href="/service-areas" style={{ display:'flex', alignItems:'center', gap:8, padding:'8px 16px 8px 28px', color:'#FF5722', fontFamily:'Montserrat,sans-serif', fontWeight:700, fontSize:12, textDecoration:'none' }} onClick={() => { setMobileMenuOpen(false); }}>
                     &#8594; All Service Areas
                   </a>
                 </div>}

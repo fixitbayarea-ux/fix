@@ -100,6 +100,7 @@ export const areasGrouped = [
       { name: 'San Anselmo', path: '/san-anselmo-appliance-repair' },
       { name: 'Ross', path: '/ross-appliance-repair' },
       { name: 'Greenbrae', path: '/greenbrae-appliance-repair' },
+      { name: 'Belvedere', path: '/belvedere-appliance-repair' },
     ]
   }
 ];

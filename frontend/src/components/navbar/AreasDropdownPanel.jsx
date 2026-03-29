@@ -9,11 +9,11 @@ const GLASS_DROPDOWN = {
 const REGION_LABEL = {
   fontFamily: 'Montserrat, sans-serif',
   fontWeight: 700,
-  fontSize: 10,
+  fontSize: 11,
   letterSpacing: '0.12em',
   textTransform: 'uppercase',
   color: '#FF5722',
-  padding: '6px 12px 4px',
+  padding: '6px 12px 8px',
   display: 'block',
 };
 
@@ -21,7 +21,7 @@ const AreasDropdownPanel = ({ areasGrouped, onClose, onTrackClick, scrollToAncho
   return (
     <div 
       className="absolute left-0 mt-2 rounded py-3 z-50"
-      style={{ top: '100%', width: 680, maxWidth: '90vw', ...GLASS_DROPDOWN }}
+      style={{ top: '100%', minWidth: 560, maxWidth: '90vw', ...GLASS_DROPDOWN }}
     >
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 0 }}>
         {(areasGrouped || []).map((group, gi) => (
@@ -31,8 +31,8 @@ const AreasDropdownPanel = ({ areasGrouped, onClose, onTrackClick, scrollToAncho
               <a
                 key={city.path}
                 href={city.path}
-                className="block px-3 py-1.5 text-sm rounded transition-colors hover:bg-white/10"
-                style={{ color: 'rgba(255,255,255,0.80)', fontFamily: 'Montserrat, sans-serif', fontWeight: 500, fontSize: 13 }}
+                className="block px-3 py-1.5 text-sm rounded transition-colors hover:bg-white/10 hover:text-orange-500"
+                style={{ color: 'rgba(255,255,255,0.80)', fontFamily: 'Montserrat, sans-serif', fontWeight: 500, fontSize: 14 }}
                 onClick={() => {
                   onTrackClick(city.name, 'areas');
                   onClose();
