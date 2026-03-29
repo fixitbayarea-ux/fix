@@ -217,15 +217,24 @@ const CITY_HERO_BG = {
 
 /* ═══ City-Specific Static Data ═══ */
 const CITY_APPLIANCE_SERVICES = [
-  { name: 'Refrigerator repair', href: '/refrigerator-repair', desc: 'Not cooling, leaking, noisy compressor, ice buildup' },
-  { name: 'Washer repair', href: '/washer-repair', desc: 'Won\'t drain, excessive vibration, error codes, leaks' },
-  { name: 'Dryer repair', href: '/dryer-repair', desc: 'Not heating, long dry times, lint buildup, drum noise' },
-  { name: 'Dishwasher repair', href: '/dishwasher-repair', desc: 'Not cleaning, leaking, won\'t start, drainage issues' },
-  { name: 'Oven & range repair', href: '/oven-repair', desc: 'Uneven heating, igniter failure, door seal problems' },
-  { name: 'Cooktop repair', href: '/cooktop-repair', desc: 'Burner not lighting, element failure, cracked glass' },
-  { name: 'Wine cooler repair', href: '/wine-cooler-repair', desc: 'Temperature swings, compressor noise, door seal' },
-  { name: 'Ice maker repair', href: '/ice-maker-repair', desc: 'No ice production, water line clogs, slow output' },
+  { name: 'Refrigerator repair', href: '/refrigerator-repair', svc: 'refrigerator', desc: 'Not cooling, leaking, noisy compressor, ice buildup' },
+  { name: 'Washer repair', href: '/washer-repair', svc: 'washer', desc: 'Won\'t drain, excessive vibration, error codes, leaks' },
+  { name: 'Dryer repair', href: '/dryer-repair', svc: 'dryer', desc: 'Not heating, long dry times, lint buildup, drum noise' },
+  { name: 'Dishwasher repair', href: '/dishwasher-repair', svc: 'dishwasher', desc: 'Not cleaning, leaking, won\'t start, drainage issues' },
+  { name: 'Oven & range repair', href: '/oven-repair', svc: 'oven', desc: 'Uneven heating, igniter failure, door seal problems' },
+  { name: 'Cooktop repair', href: '/cooktop-repair', svc: 'cooktop', desc: 'Burner not lighting, element failure, cracked glass' },
+  { name: 'Wine cooler repair', href: '/wine-cooler-repair', svc: 'wine-cooler', desc: 'Temperature swings, compressor noise, door seal' },
+  { name: 'Ice maker repair', href: '/ice-maker-repair', svc: 'ice-maker', desc: 'No ice production, water line clogs, slow output' },
 ];
+
+const CITIES_WITH_SERVICE_PAGES = ['daly-city','south-san-francisco','san-francisco','san-bruno','millbrae','pacifica','colma','brisbane','sausalito','mill-valley','san-rafael','novato','tiburon','corte-madera','san-anselmo','fairfax','larkspur','greenbrae','ross','belvedere','montara'];
+
+const getCityServiceHref = (citySlug, item) => {
+  if (citySlug && CITIES_WITH_SERVICE_PAGES.includes(citySlug)) {
+    return `/${citySlug}-${item.svc}-repair`;
+  }
+  return item.href;
+};
 
 const ApplianceRepairPageNew = ({
   appliance, pageTitle, metaDescription, commonProblems = [], faqData = [],
@@ -463,15 +472,18 @@ const ApplianceRepairPageNew = ({
             <div style={S.eyebrow}>WHAT WE FIX</div>
             <h2 style={{ ...S.h2, color: '#0D1B2A', marginTop: 10, marginBottom: 28 }}>Every Major Appliance</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4" style={{ gap: 14 }}>
-              {CITY_APPLIANCE_SERVICES.map((item) => (
-                <a key={item.href} href={item.href} data-testid={`city-svc-${item.href.replace(/\//g, '')}`} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 4, padding: 20, textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s', cursor: 'pointer' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(255,87,34,0.10)'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.08)'; e.currentTarget.style.boxShadow = 'none'; }}>
+              {CITY_APPLIANCE_SERVICES.map((item) => {
+                const svcHref = getCityServiceHref(citySlug, item);
+                return (
+                <a key={svcHref} href={svcHref} data-testid={`city-svc-${item.svc}`} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 4, padding: 20, textDecoration: 'none', transition: 'border-color 0.2s, box-shadow 0.2s', cursor: 'pointer' }} onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF5722'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(255,87,34,0.10)'; }} onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.08)'; e.currentTarget.style.boxShadow = 'none'; }}>
                   <div>
                     <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginBottom: 6 }}><span style={{ color: '#FF5722', marginRight: 8 }}>&bull;</span>{item.name}</div>
                     <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.6, marginBottom: 14 }}>{item.desc}</p>
                   </div>
                   <span className="city-svc-btn" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', minHeight: 44, background: 'transparent', color: '#FF5722', border: '1.5px solid #FF5722', fontFamily: S.font, fontWeight: 700, fontSize: 14, padding: '10px 16px', borderRadius: 3, textAlign: 'center', transition: 'background 0.2s, color 0.2s' }}>View Service</span>
                 </a>
-              ))}
+              );
+              })}
             </div>
           </div>
         </section>
