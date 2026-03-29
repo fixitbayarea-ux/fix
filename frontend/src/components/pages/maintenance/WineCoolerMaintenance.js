@@ -98,16 +98,6 @@ const WineCoolerMaintenance = () => {
           { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician calibrates temperature zones, inspects the compressor, checks humidity levels, and ensures vibration damping is working properly.' },
         ]
       }}
-      repairVsReplace={{
-        title: "Wine Cooler Maintenance vs. Repair",
-        intro: "Protect your wine collection with regular maintenance. Here's when service pays off most.",
-        items: [
-          { action: 'repair', condition: 'Annual condenser coil cleaning', recommendation: 'Dust on coils forces the compressor to overwork. A $60 cleaning visit prevents $300+ compressor failures and protects your wine.' },
-          { action: 'repair', condition: 'Temperature calibration and seal check', recommendation: 'Wine stored at incorrect temps loses quality fast. Annual calibration ($60–$100) ensures optimal 55°F storage.' },
-          { action: 'replace', condition: 'Thermoelectric unit with poor cooling', recommendation: 'Thermoelectric coolers have shorter lifespans (5–8 years). If cooling performance drops, a compressor-based upgrade offers superior temperature stability.' },
-          { action: 'replace', condition: 'Compressor-based unit over 12 years old', recommendation: 'Older wine coolers with refrigerant leaks or compressor wear cost $400+ to repair. Newer models offer dual-zone temperature control and UV protection.' },
-        ]
-      }}
       relatedLinks={[
         { href: '/wine-cooler-repair', label: 'Wine Cooler Repair', desc: 'Temperature issues, vibration, or compressor failure' },
         { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker problems' },

@@ -2,6 +2,7 @@ import React from 'react';
 import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const RangeRepairPage = () => {
   const isMobile = useIsMobile();
@@ -86,16 +87,9 @@ const RangeRepairPage = () => {
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}
-      repairVsReplace={{
-        title: "When to Repair vs. Replace Your Range",
-        intro: "Gas and electric ranges are built to last 15+ years. Here's how to make the right call.",
-        items: [
-          { action: 'repair', condition: 'Burner won\'t ignite or heats unevenly', recommendation: 'Igniter or element replacement costs $120–$250 — a fraction of a new $800+ range.' },
-          { action: 'repair', condition: 'Oven temperature is inaccurate', recommendation: 'Thermostat or sensor recalibration/replacement ($100–$200) restores cooking precision quickly.' },
-          { action: 'replace', condition: 'Multiple burners and oven both failing', recommendation: 'When several components fail simultaneously on a 12+ year unit, cumulative repair costs approach replacement price.' },
-          { action: 'replace', condition: 'Control board failure on older model', recommendation: 'Electronic control boards for discontinued models can cost $300–$500 if available. A new range offers better efficiency and features.' },
-        ]
-      }}
+      comparisonTable={SERVICE_CONTENT.Range.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Range.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Range.diagnosisSteps}
       relatedLinks={[
         { href: '/oven-repair', label: 'Oven Repair', desc: 'Temperature issues, not heating, or timer problems' },
         { href: '/stove-repair', label: 'Stove Repair', desc: 'Burner issues, igniter problems, gas leaks' },

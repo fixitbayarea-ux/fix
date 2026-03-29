@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { SERVICE_CITIES_SCHEMA } from '../../data/serviceCities';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const IceMakerRepairPage = () => {
   const isMobile = useIsMobile();
@@ -95,17 +96,10 @@ const IceMakerRepairPage = () => {
           { icon: '👃', label: 'Bad Taste' },
         ]}
         faqs={faqData}
-        repairVsReplace={{
-          title: "Repair vs. Replace Your Ice Maker",
-          intro: "Ice maker issues are usually tied to the refrigerator's age and condition.",
-          items: [
-            { action: 'repair', condition: 'Stopped making ice but fridge works fine', recommendation: 'Frozen water line or bad inlet valve costs $150–$280 to fix.' },
-            { action: 'repair', condition: 'Ice tastes bad or has an odor', recommendation: 'New water filter + cleaning usually resolves this for under $100.' },
-            { action: 'repair', condition: 'Leaking water into the freezer', recommendation: 'Cracked water line or misaligned fill tube — quick $120–$200 fix.' },
-            { action: 'replace', condition: 'Standalone unit 8+ years old, compressor issues', recommendation: 'Compressor repairs cost $300+. A new countertop model may be better.' },
-          ]
-        }}
-        relatedLinks={[
+        comparisonTable={SERVICE_CONTENT['Ice Maker'].comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT['Ice Maker'].symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT['Ice Maker'].diagnosisSteps}
+      relatedLinks={[
           { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling or temperature issues' },
           { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Not freezing or frost buildup' },
         ]}
@@ -135,16 +129,9 @@ const IceMakerRepairPage = () => {
           <><strong>Looking for ice maker repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-ice-maker-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Ice Maker Repair</a> page for local details and availability.</>
         ]
       }}
-      repairVsReplace={{
-        title: "When to Repair vs. Replace Your Ice Maker",
-        intro: "Ice maker issues are usually tied to the refrigerator's age and condition. Here's how to decide.",
-        items: [
-          { action: 'repair', condition: 'Ice maker stopped producing ice but fridge works fine', recommendation: 'A frozen water line, bad inlet valve, or failed ice maker assembly costs $150–$280 to fix. The refrigerator itself is usually in great shape.' },
-          { action: 'repair', condition: 'Ice tastes bad or has an odor', recommendation: 'Replacing the water filter and cleaning the ice maker assembly usually resolves this completely for under $100.' },
-          { action: 'repair', condition: 'Ice maker leaking water into the freezer', recommendation: 'A cracked water line or misaligned fill tube is a quick, affordable fix ($120–$200) that prevents water damage.' },
-          { action: 'replace', condition: 'Standalone ice maker is 8+ years old with compressor issues', recommendation: 'Compressor repairs on standalone units cost $300+. If the unit is aging, a new countertop or under-counter model may be a better investment.' },
-        ]
-      }}
+      comparisonTable={SERVICE_CONTENT['Ice Maker'].comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT['Ice Maker'].symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT['Ice Maker'].diagnosisSteps}
       relatedLinks={[
         { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or temperature issues' },
         { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Not freezing, frost buildup, or temperature problems' },

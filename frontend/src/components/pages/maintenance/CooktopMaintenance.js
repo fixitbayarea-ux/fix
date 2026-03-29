@@ -98,16 +98,6 @@ const CooktopMaintenance = () => {
           { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician inspects all burners, igniters, gas valves, electric elements, and control knobs. Ensures safe, efficient operation.' },
         ]
       }}
-      repairVsReplace={{
-        title: "Cooktop Maintenance vs. Emergency Repair",
-        intro: "Gas, electric, and induction cooktops all benefit from regular professional service.",
-        items: [
-          { action: 'repair', condition: 'Annual burner and connection inspection', recommendation: 'Gas cooktops need periodic valve checks for safety. A $60 maintenance visit catches leaks before they become dangerous.' },
-          { action: 'repair', condition: 'Deep cleaning and element testing', recommendation: 'Grease buildup causes uneven heating and fire risk. Professional cleaning restores performance and extends cooktop life.' },
-          { action: 'replace', condition: 'Cracked glass-ceramic surface', recommendation: 'Surface cracks on electric/induction cooktops cost $300–$600 to replace. If the unit is 10+ years old, a new cooktop is usually smarter.' },
-          { action: 'replace', condition: 'Multiple burners failing on gas cooktop', recommendation: 'When 2+ burners have valve or igniter issues, repair costs approach $400+. Modern cooktops offer better safety features.' },
-        ]
-      }}
       relatedLinks={[
         { href: '/cooktop-repair', label: 'Cooktop Repair', desc: 'Burner, igniter, and surface issues' },
         { href: '/maintenance/oven-range', label: 'Oven Maintenance', desc: 'Calibration and safety inspection' },

@@ -1,0 +1,337 @@
+/**
+ * Expanded service-page content: comparisonTable, symptomsChecklist, diagnosisSteps
+ * Keyed by appliance slug used in each *RepairPage component.
+ * Easy to extend — just add a new key.
+ */
+
+const SERVICE_CONTENT = {
+
+  /* ═══════════════════════ REFRIGERATOR ═══════════════════════ */
+  Refrigerator: {
+    comparisonTable: {
+      title: 'Refrigerator Repair vs. Replacement \u2014 How to Decide',
+      intro: 'Not every breakdown means you need a new refrigerator. Use this guide to make a cost-effective decision.',
+      rows: [
+        { situation: 'Age under 8 years', repair: true, replace: false, note: 'Most components are still within their expected lifespan \u2014 repair is almost always the better investment.' },
+        { situation: 'Repair cost under 50% of new fridge', repair: true, replace: false, note: 'If the repair bill stays under half the cost of a comparable new unit, repairing makes financial sense.' },
+        { situation: 'Compressor failure on 12+ year unit', repair: false, replace: true, note: 'Compressor replacement runs $600\u2013$900. On an aging unit, that money is better put toward a newer, more efficient model.' },
+        { situation: 'Cosmetic damage only', repair: true, replace: false, note: "Dents, scratches, or a cracked handle don't affect performance. Keep the fridge and fix what matters." },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Not cooling', meaning: 'Usually points to a faulty thermostat, failed compressor start relay, or dirty condenser coils restricting heat dissipation.' },
+      { symptom: 'Ice maker not working', meaning: 'Commonly caused by a frozen water supply line, defective inlet valve, or a faulty ice maker module that needs replacement.' },
+      { symptom: 'Water dispenser broken', meaning: 'Often traced to a clogged water filter past its replacement date or a failed dispenser control board.' },
+      { symptom: 'Loud clicking or humming', meaning: 'Typically indicates a compressor struggling to start, a failing start relay, or condenser fan motor bearings wearing out.' },
+      { symptom: 'Frost buildup inside', meaning: 'Signals a defrost system failure \u2014 the defrost heater, timer, or thermostat may need replacement.' },
+      { symptom: 'Leaking water on floor', meaning: 'Most often caused by a clogged defrost drain, cracked drain pan, or a loose water supply line connection.' },
+      { symptom: 'Compressor running constantly', meaning: 'The fridge is working overtime to compensate \u2014 usually due to worn door gaskets, low refrigerant, or a failing compressor.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full Diagnostic Inspection', description: 'Our technician tests every critical component \u2014 thermostat, compressor, evaporator fan, condenser coils, defrost system, and door seals. We use professional-grade multimeters and temperature probes to pinpoint the exact failure, not just the symptom.' },
+      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Once we identify the problem, you receive a written estimate on the spot. We stock common parts (thermostats, relays, fan motors, gaskets) on our truck for same-visit repair. Specialty parts for Sub-Zero, Viking, or Thermador are typically available next business day.' },
+      { step: 3, title: 'Professional Repair & Verification', description: 'We complete the repair, then run the refrigerator through a full test cycle \u2014 verifying temperature in both the fridge and freezer compartments, checking airflow, and confirming the compressor cycles correctly. Every repair is backed by our 180-day warranty.' },
+    ],
+  },
+
+  /* ═══════════════════════ WASHER ═══════════════════════ */
+  Washer: {
+    comparisonTable: {
+      title: 'Washer Repair vs. Replacement \u2014 How to Decide',
+      intro: 'A broken washer is disruptive, but replacement isn\u2019t always the answer. Here\u2019s how to decide.',
+      rows: [
+        { situation: 'Age under 8 years', repair: true, replace: false, note: 'Modern washers are designed to last 10\u201314 years. A single repair on a younger unit almost always pays for itself.' },
+        { situation: 'Repair cost under 50% of a new washer', repair: true, replace: false, note: 'If the fix is less than half the price of a comparable new machine, repairing is the smarter financial move.' },
+        { situation: 'Drum bearing failure on 10+ year unit', repair: false, replace: true, note: 'Bearing replacement runs $350\u2013$550 with labor. On an older washer, that cost approaches a new entry-level machine.' },
+        { situation: 'Minor leak or drain issue', repair: true, replace: false, note: 'Hose replacements, pump swaps, and drain cleanouts are affordable fixes that restore full function quickly.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Won\u2019t start or power on', meaning: 'Often a faulty door latch switch, blown thermal fuse, or a failed control board preventing the cycle from initiating.' },
+      { symptom: 'Not draining', meaning: 'Usually caused by a clogged drain pump filter, kinked drain hose, or a failed drain pump motor.' },
+      { symptom: 'Excessive vibration or shaking', meaning: 'Typically points to worn shock absorbers, unbalanced drum suspension springs, or an unevenly loaded tub.' },
+      { symptom: 'Leaking water', meaning: 'Most commonly traced to a cracked door boot seal (front-load), worn inlet hoses, or a faulty water pump.' },
+      { symptom: 'Not spinning', meaning: 'Indicates a worn drive belt, failed lid switch (top-load), or a burned-out motor coupling.' },
+      { symptom: 'Clothes still wet after cycle', meaning: 'The spin cycle isn\u2019t reaching full speed \u2014 usually a drive belt, clutch assembly, or drain issue.' },
+      { symptom: 'Error codes on display', meaning: 'Electronic washers display fault codes that point to specific component failures. Our technicians read and diagnose all major brand codes.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full Diagnostic Inspection', description: 'We test the door latch, control board, motor, pump, inlet valves, and suspension components. Professional leak detection and electrical testing pinpoint the root cause \u2014 not just the visible symptom.' },
+      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'You receive a written estimate before any work begins. Common parts (pumps, belts, door seals, inlet valves) are stocked on our truck. Brand-specific parts for LG, Samsung, or Miele ship next business day.' },
+      { step: 3, title: 'Professional Repair & Verification', description: 'After the repair, we run a complete wash cycle to verify fill, agitation, drain, and spin performance. We check for leaks at every connection point. Every repair is backed by our 180-day warranty.' },
+    ],
+  },
+
+  /* ═══════════════════════ DRYER ═══════════════════════ */
+  Dryer: {
+    comparisonTable: {
+      title: 'Dryer Repair vs. Replacement \u2014 How to Decide',
+      intro: 'Dryers are mechanically simpler than washers, which means repairs are often very cost-effective.',
+      rows: [
+        { situation: 'Age under 10 years', repair: true, replace: false, note: 'Dryers typically last 12\u201315 years. Most single-component failures on younger units cost well under $400 to fix.' },
+        { situation: 'Heating element or igniter failure', repair: true, replace: false, note: 'These are among the most common dryer repairs and typically cost $150\u2013$350 \u2014 far less than a new dryer.' },
+        { situation: 'Drum bearing failure on 12+ year unit', repair: false, replace: true, note: 'Bearing replacement labor is significant on older dryers. Combined with the unit\u2019s age, replacement becomes more sensible.' },
+        { situation: 'Minor noise or belt issue', repair: true, replace: false, note: 'Belt and roller replacements are straightforward, affordable repairs that extend dryer life by years.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Not heating', meaning: 'The most common dryer complaint. Usually a burned-out heating element, blown thermal fuse, or faulty gas igniter (gas dryers).' },
+      { symptom: 'Takes too long to dry', meaning: 'Often caused by a clogged lint trap, restricted vent duct, or a failing heating element that isn\u2019t reaching full temperature.' },
+      { symptom: 'Drum not spinning', meaning: 'Typically a broken drive belt, worn drum rollers, or a failed motor \u2014 all common and repairable issues.' },
+      { symptom: 'Loud squealing or thumping', meaning: 'Points to worn drum support rollers, a frayed belt, or dry drum bearing \u2014 these worsen quickly if ignored.' },
+      { symptom: 'Shuts off mid-cycle', meaning: 'Usually a tripped thermal fuse (from vent blockage) or an overheating motor. Vent inspection is critical.' },
+      { symptom: 'Burning smell', meaning: 'Lint buildup near the heating element or in the exhaust vent \u2014 a fire hazard that needs immediate attention.' },
+      { symptom: 'Won\u2019t start at all', meaning: 'Often a faulty door switch, broken start switch, or a failed thermal fuse cutting power to the dryer.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full Diagnostic Inspection', description: 'We test the heating element, thermal fuse, gas igniter (if applicable), belt, drum rollers, motor, and exhaust vent. Airflow measurements identify hidden vent restrictions that cause most "not heating" complaints.' },
+      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Written estimate before any work. We carry heating elements, thermal fuses, belts, rollers, and igniters for all major brands. Specialty parts ship next business day.' },
+      { step: 3, title: 'Professional Repair & Verification', description: 'After repair, we run a full heat cycle and measure exhaust temperature and airflow at the vent outlet. We verify the drum spins smoothly and the dryer reaches proper operating temperature. Backed by our 180-day warranty.' },
+    ],
+  },
+
+  /* ═══════════════════════ DISHWASHER ═══════════════════════ */
+  Dishwasher: {
+    comparisonTable: {
+      title: 'Dishwasher Repair vs. Replacement \u2014 How to Decide',
+      intro: 'Dishwashers are one of the most cost-effective appliances to repair. Here\u2019s when it makes sense.',
+      rows: [
+        { situation: 'Age under 7 years', repair: true, replace: false, note: 'Most dishwasher components are designed for 9\u201312 years of use. Early failures are almost always worth repairing.' },
+        { situation: 'Not draining or cleaning well', repair: true, replace: false, note: 'Pump, spray arm, and filter issues are affordable fixes that restore full cleaning performance.' },
+        { situation: 'Control board failure on 10+ year unit', repair: false, replace: true, note: 'Control boards cost $250\u2013$400. On an older dishwasher, that approaches the cost of a solid new unit.' },
+        { situation: 'Door latch or gasket issue', repair: true, replace: false, note: 'Latch and seal replacements are among the cheapest dishwasher repairs \u2014 $80\u2013$200 typically.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Not cleaning dishes properly', meaning: 'Usually caused by a clogged spray arm, worn wash pump, low water temperature, or a dirty filter restricting water flow.' },
+      { symptom: 'Won\u2019t drain', meaning: 'Commonly a blocked drain hose, failed drain pump, or a clogged air gap causing water to back up in the tub.' },
+      { symptom: 'Leaking from the bottom', meaning: 'Often a cracked door gasket, loose hose clamp, or a worn pump seal allowing water to escape during the wash cycle.' },
+      { symptom: 'Not filling with water', meaning: 'Points to a faulty water inlet valve, a tripped float switch, or a kinked supply line reducing water flow.' },
+      { symptom: 'Dishes come out wet', meaning: 'The heating element or vent fan may be failing, or the rinse aid dispenser is empty or malfunctioning.' },
+      { symptom: 'Strange odor', meaning: 'Typically food debris trapped in the filter, drain area, or door gasket folds. A thorough cleaning and filter check resolves most odor complaints.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full Diagnostic Inspection', description: 'We inspect the wash pump, drain pump, spray arms, inlet valve, door latch, gasket, heating element, and control board. We run a diagnostic cycle to isolate the failing component.' },
+      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Written estimate provided on the spot. Common parts (pumps, inlet valves, gaskets, spray arms) are truck-stocked. Bosch, Miele, and other premium brand parts ship next business day.' },
+      { step: 3, title: 'Professional Repair & Verification', description: 'After repair, we run a complete wash cycle and check for leaks, proper drainage, water temperature, and spray arm rotation. Every repair is backed by our 180-day warranty.' },
+    ],
+  },
+
+  /* ═══════════════════════ OVEN ═══════════════════════ */
+  Oven: {
+    comparisonTable: {
+      title: 'Oven Repair vs. Replacement \u2014 How to Decide',
+      intro: 'Ovens are built to last, and most repairs cost significantly less than a replacement.',
+      rows: [
+        { situation: 'Age under 12 years', repair: true, replace: false, note: 'Ovens routinely last 15\u201320 years. Component failures within the first 12 years are almost always worth fixing.' },
+        { situation: 'Heating element or igniter failure', repair: true, replace: false, note: 'The most common oven repair. Bake and broil elements cost $150\u2013$300 to replace \u2014 a fraction of a new oven.' },
+        { situation: 'Control board failure on 15+ year unit', repair: false, replace: true, note: 'Electronic control boards run $300\u2013$500. On a very old unit, investing in a new oven with modern features is often wiser.' },
+        { situation: 'Door hinge or glass issue', repair: true, replace: false, note: 'Door components are inexpensive and easy to replace. No reason to discard a working oven over a broken hinge.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Not heating at all', meaning: 'Usually a burned-out bake element, faulty igniter (gas), or a tripped thermal fuse cutting power to the heating circuit.' },
+      { symptom: 'Uneven cooking', meaning: 'Often caused by a failing convection fan motor, a damaged bake element with a hot spot, or a miscalibrated thermostat.' },
+      { symptom: 'Temperature inaccurate', meaning: 'The oven temperature sensor (thermistor) or thermostat has drifted. Calibration or sensor replacement fixes this.' },
+      { symptom: 'Self-clean cycle won\u2019t work', meaning: 'Typically a faulty door lock motor or a failed control board that can\u2019t engage the high-heat cleaning mode.' },
+      { symptom: 'Gas smell when off', meaning: 'A gas leak from the supply valve or connection. Turn off the gas supply and call for immediate service.' },
+      { symptom: 'Oven light not working', meaning: 'May be a burned-out bulb, but if the socket is corroded or the wiring is damaged, the socket assembly needs replacement.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full Diagnostic Inspection', description: 'We test bake and broil elements, igniters, temperature sensors, thermostats, control boards, and door latch mechanisms. For gas ovens, we perform a gas leak check at all connections.' },
+      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Written estimate before any work begins. We stock heating elements, igniters, sensors, and thermostats for all major brands. Control boards and specialty parts ship next business day.' },
+      { step: 3, title: 'Professional Repair & Verification', description: 'After repair, we verify temperature accuracy with a calibrated probe, test all heating modes (bake, broil, convection), and confirm even heat distribution. Backed by our 180-day warranty.' },
+    ],
+  },
+
+  /* ═══════════════════════ RANGE ═══════════════════════ */
+  Range: {
+    comparisonTable: {
+      title: 'Range Repair vs. Replacement \u2014 How to Decide',
+      intro: 'Ranges combine cooktop and oven in one unit. Most failures affect only one section and are very repairable.',
+      rows: [
+        { situation: 'Age under 12 years', repair: true, replace: false, note: 'Ranges last 15\u201320 years. A single burner or element failure is an easy, cost-effective repair.' },
+        { situation: 'One burner not working', repair: true, replace: false, note: 'Individual burner components (igniters, switches, elements) cost $100\u2013$250 to replace.' },
+        { situation: 'Multiple system failures simultaneously', repair: false, replace: true, note: 'If both the cooktop and oven sections have major failures, combined repair costs may approach replacement value.' },
+        { situation: 'Cosmetic or knob damage', repair: true, replace: false, note: 'Knobs, grates, and drip pans are inexpensive replacement parts that don\u2019t justify a new range.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Burner won\u2019t ignite (gas)', meaning: 'Usually a clogged igniter port, faulty spark module, or a worn igniter that isn\u2019t generating a strong enough spark.' },
+      { symptom: 'Electric element not heating', meaning: 'Often a burned-out surface element, failed infinite switch, or a loose wiring connection at the terminal block.' },
+      { symptom: 'Oven not reaching temperature', meaning: 'Points to a faulty bake igniter (gas) or burned-out bake element (electric), or a miscalibrated oven sensor.' },
+      { symptom: 'Gas smell when burners are off', meaning: 'A gas leak at the supply valve, burner tube, or connection fitting. Turn off gas and call for immediate service.' },
+      { symptom: 'Oven door won\u2019t close properly', meaning: 'Worn or broken door hinges, a warped door frame, or a misaligned latch mechanism preventing a proper seal.' },
+      { symptom: 'Uneven flame on gas burner', meaning: 'Typically food debris or grease buildup in the burner ports. A thorough cleaning often restores even flame distribution.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full Diagnostic Inspection', description: 'We test all burners, igniters, heating elements, switches, oven sensors, and the control board. Gas ranges get a full leak check at every connection point.' },
+      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Written estimate on the spot. We stock igniters, elements, switches, and common sensors. Premium brand parts for Wolf, Viking, or Thermador are available next business day.' },
+      { step: 3, title: 'Professional Repair & Verification', description: 'After repair, we test every burner for proper ignition and flame pattern, verify oven temperature accuracy, and confirm all controls function correctly. Backed by our 180-day warranty.' },
+    ],
+  },
+
+  /* ═══════════════════════ STOVE ═══════════════════════ */
+  Stove: {
+    comparisonTable: {
+      title: 'Stove Repair vs. Replacement \u2014 How to Decide',
+      intro: 'Stoves are durable appliances. Most common failures are straightforward and affordable to repair.',
+      rows: [
+        { situation: 'Age under 12 years', repair: true, replace: false, note: 'Stoves have long lifespans. Single-component failures within 12 years are almost always worth repairing.' },
+        { situation: 'Single burner or element issue', repair: true, replace: false, note: 'Replacing one burner component costs $100\u2013$250 \u2014 a fraction of a new stove.' },
+        { situation: 'Major gas valve failure on 15+ year unit', repair: false, replace: true, note: 'Gas valve replacements are expensive. On a very old stove, upgrading to a newer, safer model is often the best choice.' },
+        { situation: 'Knob, grate, or drip pan damage', repair: true, replace: false, note: 'These are inexpensive replacement parts. No reason to replace the entire stove.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Burner won\u2019t light', meaning: 'Commonly a clogged igniter, faulty spark module, or a worn-out igniter electrode that needs replacement.' },
+      { symptom: 'Weak or uneven flame', meaning: 'Food debris or grease buildup in the burner ports. Cleaning or port replacement restores proper flame distribution.' },
+      { symptom: 'Electric element stays on high', meaning: 'A stuck infinite switch that can\u2019t regulate power. The switch needs replacement to restore temperature control.' },
+      { symptom: 'Clicking sound but no ignition', meaning: 'The spark module is firing, but the igniter isn\u2019t positioned correctly or the gas flow is obstructed.' },
+      { symptom: 'Gas smell when off', meaning: 'A gas leak from the valve or supply line. Turn off gas supply immediately and call for service.' },
+      { symptom: 'Surface element cracked or damaged', meaning: 'A cracked coil or glass-top element needs replacement to avoid electrical hazards. Don\u2019t use the damaged burner.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full Diagnostic Inspection', description: 'We inspect all burners, igniters, gas valves, elements, switches, and wiring connections. Gas stoves receive a full safety and leak inspection.' },
+      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Written estimate before any work. We carry igniters, elements, switches, and burner components for all major brands on our service truck.' },
+      { step: 3, title: 'Professional Repair & Verification', description: 'After repair, we test each burner for proper ignition, flame quality, and temperature regulation. All gas connections are leak-tested. Backed by our 180-day warranty.' },
+    ],
+  },
+
+  /* ═══════════════════════ COOKTOP ═══════════════════════ */
+  Cooktop: {
+    comparisonTable: {
+      title: 'Cooktop Repair vs. Replacement \u2014 How to Decide',
+      intro: 'Built-in cooktops are designed to last and are more cost-effective to repair than replace.',
+      rows: [
+        { situation: 'Age under 10 years', repair: true, replace: false, note: 'Built-in cooktops last 15+ years. Single burner or element failures are simple, affordable repairs.' },
+        { situation: 'One burner not working', repair: true, replace: false, note: 'Individual burner repairs cost $100\u2013$300. No need to replace the entire cooktop for one faulty zone.' },
+        { situation: 'Cracked glass-top surface', repair: false, replace: true, note: 'A cracked glass-ceramic surface is a safety hazard and usually costs nearly as much to replace as a new cooktop.' },
+        { situation: 'Control knob or switch issue', repair: true, replace: false, note: 'Switches and knobs are inexpensive, replaceable parts that restore full control.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Burner won\u2019t ignite (gas)', meaning: 'Clogged igniter port, faulty spark module, or a worn igniter electrode. Cleaning or replacement resolves most cases.' },
+      { symptom: 'Induction zone not detecting cookware', meaning: 'The cookware may not be induction-compatible, or the induction coil or sensor beneath the glass is failing.' },
+      { symptom: 'Electric element not heating', meaning: 'A burned-out radiant element, failed infinite switch, or a loose terminal connection under the cooktop.' },
+      { symptom: 'Cracked glass surface', meaning: 'A safety hazard that requires immediate replacement of the glass-ceramic top. Avoid using the affected zone until repaired.' },
+      { symptom: 'Inconsistent temperature', meaning: 'The temperature sensor or control switch is failing, preventing the element from maintaining the selected heat level.' },
+      { symptom: 'Sparking continuously', meaning: 'A stuck spark igniter switch (often caused by moisture or food spills) sending continuous spark signals to the igniter.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full Diagnostic Inspection', description: 'We test each burner zone, igniter, element, sensor, and control switch. Induction cooktops receive coil-by-coil testing. Gas models get a full leak and combustion safety check.' },
+      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Written estimate on the spot. We stock igniters, elements, and switches for common models. Glass-top replacements and premium brand parts are available next business day.' },
+      { step: 3, title: 'Professional Repair & Verification', description: 'After repair, we verify each burner zone heats correctly, test temperature regulation, and confirm all controls respond properly. Backed by our 180-day warranty.' },
+    ],
+  },
+
+  /* ═══════════════════════ FREEZER ═══════════════════════ */
+  Freezer: {
+    comparisonTable: {
+      title: 'Freezer Repair vs. Replacement \u2014 How to Decide',
+      intro: 'Standalone freezers are simple machines. Most repairs are affordable and extend unit life significantly.',
+      rows: [
+        { situation: 'Age under 10 years', repair: true, replace: false, note: 'Chest and upright freezers can last 15\u201320 years. Repairs within the first decade are almost always worthwhile.' },
+        { situation: 'Thermostat or defrost issue', repair: true, replace: false, note: 'These are common, inexpensive repairs ($150\u2013$350) that restore normal freezing performance.' },
+        { situation: 'Compressor failure on 15+ year unit', repair: false, replace: true, note: 'Compressor replacement is the most expensive freezer repair. On a very old unit, a new energy-efficient model saves more long-term.' },
+        { situation: 'Door gasket worn', repair: true, replace: false, note: 'A new door seal costs $80\u2013$180 and prevents frost buildup and compressor overwork.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Not freezing cold enough', meaning: 'Usually a faulty thermostat, low refrigerant charge, or dirty condenser coils preventing proper heat exchange.' },
+      { symptom: 'Frost buildup on walls', meaning: 'A defrost system failure \u2014 the defrost heater, timer, or thermostat isn\u2019t cycling properly to prevent ice accumulation.' },
+      { symptom: 'Compressor running non-stop', meaning: 'The freezer can\u2019t maintain set temperature. Common causes: worn door gasket, failed thermostat, or low refrigerant.' },
+      { symptom: 'Unusual loud noises', meaning: 'Points to failing evaporator fan motor bearings, a loose condenser fan blade, or compressor wear.' },
+      { symptom: 'Water pooling on floor', meaning: 'A clogged defrost drain line or cracked drain pan. Auto-defrost models are especially prone to this.' },
+      { symptom: 'Food thawing or soft', meaning: 'The temperature is rising above 0\u00b0F. Requires immediate diagnosis to prevent food spoilage \u2014 could be compressor, thermostat, or sealed system issue.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full Diagnostic Inspection', description: 'We test the compressor, thermostat, defrost heater, evaporator fan, condenser coils, and door gasket seal. Temperature readings at multiple points confirm whether the freezer reaches and holds the correct temperature.' },
+      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Written estimate before we start. We carry thermostats, defrost components, fan motors, and gaskets for all major brands. Compressor parts ship next business day if needed.' },
+      { step: 3, title: 'Professional Repair & Verification', description: 'After repair, we monitor the freezer through a full cooling cycle, verifying it reaches 0\u00b0F and the compressor cycles off normally. All repairs backed by our 180-day warranty.' },
+    ],
+  },
+
+  /* ═══════════════════════ ICE MAKER ═══════════════════════ */
+  'Ice Maker': {
+    comparisonTable: {
+      title: 'Ice Maker Repair vs. Replacement \u2014 How to Decide',
+      intro: 'Standalone and built-in ice makers are precision appliances. Here\u2019s when repair makes sense.',
+      rows: [
+        { situation: 'Age under 7 years', repair: true, replace: false, note: 'Ice makers last 8\u201312 years. Component failures within the first 7 years are well worth repairing.' },
+        { situation: 'Water inlet valve or filter issue', repair: true, replace: false, note: 'Valve and filter replacements cost $80\u2013$200 \u2014 inexpensive fixes that restore full ice production.' },
+        { situation: 'Compressor failure on 10+ year unit', repair: false, replace: true, note: 'Compressor work on a standalone ice maker is expensive relative to the unit\u2019s value. A new machine is often smarter.' },
+        { situation: 'Low ice production', repair: true, replace: false, note: 'Often a water supply issue, dirty condenser, or thermostat calibration \u2014 all affordable fixes.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'No ice production', meaning: 'Commonly a frozen water line, faulty inlet valve, or a stuck ice maker module that\u2019s not cycling.' },
+      { symptom: 'Small or hollow ice cubes', meaning: 'Indicates low water pressure to the ice maker, a partially clogged water filter, or an inlet valve not opening fully.' },
+      { symptom: 'Ice tastes bad or smells', meaning: 'Usually an old water filter (should be replaced every 6 months) or food odors absorbed from the freezer compartment.' },
+      { symptom: 'Leaking water around unit', meaning: 'A cracked water supply line, loose connection, or overfilled ice bin pushing water out of the fill area.' },
+      { symptom: 'Ice maker making loud noise', meaning: 'The water inlet valve may be failing, or the ice ejector arm motor is struggling to release frozen cubes.' },
+      { symptom: 'Ice bin overflowing', meaning: 'The optical sensor or shut-off arm that detects a full bin is misaligned or malfunctioning.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full Diagnostic Inspection', description: 'We test the water inlet valve, supply line pressure, thermostat, ice maker module, ejector mechanism, and condenser (standalone units). Every component in the ice-making cycle is checked.' },
+      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Written estimate on the spot. We stock inlet valves, water filters, thermostats, and ice maker modules. Specialty parts for Sub-Zero, Scotsman, or U-Line ship next business day.' },
+      { step: 3, title: 'Professional Repair & Verification', description: 'After repair, we verify proper water flow, run a full ice-making cycle, and confirm the unit produces correctly sized, clean-tasting ice. Backed by our 180-day warranty.' },
+    ],
+  },
+
+  /* ═══════════════════════ WINE COOLER ═══════════════════════ */
+  'Wine Cooler': {
+    comparisonTable: {
+      title: 'Wine Cooler Repair vs. Replacement \u2014 How to Decide',
+      intro: 'Wine coolers protect a valuable investment. Here\u2019s how to decide between repair and replacement.',
+      rows: [
+        { situation: 'Age under 8 years', repair: true, replace: false, note: 'Quality wine coolers last 10\u201315 years. Thermostat and fan failures in younger units are well worth repairing.' },
+        { situation: 'Thermostat or fan issue', repair: true, replace: false, note: 'These are the most common wine cooler repairs ($150\u2013$350) and fully restore temperature control.' },
+        { situation: 'Compressor failure on older thermoelectric unit', repair: false, replace: true, note: 'Thermoelectric coolers are often more cost-effective to replace than repair when the cooling module fails.' },
+        { situation: 'Door seal or hinge issue', repair: true, replace: false, note: 'Gasket and hinge replacements are simple, low-cost fixes that maintain proper insulation.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Not cooling to set temperature', meaning: 'Typically a faulty thermostat, dirty condenser coils, or a failing compressor or thermoelectric module.' },
+      { symptom: 'Temperature fluctuating', meaning: 'Often caused by a failing temperature sensor, a door gasket not sealing properly, or a condenser fan not running.' },
+      { symptom: 'Excessive vibration', meaning: 'Wine coolers should minimize vibration to protect wine. Worn compressor mounts or an unleveled unit are common causes.' },
+      { symptom: 'Condensation on glass door', meaning: 'Usually a failing anti-condensation heater (in dual-zone models) or a worn door gasket allowing humid air inside.' },
+      { symptom: 'Interior light not working', meaning: 'A burned-out LED strip or a faulty door switch. LED strips should be replaced promptly to avoid excessive heat buildup.' },
+      { symptom: 'Loud humming or buzzing', meaning: 'Points to a compressor working harder than normal, possibly due to dirty condenser coils or low refrigerant.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full Diagnostic Inspection', description: 'We test the compressor or thermoelectric module, thermostat, temperature sensors, condenser coils, evaporator fan, and door gasket. Dual-zone units receive independent testing of each temperature zone.' },
+      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Written estimate before any work. We source parts for all major wine cooler brands including Sub-Zero, EuroCave, Vinotemp, and U-Line. Common components are available same-day.' },
+      { step: 3, title: 'Professional Repair & Verification', description: 'After repair, we monitor temperature stability across all zones, verify the compressor cycles correctly, and check vibration levels. Your wine collection stays protected. Backed by our 180-day warranty.' },
+    ],
+  },
+
+  /* ═══════════════════════ GARBAGE DISPOSAL ═══════════════════════ */
+  'Garbage Disposal': {
+    comparisonTable: {
+      title: 'Disposal Repair vs. Replacement \u2014 How to Decide',
+      intro: 'Garbage disposals are compact and affordable. Here\u2019s when repair vs. replacement makes sense.',
+      rows: [
+        { situation: 'Age under 6 years', repair: true, replace: false, note: 'Disposals last 8\u201312 years. Jams, switch failures, and leaks in younger units are quick, affordable fixes.' },
+        { situation: 'Jammed or humming but not spinning', repair: true, replace: false, note: 'A stuck flywheel is the most common disposal issue. Manual clearing and reset usually fixes it immediately.' },
+        { situation: 'Motor burned out', repair: false, replace: true, note: 'Motor replacement on a disposal costs nearly as much as a new unit. A fresh installation is usually the better option.' },
+        { situation: 'Leaking from bottom', repair: false, replace: true, note: 'A bottom leak indicates a cracked internal seal or housing. Replacement is more cost-effective than repair.' },
+      ],
+    },
+    symptomsChecklist: [
+      { symptom: 'Humming but not grinding', meaning: 'The motor is receiving power, but the flywheel is jammed \u2014 usually by a bone, utensil, or hard food debris.' },
+      { symptom: 'Won\u2019t turn on at all', meaning: 'Often a tripped reset button, blown internal fuse, faulty wall switch, or a failed motor.' },
+      { symptom: 'Leaking from the top flange', meaning: 'The mounting ring or plumber\u2019s putty seal between the sink and disposal has loosened over time.' },
+      { symptom: 'Slow draining', meaning: 'Grinding chamber partially clogged with grease or food buildup. The drain line may also need clearing.' },
+      { symptom: 'Loud metallic grinding', meaning: 'A foreign object (utensil, bottle cap, small bone) is caught between the grinding plate and chamber wall.' },
+      { symptom: 'Bad odor from disposal', meaning: 'Food residue stuck in the grinding chamber or splash guard. A thorough cleaning with ice and citrus usually resolves it.' },
+    ],
+    diagnosisSteps: [
+      { step: 1, title: 'Full Diagnostic Inspection', description: 'We test the motor, check for flywheel jams, inspect the mounting assembly, examine all drain connections, and evaluate the electrical switch and wiring.' },
+      { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Written estimate on the spot. For repairs, we carry splash guards, mounting hardware, and switch components. If replacement is needed, we offer same-day installation with quality InSinkErator and Waste King units.' },
+      { step: 3, title: 'Professional Repair & Verification', description: 'After repair, we test grinding performance, check for leaks at every connection, and verify the drain flows freely. Every repair is backed by our 180-day warranty.' },
+    ],
+  },
+};
+
+export default SERVICE_CONTENT;

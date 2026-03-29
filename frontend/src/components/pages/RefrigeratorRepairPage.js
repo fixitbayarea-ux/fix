@@ -40,36 +40,6 @@ const desktopServiceDescription = {
 };
 
 
-/* ═══ COMPARISON TABLE — Repair vs. Replacement ═══ */
-const comparisonTable = {
-  title: 'Refrigerator Repair vs. Replacement \u2014 How to Decide',
-  intro: 'Not every breakdown means you need a new refrigerator. Use this guide to make a cost-effective decision.',
-  rows: [
-    { situation: 'Age under 8 years', repair: true, replace: false, note: 'Most components are still within their expected lifespan \u2014 repair is almost always the better investment.' },
-    { situation: 'Repair cost under 50% of new fridge', repair: true, replace: false, note: 'If the repair bill stays under half the cost of a comparable new unit, repairing makes financial sense.' },
-    { situation: 'Compressor failure on 12+ year unit', repair: false, replace: true, note: 'Compressor replacement runs $600\u2013$900. On an aging unit, that money is better put toward a newer, more efficient model.' },
-    { situation: 'Cosmetic damage only', repair: true, replace: false, note: 'Dents, scratches, or a cracked handle don\'t affect performance. Keep the fridge and fix what matters.' },
-  ],
-};
-
-/* ═══ SYMPTOMS CHECKLIST ═══ */
-const symptomsChecklist = [
-  { symptom: 'Not cooling', meaning: 'Usually points to a faulty thermostat, failed compressor start relay, or dirty condenser coils restricting heat dissipation.' },
-  { symptom: 'Ice maker not working', meaning: 'Commonly caused by a frozen water supply line, defective inlet valve, or a faulty ice maker module that needs replacement.' },
-  { symptom: 'Water dispenser broken', meaning: 'Often traced to a clogged water filter past its replacement date or a failed dispenser control board.' },
-  { symptom: 'Loud clicking or humming', meaning: 'Typically indicates a compressor struggling to start, a failing start relay, or condenser fan motor bearings wearing out.' },
-  { symptom: 'Frost buildup inside', meaning: 'Signals a defrost system failure \u2014 the defrost heater, timer, or thermostat may need replacement.' },
-  { symptom: 'Leaking water on floor', meaning: 'Most often caused by a clogged defrost drain, cracked drain pan, or a loose water supply line connection.' },
-  { symptom: 'Compressor running constantly', meaning: 'The fridge is working overtime to compensate \u2014 usually due to worn door gaskets, low refrigerant, or a failing compressor.' },
-];
-
-/* ═══ DIAGNOSIS PROCESS ═══ */
-const diagnosisSteps = [
-  { step: 1, title: 'Full Diagnostic Inspection', description: 'Our technician tests every critical component \u2014 thermostat, compressor, evaporator fan, condenser coils, defrost system, and door seals. We use professional-grade multimeters and temperature probes to pinpoint the exact failure, not just the symptom.' },
-  { step: 2, title: 'Parts Sourcing & Transparent Quote', description: 'Once we identify the problem, you receive a written estimate on the spot. We stock common parts (thermostats, relays, fan motors, gaskets) on our truck for same-visit repair. Specialty parts for Sub-Zero, Viking, or Thermador are typically available next business day.' },
-  { step: 3, title: 'Professional Repair & Verification', description: 'We complete the repair, then run the refrigerator through a full test cycle \u2014 verifying temperature in both the fridge and freezer compartments, checking airflow, and confirming the compressor cycles correctly. Every repair is backed by our 180-day warranty.' },
-];
-
 /* Desktop version using the shared template */
 const refrigeratorServiceSchema = {
   "@context": "https://schema.org",
@@ -104,19 +74,9 @@ const DesktopRefrigeratorRepair = () => (
       serviceSchema={refrigeratorServiceSchema}
       heroImage="/images/technicians/fridge-tech.jpg"
       heroImageAlt="FixitBay technician next to a refrigerator in a Bay Area home"
-      repairVsReplace={{
-        title: "When to Repair vs. Replace Your Refrigerator",
-        intro: "Refrigerators are a major investment. Here's a practical guide based on what our Bay Area technicians see every day.",
-        items: [
-          { action: 'repair', condition: 'Under 10 years old with a single issue', recommendation: 'Most single-component failures (thermostat, door seal, ice maker, evaporator fan) cost $250–$650 to fix — far less than a $1,500+ replacement.' },
-          { action: 'repair', condition: 'Faulty door seal or gasket', recommendation: 'A worn gasket lets cold air escape and overworks the compressor. Replacing it is quick, affordable, and often solves temperature complaints.' },
-          { action: 'replace', condition: 'Compressor failure on a 12+ year unit', recommendation: 'Compressor replacement runs $600–$900. If the fridge is over 12 years old, that money is better put toward a new, more efficient model.' },
-          { action: 'replace', condition: 'Frequent breakdowns or multiple failing parts', recommendation: 'If you\'ve needed 2+ repairs in the past year, the cumulative cost usually exceeds half the price of a new unit. It\'s time to upgrade.' },
-        ]
-      }}
-      comparisonTable={comparisonTable}
-      symptomsChecklist={symptomsChecklist}
-      diagnosisSteps={diagnosisSteps}
+      comparisonTable={SERVICE_CONTENT.Refrigerator.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Refrigerator.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Refrigerator.diagnosisSteps}
       relatedLinks={[
         { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Frost buildup, not freezing, or temperature issues' },
         { href: '/ice-maker-repair', label: 'Ice Maker Repair', desc: 'No ice, leaking, or jammed dispenser' },
@@ -129,6 +89,7 @@ const DesktopRefrigeratorRepair = () => (
 /* ═══ MOBILE: Refrigerator Repair uses the shared MobileServiceLanding template ═══ */
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const mobileIssues = [
   { icon: '❄️', label: 'Not Cooling' },
@@ -163,16 +124,6 @@ const MobileRefrigeratorRepair = () => (
     techImageAlt="FixitBay technician next to a refrigerator in a Bay Area home"
     issues={mobileIssues}
     faqs={mobileFaqs}
-    repairVsReplace={{
-      title: "When to Repair vs. Replace Your Refrigerator",
-      intro: "Here's a practical guide based on what our Bay Area technicians see every day.",
-      items: [
-        { action: 'repair', condition: 'Under 10 years old with a single issue', recommendation: 'Most single-component failures cost $250–$650 to fix — far less than a $1,500+ replacement.' },
-        { action: 'repair', condition: 'Faulty door seal or gasket', recommendation: 'Replacing a worn gasket is quick, affordable, and often solves temperature complaints.' },
-        { action: 'replace', condition: 'Compressor failure on a 12+ year unit', recommendation: 'Compressor replacement runs $600–$900. On an old fridge, that money is better put toward a new model.' },
-        { action: 'replace', condition: 'Multiple failing parts or 2+ repairs/year', recommendation: 'Cumulative cost usually exceeds half the price of a new unit. Time to upgrade.' },
-      ]
-    }}
     relatedLinks={[
       { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Frost buildup or temperature issues' },
       { href: '/ice-maker-repair', label: 'Ice Maker Repair', desc: 'No ice, leaking, or jammed dispenser' },

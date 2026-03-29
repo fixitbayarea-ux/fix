@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { SERVICE_CITIES_SCHEMA } from '../../data/serviceCities';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const FreezerRepairPage = () => {
   const isMobile = useIsMobile();
@@ -110,16 +111,9 @@ const FreezerRepairPage = () => {
           <>Whether your freezer isn't freezing properly, has excessive frost buildup, or stopped running completely, we'll diagnose and fix it fast. We service standalone freezers, chest freezers, and built-in freezer units from Frigidaire, GE, Whirlpool, Kenmore, and more. Every freezer repair includes our <strong>180-day warranty</strong> on parts and labor.</>
         ]
       }}
-      repairVsReplace={{
-        title: "When to Repair vs. Replace Your Freezer",
-        intro: "A quick guide based on what we see every day in Bay Area homes.",
-        items: [
-          { action: 'repair', condition: 'Built-in or combo unit', recommendation: 'If the freezer section is part of your refrigerator or a built-in unit, replacement is not an option \u2014 repair is always the right call.' },
-          { action: 'repair', condition: 'Standalone freezer under 10 years old', recommendation: 'Single-component failures (thermostat, defrost heater, evaporator fan) typically cost $250\u2013$400 to fix \u2014 well below the $400\u2013$800 replacement cost of a comparable unit.' },
-          { action: 'replace', condition: 'Compressor failure on an old unit', recommendation: 'Compressor replacement on a 12+ year old chest or upright freezer rarely makes financial sense. A new unit may be the better investment.' },
-          { action: 'replace', condition: 'Multiple failures or unit over 15 years old', recommendation: 'If you\u2019ve had 2+ repairs in the past year or the unit is very old, cumulative costs often exceed the price of a new freezer.' },
-        ]
-      }}
+      comparisonTable={SERVICE_CONTENT.Freezer.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Freezer.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Freezer.diagnosisSteps}
       relatedLinks={[
         { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker issues' },
         { href: '/ice-maker-repair', label: 'Ice Maker Repair', desc: 'No ice, jammed dispenser, or leaking' },

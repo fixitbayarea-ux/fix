@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { SERVICE_CITIES_SCHEMA } from '../../data/serviceCities';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const DisposalRepairPage = () => {
   const isMobile = useIsMobile();
@@ -116,16 +117,9 @@ const DisposalRepairPage = () => {
           <>Whether your disposal won't turn on, makes grinding noises, or leaks under the sink, we'll fix it quickly. We service all major brands including InSinkErator, Waste King, Moen, and KitchenAid. Every garbage disposal repair and installation includes our <strong>180-day warranty</strong> on parts and labor for worry-free operation.</>
         ]
       }}
-      repairVsReplace={{
-        title: "When to Repair vs. Replace Your Garbage Disposal",
-        intro: "Garbage disposals are affordable appliances, but repair is often the smarter first step.",
-        items: [
-          { action: 'repair', condition: 'Jammed blades or humming but not spinning', recommendation: 'Most jams are cleared in 30 minutes for $150–$250. The motor is fine — the blades just need freeing.' },
-          { action: 'repair', condition: 'Leaking from the bottom flange', recommendation: 'A loose mount or worn gasket costs $90–$140 to fix. Much cheaper than a full replacement.' },
-          { action: 'replace', condition: 'Motor burned out or won\'t turn on', recommendation: 'Motor replacement costs nearly as much as a new disposal ($150–$250 installed). Upgrade to a quieter, more powerful model.' },
-          { action: 'replace', condition: 'Unit is 10+ years old with chronic jams', recommendation: 'Older disposals lose grinding power. A new 3/4 HP unit ($180–$300 installed) handles food waste better and runs quieter.' },
-        ]
-      }}
+      comparisonTable={SERVICE_CONTENT['Garbage Disposal'].comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT['Garbage Disposal'].symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT['Garbage Disposal'].diagnosisSteps}
       relatedLinks={[
         { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Often connected to the same drain line' },
         { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker issues' },

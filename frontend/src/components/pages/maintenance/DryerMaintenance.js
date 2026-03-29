@@ -108,16 +108,6 @@ const DryerMaintenance = () => {
           { interval: 'Every 2 years', title: 'Drum Seal & Belt Inspection', description: 'Worn seals and belts cause noisy operation and uneven drying. Replacing them proactively prevents mid-cycle breakdowns.' },
         ]
       }}
-      repairVsReplace={{
-        title: "Dryer Maintenance vs. Emergency Repair",
-        intro: "Dryer vent buildup is the #1 cause of home appliance fires. Preventive maintenance saves lives and money.",
-        items: [
-          { action: 'repair', condition: 'Annual vent cleaning and inspection', recommendation: 'Clogged dryer vents cause 15,000+ house fires yearly. A $60–$120 vent cleaning prevents catastrophe and cuts drying time.' },
-          { action: 'repair', condition: 'Drum belt and roller inspection', recommendation: 'Catching a worn belt ($80–$150 fix) prevents sudden failure that leaves you without a dryer for days.' },
-          { action: 'replace', condition: 'Dryer takes 2+ cycles to dry clothes', recommendation: 'If maintenance can\'t improve drying performance, the heating element or motor may be failing. Modern dryers are 20% more efficient.' },
-          { action: 'replace', condition: 'Gas dryer with igniter issues over 12 years old', recommendation: 'Repeated igniter failures on aging gas dryers ($150+ each) add up. Newer models heat faster and use less gas.' },
-        ]
-      }}
       relatedLinks={[
         { href: '/dryer-repair', label: 'Dryer Repair', desc: 'No heat, won\'t tumble, or making noise' },
         { href: '/maintenance/washer', label: 'Washer Maintenance', desc: 'Hose inspection and drum cleaning' },

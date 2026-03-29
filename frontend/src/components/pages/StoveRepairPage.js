@@ -2,6 +2,7 @@ import React from 'react';
 import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const StoveRepairPage = () => {
   const isMobile = useIsMobile();
@@ -86,16 +87,9 @@ const StoveRepairPage = () => {
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}
-      repairVsReplace={{
-        title: "When to Repair vs. Replace Your Stove",
-        intro: "Stoves are kitchen workhorses. Here's practical guidance from our Bay Area technicians.",
-        items: [
-          { action: 'repair', condition: 'Single burner not lighting or heating', recommendation: 'Igniter or element swap costs $100–$220 — quick fix that extends your stove\'s life for years.' },
-          { action: 'repair', condition: 'Gas smell when burner is off', recommendation: 'A faulty gas valve or loose connection is a safety issue but an affordable repair ($120–$250). Don\'t delay.' },
-          { action: 'replace', condition: 'Cracked cooktop surface', recommendation: 'Glass-ceramic cooktop replacement often costs $400–$700+. If the stove is 10+ years old, a new unit is usually a better investment.' },
-          { action: 'replace', condition: 'Repeated igniter/control failures', recommendation: 'If you\'ve had 3+ repairs in 2 years, ongoing costs will exceed half the price of a new, more efficient stove.' },
-        ]
-      }}
+      comparisonTable={SERVICE_CONTENT.Stove.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Stove.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Stove.diagnosisSteps}
       relatedLinks={[
         { href: '/range-repair', label: 'Range Repair', desc: 'Combined oven and cooktop range service' },
         { href: '/cooktop-repair', label: 'Cooktop Repair', desc: 'Electric, gas, or induction surface repair' },

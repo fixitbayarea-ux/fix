@@ -314,7 +314,7 @@ const ApplianceRepairPageNew = ({
   relatedServicesCategory = null, relatedServicesSubtitle = null,
   hideHero = false, noPaddingTop = false, cmsSlug = null, cityName = null,
   serviceSchema = null, noindex, heroImage = null, heroImageAlt = '', heroImagePosition = 'center 15%',
-  repairVsReplace = null, relatedLinks = null, hideHowItWorks = false, customH1 = null, heroDescription = null, maintenancePricing = null, maintenanceSchedule = null, pricingCityName = null, servingCity = null, comparisonTable = null, symptomsChecklist = null, diagnosisSteps = null, children
+  relatedLinks = null, hideHowItWorks = false, customH1 = null, heroDescription = null, maintenancePricing = null, maintenanceSchedule = null, pricingCityName = null, servingCity = null, comparisonTable = null, symptomsChecklist = null, diagnosisSteps = null, children
 }) => {
   const isMaintenance = breadcrumbCategoryHref === '/maintenance';
   const serviceWord = isMaintenance ? 'Maintenance' : 'Repair';
@@ -840,30 +840,6 @@ const ApplianceRepairPageNew = ({
 
       {/* ═══ CTA BANNER ═══ */}
       <CTABanner heading={`Need ${appliance.toLowerCase().includes(serviceWord.toLowerCase()) ? appliance : `${appliance} ${serviceWord}`} Today?`} testId="cta-banner" />
-
-      {/* ═══ REPAIR VS REPLACE ═══ */}
-      {repairVsReplace && (
-        <section style={{ background: '#F8F5F0', padding: '70px 0' }}>
-          <div style={{ maxWidth: 720, margin: '0 auto', padding: '0 24px' }}>
-            <div style={{ ...S.eyebrow, marginBottom: 10 }}>EXPERT ADVICE</div>
-            <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 12 }}>{repairVsReplace.title || 'Repair vs. Replace?'}</h2>
-            <p style={{ ...S.body, marginBottom: 28 }}>{repairVsReplace.intro}</p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-              {repairVsReplace.items.map((item, i) => (
-                <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start' }}>
-                  <div style={{ width: 24, height: 24, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2, background: item.action === 'repair' ? 'rgba(255,87,34,0.10)' : 'rgba(220,38,38,0.10)' }}>
-                    {item.action === 'repair' ? <Check size={14} style={{ color: '#FF5722' }} /> : <X size={14} style={{ color: '#DC2626' }} />}
-                  </div>
-                  <div>
-                    <div style={{ fontFamily: S.font, fontWeight: item.action === 'repair' ? 700 : 500, fontSize: 15, color: item.action === 'repair' ? '#0D1B2A' : '#4A5568' }}>{item.condition}</div>
-                    <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: '#4A5568', marginTop: 4 }}>{item.recommendation}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* ═══ COMPARISON TABLE ═══ */}
       {comparisonTable && (

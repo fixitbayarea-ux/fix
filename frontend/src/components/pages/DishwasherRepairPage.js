@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { SERVICE_CITIES_SCHEMA } from '../../data/serviceCities';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const DishwasherRepairPage = () => {
   const isMobile = useIsMobile();
@@ -88,17 +89,10 @@ const DishwasherRepairPage = () => {
           { icon: '🧊', label: 'Not Drying' },
         ]}
         faqs={faqData}
-        repairVsReplace={{
-          title: "Repair vs. Replace Your Dishwasher",
-          intro: "Dishwashers typically last 9–12 years. Here's how to decide.",
-          items: [
-            { action: 'repair', condition: 'Under 8 years old, won\'t drain or clean', recommendation: 'Clogged filters, bad drain pumps are affordable fixes ($150–$280).' },
-            { action: 'repair', condition: 'Door latch broken or seal leaking', recommendation: 'Gaskets and latches are inexpensive ($80–$180 installed).' },
-            { action: 'replace', condition: 'Motor or board failure on 10+ year unit', recommendation: '$300–$450 repair. A new model is more economical if aging.' },
-            { action: 'replace', condition: 'Cracked tub or inner drum corrosion', recommendation: 'Tub replacement is rarely cost-effective. Newer models save water too.' },
-          ]
-        }}
-        relatedLinks={[
+        comparisonTable={SERVICE_CONTENT.Dishwasher.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Dishwasher.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Dishwasher.diagnosisSteps}
+      relatedLinks={[
           { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker issues' },
           { href: '/oven-repair', label: 'Oven Repair', desc: 'Not heating or igniter problems' },
         ]}
@@ -126,16 +120,9 @@ const DishwasherRepairPage = () => {
           <><strong>Looking for dishwasher repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-dishwasher-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Dishwasher Repair</a> page for local details, neighborhood coverage, and availability.</>
         ]
       }}
-      repairVsReplace={{
-        title: "When to Repair vs. Replace Your Dishwasher",
-        intro: "Dishwashers typically last 9–12 years. Here's how to decide what makes sense for yours.",
-        items: [
-          { action: 'repair', condition: 'Under 8 years old and won\'t drain or clean properly', recommendation: 'Clogged filters, bad drain pumps, and blocked spray arms are common, affordable fixes ($150–$280). Your dishwasher has plenty of life left.' },
-          { action: 'repair', condition: 'Door latch broken or seal leaking', recommendation: 'Gaskets and latches are inexpensive parts ($80–$180 installed). A new seal often eliminates leaks completely.' },
-          { action: 'replace', condition: 'Motor or control board failure on a 10+ year unit', recommendation: 'These repairs run $300–$450. If the dishwasher is already showing its age with rust or multiple issues, a new model is more economical.' },
-          { action: 'replace', condition: 'Cracked tub or inner drum corrosion', recommendation: 'Tub replacement is rarely cost-effective. Newer dishwashers also use significantly less water and energy, saving money monthly.' },
-        ]
-      }}
+      comparisonTable={SERVICE_CONTENT.Dishwasher.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Dishwasher.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Dishwasher.diagnosisSteps}
       relatedLinks={[
         { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker issues' },
         { href: '/oven-repair', label: 'Oven Repair', desc: 'Not heating, temperature off, or igniter problems' },

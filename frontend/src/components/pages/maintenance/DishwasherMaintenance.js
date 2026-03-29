@@ -107,16 +107,6 @@ const DishwasherMaintenance = () => {
           { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician inspects pump operation, water inlet valve, heating element, spray arms, and runs a diagnostic cycle.' },
         ]
       }}
-      repairVsReplace={{
-        title: "Dishwasher Maintenance vs. Emergency Repair",
-        intro: "A well-maintained dishwasher lasts 12+ years and cleans better. Here's why regular service pays off.",
-        items: [
-          { action: 'repair', condition: 'Quarterly filter and spray arm cleaning', recommendation: 'Clogged filters reduce cleaning power and cause odors. A $60 maintenance visit restores full washing performance.' },
-          { action: 'repair', condition: 'Door seal inspection and cleaning', recommendation: 'Catching a worn gasket early ($70–$120 fix) prevents leaks that can damage kitchen cabinetry and flooring.' },
-          { action: 'replace', condition: 'Dishwasher leaves dishes dirty after maintenance', recommendation: 'If cleaning, descaling, and component checks don\'t improve results, the pump or motor may be failing. Modern units are quieter and more efficient.' },
-          { action: 'replace', condition: 'Tub or sump housing cracked', recommendation: 'Structural damage costs $300+ to repair on older units. A new dishwasher ($400–$700) gives you better features and a full warranty.' },
-        ]
-      }}
       relatedLinks={[
         { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or poor cleaning' },
         { href: '/maintenance/refrigerator', label: 'Fridge Maintenance', desc: 'Coil cleaning and seal inspection' },

@@ -2,6 +2,7 @@ import React from 'react';
 import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const WineRefrigeratorRepairPage = () => {
   const isMobile = useIsMobile();
@@ -103,17 +104,10 @@ const WineRefrigeratorRepairPage = () => {
           { icon: '💡', label: 'Light Out' },
         ]}
         faqs={faqData}
-        repairVsReplace={{
-          title: "Repair vs. Replace Your Wine Cooler",
-          intro: "Wine coolers protect an investment — your wine collection.",
-          items: [
-            { action: 'repair', condition: 'Temperature fluctuating but compressor runs', recommendation: 'Faulty thermostat or sensor costs $150–$250 to replace.' },
-            { action: 'repair', condition: 'Door seal worn or not closing properly', recommendation: 'New gasket $80–$150 installed — restores seal and humidity.' },
-            { action: 'replace', condition: 'Compressor failure on thermoelectric cooler', recommendation: 'Compact thermoelectric units ($200–$500 new). Repair may cost as much.' },
-            { action: 'repair', condition: 'Compressor failure on premium built-in', recommendation: 'High-end units cost $2,000–$8,000+. Compressor repair ($400–$800) is worth it.' },
-          ]
-        }}
-        relatedLinks={[
+        comparisonTable={SERVICE_CONTENT['Wine Cooler'].comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT['Wine Cooler'].symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT['Wine Cooler'].diagnosisSteps}
+      relatedLinks={[
           { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling or temperature issues' },
           { href: '/ice-maker-repair', label: 'Ice Maker Repair', desc: 'No ice or leaking' },
         ]}
@@ -142,16 +136,9 @@ const WineRefrigeratorRepairPage = () => {
           <><strong>Looking for wine cooler repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-wine-cooler-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Wine Cooler Repair</a> page for local details and availability.</>
         ]
       }}
-      repairVsReplace={{
-        title: "When to Repair vs. Replace Your Wine Cooler",
-        intro: "Wine coolers protect an investment — your wine collection. Here's how to make the right call.",
-        items: [
-          { action: 'repair', condition: 'Temperature fluctuating but compressor runs', recommendation: 'A faulty thermostat or temperature sensor ($150–$250 to replace) is the most common cause. Your compressor and cooling system are likely fine.' },
-          { action: 'repair', condition: 'Door seal worn or not closing properly', recommendation: 'A new gasket ($80–$150 installed) restores the seal, maintains humidity, and prevents the compressor from overworking.' },
-          { action: 'replace', condition: 'Compressor failure on a thermoelectric wine cooler', recommendation: 'Thermoelectric coolers are compact and affordable ($200–$500 new). Compressor repair may cost nearly as much as a replacement unit.' },
-          { action: 'repair', condition: 'Compressor failure on a premium built-in unit (Sub-Zero, EuroCave)', recommendation: 'High-end wine refrigerators cost $2,000–$8,000+ new. Compressor replacement ($400–$800) is almost always worth it to protect a premium unit and your wine collection.' },
-        ]
-      }}
+      comparisonTable={SERVICE_CONTENT['Wine Cooler'].comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT['Wine Cooler'].symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT['Wine Cooler'].diagnosisSteps}
       relatedLinks={[
         { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or temperature issues' },
         { href: '/ice-maker-repair', label: 'Ice Maker Repair', desc: 'No ice, leaking, or jammed dispenser' },

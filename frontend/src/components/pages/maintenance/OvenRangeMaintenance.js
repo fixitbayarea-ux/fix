@@ -104,16 +104,6 @@ const OvenRangeMaintenance = () => {
           { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician tests all burners/elements, calibrates temperature, inspects gas connections, cleans the convection fan, and checks safety controls.' },
         ]
       }}
-      repairVsReplace={{
-        title: "Oven Maintenance vs. Emergency Repair",
-        intro: "Regular oven maintenance ensures safe cooking and accurate temperatures.",
-        items: [
-          { action: 'repair', condition: 'Annual calibration and safety check', recommendation: 'Oven temperatures drift 25–50°F over time. A $60 calibration visit restores precision and catches gas leaks early.' },
-          { action: 'repair', condition: 'Door hinge and seal inspection', recommendation: 'A loose door or worn seal wastes energy and causes uneven cooking. Fixing early ($80–$150) prevents bigger issues.' },
-          { action: 'replace', condition: 'Gas oven with persistent ignition problems', recommendation: 'If maintenance reveals a cracked igniter, warped burner, and worn valves together, cumulative repair costs exceed replacement value.' },
-          { action: 'replace', condition: 'Oven is 15+ years with poor temperature accuracy', recommendation: 'Modern ovens heat faster, cook more evenly, and use less energy. Self-cleaning and convection features add real cooking value.' },
-        ]
-      }}
       relatedLinks={[
         { href: '/oven-repair', label: 'Oven Repair', desc: 'Not heating, uneven temperature, timer issues' },
         { href: '/range-repair', label: 'Range Repair', desc: 'Combined oven and cooktop service' },

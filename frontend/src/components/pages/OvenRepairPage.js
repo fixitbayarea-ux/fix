@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { SERVICE_CITIES_SCHEMA } from '../../data/serviceCities';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const OvenRepairPage = () => {
   const isMobile = useIsMobile();
@@ -87,17 +88,10 @@ const OvenRepairPage = () => {
           { icon: '🔊', label: 'Strange Noise' },
         ]}
         faqs={faqData}
-        repairVsReplace={{
-          title: "Repair vs. Replace Your Oven",
-          intro: "Ovens are built to last 15–20 years, so repair is often the smart call.",
-          items: [
-            { action: 'repair', condition: 'Not heating or temperature is off', recommendation: 'Igniters, heating elements cost $150–$300 to replace and restore full function.' },
-            { action: 'repair', condition: 'Gas oven clicks but won\'t light', recommendation: 'Weak igniter — quick $150–$220 replacement eliminates safety concern.' },
-            { action: 'replace', condition: 'Board + multiple parts failing on 15+ year unit', recommendation: 'Total repair cost may exceed half the price of a new range.' },
-            { action: 'repair', condition: 'Self-clean cycle stopped working', recommendation: 'Door lock mechanism or thermal fuse — affordable fix.' },
-          ]
-        }}
-        relatedLinks={[
+        comparisonTable={SERVICE_CONTENT.Oven.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Oven.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Oven.diagnosisSteps}
+      relatedLinks={[
           { href: '/cooktop-repair', label: 'Cooktop Repair', desc: 'Gas, electric, induction issues' },
           { href: '/range-repair', label: 'Range Repair', desc: 'Combined oven and stovetop' },
           { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining or leaking' },
@@ -126,16 +120,9 @@ const OvenRepairPage = () => {
           <><strong>Looking for oven repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-oven-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Oven Repair</a> page for local details and availability.</>
         ]
       }}
-      repairVsReplace={{
-        title: "When to Repair vs. Replace Your Oven",
-        intro: "Ovens and ranges are built to last 15–20 years, so repair is often the smart call. Here's our guide.",
-        items: [
-          { action: 'repair', condition: 'Oven not heating or temperature is inaccurate', recommendation: 'Igniters, heating elements, and temperature sensors are the most common failures. These parts cost $150–$300 to replace and restore full function.' },
-          { action: 'repair', condition: 'Gas oven clicks but won\'t light', recommendation: 'A weak igniter is the #1 cause. Replacement is quick ($150–$220) and eliminates the safety concern of unburned gas.' },
-          { action: 'replace', condition: 'Control board and multiple components failing on 15+ year unit', recommendation: 'If the control board ($300–$500) is just one of several failing parts, the total repair cost may exceed half the price of a new range.' },
-          { action: 'repair', condition: 'Self-clean cycle stopped working', recommendation: 'Usually a door lock mechanism or thermal fuse issue — both affordable fixes that don\'t affect the oven\'s core cooking ability.' },
-        ]
-      }}
+      comparisonTable={SERVICE_CONTENT.Oven.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Oven.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Oven.diagnosisSteps}
       relatedLinks={[
         { href: '/cooktop-repair', label: 'Cooktop Repair', desc: 'Gas, electric, and induction cooktop issues' },
         { href: '/range-repair', label: 'Range Repair', desc: 'Combined oven and stovetop repair' },

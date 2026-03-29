@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { SERVICE_CITIES_SCHEMA } from '../../data/serviceCities';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const DryerRepairPage = () => {
   const isMobile = useIsMobile();
@@ -90,17 +91,10 @@ const DryerRepairPage = () => {
           { icon: '🔧', label: 'Won\'t Tumble' },
         ]}
         faqs={faqData}
-        repairVsReplace={{
-          title: "Repair vs. Replace Your Dryer",
-          intro: "Dryers are built to last, but every machine has limits.",
-          items: [
-            { action: 'repair', condition: 'Under 10 years old with a heating issue', recommendation: 'Heating elements, thermal fuses cost $150–$250 to replace. Several more years of use.' },
-            { action: 'repair', condition: 'Loud thumping or squealing noises', recommendation: 'Worn drum rollers or frayed belt — affordable $120–$200 fix.' },
-            { action: 'replace', condition: 'Motor failure on a 12+ year old dryer', recommendation: 'Motor replacement costs $300–$500. A new energy-efficient model makes more sense.' },
-            { action: 'repair', condition: 'Takes forever to dry clothes', recommendation: 'Usually a clogged vent or weak heating element — both repairable.' },
-          ]
-        }}
-        relatedLinks={[
+        comparisonTable={SERVICE_CONTENT.Dryer.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Dryer.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Dryer.diagnosisSteps}
+      relatedLinks={[
           { href: '/washer-repair', label: 'Washer Repair', desc: 'Not spinning, draining, or filling' },
           { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling or leaking' },
         ]}
@@ -130,17 +124,10 @@ const DryerRepairPage = () => {
             <><strong>Looking for dryer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-dryer-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Dryer Repair</a> page for local details and availability.</>
           ]
         }}
-        repairVsReplace={{
-          title: "When to Repair vs. Replace Your Dryer",
-          intro: "Dryers are built to last, but every machine has limits. Here's how our technicians help Bay Area homeowners decide.",
-          items: [
-            { action: 'repair', condition: 'Dryer under 10 years old with a heating issue', recommendation: 'Heating elements, thermal fuses, and thermostats are the most common failures. These parts cost $250–$350 to replace and your dryer should run for several more years.' },
-            { action: 'repair', condition: 'Loud thumping or squealing noises', recommendation: 'Worn drum rollers, a frayed belt, or a failing idler pulley are affordable fixes ($120–$200). Ignoring them risks damaging the drum or motor.' },
-            { action: 'replace', condition: 'Motor failure on a 12+ year old dryer', recommendation: 'Motor replacement costs $300–$500. If the dryer is nearing end-of-life, investing in a new energy-efficient model makes more sense long-term.' },
-            { action: 'repair', condition: 'Dryer takes forever to dry clothes', recommendation: 'This is usually a clogged vent or a weak heating element — both repairable. Clearing the vent also reduces fire risk, which is critical in SF\'s dense housing.' },
-          ]
-        }}
-        relatedLinks={[
+        comparisonTable={SERVICE_CONTENT.Dryer.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Dryer.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Dryer.diagnosisSteps}
+      relatedLinks={[
           { href: '/washer-repair', label: 'Washer Repair', desc: 'Not spinning, draining, or filling properly' },
           { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker issues' },
           { href: '/oven-repair', label: 'Oven Repair', desc: 'Not heating, temperature problems, or igniter issues' },

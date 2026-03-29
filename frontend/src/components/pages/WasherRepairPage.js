@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { SERVICE_CITIES_SCHEMA } from '../../data/serviceCities';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const WasherRepairPage = () => {
   const isMobile = useIsMobile();
@@ -92,17 +93,10 @@ const WasherRepairPage = () => {
           { icon: '📳', label: 'Shaking' },
         ]}
         faqs={faqData}
-        repairVsReplace={{
-          title: "Repair vs. Replace Your Washing Machine",
-          intro: "A breakdown doesn't always mean you need a new washer.",
-          items: [
-            { action: 'repair', condition: 'Under 8 years old with a mechanical issue', recommendation: 'Door latches, drain pumps, belts cost $150–$280. Your washer has plenty of life left.' },
-            { action: 'repair', condition: 'Shakes violently or walks across the floor', recommendation: 'Worn shock absorbers or unbalanced drum — repairable, not replacement-worthy.' },
-            { action: 'replace', condition: 'Transmission failure on 10+ year unit', recommendation: '$400–$600 repair. A new water-efficient washer is more cost-effective.' },
-            { action: 'replace', condition: 'Rust in the drum or persistent mold', recommendation: 'Inner drum corrosion makes repair cost approach replacement cost.' },
-          ]
-        }}
-        relatedLinks={[
+        comparisonTable={SERVICE_CONTENT.Washer.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Washer.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Washer.diagnosisSteps}
+      relatedLinks={[
           { href: '/dryer-repair', label: 'Dryer Repair', desc: 'Not heating, loud noises, or won\'t start' },
           { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining or dishes still dirty' },
         ]}
@@ -131,16 +125,9 @@ const WasherRepairPage = () => {
           <><strong>Looking for washer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-washer-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Washer Repair</a> page for local details and availability.</>
         ]
       }}
-      repairVsReplace={{
-        title: "When to Repair vs. Replace Your Washing Machine",
-        intro: "A washer breakdown doesn't always mean you need a new one. Here's what our Bay Area technicians recommend.",
-        items: [
-          { action: 'repair', condition: 'Under 8 years old with a single mechanical issue', recommendation: 'Door latches, drain pumps, belts, and water inlet valves are straightforward fixes ($150–$280). These repairs extend your washer\'s life by several years.' },
-          { action: 'repair', condition: 'Washer shakes violently or walks across the floor', recommendation: 'This is usually a leveling issue, worn shock absorbers, or an unbalanced drum — all repairable without replacing the whole machine.' },
-          { action: 'replace', condition: 'Transmission or main bearing failure on 10+ year unit', recommendation: 'These repairs cost $400–$600. On an older machine, it\'s more cost-effective to put that toward a new, water-efficient washer.' },
-          { action: 'replace', condition: 'Rust in the drum or persistent mold/odor', recommendation: 'If the inner drum is corroded or mold has penetrated the outer tub, the repair cost approaches replacement cost. A new washer is the healthier choice.' },
-        ]
-      }}
+      comparisonTable={SERVICE_CONTENT.Washer.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Washer.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Washer.diagnosisSteps}
       relatedLinks={[
         { href: '/dryer-repair', label: 'Dryer Repair', desc: 'Not heating, loud noises, or won\'t start' },
         { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or dishes still dirty' },

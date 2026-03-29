@@ -108,16 +108,6 @@ const WasherMaintenance = () => {
           { interval: 'Annually', title: 'Full Maintenance Check', description: 'Our technician inspects drum bearings, drain pump, inlet valves, belt tension, and leveling for optimal performance.' },
         ]
       }}
-      repairVsReplace={{
-        title: "Maintenance vs. Emergency Washer Repair",
-        intro: "Regular washer maintenance prevents costly water damage and extends machine life.",
-        items: [
-          { action: 'repair', condition: 'Annual hose and connection inspection', recommendation: 'Burst washer hoses cause $5,000+ in water damage. A $60 maintenance check catches weak hoses before they fail.' },
-          { action: 'repair', condition: 'Drum cleaning and gasket check', recommendation: 'Mold buildup and worn seals cause odors and leaks. Preventive cleaning extends gasket life by 3–5 years.' },
-          { action: 'replace', condition: 'Washer is 10+ years old and vibrates heavily', recommendation: 'Worn bearings and suspension cost $300–$500 to replace. Modern HE washers use 50% less water and energy.' },
-          { action: 'replace', condition: 'Transmission or motor failure', recommendation: 'These $400+ repairs approach half the cost of a new washer. Upgrade for better efficiency and a full warranty.' },
-        ]
-      }}
       relatedLinks={[
         { href: '/washer-repair', label: 'Washer Repair', desc: 'Emergency washer breakdowns and leaks' },
         { href: '/maintenance/dryer', label: 'Dryer Maintenance', desc: 'Vent cleaning and heating element check' },

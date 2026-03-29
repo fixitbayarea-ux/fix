@@ -101,16 +101,6 @@ const ResidentialApplianceRepairPage = () => {
           <>Whether your refrigerator stopped cooling, your washer won't drain, your dishwasher is leaking, or your dryer won't heat, we'll diagnose and fix it properly. We service all appliance brands from budget-friendly models to luxury brands like Sub-Zero, Wolf, Viking, Bosch, and Miele. We work with homeowners, renters, and landlords throughout the Bay Area. Every residential appliance repair includes our <strong>180-day parts and labor warranty</strong> for complete peace of mind.</>
         ]
       }}
-      repairVsReplace={{
-        title: "When to Repair vs. Replace Home Appliances",
-        intro: "Smart guidance from our Bay Area technicians on your home appliances.",
-        items: [
-          { action: 'repair', condition: 'Appliance under 8 years with one issue', recommendation: 'Single-component failures (pump, motor, thermostat) typically cost $250–$450. That\'s 15–25% of replacement cost.' },
-          { action: 'repair', condition: 'High-end or premium brand appliance', recommendation: 'Sub-Zero, Viking, Wolf, and Miele appliances are built to last 20+ years. Repair almost always makes sense.' },
-          { action: 'replace', condition: 'Budget appliance with major failure after 8+ years', recommendation: 'When repair costs exceed 50% of a new unit, upgrading gives you better efficiency, features, and a full warranty.' },
-          { action: 'replace', condition: 'Frequent breakdowns across the household', recommendation: 'If multiple appliances are failing, consider a phased upgrade plan. Our technicians can help prioritize.' },
-        ]
-      }}
       relatedLinks={[
         { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker problems' },
         { href: '/washer-repair', label: 'Washer Repair', desc: 'Won\'t drain, spin, or agitate properly' },

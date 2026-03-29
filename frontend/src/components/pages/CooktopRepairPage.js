@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../templates/MobileServiceLanding';
 import { useIsMobile } from '../../hooks/useIsMobile';
 import { SERVICE_CITIES_SCHEMA } from '../../data/serviceCities';
+import SERVICE_CONTENT from '../../data/serviceContentData';
 
 const CooktopRepairPage = () => {
   const isMobile = useIsMobile();
@@ -87,17 +88,10 @@ const CooktopRepairPage = () => {
           { icon: '🔊', label: 'Clicking' },
         ]}
         faqs={faqData}
-        repairVsReplace={{
-          title: "Repair vs. Replace Your Cooktop",
-          intro: "Cooktops are simpler than full ranges, so repairs are often straightforward.",
-          items: [
-            { action: 'repair', condition: 'Gas burner won\'t ignite or weak flame', recommendation: 'Igniter and valve replacements cost $250–$350. Most common cooktop repair.' },
-            { action: 'repair', condition: 'One electric element not heating', recommendation: 'Individual element replacement runs $140–$200.' },
-            { action: 'replace', condition: 'Cracked glass on older smooth-top model', recommendation: 'Glass replacement costs $300–$600, near the price of a new cooktop.' },
-            { action: 'repair', condition: 'Induction cooktop shows error codes', recommendation: 'Board or sensor issues $200–$400. Induction cooktops are expensive to replace.' },
-          ]
-        }}
-        relatedLinks={[
+        comparisonTable={SERVICE_CONTENT.Cooktop.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Cooktop.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Cooktop.diagnosisSteps}
+      relatedLinks={[
           { href: '/oven-repair', label: 'Oven Repair', desc: 'Not heating or temperature problems' },
           { href: '/range-repair', label: 'Range Repair', desc: 'Combined oven and stovetop' },
         ]}
@@ -123,16 +117,9 @@ const CooktopRepairPage = () => {
           <>Whether your cooktop burners won't ignite, electric elements don't heat, or you smell gas, we'll diagnose and repair it safely. We service all cooktop types including professional-grade models from Wolf, Viking, Thermador, and Bosch. Every cooktop repair is backed by our <strong>180-day warranty</strong> on parts and labor.</>
         ]
       }}
-      repairVsReplace={{
-        title: "When to Repair vs. Replace Your Cooktop",
-        intro: "Cooktops are simpler than full ranges, so repairs are often straightforward. Here's when each option makes sense.",
-        items: [
-          { action: 'repair', condition: 'Gas burner won\'t ignite or has a weak flame', recommendation: 'Igniter and valve replacements cost $150–$250 and restore full function. This is the most common cooktop repair we do in San Francisco.' },
-          { action: 'repair', condition: 'Electric element not heating on one burner', recommendation: 'Individual element replacement runs $140–$200. The rest of your cooktop is likely in good shape.' },
-          { action: 'replace', condition: 'Cracked glass top on an older smooth-top model', recommendation: 'Glass replacement costs $300–$600, approaching the price of a new cooktop. If the unit is 10+ years old, replacement is often better value.' },
-          { action: 'repair', condition: 'Induction cooktop shows error codes', recommendation: 'Control board or sensor issues ($200–$400) are repairable. Induction cooktops are expensive to replace, making repair the better option in most cases.' },
-        ]
-      }}
+      comparisonTable={SERVICE_CONTENT.Cooktop.comparisonTable}
+      symptomsChecklist={SERVICE_CONTENT.Cooktop.symptomsChecklist}
+      diagnosisSteps={SERVICE_CONTENT.Cooktop.diagnosisSteps}
       relatedLinks={[
         { href: '/oven-repair', label: 'Oven Repair', desc: 'Not heating, temperature problems, or igniter issues' },
         { href: '/range-repair', label: 'Range Repair', desc: 'Combined oven and stovetop repair' },

@@ -148,16 +148,6 @@ const RefrigeratorMaintenance = () => {
           { interval: 'Every 2\u20133 years', title: 'Drain Pan & Drain Line Cleaning', description: 'Prevents mold growth and drainage issues. Especially important in humid climates.' },
         ]
       }}
-      repairVsReplace={{
-        title: "Maintenance vs. Emergency Repair",
-        intro: "Preventive maintenance saves money and prevents food spoilage. Here's why it matters.",
-        items: [
-          { action: 'repair', condition: 'Annual coil cleaning and inspection', recommendation: 'A $60 maintenance visit prevents $200–$500 emergency repairs. Clean condenser coils cut energy use by 15%.' },
-          { action: 'repair', condition: 'Door seals showing wear', recommendation: 'Replacing a worn gasket ($80–$150) prevents the compressor from overworking and failing prematurely.' },
-          { action: 'replace', condition: 'Refrigerator is 15+ years old', recommendation: 'Modern refrigerators use 40% less energy. If maintenance reveals chronic issues, upgrading saves long-term.' },
-          { action: 'replace', condition: 'Compressor runs constantly', recommendation: 'If maintenance can\'t improve efficiency, the sealed system may be failing. Replacement is often more cost-effective.' },
-        ]
-      }}
       relatedLinks={[
         { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Emergency cooling failures and leaks' },
         { href: '/maintenance/dishwasher', label: 'Dishwasher Maintenance', desc: 'Filter cleaning and spray arm service' },
