@@ -9,7 +9,7 @@ const HousingTypes = ({ cityName, housingTypes, testId = 'housing' }) => {
       <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px' }}>
         <div className="eyebrow">LOCAL EXPERTISE</div>
         <h2 style={{ fontFamily: F, fontWeight: 800, color: '#FFFFFF', marginTop: 10, marginBottom: 28 }}>We Know {cityName} Homes</h2>
-        <div className="grid md:grid-cols-2" style={{ gap: 16 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 16 }}>
           {housingTypes.map((h, i) => (
             <div key={i} style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 4, padding: 24, transition: 'border-color 0.2s' }}
               onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(255,87,34,0.40)'}

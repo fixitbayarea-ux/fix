@@ -48,7 +48,8 @@ const cityLocalData = {
       { type: '1950s-60s Tract Homes', desc: 'Original appliance hookups and compact laundry rooms. We update connections and work in tight utility spaces daily.', areas: 'Westlake, St. Francis Heights' },
       { type: 'Condos & Townhomes', desc: 'HOA-managed buildings with shared utilities. We coordinate with management and follow building access protocols.', areas: 'Serramonte, near BART stations' },
       { type: 'Hillside Single-Family', desc: 'Older homes on steep lots with unique plumbing and venting challenges from the hilly terrain.', areas: 'Top of the Hill, Crocker' },
-    ],
+          { type: 'Fast Local Response', desc: 'Close freeway access via 280, 101 and BART proximity means our technician reaches most Daly City addresses within 30 minutes of departure.', areas: 'All Daly City neighborhoods' },
+],
     caseStudies: [
       { appliance: 'LG Dryer', neighborhood: 'Westlake', issue: 'Extended dry cycles caused by moisture-clogged vent; cleaned vent run and replaced thermal fuse.', timeframe: '90-minute repair' },
       { appliance: 'GE Refrigerator', neighborhood: 'Serramonte', issue: 'Door gasket failing from humidity causing condensation inside; replaced gasket and adjusted door alignment.', timeframe: 'Fast repair' },
@@ -79,7 +80,9 @@ const cityLocalData = {
     housingTypes: [
       { type: 'Post-War Single-Family Homes', desc: 'Classic 1950s homes with older plumbing and electrical. We handle appliance upgrades and infrastructure compatibility.', areas: 'Westborough, Sunshine Gardens, Sign Hill' },
       { type: 'Modern Condos & Apartments', desc: 'Newer builds with smart appliances near the biotech corridor. We stock Samsung, LG Wi-Fi module parts.', areas: 'Oyster Point, Lindenville, near BART' },
-    ],
+          { type: 'Industrial & Live-Work', desc: 'Mixed-use spaces near biotech hubs with commercial-grade appliances requiring specialized repair expertise.', areas: 'Oyster Point, Lindenville' },
+      { type: 'Fast Local Response', desc: 'Central 101 corridor location means same-day service for most South SF addresses. We stock common parts for quick turnaround.', areas: 'All SSF neighborhoods' },
+],
     caseStudies: [
       { appliance: 'Samsung Smart Fridge', neighborhood: 'Oyster Point', issue: 'Wi-Fi module and ice maker failure in a new-build condo; replaced both components and reconnected smart features.', timeframe: 'Fast repair' },
       { appliance: 'Maytag Washer', neighborhood: 'Westborough', issue: 'Bearing failure causing loud spinning noise; replaced bearing kit and tub seal in older home.', timeframe: '2-hour repair' },
@@ -109,7 +112,9 @@ const cityLocalData = {
     housingTypes: [
       { type: 'Mid-Century Ranch Homes', desc: 'Classic ranches with original layouts. We navigate older electrical panels and recommend surge protection near SFO.', areas: 'Crestmoor, Rollingwood, Belle Air' },
       { type: 'Newer Townhomes & Condos', desc: 'Modern units near shopping with compact laundry closets and integrated kitchen designs.', areas: 'Near Tanforan, Bayhill, Downtown' },
-    ],
+          { type: 'Mid-Century Ranches', desc: 'Single-story homes with original cabinetry and tight under-counter spaces. We specialize in fitting modern appliances into vintage layouts.', areas: 'Crestmoor, Bayhill' },
+      { type: 'Fast Local Response', desc: 'Near SFO and 101/280 interchange gives us rapid access. Most San Bruno repairs start within 30 minutes of dispatch.', areas: 'All San Bruno neighborhoods' },
+],
     caseStudies: [
       { appliance: 'Frigidaire Refrigerator', neighborhood: 'Crestmoor', issue: 'Evaporator fan motor failure from power surge; replaced motor and installed surge protection recommendation.', timeframe: 'Fast repair' },
       { appliance: 'LG Washer', neighborhood: 'Mills Park', issue: 'Front-loader door lock mechanism jammed; replaced door latch assembly in tight laundry closet.', timeframe: '1-hour repair' },
@@ -139,7 +144,9 @@ const cityLocalData = {
     housingTypes: [
       { type: 'Beach Bungalows', desc: 'Coastal homes with severe salt air exposure. We use marine-grade sealant on connections and recommend corrosion prevention.', areas: 'Linda Mar, Rockaway Beach, Pedro Point' },
       { type: '1960s-70s Ranch Homes', desc: 'Older homes with aging dryer vents and outdated electrical. We update hookups and clear moisture-clogged vent runs.', areas: 'Sharp Park, Vallemar, Park Pacifica' },
-    ],
+          { type: 'Coastal Properties', desc: 'Oceanfront homes face extreme salt air and humidity that accelerate appliance wear. We carry marine-grade seals and anti-corrosion parts.', areas: 'Rockaway Beach, Pedro Point' },
+      { type: 'Fast Local Response', desc: 'Highway 1 and 280 access keeps our response times short. We stock extra seals and gaskets knowing Pacifica\'s coastal climate demands them.', areas: 'All Pacifica neighborhoods' },
+],
     caseStudies: [
       { appliance: 'Whirlpool Dryer', neighborhood: 'Linda Mar', issue: 'Salt air corroded heating element connections; cleaned contacts, replaced element, sealed connections against moisture.', timeframe: '2-hour repair' },
       { appliance: 'Viking Range', neighborhood: 'Rockaway Beach', issue: 'Coastal moisture caused gas valve sticking; cleaned and lubricated gas valve assembly, tested all burners.', timeframe: 'Fast repair' },
@@ -170,7 +177,8 @@ const cityLocalData = {
       { type: 'Ranch-Style Homes', desc: 'Classic Millbrae ranches with spacious kitchens. Common appliance layouts make for efficient repair visits.', areas: 'Meadows, Central Millbrae, Green Hills' },
       { type: 'Luxury Estates', desc: 'High-end homes with premium Thermador, Sub-Zero, and Wolf appliances. We carry factory parts for these brands.', areas: 'Mills Estate, Millbrae Highlands' },
       { type: 'Transit-Area Condos', desc: 'Modern units near BART/Caltrain with compact layouts. We schedule around commuter hours.', areas: 'Near Millbrae Station' },
-    ],
+          { type: 'Fast Local Response', desc: 'BART and Caltrain hub makes Millbrae one of our fastest-to-reach cities. Same-day service is standard for most requests.', areas: 'All Millbrae neighborhoods' },
+],
     caseStudies: [
       { appliance: 'Thermador Range', neighborhood: 'Mills Estate', issue: 'Dual-fuel range oven not reaching temperature; replaced igniter and recalibrated thermostat in luxury kitchen.', timeframe: 'Fast repair' },
       { appliance: 'Bosch Washer', neighborhood: 'Meadows', issue: 'Error code E27 — drain pump failure; replaced pump and cleaned filter trap.', timeframe: '1-hour repair' },
@@ -199,7 +207,9 @@ const cityLocalData = {
     housingTypes: [
       { type: 'Modern Condos & Townhomes', desc: 'Newer construction with compact laundry and kitchen layouts. We navigate shared walls and stacked appliances.', areas: 'Sterling Park, Village in the Park' },
       { type: 'Compact Residential Homes', desc: 'Small-footprint homes near BART. Efficient appliance placement requires experienced technicians for access.', areas: 'Downtown Colma' },
-    ],
+          { type: 'New Development Condos', desc: 'Modern appliance packages in newer construction. We handle warranty-adjacent repairs and know the common issues with builder-grade installs.', areas: 'Sterling Park, Collins Park' },
+      { type: 'Fast Local Response', desc: 'Small city footprint means every Colma address is within 10 minutes of our arrival point. Quick service, minimal wait.', areas: 'All Colma neighborhoods' },
+],
     caseStudies: [
       { appliance: 'Samsung Washer', neighborhood: 'Sterling Park', issue: 'Front-loader vibrating on spin cycle in condo; rebalanced drum, replaced worn spider arm bracket.', timeframe: '90-minute repair' },
       { appliance: 'GE Dishwasher', neighborhood: 'Village in the Park', issue: 'Not cleaning dishes — clogged wash impeller from hard water; descaled and replaced impeller.', timeframe: '1-hour repair' },
@@ -229,7 +239,9 @@ const cityLocalData = {
     housingTypes: [
       { type: 'Hillside Single-Family Homes', desc: 'Homes on steep lots with unusual appliance placements and long vent runs. We plan access for every visit.', areas: 'Brisbane Acres, Central Brisbane' },
       { type: 'Newer Developments', desc: 'Modern homes near the waterfront with standard appliance layouts and updated electrical.', areas: 'Sierra Point' },
-    ],
+          { type: 'Hillside Cottages', desc: 'Unique small-lot homes on steep terrain with creative appliance placements. We\'re experienced with tight access and non-standard hookups.', areas: 'Crocker Industrial, Brisbane Village' },
+      { type: 'Fast Local Response', desc: 'Just off 101, Brisbane is one of our closest service areas. Most calls are answered same-day with parts in stock.', areas: 'All Brisbane neighborhoods' },
+],
     caseStudies: [
       { appliance: 'Maytag Dryer', neighborhood: 'Brisbane Acres', issue: 'Dryer in hillside garage with long vent run; cleared lint blockage, shortened vent path for better airflow.', timeframe: '2-hour repair' },
       { appliance: 'KitchenAid Refrigerator', neighborhood: 'Central Brisbane', issue: 'Condenser fan motor seized; replaced motor and cleaned coils in tight kitchen alcove.', timeframe: '1-hour repair' },
@@ -259,7 +271,9 @@ const cityLocalData = {
     housingTypes: [
       { type: 'Coastal Single-Family Homes', desc: 'Ocean-adjacent homes facing severe salt air corrosion. We seal electrical connections and use anti-corrosion treatments.', areas: 'Montara, Moss Beach border' },
       { type: 'Rural Properties', desc: 'Larger lots along Highway 1 with well water and unique infrastructure. We come fully stocked to avoid return trips.', areas: 'Chart House area' },
-    ],
+          { type: 'Rural Coastal Homes', desc: 'Larger lots with well water and septic systems that affect dishwasher and washer performance. We adjust settings for local water conditions.', areas: 'Montara, Moss Beach' },
+      { type: 'Fast Local Response', desc: 'Highway 1 coastal route from our base. We combine Montara visits with nearby Pacifica for same-day availability.', areas: 'All Montara area' },
+],
     caseStudies: [
       { appliance: 'Viking Refrigerator', neighborhood: 'Montara', issue: 'Salt corrosion on condenser coils in ocean-front home; deep-cleaned coils, replaced corroded fan relay.', timeframe: 'Fast repair' },
       { appliance: 'GE Dryer', neighborhood: 'Moss Beach border', issue: 'Moisture from ocean air caused thermal fuse failure; replaced fuse, sealed vent exit against saltwater spray.', timeframe: '90-minute repair' },
@@ -289,7 +303,8 @@ const cityLocalData = {
       { type: 'Luxury Canyon Estates', desc: 'High-end homes surrounded by redwoods. Rodent damage to wiring is common — we check all connections on every visit.', areas: 'Blithedale Canyon, Tamalpais Valley' },
       { type: 'Downtown Homes & Condos', desc: 'Walkable downtown area with charming homes. Easy access but often tight kitchens in older builds.', areas: 'Downtown Mill Valley, Strawberry' },
       { type: 'Hillside Properties', desc: 'Homes with panoramic views but challenging access. We plan routes for larger replacement parts.', areas: 'Alto, Homestead Valley' },
-    ],
+          { type: 'Fast Local Response', desc: 'Just across the Golden Gate, Mill Valley is one of our primary Marin service areas. Same-day service is our standard here.', areas: 'All Mill Valley neighborhoods' },
+],
     caseStudies: [
       { appliance: 'Wolf Range', neighborhood: 'Blithedale Canyon', issue: 'Rodent-chewed igniter wiring in canyon home; replaced wiring harness, sealed entry points, tested all burners.', timeframe: '2-hour repair' },
       { appliance: 'Miele Dishwasher', neighborhood: 'Downtown Mill Valley', issue: 'Circulation pump motor failure; sourced factory Miele part and completed precision repair.', timeframe: 'Next-day repair (part sourcing)' },
@@ -352,7 +367,8 @@ const cityLocalData = {
       { type: 'Hillside Homes', desc: 'Homes with bay views on steep terrain. Limited access requires compact tools and planned routes for parts delivery.', areas: 'Spring Street, Caledonia Street' },
       { type: 'Houseboats', desc: 'Floating homes with marine humidity challenges. We use marine-grade sealants and understand the unique electrical systems.', areas: 'Marinship, Houseboat Community' },
       { type: 'Waterfront Condos', desc: 'Luxury units with premium appliances and HOA-managed building access.', areas: 'Downtown Sausalito' },
-    ],
+          { type: 'Fast Local Response', desc: 'First stop across the Golden Gate Bridge. Our Marin routes start here, ensuring early-morning appointment availability.', areas: 'All Sausalito neighborhoods' },
+],
     caseStudies: [
       { appliance: 'Bosch Dishwasher', neighborhood: 'Houseboat Community', issue: 'Drain pump corroded from marine humidity; replaced pump with marine-grade sealant on connections.', timeframe: '2-hour repair' },
       { appliance: 'Wolf Oven', neighborhood: 'Spring Street', issue: 'Convection fan motor bearing worn; replaced motor in hillside kitchen with limited access.', timeframe: 'Fast repair' },
@@ -382,7 +398,9 @@ const cityLocalData = {
     housingTypes: [
       { type: 'Waterfront Estates', desc: 'Exclusive island and lagoon homes with premium Sub-Zero, Wolf, and Miele appliances. Factory-trained technicians.', areas: 'Belvedere Island, Belvedere Lagoon' },
       { type: 'High-End Renovations', desc: 'Recently renovated homes with integrated luxury kitchen systems requiring specialist knowledge.', areas: 'West Shore Road, San Rafael Avenue' },
-    ],
+          { type: 'Luxury Waterfront Estates', desc: 'High-end Sub-Zero, Wolf, and Miele appliances in premium homes. Our technicians are factory-trained on luxury brands.', areas: 'Belvedere Island, West Shore' },
+      { type: 'Fast Local Response', desc: 'Combined with Tiburon service runs for efficient same-day scheduling. We carry premium brand parts on every Belvedere call.', areas: 'All Belvedere' },
+],
     caseStudies: [
       { appliance: 'Sub-Zero 48" Built-In', neighborhood: 'Belvedere Island', issue: 'Both compressors running hot; replaced condenser fan motor and cleaned both condenser coils in custom cabinetry.', timeframe: '3-hour repair' },
       { appliance: 'Miele Speed Oven', neighborhood: 'Belvedere Lagoon', issue: 'Microwave/convection combo not switching modes; replaced electronic control board.', timeframe: 'Next-day repair (part sourcing)' },
@@ -412,7 +430,9 @@ const cityLocalData = {
     housingTypes: [
       { type: 'Waterfront Luxury Homes', desc: 'Premium homes with bay views and high-end Viking, Sub-Zero appliances. We carry specialty parts for these brands.', areas: 'Paradise Cay, The Cove' },
       { type: 'Hillside Estates', desc: 'Homes on steep terrain with challenging access. We plan routes and parking in advance for every appointment.', areas: 'Reed Heights, Old St. Hilary' },
-    ],
+          { type: 'Luxury Hillside Homes', desc: 'Premium appliances in homes with bay views. We handle Sub-Zero, Wolf, Viking, and Thermador with factory-level expertise.', areas: 'Paradise Cay, Reed Heights' },
+      { type: 'Fast Local Response', desc: 'Paired with Belvedere on our Marin routes. Same-day availability for most Tiburon service requests.', areas: 'All Tiburon neighborhoods' },
+],
     caseStudies: [
       { appliance: 'Viking Professional Range', neighborhood: 'Paradise Cay', issue: 'Dual-fuel range oven igniter failure plus burner adjustment; complete ignition system service.', timeframe: 'Fast repair' },
       { appliance: 'Sub-Zero Wine Storage', neighborhood: 'Downtown Tiburon', issue: 'Temperature zone 2 running warm; replaced evaporator fan and thermostat sensor in 150-bottle unit.', timeframe: '2-hour repair' },
@@ -443,7 +463,8 @@ const cityLocalData = {
       { type: 'Ranch & Mid-Century Homes', desc: 'Family homes with heavy-use appliances. Washers, dryers, and dishwashers see constant use — we prioritize these calls.', areas: 'Chapman Park, Madera Gardens' },
       { type: 'Hillside Properties', desc: 'Homes on Christmas Tree Hill with unique access challenges and stunning views.', areas: 'Christmas Tree Hill' },
       { type: 'Newer Developments', desc: 'Modern homes near shopping centers with updated appliance layouts.', areas: 'Town Center, Mariner Cove' },
-    ],
+          { type: 'Fast Local Response', desc: 'Central Marin location off 101 means quick access. We pass through Corte Madera on most Marin service routes.', areas: 'All Corte Madera neighborhoods' },
+],
     caseStudies: [
       { appliance: 'LG Washer & Dryer', neighborhood: 'Chapman Park', issue: 'Stacked unit washer leaking onto dryer; replaced washer drain pump and resealed connection between units.', timeframe: '2-hour repair' },
       { appliance: 'KitchenAid Refrigerator', neighborhood: 'Christmas Tree Hill', issue: 'Refrigerator compressor cycling too frequently; replaced overload protector and cleaned dusty coils.', timeframe: '90-minute repair' },
@@ -472,7 +493,9 @@ const cityLocalData = {
     localTip: 'San Quentin\'s compact community means we often service multiple homes per visit — ask about neighbor discounts.',
     housingTypes: [
       { type: 'Waterfront Properties', desc: 'Bay-side homes with humidity exposure. We service appliances in this compact community and offer neighbor discounts.', areas: 'San Quentin Village, Point San Quentin' },
-    ],
+          { type: 'Waterfront Residences', desc: 'Homes near the bay with humidity challenges similar to Sausalito. Extra attention to seals, gaskets, and drainage systems.', areas: 'San Quentin Village' },
+      { type: 'Staff Housing', desc: 'Government and institutional housing with standard appliance brands. We handle bulk service contracts and recurring maintenance.', areas: 'San Quentin area' },
+],
     caseStudies: [
       { appliance: 'Whirlpool Refrigerator', neighborhood: 'San Quentin Village', issue: 'Ice buildup on evaporator from humidity; replaced defrost heater and thermostat.', timeframe: 'Fast repair' },
       { appliance: 'Kenmore Dryer', neighborhood: 'Point San Quentin', issue: 'Drum belt broken; replaced belt and rollers, cleaned lint from all internal components.', timeframe: '1-hour repair' },
@@ -502,7 +525,8 @@ const cityLocalData = {
       { type: 'Downtown Cottages', desc: 'Charming homes with character kitchens. We navigate older layouts and smaller appliance spaces with experience.', areas: 'Downtown Larkspur, Baltimore Park' },
       { type: 'Hillside Homes', desc: 'Canyon properties with longer dryer vent runs and unique access. We plan for efficient service.', areas: 'Madrone Canyon, Hillview' },
       { type: 'Ferry-Area Condos', desc: 'Modern condos near the ferry terminal. Flexible early morning and evening scheduling for commuters.', areas: 'Near Larkspur Landing' },
-    ],
+          { type: 'Fast Local Response', desc: 'Larkspur Ferry terminal area — central to our Marin service loop. Same-day appointments are standard.', areas: 'All Larkspur neighborhoods' },
+],
     caseStudies: [
       { appliance: 'Samsung French Door Fridge', neighborhood: 'Downtown Larkspur', issue: 'Ice maker leaking water onto floor; replaced cracked water inlet tube and recalibrated ice maker.', timeframe: '90-minute repair' },
       { appliance: 'Bosch Gas Range', neighborhood: 'Madrone Canyon', issue: 'Oven not reaching set temperature; replaced faulty gas valve and recalibrated thermostat.', timeframe: '2-hour repair' },
@@ -532,7 +556,9 @@ const cityLocalData = {
     housingTypes: [
       { type: 'Hillside Homes', desc: 'Homes with panoramic views and older appliance hookups. We update connections and check aging supply lines.', areas: 'Greenbrae Hills' },
       { type: 'Ranch-Style Homes', desc: 'Classic ranches near medical facilities with standard layouts. Convenient for quick service visits.', areas: 'Bon Air, Greenbrae Boardwalk' },
-    ],
+          { type: 'Family Homes', desc: 'Mid-century and newer family homes with full-size appliance suites. We know the common layouts and access points.', areas: 'Bon Air, Via La Cumbre' },
+      { type: 'Fast Local Response', desc: 'Adjacent to Larkspur on 101, Greenbrae is a core stop on our Marin route. Quick response, parts in stock.', areas: 'All Greenbrae' },
+],
     caseStudies: [
       { appliance: 'GE Washer', neighborhood: 'Greenbrae Hills', issue: 'Old copper water supply lines corroding; replaced hoses, serviced water inlet valve, tested multiple cycles.', timeframe: '90-minute repair' },
       { appliance: 'Frigidaire Oven', neighborhood: 'Bon Air', issue: 'Self-clean cycle locked door permanently; released lock mechanism and replaced faulty door latch motor.', timeframe: '1-hour repair' },
@@ -562,7 +588,9 @@ const cityLocalData = {
     housingTypes: [
       { type: 'Exclusive Estates', desc: 'Large custom homes with commercial-grade kitchens. Wolf 60-inch ranges, Sub-Zero columns, Miele dishwashers — we carry parts for all.', areas: 'Lagunitas Road, Shady Lane' },
       { type: 'Historic Properties', desc: 'Beautifully maintained older homes blending modern premium appliances with classic architecture.', areas: 'Upper Road, Laurel Grove' },
-    ],
+          { type: 'Historic Estates', desc: 'Large properties with premium appliance suites. We provide white-glove service and carry specialty parts for luxury brands.', areas: 'Ross center, Lagunitas Road' },
+      { type: 'Fast Local Response', desc: 'Nestled in central Marin, Ross is minutes from our San Rafael service hub. Same-day luxury appliance repair available.', areas: 'All Ross' },
+],
     caseStudies: [
       { appliance: 'Wolf 60" Pro Range', neighborhood: 'Lagunitas Road', issue: 'Four burners intermittently failing; replaced igniter modules and cleaned all burner ports on 6-burner range.', timeframe: '3-hour repair' },
       { appliance: 'Sub-Zero 48" Refrigerator', neighborhood: 'Shady Lane', issue: 'Dual system — refrigerator side warm while freezer OK; replaced refrigerator-side evaporator fan motor.', timeframe: '2-hour repair' },
@@ -592,7 +620,9 @@ const cityLocalData = {
     housingTypes: [
       { type: 'Canyon Cabins & Cottages', desc: 'Eclectic homes tucked in redwood canyons. Narrow roads require smaller service vehicles and planned access.', areas: 'Cascade Canyon, Bothin Marsh area' },
       { type: 'Craftsman Bungalows', desc: 'Charming downtown homes with character kitchens. Older wiring sometimes needs attention alongside appliance repair.', areas: 'Downtown Fairfax, Manor' },
-    ],
+          { type: 'Cottage-Style Homes', desc: 'Compact kitchens and creative appliance layouts in Fairfax\'s eclectic housing stock. We adapt to any space.', areas: 'Downtown Fairfax, Manor Hill' },
+      { type: 'Fast Local Response', desc: 'Connected to San Anselmo and Ross on our West Marin route. Same-day service for most Fairfax addresses.', areas: 'All Fairfax' },
+],
     caseStudies: [
       { appliance: 'Kenmore Refrigerator', neighborhood: 'Cascade Canyon', issue: 'Power supply issues from aging home wiring; replaced start components and recommended electrician for panel upgrade.', timeframe: 'Fast repair' },
       { appliance: 'Whirlpool Washer', neighborhood: 'Downtown Fairfax', issue: 'Water not filling; replaced water inlet valve and cleaned sediment-clogged supply line screens.', timeframe: '1-hour repair' },
@@ -623,7 +653,8 @@ const cityLocalData = {
       { type: 'Craftsman Bungalows', desc: 'Classic San Anselmo craftsman homes with original layouts. Creek-side locations face flooding risk — we check for water damage.', areas: 'Downtown San Anselmo, Brookside' },
       { type: 'Mid-Century Ranches', desc: 'Spacious ranches with standard appliance setups. Quick, efficient service visits.', areas: 'Sleepy Hollow, Seminary' },
       { type: 'Hillside Homes', desc: 'Luxury properties with panoramic views and premium kitchen appliances.', areas: 'Red Hill' },
-    ],
+          { type: 'Fast Local Response', desc: 'Central Ross Valley location, paired with Fairfax and Ross on our daily Marin route. Consistent same-day availability.', areas: 'All San Anselmo' },
+],
     caseStudies: [
       { appliance: 'LG Dishwasher', neighborhood: 'Sleepy Hollow', issue: 'Control panel intermittent; replaced user interface board and main control board.', timeframe: '2-hour repair (part sourcing same day)' },
       { appliance: 'Samsung Dryer', neighborhood: 'Downtown San Anselmo', issue: 'Drum not spinning; replaced worn belt and idler pulley assembly.', timeframe: '1-hour repair' },
@@ -654,7 +685,8 @@ const cityLocalData = {
       { type: 'Suburban Homes', desc: 'Family neighborhoods with heavy-use appliances. Standard layouts make for efficient service visits.', areas: 'Hamilton, Downtown Novato, Ignacio' },
       { type: 'Ranch Properties', desc: 'Larger lots with well water and rural infrastructure. We come prepared for unique plumbing challenges.', areas: 'Indian Valley, Pacheco Valle' },
       { type: 'Waterfront Homes', desc: 'Bay-side properties with humidity exposure and premium appliances.', areas: 'Bel Marin Keys, Black Point' },
-    ],
+          { type: 'Fast Local Response', desc: 'Northernmost Marin city on our route. We schedule Novato as our first or last stop for efficient same-day service.', areas: 'All Novato neighborhoods' },
+],
     caseStudies: [
       { appliance: 'Maytag Washer', neighborhood: 'Hamilton', issue: 'Washer shaking violently during spin; replaced all four shock absorbers and rebalanced drum.', timeframe: '90-minute repair' },
       { appliance: 'Thermador Refrigerator', neighborhood: 'Bel Marin Keys', issue: 'Freedom Refrigerator column not cooling; replaced evaporator and recharged sealed system.', timeframe: 'Fast repair' },
