@@ -196,6 +196,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **ПРОМТ 28**: Replaced bullet list "WHAT WE FIX / Every Major Appliance" with tabbed grid (Kitchen/Laundry/Commercial). Created `CityServicesTabbed` component with 3 tabs, card grid (4-col desktop), city-specific hrefs via `getCityServiceHref()`, hover effects. Kitchen: 7 items, Laundry: 2, Commercial: 1.
 - **ПРОМТ 29**: Fixed PricingCards grid from 1-column to 3-column on desktop. Changed Tailwind `grid-cols-1 sm:grid-cols-3` to inline `gridTemplateColumns: 'repeat(3, 1fr)'` (react-snap SSG doesn't resolve Tailwind breakpoints). Increased `maxWidth` from 780px to 900px for better card spacing.
 - **ПРОМТ 30**: Added 4th housing fact to all 22 cities in `cityLocalData.js` (was 2-3, now all 4). Added city-specific "Fast Local Response" facts with drive times, freeway access, route info. Fixed `HousingTypes.jsx` grid from Tailwind `md:grid-cols-2` to inline `gridTemplateColumns: 'repeat(2, 1fr)'` for SSG compatibility. All city pages now show 2×2 grid.
+- **ПРОМТ 31**: Added `ScrollToTop` component to fix missing scroll-to-top on React Router navigation. Created `ScrollToTop.js` with `useLocation` + `window.scrollTo({ top: 0, behavior: 'instant' })`. Added as first child inside `<BrowserRouter>` in `App.js`. Affects all page transitions site-wide.
 
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)

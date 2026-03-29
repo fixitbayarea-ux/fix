@@ -1,5 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 /* Strip trailing slashes client-side (backup for server-side _redirects rule) */
 const TrailingSlashRedirect = () => {
@@ -125,6 +126,7 @@ const CityServicePage = lazy(() => import("./components/pages/CityServicePage"))
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <TrailingSlashRedirect />
       <CanonicalUpdater />
       <SchemaMarkup />
