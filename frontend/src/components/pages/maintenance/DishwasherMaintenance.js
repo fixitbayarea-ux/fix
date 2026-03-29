@@ -50,7 +50,7 @@ const DishwasherMaintenance = () => {
       <MobileServiceLanding
         appliance="Dishwasher"
         pageSlug="maintenance/dishwasher"
-        pageTitle="Dishwasher Maintenance | FixitBay LLC"
+        pageTitle="Dishwasher Maintenance San Francisco Bay Area | FixitBay LLC"
         metaDescription="Professional dishwasher maintenance in San Francisco Bay Area. Keep your dishwasher cleaning efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
         heroTitle={<>Dishwasher<br />Maintenance. Today.</>}
         heroImage="/images/technicians/dishwasher-tech.jpg"
@@ -76,7 +76,7 @@ const DishwasherMaintenance = () => {
   return (
     <ApplianceRepairPageNew
       appliance="Dishwasher"
-      pageTitle="Dishwasher Maintenance | FixitBay LLC"
+      pageTitle="Dishwasher Maintenance San Francisco Bay Area | FixitBay LLC"
       metaDescription="Professional dishwasher maintenance in San Francisco Bay Area. Keep your dishwasher cleaning efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
       heroImage="/images/technicians/dishwasher-tech.jpg"
       heroImageAlt="FixitBay technician servicing a dishwasher in San Francisco"

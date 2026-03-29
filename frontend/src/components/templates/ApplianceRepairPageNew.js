@@ -799,8 +799,8 @@ const ApplianceRepairPageNew = ({
       {commonProblems.length > 0 && (
         <section data-testid="common-problems" id="issues" style={{ background: '#F8F5F0', padding: '70px 0' }}>
           <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px' }}>
-            <div style={{ ...S.eyebrow, marginBottom: 10 }}>WHAT WE FIX</div>
-            <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 32 }}>Common {appliance} Problems</h2>
+            <div style={{ ...S.eyebrow, marginBottom: 10 }}>{isMaintenance ? 'MAINTENANCE GUIDE' : 'WHAT WE FIX'}</div>
+            <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 32 }}>{isMaintenance ? `Signs Your ${appliance} Needs Maintenance` : `Common ${appliance} Problems`}</h2>
             {effectiveServiceDescription && (
               <div style={{ maxWidth: 720, margin: '0 auto 40px' }}>
                 {effectiveServiceDescription.paragraphs.map((p, i) => (
@@ -853,7 +853,7 @@ const ApplianceRepairPageNew = ({
           <div style={{ maxWidth: 780, margin: '0 auto' }}>
             <div style={{ color: '#FF5722', fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 6, fontFamily: 'Montserrat, sans-serif' }}>PRICING</div>
             <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 26, color: '#0D1B2A', marginBottom: 6 }}>
-              {appliance} Maintenance Cost
+              {appliance} Maintenance Service Cost
             </h2>
             <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#6B7280', marginBottom: 20 }}>
               Written estimate before any work begins. $60 diagnostic applied to maintenance cost.
@@ -876,7 +876,7 @@ const ApplianceRepairPageNew = ({
           <div style={{ maxWidth: 780, margin: '0 auto' }}>
             <div style={{ color: '#FF5722', fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase', marginBottom: 6, fontFamily: 'Montserrat, sans-serif' }}>PRICING</div>
             <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 26, color: '#0D1B2A', marginBottom: 6 }}>
-              {appliance} {serviceWord} Cost in {pricingCityName || cityName || 'the San Francisco Bay Area'}
+              {isMaintenance ? `${appliance} Maintenance Service Cost` : `${appliance} ${serviceWord} Cost in ${pricingCityName || cityName || 'the San Francisco Bay Area'}`}
             </h2>
             <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#6B7280', marginBottom: 20 }}>
               Written estimate before any work begins. $60 diagnostic applied to {serviceWord.toLowerCase()} cost.

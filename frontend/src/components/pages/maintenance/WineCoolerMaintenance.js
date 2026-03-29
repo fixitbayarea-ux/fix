@@ -50,7 +50,7 @@ const WineCoolerMaintenance = () => {
       <MobileServiceLanding
         appliance="Wine Cooler"
         pageSlug="maintenance/wine-cooler"
-        pageTitle="Wine Cooler Maintenance & Repair | FixitBay LLC"
+        pageTitle="Wine Cooler Maintenance San Francisco Bay Area | FixitBay LLC"
         metaDescription="Professional wine cooler maintenance in San Francisco Bay Area. Protect your wine collection with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
         heroTitle={<>Wine Cooler<br />Maintenance. Today.</>}
         heroSubtitle="Protect Your Collection"
@@ -71,7 +71,7 @@ const WineCoolerMaintenance = () => {
   return (
     <ApplianceRepairPageNew
       appliance="Wine Cooler"
-      pageTitle="Wine Cooler Maintenance & Repair | FixitBay LLC"
+      pageTitle="Wine Cooler Maintenance San Francisco Bay Area | FixitBay LLC"
       metaDescription="Professional wine cooler maintenance in San Francisco Bay Area. Protect your wine collection with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}

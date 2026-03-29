@@ -50,7 +50,7 @@ const OvenRangeMaintenance = () => {
       <MobileServiceLanding
         appliance="Oven, Range & Stove"
         pageSlug="maintenance/oven-range"
-        pageTitle="Oven Maintenance | FixitBay LLC"
+        pageTitle="Oven Maintenance San Francisco Bay Area | FixitBay LLC"
         metaDescription="Professional oven maintenance in San Francisco Bay Area. Gas and electric service. Ensure safe, efficient cooking. $60 diagnostic, 180-day warranty."
         heroTitle={<>Oven<br />Maintenance. Today.</>}
         heroSubtitle="Safe, Efficient Cooking — Guaranteed"
@@ -73,7 +73,7 @@ const OvenRangeMaintenance = () => {
   return (
     <ApplianceRepairPageNew
       appliance="Oven, Range & Stove"
-      pageTitle="Oven Maintenance | FixitBay LLC"
+      pageTitle="Oven Maintenance San Francisco Bay Area | FixitBay LLC"
       metaDescription="Professional oven maintenance in San Francisco Bay Area. Gas and electric service. Ensure safe, efficient cooking. $60 diagnostic, 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}

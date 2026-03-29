@@ -50,7 +50,7 @@ const CooktopMaintenance = () => {
       <MobileServiceLanding
         appliance="Cooktop"
         pageSlug="maintenance/cooktop"
-        pageTitle="Cooktop Maintenance | Gas, Electric & Induction | FixitBay LLC"
+        pageTitle="Cooktop Maintenance San Francisco Bay Area | FixitBay LLC"
         metaDescription="Professional cooktop maintenance in San Francisco Bay Area. Service for gas, electric, and induction cooktops. $60 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Cooktop<br />Maintenance. Today.</>}
         heroSubtitle="Gas, Electric & Induction Service"
@@ -71,7 +71,7 @@ const CooktopMaintenance = () => {
   return (
     <ApplianceRepairPageNew
       appliance="Cooktop"
-      pageTitle="Cooktop Maintenance | Gas, Electric & Induction | FixitBay LLC"
+      pageTitle="Cooktop Maintenance San Francisco Bay Area | FixitBay LLC"
       metaDescription="Professional cooktop maintenance in San Francisco Bay Area. Service for gas, electric, and induction cooktops. $60 diagnostic, 180-day warranty. FixitBay LLC."
       commonProblems={commonProblems}
       faqData={faqData}

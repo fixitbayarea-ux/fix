@@ -50,7 +50,7 @@ const WasherMaintenance = () => {
       <MobileServiceLanding
         appliance="Washer"
         pageSlug="maintenance/washer"
-        pageTitle="Washer Maintenance | FixitBay LLC"
+        pageTitle="Washer Maintenance San Francisco Bay Area | FixitBay LLC"
         metaDescription="Professional washing machine maintenance in San Francisco Bay Area. Prevent leaks and breakdowns with expert washer service from FixitBay LLC. $60 diagnostic, 180-day warranty."
         heroTitle={<>Washer<br />Maintenance. Today.</>}
         heroImage="/images/technicians/washer-tech.jpg"
@@ -76,7 +76,7 @@ const WasherMaintenance = () => {
   return (
     <ApplianceRepairPageNew
       appliance="Washer"
-      pageTitle="Washer Maintenance | FixitBay LLC"
+      pageTitle="Washer Maintenance San Francisco Bay Area | FixitBay LLC"
       metaDescription="Professional washing machine maintenance in San Francisco Bay Area. Prevent leaks and breakdowns with expert washer service from FixitBay LLC. $60 diagnostic, 180-day warranty."
       heroImage="/images/technicians/washer-tech.jpg"
       heroImageAlt="FixitBay technician servicing a washing machine in San Francisco"

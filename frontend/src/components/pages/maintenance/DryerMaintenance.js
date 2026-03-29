@@ -50,7 +50,7 @@ const DryerMaintenance = () => {
       <MobileServiceLanding
         appliance="Dryer"
         pageSlug="maintenance/dryer"
-        pageTitle="Dryer Maintenance & Vent Cleaning | FixitBay LLC"
+        pageTitle="Dryer Maintenance San Francisco Bay Area | FixitBay LLC"
         metaDescription="Professional dryer maintenance and vent cleaning in San Francisco Bay Area. Prevent fires and improve efficiency. $60 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Dryer Maintenance<br />&amp; Vent Cleaning.</>}
         heroImage="/images/technicians/dryer-tech.jpg"
@@ -76,7 +76,7 @@ const DryerMaintenance = () => {
   return (
     <ApplianceRepairPageNew
       appliance="Dryer"
-      pageTitle="Dryer Maintenance & Vent Cleaning | FixitBay LLC"
+      pageTitle="Dryer Maintenance San Francisco Bay Area | FixitBay LLC"
       metaDescription="Professional dryer maintenance and vent cleaning in San Francisco Bay Area. Prevent fires and improve efficiency. $60 diagnostic, 180-day warranty. FixitBay LLC."
       heroImage="/images/technicians/dryer-tech.jpg"
       heroImageAlt="FixitBay technician servicing a dryer in San Francisco"
