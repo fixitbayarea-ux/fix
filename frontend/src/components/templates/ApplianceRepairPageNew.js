@@ -706,19 +706,6 @@ const ApplianceRepairPageNew = ({
             </div>
           </div>
           {/* Stats grid */}
-          <div className="city-stats-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, background: '#1A2F45', borderRadius: 12, margin: '16px 20px 0', overflow: 'hidden' }}>
-            {[
-              { num: '3+', line1: 'Years', line2: 'of Service' },
-              { num: '180', line1: 'Day', line2: 'Warranty' },
-              { num: '$60', line1: 'Diagnostic', line2: 'Waived*' },
-            ].map((s, i) => (
-              <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '16px 8px', borderRight: i < 2 ? '1px solid rgba(255,255,255,0.15)' : 'none' }}>
-                <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 'clamp(24px, 6vw, 36px)', lineHeight: 1, color: '#FF5722' }}>{s.num}</span>
-                <span style={{ fontFamily: S.font, fontWeight: 600, fontSize: 'clamp(11px, 3vw, 14px)', color: '#fff', textTransform: 'uppercase', letterSpacing: '1px', marginTop: 4 }}>{s.line1}</span>
-                <span style={{ fontFamily: S.font, fontWeight: 400, fontSize: 10, color: 'rgba(255,255,255,0.6)', marginTop: 2 }}>{s.line2}</span>
-              </div>
-            ))}
-          </div>
         </section>
       )}
 
