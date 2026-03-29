@@ -30,7 +30,7 @@
   "seed_data_creation": "None",
   "retest_needed": false,
   "should_main_agent_self_test": false,
-  "context_for_next_testing_agent": "Iteration 42 verified all clickable elements and color highlights. Hero trust row: '4.9 Google' and '87 Reviews' are <a> tags with href='https://share.google/Q48c6OXAIB7u60fNv' and target='_blank', all trust items colored #FF5722. Service cards are <a> tags with cursor:pointer. City tags have dark hover state (#0D1B2A bg, white text). Header phone: #FF5722, 600, 14px, opacity 1. Logo links to /. Base URL: https://wcag-seo-optimize.preview.emergentagent.com",
+  "context_for_next_testing_agent": "Iteration 42 verified all clickable elements and color highlights. Hero trust row: '4.9 Google' and '87 Reviews' are <a> tags with href='https://share.google/Q48c6OXAIB7u60fNv' and target='_blank', all trust items colored #FF5722. Service cards are <a> tags with cursor:pointer. City tags have dark hover state (#0D1B2A bg, white text). Header phone: #FF5722, 600, 14px, opacity 1. Logo links to /. Base URL: https://appliance-repair-sf.preview.emergentagent.com",
   "test_results": {
     "hero_trust_google": {
       "href": "https://share.google/Q48c6OXAIB7u60fNv",
