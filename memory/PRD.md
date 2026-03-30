@@ -237,5 +237,6 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМПТ 57 (Проблема 5)**: Replaced unstyled city grid on `/maintenance` with navy-themed coverage section. New design: `#0D1B2A` background, eyebrow "WE SERVICE THESE AREAS", H2 "Our Bay Area Coverage", 11 city chips with inline SVG MapPin icons (orange `#FF5722`), "All SF Neighborhoods →" accent chip, orange CTA button "View All Service Areas". Build: 232/232.
 ## Backlog (Prioritized)
+- **ПРОМПТ 57 (Проблема 6)**: Redesigned both footers. Full footer (UnifiedFooter.js): 4-column grid (`2fr 1fr 1fr 1fr`), brand col with tagline + 5-star rating + license badge, Services col, Service Areas col (cities), Contact col (phone/email/social icons). Bottom bar with copyright + legal links. Mobile: accordion navigation, 2-col→1-col responsive. Compact footer (CompactFooter.jsx): orange `2px` top border, flex layout (logo | phone with icon | copyright), stacks vertically on mobile (<600px). Build: 232/232.
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
