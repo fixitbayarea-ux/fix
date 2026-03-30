@@ -201,8 +201,7 @@ const ProfessionalLandingPage = () => {
                 return (
                   <React.Fragment key={i}>
                     {wrapped}
-                    {i < 3 && i !== 1 && <div className="hiw-arrow" aria-hidden="true"><span className="hiw-arrow-h">&rarr;</span></div>}
-                    {i === 1 && <div className="hiw-arrow hiw-arrow-down" aria-hidden="true"><div className="hiw-connector-l"></div></div>}
+                    {i < 3 && <div className="hiw-arrow" aria-hidden="true"><span className="hiw-arrow-h">&rarr;</span></div>}
                   </React.Fragment>
                 );
               })}
