@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../../templates/MobileServiceLanding';
 import { useIsMobile } from '../../../hooks/useIsMobile';
 import SERVICE_CONTENT from '../../../data/serviceContentData';
+import MaintenanceSections from '../../sections/MaintenanceSections';
 
 const WineCoolerMaintenance = () => {
   const isMobile = useIsMobile();
@@ -51,8 +52,8 @@ const WineCoolerMaintenance = () => {
       <MobileServiceLanding
         appliance="Wine Cooler"
         pageSlug="maintenance/wine-cooler"
-        pageTitle="Wine Cooler Maintenance Bay Area | FixitBay"
-        metaDescription="Professional wine cooler maintenance in San Francisco Bay Area. Protect your wine collection with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+        pageTitle="Wine Cooler Maintenance Service Bay Area | FixitBay"
+        metaDescription="Professional wine cooler maintenance in the Bay Area. Temperature calibration, seal checks. $60 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Wine Cooler<br />Maintenance. Today.</>}
         heroSubtitle="Protect Your Collection"
         issues={[
@@ -102,7 +103,9 @@ const WineCoolerMaintenance = () => {
         { href: '/maintenance/refrigerator', label: 'Fridge Maintenance', desc: 'Coil cleaning and seal inspection' },
         { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Temperature and frost issues' },
       ]}
-    />
+    >
+      <MaintenanceSections appliance="Wine Cooler" checklistItems={['Fan blade cleaning and balance check', 'Thermostat accuracy test with calibrated thermometer', 'Door seal compression test', 'Condensate tray drain and cleaning', 'Compressor noise and vibration assessment', 'Condenser coil cleaning', 'Humidity level monitoring', 'Interior temperature zone mapping', 'Shelf and rack inspection', 'Electrical connection check']} />
+    </ApplianceRepairPageNew>
 
   );
 };

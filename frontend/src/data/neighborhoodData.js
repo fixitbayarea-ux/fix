@@ -129,6 +129,15 @@ const neighborhoodData = {
       { q: 'Does salt air really damage my appliances?', a: 'Yes. Within four blocks of the Bay, we see noticeably faster corrosion on condenser coils, burner caps, and stainless panels. Annual condenser cleaning and wiping metal surfaces with a light oil help extend life.' },
       { q: 'My dishwasher leaves white film on glasses. Is that the water?', a: 'Likely. Marina water carries more dissolved minerals than the rest of the city. We check the spray arms and recommend rinse-aid settings. Sometimes the inlet valve screen is partially blocked with scale.' },
       { q: 'How fast can you reach the Marina?', a: 'The Marina is roughly 8 minutes from our Franklin Street shop. It is one of the closest neighborhoods we cover — fast appointments are almost always available.' },
+      { q: 'Do you serve all streets in Marina?', a: 'Yes. We service every street in the Marina District — from Beach Street along the waterfront to Lombard, from Lyon to Laguna. Homes, condos, and apartment buildings.' },
+      { q: 'Is same-day available in Marina?', a: 'Usually yes. The Marina is our closest neighborhood. Calls placed before noon are almost always confirmed for the same day. Evening and weekend slots available.' },
+    ],
+    homeTypes: 'Edwardian flats and converted apartments make up most of the Marina\'s housing stock — many rebuilt after the 1989 earthquake on the neighborhood\'s sandy fill. Waterfront condos along Beach Street and Marina Boulevard feature modern kitchens with premium appliances. Victorian multi-unit buildings on Chestnut and Union Streets have compact galley kitchens. We service every housing type in the Marina, from ground-floor garden units to penthouse condos with elevator-only appliance access.',
+    recentRepairs: [
+      { title: 'LG Dryer — Not Heating', description: 'Heating element failed in a 5-year-old LG dryer. Replaced element and thermal fuse. Full heat restored, tested 3 cycles.', location: 'Cervantes Blvd' },
+      { title: 'Bosch Dishwasher — Door Latch', description: 'Door not closing properly, E24 error. Replaced door latch assembly and strike plate. Latches securely, runs full cycle.', location: 'Chestnut Street' },
+      { title: 'Sub-Zero Refrigerator — Compressor Cycling', description: 'Compressor cycling every 3 minutes, warm interior. Cleaned condenser coils (heavy salt buildup), replaced start relay.', location: 'Marina Boulevard' },
+      { title: 'Samsung Front-Load Washer — Mold', description: 'Persistent mold odor in gasket. Replaced door boot seal, deep-cleaned drum and dispenser. Fresh smell restored.', location: 'Beach Street condo' },
     ],
   },
   'pacific-heights': {

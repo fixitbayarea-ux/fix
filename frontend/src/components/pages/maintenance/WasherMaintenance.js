@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../../templates/MobileServiceLanding';
 import { useIsMobile } from '../../../hooks/useIsMobile';
 import SERVICE_CONTENT from '../../../data/serviceContentData';
+import MaintenanceSections from '../../sections/MaintenanceSections';
 
 const WasherMaintenance = () => {
   const isMobile = useIsMobile();
@@ -51,8 +52,8 @@ const WasherMaintenance = () => {
       <MobileServiceLanding
         appliance="Washer"
         pageSlug="maintenance/washer"
-        pageTitle="Washer Maintenance San Francisco Bay Area | FixitBay LLC"
-        metaDescription="Professional washing machine maintenance in San Francisco Bay Area. Prevent leaks and breakdowns with expert washer service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+        pageTitle="Washer Maintenance Service San Francisco | FixitBay"
+        metaDescription="Professional washer maintenance in San Francisco. Prevent leaks and breakdowns. $60 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Washer<br />Maintenance. Today.</>}
         heroImage="/images/technicians/washer-tech.jpg"
         heroImageAlt="FixitBay technician servicing a washing machine in San Francisco"
@@ -111,7 +112,9 @@ const WasherMaintenance = () => {
         { href: '/maintenance/dishwasher', label: 'Dishwasher Maintenance', desc: 'Filter and spray arm cleaning service' },
         { href: '/maintenance/refrigerator', label: 'Fridge Maintenance', desc: 'Coil cleaning and seal inspection' },
       ]}
-    />
+    >
+      <MaintenanceSections appliance="Washer" checklistItems={['Drum and tub deep cleaning', 'Drain pump filter check and cleaning', 'Inlet hose inspection for cracks and bulges', 'Door seal cleaning and mold prevention (front-load)', 'Detergent dispenser flush and descale', 'Water level sensor calibration', 'Drain system flow test', 'Shock absorber and spring check', 'Hot and cold valve operation test', 'Electrical connection inspection']} />
+    </ApplianceRepairPageNew>
 
   );
 };

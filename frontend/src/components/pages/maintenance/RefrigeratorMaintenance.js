@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../../templates/MobileServiceLanding';
 import { useIsMobile } from '../../../hooks/useIsMobile';
 import SERVICE_CONTENT from '../../../data/serviceContentData';
+import MaintenanceSections from '../../sections/MaintenanceSections';
 
 const RefrigeratorMaintenance = () => {
   const isMobile = useIsMobile();
@@ -93,8 +94,8 @@ const RefrigeratorMaintenance = () => {
       <MobileServiceLanding
         appliance="Refrigerator"
         pageSlug="maintenance/refrigerator"
-        pageTitle="Refrigerator Maintenance Bay Area | FixitBay"
-        metaDescription="Professional refrigerator maintenance in San Francisco Bay Area. Keep your fridge running efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+        pageTitle="Refrigerator Maintenance Service Bay Area | FixitBay"
+        metaDescription="Professional refrigerator maintenance in the Bay Area. Condenser cleaning, seal inspection. $60 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Refrigerator<br />Maintenance. Today.</>}
         heroSubtitle="Prevent Breakdowns — Keep Food Fresh"
         techImage="/images/technicians/fridge-tech.jpg"
@@ -150,7 +151,9 @@ const RefrigeratorMaintenance = () => {
         { href: '/maintenance/washer', label: 'Washer Maintenance', desc: 'Hose inspection and drum cleaning' },
         { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Frost buildup and temperature issues' },
       ]}
-    />
+    >
+      <MaintenanceSections appliance="Refrigerator" checklistItems={['Condenser coil cleaning (front and rear)', 'Door gasket pressure test and cleaning', 'Defrost drain flush and clearing', 'Thermostat calibration and accuracy test', 'Evaporator fan operation check', 'Compressor performance assessment', 'Ice maker water line inspection', 'Temperature monitoring (fridge and freezer)', 'Water filter status check', 'Electrical connection and cord inspection']} />
+    </ApplianceRepairPageNew>
   );
 };
 

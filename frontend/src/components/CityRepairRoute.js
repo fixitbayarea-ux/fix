@@ -28,17 +28,26 @@ import Larkspur from './pages/cities/Larkspur';
 import SanAnselmo from './pages/cities/SanAnselmo';
 import Greenbrae from './pages/cities/Greenbrae';
 
+// New city landing pages (Group 2 — navy/cream design)
+import SouthSanFranciscoLanding from './pages/landings/SouthSanFranciscoLanding';
+import SanBrunoLanding from './pages/landings/SanBrunoLanding';
+import MillbraeLanding from './pages/landings/MillbraeLanding';
+import ColmaLanding from './pages/landings/ColmaLanding';
+import PacificaLanding from './pages/landings/PacificaLanding';
+import BrisbaneLanding from './pages/landings/BrisbaneLanding';
+import MillValleyLanding from './pages/landings/MillValleyLanding';
+
 // Mapping of all 21 city slugs to custom components
 const CUSTOM_CITY_PAGES = {
   'san-francisco': SanFrancisco,
   'daly-city': DalyCity,
-  'colma': Colma,
-  'pacifica': Pacifica,
-  'mill-valley': MillValley,
-  'san-bruno': SanBruno,
-  'millbrae': Millbrae,
-  'south-san-francisco': SouthSanFrancisco,
-  'brisbane': Brisbane,
+  'colma': ColmaLanding,
+  'pacifica': PacificaLanding,
+  'mill-valley': MillValleyLanding,
+  'san-bruno': SanBrunoLanding,
+  'millbrae': MillbraeLanding,
+  'south-san-francisco': SouthSanFranciscoLanding,
+  'brisbane': BrisbaneLanding,
   'montara': Montara,
   'san-rafael': SanRafael,
   'sausalito': Sausalito,

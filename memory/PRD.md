@@ -221,6 +221,13 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **Массовое обновление цен**: Обновлены прайс-таблицы на 13 страницах (7 repair + 6 maintenance). Все цены отображаются в формате "from $X". Удалены строки: Drum bearing, Water pump (Washer); Spray arm, Door gasket (Dishwasher); Infinite switch (Stove, Cooktop); Glass-top surface (Cooktop); Compressor (Wine Cooler). Добавлена строка Door boot/gasket replacement $310 (Washer). Обновлены цены: Drain pump 285→295 (Washer), Gas valve 295→325 (Dryer), Water inlet valve 265→285, Control board 350→385 (Dishwasher), Burner assembly 285→325 (Range, Stove, Cooktop). Maintenance: полностью пересмотрены цены (255-290 вместо 45-149), удалены Full maintenance check и дешёвые позиции (DONE)
 - **Удаление Garbage Disposal**: Полностью удалена услуга из сайта. Удалён DisposalRepairPage.js, маршруты из App.js, ссылки из SiteNavbar, ServicesPage, SiteMapPage, HomeServicesGrid, HomeExploreLinks, NeighborhoodPage, CityRepairPage, LLMInfoPage, SchemaMarkup, StructuredData, ProfessionalLandingPage, RelatedServices, navbarData, servicePricing, seo-config.cjs (маршрут + конфигурация). Билд: 232/232 (было 233). Упоминания garbage disposal в блоге (dishwasher-not-draining) сохранены как фактический контент (DONE)
 
+- **GSC "Crawled — not indexed" Fix (31 pages, 4 groups)**:
+  - **Group 1**: Added 30 server-side 301 redirects in `_redirects` for cities outside service area → `/service-areas`. Removed client-side Navigate routes from App.js.
+  - **Group 2**: Created `CityLandingPage.js` template (navy/cream design, 13 sections) + 7 city landing pages: South SF, San Bruno, Millbrae, Colma, Pacifica, Brisbane, Mill Valley. Each with ~1000 words unique content. Integrated via CityRepairRoute.
+  - **Group 3**: Updated 5 maintenance pages (Dryer, Washer, Refrigerator, Oven, Wine Cooler): new titles/H1, removed `noindex`, added MaintenanceSections component (Maintenance vs Repair table + Checklist + Annual Schedule).
+  - **Group 4**: Marina neighborhood page: 8 H2 sections (was 0), 1657 words (was 718), 37 Marina mentions. Added homeTypes + recentRepairs sections.
+  - Build: 232/232 (DONE)
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

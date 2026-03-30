@@ -156,7 +156,6 @@ export default function App() {
         
         {/* Canonical redirect mapping (client-side fallback) */}
         <Route path="/appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-near-you" element={<Navigate to="/service-areas" replace />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/wine-refrigerator-repair" element={<Navigate to="/wine-cooler-repair" replace />} />
         <Route path="/stacked-washer-dryer-repair" element={<Navigate to="/washer-repair" replace />} />
@@ -171,53 +170,24 @@ export default function App() {
         <Route path="/blog/:slug" element={<Suspense fallback={<div style={{minHeight:'100vh'}} />}><BlogPostPage /></Suspense>} />
 
         {/* Redirects for non-approved cities → service areas (both URL patterns) */}
-        <Route path="/dublin-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-dublin" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-newark" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/newark-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-palo-alto" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/palo-alto-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-fremont" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/fremont-appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/appliance-repair-redwood-city" element={<Navigate to="/service-areas" replace />} />
         <Route path="/redwood-city-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-livermore" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/livermore-appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/appliance-repair-concord" element={<Navigate to="/service-areas" replace />} />
         <Route path="/concord-appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/appliance-repair-pleasanton" element={<Navigate to="/service-areas" replace />} />
         <Route path="/pleasanton-appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/union-city-appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/appliance-repair-union-city" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/hayward-appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/appliance-repair-walnut-creek" element={<Navigate to="/service-areas" replace />} />
         <Route path="/walnut-creek-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-san-jose" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/san-jose-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-mountain-view" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/mountain-view-appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/berkeley-appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/appliance-repair-berkeley" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/san-leandro-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-san-leandro" element={<Navigate to="/service-areas" replace />} />
         <Route path="/appliance-repair-oakland" element={<Navigate to="/service-areas" replace />} />
         <Route path="/oakland-appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/richmond-appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/appliance-repair-richmond" element={<Navigate to="/service-areas" replace />} />
         <Route path="/cupertino-appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/appliance-repair-cupertino" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/alameda-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-alameda" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/vallejo-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-vallejo" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/burlingame-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-burlingame" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/foster-city-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-foster-city" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-milpitas" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/milpitas-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-san-mateo" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/san-mateo-appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/castro-valley-appliance-repair" element={<Navigate to="/service-areas" replace />} />
 
         {/* SF Neighborhood Pages */}

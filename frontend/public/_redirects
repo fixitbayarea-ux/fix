@@ -24,3 +24,36 @@ https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
 /appliance-repair-san-anselmo /san-anselmo-appliance-repair 301
 /appliance-repair-belvedere /belvedere-appliance-repair 301
 /wine-refrigerator-repair /wine-cooler-repair 301
+/garbage-disposal-repair /services 301
+
+# Group 1 — Cities outside service area → 301 to /service-areas
+/san-jose-appliance-repair /service-areas 301
+/appliance-repair-fremont /service-areas 301
+/vallejo-appliance-repair /service-areas 301
+/appliance-repair-san-mateo /service-areas 301
+/appliance-repair-milpitas /service-areas 301
+/dublin-appliance-repair /service-areas 301
+/san-leandro-appliance-repair /service-areas 301
+/appliance-repair-hayward /service-areas 301
+/burlingame-appliance-repair /service-areas 301
+/mountain-view-appliance-repair /service-areas 301
+/alameda-appliance-repair /service-areas 301
+/appliance-repair-newark /service-areas 301
+/appliance-repair-palo-alto /service-areas 301
+/palo-alto-appliance-repair /service-areas 301
+/foster-city-appliance-repair /service-areas 301
+/appliance-repair-near-you /service-areas 301
+/appliance-repair-livermore /service-areas 301
+/appliance-repair-san-jose /service-areas 301
+/fremont-appliance-repair /service-areas 301
+/appliance-repair-dublin /service-areas 301
+/newark-appliance-repair /service-areas 301
+/livermore-appliance-repair /service-areas 301
+/hayward-appliance-repair /service-areas 301
+/appliance-repair-san-leandro /service-areas 301
+/appliance-repair-alameda /service-areas 301
+/appliance-repair-mountain-view /service-areas 301
+/appliance-repair-vallejo /service-areas 301
+/appliance-repair-burlingame /service-areas 301
+/milpitas-appliance-repair /service-areas 301
+/san-mateo-appliance-repair /service-areas 301

@@ -217,6 +217,56 @@ const CITY_SEO_DATA = {
       <p>We offer same-day service throughout Daly City — Westlake, Serramonte, Top of the Hill, St. Francis Heights, Crocker, Mission Terrace, Bayshore — with a $60 diagnostic fee credited toward repairs. 180-day parts and labor warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
+
+  'south-san-francisco-landing': {
+    title: 'Appliance Repair South San Francisco | Same-Day | FixitBay LLC',
+    desc: 'Fast, licensed appliance repair in South San Francisco. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    h1: 'Appliance Repair in South San Francisco',
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in South San Francisco. SSF's biotech corridor and mid-century homes need reliable appliance repair. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in South San Francisco</h2><p><a href="/south-san-francisco-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/south-san-francisco-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/south-san-francisco-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/south-san-francisco-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/south-san-francisco-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    links: ['/', '/service-areas', '/south-san-francisco-refrigerator-repair', '/south-san-francisco-washer-repair', '/south-san-francisco-dryer-repair']
+  },
+  'san-bruno-landing': {
+    title: 'Appliance Repair San Bruno | Same-Day | FixitBay LLC',
+    desc: 'Fast, licensed appliance repair in San Bruno. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    h1: 'Appliance Repair in San Bruno',
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in San Bruno. Samsung and Bosch are the most popular brands in San Bruno's suburban ranch homes. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in San Bruno</h2><p><a href="/san-bruno-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/san-bruno-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/san-bruno-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/san-bruno-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/san-bruno-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    links: ['/', '/service-areas', '/san-bruno-refrigerator-repair', '/san-bruno-washer-repair', '/san-bruno-dryer-repair']
+  },
+  'millbrae-landing': {
+    title: 'Appliance Repair Millbrae | Same-Day | FixitBay LLC',
+    desc: 'Fast, licensed appliance repair in Millbrae. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    h1: 'Appliance Repair in Millbrae',
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Millbrae. Millbrae's upscale homes feature Thermador, Bosch, and Sub-Zero appliances. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Millbrae</h2><p><a href="/millbrae-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/millbrae-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/millbrae-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/millbrae-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/millbrae-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    links: ['/', '/service-areas', '/millbrae-refrigerator-repair', '/millbrae-washer-repair', '/millbrae-dryer-repair']
+  },
+  'colma-landing': {
+    title: 'Appliance Repair Colma | Same-Day | FixitBay LLC',
+    desc: 'Fast, licensed appliance repair in Colma. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    h1: 'Appliance Repair in Colma',
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Colma. Colma's coastal humidity accelerates appliance wear on gaskets and metal parts. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Colma</h2><p><a href="/colma-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/colma-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/colma-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/colma-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/colma-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    links: ['/', '/service-areas', '/colma-refrigerator-repair', '/colma-washer-repair', '/colma-dryer-repair']
+  },
+  'pacifica-landing': {
+    title: 'Appliance Repair Pacifica | Same-Day | FixitBay LLC',
+    desc: 'Fast, licensed appliance repair in Pacifica. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    h1: 'Appliance Repair in Pacifica',
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Pacifica. Pacifica's salt air and fog cause corrosion on refrigerator hinges and dryer components. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Pacifica</h2><p><a href="/pacifica-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/pacifica-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/pacifica-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/pacifica-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/pacifica-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    links: ['/', '/service-areas', '/pacifica-refrigerator-repair', '/pacifica-washer-repair', '/pacifica-dryer-repair']
+  },
+  'brisbane-landing': {
+    title: 'Appliance Repair Brisbane | Same-Day | FixitBay LLC',
+    desc: 'Fast, licensed appliance repair in Brisbane. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    h1: 'Appliance Repair in Brisbane',
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Brisbane. Brisbane's hillside homes require technicians experienced with steep-access service. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Brisbane</h2><p><a href="/brisbane-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/brisbane-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/brisbane-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/brisbane-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/brisbane-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    links: ['/', '/service-areas', '/brisbane-refrigerator-repair', '/brisbane-washer-repair', '/brisbane-dryer-repair']
+  },
+  'mill-valley-landing': {
+    title: 'Appliance Repair Mill Valley | Same-Day | FixitBay LLC',
+    desc: 'Fast, licensed appliance repair in Mill Valley. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    h1: 'Appliance Repair in Mill Valley',
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Mill Valley. Mill Valley's luxury homes feature Sub-Zero, Wolf, and Miele appliances. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Mill Valley</h2><p><a href="/mill-valley-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/mill-valley-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/mill-valley-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/mill-valley-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/mill-valley-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    links: ['/', '/service-areas', '/mill-valley-refrigerator-repair', '/mill-valley-washer-repair', '/mill-valley-dryer-repair']
+  },
   'south-san-francisco': {
     title: 'Appliance Repair South San Francisco | Same-Day | FixitBay',
     description: 'Appliance repair in South San Francisco. Same-day service in Sunshine Gardens, Sign Hill & all SSF. $60 diagnostic applied to repair. 180-day warranty.',
@@ -438,6 +488,13 @@ function getSEOContent(route) {
         '/range-repair',
         '/stove-repair',
         '/daly-city-appliance-repair',
+  '/south-san-francisco-appliance-repair',
+  '/san-bruno-appliance-repair',
+  '/millbrae-appliance-repair',
+  '/colma-appliance-repair',
+  '/pacifica-appliance-repair',
+  '/brisbane-appliance-repair',
+  '/mill-valley-appliance-repair',
         '/south-san-francisco-appliance-repair',
         '/san-bruno-appliance-repair',
         '/pacifica-appliance-repair',
@@ -532,6 +589,13 @@ function getSEOContent(route) {
       internalLinks: [
         ...defaultInternalLinks,
         '/daly-city-appliance-repair',
+  '/south-san-francisco-appliance-repair',
+  '/san-bruno-appliance-repair',
+  '/millbrae-appliance-repair',
+  '/colma-appliance-repair',
+  '/pacifica-appliance-repair',
+  '/brisbane-appliance-repair',
+  '/mill-valley-appliance-repair',
         '/south-san-francisco-appliance-repair',
         '/san-bruno-appliance-repair',
         '/pacifica-appliance-repair',
@@ -1545,46 +1609,39 @@ function getSEOContent(route) {
   // Maintenance sub-pages — noindex, follow (thin content; crawl budget optimization)
   const maintenanceSubPages = {
     '/maintenance/refrigerator': {
-      title: 'Refrigerator Maintenance | FixitBay LLC',
-      description: 'Refrigerator maintenance in SF Bay Area. Keep your fridge running efficiently with expert service from FixitBay. $60 diagnostic, 180-day warranty.',
-      h1: 'Refrigerator Maintenance in San Francisco Bay Area',
-      robots: 'noindex, follow'
+      title: 'Refrigerator Maintenance Service Bay Area | FixitBay',
+      description: 'Professional refrigerator maintenance in the Bay Area. Condenser cleaning, seal inspection, tune-up. $60 diagnostic, 180-day warranty. FixitBay LLC.',
+      h1: 'Refrigerator Maintenance & Tune-Up — Bay Area'
     },
     '/maintenance/washer': {
-      title: 'Washer Maintenance | FixitBay LLC',
-      description: 'Washing machine maintenance in SF Bay Area. Prevent leaks and breakdowns with expert washer service from FixitBay. $60 diagnostic, 180-day warranty.',
-      h1: 'Washer Maintenance in San Francisco Bay Area',
-      robots: 'noindex, follow'
+      title: 'Washer Maintenance Service San Francisco | FixitBay',
+      description: 'Professional washer maintenance in San Francisco. Prevent leaks and breakdowns. $60 diagnostic, 180-day warranty. FixitBay LLC.',
+      h1: 'Washer Maintenance Service — Bay Area'
     },
     '/maintenance/dryer': {
-      title: 'Dryer Maintenance & Vent Cleaning | FixitBay LLC',
-      description: 'Dryer maintenance and vent cleaning in SF Bay Area. Prevent fires and improve efficiency. $60 diagnostic, 180-day warranty. FixitBay LLC.',
-      h1: 'Dryer Maintenance & Vent Cleaning in San Francisco Bay Area',
-      robots: 'noindex, follow'
+      title: 'Dryer Maintenance & Vent Cleaning San Francisco | FixitBay',
+      description: 'Professional dryer maintenance and vent cleaning in San Francisco. Prevent fires, improve efficiency. FixitBay LLC.',
+      h1: 'Dryer Maintenance & Vent Cleaning — Bay Area'
     },
     '/maintenance/dishwasher': {
-      title: 'Dishwasher Maintenance | FixitBay LLC',
-      description: 'Dishwasher maintenance in SF Bay Area. Keep your dishwasher cleaning efficiently with expert service from FixitBay. $60 diagnostic, 180-day warranty.',
-      h1: 'Dishwasher Maintenance in San Francisco Bay Area',
-      robots: 'noindex, follow'
+      title: 'Dishwasher Maintenance Service San Francisco | FixitBay',
+      description: 'Professional dishwasher maintenance in San Francisco. Filter cleaning, drain clearing. FixitBay LLC.',
+      h1: 'Dishwasher Maintenance Service — Bay Area'
     },
     '/maintenance/oven-range': {
-      title: 'Oven Maintenance | FixitBay LLC',
-      description: 'Professional oven maintenance in San Francisco Bay Area. Gas and electric service. Ensure safe, efficient cooking. $60 diagnostic, 180-day warranty.',
-      h1: 'Oven & Range Maintenance in San Francisco Bay Area',
-      robots: 'noindex, follow'
+      title: 'Oven & Range Maintenance San Francisco | FixitBay',
+      description: 'Professional oven and range maintenance in San Francisco. Burner cleaning, calibration, safety checks. FixitBay LLC.',
+      h1: 'Oven & Range Maintenance — Bay Area'
     },
     '/maintenance/cooktop': {
-      title: 'Cooktop Maintenance | Gas, Electric & Induction | FixitBay',
-      description: 'Professional cooktop maintenance in San Francisco Bay Area. Service for gas, electric, and induction cooktops. $60 diagnostic, 180-day warranty. FixitBay LLC.',
-      h1: 'Cooktop Maintenance in San Francisco Bay Area',
-      robots: 'noindex, follow'
+      title: 'Cooktop Maintenance Service San Francisco | FixitBay',
+      description: 'Professional cooktop maintenance in San Francisco. Burner cleaning, igniter testing. FixitBay LLC.',
+      h1: 'Cooktop Maintenance Service — Bay Area'
     },
     '/maintenance/wine-cooler': {
-      title: 'Wine Cooler Maintenance & Repair | FixitBay LLC',
-      description: 'Wine cooler maintenance in SF Bay Area. Protect your wine collection with expert service from FixitBay. $60 diagnostic, 180-day warranty.',
-      h1: 'Wine Cooler Maintenance in San Francisco Bay Area',
-      robots: 'noindex, follow'
+      title: 'Wine Cooler Maintenance Service Bay Area | FixitBay',
+      description: 'Professional wine cooler maintenance in the Bay Area. Temperature calibration, seal checks. FixitBay LLC.',
+      h1: 'Wine Cooler Maintenance & Cleaning — Bay Area'
     }
   };
   if (maintenanceSubPages[route]) {
@@ -1706,18 +1763,31 @@ function getSEOContent(route) {
 
     const callsList = nb && nb.topCalls ? nb.topCalls : [];
     const callsHTML = callsList.length ? `
-        <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Most Common Calls in ${nbName}</h2>
+        <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Common Appliance Problems in ${nbName}</h2>
         <ul style="margin-bottom:1.5rem;padding-left:0;list-style:none;">${callsList.map(c =>
           `<li style="margin-bottom:0.5rem;padding:0.5rem 0.75rem;background:#fff;border:1px solid #E5E7EB;border-radius:0.5rem;font-size:0.875rem;color:#4A5568;">${c}</li>`
         ).join('')}</ul>` : '';
 
     const localNotesHTML = nb && nb.localNotes ? `
-        <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Local Notes</h2>
+        <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">What We Know About ${nbName}</h2>
         <p style="margin-bottom:1rem;">${nb.localNotes}</p>` : '';
+
+    const homeTypesHTML = nb && nb.homeTypes ? `
+        <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">${nbName} Home Types We Service</h2>
+        <p style="margin-bottom:1rem;">${nb.homeTypes}</p>` : '';
+
+    let recentRepairsHTML = '';
+    if (nb && nb.recentRepairs && nb.recentRepairs.length) {
+      const items = nb.recentRepairs.map(r => {
+        const loc = r.location ? ` (${r.location})` : '';
+        return `<li style="margin-bottom:0.5rem;padding:0.5rem 0.75rem;background:#fff;border:1px solid #E5E7EB;border-radius:0.5rem;font-size:0.875rem;"><strong>${r.title}</strong> — ${r.description}${loc}</li>`;
+      }).join('');
+      recentRepairsHTML = `<h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Recent Repairs in ${nbName} District</h2><ul style="margin-bottom:1.5rem;padding-left:0;list-style:none;">${items}</ul>`;
+    }
 
     const qfList = nb && nb.quickFaq ? nb.quickFaq : [];
     const faqHTML = qfList.length ? `
-        <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Quick FAQ — ${nbName}</h2>
+        <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Quick Answers</h2>
         ${qfList.map(f => `<div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">${f.q}</p><p style="color:#4A5568;font-size:0.875rem;">${f.a}</p></div>`).join('')}` : '';
 
     const localIssueText = nb ? nb.localIssue : `FixitBay provides professional appliance repair in ${nbName}, San Francisco.`;
@@ -1732,6 +1802,8 @@ function getSEOContent(route) {
         ${parkingHTML}
         ${callsHTML}
         ${localNotesHTML}
+          ${homeTypesHTML}
+          ${recentRepairsHTML}
         <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">What We Repair in ${nbName}</h2>
         <p style="margin-bottom:0.5rem;font-size:0.875rem;color:#4A5568;">We service all major appliance types in ${nbName}. Click a service below for symptoms, estimated pricing, and what to expect during your repair visit.</p>
         <div style="margin-bottom:1.5rem;">${svcLinks}</div>

@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../../templates/MobileServiceLanding';
 import { useIsMobile } from '../../../hooks/useIsMobile';
 import SERVICE_CONTENT from '../../../data/serviceContentData';
+import MaintenanceSections from '../../sections/MaintenanceSections';
 
 const OvenRangeMaintenance = () => {
   const isMobile = useIsMobile();
@@ -51,8 +52,8 @@ const OvenRangeMaintenance = () => {
       <MobileServiceLanding
         appliance="Oven, Range & Stove"
         pageSlug="maintenance/oven-range"
-        pageTitle="Oven Maintenance San Francisco Bay Area | FixitBay LLC"
-        metaDescription="Professional oven maintenance in San Francisco Bay Area. Gas and electric service. Ensure safe, efficient cooking. $60 diagnostic, 180-day warranty."
+        pageTitle="Oven & Range Maintenance San Francisco | FixitBay"
+        metaDescription="Professional oven and range maintenance in San Francisco. Burner cleaning, calibration, safety checks. $60 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Oven<br />Maintenance. Today.</>}
         heroSubtitle="Safe, Efficient Cooking — Guaranteed"
         techImage="/images/technicians/oven-tech.jpg"
@@ -107,7 +108,9 @@ const OvenRangeMaintenance = () => {
         { href: '/maintenance/cooktop', label: 'Cooktop Maintenance', desc: 'Burner and surface cleaning service' },
         { href: '/stove-repair', label: 'Stove Repair', desc: 'Gas and electric stove service' },
       ]}
-    />
+    >
+      <MaintenanceSections appliance="Oven" checklistItems={['Burner port cleaning and flow test', 'Igniter response time test', 'Oven temperature calibration with precision thermometer', 'Door gasket inspection and seal test', 'Drip pan removal and deep cleaning', 'Broiler element inspection', 'Gas connection leak test (gas models)', 'Control knob operation check', 'Self-cleaning function test', 'Electrical connection and wiring inspection']} />
+    </ApplianceRepairPageNew>
   );
 };
 

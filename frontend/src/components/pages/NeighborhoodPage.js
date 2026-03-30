@@ -261,7 +261,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
           <section className="nh-parking" data-testid="nh-parking">
             <div style={{ maxWidth: 820, margin: '0 auto 20px' }}>
               <div className="nh-eyebrow" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 8 }}>LOCAL KNOWLEDGE</div>
-              <div style={{ fontWeight: 800, fontSize: 24, color: '#fff' }}>Parking &amp; Access in {data.name}</div>
+              <h2 style={{ fontWeight: 800, fontSize: 24, color: '#fff', margin: 0 }}>Parking &amp; Access in {data.name}</h2>
             </div>
             <div className="nh-parking-card">
               <div className="nh-parking-icon" style={{ color: '#FF5722', fontWeight: 800, fontSize: 20 }}>P</div>
@@ -273,7 +273,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
         {/* ─── 4. MOST COMMON CALLS ─── */}
         <section className="nh-calls" data-testid="nh-calls">
           <div className="nh-eyebrow" style={{ marginBottom: 8 }}>WHAT WE SEE MOST</div>
-          <div style={{ fontWeight: 800, fontSize: 32, color: '#1A1A1A', marginBottom: 48 }}>Most Common Repair Calls in {data.name}</div>
+          <h2 style={{ fontWeight: 800, fontSize: 28, color: '#1A1A1A', marginBottom: 48, margin: '0 0 48px' }}>Common Appliance Problems in {data.name}</h2>
           <div className="nh-calls-grid">
             {calls.map((c, i) => {
               const { title: t, body: b } = splitCall(c);
@@ -295,7 +295,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
           <section className="nh-notes" data-testid="nh-local-notes">
             <div style={{ maxWidth: 820, margin: '0 auto 24px' }}>
               <div className="nh-eyebrow" style={{ marginBottom: 8 }}>{data.name.toUpperCase()} HOMES</div>
-              <div style={{ fontWeight: 800, fontSize: 28, color: '#1A1A1A' }}>What We Know About {data.name}</div>
+              <h2 style={{ fontWeight: 800, fontSize: 28, color: '#1A1A1A', margin: 0 }}>What We Know About {data.name}</h2>
             </div>
             <div className="nh-notes-box">
               <p>{data.localNotes}</p>
@@ -306,7 +306,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
         {/* ─── 6. WHAT WE REPAIR ─── */}
         <section className="nh-repair" data-testid="nh-what-we-repair">
           <div className="nh-eyebrow" style={{ marginBottom: 8 }}>WHAT WE FIX</div>
-          <div style={{ fontWeight: 800, fontSize: 28, color: '#1A1A1A', marginBottom: 8 }}>What We Repair in {data.name}</div>
+          <h2 style={{ fontWeight: 800, fontSize: 28, color: '#1A1A1A', marginBottom: 8 }}>What We Repair in {data.name}</h2>
           <p style={{ color: '#4A5568', fontSize: 14, marginBottom: 32 }}>Click a service for symptoms, pricing, and what to expect</p>
           <div className="nh-pills">
             {SERVICES.map(s => (
@@ -320,7 +320,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
         {/* ─── 7. PRICING ─── */}
         <section className="nh-pricing" data-testid="nh-pricing">
           <div className="nh-eyebrow" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 8 }}>TRANSPARENT PRICING</div>
-          <div style={{ fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 40 }}>Pricing &amp; Diagnostic</div>
+          <h2 style={{ fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 40 }}>Pricing &amp; Diagnostic</h2>
           <div className="nh-pricing-grid">
             <div className="nh-pricing-card">
               <div className="nh-pricing-val">$60</div>
@@ -352,7 +352,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
         {/* ─── 8. FAQ ─── */}
         <section className="nh-faq" data-testid="nh-faq">
           <div className="nh-eyebrow" style={{ marginBottom: 8 }}>FAQ</div>
-          <div style={{ fontWeight: 800, fontSize: 28, color: '#1A1A1A', marginBottom: 40 }}>Quick FAQ &mdash; {data.name}</div>
+          <h2 style={{ fontWeight: 800, fontSize: 28, color: '#1A1A1A', marginBottom: 40 }}>Quick Answers</h2>
           <div className="nh-faq-wrap">
             {faqItems.map((f, i) => (
               <div key={i} className={`nh-faq-item${openFaq === i ? ' open' : ''}`} data-testid={`nh-faq-item-${i}`}>
@@ -369,7 +369,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
         {/* ─── 9. FINAL CTA ─── */}
         <section className="nh-cta" data-testid="nh-final-cta">
           <div className="nh-eyebrow" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 8 }}>GET STARTED</div>
-          <div className="nh-cta-title">Ready to Book in {data.name}?</div>
+          <h2 className="nh-cta-title">Need Appliance Repair in {data.name} Today?</h2>
           <p className="nh-cta-sub">Schedule a licensed technician to your {data.name} home. $60 diagnostic credited toward your repair, 180-day warranty on parts and labor, and appointments often available same- or next-day for calls placed before 2 PM.</p>
           <div className="nh-cta-btns">
             <a href="/book" className="nh-btn-primary" data-testid="nh-cta-book-btn">Book Online</a>
@@ -377,9 +377,40 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
           </div>
         </section>
 
+
+        {/* ─── EXTRA: Home Types (if provided) ─── */}
+        {data.homeTypes && (
+          <section style={{ background: '#f8f5f0', padding: '64px 24px' }}>
+            <div style={{ maxWidth: 820, margin: '0 auto' }}>
+              <div className="nh-eyebrow" style={{ marginBottom: 8 }}>HOME TYPES WE SERVICE</div>
+              <h2 style={{ fontWeight: 800, fontSize: 28, color: '#1A1A1A', marginBottom: 20 }}>{data.name} Home Types We Service</h2>
+              <p style={{ fontSize: 15, color: '#4A5568', lineHeight: 1.9 }}>{data.homeTypes}</p>
+            </div>
+          </section>
+        )}
+
+        {/* ─── EXTRA: Recent Repairs (if provided) ─── */}
+        {data.recentRepairs && data.recentRepairs.length > 0 && (
+          <section style={{ background: '#0d1b2a', padding: '64px 24px' }}>
+            <div style={{ maxWidth: 820, margin: '0 auto' }}>
+              <div className="nh-eyebrow" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 8 }}>RECENT WORK</div>
+              <h2 style={{ fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 24 }}>Recent Repairs in {data.name} District</h2>
+              <div style={{ display: 'grid', gap: 12 }}>
+                {data.recentRepairs.map((r, i) => (
+                  <div key={i} style={{ background: '#1a2f45', borderRadius: 4, padding: '20px 24px', borderLeft: '4px solid #ff5722' }}>
+                    <div style={{ fontWeight: 700, fontSize: 15, color: '#fff', marginBottom: 4 }}>{r.title}</div>
+                    <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', lineHeight: 1.6 }}>{r.description}</div>
+                    {r.location && <div style={{ fontSize: 12, color: '#ff5722', marginTop: 6 }}>{r.location}</div>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* ─── 10. OTHER NEIGHBORHOODS ─── */}
         <section className="nh-other" data-testid="nh-other-neighborhoods">
-          <div style={{ fontWeight: 700, fontSize: 16, color: '#1A1A1A', marginBottom: 20 }}>Other SF Neighborhoods We Serve</div>
+          <h2 style={{ fontWeight: 700, fontSize: 20, color: '#1A1A1A', marginBottom: 20 }}>Nearby San Francisco Neighborhoods</h2>
           <div className="nh-other-pills">
             {otherNeighborhoods.map(n => (
               <a key={n.slug} href={`/san-francisco/${n.slug}-appliance-repair`} className="nh-other-pill">{n.name}</a>

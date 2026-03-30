@@ -3,6 +3,7 @@ import ApplianceRepairPageNew from '../../templates/ApplianceRepairPageNew';
 import MobileServiceLanding from '../../templates/MobileServiceLanding';
 import { useIsMobile } from '../../../hooks/useIsMobile';
 import SERVICE_CONTENT from '../../../data/serviceContentData';
+import MaintenanceSections from '../../sections/MaintenanceSections';
 
 const DryerMaintenance = () => {
   const isMobile = useIsMobile();
@@ -51,8 +52,8 @@ const DryerMaintenance = () => {
       <MobileServiceLanding
         appliance="Dryer"
         pageSlug="maintenance/dryer"
-        pageTitle="Dryer Maintenance San Francisco Bay Area | FixitBay LLC"
-        metaDescription="Professional dryer maintenance and vent cleaning in San Francisco Bay Area. Prevent fires and improve efficiency. $60 diagnostic, 180-day warranty. FixitBay LLC."
+        pageTitle="Dryer Maintenance & Vent Cleaning San Francisco | FixitBay"
+        metaDescription="Professional dryer maintenance and vent cleaning in San Francisco. Prevent fires, improve efficiency. $60 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Dryer Maintenance<br />&amp; Vent Cleaning.</>}
         heroImage="/images/technicians/dryer-tech.jpg"
         heroImageAlt="FixitBay technician servicing a dryer in San Francisco"
@@ -111,7 +112,9 @@ const DryerMaintenance = () => {
         { href: '/washer-repair', label: 'Washer Repair', desc: 'Won\'t drain, spin, or fill issues' },
         { href: '/maintenance/refrigerator', label: 'Fridge Maintenance', desc: 'Coil cleaning and seal inspection' },
       ]}
-    />
+    >
+      <MaintenanceSections appliance="Dryer" checklistItems={['Vent duct cleaning (full run to exterior)', 'Lint trap housing deep clean', 'Drum seal inspection and testing', 'Belt tension and wear check', 'Moisture sensor calibration and wipe', 'Heating element and thermostat test', 'Exhaust airflow measurement', 'Gas connection safety check (gas dryers)', 'Motor bearing lubrication check', 'Electrical connection inspection']} />
+    </ApplianceRepairPageNew>
 
   );
 };
