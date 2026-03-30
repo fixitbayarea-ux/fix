@@ -118,7 +118,7 @@ const ProfessionalLandingPage = () => {
             {[
               { num: '22', numMobile: '22+', unit: 'Cities', title: 'BAY AREA', titleDesktop: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin', numSize: 64, mobileClass: 'stat-num-cities' },
               { num: '$60', numMobile: '$60', unit: 'Diagnostic', title: 'TOWARD REPAIR', titleDesktop: 'GOES TOWARD REPAIR', desc: 'Applied if you proceed', numSize: 64, mobileClass: 'stat-num-diag' },
-              { num: '180-Day', numMobile: null, unit: 'Warranty', title: 'PARTS & LABOR', titleDesktop: 'PARTS & LABOR', desc: '180-day guarantee', numSize: 36, mobileClass: 'stat-num-warranty' },
+              { num: '180', numMobile: null, unit: 'Day Warranty', title: 'PARTS & LABOR', titleDesktop: 'PARTS & LABOR', desc: '180-day guarantee', numSize: 64, mobileClass: 'stat-num-warranty' },
             ].map((s, i) => (
               <React.Fragment key={i}>
                 <div style={{ display: 'flex', alignItems: 'flex-start', gap: 20 }}>
