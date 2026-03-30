@@ -1,14 +1,5 @@
 import React from 'react';
-import logoWebP from '../../assets/logo.webp';
-import logo768 from '../../assets/logo-768.webp';
-import logo768Avif from '../../assets/logo-768.avif';
-import logo512 from '../../assets/logo-512.webp';
-import logo512Avif from '../../assets/logo-512.avif';
-import heroBgWebP from '../../assets/hero-bg.webp';
-import heroBg640 from '../../assets/hero-bg-640.webp';
-import heroBg640Avif from '../../assets/hero-bg-640.avif';
-import heroBg960 from '../../assets/hero-bg-960.webp';
-import heroBg960Avif from '../../assets/hero-bg-960.avif';
+import { Star, CheckCircle, Shield, Award } from 'lucide-react';
 import googleIcon from '../../assets/icons/google.svg';
 import thumbtackIcon from '../../assets/icons/thumbtack.svg';
 import nextdoorIcon from '../../assets/icons/nextdoor.svg';
@@ -138,32 +129,65 @@ const HomeHero = () => {
           </div>
         </div>
 
-        {/* LOGO COLUMN — desktop only */}
+        {/* TRUST CARD — desktop only */}
         <div
           className="hero-logo-col"
           data-testid="hero-right"
-          style={{
-            background: 'transparent',
-            position: 'relative',
-            overflow: 'hidden',
-            padding: '24px',
-          }}
+          style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px 24px' }}
         >
-          <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at center, rgba(255,87,34,0.12) 0%, transparent 65%)', pointerEvents: 'none' }} />
-          <picture style={{ position: 'relative', zIndex: 1 }}>
-            <source srcSet="/images/hero-logo-new.webp" type="image/webp" />
-            <img
-              src="/hero-logo-new.png"
-              alt="FixitBay Appliance Repair Logo"
-              width="400"
-              height="400"
-              fetchPriority="high"
-              loading="eager"
-              decoding="async"
-              data-testid="hero-logo-desktop"
-              style={{ width: '100%', maxWidth: 380, height: 'auto', display: 'block' }}
-            />
-          </picture>
+          <div className="hero-trust-card" data-testid="hero-trust-card">
+            {/* Animated Logo */}
+            <div style={{ textAlign: 'center', marginBottom: 28 }}>
+              <picture>
+                <source srcSet="/images/hero-logo-new.webp" type="image/webp" />
+                <img
+                  src="/hero-logo-new.png"
+                  alt="FixitBay Appliance Repair Logo"
+                  width="140"
+                  height="140"
+                  fetchPriority="high"
+                  loading="eager"
+                  decoding="async"
+                  data-testid="hero-logo-desktop"
+                  className="logo-sway"
+                  style={{ width: 140, height: 'auto', display: 'inline-block' }}
+                />
+              </picture>
+            </div>
+
+            {/* 2x2 Trust Grid */}
+            <div className="hero-trust-grid" data-testid="hero-trust-grid">
+              <a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" className="trust-grid-item" data-testid="trust-grid-google" aria-label="4.9 Google Rating (opens in new tab)">
+                <Star size={22} color="#FF5722" strokeWidth={2.5} />
+                <span className="trust-grid-value">4.9</span>
+                <span className="trust-grid-label">Google Rating</span>
+              </a>
+              <a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" className="trust-grid-item" data-testid="trust-grid-reviews" aria-label="95+ Verified Reviews (opens in new tab)">
+                <CheckCircle size={22} color="#4CAF50" strokeWidth={2.5} />
+                <span className="trust-grid-value">95+</span>
+                <span className="trust-grid-label">Verified Reviews</span>
+              </a>
+              <div className="trust-grid-item" data-testid="trust-grid-license">
+                <Shield size={22} color="#42A5F5" strokeWidth={2.5} />
+                <span className="trust-grid-value">#51001</span>
+                <span className="trust-grid-label">CA License</span>
+              </div>
+              <a href="https://nextdoor.com/page/fixitbay-san-francisco-ca/" target="_blank" rel="noopener noreferrer" className="trust-grid-item" data-testid="trust-grid-award" aria-label="Nextdoor Fave 2025 (opens in new tab)">
+                <Award size={22} color="#FFB300" strokeWidth={2.5} />
+                <span className="trust-grid-value">2025</span>
+                <span className="trust-grid-label">Nextdoor Fave</span>
+              </a>
+            </div>
+
+            {/* Social icons row */}
+            <div style={{ display: 'flex', justifyContent: 'center', gap: 16, marginTop: 24 }}>
+              {socialButtons.map((s) => (
+                <a key={s.aria} href={s.href} target="_blank" rel="noopener noreferrer" aria-label={`${s.aria} (opens in new tab)`} className="trust-social-icon">
+                  <img src={s.icon} alt="" width="20" height="20" style={{ opacity: 0.7, transition: 'opacity 0.2s' }} />
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
 
@@ -204,6 +228,88 @@ const HomeHero = () => {
         .hero-d { display: block; }
         .hero-d-flex { display: flex; }
         .hero-m { display: none !important; }
+
+        /* ── Glassmorphism Trust Card ── */
+        .hero-trust-card {
+          background: rgba(255, 255, 255, 0.08);
+          backdrop-filter: blur(16px);
+          -webkit-backdrop-filter: blur(16px);
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          border-radius: 20px;
+          padding: 36px 32px 28px;
+          width: 100%;
+          max-width: 340px;
+        }
+
+        /* ── Sway Animation ── */
+        @keyframes sway {
+          0%, 100% { transform: rotate(0deg); }
+          25% { transform: rotate(2.5deg); }
+          75% { transform: rotate(-2.5deg); }
+        }
+        .logo-sway {
+          animation: sway 4s ease-in-out infinite;
+          transform-origin: center center;
+        }
+
+        /* ── 2x2 Trust Grid ── */
+        .hero-trust-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+        }
+        .trust-grid-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 6px;
+          padding: 14px 8px;
+          border-radius: 12px;
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+          transition: background 0.25s, border-color 0.25s;
+          text-decoration: none;
+          cursor: pointer;
+        }
+        .trust-grid-item:hover {
+          background: rgba(255, 255, 255, 0.10);
+          border-color: rgba(255, 255, 255, 0.18);
+        }
+        .trust-grid-value {
+          font-family: Montserrat, sans-serif;
+          font-weight: 800;
+          font-size: 20px;
+          color: #FFFFFF;
+          line-height: 1;
+        }
+        .trust-grid-label {
+          font-family: Montserrat, sans-serif;
+          font-weight: 500;
+          font-size: 11px;
+          color: rgba(255, 255, 255, 0.55);
+          text-transform: uppercase;
+          letter-spacing: 0.06em;
+        }
+
+        /* ── Social Icons ── */
+        .trust-social-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.06);
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          transition: background 0.2s, border-color 0.2s;
+        }
+        .trust-social-icon:hover {
+          background: rgba(255, 255, 255, 0.14);
+          border-color: rgba(255, 255, 255, 0.22);
+        }
+        .trust-social-icon:hover img {
+          opacity: 1 !important;
+        }
 
         /* Mobile (<1024px) */
         @media (max-width: 1023px) {

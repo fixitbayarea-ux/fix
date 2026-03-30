@@ -228,6 +228,10 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
   - **Group 4**: Marina neighborhood page: 8 H2 sections (was 0), 1657 words (was 718), 37 Marina mentions. Added homeTypes + recentRepairs sections.
   - Build: 232/232 (DONE)
 
+### Session 19 (Mar 30 2026) — Prompt 57 Visual Fixes
+- **ПРОМПТ 57 (Проблема 1)**: Redesigned desktop Hero right column (Trust Bar). Replaced plain logo with glassmorphism card (`rgba(255,255,255,0.08)`, `backdrop-filter: blur(16px)`, rounded 20px). Added CSS `@keyframes sway` animation (2.5° rotation, 4s infinite) for logo. Created 2x2 trust grid with Lucide icons: Star (4.9 Google Rating), CheckCircle (95+ Verified Reviews), Shield (#51001 CA License), Award (2025 Nextdoor Fave). Grid items have hover effects. Added social icons row (Google, Thumbtack, Nextdoor, Facebook) with circular glassmorphism buttons. Mobile unchanged (card hidden <1024px). Build: 232/232.
+
+
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
