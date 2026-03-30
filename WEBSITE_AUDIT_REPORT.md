@@ -1,6 +1,6 @@
 # 🔍 КОМПЛЕКСНЫЙ АУДИТ САЙТА FIXITBAY
 **Дата:** 24 января 2026  
-**URL:** https://appliance-repair-sf.preview.emergentagent.com
+**URL:** https://appliance-hero-ui.preview.emergentagent.com
 
 ---
 
