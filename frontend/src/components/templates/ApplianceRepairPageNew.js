@@ -1051,87 +1051,85 @@ const ApplianceRepairPageNew = ({
       {/* ═══ BRANDS ═══ */}
       <BrandsGrid testId="brands-section" />
 
-      {/* ═══ RELATED SERVICES ═══ */}
-      {autoRelatedLinks?.length > 0 && (
-        <section style={{ background: '#FFFFFF', padding: '70px 0' }}>
-          <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-            <div style={{ ...S.eyebrow, marginBottom: 10 }}>ALSO WE FIX</div>
-            <h2 style={{ ...S.h2, fontSize: 32, color: '#0D1B2A', marginBottom: 28 }}>Related Services</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4" style={{ gap: 16 }}>
-              {autoRelatedLinks.map((link, i) => (
-                <a key={i} href={link.href} data-testid={`related-service-${i}`} style={{ display: 'flex', flexDirection: 'column', padding: '20px 24px', border: '1px solid rgba(0,0,0,0.08)', borderRadius: 4, textDecoration: 'none', transition: 'border-color 0.2s' }} onMouseEnter={e => e.currentTarget.style.borderColor = '#FF5722'} onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(0,0,0,0.08)'}>
-                  <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 14, color: '#0D1B2A', marginBottom: 6 }}>{link.label}</div>
-                  {link.desc && <p style={{ fontFamily: S.font, fontSize: 12, color: '#4A5568', lineHeight: 1.5 }}>{link.desc}</p>}
-                  <div style={{ marginTop: 'auto', paddingTop: 14 }}>
-                    <span className="related-svc-btn" style={{ fontFamily: S.font, fontWeight: 700, fontSize: 12, textTransform: 'uppercase', padding: '12px 16px', background: '#0D1B2A', color: '#fff', borderRadius: 3, display: 'inline-block', transition: 'background 0.2s', whiteSpace: 'nowrap' }}>Learn More</span>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ═══ SERVICE AREAS (commercial & maintenance only) ═══ */}
-      {!isCity && !isBrand && (isCommercial || isMaintenance) && (() => {
-        const CITY_SERVICE_SLUGS = ['san-francisco','daly-city','south-san-francisco','san-bruno','pacifica','millbrae','mill-valley','san-rafael','sausalito','novato','corte-madera','tiburon','belvedere','larkspur','greenbrae','ross','fairfax','san-anselmo'];
-        const CITY_SERVICE_SVCS = ['refrigerator','washer','dryer','dishwasher','oven','wine-cooler','ice-maker'];
-        const svcSlug = appliance ? appliance.toLowerCase().replace(/\s+/g, '-').replace(/-appliance$/, '') : '';
-        const hasCityServiceRoutes = !isCommercial && CITY_SERVICE_SVCS.includes(svcSlug);
-        return (
-          <section style={{ background: '#F8F5F0', padding: '60px 0' }}>
-            <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-              <div style={{ ...S.eyebrow, marginBottom: 10 }}>COVERAGE</div>
-              <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 10 }}>{isCommercial ? 'Commercial Service Areas' : `Service Areas for ${appliance} ${serviceWord}`}</h2>
-              <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>{isCommercial ? 'We provide commercial appliance repair for restaurants, cafes, hotels, and property managers across San Francisco, the Peninsula, and Marin County.' : 'We serve San Francisco, Peninsula & North Bay / Marin County'}</p>
-              <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#4A5568', marginBottom: 16, lineHeight: 1.7 }}>We provide {appliance.toLowerCase()} {serviceWord.toLowerCase()} throughout San Francisco, Peninsula, and Marin County — including Daly City, South San Francisco, San Bruno, Pacifica, Millbrae, Colma, Brisbane, Montara, Mill Valley, San Rafael, Sausalito, Novato, Corte Madera, Larkspur, Greenbrae, Tiburon, Fairfax, San Anselmo, and Ross. Same- or next-day appointments available across all service areas.</p>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'flex-start' }}>
-                {['San Francisco','Daly City','South San Francisco','Colma','Brisbane','San Bruno','Millbrae','Pacifica','Montara','Sausalito','Mill Valley','Tiburon','Belvedere','Corte Madera','San Rafael','Larkspur','Greenbrae','Novato','Ross','Fairfax','San Anselmo'].map(city => {
-                  const slug = city.toLowerCase().replace(/\s+/g, '-');
-                  const href = isCommercial ? `/${slug}-appliance-repair` : `/${slug}-${svcSlug}-repair`;
-                  return (
-                    <Link key={city} to={href} style={{ fontFamily: S.font, fontWeight: 500, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.10)', borderRadius: 20, padding: '7px 16px', whiteSpace: 'nowrap', cursor: 'pointer', transition: 'all 0.15s ease' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#0D1B2A'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.10)'; }}>
-                      {city}
-                    </Link>
-                  );
-                })}
-              </div>
-              <p style={{ marginTop: 20 }}>
-                <Link to="/service-areas" style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#FF5722', textDecoration: 'none', transition: 'text-decoration 0.2s' }} onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'} onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}>View all service cities &rarr;</Link>
-              </p>
-            </div>
-          </section>
-        );
-      })()}
-
-      {/* ═══ BY CITY CROSS-LINKS ═══ */}
-      {!isBrand && !isCommercial && !isMaintenance && (() => {
+      {/* ═══ COMBINED: RELATED SERVICES + SERVICE AREAS / BY CITY ═══ */}
+      {(() => {
         const svcSlug = appliance ? appliance.toLowerCase().replace(/\s+/g, '-').replace(/-appliance$/, '') : '';
         const currentCitySlug = isCity ? cityName.toLowerCase().replace(/\s+&\s+/g, '-').replace(/\s+/g, '-') : (cmsSlug ? cmsSlug.replace(`-${svcSlug}-repair`, '') : '');
-        const hasAnyCities = CITY_REGIONS.some(r => r.slugs.some(s => s !== currentCitySlug && CITY_SERVICE_LINKS[s]?.includes(svcSlug)));
-        if (!hasAnyCities) return null;
+        const hasRelated = autoRelatedLinks?.length > 0;
+        const showByCity = !isBrand && !isCommercial && !isMaintenance;
+        const showCoverage = !isCity && !isBrand && (isCommercial || isMaintenance);
+        const hasAnyCities = showByCity && CITY_REGIONS.some(r => r.slugs.some(s => s !== currentCitySlug && CITY_SERVICE_LINKS[s]?.includes(svcSlug)));
+        const hasRightCol = (showByCity && hasAnyCities) || showCoverage;
+        if (!hasRelated && !hasRightCol) return null;
+
+        const COVERAGE_CITIES = ['San Francisco','Daly City','South San Francisco','Colma','Brisbane','San Bruno','Millbrae','Pacifica','Montara','Sausalito','Mill Valley','Tiburon','Belvedere','Corte Madera','San Rafael','Larkspur','Greenbrae','Novato','Ross','Fairfax','San Anselmo'];
+        const CITY_SVC_SLUGS = ['refrigerator','washer','dryer','dishwasher','oven','wine-cooler','ice-maker'];
+        const hasCityRoutes = !isCommercial && CITY_SVC_SLUGS.includes(svcSlug);
+
         return (
-          <section style={{ background: '#FFFFFF', padding: '60px 0' }}>
-            <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
-              <div style={{ ...S.eyebrow, marginBottom: 10 }}>LOCAL SERVICE</div>
-              <h2 style={{ ...S.h2, fontSize: 30, color: '#0D1B2A', marginBottom: 10 }}>{appliance} Repair by City</h2>
-              <p style={{ fontFamily: S.font, fontSize: 14, color: '#4A5568', marginBottom: 24 }}>Same- or next-day {appliance.toLowerCase()} repair available in these cities:</p>
-              {CITY_REGIONS.map(region => {
-                const regionCities = region.slugs.filter(s => s !== currentCitySlug && CITY_SERVICE_LINKS[s]?.includes(svcSlug));
-                if (regionCities.length === 0) return null;
-                return (
-                  <div key={region.label} style={{ marginBottom: 20 }}>
-                    <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: 10 }}>{region.label}</div>
+          <section style={{ background: '#F8F5F0', padding: '60px 0' }} data-testid="explore-services-areas">
+            <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
+              <div className="explore-two-col" data-testid="explore-two-col-grid">
+                {/* LEFT CARD: Related Services */}
+                {hasRelated && (
+                  <div className="explore-card explore-card-navy" data-testid="explore-related-services">
+                    <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: 8 }}>ALSO WE FIX</div>
+                    <h2 style={{ fontFamily: S.font, fontWeight: 800, fontSize: 20, color: '#FFFFFF', marginBottom: 20 }}>Related Services</h2>
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-                      {regionCities.map(cs => (
-                        <Link key={cs} to={`/${cs}-${svcSlug}-repair`} data-testid={`city-service-link-${cs}`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#F8F5F0', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 18px', display: 'inline-flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#FF5722'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.background = '#F8F5F0'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.09)'; }}>
-                          <MapPin size={13} /> {CITY_DISPLAY_NAMES[cs]} {appliance} Repair
-                        </Link>
+                      {autoRelatedLinks.map((link, i) => (
+                        <a key={i} href={link.href} data-testid={`related-service-${i}`} style={{ fontFamily: S.font, fontWeight: 600, fontSize: 13, color: '#FFFFFF', textDecoration: 'none', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 20, padding: '8px 16px', whiteSpace: 'nowrap', transition: 'all 0.15s ease', display: 'inline-flex', alignItems: 'center' }} onMouseEnter={e => { e.currentTarget.style.background = '#FF5722'; e.currentTarget.style.borderColor = '#FF5722'; }} onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; }}>
+                          {link.label}
+                        </a>
                       ))}
                     </div>
+                    <a href="/services" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, marginTop: 18, fontSize: 13, fontWeight: 700, color: '#FF5722', textDecoration: 'none' }} onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'} onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}>View all services &rarr;</a>
                   </div>
-                );
-              })}
+                )}
+
+                {/* RIGHT CARD: Service Areas or By City */}
+                {showCoverage && (
+                  <div className="explore-card explore-card-cream" data-testid="explore-service-areas">
+                    <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: 8 }}>COVERAGE</div>
+                    <h2 style={{ fontFamily: S.font, fontWeight: 800, fontSize: 20, color: '#0D1B2A', marginBottom: 20 }}>{isCommercial ? 'Commercial Service Areas' : `Service Areas for ${appliance} ${serviceWord}`}</h2>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                      {COVERAGE_CITIES.map(city => {
+                        const slug = city.toLowerCase().replace(/\s+/g, '-');
+                        const href = isCommercial ? `/${slug}-appliance-repair` : (hasCityRoutes ? `/${slug}-${svcSlug}-repair` : `/${slug}-appliance-repair`);
+                        return (
+                          <Link key={city} to={href} style={{ fontFamily: S.font, fontWeight: 500, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.10)', borderRadius: 20, padding: '7px 16px', whiteSpace: 'nowrap', transition: 'all 0.15s ease' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#0D1B2A'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.10)'; }}>
+                            {city}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                    <Link to="/service-areas" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, marginTop: 18, fontSize: 13, fontWeight: 700, color: '#FF5722', textDecoration: 'none' }} onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'} onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}>View all service cities &rarr;</Link>
+                  </div>
+                )}
+
+                {showByCity && hasAnyCities && (
+                  <div className="explore-card explore-card-cream" data-testid="explore-by-city">
+                    <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: 8 }}>LOCAL SERVICE</div>
+                    <h2 style={{ fontFamily: S.font, fontWeight: 800, fontSize: 20, color: '#0D1B2A', marginBottom: 20 }}>{appliance} Repair by City</h2>
+                    {CITY_REGIONS.map(region => {
+                      const regionCities = region.slugs.filter(s => s !== currentCitySlug && CITY_SERVICE_LINKS[s]?.includes(svcSlug));
+                      if (regionCities.length === 0) return null;
+                      return (
+                        <div key={region.label} style={{ marginBottom: 16 }}>
+                          <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: 8 }}>{region.label}</div>
+                          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                            {regionCities.map(cs => (
+                              <Link key={cs} to={`/${cs}-${svcSlug}-repair`} data-testid={`city-service-link-${cs}`} style={{ fontFamily: S.font, fontWeight: 500, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#FFFFFF', border: '1px solid rgba(0,0,0,0.10)', borderRadius: 20, padding: '7px 16px', display: 'inline-flex', alignItems: 'center', gap: 6, transition: 'all 0.15s ease', whiteSpace: 'nowrap' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; e.currentTarget.style.borderColor = '#0D1B2A'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; e.currentTarget.style.borderColor = 'rgba(0,0,0,0.10)'; }}>
+                                <MapPin size={12} /> {CITY_DISPLAY_NAMES[cs]} {appliance} Repair
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    })}
+                    <Link to="/service-areas" style={{ display: 'inline-flex', alignItems: 'center', gap: 4, marginTop: 6, fontSize: 13, fontWeight: 700, color: '#FF5722', textDecoration: 'none' }} onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'} onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}>View all service cities &rarr;</Link>
+                  </div>
+                )}
+              </div>
             </div>
           </section>
         );
@@ -1191,6 +1189,13 @@ const ApplianceRepairPageNew = ({
       {/* Mobile responsive */}
       <style>{`
         .related-svc-btn:hover { background: #FF5722 !important; }
+        .explore-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .explore-card { border-radius: 16px; padding: 28px 32px; }
+        .explore-card-navy { background: #0D1B2A; }
+        .explore-card-cream { background: #FFFFFF; border: 1px solid rgba(0,0,0,0.08); }
+        @media (max-width: 767px) {
+          .explore-two-col { grid-template-columns: 1fr !important; }
+        }
         @media (max-width: 1023px) {
           .hero-main-h1 { font-size: 28px !important; line-height: 1.2 !important; }
         }
