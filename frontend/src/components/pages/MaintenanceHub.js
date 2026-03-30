@@ -320,33 +320,41 @@ const MaintenanceHub = () => {
         </div>
       </section>
 
-      {/* Service Areas */}
-      <div className="mt-6">
-        <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
-          {[
-            { name:'San Francisco', href:'/san-francisco-appliance-repair' },
-            { name:'Mill Valley', href:'/mill-valley-appliance-repair' },
-            { name:'Pacifica', href:'/pacifica-appliance-repair' },
-            { name:'Colma', href:'/colma-appliance-repair' },
-            { name:'Daly City', href:'/daly-city-appliance-repair' },
-            { name:'South SF', href:'/south-san-francisco-appliance-repair' },
-            { name:'San Bruno', href:'/san-bruno-appliance-repair' },
-            { name:'Millbrae', href:'/millbrae-appliance-repair' },
-            { name:'Brisbane', href:'/brisbane-appliance-repair' },
-            { name:'All Areas', href:'/service-areas' }
-          ].map((c) => (
-            <li key={c.href}>
-              <a 
-                href={c.href} 
-                className="block px-4 py-3 bg-white rounded-lg border-2 border-blue-200 hover:border-blue-400 hover:shadow-md transition-all duration-300 text-center font-medium"
-                style={{color:'#1A3B5D'}}
-              >
+      {/* Bay Area Coverage */}
+      <section data-testid="maintenance-coverage" style={{ background: '#0D1B2A', padding: '64px 24px' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
+          <div style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 600, fontSize: 12, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#FF5722', marginBottom: 10 }}>WE SERVICE THESE AREAS</div>
+          <h2 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 800, fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', color: '#FFFFFF', marginBottom: 28 }}>Our Bay Area Coverage</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center' }}>
+            {[
+              { name: 'San Francisco', href: '/san-francisco-appliance-repair' },
+              { name: 'Daly City', href: '/daly-city-appliance-repair' },
+              { name: 'South San Francisco', href: '/south-san-francisco-appliance-repair' },
+              { name: 'San Bruno', href: '/san-bruno-appliance-repair' },
+              { name: 'Millbrae', href: '/millbrae-appliance-repair' },
+              { name: 'Colma', href: '/colma-appliance-repair' },
+              { name: 'Brisbane', href: '/brisbane-appliance-repair' },
+              { name: 'Pacifica', href: '/pacifica-appliance-repair' },
+              { name: 'Mill Valley', href: '/mill-valley-appliance-repair' },
+              { name: 'San Rafael', href: '/san-rafael-appliance-repair' },
+              { name: 'Novato', href: '/novato-appliance-repair' },
+            ].map(c => (
+              <a key={c.href} href={c.href} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '8px 16px', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 999, color: 'rgba(255,255,255,0.85)', fontSize: 14, fontWeight: 500, fontFamily: "'Montserrat', sans-serif", textDecoration: 'none', transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.15)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.25)'; }} onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF5722" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                 {c.name}
               </a>
-            </li>
-          ))}
-        </ul>
-      </div>
+            ))}
+            <a href="/service-areas" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '8px 16px', background: 'rgba(255,87,34,0.15)', border: '1px solid rgba(255,87,34,0.3)', borderRadius: 999, color: '#FF5722', fontSize: 14, fontWeight: 600, fontFamily: "'Montserrat', sans-serif", textDecoration: 'none', transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,87,34,0.25)'; }} onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,87,34,0.15)'; }}>
+              All SF Neighborhoods &rarr;
+            </a>
+          </div>
+          <div style={{ marginTop: 32 }}>
+            <a href="/service-areas" style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: '#FF5722', color: '#FFFFFF', padding: '14px 32px', borderRadius: 8, fontWeight: 700, fontSize: 15, fontFamily: "'Montserrat', sans-serif", textDecoration: 'none', transition: 'background 0.2s' }} onMouseEnter={e => e.currentTarget.style.background = '#FF7043'} onMouseLeave={e => e.currentTarget.style.background = '#FF5722'}>
+              View All Service Areas
+            </a>
+          </div>
+        </div>
+      </section>
     </ApplianceRepairPageNew>
   );
 };

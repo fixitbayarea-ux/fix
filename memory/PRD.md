@@ -235,6 +235,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 
 - **ПРОМПТ 57 (Проблема 4)**: Merged "Related Services" + "Service Areas/Repair by City" into two-column layout on all service, maintenance, and commercial pages. Left card: navy `#0D1B2A` with white chip links. Right card: white with city chips/pins. Grid `1fr 1fr` on desktop, `1fr` on mobile (<768px). Cards have `border-radius: 16px`, `padding: 28px 32px`. Service pages show "Repair by City" (grouped by region with MapPin), maintenance/commercial show "Service Areas" coverage chips. Build: 232/232.
 
+- **ПРОМПТ 57 (Проблема 5)**: Replaced unstyled city grid on `/maintenance` with navy-themed coverage section. New design: `#0D1B2A` background, eyebrow "WE SERVICE THESE AREAS", H2 "Our Bay Area Coverage", 11 city chips with inline SVG MapPin icons (orange `#FF5722`), "All SF Neighborhoods →" accent chip, orange CTA button "View All Service Areas". Build: 232/232.
 ## Backlog (Prioritized)
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
