@@ -239,4 +239,10 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 ## Backlog (Prioritized)
 - **ПРОМПТ 57 (Проблема 6)**: Redesigned both footers. Full footer (UnifiedFooter.js): 4-column grid (`2fr 1fr 1fr 1fr`), brand col with tagline + 5-star rating + license badge, Services col, Service Areas col (cities), Contact col (phone/email/social icons). Bottom bar with copyright + legal links. Mobile: accordion navigation, 2-col→1-col responsive. Compact footer (CompactFooter.jsx): orange `2px` top border, flex layout (logo | phone with icon | copyright), stacks vertically on mobile (<600px). Build: 232/232.
 - P2: Continue migrating inline styles to Tailwind/CSS vars (ApplianceRepairPageNew.js, MobileServiceLanding.js)
+
+### Session 19 — Prompt 58 Bug Fixes
+- **БАГ 1**: Fixed DynamicLandingPage.js — merged duplicate `className` on `<Star>` and `<div>`, removed all duplicate `rel="noopener noreferrer"` attributes.
+- **БАГ 2A**: Fixed StructuredData.js — removed extra `}, }` trailing comma in `itemListElement` (Wine Cooler Repair entry).
+- **БАГ 2B**: Fixed StructuredData.js — added `[]` dependency array to `useEffect` to prevent infinite re-renders.
+- **БАГ 3**: Renamed `backend/models/content_models.py` → `.js` (file contained JavaScript code, not Python). Not imported from any Python module. Build: 232/232.
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

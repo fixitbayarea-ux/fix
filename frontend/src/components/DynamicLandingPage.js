@@ -198,7 +198,7 @@ const DynamicLandingPage = () => {
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
               >
                 <div className="text-center">
-                  <div className="mb-4 flex justify-center" className="brand-gold">
+                  <div className="mb-4 flex justify-center brand-gold">
                     {service.icon}
                   </div>
                   <h3 className="text-xl font-bold text-gray-800 mb-3">
@@ -237,7 +237,7 @@ const DynamicLandingPage = () => {
             <div className="flex justify-center mb-6">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-8 h-8 fill-current " className="brand-gold"" />
+                  <Star key={i} className="w-8 h-8 fill-current brand-gold" />
                 ))}
               </div>
             </div>

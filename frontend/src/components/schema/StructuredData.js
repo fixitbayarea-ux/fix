@@ -32,7 +32,7 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven & Range Repair", "url": "https://fixitbay.net/oven-repair" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "url": "https://fixitbay.net/cooktop-repair" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "url": "https://fixitbay.net/ice-maker-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "url": "https://fixitbay.net/wine-cooler-repair" } }, }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "url": "https://fixitbay.net/wine-cooler-repair" } }
       ]
     },
     "geo": {
@@ -145,7 +145,7 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
       el.textContent = JSON.stringify(data);
     });
     return () => schemas.forEach(({ id }) => { const el = document.getElementById(id); if (el) el.remove(); });
-  });
+  }, []);
 
   return null;
 };
