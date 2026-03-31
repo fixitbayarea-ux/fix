@@ -245,4 +245,7 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **БАГ 2A**: Fixed StructuredData.js — removed extra `}, }` trailing comma in `itemListElement` (Wine Cooler Repair entry).
 - **БАГ 2B**: Fixed StructuredData.js — added `[]` dependency array to `useEffect` to prevent infinite re-renders.
 - **БАГ 3**: Renamed `backend/models/content_models.py` → `.js` (file contained JavaScript code, not Python). Not imported from any Python module. Build: 232/232.
+
+### Session 19 — Hero Redesign (User Prompt)
+- **Hero complete rewrite**: Removed glassmorphism trust card (logo + 2x2 grid + social icons), urgency "SLOTS AVAILABLE TODAY" line, and dark trust strip. New layout: `1fr 280px` grid. Left: logo block with circular avatar, H1 with orange "Bay Area" accent + subtitle regions, paragraph, Book/Phone CTA buttons. Right: vertical trust panel with 4 data blocks (Google Rating 4.9/5, Service Area 22 cities, Warranty 180 days, License #S1001) separated by thin lines. Mobile: trust panel hidden, existing mobile elements preserved. Build: 232/232.
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
