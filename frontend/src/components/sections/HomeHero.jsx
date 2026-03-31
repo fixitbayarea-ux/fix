@@ -40,7 +40,7 @@ const HomeHero = () => {
           {/* H1 */}
           <h1 className="hero-main-h1" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 900, color: '#FFFFFF', lineHeight: 1.08, letterSpacing: '-0.025em', margin: '0 0 18px 0' }}>
             Appliance Repair{' '}
-            <span style={{ color: '#FF5722' }}>Bay Area</span>
+            <span style={{ color: '#FF5722', whiteSpace: 'nowrap' }}>Bay Area</span>
             {' '}&mdash; Licensed &amp; Trusted
             <span style={{ display: 'block', fontSize: 'clamp(16px, 1.6vw, 22px)', fontWeight: 600, color: 'rgba(255,255,255,0.45)', letterSpacing: '0em', marginTop: 10 }}>
               San Francisco &middot; Peninsula &middot; Marin County
@@ -107,13 +107,13 @@ const HomeHero = () => {
         {/* RIGHT — trust panel (desktop only) */}
         <div className="hero-trust-panel" data-testid="hero-right">
           {/* Google Rating */}
-          <div style={{ padding: '0 0 22px 0', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+          <a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" style={{ padding: '0 0 22px 0', borderBottom: '1px solid rgba(255,255,255,0.06)', textDecoration: 'none', display: 'block' }} data-testid="hero-trust-google">
             <div className="tp-label">Google Rating</div>
             <div className="tp-value">
               4.9<span style={{ fontSize: 18, color: 'rgba(255,255,255,0.3)' }}> /5</span>
             </div>
             <div className="tp-desc">95+ verified reviews</div>
-          </div>
+          </a>
 
           {/* Service Area */}
           <div style={{ padding: '22px 0', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
@@ -137,7 +137,7 @@ const HomeHero = () => {
           <div style={{ padding: '22px 0 0 0' }}>
             <div className="tp-label">License</div>
             <div style={{ fontSize: 24, fontWeight: 900, color: '#FFFFFF', lineHeight: 1, letterSpacing: '-0.01em', marginBottom: 4 }}>
-              <span style={{ color: '#FF5722' }}>#</span>S1001
+              <span style={{ color: '#FF5722' }}>#</span>51001
             </div>
             <div className="tp-desc">CA Licensed &amp; Insured &middot; Nextdoor Fave 2025</div>
           </div>
