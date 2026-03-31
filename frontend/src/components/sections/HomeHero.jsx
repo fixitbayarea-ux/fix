@@ -41,7 +41,7 @@ const HomeHero = () => {
           <h1 className="hero-main-h1" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 900, color: '#FFFFFF', lineHeight: 1.08, letterSpacing: '-0.025em', margin: '0 0 18px 0' }}>
             Appliance Repair{' '}
             <span style={{ color: '#FF5722', whiteSpace: 'nowrap' }}>Bay Area</span>
-            {' '}&mdash; Licensed &amp; Trusted
+            {' '}&mdash;{' '}<span style={{ whiteSpace: 'nowrap' }}>Licensed &amp; Trusted</span>
             <span style={{ display: 'block', fontSize: 'clamp(16px, 1.6vw, 22px)', fontWeight: 600, color: 'rgba(255,255,255,0.45)', letterSpacing: '0em', marginTop: 10 }}>
               San Francisco &middot; Peninsula &middot; Marin County
             </span>
