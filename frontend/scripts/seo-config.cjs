@@ -695,18 +695,33 @@ function getSEOContent(route) {
       schemas: [
         {
           "@context": "https://schema.org",
-          "@type": "VideoObject",
-          "name": "FixitBay Appliance Repair San Francisco — How It Works",
-          "description": "Licensed appliance repair in San Francisco & Bay Area. Same-day service, $60 diagnostic, 180-day warranty. Call (760) 543-5733.",
-          "thumbnailUrl": "https://img.youtube.com/vi/WBEc8Lz2saA/maxresdefault.jpg",
-          "uploadDate": "2024-01-01",
-          "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA",
-          "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA",
-          "publisher": {
-            "@type": "Organization",
-            "name": "FixitBay LLC",
-            "url": "https://fixitbay.net"
-          }
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "VideoObject",
+              "position": 1,
+              "name": "Professional Appliance Repair Service — FixitBay LLC SF Bay Area",
+              "description": "Watch our licensed appliance repair technician diagnose and fix appliances across San Francisco and the Bay Area. $60 diagnostic, 180-day warranty.",
+              "thumbnailUrl": "https://i.ytimg.com/vi/WBEc8Lz2saA/maxresdefault.jpg",
+              "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA",
+              "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA",
+              "uploadDate": "2024-01-01",
+              "duration": "PT1M",
+              "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net" }
+            },
+            {
+              "@type": "VideoObject",
+              "position": 2,
+              "name": "Expert Appliance Technician at Work — FixitBay LLC Bay Area",
+              "description": "See FixitBay LLC expert technician Andrei performing professional appliance repair in San Francisco Bay Area homes.",
+              "thumbnailUrl": "https://i.ytimg.com/vi/ottiV_KfcUI/maxresdefault.jpg",
+              "contentUrl": "https://www.youtube.com/watch?v=ottiV_KfcUI",
+              "embedUrl": "https://www.youtube.com/embed/ottiV_KfcUI",
+              "uploadDate": "2024-01-01",
+              "duration": "PT1M",
+              "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net" }
+            }
+          ]
         }
       ],
       internalLinks: defaultInternalLinks
