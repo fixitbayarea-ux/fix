@@ -1,62 +1,83 @@
 https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
 
-# Strip trailing slashes — 301 redirect to canonical (non-trailing) URL
+# Strip trailing slashes
 /*/ /:splat 301!
-/blog-faq /blog 301
-/appliance-repair-daly-city /daly-city-appliance-repair 301
-/appliance-repair-south-san-francisco /south-san-francisco-appliance-repair 301
-/appliance-repair-san-bruno /san-bruno-appliance-repair 301
-/appliance-repair-pacifica /pacifica-appliance-repair 301
-/appliance-repair-millbrae /millbrae-appliance-repair 301
-/appliance-repair-colma /colma-appliance-repair 301
-/appliance-repair-brisbane /brisbane-appliance-repair 301
-/appliance-repair-montara /montara-appliance-repair 301
-/appliance-repair-mill-valley /mill-valley-appliance-repair 301
-/appliance-repair-san-rafael /san-rafael-appliance-repair 301
-/appliance-repair-sausalito /sausalito-appliance-repair 301
-/appliance-repair-novato /novato-appliance-repair 301
-/appliance-repair-corte-madera /corte-madera-appliance-repair 301
-/appliance-repair-tiburon /tiburon-appliance-repair 301
-/appliance-repair-larkspur /larkspur-appliance-repair 301
-/appliance-repair-greenbrae /greenbrae-appliance-repair 301
-/appliance-repair-ross /ross-appliance-repair 301
-/appliance-repair-fairfax /fairfax-appliance-repair 301
-/appliance-repair-san-anselmo /san-anselmo-appliance-repair 301
-/appliance-repair-belvedere /belvedere-appliance-repair 301
-/wine-refrigerator-repair /wine-cooler-repair 301
-/garbage-disposal-repair /services 301
 
-# Group 1 — Cities outside service area → 301 to /service-areas
-/san-jose-appliance-repair /service-areas 301
-/appliance-repair-fremont /service-areas 301
-/vallejo-appliance-repair /service-areas 301
-/appliance-repair-san-mateo /service-areas 301
-/appliance-repair-milpitas /service-areas 301
-/dublin-appliance-repair /service-areas 301
-/san-leandro-appliance-repair /service-areas 301
-/appliance-repair-hayward /service-areas 301
-/burlingame-appliance-repair /service-areas 301
-/mountain-view-appliance-repair /service-areas 301
-/alameda-appliance-repair /service-areas 301
-/appliance-repair-newark /service-areas 301
-/appliance-repair-palo-alto /service-areas 301
-/palo-alto-appliance-repair /service-areas 301
-/foster-city-appliance-repair /service-areas 301
-/appliance-repair-near-you /service-areas 301
-/appliance-repair-livermore /service-areas 301
-/appliance-repair-san-jose /service-areas 301
-/fremont-appliance-repair /service-areas 301
-/appliance-repair-dublin /service-areas 301
-/newark-appliance-repair /service-areas 301
-/livermore-appliance-repair /service-areas 301
-/hayward-appliance-repair /service-areas 301
-/appliance-repair-san-leandro /service-areas 301
-/appliance-repair-alameda /service-areas 301
-/appliance-repair-mountain-view /service-areas 301
-/appliance-repair-vallejo /service-areas 301
-/appliance-repair-burlingame /service-areas 301
-/milpitas-appliance-repair /service-areas 301
-/san-mateo-appliance-repair /service-areas 301
-/appliance-repair-santa-clara /service-areas 301
+# Legacy redirects
+/blog-faq /blog 301!
+/wine-refrigerator-repair /wine-cooler-repair 301!
+/garbage-disposal-repair /services 301!
 
+# Old URL format → canonical city pages
+/appliance-repair-daly-city /daly-city-appliance-repair 301!
+/appliance-repair-south-san-francisco /south-san-francisco-appliance-repair 301!
+/appliance-repair-san-bruno /san-bruno-appliance-repair 301!
+/appliance-repair-pacifica /pacifica-appliance-repair 301!
+/appliance-repair-millbrae /millbrae-appliance-repair 301!
+/appliance-repair-colma /colma-appliance-repair 301!
+/appliance-repair-brisbane /brisbane-appliance-repair 301!
+/appliance-repair-montara /montara-appliance-repair 301!
+/appliance-repair-mill-valley /mill-valley-appliance-repair 301!
+/appliance-repair-san-rafael /san-rafael-appliance-repair 301!
+/appliance-repair-sausalito /sausalito-appliance-repair 301!
+/appliance-repair-novato /novato-appliance-repair 301!
+/appliance-repair-corte-madera /corte-madera-appliance-repair 301!
+/appliance-repair-tiburon /tiburon-appliance-repair 301!
+/appliance-repair-larkspur /larkspur-appliance-repair 301!
+/appliance-repair-greenbrae /greenbrae-appliance-repair 301!
+/appliance-repair-ross /ross-appliance-repair 301!
+/appliance-repair-fairfax /fairfax-appliance-repair 301!
+/appliance-repair-san-anselmo /san-anselmo-appliance-repair 301!
+/appliance-repair-belvedere /belvedere-appliance-repair 301!
+/appliance-repair-santa-clara /santa-clara-appliance-repair 301!
+
+# Cities outside service area → /service-areas
+/vallejo-appliance-repair /service-areas 301!
+/richmond-appliance-repair /service-areas 301!
+/berkeley-appliance-repair /service-areas 301!
+/oakland-appliance-repair /service-areas 301!
+/alameda-appliance-repair /service-areas 301!
+/san-leandro-appliance-repair /service-areas 301!
+/fremont-appliance-repair /service-areas 301!
+/hayward-appliance-repair /service-areas 301!
+/san-jose-appliance-repair /service-areas 301!
+/santa-clara-appliance-repair /service-areas 301!
+/sunnyvale-appliance-repair /service-areas 301!
+/cupertino-appliance-repair /service-areas 301!
+/palo-alto-appliance-repair /service-areas 301!
+/mountain-view-appliance-repair /service-areas 301!
+/san-mateo-appliance-repair /service-areas 301!
+/redwood-city-appliance-repair /service-areas 301!
+/foster-city-appliance-repair /service-areas 301!
+/belmont-appliance-repair /service-areas 301!
+/dublin-appliance-repair /service-areas 301!
+/burlingame-appliance-repair /service-areas 301!
+/milpitas-appliance-repair /service-areas 301!
+/newark-appliance-repair /service-areas 301!
+/livermore-appliance-repair /service-areas 301!
+/appliance-repair-fremont /service-areas 301!
+/appliance-repair-san-mateo /service-areas 301!
+/appliance-repair-milpitas /service-areas 301!
+/appliance-repair-hayward /service-areas 301!
+/appliance-repair-san-leandro /service-areas 301!
+/appliance-repair-alameda /service-areas 301!
+/appliance-repair-mountain-view /service-areas 301!
+/appliance-repair-vallejo /service-areas 301!
+/appliance-repair-burlingame /service-areas 301!
+/appliance-repair-palo-alto /service-areas 301!
+/appliance-repair-san-jose /service-areas 301!
+/appliance-repair-dublin /service-areas 301!
+/appliance-repair-newark /service-areas 301!
+/appliance-repair-livermore /service-areas 301!
+/appliance-repair-near-you /service-areas 301!
+
+# Appliance type aliases → canonical repair pages
+/dryer-appliance-repair /dryer-repair 301!
+/washer-appliance-repair /washer-repair 301!
+/refrigerator-appliance-repair /refrigerator-repair 301!
+/dishwasher-appliance-repair /dishwasher-repair 301!
+/oven-appliance-repair /oven-repair 301!
+/stove-appliance-repair /stove-repair 301!
+
+# SPA catch-all (MUST be last)
 /* /index.html 200
