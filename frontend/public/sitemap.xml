@@ -298,27 +298,32 @@
   <url>
     <loc>https://fixitbay.net/maintenance/dryer</loc>
     <lastmod>2026-04-02</lastmod>
-    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/maintenance/washer</loc>
     <lastmod>2026-04-02</lastmod>
-    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/maintenance/refrigerator</loc>
     <lastmod>2026-04-02</lastmod>
-    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/maintenance/oven-range</loc>
     <lastmod>2026-04-02</lastmod>
-    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/maintenance/wine-cooler</loc>
     <lastmod>2026-04-02</lastmod>
-    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco-appliance-repair</loc>
