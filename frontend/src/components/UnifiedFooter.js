@@ -27,6 +27,14 @@ const areasLinks = [
   { href: '/san-rafael-appliance-repair', label: 'San Rafael' },
 ];
 
+const maintenanceLinks = [
+  { href: '/maintenance/refrigerator', label: 'Refrigerator' },
+  { href: '/maintenance/washer', label: 'Washer' },
+  { href: '/maintenance/dryer', label: 'Dryer' },
+  { href: '/maintenance/oven-range', label: 'Oven & Range' },
+  { href: '/maintenance/wine-cooler', label: 'Wine Cooler' },
+];
+
 const socials = [
   { icon: googleIcon, label: 'Google', href: 'https://share.google/Q48c6OXAIB7u60fNv' },
   { icon: nextdoorIcon, label: 'Nextdoor', href: 'https://nextdoor.com/page/fixitbay-san-francisco-ca/' },
@@ -105,7 +113,10 @@ const UnifiedFooter = () => (
         {/* Col 2 — Services */}
         <FooterAccordion title="Services" links={servicesLinks} moreHref="/services" moreLabel="+ more &rarr;" />
 
-        {/* Col 3 — Service Areas */}
+        {/* Col 3 — Maintenance */}
+        <FooterAccordion title="Maintenance" links={maintenanceLinks} moreHref="/maintenance" moreLabel="All maintenance &rarr;" />
+
+        {/* Col 4 — Service Areas */}
         <FooterAccordion title="Service Areas" links={areasLinks} moreHref="/service-areas" moreLabel="+ more &rarr;" />
 
         {/* Col 4 — Contact */}
@@ -153,7 +164,7 @@ const UnifiedFooter = () => (
       .unified-footer { background: #0D1B2A; font-family: ${F}; }
       .ftr-top-line { height: 1px; background: rgba(255,87,34,0.3); }
       .ftr-inner { max-width: 1200px; margin: 0 auto; padding: 64px 24px 48px; }
-      .ftr-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; }
+      .ftr-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 40px; }
       .ftr-col-title { font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #FF5722; margin-bottom: 20px; }
       .ftr-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
       .ftr-link { color: rgba(255,255,255,0.65); font-size: 14px; font-weight: 500; text-decoration: none; line-height: 2.2; transition: color 0.2s; display: block; }

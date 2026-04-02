@@ -292,7 +292,32 @@
   </url>
   <url>
     <loc>https://fixitbay.net/maintenance</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-04-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/maintenance/dryer</loc>
+    <lastmod>2026-04-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/maintenance/washer</loc>
+    <lastmod>2026-04-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/maintenance/refrigerator</loc>
+    <lastmod>2026-04-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/maintenance/oven-range</loc>
+    <lastmod>2026-04-01</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/maintenance/wine-cooler</loc>
+    <lastmod>2026-04-01</lastmod>
     <priority>0.7</priority>
   </url>
   <url>

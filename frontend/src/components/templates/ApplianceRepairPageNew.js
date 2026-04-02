@@ -1183,6 +1183,30 @@ const ApplianceRepairPageNew = ({
       {/* Custom content sections passed as children */}
       {children}
 
+      {/* ═══ MAINTENANCE CROSS-LINK ═══ */}
+      {(() => {
+        const maintenanceMap = {
+          'dryer': '/maintenance/dryer',
+          'washer': '/maintenance/washer',
+          'refrigerator': '/maintenance/refrigerator',
+          'oven': '/maintenance/oven-range',
+          'wine-cooler': '/maintenance/wine-cooler',
+        };
+        const svcSlug = appliance ? appliance.toLowerCase().replace(/\s+/g, '-') : '';
+        const matchKey = Object.keys(maintenanceMap).find(k => svcSlug.includes(k));
+        if (!matchKey || isCity || isBrand || isCommercial || isMaintenance) return null;
+        return (
+          <section style={{ background: '#F8F5F0', padding: '40px 24px', textAlign: 'center' }} data-testid="maintenance-cross-link">
+            <p style={{ fontFamily: S.font, fontSize: 14, color: '#4a5568', margin: 0 }}>
+              Want to prevent breakdowns?{' '}
+              <a href={maintenanceMap[matchKey]} style={{ color: '#FF5722', fontWeight: 600, textDecoration: 'none' }}>
+                Learn about our {appliance} Maintenance Service &rarr;
+              </a>
+            </p>
+          </section>
+        );
+      })()}
+
       {/* ═══ MINIMAL FOOTER ═══ */}
       <CompactFooter testId="service-footer" />
 

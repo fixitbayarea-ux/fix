@@ -247,5 +247,11 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **БАГ 3**: Renamed `backend/models/content_models.py` → `.js` (file contained JavaScript code, not Python). Not imported from any Python module. Build: 232/232.
 
 ### Session 19 — Hero Redesign (User Prompt)
+
+### Session 19 — SEO & Internal Linking Tasks
+- **Задача 1 (301 Redirects)**: Added `/appliance-repair-santa-clara → /service-areas` to `_redirects`. All other requested redirects (Group 1: 18 out-of-area cities, Group 2: 7 old-format URLs) were already present.
+- **Задача 2 (Sitemap)**: Added 5 maintenance subpages to `public/sitemap.xml` (dryer, washer, refrigerator, oven-range, wine-cooler) with `<priority>0.7</priority>` and `<lastmod>2026-04-01</lastmod>`.
+- **Задача 3 (Prerender)**: Already implemented — `react-snap` + `generate-seo-snapshots.cjs` already prerender all maintenance and blog routes. No changes needed.
+- **Задача 4 (Internal Linking)**: Added "Maintenance" column to UnifiedFooter (5 links + "All maintenance →", 5-column grid). Added maintenance cross-link section on repair pages ("Want to prevent breakdowns? Learn about our [X] Maintenance Service →") for dryer, washer, refrigerator, oven, wine-cooler. Build: 232/232.
 - **Hero complete rewrite**: Removed glassmorphism trust card (logo + 2x2 grid + social icons), urgency "SLOTS AVAILABLE TODAY" line, and dark trust strip. New layout: `1fr 280px` grid. Left: logo block with circular avatar, H1 with orange "Bay Area" accent + subtitle regions, paragraph, Book/Phone CTA buttons. Right: vertical trust panel with 4 data blocks (Google Rating 4.9/5, Service Area 22 cities, Warranty 180 days, License #S1001) separated by thin lines. Mobile: trust panel hidden, existing mobile elements preserved. Build: 232/232.
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
