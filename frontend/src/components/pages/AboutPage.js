@@ -51,7 +51,7 @@ const AboutPage = () => {
   const schemas = useMemo(() => [
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://fixitbay.net/about" }] } },
     { id: 'person-schema', data: { "@context": "https://schema.org", "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Repair Technician", "worksFor": { "@type": "LocalBusiness", "name": "FixitBay LLC" }, "description": "Licensed CA appliance repair technician (License #51001) with 3+ years of hands-on appliance repair experience in the Bay Area. Former cargo ship mechanical engineer.", "hasCredential": "BHGS License #51001", "knowsAbout": ["appliance repair", "refrigerator repair", "washer repair", "dryer repair", "dishwasher repair", "oven repair"] } },
-    { id: 'video-schema', data: { "@context": "https://schema.org", "@type": "VideoObject", "name": "FixitBay Appliance Repair San Francisco — How It Works", "description": "Licensed appliance repair in San Francisco & Bay Area. Fast scheduling, $60 diagnostic, 180-day warranty. Call (760) 543-5733.", "thumbnailUrl": "https://img.youtube.com/vi/WBEc8Lz2saA/hqdefault.jpg", "uploadDate": "2024-01-01", "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA", "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net" } } }
+    { id: 'video-schema', data: { "@context": "https://schema.org", "@type": "ItemList", "itemListElement": [{ "@type": "VideoObject", "position": 1, "name": "Professional Appliance Repair Service — FixitBay LLC SF Bay Area", "description": "Watch FixitBay LLC licensed technician diagnose and repair appliances in San Francisco Bay Area. $60 diagnostic, 180-day warranty, same-day service.", "thumbnailUrl": "https://i.ytimg.com/vi/WBEc8Lz2saA/maxresdefault.jpg", "uploadDate": "2024-01-01", "contentUrl": "https://www.youtube.com/watch?v=WBEc8Lz2saA", "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/logo192.png" } } }, { "@type": "VideoObject", "position": 2, "name": "Expert Appliance Technician at Work — FixitBay LLC Bay Area", "description": "FixitBay LLC expert technician Andrei demonstrates professional appliance repair in the San Francisco Bay Area. Licensed, insured, 180-day warranty.", "thumbnailUrl": "https://i.ytimg.com/vi/ottiV_KfcUI/maxresdefault.jpg", "uploadDate": "2024-01-01", "contentUrl": "https://www.youtube.com/watch?v=ottiV_KfcUI", "embedUrl": "https://www.youtube.com/embed/ottiV_KfcUI", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/logo192.png" } } }] } }
   ], []);
   useSchemas(schemas);
 
@@ -199,30 +199,32 @@ const AboutPage = () => {
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.6)', marginBottom: 40 }}>Watch our licensed technicians diagnose and fix appliances across the Bay Area — from initial inspection to final testing.</p>
           </div>
           <div className="video-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, maxWidth: 900, margin: '0 auto' }}>
-            {[
-              { id: 'WBEc8Lz2saA', alt: 'Watch how FixitBay LLC repairs appliances in San Francisco', caption: 'Professional Repair Service' },
-              { id: 'ottiV_KfcUI', alt: 'FixitBay LLC expert technician at work in Bay Area', caption: 'Expert Technician at Work' },
-            ].map((v, i) => (
-              <a key={i} href={`https://www.youtube.com/watch?v=${v.id}`} target="_blank" rel="noopener noreferrer" className="video-thumbnail-card" aria-label={`${v.caption} (opens in new tab)`}>
-                <div className="video-thumb-wrapper">
-                  <img
-                    src={`https://img.youtube.com/vi/${v.id}/hqdefault.jpg`}
-                    alt={v.alt}
-                    width={450}
-                    height={180}
-                    style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: '8px 8px 0 0', display: 'block' }}
-                    loading="lazy"
-                  />
-                  <div className="play-overlay">
-                    <svg viewBox="0 0 24 24" width="48" height="48" fill="white">
-                      <circle cx="12" cy="12" r="12" fill="rgba(0,0,0,0.6)" />
-                      <polygon points="10,8 16,12 10,16" fill="white" />
-                    </svg>
-                  </div>
-                </div>
-                <p className="video-caption">{v.caption}</p>
-              </a>
-            ))}
+            <div>
+              <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, borderRadius: 10, overflow: 'hidden', border: '1px solid rgba(255,87,34,0.2)' }}>
+                <iframe
+                  src="https://www.youtube.com/embed/WBEc8Lz2saA"
+                  title="Professional Appliance Repair Service — FixitBay LLC SF Bay Area"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+                />
+              </div>
+              <p style={{ fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,0.85)', fontFamily: 'Montserrat, sans-serif', marginTop: 8 }}>Professional Repair Service</p>
+            </div>
+            <div>
+              <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, borderRadius: 10, overflow: 'hidden', border: '1px solid rgba(255,87,34,0.2)' }}>
+                <iframe
+                  src="https://www.youtube.com/embed/ottiV_KfcUI"
+                  title="Expert Appliance Technician at Work — FixitBay LLC Bay Area"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none' }}
+                />
+              </div>
+              <p style={{ fontSize: 13, fontWeight: 600, color: 'rgba(255,255,255,0.85)', fontFamily: 'Montserrat, sans-serif', marginTop: 8 }}>Expert Technician at Work</p>
+            </div>
           </div>
           <p data-testid="video-description" style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.55)', textAlign: 'center', maxWidth: 700, margin: '24px auto 0', lineHeight: 1.7 }}>
             Every FixitBay LLC repair starts with a thorough $60 diagnostic — we identify the root cause, explain the issue, and provide a written estimate before any work begins. All repairs include our 180-day warranty on parts and labor.

@@ -253,5 +253,9 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **Задача 2 (Sitemap)**: Added 5 maintenance subpages to `public/sitemap.xml` (dryer, washer, refrigerator, oven-range, wine-cooler) with `<priority>0.7</priority>` and `<lastmod>2026-04-01</lastmod>`.
 - **Задача 3 (Prerender)**: Already implemented — `react-snap` + `generate-seo-snapshots.cjs` already prerender all maintenance and blog routes. No changes needed.
 - **Задача 4 (Internal Linking)**: Added "Maintenance" column to UnifiedFooter (5 links + "All maintenance →", 5-column grid). Added maintenance cross-link section on repair pages ("Want to prevent breakdowns? Learn about our [X] Maintenance Service →") for dryer, washer, refrigerator, oven, wine-cooler. Build: 232/232.
+
+### Session 19 — Prompt 62: Fix "Video isn't on a watch page"
+- **Задача 1**: Replaced single `VideoObject` schema with `ItemList` containing 2 `VideoObject` entries (WBEc8Lz2saA + ottiV_KfcUI) with full publisher+logo data in AboutPage.js.
+- **Задача 2**: Replaced thumbnail+link pattern with embedded `<iframe>` for both YouTube videos. Responsive 16:9 aspect ratio, lazy loading. Build: 232/232.
 - **Hero complete rewrite**: Removed glassmorphism trust card (logo + 2x2 grid + social icons), urgency "SLOTS AVAILABLE TODAY" line, and dark trust strip. New layout: `1fr 280px` grid. Left: logo block with circular avatar, H1 with orange "Bay Area" accent + subtitle regions, paragraph, Book/Phone CTA buttons. Right: vertical trust panel with 4 data blocks (Google Rating 4.9/5, Service Area 22 cities, Warranty 180 days, License #S1001) separated by thin lines. Mobile: trust panel hidden, existing mobile elements preserved. Build: 232/232.
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
