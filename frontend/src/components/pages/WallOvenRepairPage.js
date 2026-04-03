@@ -5,7 +5,7 @@ const WallOvenRepairPage = () => {
   const applianceData = {
     appliance: "Wall Oven",
     pageTitle: "Wall Oven Repair Service – Built-In Oven Specialists Bay Area",
-    metaDescription: "Expert wall oven repair in the Bay Area. Built-in oven specialists. Licensed technicians, 180-day warranty, fast scheduling. Call (760) 543-5733!",
+    metaDescription: "Professional wall oven repair in SF Bay Area. All brands: GE, Thermador, Wolf, Bosch, KitchenAid. Same-day service, $60 diagnostic, 180-day warranty.",
     commonProblems: [
       {
         title: "Oven Not Heating to Temperature",

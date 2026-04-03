@@ -1734,7 +1734,7 @@ function getSEOContent(route) {
   if (route === '/llm-info') {
     return {
       title: 'Official Business Information | FixitBay LLC',
-      robots: 'noindex, follow',
+      robots: 'index, follow',
       description: 'Official structured information about FixitBay LLC appliance repair service in San Francisco Bay Area. For AI assistants, search engines, and directories.',
       h1: 'Official Information About FixitBay LLC',
       content: `

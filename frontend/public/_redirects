@@ -80,4 +80,7 @@ https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
 /stove-appliance-repair /stove-repair 301!
 
 # SPA catch-all (MUST be last)
+/concord-appliance-repair /service-areas 301!
+/appliance-repair-concord /service-areas 301!
+
 /* /index.html 200
