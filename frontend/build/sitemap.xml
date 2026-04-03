@@ -2,287 +2,292 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://fixitbay.net/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/cooktop-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/garbage-disposal-repair</loc>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/freezer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/stove-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/range-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/whirlpool-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/lg-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/samsung-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/ge-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/bosch-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/kitchenaid-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/maytag-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/frigidaire-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/kenmore-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/thermador-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/viking-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/miele-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/sub-zero-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/wolf-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/refrigerator-not-cooling</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/dishwasher-maintenance</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/when-to-repair-vs-replace</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/dryer-taking-too-long</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/washer-error-codes</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/oven-temperature-calibration</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/ice-maker-troubleshooting</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/appliance-lifespan</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/energy-efficient-appliances</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/gas-smell-from-stove</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/refrigerator-water-filter</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/dishwasher-not-draining</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/dryer-not-heating</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/appliance-repair-cost-san-francisco</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/appliance-repair-marin-county</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/blog/same-day-appliance-repair-bay-area</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/contact</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/about</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/service-areas</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/reviews</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/brands</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/local-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/marin-county-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/residential-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/commercial-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/commercial-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/commercial-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/commercial-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/commercial-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/commercial-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -291,813 +296,863 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fixitbay.net/san-francisco-appliance-repair</loc>
+    <loc>https://fixitbay.net/maintenance/dryer</loc>
     <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/maintenance/washer</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/maintenance/refrigerator</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/maintenance/oven-range</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/maintenance/wine-cooler</loc>
+    <lastmod>2026-04-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/san-francisco-appliance-repair</loc>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/daly-city-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/south-san-francisco-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-bruno-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/pacifica-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/millbrae-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/colma-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/brisbane-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/montara-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-rafael-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/novato-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/mill-valley-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/sausalito-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/belvedere-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/tiburon-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/corte-madera-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-quentin-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/larkspur-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/greenbrae-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/ross-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/fairfax-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-anselmo-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/daly-city-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/daly-city-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/daly-city-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/daly-city-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/daly-city-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/daly-city-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/daly-city-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/south-san-francisco-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/south-san-francisco-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/south-san-francisco-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/south-san-francisco-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/south-san-francisco-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/south-san-francisco-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/south-san-francisco-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-bruno-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-bruno-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-bruno-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-bruno-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-bruno-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-bruno-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-bruno-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/pacifica-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/pacifica-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/pacifica-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/pacifica-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/pacifica-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/pacifica-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/pacifica-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/millbrae-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/millbrae-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/millbrae-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/millbrae-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/millbrae-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/millbrae-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/millbrae-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/mill-valley-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/mill-valley-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/mill-valley-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/mill-valley-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/mill-valley-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/mill-valley-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/mill-valley-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-rafael-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-rafael-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-rafael-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-rafael-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-rafael-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-rafael-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-rafael-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/sausalito-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/sausalito-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/sausalito-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/sausalito-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/sausalito-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/sausalito-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/sausalito-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/novato-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/novato-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/novato-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/novato-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/novato-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/novato-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/novato-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/corte-madera-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/corte-madera-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/corte-madera-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/corte-madera-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/corte-madera-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/corte-madera-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/corte-madera-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/tiburon-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/tiburon-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/tiburon-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/tiburon-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/tiburon-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/tiburon-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/tiburon-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/belvedere-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/belvedere-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/belvedere-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/belvedere-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/belvedere-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/belvedere-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/belvedere-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/larkspur-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/larkspur-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/larkspur-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/larkspur-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/larkspur-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/larkspur-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/larkspur-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/greenbrae-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/greenbrae-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/greenbrae-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/greenbrae-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/greenbrae-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/greenbrae-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/greenbrae-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/ross-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/ross-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/ross-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/ross-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/ross-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/ross-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/ross-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/fairfax-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/fairfax-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/fairfax-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/fairfax-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/fairfax-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/fairfax-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/fairfax-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-anselmo-refrigerator-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-anselmo-washer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-anselmo-dryer-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-anselmo-dishwasher-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-anselmo-oven-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-anselmo-wine-cooler-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-anselmo-ice-maker-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/site-map</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/services</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco/sunset-district-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco/richmond-district-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco/mission-district-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco/noe-valley-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco/castro-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco/marina-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco/pacific-heights-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco/nob-hill-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco/north-beach-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco/soma-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco/bernal-heights-appliance-repair</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fixitbay.net/san-francisco/potrero-hill-appliance-repair</loc>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/wine-refrigerator-repair</loc>
     <lastmod>2026-04-02</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/disposal-repair</loc>
+    <lastmod>2026-04-02</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/maintenance/cooktop</loc>
+    <lastmod>2026-04-02</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://fixitbay.net/maintenance/dishwasher</loc>
+    <lastmod>2026-04-02</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>
