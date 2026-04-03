@@ -114,15 +114,15 @@ const BRAND_PAGES = [
 const BLOG_PAGES = [
   { slug: 'blog/refrigerator-not-cooling', title: 'Refrigerator Not Cooling' },
   { slug: 'blog/dishwasher-maintenance', title: 'Dishwasher Maintenance Tips' },
-  { slug: 'blog/when-to-repair-vs-replace', title: 'When to Repair vs Replace' },
+  { slug: 'blog/when-to-repair-vs-replace', title: 'Repair or Replace? The 50/50 Rule for Appliances [2026 Guide]' },
   { slug: 'blog/dryer-taking-too-long', title: 'Dryer Taking Too Long' },
-  { slug: 'blog/washer-error-codes', title: 'Washer Error Codes' },
-  { slug: 'blog/oven-temperature-calibration', title: 'Oven Temperature Calibration' },
-  { slug: 'blog/ice-maker-troubleshooting', title: 'Ice Maker Troubleshooting' },
-  { slug: 'blog/appliance-lifespan', title: 'Appliance Lifespan Guide' },
+  { slug: 'blog/washer-error-codes', title: 'Washer Error Codes Explained: What They Mean & How to Fix Them' },
+  { slug: 'blog/oven-temperature-calibration', title: 'Oven Not Heating Right? How to Calibrate Oven Temperature (All Brands)' },
+  { slug: 'blog/ice-maker-troubleshooting', title: 'Ice Maker Not Working? 7 Fixes to Try Right Now [2026]' },
+  { slug: 'blog/appliance-lifespan', title: 'How Long Do Appliances Last? Average Lifespan Chart [2026] Guide' },
   { slug: 'blog/energy-efficient-appliances', title: 'Energy Efficient Appliances' },
-  { slug: 'blog/gas-smell-from-stove', title: 'Gas Smell From Stove' },
-  { slug: 'blog/refrigerator-water-filter', title: 'Refrigerator Water Filter' },
+  { slug: 'blog/gas-smell-from-stove', title: 'Gas Smell From Stove? Do This Immediately (Safety Guide)' },
+  { slug: 'blog/refrigerator-water-filter', title: "How Often to Change Refrigerator Water Filter? (And What Happens If You Don't)" },
   { slug: 'blog/dishwasher-not-draining', title: 'Dishwasher Not Draining' },
   { slug: 'blog/dryer-not-heating', title: 'Dryer Not Heating' },
   { slug: 'blog/appliance-repair-cost-san-francisco', title: 'Appliance Repair Cost San Francisco' },
@@ -820,19 +820,19 @@ function getSEOContent(route) {
         description: 'Long drying times waste energy and money. Top 7 causes: clogged vents, heating element issues & moisture sensor problems. DIY fixes & when to call a pro.'
       },
       'washer-error-codes': {
-        title: 'Common Washer Error Codes & What They Mean | FixitBay',
-        description: 'Decode OE, UE, LE & other washer error codes from Samsung, LG, Whirlpool & GE. What each code means and troubleshooting steps to try before calling.'
+        title: 'Washer Error Codes Explained: What They Mean & How to Fix Them',
+        description: 'Complete guide to washer error codes for Whirlpool, Samsung, LG, GE and more. Find your error code and fix it now — or call FixitBay for same-day repair.'
       },
       'oven-temperature-calibration': {
-        title: 'How to Calibrate Your Oven Temperature | FixitBay',
-        description: 'Oven cooking unevenly or burning food? Test temperature accuracy with a thermometer and calibrate for perfect results. Works for all oven brands.'
+        title: 'Oven Not Heating Right? How to Calibrate Oven Temperature (All Brands)',
+        description: 'Step-by-step guide to calibrate your oven temperature — GE, Samsung, Whirlpool, Thermador and more. Fix a 25–50°F difference in 5 minutes.'
       },
       'ice-maker-troubleshooting': {
-        title: 'Ice Maker Not Working? Top 10 Fixes | FixitBay',
-        description: 'No ice, slow production or small cubes? Troubleshoot water supply, ice maker module & water filter issues. Most problems have simple DIY solutions.'
+        title: 'Ice Maker Not Working? 7 Fixes to Try Right Now [2026]',
+        description: 'Ice maker stopped making ice, jammed, or leaking? Try these 7 troubleshooting steps before calling a repair tech. Works for Samsung, LG, Whirlpool, GE.'
       },
       'appliance-lifespan': {
-        title: 'How Long Do Appliances Last? Lifespan Guide | FixitBay',
+        title: 'How Long Do Appliances Last? Average Lifespan Chart [2026]',
         description: 'Expected lifespans for refrigerators, washers, dryers, dishwashers & ovens. When to plan for replacement and how maintenance extends appliance life.'
       },
       'energy-efficient-appliances': {
@@ -840,16 +840,16 @@ function getSEOContent(route) {
         description: 'Save money on electricity with proven tips for refrigerators, washers, dryers & dishwashers. Small changes can reduce energy bills by 10-25% annually.'
       },
       'gas-smell-from-stove': {
-        title: 'Smell Gas From Your Stove? Do This Immediately | FixitBay',
-        description: 'Gas leaks are dangerous. Immediate safety steps if you smell gas, when to call emergency services & how to prevent leaks from ranges and ovens.'
+        title: 'Gas Smell From Stove? Do This Immediately (Safety Guide)',
+        description: "If your stove smells like gas — don't ignore it. Learn the 4 causes, when it's dangerous, and what to do right now. SF Bay Area gas stove repair same day."
       },
       'refrigerator-water-filter': {
-        title: 'When to Change Your Refrigerator Water Filter | FixitBay',
-        description: 'Old filters reduce water flow, ice production & water quality. How often to change by brand (LG, Samsung, GE, Whirlpool) and signs it\'s time.'
+        title: "How Often to Change Refrigerator Water Filter? (And What Happens If You Don't)",
+        description: "Most people wait too long. Here's exactly when to replace your fridge water filter — GE, Samsung, LG, Whirlpool. Signs it's overdue."
       },
       'when-to-repair-vs-replace': {
-        title: 'Repair vs Replace: When to Fix Your Appliance | FixitBay',
-        description: 'Worth repairing your old appliance? Expert guide using the 50% rule, age & repair costs to make the right financial decision for your home.'
+        title: 'Repair or Replace? The 50/50 Rule for Appliances [2026 Guide]',
+        description: 'Use our simple repair-vs-replace calculator for ovens, fridges, washers & more. SF Bay Area appliance experts explain the 50/50 rule. Save thousands.'
       },
       'appliance-repair-cost-san-francisco': {
         title: 'Appliance Repair Cost San Francisco 2026 | FixitBay Guide',

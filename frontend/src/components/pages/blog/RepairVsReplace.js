@@ -115,7 +115,7 @@ const RepairVsReplace = () => {
     <>
       <SEOMetaTags
         title="When to Repair vs Replace Your Appliance | FixitBay LLC"
-        description="Should you repair or replace your appliance? Use the 50% rule with our expert guide — age, costs, energy efficiency, and real examples."
+        description="Use our simple repair-vs-replace calculator for ovens, fridges, washers & more. SF Bay Area appliance experts explain the 50/50 rule. Save thousands — read before you decide."
         canonical="https://fixitbay.net/blog/when-to-repair-vs-replace"
         ogType="article"
       />

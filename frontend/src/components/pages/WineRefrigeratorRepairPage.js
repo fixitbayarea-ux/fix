@@ -89,7 +89,7 @@ const WineRefrigeratorRepairPage = () => {
       <MobileServiceLanding
         appliance="Wine Cooler"
         pageSlug="wine-refrigerator-repair"
-        pageTitle="Wine Cooler Repair in San Francisco | FixitBay"
+        pageTitle="Wine Refrigerator Repair in SF Bay Area | FixitBay LLC"
         metaDescription="Specialized wine refrigerator repair across the Bay Area. Temperature, humidity, compressor issues. Fast scheduling. 180-day warranty."
         heroTitle={<>Wine Cooler Repair<br />Bay Area. Fast & Local.</>}
         heroImageAlt="wine cooler repair Bay Area"
@@ -124,7 +124,7 @@ const WineRefrigeratorRepairPage = () => {
       heroImageAlt="wine cooler repair Bay Area"
       heroDescription="FixitBay LLC repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Fast scheduling, from $195 after $60 diagnostic."
       cmsSlug="wine-cooler-repair"
-      pageTitle="Wine Cooler Repair in San Francisco | FixitBay"
+      pageTitle="Wine Refrigerator Repair in SF Bay Area | FixitBay LLC"
       metaDescription="Specialized wine refrigerator repair across the Bay Area. Temperature, humidity, compressor issues. Fast scheduling. 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}

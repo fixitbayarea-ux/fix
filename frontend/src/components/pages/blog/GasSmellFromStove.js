@@ -99,8 +99,8 @@ const GasSmellFromStove = () => {
   return (
     <>
       <SEOMetaTags
-        title="Smell Gas From Your Stove? Do This Immediately | FixitBay LLC"
-        description="Smell gas from your stove or range? Immediate safety steps: evacuate, call 911, what NOT to do. Common gas leak causes and prevention tips."
+        title="Gas Smell From Stove? Do This Immediately (Safety Guide)"
+        description="If your stove smells like gas — don't ignore it. Learn the 4 causes, when it's dangerous, and what to do right now. SF Bay Area gas stove repair same day, Lic. #51001."
         canonical="https://fixitbay.net/blog/gas-smell-from-stove"
         ogType="article"
       />

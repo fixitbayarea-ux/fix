@@ -98,8 +98,8 @@ const IceMakerTroubleshooting = () => {
   return (
     <>
       <SEOMetaTags
-        title="Ice Maker Not Working? Top 10 Fixes | FixitBay LLC"
-        description="Ice maker not making ice? Try these 10 fixes first — water filter, supply valve, frozen fill tube, reset, and more. DIY troubleshooting guide."
+        title="Ice Maker Not Working? 7 Fixes to Try Right Now [2026]"
+        description="Ice maker stopped making ice, jammed, or leaking? Try these 7 troubleshooting steps before calling a repair tech. Works for Samsung, LG, Whirlpool, GE. Bay Area same-day service."
         canonical="https://fixitbay.net/blog/ice-maker-troubleshooting"
         ogType="article"
       />
