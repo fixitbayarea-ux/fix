@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend=self.webpackChunkfrontend||[]).push([[5802],{5802:(n,a,e)=>{e.r(a),e.d(a,{default:()=>s});e(5043);var d=e(5327),t=e(1233),r=e(579);const s=()=>(0,r.jsx)(d.A,{brand:t.brandLandingData.kitchenaid})}}]);
+//# sourceMappingURL=5802.7325610a.chunk.js.map

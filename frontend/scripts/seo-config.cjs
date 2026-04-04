@@ -35,6 +35,7 @@ const KEY_SERVICES = [
   'ice-maker-repair',
   'cooktop-repair',
   'wine-cooler-repair',
+  'wine-refrigerator-repair',
   'freezer-repair',
   'stove-repair',
   'range-repair'
@@ -166,6 +167,7 @@ const defaultInternalLinks = [
   '/ice-maker-repair',
   '/cooktop-repair',
   '/wine-cooler-repair',
+  '/wine-refrigerator-repair',
   '/commercial-appliance-repair',
   '/maintenance',
   '/san-francisco-appliance-repair',
@@ -1539,6 +1541,23 @@ function getSEOContent(route) {
         `,
         links: ['/', '/refrigerator-repair', '/ice-maker-repair', '/freezer-repair', '/service-areas', '/reviews', '/contact', '/blog/same-day-appliance-repair-bay-area', '/marin-county-appliance-repair', '/blog/appliance-repair-marin-county']
       },
+      'wine-refrigerator': {
+        title: 'Wine Refrigerator Repair San Francisco & Bay Area | FixitBay',
+        desc: 'Professional wine refrigerator repair in San Francisco & Bay Area. Same-day service, 180-day warranty. We fix Sub-Zero, Liebherr, Thermador, Viking wine refrigerators.',
+        h1: 'Wine Refrigerator Repair in San Francisco & Bay Area',
+        content: `
+          <p style="margin-bottom:1rem;">Wine refrigerators are precision appliances built for serious collectors. Unlike thermoelectric wine coolers, compressor-based wine refrigerators (Sub-Zero, Liebherr, Thermador, Viking) maintain exact temperatures across large collections of 50&ndash;200+ bottles. FixitBay repairs all wine refrigerator types &mdash; built-in undercounter, freestanding, and panel-ready models.</p>
+          <p style="margin-bottom:1rem;">Our technician Andrei diagnoses sealed system failures, compressor issues, evaporator fan problems, thermostat drift, electronic control board malfunctions, and door gasket deterioration. We carry OEM parts for Sub-Zero, Liebherr, Thermador, Viking, Miele, Bosch, GE Monogram, and Dacor. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Wine Refrigerator vs. Wine Cooler: Key Differences</h2>
+          <p style="margin-bottom:0.5rem;"><strong>Wine Refrigerators</strong> &mdash; Compressor-based, 50&ndash;200+ bottles, precise dual/triple-zone temperature control (reds at 55&ndash;65&deg;F, whites at 45&ndash;55&deg;F). Premium brands: Sub-Zero, Liebherr, Thermador.</p>
+          <p style="margin-bottom:1rem;"><strong>Wine Coolers</strong> &mdash; Often thermoelectric, under 50 bottles, single-zone. More affordable but less precise. See our <a href="/wine-cooler-repair" style="color:#C0362C;font-weight:bold;">wine cooler repair</a> page.</p>
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Built-In Wine Refrigerator Expertise</h2>
+          <p style="margin-bottom:1rem;">Built-in undercounter wine refrigerators are common in San Francisco&rsquo;s Pacific Heights, Nob Hill, and Marina kitchens, as well as Marin County estate wine rooms. These units require careful handling around custom cabinetry, proper front-ventilation clearances, and panel-ready integration. Our technician works carefully to protect your countertops and cabinetry during every service call.</p>
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Services</h2>
+          <p>We also offer <a href="/wine-cooler-repair" style="color:#C0362C;font-weight:bold;">wine cooler repair</a>, <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerator repair</a>, <a href="/freezer-repair" style="color:#C0362C;font-weight:bold;">freezer repair</a>, and <a href="/ice-maker-repair" style="color:#C0362C;font-weight:bold;">ice maker repair</a> across the Bay Area.</p>
+        `,
+        links: ['/', '/wine-cooler-repair', '/refrigerator-repair', '/freezer-repair', '/ice-maker-repair', '/service-areas', '/reviews', '/contact']
+      },
       'stove': {
         title: 'Stove Repair San Francisco | Gas & Electric | FixitBay',
         desc: 'Expert stove repair in San Francisco & Bay Area. Gas and electric stoves. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
@@ -1915,6 +1934,10 @@ module.exports = {
   KEY_SERVICES,
   BRAND_PAGES,
   BLOG_PAGES,
+  OTHER_KEY_PAGES,
+  getSEOContent
+};
+PAGES,
   OTHER_KEY_PAGES,
   getSEOContent
 };

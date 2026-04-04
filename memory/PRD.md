@@ -265,6 +265,11 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **SEO _redirects Cleanup**: Added 14 missing 301! redirects for out-of-area cities in both URL formats + 6 canonical redirects. Fixed redirect chain: /appliance-repair-santa-clara now direct to /service-areas. Removed 19 client-side `<Navigate>` routes from App.js. Total _redirects: 108.
 - **Sitemap Cleanup**: Removed 3 dead URLs (/garbage-disposal-repair, /wine-refrigerator-repair, /disposal-repair).
 
+### Session 20b (Apr 4 2026) — Wine Refrigerator Repair Page + Sitemap Cleanup
+- **RESTORED /wine-refrigerator-repair as separate page**: Removed 301 redirect to /wine-cooler-repair. Created `WineRefrigeratorRepairStandalone.js` with unique title, H1, meta, FAQ targeting "wine refrigerator" keywords. Both desktop (hero with Andrei photo) and mobile work. Added lazy import + route in App.js, SEO entry in seo-config.cjs.
+- **Sitemap**: Added /wine-refrigerator-repair and /wall-oven-repair. Updated lastmod to 2026-04-04 for 7 pages.
+- **React-snap**: Removed /disposal-repair and /garbage-disposal-repair from include list. Total: 96.
+
 ## Backlog
 - P2: Merge CityRepairPage.js + CityLandingPage.js into universal component
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
