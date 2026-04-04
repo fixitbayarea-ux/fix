@@ -6,6 +6,7 @@ https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
 # Legacy redirects
 /blog-faq /blog 301!
 /garbage-disposal-repair /services 301!
+/disposal-repair /services 301!
 
 # Old URL format → canonical city pages
 /appliance-repair-daly-city /daly-city-appliance-repair 301!

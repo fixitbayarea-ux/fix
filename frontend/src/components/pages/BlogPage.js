@@ -187,7 +187,6 @@ const BlogPage = () => {
       slug: 'dishwasher-not-draining',
       title: 'Dishwasher Not Draining? 7 Quick Fixes',
       excerpt: 'Standing water after a cycle? Check these 7 common causes: clogged filter, blocked drain hose, garbage disposal connection, and air gap. Most are easy DIY fixes.',
-      content: 'Check filter first (5 minutes), then drain hose, then garbage disposal knockout plug. These fix 90% of drainage issues.',
       date: 'December 20, 2024',
       readTime: '6 min',
       category: 'Dishwasher',
@@ -195,7 +194,6 @@ const BlogPage = () => {
       tips: [
         'Clean filter - most common cause',
         'Check drain hose for kinks',
-        'Verify garbage disposal knockout removed',
         'Clean air gap if equipped'
       ]
     }

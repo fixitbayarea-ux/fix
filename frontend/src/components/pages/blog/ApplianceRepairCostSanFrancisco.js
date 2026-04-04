@@ -68,7 +68,6 @@ const PROBLEM_PRICING = [
   { problem: 'Oven not heating \u2014 igniter', cost: 'from $180' },
   { problem: 'Ice maker not working \u2014 valve or motor', cost: 'from $250' },
   { problem: 'Wine cooler temp fluctuating', cost: 'from $285' },
-  { problem: 'Garbage disposal jammed/humming', cost: 'from $195' },
 ];
 
 const COMPARE = [

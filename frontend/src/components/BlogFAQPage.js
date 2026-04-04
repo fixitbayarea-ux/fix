@@ -149,7 +149,6 @@ const BlogFAQPage = () => {
         <ul>
           <li>Deep clean oven and stovetop</li>
           <li>Check washing machine hoses for wear</li>
-          <li>Clean garbage disposal with ice and salt</li>
           <li>Inspect appliance cords and plugs</li>
         </ul>
         

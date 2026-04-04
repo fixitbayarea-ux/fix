@@ -106,7 +106,7 @@ const TermsPage = () => {
                   <Li>Dishwashers</Li>
                   <Li>Ovens, ranges, and cooktops</Li>
                   <Li>Ice makers and wine coolers</Li>
-                  <Li>Garbage disposals</Li>
+                  
                 </div>
                 <p style={{ ...P, marginTop: 16 }}>
                   All services are performed by licensed and insured technicians. FixitBay LLC holds California BHGS License #51001.

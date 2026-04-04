@@ -216,7 +216,7 @@ const AdminDashboard = ({ onLogout }) => {
           <div className="bg-white rounded-xl p-6 shadow-lg">
             <h3 className="text-xl font-bold mb-6" style={{ color: '#1A3B5D' }}>Manage Services</h3>
             <div className="space-y-4">
-              {['Refrigerator Repair', 'Washer & Dryer Repair', 'Dishwasher Repair', 'Oven & Stove Repair', 'Disposal Replacement', 'Ice Maker Repair'].map((service, index) => (
+              {['Refrigerator Repair', 'Washer & Dryer Repair', 'Dishwasher Repair', 'Oven & Stove Repair', 'Ice Maker Repair'].map((service, index) => (
                 <div key={index} className="flex items-center justify-between p-4 border border-gray-200 rounded-lg">
                   <div>
                     <h4 className="font-semibold" style={{ color: '#1A3B5D' }}>{service}</h4>

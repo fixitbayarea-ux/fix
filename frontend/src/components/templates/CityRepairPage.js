@@ -221,7 +221,7 @@ const CityRepairPage = ({
               transition={{ delay: 0.2 }}
               className="text-xl text-white/90 mb-8 leading-relaxed"
             >
-              When appliances break down in {city}, FixitBay LLC is your trusted local repair service! Our licensed technicians provide fast, reliable appliance repair throughout {city} and the surrounding Bay Area. We handle refrigerators (fridges), washers (washing machines), dryers, dishwashers, ovens/stoves/ranges, cooktops, ice makers, wine coolers, and disposals — with fast scheduling available.
+              When appliances break down in {city}, FixitBay LLC is your trusted local repair service! Our licensed technicians provide fast, reliable appliance repair throughout {city} and the surrounding Bay Area. We handle refrigerators (fridges), washers (washing machines), dryers, dishwashers, ovens/stoves/ranges, cooktops, ice makers, wine coolers,  — with fast scheduling available.
             </motion.p>
 
             <motion.div

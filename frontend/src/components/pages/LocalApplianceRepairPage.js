@@ -26,7 +26,6 @@ const APPLIANCES = [
   { icon: '\uD83E\uDDCA', title: 'Freezer Repair', issues: 'Not freezing, frost buildup, compressor, temperature fluctuation' },
   { icon: '\uD83E\uDDCA', title: 'Ice Maker Repair', issues: 'Not making ice, slow production, small cubes, water inlet valve' },
   { icon: '\u2744\uFE0F', title: 'Wine Cooler Repair', issues: 'Temperature issues, compressor, thermostat, cooling fan' },
-  { icon: '\uD83D\uDDD1\uFE0F', title: 'Garbage Disposal Repair', issues: 'Jammed, humming, leaking, reset button issues' },
   { icon: '\uD83C\uDF21\uFE0F', title: 'Sub-Zero Repair', issues: 'Premium refrigeration, compressor, sealed system, control board' },
   { icon: '\uD83D\uDD27', title: 'All Major Brands', issues: 'Whirlpool, LG, Samsung, GE, Bosch, Maytag, Sub-Zero, Wolf, and more' },
 ];

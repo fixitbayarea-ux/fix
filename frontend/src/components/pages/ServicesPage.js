@@ -276,7 +276,7 @@ const ServicesPage = () => {
           {(() => {
             const kitchen = RESIDENTIAL_SERVICES.filter(s => ['Refrigerator Repair','Dishwasher Repair','Oven & Range Repair','Cooktop Repair','Freezer Repair','Stove Repair','Range Repair'].includes(s.label));
             const laundry = RESIDENTIAL_SERVICES.filter(s => ['Washer Repair','Dryer Repair'].includes(s.label));
-            const specialty = RESIDENTIAL_SERVICES.filter(s => ['Wine Cooler Repair','Ice Maker Repair','Garbage Disposal'].includes(s.label));
+            const specialty = RESIDENTIAL_SERVICES.filter(s => ['Wine Cooler Repair','Ice Maker Repair'].includes(s.label));
             return (<>
               <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 22, color: '#1A1A1A', margin: '0 auto 16px', maxWidth: 1100 }} data-testid="services-h2-kitchen">Kitchen Appliance Repair</h2>
               <div className="sp-grid" style={{ marginBottom: 32 }}>
