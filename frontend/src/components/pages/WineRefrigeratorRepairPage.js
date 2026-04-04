@@ -92,7 +92,9 @@ const WineRefrigeratorRepairPage = () => {
         pageTitle="Wine Refrigerator Repair in SF Bay Area | FixitBay LLC"
         metaDescription="Wine fridge not cooling or making noise? FixitBay repairs all brands in SF Bay Area. Thermador, Sub-Zero, Vinotemp. $60 diagnostic, 180-day warranty."
         heroTitle={<>Wine Cooler Repair<br />Bay Area. Fast & Local.</>}
-        heroImageAlt="wine cooler repair Bay Area"
+        heroImage="/images/technicians/wine-cooler-tech.png"
+        heroImageAlt="FixitBay technician Andrei next to an open wine cooler"
+        heroImagePosition="center 15%"
         heroDescription="FixitBay LLC repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Fast scheduling, from $195 after $60 diagnostic."
        
         issues={[
@@ -121,7 +123,9 @@ const WineRefrigeratorRepairPage = () => {
       <ApplianceRepairPageNew
       serviceSchema={serviceSchema}
       appliance="Wine Cooler"
-      heroImageAlt="wine cooler repair Bay Area"
+      heroImage="/images/technicians/wine-cooler-tech.png"
+      heroImageAlt="FixitBay technician Andrei next to an open wine cooler"
+      heroImagePosition="center 15%"
       heroDescription="FixitBay LLC repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Fast scheduling, from $195 after $60 diagnostic."
       cmsSlug="wine-cooler-repair"
       pageTitle="Wine Refrigerator Repair in SF Bay Area | FixitBay LLC"
