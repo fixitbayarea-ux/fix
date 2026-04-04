@@ -29,7 +29,7 @@ https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
 /appliance-repair-fairfax /fairfax-appliance-repair 301!
 /appliance-repair-san-anselmo /san-anselmo-appliance-repair 301!
 /appliance-repair-belvedere /belvedere-appliance-repair 301!
-/appliance-repair-santa-clara /santa-clara-appliance-repair 301!
+/appliance-repair-santa-clara /service-areas 301!
 
 # Cities outside service area → /service-areas
 /vallejo-appliance-repair /service-areas 301!
@@ -70,6 +70,19 @@ https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
 /appliance-repair-newark /service-areas 301!
 /appliance-repair-livermore /service-areas 301!
 /appliance-repair-near-you /service-areas 301!
+/appliance-repair-redwood-city /service-areas 301!
+/appliance-repair-pleasanton /service-areas 301!
+/pleasanton-appliance-repair /service-areas 301!
+/union-city-appliance-repair /service-areas 301!
+/appliance-repair-union-city /service-areas 301!
+/appliance-repair-walnut-creek /service-areas 301!
+/walnut-creek-appliance-repair /service-areas 301!
+/appliance-repair-berkeley /service-areas 301!
+/appliance-repair-oakland /service-areas 301!
+/appliance-repair-richmond /service-areas 301!
+/appliance-repair-cupertino /service-areas 301!
+/castro-valley-appliance-repair /service-areas 301!
+/appliance-repair-castro-valley /service-areas 301!
 
 # Appliance type aliases → canonical repair pages
 /dryer-appliance-repair /dryer-repair 301!
@@ -78,6 +91,14 @@ https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
 /dishwasher-appliance-repair /dishwasher-repair 301!
 /oven-appliance-repair /oven-repair 301!
 /stove-appliance-repair /stove-repair 301!
+
+# Canonical service/page redirects
+/appliance-repair /service-areas 301!
+/stacked-washer-dryer-repair /washer-repair 301!
+/wall-oven-repair /oven-repair 301!
+/built-in-refrigerator-repair /refrigerator-repair 301!
+/appliance-repair-tips /blog 301!
+/appliance-replacement /about 301!
 
 # SPA catch-all (MUST be last)
 /concord-appliance-repair /service-areas 301!

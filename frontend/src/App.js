@@ -1,6 +1,5 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useDeferredValue, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
 
 /* Strip trailing slashes client-side (backup for server-side _redirects rule) */
 const TrailingSlashRedirect = () => {
@@ -122,10 +121,17 @@ const NeighborhoodPage = lazy(() => import("./components/pages/NeighborhoodPage"
 const MarinCountyPage = lazy(() => import("./components/pages/MarinCountyPage"));
 const CityServicePage = lazy(() => import("./components/pages/CityServicePage"));
 
-export default function App() {
+function AppShell() {
+  const location = useLocation();
+  const deferredLocation = useDeferredValue(location);
+  const isTransitioning = location.pathname !== deferredLocation.pathname;
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [deferredLocation.pathname]);
+
   return (
-    <BrowserRouter>
-      <ScrollToTop />
+    <>
       <TrailingSlashRedirect />
       <CanonicalUpdater />
       <SchemaMarkup />
@@ -139,7 +145,7 @@ export default function App() {
       </a>
       <SiteNavbar />
       <StickyCTA />
-      <main id="main-content" className="pb-[72px] md:pb-0">
+      <main id="main-content" className="pb-[72px] md:pb-0" style={{ opacity: isTransitioning ? 0.85 : 1, transition: 'opacity 120ms ease-out' }}>
         <Suspense fallback={
           <div className="min-h-screen flex items-center justify-center">
             <div className="text-center">
@@ -148,7 +154,7 @@ export default function App() {
             </div>
           </div>
         }>
-          <Routes>
+          <Routes location={deferredLocation}>
         {/* Admin routes */}
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/admin/dashboard" element={<Navigate to="/admin" replace />} />
@@ -165,30 +171,9 @@ export default function App() {
         <Route path="/built-in-refrigerator-repair" element={<Navigate to="/refrigerator-repair" replace />} />
         <Route path="/appliance-repair-tips" element={<Navigate to="/blog" replace />} />
         <Route path="/appliance-replacement" element={<Navigate to="/about" replace />} />
-        <Route path="/reviews" element={<Suspense fallback={<div style={{minHeight:'100vh'}} />}><ReviewsPage /></Suspense>} />
-        <Route path="/blog" element={<Suspense fallback={<div style={{minHeight:'100vh'}} />}><BlogListPage /></Suspense>} />
-        <Route path="/blog/:slug" element={<Suspense fallback={<div style={{minHeight:'100vh'}} />}><BlogPostPage /></Suspense>} />
-
-        {/* Redirects for non-approved cities → service areas (both URL patterns) */}
-        <Route path="/appliance-repair-redwood-city" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/redwood-city-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-concord" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/concord-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-pleasanton" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/pleasanton-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/union-city-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-union-city" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-walnut-creek" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/walnut-creek-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/berkeley-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-berkeley" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-oakland" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/oakland-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/richmond-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-richmond" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/cupertino-appliance-repair" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/appliance-repair-cupertino" element={<Navigate to="/service-areas" replace />} />
-        <Route path="/castro-valley-appliance-repair" element={<Navigate to="/service-areas" replace />} />
+        <Route path="/reviews" element={<ReviewsPage />} />
+        <Route path="/blog" element={<BlogListPage />} />
+        <Route path="/blog/:slug" element={<BlogPostPage />} />
 
         {/* SF Neighborhood Pages */}
         <Route path="/san-francisco/:neighborhood" element={<NeighborhoodPage />} />
@@ -221,7 +206,7 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/thank-you-booking" element={<ThankYouBooking />} />
         <Route path="/site-map" element={<SiteMapPage />} />
-        <Route path="/blog-faq" element={<Suspense fallback={<div style={{minHeight:'100vh'}} />}><BlogFAQPage /></Suspense>} />
+        <Route path="/blog-faq" element={<BlogFAQPage />} />
         <Route path="/residential-appliance-repair" element={<ResidentialApplianceRepairPage />} />
         <Route path="/commercial-appliance-repair" element={<CommercialApplianceRepairPage />} />
         <Route path="/commercial-refrigerator-repair" element={<CommercialRefrigeratorRepairPage />} />
@@ -461,6 +446,14 @@ export default function App() {
       </Routes>
       </Suspense>
       </main>
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <AppShell />
     </BrowserRouter>
   );
 }

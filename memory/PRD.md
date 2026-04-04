@@ -259,3 +259,12 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **Задача 2**: Replaced thumbnail+link pattern with embedded `<iframe>` for both YouTube videos. Responsive 16:9 aspect ratio, lazy loading. Build: 232/232.
 - **Hero complete rewrite**: Removed glassmorphism trust card (logo + 2x2 grid + social icons), urgency "SLOTS AVAILABLE TODAY" line, and dark trust strip. New layout: `1fr 280px` grid. Left: logo block with circular avatar, H1 with orange "Bay Area" accent + subtitle regions, paragraph, Book/Phone CTA buttons. Right: vertical trust panel with 4 data blocks (Google Rating 4.9/5, Service Area 22 cities, Warranty 180 days, License #S1001) separated by thin lines. Mobile: trust panel hidden, existing mobile elements preserved. Build: 232/232.
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content
+
+### Session 20 (Apr 3 2026) — SPA Transition Fix + SEO Redirects Cleanup
+- **SPA Page Transition Flash FIX (P0)**: Eliminated old-page flash on navigation via `useDeferredValue(location)` pattern in App.js. `<Routes>` receives deferredLocation — old page stays visible while new lazy-component loads. ScrollToTop replaced with inline useEffect on deferredLocation.pathname. Added opacity transition (0.85) during loading. Removed 4 nested `<Suspense>` on /reviews, /blog, /blog/:slug, /blog-faq.
+- **SEO _redirects Cleanup**: Added 14 missing 301! redirects for out-of-area cities in both URL formats + 6 canonical redirects. Fixed redirect chain: /appliance-repair-santa-clara now direct to /service-areas. Removed 19 client-side `<Navigate>` routes from App.js. Total _redirects: 108.
+- **Sitemap Cleanup**: Removed 3 dead URLs (/garbage-disposal-repair, /wine-refrigerator-repair, /disposal-repair).
+
+## Backlog
+- P2: Merge CityRepairPage.js + CityLandingPage.js into universal component
+- P3: Performance audit — code-split heavy sections, lazy-load below-fold content
