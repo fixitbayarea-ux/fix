@@ -95,6 +95,8 @@ const WineRefrigeratorRepairPage = () => {
         heroImage="/images/technicians/wine-cooler-tech.png"
         heroImageAlt="FixitBay technician Andrei next to an open wine cooler"
         heroImagePosition="center 15%"
+        techImage="/images/technicians/wine-cooler-tech.png"
+        techImageAlt="FixitBay technician Andrei next to an open wine cooler"
         heroDescription="FixitBay LLC repairs all types of wine coolers and wine refrigerators across the Bay Area — thermoelectric units, compressor-based systems, dual-zone wine fridges, and built-in wine refrigerators. Fast scheduling, from $195 after $60 diagnostic."
        
         issues={[
