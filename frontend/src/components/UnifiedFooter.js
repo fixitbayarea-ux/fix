@@ -31,7 +31,9 @@ const maintenanceLinks = [
   { href: '/maintenance/refrigerator', label: 'Refrigerator' },
   { href: '/maintenance/washer', label: 'Washer' },
   { href: '/maintenance/dryer', label: 'Dryer' },
+  { href: '/maintenance/dishwasher', label: 'Dishwasher' },
   { href: '/maintenance/oven-range', label: 'Oven & Range' },
+  { href: '/maintenance/cooktop', label: 'Cooktop' },
   { href: '/maintenance/wine-cooler', label: 'Wine Cooler' },
 ];
 

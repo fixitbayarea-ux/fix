@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { BRAND_LOGOS } from '../../data/brandsData';
 import SEOMetaTags from '../SEOMetaTags';
 import { useSchemas } from '../../hooks/useSchema';
+import RelatedServices from '../RelatedServices';
 
 const F = 'Montserrat, sans-serif';
 
@@ -494,6 +495,9 @@ const BrandLandingPage = ({ brand }) => {
             <span style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: PC.white45 }}>&copy; 2026 FixitBay LLC</span>
           </div>
         </footer>
+
+        <RelatedServices type="appliances" />
+        <RelatedServices type="brands" exclude={`/${slug}-appliance-repair`} />
 
         {/* 12. FLOATING BUTTON — removed, global StickyCTA handles mobile */}
 

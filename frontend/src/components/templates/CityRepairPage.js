@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 
 import FloatingButtons from '../FloatingButtons';
+import RelatedServices from '../RelatedServices';
 
 const CityRepairPage = ({ 
   city, 
@@ -547,6 +548,8 @@ const CityRepairPage = ({
           </section>
         );
       })()}
+
+      <RelatedServices type="appliances" />
 
       {/* Footer */}
       <footer className="py-8 bg-gray-800 text-white">

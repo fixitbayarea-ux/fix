@@ -123,7 +123,7 @@ const BLOG_PAGES = [
   { slug: 'blog/appliance-lifespan', title: 'How Long Do Appliances Last? Average Lifespan Chart [2026] Guide' },
   { slug: 'blog/energy-efficient-appliances', title: 'Energy Efficient Appliances' },
   { slug: 'blog/gas-smell-from-stove', title: 'Gas Smell From Stove? Do This Immediately (Safety Guide)' },
-  { slug: 'blog/refrigerator-water-filter', title: "How Often to Change Refrigerator Water Filter? (And What Happens If You Don't)" },
+  { slug: 'blog/refrigerator-water-filter', title: "Refrigerator Water Filter: When to Replace [2026 Guide]" },
   { slug: 'blog/dishwasher-not-draining', title: 'Dishwasher Not Draining' },
   { slug: 'blog/dryer-not-heating', title: 'Dryer Not Heating' },
   { slug: 'blog/appliance-repair-cost-san-francisco', title: 'Appliance Repair Cost San Francisco' },
@@ -846,7 +846,7 @@ function getSEOContent(route) {
         description: "If your stove smells like gas — don't ignore it. Learn the 4 causes, when it's dangerous, and what to do right now. SF Bay Area gas stove repair same day."
       },
       'refrigerator-water-filter': {
-        title: "How Often to Change Refrigerator Water Filter? (And What Happens If You Don't)",
+        title: "Refrigerator Water Filter: When to Replace [2026 Guide]",
         description: "Most people wait too long. Here's exactly when to replace your fridge water filter — GE, Samsung, LG, Whirlpool. Signs it's overdue."
       },
       'when-to-repair-vs-replace': {

@@ -86,7 +86,7 @@ const RefrigeratorWaterFilter = () => {
   return (
     <>
       <SEOMetaTags
-        title="How Often to Change Refrigerator Water Filter? (And What Happens If You Don’t)"
+        title="Refrigerator Water Filter: When to Replace [2026 Guide]"
         description="Most people wait too long. Here's exactly when to replace your fridge water filter — GE, Samsung, LG, Whirlpool. Signs it's overdue + what a dirty filter does to your ice."
         canonical="https://fixitbay.net/blog/refrigerator-water-filter"
         ogType="article"

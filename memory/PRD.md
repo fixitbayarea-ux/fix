@@ -270,6 +270,11 @@ Appliance repair React SPA with SSG. Focus on mobile UI/UX, WCAG accessibility, 
 - **Sitemap**: Added /wine-refrigerator-repair and /wall-oven-repair. Updated lastmod to 2026-04-04 for 7 pages.
 - **React-snap**: Removed /disposal-repair and /garbage-disposal-repair from include list. Total: 96.
 
+### Session 20c (Apr 4 2026) — Промпт П4: Title fix + Internal Linking
+- **Title fix**: Shortened "How Often to Change Refrigerator Water Filter?" from 78→54 chars. Fixed BlogListPage "Appliance Repair Cost" 74→44 chars.
+- **RelatedServices component**: 3 modes (appliances/areas/brands), integrated into CityLandingPage, CityRepairPage, BrandLandingPage templates.
+- **Footer**: Added maintenance/dishwasher and maintenance/cooktop to UnifiedFooter.
+
 ## Backlog
 - P2: Merge CityRepairPage.js + CityLandingPage.js into universal component
 - P3: Performance audit — code-split heavy sections, lazy-load below-fold content

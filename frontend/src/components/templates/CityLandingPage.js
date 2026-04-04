@@ -6,6 +6,7 @@ import { useSchemas } from '../../hooks/useSchema';
 import { motion } from 'framer-motion';
 import { Phone, Star, CheckCircle, Wrench, Clock, Shield, MapPin, Award, Users, ThumbsUp, Home, Settings, Calendar, Search, ChevronDown, MessageSquare } from 'lucide-react';
 import FloatingButtons from '../FloatingButtons';
+import RelatedServices from '../RelatedServices';
 
 const F = 'Montserrat, sans-serif';
 const C = { navy: '#0d1b2a', navyMid: '#1a2f45', accent: '#ff5722', accentHover: '#ff7043', cream: '#f8f5f0', textDark: '#1a1a1a', textMid: '#4a5568', white: '#ffffff', white60: 'rgba(255,255,255,0.6)', white75: 'rgba(255,255,255,0.75)', accentFaint: 'rgba(255,87,34,0.15)' };
@@ -298,6 +299,8 @@ const CityLandingPage = ({
             </div>
           </SectionPad>
         )}
+
+        <RelatedServices type="appliances" />
 
         <FloatingButtons />
       </div>
