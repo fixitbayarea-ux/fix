@@ -165,6 +165,7 @@ function AppShell() {
         <Route path="/appliance-repair" element={<Navigate to="/service-areas" replace />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/wine-refrigerator-repair" element={<WineRefrigeratorRepairStandalone />} />
+        <Route path="/wine-appliance-repair" element={<Navigate to="/wine-cooler-repair" replace />} />
         <Route path="/stacked-washer-dryer-repair" element={<Navigate to="/washer-repair" replace />} />
         <Route path="/wall-oven-repair" element={<Navigate to="/oven-repair" replace />} />
         <Route path="/range-repair" element={<RangeRepairPage />} />

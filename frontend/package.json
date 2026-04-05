@@ -121,7 +121,8 @@
       "/tiburon-appliance-repair",
       "/san-quentin-appliance-repair",
       "/greenbrae-appliance-repair",
-      "/ross-appliance-repair"
+      "/ross-appliance-repair",
+      "/wine-appliance-repair"
     ],
     "skipThirdPartyRequests": true,
     "cacheAjaxRequests": false,

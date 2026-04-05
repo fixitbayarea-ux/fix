@@ -83,6 +83,7 @@ https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
 /appliance-repair-cupertino /service-areas 301!
 /castro-valley-appliance-repair /service-areas 301!
 /appliance-repair-castro-valley /service-areas 301!
+/wine-appliance-repair /wine-cooler-repair 301!
 
 # Appliance type aliases → canonical repair pages
 /dryer-appliance-repair /dryer-repair 301!
