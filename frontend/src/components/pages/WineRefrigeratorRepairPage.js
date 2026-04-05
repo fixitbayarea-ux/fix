@@ -115,6 +115,7 @@ const WineRefrigeratorRepairPage = () => {
       relatedLinks={[
           { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling or temperature issues' },
           { href: '/ice-maker-repair', label: 'Ice Maker Repair', desc: 'No ice or leaking' },
+          { href: '/wine-refrigerator-repair', label: 'Wine Refrigerator Repair', desc: 'Dual-zone, thermoelectric & built-in wine fridges' },
         ]}
         schemaData={serviceSchema}
       />
@@ -151,6 +152,7 @@ const WineRefrigeratorRepairPage = () => {
         { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or temperature issues' },
         { href: '/ice-maker-repair', label: 'Ice Maker Repair', desc: 'No ice, leaking, or jammed dispenser' },
         { href: '/freezer-repair', label: 'Freezer Repair', desc: 'Not freezing, frost buildup, or temp problems' },
+        { href: '/wine-refrigerator-repair', label: 'Wine Refrigerator Repair', desc: 'Dual-zone, thermoelectric & built-in wine fridges' },
       ]}
     >
       {/* ═══ ENHANCEMENT 1: SF-specific climate section ═══ */}
@@ -234,6 +236,7 @@ const WineRefrigeratorRepairPage = () => {
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <h2 style={{ fontFamily: 'Montserrat,sans-serif', fontSize: '1.1rem', fontWeight: 700, color: '#1A3B5D', marginBottom: 16 }}>Related Resources</h2>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16 }}>
+            <a href="/wine-refrigerator-repair" style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none' }}>Wine Refrigerator Repair &rarr;</a>
             <a href="/blog/same- or next-day-appliance-repair-bay-area" style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none' }}>Same-Day Repair Guide &rarr;</a>
             <a href="/marin-county-appliance-repair" style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none' }}>Marin County Appliance Repair &rarr;</a>
             <a href="/blog/appliance-repair-marin-county" style={{ fontFamily: 'Inter,sans-serif', fontSize: 14, fontWeight: 600, color: '#C0362C', textDecoration: 'none' }}>Appliance Repair in Marin County &rarr;</a>

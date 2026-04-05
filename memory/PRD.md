@@ -11,17 +11,21 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
 
 ## Current Status (Apr 2026)
 - 229 URLs in sitemap, 254 routes with valid SEO
-- All titles 30-65 chars, ending `| FixitBay`
+- All titles 30-65 chars, ending `| FixitBay LLC`
 - All descriptions 70-155 chars
 - VideoObject JSON-LD on /about (standalone)
 - RelatedServices on all pages with correct exclude/type
+- Orphan page `/wine-refrigerator-repair` fully integrated with internal links
 
-## Completed (This Session)
-1. Sitemap: fixed noindexRoutes + added wall-oven-repair to KEY_SERVICES
-2. VideoObject: ItemList → 2 standalone VideoObject
-3. RelatedServices: added exclude, type="areas"
-4. Meta descriptions: fixed 5 >155 chars
-5. Page titles: fixed 38+ titles (LLC removal, standardization, wall-oven route bug)
+## Completed SEO Prompts
+1. P3: Sitemap fixed (noindexRoutes + wall-oven-repair route)
+2. P3: VideoObject: ItemList to 2 standalone VideoObject
+3. P4: RelatedServices: added exclude prop, type="areas"
+4. P5: Garbage Disposal fully removed
+5. P6: Meta descriptions: fixed to 70-155 chars
+6. P7: SERP Titles synced with `| FixitBay LLC` suffix (254 titles)
+7. P8: SSG build verified (234 snapshots, 16-25KB each)
+8. P9: Orphan Page `/wine-refrigerator-repair` fixed — links added in Footer, ServicesPage, WineCoolerRepair (mobile+desktop relatedLinks + Related Resources section), RelatedServices.js
 
 ## Backlog
 - (P2) Refactor: merge CityRepairPage + CityLandingPage

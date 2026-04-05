@@ -16,6 +16,7 @@ const servicesLinks = [
   { href: '/dishwasher-repair', label: 'Dishwasher Repair' },
   { href: '/oven-repair', label: 'Oven Repair' },
   { href: '/cooktop-repair', label: 'Cooktop Repair' },
+  { href: '/wine-refrigerator-repair', label: 'Wine Fridge Repair' },
 ];
 
 const areasLinks = [
