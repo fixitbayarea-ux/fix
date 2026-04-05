@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import DOMPurify from 'dompurify';
 import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import SEOMetaTags from '../../SEOMetaTags';
@@ -51,7 +52,7 @@ const DarkBox = ({ label, steps }) => (
     {steps.map((step, i) => (
       <div key={i} style={{ display: 'flex', gap: 10, padding: '6px 0', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
         <div style={{ width: 18, height: 18, borderRadius: '50%', background: 'rgba(255,87,34,0.2)', color: '#FF5722', fontFamily: F, fontWeight: 800, fontSize: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>{i + 1}</div>
-        <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.82)', lineHeight: 1.6 }} dangerouslySetInnerHTML={{ __html: step }} />
+        <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.82)', lineHeight: 1.6 }} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(step) }} />
       </div>
     ))}
   </div>

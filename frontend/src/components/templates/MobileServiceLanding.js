@@ -37,7 +37,7 @@ const PC = {
   r:           4,
 };
 
-const track = (name, params = {}) => { try { window.gtag?.('event', name, params); } catch(e) {} };
+const track = (name, params = {}) => { try { window.gtag?.('event', name, params); } catch(e) { if (process.env.NODE_ENV === 'development') console.error('gtag error:', e); } };
 const handleCall = (loc, page) => { track('call_click', { page, location: loc }); window.location.href = `tel:${PHONE}`; };
 const handleBook = (loc, page) => { track('book_click', { page, location: loc }); window.open(BOOKING_URL, '_blank'); };
 

@@ -60,7 +60,7 @@ export const loadPostHog = (options = {}) => {
     capture_pageleave: false, // Reduce events
   });
 
-  console.log('[PostHog] Loaded (recording:', enableRecording, 'surveys:', enableSurveys, ')');
+  // PostHog loaded
 };
 
 /**
@@ -102,7 +102,7 @@ export const loadGA = () => {
     if (href.startsWith('sms:')) window.fxbTrack.click_to_text(href);
   });
 
-  console.log('[GA4] Loaded after interaction');
+  // GA4 loaded
 };
 
 /**
@@ -130,6 +130,6 @@ export const enablePostHogRecording = () => {
     loadPostHog({ enableRecording: true });
   } else if (window.posthog.sessionRecordingStarted && !window.posthog.sessionRecordingStarted()) {
     window.posthog.startSessionRecording();
-    console.log('[PostHog] Recording enabled');
+    // PostHog recording enabled
   }
 };

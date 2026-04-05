@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import DOMPurify from 'dompurify';
 import SEOMetaTags from '../SEOMetaTags';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Clock, Tag, ArrowLeft, Phone } from 'lucide-react';
@@ -120,7 +121,7 @@ const BlogPostPage = () => {
         <div
           className="prose prose-lg max-w-none mb-12"
           style={{ color: '#2B3A4A' }}
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.content) }}
           data-testid="blog-content"
         />
 

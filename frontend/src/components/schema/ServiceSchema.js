@@ -29,8 +29,6 @@ const ServiceSchema = ({ serviceType, city, serviceName }) => {
     script.textContent = JSON.stringify(serviceSchema);
     document.head.appendChild(script);
 
-    console.log('[SEO] Added Service schema for:', { serviceType, city });
-
     // Cleanup on unmount
     return () => {
       const existingScript = document.getElementById('service-schema');

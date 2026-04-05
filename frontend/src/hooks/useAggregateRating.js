@@ -15,6 +15,7 @@ const useAggregateRating = (ratingValue, reviewCount) => {
         const data = JSON.parse(script.textContent);
         return data['@type'] === 'LocalBusiness' && data['@id'] === 'https://fixitbay.net/#organization';
       } catch {
+        // Non-critical: malformed JSON-LD script, skip
         return false;
       }
     });
@@ -36,7 +37,7 @@ const useAggregateRating = (ratingValue, reviewCount) => {
       // Update the script content
       localBusinessScript.textContent = JSON.stringify(schema);
       
-      console.log('[SEO] Added aggregateRating to LocalBusiness schema:', { ratingValue, reviewCount });
+      // aggregateRating added successfully
     } catch (error) {
       console.error('[SEO] Failed to add aggregateRating:', error);
     }

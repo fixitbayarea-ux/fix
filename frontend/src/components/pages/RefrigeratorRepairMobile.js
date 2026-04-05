@@ -7,7 +7,7 @@ const PHONE = '+17605435733';
 const PHONE_DISPLAY = '(760) 543-5733';
 
 const trackEvent = (eventName, params = {}) => {
-  try { if (window.gtag) window.gtag('event', eventName, params); } catch (e) { /* silent */ }
+  try { if (window.gtag) window.gtag('event', eventName, params); } catch (e) { if (process.env.NODE_ENV === 'development') console.error('gtag error:', e); }
 };
 const handleCall = (loc) => { trackEvent('call_click', { page: 'refrigerator_repair', location: loc }); window.location.href = `tel:${PHONE}`; };
 const handleBook = (loc) => { trackEvent('book_click', { page: 'refrigerator_repair', location: loc }); window.open(BOOKING_URL, '_blank'); };

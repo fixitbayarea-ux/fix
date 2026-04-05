@@ -1,4 +1,5 @@
 import React from 'react';
+import DOMPurify from 'dompurify';
 import { useParams, useNavigate } from 'react-router-dom';
 import SEOMetaTags from '../SEOMetaTags';
 import { Calendar, Clock, Tag, ArrowLeft, CheckCircle, AlertCircle, Phone, Wrench } from 'lucide-react';
@@ -524,7 +525,7 @@ const BlogPost = () => {
           <div className="max-w-4xl mx-auto">
             <div 
               className="bg-white rounded-xl shadow-md p-8 md:p-12 prose prose-lg max-w-none"
-              dangerouslySetInnerHTML={{ __html: article.content }}
+              dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(article.content) }}
               style={{
                 '--tw-prose-headings': '#1A3B5D',
                 '--tw-prose-body': '#4A5568',

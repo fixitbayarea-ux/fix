@@ -10,7 +10,9 @@ const SchemaMarkup = () => {
           if (d['@type'] === 'LocalBusiness' && el.id !== 'local-business-schema' && el.id !== 'reviews-localbusiness') {
             el.remove();
           }
-        } catch(e) {}
+        } catch(e) {
+          if (process.env.NODE_ENV === 'development') console.error('SchemaMarkup dedup error:', e);
+        }
       });
     };
 
@@ -29,7 +31,9 @@ const SchemaMarkup = () => {
             seenTypes.add(d['@type']);
           }
         }
-      } catch(e) {}
+      } catch(e) {
+        if (process.env.NODE_ENV === 'development') console.error('SchemaMarkup BreadcrumbList dedup error:', e);
+      }
     });
 
     const id = 'local-business-schema';

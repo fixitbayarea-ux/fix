@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DOMPurify from 'dompurify';
 import { motion } from 'framer-motion';
 import { 
   Search, 
@@ -416,7 +417,7 @@ const BlogFAQPage = () => {
                     <div className="px-6 pb-6 border-t border-gray-100">
                       <div 
                         className="prose max-w-none pt-4 text-gray-700 leading-relaxed"
-                        dangerouslySetInnerHTML={{ __html: item.content }}
+                        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.content) }}
                       />
                       
                       <div className="mt-6 p-4 bg-blue-50 rounded-lg">

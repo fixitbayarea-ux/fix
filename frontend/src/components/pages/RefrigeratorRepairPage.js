@@ -5,7 +5,7 @@ const BOOKING_URL = '/book?go=1';
 const PHONE = '+17605435733';
 const PHONE_DISPLAY = '(760) 543-5733';
 
-const track = (name, params = {}) => { try { window.gtag?.('event', name, params); } catch(e) {} };
+const track = (name, params = {}) => { try { window.gtag?.('event', name, params); } catch(e) { if (process.env.NODE_ENV === 'development') console.error('gtag error:', e); } };
 const handleCall = (loc) => { track('call_click', { page: 'refrigerator_repair', location: loc }); window.location.href = `tel:${PHONE}`; };
 const handleBook = (loc) => { track('book_click', { page: 'refrigerator_repair', location: loc }); window.open(BOOKING_URL, '_blank'); };
 

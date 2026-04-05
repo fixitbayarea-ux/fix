@@ -36,7 +36,9 @@ const UniversalBreadcrumb = () => {
         try {
           const d = JSON.parse(s.textContent);
           if (d['@type'] === 'BreadcrumbList') return; // page has its own
-        } catch {}
+        } catch(e) {
+          // Non-critical: malformed JSON-LD, skip
+        }
       }
 
       const schema = {

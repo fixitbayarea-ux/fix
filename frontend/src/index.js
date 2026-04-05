@@ -5,19 +5,10 @@ import "./index.css";
 import App from "./App";
 import { initAnalytics } from './utils/lazyScripts';
 
-// Web Vitals Diagnostics
-onCLS((metric) => {
-  console.log('🔍 CLS (Cumulative Layout Shift):', metric.value, metric.value < 0.1 ? '✅ GOOD' : '❌ NEEDS IMPROVEMENT');
-  console.log('   Target: < 0.1 | Current:', metric.value.toFixed(4));
-});
-
-onLCP((metric) => {
-  console.log('⚡ LCP (Largest Contentful Paint):', metric.value, 'ms');
-});
-
-onFCP((metric) => {
-  console.log('🎨 FCP (First Contentful Paint):', metric.value, 'ms');
-});
+// Web Vitals (silent in production)
+onCLS(() => {});
+onLCP(() => {});
+onFCP(() => {});
 
 const rootElement = document.getElementById("root");
 

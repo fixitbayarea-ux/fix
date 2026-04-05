@@ -24,11 +24,6 @@ const AdminLogin = ({ onLogin }) => {
     setError('');
 
     try {
-      console.log('[Admin Login] Attempting login...', {
-        username: credentials.username,
-        url: `${process.env.REACT_APP_BACKEND_URL}/api/admin/login`
-      });
-
       const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/admin/login`, {
         method: 'POST',
         headers: {
@@ -39,15 +34,8 @@ const AdminLogin = ({ onLogin }) => {
         credentials: 'omit'
       });
 
-      console.log('[Admin Login] Response received:', {
-        status: response.status,
-        ok: response.ok,
-        statusText: response.statusText
-      });
-
       if (response.ok) {
         const data = await response.json();
-        console.log('[Admin Login] Login successful');
         localStorage.setItem('adminToken', data.access_token);
         localStorage.setItem('adminTokenExpiry', Date.now() + (data.expires_in * 60 * 1000));
         onLogin(data.access_token);
