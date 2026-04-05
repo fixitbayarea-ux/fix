@@ -301,6 +301,7 @@ const CityLandingPage = ({
         )}
 
         <RelatedServices type="appliances" />
+        <RelatedServices type="areas" exclude={`/${slug}-appliance-repair`} />
 
         <FloatingButtons />
       </div>

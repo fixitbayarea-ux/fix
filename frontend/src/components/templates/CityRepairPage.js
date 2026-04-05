@@ -550,6 +550,7 @@ const CityRepairPage = ({
       })()}
 
       <RelatedServices type="appliances" />
+      <RelatedServices type="areas" exclude={`/${city.toLowerCase().replace(/\s+/g, '-')}-appliance-repair`} />
 
       {/* Footer */}
       <footer className="py-8 bg-gray-800 text-white">

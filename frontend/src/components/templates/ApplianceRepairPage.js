@@ -307,7 +307,7 @@ const ApplianceRepairPage = ({
             <h2 id="related-heading" className="text-3xl md:text-4xl font-bold mb-3" style={{ color: '#1A3B5D' }}>Related Appliance Services</h2>
             <p className="text-gray-600">Explore more services we offer in San Francisco, Peninsula, and Marin County.</p>
           </div>
-          <RelatedServices />
+          <RelatedServices type="appliances" exclude={currentPath} />
         </div>
       </section>
 
