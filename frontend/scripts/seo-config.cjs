@@ -184,7 +184,7 @@ const defaultInternalLinks = [
 const CITY_SEO_DATA = {
   'san-francisco': {
     title: 'Appliance Repair San Francisco | Same-Day Service | FixitBay',
-    description: 'Professional appliance repair in San Francisco. Same-day service. Licensed technicians, 180-day warranty. Serving all SF neighborhoods. Call (760) 543-5733.',
+    description: 'Professional appliance repair in San Francisco. Same-day service. Licensed technicians, 180-day warranty. Serving all SF neighborhoods. FixitBay.',
     h1: 'Professional Appliance Repair Throughout San Francisco',
     content: `
       <p style="margin-bottom:1rem;">San Francisco's unique geography — from fog-swept Outer Sunset to sunny Mission District — creates distinct challenges for home appliances. Coastal humidity affects refrigerators and dryers, while steep hills and aging infrastructure in Victorian neighborhoods require specialized repair expertise. FixitBay LLC provides comprehensive appliance repair services across all SF neighborhoods, from downtown high-rises to hillside homes.</p>
@@ -352,7 +352,7 @@ const CITY_SEO_DATA = {
   },
   'novato': {
     title: 'Appliance Repair Novato | Same-Day | FixitBay',
-    description: 'Appliance repair in Novato, North Marin. Serving Hamilton & Downtown. Same-day service. $60 diagnostic applied to repair. 180-day warranty on parts and labor.',
+    description: 'Appliance repair in Novato, North Marin. Serving Hamilton & Downtown. Same-day service. $60 diagnostic applied to repair. 180-day warranty.',
     h1: "Novato Appliance Repair — North Marin's Largest City",
     content: `
       <p style="margin-bottom:1rem;">Novato, as North Marin's largest city, offers diverse appliance service needs from downtown to suburban neighborhoods. Our technicians serve all Novato areas including Bel Marin Keys, Hamilton, San Marin, and Ignacio. We navigate Novato's geography efficiently, providing fast response throughout this sprawling North Bay community.</p>
@@ -1378,7 +1378,7 @@ function getSEOContent(route) {
       },
       'washer': {
         title: 'Washer Repair Bay Area | Same-Day Service | FixitBay',
-        desc: 'Expert washing machine repair across SF Bay Area — Peninsula, Marin & San Francisco. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+        desc: 'Expert washing machine repair in SF Bay Area. Peninsula, Marin & San Francisco. $60 diagnostic applied to repair. 180-day warranty. FixitBay.',
         h1: 'Washer Repair in the Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your washing machine won't spin, drain, or start, FixitBay delivers fast, reliable repair throughout the Bay Area — from San Francisco to Marin County and the Peninsula. Our licensed technicians diagnose and fix most washer issues on the same visit — from motor and drum failures to drain pump problems and control board malfunctions.</p>
@@ -1440,7 +1440,7 @@ function getSEOContent(route) {
       },
       'oven': {
         title: 'Oven Repair Bay Area | Same-Day Service | FixitBay',
-        desc: 'Expert oven repair across SF Bay Area — Peninsula, Marin & San Francisco. Gas and electric. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+        desc: 'Expert oven repair in SF Bay Area. Gas and electric. Peninsula, Marin & San Francisco. $60 diagnostic applied to repair. 180-day warranty. FixitBay.',
         h1: 'Oven Repair in the Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your oven won't heat, won't reach temperature, or shows error codes, FixitBay provides expert repair across the Bay Area — from San Francisco to Marin County and the Peninsula. We fix heating elements, igniters, temperature sensors, gas valves, control boards, door hinges, and safety systems for both gas and electric ovens.</p>
@@ -1589,7 +1589,7 @@ function getSEOContent(route) {
       },
       'freezer': {
         title: 'Freezer Repair San Francisco | Same-Day | FixitBay',
-        desc: 'Expert freezer repair in San Francisco & Bay Area. Standalone and built-in freezers. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+        desc: 'Expert freezer repair in San Francisco & Bay Area. Standalone and built-in. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay.',
         h1: 'Freezer Repair in San Francisco & Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your freezer stops freezing, frosts up excessively, or runs constantly, FixitBay provides same-day repair across San Francisco, the Peninsula, and North Bay. We fix standalone chest freezers, upright freezers, built-in freezer columns, and refrigerator freezer compartments.</p>
