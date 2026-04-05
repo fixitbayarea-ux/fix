@@ -339,9 +339,6 @@ console.log('\n🎉 SEO Snapshots generation complete!');
 const SITE_URL = 'https://fixitbay.net';
 const noindexRoutes = [
   '/thank-you-booking', '/book',
-  '/maintenance/refrigerator', '/maintenance/washer', '/maintenance/dryer',
-  '/maintenance/dishwasher', '/maintenance/oven-range', '/maintenance/cooktop',
-  '/maintenance/wine-cooler',
   '/llm-info', '/blog-faq', '/privacy-policy'
 ];
 const sitemapUrls = ['/', ...routes.filter(r => r !== '/' && !noindexRoutes.includes(r))];

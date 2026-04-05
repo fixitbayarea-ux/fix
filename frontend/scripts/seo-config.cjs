@@ -38,7 +38,8 @@ const KEY_SERVICES = [
   'wine-refrigerator-repair',
   'freezer-repair',
   'stove-repair',
-  'range-repair'
+  'range-repair',
+  'wall-oven-repair'
 ];
 
 // Cluster link blocks for prerendered HTML
@@ -1934,10 +1935,6 @@ module.exports = {
   KEY_SERVICES,
   BRAND_PAGES,
   BLOG_PAGES,
-  OTHER_KEY_PAGES,
-  getSEOContent
-};
-PAGES,
   OTHER_KEY_PAGES,
   getSEOContent
 };
