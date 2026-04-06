@@ -39,7 +39,8 @@ const KEY_SERVICES = [
   'freezer-repair',
   'stove-repair',
   'range-repair',
-  'wall-oven-repair'
+  'wall-oven-repair',
+  'stacked-washer-dryer-repair'
 ];
 
 // Cluster link blocks for prerendered HTML
@@ -169,6 +170,8 @@ const defaultInternalLinks = [
   '/cooktop-repair',
   '/wine-cooler-repair',
   '/wine-refrigerator-repair',
+  '/stacked-washer-dryer-repair',
+  '/wall-oven-repair',
   '/commercial-appliance-repair',
   '/maintenance',
   '/san-francisco-appliance-repair',
@@ -1619,6 +1622,18 @@ function getSEOContent(route) {
           <p>We also offer <a href="/oven-repair" style="color:#C0362C;font-weight:bold;">oven repair</a>, <a href="/range-repair" style="color:#C0362C;font-weight:bold;">range repair</a>, <a href="/cooktop-repair" style="color:#C0362C;font-weight:bold;">cooktop repair</a>, and <a href="/stove-repair" style="color:#C0362C;font-weight:bold;">stove repair</a> across the Bay Area.</p>
         `,
         links: ['/', '/oven-repair', '/range-repair', '/cooktop-repair', '/stove-repair', '/service-areas', '/contact']
+      },
+      'stacked-washer-dryer': {
+        title: 'Stacked Washer Dryer Repair San Francisco Bay Area | FixitBay LLC',
+        desc: 'Expert stacked washer/dryer repair in SF and the Peninsula. We fix all-in-one combo units and stacked pairs — LG, Samsung, Bosch, GE. Same-day service.',
+        h1: 'Stacked Washer/Dryer Repair in San Francisco & Bay Area',
+        content: `
+          <p style="margin-bottom:1rem;">Stacked washer/dryer units are the standard in San Francisco apartments, SoMa lofts, and Peninsula condos — and when one breaks, you lose both machines at once. FixitBay technicians are trained on both all-in-one combo units and stacked pairs. We bring the right tools to safely unstack, repair, and re-stack units in tight laundry closets.</p>
+          <p style="margin-bottom:1rem;">Common issues include clogged drain pumps, failed heating elements, worn drum bearings, door latch failures, error codes, and condenser cleaning for combo units. We service LG, Samsung, Bosch, GE, Whirlpool, Maytag, Electrolux, Frigidaire, and Haier. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
+          <p>We also offer <a href="/washer-repair" style="color:#C0362C;font-weight:bold;">washer repair</a>, <a href="/dryer-repair" style="color:#C0362C;font-weight:bold;">dryer repair</a>, <a href="/maintenance/washer" style="color:#C0362C;font-weight:bold;">washer maintenance</a>, and <a href="/maintenance/dryer" style="color:#C0362C;font-weight:bold;">dryer maintenance</a> across the Bay Area.</p>
+        `,
+        links: ['/', '/washer-repair', '/dryer-repair', '/maintenance/washer', '/maintenance/dryer', '/service-areas', '/contact']
       }
     };
 

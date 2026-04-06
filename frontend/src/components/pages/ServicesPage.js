@@ -16,6 +16,7 @@ const RESIDENTIAL_SERVICES = [
   { href: '/range-repair', label: 'Range Repair', issues: 'Dual-fuel problems, convection fan failure, broiler not working' },
   { href: '/wine-cooler-repair', label: 'Wine Cooler Repair', issues: 'Temperature fluctuation, compressor cycling, humidity control' },
   { href: '/wine-refrigerator-repair', label: 'Wine Refrigerator Repair', issues: 'Dual-zone failures, thermoelectric cooling, built-in unit ventilation' },
+  { href: '/stacked-washer-dryer-repair', label: 'Stacked Washer/Dryer Repair', issues: 'Combo units, stacked pairs, drain pumps, heating elements' },
 ];
 
 const COMMERCIAL_SERVICES = [
@@ -277,7 +278,7 @@ const ServicesPage = () => {
           {(() => {
             const kitchen = RESIDENTIAL_SERVICES.filter(s => ['Refrigerator Repair','Dishwasher Repair','Oven & Range Repair','Cooktop Repair','Freezer Repair','Stove Repair','Range Repair'].includes(s.label));
             const laundry = RESIDENTIAL_SERVICES.filter(s => ['Washer Repair','Dryer Repair'].includes(s.label));
-            const specialty = RESIDENTIAL_SERVICES.filter(s => ['Wine Cooler Repair','Wine Refrigerator Repair','Ice Maker Repair'].includes(s.label));
+            const specialty = RESIDENTIAL_SERVICES.filter(s => ['Wine Cooler Repair','Wine Refrigerator Repair','Stacked Washer/Dryer Repair','Ice Maker Repair'].includes(s.label));
             return (<>
               <h2 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 22, color: '#1A1A1A', margin: '0 auto 16px', maxWidth: 1100 }} data-testid="services-h2-kitchen">Kitchen Appliance Repair</h2>
               <div className="sp-grid" style={{ marginBottom: 32 }}>

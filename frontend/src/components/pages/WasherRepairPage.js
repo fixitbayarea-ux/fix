@@ -100,6 +100,7 @@ const WasherRepairPage = () => {
       relatedLinks={[
           { href: '/dryer-repair', label: 'Dryer Repair', desc: 'Not heating, loud noises, or won\'t start' },
           { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining or dishes still dirty' },
+          { href: '/stacked-washer-dryer-repair', label: 'Stacked Washer/Dryer Repair', desc: 'Combo units and stacked pairs' },
         ]}
         schemaData={serviceSchema}
       />
@@ -134,6 +135,7 @@ const WasherRepairPage = () => {
         { href: '/dryer-repair', label: 'Dryer Repair', desc: 'Not heating, loud noises, or won\'t start' },
         { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'Not draining, leaking, or dishes still dirty' },
         { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, ice maker issues, or leaking' },
+        { href: '/stacked-washer-dryer-repair', label: 'Stacked Washer/Dryer Repair', desc: 'Combo units and stacked pairs in SF apartments' },
       ]}
     />
   );

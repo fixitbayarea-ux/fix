@@ -98,6 +98,7 @@ const DryerRepairPage = () => {
       relatedLinks={[
           { href: '/washer-repair', label: 'Washer Repair', desc: 'Not spinning, draining, or filling' },
           { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling or leaking' },
+          { href: '/stacked-washer-dryer-repair', label: 'Stacked Washer/Dryer Repair', desc: 'Combo units and stacked pairs' },
         ]}
         schemaData={serviceSchema}
       />
@@ -133,7 +134,8 @@ const DryerRepairPage = () => {
           { href: '/washer-repair', label: 'Washer Repair', desc: 'Not spinning, draining, or filling properly' },
           { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'Not cooling, leaking, or ice maker issues' },
           { href: '/oven-repair', label: 'Oven Repair', desc: 'Not heating, temperature problems, or igniter issues' },
-        ]}
+        { href: '/stacked-washer-dryer-repair', label: 'Stacked Washer/Dryer Repair', desc: 'Combo units and stacked pairs in SF apartments' },
+      ]}
       />
   );
 };

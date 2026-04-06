@@ -95,7 +95,6 @@ https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
 
 # Canonical service/page redirects
 /appliance-repair /service-areas 301!
-/stacked-washer-dryer-repair /washer-repair 301!
 /built-in-refrigerator-repair /refrigerator-repair 301!
 /appliance-repair-tips /blog 301!
 /appliance-replacement /services 301!
