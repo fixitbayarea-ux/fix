@@ -297,12 +297,8 @@ const redirects301 = [
 redirects301.forEach(([from, to]) => {
   redirectLines.push(`${from}  ${to}  301`);
 });
-redirectLines.push('/*  /index.html  200');
 
-// Add www → non-www canonical redirect
-redirectLines.unshift('https://www.fixitbay.net/* https://fixitbay.net/:splat 301!');
-
-// Add city alternate-slug redirects
+// Add city alternate-slug redirects (MUST be before SPA catch-all)
 const cityRedirects = [
   '/appliance-repair-san-francisco /san-francisco-appliance-repair 301',
   '/appliance-repair-daly-city /daly-city-appliance-repair 301',
@@ -327,6 +323,44 @@ const cityRedirects = [
   '/appliance-repair-belvedere /belvedere-appliance-repair 301',
 ];
 redirectLines.push(...cityRedirects);
+
+// Additional manual redirects
+const manualRedirects = [
+  '# Legacy redirects',
+  '/blog-faq /blog 301',
+  '/garbage-disposal-repair /services 301',
+  '/disposal-repair /services 301',
+  '/wine-appliance-repair /wine-cooler-repair 301',
+  '# Appliance type aliases',
+  '/dryer-appliance-repair /dryer-repair 301',
+  '/washer-appliance-repair /washer-repair 301',
+  '/refrigerator-appliance-repair /refrigerator-repair 301',
+  '/dishwasher-appliance-repair /dishwasher-repair 301',
+  '/oven-appliance-repair /oven-repair 301',
+  '/stove-appliance-repair /stove-repair 301',
+  '# Marin deleted pages',
+  '/novato-commercial-appliance-repair /service-areas/novato 301',
+  '/mill-valley-residential-appliance-repair /service-areas/mill-valley 301',
+  '/belvedere-tiburon-appliance-repair /service-areas/tiburon 301',
+  '# Buggy city-x-city GSC artifacts',
+  '/south-san-francisco-novato-washer-repair /services 301',
+  '/novato-mill-valley-washer-repair /services 301',
+  '/sausalito-sausalito-dryer-repair /services 301',
+  '/novato-novato-dryer-repair /services 301',
+  '/mill-valley-mill-valley-washer-repair /services 301',
+  '/millbrae-millbrae-dryer-repair /services 301',
+  '# Buggy maintenance paths',
+  '/millbrae-maintenance/washer /maintenance/washer 301',
+  '/san-francisco-maintenance/washer /maintenance/washer 301',
+  '/daly-city-maintenance/refrigerator /maintenance/refrigerator 301',
+];
+redirectLines.push(...manualRedirects);
+
+// SPA fallback MUST be last
+redirectLines.push('/*  /index.html  200');
+
+// www → non-www canonical redirect (MUST be first)
+redirectLines.unshift('https://www.fixitbay.net/* https://fixitbay.net/:splat 301!');
 
 const redirectsPath = path.join(BUILD_DIR, '_redirects');
 fs.writeFileSync(redirectsPath, redirectLines.join('\n') + '\n', 'utf-8');
