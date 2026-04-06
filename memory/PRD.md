@@ -14,16 +14,15 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
 3. P10: Code Review (console.log, DOMPurify, catch blocks)
 4. P11: GSC fixes (wall-oven-repair page, 301 redirects)
 5. P12: Blog conversion optimization (CTA blocks)
-6. P13: Client-side → server-side 301 redirects (city redirects before catch-all)
-7. P14: Stacked Washer/Dryer Repair standalone page (was Soft 404)
+6. P13: Client-side → server-side 301 redirects
+7. P14: Stacked Washer/Dryer Repair standalone page
+8. P15: FOUC prevention (reactSnap waitFor, CSS fadeIn animation, postbuild verified)
 
-## P14 Details
-- Created StackedWasherDryerRepairPage.js (ApplianceRepairPageNew + MobileServiceLanding)
-- Removed redirect from App.js, SSG script, and public/_redirects
-- Added lazy import and route in App.js
-- Added to KEY_SERVICES and routes in seo-config.cjs
-- Added SSG content (title, desc, h1, HTML) in seo-config.cjs SERVICE_DATA
-- Internal links added: WasherRepairPage, DryerRepairPage, ServicesPage (specialty)
+## P15 Details
+- Added `waitFor: 2000`, `puppeteerArgs`, `minifyHtml` to reactSnap config
+- Added `/stacked-washer-dryer-repair` to reactSnap include list
+- Added CSS `fadeInContent` animation (0.15s ease-in) for smooth hydration transition
+- Verified postbuild runs SSG automatically
 
 ## Backlog
 - (P2) Refactor: merge CityRepairPage + CityLandingPage

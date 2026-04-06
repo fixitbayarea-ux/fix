@@ -26,6 +26,12 @@
   },
   "reactSnap": {
     "source": "build",
+    "waitFor": 2000,
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "minifyHtml": {
+      "collapseWhitespace": false,
+      "removeComments": false
+    },
     "include": [
       "/",
       "/refrigerator-repair",
@@ -41,6 +47,7 @@
       "/stove-repair",
       "/range-repair",
       "/wall-oven-repair",
+      "/stacked-washer-dryer-repair",
       "/maintenance",
       "/maintenance/dryer",
       "/maintenance/washer",

@@ -333,6 +333,21 @@ html { font-display: swap; }
 .fxb-btn-primary:hover { background: var(--accent-hover); }
 
 /* Force visibility overrides */
+
+/* FOUC prevention: smooth hydration transition */
+@keyframes fadeInContent {
+  from { opacity: 0.85; }
+  to   { opacity: 1; }
+}
+
+[data-reactroot] > div,
+.service-page,
+.city-page,
+.blog-post,
+.main-content {
+  animation: fadeInContent 0.15s ease-in;
+}
+
 a.fxb-btn.fxb-btn-primary,
 button.fxb-btn.fxb-btn-primary {
   background: var(--accent) !important;
