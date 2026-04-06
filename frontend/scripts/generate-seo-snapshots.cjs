@@ -217,153 +217,45 @@ if (failedRoutes.length > 0) {
 }
 
 // Generate _redirects file for Netlify
-// This ensures each route is explicitly mapped to its flat HTML file
-// _redirects rules are processed BEFORE netlify.toml rules
-const redirectLines = [];
+// Strategy: Read public/_redirects as the authoritative source,
+// then ADD route-to-HTML rewrites from SSG snapshots.
+// This ensures manual redirects in public/_redirects are NEVER lost.
+const PUBLIC_REDIRECTS_PATH = path.join(__dirname, '..', 'public', '_redirects');
+let baseRedirects = '';
+if (fs.existsSync(PUBLIC_REDIRECTS_PATH)) {
+  baseRedirects = fs.readFileSync(PUBLIC_REDIRECTS_PATH, 'utf-8');
+}
+
+// Remove only the SPA catch-all from base (we re-add it at the end after HTML rewrites)
+const baseLines = baseRedirects
+  .split('\n')
+  .filter(line => line.trim() !== '/* /index.html 200')
+  .join('\n')
+  .trim();
+
+// Generate route-to-HTML 200 rewrites for prerendered pages
+const htmlRewrites = [];
 routes.forEach(route => {
   if (route !== '/') {
-    // Normalize: strip leading slash for the filesystem target filename
     const routePath = route.replace(/^\/+/, '');
-    // Map clean URL to flat HTML file (target without leading /)
-    redirectLines.push(`${route}  /${routePath}.html  200`);
+    htmlRewrites.push(`${route}  /${routePath}.html  200`);
   }
 });
-// SPA fallback MUST be last — catches any route without a prerendered file
-// BUT FIRST: add 301 redirects for alternate slugs, misc redirects, and extended city pages
-const redirects301 = [
-  // Alternate slug redirects
-  ['/disposal-repair', '/garbage-disposal-repair'],
-  ['/wine-refrigerator-repair', '/wine-cooler-repair'],
-  ['/built-in-refrigerator-repair', '/refrigerator-repair'],
-  // Misc public redirects
-  ['/appliance-repair', '/services'],
-  ['/appliance-repair-near-you', '/service-areas'],
-  ['/appliance-repair-tips', '/blog'],
-  ['/appliance-replacement', '/services'],
-  // Extended city redirects (outside service area)
-  ['/alameda-appliance-repair', '/service-areas'],
-  ['/appliance-repair-alameda', '/service-areas'],
-  ['/berkeley-appliance-repair', '/service-areas'],
-  ['/appliance-repair-berkeley', '/service-areas'],
-  ['/burlingame-appliance-repair', '/service-areas'],
-  ['/appliance-repair-burlingame', '/service-areas'],
-  ['/castro-valley-appliance-repair', '/service-areas'],
-  ['/concord-appliance-repair', '/service-areas'],
-  ['/appliance-repair-concord', '/service-areas'],
-  ['/cupertino-appliance-repair', '/service-areas'],
-  ['/appliance-repair-cupertino', '/service-areas'],
-  ['/dublin-appliance-repair', '/service-areas'],
-  ['/appliance-repair-dublin', '/service-areas'],
-  ['/foster-city-appliance-repair', '/service-areas'],
-  ['/appliance-repair-foster-city', '/service-areas'],
-  ['/fremont-appliance-repair', '/service-areas'],
-  ['/appliance-repair-fremont', '/service-areas'],
-  ['/hayward-appliance-repair', '/service-areas'],
-  ['/appliance-repair-hayward', '/service-areas'],
-  ['/livermore-appliance-repair', '/service-areas'],
-  ['/appliance-repair-livermore', '/service-areas'],
-  ['/milpitas-appliance-repair', '/service-areas'],
-  ['/appliance-repair-milpitas', '/service-areas'],
-  ['/mountain-view-appliance-repair', '/service-areas'],
-  ['/appliance-repair-mountain-view', '/service-areas'],
-  ['/newark-appliance-repair', '/service-areas'],
-  ['/appliance-repair-newark', '/service-areas'],
-  ['/oakland-appliance-repair', '/service-areas'],
-  ['/appliance-repair-oakland', '/service-areas'],
-  ['/palo-alto-appliance-repair', '/service-areas'],
-  ['/appliance-repair-palo-alto', '/service-areas'],
-  ['/pleasanton-appliance-repair', '/service-areas'],
-  ['/appliance-repair-pleasanton', '/service-areas'],
-  ['/redwood-city-appliance-repair', '/service-areas'],
-  ['/appliance-repair-redwood-city', '/service-areas'],
-  ['/richmond-appliance-repair', '/service-areas'],
-  ['/appliance-repair-richmond', '/service-areas'],
-  ['/san-jose-appliance-repair', '/service-areas'],
-  ['/appliance-repair-san-jose', '/service-areas'],
-  ['/san-leandro-appliance-repair', '/service-areas'],
-  ['/appliance-repair-san-leandro', '/service-areas'],
-  ['/san-mateo-appliance-repair', '/service-areas'],
-  ['/appliance-repair-san-mateo', '/service-areas'],
-  ['/union-city-appliance-repair', '/service-areas'],
-  ['/appliance-repair-union-city', '/service-areas'],
-  ['/vallejo-appliance-repair', '/service-areas'],
-  ['/appliance-repair-vallejo', '/service-areas'],
-  ['/walnut-creek-appliance-repair', '/service-areas'],
-  ['/appliance-repair-walnut-creek', '/service-areas'],
-  ['/appliance-repair-santa-clara', '/service-areas'],
-  ['/belvedere-tiburon-appliance-repair', '/belvedere-appliance-repair'],
-];
-redirects301.forEach(([from, to]) => {
-  redirectLines.push(`${from}  ${to}  301`);
-});
 
-// Add city alternate-slug redirects (MUST be before SPA catch-all)
-const cityRedirects = [
-  '/appliance-repair-san-francisco /san-francisco-appliance-repair 301',
-  '/appliance-repair-daly-city /daly-city-appliance-repair 301',
-  '/appliance-repair-south-san-francisco /south-san-francisco-appliance-repair 301',
-  '/appliance-repair-san-bruno /san-bruno-appliance-repair 301',
-  '/appliance-repair-pacifica /pacifica-appliance-repair 301',
-  '/appliance-repair-millbrae /millbrae-appliance-repair 301',
-  '/appliance-repair-colma /colma-appliance-repair 301',
-  '/appliance-repair-brisbane /brisbane-appliance-repair 301',
-  '/appliance-repair-montara /montara-appliance-repair 301',
-  '/appliance-repair-mill-valley /mill-valley-appliance-repair 301',
-  '/appliance-repair-san-rafael /san-rafael-appliance-repair 301',
-  '/appliance-repair-sausalito /sausalito-appliance-repair 301',
-  '/appliance-repair-novato /novato-appliance-repair 301',
-  '/appliance-repair-corte-madera /corte-madera-appliance-repair 301',
-  '/appliance-repair-tiburon /tiburon-appliance-repair 301',
-  '/appliance-repair-larkspur /larkspur-appliance-repair 301',
-  '/appliance-repair-greenbrae /greenbrae-appliance-repair 301',
-  '/appliance-repair-ross /ross-appliance-repair 301',
-  '/appliance-repair-fairfax /fairfax-appliance-repair 301',
-  '/appliance-repair-san-anselmo /san-anselmo-appliance-repair 301',
-  '/appliance-repair-belvedere /belvedere-appliance-repair 301',
-];
-redirectLines.push(...cityRedirects);
-
-// Additional manual redirects
-const manualRedirects = [
-  '# Legacy redirects',
-  '/blog-faq /blog 301',
-  '/garbage-disposal-repair /services 301',
-  '/disposal-repair /services 301',
-  '/wine-appliance-repair /wine-cooler-repair 301',
-  '# Appliance type aliases',
-  '/dryer-appliance-repair /dryer-repair 301',
-  '/washer-appliance-repair /washer-repair 301',
-  '/refrigerator-appliance-repair /refrigerator-repair 301',
-  '/dishwasher-appliance-repair /dishwasher-repair 301',
-  '/oven-appliance-repair /oven-repair 301',
-  '/stove-appliance-repair /stove-repair 301',
-  '# Marin deleted pages',
-  '/novato-commercial-appliance-repair /service-areas/novato 301',
-  '/mill-valley-residential-appliance-repair /service-areas/mill-valley 301',
-  '/belvedere-tiburon-appliance-repair /service-areas/tiburon 301',
-  '# Buggy city-x-city GSC artifacts',
-  '/south-san-francisco-novato-washer-repair /services 301',
-  '/novato-mill-valley-washer-repair /services 301',
-  '/sausalito-sausalito-dryer-repair /services 301',
-  '/novato-novato-dryer-repair /services 301',
-  '/mill-valley-mill-valley-washer-repair /services 301',
-  '/millbrae-millbrae-dryer-repair /services 301',
-  '# Buggy maintenance paths',
-  '/millbrae-maintenance/washer /maintenance/washer 301',
-  '/san-francisco-maintenance/washer /maintenance/washer 301',
-  '/daly-city-maintenance/refrigerator /maintenance/refrigerator 301',
-];
-redirectLines.push(...manualRedirects);
-
-// SPA fallback MUST be last
-redirectLines.push('/*  /index.html  200');
-
-// www → non-www canonical redirect (MUST be first)
-redirectLines.unshift('https://www.fixitbay.net/* https://fixitbay.net/:splat 301!');
+// Combine: base redirects (301s from public/_redirects) + HTML rewrites + catch-all
+const finalRedirects = [
+  baseLines,
+  '',
+  '# SSG route-to-HTML rewrites (auto-generated)',
+  ...htmlRewrites,
+  '',
+  '# SPA catch-all (MUST be last)',
+  '/*  /index.html  200'
+].join('\n') + '\n';
 
 const redirectsPath = path.join(BUILD_DIR, '_redirects');
-fs.writeFileSync(redirectsPath, redirectLines.join('\n') + '\n', 'utf-8');
-console.log(`\n📄 Generated _redirects with ${redirectLines.length} rules (${redirectLines.length - 1} routes + SPA fallback)`);
+fs.writeFileSync(redirectsPath, finalRedirects, 'utf-8');
+console.log(`\n📄 Generated _redirects: ${baseLines.split('\n').length} base rules + ${htmlRewrites.length} HTML rewrites + SPA fallback`);
 
 console.log('\n🎉 SEO Snapshots generation complete!');
 

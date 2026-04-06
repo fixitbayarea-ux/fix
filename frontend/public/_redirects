@@ -9,6 +9,7 @@ https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
 /disposal-repair /services 301!
 
 # Old URL format → canonical city pages
+/appliance-repair-san-francisco /san-francisco-appliance-repair 301!
 /appliance-repair-daly-city /daly-city-appliance-repair 301!
 /appliance-repair-south-san-francisco /south-san-francisco-appliance-repair 301!
 /appliance-repair-san-bruno /san-bruno-appliance-repair 301!
