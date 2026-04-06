@@ -96,13 +96,32 @@ https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
 # Canonical service/page redirects
 /appliance-repair /service-areas 301!
 /stacked-washer-dryer-repair /washer-repair 301!
-/wall-oven-repair /oven-repair 301!
 /built-in-refrigerator-repair /refrigerator-repair 301!
 /appliance-repair-tips /blog 301!
-/appliance-replacement /about 301!
+/appliance-replacement /services 301!
 
-# SPA catch-all (MUST be last)
+# Additional outside-service-area redirects
 /concord-appliance-repair /service-areas 301!
 /appliance-repair-concord /service-areas 301!
+/appliance-repair-foster-city /service-areas 301!
 
+# Marin — deleted city-specific pages → correct service-areas sub-page
+/novato-commercial-appliance-repair /service-areas/novato 301!
+/mill-valley-residential-appliance-repair /service-areas/mill-valley 301!
+/belvedere-tiburon-appliance-repair /service-areas/tiburon 301!
+
+# Buggy city-x-city combination URLs (GSC crawl artifacts)
+/south-san-francisco-novato-washer-repair /services 301!
+/novato-mill-valley-washer-repair /services 301!
+/sausalito-sausalito-dryer-repair /services 301!
+/novato-novato-dryer-repair /services 301!
+/mill-valley-mill-valley-washer-repair /services 301!
+/millbrae-millbrae-dryer-repair /services 301!
+
+# Buggy maintenance path URLs (GSC crawl artifacts)
+/millbrae-maintenance/washer /maintenance/washer 301!
+/san-francisco-maintenance/washer /maintenance/washer 301!
+/daly-city-maintenance/refrigerator /maintenance/refrigerator 301!
+
+# SPA catch-all (MUST be last)
 /* /index.html 200

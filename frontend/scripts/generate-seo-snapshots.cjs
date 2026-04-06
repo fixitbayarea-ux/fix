@@ -235,7 +235,6 @@ const redirects301 = [
   ['/disposal-repair', '/garbage-disposal-repair'],
   ['/wine-refrigerator-repair', '/wine-cooler-repair'],
   ['/stacked-washer-dryer-repair', '/washer-repair'],
-  ['/wall-oven-repair', '/oven-repair'],
   ['/built-in-refrigerator-repair', '/refrigerator-repair'],
   // Misc public redirects
   ['/appliance-repair', '/services'],

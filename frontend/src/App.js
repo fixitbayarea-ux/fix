@@ -46,6 +46,7 @@ const RangeRepairPage = lazy(() => import("./components/pages/RangeRepairPage"))
 const CooktopRepairPage = lazy(() => import("./components/pages/CooktopRepairPage"));
 const WineRefrigeratorRepairPage = lazy(() => import("./components/pages/WineRefrigeratorRepairPage"));
 const WineRefrigeratorRepairStandalone = lazy(() => import("./components/pages/WineRefrigeratorRepairStandalone"));
+const WallOvenRepairPage = lazy(() => import("./components/pages/WallOvenRepairPage"));
 
 // Hubs / misc
 const ServiceAreasHub = lazy(() => import("./components/pages/ServiceAreasHub"));
@@ -167,7 +168,7 @@ function AppShell() {
         <Route path="/wine-refrigerator-repair" element={<WineRefrigeratorRepairStandalone />} />
         <Route path="/wine-appliance-repair" element={<Navigate to="/wine-cooler-repair" replace />} />
         <Route path="/stacked-washer-dryer-repair" element={<Navigate to="/washer-repair" replace />} />
-        <Route path="/wall-oven-repair" element={<Navigate to="/oven-repair" replace />} />
+        <Route path="/wall-oven-repair" element={<WallOvenRepairPage />} />
         <Route path="/range-repair" element={<RangeRepairPage />} />
         <Route path="/stove-repair" element={<StoveRepairPage />} />
         <Route path="/built-in-refrigerator-repair" element={<Navigate to="/refrigerator-repair" replace />} />
