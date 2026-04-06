@@ -13,30 +13,28 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
 - 229 URLs in sitemap, 254+ routes with valid SEO
 - All titles 30-65 chars, ending `| FixitBay LLC`
 - All descriptions 70-155 chars
-- VideoObject JSON-LD on /about (standalone)
-- RelatedServices on all pages with correct exclude/type
-- Orphan page `/wine-refrigerator-repair` fully integrated
-- `/wall-oven-repair` is now a standalone indexable page (no redirect)
-- Production console.log cleaned, DOMPurify XSS protection, empty catch blocks fixed
-- Comprehensive 301 redirects for deleted cities, buggy URLs, and legacy paths
+- `/wall-oven-repair` is standalone indexable page
+- Blog CTA optimization on repair-vs-replace article
+- Comprehensive 301 redirects for deleted cities, buggy URLs
 
 ## Completed SEO Prompts
-1. P3: Sitemap fixed (noindexRoutes + wall-oven-repair route)
-2. P3: VideoObject: ItemList to 2 standalone VideoObject
-3. P4: RelatedServices: added exclude prop, type="areas"
-4. P5: Garbage Disposal fully removed
-5. P6: Meta descriptions: fixed to 70-155 chars
-6. P7: SERP Titles synced with `| FixitBay LLC` suffix (254 titles)
-7. P8: SSG build verified (234 snapshots, 16-25KB each)
-8. P9: Orphan Page `/wine-refrigerator-repair` — links in Footer, ServicesPage, WineCoolerRepair
-9. P10: Code Review — console.log cleanup, DOMPurify, empty catch blocks
-10. P11: GSC fixes — wall-oven-repair standalone page, 301 redirects for deleted/buggy URLs
+1. P3: Sitemap fixed
+2. P3: VideoObject standalone
+3. P4: RelatedServices exclude prop
+4. P5: Garbage Disposal removed
+5. P6: Meta descriptions 70-155 chars
+6. P7: SERP Titles `| FixitBay LLC`
+7. P8: SSG verified (234 snapshots)
+8. P9: Orphan Page wine-refrigerator-repair linked
+9. P10: Code Review (console.log, DOMPurify, catch blocks)
+10. P11: GSC fixes (wall-oven-repair page, 301 redirects)
+11. P12: Blog conversion optimization (local CTA, inline CTA, related services links)
 
-## P11 Details
-- Task 1: `/wall-oven-repair` converted from redirect to full page (WallOvenRepairPage.js with ApplianceRepairPageNew template)
-- Task 2: Added 301 redirects for buggy city×city URLs and maintenance path artifacts
-- Task 3: Added missing 301 redirects for East Bay/South Bay cities, Marin special pages, and legacy URLs
-- Fixed `/appliance-replacement` redirect target from /about to /services
+## P12 Details
+- Added orange local CTA block after intro, before first H2 (Bay Area targeting)
+- Added blue inline CTA after Decision Matrix section
+- Added Related Services block with 6 service links + pricing context
+- Title, H1, meta description intentionally NOT changed (authority signal)
 
 ## Backlog
 - (P2) Refactor: merge CityRepairPage + CityLandingPage

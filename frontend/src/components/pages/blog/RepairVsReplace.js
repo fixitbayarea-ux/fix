@@ -187,6 +187,43 @@ const RepairVsReplace = () => {
               <p style={P}>The answer isn't always obvious. A $200 repair might seem expensive until you realize a new appliance costs $1,500. On the flip side, repairing a 15-year-old unit that's near the end of its lifespan may just delay the inevitable.</p>
               <p style={{ ...P, marginBottom: 24 }}>Here's a professional framework to help you make the smartest financial decision:</p>
 
+              {/* LOCAL CTA BLOCK — Bay Area visitors */}
+              <div data-testid="local-cta-top" style={{
+                background: '#fff3e0',
+                border: '2px solid #ff6b2b',
+                borderRadius: 12,
+                padding: '20px 24px',
+                margin: '24px 0',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 12
+              }}>
+                <p style={{ margin: 0, fontFamily: F, fontWeight: 600, fontSize: 16, color: '#1A1A1A' }}>
+                  Based in the San Francisco Bay Area?
+                </p>
+                <p style={{ margin: 0, fontFamily: F, fontWeight: 400, fontSize: 15, color: '#444', lineHeight: 1.7 }}>
+                  Skip the research — book a <strong>$60 diagnostic visit</strong> and our licensed
+                  technician will tell you on the spot whether your appliance is worth fixing.
+                  Same-day availability, honest advice.
+                </p>
+                <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+                  <a href="/book" data-testid="local-cta-book"
+                     style={{
+                       background: '#ff6b2b', color: '#fff', padding: '10px 20px',
+                       borderRadius: 8, textDecoration: 'none', fontFamily: F, fontWeight: 600, fontSize: 14
+                     }}>
+                    Book a $60 Diagnostic
+                  </a>
+                  <a href="tel:7605435733" data-testid="local-cta-call"
+                     style={{
+                       border: '2px solid #ff6b2b', color: '#ff6b2b', padding: '10px 20px',
+                       borderRadius: 8, textDecoration: 'none', fontFamily: F, fontWeight: 600, fontSize: 14
+                     }}>
+                    Call (760) 543-5733
+                  </a>
+                </div>
+              </div>
+
               {/* ── The 50% Rule ── */}
               <h2 id="fifty-percent-rule" style={H2S}>The 50% Rule: Your Primary Decision Tool</h2>
               <p style={P}>The appliance repair industry uses a simple formula called the <strong style={{ color: '#1A1A1A' }}>50% Rule</strong>:</p>
@@ -276,6 +313,24 @@ const RepairVsReplace = () => {
                 </div>
               </div>
 
+              {/* INLINE CTA — after Decision Matrix */}
+              <div data-testid="inline-cta-mid" style={{
+                background: '#f0f7ff',
+                borderLeft: '4px solid #1a73e8',
+                padding: '16px 20px',
+                margin: '24px 0',
+                borderRadius: '0 8px 8px 0'
+              }}>
+                <p style={{ margin: 0, fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.7 }}>
+                  <strong style={{ color: '#1A1A1A' }}>Not sure about your specific appliance?</strong>
+                  {' '}If you're in the Bay Area, our technician can diagnose it for $60 —
+                  applied toward the repair if you proceed.{' '}
+                  <a href="/book" style={{ color: '#1a73e8', fontWeight: 600, textDecoration: 'none' }}>
+                    Book online &rarr;
+                  </a>
+                </p>
+              </div>
+
               {/* ── Real-World Examples ── */}
               <h2 id="real-examples" style={H2S}>Real-World Examples</h2>
               {/* Scenario 1: Repair */}
@@ -319,6 +374,29 @@ const RepairVsReplace = () => {
                     </div>
                   );
                 })}
+              </div>
+
+              {/* Related Services — internal links for SEO */}
+              <div data-testid="related-services-blog" style={{ background: '#F8F5F0', borderRadius: 4, padding: '24px 28px', margin: '32px 0', borderLeft: '3px solid #FF5722' }}>
+                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 18, color: '#1A1A1A', marginBottom: 16 }}>FixitBay Repair Services in the Bay Area</h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                  {[
+                    { href: '/refrigerator-repair', label: 'Refrigerator Repair', desc: 'most common: $150\u2013$400' },
+                    { href: '/washer-repair', label: 'Washer Repair', desc: 'drain pump, motor, bearings' },
+                    { href: '/dryer-repair', label: 'Dryer Repair', desc: 'heating element, thermal fuse' },
+                    { href: '/dishwasher-repair', label: 'Dishwasher Repair', desc: 'pump, door latch, control board' },
+                    { href: '/oven-repair', label: 'Oven & Range Repair', desc: 'igniter, bake element, thermostat' },
+                    { href: '/wine-cooler-repair', label: 'Wine Cooler Repair', desc: 'compressor, thermostat' },
+                  ].map(svc => (
+                    <div key={svc.href} style={{ display: 'flex', gap: 8, alignItems: 'baseline' }}>
+                      <span style={{ color: '#FF5722', fontWeight: 700, fontSize: 12 }}>&bull;</span>
+                      <span style={{ fontFamily: F, fontSize: 14, color: '#4A5568' }}>
+                        <a href={svc.href} style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>{svc.label}</a>
+                        {' '}&mdash; {svc.desc}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               {/* ── Bottom CTA ── */}
