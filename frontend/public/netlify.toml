@@ -514,32 +514,8 @@
 
 # ── 8. Legacy canonical redirects ──
 [[redirects]]
-  from = "/appliance-repair"
-  to = "/service-areas"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/wine-refrigerator-repair"
-  to = "/wine-cooler-repair"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/disposal-repair"
-  to = "/garbage-disposal-repair"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/wall-oven-repair"
-  to = "/oven-repair"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/stacked-washer-dryer-repair"
-  to = "/washer-repair"
+  to = "/services"
   status = 301
   force = true
 
@@ -557,7 +533,7 @@
 
 [[redirects]]
   from = "/appliance-replacement"
-  to = "/about"
+  to = "/services"
   status = 301
   force = true
 

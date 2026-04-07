@@ -1,1346 +1,167 @@
-<analysis>**original_problem_statement**: Масштабный аудит и оптимизация React SPA (Appliance Repair). Фокус на UI/UX, WCAG, Core Web Vitals, SEO и копирайтинге. Требуется исправление багов кросс-линкинга, корректировка H1/H2, мета-описаний, расширение контента страниц (Service, Maintenance, Commercial), внедрение микроразметки (Schema) и удаление дублирующегося контента для устранения каннибализации и улучшения ранжирования в Local SEO.
+<analysis>**original_problem_statement**: Масштабная SEO-оптимизация React SPA (FixitBay). Выполнение серии SEO-промптов (П9-П15) от пользователя для устранения ошибок Ahrefs & Google Search Console, проблем с индексацией (Soft 404, Crawled - not indexed), улучшения конверсии блога и устранения мигания контента (FOUC). PRODUCT REQUIREMENTS: Поддержка SSG (react-snap/seo-config.cjs), строгое соответствие SEO стандартам, Netlify-совместимость.
 
 **User's preferred language**: **Russian** (INSTRUCT next agent to respond in the user's preferred language only. All explanations, reasoning, and finish summaries MUST be in Russian. Code, variables, and bash commands remain in English).
 
 **what currently exists?** 
-React SPA со статической генерацией (SSG). В текущей сессии была проведена масштабная унификация контента. Все сервисные, коммерческие и maintenance страницы теперь используют единый стандартный макет с 4 новыми SEO-оптимизированными блоками (Pricing Table, Repair vs Replace, Symptoms Checklist, Diagnosis Steps). Данные для них вынесены в отдельный конфигурационный файл . Также оптимизированы Title теги (убрана длина >60 символов, вызывавшая переписывание Google) и переписана статья блога под Featured Snippet.
+React SPA с кастомной SSG генерацией. Множество SEO багов (P9-P12, P14-P15) уже успешно исправлены (созданы новые страницы  и , добавлены внутренние ссылки, установлен DOMPurify для защиты от XSS, удалены console.log, добавлены CSS-анимации для FOUC). 
+Обнаружена и исправлена фундаментальная проблема с деплоем 301 редиректов на Netlify: кастомный скрипт  перезаписывал файл , стирая ручные правила пользователя. Скрипт был переписан для чтения . Однако после деплоя редиректы всё равно не заработали — агент выяснил, что старые правила в файле  конфликтовали с новыми страницами и переопределяли правила .
 
 **Last working item**:
-    - Last item agent was working: ПРОМПТ 51 — Оптимизация страницы  под локальный запрос san francisco dishwasher repair. Агент только успел открыть файл , чтобы начать внедрение SF-специфичного H1, Title, текста, секции и LocalBusiness Schema, но сессия прервалась.
-    - Status: IN PROGRESS
-    - Agent Testing Done: N
-    - Which testing method agent to use? manual testing by  (run yarn run v1.22.22
-$ craco build
-Creating an optimized production build...
-Compiled successfully.
-
-File sizes after gzip:
-
-  276.63 kB         build/static/js/4066.289571d4.chunk.js
-  112.26 kB (+1 B)  build/static/js/main.aee3edad.js
-  66.92 kB          build/static/js/6285.b016ff56.chunk.js
-  41.63 kB (-10 B)  build/static/js/6400.52ceab92.chunk.js
-  40.35 kB (+1 B)   build/static/js/4839.914ab371.chunk.js
-  32.71 kB          build/static/js/7920.1d8512b1.chunk.js
-  30.9 kB           build/static/js/8875.b4cacebe.chunk.js
-  16.34 kB          build/static/js/747.2408e949.chunk.js
-  16.32 kB          build/static/js/6833.10887528.chunk.js
-  13.17 kB          build/static/css/main.410039fe.css
-  11.42 kB          build/static/js/7949.ac0f8520.chunk.js
-  10.69 kB (-8 B)   build/static/js/4875.e1939d87.chunk.js
-  10.26 kB          build/static/js/1168.4c2741dc.chunk.js
-  10.03 kB          build/static/js/3116.65314da7.chunk.js
-  9.99 kB           build/static/css/9276.b1f41460.chunk.css
-  9.93 kB           build/static/js/9405.4ab56a65.chunk.js
-  9.84 kB           build/static/js/6840.035dc1b5.chunk.js
-  9.56 kB           build/static/js/3820.2442fbbf.chunk.js
-  9.3 kB            build/static/js/1362.1ef81e42.chunk.js
-  9.27 kB           build/static/js/3079.e54f39d5.chunk.js
-  9.13 kB           build/static/js/7072.e10cbba9.chunk.js
-  8.92 kB           build/static/js/1761.427e92d1.chunk.js
-  8.92 kB           build/static/js/770.8ca24a88.chunk.js
-  8.72 kB           build/static/js/5653.1374a6dd.chunk.js
-  8.7 kB            build/static/js/2619.fa41ec01.chunk.js
-  8.69 kB           build/static/js/904.2edde554.chunk.js
-  8.64 kB           build/static/js/8742.e8717b15.chunk.js
-  8.37 kB           build/static/js/9738.bf0b19b5.chunk.js
-  8.07 kB           build/static/js/7646.85b9de8d.chunk.js
-  7.89 kB           build/static/js/6736.036fe7aa.chunk.js
-  7.62 kB           build/static/js/5946.f9c009c3.chunk.js
-  7.47 kB           build/static/js/151.d6059057.chunk.js
-  7.42 kB           build/static/js/9927.4f422123.chunk.js
-  7.37 kB (-7 B)    build/static/js/4681.98ce3da4.chunk.js
-  7.02 kB           build/static/js/5348.e8b7814c.chunk.js
-  6.67 kB           build/static/js/594.53d59750.chunk.js
-  6.4 kB            build/static/js/4523.58c82c13.chunk.js
-  6.38 kB           build/static/js/9192.b0f9dee9.chunk.js
-  6.28 kB           build/static/js/9050.74049787.chunk.js
-  6.06 kB (-1 B)    build/static/js/2745.204d8b37.chunk.js
-  6.01 kB           build/static/js/9061.9e6be52f.chunk.js
-  5.95 kB           build/static/js/5396.0c2bfdf0.chunk.js
-  5.9 kB            build/static/js/2417.befd2007.chunk.js
-  5.83 kB (-7 B)    build/static/js/2605.dd2636e9.chunk.js
-  5.44 kB           build/static/js/7488.ea43876c.chunk.js
-  5.28 kB           build/static/js/9922.735d6410.chunk.js
-  5 kB              build/static/js/9570.fd072ca0.chunk.js
-  4.98 kB           build/static/js/3697.dbad7a01.chunk.js
-  4.92 kB           build/static/js/8200.7e133721.chunk.js
-  4.76 kB           build/static/js/9290.140994ba.chunk.js
-  4.73 kB           build/static/js/1119.39b2d10f.chunk.js
-  4.68 kB           build/static/js/5064.8841a98a.chunk.js
-  4.25 kB (-7 B)    build/static/js/336.0283e83f.chunk.js
-  4.07 kB           build/static/js/7730.9c97bd7c.chunk.js
-  3.5 kB            build/static/css/6285.0a3ef9f9.chunk.css
-  3.47 kB           build/static/js/2244.5a2645c2.chunk.js
-  3.45 kB           build/static/js/8816.fc80f8ff.chunk.js
-  3.43 kB           build/static/js/5318.c3883264.chunk.js
-  3.41 kB           build/static/js/4885.68e191bb.chunk.js
-  3.4 kB            build/static/js/1421.c0587a04.chunk.js
-  3.39 kB           build/static/js/2495.0da8d0a7.chunk.js
-  3.38 kB           build/static/js/6535.61cf1f14.chunk.js
-  3.36 kB           build/static/js/6669.934ea257.chunk.js
-  3.33 kB           build/static/js/8586.21a18de3.chunk.js
-  3.33 kB           build/static/js/5866.da861c10.chunk.js
-  3.32 kB           build/static/js/9400.c08d4ad9.chunk.js
-  3.32 kB           build/static/js/8398.02fae33d.chunk.js
-  3.28 kB           build/static/js/4457.2f3a7ad0.chunk.js
-  3.26 kB           build/static/js/4726.7f1cfc38.chunk.js
-  3.26 kB           build/static/js/5525.028ff56c.chunk.js
-  3.15 kB           build/static/js/8320.c386594f.chunk.js
-  3.13 kB           build/static/js/9274.fdcc18d2.chunk.js
-  3.04 kB           build/static/js/2469.0e6fee7f.chunk.js
-  2.97 kB           build/static/js/6045.f0cdc921.chunk.js
-  2.92 kB           build/static/js/1652.ec18f1f5.chunk.js
-  2.91 kB           build/static/js/4437.12fd442d.chunk.js
-  2.91 kB           build/static/js/2208.d8e7840f.chunk.js
-  2.88 kB           build/static/js/2681.68695f98.chunk.js
-  2.76 kB           build/static/js/8039.01e3a18f.chunk.js
-  2.74 kB           build/static/js/331.b9ed59c0.chunk.js
-  2.66 kB           build/static/js/5611.8e9c0dd7.chunk.js
-  2.38 kB           build/static/js/7937.87d5b020.chunk.js
-  2.29 kB (+1 B)    build/static/js/5743.0506660d.chunk.js
-  1.37 kB           build/static/js/3059.b449a6a3.chunk.js
-  1.28 kB           build/static/js/5050.982a3477.chunk.js
-  1.25 kB           build/static/js/3061.f3aa918c.chunk.js
-  978 B             build/static/js/7256.0a8e1cca.chunk.js
-  686 B             build/static/js/9283.cd417266.chunk.js
-  649 B             build/static/js/3425.313695dc.chunk.js
-  488 B             build/static/js/4924.da46226b.chunk.js
-  245 B             build/static/js/3740.fa1a581e.chunk.js
-  243 B             build/static/js/5802.7325610a.chunk.js
-  243 B             build/static/js/4326.41847101.chunk.js
-  243 B             build/static/js/9326.44e96890.chunk.js
-  243 B             build/static/js/1786.16e0170d.chunk.js
-  241 B             build/static/js/5464.939f0212.chunk.js
-  241 B             build/static/js/4798.e49af2bc.chunk.js
-  238 B             build/static/js/8302.ea0e9b1d.chunk.js
-  238 B             build/static/js/1768.6d806ecf.chunk.js
-  237 B             build/static/js/8067.e9dd5a4b.chunk.js
-  176 B             build/static/js/6795.534fc418.chunk.js
-
-The project was built assuming it is hosted at /.
-You can control this with the homepage field in your package.json.
-
-The build folder is ready to be deployed.
-You may serve it with a static server:
-
-  yarn global add serve
-  serve -s build
-
-Find out more about deployment here:
-
-  https://cra.link/deployment
-
-$ node scripts/generate-seo-snapshots.cjs && node scripts/verify-seo-snapshots.cjs
-🚀 Starting SEO Snapshots Generation...
-
-📝 Generating 233 SEO snapshots...
-
-✅ /
-✅ /refrigerator-repair
-✅ /washer-repair
-✅ /dryer-repair
-✅ /dishwasher-repair
-✅ /oven-repair
-✅ /ice-maker-repair
-✅ /cooktop-repair
-✅ /wine-cooler-repair
-✅ /garbage-disposal-repair
-✅ /freezer-repair
-✅ /stove-repair
-✅ /range-repair
-✅ /whirlpool-appliance-repair
-✅ /lg-appliance-repair
-✅ /samsung-appliance-repair
-✅ /ge-appliance-repair
-✅ /bosch-appliance-repair
-✅ /kitchenaid-appliance-repair
-✅ /maytag-appliance-repair
-✅ /frigidaire-appliance-repair
-✅ /kenmore-appliance-repair
-✅ /thermador-appliance-repair
-✅ /viking-appliance-repair
-✅ /miele-appliance-repair
-✅ /sub-zero-appliance-repair
-✅ /wolf-appliance-repair
-✅ /blog
-✅ /blog/refrigerator-not-cooling
-✅ /blog/dishwasher-maintenance
-✅ /blog/when-to-repair-vs-replace
-✅ /blog/dryer-taking-too-long
-✅ /blog/washer-error-codes
-✅ /blog/oven-temperature-calibration
-✅ /blog/ice-maker-troubleshooting
-✅ /blog/appliance-lifespan
-✅ /blog/energy-efficient-appliances
-✅ /blog/gas-smell-from-stove
-✅ /blog/refrigerator-water-filter
-✅ /blog/dishwasher-not-draining
-✅ /blog/dryer-not-heating
-✅ /blog/appliance-repair-cost-san-francisco
-✅ /blog/appliance-repair-marin-county
-✅ /blog/same-day-appliance-repair-bay-area
-✅ /contact
-✅ /about
-✅ /service-areas
-✅ /reviews
-✅ /brands
-✅ /local-appliance-repair
-✅ /marin-county-appliance-repair
-✅ /residential-appliance-repair
-✅ /commercial-appliance-repair
-✅ /commercial-refrigerator-repair
-✅ /commercial-dishwasher-repair
-✅ /commercial-washer-repair
-✅ /commercial-dryer-repair
-✅ /commercial-oven-repair
-✅ /maintenance
-✅ /san-francisco-appliance-repair
-✅ /daly-city-appliance-repair
-✅ /south-san-francisco-appliance-repair
-✅ /san-bruno-appliance-repair
-✅ /pacifica-appliance-repair
-✅ /millbrae-appliance-repair
-✅ /colma-appliance-repair
-✅ /brisbane-appliance-repair
-✅ /montara-appliance-repair
-✅ /san-rafael-appliance-repair
-✅ /novato-appliance-repair
-✅ /mill-valley-appliance-repair
-✅ /sausalito-appliance-repair
-✅ /belvedere-appliance-repair
-✅ /tiburon-appliance-repair
-✅ /corte-madera-appliance-repair
-✅ /san-quentin-appliance-repair
-✅ /larkspur-appliance-repair
-✅ /greenbrae-appliance-repair
-✅ /ross-appliance-repair
-✅ /fairfax-appliance-repair
-✅ /san-anselmo-appliance-repair
-✅ /san-francisco-refrigerator-repair
-✅ /san-francisco-washer-repair
-✅ /san-francisco-dryer-repair
-✅ /san-francisco-dishwasher-repair
-✅ /san-francisco-oven-repair
-✅ /san-francisco-wine-cooler-repair
-✅ /san-francisco-ice-maker-repair
-✅ /daly-city-refrigerator-repair
-✅ /daly-city-washer-repair
-✅ /daly-city-dryer-repair
-✅ /daly-city-dishwasher-repair
-✅ /daly-city-oven-repair
-✅ /daly-city-wine-cooler-repair
-✅ /daly-city-ice-maker-repair
-✅ /south-san-francisco-refrigerator-repair
-✅ /south-san-francisco-washer-repair
-✅ /south-san-francisco-dryer-repair
-✅ /south-san-francisco-dishwasher-repair
-✅ /south-san-francisco-oven-repair
-✅ /south-san-francisco-wine-cooler-repair
-✅ /south-san-francisco-ice-maker-repair
-✅ /san-bruno-refrigerator-repair
-✅ /san-bruno-washer-repair
-✅ /san-bruno-dryer-repair
-✅ /san-bruno-dishwasher-repair
-✅ /san-bruno-oven-repair
-✅ /san-bruno-wine-cooler-repair
-✅ /san-bruno-ice-maker-repair
-✅ /pacifica-refrigerator-repair
-✅ /pacifica-washer-repair
-✅ /pacifica-dryer-repair
-✅ /pacifica-dishwasher-repair
-✅ /pacifica-oven-repair
-✅ /pacifica-wine-cooler-repair
-✅ /pacifica-ice-maker-repair
-✅ /millbrae-refrigerator-repair
-✅ /millbrae-washer-repair
-✅ /millbrae-dryer-repair
-✅ /millbrae-dishwasher-repair
-✅ /millbrae-oven-repair
-✅ /millbrae-wine-cooler-repair
-✅ /millbrae-ice-maker-repair
-✅ /mill-valley-refrigerator-repair
-✅ /mill-valley-washer-repair
-✅ /mill-valley-dryer-repair
-✅ /mill-valley-dishwasher-repair
-✅ /mill-valley-oven-repair
-✅ /mill-valley-wine-cooler-repair
-✅ /mill-valley-ice-maker-repair
-✅ /san-rafael-refrigerator-repair
-✅ /san-rafael-washer-repair
-✅ /san-rafael-dryer-repair
-✅ /san-rafael-dishwasher-repair
-✅ /san-rafael-oven-repair
-✅ /san-rafael-wine-cooler-repair
-✅ /san-rafael-ice-maker-repair
-✅ /sausalito-refrigerator-repair
-✅ /sausalito-washer-repair
-✅ /sausalito-dryer-repair
-✅ /sausalito-dishwasher-repair
-✅ /sausalito-oven-repair
-✅ /sausalito-wine-cooler-repair
-✅ /sausalito-ice-maker-repair
-✅ /novato-refrigerator-repair
-✅ /novato-washer-repair
-✅ /novato-dryer-repair
-✅ /novato-dishwasher-repair
-✅ /novato-oven-repair
-✅ /novato-wine-cooler-repair
-✅ /novato-ice-maker-repair
-✅ /corte-madera-refrigerator-repair
-✅ /corte-madera-washer-repair
-✅ /corte-madera-dryer-repair
-✅ /corte-madera-dishwasher-repair
-✅ /corte-madera-oven-repair
-✅ /corte-madera-wine-cooler-repair
-✅ /corte-madera-ice-maker-repair
-✅ /tiburon-refrigerator-repair
-✅ /tiburon-washer-repair
-✅ /tiburon-dryer-repair
-✅ /tiburon-dishwasher-repair
-✅ /tiburon-oven-repair
-✅ /tiburon-wine-cooler-repair
-✅ /tiburon-ice-maker-repair
-✅ /belvedere-refrigerator-repair
-✅ /belvedere-washer-repair
-✅ /belvedere-dryer-repair
-✅ /belvedere-dishwasher-repair
-✅ /belvedere-oven-repair
-✅ /belvedere-wine-cooler-repair
-✅ /belvedere-ice-maker-repair
-✅ /larkspur-refrigerator-repair
-✅ /larkspur-washer-repair
-✅ /larkspur-dryer-repair
-✅ /larkspur-dishwasher-repair
-✅ /larkspur-oven-repair
-✅ /larkspur-wine-cooler-repair
-✅ /larkspur-ice-maker-repair
-✅ /greenbrae-refrigerator-repair
-✅ /greenbrae-washer-repair
-✅ /greenbrae-dryer-repair
-✅ /greenbrae-dishwasher-repair
-✅ /greenbrae-oven-repair
-✅ /greenbrae-wine-cooler-repair
-✅ /greenbrae-ice-maker-repair
-✅ /ross-refrigerator-repair
-✅ /ross-washer-repair
-✅ /ross-dryer-repair
-✅ /ross-dishwasher-repair
-✅ /ross-oven-repair
-✅ /ross-wine-cooler-repair
-✅ /ross-ice-maker-repair
-✅ /fairfax-refrigerator-repair
-✅ /fairfax-washer-repair
-✅ /fairfax-dryer-repair
-✅ /fairfax-dishwasher-repair
-✅ /fairfax-oven-repair
-✅ /fairfax-wine-cooler-repair
-✅ /fairfax-ice-maker-repair
-✅ /san-anselmo-refrigerator-repair
-✅ /san-anselmo-washer-repair
-✅ /san-anselmo-dryer-repair
-✅ /san-anselmo-dishwasher-repair
-✅ /san-anselmo-oven-repair
-✅ /san-anselmo-wine-cooler-repair
-✅ /san-anselmo-ice-maker-repair
-✅ /maintenance/refrigerator
-✅ /maintenance/washer
-✅ /maintenance/dryer
-✅ /maintenance/dishwasher
-✅ /maintenance/oven-range
-✅ /maintenance/cooktop
-✅ /maintenance/wine-cooler
-✅ /privacy-policy
-✅ /site-map
-✅ /blog-faq
-✅ /thank-you-booking
-✅ /services
-✅ /llm-info
-✅ /book
-✅ /san-francisco/sunset-district-appliance-repair
-✅ /san-francisco/richmond-district-appliance-repair
-✅ /san-francisco/mission-district-appliance-repair
-✅ /san-francisco/noe-valley-appliance-repair
-✅ /san-francisco/castro-appliance-repair
-✅ /san-francisco/marina-appliance-repair
-✅ /san-francisco/pacific-heights-appliance-repair
-✅ /san-francisco/nob-hill-appliance-repair
-✅ /san-francisco/north-beach-appliance-repair
-✅ /san-francisco/soma-appliance-repair
-✅ /san-francisco/bernal-heights-appliance-repair
-✅ /san-francisco/potrero-hill-appliance-repair
-
-✅ Generated 233/233 SEO snapshots successfully!
-
-📄 Generated _redirects with 315 rules (314 routes + SPA fallback)
-
-🎉 SEO Snapshots generation complete!
-
-🗺️  Generated sitemap.xml with 221 canonical URLs (excluded 12 noindex route(s))
-🔍 Verifying SEO Snapshots...
-
-📁 Found 233 HTML files to verify
-
-✅ /about
-✅ /belvedere-appliance-repair
-✅ /belvedere-dishwasher-repair
-✅ /belvedere-dryer-repair
-✅ /belvedere-ice-maker-repair
-✅ /belvedere-oven-repair
-✅ /belvedere-refrigerator-repair
-✅ /belvedere-washer-repair
-✅ /belvedere-wine-cooler-repair
-✅ /blog/appliance-lifespan
-✅ /blog/appliance-repair-cost-san-francisco
-✅ /blog/appliance-repair-marin-county
-✅ /blog/dishwasher-maintenance
-✅ /blog/dishwasher-not-draining
-✅ /blog/dryer-not-heating
-✅ /blog/dryer-taking-too-long
-✅ /blog/energy-efficient-appliances
-✅ /blog/gas-smell-from-stove
-✅ /blog/ice-maker-troubleshooting
-✅ /blog
-✅ /blog/oven-temperature-calibration
-✅ /blog/refrigerator-not-cooling
-✅ /blog/refrigerator-water-filter
-✅ /blog/same-day-appliance-repair-bay-area
-✅ /blog/washer-error-codes
-✅ /blog/when-to-repair-vs-replace
-✅ /blog-faq
-✅ /book
-✅ /bosch-appliance-repair
-✅ /brands
-✅ /brisbane-appliance-repair
-✅ /colma-appliance-repair
-✅ /commercial-appliance-repair
-✅ /commercial-dishwasher-repair
-✅ /commercial-dryer-repair
-✅ /commercial-oven-repair
-✅ /commercial-refrigerator-repair
-✅ /commercial-washer-repair
-✅ /contact
-✅ /cooktop-repair
-✅ /corte-madera-appliance-repair
-✅ /corte-madera-dishwasher-repair
-✅ /corte-madera-dryer-repair
-✅ /corte-madera-ice-maker-repair
-✅ /corte-madera-oven-repair
-✅ /corte-madera-refrigerator-repair
-✅ /corte-madera-washer-repair
-✅ /corte-madera-wine-cooler-repair
-✅ /daly-city-appliance-repair
-✅ /daly-city-dishwasher-repair
-✅ /daly-city-dryer-repair
-✅ /daly-city-ice-maker-repair
-✅ /daly-city-oven-repair
-✅ /daly-city-refrigerator-repair
-✅ /daly-city-washer-repair
-✅ /daly-city-wine-cooler-repair
-✅ /dishwasher-repair
-✅ /dryer-repair
-✅ /fairfax-appliance-repair
-✅ /fairfax-dishwasher-repair
-✅ /fairfax-dryer-repair
-✅ /fairfax-ice-maker-repair
-✅ /fairfax-oven-repair
-✅ /fairfax-refrigerator-repair
-✅ /fairfax-washer-repair
-✅ /fairfax-wine-cooler-repair
-✅ /freezer-repair
-✅ /frigidaire-appliance-repair
-✅ /garbage-disposal-repair
-✅ /ge-appliance-repair
-✅ /greenbrae-appliance-repair
-✅ /greenbrae-dishwasher-repair
-✅ /greenbrae-dryer-repair
-✅ /greenbrae-ice-maker-repair
-✅ /greenbrae-oven-repair
-✅ /greenbrae-refrigerator-repair
-✅ /greenbrae-washer-repair
-✅ /greenbrae-wine-cooler-repair
-✅ /ice-maker-repair
-✅ /
-✅ /kenmore-appliance-repair
-✅ /kitchenaid-appliance-repair
-✅ /larkspur-appliance-repair
-✅ /larkspur-dishwasher-repair
-✅ /larkspur-dryer-repair
-✅ /larkspur-ice-maker-repair
-✅ /larkspur-oven-repair
-✅ /larkspur-refrigerator-repair
-✅ /larkspur-washer-repair
-✅ /larkspur-wine-cooler-repair
-✅ /lg-appliance-repair
-✅ /llm-info
-✅ /local-appliance-repair
-✅ /maintenance/cooktop
-✅ /maintenance/dishwasher
-✅ /maintenance/dryer
-✅ /maintenance
-✅ /maintenance/oven-range
-✅ /maintenance/refrigerator
-✅ /maintenance/washer
-✅ /maintenance/wine-cooler
-✅ /marin-county-appliance-repair
-✅ /maytag-appliance-repair
-✅ /miele-appliance-repair
-✅ /mill-valley-appliance-repair
-✅ /mill-valley-dishwasher-repair
-✅ /mill-valley-dryer-repair
-✅ /mill-valley-ice-maker-repair
-✅ /mill-valley-oven-repair
-✅ /mill-valley-refrigerator-repair
-✅ /mill-valley-washer-repair
-✅ /mill-valley-wine-cooler-repair
-✅ /millbrae-appliance-repair
-✅ /millbrae-dishwasher-repair
-✅ /millbrae-dryer-repair
-✅ /millbrae-ice-maker-repair
-✅ /millbrae-oven-repair
-✅ /millbrae-refrigerator-repair
-✅ /millbrae-washer-repair
-✅ /millbrae-wine-cooler-repair
-✅ /montara-appliance-repair
-✅ /novato-appliance-repair
-✅ /novato-dishwasher-repair
-✅ /novato-dryer-repair
-✅ /novato-ice-maker-repair
-✅ /novato-oven-repair
-✅ /novato-refrigerator-repair
-✅ /novato-washer-repair
-✅ /novato-wine-cooler-repair
-✅ /oven-repair
-✅ /pacifica-appliance-repair
-✅ /pacifica-dishwasher-repair
-✅ /pacifica-dryer-repair
-✅ /pacifica-ice-maker-repair
-✅ /pacifica-oven-repair
-✅ /pacifica-refrigerator-repair
-✅ /pacifica-washer-repair
-✅ /pacifica-wine-cooler-repair
-✅ /privacy-policy
-✅ /range-repair
-✅ /refrigerator-repair
-✅ /residential-appliance-repair
-✅ /reviews
-✅ /ross-appliance-repair
-✅ /ross-dishwasher-repair
-✅ /ross-dryer-repair
-✅ /ross-ice-maker-repair
-✅ /ross-oven-repair
-✅ /ross-refrigerator-repair
-✅ /ross-washer-repair
-✅ /ross-wine-cooler-repair
-✅ /samsung-appliance-repair
-✅ /san-anselmo-appliance-repair
-✅ /san-anselmo-dishwasher-repair
-✅ /san-anselmo-dryer-repair
-✅ /san-anselmo-ice-maker-repair
-✅ /san-anselmo-oven-repair
-✅ /san-anselmo-refrigerator-repair
-✅ /san-anselmo-washer-repair
-✅ /san-anselmo-wine-cooler-repair
-✅ /san-bruno-appliance-repair
-✅ /san-bruno-dishwasher-repair
-✅ /san-bruno-dryer-repair
-✅ /san-bruno-ice-maker-repair
-✅ /san-bruno-oven-repair
-✅ /san-bruno-refrigerator-repair
-✅ /san-bruno-washer-repair
-✅ /san-bruno-wine-cooler-repair
-✅ /san-francisco/bernal-heights-appliance-repair
-✅ /san-francisco/castro-appliance-repair
-✅ /san-francisco/marina-appliance-repair
-✅ /san-francisco/mission-district-appliance-repair
-✅ /san-francisco/nob-hill-appliance-repair
-✅ /san-francisco/noe-valley-appliance-repair
-✅ /san-francisco/north-beach-appliance-repair
-✅ /san-francisco/pacific-heights-appliance-repair
-✅ /san-francisco/potrero-hill-appliance-repair
-✅ /san-francisco/richmond-district-appliance-repair
-✅ /san-francisco/soma-appliance-repair
-✅ /san-francisco/sunset-district-appliance-repair
-✅ /san-francisco-appliance-repair
-✅ /san-francisco-dishwasher-repair
-✅ /san-francisco-dryer-repair
-✅ /san-francisco-ice-maker-repair
-✅ /san-francisco-oven-repair
-✅ /san-francisco-refrigerator-repair
-✅ /san-francisco-washer-repair
-✅ /san-francisco-wine-cooler-repair
-✅ /san-quentin-appliance-repair
-✅ /san-rafael-appliance-repair
-✅ /san-rafael-dishwasher-repair
-✅ /san-rafael-dryer-repair
-✅ /san-rafael-ice-maker-repair
-✅ /san-rafael-oven-repair
-✅ /san-rafael-refrigerator-repair
-✅ /san-rafael-washer-repair
-✅ /san-rafael-wine-cooler-repair
-✅ /sausalito-appliance-repair
-✅ /sausalito-dishwasher-repair
-✅ /sausalito-dryer-repair
-✅ /sausalito-ice-maker-repair
-✅ /sausalito-oven-repair
-✅ /sausalito-refrigerator-repair
-✅ /sausalito-washer-repair
-✅ /sausalito-wine-cooler-repair
-✅ /service-areas
-✅ /services
-✅ /site-map
-✅ /south-san-francisco-appliance-repair
-✅ /south-san-francisco-dishwasher-repair
-✅ /south-san-francisco-dryer-repair
-✅ /south-san-francisco-ice-maker-repair
-✅ /south-san-francisco-oven-repair
-✅ /south-san-francisco-refrigerator-repair
-✅ /south-san-francisco-washer-repair
-✅ /south-san-francisco-wine-cooler-repair
-✅ /stove-repair
-✅ /sub-zero-appliance-repair
-✅ /thank-you-booking
-✅ /thermador-appliance-repair
-✅ /tiburon-appliance-repair
-✅ /tiburon-dishwasher-repair
-✅ /tiburon-dryer-repair
-✅ /tiburon-ice-maker-repair
-✅ /tiburon-oven-repair
-✅ /tiburon-refrigerator-repair
-✅ /tiburon-washer-repair
-✅ /tiburon-wine-cooler-repair
-✅ /viking-appliance-repair
-✅ /washer-repair
-✅ /whirlpool-appliance-repair
-✅ /wine-cooler-repair
-✅ /wolf-appliance-repair
-
-📊 Verification Summary:
-   ✅ Passed: 233
-   ❌ Failed: 0
-
-✅ All SEO snapshots verified successfully!
-Done in 38.95s.) and  to verify the new SF section and Schema.
-    - User Testing Done: N
+    - Last item agent was working: Устранение конфликтов в конфигурации Netlify (Промпт П13). Агент только что удалил устаревшие правила редиректов (например, для  и ) из файла , так как они ломали серверные 301 редиректы и вызывали редирект для новых standalone-страниц на продакшене.
+    - Status: USER VERIFICATION PENDING
+    - Agent Testing Done: Y (Local build verification done,  looks correct locally)
+    - Which testing method agent to use? manual testing by curl (проверка HTTP/2 200 
+date: Tue, 07 Apr 2026 01:14:52 GMT
+content-type: text/html; charset=utf-8
+cache-control: no-cache, no-store, must-revalidate
+expires: 0
+pragma: no-cache
+set-cookie: __cf_bm=bPMghXJVeSoIjcRa3qBSIRqO6z.aYBntlN.M6unvxpA-1775524492.3881996-1.0.1.1-SxxkI7Edw1.xre2jTJajAzoOnV1U1z2T5xXA3pd3BlBdxyxF4K61KUEvRDGwBkGX2hTDiTSeZsO6zM0Hs7x2y6QFDg5abn6A_KIOp8b55ksN8o6VIYDBXq8fBP1szsBy; HttpOnly; Secure; Path=/; Domain=fixitbay.net; Expires=Tue, 07 Apr 2026 01:44:52 GMT
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-content-type-options: nosniff
+server: cloudflare
+cf-ray: 9e852d8d6c99f604-ORD
+ после деплоя пользователем)
+    - User Testing Done: N (User needs to push changes to GitHub and wait for Netlify to deploy)
 
 **All Pending/In progress Issue list**:
-  Issue 1: Завершение Промпта 51 (Локализация  под San Francisco) - P0
-     - Attempted fixes: Агент лишь просмотрел файл . Никаких изменений внесено не было.
+  Issue 1: Проверка 301 редиректов на продакшене (Промпт П13) и размещение  (P0)
+     - Attempted fixes: Агент удалил старые редиректы из . Однако агент ранее отмечал мысль: Netlify читает netlify.toml из корня репозитория/base directory, НЕ из publish directory. Нужно исправить и переместить. Инструмент  отработал на . 
      - Next debug checklist: 
-       1. В  передать в шаблон .
-       2. Передать .
-       3. Передать кастомное описание () с текстом: FixitBay provides expert dishwasher repair in San Francisco and the Bay Area....
-       4. Добавить внутрь  (как ) секцию San Francisco Dishwasher Repair с Local Pack контентом.
-       5. Обновить/переопределить LocalBusiness schema (addressLocality: San Francisco, serviceType: DishwasherRepair).
-     - Why fix this issue and what will be achieved with the fix? Направит Google-трафик по запросу san francisco dishwasher repair на целевую страницу услуги вместо главной страницы.
-     - Status: IN PROGRESS
-     - Is recurring issue? N
-     - Should Test frontend/backend/both after fix? Frontend (Build + Screenshot + Schema verification).
+       1. Спросить пользователя, задеплоился ли фикс с чистым  и работают ли теперь 301 редиректы (через HTTP/2 200 
+date: Tue, 07 Apr 2026 01:14:53 GMT
+content-type: text/html; charset=utf-8
+cache-control: no-cache, no-store, must-revalidate
+expires: 0
+pragma: no-cache
+set-cookie: __cf_bm=a_nVA.hXXLRRe1EZDReiKMUL5O_tDN1nL3Pd_K90LhM-1775524492.7414598-1.0.1.1-8QMD9IfyEuTfxyYuuXDDqro1FgQTZFMWoCI6eHs7gQDrthk45D_qMgYEThAxdnKa9b3FMwYEabXVBZraWTdJEekkJ__kimNZ40ezmHsqidGf1IxOCR92dyYdVd0s.CCH; HttpOnly; Secure; Path=/; Domain=fixitbay.net; Expires=Tue, 07 Apr 2026 01:44:53 GMT
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-content-type-options: nosniff
+server: cloudflare
+cf-ray: 9e852d8fa91f2986-ORD
+).
+       2. Если всё ещё возвращается 200, проверить, где именно Netlify ожидает . Если он должен быть в корне , а сейчас лежит в , его нужно переместить.
+     - Why fix this issue and what will be achieved with the fix? Google классифицирует старые URL как Crawled - not indexed из-за SPA fallback (200 OK + клиентский JS редирект). Нужно добиться жесткого серверного 301.
+     - Status: TESTING PENDING / USER VERIFICATION PENDING
+     - Is recurring issue? Y (Сложности с конфигурацией Netlify)
+     - Should Test frontend/backend/both after fix? frontend (via curl HTTP headers)
+     - Blocked on other issue: None
 
-**In progress Task List**: 
-  Task 1: Промпт 51 - Внедрение изменений в  и проверке Schema.
-     - Where to resume: Начать редактирование .
-     - What will be achieved with this? Улучшение Local SEO конверсии для посудомоечных машин.
-     - Status: IN PROGRESS
-     - Should Test frontend/backend/both after fix? Frontend
-     - Blocked on something: None
+**In progress Task List**:
+  None. Все текущие задачи по промптам завершены, ожидается только валидация деплоя Netlify для П13.
 
 **Upcoming and Future Tasks**
-    Upcoming Tasks:
-    - (P1) Ожидание следующего пула задач от пользователя после завершения Промпта 51.
     Future Tasks:
-    - (P2) Миграция инлайн-стилей на Tailwind/CSS vars (особенно в , , ).
+    - (P2) Рефакторинг: объединение  и  в один универсальный компонент.
     - (P3) Аудит производительности: code-splitting тяжелых секций, lazy-loading контента ниже линии сгиба.
 
 **Completed work in this session**
-- Верификация не протестированных изменений на  (Промпт 40) (DONE)
-- Промпт 41: Добавлен блок Serving [City] Customers на все City-Service страницы (DONE)
-- Промпт 42: Исправлена BreadcrumbList Schema (3 уровня) на сервисных страницах (DONE)
-- Промпт 43 + User Requests: Добавлены 4 богатые секции (Comparison Table, Symptoms, Diagnosis, Pricing HTML Table) на **все 12 Service, 7 Maintenance и 5 Commercial страниц**. Создан файл . Удалены старые текстовые дубликаты. (DONE)
-- User Request: Удален дублирующийся блок COVERAGE на стандартных сервисных страницах (оставлен только by City) (DONE)
-- Промпт 49: Исправлены Title tags на 18 страницах (убраны длинные тайтлы >60 символов) (DONE)
-- Промпт 50: Статья  полностью переписана под Featured Snippet (H1, HowTo Schema, нумерованные H2, CTA) (DONE)
+- Промпт П9: Устранена Orphan Page  — добавлены внутренние ссылки в Footer, Services, Washer/Dryer Repair. (DONE)
+- Промпт П10 (Code Review): Удалены 188  из prod-кода, установлен  для защиты  в компонентах блога, добавлены логи в пустые -блоки. (DONE)
+- Промпт П11: Исправлены ошибки GSC — убран noindex с  (создана полноценная страница ), добавлены 301 редиректы для удаленных городов, вычищены мусорные паттерны URL из SSG. (DONE)
+- Промпт П12: Улучшена конверсия  — добавлены оранжевый локальный CTA-блок перед первым H2, inline CTA и блок Related Services. (DONE)
+- Промпт П14: Устранен Soft 404 для  — страница создана как самостоятельный компонент (на базе ApplianceRepairPageNew), добавлен SEO-конфиг, включен пререндер, удалены клиентские редиректы. (DONE)
+- Промпт П15: Предотвращено мигание (FOUC) — в  добавлен  для , в  добавлена анимация . (DONE)
+- Промпт П13 (частично/ожидает деплоя): Изменен скрипт  — теперь он корректно читает  и сохраняет все пользовательские 301 редиректы в итоговый . Очищен файл  от конфликтующих правил. (DONE, pending prod validation).
 
 **Earlier issues found/mentioned but not fixed**
 None.
 
 **Known issue recurrence from previous fork**
-  - Issue recurrence in previous fork: Неразрывные пробелы ( / ) жестко закодированы в JS-файлах. При стандартном использовании инструмента  возникают ошибки String replacement failed.
-  - Recurrence count: > 5
-  - Status: RESOLVED via Python scripts.
-  - Note: Предыдущий агент успешно обходил эту проблему, используя  с Python-скриптами ( по байтам или с учетом ) для массовых замен. Рекомендуется использовать этот подход при ошибках .
+  - Issue recurrence in previous fork: Конфликт между файлами ,  и . Кастомный SSG-скрипт стирал пользовательские правила редиректов при каждом билде, а  переопределял то, что оставалось.
+  - Recurrence count: 3
+  - Status: RESOLVED/TESTING PENDING (Фиксы внесены в файлы, требуется проверка на продакшене после пуша в GitHub).
 
 **Code Architecture**
 
 
 **Key Technical Concepts**
-- React SPA статически пререндерится (SSG) через . Сборка (yarn run v1.22.22
-info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.) проверяет 233 страницы на предмет синтаксических ошибок и сбоев рендера.
-- SEO теги (Helmet) и Schema.org (JSON-LD) генерируются динамически внутри компонентов.
+- React SPA с кастомным пререндером ().
+- Развертывание на Netlify. Netlify использует файлы  и . Порядок приоритета правил маршрутизации критически важен.
+- Защита от XSS:  используется перед .
 
 **key DB schema**
-N/A (Данные хранятся локально в )
-
-**changes in tech stack**
 N/A
 
-**All files of reference**
--  (Для выполнения Промпта 51)
--  (Шаблон, принимающий пропсы)
--  (Создан в этой сессии; консолидирует контент сервисов)
+**changes in tech stack**
+- Установлен пакет  в frontend/package.json.
+
+**All files of reference** 
+1.  (Удалены конфликтующие правила редиректов).
+2.  (Обновлена логика склейки ).
+3.  (Добавлены все новые серверные редиректы).
+4.  (Создана страница).
+5.  (Создана страница).
+6. Файлы блога (, , , ) — добавлен .
+7.  (Анимация FOUC).
 
 **Areas that need refactoring**: 
- разросся до >1200 строк. Логика условного рендера перегружена. В будущем требует разбиения на композитные компоненты.
+-  и  (Запланировано в бэклоге).
+- Правильное расположение  (Возможно, нужно переместить его из  в корень ).
 
 **key api endpoints**
 N/A
 
 **Critical Info for New Agent** 
-- **ЯЗЫК**: Строго отвечайте пользователю на **русском языке**.
-- В Промпте 51 пользователь просит сделать общую страницу  высоко релевантной локации San Francisco. Не создавайте новую страницу, а модифицируйте , передав в шаблон  правильные пропсы (, , переопределение Schema, и инъекцию Local Pack контента через ).
-- Обязательно тестируйте изменения командой yarn run v1.22.22
-$ craco build
-Creating an optimized production build...
-Compiled successfully.
-
-File sizes after gzip:
-
-  276.63 kB  build/static/js/4066.289571d4.chunk.js
-  112.26 kB  build/static/js/main.aee3edad.js
-  66.92 kB   build/static/js/6285.b016ff56.chunk.js
-  41.63 kB   build/static/js/6400.52ceab92.chunk.js
-  40.35 kB   build/static/js/4839.914ab371.chunk.js
-  32.71 kB   build/static/js/7920.1d8512b1.chunk.js
-  30.9 kB    build/static/js/8875.b4cacebe.chunk.js
-  16.34 kB   build/static/js/747.2408e949.chunk.js
-  16.32 kB   build/static/js/6833.10887528.chunk.js
-  13.17 kB   build/static/css/main.410039fe.css
-  11.42 kB   build/static/js/7949.ac0f8520.chunk.js
-  10.69 kB   build/static/js/4875.e1939d87.chunk.js
-  10.26 kB   build/static/js/1168.4c2741dc.chunk.js
-  10.03 kB   build/static/js/3116.65314da7.chunk.js
-  9.99 kB    build/static/css/9276.b1f41460.chunk.css
-  9.93 kB    build/static/js/9405.4ab56a65.chunk.js
-  9.84 kB    build/static/js/6840.035dc1b5.chunk.js
-  9.56 kB    build/static/js/3820.2442fbbf.chunk.js
-  9.3 kB     build/static/js/1362.1ef81e42.chunk.js
-  9.27 kB    build/static/js/3079.e54f39d5.chunk.js
-  9.13 kB    build/static/js/7072.e10cbba9.chunk.js
-  8.92 kB    build/static/js/1761.427e92d1.chunk.js
-  8.92 kB    build/static/js/770.8ca24a88.chunk.js
-  8.72 kB    build/static/js/5653.1374a6dd.chunk.js
-  8.7 kB     build/static/js/2619.fa41ec01.chunk.js
-  8.69 kB    build/static/js/904.2edde554.chunk.js
-  8.64 kB    build/static/js/8742.e8717b15.chunk.js
-  8.37 kB    build/static/js/9738.bf0b19b5.chunk.js
-  8.07 kB    build/static/js/7646.85b9de8d.chunk.js
-  7.89 kB    build/static/js/6736.036fe7aa.chunk.js
-  7.62 kB    build/static/js/5946.f9c009c3.chunk.js
-  7.47 kB    build/static/js/151.d6059057.chunk.js
-  7.42 kB    build/static/js/9927.4f422123.chunk.js
-  7.37 kB    build/static/js/4681.98ce3da4.chunk.js
-  7.02 kB    build/static/js/5348.e8b7814c.chunk.js
-  6.67 kB    build/static/js/594.53d59750.chunk.js
-  6.4 kB     build/static/js/4523.58c82c13.chunk.js
-  6.38 kB    build/static/js/9192.b0f9dee9.chunk.js
-  6.28 kB    build/static/js/9050.74049787.chunk.js
-  6.06 kB    build/static/js/2745.204d8b37.chunk.js
-  6.01 kB    build/static/js/9061.9e6be52f.chunk.js
-  5.95 kB    build/static/js/5396.0c2bfdf0.chunk.js
-  5.9 kB     build/static/js/2417.befd2007.chunk.js
-  5.83 kB    build/static/js/2605.dd2636e9.chunk.js
-  5.44 kB    build/static/js/7488.ea43876c.chunk.js
-  5.28 kB    build/static/js/9922.735d6410.chunk.js
-  5 kB       build/static/js/9570.fd072ca0.chunk.js
-  4.98 kB    build/static/js/3697.dbad7a01.chunk.js
-  4.92 kB    build/static/js/8200.7e133721.chunk.js
-  4.76 kB    build/static/js/9290.140994ba.chunk.js
-  4.73 kB    build/static/js/1119.39b2d10f.chunk.js
-  4.68 kB    build/static/js/5064.8841a98a.chunk.js
-  4.25 kB    build/static/js/336.0283e83f.chunk.js
-  4.07 kB    build/static/js/7730.9c97bd7c.chunk.js
-  3.5 kB     build/static/css/6285.0a3ef9f9.chunk.css
-  3.47 kB    build/static/js/2244.5a2645c2.chunk.js
-  3.45 kB    build/static/js/8816.fc80f8ff.chunk.js
-  3.43 kB    build/static/js/5318.c3883264.chunk.js
-  3.41 kB    build/static/js/4885.68e191bb.chunk.js
-  3.4 kB     build/static/js/1421.c0587a04.chunk.js
-  3.39 kB    build/static/js/2495.0da8d0a7.chunk.js
-  3.38 kB    build/static/js/6535.61cf1f14.chunk.js
-  3.36 kB    build/static/js/6669.934ea257.chunk.js
-  3.33 kB    build/static/js/8586.21a18de3.chunk.js
-  3.33 kB    build/static/js/5866.da861c10.chunk.js
-  3.32 kB    build/static/js/9400.c08d4ad9.chunk.js
-  3.32 kB    build/static/js/8398.02fae33d.chunk.js
-  3.28 kB    build/static/js/4457.2f3a7ad0.chunk.js
-  3.26 kB    build/static/js/4726.7f1cfc38.chunk.js
-  3.26 kB    build/static/js/5525.028ff56c.chunk.js
-  3.15 kB    build/static/js/8320.c386594f.chunk.js
-  3.13 kB    build/static/js/9274.fdcc18d2.chunk.js
-  3.04 kB    build/static/js/2469.0e6fee7f.chunk.js
-  2.97 kB    build/static/js/6045.f0cdc921.chunk.js
-  2.92 kB    build/static/js/1652.ec18f1f5.chunk.js
-  2.91 kB    build/static/js/4437.12fd442d.chunk.js
-  2.91 kB    build/static/js/2208.d8e7840f.chunk.js
-  2.88 kB    build/static/js/2681.68695f98.chunk.js
-  2.76 kB    build/static/js/8039.01e3a18f.chunk.js
-  2.74 kB    build/static/js/331.b9ed59c0.chunk.js
-  2.66 kB    build/static/js/5611.8e9c0dd7.chunk.js
-  2.38 kB    build/static/js/7937.87d5b020.chunk.js
-  2.29 kB    build/static/js/5743.0506660d.chunk.js
-  1.37 kB    build/static/js/3059.b449a6a3.chunk.js
-  1.28 kB    build/static/js/5050.982a3477.chunk.js
-  1.25 kB    build/static/js/3061.f3aa918c.chunk.js
-  978 B      build/static/js/7256.0a8e1cca.chunk.js
-  686 B      build/static/js/9283.cd417266.chunk.js
-  649 B      build/static/js/3425.313695dc.chunk.js
-  488 B      build/static/js/4924.da46226b.chunk.js
-  245 B      build/static/js/3740.fa1a581e.chunk.js
-  243 B      build/static/js/5802.7325610a.chunk.js
-  243 B      build/static/js/4326.41847101.chunk.js
-  243 B      build/static/js/9326.44e96890.chunk.js
-  243 B      build/static/js/1786.16e0170d.chunk.js
-  241 B      build/static/js/5464.939f0212.chunk.js
-  241 B      build/static/js/4798.e49af2bc.chunk.js
-  238 B      build/static/js/8302.ea0e9b1d.chunk.js
-  238 B      build/static/js/1768.6d806ecf.chunk.js
-  237 B      build/static/js/8067.e9dd5a4b.chunk.js
-  176 B      build/static/js/6795.534fc418.chunk.js
-
-The project was built assuming it is hosted at /.
-You can control this with the homepage field in your package.json.
-
-The build folder is ready to be deployed.
-You may serve it with a static server:
-
-  yarn global add serve
-  serve -s build
-
-Find out more about deployment here:
-
-  https://cra.link/deployment
-
-$ node scripts/generate-seo-snapshots.cjs && node scripts/verify-seo-snapshots.cjs
-🚀 Starting SEO Snapshots Generation...
-
-📝 Generating 233 SEO snapshots...
-
-✅ /
-✅ /refrigerator-repair
-✅ /washer-repair
-✅ /dryer-repair
-✅ /dishwasher-repair
-✅ /oven-repair
-✅ /ice-maker-repair
-✅ /cooktop-repair
-✅ /wine-cooler-repair
-✅ /garbage-disposal-repair
-✅ /freezer-repair
-✅ /stove-repair
-✅ /range-repair
-✅ /whirlpool-appliance-repair
-✅ /lg-appliance-repair
-✅ /samsung-appliance-repair
-✅ /ge-appliance-repair
-✅ /bosch-appliance-repair
-✅ /kitchenaid-appliance-repair
-✅ /maytag-appliance-repair
-✅ /frigidaire-appliance-repair
-✅ /kenmore-appliance-repair
-✅ /thermador-appliance-repair
-✅ /viking-appliance-repair
-✅ /miele-appliance-repair
-✅ /sub-zero-appliance-repair
-✅ /wolf-appliance-repair
-✅ /blog
-✅ /blog/refrigerator-not-cooling
-✅ /blog/dishwasher-maintenance
-✅ /blog/when-to-repair-vs-replace
-✅ /blog/dryer-taking-too-long
-✅ /blog/washer-error-codes
-✅ /blog/oven-temperature-calibration
-✅ /blog/ice-maker-troubleshooting
-✅ /blog/appliance-lifespan
-✅ /blog/energy-efficient-appliances
-✅ /blog/gas-smell-from-stove
-✅ /blog/refrigerator-water-filter
-✅ /blog/dishwasher-not-draining
-✅ /blog/dryer-not-heating
-✅ /blog/appliance-repair-cost-san-francisco
-✅ /blog/appliance-repair-marin-county
-✅ /blog/same-day-appliance-repair-bay-area
-✅ /contact
-✅ /about
-✅ /service-areas
-✅ /reviews
-✅ /brands
-✅ /local-appliance-repair
-✅ /marin-county-appliance-repair
-✅ /residential-appliance-repair
-✅ /commercial-appliance-repair
-✅ /commercial-refrigerator-repair
-✅ /commercial-dishwasher-repair
-✅ /commercial-washer-repair
-✅ /commercial-dryer-repair
-✅ /commercial-oven-repair
-✅ /maintenance
-✅ /san-francisco-appliance-repair
-✅ /daly-city-appliance-repair
-✅ /south-san-francisco-appliance-repair
-✅ /san-bruno-appliance-repair
-✅ /pacifica-appliance-repair
-✅ /millbrae-appliance-repair
-✅ /colma-appliance-repair
-✅ /brisbane-appliance-repair
-✅ /montara-appliance-repair
-✅ /san-rafael-appliance-repair
-✅ /novato-appliance-repair
-✅ /mill-valley-appliance-repair
-✅ /sausalito-appliance-repair
-✅ /belvedere-appliance-repair
-✅ /tiburon-appliance-repair
-✅ /corte-madera-appliance-repair
-✅ /san-quentin-appliance-repair
-✅ /larkspur-appliance-repair
-✅ /greenbrae-appliance-repair
-✅ /ross-appliance-repair
-✅ /fairfax-appliance-repair
-✅ /san-anselmo-appliance-repair
-✅ /san-francisco-refrigerator-repair
-✅ /san-francisco-washer-repair
-✅ /san-francisco-dryer-repair
-✅ /san-francisco-dishwasher-repair
-✅ /san-francisco-oven-repair
-✅ /san-francisco-wine-cooler-repair
-✅ /san-francisco-ice-maker-repair
-✅ /daly-city-refrigerator-repair
-✅ /daly-city-washer-repair
-✅ /daly-city-dryer-repair
-✅ /daly-city-dishwasher-repair
-✅ /daly-city-oven-repair
-✅ /daly-city-wine-cooler-repair
-✅ /daly-city-ice-maker-repair
-✅ /south-san-francisco-refrigerator-repair
-✅ /south-san-francisco-washer-repair
-✅ /south-san-francisco-dryer-repair
-✅ /south-san-francisco-dishwasher-repair
-✅ /south-san-francisco-oven-repair
-✅ /south-san-francisco-wine-cooler-repair
-✅ /south-san-francisco-ice-maker-repair
-✅ /san-bruno-refrigerator-repair
-✅ /san-bruno-washer-repair
-✅ /san-bruno-dryer-repair
-✅ /san-bruno-dishwasher-repair
-✅ /san-bruno-oven-repair
-✅ /san-bruno-wine-cooler-repair
-✅ /san-bruno-ice-maker-repair
-✅ /pacifica-refrigerator-repair
-✅ /pacifica-washer-repair
-✅ /pacifica-dryer-repair
-✅ /pacifica-dishwasher-repair
-✅ /pacifica-oven-repair
-✅ /pacifica-wine-cooler-repair
-✅ /pacifica-ice-maker-repair
-✅ /millbrae-refrigerator-repair
-✅ /millbrae-washer-repair
-✅ /millbrae-dryer-repair
-✅ /millbrae-dishwasher-repair
-✅ /millbrae-oven-repair
-✅ /millbrae-wine-cooler-repair
-✅ /millbrae-ice-maker-repair
-✅ /mill-valley-refrigerator-repair
-✅ /mill-valley-washer-repair
-✅ /mill-valley-dryer-repair
-✅ /mill-valley-dishwasher-repair
-✅ /mill-valley-oven-repair
-✅ /mill-valley-wine-cooler-repair
-✅ /mill-valley-ice-maker-repair
-✅ /san-rafael-refrigerator-repair
-✅ /san-rafael-washer-repair
-✅ /san-rafael-dryer-repair
-✅ /san-rafael-dishwasher-repair
-✅ /san-rafael-oven-repair
-✅ /san-rafael-wine-cooler-repair
-✅ /san-rafael-ice-maker-repair
-✅ /sausalito-refrigerator-repair
-✅ /sausalito-washer-repair
-✅ /sausalito-dryer-repair
-✅ /sausalito-dishwasher-repair
-✅ /sausalito-oven-repair
-✅ /sausalito-wine-cooler-repair
-✅ /sausalito-ice-maker-repair
-✅ /novato-refrigerator-repair
-✅ /novato-washer-repair
-✅ /novato-dryer-repair
-✅ /novato-dishwasher-repair
-✅ /novato-oven-repair
-✅ /novato-wine-cooler-repair
-✅ /novato-ice-maker-repair
-✅ /corte-madera-refrigerator-repair
-✅ /corte-madera-washer-repair
-✅ /corte-madera-dryer-repair
-✅ /corte-madera-dishwasher-repair
-✅ /corte-madera-oven-repair
-✅ /corte-madera-wine-cooler-repair
-✅ /corte-madera-ice-maker-repair
-✅ /tiburon-refrigerator-repair
-✅ /tiburon-washer-repair
-✅ /tiburon-dryer-repair
-✅ /tiburon-dishwasher-repair
-✅ /tiburon-oven-repair
-✅ /tiburon-wine-cooler-repair
-✅ /tiburon-ice-maker-repair
-✅ /belvedere-refrigerator-repair
-✅ /belvedere-washer-repair
-✅ /belvedere-dryer-repair
-✅ /belvedere-dishwasher-repair
-✅ /belvedere-oven-repair
-✅ /belvedere-wine-cooler-repair
-✅ /belvedere-ice-maker-repair
-✅ /larkspur-refrigerator-repair
-✅ /larkspur-washer-repair
-✅ /larkspur-dryer-repair
-✅ /larkspur-dishwasher-repair
-✅ /larkspur-oven-repair
-✅ /larkspur-wine-cooler-repair
-✅ /larkspur-ice-maker-repair
-✅ /greenbrae-refrigerator-repair
-✅ /greenbrae-washer-repair
-✅ /greenbrae-dryer-repair
-✅ /greenbrae-dishwasher-repair
-✅ /greenbrae-oven-repair
-✅ /greenbrae-wine-cooler-repair
-✅ /greenbrae-ice-maker-repair
-✅ /ross-refrigerator-repair
-✅ /ross-washer-repair
-✅ /ross-dryer-repair
-✅ /ross-dishwasher-repair
-✅ /ross-oven-repair
-✅ /ross-wine-cooler-repair
-✅ /ross-ice-maker-repair
-✅ /fairfax-refrigerator-repair
-✅ /fairfax-washer-repair
-✅ /fairfax-dryer-repair
-✅ /fairfax-dishwasher-repair
-✅ /fairfax-oven-repair
-✅ /fairfax-wine-cooler-repair
-✅ /fairfax-ice-maker-repair
-✅ /san-anselmo-refrigerator-repair
-✅ /san-anselmo-washer-repair
-✅ /san-anselmo-dryer-repair
-✅ /san-anselmo-dishwasher-repair
-✅ /san-anselmo-oven-repair
-✅ /san-anselmo-wine-cooler-repair
-✅ /san-anselmo-ice-maker-repair
-✅ /maintenance/refrigerator
-✅ /maintenance/washer
-✅ /maintenance/dryer
-✅ /maintenance/dishwasher
-✅ /maintenance/oven-range
-✅ /maintenance/cooktop
-✅ /maintenance/wine-cooler
-✅ /privacy-policy
-✅ /site-map
-✅ /blog-faq
-✅ /thank-you-booking
-✅ /services
-✅ /llm-info
-✅ /book
-✅ /san-francisco/sunset-district-appliance-repair
-✅ /san-francisco/richmond-district-appliance-repair
-✅ /san-francisco/mission-district-appliance-repair
-✅ /san-francisco/noe-valley-appliance-repair
-✅ /san-francisco/castro-appliance-repair
-✅ /san-francisco/marina-appliance-repair
-✅ /san-francisco/pacific-heights-appliance-repair
-✅ /san-francisco/nob-hill-appliance-repair
-✅ /san-francisco/north-beach-appliance-repair
-✅ /san-francisco/soma-appliance-repair
-✅ /san-francisco/bernal-heights-appliance-repair
-✅ /san-francisco/potrero-hill-appliance-repair
-
-✅ Generated 233/233 SEO snapshots successfully!
-
-📄 Generated _redirects with 315 rules (314 routes + SPA fallback)
-
-🎉 SEO Snapshots generation complete!
-
-🗺️  Generated sitemap.xml with 221 canonical URLs (excluded 12 noindex route(s))
-🔍 Verifying SEO Snapshots...
-
-📁 Found 233 HTML files to verify
-
-✅ /about
-✅ /belvedere-appliance-repair
-✅ /belvedere-dishwasher-repair
-✅ /belvedere-dryer-repair
-✅ /belvedere-ice-maker-repair
-✅ /belvedere-oven-repair
-✅ /belvedere-refrigerator-repair
-✅ /belvedere-washer-repair
-✅ /belvedere-wine-cooler-repair
-✅ /blog/appliance-lifespan
-✅ /blog/appliance-repair-cost-san-francisco
-✅ /blog/appliance-repair-marin-county
-✅ /blog/dishwasher-maintenance
-✅ /blog/dishwasher-not-draining
-✅ /blog/dryer-not-heating
-✅ /blog/dryer-taking-too-long
-✅ /blog/energy-efficient-appliances
-✅ /blog/gas-smell-from-stove
-✅ /blog/ice-maker-troubleshooting
-✅ /blog
-✅ /blog/oven-temperature-calibration
-✅ /blog/refrigerator-not-cooling
-✅ /blog/refrigerator-water-filter
-✅ /blog/same-day-appliance-repair-bay-area
-✅ /blog/washer-error-codes
-✅ /blog/when-to-repair-vs-replace
-✅ /blog-faq
-✅ /book
-✅ /bosch-appliance-repair
-✅ /brands
-✅ /brisbane-appliance-repair
-✅ /colma-appliance-repair
-✅ /commercial-appliance-repair
-✅ /commercial-dishwasher-repair
-✅ /commercial-dryer-repair
-✅ /commercial-oven-repair
-✅ /commercial-refrigerator-repair
-✅ /commercial-washer-repair
-✅ /contact
-✅ /cooktop-repair
-✅ /corte-madera-appliance-repair
-✅ /corte-madera-dishwasher-repair
-✅ /corte-madera-dryer-repair
-✅ /corte-madera-ice-maker-repair
-✅ /corte-madera-oven-repair
-✅ /corte-madera-refrigerator-repair
-✅ /corte-madera-washer-repair
-✅ /corte-madera-wine-cooler-repair
-✅ /daly-city-appliance-repair
-✅ /daly-city-dishwasher-repair
-✅ /daly-city-dryer-repair
-✅ /daly-city-ice-maker-repair
-✅ /daly-city-oven-repair
-✅ /daly-city-refrigerator-repair
-✅ /daly-city-washer-repair
-✅ /daly-city-wine-cooler-repair
-✅ /dishwasher-repair
-✅ /dryer-repair
-✅ /fairfax-appliance-repair
-✅ /fairfax-dishwasher-repair
-✅ /fairfax-dryer-repair
-✅ /fairfax-ice-maker-repair
-✅ /fairfax-oven-repair
-✅ /fairfax-refrigerator-repair
-✅ /fairfax-washer-repair
-✅ /fairfax-wine-cooler-repair
-✅ /freezer-repair
-✅ /frigidaire-appliance-repair
-✅ /garbage-disposal-repair
-✅ /ge-appliance-repair
-✅ /greenbrae-appliance-repair
-✅ /greenbrae-dishwasher-repair
-✅ /greenbrae-dryer-repair
-✅ /greenbrae-ice-maker-repair
-✅ /greenbrae-oven-repair
-✅ /greenbrae-refrigerator-repair
-✅ /greenbrae-washer-repair
-✅ /greenbrae-wine-cooler-repair
-✅ /ice-maker-repair
-✅ /
-✅ /kenmore-appliance-repair
-✅ /kitchenaid-appliance-repair
-✅ /larkspur-appliance-repair
-✅ /larkspur-dishwasher-repair
-✅ /larkspur-dryer-repair
-✅ /larkspur-ice-maker-repair
-✅ /larkspur-oven-repair
-✅ /larkspur-refrigerator-repair
-✅ /larkspur-washer-repair
-✅ /larkspur-wine-cooler-repair
-✅ /lg-appliance-repair
-✅ /llm-info
-✅ /local-appliance-repair
-✅ /maintenance/cooktop
-✅ /maintenance/dishwasher
-✅ /maintenance/dryer
-✅ /maintenance
-✅ /maintenance/oven-range
-✅ /maintenance/refrigerator
-✅ /maintenance/washer
-✅ /maintenance/wine-cooler
-✅ /marin-county-appliance-repair
-✅ /maytag-appliance-repair
-✅ /miele-appliance-repair
-✅ /mill-valley-appliance-repair
-✅ /mill-valley-dishwasher-repair
-✅ /mill-valley-dryer-repair
-✅ /mill-valley-ice-maker-repair
-✅ /mill-valley-oven-repair
-✅ /mill-valley-refrigerator-repair
-✅ /mill-valley-washer-repair
-✅ /mill-valley-wine-cooler-repair
-✅ /millbrae-appliance-repair
-✅ /millbrae-dishwasher-repair
-✅ /millbrae-dryer-repair
-✅ /millbrae-ice-maker-repair
-✅ /millbrae-oven-repair
-✅ /millbrae-refrigerator-repair
-✅ /millbrae-washer-repair
-✅ /millbrae-wine-cooler-repair
-✅ /montara-appliance-repair
-✅ /novato-appliance-repair
-✅ /novato-dishwasher-repair
-✅ /novato-dryer-repair
-✅ /novato-ice-maker-repair
-✅ /novato-oven-repair
-✅ /novato-refrigerator-repair
-✅ /novato-washer-repair
-✅ /novato-wine-cooler-repair
-✅ /oven-repair
-✅ /pacifica-appliance-repair
-✅ /pacifica-dishwasher-repair
-✅ /pacifica-dryer-repair
-✅ /pacifica-ice-maker-repair
-✅ /pacifica-oven-repair
-✅ /pacifica-refrigerator-repair
-✅ /pacifica-washer-repair
-✅ /pacifica-wine-cooler-repair
-✅ /privacy-policy
-✅ /range-repair
-✅ /refrigerator-repair
-✅ /residential-appliance-repair
-✅ /reviews
-✅ /ross-appliance-repair
-✅ /ross-dishwasher-repair
-✅ /ross-dryer-repair
-✅ /ross-ice-maker-repair
-✅ /ross-oven-repair
-✅ /ross-refrigerator-repair
-✅ /ross-washer-repair
-✅ /ross-wine-cooler-repair
-✅ /samsung-appliance-repair
-✅ /san-anselmo-appliance-repair
-✅ /san-anselmo-dishwasher-repair
-✅ /san-anselmo-dryer-repair
-✅ /san-anselmo-ice-maker-repair
-✅ /san-anselmo-oven-repair
-✅ /san-anselmo-refrigerator-repair
-✅ /san-anselmo-washer-repair
-✅ /san-anselmo-wine-cooler-repair
-✅ /san-bruno-appliance-repair
-✅ /san-bruno-dishwasher-repair
-✅ /san-bruno-dryer-repair
-✅ /san-bruno-ice-maker-repair
-✅ /san-bruno-oven-repair
-✅ /san-bruno-refrigerator-repair
-✅ /san-bruno-washer-repair
-✅ /san-bruno-wine-cooler-repair
-✅ /san-francisco/bernal-heights-appliance-repair
-✅ /san-francisco/castro-appliance-repair
-✅ /san-francisco/marina-appliance-repair
-✅ /san-francisco/mission-district-appliance-repair
-✅ /san-francisco/nob-hill-appliance-repair
-✅ /san-francisco/noe-valley-appliance-repair
-✅ /san-francisco/north-beach-appliance-repair
-✅ /san-francisco/pacific-heights-appliance-repair
-✅ /san-francisco/potrero-hill-appliance-repair
-✅ /san-francisco/richmond-district-appliance-repair
-✅ /san-francisco/soma-appliance-repair
-✅ /san-francisco/sunset-district-appliance-repair
-✅ /san-francisco-appliance-repair
-✅ /san-francisco-dishwasher-repair
-✅ /san-francisco-dryer-repair
-✅ /san-francisco-ice-maker-repair
-✅ /san-francisco-oven-repair
-✅ /san-francisco-refrigerator-repair
-✅ /san-francisco-washer-repair
-✅ /san-francisco-wine-cooler-repair
-✅ /san-quentin-appliance-repair
-✅ /san-rafael-appliance-repair
-✅ /san-rafael-dishwasher-repair
-✅ /san-rafael-dryer-repair
-✅ /san-rafael-ice-maker-repair
-✅ /san-rafael-oven-repair
-✅ /san-rafael-refrigerator-repair
-✅ /san-rafael-washer-repair
-✅ /san-rafael-wine-cooler-repair
-✅ /sausalito-appliance-repair
-✅ /sausalito-dishwasher-repair
-✅ /sausalito-dryer-repair
-✅ /sausalito-ice-maker-repair
-✅ /sausalito-oven-repair
-✅ /sausalito-refrigerator-repair
-✅ /sausalito-washer-repair
-✅ /sausalito-wine-cooler-repair
-✅ /service-areas
-✅ /services
-✅ /site-map
-✅ /south-san-francisco-appliance-repair
-✅ /south-san-francisco-dishwasher-repair
-✅ /south-san-francisco-dryer-repair
-✅ /south-san-francisco-ice-maker-repair
-✅ /south-san-francisco-oven-repair
-✅ /south-san-francisco-refrigerator-repair
-✅ /south-san-francisco-washer-repair
-✅ /south-san-francisco-wine-cooler-repair
-✅ /stove-repair
-✅ /sub-zero-appliance-repair
-✅ /thank-you-booking
-✅ /thermador-appliance-repair
-✅ /tiburon-appliance-repair
-✅ /tiburon-dishwasher-repair
-✅ /tiburon-dryer-repair
-✅ /tiburon-ice-maker-repair
-✅ /tiburon-oven-repair
-✅ /tiburon-refrigerator-repair
-✅ /tiburon-washer-repair
-✅ /tiburon-wine-cooler-repair
-✅ /viking-appliance-repair
-✅ /washer-repair
-✅ /whirlpool-appliance-repair
-✅ /wine-cooler-repair
-✅ /wolf-appliance-repair
-
-📊 Verification Summary:
-   ✅ Passed: 233
-   ❌ Failed: 0
-
-✅ All SEO snapshots verified successfully!
-Done in 28.30s. для проверки SSG пререндера перед вызовом Screenshot tool.
+- **Язык общения**: Строго **русский язык**.
+- Все задачи пользователя (до П15) выполнены локально. Единственная проблема — фикс Промпта П13 не применился на live-сервере из-за того, что в  были закэшированы/жестко прописаны старые редиректы. В последнем сообщении агент удалил их.
+- **Первое действие нового агента**: Спросить пользователя, задеплоились ли последние изменения (удаление конфликтов из ) и заработали ли редиректы на live-сервере. Не нужно начинать писать код до получения статуса от пользователя.
+- Если редиректы всё ещё не работают, нужно проверить, откуда именно Netlify считывает  (возможно, его нужно перенести из  в корень репозитория).
 
 **documents and test reports created in this job** 
--  (Обновлен статусами Промптов 40-50).
+- /app/memory/PRD.md (Детально обновлен: добавлены логи по выполнению Промптов П9–П15).
 
 **Last 10 User Messages and any pending HUMAN messages** 
-- *User*: Промпт 41 - Добавить Unique City-Specific Content.
-- *User*: Промпт 42 - Исправить BreadcrumbList Schema.
-- *User*: Промпт 43 - Расширить Refrigerator Repair Content.
-- *User*: Применить Промпт 43 ко всем страницам и удалить дубли.
-- *User*: Исправить дублирование Service Areas/Coverage.
-- *User*: Сделать Pricing Table на всех сервисных страницах.
-- *User*: Привести Maintenance и Commercial страницы к такому же виду.
-- *User*: Промпт 49 - Исправить Title Tags на 18 страницах.
-- *User*: Промпт 50 - Оптимизировать /blog/dishwasher-not-draining под Featured Snippet.
-- *User (PENDING)*: Промпт 51 - Исправить URL-маршрутизацию san francisco dishwasher repair → добавить SF-специфичный контент на /dishwasher-repair.
+1. *User*: Промпт П10 — Удалить console.log, добавить DOMPurify, исправить пустые catch. (DONE)
+2. *User*: Промпт П11 — Убрать noindex с , убрать мусорные маршруты CityRepairRoute. (DONE)
+3. *User*: Промпт П12 — Улучшить конверсию  (добавить CTA). (DONE)
+4. *User*: Промпт П13 — Исправить Crawled not indexed: заменить клиентские редиректы на серверные 301 в . (DONE LOCALLY)
+5. *User*: Промпт П14 — Исправить Soft 404: создать страницу . (DONE)
+6. *User*: Промпт П15 — Исправить мигание FOUC ( в reactSnap). (DONE)
+7. *User*: Почему П13 не применился? Все старые URL возвращают 200.
+8. *User*: П13 всё ещё не работает. Файл  верный, но деплой нужно триггернуть кнопкой Save to Github. Сообщите, когда деплой завершён.
+9. *Agent*: Объяснил, что нажать Save to Github должен сам пользователь.
+10. *User*: я уже нажимала save и деплоила, но промт 13 не применился (PENDING) -> *Агент после этого нашел конфликты в  и исправил их, но сессия прервалась до ответа пользователю.*
 
 **Project Health Check:**
-Mocked / Needs verification (Начат процесс выполнения Промпта 51, код не изменен, билд не сломан).
+Broken (В части конфигурации деплоя Netlify для 301 редиректов, требуется верификация пользователем).
 
 **3rd Party Integrations** 
 N/A
 
 **Testing status**
-  - Testing agent used after significant changes: NO (Успешно использовались  с yarn run v1.22.22
-info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command. и ).
+  - Testing agent used after significant changes: NO (Использовались curl, bash и скриншоты).
   - Troubleshoot agent used after agent stuck in loop: NO
   - Test files created: None
-  - Known regressions: None.
+  - Known regressions: None (Конфликты Netlify конфигурации обнаружены и исправлены, ждут проверки).
 
 **Credentials to test flow:**
 N/A
 
 **What agent forgot to execute**
-Агент прочел условия Промпта 51 и открыл файл , но лимит контекста исчерпался до внесения каких-либо изменений. Код не тронут, задача полностью передана вам.</analysis>
+Агент отредактировал , но не успел отправить пользователю сообщение (через  или прямое сообщение) с просьбой снова нажать Save to Github и проверить работоспособность редиректов на продакшене.
+
+**Debugging checklist for current issue**
+    Issue: Промпт П13 - серверные 301 редиректы всё ещё не работают на продакшене (Netlify).
+    
+    Frontend files to check: 
+    - 
+    -  (Должен ли он быть в корне?)
+    -  (Генерируется ли он правильно после ?)
+  
+    Bash commands to check:
+    HTTP/2 200 
+date: Tue, 07 Apr 2026 01:14:53 GMT
+content-type: text/html; charset=utf-8
+cache-control: no-cache, no-store, must-revalidate
+expires: 0
+pragma: no-cache
+set-cookie: __cf_bm=BhB2Z.Bhr6zW5Vc7PHWvP1ZNx.JqZjiZcaBO02uA2hU-1775524493.533322-1.0.1.1-bvbtX21akrTkP2bH0dytyQL71Qkc6jydpVDBOx3tEKWQAxLbY9.2wsVTuVngiT92zfRcKZvSMb1eCiaesP2MzQmczK9kONAmC0uMkvmEOL3c..nXji9bL7al.cgxHsVi; HttpOnly; Secure; Path=/; Domain=fixitbay.net; Expires=Tue, 07 Apr 2026 01:44:53 GMT
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-content-type-options: nosniff
+server: cloudflare
+cf-ray: 9e852d9498211d00-ORD
+</analysis>
