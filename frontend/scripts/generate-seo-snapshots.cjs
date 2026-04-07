@@ -31,6 +31,8 @@ if (fs.existsSync(PUBLIC_REDIRECTS_PATH)) {
   }
 }
 console.log(`🔒 Found ${redirectSources.size} redirect source URLs — will skip HTML generation for these.\n`);
+// DEBUG MARKER: P13-fix-v4 — if you see this in Netlify build logs, the fix was deployed
+console.log('🏷️  P13-fix-v4: redirect-source HTML blocking is ACTIVE');
 
 console.log('🚀 Starting SEO Snapshots Generation...\n');
 
