@@ -11,9 +11,9 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
 - **CRITICAL**: `public/_redirects` is the SINGLE SOURCE OF TRUTH for all redirects during SSG build. SSG reads it, preserves all rules, and appends route-to-HTML rewrites.
 
 ## Key Architecture Change (P13 final fix)
-- ROOT CAUSE: `netlify.toml` was in `public/` (publish directory). Netlify reads it from base directory (`frontend/`), so all `[[redirects]]` rules were silently ignored.
-- FIX: Moved `netlify.toml` from `frontend/public/netlify.toml` to `frontend/netlify.toml`.
-- SSG script reads `public/_redirects` as base, filters SPA catch-all, appends route-to-HTML rewrites, re-adds catch-all at end.
+- ROOT CAUSE #1: `netlify.toml` was in `public/` (publish directory). Moved to repo root with `base = "frontend"`.
+- ROOT CAUSE #2: SSG script created HTML snapshots for 301 redirect sources (e.g., `appliance-repair-colma.html`). Netlify served these with 200 instead of applying the 301 redirect.
+- FIX: SSG script now parses `public/_redirects`, collects all 301 "from" URLs, skips HTML generation for them, removes any stale HTML files, and excludes them from route-to-HTML rewrites.
 
 ## Completed SEO Prompts
 1. P3-P8: Sitemap, VideoObject, RelatedServices, Garbage Disposal, Meta, Titles, SSG

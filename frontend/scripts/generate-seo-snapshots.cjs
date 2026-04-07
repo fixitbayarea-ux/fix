@@ -14,6 +14,24 @@ const { ALLOWED_CITIES, KEY_SERVICES, BRAND_PAGES, BLOG_PAGES, OTHER_KEY_PAGES, 
 const BUILD_DIR = path.join(__dirname, '../build');
 const TEMPLATE_PATH = path.join(BUILD_DIR, 'index.html');
 
+// ── Parse public/_redirects to find all 301 redirect SOURCE URLs ──
+// Any URL that is a "from" in a 301 rule must NOT get an HTML snapshot
+const PUBLIC_REDIRECTS_PATH = path.join(__dirname, '..', 'public', '_redirects');
+const redirectSources = new Set();
+if (fs.existsSync(PUBLIC_REDIRECTS_PATH)) {
+  const lines = fs.readFileSync(PUBLIC_REDIRECTS_PATH, 'utf-8').split('\n');
+  for (const line of lines) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    // Match: /from /to 301! or /from /to 301
+    const match = trimmed.match(/^(\S+)\s+\S+\s+301/);
+    if (match) {
+      redirectSources.add(match[1]);
+    }
+  }
+}
+console.log(`🔒 Found ${redirectSources.size} redirect source URLs — will skip HTML generation for these.\n`);
+
 console.log('🚀 Starting SEO Snapshots Generation...\n');
 
 // Read the template HTML
@@ -96,12 +114,19 @@ const SF_NEIGHBORHOODS = [
 ];
 SF_NEIGHBORHOODS.forEach(n => routes.push(`/san-francisco/${n}-appliance-repair`));
 
-console.log(`📝 Generating ${routes.length} SEO snapshots...\n`);
+// Filter out routes that are 301 redirect sources — no HTML for them
+const filteredRoutes = routes.filter(route => !redirectSources.has(route));
+const skippedCount = routes.length - filteredRoutes.length;
+if (skippedCount > 0) {
+  console.log(`⏭️  Skipping ${skippedCount} routes (they are 301 redirect sources)\n`);
+}
+
+console.log(`📝 Generating ${filteredRoutes.length} SEO snapshots...\n`);
 
 let successCount = 0;
 let failedRoutes = [];
 
-routes.forEach(route => {
+filteredRoutes.forEach(route => {
   try {
     const seoData = getSEOContent(route);
     
@@ -208,7 +233,7 @@ routes.forEach(route => {
   }
 });
 
-console.log(`\n✅ Generated ${successCount}/${routes.length} SEO snapshots successfully!`);
+console.log(`\n✅ Generated ${successCount}/${filteredRoutes.length} SEO snapshots successfully!`);
 
 if (failedRoutes.length > 0) {
   console.error(`\n❌ Failed routes (${failedRoutes.length}):`);
@@ -216,11 +241,39 @@ if (failedRoutes.length > 0) {
   process.exit(1);
 }
 
+// ── Clean up stale HTML files/dirs for redirect sources ──
+let cleanedCount = 0;
+for (const src of redirectSources) {
+  const routePath = src.replace(/^\/+/, '');
+  if (!routePath) continue;
+  // Remove flat HTML file (build/routePath.html)
+  const flatFile = path.join(BUILD_DIR, `${routePath}.html`);
+  if (fs.existsSync(flatFile)) {
+    fs.unlinkSync(flatFile);
+    cleanedCount++;
+  }
+  // Remove directory-based file (build/routePath/index.html)
+  const dirIndex = path.join(BUILD_DIR, routePath, 'index.html');
+  if (fs.existsSync(dirIndex)) {
+    fs.unlinkSync(dirIndex);
+    cleanedCount++;
+    // Remove the directory if now empty
+    const dir = path.join(BUILD_DIR, routePath);
+    try {
+      const remaining = fs.readdirSync(dir);
+      if (remaining.length === 0) fs.rmdirSync(dir);
+    } catch (_) {}
+  }
+}
+if (cleanedCount > 0) {
+  console.log(`🧹 Cleaned ${cleanedCount} stale HTML file(s) for redirect source URLs`);
+}
+
 // Generate _redirects file for Netlify
 // Strategy: Read public/_redirects as the authoritative source,
 // then ADD route-to-HTML rewrites from SSG snapshots.
 // This ensures manual redirects in public/_redirects are NEVER lost.
-const PUBLIC_REDIRECTS_PATH = path.join(__dirname, '..', 'public', '_redirects');
+// (PUBLIC_REDIRECTS_PATH already defined at the top)
 let baseRedirects = '';
 if (fs.existsSync(PUBLIC_REDIRECTS_PATH)) {
   baseRedirects = fs.readFileSync(PUBLIC_REDIRECTS_PATH, 'utf-8');
@@ -233,9 +286,9 @@ const baseLines = baseRedirects
   .join('\n')
   .trim();
 
-// Generate route-to-HTML 200 rewrites for prerendered pages
+// Generate route-to-HTML 200 rewrites for prerendered pages (excluding redirect sources)
 const htmlRewrites = [];
-routes.forEach(route => {
+filteredRoutes.forEach(route => {
   if (route !== '/') {
     const routePath = route.replace(/^\/+/, '');
     htmlRewrites.push(`${route}  /${routePath}.html  200`);
@@ -265,7 +318,7 @@ const noindexRoutes = [
   '/thank-you-booking', '/book',
   '/llm-info', '/blog-faq', '/privacy-policy'
 ];
-const sitemapUrls = ['/', ...routes.filter(r => r !== '/' && !noindexRoutes.includes(r))];
+const sitemapUrls = ['/', ...filteredRoutes.filter(r => r !== '/' && !noindexRoutes.includes(r))];
 const today = new Date().toISOString().split('T')[0];
 
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
