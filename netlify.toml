@@ -2,8 +2,9 @@
   package = "@netlify/plugin-lighthouse"
 
 [build]
+  base = "frontend"
   command = "yarn build"
-  publish = "build"
+  publish = "frontend/build"
 
 [build.environment]
   NODE_VERSION = "18"

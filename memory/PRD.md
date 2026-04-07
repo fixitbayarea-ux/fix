@@ -6,7 +6,7 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
 ## Architecture
 - React SPA + custom SSG (generate-seo-snapshots.cjs + seo-config.cjs)
 - Netlify hosting: base directory = `frontend/`, publish = `build/`
-- `netlify.toml` — located at `frontend/netlify.toml` (base directory, where Netlify reads it)
+- `netlify.toml` — located at repo root (`/netlify.toml`) with `base = "frontend"`, `publish = "frontend/build"`. Netlify reads it ONLY from repo root.
 - `_redirects` — located at `frontend/public/_redirects` (copied to `build/` during build, read from publish directory)
 - **CRITICAL**: `public/_redirects` is the SINGLE SOURCE OF TRUTH for all redirects during SSG build. SSG reads it, preserves all rules, and appends route-to-HTML rewrites.
 
