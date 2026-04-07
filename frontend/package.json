@@ -20,7 +20,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "postbuild": "node scripts/generate-seo-snapshots.cjs && node scripts/verify-seo-snapshots.cjs",
+    "postbuild": "node scripts/generate-seo-snapshots.cjs && node scripts/verify-seo-snapshots.cjs && node scripts/cleanup-redirect-html.cjs",
     "test": "craco test",
     "eject": "react-scripts eject"
   },

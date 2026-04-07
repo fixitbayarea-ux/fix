@@ -3,7 +3,7 @@
 
 [build]
   base = "frontend"
-  command = "yarn build"
+  command = "yarn build && node scripts/cleanup-redirect-html.cjs"
   publish = "build"
 
 [build.environment]
