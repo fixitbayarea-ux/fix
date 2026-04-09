@@ -11,21 +11,6 @@
 
 # ══════════════════════════════════════════════════════════
 # REDIRECTS — ordered by priority (Netlify processes top-down)
-# ══════════════════════════════════════════════════════════
-
-# ── 1. HTTPS enforcement ──
-[[redirects]]
-  from = "http://fixitbay.net/*"
-  to = "https://fixitbay.net/:splat"
-  status = 301
-  force = true
-
-# ── 2. www → non-www ──
-[[redirects]]
-  from = "https://www.fixitbay.net/*"
-  to = "https://fixitbay.net/:splat"
-  status = 301
-  force = true
 
 # ── 3. Legacy city URLs → canonical pattern ──
 # Old: /appliance-repair-{city}  →  New: /{city}-appliance-repair
