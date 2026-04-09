@@ -116,25 +116,25 @@ const ProfessionalLandingPage = () => {
         <div className="py-6 lg:py-16" style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px' }}>
           <div className="stats-desktop-grid" style={{ gridTemplateColumns: '1fr auto 1fr auto 1fr', alignItems: 'stretch' }}>
             {[
-              { num: '22', numMobile: '22+', unit: 'Cities', title: 'BAY AREA', titleDesktop: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin', numSize: 64, mobileClass: 'stat-num-cities' },
-              { num: '$60', numMobile: '$60', unit: 'Diagnostic', title: 'TOWARD REPAIR', titleDesktop: 'GOES TOWARD REPAIR', desc: 'Applied if you proceed', numSize: 64, mobileClass: 'stat-num-diag' },
-              { num: '180', numMobile: null, unit: 'Day Warranty', title: 'PARTS & LABOR', titleDesktop: 'PARTS & LABOR', desc: '180-day guarantee', numSize: 64, mobileClass: 'stat-num-warranty' },
+              { num: '22', numMobile: '22+', unit: 'Cities', title: 'BAY AREA', titleDesktop: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin', mobileClass: 'stat-num-cities' },
+              { num: '$60', numMobile: '$60', unit: 'Diagnostic', title: 'TOWARD REPAIR', titleDesktop: 'GOES TOWARD REPAIR', desc: 'Applied if you proceed', mobileClass: 'stat-num-diag' },
+              { num: '180', numMobile: null, unit: 'Day Warranty', title: 'PARTS & LABOR', titleDesktop: 'PARTS & LABOR', desc: '180-day guarantee', mobileClass: 'stat-num-warranty' },
             ].map((s, i) => (
               <React.Fragment key={i}>
-                <div style={{ display: 'flex', alignItems: 'flex-start', gap: 20 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 20, minHeight: 80 }}>
                   <div className="stat-accent-bar" style={{ width: 3, alignSelf: 'stretch', background: '#FF5722', flexShrink: 0 }} />
-                  <div>
-                    <div style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: 4 }}>
                       {/* Desktop: original num */}
-                      <span className={`stat-num stat-num-desktop ${s.mobileClass}`} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: s.numSize, lineHeight: 1, color: '#0D1B2A', whiteSpace: 'nowrap' }}>{s.num}</span>
+                      <span className={`stat-num stat-num-desktop ${s.mobileClass}`} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 28, lineHeight: '32px', color: '#0D1B2A', whiteSpace: 'nowrap' }}>{s.num}</span>
                       {/* Mobile: custom num (hidden on desktop via CSS) */}
-                      {s.numMobile && <span className={`stat-num stat-num-mobile ${s.mobileClass}`} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: 1, color: '#0D1B2A', whiteSpace: 'nowrap', display: 'none' }}>{s.numMobile}</span>}
+                      {s.numMobile && <span className={`stat-num stat-num-mobile ${s.mobileClass}`} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: '32px', color: '#0D1B2A', whiteSpace: 'nowrap', display: 'none' }}>{s.numMobile}</span>}
                       {!s.numMobile && s.mobileClass === 'stat-num-warranty' && (
-                        <span className="stat-num stat-num-mobile stat-num-warranty" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: 1, color: '#0D1B2A', display: 'none' }}>
+                        <span className="stat-num stat-num-mobile stat-num-warranty" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: '32px', color: '#0D1B2A', display: 'none' }}>
                           180<span style={{ fontSize: 14, fontWeight: 600, verticalAlign: 'super', marginLeft: 1 }}>-Day</span>
                         </span>
                       )}
-                      <span className="stat-unit" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 20, color: '#FF5722' }}>{s.unit}</span>
+                      <span className="stat-unit" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 14, lineHeight: '32px', color: '#FF5722' }}>{s.unit}</span>
                     </div>
                     <div className="stat-title stat-title-desktop" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginTop: 6, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{s.titleDesktop}</div>
                     <div className="stat-title stat-title-mobile" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginTop: 6, textTransform: 'uppercase', letterSpacing: '0.08em', display: 'none' }}>{s.title}</div>
