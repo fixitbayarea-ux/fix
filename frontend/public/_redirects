@@ -112,6 +112,13 @@
 /novato-novato-dryer-repair /services 301!
 /mill-valley-mill-valley-washer-repair /services 301!
 /millbrae-millbrae-dryer-repair /services 301!
+/tiburon-san-rafael-oven-repair /services 301!
+/millbrae-daly-city-wine-cooler-repair /services 301!
+
+# Buggy city-specific repair URLs (GSC crawl artifacts)
+/novato-freezer-repair /novato-appliance-repair 301!
+/greenbrae-freezer-repair /service-areas 301!
+/san-bruno-commercial-washer-repair /san-bruno-appliance-repair 301!
 
 # Buggy maintenance path URLs (GSC crawl artifacts)
 /millbrae-maintenance/washer /maintenance/washer 301!
