@@ -125,7 +125,7 @@ const BookPage = () => {
         canonical="https://fixitbay.net/book"
         ogTitle="Book Appliance Repair Online | Fast Scheduling | FixitBay LLC"
         ogDescription="Book appliance repair online. Same- or next-day appointments available. $60 diagnostic, 180-day warranty."
-        noindex={true}
+        noindex={false}
       />
 
       <style>{`
