@@ -1,8 +1,3 @@
-https://www.fixitbay.net/* https://fixitbay.net/:splat 301!
-
-# Strip trailing slashes
-/*/ /:splat 301!
-
 # Legacy redirects
 /blog-faq /blog 301!
 /garbage-disposal-repair /services 301!

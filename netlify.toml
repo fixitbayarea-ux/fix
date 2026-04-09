@@ -288,13 +288,6 @@
   status = 301
   force = true
 
-# ── 5. Trailing slash removal (except root /) ──
-[[redirects]]
-  from = "/:splat/"
-  to = "/:splat"
-  status = 301
-  force = true
-
 # ── 6. Non-served cities (old prefix pattern) → service areas ──
 [[redirects]]
   from = "/appliance-repair-belvedere-tiburon"
