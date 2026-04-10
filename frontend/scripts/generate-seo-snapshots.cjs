@@ -151,18 +151,19 @@ filteredRoutes.forEach(route => {
       outputPath = path.join(outputDir, 'index.html');
     }
     
-    // Build static SEO HTML block
+    // Build static SEO HTML block — visually hidden (sr-only) to prevent FOUC,
+    // but fully readable by search engine crawlers in the DOM.
     const seoHTML = `
-      <div style="max-width: 1200px; margin: 0 auto; padding: 2rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #1A3B5D;">
-        <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; color: #1A3B5D;">${seoData.h1}</h1>
+      <div class="seo-prerender" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">
+        <h1>${seoData.h1}</h1>
         ${seoData.content}
-        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid #E8F4FA;">
-          <p style="margin-bottom: 0.5rem;"><strong>Related Services & Areas:</strong></p>
+        <nav>
+          <p><strong>Related Services & Areas:</strong></p>
           ${seoData.internalLinks.map(link => {
             const linkText = link.replace('/', '').replace(/-/g, ' ').replace(/appliance repair /i, '');
-            return `<a href="${link}" style="margin-right: 1rem; color: #C0362C; text-decoration: none;">${linkText || 'Home'}</a>`;
-          }).join(' • ')}
-        </div>
+            return `<a href="${link}">${linkText || 'Home'}</a>`;
+          }).join(' ')}
+        </nav>
       </div>
     `;
     
