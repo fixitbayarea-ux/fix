@@ -259,9 +259,9 @@ const ProfessionalLandingPage = () => {
           .stats-desktop-grid { display: grid !important; grid-template-columns: 1fr 1px 1fr 1px 1fr; align-items: stretch; gap: 0; padding: 10px 12px; }
           .stats-desktop-grid .stat-divider { display: block !important; width: 1px !important; background: rgba(0,0,0,0.1) !important; margin: 0 !important; align-self: stretch; }
           .stats-desktop-grid .stat-accent-bar { display: none; }
-          .stats-desktop-grid > div:not(.stat-divider) { text-align: center !important; padding: 8px 2px !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 0 !important; overflow: visible; min-height: 80px; }
+          .stats-desktop-grid > div:not(.stat-divider) { text-align: center !important; padding: 10px 2px 8px !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: flex-start !important; gap: 0 !important; overflow: visible; min-height: 80px; }
           .stats-desktop-grid > div:not(.stat-divider) > div { align-items: center !important; }
-          .stats-desktop-grid > div:not(.stat-divider) > div > div:first-child { justify-content: center !important; flex-wrap: nowrap; gap: 0 !important; flex-direction: column; align-items: center; }
+          .stats-desktop-grid > div:not(.stat-divider) > div > div:first-child { justify-content: center !important; flex-wrap: nowrap; gap: 0 !important; flex-direction: column; align-items: center; height: 32px; overflow: visible; }
           .stats-desktop-grid .stat-num-desktop { display: none !important; }
           .stats-desktop-grid .stat-num-mobile { display: block !important; font-size: 24px !important; font-weight: 800 !important; line-height: 1 !important; color: #0D1B2A !important; white-space: nowrap !important; }
           .stats-desktop-grid .stat-unit-desktop { display: none !important; }
