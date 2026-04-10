@@ -116,26 +116,24 @@ const ProfessionalLandingPage = () => {
         <div className="py-6 lg:py-16" style={{ maxWidth: 960, margin: '0 auto', padding: '0 24px' }}>
           <div className="stats-desktop-grid" style={{ gridTemplateColumns: '1fr auto 1fr auto 1fr', alignItems: 'stretch' }}>
             {[
-              { num: '22', numMobile: '22+', unit: 'Cities', title: 'BAY AREA', titleDesktop: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin', mobileClass: 'stat-num-cities' },
-              { num: '$60', numMobile: '$60', unit: 'Diagnostic', title: 'TOWARD REPAIR', titleDesktop: 'GOES TOWARD REPAIR', desc: 'Applied if you proceed', mobileClass: 'stat-num-diag' },
-              { num: '180', numMobile: null, unit: 'Day Warranty', title: 'PARTS & LABOR', titleDesktop: 'PARTS & LABOR', desc: '180-day guarantee', mobileClass: 'stat-num-warranty' },
+              { num: '22', numMobile: '22+', unit: 'Cities', unitMobile: 'CITIES', title: 'BAY AREA', titleDesktop: 'BAY AREA COVERAGE', desc: 'SF, Peninsula & Marin', mobileClass: 'stat-num-cities' },
+              { num: '$60', numMobile: '$60', unit: 'Diagnostic', unitMobile: 'DIAGNOSTIC', title: 'TOWARD REPAIR', titleDesktop: 'GOES TOWARD REPAIR', desc: 'Applied if you proceed', mobileClass: 'stat-num-diag' },
+              { num: '180', numMobile: '180-Day', unit: 'Day Warranty', unitMobile: 'DAY WARRANTY', title: 'PARTS & LABOR', titleDesktop: 'PARTS & LABOR', desc: 'Parts & labor guaranteed', mobileClass: 'stat-num-warranty' },
             ].map((s, i) => (
               <React.Fragment key={i}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 20, minHeight: 80 }}>
                   <div className="stat-accent-bar" style={{ width: 3, alignSelf: 'stretch', background: '#FF5722', flexShrink: 0 }} />
                   <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                     <div style={{ display: 'flex', alignItems: 'baseline', gap: 4 }}>
-                      {/* Desktop: original num */}
+                      {/* Desktop number */}
                       <span className={`stat-num stat-num-desktop ${s.mobileClass}`} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 28, lineHeight: '32px', color: '#0D1B2A', whiteSpace: 'nowrap' }}>{s.num}</span>
-                      {/* Mobile: custom num (hidden on desktop via CSS) */}
-                      {s.numMobile && <span className={`stat-num stat-num-mobile ${s.mobileClass}`} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: '32px', color: '#0D1B2A', whiteSpace: 'nowrap', display: 'none' }}>{s.numMobile}</span>}
-                      {!s.numMobile && s.mobileClass === 'stat-num-warranty' && (
-                        <span className="stat-num stat-num-mobile stat-num-warranty" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: '32px', color: '#0D1B2A', display: 'none' }}>
-                          180<span style={{ fontSize: 14, fontWeight: 600, verticalAlign: 'super', marginLeft: 1 }}>-Day</span>
-                        </span>
-                      )}
-                      <span className="stat-unit" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 14, lineHeight: '32px', color: '#FF5722' }}>{s.unit}</span>
+                      {/* Mobile number — single non-breaking token */}
+                      <span className={`stat-num stat-num-mobile ${s.mobileClass}`} style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, lineHeight: 1, color: '#0D1B2A', whiteSpace: 'nowrap', display: 'none' }}>{s.numMobile}</span>
+                      {/* Desktop unit */}
+                      <span className="stat-unit stat-unit-desktop" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 14, lineHeight: '32px', color: '#FF5722' }}>{s.unit}</span>
                     </div>
+                    {/* Mobile label (orange, ALL-CAPS) */}
+                    <div className="stat-label-mobile" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 10, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.12em', marginTop: 3, display: 'none' }}>{s.unitMobile}</div>
                     <div className="stat-title stat-title-desktop" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginTop: 6, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{s.titleDesktop}</div>
                     <div className="stat-title stat-title-mobile" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#0D1B2A', marginTop: 6, textTransform: 'uppercase', letterSpacing: '0.08em', display: 'none' }}>{s.title}</div>
                     <div className="stat-desc" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 13, color: '#4A5568', maxWidth: 200, marginTop: 4, lineHeight: 1.5 }}>{s.desc}</div>
@@ -207,20 +205,32 @@ const ProfessionalLandingPage = () => {
               })}
             </div>
           </div>
-          {/* Mobile: vertical steps — hidden */}
-          <div className="hidden px-2 mt-6">
+          {/* Mobile: vertical steps */}
+          <div className="hiw-mobile-vertical lg:hidden" style={{ padding: '0 8px', marginTop: 24 }}>
             {[
-              { num: '01', title: 'Book Online', desc: 'Schedule your repair in seconds — no calls, no waiting.' },
-              { num: '02', title: 'Technician Arrives', desc: 'A licensed technician arrives on time with the right tools.' },
-              { num: '03', title: 'Quick Diagnosis', desc: 'We diagnose the issue and provide an upfront estimate — no surprises.' },
-              { num: '04', title: 'Professional Repair', desc: 'Fast, quality repair backed by our 180-day warranty.' },
-            ].map((step, i) => {
+              { num: '01', icon: <CalendarCheck size={24} strokeWidth={1.5} />, title: 'Book Online', desc: 'Schedule your repair in 60 seconds — no calls, no waiting.' },
+              { num: '02', icon: <User size={24} strokeWidth={1.5} />, title: 'Technician Arrives', desc: 'A licensed technician arrives on time with the right tools.' },
+              { num: '03', icon: <SearchCheck size={24} strokeWidth={1.5} />, title: 'Quick Diagnosis', desc: 'We diagnose the issue and provide an upfront estimate — no surprises.' },
+              { num: '04', icon: <ShieldCheck size={24} strokeWidth={1.5} />, title: 'Repair Done', desc: 'Fast, quality repair backed by our 180-day warranty.' },
+            ].map((step, i, arr) => {
               const inner = (
-              <div data-testid={`hiw-mobile-step-${i}`} style={{ padding: '20px 16px', borderLeft: '3px solid #FF5722', marginBottom: 12, background: 'rgba(255,255,255,0.03)' }}>
-                <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 28, color: '#FF5722', display: 'block', marginBottom: 6, lineHeight: 1 }}>{step.num}</span>
-                <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 15, color: '#FFFFFF', margin: '0 0 6px 0' }}>{step.title}</h3>
-                <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.65)', lineHeight: 1.6, margin: 0 }}>{step.desc}</p>
-              </div>
+                <div data-testid={`hiw-mobile-step-${i}`} style={{ display: 'flex', gap: 16, position: 'relative' }}>
+                  {/* Left column: badge + connector */}
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flexShrink: 0, width: 48 }}>
+                    <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#FF5722', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', flexShrink: 0 }}>
+                      {step.icon}
+                    </div>
+                    {i < arr.length - 1 && (
+                      <div style={{ width: 2, flex: 1, background: 'rgba(255,87,34,0.3)', marginTop: 4, marginBottom: 4, minHeight: 24 }} />
+                    )}
+                  </div>
+                  {/* Right column: content */}
+                  <div style={{ paddingTop: 2, paddingBottom: 24 }}>
+                    <span style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 800, fontSize: 11, color: '#FF5722', letterSpacing: '0.1em', display: 'block', marginBottom: 4 }}>STEP {step.num}</span>
+                    <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: 16, color: '#FFFFFF', margin: '0 0 6px 0', lineHeight: 1.3 }}>{step.title}</h3>
+                    <p style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400, fontSize: 13, color: '#AAAAAA', lineHeight: 1.5, margin: 0 }}>{step.desc}</p>
+                  </div>
+                </div>
               );
               return i === 0 ? <a key={i} href="/book" style={{ textDecoration: 'none', color: 'inherit' }}>{inner}</a> : <React.Fragment key={i}>{inner}</React.Fragment>;
             })}
@@ -249,19 +259,16 @@ const ProfessionalLandingPage = () => {
           .stats-desktop-grid { display: grid !important; grid-template-columns: 1fr 1px 1fr 1px 1fr; align-items: stretch; gap: 0; padding: 10px 12px; }
           .stats-desktop-grid .stat-divider { display: block !important; width: 1px !important; background: rgba(0,0,0,0.1) !important; margin: 0 !important; align-self: stretch; }
           .stats-desktop-grid .stat-accent-bar { display: none; }
-          .stats-desktop-grid > div:not(.stat-divider) { text-align: center !important; padding: 4px 4px !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 2px !important; overflow: hidden; min-height: 80px; }
+          .stats-desktop-grid > div:not(.stat-divider) { text-align: center !important; padding: 8px 2px !important; display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 0 !important; overflow: visible; min-height: 80px; }
           .stats-desktop-grid > div:not(.stat-divider) > div { align-items: center !important; }
-          .stats-desktop-grid > div:not(.stat-divider) > div > div:first-child { justify-content: center !important; flex-wrap: wrap; }
+          .stats-desktop-grid > div:not(.stat-divider) > div > div:first-child { justify-content: center !important; flex-wrap: nowrap; gap: 0 !important; flex-direction: column; align-items: center; }
           .stats-desktop-grid .stat-num-desktop { display: none !important; }
-          .stats-desktop-grid .stat-num-mobile { display: inline !important; }
-          .stats-desktop-grid .stat-num-cities { font-size: 32px !important; font-weight: 800; color: #0D1B2A; }
-          .stats-desktop-grid .stat-num-diag { font-size: 22px !important; font-weight: 700; color: #0D1B2A; }
-          .stats-desktop-grid .stat-num-warranty { font-size: 28px !important; font-weight: 800; color: #0D1B2A; }
-          .stats-desktop-grid .stat-unit { font-size: 11px !important; text-transform: uppercase; letter-spacing: 0.5px; }
+          .stats-desktop-grid .stat-num-mobile { display: block !important; font-size: 24px !important; font-weight: 800 !important; line-height: 1 !important; color: #0D1B2A !important; white-space: nowrap !important; }
+          .stats-desktop-grid .stat-unit-desktop { display: none !important; }
+          .stats-desktop-grid .stat-label-mobile { display: block !important; font-size: 10px !important; color: #FF5722 !important; margin-top: 4px !important; }
           .stats-desktop-grid .stat-title-desktop { display: none !important; }
-          .stats-desktop-grid .stat-title-mobile { display: block !important; }
-          .stats-desktop-grid .stat-title { font-size: 9px !important; letter-spacing: 0.08em; }
-          .stats-desktop-grid .stat-desc { display: none; }
+          .stats-desktop-grid .stat-title-mobile { display: none !important; }
+          .stats-desktop-grid .stat-desc { display: block !important; font-size: 9px !important; color: rgba(0,0,0,0.4) !important; margin-top: 2px !important; max-width: none !important; }
         }
         .animate-fadeIn { animation: fadeIn 0.3s ease-out both; }
         .scrollbar-hide::-webkit-scrollbar { display: none; }
@@ -292,19 +299,10 @@ const ProfessionalLandingPage = () => {
         .hiw-num-pill { display: none !important; }
         .hiw-num-watermark { display: block !important; }
         .hiw-connector-l { display: none; }
-        @media (max-width: 767px) {
-          .hiw-steps-container { display: grid !important; grid-template-columns: 1fr auto 1fr; gap: 4px 0; }
-          .hiw-step-card-wrap { min-width: 0; }
-          .hiw-arrow { padding: 0 4px; font-size: 18px; padding-top: 36px; }
-          .hiw-arrow-h { display: inline; }
-          .hiw-arrow-down { grid-column: 1 / -1; padding: 0; display: flex !important; justify-content: flex-end; height: 36px; position: relative; }
-          .hiw-arrow-down .hiw-arrow-h { display: none; }
-          .hiw-connector-l { display: block !important; position: absolute; right: 25%; top: 0; width: 50%; height: 100%; border-right: 2px dashed rgba(255,87,34,0.35); border-bottom: 2px dashed rgba(255,87,34,0.35); border-radius: 0 0 10px 0; }
-          .hiw-connector-l::after { content: '\u2193'; position: absolute; bottom: -14px; left: -6px; color: #FF5722; font-size: 16px; font-weight: 700; }
-          .hiw-num-watermark { display: none !important; }
-          .hiw-num-pill { display: inline-block !important; }
-          .hiw-step-icon { margin-top: 0 !important; }
-          .hiw-step-card span[style*="fontSize: 72"], .hiw-step-card span[style*="font-size: 72px"] { font-size: 48px !important; }
+        .hiw-mobile-vertical { display: none; }
+        @media (max-width: 1023px) {
+          .hiw-steps-container { display: none !important; }
+          .hiw-mobile-vertical { display: block !important; }
         }
 
         @media (max-width: 768px) {
