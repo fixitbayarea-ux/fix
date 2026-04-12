@@ -28,7 +28,7 @@ const Millbrae = () => {
     paragraphs: [
       'Millbrae\'s unique position on the San Francisco Bay creates a diverse community from bayside flats to hillside homes overlooking the water. Our technicians serve Millbrae daily, navigating from El Camino Real\'s commercial corridor to residential neighborhoods throughout the city. We understand Millbrae\'s mix of mid-century homes, modern condos near transit, and newer developments, along with the appliances common in each.',
       'Millbrae\'s proximity to SFO and excellent transit connections make it a convenient service location. We serve residential properties throughout Millbrae\'s neighborhoods, from downtown apartments to hillside single-family homes. Our vans carry parts for frequent appliance failures, and our Peninsula network allows quick sourcing of specialized components.',
-      'Fast scheduling is available in Millbrae with a $60 diagnostic fee credited toward repairs. We provide detailed estimates before beginning work and back every repair with a 180-day warranty. Our licensed technicians repair all major appliance brands and are experienced with both standard and high-efficiency models common in Millbrae homes.'
+      'Fast scheduling is available in Millbrae with a $80 diagnostic fee credited toward repairs. We provide detailed estimates before beginning work and back every repair with a 180-day warranty. Our licensed technicians repair all major appliance brands and are experienced with both standard and high-efficiency models common in Millbrae homes.'
     ]
   };
 

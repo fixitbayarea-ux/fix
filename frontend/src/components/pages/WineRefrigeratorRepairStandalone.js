@@ -97,7 +97,7 @@ const WineRefrigeratorRepairStandalone = () => {
         heroImagePosition="center 15%"
         techImage="/images/technicians/wine-cooler-tech.png"
         techImageAlt="FixitBay technician Andrei next to an open wine refrigerator"
-        heroDescription="FixitBay LLC repairs all wine refrigerators in the Bay Area — built-in, freestanding, undercounter. Sub-Zero, Liebherr, Thermador, Viking, Miele. $60 diagnostic applied to repair. 180-day warranty."
+        heroDescription="FixitBay LLC repairs all wine refrigerators in the Bay Area — built-in, freestanding, undercounter. Sub-Zero, Liebherr, Thermador, Viking, Miele. $80 diagnostic applied to repair. 180-day warranty."
         issues={[
           { icon: '\u{1F321}\uFE0F', label: 'Temp Wrong' },
           { icon: '\uD83D\uDD0A', label: 'Loud Noise' },
@@ -128,7 +128,7 @@ const WineRefrigeratorRepairStandalone = () => {
       heroImage="/images/technicians/wine-cooler-tech.png"
       heroImageAlt="FixitBay technician Andrei servicing a wine refrigerator"
       heroImagePosition="center 15%"
-      heroDescription="FixitBay LLC repairs all wine refrigerators in the Bay Area — built-in undercounter units, freestanding models, and integrated panel-ready refrigerators. Sub-Zero, Liebherr, Thermador, Viking, Miele, Bosch. $60 diagnostic applied to repair. 180-day warranty."
+      heroDescription="FixitBay LLC repairs all wine refrigerators in the Bay Area — built-in undercounter units, freestanding models, and integrated panel-ready refrigerators. Sub-Zero, Liebherr, Thermador, Viking, Miele, Bosch. $80 diagnostic applied to repair. 180-day warranty."
       cmsSlug="wine-refrigerator-repair"
       pageTitle="Wine Refrigerator Repair San Francisco & Bay Area | FixitBay"
       metaDescription="Professional wine refrigerator repair in San Francisco & Bay Area. Same-day service, 180-day warranty. We fix Sub-Zero, Liebherr, Thermador, Viking wine refrigerators."
@@ -137,7 +137,7 @@ const WineRefrigeratorRepairStandalone = () => {
       serviceDescription={{
         title: "Expert Wine Refrigerator Repair Service",
         paragraphs: [
-          <>Wine refrigerators are precision appliances — compressor-based cooling systems designed for large collections, precise temperature zones, and long-term wine storage. Unlike thermoelectric wine coolers, wine refrigerators (Sub-Zero, Liebherr, Thermador, Viking) use sealed refrigeration systems that require specialized diagnostic equipment. We charge a <strong>$60 diagnostic fee</strong> (applied to repair) and respond same-day for emergencies.</>,
+          <>Wine refrigerators are precision appliances — compressor-based cooling systems designed for large collections, precise temperature zones, and long-term wine storage. Unlike thermoelectric wine coolers, wine refrigerators (Sub-Zero, Liebherr, Thermador, Viking) use sealed refrigeration systems that require specialized diagnostic equipment. We charge a <strong>$80 diagnostic fee</strong> (applied to repair) and respond same-day for emergencies.</>,
           <>Our wine refrigerator repair process covers the full sealed system: compressor testing, condenser coil inspection, evaporator fan diagnosis, thermostat calibration, and electronic control board troubleshooting. We service both single-zone units (ideal for all-red or all-white collections) and dual/triple-zone models that maintain separate temperatures for reds (55-65&deg;F) and whites (45-55&deg;F).</>,
           <>Built-in undercounter wine refrigerators (common in San Francisco, Pacific Heights, and Marin County homes) require careful handling around custom cabinetry. Our technician Andrei has extensive experience with panel-ready units and front-ventilation clearances. We carry OEM parts for Sub-Zero, Liebherr, Thermador, and Viking. Every repair includes a <strong>180-day warranty</strong> on parts and labor.</>,
           <><strong>Looking for wine cooler repair instead?</strong> Visit our <a href="/wine-cooler-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>Wine Cooler Repair</a> page for thermoelectric and smaller wine cooler service.</>

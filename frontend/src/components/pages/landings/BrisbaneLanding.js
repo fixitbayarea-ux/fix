@@ -6,7 +6,7 @@ const BrisbaneLanding = () => (
     city="Brisbane"
     citySlug="brisbane"
     pageTitle="Appliance Repair Brisbane CA | Same-Day | FixitBay LLC"
-    metaDescription="Fast, licensed appliance repair in Brisbane, CA. $60 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
+    metaDescription="Fast, licensed appliance repair in Brisbane, CA. $80 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
     neighborhoods={['Central Brisbane', 'Brisbane Acres', 'Crocker Industrial Park', 'Baylands', 'Visitacion Valley Border', 'Sierra Point', 'Lipman School Area', 'Brisbane Village', 'Old County Road', 'San Bruno Mountain State Park area']}
     localExpertise="Brisbane's hillside homes sit on steep terrain with narrow driveways and tight access — conditions that require technicians who know the area. Many Brisbane homes are built on slopes, which means appliance installation and removal is trickier than in flat neighborhoods. Our team is experienced with Brisbane's unique logistics and carries equipment for difficult-access situations."
     homeTypes="Brisbane features a mix of mid-century hillside cottages, modern infill homes, and newer townhomes near Sierra Point. LG and Samsung are the dominant appliance brands in Brisbane's updated kitchens, while older homes often run reliable Whirlpool and GE units."
@@ -27,7 +27,7 @@ const BrisbaneLanding = () => (
     faqData={[
       { question: 'Can your technicians access hillside homes in Brisbane?', answer: 'Yes. We regularly service Brisbane\'s hillside neighborhoods including Brisbane Acres and the areas around San Bruno Mountain. Our technicians are experienced with narrow driveways and steep-access homes.' },
       { question: 'Do you offer same-day service in Brisbane?', answer: 'Yes. Brisbane is in our core service area. Same- or next-day appointments available Monday through Saturday.' },
-      { question: 'How much does appliance repair cost in Brisbane?', answer: 'Diagnostic is $60, applied toward repair. Most Brisbane repairs cost $250–$450. Exact quote provided before we start.' },
+      { question: 'How much does appliance repair cost in Brisbane?', answer: 'Diagnostic is $80, applied toward repair. Most Brisbane repairs cost $250–$450. Exact quote provided before we start.' },
       { question: 'Do you service LG and Samsung appliances?', answer: 'Absolutely. LG and Samsung are among the most common brands in Brisbane. We carry brand-specific diagnostic tools and parts.' },
       { question: 'Are you licensed to work in Brisbane?', answer: 'Yes. FixitBay LLC is licensed (CA #51001) and insured for residential appliance repair in Brisbane and San Mateo County.' },
     ]}

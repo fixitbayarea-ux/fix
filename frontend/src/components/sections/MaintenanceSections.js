@@ -36,7 +36,7 @@ const MaintenanceSections = ({ appliance, vsRepairData, checklistItems, schedule
                 {(vsRepairData || [
                   { label: 'When', maintenance: 'Annually or as preventive care', repair: 'When something breaks or fails' },
                   { label: 'Goal', maintenance: 'Prevent breakdowns, extend lifespan', repair: 'Fix an existing malfunction' },
-                  { label: 'Typical Cost', maintenance: `From $250`, repair: '$60 diagnostic + parts & labor' },
+                  { label: 'Typical Cost', maintenance: `From $250`, repair: '$80 diagnostic + parts & labor' },
                   { label: 'Duration', maintenance: '45–60 minutes', repair: '60–120 minutes' },
                 ]).map((row, i) => (
                   <tr key={i} style={{ background: i % 2 === 0 ? C.cream : C.white, borderBottom: '1px solid #e5e2dd' }}>

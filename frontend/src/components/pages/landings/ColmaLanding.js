@@ -6,7 +6,7 @@ const ColmaLanding = () => (
     city="Colma"
     citySlug="colma"
     pageTitle="Appliance Repair Colma | Same-Day | FixitBay LLC"
-    metaDescription="Fast, licensed appliance repair in Colma. $60 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
+    metaDescription="Fast, licensed appliance repair in Colma. $80 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
     neighborhoods={['Colma Town Center', 'Sterling Park', 'Junipero Serra Corridor', 'Holy Cross Area', 'El Camino Real', 'Mission Road', 'Hillside Colma', 'Colma Creek', 'Serra Center', 'Serramonte Adjacent']}
     localExpertise="Colma's compact residential pockets sit between its famous cemeteries and shopping centers. The town's proximity to the coast brings higher humidity levels that accelerate appliance wear — door gaskets deteriorate faster, metal components develop surface rust, and dryer vents collect more moisture. Our technicians understand these Colma-specific conditions."
     homeTypes="Colma's housing is a mix of modest single-family homes, townhomes near Sterling Park, and apartment units along El Camino Real. Most Colma kitchens run standard brands — GE, Whirlpool, Frigidaire, and Samsung — the workhorses we service every day."
@@ -26,7 +26,7 @@ const ColmaLanding = () => (
     ]}
     faqData={[
       { question: 'Do you offer same-day appliance repair in Colma?', answer: 'Yes. Colma is in our core service area. Same- or next-day appointments are available Monday through Saturday.' },
-      { question: 'How much does appliance repair cost in Colma?', answer: 'Diagnostic is $60, credited toward the repair. Most Colma repairs range $250–$450. No hidden fees — you approve the price before we start.' },
+      { question: 'How much does appliance repair cost in Colma?', answer: 'Diagnostic is $80, credited toward the repair. Most Colma repairs range $250–$450. No hidden fees — you approve the price before we start.' },
       { question: 'Does Colma\'s humidity really affect appliances?', answer: 'Yes. Colma\'s coastal proximity means higher moisture levels that accelerate gasket wear, vent condensation, and surface corrosion. Regular maintenance can prevent many of these issues.' },
       { question: 'Which brands do you repair in Colma?', answer: 'All major brands: GE, Whirlpool, Frigidaire, Samsung, LG, Maytag, KitchenAid, Bosch, and more. We carry parts for the most common models in Colma homes.' },
       { question: 'Are you licensed for Colma?', answer: 'Yes. FixitBay LLC is licensed (CA #51001) and insured for appliance repair in Colma and San Mateo County.' },

@@ -28,7 +28,7 @@ const SanQuentin = () => {
     paragraphs: [
       'San Quentin\'s waterfront location along the Richmond-San Rafael Bridge corridor provides bay views and convenient Peninsula access. Our technicians serve San Quentin residential areas, understanding the challenges of waterfront living and the humidity that affects appliance performance.',
       'We navigate San Quentin efficiently via Highway 101 and local routes. Our vans carry parts for common appliance failures, and we understand the specific issues that arise in waterfront homes including humidity-related problems and salt-air exposure.',
-      'Fast scheduling is available in San Quentin with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
+      'Fast scheduling is available in San Quentin with a $80 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
     ]
   };
 

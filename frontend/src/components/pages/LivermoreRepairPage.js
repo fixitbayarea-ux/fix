@@ -28,7 +28,7 @@ const LivermoreRepairPage = () => {
       },
       {
         question: "How much does appliance repair cost in Livermore?",
-        answer: "Our service call fee is FREE with repair (otherwise $60). We provide upfront pricing before starting any work. Most repairs in Livermore range from $250-$650 depending on the appliance and issue."
+        answer: "Our service call fee is FREE with repair (otherwise $80). We provide upfront pricing before starting any work. Most repairs in Livermore range from $250-$650 depending on the appliance and issue."
       },
       {
         question: "Do you provide warranty on repairs in Livermore?",

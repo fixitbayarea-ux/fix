@@ -19,7 +19,7 @@ const WasherMaintenance = () => {
   ];
 
   const faqData = [
-    { question: 'How much does washer maintenance cost?', answer: 'Our diagnostic fee is $60, which covers a thorough inspection and is applied to any repair costs. Maintenance services include cleaning filters, checking hoses, and testing all functions. Final costs depend on parts and labor needed.' },
+    { question: 'How much does washer maintenance cost?', answer: 'Our diagnostic fee is $80, which covers a thorough inspection and is applied to any repair costs. Maintenance services include cleaning filters, checking hoses, and testing all functions. Final costs depend on parts and labor needed.' },
     { question: 'How often should I service my washing machine?', answer: 'We recommend professional maintenance once a year, especially for high-efficiency washers. Between visits, clean the door seal monthly, run a cleaning cycle quarterly, and inspect hoses for wear every 6 months.' },
     { question: 'Can maintenance prevent washing machine breakdowns?', answer: 'Absolutely! Regular maintenance catches issues like hose wear, pump blockages, and seal damage before they cause major failures. This extends your washer\'s lifespan and prevents costly emergency repairs.' },
     { question: 'What brands of washers do you service?', answer: 'We service all major washer brands including Whirlpool, Maytag, LG, Samsung, GE, Frigidaire, Bosch, Electrolux, and more. Our technicians are trained on both top-load and front-load models, including HE washers.' },
@@ -32,7 +32,7 @@ const WasherMaintenance = () => {
     paragraphs: [
       'Your washing machine handles one of your home\'s most essential tasks, processing countless loads of laundry year after year. Regular maintenance is crucial to prevent leaks, reduce breakdowns, and ensure your clothes come out clean every time. FixitBay LLC provides professional washer maintenance services throughout San Francisco, Peninsula, and Marin County for all major brands and models.',
       'Our certified technicians perform comprehensive maintenance including cleaning pump filters, inspecting inlet and drain hoses, testing door seals for leaks, checking drive belts, and running diagnostic cycles. We also clean detergent dispensers, remove buildup from the drum, and verify that all safety features function correctly. Whether you have a traditional top-loader or a modern front-load HE washer, we keep it running at peak performance.',
-      'During our $60 diagnostic visit, we examine all critical components, identify any wear or damage, and recommend preventive measures. We also check leveling to prevent vibration, test water temperature controls, and ensure the washer drains completely. Our maintenance service helps you avoid expensive repairs, extends your washer\'s lifespan, and maintains optimal cleaning performance. All our work comes with a 180-day warranty and flexible same- or next-day scheduling.'
+      'During our $80 diagnostic visit, we examine all critical components, identify any wear or damage, and recommend preventive measures. We also check leveling to prevent vibration, test water temperature controls, and ensure the washer drains completely. Our maintenance service helps you avoid expensive repairs, extends your washer\'s lifespan, and maintains optimal cleaning performance. All our work comes with a 180-day warranty and flexible same- or next-day scheduling.'
     ]
   };
 
@@ -53,7 +53,7 @@ const WasherMaintenance = () => {
         appliance="Washer"
         pageSlug="maintenance/washer"
         pageTitle="Washer Maintenance Service San Francisco | FixitBay"
-        metaDescription="Professional washer maintenance in San Francisco. Prevent leaks and breakdowns. $60 diagnostic, 180-day warranty. FixitBay LLC."
+        metaDescription="Professional washer maintenance in San Francisco. Prevent leaks and breakdowns. $80 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Washer<br />Maintenance. Today.</>}
         heroImage="/images/technicians/washer-tech.jpg"
         heroImageAlt="FixitBay technician servicing a washing machine in San Francisco"
@@ -79,7 +79,7 @@ const WasherMaintenance = () => {
     <ApplianceRepairPageNew
       appliance="Washer"
       pageTitle="Washer Maintenance San Francisco Bay Area | FixitBay LLC"
-      metaDescription="Professional washing machine maintenance in San Francisco Bay Area. Prevent leaks and breakdowns with expert washer service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+      metaDescription="Professional washing machine maintenance in San Francisco Bay Area. Prevent leaks and breakdowns with expert washer service from FixitBay LLC. $80 diagnostic, 180-day warranty."
       heroImage="/images/technicians/washer-tech.jpg"
       heroImageAlt="FixitBay technician servicing a washing machine in San Francisco"
       heroImagePosition="65% center"

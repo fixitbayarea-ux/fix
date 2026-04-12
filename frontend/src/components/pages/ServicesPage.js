@@ -40,13 +40,13 @@ const MAINTENANCE_SERVICES = [
 
 const STEPS = [
   { num: '1', title: 'Book', body: 'Schedule online or call. Flexible slots available Mon-Sat..' },
-  { num: '2', title: 'Diagnose', body: '$60 diagnostic visit. Technician inspects and identifies the problem.' },
-  { num: '3', title: 'Approve', body: 'Written estimate before any work. $60 credited toward the repair.' },
+  { num: '2', title: 'Diagnose', body: '$80 diagnostic visit. Technician inspects and identifies the problem.' },
+  { num: '3', title: 'Approve', body: 'Written estimate before any work. $80 credited toward the repair.' },
   { num: '4', title: 'Fixed', body: 'Repair completed with OEM parts. 180-day warranty on everything.' },
 ];
 
 const FAQ_DATA = [
-  { q: 'How much does a diagnostic visit cost?', a: '$60. This covers the technician\u2019s visit and full inspection. If you approve the repair, the $60 is credited toward the total cost \u2014 so the diagnostic is essentially free when you proceed.' },
+  { q: 'How much does a diagnostic visit cost?', a: '$80. This covers the technician\u2019s visit and full inspection. If you approve the repair, the $80 is credited toward the total cost \u2014 so the diagnostic is essentially free when you proceed.' },
   { q: 'Can I get a fast appointment?', a: 'Yes. Requests placed before 2:00 PM typically receive fast scheduling. Next-day appointments are almost always available regardless of when you call.' },
   { q: 'What warranty do repairs include?', a: 'Every repair includes a 180-day warranty on both parts and labor. If the same problem returns within that window, we come back and fix it at no charge.' },
   { q: 'Do you repair premium brands like Sub-Zero and Wolf?', a: 'Yes. Our technicians are trained on all premium and luxury brands including Sub-Zero, Wolf, Viking, Thermador, Miele, and Bosch Benchmark. We carry specialized tools and diagnostic equipment for these brands.' },
@@ -91,7 +91,7 @@ const ServicesPage = () => {
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
         mainEntity: [
-          { '@type': 'Question', name: 'How much does a diagnostic visit cost?', acceptedAnswer: { '@type': 'Answer', text: '$60. This covers the technician visit and full inspection. If you approve the repair, the $60 is credited toward the total cost.' } },
+          { '@type': 'Question', name: 'How much does a diagnostic visit cost?', acceptedAnswer: { '@type': 'Answer', text: '$80. This covers the technician visit and full inspection. If you approve the repair, the $80 is credited toward the total cost.' } },
           { '@type': 'Question', name: 'Can I get a fast appointment?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. We often have same- or next-day slots when you contact us before 2 PM.' } },
           { '@type': 'Question', name: 'What warranty do repairs include?', acceptedAnswer: { '@type': 'Answer', text: 'All repairs include a 180-day warranty on parts and labor.' } },
         ],
@@ -103,10 +103,10 @@ const ServicesPage = () => {
     <>
       <SEOMetaTags
         title="Appliance Repair Services | San Francisco | FixitBay LLC"
-        description="Complete appliance repair services in San Francisco & Bay Area. Refrigerators, washers, dryers, ovens, dishwashers, commercial equipment and more. $60 diagnostic, 180-day warranty, fast scheduling."
+        description="Complete appliance repair services in San Francisco & Bay Area. Refrigerators, washers, dryers, ovens, dishwashers, commercial equipment and more. $80 diagnostic, 180-day warranty, fast scheduling."
         canonical="https://fixitbay.net/services"
         ogTitle="Appliance Repair Services \u2014 San Francisco & Bay Area | FixitBay LLC"
-        ogDescription="Complete appliance repair services in San Francisco & Bay Area. $60 diagnostic, 180-day warranty, fast scheduling."
+        ogDescription="Complete appliance repair services in San Francisco & Bay Area. $80 diagnostic, 180-day warranty, fast scheduling."
       />
 
       <style>{`
@@ -239,7 +239,7 @@ const ServicesPage = () => {
             </div>
             <div className="sp-eyebrow" style={{ marginBottom: 12 }}>SAN FRANCISCO &amp; BAY AREA</div>
             <h1 data-testid="services-h1">Appliance Repair Services</h1>
-            <p className="sp-hero-sub">$60 diagnostic fee applied to repair. Licensed technicians. 180-day warranty on parts and labor. Same- or next-day service across 22 cities.</p>
+            <p className="sp-hero-sub">$80 diagnostic fee applied to repair. Licensed technicians. 180-day warranty on parts and labor. Same- or next-day service across 22 cities.</p>
             <div className="sp-hero-ctas">
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="sp-btn-primary" data-testid="services-hero-book-btn" aria-label="opens in new tab">Book Online Now</a>
               <a href="tel:7605435733" className="sp-btn-secondary" data-testid="services-hero-call-btn">(760) 543-5733</a>

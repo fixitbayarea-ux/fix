@@ -60,7 +60,7 @@ const SERVICE_AREAS = {
 
 const WHY_CARDS = [
   { num: '01', title: 'Licensed & Insured', body: 'California-licensed appliance repair. Fully insured for your protection.' },
-  { num: '02', title: '$60 Diagnostic Applied', body: 'The $60 diagnostic fee is credited toward your repair. If you decline, that is the only charge.' },
+  { num: '02', title: '$80 Diagnostic Applied', body: 'The $80 diagnostic fee is credited toward your repair. If you decline, that is the only charge.' },
   { num: '03', title: 'Same & Next-Day Service', body: null },
   { num: '04', title: '180-Day Warranty', body: 'All parts and labor are warranted for 180 days. If the same issue returns, we come back free.' },
 ];
@@ -235,7 +235,7 @@ const BrandLandingPage = ({ brand }) => {
             </h1>
 
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: PC.white60, maxWidth: 540, margin: '0 auto 4px' }}>
-              Same- or next-day service &middot; $60 diagnostic applied toward repair &middot; 180-day warranty on all {brand.name} repairs
+              Same- or next-day service &middot; $80 diagnostic applied toward repair &middot; 180-day warranty on all {brand.name} repairs
             </p>
 
             <div className="brand-trust-bar" style={{ display: 'flex', justifyContent: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 24, marginTop: 4 }}>
@@ -309,7 +309,7 @@ const BrandLandingPage = ({ brand }) => {
                           {card.issues && <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: PC.textMid, marginBottom: 12 }}>{card.issues}</p>}
                           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 10 }}>
                             <span style={{ background: PC.accentBg, color: PC.accent, padding: '4px 10px', borderRadius: PC.r, fontFamily: F, fontWeight: 600, fontSize: 11 }}>Same/Next-Day</span>
-                            <span style={{ background: PC.accentBg, color: PC.accent, padding: '4px 10px', borderRadius: PC.r, fontFamily: F, fontWeight: 600, fontSize: 11 }}>$60 Diagnostic</span>
+                            <span style={{ background: PC.accentBg, color: PC.accent, padding: '4px 10px', borderRadius: PC.r, fontFamily: F, fontWeight: 600, fontSize: 11 }}>$80 Diagnostic</span>
                           </div>
                           <p style={{ fontFamily: F, fontWeight: 400, fontSize: 12, color: PC.textMid, marginBottom: 14 }}>180-Day Warranty</p>
                           <span className="svc-btn" data-testid={`carousel-card-${i}-btn`} style={{ display: 'block', textAlign: 'center', background: PC.navy, color: PC.white, fontFamily: F, fontWeight: 700, fontSize: 13, padding: 12, borderRadius: PC.r, textDecoration: 'none', marginTop: 'auto' }}>
@@ -466,7 +466,7 @@ const BrandLandingPage = ({ brand }) => {
           <div style={{ maxWidth: 700, margin: '0 auto' }}>
             <div style={{ ...EYE, textAlign: 'center', color: PC.white45 }}>GET STARTED TODAY</div>
             <h2 className="brand-section-h2" style={{ fontFamily: F, fontWeight: 800, color: PC.white, marginBottom: 12 }}>Schedule Your {brand.name} Repair</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: PC.white60, marginBottom: 32 }}>$60 diagnostic credited toward repair &middot; 180-day warranty &middot; Same- or next-day appointments available</p>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: PC.white60, marginBottom: 32 }}>$80 diagnostic credited toward repair &middot; 180-day warranty &middot; Same- or next-day appointments available</p>
             <div style={{ display: 'inline-block', background: PC.white08, border: `1px solid ${PC.white10}`, borderRadius: PC.r, padding: '14px 32px', marginBottom: 32 }}>
               <span style={{ fontFamily: F, fontWeight: 500, fontSize: 14, color: PC.white45 }}>Mon&ndash;Fri 8AM&ndash;6PM &middot; Sat 8AM&ndash;3PM &middot; Sun Closed</span>
             </div>

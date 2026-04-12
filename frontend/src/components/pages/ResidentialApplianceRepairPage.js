@@ -50,8 +50,8 @@ const ResidentialApplianceRepairPage = () => {
       answer: 'We repair all major home appliances including refrigerators, freezers, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine refrigerators. Our technicians service all brands—from budget-friendly models to high-end appliances from brands like Sub-Zero, Wolf, Bosch, and Miele.'
     },
     {
-      question: 'Is your $60 diagnostic fee applied toward the repair?',
-      answer: 'Yes. Our standard residential diagnostic fee is $60 and it is fully credited toward the cost of the repair when you proceed with the service. This upfront fee covers our technician\'s visit, professional diagnosis, and transparent pricing estimate before any work begins.'
+      question: 'Is your $80 diagnostic fee applied toward the repair?',
+      answer: 'Yes. Our standard residential diagnostic fee is $80 and it is fully credited toward the cost of the repair when you proceed with the service. This upfront fee covers our technician\'s visit, professional diagnosis, and transparent pricing estimate before any work begins.'
     },
     {
       question: 'Do you offer a warranty on residential repairs?',
@@ -96,7 +96,7 @@ const ResidentialApplianceRepairPage = () => {
       serviceDescription={{
         title: "Professional Home Appliance Repair Service",
         paragraphs: [
-          <>When your home appliances break down, it disrupts your daily routine and causes stress. Our licensed technicians provide same/next day residential appliance repair service throughout San Francisco, Peninsula, and Marin County. We diagnose refrigerator failures, washer and dryer issues, dishwasher problems, and oven malfunctions in your home. We charge a <strong>$60 diagnostic fee</strong> (fully credited toward your repair) and provide transparent, upfront pricing before starting any work.</>,
+          <>When your home appliances break down, it disrupts your daily routine and causes stress. Our licensed technicians provide same/next day residential appliance repair service throughout San Francisco, Peninsula, and Marin County. We diagnose refrigerator failures, washer and dryer issues, dishwasher problems, and oven malfunctions in your home. We charge a <strong>$80 diagnostic fee</strong> (fully credited toward your repair) and provide transparent, upfront pricing before starting any work.</>,
           <>Our residential repair process covers all major home appliances in your kitchen and laundry room. We inspect refrigerators, freezers, dishwashers, ovens, ranges, cooktops, washers, dryers, and ice makers using professional diagnostic tools. We check mechanical components, electrical systems, water connections, and control boards to identify the exact problem. Most home appliance repairs are completed during our first visit, as our technicians stock common replacement parts for all major brands.</>,
           <>Whether your refrigerator stopped cooling, your washer won't drain, your dishwasher is leaking, or your dryer won't heat, we'll diagnose and fix it properly. We service all appliance brands from budget-friendly models to luxury brands like Sub-Zero, Wolf, Viking, Bosch, and Miele. We work with homeowners, renters, and landlords throughout the Bay Area. Every residential appliance repair includes our <strong>180-day parts and labor warranty</strong> for complete peace of mind.</>
         ]

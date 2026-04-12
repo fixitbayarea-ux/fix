@@ -11,7 +11,7 @@ const HomePricing = () => (
       <div className="grid md:grid-cols-3" style={{ gap: 24, alignItems: 'stretch' }}>
         {[
           { icon: <ShieldCheck size={36} strokeWidth={1.8} />, title: '180-Day Warranty', body: 'Coverage on parts and labor.', featured: false },
-          { icon: <Tag size={36} strokeWidth={1.8} />, title: '$60 Diagnostic Visit', body: 'Applied toward repair if you proceed.', featured: true },
+          { icon: <Tag size={36} strokeWidth={1.8} />, title: '$80 Diagnostic Visit', body: 'Applied toward repair if you proceed.', featured: true },
           { icon: <BadgeCheck size={36} strokeWidth={1.8} />, title: 'No Hidden Fees', body: 'You approve the estimate before work starts.', featured: false },
         ].map(c => (
           <div key={c.title} className={`pricing-card relative ${c.featured ? 'pricing-card-featured' : 'pricing-card-default'}`} style={{ background: 'rgba(255,255,255,0.04)', borderRadius: 4, padding: '32px 18px 24px', border: c.featured ? '2px solid #FF5722' : '1px solid rgba(255,255,255,0.10)', textAlign: 'center', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative' }} data-testid={`pricing-card-${c.featured ? 'featured' : 'default'}`}>

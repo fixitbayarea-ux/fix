@@ -15,7 +15,7 @@ const PaloAltoRepairPage = () => {
     },
     {
       question: "What's the cost of appliance repair in Palo Alto?",
-      answer: "Appliance repair costs in Palo Alto typically range from $250-$650 depending on the appliance and issue. We provide free diagnostics with repair service (otherwise $60) and always offer transparent, upfront pricing."
+      answer: "Appliance repair costs in Palo Alto typically range from $250-$650 depending on the appliance and issue. We provide free diagnostics with repair service (otherwise $80) and always offer transparent, upfront pricing."
     },
     {
       question: "Which Palo Alto neighborhoods do you serve?",

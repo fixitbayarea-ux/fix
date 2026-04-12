@@ -392,7 +392,7 @@ const ApplianceRepairPageNew = ({
         "@context": "https://schema.org",
         "@type": "HowTo",
         "name": `How to Get Your ${appliance} Repaired in San Francisco`,
-        "description": `Book fast ${appliance.toLowerCase()} ${serviceWord.toLowerCase()} with FixitBay LLC. $60 diagnostic applied to ${serviceWord.toLowerCase()} cost. 180-day warranty.`,
+        "description": `Book fast ${appliance.toLowerCase()} ${serviceWord.toLowerCase()} with FixitBay LLC. $80 diagnostic applied to ${serviceWord.toLowerCase()} cost. 180-day warranty.`,
         "totalTime": "P1D",
         "estimatedCost": {
           "@type": "MonetaryAmount",
@@ -417,7 +417,7 @@ const ApplianceRepairPageNew = ({
             "@type": "HowToStep",
             "position": 3,
             "name": "Diagnosis and Estimate",
-            "text": "$60 diagnostic visit with upfront estimate before any work begins. No surprises."
+            "text": "$80 diagnostic visit with upfront estimate before any work begins. No surprises."
           },
           {
             "@type": "HowToStep",
@@ -446,7 +446,7 @@ const ApplianceRepairPageNew = ({
             '@type': 'City',
             name: cityName,
           },
-          description: `Fast appliance repair in ${cityName}. $60 diagnostic fee applied to repair. 180-day warranty on parts and labor.`,
+          description: `Fast appliance repair in ${cityName}. $80 diagnostic fee applied to repair. 180-day warranty on parts and labor.`,
           offers: {
             '@type': 'Offer',
             price: '60',
@@ -505,7 +505,7 @@ const ApplianceRepairPageNew = ({
               <span style={{ ...S.eyebrow, letterSpacing: '0.22em' }}>{cityName.toUpperCase()} APPLIANCE REPAIR</span>
             </div>
             <h1 className="hero-main-h1" data-testid="city-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in<br/>{cityName}</h1>
-            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same- or next-day &middot; $60 diagnostic &middot; 180-day warranty</p>
+            <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same- or next-day &middot; $80 diagnostic &middot; 180-day warranty</p>
             {/* Urgency micro-copy */}
             <p data-testid="city-hero-urgency" style={{ fontFamily: S.font, fontSize: 12, color: 'rgba(255,255,255,0.65)', marginTop: 12 }}>
               Most slots filled by noon — book now to secure today
@@ -516,7 +516,7 @@ const ApplianceRepairPageNew = ({
             {[
               { num: '3+', line1: 'Years', line2: 'of Service' },
               { num: '180', line1: 'Day', line2: 'Warranty' },
-              { num: '$60', line1: 'Diagnostic', line2: 'Waived*' },
+              { num: '$80', line1: 'Diagnostic', line2: 'Waived*' },
             ].map((s, i) => (
               <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '16px 8px', borderRight: i < 2 ? '1px solid rgba(255,255,255,0.15)' : 'none' }}>
                 <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 'clamp(24px, 6vw, 36px)', lineHeight: 1, color: '#FF5722' }}>{s.num}</span>
@@ -718,7 +718,7 @@ const ApplianceRepairPageNew = ({
               {/* H1 */}
               <h1 className="hero-main-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 46, color: '#FFFFFF', lineHeight: 1.12, maxWidth: 520, marginTop: 16 }}>{displayH1}</h1>
               {/* Subtext */}
-              <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>$60 diagnostic &middot; Same/Next-Day &middot; 180-Day Warranty</p>
+              <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>$80 diagnostic &middot; Same/Next-Day &middot; 180-Day Warranty</p>
               {heroDescription && <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.55)', marginTop: 12, lineHeight: 1.6, maxWidth: 480 }}>{heroDescription}</p>}
               {/* CTAs */}
               <div style={{ display: 'flex', gap: 14, marginTop: 28, flexWrap: 'wrap' }}>
@@ -755,7 +755,7 @@ const ApplianceRepairPageNew = ({
           <div className="service-how-grid grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { num: '01', icon: <CalendarCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'Book Online', text: 'Schedule your appointment at your convenience.' },
-              { num: '02', icon: <Search size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Diagnose', text: `$60 diagnostic visit — applied to ${serviceWord.toLowerCase()} if you proceed.` },
+              { num: '02', icon: <Search size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Diagnose', text: `$80 diagnostic visit — applied to ${serviceWord.toLowerCase()} if you proceed.` },
               { num: '03', icon: <ClipboardCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'You Approve', text: 'Upfront estimate before any work begins. No surprises.' },
               { num: '04', icon: <Wrench size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: isMaintenance ? 'Professional Maintenance' : 'We Fix It', text: isMaintenance ? 'Genuine parts and manufacturer specs. 180-day warranty on parts and labor.' : 'Professional repair with 180-day warranty on parts and labor.' },
             ].map(s => (
@@ -779,8 +779,8 @@ const ApplianceRepairPageNew = ({
           <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
             {[
               { n: 1, t: 'Book Online or Call', d: `Schedule your ${serviceWord.toLowerCase()} at a time that works. Same- or next-day available.` },
-              { n: 2, t: 'Diagnostic Visit', d: `Licensed technician arrives on time, inspects your ${appliance.toLowerCase()}, identifies the problem. $60 fee applies.` },
-              { n: 3, t: 'Upfront Quote', d: 'Clear written estimate before work begins. $60 diagnostic credited if you proceed.' },
+              { n: 2, t: 'Diagnostic Visit', d: `Licensed technician arrives on time, inspects your ${appliance.toLowerCase()}, identifies the problem. $80 fee applies.` },
+              { n: 3, t: 'Upfront Quote', d: 'Clear written estimate before work begins. $80 diagnostic credited if you proceed.' },
               { n: 4, t: `Professional ${serviceWord}`, d: isMaintenance ? 'Genuine parts and manufacturer specs. Most jobs completed in one visit. 180-day warranty included.' : 'Issue fixed with quality parts. Most jobs completed in one visit. 180-day warranty included.' },
             ].map(s => (
               <div key={s.n} style={{ display: 'flex', gap: 16, borderLeft: '2px solid rgba(255,87,34,0.25)', paddingLeft: 20 }}>
@@ -806,7 +806,7 @@ const ApplianceRepairPageNew = ({
                 We provide {appliance.toLowerCase()} {serviceWord.toLowerCase()} throughout {servingCity.name}, including {servingCity.neighborhoods.join(', ')} and surrounding areas. {servingCity.note}
               </p>
               <p>
-                Our technicians arrive with common {appliance.toLowerCase()} parts stocked for first-visit resolution. $60 diagnostic — applied to your {serviceWord.toLowerCase()} if you proceed.
+                Our technicians arrive with common {appliance.toLowerCase()} parts stocked for first-visit resolution. $80 diagnostic — applied to your {serviceWord.toLowerCase()} if you proceed.
               </p>
             </div>
           </div>
@@ -930,7 +930,7 @@ const ApplianceRepairPageNew = ({
               {appliance} Maintenance Service Cost
             </h2>
             <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#6B7280', marginBottom: 20 }}>
-              Written estimate before any work begins. $60 diagnostic applied to maintenance cost.
+              Written estimate before any work begins. $80 diagnostic applied to maintenance cost.
             </p>
             <div style={{ background: '#fff', borderRadius: 6, padding: '20px 24px', border: '1px solid #e5e7eb', marginBottom: 12 }}>
               {maintenancePricing.map((item, i) => (
@@ -950,7 +950,7 @@ const ApplianceRepairPageNew = ({
           <div style={{ maxWidth: 820, margin: '0 auto', padding: '0 24px' }}>
             <div style={{ ...S.eyebrow, marginBottom: 10 }}>PRICING</div>
             <h2 style={{ ...S.h2, color: '#0D1B2A', marginBottom: 8 }}>{appliance} {serviceWord} Cost in {pricingCityName || cityName || 'the San Francisco Bay Area'}</h2>
-            <p style={{ ...S.body, marginBottom: 24 }}>$60 diagnostic fee &mdash; applied to your {serviceWord.toLowerCase()} if you proceed. Written estimate before any work begins.</p>
+            <p style={{ ...S.body, marginBottom: 24 }}>$80 diagnostic fee &mdash; applied to your {serviceWord.toLowerCase()} if you proceed. Written estimate before any work begins.</p>
             <div style={{ overflowX: 'auto' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: S.font }}>
                 <thead>
@@ -998,11 +998,11 @@ const ApplianceRepairPageNew = ({
               {isMaintenance ? `${appliance} Maintenance Service Cost` : `${appliance} ${serviceWord} Cost in ${pricingCityName || cityName || 'the San Francisco Bay Area'}`}
             </h2>
             <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#6B7280', marginBottom: 20 }}>
-              Written estimate before any work begins. $60 diagnostic applied to {serviceWord.toLowerCase()} cost.
+              Written estimate before any work begins. $80 diagnostic applied to {serviceWord.toLowerCase()} cost.
             </p>
             <div style={{ background: '#fff', borderRadius: 6, padding: '20px 24px', border: '1px solid #e5e7eb', marginBottom: 12 }}>
               <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: '#0D1B2A', lineHeight: 1.9, margin: '0 0 10px' }}>
-                <strong>Starting from ${SERVICE_PRICING[appliance].from}</strong> after $60 diagnostic.
+                <strong>Starting from ${SERVICE_PRICING[appliance].from}</strong> after $80 diagnostic.
                 <br /><span style={{ fontSize: 11, color: '#4A5568', fontStyle: 'italic' }}>* Prices include parts and labor. Final cost depends on model and parts availability.</span>
               </p>
               <p style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 14, color: '#4A5568', lineHeight: 1.8, margin: 0 }}>

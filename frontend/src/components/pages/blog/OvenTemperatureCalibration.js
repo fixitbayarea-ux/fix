@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   { q: 'Why is my oven burning food on the recommended temperature?', a: "Most likely your oven is running hot \u2014 common in ovens 5+ years old as the temperature sensor drifts. Test with an oven thermometer. If it\u2019s 25\u201335\u00b0F over set temp, you can calibrate it yourself using the control panel. If it\u2019s 50\u00b0F+ off, the temperature sensor or control board may need replacement." },
   { q: 'Can I calibrate any oven brand myself?', a: "Yes \u2014 most modern ovens (GE, Whirlpool, Samsung, LG, Bosch, KitchenAid) allow \u00b135\u00b0F offset adjustment through the control panel. Older dial/knob ovens have a calibration screw behind the temperature knob. Always check your owner\u2019s manual for brand-specific steps \u2014 incorrect adjustment can void warranties." },
   { q: 'How often should I calibrate my oven?', a: "Test your oven temperature once a year using an oven thermometer. Most ovens drift gradually over time \u2014 especially after power surges, heavy use, or cleaning cycles. If you notice consistent burning or undercooking, test it immediately rather than waiting for your annual check." },
-  { q: 'How much does oven temperature sensor replacement cost in Bay Area?', a: "Oven temperature sensor replacement in the SF Bay Area typically costs $150\u2013$250 including parts and labor. Control board replacement runs $200\u2013$400 depending on the brand. FixitBay LLC charges $60 diagnostic (credited to repair) and provides a written estimate before any work begins." },
+  { q: 'How much does oven temperature sensor replacement cost in Bay Area?', a: "Oven temperature sensor replacement in the SF Bay Area typically costs $150\u2013$250 including parts and labor. Control board replacement runs $200\u2013$400 depending on the brand. FixitBay LLC charges $80 diagnostic (credited to repair) and provides a written estimate before any work begins." },
 ];
 
 const TOC = [
@@ -247,7 +247,7 @@ const OvenTemperatureCalibration = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $80 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
@@ -339,7 +339,7 @@ const OvenTemperatureCalibration = () => {
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>EXPERT OVEN REPAIR</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Oven Not Heating Right?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>If calibration doesn't fix it, we will. $60 diagnostic, 180-day warranty.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>If calibration doesn't fix it, we will. $80 diagnostic, 180-day warranty.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
                 {['All Brands: GE, Samsung, LG, Bosch', 'Fast Scheduling', 'Licensed CA Technician'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>

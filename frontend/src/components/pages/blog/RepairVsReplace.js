@@ -13,11 +13,11 @@ const H2S = { fontFamily: F, fontWeight: 800, fontSize: 22, color: '#1A1A1A', bo
 const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.8, marginBottom: 12 };
 
 const FAQ_ITEMS = [
-  { q: 'What is the 50% rule for appliance repair?', a: "The 50% rule states: if the repair cost exceeds 50% of the appliance's replacement cost, and the appliance is past 50% of its expected lifespan, replacement is usually smarter. For a $1,200 refrigerator, that means don't spend more than $600 on repairs." },
+  { q: 'What is the 50% rule for appliance repair?', a: "The 50% rule states: if the repair cost exceeds 50% of the appliance's replacement cost, and the appliance is past 50% of its expected lifespan, replacement is usually smarter. For a $1,200 refrigerator, that means don't spend more than $800 on repairs." },
   { q: 'How do I know if my appliance is worth repairing in the Bay Area?', a: "Three key factors: age (under 10 years is generally repairable), repair cost vs replacement cost (50% rule), and repair history (2+ repairs in a year is a red flag). FixitBay LLC technicians give honest assessments \u2014 we'll tell you if replacement makes more financial sense." },
   { q: 'Is it ever worth repairing a 15-year-old appliance?', a: "Rarely for standard brands. However, premium appliances like Sub-Zero, Wolf, and Thermador are built to last 20\u201325 years and are almost always worth repairing \u2014 replacement parts are available, and new models cost $5,000\u2013$15,000+." },
   { q: 'What appliances are most worth repairing?', a: "Refrigerators and washing machines have the best repair-to-replace value if under 10 years old. Dishwashers and dryers are borderline at 8+ years. Microwaves are almost never worth professional repair \u2014 replacement is usually cheaper." },
-  { q: 'Does FixitBay LLC give honest repair vs replace advice?', a: "Always. Our $60 diagnostic includes an honest assessment of whether the repair makes financial sense. If we think replacement is smarter, we'll tell you \u2014 even if that means we don't do the repair. Our reputation is built on trust, not unnecessary repairs." },
+  { q: 'Does FixitBay LLC give honest repair vs replace advice?', a: "Always. Our $80 diagnostic includes an honest assessment of whether the repair makes financial sense. If we think replacement is smarter, we'll tell you \u2014 even if that means we don't do the repair. Our reputation is built on trust, not unnecessary repairs." },
 ];
 
 const TOC = [
@@ -202,7 +202,7 @@ const RepairVsReplace = () => {
                   Based in the San Francisco Bay Area?
                 </p>
                 <p style={{ margin: 0, fontFamily: F, fontWeight: 400, fontSize: 15, color: '#444', lineHeight: 1.7 }}>
-                  Skip the research — book a <strong>$60 diagnostic visit</strong> and our licensed
+                  Skip the research — book a <strong>$80 diagnostic visit</strong> and our licensed
                   technician will tell you on the spot whether your appliance is worth fixing.
                   Same-day availability, honest advice.
                 </p>
@@ -212,7 +212,7 @@ const RepairVsReplace = () => {
                        background: '#ff6b2b', color: '#fff', padding: '10px 20px',
                        borderRadius: 8, textDecoration: 'none', fontFamily: F, fontWeight: 600, fontSize: 14
                      }}>
-                    Book a $60 Diagnostic
+                    Book a $80 Diagnostic
                   </a>
                   <a href="tel:7605435733" data-testid="local-cta-call"
                      style={{
@@ -262,7 +262,7 @@ const RepairVsReplace = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $80 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
@@ -323,7 +323,7 @@ const RepairVsReplace = () => {
               }}>
                 <p style={{ margin: 0, fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.7 }}>
                   <strong style={{ color: '#1A1A1A' }}>Not sure about your specific appliance?</strong>
-                  {' '}If you're in the Bay Area, our technician can diagnose it for $60 —
+                  {' '}If you're in the Bay Area, our technician can diagnose it for $80 —
                   applied toward the repair if you proceed.{' '}
                   <a href="/book" style={{ color: '#1a73e8', fontWeight: 600, textDecoration: 'none' }}>
                     Book online &rarr;
@@ -406,7 +406,7 @@ const RepairVsReplace = () => {
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>Our certified technicians provide honest diagnostic assessments and fair repair quotes. We'll help you decide whether repair or replacement makes sense.</p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
                   <a href="tel:+17605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call for Free Estimate</a>
-                  <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }} aria-label="opens in new tab">Book $60 Diagnostic</a>
+                  <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }} aria-label="opens in new tab">Book $80 Diagnostic</a>
                 </div>
               </div>
 
@@ -427,16 +427,16 @@ const RepairVsReplace = () => {
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>HONEST ASSESSMENT</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Not Sure What to Do?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>Book a $60 diagnostic — we'll tell you honestly if repair makes sense.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>Book a $80 diagnostic — we'll tell you honestly if repair makes sense.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
-                {['Honest Repair vs Replace Advice', '$60 Applied to Repair Cost', '180-Day Warranty if We Fix It'].map(item => (
+                {['Honest Repair vs Replace Advice', '$80 Applied to Repair Cost', '180-Day Warranty if We Fix It'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
                     <span style={{ color: '#FF5722', fontFamily: F, fontWeight: 700, fontSize: 13 }}>{'\u2713'}</span>
                     <span style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>{item}</span>
                   </div>
                 ))}
                 <a href="tel:+17605435733" className="phone-cta" data-testid="sidebar-call" style={{ display: 'block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: 14, borderRadius: 4, textAlign: 'center', textDecoration: 'none', marginTop: 20, transition: 'background 0.2s' }}>Call (760) 543-5733</a>
-                <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ display: 'block', background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: 14, borderRadius: 4, textAlign: 'center', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.25)', marginTop: 8, transition: 'background 0.2s' }} aria-label="opens in new tab">Book $60 Diagnostic</a>
+                <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="book-cta" style={{ display: 'block', background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: 14, borderRadius: 4, textAlign: 'center', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.25)', marginTop: 8, transition: 'background 0.2s' }} aria-label="opens in new tab">Book $80 Diagnostic</a>
               </div>
 
               {/* Widget 2: Quick Decision Guide */}
@@ -504,7 +504,7 @@ const RepairVsReplace = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Appliance Repair in Bay Area', body: 'Fast repair for all major brands. $60 diagnostic, 180-day warranty.', link: 'View Services', href: '/services' },
+                { tag: 'SERVICE', title: 'Appliance Repair in Bay Area', body: 'Fast repair for all major brands. $80 diagnostic, 180-day warranty.', link: 'View Services', href: '/services' },
                 { tag: 'ARTICLE', title: '5 Reasons Your Refrigerator Isn\'t Cooling', body: 'DIY fixes and when to call a professional in the Bay Area.', link: 'Read Article', href: '/blog/refrigerator-not-cooling' },
                 { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (

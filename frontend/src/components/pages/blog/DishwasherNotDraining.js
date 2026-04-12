@@ -39,8 +39,8 @@ const FAQ_ITEMS = [
   { q: 'Why is there standing water at the bottom of my dishwasher after a cycle?', a: 'The most common cause is a clogged filter\u2014the cylindrical filter at the bottom of the tub traps food particles and should be cleaned monthly. If the filter is clean, check the drain hose for kinks or clogs, then verify your garbage disposal connection. In our experience, 80% of drainage problems are fixed by cleaning the filter or clearing a blocked drain hose\u2014both easy DIY repairs under 10 minutes.' },
   { q: 'How do I know if my dishwasher drain pump is bad?', a: 'During the drain cycle (typically near the end of the wash cycle), listen for a humming or whirring sound\u2014that\u2019s the pump working. Silence during the drain cycle often means the pump isn\u2019t running. A loud grinding or buzzing sound suggests the pump is running but obstructed. If the pump sounds fine but water still won\u2019t drain, the pump may have an electrical failure and needs professional diagnosis.' },
   { q: 'My dishwasher was just installed \u2014 why won\u2019t it drain?', a: 'If your dishwasher was just installed and has never drained properly, the garbage disposal knockout plug is almost certainly the issue. When a dishwasher drains into a garbage disposal, the installer must remove a small plastic plug from the disposal\u2019s inlet port. If it\u2019s still in place, water has nowhere to go.' },
-  { q: 'Can I use my dishwasher if it\u2019s not draining properly?', a: 'We recommend fixing the drainage issue before running more cycles. Standing water can become a breeding ground for bacteria and mold. More importantly, if the drain pump is running against a stubborn clog, continued use can burn out the motor\u2014turning an easy $60 repair into a $200+ pump replacement.' },
-  { q: 'How much does dishwasher drain repair cost in the Bay Area?', a: 'If the fix is cleaning the filter or clearing a hose kink, it\u2019s a free DIY repair. If the issue requires professional service\u2014like replacing a drain pump, check valve, or control board\u2014FixitBay charges a $60 diagnostic fee applied toward the repair cost. Most drain pump replacements run $250\u2013$350 total, parts and labor included, with a 180-day warranty.' },
+  { q: 'Can I use my dishwasher if it\u2019s not draining properly?', a: 'We recommend fixing the drainage issue before running more cycles. Standing water can become a breeding ground for bacteria and mold. More importantly, if the drain pump is running against a stubborn clog, continued use can burn out the motor\u2014turning an easy $80 repair into a $200+ pump replacement.' },
+  { q: 'How much does dishwasher drain repair cost in the Bay Area?', a: 'If the fix is cleaning the filter or clearing a hose kink, it\u2019s a free DIY repair. If the issue requires professional service\u2014like replacing a drain pump, check valve, or control board\u2014FixitBay charges a $80 diagnostic fee applied toward the repair cost. Most drain pump replacements run $250\u2013$350 total, parts and labor included, with a 180-day warranty.' },
 ];
 
 const DarkBox = ({ label, steps }) => (
@@ -98,7 +98,7 @@ const DishwasherNotDraining = () => {
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
       { "@type": "Question", "name": "Why is there standing water at the bottom of my dishwasher?", "acceptedAnswer": { "@type": "Answer", "text": "Most commonly a clogged filter. Clean the cylindrical filter at the bottom of the tub. If clean, check the drain hose for kinks. These two fixes solve 80% of drainage problems." } },
       { "@type": "Question", "name": "How do I know if my dishwasher drain pump is bad?", "acceptedAnswer": { "@type": "Answer", "text": "Listen during the drain cycle. You should hear a humming or whirring sound. Silence means the pump is not running. Grinding or buzzing means it's obstructed. If clear but not working, it needs replacement." } },
-      { "@type": "Question", "name": "How much does dishwasher drain repair cost?", "acceptedAnswer": { "@type": "Answer", "text": "Filter cleaning and hose clearing are free DIY fixes. Professional drain pump replacement runs $250-$350 total with FixitBay's $60 diagnostic applied to the repair. 180-day warranty included." } }
+      { "@type": "Question", "name": "How much does dishwasher drain repair cost?", "acceptedAnswer": { "@type": "Answer", "text": "Filter cleaning and hose clearing are free DIY fixes. Professional drain pump replacement runs $250-$350 total with FixitBay's $80 diagnostic applied to the repair. 180-day warranty included." } }
     ] } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://fixitbay.net/blog" }, { "@type": "ListItem", "position": 3, "name": "Dishwasher Not Draining", "item": "https://fixitbay.net/blog/dishwasher-not-draining" }] } }
   ], []);
@@ -264,7 +264,7 @@ const DishwasherNotDraining = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Not sure what's causing it?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Our SF technicians diagnose and fix it same day. $60 diagnostic · 180-day warranty.</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Our SF technicians diagnose and fix it same day. $80 diagnostic · 180-day warranty.</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
@@ -351,7 +351,7 @@ const DishwasherNotDraining = () => {
                 <div style={EYE}>PROFESSIONAL DISHWASHER REPAIR</div>
                 <p style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Not Sure What's Causing the Issue?</p>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20, maxWidth: 540, margin: '0 auto 20px' }}>
-                  Our San Francisco technicians can diagnose and fix it same day. $60 diagnostic applied to your repair. All brands, all models. <a href="/dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>Dishwasher repair</a> &middot; <a href="/san-francisco-dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>SF dishwasher repair</a>.
+                  Our San Francisco technicians can diagnose and fix it same day. $80 diagnostic applied to your repair. All brands, all models. <a href="/dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>Dishwasher repair</a> &middot; <a href="/san-francisco-dishwasher-repair" style={{ color: '#FF5722', textDecoration: 'none', fontWeight: 600 }}>SF dishwasher repair</a>.
                 </p>
                 <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
                   <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
@@ -376,7 +376,7 @@ const DishwasherNotDraining = () => {
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>DISHWASHER NOT DRAINING?</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Same-Day Repair Available</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>All brands and models. $60 diagnostic applied to repair. 180-day warranty.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>All brands and models. $80 diagnostic applied to repair. 180-day warranty.</p>
                 <div style={{ borderBottom: '1px solid rgba(255,255,255,0.08)', marginBottom: 16 }} />
                 {['All Dishwasher Brands', 'Same-Day Scheduling', '180-Day Warranty on Parts & Labor'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>

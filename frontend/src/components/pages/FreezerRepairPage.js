@@ -75,7 +75,7 @@ const FreezerRepairPage = () => {
         appliance="Freezer"
         pageSlug="freezer-repair"
         pageTitle="Freezer Repair in San Francisco | FixitBay"
-        metaDescription="Expert freezer repair in San Francisco. Standalone and built-in freezers. $60 diagnostic applied to repair. 180-day warranty."
+        metaDescription="Expert freezer repair in San Francisco. Standalone and built-in freezers. $80 diagnostic applied to repair. 180-day warranty."
         heroTitle={<>Expert Freezer<br />Repair in SF. Today.</>}
         techImage="/images/technicians/freezer-tech.jpg"
         techImageAlt="FixitBay technician repairing a freezer in a San Francisco home"
@@ -98,7 +98,7 @@ const FreezerRepairPage = () => {
       serviceSchema={serviceSchema}
       appliance="Freezer"
       pageTitle="Freezer Repair in San Francisco | FixitBay"
-      metaDescription="Expert freezer repair in San Francisco. Standalone and built-in freezers. $60 diagnostic applied to repair. 180-day warranty."
+      metaDescription="Expert freezer repair in San Francisco. Standalone and built-in freezers. $80 diagnostic applied to repair. 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       heroImage="/images/technicians/freezer-tech.jpg"
@@ -106,7 +106,7 @@ const FreezerRepairPage = () => {
       serviceDescription={{
         title: "Emergency Freezer Repair Service",
         paragraphs: [
-          <>Freezer failures require urgent attention to prevent food spoilage. Our licensed technicians provide emergency priority service for both upright and chest freezers. We diagnose temperature control failures, compressor issues, defrost system malfunctions, and door seal problems. We charge a <strong>$60 diagnostic fee</strong> (waived with repair) and prioritize your service to save your frozen food.</>,
+          <>Freezer failures require urgent attention to prevent food spoilage. Our licensed technicians provide emergency priority service for both upright and chest freezers. We diagnose temperature control failures, compressor issues, defrost system malfunctions, and door seal problems. We charge a <strong>$80 diagnostic fee</strong> (waived with repair) and prioritize your service to save your frozen food.</>,
           <>Our freezer repair process includes testing thermostats, checking compressor operation, inspecting evaporator fans, and examining defrost timers. We use specialized tools to detect refrigerant leaks and measure temperature accuracy. Most freezer repairs—from thermostat replacement to defrost system fixes—are completed during our first visit with parts stocked for all major brands.</>,
           <>Whether your freezer isn't freezing properly, has excessive frost buildup, or stopped running completely, we'll diagnose and fix it fast. We service standalone freezers, chest freezers, and built-in freezer units from Frigidaire, GE, Whirlpool, Kenmore, and more. Every freezer repair includes our <strong>180-day warranty</strong> on parts and labor.</>
         ]

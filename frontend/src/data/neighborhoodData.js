@@ -247,7 +247,7 @@ const neighborhoodData = {
     quickFaq: [
       { q: 'Does low water pressure on Bernal Hill really affect my dishwasher?', a: 'Yes. Homes above Cortland Avenue can see 10–20% less pressure than flats at the base. Dishwashers need at least 20 PSI to fill correctly. We test your pressure and adjust the fill cycle if possible.' },
       { q: 'My old galvanized pipes cause problems. Can you still fix my appliances?', a: 'Yes. We work around galvanized plumbing constantly in Bernal. If the drain pipe is restricted, we\'ll clear the blockage and recommend a plumber for long-term pipe replacement. Your appliances themselves are usually fine.' },
-      { q: 'Do you charge extra for hilltop homes?', a: 'No. The $60 diagnostic fee is the same everywhere in our service area. Bernal\'s hills don\'t change our pricing.' },
+      { q: 'Do you charge extra for hilltop homes?', a: 'No. The $80 diagnostic fee is the same everywhere in our service area. Bernal\'s hills don\'t change our pricing.' },
     ],
   },
   'potrero-hill': {

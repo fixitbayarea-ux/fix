@@ -75,7 +75,7 @@ const DynamicLandingPage = () => {
     { icon: <CheckCircle className="w-5 h-5" />, text: "Same/Next Day Service" },
     { icon: <Star className="w-5 h-5" />, text: "5-Star Rated" },
     { icon: <Wrench className="w-5 h-5" />, text: "180-Day Warranty" },
-    { icon: <MapPin className="w-5 h-5" />, text: "Service Call: Free with Repair (otherwise $60)" },
+    { icon: <MapPin className="w-5 h-5" />, text: "Service Call: Free with Repair (otherwise $80)" },
     { icon: <Shield className="w-5 h-5" />, text: "Licensed & Insured" }
   ];
 

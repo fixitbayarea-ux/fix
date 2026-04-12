@@ -51,7 +51,7 @@ const AboutPage = () => {
   const schemas = useMemo(() => [
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://fixitbay.net/about" }] } },
     { id: 'person-schema', data: { "@context": "https://schema.org", "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Repair Technician", "worksFor": { "@type": "LocalBusiness", "name": "FixitBay LLC" }, "description": "Licensed CA appliance repair technician (License #51001) with 3+ years of hands-on appliance repair experience in the Bay Area. Former cargo ship mechanical engineer.", "hasCredential": "BHGS License #51001", "knowsAbout": ["appliance repair", "refrigerator repair", "washer repair", "dryer repair", "dishwasher repair", "oven repair"] } },
-    { id: 'video-schema-1', data: { "@context": "https://schema.org", "@type": "VideoObject", "name": "Professional Appliance Repair Service — FixitBay LLC SF Bay Area", "description": "Watch FixitBay LLC licensed technician diagnose and repair appliances in San Francisco Bay Area. $60 diagnostic, 180-day warranty.", "thumbnailUrl": "https://i.ytimg.com/vi/WBEc8Lz2saA/hqdefault.jpg", "uploadDate": "2024-01-01T00:00:00+00:00", "duration": "PT1M", "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/logo192.png" } } } },
+    { id: 'video-schema-1', data: { "@context": "https://schema.org", "@type": "VideoObject", "name": "Professional Appliance Repair Service — FixitBay LLC SF Bay Area", "description": "Watch FixitBay LLC licensed technician diagnose and repair appliances in San Francisco Bay Area. $80 diagnostic, 180-day warranty.", "thumbnailUrl": "https://i.ytimg.com/vi/WBEc8Lz2saA/hqdefault.jpg", "uploadDate": "2024-01-01T00:00:00+00:00", "duration": "PT1M", "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/logo192.png" } } } },
     { id: 'video-schema-2', data: { "@context": "https://schema.org", "@type": "VideoObject", "name": "Expert Appliance Technician at Work — FixitBay LLC Bay Area", "description": "FixitBay LLC expert technician Andrei demonstrates professional appliance repair in the San Francisco Bay Area. Licensed, insured, 180-day warranty.", "thumbnailUrl": "https://i.ytimg.com/vi/ottiV_KfcUI/hqdefault.jpg", "uploadDate": "2024-01-01T00:00:00+00:00", "duration": "PT1M", "embedUrl": "https://www.youtube.com/embed/ottiV_KfcUI", "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/logo192.png" } } } }
   ], []);
   useSchemas(schemas);
@@ -116,7 +116,7 @@ const AboutPage = () => {
                 'Licensed CA Technician #51001',
                 '4.9 Google Reviews',
                 '180-Day Warranty',
-                '$60 Diagnostic',
+                '$80 Diagnostic',
               ].map((badge, i) => (
                 <div key={i} style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
                   <span style={{ color: '#FF5722', fontFamily: F, fontWeight: 700, fontSize: 13 }}>{'\u2713'}</span>
@@ -228,7 +228,7 @@ const AboutPage = () => {
             </div>
           </div>
           <p data-testid="video-description" style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.55)', textAlign: 'center', maxWidth: 700, margin: '24px auto 0', lineHeight: 1.7 }}>
-            Every FixitBay LLC repair starts with a thorough $60 diagnostic — we identify the root cause, explain the issue, and provide a written estimate before any work begins. All repairs include our 180-day warranty on parts and labor.
+            Every FixitBay LLC repair starts with a thorough $80 diagnostic — we identify the root cause, explain the issue, and provide a written estimate before any work begins. All repairs include our 180-day warranty on parts and labor.
           </p>
           <div style={{ textAlign: 'center', marginTop: 32 }}>
             <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="phone-cta" style={{ display: 'inline-block', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} aria-label="opens in new tab">Book Your Repair Today</a>
@@ -263,7 +263,7 @@ const AboutPage = () => {
           <div className="why-grid" style={{ maxWidth: 1000, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 20 }}>
             {[
               { num: '01', title: 'Licensed & Insured', body: 'Fully licensed CA Technician (License #51001). Insured for your protection. Professional service you can trust.' },
-              { num: '02', title: 'Honest, Transparent Pricing', body: '$60 diagnostic fee fully applied to your repair cost \u2014 you never pay it twice. Upfront written estimate before any work begins. No surprises.' },
+              { num: '02', title: 'Honest, Transparent Pricing', body: '$80 diagnostic fee fully applied to your repair cost \u2014 you never pay it twice. Upfront written estimate before any work begins. No surprises.' },
               { num: '03', title: '180-Day Warranty', body: 'All repairs backed by a 180-day warranty on parts and labor. If the same issue returns within 180 days, we come back at no charge.' },
               { num: '04', title: 'Truly Local Service', body: 'Serving San Francisco, Marin County, and Peninsula communities. We\u2019re your neighbors \u2014 not a call center franchise.' },
             ].map((card, i) => (
@@ -284,7 +284,7 @@ const AboutPage = () => {
           </div>
           <div className="words-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 24, maxWidth: 1000, margin: '0 auto' }}>
             {[
-              { q: 'How do you work with new customers?', a: "First I listen carefully to the issue \u2014 every detail helps. I schedule a visit to diagnose the problem ($60 diagnostic). If you move forward, that fee goes toward the total cost. I explain what's going on, suggest options, and provide a clear estimate. No pressure, no hidden fees \u2014 just honest service and a 180-day warranty on both labor and parts." },
+              { q: 'How do you work with new customers?', a: "First I listen carefully to the issue \u2014 every detail helps. I schedule a visit to diagnose the problem ($80 diagnostic). If you move forward, that fee goes toward the total cost. I explain what's going on, suggest options, and provide a clear estimate. No pressure, no hidden fees \u2014 just honest service and a 180-day warranty on both labor and parts." },
               { q: "A recent project you're proud of?", a: "A $10,000 Sub-Zero fridge for an SF homeowner \u2014 it kept failing right before family meals, and they were stressed. Over two days I diagnosed the issue, replaced the compressor, and got it running like new. When the cool air kicked in, they were so relieved. I was proud to save them from buying a new fridge." },
               { q: 'What advice for hiring a repair technician?', a: "Look for someone with real experience and a track record of reliability. Make sure they're clear about pricing and explain things in a way that makes sense. A good tech won't rush \u2014 they care about doing it right. And don't underestimate reviews or word of mouth \u2014 they tell you a lot." },
             ].map((card, i) => (

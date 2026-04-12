@@ -137,7 +137,7 @@ const BlogPostPage = () => {
         {/* CTA */}
         <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 text-center mb-10">
           <h2 className="text-2xl font-bold mb-3" style={{ color: '#1A3B5D' }}>Need Appliance Repair?</h2>
-          <p className="text-gray-600 mb-6">Fast scheduling available across the Bay Area. $60 diagnostic applied to repair.</p>
+          <p className="text-gray-600 mb-6">Fast scheduling available across the Bay Area. $80 diagnostic applied to repair.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="/book?go=1"
               className="px-6 py-3 font-bold rounded-lg text-white" style={{ backgroundColor: '#C0362C' }}>

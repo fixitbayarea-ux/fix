@@ -123,7 +123,7 @@ const AdminDashboard = ({ onLogout }) => {
                 </label>
                 <input
                   type="text"
-                  defaultValue="Service Call FREE with repair (otherwise $60)"
+                  defaultValue="Service Call FREE with repair (otherwise $80)"
                   className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2"
                   style={{ focusRingColor: '#C0362C' }}
                 />

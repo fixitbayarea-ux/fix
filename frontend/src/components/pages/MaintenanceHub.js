@@ -259,7 +259,7 @@ const MaintenanceHub = () => {
   const faqData = [
     {
       question: 'How much does appliance maintenance cost?',
-      answer: 'For residential appliances, we charge a $60 diagnostic and maintenance service fee. For commercial equipment, the fee is $100. This covers our technician\'s visit, thorough inspection, cleaning, minor adjustments, and detailed recommendations for keeping your appliances running efficiently.'
+      answer: 'For residential appliances, we charge a $80 diagnostic and maintenance service fee. For commercial equipment, the fee is $100. This covers our technician\'s visit, thorough inspection, cleaning, minor adjustments, and detailed recommendations for keeping your appliances running efficiently.'
     },
     {
       question: 'How often should I schedule maintenance?',
@@ -283,7 +283,7 @@ const MaintenanceHub = () => {
     <ApplianceRepairPageNew
       appliance="Appliance Maintenance"
       pageTitle="Professional Appliance Maintenance Services"
-      metaDescription="Preventive appliance maintenance in San Francisco, Peninsula & Marin County. $60 residential, $100 commercial diagnostic fee. Licensed technicians, 180-day warranty."
+      metaDescription="Preventive appliance maintenance in San Francisco, Peninsula & Marin County. $80 residential, $100 commercial diagnostic fee. Licensed technicians, 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       breadcrumbCategoryName="Maintenance"
@@ -292,7 +292,7 @@ const MaintenanceHub = () => {
       serviceDescription={{
         title: "Professional Preventive Maintenance Service",
         paragraphs: [
-          <>When you schedule maintenance with FixitBay LLC, our licensed technicians arrive fully equipped to perform comprehensive inspections and preventive service. For <strong>residential appliances, we charge a $60 diagnostic and maintenance fee</strong>. For <strong>commercial equipment, the fee is $100</strong>. This covers our technician's visit, thorough inspection, cleaning, minor adjustments, and detailed recommendations.</>,
+          <>When you schedule maintenance with FixitBay LLC, our licensed technicians arrive fully equipped to perform comprehensive inspections and preventive service. For <strong>residential appliances, we charge a $80 diagnostic and maintenance fee</strong>. For <strong>commercial equipment, the fee is $100</strong>. This covers our technician's visit, thorough inspection, cleaning, minor adjustments, and detailed recommendations.</>,
           <>Our maintenance service includes cleaning critical components (coils, filters, lint traps), checking electrical connections and wiring, testing temperature controls and thermostats, inspecting hoses and door seals, lubricating moving parts, verifying proper operation, and identifying potential issues before they become costly repairs. We provide a detailed report of findings and recommendations.</>,
           <>Whether you need maintenance for home appliances (refrigerators, washers, dryers, dishwashers, ovens) or commercial equipment (walk-in coolers, commercial washers, restaurant ovens), we provide the same professional service. Every maintenance visit includes our <strong>180-day warranty</strong> on work performed, ensuring your appliances run reliably long after we leave.</>
         ]
@@ -315,7 +315,7 @@ const MaintenanceHub = () => {
         <div style={{ maxWidth: 900, margin: '0 auto', padding: '0 24px' }}>
           <h2 style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 800, fontSize: 32, color: '#0D1B2A', marginBottom: 16, lineHeight: 1.2 }}>Maintenance Plans & Pricing</h2>
           <p style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.8, marginBottom: 20 }}>
-            FixitBay LLC offers straightforward maintenance pricing: <strong>$60 for residential appliances</strong> and <strong>$100 for commercial equipment</strong>. Each maintenance visit includes a full inspection, cleaning of critical components, minor adjustments, and a detailed report of findings and recommendations. All maintenance work is backed by our 180-day warranty. For businesses with multiple units, we offer scheduled maintenance programs to keep all your equipment running reliably year-round.
+            FixitBay LLC offers straightforward maintenance pricing: <strong>$80 for residential appliances</strong> and <strong>$100 for commercial equipment</strong>. Each maintenance visit includes a full inspection, cleaning of critical components, minor adjustments, and a detailed report of findings and recommendations. All maintenance work is backed by our 180-day warranty. For businesses with multiple units, we offer scheduled maintenance programs to keep all your equipment running reliably year-round.
           </p>
         </div>
       </section>

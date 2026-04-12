@@ -88,7 +88,7 @@ const ContactPage = () => {
     <>
       <SEOMetaTags
         title="Contact FixitBay LLC | Appliance Repair San Francisco"
-        description="Contact FixitBay LLC for fast appliance repair in San Francisco Bay Area. Call (760) 543-5733 or book online. Licensed technicians, $60 diagnostic, 180-day warranty."
+        description="Contact FixitBay LLC for fast appliance repair in San Francisco Bay Area. Call (760) 543-5733 or book online. Licensed technicians, $80 diagnostic, 180-day warranty."
         canonical="https://fixitbay.net/contact"
       />
 
@@ -426,7 +426,7 @@ const ContactPage = () => {
           <div style={{ maxWidth: 700, margin: '0 auto' }}>
             <div style={{ ...EYE, color: '#FF5722' }}>READY TO BOOK?</div>
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 40, color: '#fff', marginBottom: 12 }}>Schedule Your Repair Today</h2>
-            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.75)', marginBottom: 32 }}>$60 diagnostic credited toward repair &middot; 180-day warranty &middot; Fast scheduling</p>
+            <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.75)', marginBottom: 32 }}>$80 diagnostic credited toward repair &middot; 180-day warranty &middot; Fast scheduling</p>
             <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: 4, padding: '14px 32px', marginBottom: 32 }}>
               <span style={{ fontFamily: F, fontWeight: 500, fontSize: 14, color: 'rgba(255,255,255,0.65)' }}>Mon&ndash;Fri 8AM&ndash;6PM &middot; Sat 8AM&ndash;3PM &middot; Sun Closed</span>
             </div>

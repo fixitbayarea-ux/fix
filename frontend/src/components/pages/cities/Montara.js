@@ -28,7 +28,7 @@ const Montara = () => {
     paragraphs: [
       'Montara\'s dramatic Pacific coastline represents one of the Bay Area\'s harshest environments for home appliances. Direct ocean exposure, constant salt spray, and marine layer fog challenge refrigerators, dryers, and gas appliances daily. Our technicians specialize in coastal appliance service, understanding the unique corrosion, moisture, and salt-air issues that Montara homeowners face.',
       'We serve Montara\'s beachfront homes, Highway 1 properties, and hillside residences, accessing the area via the scenic coastal route. Our vans carry corrosion-resistant parts and components designed to withstand Montara\'s marine environment. We stock parts that resist salt-air damage and understand prevention strategies for recurring coastal failures.',
-      'Fast scheduling is available in Montara with a $60 diagnostic fee credited toward repairs. We provide honest assessments of coastal damage and use durable parts when beneficial. Every repair includes a 180-day warranty, and our licensed technicians are coastal climate specialists experienced with extreme marine environments.'
+      'Fast scheduling is available in Montara with a $80 diagnostic fee credited toward repairs. We provide honest assessments of coastal damage and use durable parts when beneficial. Every repair includes a 180-day warranty, and our licensed technicians are coastal climate specialists experienced with extreme marine environments.'
     ]
   };
 
@@ -37,7 +37,7 @@ const Montara = () => {
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
         pageTitle="Appliance Repair in Montara | FixitBay"
-        metaDescription="Coastal appliance repair in Montara. Salt-air and ocean exposure specialists. $60 diagnostic, 180-day warranty. Call (760) 543-5733."
+        metaDescription="Coastal appliance repair in Montara. Salt-air and ocean exposure specialists. $80 diagnostic, 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

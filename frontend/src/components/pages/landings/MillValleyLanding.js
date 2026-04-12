@@ -6,7 +6,7 @@ const MillValleyLanding = () => (
     city="Mill Valley"
     citySlug="mill-valley"
     pageTitle="Appliance Repair Mill Valley | Same-Day | FixitBay LLC"
-    metaDescription="Fast, licensed appliance repair in Mill Valley. $60 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
+    metaDescription="Fast, licensed appliance repair in Mill Valley. $80 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
     neighborhoods={['Downtown Mill Valley', 'Blithedale Canyon', 'Cascade Canyon', 'Alto', 'Tamalpais Valley', 'Strawberry', 'Homestead Valley', 'Scott Valley', 'Enchanted Knolls', 'Country Club']}
     localExpertise="Mill Valley is Marin County's most affluent community, and the kitchens reflect it. Sub-Zero refrigerators, Wolf ranges, Miele dishwashers, and Thermador cooktops are standard in Mill Valley homes. Our technicians are factory-trained on these luxury brands and understand the precision required for high-end appliance repair."
     homeTypes="Mill Valley's housing ranges from historic redwood cabins in the canyons to contemporary hillside estates with panoramic views. Kitchens in newer Mill Valley homes feature professional-grade built-in appliances that demand specialized service. We also maintain appliances in Strawberry's condos and Alto's townhomes."
@@ -27,7 +27,7 @@ const MillValleyLanding = () => (
     faqData={[
       { question: 'Do you repair Sub-Zero and Wolf in Mill Valley?', answer: 'Yes. We are experienced with all luxury brands including Sub-Zero, Wolf, Miele, Thermador, Viking, and Bosch. Our technicians carry specialized diagnostic tools for these brands.' },
       { question: 'How fast can you get to Mill Valley?', answer: 'We offer same- or next-day appointments in Mill Valley. Most morning bookings are confirmed for the same day. We access all Mill Valley neighborhoods including the canyons.' },
-      { question: 'What does luxury appliance repair cost in Mill Valley?', answer: 'Diagnostic is $60, applied toward repair. Standard repairs range $250–$450. Luxury brand repairs (Sub-Zero, Wolf, Miele) typically run $350–$650 depending on parts needed.' },
+      { question: 'What does luxury appliance repair cost in Mill Valley?', answer: 'Diagnostic is $80, applied toward repair. Standard repairs range $250–$450. Luxury brand repairs (Sub-Zero, Wolf, Miele) typically run $350–$650 depending on parts needed.' },
       { question: 'Do you service Mill Valley canyon homes?', answer: 'Absolutely. We regularly service homes in Blithedale Canyon, Cascade Canyon, and Homestead Valley. Our technicians know the narrow roads and are equipped for hillside access.' },
       { question: 'Are you licensed in Marin County?', answer: 'Yes. FixitBay LLC holds CA License #51001 and is fully insured for appliance repair throughout Marin County, including Mill Valley.' },
     ]}

@@ -24,7 +24,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Expert Maytag Appliance Repair in San Francisco Bay Area',
   paragraphs: [
-    "Maytag is known for dependable, heavy-duty appliances. Our technicians repair all Maytag models. $60 diagnostic fee credited toward repairs.",
+    "Maytag is known for dependable, heavy-duty appliances. Our technicians repair all Maytag models. $80 diagnostic fee credited toward repairs.",
     "We specialize in Maytag's commercial-grade residential technology and heavy-duty wash systems.",
     "Same- or next-day service throughout SF Bay Area. 180-day warranty on parts and labor.",
   ],

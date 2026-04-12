@@ -210,77 +210,77 @@ const CITY_SEO_DATA = {
         <a href="/san-francisco/bernal-heights-appliance-repair" style="color:#1A3B5D;text-decoration:none;display:inline-block;padding:0.4rem 0.8rem;border:1px solid #E5E7EB;border-radius:0.5rem;font-size:0.875rem;font-weight:600;">Bernal Heights</a>
         <a href="/san-francisco/potrero-hill-appliance-repair" style="color:#1A3B5D;text-decoration:none;display:inline-block;padding:0.4rem 0.8rem;border:1px solid #E5E7EB;border-radius:0.5rem;font-size:0.875rem;font-weight:600;">Potrero Hill</a>
       </div>
-      <p>$60 diagnostic fee credited toward your repair. Same-day and next-day appointments. 180-day warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book">book online</a>.</p>
+      <p>$80 diagnostic fee credited toward your repair. Same-day and next-day appointments. 180-day warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book">book online</a>.</p>
     `
   },
   'daly-city': {
     title: 'Appliance Repair Daly City | Same-Day | FixitBay LLC',
-    description: 'Appliance repair in Daly City. Same-day service in Westlake, Serramonte & all neighborhoods. $60 diagnostic applied to repair. Call (760) 543-5733.',
+    description: 'Appliance repair in Daly City. Same-day service in Westlake, Serramonte & all neighborhoods. $80 diagnostic applied to repair. Call (760) 543-5733.',
     h1: 'Daly City Appliance Repair — Coastal Climate Experts',
     content: `
       <p style="margin-bottom:1rem;">Daly City's location on the San Francisco Peninsula creates unique challenges for home appliances. The city's famous fog belt brings persistent moisture that affects dryer performance, refrigerator humidity control, and gas appliance igniters. Our technicians understand these local conditions and come prepared with the right parts and solutions for Daly City's coastal microclimate.</p>
       <p style="margin-bottom:1rem;">From Westlake's hillside homes to Serramonte's shopping district condos, we navigate Daly City's diverse neighborhoods daily. We're familiar with the area's housing stock — from 1960s tract homes to modern townhomes — and the specific appliance issues each style faces. Our vans are stocked with parts that commonly fail in Daly City's moisture-rich environment.</p>
-      <p>We offer same-day service throughout Daly City — Westlake, Serramonte, Top of the Hill, St. Francis Heights, Crocker, Mission Terrace, Bayshore — with a $60 diagnostic fee credited toward repairs. 180-day parts and labor warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>We offer same-day service throughout Daly City — Westlake, Serramonte, Top of the Hill, St. Francis Heights, Crocker, Mission Terrace, Bayshore — with a $80 diagnostic fee credited toward repairs. 180-day parts and labor warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
 
   'south-san-francisco-landing': {
     title: 'Appliance Repair South San Francisco | FixitBay LLC',
-    desc: 'Fast, licensed appliance repair in South San Francisco. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    desc: 'Fast, licensed appliance repair in South San Francisco. $80 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
     h1: 'Appliance Repair in South San Francisco',
-    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in South San Francisco. SSF's biotech corridor and mid-century homes need reliable appliance repair. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in South San Francisco</h2><p><a href="/south-san-francisco-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/south-san-francisco-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/south-san-francisco-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/south-san-francisco-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/south-san-francisco-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in South San Francisco. SSF's biotech corridor and mid-century homes need reliable appliance repair. Same- or next-day appointments. $80 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in South San Francisco</h2><p><a href="/south-san-francisco-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/south-san-francisco-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/south-san-francisco-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/south-san-francisco-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/south-san-francisco-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
     links: ['/', '/service-areas', '/south-san-francisco-refrigerator-repair', '/south-san-francisco-washer-repair', '/south-san-francisco-dryer-repair']
   },
   'san-bruno-landing': {
     title: 'Appliance Repair San Bruno | Same-Day | FixitBay LLC',
-    desc: 'Fast, licensed appliance repair in San Bruno. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    desc: 'Fast, licensed appliance repair in San Bruno. $80 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
     h1: 'Appliance Repair in San Bruno',
-    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in San Bruno. Samsung and Bosch are the most popular brands in San Bruno's suburban ranch homes. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in San Bruno</h2><p><a href="/san-bruno-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/san-bruno-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/san-bruno-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/san-bruno-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/san-bruno-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in San Bruno. Samsung and Bosch are the most popular brands in San Bruno's suburban ranch homes. Same- or next-day appointments. $80 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in San Bruno</h2><p><a href="/san-bruno-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/san-bruno-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/san-bruno-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/san-bruno-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/san-bruno-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
     links: ['/', '/service-areas', '/san-bruno-refrigerator-repair', '/san-bruno-washer-repair', '/san-bruno-dryer-repair']
   },
   'millbrae-landing': {
     title: 'Appliance Repair Millbrae | FixitBay LLC',
-    desc: 'Fast, licensed appliance repair in Millbrae. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    desc: 'Fast, licensed appliance repair in Millbrae. $80 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
     h1: 'Appliance Repair in Millbrae',
-    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Millbrae. Millbrae's upscale homes feature Thermador, Bosch, and Sub-Zero appliances. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Millbrae</h2><p><a href="/millbrae-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/millbrae-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/millbrae-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/millbrae-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/millbrae-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Millbrae. Millbrae's upscale homes feature Thermador, Bosch, and Sub-Zero appliances. Same- or next-day appointments. $80 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Millbrae</h2><p><a href="/millbrae-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/millbrae-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/millbrae-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/millbrae-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/millbrae-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
     links: ['/', '/service-areas', '/millbrae-refrigerator-repair', '/millbrae-washer-repair', '/millbrae-dryer-repair']
   },
   'colma-landing': {
     title: 'Appliance Repair Colma | FixitBay LLC',
-    desc: 'Fast, licensed appliance repair in Colma. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    desc: 'Fast, licensed appliance repair in Colma. $80 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
     h1: 'Appliance Repair in Colma',
-    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Colma. Colma's coastal humidity accelerates appliance wear on gaskets and metal parts. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Colma</h2><p><a href="/colma-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/colma-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/colma-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/colma-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/colma-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Colma. Colma's coastal humidity accelerates appliance wear on gaskets and metal parts. Same- or next-day appointments. $80 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Colma</h2><p><a href="/colma-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/colma-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/colma-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/colma-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/colma-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
     links: ['/', '/service-areas', '/colma-refrigerator-repair', '/colma-washer-repair', '/colma-dryer-repair']
   },
   'pacifica-landing': {
     title: 'Appliance Repair Pacifica | Same-Day | FixitBay LLC',
-    desc: 'Fast, licensed appliance repair in Pacifica. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    desc: 'Fast, licensed appliance repair in Pacifica. $80 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
     h1: 'Appliance Repair in Pacifica',
-    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Pacifica. Pacifica's salt air and fog cause corrosion on refrigerator hinges and dryer components. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Pacifica</h2><p><a href="/pacifica-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/pacifica-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/pacifica-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/pacifica-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/pacifica-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Pacifica. Pacifica's salt air and fog cause corrosion on refrigerator hinges and dryer components. Same- or next-day appointments. $80 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Pacifica</h2><p><a href="/pacifica-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/pacifica-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/pacifica-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/pacifica-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/pacifica-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
     links: ['/', '/service-areas', '/pacifica-refrigerator-repair', '/pacifica-washer-repair', '/pacifica-dryer-repair']
   },
   'brisbane-landing': {
     title: 'Appliance Repair Brisbane | FixitBay LLC',
-    desc: 'Fast, licensed appliance repair in Brisbane. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    desc: 'Fast, licensed appliance repair in Brisbane. $80 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
     h1: 'Appliance Repair in Brisbane',
-    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Brisbane. Brisbane's hillside homes require technicians experienced with steep-access service. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Brisbane</h2><p><a href="/brisbane-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/brisbane-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/brisbane-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/brisbane-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/brisbane-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Brisbane. Brisbane's hillside homes require technicians experienced with steep-access service. Same- or next-day appointments. $80 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Brisbane</h2><p><a href="/brisbane-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/brisbane-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/brisbane-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/brisbane-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/brisbane-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
     links: ['/', '/service-areas', '/brisbane-refrigerator-repair', '/brisbane-washer-repair', '/brisbane-dryer-repair']
   },
   'mill-valley-landing': {
     title: 'Appliance Repair Mill Valley | FixitBay LLC',
-    desc: 'Fast, licensed appliance repair in Mill Valley. $60 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
+    desc: 'Fast, licensed appliance repair in Mill Valley. $80 diagnostic, 180-day warranty. Same or next day. Call FixitBay.',
     h1: 'Appliance Repair in Mill Valley',
-    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Mill Valley. Mill Valley's luxury homes feature Sub-Zero, Wolf, and Miele appliances. Same- or next-day appointments. $60 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Mill Valley</h2><p><a href="/mill-valley-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/mill-valley-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/mill-valley-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/mill-valley-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/mill-valley-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
+    content: `<p style="margin-bottom:1rem;">FixitBay LLC provides fast, licensed appliance repair in Mill Valley. Mill Valley's luxury homes feature Sub-Zero, Wolf, and Miele appliances. Same- or next-day appointments. $80 diagnostic credited toward repair. 180-day warranty.</p><p style="margin-bottom:1rem;">We repair refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, ice makers, and wine coolers. All major brands serviced.</p><h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Popular Repairs in Mill Valley</h2><p><a href="/mill-valley-refrigerator-repair" style="color:#C0362C;font-weight:bold;">Refrigerator Repair</a> &middot; <a href="/mill-valley-washer-repair" style="color:#C0362C;font-weight:bold;">Washer Repair</a> &middot; <a href="/mill-valley-dryer-repair" style="color:#C0362C;font-weight:bold;">Dryer Repair</a> &middot; <a href="/mill-valley-dishwasher-repair" style="color:#C0362C;font-weight:bold;">Dishwasher Repair</a> &middot; <a href="/mill-valley-oven-repair" style="color:#C0362C;font-weight:bold;">Oven Repair</a></p>`,
     links: ['/', '/service-areas', '/mill-valley-refrigerator-repair', '/mill-valley-washer-repair', '/mill-valley-dryer-repair']
   },
   'south-san-francisco': {
     title: 'Appliance Repair South San Francisco | Same-Day | FixitBay LLC',
-    description: 'Appliance repair in South San Francisco. Same-day service in Sunshine Gardens, Sign Hill & all SSF. $60 diagnostic applied to repair. 180-day warranty.',
+    description: 'Appliance repair in South San Francisco. Same-day service in Sunshine Gardens, Sign Hill & all SSF. $80 diagnostic applied to repair. 180-day warranty.',
     h1: 'South San Francisco Appliance Repair Services',
     content: `
       <p style="margin-bottom:1rem;">South San Francisco's position between San Francisco and the Peninsula creates a diverse service area from hilltop homes to bayfront apartments. As "The Industrial City," SSF combines residential neighborhoods with biotech campuses, requiring appliance expertise for both homes and light commercial spaces. Our technicians navigate SSF daily, from Sign Hill's elevated streets to Grand Avenue's commercial corridor.</p>
       <p style="margin-bottom:1rem;">We serve SSF's mix of post-war single-family homes, modern townhomes, and apartment complexes near BART and Caltrain. Our team understands challenges unique to SSF housing — from 1950s tract homes in Buri Buri to new developments near Oyster Point. We stock parts for residential appliances and light commercial break room equipment common in SSF workplaces.</p>
-      <p>Same-day service throughout South San Francisco: Sign Hill, Buri Buri, Avalon Park, Winston Manor, Sunshine Gardens. $60 diagnostic fee credited toward repairs. 180-day warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service throughout South San Francisco: Sign Hill, Buri Buri, Avalon Park, Winston Manor, Sunshine Gardens. $80 diagnostic fee credited toward repairs. 180-day warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'san-bruno': {
@@ -290,37 +290,37 @@ const CITY_SEO_DATA = {
     content: `
       <p style="margin-bottom:1rem;">San Bruno's central Peninsula location between San Francisco and the South Bay makes it a strategic service area for FixitBay. From the Tanforan shopping district to Portola Highlands' hilltop homes, we navigate San Bruno's neighborhoods daily. Our technicians know the area's mix of post-war tract homes, modern condos near BART, and hillside properties, along with the specific appliance challenges each housing type presents.</p>
       <p style="margin-bottom:1rem;">San Bruno's proximity to SFO and major highways means we can respond quickly to appliance emergencies. We serve residential properties throughout San Bruno's diverse neighborhoods, from Mills Park's family homes to downtown apartments. Our vans carry parts for common appliance failures, and we can source specialized components quickly from our Peninsula network.</p>
-      <p>Same-day service in San Bruno: downtown, Tanforan, Mills Park, Portola Highlands, Rollingwood. $60 diagnostic fee credited toward repairs. 180-day warranty. Also serve commercial appliances. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in San Bruno: downtown, Tanforan, Mills Park, Portola Highlands, Rollingwood. $80 diagnostic fee credited toward repairs. 180-day warranty. Also serve commercial appliances. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'pacifica': {
     title: 'Appliance Repair Pacifica | Same-Day | FixitBay LLC',
-    description: 'Coastal appliance repair in Pacifica. Fog and salt air experts. Same-day service. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+    description: 'Coastal appliance repair in Pacifica. Fog and salt air experts. Same-day service. $80 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
     h1: 'Coastal Appliance Repair Experts Serving Pacifica',
     content: `
       <p style="margin-bottom:1rem;">Pacifica's dramatic Pacific coastline creates one of the Bay Area's most challenging environments for home appliances. From Linda Mar's surf-side homes to Pedro Point's clifftop properties, marine layer fog, salt air, and coastal humidity take a toll on refrigerators, dryers, and gas appliances. Our technicians specialize in diagnosing and preventing the corrosion, moisture, and airflow issues unique to Pacifica's oceanfront location.</p>
       <p style="margin-bottom:1rem;">We serve all Pacifica neighborhoods daily: Sharp Park, Rockaway Beach, Vallemar, Pacific Manor, Fairmont, and the coastal Highway 1 corridor. Our vans carry corrosion-resistant parts and we stock components that commonly fail in Pacifica's salty marine environment — moisture-laden dryer vents, corroded gas igniters, and humidity-stressed refrigerators.</p>
-      <p>Same-day service across Pacifica. We factor salt-air and marine layer moisture into every repair. $60 diagnostic fee credited toward repairs. 180-day warranty even in coastal conditions. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service across Pacifica. We factor salt-air and marine layer moisture into every repair. $80 diagnostic fee credited toward repairs. 180-day warranty even in coastal conditions. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'millbrae': {
     title: 'Appliance Repair Millbrae | Same-Day | FixitBay LLC',
-    description: 'Appliance repair in Millbrae near BART. Licensed technicians. Same-day & next-day service. $60 diagnostic applied to repair. 180-day warranty.',
+    description: 'Appliance repair in Millbrae near BART. Licensed technicians. Same-day & next-day service. $80 diagnostic applied to repair. 180-day warranty.',
     h1: 'Millbrae Appliance Repair Services',
     content: `
       <p style="margin-bottom:1rem;">Millbrae's unique position on the San Francisco Bay creates a diverse community from bayside flats to hillside homes overlooking the water. Our technicians serve Millbrae daily, navigating from El Camino Real's commercial corridor to residential neighborhoods throughout the city. We understand Millbrae's mix of mid-century homes, modern condos near transit, and newer developments, along with the appliances common in each.</p>
       <p style="margin-bottom:1rem;">Millbrae's proximity to SFO and excellent transit connections make it a convenient service location. We serve residential properties throughout Millbrae's neighborhoods, from downtown apartments to hillside single-family homes. Our vans carry parts for frequent appliance failures, and our Peninsula network allows quick sourcing of specialized components.</p>
-      <p>Same-day service in Millbrae — near BART, Caltrain, and downtown. $60 diagnostic fee credited toward repairs. 180-day warranty on parts and labor. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in Millbrae — near BART, Caltrain, and downtown. $80 diagnostic fee credited toward repairs. 180-day warranty on parts and labor. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'colma': {
     title: 'Appliance Repair Colma | Fast Same/Next-Day | FixitBay LLC',
-    description: 'Professional appliance repair in Colma near BART and retail corridors. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+    description: 'Professional appliance repair in Colma near BART and retail corridors. $80 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
     h1: 'Fast Appliance Repair in Colma, CA',
     content: `
       <p style="margin-bottom:1rem;">Colma's unique position as one of the smallest incorporated towns in California creates a tight-knit community with specific appliance service needs. Our technicians know Colma's layout intimately — from Hillside Boulevard to Lawndale Boulevard, and the residential areas surrounding Colma BART. We navigate the town's compact geography quickly, ensuring fast response times for all appliance emergencies.</p>
       <p style="margin-bottom:1rem;">Colma's housing stock includes apartments, condos, and single-family homes, many in mixed-use buildings near the retail corridors. We service all housing types and are familiar with building access procedures, parking protocols, and HOA requirements specific to Colma properties. We stock parts for common failures in Colma's appliance population.</p>
-      <p>Same-day service in Colma near BART. Familiar with mixed-use buildings and HOA protocols. $60 diagnostic fee credited toward repairs. 180-day warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in Colma near BART. Familiar with mixed-use buildings and HOA protocols. $80 diagnostic fee credited toward repairs. 180-day warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'brisbane': {
@@ -330,57 +330,57 @@ const CITY_SEO_DATA = {
     content: `
       <p style="margin-bottom:1rem;">Brisbane's unique hillside location between San Francisco and South San Francisco creates a tight-knit community with specific appliance service needs. Our technicians know Brisbane's steep streets and navigate the area regularly, providing fast response to all Brisbane neighborhoods from the bayfront to the hilltop residential areas.</p>
       <p style="margin-bottom:1rem;">Brisbane's housing includes hillside single-family homes, newer developments, and apartments with bay views. We understand the challenges of Brisbane's terrain — steep driveways, limited parking, and complex home layouts. Local water supply can cause mineral buildup in dishwasher pumps, while Brisbane's bayfront microclimate affects moisture levels in dryers and gas appliances.</p>
-      <p>Same-day service throughout Brisbane. $60 diagnostic fee credited toward repairs. 180-day warranty on parts and labor. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service throughout Brisbane. $80 diagnostic fee credited toward repairs. 180-day warranty on parts and labor. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'montara': {
     title: 'Appliance Repair Montara | Coastal Specialists | FixitBay LLC',
-    description: 'Coastal appliance repair in Montara. Salt-air and ocean exposure specialists. $60 diagnostic, 180-day warranty. Call (760) 543-5733.',
+    description: 'Coastal appliance repair in Montara. Salt-air and ocean exposure specialists. $80 diagnostic, 180-day warranty. Call (760) 543-5733.',
     h1: 'Montara Coastal Appliance Repair Specialists',
     content: `
       <p style="margin-bottom:1rem;">Montara's dramatic Pacific coastline represents one of the Bay Area's harshest environments for home appliances. Direct ocean exposure, constant salt spray, and marine layer fog challenge refrigerators, dryers, and gas appliances daily. Our technicians specialize in coastal appliance service, understanding the unique corrosion, moisture, and salt-air issues that Montara homeowners face.</p>
       <p style="margin-bottom:1rem;">We serve Montara's beachfront homes, Highway 1 properties, and hillside residences, accessing the area via the scenic coastal route. Our vans carry corrosion-resistant parts and components designed to withstand Montara's marine environment. We stock parts that resist salt-air damage and understand prevention strategies for recurring coastal failures including corroded gas igniters, rusted washer drums, and humidity-stressed refrigerator seals.</p>
-      <p>Same-day service in Montara. We use corrosion-resistant parts and account for salt-air conditions in every repair. $60 diagnostic credited toward repairs. 180-day warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in Montara. We use corrosion-resistant parts and account for salt-air conditions in every repair. $80 diagnostic credited toward repairs. 180-day warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'san-rafael': {
     title: 'Appliance Repair San Rafael | Same-Day | FixitBay LLC',
-    description: 'Appliance repair in San Rafael, Marin County. Serving Terra Linda, Dominican & Downtown. $60 diagnostic applied to repair. 180-day warranty.',
+    description: 'Appliance repair in San Rafael, Marin County. Serving Terra Linda, Dominican & Downtown. $80 diagnostic applied to repair. 180-day warranty.',
     h1: 'San Rafael Appliance Repair Services',
     content: `
       <p style="margin-bottom:1rem;">San Rafael, as Marin County's largest city, presents diverse appliance service needs from downtown apartments to hillside estates. Our technicians navigate San Rafael daily, from Fourth Street's commercial district to Terra Linda's residential neighborhoods and Marinwood's family homes. We understand San Rafael's mix of housing styles and the specific appliance challenges each area faces.</p>
       <p style="margin-bottom:1rem;">We serve San Rafael's varied communities: downtown living spaces, mid-century homes in Terra Linda, hillside properties in Dominican, and waterfront residences along the canal. Our team is experienced with both standard residential appliances and the premium brands common in San Rafael's upscale neighborhoods. We stock parts for frequent failures and source specialized components quickly.</p>
-      <p>Same-day service across San Rafael: downtown, Terra Linda, Marinwood, Sun Valley, Peacock Gap, Dominican. $60 diagnostic credited toward repairs. 180-day warranty. Fully licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service across San Rafael: downtown, Terra Linda, Marinwood, Sun Valley, Peacock Gap, Dominican. $80 diagnostic credited toward repairs. 180-day warranty. Fully licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'novato': {
     title: 'Appliance Repair Novato | Same-Day | FixitBay LLC',
-    description: 'Appliance repair in Novato, North Marin. Serving Hamilton & Downtown. Same-day service. $60 diagnostic applied to repair. 180-day warranty.',
+    description: 'Appliance repair in Novato, North Marin. Serving Hamilton & Downtown. Same-day service. $80 diagnostic applied to repair. 180-day warranty.',
     h1: "Novato Appliance Repair — North Marin's Largest City",
     content: `
       <p style="margin-bottom:1rem;">Novato, as North Marin's largest city, offers diverse appliance service needs from downtown to suburban neighborhoods. Our technicians serve all Novato areas including Bel Marin Keys, Hamilton, San Marin, and Ignacio. We navigate Novato's geography efficiently, providing fast response throughout this sprawling North Bay community.</p>
       <p style="margin-bottom:1rem;">We understand Novato's housing stock from older homes near downtown to newer developments in the hills. Novato's inland location brings temperature extremes that stress refrigerator compressors and cooling systems. Hard water affects dishwasher performance, and the area's residential variety demands broad parts inventory. Our vans carry parts for common appliance failures and we can source specialized components quickly from our Bay Area network.</p>
-      <p>Same-day service across Novato: downtown, Bel Marin Keys, Hamilton, San Marin, Ignacio. Light commercial appliance repair also available. $60 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service across Novato: downtown, Bel Marin Keys, Hamilton, San Marin, Ignacio. Light commercial appliance repair also available. $80 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'mill-valley': {
     title: 'Appliance Repair Mill Valley | Same-Day | FixitBay LLC',
-    description: 'Appliance repair in Mill Valley, Marin. Hillside home experts. Same-day service. $60 diagnostic applied to repair. 180-day warranty on parts and labor.',
+    description: 'Appliance repair in Mill Valley, Marin. Hillside home experts. Same-day service. $80 diagnostic applied to repair. 180-day warranty on parts and labor.',
     h1: 'Mill Valley Appliance Repair — Hillside & Redwood Specialists',
     content: `
       <p style="margin-bottom:1rem;">Mill Valley's dramatic hillside setting beneath Mount Tamalpais creates unique challenges for home appliances. Steep terrain, redwood microclimates, and elevation changes affect everything from refrigerator cooling to dryer venting. Our technicians navigate Mill Valley's winding roads daily, from downtown's commercial district to Tam Valley's hillside homes, understanding both the geography and the upscale appliances common in this affluent Marin community.</p>
       <p style="margin-bottom:1rem;">We service Mill Valley's mix of mid-century modern homes, contemporary hillside properties, and downtown condos. Many Mill Valley homes feature premium appliances like Sub-Zero refrigerators, Wolf ranges, and Bosch dishwashers, which we specialize in servicing. We also handle challenges specific to hillside homes: water pressure variations, complex dryer vent routing, and appliances stressed by uneven floors and temperature gradients.</p>
-      <p>Same-day service across Mill Valley: Tamalpais Valley, Almonte, Strawberry, Boyle Park, Scott Valley. Sub-Zero and built-in fridge specialists. $60 diagnostic credited toward repairs. 180-day warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service across Mill Valley: Tamalpais Valley, Almonte, Strawberry, Boyle Park, Scott Valley. Sub-Zero and built-in fridge specialists. $80 diagnostic credited toward repairs. 180-day warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'sausalito': {
     title: 'Appliance Repair Sausalito | Same-Day | FixitBay LLC',
-    description: 'Appliance repair in Sausalito. Houseboat & hillside specialists. Same-day service. $60 diagnostic applied to repair. 180-day warranty on parts and labor.',
+    description: 'Appliance repair in Sausalito. Houseboat & hillside specialists. Same-day service. $80 diagnostic applied to repair. 180-day warranty on parts and labor.',
     h1: 'Sausalito Appliance Repair — Premium & Hillside Specialists',
     content: `
       <p style="margin-bottom:1rem;">Sausalito's stunning hillside location overlooking San Francisco Bay creates both beauty and complexity for appliance service. From waterfront houseboats to hillside estates with panoramic views, we navigate Sausalito's unique geography daily. Our technicians understand the challenges of steep terrain, limited access, and the premium appliances common in this affluent Marin community.</p>
       <p style="margin-bottom:1rem;">Sausalito homes feature high-end appliances from Sub-Zero, Wolf, Thermador, and Miele alongside standard brands. We specialize in servicing luxury and traditional appliances, understanding the specific needs of built-in units, wine storage systems, and integrated kitchen designs. We also handle challenges unique to Sausalito: water pressure variations on hillsides, coastal humidity from Bay proximity, and complex installations in multi-level hillside homes.</p>
-      <p>Same-day service across Sausalito — hillside homes, houseboats, and waterfront estates. Built-in appliance specialists. Sub-Zero, Wolf, Miele experts. $60 diagnostic credited toward repairs. 180-day warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service across Sausalito — hillside homes, houseboats, and waterfront estates. Built-in appliance specialists. Sub-Zero, Wolf, Miele experts. $80 diagnostic credited toward repairs. 180-day warranty. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'belvedere': {
@@ -390,17 +390,17 @@ const CITY_SEO_DATA = {
     content: `
       <p style="margin-bottom:1rem;">Belvedere's waterfront peninsula represents some of Marin County's most exclusive real estate, featuring luxury homes with premium appliances. Our technicians specialize in high-end brands like Sub-Zero, Wolf, Thermador, and Miele, common in these affluent communities. We understand both the appliances and the service expectations of Belvedere homeowners.</p>
       <p style="margin-bottom:1rem;">We navigate Belvedere's peninsula properties regularly, servicing waterfront estates, hillside homes with bay views, and premium integrated kitchen systems. Our team handles challenges unique to waterfront living: humidity, salt air, and the luxury built-in appliances found in high-end kitchens. We carry specialized tools and can source high-end parts quickly for Sub-Zero, Wolf, Thermador, Viking, Miele, and Bosch units.</p>
-      <p>Same-day service in Belvedere. Built-in fridge and wine cooler specialists. $60 diagnostic credited toward repairs. 180-day warranty on all premium appliances. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in Belvedere. Built-in fridge and wine cooler specialists. $80 diagnostic credited toward repairs. 180-day warranty on all premium appliances. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'tiburon': {
     title: 'Appliance Repair Tiburon | Same-Day | FixitBay LLC',
-    description: 'Luxury appliance repair in Tiburon. Sub-Zero, Wolf, Thermador specialists. Same-day service. $60 diagnostic applied to repair. 180-day warranty.',
+    description: 'Luxury appliance repair in Tiburon. Sub-Zero, Wolf, Thermador specialists. Same-day service. $80 diagnostic applied to repair. 180-day warranty.',
     h1: 'Tiburon Appliance Repair — Premium & Waterfront Specialists',
     content: `
       <p style="margin-bottom:1rem;">Tiburon's stunning waterfront location on the Marin Peninsula features luxurious homes and premium appliances. Our technicians specialize in high-end brands like Sub-Zero, Wolf, Thermador, Viking, and Miele that are standard in Tiburon homes. We understand both the sophisticated appliances and the service expectations of Tiburon homeowners overlooking San Francisco Bay.</p>
       <p style="margin-bottom:1rem;">Tiburon's mix of waterfront estates, hillside homes, and downtown condos requires versatile expertise. We handle challenges unique to Bay-adjacent living: coastal humidity affecting appliance seals and terminals, water pressure variations on hillsides, and complex built-in installations in luxury kitchens. We carry specialized tools and maintain supplier relationships for fast access to premium replacement parts.</p>
-      <p>Same-day service in Tiburon. Built-in and panel-ready appliance specialists. Sub-Zero, Thermador, Wolf experts. $60 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in Tiburon. Built-in and panel-ready appliance specialists. Sub-Zero, Thermador, Wolf experts. $80 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'corte-madera': {
@@ -410,7 +410,7 @@ const CITY_SEO_DATA = {
     content: `
       <p style="margin-bottom:1rem;">Corte Madera's central Marin location between Larkspur and Mill Valley makes it a convenient shopping and residential hub. Our technicians serve all Corte Madera neighborhoods from the Town Center to Christmas Tree Hill, understanding the area's mix of single-family homes, townhomes, and condos near The Village shopping center.</p>
       <p style="margin-bottom:1rem;">We navigate Corte Madera efficiently, accessing the area via Highway 101 and Tamalpais Drive. Our vans carry parts for common appliance failures across Corte Madera's diverse housing stock — hard water affects dishwasher spray arms and pumps, while the area's moderate climate still challenges refrigerator temperature controls and dryer heating elements. We can source specialized components quickly from our Bay Area network.</p>
-      <p>Same-day service in Corte Madera: Town Center, Christmas Tree Hill, near The Village. $60 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in Corte Madera: Town Center, Christmas Tree Hill, near The Village. $80 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'san-quentin': {
@@ -420,7 +420,7 @@ const CITY_SEO_DATA = {
     content: `
       <p style="margin-bottom:1rem;">San Quentin's waterfront location along the Richmond-San Rafael Bridge corridor provides bay views and convenient Peninsula access. Our technicians serve San Quentin residential areas, understanding the challenges of waterfront living and the humidity that affects appliance performance in bay-adjacent homes.</p>
       <p style="margin-bottom:1rem;">We navigate San Quentin efficiently via Highway 101 and local routes. Our vans carry parts for common appliance failures, and we understand the specific issues that arise in waterfront homes — humidity-related refrigerator problems, moisture in dryer vents, and salt-air exposure affecting gas appliance igniters and electrical connections. Bay proximity accelerates wear on seals and components.</p>
-      <p>Same-day service in San Quentin. Waterfront home specialists. $60 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in San Quentin. Waterfront home specialists. $80 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'larkspur': {
@@ -430,7 +430,7 @@ const CITY_SEO_DATA = {
     content: `
       <p style="margin-bottom:1rem;">Larkspur's historic downtown and convenient ferry access make it a sought-after Central Marin community. Our technicians serve all Larkspur neighborhoods from downtown's charming historic district to residential areas near Greenbrae. We understand Larkspur's mix of older homes and modern condos, along with the appliances common in each.</p>
       <p style="margin-bottom:1rem;">We navigate Larkspur efficiently via Highway 101 and Magnolia Avenue, accessing downtown, residential neighborhoods, and the ferry terminal area quickly. Common issues include temperature control problems in refrigerators, heating element failures in dryers, dishwasher leaks from worn door seals, and gas range igniter failures. We stock parts for these frequent repairs and maintain a network for sourcing specialized components.</p>
-      <p>Same-day service in Larkspur: downtown, Greenbrae, near the ferry terminal. $60 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in Larkspur: downtown, Greenbrae, near the ferry terminal. $80 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'greenbrae': {
@@ -440,7 +440,7 @@ const CITY_SEO_DATA = {
     content: `
       <p style="margin-bottom:1rem;">Greenbrae's central Marin location along Highway 101 makes it a convenient shopping and residential hub. Our technicians serve all Greenbrae neighborhoods from Bon Air to properties near the Marin Country Mart, understanding Greenbrae's mix of condos, townhomes, and single-family homes with diverse appliance needs.</p>
       <p style="margin-bottom:1rem;">We navigate Greenbrae efficiently via Highway 101, accessing residential areas and shopping districts quickly. Common issues we address include refrigerator cooling problems, dishwasher leaks and drainage issues, dryer heating element failures, and gas range igniter faults. Our vans carry parts for common appliance failures and we maintain a sourcing network for specialized components.</p>
-      <p>Same-day service in Greenbrae: Bon Air, near Marin Country Mart. $60 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in Greenbrae: Bon Air, near Marin Country Mart. $80 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'ross': {
@@ -450,7 +450,7 @@ const CITY_SEO_DATA = {
     content: `
       <p style="margin-bottom:1rem;">Ross represents some of Marin County's most exclusive residential real estate, featuring hillside estates with premium appliances. Our technicians specialize in high-end brands like Sub-Zero, Wolf, Thermador, and Miele that are standard in Ross luxury homes. We understand both the sophisticated appliances and the service expectations of Ross homeowners.</p>
       <p style="margin-bottom:1rem;">We navigate Ross's private hillside properties regularly, understanding challenges unique to luxury estates: water pressure variations, complex built-in installations, and integrated kitchen systems with wine coolers and professional ranges. We carry specialized tools for premium appliances and maintain relationships with suppliers for quick access to high-end replacement parts for Wolf, Viking, Thermador, Miele, and Sub-Zero units.</p>
-      <p>Same-day service in Ross. Built-in fridge, wine cooler, and professional range specialists. $60 diagnostic credited toward repairs. 180-day warranty on all premium appliances. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in Ross. Built-in fridge, wine cooler, and professional range specialists. $80 diagnostic credited toward repairs. 180-day warranty on all premium appliances. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'fairfax': {
@@ -460,7 +460,7 @@ const CITY_SEO_DATA = {
     content: `
       <p style="margin-bottom:1rem;">Fairfax's location as the gateway to West Marin creates a unique community with a mix of downtown living and hillside homes. Our technicians serve all Fairfax neighborhoods, understanding the town's character and the appliances common in both older homes downtown and newer properties in the hills. Fairfax's West Marin location brings temperature variations that challenge refrigerator compressors and cooling systems.</p>
       <p style="margin-bottom:1rem;">We navigate Fairfax via Sir Francis Drake Boulevard, accessing the downtown core and surrounding residential areas efficiently. Common repairs include refrigerator cooling issues, washer drainage problems, dryer heating element failures, dishwasher hard-water buildup, and gas range igniter faults. Our vans carry parts for these frequent failures and we can source specialized components from our Bay Area network.</p>
-      <p>Same-day service in Fairfax: downtown, Manor, and surrounding hillside neighborhoods. $60 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in Fairfax: downtown, Manor, and surrounding hillside neighborhoods. $80 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   },
   'san-anselmo': {
@@ -470,7 +470,7 @@ const CITY_SEO_DATA = {
     content: `
       <p style="margin-bottom:1rem;">San Anselmo's charming downtown antique district and tree-lined residential streets make it a beloved Central Marin community. Our technicians serve all San Anselmo neighborhoods from the downtown business district to Sleepy Hollow and surrounding residential areas. We understand San Anselmo's mix of historic Victorian and Craftsman homes and modern properties, each with distinct appliance service needs.</p>
       <p style="margin-bottom:1rem;">We navigate San Anselmo efficiently via Sir Francis Drake Boulevard and Red Hill Avenue, accessing downtown and residential neighborhoods quickly. Common issues include refrigerator cooling problems, washer drainage failures, dryer heating element faults, hard-water buildup in dishwashers, and gas range igniter issues. Our vans carry parts for frequent repairs in San Anselmo's diverse housing stock.</p>
-      <p>Same-day service in San Anselmo: downtown antique district, Sleepy Hollow, and all residential areas. $60 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
+      <p>Same-day service in San Anselmo: downtown antique district, Sleepy Hollow, and all residential areas. $80 diagnostic credited toward repairs. 180-day warranty. Licensed in Marin County. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a>.</p>
     `
   }
 };
@@ -485,7 +485,7 @@ function getSEOContent(route) {
       h1: 'Professional Appliance Repair in San Francisco & Bay Area',
       content: `
         <p style="margin-bottom: 1rem;">FixitBay provides expert appliance repair across San Francisco, the Peninsula, and North Bay. Our licensed technicians fix refrigerators, washers, dryers, dishwashers, ovens, and more with same/next-day service.</p>
-        <p style="margin-bottom: 1rem;">We charge a transparent $60 diagnostic fee (fully applied to your repair). Every repair includes our comprehensive 180-day warranty on parts and labor.</p>
+        <p style="margin-bottom: 1rem;">We charge a transparent $80 diagnostic fee (fully applied to your repair). Every repair includes our comprehensive 180-day warranty on parts and labor.</p>
         <p>Serving 22 cities including San Francisco, Daly City, Mill Valley, and surrounding areas. Call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> or book online for same-day service!</p>
       `,
       internalLinks: [
@@ -589,7 +589,7 @@ function getSEOContent(route) {
       h1: 'Appliance Repair Service Areas — San Francisco & Bay Area',
       content: `
         <p style="margin-bottom:1rem;">FixitBay provides professional in-home appliance repair across 22 cities in San Francisco, the Peninsula, and Marin County. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, and more.</p>
-        <p style="margin-bottom:1rem;">We charge a transparent $60 diagnostic fee that's fully applied to your repair cost. Every repair is backed by our 180-day warranty on parts and labor. Same-day and next-day appointments available throughout our service area.</p>
+        <p style="margin-bottom:1rem;">We charge a transparent $80 diagnostic fee that's fully applied to your repair cost. Every repair is backed by our 180-day warranty on parts and labor. Same-day and next-day appointments available throughout our service area.</p>
         <p>Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> to schedule service in your area.</p>
       `,
       internalLinks: [
@@ -643,7 +643,7 @@ function getSEOContent(route) {
     return {
       title: 'Appliance Repair Marin County | Same-Day Service | FixitBay LLC',
       robots: 'index, follow',
-      description: 'Licensed appliance repair in Marin County. Serving Mill Valley, San Rafael, Novato, Sausalito, Tiburon. $60 diagnostic, 180-day warranty. Same-day service.',
+      description: 'Licensed appliance repair in Marin County. Serving Mill Valley, San Rafael, Novato, Sausalito, Tiburon. $80 diagnostic, 180-day warranty. Same-day service.',
       h1: 'Appliance Repair in Marin County',
       content: `
         <p style="margin-bottom:1rem;">FixitBay provides professional appliance repair across all of Marin County. Our licensed and insured technicians serve Mill Valley, San Rafael, Novato, Sausalito, Tiburon, Corte Madera, Larkspur, Greenbrae, Ross, Fairfax, San Anselmo, Belvedere, and San Quentin with same-day service available.</p>
@@ -682,7 +682,7 @@ function getSEOContent(route) {
       h1: 'Contact FixitBay — Schedule Your Appliance Repair',
       content: `
         <p style="margin-bottom:1rem;">Ready to schedule your appliance repair? Contact FixitBay LLC for same-day service across San Francisco, the Peninsula, and Marin County. Our licensed and insured technicians handle refrigerators, washers, dryers, dishwashers, ovens, and more.</p>
-        <p>Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a>. $60 diagnostic applied to repair. 180-day warranty on parts and labor.</p>
+        <p>Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a>. $80 diagnostic applied to repair. 180-day warranty on parts and labor.</p>
       `,
       internalLinks: defaultInternalLinks
     };
@@ -696,14 +696,14 @@ function getSEOContent(route) {
       h1: 'About FixitBay — Licensed Appliance Repair in San Francisco',
       content: `
         <p style="margin-bottom:1rem;">FixitBay LLC is a licensed and insured appliance repair company proudly serving San Francisco, the Peninsula, and Marin County since 2023. We repair all major appliance brands including Whirlpool, Samsung, LG, GE, Sub-Zero, Viking, and more.</p>
-        <p>Every repair comes with a transparent $60 diagnostic fee applied to your repair cost and is backed by our 180-day warranty on parts and labor. Learn more about our team, values, and commitment to quality service.</p>
+        <p>Every repair comes with a transparent $80 diagnostic fee applied to your repair cost and is backed by our 180-day warranty on parts and labor. Learn more about our team, values, and commitment to quality service.</p>
       `,
       schemas: [
         {
           "@context": "https://schema.org",
           "@type": "VideoObject",
           "name": "Professional Appliance Repair Service — FixitBay LLC SF Bay Area",
-          "description": "Watch FixitBay LLC licensed technician diagnose and repair appliances in San Francisco Bay Area. $60 diagnostic, 180-day warranty, same-day service.",
+          "description": "Watch FixitBay LLC licensed technician diagnose and repair appliances in San Francisco Bay Area. $80 diagnostic, 180-day warranty, same-day service.",
           "thumbnailUrl": "https://i.ytimg.com/vi/WBEc8Lz2saA/hqdefault.jpg",
           "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA",
           "uploadDate": "2024-01-01T00:00:00+00:00",
@@ -757,7 +757,7 @@ function getSEOContent(route) {
         <p style="margin-bottom:1rem;">Different brands use different compressor systems, control boards, and engineering approaches. A Samsung refrigerator ice maker has different failure modes than a Sub-Zero. A Bosch dishwasher drain pump is engineered differently than a GE. Our technicians don't use a one-size-fits-all approach — we diagnose based on the specific brand's known issues and repair patterns.</p>
         <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Appliance Types We Repair</h2>
         <p style="margin-bottom:1rem;">Across all brands, we service: <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerators</a>, <a href="/washer-repair" style="color:#C0362C;font-weight:bold;">washers</a>, <a href="/dryer-repair" style="color:#C0362C;font-weight:bold;">dryers</a>, <a href="/dishwasher-repair" style="color:#C0362C;font-weight:bold;">dishwashers</a>, <a href="/oven-repair" style="color:#C0362C;font-weight:bold;">ovens</a>, <a href="/range-repair" style="color:#C0362C;font-weight:bold;">ranges</a>, <a href="/cooktop-repair" style="color:#C0362C;font-weight:bold;">cooktops</a>, <a href="/stove-repair" style="color:#C0362C;font-weight:bold;">stoves</a>, <a href="/ice-maker-repair" style="color:#C0362C;font-weight:bold;">ice makers</a>, <a href="/wine-cooler-repair" style="color:#C0362C;font-weight:bold;">wine coolers</a>, <a href="/freezer-repair" style="color:#C0362C;font-weight:bold;">freezers</a>.</p>
-        <p style="margin-bottom:1rem;">Every repair is backed by our 180-day warranty on parts and labor. $60 diagnostic fee fully credited toward repair cost.</p>
+        <p style="margin-bottom:1rem;">Every repair is backed by our 180-day warranty on parts and labor. $80 diagnostic fee fully credited toward repair cost.</p>
         <p>Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day brand-specific repair.</p>
       `,
       internalLinks: [...defaultInternalLinks, '/bosch-appliance-repair', '/sub-zero-appliance-repair', '/viking-appliance-repair', '/wolf-appliance-repair', '/thermador-appliance-repair', '/miele-appliance-repair', '/ge-appliance-repair', '/frigidaire-appliance-repair', '/kitchenaid-appliance-repair', '/maytag-appliance-repair', '/kenmore-appliance-repair']
@@ -851,7 +851,7 @@ function getSEOContent(route) {
       },
       'appliance-repair-cost-san-francisco': {
         title: 'Appliance Repair Cost San Francisco 2026 | FixitBay LLC',
-        description: 'How much does appliance repair cost in San Francisco? Full 2026 pricing guide for refrigerators, washers, dryers, ovens & more. From $60 diagnostic at FixitBay.'
+        description: 'How much does appliance repair cost in San Francisco? Full 2026 pricing guide for refrigerators, washers, dryers, ovens & more. From $80 diagnostic at FixitBay.'
       },
       'dryer-not-heating': {
         title: 'Dryer Not Heating? 7 Causes & Fixes | FixitBay LLC',
@@ -859,11 +859,11 @@ function getSEOContent(route) {
       },
       'appliance-repair-marin-county': {
         title: 'Appliance Repair Marin County | Same-Day | FixitBay LLC',
-        description: 'Licensed appliance repair in Marin County — Mill Valley, San Rafael, Novato, Sausalito, Tiburon & more. $60 diagnostic, 180-day warranty.'
+        description: 'Licensed appliance repair in Marin County — Mill Valley, San Rafael, Novato, Sausalito, Tiburon & more. $80 diagnostic, 180-day warranty.'
       },
       'same-day-appliance-repair-bay-area': {
         title: 'Same-Day Appliance Repair Bay Area | FixitBay LLC',
-        description: 'Same-day appliance repair across SF Bay Area — San Francisco, Peninsula & Marin County. Licensed technicians available today. $60 diagnostic.'
+        description: 'Same-day appliance repair across SF Bay Area — San Francisco, Peninsula & Marin County. Licensed technicians available today. $80 diagnostic.'
       }
     };
     const explicit = blogSEO[blogSlug];
@@ -876,7 +876,7 @@ function getSEOContent(route) {
         content: `
           <p style="margin-bottom: 1rem;">${explicit.description} Our licensed technicians at FixitBay provide professional appliance repair across San Francisco, the Peninsula, and North Bay with same-day service and a 180-day warranty.</p>
           <p style="margin-bottom: 1rem;">Our certified technicians have years of hands-on experience diagnosing and repairing all major appliance brands including Whirlpool, Samsung, LG, GE, Bosch, KitchenAid, Maytag, Frigidaire, Kenmore, Sub-Zero, Viking, Thermador, Miele, and Wolf. Whether you live in San Francisco, Daly City, San Bruno, Millbrae, Mill Valley, Sausalito, or any of the surrounding Bay Area communities, our team is ready to help.</p>
-          <p style="margin-bottom: 1rem;">Every FixitBay repair comes with a transparent $60 diagnostic fee that is fully credited toward your repair cost when you decide to proceed. All work is backed by our comprehensive 180-day warranty on parts and labor, so you can have peace of mind long after our technician leaves your home.</p>
+          <p style="margin-bottom: 1rem;">Every FixitBay repair comes with a transparent $80 diagnostic fee that is fully credited toward your repair cost when you decide to proceed. All work is backed by our comprehensive 180-day warranty on parts and labor, so you can have peace of mind long after our technician leaves your home.</p>
           <p>Need professional help? Call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> or <a href="/book">book online</a> for same-day service.</p>
         `,
         internalLinks: defaultInternalLinks
@@ -893,7 +893,7 @@ function getSEOContent(route) {
       content: `
         <p style="margin-bottom: 1rem;">Expert guide on ${blogTitle.toLowerCase()} from FixitBay's licensed technicians. We provide professional appliance repair across San Francisco, the Peninsula, and North Bay with same-day service and a 180-day warranty.</p>
         <p style="margin-bottom: 1rem;">Our certified technicians have years of hands-on experience diagnosing and repairing all major appliance brands including Whirlpool, Samsung, LG, GE, Bosch, KitchenAid, Maytag, Frigidaire, Kenmore, Sub-Zero, Viking, Thermador, Miele, and Wolf. Whether you live in San Francisco, Daly City, San Bruno, Millbrae, Mill Valley, Sausalito, or any of the surrounding Bay Area communities, our team is ready to help.</p>
-        <p style="margin-bottom: 1rem;">Every FixitBay repair comes with a transparent $60 diagnostic fee that is fully credited toward your repair cost when you decide to proceed. All work is backed by our comprehensive 180-day warranty on parts and labor, so you can have peace of mind long after our technician leaves your home.</p>
+        <p style="margin-bottom: 1rem;">Every FixitBay repair comes with a transparent $80 diagnostic fee that is fully credited toward your repair cost when you decide to proceed. All work is backed by our comprehensive 180-day warranty on parts and labor, so you can have peace of mind long after our technician leaves your home.</p>
         <p>Need professional help? Call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> or <a href="/book">book online</a> for same-day service.</p>
       `,
       internalLinks: defaultInternalLinks
@@ -942,7 +942,7 @@ function getSEOContent(route) {
             <div style="margin-bottom:1rem;">${cityLinks}</div>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why FixitBay</h2>
             <p style="font-size:0.875rem;color:#4A5568;margin-bottom:0.25rem;"><strong>Licensed & Insured.</strong> California-licensed appliance repair. Fully insured for your protection.</p>
-            <p style="font-size:0.875rem;color:#4A5568;margin-bottom:0.25rem;"><strong>$60 Diagnostic Applied.</strong> Credited toward your repair. Decline and that is the only charge.</p>
+            <p style="font-size:0.875rem;color:#4A5568;margin-bottom:0.25rem;"><strong>$80 Diagnostic Applied.</strong> Credited toward your repair. Decline and that is the only charge.</p>
             <p style="font-size:0.875rem;color:#4A5568;margin-bottom:0.25rem;"><strong>Same & Next-Day Service.</strong> Same-day for requests before 2 PM. Next-day guaranteed.</p>
             <p style="font-size:0.875rem;color:#4A5568;margin-bottom:1rem;"><strong>180-Day Warranty.</strong> Parts and labor. Same issue returns, we come back free.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">FAQ</h2>
@@ -960,7 +960,7 @@ function getSEOContent(route) {
         h1: `${brand.name} Appliance Repair in San Francisco & Bay Area`,
         content: `
           <p style="margin-bottom:1rem;">FixitBay provides expert ${brand.name} appliance repair across San Francisco, the Peninsula, and Marin County. Our licensed technicians service ${brand.name} refrigerators, washers, dryers, dishwashers, ovens, cooktops, and other major appliances. We carry diagnostic tools and commonly needed parts on every truck, so most ${brand.name} repairs finish in a single visit.</p>
-          <p style="margin-bottom:1rem;">Our $60 diagnostic fee covers a full inspection and is credited toward your repair if you proceed. Every job is backed by our 180-day warranty on parts and labor. Same-day appointments available for service requests placed before 2 PM.</p>
+          <p style="margin-bottom:1rem;">Our $80 diagnostic fee covers a full inspection and is credited toward your repair if you proceed. Every job is backed by our 180-day warranty on parts and labor. Same-day appointments available for service requests placed before 2 PM.</p>
           <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">What We Repair</h2>
           <p style="margin-bottom:1rem;font-size:0.875rem;color:#4A5568;">We service all major ${brand.name} appliance categories: refrigerators and freezers, front-load and top-load washers, gas and electric dryers, built-in and portable dishwashers, freestanding and slide-in ranges, wall ovens, cooktops, and specialty units. Whether your ${brand.name} unit is under warranty or 15 years old, we can diagnose and repair it.</p>
           <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Service Areas</h2>
@@ -1015,11 +1015,11 @@ function getSEOContent(route) {
       return {
         title: `Appliance Repair ${city.name} | Same-Day | FixitBay LLC`,
         robots: 'index, follow',
-        description: `Professional appliance repair in ${city.name}, CA. Same-day & next-day service. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.`,
+        description: `Professional appliance repair in ${city.name}, CA. Same-day & next-day service. $80 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.`,
         h1: `Appliance Repair in ${city.name}, CA`,
         content: `
           <p style="margin-bottom: 1rem;">FixitBay provides professional appliance repair service in ${city.name}, CA and surrounding areas. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, ranges, cooktops, and more throughout ${city.name}.</p>
-          <p style="margin-bottom: 1rem;">We offer same-day and next-day appointments in ${city.name}. Our transparent $60 diagnostic fee is fully applied to your repair cost when you proceed. Every repair includes our comprehensive 180-day warranty on both parts and labor.</p>
+          <p style="margin-bottom: 1rem;">We offer same-day and next-day appointments in ${city.name}. Our transparent $80 diagnostic fee is fully applied to your repair cost when you proceed. Every repair includes our comprehensive 180-day warranty on both parts and labor.</p>
           <p style="margin-bottom: 1rem;">We service all major appliance brands and carry common replacement parts. Whether you live in a house, apartment, or condo in ${city.name}, our experienced technicians are ready to help.</p>
           <p>Call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> or book online today!</p>
         ` + popularRepairsClusterHTML(city.name, city.slug),
@@ -1032,7 +1032,7 @@ function getSEOContent(route) {
   const CITY_SERVICE_RICH = {
     '/south-san-francisco-oven-repair': {
       title: 'Oven Repair South San Francisco | Same-Day | FixitBay LLC',
-      description: 'Professional oven repair in South San Francisco. Gas igniter, bake element & temperature issues. From $230 after $60 diagnostic. 180-day warranty.',
+      description: 'Professional oven repair in South San Francisco. Gas igniter, bake element & temperature issues. From $230 after $80 diagnostic. 180-day warranty.',
       h1: 'Oven Repair in South San Francisco',
       content: `
             <p style="margin-bottom:1rem;">South San Francisco is a dense working-class suburb with many older homes and apartment buildings. Fog and coastal humidity affect gas igniter performance, making oven repairs one of the most common service calls in SSF. Many homes have older Whirlpool, GE, and Maytag freestanding ranges that develop igniter, element, and temperature control issues over time.</p>
@@ -1045,9 +1045,9 @@ function getSEOContent(route) {
               <li style="margin-bottom:0.5rem;"><strong>Self-clean door lock stuck</strong> — the latch motor or switch fails, locking the door shut or preventing the oven from operating.</li>
             </ul>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Oven Repair Pricing in South San Francisco</h2>
-            <p style="margin-bottom:1rem;">Most oven repairs in South San Francisco start from <strong>$230 after the $60 diagnostic fee</strong>. Gas igniter replacement typically runs $150\u2013$220 parts and labor. The $60 diagnostic is fully applied to your repair cost, and every job is backed by our 180-day warranty on parts and labor.</p>
+            <p style="margin-bottom:1rem;">Most oven repairs in South San Francisco start from <strong>$230 after the $80 diagnostic fee</strong>. Gas igniter replacement typically runs $150\u2013$220 parts and labor. The $80 diagnostic is fully applied to your repair cost, and every job is backed by our 180-day warranty on parts and labor.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Frequently Asked Questions</h2>
-            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">How much does oven repair cost in South San Francisco?</p><p style="color:#4A5568;font-size:0.875rem;">Most oven repairs in South San Francisco cost $180\u2013$350 after the $60 diagnostic fee is applied. Gas igniter replacement typically runs $150\u2013$220 parts and labor.</p></div>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">How much does oven repair cost in South San Francisco?</p><p style="color:#4A5568;font-size:0.875rem;">Most oven repairs in South San Francisco cost $180\u2013$350 after the $80 diagnostic fee is applied. Gas igniter replacement typically runs $150\u2013$220 parts and labor.</p></div>
             <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Do you offer same-day oven repair in South San Francisco?</p><p style="color:#4A5568;font-size:0.875rem;">Yes \u2014 we offer same-day appointments for requests placed before 2 PM, and next-day guaranteed for all other requests.</p></div>
             <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">What oven brands do you repair in South San Francisco?</p><p style="color:#4A5568;font-size:0.875rem;">We repair all major brands including Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, and Bosch.</p></div>
             <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day oven repair in South San Francisco.</p>
@@ -1055,7 +1055,7 @@ function getSEOContent(route) {
     },
     '/south-san-francisco-wine-cooler-repair': {
       title: 'Wine Cooler Repair South San Francisco | FixitBay LLC',
-      description: 'Wine cooler repair in South San Francisco. Thermoelectric, compressor & door seal issues. From $195 after $60 diagnostic. 180-day warranty.',
+      description: 'Wine cooler repair in South San Francisco. Thermoelectric, compressor & door seal issues. From $195 after $80 diagnostic. 180-day warranty.',
       h1: 'Wine Cooler Repair in South San Francisco',
       content: `
             <p style="margin-bottom:1rem;">South San Francisco's biotech professionals and growing wine culture mean a rising number of residential wine coolers. Coastal humidity accelerates thermoelectric unit wear and causes door seal degradation faster than in inland cities. Whether you have a freestanding unit in your kitchen or a built-in wine storage system, our technicians understand the unique challenges SSF's climate presents to wine cooler performance.</p>
@@ -1068,7 +1068,7 @@ function getSEOContent(route) {
               <li style="margin-bottom:0.5rem;"><strong>Interior light staying on and warming the unit</strong> — a faulty door switch keeps the light on, adding unwanted heat to the cabinet.</li>
             </ul>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Wine Cooler Repair Pricing in South San Francisco</h2>
-            <p style="margin-bottom:1rem;">Wine cooler repairs in South San Francisco start from <strong>$195 after the $60 diagnostic fee</strong>. Thermoelectric module replacement is $180\u2013$280; compressor repair runs $250\u2013$400. The $60 diagnostic is fully credited toward your repair.</p>
+            <p style="margin-bottom:1rem;">Wine cooler repairs in South San Francisco start from <strong>$195 after the $80 diagnostic fee</strong>. Thermoelectric module replacement is $180\u2013$280; compressor repair runs $250\u2013$400. The $80 diagnostic is fully credited toward your repair.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Frequently Asked Questions</h2>
             <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">How much does wine cooler repair cost in South San Francisco?</p><p style="color:#4A5568;font-size:0.875rem;">Wine cooler repairs in South San Francisco typically range from $150\u2013$400. Thermoelectric module replacement is $180\u2013$280; compressor repair runs $250\u2013$400.</p></div>
             <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Do you repair built-in wine coolers in South San Francisco?</p><p style="color:#4A5568;font-size:0.875rem;">Yes, we repair both freestanding and built-in wine coolers including Sub-Zero, Vinotemp, EuroCave, and all major brands.</p></div>
@@ -1078,7 +1078,7 @@ function getSEOContent(route) {
     },
     '/corte-madera-dryer-repair': {
       title: 'Dryer Repair Corte Madera | Gas & Electric | FixitBay LLC',
-      description: 'Professional dryer repair in Corte Madera. Thermal fuse, gas valve & belt issues. From $235 after $60 diagnostic. 180-day warranty.',
+      description: 'Professional dryer repair in Corte Madera. Thermal fuse, gas valve & belt issues. From $235 after $80 diagnostic. 180-day warranty.',
       h1: 'Dryer Repair in Corte Madera',
       content: `
             <p style="margin-bottom:1rem;">Corte Madera is a prosperous Marin County suburb with many single-family homes built in the 1960s\u201380s. Gas dryers are common due to the area's older housing stock. Homes near Corte Madera Creek have higher humidity which affects dryer ventilation and can cause lint to clump more quickly, reducing airflow and increasing drying times.</p>
@@ -1091,9 +1091,9 @@ function getSEOContent(route) {
               <li style="margin-bottom:0.5rem;"><strong>Burning smell from lint buildup</strong> — a safety concern that requires immediate professional vent cleaning and inspection.</li>
             </ul>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Dryer Repair Pricing in Corte Madera</h2>
-            <p style="margin-bottom:1rem;">Most dryer repairs in Corte Madera start from <strong>$235 after the $60 diagnostic fee</strong>. Thermal fuse replacement is typically $120\u2013$180; gas valve repair runs $200\u2013$320. The $60 diagnostic is fully applied to your repair cost.</p>
+            <p style="margin-bottom:1rem;">Most dryer repairs in Corte Madera start from <strong>$235 after the $80 diagnostic fee</strong>. Thermal fuse replacement is typically $120\u2013$180; gas valve repair runs $200\u2013$320. The $80 diagnostic is fully applied to your repair cost.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Frequently Asked Questions</h2>
-            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">How much does dryer repair cost in Corte Madera?</p><p style="color:#4A5568;font-size:0.875rem;">Most dryer repairs in Corte Madera cost $170\u2013$350 after the $60 diagnostic. Thermal fuse replacement is typically $120\u2013$180; gas valve repair runs $200\u2013$320.</p></div>
+            <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">How much does dryer repair cost in Corte Madera?</p><p style="color:#4A5568;font-size:0.875rem;">Most dryer repairs in Corte Madera cost $170\u2013$350 after the $80 diagnostic. Thermal fuse replacement is typically $120\u2013$180; gas valve repair runs $200\u2013$320.</p></div>
             <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Do you repair gas and electric dryers in Corte Madera?</p><p style="color:#4A5568;font-size:0.875rem;">Yes, we repair both gas and electric dryers. Gas dryers are very common in Corte Madera's older homes and we carry common gas valve parts on our trucks.</p></div>
             <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Do you offer same-day dryer repair in Corte Madera?</p><p style="color:#4A5568;font-size:0.875rem;">Yes \u2014 same-day service available for requests before 2 PM. We serve Corte Madera from our Marin County technicians.</p></div>
             <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for dryer repair in Corte Madera.</p>
@@ -1101,7 +1101,7 @@ function getSEOContent(route) {
     },
     '/pacifica-wine-cooler-repair': {
       title: 'Wine Cooler Repair Pacifica | Coastal Experts | FixitBay LLC',
-      description: 'Wine cooler repair in Pacifica. Salt air & humidity specialists. Thermoelectric, compressor & gasket repair. From $195 after $60 diagnostic.',
+      description: 'Wine cooler repair in Pacifica. Salt air & humidity specialists. Thermoelectric, compressor & gasket repair. From $195 after $80 diagnostic.',
       h1: 'Wine Cooler Repair in Pacifica',
       content: `
             <p style="margin-bottom:1rem;">Pacifica is one of the foggiest, most humid cities in the Bay Area \u2014 sitting directly on the Pacific coast. This coastal environment is uniquely harsh on wine coolers: salt air accelerates compressor corrosion, humidity causes door gasket failure 2\u20133x faster than inland, and thermoelectric units struggle against the naturally cool ambient temperature. If you own a wine cooler in Pacifica, proactive maintenance is critical to protecting your collection.</p>
@@ -1114,7 +1114,7 @@ function getSEOContent(route) {
               <li style="margin-bottom:0.5rem;"><strong>Condensation buildup inside the unit</strong> — Pacifica's humidity creates visible condensation on shelves and bottles when seals fail.</li>
             </ul>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Wine Cooler Repair Pricing in Pacifica</h2>
-            <p style="margin-bottom:1rem;">Wine cooler repairs in Pacifica start from <strong>$195 after the $60 diagnostic fee</strong>. Door gasket replacement is $120\u2013$180; thermoelectric module replacement runs $180\u2013$280. We use corrosion-resistant parts where possible for Pacifica installations.</p>
+            <p style="margin-bottom:1rem;">Wine cooler repairs in Pacifica start from <strong>$195 after the $80 diagnostic fee</strong>. Door gasket replacement is $120\u2013$180; thermoelectric module replacement runs $180\u2013$280. We use corrosion-resistant parts where possible for Pacifica installations.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Frequently Asked Questions</h2>
             <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">Why does my wine cooler break down faster in Pacifica?</p><p style="color:#4A5568;font-size:0.875rem;">Pacifica's coastal fog and salt air are uniquely hard on wine coolers. Door seals degrade 2\u20133x faster, and thermoelectric units struggle in high-humidity environments. Annual maintenance is especially recommended in Pacifica.</p></div>
             <div style="margin-bottom:0.75rem;"><p style="font-weight:bold;color:#1A3B5D;margin-bottom:0.25rem;">How much does wine cooler repair cost in Pacifica?</p><p style="color:#4A5568;font-size:0.875rem;">Wine cooler repairs in Pacifica typically cost $150\u2013$380. Door gasket replacement is $120\u2013$180; thermoelectric module replacement runs $180\u2013$280.</p></div>
@@ -1124,7 +1124,7 @@ function getSEOContent(route) {
     },
     '/san-francisco-dishwasher-repair': {
       title: 'Dishwasher Repair San Francisco | Local SF Service | FixitBay LLC',
-      description: 'Dishwasher repair in San Francisco. SFPUC hard water specialists. Victorian & Edwardian home experts. From $140 after $60 diagnostic. 180-day warranty.',
+      description: 'Dishwasher repair in San Francisco. SFPUC hard water specialists. Victorian & Edwardian home experts. From $140 after $80 diagnostic. 180-day warranty.',
       h1: 'Dishwasher Repair in San Francisco',
       content: `
             <p style="margin-bottom:1rem;">San Francisco homes present unique challenges for dishwashers that technicians in other cities rarely encounter. Our team specializes in the specific issues that SF apartments, Victorians, and high-rises face — from SFPUC hard water problems to the tight under-counter spaces common in pre-war kitchens.</p>
@@ -1143,13 +1143,13 @@ function getSEOContent(route) {
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">San Francisco Neighborhoods We Serve</h2>
             <p style="margin-bottom:1rem;">We provide same-day dishwasher repair across all San Francisco neighborhoods: <strong>Mission, Castro, Pacific Heights, Sunset, Richmond, SoMa, Marina, Noe Valley, Bernal Heights</strong>, Nob Hill, Russian Hill, Twin Peaks, the Haight, Inner Sunset, Outer Sunset, Excelsior, Bayview, Potrero Hill, and more.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">SF Dishwasher Repair Pricing</h2>
-            <p style="margin-bottom:1rem;">Most dishwasher repairs in San Francisco cost <strong>$140–$320 after the $60 diagnostic fee</strong>. Drain pump replacement typically runs $150–$250; door seal replacement is $80–$180. The $60 diagnostic is fully credited toward your repair.</p>
+            <p style="margin-bottom:1rem;">Most dishwasher repairs in San Francisco cost <strong>$140–$320 after the $80 diagnostic fee</strong>. Drain pump replacement typically runs $150–$250; door seal replacement is $80–$180. The $80 diagnostic is fully credited toward your repair.</p>
             <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day dishwasher repair in San Francisco. Also see our <a href="/dishwasher-repair" style="color:#C0362C;font-weight:bold;">Bay Area dishwasher repair</a> page for general service information.</p>
           `
     },
     '/san-francisco-refrigerator-repair': {
       title: 'Refrigerator Repair San Francisco | Local SF Service | FixitBay LLC',
-      description: 'Refrigerator repair in San Francisco. Sub-Zero, Viking & all brands. Victorian kitchen specialists. From $180 after $60 diagnostic. 180-day warranty.',
+      description: 'Refrigerator repair in San Francisco. Sub-Zero, Viking & all brands. Victorian kitchen specialists. From $180 after $80 diagnostic. 180-day warranty.',
       h1: 'Refrigerator Repair in San Francisco',
       content: `
             <p style="margin-bottom:1rem;">San Francisco's unique housing stock and coastal climate create specific refrigerator challenges you won't find in other Bay Area cities. From Sub-Zero built-ins in Pacific Heights to aging GE units in Sunset District flats, our technicians understand how SF's fog, humidity, and older building infrastructure affect refrigerator performance and longevity.</p>
@@ -1168,13 +1168,13 @@ function getSEOContent(route) {
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">San Francisco Neighborhoods We Serve</h2>
             <p style="margin-bottom:1rem;">Same-day refrigerator repair across all SF neighborhoods: <strong>Pacific Heights, Nob Hill, Russian Hill, Marina, Sunset, Richmond, Mission, Castro, SoMa, Noe Valley, Bernal Heights</strong>, Twin Peaks, the Haight, Potrero Hill, Excelsior, Bayview, and more.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">SF Refrigerator Repair Pricing</h2>
-            <p style="margin-bottom:1rem;">Most refrigerator repairs in San Francisco cost <strong>$180–$450 after the $60 diagnostic fee</strong>. Thermostat replacement runs $150–$250; compressor relay $120–$200; door seal replacement $100–$180. Sub-Zero and built-in models may cost more due to specialized parts.</p>
+            <p style="margin-bottom:1rem;">Most refrigerator repairs in San Francisco cost <strong>$180–$450 after the $80 diagnostic fee</strong>. Thermostat replacement runs $150–$250; compressor relay $120–$200; door seal replacement $100–$180. Sub-Zero and built-in models may cost more due to specialized parts.</p>
             <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day refrigerator repair in San Francisco. Also see our <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">Bay Area refrigerator repair</a> page for general service information.</p>
           `
     },
     '/san-francisco-washer-repair': {
       title: 'Washer Repair San Francisco | Local SF Service | FixitBay LLC',
-      description: 'Washer repair in San Francisco. Multi-unit building specialists. Front-load & top-load. From $150 after $60 diagnostic. 180-day warranty.',
+      description: 'Washer repair in San Francisco. Multi-unit building specialists. Front-load & top-load. From $150 after $80 diagnostic. 180-day warranty.',
       h1: 'Washer Repair in San Francisco',
       content: `
             <p style="margin-bottom:1rem;">Washing machine repairs in San Francisco come with challenges unique to the city's dense, multi-unit housing and older building infrastructure. From shared laundry connections in Victorian flats to stackable units in SoMa condos, our technicians understand the specific plumbing constraints and space limitations of SF homes.</p>
@@ -1193,13 +1193,13 @@ function getSEOContent(route) {
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">San Francisco Neighborhoods We Serve</h2>
             <p style="margin-bottom:1rem;">Same-day washer repair across all SF neighborhoods: <strong>Mission, Castro, SoMa, Marina, Pacific Heights, Noe Valley, Bernal Heights, Sunset, Richmond</strong>, Twin Peaks, Diamond Heights, the Haight, Potrero Hill, Excelsior, Bayview, and more.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">SF Washer Repair Pricing</h2>
-            <p style="margin-bottom:1rem;">Most washer repairs in San Francisco cost <strong>$150–$350 after the $60 diagnostic fee</strong>. Drain pump replacement runs $150–$250; door seal replacement $120–$200; motor coupling $100–$180. The $60 diagnostic is fully credited toward your repair.</p>
+            <p style="margin-bottom:1rem;">Most washer repairs in San Francisco cost <strong>$150–$350 after the $80 diagnostic fee</strong>. Drain pump replacement runs $150–$250; door seal replacement $120–$200; motor coupling $100–$180. The $80 diagnostic is fully credited toward your repair.</p>
             <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day washer repair in San Francisco. Also see our <a href="/washer-repair" style="color:#C0362C;font-weight:bold;">Bay Area washer repair</a> page for general service information.</p>
           `
     },
     '/san-francisco-dryer-repair': {
       title: 'Dryer Repair San Francisco | Gas & Electric | FixitBay LLC',
-      description: 'Dryer repair in San Francisco. Gas & electric. Victorian venting specialists. From $120 after $60 diagnostic. 180-day warranty.',
+      description: 'Dryer repair in San Francisco. Gas & electric. Victorian venting specialists. From $120 after $80 diagnostic. 180-day warranty.',
       h1: 'Dryer Repair in San Francisco',
       content: `
             <p style="margin-bottom:1rem;">Dryer repairs in San Francisco require expertise that goes beyond standard appliance service. The city's older housing stock, shared venting systems, and building code requirements create dryer challenges unique to SF. Our technicians specialize in the gas and electric dryer issues that San Francisco homes face — from Victorian-era venting constraints to fire safety compliance in multi-unit buildings.</p>
@@ -1218,13 +1218,13 @@ function getSEOContent(route) {
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">San Francisco Neighborhoods We Serve</h2>
             <p style="margin-bottom:1rem;">Same-day dryer repair across all SF neighborhoods: <strong>Mission, Castro, Haight, Sunset, Richmond, SoMa, Marina, Pacific Heights, Noe Valley, Bernal Heights</strong>, Twin Peaks, Potrero Hill, Excelsior, Bayview, and more.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">SF Dryer Repair Pricing</h2>
-            <p style="margin-bottom:1rem;">Most dryer repairs in San Francisco cost <strong>$120–$300 after the $60 diagnostic fee</strong>. Thermal fuse replacement runs $100–$180; gas valve repair $200–$320; belt replacement $80–$150. The $60 diagnostic is fully credited toward your repair.</p>
+            <p style="margin-bottom:1rem;">Most dryer repairs in San Francisco cost <strong>$120–$300 after the $80 diagnostic fee</strong>. Thermal fuse replacement runs $100–$180; gas valve repair $200–$320; belt replacement $80–$150. The $80 diagnostic is fully credited toward your repair.</p>
             <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day dryer repair in San Francisco. Also see our <a href="/dryer-repair" style="color:#C0362C;font-weight:bold;">Bay Area dryer repair</a> page for general service information.</p>
           `
     },
     '/san-francisco-oven-repair': {
       title: 'Oven Repair San Francisco | Gas & Electric | FixitBay LLC',
-      description: 'Oven repair in San Francisco. Gas igniter specialists. Viking, Wolf, Thermador experts. From $150 after $60 diagnostic. 180-day warranty.',
+      description: 'Oven repair in San Francisco. Gas igniter specialists. Viking, Wolf, Thermador experts. From $150 after $80 diagnostic. 180-day warranty.',
       h1: 'Oven Repair in San Francisco',
       content: `
             <p style="margin-bottom:1rem;">San Francisco kitchens demand oven expertise that accounts for the city's unique combination of gas infrastructure, high-end appliance prevalence, and older building challenges. From Wolf ranges in Pacific Heights estates to aging Whirlpool gas ovens in Sunset District homes, our technicians fix gas igniters, heating elements, temperature sensors, and control boards across every SF neighborhood.</p>
@@ -1243,13 +1243,13 @@ function getSEOContent(route) {
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">San Francisco Neighborhoods We Serve</h2>
             <p style="margin-bottom:1rem;">Same-day oven repair across all SF neighborhoods: <strong>Pacific Heights, Nob Hill, Sea Cliff, Sunset, Richmond, Mission, Castro, SoMa, Marina, Noe Valley</strong>, Twin Peaks, Presidio Heights, Russian Hill, the Haight, Potrero Hill, and more.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">SF Oven Repair Pricing</h2>
-            <p style="margin-bottom:1rem;">Most oven repairs in San Francisco cost <strong>$150–$400 after the $60 diagnostic fee</strong>. Gas igniter replacement runs $150–$220; heating element $130–$200; temperature sensor $100–$180. Pro-style ranges (Wolf, Viking, Thermador) may cost more due to specialized parts.</p>
+            <p style="margin-bottom:1rem;">Most oven repairs in San Francisco cost <strong>$150–$400 after the $80 diagnostic fee</strong>. Gas igniter replacement runs $150–$220; heating element $130–$200; temperature sensor $100–$180. Pro-style ranges (Wolf, Viking, Thermador) may cost more due to specialized parts.</p>
             <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day oven repair in San Francisco. Also see our <a href="/oven-repair" style="color:#C0362C;font-weight:bold;">Bay Area oven repair</a> page for general service information.</p>
           `
     },
     '/san-francisco-ice-maker-repair': {
       title: 'Ice Maker Repair San Francisco | Local SF Service | FixitBay LLC',
-      description: 'Ice maker repair in San Francisco. Sub-Zero, Samsung & all brands. Water pressure specialists. From $150 after $60 diagnostic. 180-day warranty.',
+      description: 'Ice maker repair in San Francisco. Sub-Zero, Samsung & all brands. Water pressure specialists. From $150 after $80 diagnostic. 180-day warranty.',
       h1: 'Ice Maker Repair in San Francisco',
       content: `
             <p style="margin-bottom:1rem;">Ice maker repairs in San Francisco involve challenges specific to the city's water supply, building infrastructure, and appliance mix. From built-in Sub-Zero ice systems in Pacific Heights to Samsung refrigerator ice makers in Marina apartments, our technicians diagnose frozen water lines, faulty inlet valves, and water pressure issues across every SF neighborhood.</p>
@@ -1268,7 +1268,7 @@ function getSEOContent(route) {
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">San Francisco Neighborhoods We Serve</h2>
             <p style="margin-bottom:1rem;">Same-day ice maker repair across all SF neighborhoods: <strong>Pacific Heights, Nob Hill, Twin Peaks, Marina, Sunset, Richmond, Mission, Castro, SoMa, Noe Valley</strong>, Diamond Heights, Russian Hill, Sea Cliff, Presidio Heights, Potrero Hill, and more.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">SF Ice Maker Repair Pricing</h2>
-            <p style="margin-bottom:1rem;">Most ice maker repairs in San Francisco cost <strong>$150–$280 after the $60 diagnostic fee</strong>. Water inlet valve replacement runs $120–$200; ice maker module replacement $150–$250; water line repair $80–$150. Sub-Zero and built-in units may cost more due to specialized parts.</p>
+            <p style="margin-bottom:1rem;">Most ice maker repairs in San Francisco cost <strong>$150–$280 after the $80 diagnostic fee</strong>. Water inlet valve replacement runs $120–$200; ice maker module replacement $150–$250; water line repair $80–$150. Sub-Zero and built-in units may cost more due to specialized parts.</p>
             <p style="margin-bottom:1rem;">Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for same-day ice maker repair in San Francisco. Also see our <a href="/ice-maker-repair" style="color:#C0362C;font-weight:bold;">Bay Area ice maker repair</a> page for general service information.</p>
           `
     }
@@ -1326,18 +1326,18 @@ function getSEOContent(route) {
         return {
           title: `${serviceName} Repair ${cityName} CA | FixitBay LLC`,
           robots: 'index, follow',
-          description: `Professional ${serviceName.toLowerCase()} repair in ${cityName}. $60 diagnostic applied to repair. Same-day service. 180-day warranty. Licensed & insured.`,
+          description: `Professional ${serviceName.toLowerCase()} repair in ${cityName}. $80 diagnostic applied to repair. Same-day service. 180-day warranty. Licensed & insured.`,
           h1: `${serviceName} Repair in ${cityName}`,
           content: `
             <p style="margin-bottom:1rem;">FixitBay provides professional ${serviceName.toLowerCase()} repair throughout ${cityName} with same-day and next-day availability. Our licensed technicians arrive with common ${serviceName.toLowerCase()} parts stocked\u2014including thermostats, pumps, motors, and control boards\u2014enabling us to complete most repairs during the first visit.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">${serviceName} Repair Pricing in ${cityName}</h2>
-            <p style="margin-bottom:1rem;">Most ${serviceName.toLowerCase()} repairs in ${cityName} cost ${range} after the $60 diagnostic fee. We provide exact pricing before starting any work, and the $60 diagnostic is fully applied to your repair cost.</p>
+            <p style="margin-bottom:1rem;">Most ${serviceName.toLowerCase()} repairs in ${cityName} cost ${range} after the $80 diagnostic fee. We provide exact pricing before starting any work, and the $80 diagnostic is fully applied to your repair cost.</p>
             <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why Choose FixitBay for ${serviceName} Repair in ${cityName}?</h2>
             <ul style="margin-bottom:1rem;padding-left:1.5rem;">
               <li style="margin-bottom:0.5rem;"><strong>Same-Day Service:</strong> Call before noon for same-day ${serviceName.toLowerCase()} repair in ${cityName}.</li>
               <li style="margin-bottom:0.5rem;"><strong>180-Day Warranty:</strong> Every repair backed by our comprehensive parts and labor warranty.</li>
               <li style="margin-bottom:0.5rem;"><strong>All Major Brands:</strong> Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Viking, Thermador, Miele.</li>
-              <li style="margin-bottom:0.5rem;"><strong>$60 Diagnostic:</strong> Fully credited toward your repair cost.</li>
+              <li style="margin-bottom:0.5rem;"><strong>$80 Diagnostic:</strong> Fully credited toward your repair cost.</li>
               <li style="margin-bottom:0.5rem;"><strong>Licensed & Insured:</strong> Full CA credentials and liability coverage.</li>
             </ul>
             <p style="margin-bottom:1rem;">Every ${serviceName.toLowerCase()} repair in ${cityName} includes our comprehensive 180-day warranty on parts and labor. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for fast ${serviceName.toLowerCase()} repair service in ${cityName}.</p>
@@ -1365,15 +1365,15 @@ function getSEOContent(route) {
     const SERVICE_DATA = {
       'refrigerator': {
         title: 'Refrigerator Repair Bay Area | Same-Day Service | FixitBay LLC',
-        desc: 'Expert refrigerator repair across the Bay Area. Cooling issues, leaks, ice buildup. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay.',
+        desc: 'Expert refrigerator repair across the Bay Area. Cooling issues, leaks, ice buildup. $80 diagnostic applied to repair. 180-day warranty. Call FixitBay.',
         h1: 'Refrigerator Repair in the Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your refrigerator stops cooling, leaks water, or makes unusual noises, FixitBay provides same-day repair service across the Bay Area — from San Francisco to Marin County and the Peninsula. Our licensed technicians diagnose and fix most refrigerator issues in a single visit — from compressor failures and thermostat problems to ice maker malfunctions and door seal replacements.</p>
-          <p style="margin-bottom:1rem;">We service all major refrigerator brands including Sub-Zero, Samsung, LG, GE, Whirlpool, KitchenAid, Bosch, Frigidaire, Maytag, and Viking. Our $60 diagnostic fee is fully applied to your repair cost, and every job is backed by our 180-day warranty on parts and labor.</p>
+          <p style="margin-bottom:1rem;">We service all major refrigerator brands including Sub-Zero, Samsung, LG, GE, Whirlpool, KitchenAid, Bosch, Frigidaire, Maytag, and Viking. Our $80 diagnostic fee is fully applied to your repair cost, and every job is backed by our 180-day warranty on parts and labor.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Refrigerator</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Under 10 years old with a single issue — most component failures (thermostat, compressor relay, door seal, ice maker) cost $150–$400, far less than a $1,500+ replacement.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Faulty door seal or gasket — quick, affordable fix that solves most temperature complaints.</p>
-          <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Compressor failure on a 12+ year unit — at $600–$900, that money is better put toward a new, efficient model.</p>
+          <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Compressor failure on a 12+ year unit — at $800–$900, that money is better put toward a new, efficient model.</p>
           <p style="margin-bottom:1rem;"><strong>Replace:</strong> Frequent breakdowns or 2+ repairs/year — cumulative cost usually exceeds half the price of a new unit.</p>
           <p style="margin-bottom:1rem;"><strong>Looking for refrigerator repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-refrigerator-repair" style="color:#C0362C;font-weight:bold;">San Francisco Refrigerator Repair</a> page for local details and availability.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
@@ -1383,16 +1383,16 @@ function getSEOContent(route) {
       },
       'washer': {
         title: 'Washer Repair Bay Area | Same-Day Service | FixitBay LLC',
-        desc: 'Expert washing machine repair in SF Bay Area. Peninsula, Marin & San Francisco. $60 diagnostic applied to repair. 180-day warranty. FixitBay.',
+        desc: 'Expert washing machine repair in SF Bay Area. Peninsula, Marin & San Francisco. $80 diagnostic applied to repair. 180-day warranty. FixitBay.',
         h1: 'Washer Repair in the Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your washing machine won't spin, drain, or start, FixitBay delivers fast, reliable repair throughout the Bay Area — from San Francisco to Marin County and the Peninsula. Our licensed technicians diagnose and fix most washer issues on the same visit — from motor and drum failures to drain pump problems and control board malfunctions.</p>
-          <p style="margin-bottom:1rem;">We service all major washer brands including Whirlpool, Samsung, LG, GE, Maytag, Bosch, and more. Front-load, top-load, and high-efficiency models — our team handles them all. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;">We service all major washer brands including Whirlpool, Samsung, LG, GE, Maytag, Bosch, and more. Front-load, top-load, and high-efficiency models — our team handles them all. $80 diagnostic credited toward repair. 180-day warranty.</p>
           <p style="margin-bottom:1rem;"><strong>Looking for washer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-washer-repair" style="color:#C0362C;font-weight:bold;">San Francisco Washer Repair</a> page for local details and availability.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Washing Machine</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Under 8 years old with a mechanical issue — door latches, drain pumps, belts cost $150–$280.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Shakes violently — usually worn shock absorbers or unbalanced drum, not a replacement issue.</p>
-          <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Transmission failure on 10+ year unit — $400–$600 repair vs. new efficient washer.</p>
+          <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Transmission failure on 10+ year unit — $400–$800 repair vs. new efficient washer.</p>
           <p style="margin-bottom:1rem;"><strong>Replace:</strong> Rust in drum or persistent mold — repair cost approaches replacement cost.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
           <p>We also offer <a href="/dryer-repair" style="color:#C0362C;font-weight:bold;">dryer repair</a>, <a href="/dishwasher-repair" style="color:#C0362C;font-weight:bold;">dishwasher repair</a>, and <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerator repair</a> across the Bay Area.</p>
@@ -1401,11 +1401,11 @@ function getSEOContent(route) {
       },
       'dryer': {
         title: 'Dryer Repair Bay Area | Same-Day Service | FixitBay LLC',
-        desc: 'Dryer repair in SF & Bay Area. Gas and electric. Not heating, not spinning. $60 diagnostic applied to repair. Call FixitBay.',
+        desc: 'Dryer repair in SF & Bay Area. Gas and electric. Not heating, not spinning. $80 diagnostic applied to repair. Call FixitBay.',
         h1: 'Dryer Repair in the Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your dryer stops heating, won't start, or makes loud noises, FixitBay provides expert repair across the Bay Area — from San Francisco to Marin County and the Peninsula. We fix gas and electric dryers — from heating element failures and thermal fuse issues to drum belt problems and vent blockages.</p>
-          <p style="margin-bottom:1rem;">We service all major brands including Whirlpool, Samsung, LG, GE, Maytag, and more. $60 diagnostic credited toward repair. 180-day warranty on parts and labor.</p>
+          <p style="margin-bottom:1rem;">We service all major brands including Whirlpool, Samsung, LG, GE, Maytag, and more. $80 diagnostic credited toward repair. 180-day warranty on parts and labor.</p>
           <p style="margin-bottom:1rem;"><strong>Looking for dryer repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-dryer-repair" style="color:#C0362C;font-weight:bold;">San Francisco Dryer Repair</a> page for local details and availability.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Dryer</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Under 10 years old with heating issue — elements, fuses cost $150–$250 to replace.</p>
@@ -1419,11 +1419,11 @@ function getSEOContent(route) {
       },
       'dishwasher': {
         title: 'Dishwasher Repair San Francisco | FixitBay LLC',
-        desc: 'Expert dishwasher repair in San Francisco. Leaks, draining, won\'t start. Same- or next-day appointments, $60 diagnostic applied to repair. FixitBay LLC.',
+        desc: 'Expert dishwasher repair in San Francisco. Leaks, draining, won\'t start. Same- or next-day appointments, $80 diagnostic applied to repair. FixitBay LLC.',
         h1: 'Dishwasher Repair in San Francisco | Same-Day Service',
         content: `
           <p style="margin-bottom:1rem;">FixitBay LLC is San Francisco's trusted dishwasher repair service. We handle everything from clogged drain pumps and leaking door seals to faulty control boards and error codes. San Francisco's older Victorian and Edwardian homes often have tight kitchen layouts and aging plumbing — our technicians are experienced with these challenges.</p>
-          <p style="margin-bottom:1rem;">We serve every San Francisco neighborhood with same- or next-day appointment availability. Our response time averages under 4 hours for urgent dishwasher leaks. All major brands: Bosch, Samsung, LG, GE, Whirlpool, KitchenAid, Miele, and Thermador. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;">We serve every San Francisco neighborhood with same- or next-day appointment availability. Our response time averages under 4 hours for urgent dishwasher leaks. All major brands: Bosch, Samsung, LG, GE, Whirlpool, KitchenAid, Miele, and Thermador. $80 diagnostic credited toward repair. 180-day warranty.</p>
           <p style="margin-bottom:1rem;"><strong>Need dishwasher repair in a specific San Francisco neighborhood?</strong> Visit our <a href="/san-francisco-dishwasher-repair" style="color:#C0362C;font-weight:bold;">San Francisco Dishwasher Repair</a> page for detailed neighborhood coverage and local availability.</p>
           <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Dishwasher</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Under 8 years old, won't drain or clean — clogged filters, bad drain pumps cost $150–$280.</p>
@@ -1433,7 +1433,7 @@ function getSEOContent(route) {
           <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Why SF Residents Choose FixitBay</h2>
           <ul style="margin-bottom:1rem;padding-left:20px;">
             <li>Licensed & insured — CA contractor, 3+ years serving the Bay Area</li>
-            <li>$60 diagnostic fee applied toward your repair — no hidden costs</li>
+            <li>$80 diagnostic fee applied toward your repair — no hidden costs</li>
             <li>Same- or next-day appointments, Monday through Saturday</li>
             <li>Experienced with SF's Victorian-era kitchens and compact condo layouts</li>
             <li>180-day warranty on all parts and labor</li>
@@ -1445,11 +1445,11 @@ function getSEOContent(route) {
       },
       'oven': {
         title: 'Oven Repair Bay Area | Same-Day Service | FixitBay LLC',
-        desc: 'Expert oven repair in SF Bay Area. Gas and electric. Peninsula, Marin & San Francisco. $60 diagnostic applied to repair. 180-day warranty. FixitBay.',
+        desc: 'Expert oven repair in SF Bay Area. Gas and electric. Peninsula, Marin & San Francisco. $80 diagnostic applied to repair. 180-day warranty. FixitBay.',
         h1: 'Oven Repair in the Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your oven won't heat, won't reach temperature, or shows error codes, FixitBay provides expert repair across the Bay Area — from San Francisco to Marin County and the Peninsula. We fix heating elements, igniters, temperature sensors, gas valves, control boards, door hinges, and safety systems for both gas and electric ovens.</p>
-          <p style="margin-bottom:1rem;">We service all major brands including GE, Whirlpool, Samsung, LG, Viking, Thermador, Wolf, Bosch, and KitchenAid. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;">We service all major brands including GE, Whirlpool, Samsung, LG, Viking, Thermador, Wolf, Bosch, and KitchenAid. $80 diagnostic credited toward repair. 180-day warranty.</p>
           <p style="margin-bottom:1rem;"><strong>Looking for oven repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-oven-repair" style="color:#C0362C;font-weight:bold;">San Francisco Oven Repair</a> page for local details and availability.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Oven</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Not heating or temperature off — igniters, elements cost $150–$300.</p>
@@ -1463,15 +1463,15 @@ function getSEOContent(route) {
       },
       'cooktop': {
         title: 'Cooktop Repair San Francisco | Gas & Electric | FixitBay LLC',
-        desc: 'Gas, electric, and induction cooktop repair in San Francisco & Bay Area. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+        desc: 'Gas, electric, and induction cooktop repair in San Francisco & Bay Area. $80 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
         h1: 'Cooktop Repair in San Francisco & Bay Area',
         content: `
           <p style="margin-bottom:1rem;">Cooktop repairs demand technical expertise and safety compliance. Our certified technicians diagnose gas, electric, smooth-top, and induction cooktops — from igniter failures and burner valve issues to element burnouts and control board malfunctions. We perform gas leak detection on every gas cooktop repair.</p>
-          <p style="margin-bottom:1rem;">We service Wolf, Viking, Thermador, Bosch, GE, KitchenAid, Samsung, LG, and more. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;">We service Wolf, Viking, Thermador, Bosch, GE, KitchenAid, Samsung, LG, and more. $80 diagnostic credited toward repair. 180-day warranty.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Cooktop</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Gas burner won't ignite — igniter and valve replacement $150–$250.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> One electric element not heating — $140–$200 replacement.</p>
-          <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Cracked glass on older smooth-top — $300–$600 approaches new cooktop cost.</p>
+          <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Cracked glass on older smooth-top — $300–$800 approaches new cooktop cost.</p>
           <p style="margin-bottom:1rem;"><strong>Repair:</strong> Induction error codes — board/sensor $200–$400, cheaper than replacing the unit.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
           <p>We also offer <a href="/oven-repair" style="color:#C0362C;font-weight:bold;">oven repair</a>, <a href="/range-repair" style="color:#C0362C;font-weight:bold;">range repair</a>, <a href="/stove-repair" style="color:#C0362C;font-weight:bold;">stove repair</a>, and <a href="/dishwasher-repair" style="color:#C0362C;font-weight:bold;">dishwasher repair</a>.</p>
@@ -1480,11 +1480,11 @@ function getSEOContent(route) {
       },
       'ice-maker': {
         title: 'Ice Maker Repair Bay Area | Same-Day Service | FixitBay LLC',
-        desc: 'Expert ice maker repair across SF Bay Area — Peninsula, Marin & San Francisco. Same-day service. $60 diagnostic applied to repair cost. 180-day warranty.',
+        desc: 'Expert ice maker repair across SF Bay Area — Peninsula, Marin & San Francisco. Same-day service. $80 diagnostic applied to repair cost. 180-day warranty.',
         h1: 'Ice Maker Repair in the Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your ice maker stops making ice, leaks water, or produces bad-tasting cubes, FixitBay provides same-day repair across the Bay Area — from San Francisco to Marin County and the Peninsula. We fix water inlet valves, ice maker assemblies, frozen lines, filters, and dispenser motors for built-in and refrigerator ice makers.</p>
-          <p style="margin-bottom:1rem;">We service ice makers in all major brands including Sub-Zero, Samsung, LG, GE, Whirlpool, KitchenAid, and more. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;">We service ice makers in all major brands including Sub-Zero, Samsung, LG, GE, Whirlpool, KitchenAid, and more. $80 diagnostic credited toward repair. 180-day warranty.</p>
           <p style="margin-bottom:1rem;"><strong>Looking for ice maker repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-ice-maker-repair" style="color:#C0362C;font-weight:bold;">San Francisco Ice Maker Repair</a> page for local details and availability.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Ice Maker</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Stopped making ice, fridge works fine — frozen line or bad valve costs $150–$280.</p>
@@ -1502,7 +1502,7 @@ function getSEOContent(route) {
         h1: 'Wine Cooler Repair in the Bay Area',
         content: `
           <p style="margin-bottom:1rem;">Wine refrigerators require precise temperature and humidity control. Our technicians specialize in single-zone, dual-zone, and built-in wine coolers — diagnosing thermostat failures, compressor issues, humidity problems, and vibration concerns. We respond urgently to prevent wine damage from temperature fluctuations.</p>
-          <p style="margin-bottom:1rem;">We service Sub-Zero, Vinotemp, EuroCave, Wine Enthusiast, NewAir, Whynter, EdgeStar, Marvel, Liebherr, Kalamera, hOmelabs, Thermador, U-Line, KitchenAid, Frigidaire, Bosch, and GE Monogram. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;">We service Sub-Zero, Vinotemp, EuroCave, Wine Enthusiast, NewAir, Whynter, EdgeStar, Marvel, Liebherr, Kalamera, hOmelabs, Thermador, U-Line, KitchenAid, Frigidaire, Bosch, and GE Monogram. $80 diagnostic credited toward repair. 180-day warranty.</p>
 
           <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Wine Cooler Repair for San Francisco's Unique Climate</h2>
           <p style="margin-bottom:1rem;">San Francisco's coastal microclimate — fog, salt air, and humidity swings between 50–95% — creates specific challenges for wine coolers. Door seals degrade faster in Pacifica, the Sunset District, and any home within a mile of the ocean. Thermoelectric units struggle when kitchen ambient temperatures spike above 80°F in South Bay and East Bay homes during summer months.</p>
@@ -1547,7 +1547,7 @@ function getSEOContent(route) {
         h1: 'Wine Refrigerator Repair in San Francisco & Bay Area',
         content: `
           <p style="margin-bottom:1rem;">Wine refrigerators are precision appliances built for serious collectors. Unlike thermoelectric wine coolers, compressor-based wine refrigerators (Sub-Zero, Liebherr, Thermador, Viking) maintain exact temperatures across large collections of 50&ndash;200+ bottles. FixitBay repairs all wine refrigerator types &mdash; built-in undercounter, freestanding, and panel-ready models.</p>
-          <p style="margin-bottom:1rem;">Our technician Andrei diagnoses sealed system failures, compressor issues, evaporator fan problems, thermostat drift, electronic control board malfunctions, and door gasket deterioration. We carry OEM parts for Sub-Zero, Liebherr, Thermador, Viking, Miele, Bosch, GE Monogram, and Dacor. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;">Our technician Andrei diagnoses sealed system failures, compressor issues, evaporator fan problems, thermostat drift, electronic control board malfunctions, and door gasket deterioration. We carry OEM parts for Sub-Zero, Liebherr, Thermador, Viking, Miele, Bosch, GE Monogram, and Dacor. $80 diagnostic credited toward repair. 180-day warranty.</p>
           <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Wine Refrigerator vs. Wine Cooler: Key Differences</h2>
           <p style="margin-bottom:0.5rem;"><strong>Wine Refrigerators</strong> &mdash; Compressor-based, 50&ndash;200+ bottles, precise dual/triple-zone temperature control (reds at 55&ndash;65&deg;F, whites at 45&ndash;55&deg;F). Premium brands: Sub-Zero, Liebherr, Thermador.</p>
           <p style="margin-bottom:1rem;"><strong>Wine Coolers</strong> &mdash; Often thermoelectric, under 50 bottles, single-zone. More affordable but less precise. See our <a href="/wine-cooler-repair" style="color:#C0362C;font-weight:bold;">wine cooler repair</a> page.</p>
@@ -1560,11 +1560,11 @@ function getSEOContent(route) {
       },
       'stove': {
         title: 'Stove Repair San Francisco | Gas & Electric | FixitBay LLC',
-        desc: 'Expert stove repair in San Francisco & Bay Area. Gas and electric stoves. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+        desc: 'Expert stove repair in San Francisco & Bay Area. Gas and electric stoves. $80 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
         h1: 'Stove Repair in San Francisco & Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your stove burners won't light, heat unevenly, or spark continuously, FixitBay provides same-day repair across San Francisco, the Peninsula, and North Bay. We fix gas stoves, electric stoves, and dual-fuel models — including burner igniters, gas valves, surface elements, control knobs, and wiring issues.</p>
-          <p style="margin-bottom:1rem;">San Francisco's older housing stock means gas stove repairs are especially common. Our technicians perform professional gas leak detection on every gas stove service call. We service GE, Whirlpool, Samsung, LG, Frigidaire, KitchenAid, Viking, and Wolf. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;">San Francisco's older housing stock means gas stove repairs are especially common. Our technicians perform professional gas leak detection on every gas stove service call. We service GE, Whirlpool, Samsung, LG, Frigidaire, KitchenAid, Viking, and Wolf. $80 diagnostic credited toward repair. 180-day warranty.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Stove</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Burner won't ignite — igniter replacement costs $120–$200 and is the most common gas stove repair.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Electric element not heating — individual coil or smooth-top element replacement runs $100–$180.</p>
@@ -1577,11 +1577,11 @@ function getSEOContent(route) {
       },
       'range': {
         title: 'Range Repair San Francisco | Gas & Electric | FixitBay LLC',
-        desc: 'Expert range repair in San Francisco & Bay Area. Gas and electric ranges. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
+        desc: 'Expert range repair in San Francisco & Bay Area. Gas and electric ranges. $80 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733.',
         h1: 'Range Repair in San Francisco & Bay Area',
         content: `
           <p style="margin-bottom:1rem;">A range combines an oven and a cooktop/stovetop in one unit, and when either side fails, FixitBay repairs it fast. We provide same-day range repair across San Francisco, the Peninsula, and North Bay — covering gas ranges, electric ranges, dual-fuel models, and slide-in ranges.</p>
-          <p style="margin-bottom:1rem;">Our technicians fix oven heating elements, stovetop igniters, gas valves, temperature sensors, control boards, broiler elements, convection fans, and door hinges. We service GE, Whirlpool, Samsung, LG, Frigidaire, Viking, Wolf, Thermador, and Bosch. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;">Our technicians fix oven heating elements, stovetop igniters, gas valves, temperature sensors, control boards, broiler elements, convection fans, and door hinges. We service GE, Whirlpool, Samsung, LG, Frigidaire, Viking, Wolf, Thermador, and Bosch. $80 diagnostic credited toward repair. 180-day warranty.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Range</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Oven not heating but stovetop works — usually an igniter or element issue, $150–$300 to fix.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> One burner out on an otherwise good range — burner-specific repairs cost $120–$250.</p>
@@ -1594,15 +1594,15 @@ function getSEOContent(route) {
       },
       'freezer': {
         title: 'Freezer Repair San Francisco | Same-Day | FixitBay LLC',
-        desc: 'Expert freezer repair in San Francisco & Bay Area. Standalone and built-in. $60 diagnostic applied to repair. 180-day warranty. Call FixitBay.',
+        desc: 'Expert freezer repair in San Francisco & Bay Area. Standalone and built-in. $80 diagnostic applied to repair. 180-day warranty. Call FixitBay.',
         h1: 'Freezer Repair in San Francisco & Bay Area',
         content: `
           <p style="margin-bottom:1rem;">When your freezer stops freezing, frosts up excessively, or runs constantly, FixitBay provides same-day repair across San Francisco, the Peninsula, and North Bay. We fix standalone chest freezers, upright freezers, built-in freezer columns, and refrigerator freezer compartments.</p>
-          <p style="margin-bottom:1rem;">Our technicians diagnose thermostat failures, compressor problems, defrost system issues, evaporator fan failures, sealed system leaks, and temperature control malfunctions. We service Sub-Zero, GE, Whirlpool, Frigidaire, Samsung, LG, KitchenAid, and more. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;">Our technicians diagnose thermostat failures, compressor problems, defrost system issues, evaporator fan failures, sealed system leaks, and temperature control malfunctions. We service Sub-Zero, GE, Whirlpool, Frigidaire, Samsung, LG, KitchenAid, and more. $80 diagnostic credited toward repair. 180-day warranty.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">When to Repair vs. Replace Your Freezer</h2>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Freezer not cold enough — usually a thermostat, defrost timer, or evaporator fan issue, $150–$280.</p>
           <p style="margin-bottom:0.5rem;"><strong>Repair:</strong> Excessive frost buildup — a failing defrost heater or timer, $160–$250 to fix.</p>
-          <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Compressor failure on a chest freezer over 10 years old — compressor repair costs $350–$600, often close to the price of a new chest freezer.</p>
+          <p style="margin-bottom:0.5rem;"><strong>Replace:</strong> Compressor failure on a chest freezer over 10 years old — compressor repair costs $350–$800, often close to the price of a new chest freezer.</p>
           <p style="margin-bottom:1rem;"><strong>Repair:</strong> Compressor failure on a built-in Sub-Zero freezer column — these units cost $5,000–$12,000+ new. Compressor repair at $500–$900 is almost always worth it.</p>
           <h2 style="font-size:1.5rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
           <p>We also offer <a href="/refrigerator-repair" style="color:#C0362C;font-weight:bold;">refrigerator repair</a>, <a href="/ice-maker-repair" style="color:#C0362C;font-weight:bold;">ice maker repair</a>, and <a href="/wine-cooler-repair" style="color:#C0362C;font-weight:bold;">wine cooler repair</a> across the Bay Area.</p>
@@ -1611,11 +1611,11 @@ function getSEOContent(route) {
       },
       'wall-oven': {
         title: 'Wall Oven Repair San Francisco Bay Area | FixitBay LLC',
-        desc: 'Professional wall oven repair in San Francisco & Bay Area. Built-in single and double wall ovens. $60 diagnostic applied to repair. 180-day warranty.',
+        desc: 'Professional wall oven repair in San Francisco & Bay Area. Built-in single and double wall ovens. $80 diagnostic applied to repair. 180-day warranty.',
         h1: 'Wall Oven Repair in San Francisco & Bay Area',
         content: `
           <p style="margin-bottom:1rem;">Wall ovens require specialized repair skills due to their built-in installation. FixitBay provides same-day wall oven repair across San Francisco, the Peninsula, and Marin County. We fix single wall ovens, double wall ovens, combination microwave-oven units, and steam ovens from all major brands.</p>
-          <p style="margin-bottom:1rem;">Our technician diagnoses heating element failures, temperature sensor issues, control board malfunctions, convection fan problems, door hinge and latch failures, and self-clean cycle issues. We service GE, Whirlpool, KitchenAid, Bosch, Thermador, Viking, Wolf, Miele, and Samsung. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;">Our technician diagnoses heating element failures, temperature sensor issues, control board malfunctions, convection fan problems, door hinge and latch failures, and self-clean cycle issues. We service GE, Whirlpool, KitchenAid, Bosch, Thermador, Viking, Wolf, Miele, and Samsung. $80 diagnostic credited toward repair. 180-day warranty.</p>
           <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
           <p>We also offer <a href="/oven-repair" style="color:#C0362C;font-weight:bold;">oven repair</a>, <a href="/range-repair" style="color:#C0362C;font-weight:bold;">range repair</a>, <a href="/cooktop-repair" style="color:#C0362C;font-weight:bold;">cooktop repair</a>, and <a href="/stove-repair" style="color:#C0362C;font-weight:bold;">stove repair</a> across the Bay Area.</p>
         `,
@@ -1627,7 +1627,7 @@ function getSEOContent(route) {
         h1: 'Stacked Washer/Dryer Repair in San Francisco & Bay Area',
         content: `
           <p style="margin-bottom:1rem;">Stacked washer/dryer units are the standard in San Francisco apartments, SoMa lofts, and Peninsula condos — and when one breaks, you lose both machines at once. FixitBay technicians are trained on both all-in-one combo units and stacked pairs. We bring the right tools to safely unstack, repair, and re-stack units in tight laundry closets.</p>
-          <p style="margin-bottom:1rem;">Common issues include clogged drain pumps, failed heating elements, worn drum bearings, door latch failures, error codes, and condenser cleaning for combo units. We service LG, Samsung, Bosch, GE, Whirlpool, Maytag, Electrolux, Frigidaire, and Haier. $60 diagnostic credited toward repair. 180-day warranty.</p>
+          <p style="margin-bottom:1rem;">Common issues include clogged drain pumps, failed heating elements, worn drum bearings, door latch failures, error codes, and condenser cleaning for combo units. We service LG, Samsung, Bosch, GE, Whirlpool, Maytag, Electrolux, Frigidaire, and Haier. $80 diagnostic credited toward repair. 180-day warranty.</p>
           <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Related Repair Services</h2>
           <p>We also offer <a href="/washer-repair" style="color:#C0362C;font-weight:bold;">washer repair</a>, <a href="/dryer-repair" style="color:#C0362C;font-weight:bold;">dryer repair</a>, <a href="/maintenance/washer" style="color:#C0362C;font-weight:bold;">washer maintenance</a>, and <a href="/maintenance/dryer" style="color:#C0362C;font-weight:bold;">dryer maintenance</a> across the Bay Area.</p>
         `,
@@ -1652,11 +1652,11 @@ function getSEOContent(route) {
     return {
       title: `${serviceName} Repair San Francisco | FixitBay LLC`,
       robots: 'index, follow',
-      description: `Professional ${serviceName.toLowerCase()} repair in San Francisco & Bay Area. $60 diagnostic applied to repair. 180-day warranty. Same-day service.`,
+      description: `Professional ${serviceName.toLowerCase()} repair in San Francisco & Bay Area. $80 diagnostic applied to repair. 180-day warranty. Same-day service.`,
       h1: `${serviceName} Repair in San Francisco & Bay Area`,
       content: `
         <p style="margin-bottom: 1rem;">When your ${serviceName.toLowerCase()} breaks down, FixitBay provides fast, reliable repair service across San Francisco, the Peninsula, and North Bay. Our licensed technicians arrive fully equipped to diagnose and fix most issues on the same visit.</p>
-        <p style="margin-bottom: 1rem;">We charge a transparent $60 diagnostic fee that's fully applied to your repair cost when you proceed. Every repair is backed by our comprehensive 180-day warranty on parts and labor.</p>
+        <p style="margin-bottom: 1rem;">We charge a transparent $80 diagnostic fee that's fully applied to your repair cost when you proceed. Every repair is backed by our comprehensive 180-day warranty on parts and labor.</p>
         <p style="margin-bottom: 1rem;">We service all major brands including Whirlpool, GE, Samsung, LG, Frigidaire, Maytag, KitchenAid, Bosch, Sub-Zero, Viking, Thermador, Miele, and more.</p>
         <p>Call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> or book online for same-day service!</p>
       ` + serviceAreaClusterHTML(`${serviceName} Repair`, slug),
@@ -1668,12 +1668,12 @@ function getSEOContent(route) {
   const maintenanceSubPages = {
     '/maintenance/refrigerator': {
       title: 'Refrigerator Maintenance Service Bay Area | FixitBay LLC',
-      description: 'Professional refrigerator maintenance in the Bay Area. Condenser cleaning, seal inspection, tune-up. $60 diagnostic, 180-day warranty. FixitBay LLC.',
+      description: 'Professional refrigerator maintenance in the Bay Area. Condenser cleaning, seal inspection, tune-up. $80 diagnostic, 180-day warranty. FixitBay LLC.',
       h1: 'Refrigerator Maintenance & Tune-Up — Bay Area'
     },
     '/maintenance/washer': {
       title: 'Washer Maintenance Service San Francisco | FixitBay LLC',
-      description: 'Professional washer maintenance in San Francisco. Prevent leaks and breakdowns. $60 diagnostic, 180-day warranty. FixitBay LLC.',
+      description: 'Professional washer maintenance in San Francisco. Prevent leaks and breakdowns. $80 diagnostic, 180-day warranty. FixitBay LLC.',
       h1: 'Washer Maintenance Service — Bay Area'
     },
     '/maintenance/dryer': {
@@ -1740,12 +1740,12 @@ function getSEOContent(route) {
           "provider": { "@id": "https://fixitbay.net/#organization" },
           "areaServed": ALLOWED_CITIES.map(c => ({ "@type": "City", "name": c.name + ", CA" })),
           "url": "https://fixitbay.net/services",
-          "description": "Professional residential and commercial appliance repair services in San Francisco and the Bay Area. Refrigerators, washers, dryers, dishwashers, ovens, cooktops, and more. $60 diagnostic credited toward repair. 180-day warranty on parts and labor."
+          "description": "Professional residential and commercial appliance repair services in San Francisco and the Bay Area. Refrigerators, washers, dryers, dishwashers, ovens, cooktops, and more. $80 diagnostic credited toward repair. 180-day warranty on parts and labor."
         }
       ],
       content: `
         <p style="margin-bottom: 1rem;">FixitBay provides professional appliance repair services in San Francisco & Bay Area. We repair refrigerators, washers, dryers, ovens, dishwashers, cooktops, freezers, ice makers, wine coolers and more.</p>
-        <p style="margin-bottom: 1rem;">All repairs come with a $60 diagnostic fee credited toward the repair and a 180-day warranty on parts and labor. Same-day and next-day appointments available for most services.</p>
+        <p style="margin-bottom: 1rem;">All repairs come with a $80 diagnostic fee credited toward the repair and a 180-day warranty on parts and labor. Same-day and next-day appointments available for most services.</p>
         <h2 style="font-size:1.2em;font-weight:bold;margin:1.5rem 0 0.5rem;">Core Residential Repair</h2>
         <p><a href="/refrigerator-repair">Refrigerator Repair</a> · <a href="/washer-repair">Washer Repair</a> · <a href="/dryer-repair">Dryer Repair</a> · <a href="/dishwasher-repair">Dishwasher Repair</a> · <a href="/oven-repair">Oven Repair</a> · <a href="/cooktop-repair">Cooktop Repair</a> · </p>
         <h2 style="font-size:1.2em;font-weight:bold;margin:1.5rem 0 0.5rem;">Commercial Repair</h2>
@@ -1786,7 +1786,7 @@ function getSEOContent(route) {
         <p style="margin-bottom: 1rem;"><strong>Address:</strong> 1549 Franklin Street, Unit A, San Francisco, CA 94109</p>
         <p style="margin-bottom: 1rem;"><strong>Phone:</strong> <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a></p>
         <p style="margin-bottom: 1rem;"><strong>Service Area:</strong> 22 cities across San Francisco, Peninsula, and Marin County</p>
-        <p style="margin-bottom: 1rem;"><strong>Diagnostic Fee:</strong> $60 (applied toward repair)</p>
+        <p style="margin-bottom: 1rem;"><strong>Diagnostic Fee:</strong> $80 (applied toward repair)</p>
         <p style="margin-bottom: 1rem;"><strong>Warranty:</strong> 180 days on parts and labor</p>
         <p style="margin-bottom: 1rem;"><strong>Hours:</strong> Mon-Fri 8AM-6PM, Sat 8AM-3PM</p>
         <p style="margin-bottom: 1rem;"><strong>Rating:</strong> 5.0 stars on Google (86+ reviews)</p>
@@ -1852,7 +1852,7 @@ function getSEOContent(route) {
 
     return {
       title: `Appliance Repair in ${nbName} SF | FixitBay LLC`,
-      description: `Appliance repair in ${nbName}, SF. $60 diagnostic applied toward repair. 180-day warranty. Same-day service. Call (760) 543-5733.`,
+      description: `Appliance repair in ${nbName}, SF. $80 diagnostic applied toward repair. 180-day warranty. Same-day service. Call (760) 543-5733.`,
       h1: `Appliance Repair in ${nbName}`,
       content: `
         <p style="margin-bottom:1rem;">FixitBay LLC provides licensed, same-day appliance repair throughout ${nbName}. Our technicians arrive with diagnostic tools and commonly needed parts to resolve most issues in a single visit. We serve every street in ${nbName} — homes, condos, and apartments — covering all major brands and appliance types.</p>
@@ -1866,13 +1866,13 @@ function getSEOContent(route) {
         <p style="margin-bottom:0.5rem;font-size:0.875rem;color:#4A5568;">We service all major appliance types in ${nbName}. Click a service below for symptoms, estimated pricing, and what to expect during your repair visit.</p>
         <div style="margin-bottom:1.5rem;">${svcLinks}</div>
         <h2 style="font-size:1.3rem;font-weight:bold;margin:1.5rem 0 0.75rem;color:#1A3B5D;">Pricing & Diagnostic</h2>
-        <p style="margin-bottom:0.5rem;"><strong>$60 diagnostic fee</strong> — credited toward the repair if you proceed. The technician tests components, checks error codes, and identifies the root cause during this visit.</p>
+        <p style="margin-bottom:0.5rem;"><strong>$80 diagnostic fee</strong> — credited toward the repair if you proceed. The technician tests components, checks error codes, and identifies the root cause during this visit.</p>
         <p style="margin-bottom:0.5rem;"><strong>Written estimate</strong> before any work begins. Parts and labor itemized. If you decline, the diagnostic fee is the only charge.</p>
         <p style="margin-bottom:0.5rem;"><strong>180-day warranty</strong> on all parts and labor. If the same issue returns within 180 days, we come back at no charge.</p>
         <p style="margin-bottom:1rem;"><strong>OEM parts.</strong> Our trucks carry original equipment parts for major brands, so most repairs in ${nbName} finish in one visit.</p>
         ${faqHTML}
         <p style="margin-top:1.5rem;margin-bottom:0.5rem;font-weight:bold;color:#1A3B5D;">Ready to Book in ${nbName}?</p>
-        <p style="margin-bottom:0.75rem;font-size:0.875rem;color:#4A5568;">Schedule a licensed technician to your ${nbName} home. $60 diagnostic credited toward your repair, 180-day warranty on parts and labor, and same-day appointments available for calls placed before 2 PM.</p>
+        <p style="margin-bottom:0.75rem;font-size:0.875rem;color:#4A5568;">Schedule a licensed technician to your ${nbName} home. $80 diagnostic credited toward your repair, 180-day warranty on parts and labor, and same-day appointments available for calls placed before 2 PM.</p>
         <p>Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book?go=1" style="color:#C0362C;font-weight:bold;">book online</a> to schedule your ${nbName} repair.</p>
       `,
       internalLinks: ['/san-francisco-appliance-repair', '/services', '/brands', '/service-areas']
@@ -1884,11 +1884,11 @@ function getSEOContent(route) {
     return {
       title: 'Book Online | FixitBay LLC',
       robots: 'noindex, follow',
-      description: 'Book appliance repair online with FixitBay. $60 diagnostic applied toward repair. 180-day warranty. Same-day and next-day service in San Francisco & Bay Area.',
+      description: 'Book appliance repair online with FixitBay. $80 diagnostic applied toward repair. 180-day warranty. Same-day and next-day service in San Francisco & Bay Area.',
       h1: 'Book Your Repair',
       content: `
         <p style="margin-bottom: 1rem;">Schedule a licensed technician for same-day or next-day appliance repair. Pick the time that works for you.</p>
-        <p style="margin-bottom: 1rem;"><strong>Licensed & Insured</strong> | <strong>$60 Diagnostic Applied to Repair</strong> | <strong>180-Day Warranty</strong> | <strong>5.0 Google Rating</strong></p>
+        <p style="margin-bottom: 1rem;"><strong>Licensed & Insured</strong> | <strong>$80 Diagnostic Applied to Repair</strong> | <strong>180-Day Warranty</strong> | <strong>5.0 Google Rating</strong></p>
         <p style="margin-bottom: 1rem;"><a href="https://book.housecallpro.com/book/FixitBay-LLC/336ac28909f0491299d659eae174f93e?v2=true" style="color: #C0362C; font-weight: bold; font-size: 1.2rem;">Book Online Now</a></p>
         <p>Or call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> for immediate scheduling.</p>
       `,
@@ -1946,7 +1946,7 @@ function getSEOContent(route) {
     h1: 'Appliance Repair Service in San Francisco & Bay Area',
     content: `
       <p style="margin-bottom: 1rem;">FixitBay provides professional appliance repair across San Francisco, the Peninsula, and North Bay. Our licensed and insured technicians service refrigerators, washers, dryers, dishwashers, ovens, and more.</p>
-      <p style="margin-bottom: 1rem;">$60 diagnostic fee fully applied to repair. 180-day warranty on parts and labor. Same-day and next-day appointments available.</p>
+      <p style="margin-bottom: 1rem;">$80 diagnostic fee fully applied to repair. 180-day warranty on parts and labor. Same-day and next-day appointments available.</p>
       <p>Call <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> for same-day service!</p>
     `,
     internalLinks: defaultInternalLinks

@@ -52,7 +52,7 @@ const NeighborhoodPage = () => {
   if (!data) return <div style={{ paddingTop: 100, textAlign: 'center', fontFamily: 'Montserrat,sans-serif' }}>Neighborhood not found.</div>;
 
   const title = `Appliance Repair in ${data.name} San Francisco | FixitBay LLC`;
-  const desc = `Fast appliance repair in ${data.name}, San Francisco. $60 diagnostic, 180-day warranty. Licensed CA technician #51001. Book online or call (760) 543-5733.`;
+  const desc = `Fast appliance repair in ${data.name}, San Francisco. $80 diagnostic, 180-day warranty. Licensed CA technician #51001. Book online or call (760) 543-5733.`;
   const canonical = `https://fixitbay.net/san-francisco/${data.slug}-appliance-repair`;
   const faqItems = data.quickFaq || data.faq || [];
   const calls = data.topCalls || data.commonProblems || [];
@@ -229,7 +229,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
             </div>
             <div className="nh-eyebrow" style={{ marginBottom: 12 }}>SAN FRANCISCO &middot; {data.name.toUpperCase()}</div>
             <h1 data-testid="nh-h1">Appliance Repair in<br />{data.name}</h1>
-            <p className="nh-hero-sub">Licensed fast, reliable service for every street in {data.name}. $60 diagnostic, 180-day warranty.</p>
+            <p className="nh-hero-sub">Licensed fast, reliable service for every street in {data.name}. $80 diagnostic, 180-day warranty.</p>
             <div className="nh-hero-ctas">
               <a href="/book" className="nh-btn-primary" data-testid="nh-hero-book-btn">Book Repair Online</a>
               <a href="tel:7605435733" className="nh-btn-secondary" data-testid="nh-hero-call-btn">(760) 543-5733</a>
@@ -238,7 +238,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
               {[
                 '\u2713 Licensed CA Technician #51001',
                 '\u2713 Fast Scheduling',
-                '\u2713 $60 Diagnostic \u00B7 Applied to Repair',
+                '\u2713 $80 Diagnostic \u00B7 Applied to Repair',
                 '\u2713 180-Day Warranty',
               ].map((t, i) => (
                 <span key={i} className="nh-trust-item"><span className="nh-trust-check">{t.charAt(0)}</span>{t.slice(2)}</span>
@@ -323,7 +323,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
           <h2 style={{ fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 40 }}>Pricing &amp; Diagnostic</h2>
           <div className="nh-pricing-grid">
             <div className="nh-pricing-card">
-              <div className="nh-pricing-val">$60</div>
+              <div className="nh-pricing-val">$80</div>
               <div className="nh-pricing-title">Diagnostic Fee</div>
               <div className="nh-pricing-body">Credited toward repair if you proceed. You only pay it once.</div>
             </div>
@@ -339,7 +339,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
             </div>
           </div>
           <div className="nh-pricing-extra">
-            <strong>Diagnostic fee: $60.</strong> This covers the technician&rsquo;s visit to {data.name} and a full inspection of your appliance. The technician tests components, checks error codes, and identifies the root cause &mdash; not just the symptom. If you approve the repair, the $60 is credited toward the total cost.
+            <strong>Diagnostic fee: $80.</strong> This covers the technician&rsquo;s visit to {data.name} and a full inspection of your appliance. The technician tests components, checks error codes, and identifies the root cause &mdash; not just the symptom. If you approve the repair, the $80 is credited toward the total cost.
             <br /><br />
             <strong>Written estimate before work begins.</strong> You see the exact price &mdash; parts and labor itemized &mdash; and decide. If you decline, the diagnostic fee is the only charge. No pressure, no hidden fees.
             <br /><br />
@@ -370,7 +370,7 @@ const NeighborhoodContent = ({ data, schemasData, title, desc, canonical, faqIte
         <section className="nh-cta" data-testid="nh-final-cta">
           <div className="nh-eyebrow" style={{ color: 'rgba(255,255,255,0.7)', marginBottom: 8 }}>GET STARTED</div>
           <h2 className="nh-cta-title">Need Appliance Repair in {data.name} Today?</h2>
-          <p className="nh-cta-sub">Schedule a licensed technician to your {data.name} home. $60 diagnostic credited toward your repair, 180-day warranty on parts and labor, and appointments often available same- or next-day for calls placed before 2 PM.</p>
+          <p className="nh-cta-sub">Schedule a licensed technician to your {data.name} home. $80 diagnostic credited toward your repair, 180-day warranty on parts and labor, and appointments often available same- or next-day for calls placed before 2 PM.</p>
           <div className="nh-cta-btns">
             <a href="/book" className="nh-btn-primary" data-testid="nh-cta-book-btn">Book Online</a>
             <a href="tel:7605435733" className="nh-cta-sec" data-testid="nh-cta-call-btn">(760) 543-5733</a>

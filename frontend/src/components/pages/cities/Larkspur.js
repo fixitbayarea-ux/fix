@@ -28,7 +28,7 @@ const Larkspur = () => {
     paragraphs: [
       'Larkspur\'s historic downtown and convenient ferry access make it a sought-after Central Marin community. Our technicians serve all Larkspur neighborhoods from downtown\'s charming historic district to residential areas near Greenbrae. We understand Larkspur\'s mix of older homes and modern condos, along with the appliances common in each.',
       'We navigate Larkspur efficiently via Highway 101 and Magnolia Avenue, accessing downtown, residential neighborhoods, and the ferry terminal area quickly. Our vans carry parts for common appliance failures, and we maintain a network for sourcing specialized components.',
-      'Fast scheduling is available throughout Larkspur with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
+      'Fast scheduling is available throughout Larkspur with a $80 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
     ]
   };
 

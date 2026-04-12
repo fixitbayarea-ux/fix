@@ -14,7 +14,7 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: 'Why is my dryer taking 2 cycles to dry clothes?', a: "The most common cause is a clogged dryer vent or lint trap. Restricted airflow means moisture can't escape the drum, so clothes stay damp. Clean the lint trap and have the vent duct professionally cleaned if it hasn't been done in over a year." },
-  { q: 'How much does dryer repair cost in San Francisco Bay Area?', a: "Dryer repairs in the Bay Area typically cost $250\u2013$450. A heating element replacement runs $265\u2013$350. Gas valve solenoids cost $250\u2013$350. FixitBay LLC charges a $60 diagnostic fee, credited toward your repair." },
+  { q: 'How much does dryer repair cost in San Francisco Bay Area?', a: "Dryer repairs in the Bay Area typically cost $250\u2013$450. A heating element replacement runs $265\u2013$350. Gas valve solenoids cost $250\u2013$350. FixitBay LLC charges a $80 diagnostic fee, credited toward your repair." },
   { q: 'Is it safe to run a dryer that takes too long to dry?', a: "No \u2014 a dryer that runs multiple cycles is a serious fire hazard. Clogged vents are the #1 cause of dryer fires in the US. The NFPA reports nearly 17,000 dryer fires per year, mostly from lint buildup. Address the issue immediately." },
   { q: 'Can I clean my dryer vent myself?', a: "You can clean the lint trap yourself \u2014 do it after every load. For the vent duct, a DIY kit works for short straight runs. However, longer or flexible duct systems, rooftop vents, and high-rise apartment vents should be professionally cleaned annually." },
   { q: 'How do I know if my dryer vent is clogged?', a: "Four warning signs: (1) clothes are hot but still damp after a full cycle, (2) the dryer exterior feels very hot, (3) you smell burning during operation, (4) the laundry room is unusually humid after a cycle. Any of these means your vent needs immediate attention." },
@@ -192,7 +192,7 @@ const DryerTakingTooLong = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $80 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
@@ -287,7 +287,7 @@ const DryerTakingTooLong = () => {
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>EXPERT DRYER REPAIR</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Dryer Not Drying Fast Enough?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$60 diagnostic applied to repair. 180-day warranty on all work.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$80 diagnostic applied to repair. 180-day warranty on all work.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
                 {['Licensed CA Technician', 'Electric & Gas Dryers', 'Fast Scheduling'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
@@ -355,7 +355,7 @@ const DryerTakingTooLong = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Dryer Repair in Bay Area', body: 'Fast dryer repair for all brands. $60 diagnostic applied to your repair.', link: 'View Service', href: '/dryer-repair' },
+                { tag: 'SERVICE', title: 'Dryer Repair in Bay Area', body: 'Fast dryer repair for all brands. $80 diagnostic applied to your repair.', link: 'View Service', href: '/dryer-repair' },
                 { tag: 'ARTICLE', title: 'Repair vs Replace: When to Fix Your Appliance', body: 'Use the 50% rule to decide if repair makes financial sense.', link: 'Read Article', href: '/blog/when-to-repair-vs-replace' },
                 { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (

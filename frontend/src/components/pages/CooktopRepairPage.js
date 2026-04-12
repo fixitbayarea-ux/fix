@@ -45,7 +45,7 @@ const CooktopRepairPage = () => {
     },
     {
       question: "How much does cooktop repair cost in the Bay Area?",
-      answer: "Cooktop repairs range from $250-$550 depending on the type and issue. Gas igniter replacements ($250-$295), electric element swaps ($250-$295), and control valve fixes ($285-$395) are common. Induction cooktop control board repairs ($350-$500) or glass surface replacements ($400-$650) cost more. We charge a $60 diagnostic fee (waived with repair)."
+      answer: "Cooktop repairs range from $250-$550 depending on the type and issue. Gas igniter replacements ($250-$295), electric element swaps ($250-$295), and control valve fixes ($285-$395) are common. Induction cooktop control board repairs ($350-$500) or glass surface replacements ($400-$650) cost more. We charge a $80 diagnostic fee (waived with repair)."
     },
     {
       question: "Can you repair professional-grade and commercial cooktops?",
@@ -76,7 +76,7 @@ const CooktopRepairPage = () => {
         appliance="Cooktop"
         pageSlug="cooktop-repair"
         pageTitle="Cooktop Repair San Francisco | Gas & Electric | FixitBay LLC"
-        metaDescription="Gas, electric, and induction cooktop repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty."
+        metaDescription="Gas, electric, and induction cooktop repair in San Francisco. $80 diagnostic applied to repair. 180-day warranty."
         heroTitle={<>Expert Cooktop<br />Repair in SF. Today.</>}
        
         issues={[
@@ -107,13 +107,13 @@ const CooktopRepairPage = () => {
       appliance="Cooktop"
       cmsSlug="cooktop-repair"
       pageTitle="Cooktop Repair San Francisco | Gas & Electric | FixitBay LLC"
-      metaDescription="Gas, electric, and induction cooktop repair in San Francisco. $60 diagnostic applied to repair. 180-day warranty."
+      metaDescription="Gas, electric, and induction cooktop repair in San Francisco. $80 diagnostic applied to repair. 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={{
         title: "Certified Gas & Electric Cooktop Repair",
         paragraphs: [
-          <>Cooktop repairs demand technical expertise and safety compliance. Our certified technicians diagnose gas cooktops, electric coil cooktops, smooth-top electric ranges, and induction cooktops. We identify igniter failures, burner valve issues, element burnouts, and control board malfunctions. We charge a <strong>$60 diagnostic fee</strong> (credited toward your repair) with transparent pricing and safety-first service.</>,
+          <>Cooktop repairs demand technical expertise and safety compliance. Our certified technicians diagnose gas cooktops, electric coil cooktops, smooth-top electric ranges, and induction cooktops. We identify igniter failures, burner valve issues, element burnouts, and control board malfunctions. We charge a <strong>$80 diagnostic fee</strong> (credited toward your repair) with transparent pricing and safety-first service.</>,
           <>Our cooktop repair process includes testing gas igniters and valves, checking electric heating elements, inspecting induction sensors, and evaluating control modules. For gas cooktops, we perform professional leak detection and ensure proper flame characteristics. Most cooktop repairs—from replacing igniters to swapping heating elements—are completed on the first visit with parts available for immediate installation.</>,
           <>Whether your cooktop burners won't ignite, electric elements don't heat, or you smell gas, we'll diagnose and repair it safely. We service all cooktop types including professional-grade models from Wolf, Viking, Thermador, and Bosch. Every cooktop repair is backed by our <strong>180-day warranty</strong> on parts and labor.</>
         ]

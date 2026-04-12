@@ -28,7 +28,7 @@ const Sausalito = () => {
     paragraphs: [
       'Sausalito\'s stunning hillside location overlooking San Francisco Bay creates both beauty and complexity for appliance service. From waterfront houseboats to hillside estates with panoramic views, we navigate Sausalito\'s unique geography daily. Our technicians understand the challenges of steep terrain, limited access, and the premium appliances common in this affluent Marin community.',
       'Sausalito homes feature high-end appliances from Sub-Zero, Wolf, Thermador, and Miele alongside standard brands. We specialize in servicing both luxury and traditional appliances, understanding the specific needs of built-in units, wine storage systems, and integrated kitchen designs. We also handle challenges unique to Sausalito: water pressure variations, coastal humidity, and complex installations in multi-level hillside homes.',
-      'Fast scheduling is available throughout Sausalito with a $60 diagnostic fee credited toward repairs. We carry specialized tools for premium appliances and can source high-end parts quickly. Every repair includes a 180-day warranty, and our licensed technicians are experienced with luxury appliances and challenging hillside installations.'
+      'Fast scheduling is available throughout Sausalito with a $80 diagnostic fee credited toward repairs. We carry specialized tools for premium appliances and can source high-end parts quickly. Every repair includes a 180-day warranty, and our licensed technicians are experienced with luxury appliances and challenging hillside installations.'
     ]
   };
 

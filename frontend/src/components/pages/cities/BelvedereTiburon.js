@@ -28,7 +28,7 @@ const BelvedereTiburon = () => {
     paragraphs: [
       'Belvedere and Tiburon\'s waterfront peninsula represents some of Marin County\'s most exclusive real estate, featuring luxury homes with premium appliances. Our technicians specialize in high-end brands like Sub-Zero, Wolf, Thermador, and Miele, common in these affluent communities. We understand both the appliances and the service expectations of Belvedere Tiburon homeowners.',
       'We navigate the peninsula regularly, servicing waterfront estates, hillside homes with bay views, and downtown Tiburon properties. Our team handles challenges unique to waterfront living: humidity, salt air, and the premium integrated appliances found in luxury kitchens. We carry specialized tools and can source high-end parts quickly.',
-      'Fast scheduling is available throughout Belvedere and Tiburon with a $60 diagnostic fee credited toward repairs. We provide detailed estimates for premium appliances and back every repair with a 180-day warranty. Our technicians are luxury appliance specialists experienced with integrated installations.'
+      'Fast scheduling is available throughout Belvedere and Tiburon with a $80 diagnostic fee credited toward repairs. We provide detailed estimates for premium appliances and back every repair with a 180-day warranty. Our technicians are luxury appliance specialists experienced with integrated installations.'
     ]
   };
 

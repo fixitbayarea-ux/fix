@@ -15,18 +15,18 @@ const TH = { color: '#fff', fontWeight: 700, padding: '12px 16px', textAlign: 'l
 const TD = (i) => ({ padding: '10px 16px', borderBottom: '1px solid rgba(0,0,0,0.06)', fontFamily: F, fontSize: 14, background: i % 2 === 0 ? '#F8F5F0' : '#fff' });
 
 const FAQ_ITEMS = [
-  { q: "How much does appliance repair cost in San Francisco?", a: "Most appliance repairs in San Francisco cost between $250\u2013$650 after the diagnostic fee. Simple fixes like a blown thermal fuse or clogged drain start around $250. Complex repairs like compressor replacement can reach $600\u2013$800. FixitBay LLC charges a $60 diagnostic that is fully applied toward the repair cost." },
-  { q: "Is the diagnostic fee worth it?", a: "Yes. The $60 diagnostic gives you an exact diagnosis and upfront repair estimate with no obligation. Companies that offer \u2018free diagnostics\u2019 typically build that cost into inflated repair prices. Our diagnostic fee ensures you get honest pricing whether you proceed with the repair or not." },
+  { q: "How much does appliance repair cost in San Francisco?", a: "Most appliance repairs in San Francisco cost between $250\u2013$650 after the diagnostic fee. Simple fixes like a blown thermal fuse or clogged drain start around $250. Complex repairs like compressor replacement can reach $800\u2013$800. FixitBay LLC charges a $80 diagnostic that is fully applied toward the repair cost." },
+  { q: "Is the diagnostic fee worth it?", a: "Yes. The $80 diagnostic gives you an exact diagnosis and upfront repair estimate with no obligation. Companies that offer \u2018free diagnostics\u2019 typically build that cost into inflated repair prices. Our diagnostic fee ensures you get honest pricing whether you proceed with the repair or not." },
   { q: "Why is appliance repair more expensive in San Francisco?", a: "SF repair costs are 20\u201340% higher than suburban areas due to parking costs, building access logistics, older housing stock requiring extra labor, higher concentration of European luxury appliances with expensive parts, and the general cost of doing business in the city." },
   { q: "Is it cheaper to repair or replace an appliance?", a: "General rule: if the repair costs less than 50% of a new appliance and the unit is under 8\u201310 years old, repair makes sense. For luxury brands like Sub-Zero ($5,000\u2013$15,000 new), repair is almost always the better choice. For standard brands over 12 years old with major failures, replacement often wins." },
-  { q: "Does FixitBay LLC charge extra for weekends or emergency service?", a: "FixitBay LLC offers same- or next-day appointments Monday through Saturday at the same pricing. No emergency surcharges, no weekend premiums. The $60 diagnostic fee and quoted repair prices apply equally regardless of when we come." },
+  { q: "Does FixitBay LLC charge extra for weekends or emergency service?", a: "FixitBay LLC offers same- or next-day appointments Monday through Saturday at the same pricing. No emergency surcharges, no weekend premiums. The $80 diagnostic fee and quoted repair prices apply equally regardless of when we come." },
 ];
 
 const TOC = [
   { id: 'pricing', label: 'Complete Repair Pricing 2026' },
   { id: 'luxury', label: 'Luxury & High-End Brand Pricing' },
   { id: 'why-sf', label: 'Why SF Costs More' },
-  { id: 'diagnostic', label: 'How the $60 Diagnostic Works' },
+  { id: 'diagnostic', label: 'How the $80 Diagnostic Works' },
   { id: 'repair-replace', label: 'Repair vs. Replace Guide' },
   { id: 'by-problem', label: 'Costs by Problem' },
   { id: 'advice', label: "Andrei\u2019s Pricing Advice" },
@@ -36,8 +36,8 @@ const TOC = [
 ];
 
 const MAIN_PRICING = [
-  { appliance: 'Diagnostic / Service Call', fixitbay: '$60 (applied to repair)', market: '$50\u2013$120' },
-  { appliance: 'Refrigerator', fixitbay: 'from $250', market: '$200\u2013$600', href: '/refrigerator-repair' },
+  { appliance: 'Diagnostic / Service Call', fixitbay: '$80 (applied to repair)', market: '$50\u2013$120' },
+  { appliance: 'Refrigerator', fixitbay: 'from $250', market: '$200\u2013$800', href: '/refrigerator-repair' },
   { appliance: 'Freezer', fixitbay: 'from $250', market: '$200\u2013$550', href: '/freezer-repair' },
   { appliance: 'Ice Maker', fixitbay: 'from $250', market: '$120\u2013$350', href: '/ice-maker-repair' },
   { appliance: 'Washer', fixitbay: 'from $240', market: '$180\u2013$450', href: '/washer-repair' },
@@ -57,7 +57,7 @@ const LUXURY_PRICING = [
 ];
 
 const PROBLEM_PRICING = [
-  { problem: 'Refrigerator not cooling \u2014 dirty coils', cost: '$60 (diagnostic only)' },
+  { problem: 'Refrigerator not cooling \u2014 dirty coils', cost: '$80 (diagnostic only)' },
   { problem: 'Refrigerator not cooling \u2014 thermostat', cost: 'from $250' },
   { problem: 'Refrigerator not cooling \u2014 compressor', cost: 'from $400' },
   { problem: 'Dryer not heating \u2014 thermal fuse', cost: 'from $250' },
@@ -71,7 +71,7 @@ const PROBLEM_PRICING = [
 ];
 
 const COMPARE = [
-  { feat: 'Diagnostic fee', us: '$60 (applied to repair)', them: '$50\u2013$120 (often NOT applied)' },
+  { feat: 'Diagnostic fee', us: '$80 (applied to repair)', them: '$50\u2013$120 (often NOT applied)' },
   { feat: 'Fast scheduling', us: 'Yes, Mon\u2013Sat', them: 'Often 2\u20133 day wait' },
   { feat: 'Warranty', us: '180 days parts & labor', them: '30\u201390 days typical' },
   { feat: 'Upfront pricing', us: 'Yes, before work starts', them: 'Sometimes quoted after' },
@@ -148,7 +148,7 @@ const ApplianceRepairCostSanFrancisco = () => {
     <>
       <SEOMetaTags
         title="Appliance Repair Cost San Francisco 2026 | FixitBay LLC Guide"
-        description="How much does appliance repair cost in San Francisco? Full 2026 pricing guide for refrigerators, washers, dryers, ovens & more. From $60 diagnostic at FixitBay LLC."
+        description="How much does appliance repair cost in San Francisco? Full 2026 pricing guide for refrigerators, washers, dryers, ovens & more. From $80 diagnostic at FixitBay LLC."
         canonical="https://fixitbay.net/blog/appliance-repair-cost-san-francisco"
         ogType="article"
       />
@@ -237,14 +237,14 @@ const ApplianceRepairCostSanFrancisco = () => {
                   </tr>
                 ))}
               />
-              <p style={{ ...P, fontStyle: 'italic', fontSize: 13 }}>All prices include labor and standard parts. The $60 diagnostic fee is fully applied toward your repair — if we fix it, you only pay the repair price.</p>
+              <p style={{ ...P, fontStyle: 'italic', fontSize: 13 }}>All prices include labor and standard parts. The $80 diagnostic fee is fully applied toward your repair — if we fix it, you only pay the repair price.</p>
 
               {/* ── CTA after pricing ── */}
               <div data-testid="mid-cta" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722', borderRadius: 4, padding: '24px 28px', margin: '32px 0' }}>
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need an appliance repair estimate?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>$60 diagnostic applied to repair &middot; <a href="/book" style={{ color: '#FF5722', textDecoration: 'none' }}>fast scheduling</a> &middot; 180-day warranty &middot; 22 Bay Area cities</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>$80 diagnostic applied to repair &middot; <a href="/book" style={{ color: '#FF5722', textDecoration: 'none' }}>fast scheduling</a> &middot; 180-day warranty &middot; 22 Bay Area cities</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
@@ -283,14 +283,14 @@ const ApplianceRepairCostSanFrancisco = () => {
               </div>
 
               {/* ── How Diagnostic Works ── */}
-              <h2 id="diagnostic" style={H2S}>How the $60 Diagnostic Fee Works</h2>
+              <h2 id="diagnostic" style={H2S}>How the $80 Diagnostic Fee Works</h2>
               <div data-testid="diagnostic-flow" style={{ background: '#0D1B2A', borderRadius: 4, padding: '28px 24px', marginBottom: 16 }}>
                 <div className="diag-flow" style={{ display: 'flex', gap: 0, alignItems: 'stretch' }}>
                   {[
                     { step: '1', label: 'Book', desc: 'Online or call \u2192 We arrive same- or next-day' },
-                    { step: '2', label: 'Diagnose', desc: 'Technician diagnoses the problem \u2192 $60 diagnostic fee' },
+                    { step: '2', label: 'Diagnose', desc: 'Technician diagnoses the problem \u2192 $80 diagnostic fee' },
                     { step: '3', label: 'Estimate', desc: 'You get an upfront estimate \u2192 No surprises' },
-                    { step: '4', label: 'Decide', desc: 'Approve \u2192 $60 credited toward total\nDecline \u2192 You only pay $60' },
+                    { step: '4', label: 'Decide', desc: 'Approve \u2192 $80 credited toward total\nDecline \u2192 You only pay $80' },
                   ].map((s, i) => (
                     <div key={i} style={{ flex: 1, textAlign: 'center', padding: '0 12px', borderRight: i < 3 ? '1px solid rgba(255,255,255,0.1)' : 'none' }}>
                       <div style={{ width: 36, height: 36, borderRadius: '50%', background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 800, fontSize: 16, display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 8px' }}>{s.step}</div>
@@ -353,7 +353,7 @@ const ApplianceRepairCostSanFrancisco = () => {
               <h2 id="advice" style={H2S}>Andrei's Pricing Advice</h2>
               <blockquote data-testid="field-note" style={{ borderLeft: '4px solid #FF5722', padding: '20px 24px', margin: '0 0 24px', background: '#FAFAF7', borderRadius: '0 8px 8px 0' }}>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', lineHeight: 1.75, fontStyle: 'italic', marginBottom: 16 }}>
-                  "Here's what I tell every customer: get the diagnostic before deciding anything. I've seen people buy a $2,000 refrigerator because they assumed the repair would be expensive — turns out it was a $60 coil cleaning. I've also saved customers from spending $500 on a repair when an $800 new washer made more sense. The $60 diagnostic is the smartest money you'll spend because it gives you the real numbers to make the right decision."
+                  "Here's what I tell every customer: get the diagnostic before deciding anything. I've seen people buy a $2,000 refrigerator because they assumed the repair would be expensive — turns out it was a $80 coil cleaning. I've also saved customers from spending $500 on a repair when an $800 new washer made more sense. The $80 diagnostic is the smartest money you'll spend because it gives you the real numbers to make the right decision."
                 </p>
                 <footer style={{ fontFamily: F, fontSize: 14, fontWeight: 700, color: '#1A3B5D' }}>— Andrei, Lead Appliance Technician, FixitBay LLC</footer>
               </blockquote>
@@ -421,7 +421,7 @@ const ApplianceRepairCostSanFrancisco = () => {
               <div data-testid="bottom-cta" style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: '32px 28px', textAlign: 'center', marginTop: 32 }}>
                 <div style={{ ...EYE, marginBottom: 8 }}>GET YOUR ESTIMATE</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 24, color: '#fff', marginBottom: 8 }}>Ready for a <a href="/san-francisco-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Professional Diagnosis</a>?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>$60 diagnostic applied to repair. <a href="/book" style={{ color: '#FF5722', textDecoration: 'none' }}>fast scheduling</a> across San Francisco, <a href="/marin-county-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Marin County</a>, and the Peninsula.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.75)', marginBottom: 20 }}>$80 diagnostic applied to repair. <a href="/book" style={{ color: '#FF5722', textDecoration: 'none' }}>fast scheduling</a> across San Francisco, <a href="/marin-county-appliance-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>Marin County</a>, and the Peninsula.</p>
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 12, flexWrap: 'wrap' }}>
                   <a href="tel:+17605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
                   <a href="/book" className="book-cta" style={{ background: 'transparent', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 14, padding: '12px 24px', borderRadius: 4, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.4)', transition: 'background 0.2s' }}>Book Online Now</a>
@@ -443,7 +443,7 @@ const ApplianceRepairCostSanFrancisco = () => {
             <aside data-testid="sidebar" style={{ position: 'sticky', top: 80 }}>
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>GET YOUR ESTIMATE</div>
-                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>$60 Diagnostic</h3>
+                <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>$80 Diagnostic</h3>
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>Applied to repair. 180-day warranty. No hidden fees.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
                 {['Licensed CA Technician', 'Fast Scheduling', '22 Bay Area Cities', '180-Day Warranty'].map(item => (

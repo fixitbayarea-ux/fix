@@ -15,7 +15,7 @@ const SanFranciscoRepairPage = () => {
     },
     {
       question: "How much does appliance repair cost in San Francisco?",
-      answer: "Appliance repair costs in San Francisco typically range from $250-$650 depending on the issue. We provide free diagnostics when you choose our repair service (otherwise $60). Our upfront pricing means no surprises regardless of your SF location."
+      answer: "Appliance repair costs in San Francisco typically range from $250-$650 depending on the issue. We provide free diagnostics when you choose our repair service (otherwise $80). Our upfront pricing means no surprises regardless of your SF location."
     },
     {
       question: "Do you service apartments and condos in San Francisco?",

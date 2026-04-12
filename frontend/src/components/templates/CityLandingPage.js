@@ -84,7 +84,7 @@ const CityLandingPage = ({
             <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="clp-hero-h1" style={{ fontSize: 52, fontWeight: 800, color: C.white, lineHeight: '58px', marginBottom: 16, fontFamily: F }}>
               Appliance Repair in <span style={{ color: C.accent }}>{city}</span>
             </motion.h1>
-            <p style={{ fontSize: 16, color: C.white60, marginBottom: 8, fontFamily: F }}>$60 diagnostic &middot; Same/Next-Day &middot; 180-Day Warranty</p>
+            <p style={{ fontSize: 16, color: C.white60, marginBottom: 8, fontFamily: F }}>$80 diagnostic &middot; Same/Next-Day &middot; 180-Day Warranty</p>
             <p style={{ fontSize: 14, color: C.white60, marginBottom: 24, fontFamily: F }}>Most slots filled by noon &mdash; book now to secure today</p>
             <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
               <button onClick={handleBook} data-testid="hero-book-btn" style={{ background: C.accent, color: C.white, borderRadius: 4, padding: '10px 20px', fontSize: 14, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1.12px', border: 'none', cursor: 'pointer', fontFamily: F }}>BOOK REPAIR ONLINE</button>
@@ -96,7 +96,7 @@ const CityLandingPage = ({
           </div>
           {/* Stats grid */}
           <div className="clp-stats-grid" style={{ maxWidth: 1100, margin: '32px auto 0', padding: '0 24px', display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', background: C.navyMid, borderRadius: 8 }}>
-            {[['3+', 'YEARS of Service'], ['180', 'DAY Warranty'], ['$60', 'DIAGNOSTIC Waived*']].map(([num, label], i) => (
+            {[['3+', 'YEARS of Service'], ['180', 'DAY Warranty'], ['$80', 'DIAGNOSTIC Waived*']].map(([num, label], i) => (
               <div key={i} style={{ textAlign: 'center', padding: '24px 16px', borderRight: i < 2 ? `1px solid ${C.accentFaint}` : 'none' }}>
                 <div style={{ fontSize: 28, fontWeight: 700, color: C.white, fontFamily: F }}>{num}</div>
                 <div style={{ fontSize: 11, color: C.white60, fontFamily: F, letterSpacing: '1px' }}>{label}</div>
@@ -143,7 +143,7 @@ const CityLandingPage = ({
           <div className="clp-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 32, marginTop: 24 }}>
             {[
               { num: '01', title: 'BOOK', desc: `Schedule online or call us. We confirm a same- or next-day slot in ${city}.`, icon: <Calendar className="w-5 h-5" /> },
-              { num: '02', title: 'DIAGNOSE', desc: 'Our licensed technician arrives, inspects, and explains the issue. $60 diagnostic.', icon: <Search className="w-5 h-5" /> },
+              { num: '02', title: 'DIAGNOSE', desc: 'Our licensed technician arrives, inspects, and explains the issue. $80 diagnostic.', icon: <Search className="w-5 h-5" /> },
               { num: '03', title: 'APPROVE & REPAIR', desc: 'You approve the quote. We fix it on the spot. 180-day warranty on parts and labor.', icon: <Wrench className="w-5 h-5" /> },
             ].map(s => (
               <div key={s.num} style={{ textAlign: 'center' }}>
@@ -161,7 +161,7 @@ const CityLandingPage = ({
           <H2Dark>No Surprises. Ever.</H2Dark>
           <div className="clp-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20, marginTop: 20 }}>
             {[
-              { label: 'Diagnostic Visit', price: '$60', note: 'Applied toward repair' },
+              { label: 'Diagnostic Visit', price: '$80', note: 'Applied toward repair' },
               { label: 'Most Repairs', price: '$250 – $450', note: 'Parts + labor included' },
               { label: 'Warranty', price: '180 Days', note: 'Parts and labor' },
             ].map((p, i) => (

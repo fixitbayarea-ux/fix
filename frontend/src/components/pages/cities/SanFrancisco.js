@@ -23,7 +23,7 @@ const sfServiceSchema = {
   "provider": { "@id": "https://fixitbay.net/#organization" },
   "areaServed": { "@type": "City", "name": "San Francisco, CA" },
   "url": "https://fixitbay.net/san-francisco-appliance-repair",
-  "description": "Fast appliance repair throughout San Francisco. $60 diagnostic credited toward repair. 180-day warranty."
+  "description": "Fast appliance repair throughout San Francisco. $80 diagnostic credited toward repair. 180-day warranty."
 };
 const buildBreadcrumbSchema = (items) => ({
   "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -157,9 +157,9 @@ const COMMON_PROBLEMS = [
 /* ═══ FAQ ═══ */
 const FAQ_DATA = [
   { q: 'Do you offer fast scheduling in San Francisco?', a: 'Yes. We provide fast appointments for most San Francisco service calls when you contact us before noon, and next-day availability for afternoon requests. We serve every SF neighborhood including Sunset, Richmond, Mission, SOMA, Nob Hill, Pacific Heights, and all others.' },
-  { q: 'How much does appliance repair cost in San Francisco?', a: 'Our diagnostic fee is $60, which is fully credited toward your repair if you choose to proceed. Final costs depend on the appliance type and parts required. We always provide a written upfront estimate before starting any work — no surprises.' },
+  { q: 'How much does appliance repair cost in San Francisco?', a: 'Our diagnostic fee is $80, which is fully credited toward your repair if you choose to proceed. Final costs depend on the appliance type and parts required. We always provide a written upfront estimate before starting any work — no surprises.' },
   { q: 'How quickly can you reach my neighborhood?', a: 'We typically arrive within a 2-hour window for fast appointments. Our technicians know SF traffic patterns, parking challenges, and the fastest routes to every neighborhood from the Avenues to the Bayshore.' },
-  { q: 'Do you charge extra for parking or steep hill access?', a: 'No. Our $60 diagnostic fee covers the visit regardless of parking difficulty or building access. We carry city parking permits and are experienced navigating San Francisco\'s hills and tight streets.' },
+  { q: 'Do you charge extra for parking or steep hill access?', a: 'No. Our $80 diagnostic fee covers the visit regardless of parking difficulty or building access. We carry city parking permits and are experienced navigating San Francisco\'s hills and tight streets.' },
   { q: 'Can you service appliances in older Victorian homes?', a: 'Absolutely. We have extensive experience in San Francisco\'s historic Victorian, Edwardian, and earthquake cottage homes. Our technicians bring compact tools designed for navigating steep stairs and tight kitchen spaces.' },
   { q: 'Do you service high-rise apartment buildings?', a: 'Yes. We service appliances in all SF high-rise buildings downtown, SOMA, and throughout the city. We coordinate with building management for freight elevator access and follow all HOA protocols.' },
   { q: 'Can you work in buildings with no elevator?', a: 'Yes. Our technicians regularly service appliances in walkup apartments across Pacific Heights, Russian Hill, and Nob Hill. We carry replacement parts up multiple flights as needed.' },
@@ -239,14 +239,14 @@ const SanFrancisco = () => {
           <h1 className="hero-main-h1" data-testid="sf-hero-h1" style={{ fontFamily: S.font, fontWeight: 800, fontSize: 52, color: '#FFFFFF', lineHeight: 1.12, marginTop: 16 }}>Appliance Repair in San&nbsp;Francisco</h1>
           {/* Subtext */}
           <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>
-            Same- or next-day service &middot; $60 diagnostic &middot; 180-day warranty on all repairs
+            Same- or next-day service &middot; $80 diagnostic &middot; 180-day warranty on all repairs
           </p>
           {/* Stats grid */}
           <div className="city-stats-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 0, background: '#1A2F45', borderRadius: 12, margin: '16px 0 0', overflow: 'hidden' }}>
             {[
               { num: '3+', line1: 'Years', line2: 'of Service' },
               { num: '180', line1: 'Day', line2: 'Warranty' },
-              { num: '$60', line1: 'Diagnostic', line2: 'Waived*' },
+              { num: '$80', line1: 'Diagnostic', line2: 'Waived*' },
             ].map((s, i) => (
               <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '16px 8px', borderRight: i < 2 ? '1px solid rgba(255,255,255,0.15)' : 'none' }}>
                 <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 'clamp(24px, 6vw, 36px)', lineHeight: 1, color: '#FF5722' }}>{s.num}</span>
@@ -337,7 +337,7 @@ const SanFrancisco = () => {
           <div className="sf-how-grid grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { num: '01', icon: <CalendarCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'Book Online', text: 'Schedule your appointment at your convenience.' },
-              { num: '02', icon: <Search size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Diagnose', text: '$60 diagnostic visit — applied to repair if you proceed.' },
+              { num: '02', icon: <Search size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Diagnose', text: '$80 diagnostic visit — applied to repair if you proceed.' },
               { num: '03', icon: <ClipboardCheck size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'You Approve', text: 'Upfront estimate before any work begins. No surprises.' },
               { num: '04', icon: <Wrench size={28} strokeWidth={1.5} style={{ color: '#FF5722' }} />, title: 'We Fix It', text: 'Professional repair with 180-day warranty on parts and labor.' },
             ].map(s => (
@@ -397,10 +397,10 @@ const SanFrancisco = () => {
           <div style={{ ...S.eyebrow, color: '#FF5722', marginBottom: 10 }}>TRANSPARENT PRICING</div>
           <h2 style={{ ...S.h2, color: '#FFFFFF', marginBottom: 36 }}>No Surprises. Ever.</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{ gap: 20 }}>
-            {/* Card 1 — $60 Diagnostic (featured) */}
+            {/* Card 1 — $80 Diagnostic (featured) */}
             <div style={{ border: '2px solid #FF5722', background: 'rgba(255,87,34,0.06)', borderRadius: 4, padding: '32px 24px', position: 'relative' }}>
               <span style={{ position: 'absolute', top: 16, right: 16, background: '#FF5722', color: '#FFFFFF', fontFamily: S.font, fontWeight: 700, fontSize: 10, textTransform: 'uppercase', borderRadius: 2, padding: '3px 8px' }}>MOST ASKED</span>
-              <div style={{ fontFamily: S.font, fontWeight: 800, fontSize: 48, color: '#FF5722', marginBottom: 8 }}>$60</div>
+              <div style={{ fontFamily: S.font, fontWeight: 800, fontSize: 48, color: '#FF5722', marginBottom: 8 }}>$80</div>
               <div style={{ fontFamily: S.font, fontWeight: 700, fontSize: 16, color: '#FFFFFF', marginBottom: 8 }}>Diagnostic Fee</div>
               <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>Applied toward repair if you proceed</p>
             </div>
@@ -571,7 +571,7 @@ const SanFrancisco = () => {
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 24px' }}>
           <div style={{ ...S.eyebrow, color: '#FF5722' }}>COST GUIDE</div>
           <h2 style={{ ...S.h2, color: '#FFFFFF', marginTop: 10, marginBottom: 8 }}>Appliance Repair Cost Guide for San Francisco</h2>
-          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.6)', marginBottom: 28 }}>Estimated repair costs vary by issue complexity. $60 diagnostic is applied toward any repair.</p>
+          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 14, color: 'rgba(255,255,255,0.6)', marginBottom: 28 }}>Estimated repair costs vary by issue complexity. $80 diagnostic is applied toward any repair.</p>
           <div style={{ overflowX: 'auto' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontFamily: S.font }}>
               <thead>

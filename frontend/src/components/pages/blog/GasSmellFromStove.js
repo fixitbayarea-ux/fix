@@ -67,7 +67,7 @@ const FAQ_ITEMS = [
   { q: 'Can a gas stove leak without the burners being on?', a: "Yes. Gas can leak from the flex line connecting the stove to the wall, from a faulty regulator, or from a worn gas valve even when all burners are off. If you smell gas but no burners are on, this is more serious\u2014evacuate and call your gas company immediately." },
   { q: 'How quickly is a gas leak dangerous?', a: "Very quickly. Natural gas concentrations of 5-15% in air are explosive. In an enclosed kitchen, dangerous levels can build within minutes. Never delay evacuation to investigate. Get everyone out first, then call 911 from outside the building." },
   { q: 'Can I repair a gas line myself to save money?', a: "No\u2014never. Gas line work must be performed by a licensed technician. In California, improper gas line repairs can void your homeowner\u2019s insurance and are illegal without proper licensing. FixitBay LLC technicians are licensed CA technicians (License #51001) trained in gas appliance safety." },
-  { q: 'How much does a gas stove safety inspection cost?', a: "FixitBay LLC\u2019s standard diagnostic fee is $60, which is applied toward any repair if you proceed. A gas safety inspection includes checking all connections, testing for leaks with electronic detection equipment, and inspecting valves, regulators, and igniters. Appointments are available Mon\u2013Sat." },
+  { q: 'How much does a gas stove safety inspection cost?', a: "FixitBay LLC\u2019s standard diagnostic fee is $80, which is applied toward any repair if you proceed. A gas safety inspection includes checking all connections, testing for leaks with electronic detection equipment, and inspecting valves, regulators, and igniters. Appointments are available Mon\u2013Sat." },
 ];
 
 const CheckRow = ({ label, text }) => (
@@ -212,7 +212,7 @@ const GasSmellFromStove = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $80 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
@@ -315,7 +315,7 @@ const GasSmellFromStove = () => {
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 20, marginTop: 20 }}>
                 <div style={EYE}>ANNUAL SAFETY CHECK</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 18, color: '#fff', marginBottom: 8 }}>Gas Stove Inspection</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 16 }}>Licensed technicians check all gas connections, valves, and igniters. $60 diagnostic &middot; Fast scheduling.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 16 }}>Licensed technicians check all gas connections, valves, and igniters. $80 diagnostic &middot; Fast scheduling.</p>
                 {['Licensed CA Technician #51001', 'Electronic Leak Detection', 'Safety Clearance Certificate'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
                     <span style={{ color: '#FF5722', fontFamily: F, fontWeight: 700, fontSize: 13 }}>{'\u2713'}</span>

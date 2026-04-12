@@ -134,11 +134,11 @@ const TermsPage = () => {
               <div style={secStyle}>
                 <SecH num="03" title="Diagnostic Fee" id="section-3" />
                 <p style={P}>
-                  A diagnostic fee of <span style={B}>$60</span> is charged for each service visit. This fee covers the technician's travel, inspection, and diagnosis of your appliance.
+                  A diagnostic fee of <span style={B}>$80</span> is charged for each service visit. This fee covers the technician's travel, inspection, and diagnosis of your appliance.
                 </p>
                 <div style={{ marginTop: 12 }}>
-                  <Li>If you approve the repair, the $60 diagnostic fee is <span style={B}>applied as a credit</span> toward the total repair cost.</Li>
-                  <Li>If you decline the repair, the $60 fee is retained as payment for the diagnostic service.</Li>
+                  <Li>If you approve the repair, the $80 diagnostic fee is <span style={B}>applied as a credit</span> toward the total repair cost.</Li>
+                  <Li>If you decline the repair, the $80 fee is retained as payment for the diagnostic service.</Li>
                   <Li>The diagnostic fee is non-refundable once the technician has arrived and performed the inspection.</Li>
                 </div>
               </div>

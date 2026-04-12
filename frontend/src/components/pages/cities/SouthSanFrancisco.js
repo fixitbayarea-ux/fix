@@ -28,7 +28,7 @@ const SouthSanFrancisco = () => {
     paragraphs: [
       'South San Francisco\'s position between San Francisco and the Peninsula creates a diverse service area from hilltop homes to bayfront apartments. As "The Industrial City," SSF combines residential neighborhoods with biotech campuses, requiring appliance expertise for both homes and light commercial spaces. Our technicians navigate SSF daily, from Sign Hill\'s elevated streets to Grand Avenue\'s commercial corridor.',
       'We serve SSF\'s mix of post-war single-family homes, modern townhomes, and apartment complexes near BART and Caltrain. Our team understands challenges unique to SSF housing—from 1950s tract homes in Buri Buri to new developments near Oyster Point. We stock parts for standard residential appliances and light commercial break room equipment common in SSF workplaces.',
-      'Fast scheduling is available throughout South San Francisco with a $60 diagnostic fee credited toward repairs. We provide upfront estimates and back every repair with a 180-day warranty. Our licensed technicians repair all major brands and are familiar with both traditional and high-efficiency models.'
+      'Fast scheduling is available throughout South San Francisco with a $80 diagnostic fee credited toward repairs. We provide upfront estimates and back every repair with a 180-day warranty. Our licensed technicians repair all major brands and are familiar with both traditional and high-efficiency models.'
     ]
   };
 

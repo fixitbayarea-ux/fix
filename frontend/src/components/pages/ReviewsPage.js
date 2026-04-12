@@ -9,7 +9,7 @@ const F = 'Montserrat, sans-serif';
 const EYE = { fontFamily: F, fontWeight: 700, fontSize: 11, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.22em', marginBottom: 10 };
 
 const TRUST_CARDS = [
-  { num: '01', title: 'Honest Diagnosis', body: 'We tell you what\u2019s wrong and what it costs before any work begins. No surprises, no pressure. The $60 diagnostic is applied to your repair if you proceed.' },
+  { num: '01', title: 'Honest Diagnosis', body: 'We tell you what\u2019s wrong and what it costs before any work begins. No surprises, no pressure. The $80 diagnostic is applied to your repair if you proceed.' },
   { num: '02', title: 'On-Time Reliability', body: 'Our technicians arrive on time with the parts needed for most common repairs. Most jobs are completed in a single visit \u2014 that\u2019s why customers come back.' },
   { num: '03', title: '180-Day Warranty', body: 'Every repair is backed by our 180-day warranty on parts and labor. If the same issue returns, we fix it free. No questions asked.' },
 ];

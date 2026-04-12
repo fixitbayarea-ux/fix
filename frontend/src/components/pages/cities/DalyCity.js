@@ -28,7 +28,7 @@ const DalyCity = () => {
     paragraphs: [
       'Daly City\'s location on the San Francisco Peninsula creates unique challenges for home appliances. The city\'s famous fog belt brings persistent moisture that affects dryer performance, refrigerator humidity control, and gas appliance igniters. Our technicians understand these local conditions and come prepared with the right parts and solutions for Daly City\'s coastal microclimate.',
       'From Westlake\'s hillside homes to Serramonte\'s shopping district condos, we navigate Daly City\'s diverse neighborhoods daily. We\'re familiar with the area\'s housing stock—from 1960s tract homes to modern townhomes—and the specific appliance issues each style faces. Our vans are stocked with parts that commonly fail in Daly City\'s moisture-rich environment.',
-      'We offer fast scheduling throughout Daly City with a $60 diagnostic fee fully credited toward repairs. Every repair includes a 180-day warranty covering parts and labor. Our licensed technicians service all major appliance brands and are experienced with both standard and high-efficiency models common in Daly City homes.'
+      'We offer fast scheduling throughout Daly City with a $80 diagnostic fee fully credited toward repairs. Every repair includes a 180-day warranty covering parts and labor. Our licensed technicians service all major appliance brands and are experienced with both standard and high-efficiency models common in Daly City homes.'
     ]
   };
 
@@ -37,7 +37,7 @@ const DalyCity = () => {
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
         pageTitle="Appliance Repair Daly City | Fast Scheduling | FixitBay LLC"
-        metaDescription="Professional appliance repair in Daly City. Fast scheduling in Westlake, Serramonte & all neighborhoods. $60 diagnostic applied to repair. Call (760) 543-5733."
+        metaDescription="Professional appliance repair in Daly City. Fast scheduling in Westlake, Serramonte & all neighborhoods. $80 diagnostic applied to repair. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

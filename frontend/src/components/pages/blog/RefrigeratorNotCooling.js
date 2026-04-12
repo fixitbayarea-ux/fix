@@ -14,8 +14,8 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: "Why is my refrigerator running but not cooling?", a: "The most common causes are dirty condenser coils or a failed evaporator fan motor. Start by cleaning the coils \u2014 if the freezer is cold but the fridge compartment is warm, the evaporator fan likely needs replacement. In San Francisco, coastal humidity also accelerates gasket wear, causing cold air leaks." },
-  { q: "How much does refrigerator repair cost in San Francisco?", a: "Most refrigerator repairs cost $250\u2013$650 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic that is applied toward repair. Common repairs like thermostat replacement start from $295. Compressor replacement on standard fridges ranges from $450\u2013$555. Sub-Zero and Viking repairs start from $555." },
-  { q: "Is it worth repairing a 10-year-old refrigerator?", a: "If the repair cost exceeds 50% of a new refrigerator\u2019s price, replacement usually makes more sense. The exception is premium brands \u2014 a Sub-Zero costs $5,000\u2013$15,000 new, so a $600 compressor repair is absolutely worth it even at 15+ years." },
+  { q: "How much does refrigerator repair cost in San Francisco?", a: "Most refrigerator repairs cost $250\u2013$650 after the diagnostic fee. FixitBay LLC charges a $80 diagnostic that is applied toward repair. Common repairs like thermostat replacement start from $295. Compressor replacement on standard fridges ranges from $450\u2013$555. Sub-Zero and Viking repairs start from $555." },
+  { q: "Is it worth repairing a 10-year-old refrigerator?", a: "If the repair cost exceeds 50% of a new refrigerator\u2019s price, replacement usually makes more sense. The exception is premium brands \u2014 a Sub-Zero costs $5,000\u2013$15,000 new, so a $800 compressor repair is absolutely worth it even at 15+ years." },
   { q: "Can I fix a refrigerator not cooling myself?", a: "You can check three things yourself: clean the condenser coils, verify the thermostat setting (35\u201338\u00B0F), and test the door seal with a dollar bill. These cover about 40% of cases. If these don\u2019t solve it, the issue likely requires a licensed technician with diagnostic tools." },
   { q: "How long does refrigerator repair take?", a: "Most repairs take 1\u20132 hours once the technician arrives. Parts like fan motors and thermostats are usually in stock on our truck. Compressor replacement may require ordering the part and a return visit. FixitBay LLC offers same- or next-day appointments Monday through Saturday." },
 ];
@@ -46,7 +46,7 @@ const CHECKLIST = [
 ];
 
 const PRICING = [
-  { problem: 'Condenser coil cleaning', cost: 'Included in $60 diagnostic' },
+  { problem: 'Condenser coil cleaning', cost: 'Included in $80 diagnostic' },
   { problem: 'Thermostat/sensor replacement', cost: 'from $295' },
   { problem: 'Door gasket replacement', cost: 'from $80' },
   { problem: 'Evaporator fan motor', cost: 'from $180' },
@@ -227,7 +227,7 @@ const RefrigeratorNotCooling = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need <a href="/refrigerator-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>refrigerator repair</a> in San Francisco & Bay Area?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling &middot; $60 diagnostic applied to repair &middot; 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling &middot; $80 diagnostic applied to repair &middot; 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
@@ -259,7 +259,7 @@ const RefrigeratorNotCooling = () => {
               <h2 id="compressor" style={H2S}><span style={{ color: '#FF5722' }}>8.</span> Compressor Failure or Refrigerant Leak</h2>
               <p style={P}>The compressor is the heart of your refrigerator — it circulates refrigerant through the system. When it fails, the fridge runs but never gets cold enough.</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Refrigerant leak signs:</strong> hissing sound near the back, fridge runs constantly but stays warm. Refrigerant handling is EPA-regulated — only certified technicians can work with it.</p>
-              <p style={P}><strong style={{ color: '#1A1A1A' }}>Compressor replacement:</strong> from $400–$600</p>
+              <p style={P}><strong style={{ color: '#1A1A1A' }}>Compressor replacement:</strong> from $400–$800</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Refrigerant recharge:</strong> from $300–$500</p>
               <p style={P}><strong style={{ color: '#1A1A1A' }}>Worth repairing?</strong> For <a href="/sub-zero-appliance-repair" style={{ color: '#C0362C', fontWeight: 600 }}>Sub-Zero</a> ($5,000–$15,000 new), Viking, or Thermador — absolutely yes. For a standard fridge over 10 years old where repair exceeds 50% of replacement cost — usually better to <a href="/blog/when-to-repair-vs-replace" style={{ color: '#C0362C', fontWeight: 600 }}>replace</a>.</p>
 
@@ -299,7 +299,7 @@ const RefrigeratorNotCooling = () => {
                   </tbody>
                 </table>
               </div>
-              <p style={P}>FixitBay LLC <a href="/refrigerator-repair" style={{ color: '#C0362C', fontWeight: 600 }}>refrigerator repair</a> starts from $255 after $60 diagnostic. The $60 diagnostic fee is fully applied toward your repair cost.</p>
+              <p style={P}>FixitBay LLC <a href="/refrigerator-repair" style={{ color: '#C0362C', fontWeight: 600 }}>refrigerator repair</a> starts from $255 after $80 diagnostic. The $80 diagnostic fee is fully applied toward your repair cost.</p>
 
               {/* ── Andrei's Field Note ── */}
               <h2 id="field-note" style={H2S}>Andrei's Field Note</h2>
@@ -376,7 +376,7 @@ const RefrigeratorNotCooling = () => {
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>FAST SCHEDULING</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Fridge Not Cooling?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$60 diagnostic applied to repair. 180-day warranty.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$80 diagnostic applied to repair. 180-day warranty.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
                 {['Licensed CA Technician', 'Fast Scheduling', 'All Major Brands'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
@@ -431,7 +431,7 @@ const RefrigeratorNotCooling = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services & Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Refrigerator Repair in Bay Area', body: 'Fast refrigerator repair for all brands. $60 diagnostic applied.', link: 'View Service', href: '/refrigerator-repair' },
+                { tag: 'SERVICE', title: 'Refrigerator Repair in Bay Area', body: 'Fast refrigerator repair for all brands. $80 diagnostic applied.', link: 'View Service', href: '/refrigerator-repair' },
                 { tag: 'ARTICLE', title: 'How Much Does Refrigerator Repair Cost in SF?', body: 'Average costs $200\u2013$550 in Bay Area. Full breakdown by problem type.', link: 'Read Article', href: '/blog/refrigerator-repair-cost-san-francisco-2026' },
                 { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (

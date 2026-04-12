@@ -23,7 +23,7 @@ const StackedWasherDryerRepairPage = () => {
     { question: 'What\'s the difference between an all-in-one combo and a stacked pair?', answer: 'An all-in-one combo (LG, Samsung, Bosch) washes and dries in a single drum using condensation — no exhaust vent needed, common in closet installs. A stacked pair is two separate units on a stacking kit with a standard dryer vent. We repair both types.' },
     { question: 'My combo washer/dryer doesn\'t dry completely. Is that fixable?', answer: 'Usually yes. Combo units dry by condensation, which requires a clean condenser. In most cases it\'s a simple condenser or heat pump filter cleaning — a 30-minute fix that restores full drying performance.' },
     { question: 'Do you service LG and Samsung stacked units?', answer: 'Yes. LG and Samsung are the most common stacked brands in Bay Area apartments. We carry parts for both and are trained on LG Direct Drive and Samsung VRT systems.' },
-    { question: 'How much does stacked washer/dryer repair cost?', answer: 'Our $60 diagnostic fee covers the visit and full diagnosis. Most repairs run $150\u2013$400 depending on the part needed. We provide a written upfront estimate before any work begins.' },
+    { question: 'How much does stacked washer/dryer repair cost?', answer: 'Our $80 diagnostic fee covers the visit and full diagnosis. Most repairs run $150\u2013$400 depending on the part needed. We provide a written upfront estimate before any work begins.' },
   ];
 
   const serviceDescription = {
@@ -31,7 +31,7 @@ const StackedWasherDryerRepairPage = () => {
     paragraphs: [
       'Stacked washer/dryer units are the standard in San Francisco apartments, SoMa lofts, and Peninsula condos \u2014 and when one breaks, you lose both machines at once. FixitBay LLC technicians are trained on both all-in-one combo units (single drum that washes and dries by condensation) and stacked pairs (separate washer and dryer on a stacking kit). We bring the right tools to safely unstack, repair, and re-stack units in tight San Francisco laundry closets.',
       'Our repair process covers the full system: drain pumps, motors, belts, heating elements, thermal fuses, door latches, control boards, condensers, and vent runs. We diagnose error codes, test all cycles, and identify the root cause \u2014 whether it\'s a clogged drain, a failed heating element, or a worn drum bearing.',
-      'We service all major stacked unit brands: LG, Samsung, Bosch, GE, Whirlpool, Maytag, Electrolux, Frigidaire, and Haier. Every repair starts with a $60 diagnostic fee that\'s fully applied toward the repair cost. All work is backed by our 180-day warranty on parts and labor.'
+      'We service all major stacked unit brands: LG, Samsung, Bosch, GE, Whirlpool, Maytag, Electrolux, Frigidaire, and Haier. Every repair starts with a $80 diagnostic fee that\'s fully applied toward the repair cost. All work is backed by our 180-day warranty on parts and labor.'
     ]
   };
 
@@ -60,7 +60,7 @@ const StackedWasherDryerRepairPage = () => {
         heroImagePosition="center center"
         techImage="/images/technicians/washer-tech.jpg"
         techImageAlt="FixitBay technician repairing a stacked washer dryer"
-        heroDescription="FixitBay LLC repairs stacked washer/dryer units across the Bay Area. Combo units and stacked pairs. $60 diagnostic applied to repair. 180-day warranty."
+        heroDescription="FixitBay LLC repairs stacked washer/dryer units across the Bay Area. Combo units and stacked pairs. $80 diagnostic applied to repair. 180-day warranty."
         issues={[
           { icon: '\u{1F4A7}', label: 'Won\'t Drain' },
           { icon: '\u{1F525}', label: 'No Heat' },

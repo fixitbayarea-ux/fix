@@ -33,7 +33,7 @@ const SERVICE_CONTENT = {
       rows: [
         { situation: 'Age under 8 years', repair: true, replace: false, note: 'Most components are still within their expected lifespan \u2014 repair is almost always the better investment.' },
         { situation: 'Repair cost under 50% of new fridge', repair: true, replace: false, note: 'If the repair bill stays under half the cost of a comparable new unit, repairing makes financial sense.' },
-        { situation: 'Compressor failure on 12+ year unit', repair: false, replace: true, note: 'Compressor replacement runs $600\u2013$900. On an aging unit, that money is better put toward a newer, more efficient model.' },
+        { situation: 'Compressor failure on 12+ year unit', repair: false, replace: true, note: 'Compressor replacement runs $800\u2013$900. On an aging unit, that money is better put toward a newer, more efficient model.' },
         { situation: 'Cosmetic damage only', repair: true, replace: false, note: "Dents, scratches, or a cracked handle don't affect performance. Keep the fridge and fix what matters." },
       ],
     },
@@ -487,7 +487,7 @@ const SERVICE_CONTENT = {
       title: 'Maintenance vs. Waiting for a Breakdown',
       intro: 'Preventive maintenance costs a fraction of emergency repair. Here\u2019s the comparison.',
       rows: [
-        { situation: 'Annual coil cleaning ($85)', repair: true, replace: false, note: 'Prevents compressor strain that leads to $600\u2013$900 compressor replacement.' },
+        { situation: 'Annual coil cleaning ($85)', repair: true, replace: false, note: 'Prevents compressor strain that leads to $800\u2013$900 compressor replacement.' },
         { situation: 'Door gasket replacement ($120)', repair: true, replace: false, note: 'A worn seal forces the compressor to overwork, increasing energy bills by 10\u201315%.' },
         { situation: 'Thermostat calibration ($65)', repair: true, replace: false, note: 'Prevents food spoilage from incorrect temperatures and extends component life.' },
         { situation: 'Skipping maintenance entirely', repair: false, replace: true, note: 'Neglected refrigerators fail 3\u20135 years earlier. Emergency repairs average $350\u2013$650.' },
@@ -743,7 +743,7 @@ const SERVICE_CONTENT = {
         { situation: 'Unit under 10 years old', repair: true, replace: false, note: 'Commercial refrigeration is built to last 15\u201320 years. Single-component failures are almost always worth repairing.' },
         { situation: 'Compressor failure on newer unit', repair: true, replace: false, note: 'Commercial compressor replacement ($650\u2013$1,200) is significant but far less than a $5,000\u2013$15,000 new unit.' },
         { situation: 'Multiple system failures on 15+ year unit', repair: false, replace: true, note: 'When compressor, controls, and seals all need work, combined costs may approach replacement value.' },
-        { situation: 'Refrigerant leak (repairable)', repair: true, replace: false, note: 'Leak detection and repair ($350\u2013$600) saves the entire system. Only replace if the leak is in an inaccessible location.' },
+        { situation: 'Refrigerant leak (repairable)', repair: true, replace: false, note: 'Leak detection and repair ($350\u2013$800) saves the entire system. Only replace if the leak is in an inaccessible location.' },
       ],
     },
     symptomsChecklist: [

@@ -24,7 +24,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Expert Kenmore Appliance Repair in San Francisco Bay Area',
   paragraphs: [
-    "Kenmore has been in American homes for decades. We repair all Kenmore models including the Elite premium line. $60 diagnostic credited toward repairs.",
+    "Kenmore has been in American homes for decades. We repair all Kenmore models including the Elite premium line. $80 diagnostic credited toward repairs.",
     "Kenmore appliances use components from various manufacturers — we source all parts quickly from our network.",
     "Same- or next-day service throughout SF Bay Area. 180-day warranty on parts and labor.",
   ],

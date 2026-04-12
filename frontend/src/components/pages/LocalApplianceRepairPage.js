@@ -35,7 +35,7 @@ const FAQ_ITEMS = [
   { q: 'Is your team actually local to the Bay Area?', a: 'Yes. FixitBay LLC is a local, family-owned business. Our technicians live and work in the Bay Area and understand local homes and neighborhoods.' },
   { q: 'Do you offer same- or next-day local appointments?', a: 'Same- or next-day appointments are available in many neighborhoods, especially when you contact us earlier in the day.' },
   { q: 'Can you support multiple properties or units?', a: 'Yes. We regularly help landlords, property managers, and families who have multiple homes or rental units across different Bay Area cities.' },
-  { q: 'What is the diagnostic fee?', a: 'We charge a $60 diagnostic fee which is credited toward your repair if you proceed with the fix.' },
+  { q: 'What is the diagnostic fee?', a: 'We charge a $80 diagnostic fee which is credited toward your repair if you proceed with the fix.' },
 ];
 
 const BRANDS = [
@@ -92,11 +92,11 @@ const LocalApplianceRepairPage = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'local-business-schema', data: { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "FixitBay LLC", "description": "Local appliance repair service in San Francisco and Bay Area. Fast scheduling, $60 diagnostic, 180-day warranty.", "url": "https://fixitbay.net", "telephone": "+17605435733", "priceRange": "$$", "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressRegion": "CA", "postalCode": "94109" }, "areaServed": SERVICE_CITIES.map(c => c.name), "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }, { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }], "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "95", "bestRating": "5", "worstRating": "1" } } },
+    { id: 'local-business-schema', data: { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "FixitBay LLC", "description": "Local appliance repair service in San Francisco and Bay Area. Fast scheduling, $80 diagnostic, 180-day warranty.", "url": "https://fixitbay.net", "telephone": "+17605435733", "priceRange": "$$", "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressRegion": "CA", "postalCode": "94109" }, "areaServed": SERVICE_CITIES.map(c => c.name), "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }, { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }], "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "95", "bestRating": "5", "worstRating": "1" } } },
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
       { "@type": "Question", "name": "Which Bay Area cities do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve San Francisco, the Peninsula, and Marin County, including Daly City, Pacifica, Brisbane, Mill Valley, San Rafael, Sausalito, Larkspur, and many more." } },
       { "@type": "Question", "name": "Do you offer same- or next-day local appointments?", "acceptedAnswer": { "@type": "Answer", "text": "Same- or next-day appointments are available in many neighborhoods, especially when you contact us earlier in the day." } },
-      { "@type": "Question", "name": "What is the diagnostic fee?", "acceptedAnswer": { "@type": "Answer", "text": "We charge a $60 diagnostic fee which is credited toward your repair if you proceed with the fix." } }
+      { "@type": "Question", "name": "What is the diagnostic fee?", "acceptedAnswer": { "@type": "Answer", "text": "We charge a $80 diagnostic fee which is credited toward your repair if you proceed with the fix." } }
     ] } },
     { id: 'breadcrumb-schema', data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net" }, { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://fixitbay.net/#services" }, { "@type": "ListItem", "position": 3, "name": "Appliance Repair", "item": "https://fixitbay.net/local-appliance-repair" }] } }
   ], []);
@@ -106,7 +106,7 @@ const LocalApplianceRepairPage = () => {
     <>
       <SEOMetaTags
         title="Local Appliance Repair | Fast Scheduling | FixitBay LLC"
-        description="Local appliance repair in San Francisco & Bay Area. $60 diagnostic, 180-day warranty, fast scheduling. Licensed CA technician. Refrigerators, washers, dryers, dishwashers, ovens and more."
+        description="Local appliance repair in San Francisco & Bay Area. $80 diagnostic, 180-day warranty, fast scheduling. Licensed CA technician. Refrigerators, washers, dryers, dishwashers, ovens and more."
         canonical="https://fixitbay.net/local-appliance-repair"
       />
       <div style={{ fontFamily: F }}>
@@ -150,7 +150,7 @@ const LocalApplianceRepairPage = () => {
               Local Appliance Repair — Fast Scheduling Across the Bay Area
             </h1>
             <p style={{ fontFamily: F, fontWeight: 400, fontSize: 16, color: 'rgba(255,255,255,0.78)', maxWidth: 620, margin: '0 auto 32px' }}>
-              $60 diagnostic fee applied to repair. Licensed technicians. 180-day warranty. Same- or next-day service across San Francisco, Peninsula, and Marin County.
+              $80 diagnostic fee applied to repair. Licensed technicians. 180-day warranty. Same- or next-day service across San Francisco, Peninsula, and Marin County.
             </p>
             <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 15, padding: '14px 32px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }} aria-label="opens in new tab">Book Online Now</a>
@@ -173,7 +173,7 @@ const LocalApplianceRepairPage = () => {
             {[
               { val: '3+', label: 'Years Experience' },
               { val: '500+', label: 'Happy Customers' },
-              { val: '$60', label: 'Diagnostic Fee' },
+              { val: '$80', label: 'Diagnostic Fee' },
               { val: '180', label: 'Day Warranty' },
             ].map((s, i) => (
               <React.Fragment key={i}>
@@ -217,7 +217,7 @@ const LocalApplianceRepairPage = () => {
           <div className="diff-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 48, maxWidth: 900, margin: '0 auto', alignItems: 'center' }}>
             <div>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8, marginBottom: 16 }}>
-                FixitBay LLC is a local, family-owned appliance repair company serving <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>San Francisco</strong>, the Peninsula, and Marin County. Our technicians live in the Bay Area and understand the unique challenges of local homes. We charge a <strong style={{ fontFamily: F, fontWeight: 700, color: '#FF5722' }}>$60 diagnostic fee</strong> (credited toward your repair).
+                FixitBay LLC is a local, family-owned appliance repair company serving <strong style={{ fontFamily: F, fontWeight: 700, color: '#fff' }}>San Francisco</strong>, the Peninsula, and Marin County. Our technicians live in the Bay Area and understand the unique challenges of local homes. We charge a <strong style={{ fontFamily: F, fontWeight: 700, color: '#FF5722' }}>$80 diagnostic fee</strong> (credited toward your repair).
               </p>
               <p style={{ fontFamily: F, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8, marginBottom: 16 }}>
                 We repair all major household appliances — refrigerators, washers, dryers, dishwashers, ovens, cooktops, freezers, ice makers, wine coolers. Same- or next-day appointments available.
@@ -229,7 +229,7 @@ const LocalApplianceRepairPage = () => {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
               {[
                 { num: '01', title: 'Licensed & Insured', body: 'CA License #51001. Fully insured.' },
-                { num: '02', title: 'Honest Pricing', body: '$60 diagnostic credited to repair.' },
+                { num: '02', title: 'Honest Pricing', body: '$80 diagnostic credited to repair.' },
                 { num: '03', title: '180-Day Warranty', body: 'Same issue returns? We come back free.' },
                 { num: '04', title: 'Truly Local', body: 'We live and work in the Bay Area.' },
               ].map((c, i) => (
@@ -269,8 +269,8 @@ const LocalApplianceRepairPage = () => {
             <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 20, textAlign: 'center' }}>How Your Repair Visit Works</p>
             {[
               { n: 1, t: 'Book Online or Call', d: 'Schedule your repair at a time that works. Same- or next-day available.' },
-              { n: 2, t: 'Diagnostic Visit ($60)', d: 'Licensed technician arrives on time, inspects your appliance, identifies the problem. $60 fee applies.' },
-              { n: 3, t: 'Upfront Quote', d: 'Clear written estimate before work begins. $60 diagnostic credited if you proceed.' },
+              { n: 2, t: 'Diagnostic Visit ($80)', d: 'Licensed technician arrives on time, inspects your appliance, identifies the problem. $80 fee applies.' },
+              { n: 3, t: 'Upfront Quote', d: 'Clear written estimate before work begins. $80 diagnostic credited if you proceed.' },
               { n: 4, t: 'Professional Repair \u2014 180-day warranty', d: 'Issue fixed with quality parts. Most jobs completed in one visit. 180-day warranty included.' },
             ].map((s, i) => (
               <div key={i} style={{ display: 'flex', gap: 14, padding: '12px 0', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>

@@ -264,7 +264,7 @@ const MobileServiceLanding = ({
             display: 'flex', alignItems: 'center', gap: 14,
           }}>
             <div>
-              <span style={{ fontSize: 40, fontWeight: 800, color: PC.accent, lineHeight: 1 }}>$60</span>
+              <span style={{ fontSize: 40, fontWeight: 800, color: PC.accent, lineHeight: 1 }}>$80</span>
               <span style={{ fontSize: 13, fontWeight: 700, color: PC.white, display: 'block', marginTop: 2 }}>Diagnostic</span>
             </div>
             <span style={{ fontSize: 12, color: PC.white60, lineHeight: 1.5 }}>
@@ -345,7 +345,7 @@ const MobileServiceLanding = ({
         <div>
           {[
             { n: '1', title: 'Book in 30 Seconds', desc: 'Pick a time online or call us. Same- or next-day slots available.' },
-            { n: '2', title: 'We Diagnose On-Site', desc: `$60 diagnostic — applied to your ${actionWord}. No hidden fees.` },
+            { n: '2', title: 'We Diagnose On-Site', desc: `$80 diagnostic — applied to your ${actionWord}. No hidden fees.` },
             { n: '3', title: isMaintenance ? 'Professional Maintenance' : 'Professional Repair', desc: isMaintenance ? 'Genuine parts and manufacturer specs. Upfront pricing before any work begins.' : 'Quality parts. Upfront pricing before any work begins.' },
             { n: '4', title: '180-Day Warranty', desc: 'If the same issue returns within 180 days, we come back at no charge.' },
           ].map((step, i) => (
@@ -437,9 +437,9 @@ const MobileServiceLanding = ({
         <h2 style={{ fontSize: 22, fontWeight: 800, color: PC.textDark, margin: '0 0 16px', fontFamily: F }}>No Hidden Fees</h2>
 
         <div style={{ background: PC.white, border: `2px solid ${PC.accent}`, borderRadius: PC.r, padding: '22px 20px', textAlign: 'center', marginBottom: 12, position: 'relative', overflow: 'hidden' }}>
-          <span style={{ fontFamily: F, fontSize: 48, fontWeight: 800, color: PC.accent, display: 'block', lineHeight: 1, marginTop: 8 }}>$60</span>
+          <span style={{ fontFamily: F, fontSize: 48, fontWeight: 800, color: PC.accent, display: 'block', lineHeight: 1, marginTop: 8 }}>$80</span>
           <span style={{ fontFamily: F, fontSize: 14, color: PC.textMid, display: 'block', marginBottom: 16 }}>diagnostic visit</span>
-          {[`Upfront pricing — no surprises`, `$60 credited toward ${actionWord}`, '180-day warranty included', `No fix, no ${actionWord} charge`].map((item, i) => (
+          {[`Upfront pricing — no surprises`, `$80 credited toward ${actionWord}`, '180-day warranty included', `No fix, no ${actionWord} charge`].map((item, i) => (
             <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '6px 0', justifyContent: 'center' }}>
               <span style={{ color: PC.accent, fontWeight: 700, fontSize: 14 }}>&#10003;</span>
               <span style={{ fontFamily: F, fontSize: 13, color: PC.textMid }}>{item}</span>
@@ -472,7 +472,7 @@ const MobileServiceLanding = ({
             </h2>
             <div style={{ background: '#fff', borderRadius: 6, padding: '16px 18px', border: '1px solid #e5e7eb', marginTop: 12 }}>
               <p style={{ fontFamily: F, fontSize: 15, color: PC.navy, lineHeight: 1.8, margin: '0 0 8px' }}>
-                <strong>From ${p.from}</strong> after $60 diagnostic.
+                <strong>From ${p.from}</strong> after $80 diagnostic.
               </p>
               <p style={{ fontFamily: F, fontSize: 13, color: '#4A5568', lineHeight: 1.7, margin: 0 }}>
                 {p.repairs || p.includes}.
@@ -573,7 +573,7 @@ const MobileServiceLanding = ({
         <p style={{ color: PC.accent, fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', margin: '0 0 10px', fontFamily: F }}>Schedule Today</p>
         <h2 style={{ fontFamily: F, fontSize: 24, fontWeight: 800, color: PC.white, lineHeight: 1.2, margin: '0 0 8px' }}>Get Your {appliance} Running Like New</h2>
         <p style={{ fontFamily: F, fontSize: 13, color: PC.white45, margin: '0 0 8px' }}>Licensed technician &middot; OEM &amp; aftermarket parts &middot; Most jobs same visit</p>
-        <p style={{ fontFamily: F, fontSize: 12, color: PC.white45, margin: '0 0 28px' }}>Same- or next-day &middot; 180-day warranty &middot; $60 diagnostic</p>
+        <p style={{ fontFamily: F, fontSize: 12, color: PC.white45, margin: '0 0 28px' }}>Same- or next-day &middot; 180-day warranty &middot; $80 diagnostic</p>
         <button onClick={() => handleBook('final', pageSlug)} data-testid="final-book-btn" aria-label="Book appliance repair service online" style={{
           width: '100%', minHeight: 56, display: 'flex', alignItems: 'center', justifyContent: 'center',
           background: PC.accent, color: PC.white, border: 'none', borderRadius: PC.r,

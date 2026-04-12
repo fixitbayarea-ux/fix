@@ -45,7 +45,7 @@ const RefrigeratorMaintenance = () => {
   const faqData = [
     {
       question: 'How much does refrigerator maintenance cost?',
-      answer: 'Our diagnostic fee is $60, which is applied toward the repair if you proceed. Maintenance typically involves cleaning coils, checking seals, and testing components. Final costs depend on any parts or repairs needed.'
+      answer: 'Our diagnostic fee is $80, which is applied toward the repair if you proceed. Maintenance typically involves cleaning coils, checking seals, and testing components. Final costs depend on any parts or repairs needed.'
     },
     {
       question: 'How often should I schedule refrigerator maintenance?',
@@ -74,7 +74,7 @@ const RefrigeratorMaintenance = () => {
     paragraphs: [
       'Your refrigerator is one of the hardest-working appliances in your home, running 24/7 to keep your food fresh and safe. Regular maintenance is essential to prevent costly breakdowns, reduce energy consumption, and extend the lifespan of your unit. At FixitBay LLC, we provide comprehensive refrigerator maintenance services throughout San Francisco, Peninsula, and Marin County.',
       'Our certified technicians perform thorough inspections and cleaning of critical components including condenser coils, evaporator fans, door seals, and temperature controls. We also test the defrost system, check refrigerant levels, and ensure all electrical connections are secure. Whether you have a standard top-freezer model, a French door refrigerator, or a high-end built-in unit, we have the expertise to keep it running at peak efficiency.',
-      'During our maintenance visit, we provide a $60 diagnostic assessment that includes testing temperature accuracy, inspecting door seals for air leaks, cleaning accessible coils, and checking the ice maker and water dispenser (if equipped). This proactive approach helps identify potential issues before they lead to food spoilage or complete system failure. All our work is backed by a 180-day warranty, and we offer same- or next-day service appointments to fit your schedule.'
+      'During our maintenance visit, we provide a $80 diagnostic assessment that includes testing temperature accuracy, inspecting door seals for air leaks, cleaning accessible coils, and checking the ice maker and water dispenser (if equipped). This proactive approach helps identify potential issues before they lead to food spoilage or complete system failure. All our work is backed by a 180-day warranty, and we offer same- or next-day service appointments to fit your schedule.'
     ]
   };
 
@@ -95,7 +95,7 @@ const RefrigeratorMaintenance = () => {
         appliance="Refrigerator"
         pageSlug="maintenance/refrigerator"
         pageTitle="Refrigerator Maintenance Service Bay Area | FixitBay"
-        metaDescription="Professional refrigerator maintenance in the Bay Area. Condenser cleaning, seal inspection. $60 diagnostic, 180-day warranty. FixitBay LLC."
+        metaDescription="Professional refrigerator maintenance in the Bay Area. Condenser cleaning, seal inspection. $80 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Refrigerator<br />Maintenance. Today.</>}
         heroSubtitle="Prevent Breakdowns — Keep Food Fresh"
         techImage="/images/technicians/fridge-tech.jpg"
@@ -118,7 +118,7 @@ const RefrigeratorMaintenance = () => {
     <ApplianceRepairPageNew
       appliance="Refrigerator"
       pageTitle="Refrigerator Maintenance Bay Area | FixitBay"
-      metaDescription="Professional refrigerator maintenance in San Francisco Bay Area. Keep your fridge running efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+      metaDescription="Professional refrigerator maintenance in San Francisco Bay Area. Keep your fridge running efficiently with expert service from FixitBay LLC. $80 diagnostic, 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}

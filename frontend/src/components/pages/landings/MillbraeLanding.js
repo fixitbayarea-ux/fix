@@ -6,7 +6,7 @@ const MillbraeLanding = () => (
     city="Millbrae"
     citySlug="millbrae"
     pageTitle="Appliance Repair Millbrae | Same-Day | FixitBay LLC"
-    metaDescription="Fast, licensed appliance repair in Millbrae. $60 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
+    metaDescription="Fast, licensed appliance repair in Millbrae. $80 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
     neighborhoods={['Meadows', 'Highlands', 'Mossdale', 'Mills Estate', 'Lomita Heights', 'Taylor Boulevard', 'Downtown Millbrae', 'Green Hills', 'Millbrae Meadows', 'Millbrae Highlands']}
     localExpertise="Millbrae is home to upscale single-family residences and premium condos — and the kitchens match. Thermador ranges, Bosch dishwashers, and Sub-Zero-style refrigerators are standard in Millbrae's higher-end homes. Our technicians are factory-trained on these premium brands and carry specialized diagnostic equipment."
     homeTypes="Millbrae's housing includes executive single-family homes in the Highlands and Meadows, luxury condos near the Caltrain/BART station, and established mid-century residences along Taylor Boulevard. We service every home type, from compact condo appliances to full-size built-in units."
@@ -27,7 +27,7 @@ const MillbraeLanding = () => (
     faqData={[
       { question: 'Do you service Thermador and Sub-Zero in Millbrae?', answer: 'Yes. Our technicians are experienced with all premium brands including Thermador, Sub-Zero, Bosch, Miele, and Wolf. We carry specialized tools and order exact OEM parts.' },
       { question: 'How fast can you get to Millbrae?', answer: 'We offer same- or next-day appointments in Millbrae. Most morning bookings are confirmed for the same day. We\'re typically on-site within 1–2 hours of the appointment window.' },
-      { question: 'What does appliance repair cost in Millbrae?', answer: 'Diagnostic is $60, applied toward the repair. Standard repairs range $250–$450. Premium brand repairs (Thermador, Sub-Zero) may run $350–$650 depending on parts.' },
+      { question: 'What does appliance repair cost in Millbrae?', answer: 'Diagnostic is $80, applied toward the repair. Standard repairs range $250–$450. Premium brand repairs (Thermador, Sub-Zero) may run $350–$650 depending on parts.' },
       { question: 'Which Millbrae neighborhoods do you serve?', answer: 'All Millbrae neighborhoods: Meadows, Highlands, Mills Estate, Mossdale, Lomita Heights, Taylor Boulevard, Downtown Millbrae, and Green Hills.' },
       { question: 'Are you licensed for Millbrae and San Mateo County?', answer: 'Yes. FixitBay LLC holds CA License #51001 and is fully insured throughout San Mateo County.' },
     ]}

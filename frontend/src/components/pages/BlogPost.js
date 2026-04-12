@@ -273,7 +273,7 @@ const BlogPost = () => {
 
         <h3>Decision-Making Framework</h3>
         <ol>
-          <li>Get a diagnostic ($60-100) to understand the exact problem and cost</li>
+          <li>Get a diagnostic ($80-100) to understand the exact problem and cost</li>
           <li>Calculate the appliance's age vs. expected lifespan percentage</li>
           <li>Compare repair cost to 50% of replacement cost</li>
           <li>Consider energy savings from new models (amortized over 5-10 years)</li>

@@ -28,7 +28,7 @@ const Ross = () => {
     paragraphs: [
       'Ross represents some of Marin County\'s most exclusive residential real estate, featuring hillside estates with premium appliances. Our technicians specialize in high-end brands like Sub-Zero, Wolf, Thermador, and Miele that are standard in Ross luxury homes. We understand both the sophisticated appliances and the service expectations of Ross homeowners.',
       'We navigate Ross\'s private hillside properties regularly, understanding challenges unique to luxury estates: water pressure variations, complex installations, and integrated kitchen systems. We carry specialized tools for premium appliances and maintain relationships with suppliers for quick access to high-end replacement parts.',
-      'Fast scheduling is available in Ross with a $60 diagnostic fee credited toward repairs. We provide detailed assessments for luxury appliances and back every repair with a 180-day warranty. Our licensed technicians are premium appliance specialists experienced with the sophisticated systems found in Ross estates.'
+      'Fast scheduling is available in Ross with a $80 diagnostic fee credited toward repairs. We provide detailed assessments for luxury appliances and back every repair with a 180-day warranty. Our licensed technicians are premium appliance specialists experienced with the sophisticated systems found in Ross estates.'
     ]
   };
 

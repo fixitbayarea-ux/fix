@@ -28,7 +28,7 @@ const Greenbrae = () => {
     paragraphs: [
       'Greenbrae\'s central Marin location along Highway 101 makes it a convenient shopping and residential hub. Our technicians serve all Greenbrae neighborhoods from Bon Air to properties near the Marin Country Mart. We understand Greenbrae\'s mix of condos, townhomes, and single-family homes.',
       'We navigate Greenbrae efficiently via Highway 101, accessing residential areas and shopping districts quickly. Our vans carry parts for common appliance failures, and we maintain a network for sourcing specialized components.',
-      'Fast scheduling is available in Greenbrae with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
+      'Fast scheduling is available in Greenbrae with a $80 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
     ]
   };
 

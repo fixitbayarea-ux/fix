@@ -6,7 +6,7 @@ const PacificaLanding = () => (
     city="Pacifica"
     citySlug="pacifica"
     pageTitle="Appliance Repair Pacifica | Same-Day | FixitBay LLC"
-    metaDescription="Fast, licensed appliance repair in Pacifica. $60 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
+    metaDescription="Fast, licensed appliance repair in Pacifica. $80 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
     neighborhoods={['Linda Mar', 'Rockaway Beach', 'Vallemar', 'Pedro Point', 'Fairway Park', 'Sharp Park', 'Edgemar', 'Pacific Manor', 'West Sharp Park', 'Pacifica Highlands']}
     localExpertise="Pacifica's coastal location means constant exposure to salt air, fog, and moisture. This marine environment is hard on appliances — refrigerator door hinges corrode, dryer drums develop surface rust, and dishwasher components degrade faster than in inland cities. Our technicians are experienced with these Pacifica-specific challenges and carry corrosion-resistant replacement parts."
     homeTypes="Pacifica homes range from 1950s-era ranch houses in Linda Mar to hillside homes with ocean views in Vallemar and Pedro Point. Many are exposed to direct sea spray. We service single-family homes, condos near Rockaway Beach, and apartments throughout the city."
@@ -27,7 +27,7 @@ const PacificaLanding = () => (
     faqData={[
       { question: 'Do you offer same-day appliance repair in Pacifica?', answer: 'Yes. Pacifica is in our core service area. We provide same- or next-day appointments Monday through Saturday.' },
       { question: 'Does living near the ocean really damage appliances?', answer: 'Yes. Salt air, fog, and humidity accelerate corrosion on metal parts, degrade rubber seals faster, and promote mold growth. Regular maintenance can extend appliance life significantly in Pacifica.' },
-      { question: 'How much does appliance repair cost in Pacifica?', answer: 'Diagnostic is $60, applied toward repair. Most Pacifica repairs cost $250–$450. We provide a firm quote before starting any work.' },
+      { question: 'How much does appliance repair cost in Pacifica?', answer: 'Diagnostic is $80, applied toward repair. Most Pacifica repairs cost $250–$450. We provide a firm quote before starting any work.' },
       { question: 'Which Pacifica neighborhoods do you serve?', answer: 'All of them — Linda Mar, Rockaway Beach, Vallemar, Pedro Point, Fairway Park, Sharp Park, Edgemar, Pacific Manor, and Pacifica Highlands.' },
       { question: 'Are you licensed for Pacifica?', answer: 'Yes. FixitBay LLC is fully licensed (CA #51001) and insured for residential appliance repair in Pacifica and San Mateo County.' },
     ]}

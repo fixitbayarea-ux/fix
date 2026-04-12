@@ -16,7 +16,7 @@ const FAQ_ITEMS = [
   { q: 'Why is my ice maker not making ice even though the water works?', a: "The most common hidden causes are: (1) shutoff arm stuck in \u2018up\u2019 position \u2014 check and lower it manually, (2) water filter clogged \u2014 replace if older than 6 months, (3) freezer above 10\u00b0F \u2014 ice makers need 0\u20135\u00b0F to work properly. Try resetting the ice maker by holding the reset button for 3\u20135 seconds." },
   { q: 'How do I reset my ice maker?', a: "Most ice makers have a reset button \u2014 usually a small button on the side or front of the ice maker unit. Press and hold for 3\u20135 seconds until you hear the motor cycle. Wait 3\u20134 hours for ice to form. If there\u2019s no reset button, turn the ice maker off for 30 seconds, then back on. For Samsung and LG, check the control panel for an ice maker on/off toggle." },
   { q: 'Why is my ice maker making small or hollow ice cubes?', a: "Small or hollow cubes almost always indicate low water pressure or a clogged water filter. The ice mold isn\u2019t filling completely. Replace the water filter first (should be every 6 months or 300 gallons). If the filter is new, check water pressure \u2014 it should be at least 20 PSI. Low home water pressure needs a plumber, not an appliance tech." },
-  { q: 'How much does ice maker repair cost in San Francisco Bay Area?', a: "Ice maker repairs in the Bay Area typically cost $150\u2013$300. Water inlet valve replacement: $100\u2013$200. Ice maker module replacement: $150\u2013$250. Full unit replacement: $200\u2013$350 installed. DIY unit replacement costs $80\u2013$200 in parts. FixitBay LLC charges $60 diagnostic, applied to your repair." },
+  { q: 'How much does ice maker repair cost in San Francisco Bay Area?', a: "Ice maker repairs in the Bay Area typically cost $150\u2013$300. Water inlet valve replacement: $100\u2013$200. Ice maker module replacement: $150\u2013$250. Full unit replacement: $200\u2013$350 installed. DIY unit replacement costs $80\u2013$200 in parts. FixitBay LLC charges $80 diagnostic, applied to your repair." },
   { q: 'Is it worth repairing an ice maker or should I replace the fridge?', a: "Ice maker repair is almost always worth it if the refrigerator itself is under 10 years old. The ice maker is a replaceable component \u2014 even a full unit replacement ($80\u2013$200 in parts) is far cheaper than a new fridge. Only consider fridge replacement if the compressor or sealed system is failing alongside the ice maker." },
 ];
 
@@ -213,7 +213,7 @@ const IceMakerTroubleshooting = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $80 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
@@ -313,7 +313,7 @@ const IceMakerTroubleshooting = () => {
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>EXPERT ICE MAKER REPAIR</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Ice Maker Still Dead?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$60 diagnostic applied to repair. 180-day warranty on all work.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$80 diagnostic applied to repair. 180-day warranty on all work.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
                 {['All Brands: Samsung, LG, Whirlpool, GE', 'Fast Scheduling', 'Licensed CA Technician'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
@@ -385,7 +385,7 @@ const IceMakerTroubleshooting = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Ice Maker Repair in Bay Area', body: 'Expert ice maker repair for all refrigerator brands. $60 diagnostic applied.', link: 'View Service', href: '/ice-maker-repair' },
+                { tag: 'SERVICE', title: 'Ice Maker Repair in Bay Area', body: 'Expert ice maker repair for all refrigerator brands. $80 diagnostic applied.', link: 'View Service', href: '/ice-maker-repair' },
                 { tag: 'ARTICLE', title: '5 Reasons Your Refrigerator Isn\'t Cooling', body: 'DIY fixes and when to call a technician in the Bay Area.', link: 'Read Article', href: '/blog/refrigerator-not-cooling' },
                 { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (

@@ -24,7 +24,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Expert Frigidaire Appliance Repair in San Francisco Bay Area',
   paragraphs: [
-    "Frigidaire, part of the Electrolux family, offers reliable appliances for every home. We repair all Frigidaire lines. $60 diagnostic credited toward repairs.",
+    "Frigidaire, part of the Electrolux family, offers reliable appliances for every home. We repair all Frigidaire lines. $80 diagnostic credited toward repairs.",
     "We service Frigidaire Gallery and Professional premium lines with genuine parts.",
     "Same- or next-day service throughout SF Bay Area. 180-day warranty on parts and labor.",
   ],

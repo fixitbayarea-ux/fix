@@ -28,7 +28,7 @@ const SanAnselmo = () => {
     paragraphs: [
       'San Anselmo\'s charming downtown antique district and tree-lined residential streets make it a beloved Central Marin community. Our technicians serve all San Anselmo neighborhoods from the downtown business district to Sleepy Hollow and surrounding residential areas. We understand San Anselmo\'s mix of historic homes and modern properties.',
       'We navigate San Anselmo efficiently via Sir Francis Drake Boulevard and Red Hill Avenue, accessing downtown and residential neighborhoods quickly. Our vans carry parts for common appliance failures in San Anselmo\'s diverse housing stock, and we can source specialized components from our Bay Area network.',
-      'Fast scheduling is available throughout San Anselmo with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
+      'Fast scheduling is available throughout San Anselmo with a $80 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
     ]
   };
 

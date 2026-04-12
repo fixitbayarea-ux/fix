@@ -18,7 +18,7 @@ const CooktopMaintenance = () => {
   ];
 
   const faqData = [
-    { question: 'How much does cooktop maintenance cost?', answer: 'Our diagnostic fee is $60 and includes testing all burners or elements, checking gas connections (if applicable), inspecting controls, and identifying any issues. This fee applies toward repair costs.' },
+    { question: 'How much does cooktop maintenance cost?', answer: 'Our diagnostic fee is $80 and includes testing all burners or elements, checking gas connections (if applicable), inspecting controls, and identifying any issues. This fee applies toward repair costs.' },
     { question: 'How often should I service my cooktop?', answer: 'We recommend professional maintenance annually, especially for gas cooktops. Clean your cooktop after each use, check gas burner flames monthly for proper color and strength, and deep clean burner ports quarterly.' },
     { question: 'Why won\'t my gas cooktop burners light?', answer: 'Failed igniters are the most common cause. Food debris clogging burner ports, moisture in the igniter, or gas supply issues can also prevent lighting. We diagnose and repair all these issues.' },
     { question: 'Can you repair cracked glass cooktops?', answer: 'Cracked glass requires replacement, not repair. We assess the damage, provide cost estimates, and can source and install replacement glass for most brands and models.' },
@@ -31,7 +31,7 @@ const CooktopMaintenance = () => {
     paragraphs: [
       'Whether you have a gas, electric, or induction cooktop, regular maintenance ensures safe operation, even heating, and extended appliance life. Proper care prevents gas leaks, electrical hazards, and costly breakdowns. FixitBay LLC provides professional cooktop maintenance services throughout San Francisco, Peninsula, and Marin County for all cooktop types and brands.',
       'Our certified technicians perform comprehensive maintenance including cleaning and testing all burners or heating elements, checking gas connections for leaks (gas cooktops), cleaning burner ports and igniters, testing induction sensors (induction cooktops), inspecting control knobs and switches, verifying proper ignition and flame patterns, and ensuring safe electrical connections. We service standard drop-in cooktops, built-in models, and high-end professional-grade units.',
-      'During our $60 diagnostic visit, we test each burner or heating zone, inspect for gas leaks or electrical issues, clean accessible components, and verify all controls function properly. For gas cooktops, we check flame color and strength. For electric and induction models, we test heating consistency and sensor accuracy. Regular maintenance prevents dangerous gas leaks, ensures even cooking, reduces energy waste, and extends your cooktop\'s lifespan. All work is backed by our 180-day warranty with flexible same- or next-day scheduling.'
+      'During our $80 diagnostic visit, we test each burner or heating zone, inspect for gas leaks or electrical issues, clean accessible components, and verify all controls function properly. For gas cooktops, we check flame color and strength. For electric and induction models, we test heating consistency and sensor accuracy. Regular maintenance prevents dangerous gas leaks, ensures even cooking, reduces energy waste, and extends your cooktop\'s lifespan. All work is backed by our 180-day warranty with flexible same- or next-day scheduling.'
     ]
   };
 
@@ -52,7 +52,7 @@ const CooktopMaintenance = () => {
         appliance="Cooktop"
         pageSlug="maintenance/cooktop"
         pageTitle="Cooktop Maintenance San Francisco Bay Area | FixitBay LLC"
-        metaDescription="Professional cooktop maintenance in San Francisco Bay Area. Service for gas, electric, and induction cooktops. $60 diagnostic, 180-day warranty. FixitBay LLC."
+        metaDescription="Professional cooktop maintenance in San Francisco Bay Area. Service for gas, electric, and induction cooktops. $80 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Cooktop<br />Maintenance. Today.</>}
         heroSubtitle="Gas, Electric & Induction Service"
         issues={[
@@ -73,7 +73,7 @@ const CooktopMaintenance = () => {
     <ApplianceRepairPageNew
       appliance="Cooktop"
       pageTitle="Cooktop Maintenance San Francisco Bay Area | FixitBay LLC"
-      metaDescription="Professional cooktop maintenance in San Francisco Bay Area. Service for gas, electric, and induction cooktops. $60 diagnostic, 180-day warranty. FixitBay LLC."
+      metaDescription="Professional cooktop maintenance in San Francisco Bay Area. Service for gas, electric, and induction cooktops. $80 diagnostic, 180-day warranty. FixitBay LLC."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}

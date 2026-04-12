@@ -14,7 +14,7 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 
 const FAQ_ITEMS = [
   { q: "Why is my dryer not heating but still spinning?", a: "The most common cause is a blown thermal fuse \u2014 a safety device that trips when the dryer overheats, usually from a clogged vent. The dryer will tumble normally but produce no heat. For electric dryers, also check your breaker panel \u2014 a tripped 240V breaker will allow tumbling but not heating." },
-  { q: "How much does dryer repair cost in San Francisco?", a: "Most dryer repairs cost $250\u2013$400 after the diagnostic fee. FixitBay LLC charges a $60 diagnostic applied toward repair. Thermal fuse replacement starts from $250. Heating element replacement ranges from $265\u2013$350. Gas valve solenoid repair is typically $295\u2013$350." },
+  { q: "How much does dryer repair cost in San Francisco?", a: "Most dryer repairs cost $250\u2013$400 after the diagnostic fee. FixitBay LLC charges a $80 diagnostic applied toward repair. Thermal fuse replacement starts from $250. Heating element replacement ranges from $265\u2013$350. Gas valve solenoid repair is typically $295\u2013$350." },
   { q: "Should I repair or replace a dryer that's not heating?", a: "If your dryer is under 8 years old, repair is almost always worth it \u2014 most heating issues cost $150\u2013$280 to fix. For dryers over 12 years old where the motor or control board has failed ($350+ repair), replacement often makes more sense." },
   { q: "Is a gas dryer not heating dangerous?", a: "A gas dryer that isn\u2019t heating is not immediately dangerous \u2014 if the igniter isn\u2019t lighting, gas typically doesn\u2019t flow. However, if you smell gas near the dryer at any time, turn off the gas valve, open windows, and call your gas company immediately. Don\u2019t use the dryer until it\u2019s been inspected." },
   { q: "How long does dryer repair take?", a: "Most dryer repairs take 45 minutes to 1.5 hours. Thermal fuses, heating elements, and igniters are common parts that our technician carries on the truck. Gas valve solenoids and control boards may occasionally require ordering. FixitBay LLC offers same- or next-day appointments Monday through Saturday." },
@@ -217,7 +217,7 @@ const DryerNotHeating = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need <a href="/dryer-repair" style={{ color: '#FF5722', textDecoration: 'none' }}>dryer repair</a> in San Francisco & Bay Area?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling &middot; $60 diagnostic applied to repair &middot; 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling &middot; $80 diagnostic applied to repair &middot; 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" className="phone-cta" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none', transition: 'background 0.2s' }}>Call (760) 543-5733</a>
@@ -326,7 +326,7 @@ const DryerNotHeating = () => {
                   </tbody>
                 </table>
               </div>
-              <p style={P}>FixitBay LLC <a href="/dryer-repair" style={{ color: '#C0362C', fontWeight: 600 }}>dryer repair</a> starts from $235 after $60 diagnostic. The $60 diagnostic fee is fully applied toward your repair cost.</p>
+              <p style={P}>FixitBay LLC <a href="/dryer-repair" style={{ color: '#C0362C', fontWeight: 600 }}>dryer repair</a> starts from $235 after $80 diagnostic. The $80 diagnostic fee is fully applied toward your repair cost.</p>
 
               {/* ── Andrei's Field Note ── */}
               <h2 id="field-note" style={H2S}>Andrei's Field Note</h2>
@@ -402,7 +402,7 @@ const DryerNotHeating = () => {
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>FAST SCHEDULING</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Dryer Not Heating?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$60 diagnostic applied to repair. 180-day warranty.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$80 diagnostic applied to repair. 180-day warranty.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
                 {['Licensed CA Technician', 'Gas & Electric Dryers', 'Fast Scheduling'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
@@ -455,7 +455,7 @@ const DryerNotHeating = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services & Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Dryer Repair in Bay Area', body: 'Fast dryer repair for gas & electric. All brands. $60 diagnostic applied.', link: 'View Service', href: '/dryer-repair' },
+                { tag: 'SERVICE', title: 'Dryer Repair in Bay Area', body: 'Fast dryer repair for gas & electric. All brands. $80 diagnostic applied.', link: 'View Service', href: '/dryer-repair' },
                 { tag: 'ARTICLE', title: 'Dryer Taking Too Long to Dry', body: 'Still damp after a full cycle? Common causes and fixes for slow dryers.', link: 'Read Article', href: '/blog/dryer-taking-too-long' },
                 { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service appliance repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (

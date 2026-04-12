@@ -19,7 +19,7 @@ const OvenRangeMaintenance = () => {
   ];
 
   const faqData = [
-    { question: 'How much does oven maintenance cost?', answer: 'Our diagnostic fee is $60 and includes testing all burners, checking heating elements, testing temperature accuracy, and inspecting safety features. This fee applies toward any repair costs.' },
+    { question: 'How much does oven maintenance cost?', answer: 'Our diagnostic fee is $80 and includes testing all burners, checking heating elements, testing temperature accuracy, and inspecting safety features. This fee applies toward any repair costs.' },
     { question: 'How often should I service my oven or range?', answer: 'We recommend annual professional maintenance, especially for gas ranges. Between visits, clean spills immediately, check burner flames monthly, and use the self-clean feature as needed (but not more than quarterly).' },
     { question: 'Why is my oven temperature inaccurate?', answer: 'Temperature variations of 25-50\u00B0F from the set temperature indicate calibration issues or a faulty temperature sensor. We test with calibrated thermometers and adjust or replace components as needed.' },
     { question: 'Is it safe to use my oven if it smells like gas?', answer: 'No. If you smell gas, do not light the oven or any burners. Turn off the gas supply, open windows, evacuate your home, and call your gas utility company immediately. Once safe, contact us for repairs.' },
@@ -32,7 +32,7 @@ const OvenRangeMaintenance = () => {
     paragraphs: [
       'Your oven and range are essential for daily cooking, and proper maintenance ensures safe, efficient operation. Regular service prevents dangerous gas leaks, reduces energy waste, and ensures consistent cooking performance. FixitBay LLC provides comprehensive oven and range maintenance throughout San Francisco, Peninsula, and Marin County for all fuel types and brands.',
       'Our certified technicians perform thorough maintenance including testing all burners and heating elements, checking gas connections for leaks, cleaning burner ports and igniters, inspecting door seals and hinges, testing temperature accuracy with precision instruments, and verifying all safety features. We service gas, electric, and dual-fuel ranges, including high-end professional-style units. For gas ranges, we also inspect control valves and perform combustion tests.',
-      'During our $60 diagnostic visit, we test your oven\'s temperature accuracy, inspect heating elements or igniters, check the door seal, test all burners, and verify proper ventilation. We also look for signs of wear that could lead to future breakdowns. Regular maintenance helps prevent costly repairs, ensures food cooks evenly, reduces energy consumption, and most importantly, keeps your family safe. All our work is backed by a 180-day warranty with same- or next-day service available.'
+      'During our $80 diagnostic visit, we test your oven\'s temperature accuracy, inspect heating elements or igniters, check the door seal, test all burners, and verify proper ventilation. We also look for signs of wear that could lead to future breakdowns. Regular maintenance helps prevent costly repairs, ensures food cooks evenly, reduces energy consumption, and most importantly, keeps your family safe. All our work is backed by a 180-day warranty with same- or next-day service available.'
     ]
   };
 
@@ -53,7 +53,7 @@ const OvenRangeMaintenance = () => {
         appliance="Oven, Range & Stove"
         pageSlug="maintenance/oven-range"
         pageTitle="Oven & Range Maintenance San Francisco | FixitBay"
-        metaDescription="Professional oven and range maintenance in San Francisco. Burner cleaning, calibration, safety checks. $60 diagnostic, 180-day warranty. FixitBay LLC."
+        metaDescription="Professional oven and range maintenance in San Francisco. Burner cleaning, calibration, safety checks. $80 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Oven<br />Maintenance. Today.</>}
         heroSubtitle="Safe, Efficient Cooking — Guaranteed"
         techImage="/images/technicians/oven-tech.jpg"
@@ -76,7 +76,7 @@ const OvenRangeMaintenance = () => {
     <ApplianceRepairPageNew
       appliance="Oven, Range & Stove"
       pageTitle="Oven Maintenance San Francisco Bay Area | FixitBay LLC"
-      metaDescription="Professional oven maintenance in San Francisco Bay Area. Gas and electric service. Ensure safe, efficient cooking. $60 diagnostic, 180-day warranty."
+      metaDescription="Professional oven maintenance in San Francisco Bay Area. Gas and electric service. Ensure safe, efficient cooking. $80 diagnostic, 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}

@@ -19,7 +19,7 @@ const DryerMaintenance = () => {
   ];
 
   const faqData = [
-    { question: 'How much does dryer maintenance cost?', answer: 'Our diagnostic service costs $60 and includes a thorough safety inspection, vent check, and performance testing. This fee applies toward any repairs. Preventive maintenance helps avoid costly breakdowns and fire hazards.' },
+    { question: 'How much does dryer maintenance cost?', answer: 'Our diagnostic service costs $80 and includes a thorough safety inspection, vent check, and performance testing. This fee applies toward any repairs. Preventive maintenance helps avoid costly breakdowns and fire hazards.' },
     { question: 'How often should I have my dryer serviced?', answer: 'We recommend professional dryer maintenance annually, with special attention to vent cleaning. Clean your lint trap after every load, and have vents professionally cleaned at least once a year\u2014more often if you do multiple loads daily.' },
     { question: 'Are clogged dryer vents really a fire hazard?', answer: 'Yes, clogged dryer vents are a leading cause of house fires. Lint is highly flammable, and restricted airflow causes dryers to overheat. Professional vent cleaning is essential for safety and efficiency.' },
     { question: 'Why is my dryer taking so long to dry clothes?', answer: 'Long drying times usually stem from clogged vents, a dirty lint trap housing, or failing heating elements. We clean the entire vent system and test heating components to restore normal drying times.' },
@@ -32,7 +32,7 @@ const DryerMaintenance = () => {
     paragraphs: [
       'Dryer maintenance isn\'t just about efficiency\u2014it\'s a critical safety issue. According to the U.S. Fire Administration, thousands of dryer fires occur each year, most caused by failure to clean lint buildup. FixitBay LLC provides comprehensive dryer maintenance and vent cleaning services throughout San Francisco, Peninsula, and Marin County to keep your home safe and your dryer running efficiently.',
       'Our certified technicians perform thorough maintenance including professional vent system cleaning, lint trap housing cleaning, testing heating elements and thermostats, inspecting belts and drum rollers, and checking all safety features. We service both gas and electric dryers from all major brands, ensuring every component functions safely and efficiently. For gas dryers, we also inspect gas connections and igniters.',
-      'During our $60 diagnostic visit, we check your dryer\'s entire vent system for blockages, test heating performance, measure drying times, and inspect electrical connections. We also check for fire hazards like excessive lint buildup and overheating components. Regular maintenance not only prevents dangerous fires but also reduces energy costs, extends your dryer\'s lifespan, and ensures clothes dry properly. All our maintenance and repairs come with a 180-day warranty, and we offer convenient same- or next-day appointments.'
+      'During our $80 diagnostic visit, we check your dryer\'s entire vent system for blockages, test heating performance, measure drying times, and inspect electrical connections. We also check for fire hazards like excessive lint buildup and overheating components. Regular maintenance not only prevents dangerous fires but also reduces energy costs, extends your dryer\'s lifespan, and ensures clothes dry properly. All our maintenance and repairs come with a 180-day warranty, and we offer convenient same- or next-day appointments.'
     ]
   };
 
@@ -53,7 +53,7 @@ const DryerMaintenance = () => {
         appliance="Dryer"
         pageSlug="maintenance/dryer"
         pageTitle="Dryer Maintenance & Vent Cleaning San Francisco | FixitBay"
-        metaDescription="Professional dryer maintenance and vent cleaning in San Francisco. Prevent fires, improve efficiency. $60 diagnostic, 180-day warranty. FixitBay LLC."
+        metaDescription="Professional dryer maintenance and vent cleaning in San Francisco. Prevent fires, improve efficiency. $80 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Dryer Maintenance<br />&amp; Vent Cleaning.</>}
         heroImage="/images/technicians/dryer-tech.jpg"
         heroImageAlt="FixitBay technician servicing a dryer in San Francisco"
@@ -79,7 +79,7 @@ const DryerMaintenance = () => {
     <ApplianceRepairPageNew
       appliance="Dryer"
       pageTitle="Dryer Maintenance San Francisco Bay Area | FixitBay LLC"
-      metaDescription="Professional dryer maintenance and vent cleaning in San Francisco Bay Area. Prevent fires and improve efficiency. $60 diagnostic, 180-day warranty. FixitBay LLC."
+      metaDescription="Professional dryer maintenance and vent cleaning in San Francisco Bay Area. Prevent fires and improve efficiency. $80 diagnostic, 180-day warranty. FixitBay LLC."
       heroImage="/images/technicians/dryer-tech.jpg"
       heroImageAlt="FixitBay technician servicing a dryer in San Francisco"
       heroImagePosition="60% top"

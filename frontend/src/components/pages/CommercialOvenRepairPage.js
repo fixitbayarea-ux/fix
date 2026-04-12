@@ -23,7 +23,7 @@ const faqData = [
   { question: 'What commercial oven brands do you repair?', answer: 'We repair Vulcan, Blodgett, Hobart, Garland, Southbend, Wolf Commercial, Viking Professional, Rational, Alto-Shaam, Bakers Pride, Middleby Marshall, Lincoln, TurboChef, and all other major commercial cooking equipment brands.' },
   { question: 'Can you repair combi ovens?', answer: 'Yes. Combi ovens are among the most complex commercial cooking equipment. We service the steam generator, heating elements, fan motors, water supply systems, control boards, and descaling systems on Rational, Alto-Shaam, Electrolux Professional, and other combi oven brands.' },
   { question: 'Do you service commercial range hoods?', answer: 'Yes. We repair range hood fan motors, replace belts, clean grease filters, and verify proper exhaust airflow. Proper kitchen ventilation is a San Francisco fire code requirement and critical for staff safety and comfort.' },
-  { question: 'How much does commercial oven repair cost?', answer: 'Our $100 diagnostic fee is credited toward your repair. Most common oven repairs range from $200-$600. Combi oven steam generator and control board replacements can be higher. We always provide a written estimate before starting work.' },
+  { question: 'How much does commercial oven repair cost?', answer: 'Our $100 diagnostic fee is credited toward your repair. Most common oven repairs range from $200-$800. Combi oven steam generator and control board replacements can be higher. We always provide a written estimate before starting work.' },
   { question: 'Is there a warranty on commercial oven repairs?', answer: 'Yes. All commercial oven and range repairs include our 180-day warranty on parts and labor.' },
 ];
 

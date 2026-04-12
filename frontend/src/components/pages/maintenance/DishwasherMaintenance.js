@@ -18,7 +18,7 @@ const DishwasherMaintenance = () => {
   ];
 
   const faqData = [
-    { question: 'How much does dishwasher maintenance cost?', answer: 'Our diagnostic fee is $60 and includes a complete inspection of all dishwasher components, testing cycles, and identifying any issues. This fee applies toward repair costs if you proceed with our service.' },
+    { question: 'How much does dishwasher maintenance cost?', answer: 'Our diagnostic fee is $80 and includes a complete inspection of all dishwasher components, testing cycles, and identifying any issues. This fee applies toward repair costs if you proceed with our service.' },
     { question: 'How often should I service my dishwasher?', answer: 'We recommend professional maintenance annually. Between visits, clean the filter monthly, wipe door seals weekly, and run a cleaning cycle every few months to prevent buildup and maintain performance.' },
     { question: 'Why isn\'t my dishwasher cleaning dishes properly?', answer: 'Poor cleaning results from clogged spray arms, dirty filters, insufficient water temperature, or using the wrong detergent. We clean components, test water temperature, and ensure proper detergent usage.' },
     { question: 'Can maintenance prevent dishwasher breakdowns?', answer: 'Yes! Regular maintenance catches issues like clogged filters, worn seals, and pump problems before they cause major failures. This extends your dishwasher\'s lifespan and ensures consistent cleaning performance.' },
@@ -31,7 +31,7 @@ const DishwasherMaintenance = () => {
     paragraphs: [
       'Your dishwasher saves you countless hours of manual labor, but only when it\'s working properly. Regular maintenance ensures sparkling clean dishes, prevents leaks and breakdowns, and extends the life of your appliance. FixitBay LLC provides professional dishwasher maintenance services throughout San Francisco, Peninsula, and Marin County for all major brands and models.',
       'Our certified technicians perform comprehensive maintenance including cleaning and inspecting filters, checking spray arms for clogs, testing drain pumps, inspecting door seals for leaks, cleaning the interior and detergent dispenser, and running diagnostic cycles. We also test heating elements, water inlet valves, and electronic controls to ensure every component functions correctly. Whether you have a standard built-in dishwasher or a drawer-style model, we maintain optimal cleaning performance.',
-      'During our $60 diagnostic visit, we thoroughly inspect your dishwasher, test all cycles, check for leaks, and identify any parts showing wear. We also verify proper water temperature, test the drying system, and ensure the drain functions completely. Our preventive maintenance helps you avoid costly repairs, reduces water waste, and guarantees consistently clean dishes. All our work is backed by a 180-day warranty, and we offer flexible same- or next-day service appointments.'
+      'During our $80 diagnostic visit, we thoroughly inspect your dishwasher, test all cycles, check for leaks, and identify any parts showing wear. We also verify proper water temperature, test the drying system, and ensure the drain functions completely. Our preventive maintenance helps you avoid costly repairs, reduces water waste, and guarantees consistently clean dishes. All our work is backed by a 180-day warranty, and we offer flexible same- or next-day service appointments.'
     ]
   };
 
@@ -52,7 +52,7 @@ const DishwasherMaintenance = () => {
         appliance="Dishwasher"
         pageSlug="maintenance/dishwasher"
         pageTitle="Dishwasher Maintenance San Francisco Bay Area | FixitBay LLC"
-        metaDescription="Professional dishwasher maintenance in San Francisco Bay Area. Keep your dishwasher cleaning efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+        metaDescription="Professional dishwasher maintenance in San Francisco Bay Area. Keep your dishwasher cleaning efficiently with expert service from FixitBay LLC. $80 diagnostic, 180-day warranty."
         heroTitle={<>Dishwasher<br />Maintenance. Today.</>}
         heroImage="/images/technicians/dishwasher-tech.jpg"
         heroImageAlt="FixitBay technician servicing a dishwasher in San Francisco"
@@ -78,7 +78,7 @@ const DishwasherMaintenance = () => {
     <ApplianceRepairPageNew
       appliance="Dishwasher"
       pageTitle="Dishwasher Maintenance San Francisco Bay Area | FixitBay LLC"
-      metaDescription="Professional dishwasher maintenance in San Francisco Bay Area. Keep your dishwasher cleaning efficiently with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+      metaDescription="Professional dishwasher maintenance in San Francisco Bay Area. Keep your dishwasher cleaning efficiently with expert service from FixitBay LLC. $80 diagnostic, 180-day warranty."
       heroImage="/images/technicians/dishwasher-tech.jpg"
       heroImageAlt="FixitBay technician servicing a dishwasher in San Francisco"
       commonProblems={commonProblems}

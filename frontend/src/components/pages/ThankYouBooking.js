@@ -128,7 +128,7 @@ const ThankYouBooking = () => {
             {[
               { num: '1', title: 'Confirmation Sent', body: 'Check your email or texts for your appointment details.' },
               { num: '2', title: 'We Call Ahead', body: 'Our technician calls 30 minutes before arrival. Save our number: (760) 543-5733.' },
-              { num: '3', title: '$60 Diagnostic', body: 'Tech arrives, inspects, identifies the problem. Fee credited to repair if you proceed.' },
+              { num: '3', title: '$80 Diagnostic', body: 'Tech arrives, inspects, identifies the problem. Fee credited to repair if you proceed.' },
               { num: '4', title: 'Fixed & Warranted', body: 'Most repairs done same visit. 180-day warranty on all parts and labor.' },
             ].map(s => (
               <div key={s.num} className="ty-step" data-testid={`ty-step-${s.num}`}>

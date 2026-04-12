@@ -24,7 +24,7 @@ const faqData = [
   { question: 'What commercial refrigeration brands do you repair?', answer: 'We repair True, Traulsen, Turbo Air, Beverage-Air, Hoshizaki, Delfield, Victory, Master-Bilt, Continental, Arctic Air, Everest, Atosa, and all other major commercial refrigeration brands. Our technician carries common parts for these brands.' },
   { question: 'Can you help with health code refrigeration violations?', answer: 'Absolutely. We understand San Francisco health department requirements and can perform emergency temperature remediation, calibrate thermostats, replace failed components, and provide documentation to help resolve violations.' },
   { question: 'Is there a warranty on commercial refrigerator repairs?', answer: 'Yes. All commercial refrigerator repairs include our 180-day warranty on parts and labor. If the same issue recurs within the warranty period, we return at no additional charge.' },
-  { question: 'How much does commercial refrigerator repair cost?', answer: 'We charge a $100 diagnostic fee for commercial refrigeration, which is credited toward your repair if you proceed. Most common repairs range from $250-$600 depending on the issue and parts needed. We always provide an upfront quote before starting work.' },
+  { question: 'How much does commercial refrigerator repair cost?', answer: 'We charge a $100 diagnostic fee for commercial refrigeration, which is credited toward your repair if you proceed. Most common repairs range from $250-$800 depending on the issue and parts needed. We always provide an upfront quote before starting work.' },
 ];
 
 const serviceDescription = {

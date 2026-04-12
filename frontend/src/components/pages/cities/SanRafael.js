@@ -28,7 +28,7 @@ const SanRafael = () => {
     paragraphs: [
       'San Rafael, as Marin County\'s largest city, presents diverse appliance service needs from downtown apartments to hillside estates. Our technicians navigate San Rafael daily, from Fourth Street\'s commercial district to Terra Linda\'s residential neighborhoods and Marinwood\'s family homes. We understand San Rafael\'s mix of housing styles and the specific appliance challenges each area faces.',
       'We serve San Rafael\'s varied communities: downtown living spaces, mid-century homes in Terra Linda, hillside properties in Dominican, and waterfront residences along the canal. Our team is experienced with both standard residential appliances and the premium brands common in San Rafael\'s upscale neighborhoods. We stock parts for frequent failures and source specialized components quickly.',
-      'Fast scheduling is available throughout San Rafael with a $60 diagnostic fee credited toward repairs. We provide detailed estimates before starting work and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands and handle both traditional and high-efficiency models.'
+      'Fast scheduling is available throughout San Rafael with a $80 diagnostic fee credited toward repairs. We provide detailed estimates before starting work and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands and handle both traditional and high-efficiency models.'
     ]
   };
 

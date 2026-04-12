@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   { q: 'How do I clear a UE error code on my washer?', a: "UE means unbalanced load. Open the door, redistribute the clothes evenly, and restart the spin cycle. If washing a single heavy item (comforter, bath mat), add 1\u20132 towels to balance the load. Also check that the washer is level on the floor \u2014 use a bubble level on top." },
   { q: 'What causes an LE or E6 error on LG washers?', a: "LE is a motor lock error. First, unplug for 2 minutes to reset the control board. Then open the door and try to manually rotate the drum \u2014 if it won't turn, clothing may be jammed between the drum and tub. If the drum turns freely but the code returns, the motor or control board needs professional repair." },
   { q: 'Why does my washer keep showing a door error (dE / DC)?', a: "Door errors mean the washer can't confirm the door is fully closed and locked. Try opening and firmly closing the door until you hear a click. Check for clothing caught in the door seal. If the latch is visibly damaged or the error persists after a reset, the door lock assembly needs replacement \u2014 about a $100\u2013$200 repair." },
-  { q: 'How much does washer repair cost in San Francisco Bay Area?', a: "Washer repairs in the Bay Area typically cost $250\u2013$450 depending on the error and part needed. Drain pump replacement: $250\u2013$350. Control board: $300\u2013$450. Motor repair: $285\u2013$395. FixitBay LLC charges $60 for diagnostics, credited toward your repair." },
+  { q: 'How much does washer repair cost in San Francisco Bay Area?', a: "Washer repairs in the Bay Area typically cost $250\u2013$450 depending on the error and part needed. Drain pump replacement: $250\u2013$350. Control board: $300\u2013$450. Motor repair: $285\u2013$395. FixitBay LLC charges $80 for diagnostics, credited toward your repair." },
   { q: 'Can I fix washer error codes myself or do I need a technician?', a: "It depends on the code. DIY-friendly: UE (rebalance load), OE with clogged filter, dE from clothing caught in door, IE with closed water valves. Always call a pro for: LE/motor errors, persistent OE after filter clean, F codes, and any error after multiple failed resets \u2014 these involve electrical components and internal parts." },
 ];
 
@@ -220,7 +220,7 @@ const WasherErrorCodes = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $80 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
@@ -303,7 +303,7 @@ const WasherErrorCodes = () => {
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>EXPERT WASHER REPAIR</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Error Code Won't Clear?</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$60 diagnostic applied to repair. 180-day warranty on all work.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>$80 diagnostic applied to repair. 180-day warranty on all work.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
                 {['All Brands: LG, Samsung, Whirlpool, GE', 'Fast Scheduling', 'Licensed CA Technician'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
@@ -372,7 +372,7 @@ const WasherErrorCodes = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'Washer Repair in Bay Area', body: 'Expert washer repair for all brands. $60 diagnostic applied to repair.', link: 'View Service', href: '/washer-repair' },
+                { tag: 'SERVICE', title: 'Washer Repair in Bay Area', body: 'Expert washer repair for all brands. $80 diagnostic applied to repair.', link: 'View Service', href: '/washer-repair' },
                 { tag: 'ARTICLE', title: 'Why Is My Dryer Taking So Long to Dry?', body: '7 causes with DIY fixes and when to call a Bay Area technician.', link: 'Read Article', href: '/blog/dryer-taking-too-long' },
                 { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (

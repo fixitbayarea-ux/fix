@@ -6,7 +6,7 @@ const SouthSanFranciscoLanding = () => (
     city="South San Francisco"
     citySlug="south-san-francisco"
     pageTitle="Appliance Repair South San Francisco | Same-Day | FixitBay LLC"
-    metaDescription="Fast, licensed appliance repair in South San Francisco. $60 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
+    metaDescription="Fast, licensed appliance repair in South San Francisco. $80 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
     neighborhoods={['Sign Hill', 'Buri Buri', 'Avalon Park', 'Winston Manor', 'Sunshine Gardens', 'Westborough', 'El Camino Real Corridor', 'Grand Avenue', 'Oyster Point', 'Lindenville']}
     localExpertise="South San Francisco's mid-century homes and apartment complexes near the biotech corridor present unique appliance challenges. Many SSF homes still run older GE and Whirlpool units — reliable machines, but ones that eventually need belt replacements, pump repairs, and thermostat fixes. Our technicians know these models inside and out."
     homeTypes="We service SSF's mix of post-war single-family homes in Buri Buri, apartments near Grand Avenue, and newer townhomes around Oyster Point. Whether your 1960s ranch home needs a dryer belt or your modern condo has a Samsung error code, we bring the right parts on the first visit."
@@ -26,7 +26,7 @@ const SouthSanFranciscoLanding = () => (
     ]}
     faqData={[
       { question: 'Do you offer same-day appliance repair in South San Francisco?', answer: 'Yes. We offer same- or next-day appointments throughout South San Francisco. Most SSF bookings made before noon are confirmed for the same day.' },
-      { question: 'How much does appliance repair cost in South San Francisco?', answer: 'Our diagnostic visit is $60, applied toward your repair. Most SSF repairs range $250–$450 depending on the appliance and parts needed. We provide an exact quote before starting work.' },
+      { question: 'How much does appliance repair cost in South San Francisco?', answer: 'Our diagnostic visit is $80, applied toward your repair. Most SSF repairs range $250–$450 depending on the appliance and parts needed. We provide an exact quote before starting work.' },
       { question: 'Which South San Francisco neighborhoods do you serve?', answer: 'We serve all SSF neighborhoods including Sign Hill, Buri Buri, Avalon Park, Winston Manor, Sunshine Gardens, Westborough, and areas near Grand Avenue and Oyster Point.' },
       { question: 'Are you licensed to work in South San Francisco?', answer: 'Yes. FixitBay LLC is fully licensed and insured for appliance repair in South San Francisco and San Mateo County. CA License #51001.' },
       { question: 'Do you repair commercial appliances in SSF?', answer: 'We focus on residential appliances but also service light commercial equipment (break room refrigerators, dishwashers) in SSF offices and biotech campuses.' },

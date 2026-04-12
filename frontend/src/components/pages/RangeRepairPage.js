@@ -20,7 +20,7 @@ const RangeRepairPage = () => {
 
   const faqData = [
     { question: 'What\'s the difference between a range, stove, and oven?', answer: 'A range is the combined unit with stovetop burners and a built-in oven below. A stove typically refers to the cooktop/burner surface. An oven is the enclosed baking/roasting compartment. We repair all three.' },
-    { question: 'How much does range repair cost?', answer: 'Our diagnostic fee is $60 and applies toward the repair. Common range repairs (igniters, elements, sensors) typically run $150-$350 total. We provide written estimates before starting work.' },
+    { question: 'How much does range repair cost?', answer: 'Our diagnostic fee is $80 and applies toward the repair. Common range repairs (igniters, elements, sensors) typically run $150-$350 total. We provide written estimates before starting work.' },
     { question: 'Do you repair dual-fuel ranges?', answer: 'Yes! Dual-fuel ranges (gas burners + electric oven) are our specialty. We\'re trained on both gas and electrical systems and can diagnose complex issues where the two systems interact.' },
     { question: 'Can you fix a range that\'s tripping my circuit breaker?', answer: 'Absolutely. This usually indicates a short in the bake or broil element, faulty wiring, or a control board issue. We safely test all electrical paths to find and fix the fault.' },
     { question: 'What range brands do you service?', answer: 'We service all residential range brands: GE, Whirlpool, Samsung, LG, Frigidaire, KitchenAid, Maytag, Bosch, as well as pro-style brands like Viking, Thermador, Wolf, and BlueStar.' },
@@ -32,7 +32,7 @@ const RangeRepairPage = () => {
     paragraphs: [
       'A kitchen range combines the convenience of a stovetop with a full oven in one unit — and when either section fails, it disrupts your entire cooking routine. FixitBay LLC provides expert range repair throughout San Francisco, the Peninsula, and Marin County. We service freestanding ranges, slide-in ranges, drop-in ranges, and professional-style units from every major manufacturer.',
       'Our licensed technicians are trained to work on gas ranges, electric ranges, and dual-fuel models. We diagnose and repair igniters, heating elements, temperature sensors, convection fans, gas valves, control boards, and door mechanisms. San Francisco\'s diverse housing — from compact apartment kitchens to expansive chef\'s kitchens — means we encounter every range type and configuration. We bring the right tools and parts for each.',
-      'Every service call begins with our $60 diagnostic fee, which is credited in full toward your repair. We stock common parts for popular range brands and complete most repairs on the first visit. For specialty or pro-grade range parts, we source from authorized distributors and schedule a return visit at no additional trip charge. All repairs are backed by our 180-day warranty on parts and labor.'
+      'Every service call begins with our $80 diagnostic fee, which is credited in full toward your repair. We stock common parts for popular range brands and complete most repairs on the first visit. For specialty or pro-grade range parts, we source from authorized distributors and schedule a return visit at no additional trip charge. All repairs are backed by our 180-day warranty on parts and labor.'
     ]
   };
 
@@ -54,7 +54,7 @@ const RangeRepairPage = () => {
         appliance="Range"
         pageSlug="range-repair"
         pageTitle="Range Repair San Francisco | Gas & Electric | FixitBay LLC"
-        metaDescription="Expert range repair in San Francisco. Gas and electric ranges. $60 diagnostic applied to repair. 180-day warranty."
+        metaDescription="Expert range repair in San Francisco. Gas and electric ranges. $80 diagnostic applied to repair. 180-day warranty."
         heroTitle={<>Expert Range<br />Repair in SF. Today.</>}
         heroImage="/images/technicians/range-tech.jpg"
         heroImageAlt="FixitBay technician next to a gas range in a San Francisco kitchen"
@@ -81,7 +81,7 @@ const RangeRepairPage = () => {
       serviceSchema={serviceSchema}
       appliance="Range"
       pageTitle="Range Repair San Francisco | Gas & Electric | FixitBay LLC"
-      metaDescription="Expert range repair in San Francisco. Gas and electric ranges. $60 diagnostic applied to repair. 180-day warranty."
+      metaDescription="Expert range repair in San Francisco. Gas and electric ranges. $80 diagnostic applied to repair. 180-day warranty."
       heroImage="/images/technicians/range-tech.jpg"
       heroImageAlt="FixitBay technician next to a gas range in a San Francisco kitchen"
       commonProblems={commonProblems}

@@ -24,7 +24,7 @@ const faqData = [
 const serviceDescription = {
   title: 'Expert Wolf Appliance Repair in San Francisco Bay Area',
   paragraphs: [
-    "Wolf, the sister brand of Sub-Zero, makes legendary cooking appliances. Our technicians specialize in Wolf ranges, ovens, cooktops, and steam ovens. $60 diagnostic credited toward repairs.",
+    "Wolf, the sister brand of Sub-Zero, makes legendary cooking appliances. Our technicians specialize in Wolf ranges, ovens, cooktops, and steam ovens. $80 diagnostic credited toward repairs.",
     "We understand Wolf's dual-stacked burner technology, VertiCross convection, and steam cooking systems.",
     "Same- or next-day Wolf repair throughout SF, Peninsula, and Marin County. 180-day warranty.",
   ],

@@ -7,7 +7,7 @@ const DryerRepair = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <>
-      <SEOMetaTags title="Dryer Repair | FixitBay LLC San Francisco" description="Professional dryer repair in San Francisco, Peninsula & Marin. Not heating, drum not spinning, sensor or vent issues. $60 diagnostic applied to repair. 180-day warranty. Book online with FixitBay." canonical="https://fixitbay.net/dryer-repair" />
+      <SEOMetaTags title="Dryer Repair | FixitBay LLC San Francisco" description="Professional dryer repair in San Francisco, Peninsula & Marin. Not heating, drum not spinning, sensor or vent issues. $80 diagnostic applied to repair. 180-day warranty. Book online with FixitBay." canonical="https://fixitbay.net/dryer-repair" />
 
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
@@ -41,7 +41,7 @@ const DryerRepair = () => {
               <div>Warranty on Repairs & Labor</div>
             </div>
             <div className="section-white text-center">
-              <div className="text-3xl font-bold mb-2">$60</div>
+              <div className="text-3xl font-bold mb-2">$80</div>
               <div>Diagnostic Only</div>
             </div>
 

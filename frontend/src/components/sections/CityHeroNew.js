@@ -26,7 +26,7 @@ const CityHeroNew = ({ bgImage, cityName }) => {
           {/* H1 */}
           <h1 style={{ fontFamily: S.font, fontWeight: 800, fontSize: 58, color: '#FFFFFF', lineHeight: 1.08, marginTop: 14 }}>Appliance Repair in&nbsp;{cityName}</h1>
           {/* Subtext */}
-          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same- or next-day service &middot; $60 diagnostic &middot; 180-day warranty on all repairs</p>
+          <p style={{ fontFamily: S.font, fontWeight: 400, fontSize: 15, color: 'rgba(255,255,255,0.60)', marginTop: 14 }}>Same- or next-day service &middot; $80 diagnostic &middot; 180-day warranty on all repairs</p>
           {/* Trust row */}
           <div data-testid="city-trust-badges" style={{ display: 'flex', alignItems: 'center', gap: 20, marginTop: 18, fontFamily: S.font, fontWeight: 500, fontSize: 12 }}>
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span> <span style={{ color: 'rgba(255,255,255,0.80)' }}>Licensed CA Technician</span></span>
@@ -45,7 +45,7 @@ const CityHeroNew = ({ bgImage, cityName }) => {
             {[
               { num: '3+', line1: 'Years', line2: 'of Service' },
               { num: '180', line1: 'Day', line2: 'Warranty' },
-              { num: '$60', line1: 'Diagnostic', line2: 'Waived*' },
+              { num: '$80', line1: 'Diagnostic', line2: 'Waived*' },
             ].map((s, i) => (
               <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '16px 8px', borderRight: i < 2 ? '1px solid rgba(255,255,255,0.15)' : 'none' }}>
                 <span style={{ fontFamily: S.font, fontWeight: 700, fontSize: 'clamp(24px, 6vw, 36px)', lineHeight: 1, color: '#FF5722' }}>{s.num}</span>

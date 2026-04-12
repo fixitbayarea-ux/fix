@@ -133,7 +133,7 @@ const DishwasherMaintenance = () => {
               <div data-testid="mid-cta" className="flex items-center justify-between flex-wrap gap-4 rounded p-6 my-8" style={{ background: '#0D1B2A', borderLeft: '4px solid #FF5722' }}>
                 <div>
                   <p className="font-bold text-white text-base mb-1">Need appliance repair in San Francisco?</p>
-                  <p className="text-sm" style={{ color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
+                  <p className="text-sm" style={{ color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $80 diagnostic · 180-day warranty</p>
                 </div>
                 <div className="flex gap-3 flex-wrap">
                   <a href="tel:7605435733" className="font-bold text-sm px-5 py-2 rounded" style={{ background: '#FF5722', color: '#fff', textDecoration: 'none' }}>Call (760) 543-5733</a>

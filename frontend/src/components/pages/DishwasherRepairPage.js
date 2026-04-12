@@ -67,7 +67,7 @@ const SanFranciscoDishwasherSection = () => (
       <ul style={{ fontFamily: 'Inter, sans-serif', fontSize: 14, lineHeight: 1.8, listStyle: 'none', padding: 0, margin: 0 }}>
         {[
           'Licensed & insured — CA contractor, 3+ years serving the Bay Area',
-          '$60 diagnostic fee applied toward your repair — no hidden costs',
+          '$80 diagnostic fee applied toward your repair — no hidden costs',
           'Same- or next-day appointments, Monday through Saturday',
           'All major brands: Bosch, Miele, Thermador, KitchenAid, Samsung, LG, GE',
           '180-day warranty on all parts and labor',
@@ -101,7 +101,7 @@ const DishwasherRepairPage = () => {
   const faqData = [
     {
       question: "How much does dishwasher repair cost in San Francisco?",
-      answer: "Dishwasher repair costs vary by issue. Common repairs like replacing a drain pump, door latch, or heating element typically range from $150-$280. More complex repairs involving the control board or motor may cost $280-$450. Our $60 diagnostic fee is fully applied to your repair cost. We provide clear pricing before starting any work."
+      answer: "Dishwasher repair costs vary by issue. Common repairs like replacing a drain pump, door latch, or heating element typically range from $150-$280. More complex repairs involving the control board or motor may cost $280-$450. Our $80 diagnostic fee is fully applied to your repair cost. We provide clear pricing before starting any work."
     },
     {
       question: "Should I repair or replace my dishwasher that won't drain?",
@@ -128,8 +128,8 @@ const DishwasherRepairPage = () => {
       answer: "Absolutely! We service dishwashers in all living situations—single-family homes, apartments, condos, and townhomes across the Bay Area—SF, the Peninsula, and Marin County."
     },
     {
-      question: "What's included in the $60 diagnostic?",
-      answer: "Our diagnostic includes a thorough inspection of your dishwasher's drain pump, spray arms, heating element, door seal, control board, inlet valve, and filters. We identify the root cause and provide a detailed estimate. This $60 fee is credited toward your repair when you proceed."
+      question: "What's included in the $80 diagnostic?",
+      answer: "Our diagnostic includes a thorough inspection of your dishwasher's drain pump, spray arms, heating element, door seal, control board, inlet valve, and filters. We identify the root cause and provide a detailed estimate. This $80 fee is credited toward your repair when you proceed."
     }
   ];
 
@@ -158,7 +158,7 @@ const DishwasherRepairPage = () => {
       "sameAs": "https://en.wikipedia.org/wiki/San_Francisco"
     },
     "url": "https://fixitbay.net/dishwasher-repair",
-    "description": "Expert dishwasher repair in San Francisco. Same- or next-day appointments. Bosch, Miele, Thermador, KitchenAid, Samsung, LG, GE. $60 diagnostic credited toward repair. 180-day warranty on parts and labor."
+    "description": "Expert dishwasher repair in San Francisco. Same- or next-day appointments. Bosch, Miele, Thermador, KitchenAid, Samsung, LG, GE. $80 diagnostic credited toward repair. 180-day warranty on parts and labor."
   };
 
   if (isMobile) {
@@ -167,7 +167,7 @@ const DishwasherRepairPage = () => {
         appliance="Dishwasher"
         pageSlug="dishwasher-repair"
         pageTitle="Dishwasher Repair San Francisco | FixitBay"
-        metaDescription="Expert dishwasher repair in San Francisco. Leaks, draining, won't start. Same- or next-day appointments, $60 diagnostic applied to repair. FixitBay LLC."
+        metaDescription="Expert dishwasher repair in San Francisco. Leaks, draining, won't start. Same- or next-day appointments, $80 diagnostic applied to repair. FixitBay LLC."
         heroTitle={<>Expert Dishwasher<br />Repair. San Francisco.</>}
         heroImage="/images/technicians/dishwasher-tech.jpg"
         heroImageAlt="FixitBay technician repairing a dishwasher in a San Francisco home"
@@ -201,9 +201,9 @@ const DishwasherRepairPage = () => {
       serviceSchema={serviceSchema}
       appliance="Dishwasher"
       customH1="Dishwasher Repair in San Francisco | Same-Day Service"
-      heroDescription="FixitBay LLC provides expert dishwasher repair in San Francisco and the Bay Area. Same- or next-day appointments. $60 diagnostic applied to repair. 180-day warranty."
+      heroDescription="FixitBay LLC provides expert dishwasher repair in San Francisco and the Bay Area. Same- or next-day appointments. $80 diagnostic applied to repair. 180-day warranty."
       pageTitle="Dishwasher Repair San Francisco | FixitBay"
-      metaDescription="Expert dishwasher repair in San Francisco. Leaks, draining, won't start. Same- or next-day appointments, $60 diagnostic applied to repair. FixitBay LLC."
+      metaDescription="Expert dishwasher repair in San Francisco. Leaks, draining, won't start. Same- or next-day appointments, $80 diagnostic applied to repair. FixitBay LLC."
       heroImage="/images/technicians/dishwasher-tech.jpg"
       heroImageAlt="FixitBay technician repairing a dishwasher in a San Francisco home"
       commonProblems={commonProblems}
@@ -211,7 +211,7 @@ const DishwasherRepairPage = () => {
       serviceDescription={{
         title: "San Francisco Dishwasher Repair — Expert Service You Can Trust",
         paragraphs: [
-          <>Looking for professional <strong>dishwasher repair in San Francisco</strong>? FixitBay LLC is the Bay Area's trusted appliance repair service, based right here in San Francisco. We serve SF, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most dishwasher issues on the first visit. We charge a transparent <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—no hidden charges.</>,
+          <>Looking for professional <strong>dishwasher repair in San Francisco</strong>? FixitBay LLC is the Bay Area's trusted appliance repair service, based right here in San Francisco. We serve SF, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most dishwasher issues on the first visit. We charge a transparent <strong>$80 diagnostic fee</strong> that's fully applied to your repair cost—no hidden charges.</>,
           <>Our dishwasher repair process includes a comprehensive inspection of the drain pump, spray arms, heating element, door seal, control board, inlet valve, and filters. We test all cycles, check for leaks and blockages, and identify the root cause of issues like drainage failures, poor cleaning, water leaks, or error codes. Whether you have a basic dishwasher or a high-end European model, we have the expertise.</>,
           <>We service all major dishwasher brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like pumps, heating elements, and door seals, enabling most repairs on the first visit. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. From Bay Area apartments to Peninsula homes, we keep your kitchen running smoothly.</>,
           <><strong>Need dishwasher repair in a specific San Francisco neighborhood?</strong> Visit our <a href="/san-francisco-dishwasher-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Dishwasher Repair</a> page for detailed neighborhood coverage and local availability.</>

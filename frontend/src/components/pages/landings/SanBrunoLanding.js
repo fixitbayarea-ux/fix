@@ -6,7 +6,7 @@ const SanBrunoLanding = () => (
     city="San Bruno"
     citySlug="san-bruno"
     pageTitle="Appliance Repair San Bruno | Same-Day | FixitBay LLC"
-    metaDescription="Fast, licensed appliance repair in San Bruno. $60 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
+    metaDescription="Fast, licensed appliance repair in San Bruno. $80 diagnostic, 180-day warranty. Refrigerators, washers, dryers, ovens, dishwashers — same or next day. Call FixitBay."
     neighborhoods={['Crestmoor', 'Bayhill', 'Portola Highlands', 'Mills Park', 'Rollingwood', 'San Bruno Mountain', 'Tanforan', 'Downtown San Bruno', 'Lomita Park', 'El Crystal']}
     localExpertise="San Bruno's suburban ranch homes and growing condo developments near SFO create steady demand for appliance repair. Samsung refrigerators and Bosch dishwashers are especially popular in newer San Bruno homes — and our technicians carry the diagnostic tools and parts these brands require."
     homeTypes="From 1950s ranch-style homes in Crestmoor to modern condos near Tanforan, San Bruno's housing stock spans decades. We service all home types: single-family houses with full-size appliances, compact condo kitchens, and apartment units with stacked washer-dryers."
@@ -26,7 +26,7 @@ const SanBrunoLanding = () => (
     ]}
     faqData={[
       { question: 'Do you offer same-day appliance repair in San Bruno?', answer: 'Yes. We provide same- or next-day appointments throughout San Bruno. Bookings made before noon are typically confirmed for the same day.' },
-      { question: 'How much does appliance repair cost in San Bruno?', answer: 'Our diagnostic is $60, credited toward repair. Most San Bruno repairs range $250–$450. We give you an exact quote before starting any work.' },
+      { question: 'How much does appliance repair cost in San Bruno?', answer: 'Our diagnostic is $80, credited toward repair. Most San Bruno repairs range $250–$450. We give you an exact quote before starting any work.' },
       { question: 'Which San Bruno neighborhoods do you cover?', answer: 'All of them — Crestmoor, Bayhill, Portola Highlands, Mills Park, Rollingwood, Tanforan, Downtown San Bruno, Lomita Park, and surrounding areas.' },
       { question: 'Do you repair Samsung and Bosch appliances?', answer: 'Absolutely. Samsung and Bosch are among the most common brands we service in San Bruno. We carry diagnostic tools and parts specific to these brands.' },
       { question: 'Are you licensed in San Mateo County?', answer: 'Yes. FixitBay LLC holds CA License #51001 and is fully insured for appliance repair throughout San Mateo County, including San Bruno.' },

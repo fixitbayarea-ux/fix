@@ -7,7 +7,7 @@ const RangeRepair = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <>
-      <SEOMetaTags title="Range Repair | FixitBay LLC San Francisco" description="Same/next-day range repair in SF & Bay Area. Burner won't ignite, uneven heating, oven temp issues. $60 diagnostic applied to repair. 180-day warranty. Book online with FixitBay." canonical="https://fixitbay.net/range-repair" />
+      <SEOMetaTags title="Range Repair | FixitBay LLC San Francisco" description="Same/next-day range repair in SF & Bay Area. Burner won't ignite, uneven heating, oven temp issues. $80 diagnostic applied to repair. 180-day warranty. Book online with FixitBay." canonical="https://fixitbay.net/range-repair" />
 
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
@@ -16,7 +16,7 @@ const RangeRepair = () => {
             <BackButton />
             <h1 className="h1 mb-4">Range Repair</h1>
             <p className="text-lg mb-8" style={{ color: '#1A3B5D' }}>
-              Professional repair for gas and electric ranges. Licensed, insured, and backed by a 180-day warranty. $60 diagnostic applied to the repair.
+              Professional repair for gas and electric ranges. Licensed, insured, and backed by a 180-day warranty. $80 diagnostic applied to the repair.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a href="/book?go=1" className="book-btn">
@@ -41,7 +41,7 @@ const RangeRepair = () => {
               <div>Warranty on Repairs & Labor</div>
             </div>
             <div className="section-white text-center">
-              <div className="text-3xl font-bold mb-2">$60</div>
+              <div className="text-3xl font-bold mb-2">$80</div>
               <div>Diagnostic Only</div>
             </div>
           </div>

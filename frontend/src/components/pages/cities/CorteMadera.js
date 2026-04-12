@@ -28,7 +28,7 @@ const CorteMadera = () => {
     paragraphs: [
       'Corte Madera\'s central Marin location between Larkspur and Mill Valley makes it a convenient shopping and residential hub. Our technicians serve all Corte Madera neighborhoods from the Town Center to Christmas Tree Hill, understanding the area\'s mix of single-family homes, townhomes, and condos near The Village shopping center.',
       'We navigate Corte Madera efficiently, accessing the area via Highway 101 and Tamalpais Drive. Our vans carry parts for common appliance failures, and we can source specialized components quickly from our Bay Area network. We understand the appliances common in Corte Madera\'s housing stock.',
-      'Fast scheduling is available throughout Corte Madera with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
+      'Fast scheduling is available throughout Corte Madera with a $80 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
     ]
   };
 

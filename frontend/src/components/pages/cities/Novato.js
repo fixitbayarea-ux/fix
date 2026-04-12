@@ -28,7 +28,7 @@ const Novato = () => {
     paragraphs: [
       'Novato, as North Marin\'s largest city, offers diverse appliance service needs from downtown to suburban neighborhoods. Our technicians serve all Novato areas including Bel Marin Keys, Hamilton, San Marin, and Ignacio. We navigate Novato\'s geography efficiently, providing fast response throughout this sprawling North Bay community.',
       'We understand Novato\'s housing stock from older homes near downtown to newer developments in the hills. Our vans carry parts for common appliance failures, and we can source specialized components quickly from our Bay Area network.',
-      'Fast scheduling is available in Novato with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major brands.'
+      'Fast scheduling is available in Novato with a $80 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major brands.'
     ]
   };
 

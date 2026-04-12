@@ -19,7 +19,7 @@ const WineCoolerMaintenance = () => {
   ];
 
   const faqData = [
-    { question: 'How much does wine cooler maintenance cost?', answer: 'Our diagnostic fee is $60 and includes testing temperature accuracy, inspecting door seals, checking the cooling system, and identifying any issues. This fee applies toward repair costs if you proceed.' },
+    { question: 'How much does wine cooler maintenance cost?', answer: 'Our diagnostic fee is $80 and includes testing temperature accuracy, inspecting door seals, checking the cooling system, and identifying any issues. This fee applies toward repair costs if you proceed.' },
     { question: 'How often should I service my wine cooler?', answer: 'We recommend professional maintenance annually to ensure optimal storage conditions. Between visits, clean condenser coils every 6 months, wipe interior surfaces monthly, and check door seals regularly.' },
     { question: 'What temperature should I set my wine cooler?', answer: 'For long-term storage of all wines, 55\u00B0F is ideal. For serving, reds do best at 60-65\u00B0F and whites at 45-50\u00B0F. Dual-zone coolers let you maintain both temperatures. We can calibrate your cooler for perfect settings.' },
     { question: 'Why is my wine cooler not maintaining temperature?', answer: 'Temperature problems can result from failing thermostats, cooling system issues, door seal damage, or blocked ventilation. We diagnose the exact cause and make repairs to protect your wine collection.' },
@@ -32,7 +32,7 @@ const WineCoolerMaintenance = () => {
     paragraphs: [
       'Your wine collection represents a significant investment, and proper storage conditions are essential to preserve quality and value. Wine coolers require specialized maintenance to maintain precise temperature and humidity levels. FixitBay LLC provides expert wine cooler maintenance and repair services throughout San Francisco, Peninsula, and Marin County for all brands and models.',
       'Our certified technicians understand wine storage requirements and perform comprehensive maintenance including testing and calibrating temperature controls, inspecting and cleaning condenser coils, checking door seals for proper closure, testing humidity levels, inspecting cooling systems, and verifying proper ventilation. We service both single-zone and dual-zone wine coolers, from compact countertop units to large built-in installations. We also handle specialized features like UV-protected glass doors and vibration dampening systems.',
-      'During our $60 diagnostic visit, we verify your wine cooler maintains consistent temperature, check door seals for air leaks, test the cooling system, clean accessible coils, and inspect all controls. We also assess interior lighting, shelving condition, and overall unit performance. Regular maintenance prevents temperature fluctuations that can ruin wine, extends your cooler\'s lifespan, and ensures your collection is stored under ideal conditions. All our work is backed by a 180-day warranty, and we offer convenient same- or next-day service appointments.'
+      'During our $80 diagnostic visit, we verify your wine cooler maintains consistent temperature, check door seals for air leaks, test the cooling system, clean accessible coils, and inspect all controls. We also assess interior lighting, shelving condition, and overall unit performance. Regular maintenance prevents temperature fluctuations that can ruin wine, extends your cooler\'s lifespan, and ensures your collection is stored under ideal conditions. All our work is backed by a 180-day warranty, and we offer convenient same- or next-day service appointments.'
     ]
   };
 
@@ -53,7 +53,7 @@ const WineCoolerMaintenance = () => {
         appliance="Wine Cooler"
         pageSlug="maintenance/wine-cooler"
         pageTitle="Wine Cooler Maintenance Service Bay Area | FixitBay"
-        metaDescription="Professional wine cooler maintenance in the Bay Area. Temperature calibration, seal checks. $60 diagnostic, 180-day warranty. FixitBay LLC."
+        metaDescription="Professional wine cooler maintenance in the Bay Area. Temperature calibration, seal checks. $80 diagnostic, 180-day warranty. FixitBay LLC."
         heroTitle={<>Wine Cooler<br />Maintenance. Today.</>}
         heroSubtitle="Protect Your Collection"
         issues={[
@@ -74,7 +74,7 @@ const WineCoolerMaintenance = () => {
     <ApplianceRepairPageNew
       appliance="Wine Cooler"
       pageTitle="Wine Cooler Maintenance Bay Area | FixitBay"
-      metaDescription="Professional wine cooler maintenance in San Francisco Bay Area. Protect your wine collection with expert service from FixitBay LLC. $60 diagnostic, 180-day warranty."
+      metaDescription="Professional wine cooler maintenance in San Francisco Bay Area. Protect your wine collection with expert service from FixitBay LLC. $80 diagnostic, 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       serviceDescription={serviceDescription}

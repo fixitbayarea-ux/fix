@@ -457,7 +457,7 @@ const BlogFAQPage = () => {
                         Need appliance repair in San Francisco?
                       </p>
                       <p style={{color:'rgba(255,255,255,0.7)', fontSize:'14px', marginBottom:'16px'}}>
-                        Fast scheduling · $60 diagnostic · 180-day warranty
+                        Fast scheduling · $80 diagnostic · 180-day warranty
                       </p>
                       <div style={{display:'flex', gap:'12px', flexWrap:'wrap'}}>
                         <a href="tel:7605435733" style={{

@@ -15,7 +15,7 @@ const DalyCityRepairPage = () => {
     },
     {
       question: "How much does appliance repair cost in Daly City?",
-      answer: "Appliance repair costs in Daly City typically range from $250-$650 depending on the appliance and issue. We offer free diagnostics with repair service (otherwise $60) and provide upfront, transparent pricing."
+      answer: "Appliance repair costs in Daly City typically range from $250-$650 depending on the appliance and issue. We offer free diagnostics with repair service (otherwise $80) and provide upfront, transparent pricing."
     },
     {
       question: "Which Daly City neighborhoods do you serve?",

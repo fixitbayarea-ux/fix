@@ -28,7 +28,7 @@ const Pacifica = () => {
     paragraphs: [
       'Pacifica\'s dramatic Pacific coastline creates one of the Bay Area\'s most challenging environments for home appliances. From Linda Mar\'s surf-side homes to Pedro Point\'s clifftop properties, marine layer fog, salt air, and coastal humidity take a toll on refrigerators, dryers, and gas appliances. Our technicians specialize in diagnosing and preventing the corrosion, moisture, and airflow issues unique to Pacifica\'s oceanfront location.',
       'We serve all Pacifica neighborhoods daily: Sharp Park, Rockaway Beach, Vallemar, Pacific Manor, Fairmont, and the coastal Highway 1 corridor. Our vans carry parts that resist corrosion and moisture damage, and we stock components that commonly fail in Pacifica\'s salty marine environment. We understand challenges like moisture-laden dryer vents, corroded gas igniters, and humidity-stressed refrigerators.',
-      'Fast scheduling is available throughout Pacifica with a $60 diagnostic fee credited toward repairs. We provide transparent estimates, use corrosion-resistant parts when beneficial, and back every repair with a 180-day warranty. Our licensed technicians are coastal climate specialists familiar with preventing recurring issues in Pacifica homes.'
+      'Fast scheduling is available throughout Pacifica with a $80 diagnostic fee credited toward repairs. We provide transparent estimates, use corrosion-resistant parts when beneficial, and back every repair with a 180-day warranty. Our licensed technicians are coastal climate specialists familiar with preventing recurring issues in Pacifica homes.'
     ]
   };
 
@@ -37,7 +37,7 @@ const Pacifica = () => {
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
         pageTitle="Appliance Repair in Pacifica | FixitBay"
-        metaDescription="Coastal appliance repair in Pacifica—Linda Mar, Sharp Park, Rockaway. Salt-air aware repairs. $60 diagnostic credited. 180-day warranty. Call (760) 543-5733."
+        metaDescription="Coastal appliance repair in Pacifica—Linda Mar, Sharp Park, Rockaway. Salt-air aware repairs. $80 diagnostic credited. 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

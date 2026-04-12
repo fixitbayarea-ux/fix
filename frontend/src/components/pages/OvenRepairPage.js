@@ -23,7 +23,7 @@ const OvenRepairPage = () => {
   const faqData = [
     {
       question: "How much does oven repair cost in San Francisco?",
-      answer: "Oven repair costs vary by issue. Common repairs like replacing an igniter, heating element, or temperature sensor typically range from $150-$300. More complex repairs involving the control board or gas valve may cost $300-$500. Our $60 diagnostic fee is fully applied to your repair cost. We provide transparent pricing before starting any work."
+      answer: "Oven repair costs vary by issue. Common repairs like replacing an igniter, heating element, or temperature sensor typically range from $150-$300. More complex repairs involving the control board or gas valve may cost $300-$500. Our $80 diagnostic fee is fully applied to your repair cost. We provide transparent pricing before starting any work."
     },
     {
       question: "Should I repair or replace my oven that's not heating?",
@@ -75,7 +75,7 @@ const OvenRepairPage = () => {
         appliance="Oven"
         pageSlug="oven-repair"
         pageTitle="Oven Repair Bay Area | Fast Scheduling | FixitBay LLC"
-        metaDescription="Expert oven repair across the Bay Area. Gas and electric. $60 diagnostic applied to repair. 180-day warranty."
+        metaDescription="Expert oven repair across the Bay Area. Gas and electric. $80 diagnostic applied to repair. 180-day warranty."
         heroTitle={<>Expert Oven<br />Repair. Bay Area.</>}
         techImage="/images/technicians/oven-tech.jpg"
         techImageAlt="FixitBay technician repairing an oven in a Bay Area kitchen"
@@ -107,7 +107,7 @@ const OvenRepairPage = () => {
         serviceSchema={serviceSchema}
       appliance="Oven"
       pageTitle="Oven Repair Bay Area | Fast Scheduling | FixitBay LLC"
-      metaDescription="Expert oven repair across the Bay Area — SF, Peninsula & Marin. Gas and electric. $60 diagnostic applied to repair. 180-day warranty."
+      metaDescription="Expert oven repair across the Bay Area — SF, Peninsula & Marin. Gas and electric. $80 diagnostic applied to repair. 180-day warranty."
       commonProblems={commonProblems}
       faqData={faqData}
       heroImage="/images/technicians/oven-tech.jpg"
@@ -115,7 +115,7 @@ const OvenRepairPage = () => {
       serviceDescription={{
         title: "Professional Oven Repair Across the Bay Area",
         paragraphs: [
-          <>When your oven won't heat, won't reach temperature, or shows error codes, FixitBay LLC provides expert repair service throughout the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most oven issues on the same visit. We charge a transparent <strong>$60 diagnostic fee</strong> that's fully applied to your repair cost—honest pricing from start to finish.</>,
+          <>When your oven won't heat, won't reach temperature, or shows error codes, FixitBay LLC provides expert repair service throughout the SF Bay Area — San Francisco, the Peninsula, and Marin County. Our licensed technicians diagnose and fix most oven issues on the same visit. We charge a transparent <strong>$80 diagnostic fee</strong> that's fully applied to your repair cost—honest pricing from start to finish.</>,
           <>Our oven repair process includes a thorough inspection of heating elements, igniters, temperature sensors, gas valves, control boards, door hinges, and safety systems. We test all heating functions, check for gas leaks (if applicable), and identify the root cause of issues like no heat, temperature problems, or error codes. Whether you have a wall oven, double oven, or built-in unit, we have the expertise.</>,
           <>We service all major oven brands including {brands.slice(0, 6).join(', ')}, and more. Our technicians carry common replacement parts like igniters, heating elements, and temperature sensors, enabling most repairs on the first visit. Every repair is backed by our <strong>180-day warranty</strong> on parts and labor. Need <a href="/range-repair" style={{color:'#C0362C', fontWeight:'bold'}}>range repair</a> or <a href="/stove-repair" style={{color:'#C0362C', fontWeight:'bold'}}>stove repair</a>? We have dedicated pages for those too.</>,
           <><strong>Looking for oven repair specifically in San Francisco?</strong> Visit our <a href="/san-francisco-oven-repair" style={{color: '#C0362C', fontWeight: 'bold'}}>San Francisco Oven Repair</a> page for local details and availability.</>

@@ -23,7 +23,7 @@ import FloatingButtons from '../FloatingButtons';
 const MarinCountyPage = () => {
   const city = "Marin County";
   const pageTitle = "Appliance Repair Marin County | Fast Scheduling | FixitBay LLC";
-  const metaDescription = "Licensed appliance repair in Marin County. Serving Mill Valley, San Rafael, Novato, Sausalito, Tiburon. $60 diagnostic, 180-day warranty. Fast scheduling.";
+  const metaDescription = "Licensed appliance repair in Marin County. Serving Mill Valley, San Rafael, Novato, Sausalito, Tiburon. $80 diagnostic, 180-day warranty. Fast scheduling.";
 
   const marinCities = [
     { name: "Mill Valley", href: "/mill-valley-appliance-repair" },
@@ -50,7 +50,7 @@ const MarinCountyPage = () => {
     },
     {
       question: "How much does appliance repair cost in Marin County?",
-      answer: "Appliance repair costs in Marin County typically range from $250-$650 depending on the issue. We charge a $60 diagnostic fee that's fully applied to your repair cost. Our upfront pricing means no surprises regardless of your Marin location."
+      answer: "Appliance repair costs in Marin County typically range from $250-$650 depending on the issue. We charge a $80 diagnostic fee that's fully applied to your repair cost. Our upfront pricing means no surprises regardless of your Marin location."
     },
     {
       question: "What areas of Marin County do you serve?",
@@ -185,7 +185,7 @@ const MarinCountyPage = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center">
             <p className="text-orange-400 font-semibold text-sm uppercase tracking-wider mb-3">Appliance Repair Marin County</p>
             <h1 className="text-3xl md:text-5xl font-bold mb-6">Appliance Repair in Marin County — Fast Scheduling</h1>
-            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Professional appliance repair across Mill Valley, San Rafael, Novato, Sausalito, Tiburon, and all Marin County cities. Licensed technicians, $60 diagnostic, 180-day warranty.</p>
+            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Professional appliance repair across Mill Valley, San Rafael, Novato, Sausalito, Tiburon, and all Marin County cities. Licensed technicians, $80 diagnostic, 180-day warranty.</p>
             
             {/* Trust badges */}
             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -231,7 +231,7 @@ const MarinCountyPage = () => {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 text-[#0D1B2A]">Expert Appliance Repair for Marin County Homes</h2>
           <p className="text-gray-700 text-lg leading-relaxed mb-6">{localFeatures}</p>
-          <p className="text-gray-700 text-lg leading-relaxed">Whether you need refrigerator repair in Mill Valley, washer repair in San Rafael, or dishwasher repair in Novato — our licensed technicians provide fast, reliable service with transparent pricing. We charge a $60 diagnostic fee (fully applied to your repair) and back every repair with our 180-day warranty.</p>
+          <p className="text-gray-700 text-lg leading-relaxed">Whether you need refrigerator repair in Mill Valley, washer repair in San Rafael, or dishwasher repair in Novato — our licensed technicians provide fast, reliable service with transparent pricing. We charge a $80 diagnostic fee (fully applied to your repair) and back every repair with our 180-day warranty.</p>
         </div>
       </section>
 
@@ -302,7 +302,7 @@ const MarinCountyPage = () => {
       <section className="py-16 bg-orange-500 text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Ready for Fast Appliance Repair in Marin County?</h2>
-          <p className="text-lg mb-8 opacity-90">Book online or call now. $60 diagnostic, 180-day warranty, licensed technicians.</p>
+          <p className="text-lg mb-8 opacity-90">Book online or call now. $80 diagnostic, 180-day warranty, licensed technicians.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/book?go=1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[#0D1B2A] hover:bg-[#1B3A5F] text-white font-bold py-4 px-8 rounded-lg transition-colors" aria-label="opens in new tab">
               Book Online Now

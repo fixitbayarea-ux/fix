@@ -119,7 +119,7 @@ export const getLocalBusinessSchema = (city = "San Francisco") => {
       {
         "@type": "Offer",
         "name": "Free Service Call",
-        "description": "Service call FREE with repair (otherwise $60)",
+        "description": "Service call FREE with repair (otherwise $80)",
         "priceSpecification": {
           "@type": "PriceSpecification",
           "price": "0",

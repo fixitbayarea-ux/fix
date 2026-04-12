@@ -15,7 +15,7 @@ const P = { fontFamily: F, fontWeight: 400, fontSize: 15, color: '#4A5568', line
 const FAQ_ITEMS = [
   { q: 'How long do refrigerators last on average?', a: "Most refrigerators last 10\u201313 years, with top-freezer models often reaching 15+ years. French-door and side-by-side models average 10\u201312 years due to more complex ice/water systems. Regular maintenance \u2014 cleaning condenser coils every 6 months and replacing water filters \u2014 can extend lifespan by 3\u20135 years." },
   { q: 'What makes appliances wear out faster in the Bay Area?', a: "San Francisco\u2019s coastal humidity accelerates corrosion on metal components, particularly in refrigerators and dryers. Mineral-rich Bay Area water causes buildup in dishwashers and washing machines. Homes with hard water should clean appliance filters more frequently \u2014 every 3 months instead of every 6." },
-  { q: 'Is it better to repair or replace an appliance that\u2019s 10 years old?', a: "Use the 50% rule: if repair cost exceeds 50% of replacement cost AND the appliance is past 50% of its expected lifespan, replacement usually makes more sense. However, premium brands (Sub-Zero, Wolf, Thermador) are built to 20\u201325 year lifespans and are almost always worth repairing. Our technicians give honest advice after the $60 diagnostic." },
+  { q: 'Is it better to repair or replace an appliance that\u2019s 10 years old?', a: "Use the 50% rule: if repair cost exceeds 50% of replacement cost AND the appliance is past 50% of its expected lifespan, replacement usually makes more sense. However, premium brands (Sub-Zero, Wolf, Thermador) are built to 20\u201325 year lifespans and are almost always worth repairing. Our technicians give honest advice after the $80 diagnostic." },
   { q: 'How can I extend my appliance\u2019s lifespan?', a: "Five proven ways: (1) Clean condenser coils on refrigerators every 6 months, (2) clean dryer vent duct annually, (3) run dishwasher cleaning cycles monthly, (4) don\u2019t overload washers or dryers \u2014 fill max 3/4 full, (5) schedule professional maintenance every 2\u20133 years for high-use appliances. Proper maintenance adds 3\u20135 years on average." },
   { q: 'What appliance brands last the longest?', a: "For longevity, Sub-Zero and Wolf are in a class of their own \u2014 built for 20\u201325+ year lifespans with available parts for decades. Among standard brands, Whirlpool, Maytag, and LG consistently score well for reliability at 12\u201315 years with proper maintenance. Samsung and French-door models from any brand tend to have shorter lifespans due to complex electronics and ice systems." },
 ];
@@ -225,7 +225,7 @@ const ApplianceLifespan = () => {
                 <div className="mid-cta-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 16 }}>
                   <div>
                     <p style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#fff', marginBottom: 4 }}>Need appliance repair in San Francisco?</p>
-                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $60 diagnostic · 180-day warranty</p>
+                    <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>Fast scheduling · $80 diagnostic · 180-day warranty</p>
                   </div>
                   <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
                     <a href="tel:7605435733" style={{ background: '#FF5722', color: '#fff', fontFamily: F, fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 4, textDecoration: 'none' }}>Call (760) 543-5733</a>
@@ -333,7 +333,7 @@ const ApplianceLifespan = () => {
               <div style={{ background: '#0D1B2A', borderRadius: 4, borderTop: '3px solid #FF5722', padding: 24 }}>
                 <div style={EYE}>EXTEND YOUR APPLIANCE LIFE</div>
                 <h3 style={{ fontFamily: F, fontWeight: 800, fontSize: 20, color: '#fff', marginBottom: 8 }}>Professional Maintenance</h3>
-                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>Regular tune-ups add 3&ndash;5 years. $60 diagnostic, 180-day warranty.</p>
+                <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20 }}>Regular tune-ups add 3&ndash;5 years. $80 diagnostic, 180-day warranty.</p>
                 <div style={{ height: 1, background: 'rgba(255,255,255,0.08)', marginBottom: 16 }} />
                 {['All Major Appliance Brands', 'Fast Scheduling', 'Licensed CA Technician'].map(item => (
                   <div key={item} style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
@@ -410,7 +410,7 @@ const ApplianceLifespan = () => {
             <h2 style={{ fontFamily: F, fontWeight: 800, fontSize: 28, color: '#fff', marginBottom: 28 }}>Related Services &amp; Articles</h2>
             <div className="related-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
               {[
-                { tag: 'SERVICE', title: 'All Appliance Repair in Bay Area', body: 'Fast repair for all major appliance brands. $60 diagnostic applied to repair.', link: 'View Services', href: '/services' },
+                { tag: 'SERVICE', title: 'All Appliance Repair in Bay Area', body: 'Fast repair for all major appliance brands. $80 diagnostic applied to repair.', link: 'View Services', href: '/services' },
                 { tag: 'ARTICLE', title: 'Repair vs Replace: When to Fix Your Appliance', body: 'Use the 50% rule to make the smartest financial decision.', link: 'Read Article', href: '/blog/when-to-repair-vs-replace' },
                 { tag: 'SERVICE', title: 'San Francisco Appliance Repair', body: 'Full-service repair across all SF neighborhoods. Fast scheduling.', link: 'View Service', href: '/san-francisco-appliance-repair' },
               ].map((card, i) => (

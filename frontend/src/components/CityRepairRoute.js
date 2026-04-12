@@ -107,13 +107,13 @@ const CityRepairRoute = () => {
   const cityName = slugToCity(citySlug);
 
   const pageTitle = `Appliance Repair ${cityName} | FixItBay Appliance Repair & Maintenance`;
-  const metaDescription = `Same/next-day appliance repair in ${cityName}. $60 diagnostic credited to repair. 180-day warranty. Book online or call (760) 543-5733.`;
+  const metaDescription = `Same/next-day appliance repair in ${cityName}. $80 diagnostic credited to repair. 180-day warranty. Book online or call (760) 543-5733.`;
 
   const neighborhoods = [cityName + ' Downtown', 'Central', 'East', 'West'];
   const localFeatures = `We proudly serve ${cityName} neighborhoods with licensed, insured technicians.`;
   const faqData = [
     { question: `Do you offer fast scheduling in ${cityName}?`, answer: `Yes, we provide same/next-day appointments in ${cityName}.` },
-    { question: `What is your diagnostic fee in ${cityName}?`, answer: `Our diagnostic is $60 and it is applied toward the repair if you proceed.` }
+    { question: `What is your diagnostic fee in ${cityName}?`, answer: `Our diagnostic is $80 and it is applied toward the repair if you proceed.` }
   ];
 
   return (

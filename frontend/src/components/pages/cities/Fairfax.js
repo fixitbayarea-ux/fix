@@ -28,7 +28,7 @@ const Fairfax = () => {
     paragraphs: [
       'Fairfax\'s location as the gateway to West Marin creates a unique community with a mix of downtown living and hillside homes. Our technicians serve all Fairfax neighborhoods, understanding the town\'s character and the appliances common in both older homes downtown and newer properties in the hills.',
       'We navigate Fairfax via Sir Francis Drake Boulevard, accessing the downtown core and surrounding residential areas efficiently. Our vans carry parts for common appliance failures, and we can source specialized components from our Bay Area network.',
-      'Fast scheduling is available in Fairfax with a $60 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
+      'Fast scheduling is available in Fairfax with a $80 diagnostic fee credited toward repairs. We provide transparent estimates and back every repair with a 180-day warranty. Our licensed technicians service all major appliance brands.'
     ]
   };
 

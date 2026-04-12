@@ -28,7 +28,7 @@ const Colma = () => {
     paragraphs: [
       'Colma\'s unique position as one of the smallest incorporated towns in California creates a tight-knit community with specific appliance service needs. Our technicians know Colma\'s layout intimately—from Hillside Boulevard to Lawndale Boulevard, and the residential areas surrounding Colma BART. We navigate the town\'s compact geography quickly, ensuring fast response times for all appliance emergencies.',
       'Colma\'s housing stock includes apartments, condos, and single-family homes, many in mixed-use buildings near the retail corridors. We service all housing types and are familiar with building access procedures, parking protocols, and HOA requirements specific to Colma properties. Our vans carry parts for common failures in Colma\'s appliance population.',
-      'Fast scheduling is standard in Colma with our $60 diagnostic fee credited toward all repairs. We provide transparent upfront estimates and back every repair with a 180-day parts and labor warranty. Our licensed technicians repair all major appliance brands and understand the unique challenges of Colma\'s compact urban environment.'
+      'Fast scheduling is standard in Colma with our $80 diagnostic fee credited toward all repairs. We provide transparent upfront estimates and back every repair with a 180-day parts and labor warranty. Our licensed technicians repair all major appliance brands and understand the unique challenges of Colma\'s compact urban environment.'
     ]
   };
 
@@ -37,7 +37,7 @@ const Colma = () => {
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
         pageTitle="Appliance Repair Colma | Fast Same/Next-Day | FixitBay LLC"
-        metaDescription="Professional appliance repair in Colma near BART and retail corridors. $60 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733."
+        metaDescription="Professional appliance repair in Colma near BART and retail corridors. $80 diagnostic applied to repair. 180-day warranty. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}

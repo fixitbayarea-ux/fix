@@ -49,7 +49,7 @@ const HomeHero = () => {
 
           {/* Subtitle */}
           <p className="hero-subtext" style={{ fontFamily: 'Montserrat, sans-serif', fontSize: 15, color: 'rgba(255,255,255,0.5)', lineHeight: 1.7, maxWidth: 430, marginBottom: 36, fontWeight: 400 }}>
-            Same- or next-day appointments. $60 diagnostic applied to repair cost. Licensed, insured, and backed by a 180-day warranty.
+            Same- or next-day appointments. $80 diagnostic applied to repair cost. Licensed, insured, and backed by a 180-day warranty.
           </p>
 
           {/* Desktop CTAs */}

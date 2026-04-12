@@ -10,7 +10,7 @@ const PricingCards = ({ testId = 'pricing' }) => (
       <div className="pricing-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
         <div style={{ border: '2px solid #FF5722', background: 'rgba(255,87,34,0.06)', borderRadius: 4, padding: '32px 24px', position: 'relative' }}>
           <span style={{ position: 'absolute', top: -12, left: '50%', transform: 'translateX(-50%)', background: '#FF5722', color: '#FFF', fontFamily: F, fontWeight: 700, fontSize: 10, textTransform: 'uppercase', borderRadius: 2, padding: '3px 10px', whiteSpace: 'nowrap' }}>MOST ASKED</span>
-          <div style={{ fontFamily: F, fontWeight: 800, fontSize: 52, color: '#FF5722', marginBottom: 8 }}>$60</div>
+          <div style={{ fontFamily: F, fontWeight: 800, fontSize: 52, color: '#FF5722', marginBottom: 8 }}>$80</div>
           <div style={{ fontFamily: F, fontWeight: 700, fontSize: 16, color: '#FFF', marginBottom: 8 }}>Diagnostic Fee</div>
           <p style={{ fontFamily: F, fontWeight: 400, fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>Applied toward repair if you proceed</p>
         </div>

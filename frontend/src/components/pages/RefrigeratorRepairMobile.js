@@ -81,7 +81,7 @@ const RefrigeratorRepairMobile = () => {
   }, []);
 
   const faqs = [
-    { q: 'How much does it cost?', a: '$60 diagnostic visit, fully applied to your repair cost. Most repairs: $250–$650 including parts and labor. Written quote before any work — no surprises.' },
+    { q: 'How much does it cost?', a: '$80 diagnostic visit, fully applied to your repair cost. Most repairs: $250–$650 including parts and labor. Written quote before any work — no surprises.' },
     { q: 'How fast can you come?', a: 'Same- or next-day service across San Francisco, Peninsula, and Marin. Most urgent cooling issues handled the same day.' },
     { q: 'Do you offer a warranty?', a: '180-day warranty on all parts and labor. If the same issue returns, we fix it free.' },
     { q: 'What brands do you fix?', a: 'All major brands: Sub-Zero, Viking, Thermador, Samsung, LG, Whirlpool, GE, Bosch, Miele, KitchenAid, Frigidaire, and more.' },
@@ -97,7 +97,7 @@ const RefrigeratorRepairMobile = () => {
   return (
     <div data-testid="mobile-landing-refrigerator" style={{ fontFamily: "'Montserrat', sans-serif", background: '#fff', paddingBottom: 82 }}>
 
-      <SEOMetaTags title="Refrigerator Repair San Francisco | Fast Scheduling | FixitBay LLC" description="Fast refrigerator repair in San Francisco & Bay Area. $60 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733." canonical="https://fixitbay.net/refrigerator-repair" />
+      <SEOMetaTags title="Refrigerator Repair San Francisco | Fast Scheduling | FixitBay LLC" description="Fast refrigerator repair in San Francisco & Bay Area. $80 diagnostic applied to repair. Licensed & insured. 180-day warranty. Call (760) 543-5733." canonical="https://fixitbay.net/refrigerator-repair" />
 
       {/* ── HEADER ── */}
       <header data-testid="mobile-header" style={{
@@ -177,7 +177,7 @@ const RefrigeratorRepairMobile = () => {
           borderRadius: 10, padding: '10px 14px', marginBottom: 18, textAlign: 'center',
         }}>
           <span style={{ fontSize: 14, color: '#fff', fontWeight: 500 }}>
-            Diagnostic: <strong style={{ color: '#FBBF24' }}>$60</strong> — applied to repair if you proceed
+            Diagnostic: <strong style={{ color: '#FBBF24' }}>$80</strong> — applied to repair if you proceed
           </span>
         </div>
 
@@ -243,7 +243,7 @@ const RefrigeratorRepairMobile = () => {
         <h2 style={{ fontSize: 18, fontWeight: 700, color: '#1A3B5D', margin: '0 0 20px' }}>How it works</h2>
         {[
           { n: '1', title: 'You call or book online', desc: 'Same/next-day slots across SF & Bay Area. Takes 30 seconds.' },
-          { n: '2', title: 'We diagnose on-site', desc: '$60 diagnostic fee — waived with repair. No hidden charges.' },
+          { n: '2', title: 'We diagnose on-site', desc: '$80 diagnostic fee — waived with repair. No hidden charges.' },
           { n: '3', title: 'Repair + 180-day warranty', desc: 'Upfront quote. Quality parts. Warranty on parts and labor.' },
         ].map((step, i) => (
           <div key={i} style={{ display: 'flex', gap: 14, marginBottom: i < 2 ? 20 : 0, position: 'relative' }}>
@@ -275,7 +275,7 @@ const RefrigeratorRepairMobile = () => {
           { icon: <Shield size={20} color="#34D399" />, title: 'Licensed & Insured', desc: 'CA License #51001. Full liability coverage.' },
           { icon: <Award size={20} color="#FBBF24" />, title: '180-Day Warranty', desc: 'On every repair — parts and labor.' },
           { icon: <Clock size={20} color="#60A5FA" />, title: 'Same/Next-Day', desc: 'Mon–Sat. Fast response across Bay Area.' },
-          { icon: <CheckCircle2 size={20} color="#A78BFA" />, title: 'Upfront Pricing', desc: '$60 diagnostic applied to repair. No surprises.' },
+          { icon: <CheckCircle2 size={20} color="#A78BFA" />, title: 'Upfront Pricing', desc: '$80 diagnostic applied to repair. No surprises.' },
         ].map((item, i) => (
           <div key={i} style={{ display: 'flex', gap: 12, marginBottom: 16, alignItems: 'flex-start' }}>
             <div style={{
@@ -337,7 +337,7 @@ const RefrigeratorRepairMobile = () => {
             padding: '4px 12px', borderBottomLeftRadius: 10,
           }}>TRANSPARENT</div>
           <div style={{ display: 'flex', alignItems: 'baseline', gap: 6, marginBottom: 8 }}>
-            <span style={{ fontSize: 28, fontWeight: 800, color: '#1A3B5D' }}>$60</span>
+            <span style={{ fontSize: 28, fontWeight: 800, color: '#1A3B5D' }}>$80</span>
             <span style={{ fontSize: 14, color: '#64748B' }}>diagnostic visit</span>
           </div>
           <p style={{ fontSize: 14, color: '#475569', margin: '0 0 8px', lineHeight: 1.5 }}>
