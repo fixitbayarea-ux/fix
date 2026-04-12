@@ -318,7 +318,7 @@ console.log('\n🎉 SEO Snapshots generation complete!');
 // Generate sitemap.xml — canonical indexable URLs only
 const SITE_URL = 'https://fixitbay.net';
 const noindexRoutes = [
-  '/thank-you-booking', '/book',
+  '/thank-you-booking',
   '/llm-info', '/blog-faq', '/privacy-policy'
 ];
 const sitemapUrls = ['/', ...filteredRoutes.filter(r => r !== '/' && !noindexRoutes.includes(r))];
