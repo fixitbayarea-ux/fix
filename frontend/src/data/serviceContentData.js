@@ -9,7 +9,7 @@ const SERVICE_CONTENT = {
   /* ═══════════════════════ REFRIGERATOR ═══════════════════════ */
   Refrigerator: {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Thermostat replacement', price: 295 },
@@ -56,7 +56,7 @@ const SERVICE_CONTENT = {
   /* ═══════════════════════ WASHER ═══════════════════════ */
   Washer: {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Control board', price: 350 },
@@ -96,7 +96,7 @@ const SERVICE_CONTENT = {
   /* ═══════════════════════ DRYER ═══════════════════════ */
   Dryer: {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Heating element', price: 265 },
@@ -137,7 +137,7 @@ const SERVICE_CONTENT = {
   /* ═══════════════════════ DISHWASHER ═══════════════════════ */
   Dishwasher: {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Drain pump', price: 285 },
@@ -179,7 +179,7 @@ const SERVICE_CONTENT = {
   /* ═══════════════════════ OVEN ═══════════════════════ */
   Oven: {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Igniter (gas)', price: 285 },
@@ -224,7 +224,7 @@ const SERVICE_CONTENT = {
   /* ═══════════════════════ RANGE ═══════════════════════ */
   Range: {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Igniter (gas)', price: 285 },
@@ -268,7 +268,7 @@ const SERVICE_CONTENT = {
   /* ═══════════════════════ STOVE ═══════════════════════ */
   Stove: {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Igniter', price: 265 },
@@ -311,7 +311,7 @@ const SERVICE_CONTENT = {
   /* ═══════════════════════ COOKTOP ═══════════════════════ */
   Cooktop: {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Igniter (gas)', price: 265 },
@@ -352,7 +352,7 @@ const SERVICE_CONTENT = {
   /* ═══════════════════════ FREEZER ═══════════════════════ */
   Freezer: {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Defrost heater', price: 285 },
@@ -392,7 +392,7 @@ const SERVICE_CONTENT = {
   /* ═══════════════════════ ICE MAKER ═══════════════════════ */
   'Ice Maker': {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Water inlet valve', price: 265 },
@@ -432,7 +432,7 @@ const SERVICE_CONTENT = {
   /* ═══════════════════════ WINE COOLER ═══════════════════════ */
   'Wine Cooler': {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Thermostat', price: 285 },
@@ -474,7 +474,7 @@ const SERVICE_CONTENT = {
 
   'Refrigerator Maintenance': {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 255,
       rows: [
         { repair: 'Condenser coil cleaning', price: 255 },
@@ -509,7 +509,7 @@ const SERVICE_CONTENT = {
 
   'Washer Maintenance': {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 215,
       rows: [
         { repair: 'Inlet hose replacement', price: 255 },
@@ -545,7 +545,7 @@ const SERVICE_CONTENT = {
 
   'Dryer Maintenance': {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Vent cleaning & inspection', price: 250 },
@@ -580,7 +580,7 @@ const SERVICE_CONTENT = {
 
   'Dishwasher Maintenance': {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Filter & spray arm cleaning', price: 250 },
@@ -614,7 +614,7 @@ const SERVICE_CONTENT = {
 
   'Oven Maintenance': {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 250,
       rows: [
         { repair: 'Burner & igniter inspection', price: 255 },
@@ -649,7 +649,7 @@ const SERVICE_CONTENT = {
 
   'Cooktop Maintenance': {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 45,
       rows: [
         { repair: 'Igniter testing & cleaning', price: 250 },
@@ -684,7 +684,7 @@ const SERVICE_CONTENT = {
 
   'Wine Cooler Maintenance': {
     pricingTable: {
-      diagnostic: 60,
+      diagnostic: 80,
       from: 255,
       rows: [
         { repair: 'Condenser coil cleaning', price: 265 },
