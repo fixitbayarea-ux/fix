@@ -24,6 +24,7 @@ const P = ({ children, dark }) => <p style={{ fontSize: 16, lineHeight: '24px', 
 const CityLandingPage = ({
   city, citySlug, pageTitle, metaDescription,
   neighborhoods = [], localExpertise = '', homeTypes = '',
+  additionalLocalContent = '', maintenanceTips = [],
   commonProblems = [], recentRepairs = [], faqData = [],
   nearbyCities = [], brands = []
 }) => {
@@ -206,6 +207,7 @@ const CityLandingPage = ({
           <H2Dark>We Know {city} Homes</H2Dark>
           <P dark>{localExpertise}</P>
           {homeTypes && <P dark>{homeTypes}</P>}
+          {additionalLocalContent && <P dark>{additionalLocalContent}</P>}
           {neighborhoods.length > 0 && (
             <div style={{ marginTop: 24 }}>
               <div style={{ fontSize: 14, fontWeight: 700, color: C.white, fontFamily: F, marginBottom: 12 }}>Neighborhoods we serve in {city}:</div>
@@ -232,6 +234,22 @@ const CityLandingPage = ({
             ))}
           </div>
         </SectionPad>
+
+        {/* 9b. MAINTENANCE TIPS */}
+        {maintenanceTips.length > 0 && (
+          <SectionPad bg={C.white}>
+            <Eyebrow>MAINTENANCE TIPS</Eyebrow>
+            <H2Light>{city} Appliance Maintenance Tips</H2Light>
+            <div style={{ marginTop: 20 }}>
+              {maintenanceTips.map((tip, i) => (
+                <div key={i} style={{ marginBottom: 16, padding: '16px 20px', background: C.cream, borderRadius: 8, borderLeft: `3px solid ${C.accent}` }}>
+                  <h3 style={{ fontSize: 15, fontWeight: 700, color: C.navy, marginBottom: 6, fontFamily: F }}>{tip.title}</h3>
+                  <p style={{ fontSize: 14, color: C.textMid, lineHeight: '22px', fontFamily: F }}>{tip.description}</p>
+                </div>
+              ))}
+            </div>
+          </SectionPad>
+        )}
 
         {/* 10. REVIEWS */}
         <SectionPad bg={C.navy}>
