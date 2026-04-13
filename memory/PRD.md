@@ -26,7 +26,8 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
 8. P15: FOUC prevention (reactSnap waitFor, CSS fadeIn)
 9. P16: AggregateRating schema added to LocalBusiness + review count updated 95→106 across entire site (April 2026)
 10. P17: VideoObject schema fix — eliminated duplicate schemas (4→2) on /about page, fixed uploadDate format to valid ISO 8601 with timezone (April 2026)
-11. BreadcrumbList deduplication verified on 7+ city URLs — no duplicates found
+11. P18: LLM Info page update — review counts (106 Google + 165 Thumbtack + 6 Yelp = 277+ total), HVAC/Commercial diagnostic pricing ($100), HVAC added to services (April 2026)
+12. BreadcrumbList deduplication verified on 7+ city URLs — no duplicates found
 
 ## Current Review Data (April 2026)
 - Google reviews: 106
