@@ -25,7 +25,8 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
 7. P14: Stacked Washer/Dryer Repair standalone page
 8. P15: FOUC prevention (reactSnap waitFor, CSS fadeIn)
 9. P16: AggregateRating schema added to LocalBusiness + review count updated 95→106 across entire site (April 2026)
-10. BreadcrumbList deduplication verified on 7+ city URLs — no duplicates found
+10. P17: VideoObject schema fix — eliminated duplicate schemas (4→2) on /about page, fixed uploadDate format to valid ISO 8601 with timezone (April 2026)
+11. BreadcrumbList deduplication verified on 7+ city URLs — no duplicates found
 
 ## Current Review Data (April 2026)
 - Google reviews: 106

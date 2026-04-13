@@ -706,7 +706,7 @@ function getSEOContent(route) {
           "description": "Watch FixitBay LLC licensed technician diagnose and repair appliances in San Francisco Bay Area. $80 diagnostic, 180-day warranty, same-day service.",
           "thumbnailUrl": "https://i.ytimg.com/vi/WBEc8Lz2saA/hqdefault.jpg",
           "embedUrl": "https://www.youtube.com/embed/WBEc8Lz2saA",
-          "uploadDate": "2024-01-01T00:00:00+00:00",
+          "uploadDate": "2024-09-10T10:00:00-07:00",
           "duration": "PT1M",
           "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/logo192.png" } }
         },
@@ -717,7 +717,7 @@ function getSEOContent(route) {
           "description": "FixitBay LLC expert technician Andrei demonstrates professional appliance repair in the San Francisco Bay Area. Licensed, insured, 180-day warranty.",
           "thumbnailUrl": "https://i.ytimg.com/vi/ottiV_KfcUI/hqdefault.jpg",
           "embedUrl": "https://www.youtube.com/embed/ottiV_KfcUI",
-          "uploadDate": "2024-01-01T00:00:00+00:00",
+          "uploadDate": "2024-09-15T14:00:00-07:00",
           "duration": "PT1M",
           "publisher": { "@type": "Organization", "name": "FixitBay LLC", "url": "https://fixitbay.net", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/logo192.png" } }
         }

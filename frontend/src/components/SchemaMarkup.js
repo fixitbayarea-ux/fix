@@ -31,8 +31,12 @@ const SchemaMarkup = () => {
             seenTypes.add(d['@type']);
           }
         }
+        // Remove all prerendered no-id VideoObject schemas (React components inject proper ones with IDs)
+        if (!el.id && d['@type'] === 'VideoObject') {
+          el.remove();
+        }
       } catch(e) {
-        if (process.env.NODE_ENV === 'development') console.error('SchemaMarkup BreadcrumbList dedup error:', e);
+        if (process.env.NODE_ENV === 'development') console.error('SchemaMarkup dedup error:', e);
       }
     });
 
