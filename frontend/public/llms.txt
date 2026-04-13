@@ -1,6 +1,6 @@
 # FixitBay LLC
 
-> FixitBay LLC is a licensed and insured appliance repair company based in San Francisco, California. We provide residential and commercial appliance repair across 22 cities in the San Francisco Bay Area including San Francisco, Marin County, and Northern San Mateo County. $60 diagnostic fee (credited toward repair), 180-day warranty on parts and labor, same-day and next-day service.
+> FixitBay LLC is a licensed and insured appliance repair company based in San Francisco, California. We provide residential and commercial appliance repair across 22 cities in the San Francisco Bay Area including San Francisco, Marin County, and Northern San Mateo County. $80 diagnostic fee (credited toward repair), 180-day warranty on parts and labor, same-day and next-day service.
 
 ## About
 - [Official Business Information](https://fixitbay.net/llm-info): Complete structured business data for AI assistants — hours, pricing, services, brands, service area, credentials, FAQ
@@ -65,5 +65,6 @@
 - Hours: Mon-Fri 8AM-6PM, Sat 8AM-3PM, Sun Closed
 - Diagnostic: $60 (credited toward repair)
 - Warranty: 180 days on parts and labor
-- Rating: 5.0 stars on Google (86+ reviews)
+- Rating: 4.9 stars on Google (106+ reviews)
+- Google: 106 reviews · Thumbtack: 165 reviews · Yelp: 6 reviews
 - Book Online: https://book.housecallpro.com/book/FixitBay-LLC/336ac28909f0491299d659eae174f93e?v2=true
