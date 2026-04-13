@@ -154,7 +154,7 @@ const MarinCountyPage = () => {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
-      "reviewCount": "95"
+      "reviewCount": "106"
     }
   };
 

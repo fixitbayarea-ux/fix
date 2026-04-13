@@ -263,7 +263,7 @@ const SanFrancisco = () => {
         <div style={{ maxWidth: 800, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 20, flexWrap: 'wrap', fontFamily: S.font, fontWeight: 500, fontSize: 13, letterSpacing: '0.3px' }}>
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#10003;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>Licensed CA Technician</span></span>
           <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
-          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FFB800' }}>&#11088;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>4.9 Google (95 Reviews)</span></span>
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FFB800' }}>&#11088;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>4.9 Google (106 Reviews)</span></span>
           <span style={{ color: 'rgba(255,255,255,0.25)' }}>&middot;</span>
           <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ color: '#FF5722' }}>&#128737;</span><span style={{ color: 'rgba(255,255,255,0.9)' }}>License #51001</span></span>
         </div>

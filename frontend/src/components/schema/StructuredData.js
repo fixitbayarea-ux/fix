@@ -89,7 +89,7 @@ const StructuredData = ({ includeRating = false, ratingValue = null, reviewCount
   baseSchema.aggregateRating = {
     "@type": "AggregateRating",
     "ratingValue": ratingValue ? String(ratingValue) : "4.9",
-    "reviewCount": reviewCount ? String(reviewCount) : "95",
+    "reviewCount": reviewCount ? String(reviewCount) : "106",
     "bestRating": "5",
     "worstRating": "1"
   };

@@ -237,7 +237,7 @@ const MobileServiceLanding = ({
 
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 20 }}>
             {[
-              { top: '4.9 \u2B50', bottom: '95 Reviews' },
+              { top: '4.9 \u2B50', bottom: '106 Reviews' },
               { top: 'Fast', bottom: 'Scheduling' },
               { top: '180-Day', bottom: 'Warranty' },
               { top: 'License', bottom: '#51001' },

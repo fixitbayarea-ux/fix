@@ -24,6 +24,15 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
 6. P13: Server-side 301 redirects — FIXED: moved netlify.toml to base directory
 7. P14: Stacked Washer/Dryer Repair standalone page
 8. P15: FOUC prevention (reactSnap waitFor, CSS fadeIn)
+9. P16: AggregateRating schema added to LocalBusiness + review count updated 95→106 across entire site (April 2026)
+10. BreadcrumbList deduplication verified on 7+ city URLs — no duplicates found
+
+## Current Review Data (April 2026)
+- Google reviews: 106
+- Thumbtack reviews: 165
+- Yelp reviews: 6
+- Rating: 4.9 out of 5
+- Schema uses ratingValue: "4.9", reviewCount: "106" (Google only)
 
 ## Backlog
 - (P2) Refactor: merge CityRepairPage + CityLandingPage

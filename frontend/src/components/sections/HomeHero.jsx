@@ -84,7 +84,7 @@ const HomeHero = () => {
             <div className="trust-strip" data-testid="hero-trust-mobile" style={{ display: 'flex', justifyContent: 'center', gap: 16, flexWrap: 'nowrap', overflowX: 'auto', background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: 8, padding: '8px 16px', marginBottom: 16, fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: 12, color: 'rgba(255,255,255,0.9)', whiteSpace: 'nowrap' }}>
               <span>&#11088; 4.9 Google</span>
               <span style={{ color: 'rgba(255,255,255,0.3)' }}>&middot;</span>
-              <span>&#10003; 95 Reviews</span>
+              <span>&#10003; 106 Reviews</span>
               <span style={{ color: 'rgba(255,255,255,0.3)' }}>&middot;</span>
               <span>&#128737; License #51001</span>
             </div>
@@ -112,7 +112,7 @@ const HomeHero = () => {
             <div className="tp-value">
               4.9<span style={{ fontSize: 18, color: 'rgba(255,255,255,0.3)' }}> /5</span>
             </div>
-            <div className="tp-desc">95+ verified reviews</div>
+            <div className="tp-desc">106+ verified reviews</div>
           </a>
 
           {/* Service Area */}

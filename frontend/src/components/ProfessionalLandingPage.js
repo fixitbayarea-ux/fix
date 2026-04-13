@@ -69,7 +69,7 @@ const ProfessionalLandingPage = () => {
     } else { window.scrollTo(0, 0); }
   }, []);
 
-  useAggregateRating(4.9, 94);
+  useAggregateRating(4.9, 106);
 
   const [mapRef, isMapInView] = useInView({ rootMargin: '300px' });
   const [reviewsRef, isReviewsInView] = useInView({ rootMargin: '200px' });

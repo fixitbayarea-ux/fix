@@ -91,7 +91,7 @@ const CityLandingPage = ({
               <a href="tel:7605435733" onClick={handleCall} style={{ background: 'transparent', color: C.white, border: '1.5px solid rgba(255,255,255,0.3)', borderRadius: 4, padding: '10px 20px', fontSize: 14, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '1.12px', textDecoration: 'none', fontFamily: F }}>CALL (760) 543-5733</a>
             </div>
             <div style={{ marginTop: 16, fontSize: 13, color: 'rgba(255,255,255,0.65)', fontFamily: F }}>
-              &#10003; Licensed CA Technician &middot; &#11088; 4.9 Google (95 Reviews) &middot; License #51001
+              &#10003; Licensed CA Technician &middot; &#11088; 4.9 Google (106 Reviews) &middot; License #51001
             </div>
           </div>
           {/* Stats grid */}

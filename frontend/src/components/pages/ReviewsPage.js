@@ -51,7 +51,7 @@ const ReviewsPage = () => {
           "ratingValue": "4.9",
           "bestRating": "5",
           "worstRating": "1",
-          "reviewCount": "95"
+          "reviewCount": "106"
         },
         "review": reviews.filter(r => r.source === 'Google').slice(0, 3).map(r => ({
           "@type": "Review",
@@ -120,7 +120,7 @@ const ReviewsPage = () => {
             <div>
               <div style={{ color: '#FF5722', fontSize: 28, letterSpacing: 4, marginBottom: 12 }}>{'\u2605\u2605\u2605\u2605\u2605'}</div>
               <div style={{ display: 'flex', justifyContent: 'center', gap: 20, flexWrap: 'wrap', marginBottom: 10 }}>
-                <a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" aria-label="Read our Google reviews" style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#fff', textDecoration: 'none', cursor: 'pointer' }}>Google <span style={{ color: 'rgba(255,255,255,0.6)' }}>95 reviews &middot; 5 / 5</span></a>
+                <a href="https://share.google/Q48c6OXAIB7u60fNv" target="_blank" rel="noopener noreferrer" aria-label="Read our Google reviews" style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#fff', textDecoration: 'none', cursor: 'pointer' }}>Google <span style={{ color: 'rgba(255,255,255,0.6)' }}>106 reviews &middot; 5 / 5</span></a>
                 <a href="https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644" target="_blank" rel="noopener noreferrer" aria-label="Read our Thumbtack reviews" style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#fff', textDecoration: 'none', cursor: 'pointer' }}>Thumbtack <span style={{ color: 'rgba(255,255,255,0.6)' }}>153 reviews &middot; 4.9 / 5</span></a>
                 <a href="https://www.yelp.com/biz/fixitbay-san-francisco-5" target="_blank" rel="noopener noreferrer" aria-label="Read our Yelp reviews" style={{ fontFamily: F, fontWeight: 600, fontSize: 14, color: '#fff', textDecoration: 'none', cursor: 'pointer' }}>Yelp <span style={{ color: 'rgba(255,255,255,0.6)' }}>5 reviews &middot; 5 / 5</span></a>
               </div>
