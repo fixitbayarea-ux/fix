@@ -76,7 +76,7 @@ const DryerNotHeating = () => {
         "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
         "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/navbar-logo-new-112.webp" } },
         "datePublished": "2026-03-23",
-        "dateModified": "2026-03-23",
+        "dateModified": "2026-04-13",
         "mainEntityOfPage": "https://fixitbay.net/blog/dryer-not-heating"
       }
     },
@@ -357,6 +357,18 @@ const DryerNotHeating = () => {
                     </div>
                   );
                 })}
+              </div>
+
+              {/* ── Gas vs Electric: Different Causes, Different Fixes ── */}
+              <h2 id="gas-electric-deep" style={H2S}>Gas vs. Electric Dryer: Different Causes, Different Fixes</h2>
+              <p style={P}>Gas and electric dryers share some failure points (thermal fuse, thermostats, cycling thermostat) but differ in key ways:</p>
+              <div style={{ background: '#F8F5F0', borderLeft: '3px solid #FF5722', padding: '20px 24px', borderRadius: '0 4px 4px 0', marginBottom: 16 }}>
+                <p style={{ ...P, marginBottom: 8 }}><strong>Electric dryers:</strong> heating element failure is the #1 cause of no-heat. The element is a coiled wire inside a housing — when it burns out, the drum spins but produces no heat. Replacement cost: $120–$200 including labor.</p>
+                <p style={{ ...P, marginBottom: 0 }}><strong>Gas dryers:</strong> the igniter glows orange to light the gas burner. When it fails, you hear the motor but smell no exhaust heat. The flame sensor (radiant sensor) is another common gas-specific failure — it tells the gas valve to stay open once ignition happens. A failed sensor = burner lights, then immediately shuts off. Replacement: $130–$220 including labor.</p>
+              </div>
+              <div style={{ background: '#0D1B2A', borderRadius: 4, padding: '20px 24px', marginBottom: 24 }}>
+                <p style={{ fontFamily: F, fontWeight: 700, fontSize: 13, color: '#FF5722', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 8 }}>Bay Area Note</p>
+                <p style={{ fontFamily: F, fontSize: 14, color: 'rgba(255,255,255,0.82)', lineHeight: 1.7, margin: 0 }}>PG&E gas pressure in some SF neighborhoods runs slightly low during peak hours. If your gas dryer intermittently fails to heat (works fine in the morning, struggles in evening), have a technician check the gas valve coils before replacing the igniter.</p>
               </div>
 
               {/* ── Related Articles ── */}

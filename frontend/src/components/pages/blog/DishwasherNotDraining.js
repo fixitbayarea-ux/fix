@@ -89,7 +89,7 @@ const DishwasherNotDraining = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Dishwasher Not Draining? 7 Causes & How to Fix It", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-02-20", "dateModified": "2026-03-29", "url": "https://fixitbay.net/blog/dishwasher-not-draining" } },
+    { id: 'blogposting-schema', data: { "@context": "https://schema.org", "@type": "BlogPosting", "headline": "Dishwasher Not Draining? 7 Causes & How to Fix It", "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } }, "publisher": { "@type": "Organization", "name": "FixitBay LLC" }, "datePublished": "2026-02-20", "dateModified": "2026-04-13", "url": "https://fixitbay.net/blog/dishwasher-not-draining" } },
     { id: 'howto-schema', data: { "@context": "https://schema.org", "@type": "HowTo", "name": "How to Fix a Dishwasher That Won't Drain", "description": "Step-by-step instructions for the 3 most common causes of a dishwasher not draining: clogged filter, blocked drain hose, and faulty drain pump.", "totalTime": "PT15M", "step": [
       { "@type": "HowToStep", "position": 1, "name": "Clean the dishwasher filter", "text": "Remove the bottom dish rack. Locate the cylindrical filter at the bottom center of the tub. Twist and lift to remove. Rinse under hot water with a soft brush. Clean the filter housing of debris. Reinstall by twisting back into place. Run a rinse cycle to test." },
       { "@type": "HowToStep", "position": 2, "name": "Check the drain hose for blockages", "text": "Pull the dishwasher out slightly or remove the kickplate. Inspect the drain hose for kinks, bends, or visible damage. Disconnect at the sink drain or disposal (bucket underneath). Run water through the hose to check for clogs. Verify the hose has a high loop secured under the counter. Reconnect and test." },
@@ -312,6 +312,16 @@ const DishwasherNotDraining = () => {
                   <strong style={BOLD}>When to call a pro:</strong> Control board diagnosis requires specialized testing equipment. Replacement boards cost $250–$400 depending on the brand. A technician can confirm whether it's the board or a wiring issue.
                 </p>
               </div>
+
+              {/* ── SF Bay Area: Why Dishwashers Drain Poorly in Older Homes ── */}
+              <h2 id="sf-older-homes" style={H2S}>SF Bay Area: Why Dishwashers Drain Poorly in Older Homes</h2>
+              <p style={P}>In San Francisco's older Victorian and Edwardian homes (built pre-1950), dishwasher drain issues are often caused by infrastructure, not the dishwasher itself:</p>
+              <ul style={{ margin: '0 0 16px 20px', fontFamily: F, fontSize: 15, color: '#4A5568', lineHeight: 1.8 }}>
+                <li style={{ marginBottom: 12 }}><strong>Cast iron drain lines:</strong> original cast iron pipes corrode from the inside, narrowing diameter over decades. A dishwasher that suddenly won't drain after years of perfect operation often has a partially blocked drain line, not a failed pump.</li>
+                <li style={{ marginBottom: 12 }}><strong>Air gap placement:</strong> SF building code requires an air gap on the countertop. A clogged air gap mimics a failed drain pump exactly — water backs up into the tub. Clean the air gap cap first before calling for service.</li>
+                <li style={{ marginBottom: 12 }}><strong>Garbage disposal connection:</strong> if the dishwasher drain connects to a disposal and the disposal's knockout plug was never removed during installation (a common error), the drain will back up immediately. Check this before replacing the pump.</li>
+              </ul>
+              <p style={P}>Our technician checks all three during the $80 diagnostic visit.</p>
 
               {/* ── CHECKLIST ── */}
               <div id="quick-checklist" data-testid="checklist" style={{ background: '#0D1B2A', borderRadius: 4, padding: '24px 28px', margin: '24px 0' }}>

@@ -76,7 +76,7 @@ const RepairVsReplace = () => {
         "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Licensed Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
         "publisher": { "@type": "Organization", "name": "FixitBay LLC" },
         "datePublished": "2026-01-01",
-        "dateModified": "2026-01-01",
+        "dateModified": "2026-04-13",
         "url": "https://fixitbay.net/blog/when-to-repair-vs-replace"
       }
     },
@@ -352,6 +352,20 @@ const RepairVsReplace = () => {
                 <p style={{ fontFamily: F, fontWeight: 400, fontSize: 14, color: '#4A5568', lineHeight: 1.7 }}>
                   A 12-year-old GE refrigerator needs a new compressor ($650 repair). Replacement cost: $1,200. <strong style={{ color: '#0D1B2A', fontWeight: 700 }}>Decision: Replace.</strong> The appliance is at the end of its lifespan (13 years expected), repair is 54% of replacement cost, and a new fridge will be more energy-efficient.
                 </p>
+              </div>
+
+              {/* ── The 50% Rule in 2026 ── */}
+              <h2 id="fifty-percent-2026" style={H2S}>The 50% Rule — Does It Still Hold in 2026?</h2>
+              <p style={P}>The classic repair-or-replace rule says: if the repair costs more than 50% of a new unit's price, replace it. In 2026, this rule needs updating for Bay Area residents.</p>
+              <div style={{ background: '#F8F5F0', borderLeft: '3px solid #FF5722', padding: '20px 24px', borderRadius: '0 4px 4px 0', marginBottom: 16 }}>
+                <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: '#1A1A1A', marginBottom: 12 }}>Why the 50% rule is outdated:</p>
+                <p style={{ fontFamily: F, fontSize: 14, color: '#4A5568', lineHeight: 1.8, marginBottom: 8 }}><strong>1.</strong> New appliance prices are up 18–25% since 2021 (supply chain, tariffs, energy efficiency requirements). A new mid-range refrigerator that cost $900 in 2020 costs $1,100–$1,400 now.</p>
+                <p style={{ fontFamily: F, fontSize: 14, color: '#4A5568', lineHeight: 1.8, marginBottom: 8 }}><strong>2.</strong> Delivery and installation fees in SF: $150–$300 typically. Haul-away of old unit: $50–$100 extra. In a 3rd-floor SF walkup with narrow stairs: add $200–$400.</p>
+                <p style={{ fontFamily: F, fontSize: 14, color: '#4A5568', lineHeight: 1.8, marginBottom: 0 }}><strong>3.</strong> Rebate programs: BayREN and PG&E offer rebates on Energy Star appliances. A washer replacement may qualify for a $100–$200 rebate, changing the math.</p>
+              </div>
+              <div style={{ background: '#0D1B2A', borderRadius: 4, padding: '20px 24px', marginBottom: 24 }}>
+                <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#FF5722', marginBottom: 8 }}>Updated Bay Area Rule for 2026</p>
+                <p style={{ fontFamily: F, fontSize: 14, color: 'rgba(255,255,255,0.85)', lineHeight: 1.7, margin: 0 }}>Repair if the repair cost is under 60% of (new unit + delivery + installation - available rebates). For luxury brands (Sub-Zero, Wolf, Miele, Viking), repair is almost always worth it at any age because replacement cost is $3,000–$15,000+.</p>
               </div>
 
               {/* ── FAQ ── */}

@@ -106,7 +106,7 @@ const ApplianceRepairCostSanFrancisco = () => {
         "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
         "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/navbar-logo-new-112.webp" } },
         "datePublished": "2026-03-23",
-        "dateModified": "2026-03-23",
+        "dateModified": "2026-04-13",
         "mainEntityOfPage": "https://fixitbay.net/blog/appliance-repair-cost-san-francisco"
       }
     },
@@ -378,6 +378,30 @@ const ApplianceRepairCostSanFrancisco = () => {
                   </tbody>
                 </table>
               </div>
+
+              {/* ── 2026 Pricing Update ── */}
+              <h2 id="2026-update" style={H2S}>2026 Appliance Repair Cost Update — San Francisco Bay Area</h2>
+              <p style={P}>Prices updated April 2026. Parts costs have stabilized after supply chain normalization in 2023–2024. Labor rates in SF reflect local cost of living.</p>
+              <div style={{ background: '#F8F5F0', border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: '24px 28px', marginBottom: 16 }}>
+                <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#1A1A1A', marginBottom: 12 }}>Diagnostic Fees (April 2026)</p>
+                <p style={{ fontFamily: F, fontSize: 14, color: '#4A5568', lineHeight: 1.7, marginBottom: 4 }}>Residential appliance repair: <strong>$80</strong> (applied toward repair)</p>
+                <p style={{ fontFamily: F, fontSize: 14, color: '#4A5568', lineHeight: 1.7, marginBottom: 16 }}>Commercial / HVAC diagnostic: <strong>$100</strong> (applied toward repair)</p>
+                <p style={{ fontFamily: F, fontWeight: 700, fontSize: 14, color: '#1A1A1A', marginBottom: 12 }}>Typical Repair Ranges (parts + labor, April 2026)</p>
+                <div style={{ fontFamily: F, fontSize: 14, color: '#4A5568', lineHeight: 2 }}>
+                  Refrigerator — thermostat/sensor: $180 – $280<br/>
+                  Refrigerator — compressor (standard): $420 – $650<br/>
+                  Refrigerator — compressor (Sub-Zero): $600 – $1,100<br/>
+                  Washer — drain pump: $220 – $320<br/>
+                  Washer — door seal (front-load): $180 – $280<br/>
+                  Dryer — heating element: $120 – $200<br/>
+                  Dryer — thermal fuse: $90 – $150<br/>
+                  Dishwasher — drain pump: $280 – $380<br/>
+                  Dishwasher — control board: $350 – $480<br/>
+                  Oven — igniter (gas): $160 – $250<br/>
+                  Oven — control board: $300 – $500
+                </div>
+              </div>
+              <p style={P}>All prices include $80 diagnostic credit. 180-day warranty on all parts and labor.</p>
 
               {/* ── FAQ ── */}
               <div id="faq" data-testid="faq-section" style={{ border: '1px solid rgba(255,87,34,0.2)', borderRadius: 4, padding: 28, margin: '32px 0' }}>

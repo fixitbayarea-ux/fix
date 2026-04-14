@@ -18,6 +18,7 @@ const FAQ_ITEMS = [
   { q: "Is it worth repairing a 10-year-old refrigerator?", a: "If the repair cost exceeds 50% of a new refrigerator\u2019s price, replacement usually makes more sense. The exception is premium brands \u2014 a Sub-Zero costs $5,000\u2013$15,000 new, so a $800 compressor repair is absolutely worth it even at 15+ years." },
   { q: "Can I fix a refrigerator not cooling myself?", a: "You can check three things yourself: clean the condenser coils, verify the thermostat setting (35\u201338\u00B0F), and test the door seal with a dollar bill. These cover about 40% of cases. If these don\u2019t solve it, the issue likely requires a licensed technician with diagnostic tools." },
   { q: "How long does refrigerator repair take?", a: "Most repairs take 1\u20132 hours once the technician arrives. Parts like fan motors and thermostats are usually in stock on our truck. Compressor replacement may require ordering the part and a return visit. FixitBay LLC offers same- or next-day appointments Monday through Saturday." },
+  { q: "Is it worth repairing a refrigerator that is 10 years old?", a: "It depends on the brand and what failed. A 10-year-old Whirlpool with a failed water inlet valve ($150\u2013$200 repair) is worth fixing \u2014 the appliance has 5+ years of life remaining. A 10-year-old Samsung with a compressor failure ($400\u2013$600) is borderline \u2014 compare to replacement cost. Sub-Zero and Viking refrigerators are worth repairing at almost any age because of their $5,000+ replacement cost. Our technician will give you an honest recommendation on site." },
 ];
 
 const TOC = [
@@ -30,6 +31,7 @@ const TOC = [
   { id: 'defrost', label: 'Defrost System Failure' },
   { id: 'compressor', label: 'Compressor Failure or Refrigerant Leak' },
   { id: 'checklist', label: 'DIY Checklist Before Calling a Technician' },
+  { id: 'when-to-call', label: 'When to Call a Technician vs. DIY' },
   { id: 'pricing', label: 'Repair Pricing \u2014 SF Bay Area' },
   { id: 'field-note', label: "Andrei\u2019s Field Note" },
   { id: 'faq', label: 'Frequently Asked Questions' },
@@ -76,7 +78,7 @@ const RefrigeratorNotCooling = () => {
         "author": { "@type": "Person", "name": "Andrei Suprunov", "jobTitle": "Lead Appliance Technician", "worksFor": { "@type": "Organization", "name": "FixitBay LLC" } },
         "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/navbar-logo-new-112.webp" } },
         "datePublished": "2026-03-23",
-        "dateModified": "2026-03-23",
+        "dateModified": "2026-04-13",
         "mainEntityOfPage": "https://fixitbay.net/blog/refrigerator-not-cooling"
       }
     },

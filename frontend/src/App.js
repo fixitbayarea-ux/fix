@@ -120,6 +120,9 @@ const RefrigeratorWaterFilter = lazy(() => import("./components/pages/blog/Refri
 const DishwasherNotDraining = lazy(() => import("./components/pages/blog/DishwasherNotDraining"));
 const DryerNotHeating = lazy(() => import("./components/pages/blog/DryerNotHeating"));
 const ApplianceRepairCostSanFrancisco = lazy(() => import("./components/pages/blog/ApplianceRepairCostSanFrancisco"));
+const BoschDishwasherErrorCodes = lazy(() => import("./components/pages/blog/BoschDishwasherErrorCodes"));
+const LGWasherUEError = lazy(() => import("./components/pages/blog/LGWasherUEError"));
+const SubZeroNotCooling = lazy(() => import("./components/pages/blog/SubZeroNotCooling"));
 const NeighborhoodPage = lazy(() => import("./components/pages/NeighborhoodPage"));
 const MarinCountyPage = lazy(() => import("./components/pages/MarinCountyPage"));
 const CityServicePage = lazy(() => import("./components/pages/CityServicePage"));
@@ -205,6 +208,9 @@ function AppShell() {
         <Route path="/blog/dishwasher-not-draining" element={<DishwasherNotDraining />} />
         <Route path="/blog/dryer-not-heating" element={<DryerNotHeating />} />
         <Route path="/blog/appliance-repair-cost-san-francisco" element={<ApplianceRepairCostSanFrancisco />} />
+        <Route path="/blog/bosch-dishwasher-error-codes" element={<BoschDishwasherErrorCodes />} />
+        <Route path="/blog/lg-washer-ue-error" element={<LGWasherUEError />} />
+        <Route path="/blog/sub-zero-refrigerator-not-cooling" element={<SubZeroNotCooling />} />
         
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
