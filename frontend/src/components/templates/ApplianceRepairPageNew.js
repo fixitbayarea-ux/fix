@@ -225,7 +225,7 @@ const CITY_HERO_BG = {
   'san-rafael': '/images/cities/san-rafael-bg.webp',
   'sausalito': '/images/cities/sausalito-bg.webp',
   'novato': '/images/cities/novato-bg.webp',
-  'belvedere-tiburon': '/images/cities/belvedere-bg.webp',
+  'tiburon': '/images/cities/belvedere-bg.webp',
   'corte-madera': '/images/cities/corte-madera-bg.webp',
   'ross': '/images/cities/ross-bg.webp',
   'san-quentin': '/images/cities/san-quentin-bg.webp',

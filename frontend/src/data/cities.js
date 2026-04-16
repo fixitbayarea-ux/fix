@@ -19,7 +19,6 @@ export const SERVICE_CITIES = [
   { name: 'Mill Valley', slug: 'mill-valley', path: '/mill-valley-appliance-repair', region: 'North Bay', coordinates: [-122.5450, 37.9061] },
   { name: 'Sausalito', slug: 'sausalito', path: '/sausalito-appliance-repair', region: 'North Bay', coordinates: [-122.4853, 37.8591] },
   { name: 'Belvedere', slug: 'belvedere', path: '/belvedere-appliance-repair', region: 'North Bay', coordinates: [-122.4644, 37.8727] },
-  { name: 'Belvedere Tiburon', slug: 'belvedere-tiburon', path: '/belvedere-tiburon-appliance-repair', region: 'North Bay', coordinates: [-122.4604, 37.8731] },
   { name: 'Tiburon', slug: 'tiburon', path: '/tiburon-appliance-repair', region: 'North Bay', coordinates: [-122.4564, 37.8736] },
   { name: 'Corte Madera', slug: 'corte-madera', path: '/corte-madera-appliance-repair', region: 'North Bay', coordinates: [-122.5271, 37.9254] },
   { name: 'San Quentin', slug: 'san-quentin', path: '/san-quentin-appliance-repair', region: 'North Bay', coordinates: [-122.4869, 37.9413] },

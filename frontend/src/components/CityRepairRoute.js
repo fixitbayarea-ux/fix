@@ -19,7 +19,7 @@ import Montara from './pages/cities/Montara';
 import SanRafael from './pages/cities/SanRafael';
 import Sausalito from './pages/cities/Sausalito';
 import Novato from './pages/cities/Novato';
-import BelvedereTiburon from './pages/cities/BelvedereTiburon';
+import Tiburon from './pages/cities/Tiburon';
 import CorteMadera from './pages/cities/CorteMadera';
 import Ross from './pages/cities/Ross';
 import SanQuentin from './pages/cities/SanQuentin';
@@ -52,9 +52,7 @@ const CUSTOM_CITY_PAGES = {
   'san-rafael': SanRafael,
   'sausalito': Sausalito,
   'novato': Novato,
-  'belvedere': BelvedereTiburon,
-  'tiburon': BelvedereTiburon,
-  'belvedere-tiburon': BelvedereTiburon,
+  'tiburon': Tiburon,
   'corte-madera': CorteMadera,
   'ross': Ross,
   'san-quentin': SanQuentin,

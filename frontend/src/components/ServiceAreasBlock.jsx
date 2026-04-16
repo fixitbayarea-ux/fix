@@ -13,7 +13,7 @@ const cities = [
   { name: 'Mill Valley', href: '/mill-valley-appliance-repair' },
   { name: 'San Rafael', href: '/san-rafael-appliance-repair' },
   { name: 'Sausalito', href: '/sausalito-appliance-repair' },
-  { name: 'Belvedere Tiburon', href: '/belvedere-tiburon-appliance-repair' },
+  { name: 'Tiburon', href: '/tiburon-appliance-repair' },
   { name: 'Corte Madera', href: '/corte-madera-appliance-repair' },
   { name: 'Larkspur', href: '/larkspur-appliance-repair' },
   { name: 'Greenbrae', href: '/greenbrae-appliance-repair' },
