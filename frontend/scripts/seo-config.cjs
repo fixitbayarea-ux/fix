@@ -130,7 +130,10 @@ const BLOG_PAGES = [
   { slug: 'blog/dryer-not-heating', title: 'Dryer Not Heating' },
   { slug: 'blog/appliance-repair-cost-san-francisco', title: 'Appliance Repair Cost San Francisco' },
   { slug: 'blog/appliance-repair-marin-county', title: 'Appliance Repair Marin County' },
-  { slug: 'blog/same-day-appliance-repair-bay-area', title: 'Same-Day Appliance Repair Bay Area' }
+  { slug: 'blog/same-day-appliance-repair-bay-area', title: 'Same-Day Appliance Repair Bay Area' },
+  { slug: 'blog/bosch-dishwasher-error-codes', title: 'Bosch Dishwasher Error Codes: E24, E25, E15' },
+  { slug: 'blog/lg-washer-ue-error', title: 'LG Washer UE Error: How to Fix' },
+  { slug: 'blog/sub-zero-refrigerator-not-cooling', title: 'Sub-Zero Refrigerator Not Cooling' }
 ];
 
 const OTHER_KEY_PAGES = [
@@ -1768,6 +1771,26 @@ function getSEOContent(route) {
       content: `
         <p style="margin-bottom: 1rem;">This Privacy Policy explains how FixitBay LLC collects, uses, and protects your personal information when you use our appliance repair services or visit our website.</p>
         <p>For questions about our privacy practices, contact us at <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a>.</p>
+      `,
+      internalLinks: defaultInternalLinks
+    };
+  }
+
+  // Terms of Service page
+  if (route === '/terms') {
+    return {
+      title: 'Terms of Service | FixitBay LLC',
+      robots: 'noindex, follow',
+      description: 'Terms of Service for FixitBay LLC appliance repair services in San Francisco Bay Area. Service agreements, warranty terms, and policies.',
+      h1: 'Terms of Service',
+      content: `
+        <p style="margin-bottom: 1rem;">These Terms of Service govern your use of FixitBay LLC's appliance repair services and website. By scheduling a service appointment or using our website, you agree to these terms.</p>
+        <p style="margin-bottom: 1rem;"><strong>Service Area:</strong> FixitBay LLC provides residential and commercial appliance repair services in San Francisco, the Peninsula, and Marin County, California.</p>
+        <p style="margin-bottom: 1rem;"><strong>Diagnostic Fee:</strong> A $80 diagnostic fee is charged for all service visits. This fee is fully applied toward the cost of repair if you choose to proceed. The diagnostic fee is non-refundable if you decline the repair.</p>
+        <p style="margin-bottom: 1rem;"><strong>Warranty:</strong> All repairs performed by FixitBay LLC include a 180-day warranty on parts and labor. If the same issue recurs within 180 days of the original repair, FixitBay LLC will return and resolve the issue at no additional charge.</p>
+        <p style="margin-bottom: 1rem;"><strong>Payment:</strong> Payment is due upon completion of service. We accept cash, credit cards, and checks. All prices quoted are in US dollars.</p>
+        <p style="margin-bottom: 1rem;"><strong>Scheduling:</strong> Appointments are scheduled on a first-come, first-served basis. Same-day and next-day appointments are available Monday through Saturday. We will make reasonable efforts to arrive within the confirmed time window.</p>
+        <p>For questions about these terms, contact us at <a href="tel:+17605435733" style="color: #C0362C; font-weight: bold;">(760) 543-5733</a> or email info@fixitbay.net.</p>
       `,
       internalLinks: defaultInternalLinks
     };

@@ -79,9 +79,9 @@ ALLOWED_CITIES.forEach(city => {
 // City+Service combination pages — {city}-{service}-repair
 const CITY_SERVICE_CITIES = [
   'san-francisco', 'daly-city', 'south-san-francisco', 'san-bruno', 'pacifica',
-  'millbrae', 'mill-valley', 'san-rafael', 'sausalito', 'novato',
-  'corte-madera', 'tiburon', 'belvedere', 'larkspur', 'greenbrae',
-  'ross', 'fairfax', 'san-anselmo'
+  'millbrae', 'colma', 'brisbane', 'montara', 'mill-valley', 'san-rafael',
+  'sausalito', 'novato', 'corte-madera', 'tiburon', 'belvedere', 'larkspur',
+  'greenbrae', 'ross', 'fairfax', 'san-anselmo', 'san-quentin'
 ];
 const CITY_SERVICE_SERVICES = ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven', 'wine-cooler', 'ice-maker'];
 CITY_SERVICE_CITIES.forEach(city => {
@@ -107,6 +107,7 @@ routes.push('/thank-you-booking');
 routes.push('/services');
 routes.push('/llm-info');
 routes.push('/book');
+routes.push('/terms');
 
 // SF neighborhood pages
 const SF_NEIGHBORHOODS = [
@@ -298,20 +299,30 @@ filteredRoutes.forEach(route => {
   }
 });
 
-// Combine: base redirects (301s from public/_redirects) + HTML rewrites + catch-all
+// Combine: base redirects (301s from public/_redirects) + HTML rewrites + SPA-only rewrites + 404 catch-all
+// SPA-only routes: admin pages that need index.html but shouldn't get a prerendered snapshot
+const spaOnlyRewrites = [
+  '/admin  /index.html  200',
+  '/admin/dashboard  /index.html  200',
+  '/admin/cms  /index.html  200',
+];
+
 const finalRedirects = [
   baseLines,
   '',
   '# SSG route-to-HTML rewrites (auto-generated)',
   ...htmlRewrites,
   '',
-  '# SPA catch-all (MUST be last)',
-  '/*  /index.html  200'
+  '# SPA-only routes (no prerender, still serve index.html)',
+  ...spaOnlyRewrites,
+  '',
+  '# 404 catch-all — anything not matched above returns HTTP 404',
+  '/*  /404.html  404'
 ].join('\n') + '\n';
 
 const redirectsPath = path.join(BUILD_DIR, '_redirects');
 fs.writeFileSync(redirectsPath, finalRedirects, 'utf-8');
-console.log(`\n📄 Generated _redirects: ${baseLines.split('\n').length} base rules + ${htmlRewrites.length} HTML rewrites + SPA fallback`);
+console.log(`\n📄 Generated _redirects: ${baseLines.split('\n').length} base rules + ${htmlRewrites.length} HTML rewrites + ${spaOnlyRewrites.length} SPA-only + 404 catch-all`);
 
 console.log('\n🎉 SEO Snapshots generation complete!');
 
