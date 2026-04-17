@@ -40,10 +40,9 @@ export default function CanonicalUpdater() {
     try {
       // --- SEO: canonical link and og:url ---
       // Canonical URL uses normalized path (no trailing slash) + non-tracking query params.
-      // All FixitBay routes are defined in lowercase. Lowercase normalization prevents
-      // duplicate canonicals from mixed-case URLs (e.g. /About vs /about).
-      // If case-sensitive routes are ever added, replace this with a whitelist check.
-      const cleanPath = normalizePath(pathname.toLowerCase());
+      // Explicit SEO decision: preserve route case to avoid changing potentially case-sensitive paths.
+      // Tracking cleanup and trailing-slash normalization are applied, but no forced lowercasing.
+      const cleanPath = normalizePath(pathname);
       const cleanQuery = stripTracking(search);
       const canonicalUrl = `${CANONICAL_HOST}${cleanPath}${cleanQuery}`;
 
