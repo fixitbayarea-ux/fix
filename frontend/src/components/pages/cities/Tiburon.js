@@ -35,8 +35,8 @@ const Tiburon = () => {
     <div style={{ paddingTop: 0 }}>
       <ApplianceRepairPageNew
         appliance="Appliance Repair"
-        pageTitle="Tiburon Appliance Repair | Same-Day Service | FixitBay LLC"
-        metaDescription="Tiburon appliance repair by licensed technicians. Sub-Zero, Wolf, Miele specialists for waterfront homes. Same- or next-day service. $80 diagnostic. 180-day warranty. Call (760) 543-5733."
+        pageTitle="Appliance Repair Tiburon | Luxury Home Specialists | FixitBay LLC"
+        metaDescription="Premium appliance repair in Tiburon & Belvedere. Sub-Zero, Wolf, Miele specialists. Waterfront home experts. Same-day service. Call (760) 543-5733."
         commonProblems={commonProblems}
         faqData={faqData}
         serviceDescription={serviceDescription}
