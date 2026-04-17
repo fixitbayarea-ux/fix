@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import DOMPurify from 'dompurify';
 import SEOMetaTags from '../SEOMetaTags';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Clock, Tag, ArrowLeft, Phone } from 'lucide-react';
 import UnifiedFooter from '../UnifiedFooter';
 import { getBlogImage } from '../../data/blogImages';
+import { useArticleSchema } from '../../hooks/useSchema';
 
 const API_URL = process.env.REACT_APP_BACKEND_URL;
 

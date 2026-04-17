@@ -54,3 +54,43 @@ export function useSchemas(schemas) {
     };
   }, [schemas]);
 }
+
+/**
+ * Injects a validated Article/BlogPosting JSON-LD schema.
+ * Validates required fields before injection; logs warning in dev if invalid.
+ * Uses id-based upsert: replaces existing script with same id, cleans up on unmount.
+ *
+ * @param {string} id - Unique script element ID (e.g. "blog-article-schema")
+ * @param {Object|null} data - The Article JSON-LD object
+ */
+const REQUIRED_ARTICLE_FIELDS = ['mainEntityOfPage', 'datePublished', 'dateModified', 'author', 'publisher'];
+
+export function useArticleSchema(id, data) {
+  useEffect(() => {
+    if (!data) return;
+
+    // Validate required fields
+    const missing = REQUIRED_ARTICLE_FIELDS.filter(field => !data[field]);
+    if (missing.length > 0) {
+      if (process.env.NODE_ENV === 'development') {
+        console.warn(`[useArticleSchema] Skipping injection for "${id}" — missing required fields: ${missing.join(', ')}`);
+      }
+      return;
+    }
+
+    // Id-based upsert: remove existing, then insert fresh
+    const existing = document.getElementById(id);
+    if (existing) existing.remove();
+
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = id;
+    script.textContent = JSON.stringify(data);
+    document.head.appendChild(script);
+
+    return () => {
+      const el = document.getElementById(id);
+      if (el) el.remove();
+    };
+  }, [id, data]);
+}
