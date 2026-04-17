@@ -3,20 +3,34 @@ import { useLocation } from 'react-router-dom';
 
 const CANONICAL_HOST = 'https://fixitbay.net'; // absolute, non-www, https
 
+const TRACKING_PARAMS = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'];
+
 function normalizePath(pathname) {
   if (!pathname) return '/';
-  // remove trailing slash (except root)
+  // remove trailing slash (except root) — all routes are defined without trailing slash
   const p = pathname !== '/' && pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
   return p || '/';
 }
 
+/**
+ * Strip only tracking/attribution params from query string.
+ * Preserves all non-tracking params (e.g. ?go=1, ?page=2, ?appliance=refrigerator).
+ */
 function stripTracking(search) {
   if (!search) return '';
   const params = new URLSearchParams(search);
-  // preserve utm params in URL for analytics but exclude from canonical
-  ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'].forEach(k => params.delete(k));
+  TRACKING_PARAMS.forEach(k => params.delete(k));
   const s = params.toString();
   return s ? `?${s}` : '';
+}
+
+/**
+ * Returns true if the query string contains at least one tracking param.
+ */
+function hasTrackingParams(search) {
+  if (!search) return false;
+  const params = new URLSearchParams(search);
+  return TRACKING_PARAMS.some(k => params.has(k));
 }
 
 export default function CanonicalUpdater() {
@@ -24,10 +38,13 @@ export default function CanonicalUpdater() {
 
   useEffect(() => {
     try {
+      // --- SEO: canonical link and og:url ---
+      // Canonical URL uses normalized path (no trailing slash) + non-tracking query params.
+      // All FixitBay routes are lowercase by convention, so lowercase is safe here.
       const cleanPath = normalizePath(pathname.toLowerCase());
-      const canonicalUrl = `${CANONICAL_HOST}${cleanPath}`;
+      const cleanQuery = stripTracking(search);
+      const canonicalUrl = `${CANONICAL_HOST}${cleanPath}${cleanQuery}`;
 
-      // Update or insert canonical link
       let link = document.querySelector("link[rel='canonical']");
       if (!link) {
         link = document.createElement('link');
@@ -36,7 +53,6 @@ export default function CanonicalUpdater() {
       }
       link.setAttribute('href', canonicalUrl);
 
-      // Also update og:url for consistency
       let og = document.querySelector("meta[property='og:url']");
       if (!og) {
         og = document.createElement('meta');
@@ -45,14 +61,16 @@ export default function CanonicalUpdater() {
       }
       og.setAttribute('content', canonicalUrl);
 
-      // Replace URL in address bar without tracking params
-      const cleaned = `${cleanPath}`;
-      const current = window.location.pathname + window.location.search;
-      if (current !== cleaned) {
-        window.history.replaceState({}, '', cleaned);
+      // --- UX: address bar cleanup ---
+      // Only mutate the address bar if tracking params are present.
+      // This strips utm_*, gclid, fbclid from the visible URL while preserving
+      // non-tracking params (e.g. ?go=1) and page state.
+      if (hasTrackingParams(search)) {
+        const visibleUrl = `${cleanPath}${cleanQuery}`;
+        window.history.replaceState({}, '', visibleUrl);
       }
     } catch (e) {
-      // no-op
+      // no-op — canonical is non-critical; never break rendering
     }
   }, [pathname, search]);
 
