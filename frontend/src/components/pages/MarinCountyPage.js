@@ -291,7 +291,7 @@ const MarinCountyPage = () => {
           <h2 className="text-xl font-bold text-[#1A3B5D] mb-4">Learn More About Marin County Appliance Repair</h2>
           <div className="flex flex-col gap-3">
             <a href="/blog/appliance-repair-marin-county" className="text-[#C0362C] font-semibold hover:underline">Appliance Repair in Marin County — Complete Guide &rarr;</a>
-            <a href="/blog/same- or next-day-appliance-repair-bay-area" className="text-[#C0362C] font-semibold hover:underline">Same-Day Appliance Repair in the Bay Area — How It Works &rarr;</a>
+            <a href="/blog/same-day-appliance-repair-bay-area" className="text-[#C0362C] font-semibold hover:underline">Same-Day Appliance Repair in the Bay Area — How It Works &rarr;</a>
             <a href="/san-rafael-appliance-repair" className="text-[#C0362C] font-semibold hover:underline">San Rafael Appliance Repair &rarr;</a>
             <a href="/service-areas" className="text-[#C0362C] font-semibold hover:underline">View All Service Areas &rarr;</a>
           </div>

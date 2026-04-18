@@ -22,12 +22,22 @@
     "build": "craco build",
     "postbuild": "node scripts/generate-seo-snapshots.cjs && node scripts/verify-seo-snapshots.cjs && node scripts/cleanup-redirect-html.cjs",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prebuild": "node scripts/validate-slugs.cjs"
   },
   "reactSnap": {
     "source": "build",
     "waitFor": 2000,
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-accelerated-2d-canvas",
+      "--no-first-run",
+      "--no-zygote",
+      "--single-process",
+      "--disable-gpu"
+    ],
     "minifyHtml": {
       "collapseWhitespace": false,
       "removeComments": false
@@ -136,20 +146,6 @@
     "cacheAjaxRequests": false,
     "puppeteer": {
       "headless": true
-    },
-    "puppeteerArgs": [
-      "--no-sandbox",
-      "--disable-setuid-sandbox",
-      "--disable-dev-shm-usage",
-      "--disable-accelerated-2d-canvas",
-      "--no-first-run",
-      "--no-zygote",
-      "--single-process",
-      "--disable-gpu"
-    ],
-    "minifyHtml": {
-      "collapseWhitespace": false,
-      "removeComments": false
     }
   },
   "browserslist": {
