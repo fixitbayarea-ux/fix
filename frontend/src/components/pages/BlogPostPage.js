@@ -6,8 +6,29 @@ import { Clock, Tag, ArrowLeft, Phone } from 'lucide-react';
 import UnifiedFooter from '../UnifiedFooter';
 import { getBlogImage } from '../../data/blogImages';
 import { useArticleSchema } from '../../hooks/useSchema';
+import { getStaticPostBySlug } from '../../data/blogPosts';
 
 const API_URL = process.env.REACT_APP_BACKEND_URL;
+
+/**
+ * Generate fallback HTML content for static posts that lack CMS content.
+ */
+function generateFallbackContent(post) {
+  const title = post.title || 'Appliance Repair Guide';
+  const excerpt = post.excerpt || '';
+  return `
+    <h2>Overview</h2>
+    <p>${excerpt}</p>
+    <h2>What You Need to Know</h2>
+    <p>This guide covers everything about ${title.toLowerCase()}. Our licensed technicians in the San Francisco Bay Area handle these issues daily with same- or next-day appointments.</p>
+    <h2>Common Issues & Solutions</h2>
+    <p>Most appliance problems fall into a few categories: mechanical wear, electrical failures, and environmental factors (humidity, hard water, power surges). Early diagnosis prevents costly damage.</p>
+    <h2>When to Call a Professional</h2>
+    <p>If basic troubleshooting doesn't resolve the issue, or if the repair involves gas lines, refrigerant, or electrical components, call a licensed technician. DIY on these systems can void warranties or create safety hazards.</p>
+    <h2>FixitBay LLC — Bay Area Appliance Repair</h2>
+    <p>We serve 22 cities across San Francisco, the Peninsula, and Marin County. $80 diagnostic fee credited toward repair. 180-day warranty on all parts and labor. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book?go=1" style="color:#C0362C;font-weight:bold;">book online</a>.</p>
+  `;
+}
 
 const BlogPostPage = () => {
   const { slug } = useParams();
@@ -17,10 +38,46 @@ const BlogPostPage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setPost(null);
+    setLoading(true);
     fetch(`${API_URL}/api/cms/blog-posts/${slug}`)
       .then(r => r.json())
-      .then(d => { if (d.success) setPost(d.data); })
-      .catch(() => {})
+      .then(d => {
+        if (d.success && d.data) {
+          setPost(d.data);
+        } else {
+          // CMS miss — try static fallback
+          const staticPost = getStaticPostBySlug(slug);
+          if (staticPost) {
+            setPost({
+              ...staticPost,
+              content: generateFallbackContent(staticPost),
+              meta_title: staticPost.title,
+              meta_description: staticPost.excerpt,
+              author: 'Andrei Suprunov',
+              tags: staticPost.categories || [],
+              created_at: staticPost.publish_date,
+              updated_at: staticPost.publish_date,
+            });
+          }
+        }
+      })
+      .catch(() => {
+        // Network error — try static fallback
+        const staticPost = getStaticPostBySlug(slug);
+        if (staticPost) {
+          setPost({
+            ...staticPost,
+            content: generateFallbackContent(staticPost),
+            meta_title: staticPost.title,
+            meta_description: staticPost.excerpt,
+            author: 'Andrei Suprunov',
+            tags: staticPost.categories || [],
+            created_at: staticPost.publish_date,
+            updated_at: staticPost.publish_date,
+          });
+        }
+      })
       .finally(() => setLoading(false));
   }, [slug]);
 
@@ -35,7 +92,7 @@ const BlogPostPage = () => {
       document.title = post.meta_title || post.title;
     }
     return () => {
-      document.title = 'Appliance Repair San Francisco & Bay Area | FixitBay LLC';
+      document.title = 'Appliance Repair San Francisco & Bay Area | FixitBay LLC';
     };
   }, [post]);
 
@@ -52,13 +109,12 @@ const BlogPostPage = () => {
       "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/logo.png" } },
       "datePublished": post.publish_date || post.created_at,
       "dateModified": post.updated_at || post.created_at,
-      "mainEntityOfPage": `https://fixitbay.net/blog/${post.slug}`
+      "mainEntityOfPage": `https://fixitbay.net/blog/${slug}`
     };
   }, [post, slug]);
 
   // Inject exactly one Article JSON-LD with id="blog-article-schema"
   useArticleSchema('blog-article-schema', articleSchema);
-
 
   if (loading) return (
     <div className="min-h-screen flex items-center justify-center" style={{ paddingTop: '64px' }}>
@@ -70,12 +126,11 @@ const BlogPostPage = () => {
 
   const img = getBlogImage(slug, post.categories);
 
-
   return (
     <div className="min-h-screen" style={{ paddingTop: '64px', background: '#F7FAFC' }}>
-      <SEOMetaTags title={post.title + ' | FixitBay LLC Blog'} description={post.meta_description || post.excerpt} canonical={`https://fixitbay.net/blog/${post.slug}`} />
+      <SEOMetaTags title={(post.meta_title || post.title) + ' | FixitBay LLC Blog'} description={post.meta_description || post.excerpt} canonical={`https://fixitbay.net/blog/${slug}`} />
 
-      {/* ─── Back button + Breadcrumb bar ─── */}
+      {/* Back button + Breadcrumb bar */}
       <div className="bg-white border-b shadow-sm">
         <div className="max-w-3xl mx-auto px-4 py-3 flex items-center justify-between">
           <button
@@ -96,7 +151,7 @@ const BlogPostPage = () => {
         </div>
       </div>
 
-      {/* ─── Hero image ─── */}
+      {/* Hero image */}
       <div className="max-w-3xl mx-auto px-4 mt-8">
         <div className="rounded-2xl overflow-hidden shadow-lg">
           <img
@@ -123,7 +178,7 @@ const BlogPostPage = () => {
           </h1>
           <div className="flex items-center gap-4 text-sm text-gray-500">
             <span className="flex items-center gap-1"><Clock className="w-4 h-4" />{post.publish_date || 'Recently'}</span>
-            <span>By {post.author || 'FixitBay LLC Team'}</span>
+            <span>By {post.author || 'FixitBay LLC Team'}</span>
           </div>
         </header>
 
@@ -131,7 +186,7 @@ const BlogPostPage = () => {
         <div
           className="prose prose-lg max-w-none mb-12"
           style={{ color: '#2B3A4A' }}
-          dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.content) }}
+          dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.content || '') }}
           data-testid="blog-content"
         />
 
@@ -146,8 +201,8 @@ const BlogPostPage = () => {
 
         {/* CTA */}
         <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 text-center mb-10">
-          <h2 className="text-2xl font-bold mb-3" style={{ color: '#1A3B5D' }}>Need Appliance Repair?</h2>
-          <p className="text-gray-600 mb-6">Fast scheduling available across the Bay Area. $80 diagnostic applied to repair.</p>
+          <h2 className="text-2xl font-bold mb-3" style={{ color: '#1A3B5D' }}>Need Appliance Repair?</h2>
+          <p className="text-gray-600 mb-6">Fast scheduling available across the Bay Area. $80 diagnostic applied to repair.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="/book?go=1"
               className="px-6 py-3 font-bold rounded-lg text-white" style={{ backgroundColor: '#C0362C' }}>
