@@ -162,7 +162,7 @@ const BlogListPage = () => {
                     <span className="blp-featured-badge">Featured</span>
                   </div>
                   <div className="blp-featured-body">
-                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 12 }}>
+                    <div className="blp-feat-chips">
                       {(featuredPost.categories || []).map(c => (
                         <span key={c} className="blp-cat-chip">{c}</span>
                       ))}
@@ -171,7 +171,7 @@ const BlogListPage = () => {
                       <Link to={`/blog/${featuredPost.slug}`} className="blp-link-plain">{featuredPost.title}</Link>
                     </h2>
                     <p className="blp-body-sm">{featuredPost.excerpt}</p>
-                    <div className="blp-meta" style={{ marginBottom: 20 }}>{formatDate(featuredPost.publish_date)}{featuredPost.readTime ? ` \u00B7 ${featuredPost.readTime} read` : ''}</div>
+                    <div className="blp-meta blp-feat-meta">{formatDate(featuredPost.publish_date)}{featuredPost.readTime ? ` \u00B7 ${featuredPost.readTime} read` : ''}</div>
                     <Link to={`/blog/${featuredPost.slug}`} className="blp-feat-btn" data-testid={`blog-card-${featuredPost.slug}`}>
                       Read Full Article &rarr;
                     </Link>
@@ -184,7 +184,7 @@ const BlogListPage = () => {
 
         {/* Search results count */}
         {searchTerm && (
-          <div className="blp-max-1000" style={{ padding: '24px 24px 0' }}>
+          <div className="blp-max-1000 blp-search-results">
             <p className="blp-body">
               Found {filtered.length} result{filtered.length !== 1 ? 's' : ''} for &ldquo;<strong>{searchTerm}</strong>&rdquo;
             </p>
@@ -194,19 +194,19 @@ const BlogListPage = () => {
         {/* 4. ARTICLES GRID */}
         <section data-testid="blog-grid" className="blp-grid-section">
           <div className="blp-grid-inner">
-            <h2 className="blp-section-h2" style={{ color: 'var(--blp-text-dark)', marginBottom: 8, paddingTop: 24 }}>
+            <h2 className="blp-section-h2 blp-grid-h2">
               Repair Tips &amp; Guides
             </h2>
-            <p className="blp-body" style={{ marginBottom: 24 }}>
+            <p className="blp-body blp-grid-sub">
               Step-by-step troubleshooting and cost breakdowns from licensed Bay Area technicians.
             </p>
             {loading ? (
-              <div className="blp-center" style={{ padding: '48px 0' }}>
+              <div className="blp-center blp-pad-section">
                 <div className="blp-spinner" />
               </div>
             ) : gridPosts.length === 0 && !featuredPost ? (
-              <div className="blp-center" style={{ padding: '48px 0' }}>
-                <p style={{ fontWeight: 600, fontSize: 16, color: 'var(--blp-text-mid)' }}>No articles found. Try a different search or category.</p>
+              <div className="blp-center blp-pad-section">
+                <p className="blp-empty-text">No articles found. Try a different search or category.</p>
               </div>
             ) : (
               <div className="blp-grid">
@@ -214,7 +214,7 @@ const BlogListPage = () => {
                   const img = getBlogImage(post.slug, post.categories);
                   return (
                     <article key={post.slug} className="blp-card" data-testid={`blog-card-${post.slug}`}>
-                      <Link to={`/blog/${post.slug}`} style={{ display: 'block' }}>
+                      <Link to={`/blog/${post.slug}`} className="blp-card-link">
                         <img src={img.src} alt={img.alt} className="blp-card-img" loading="lazy" />
                       </Link>
                       <div className="blp-card-body">
@@ -245,8 +245,8 @@ const BlogListPage = () => {
         <section data-testid="blog-trust" className="blp-trust">
           <div className="blp-trust-inner">
             <div className="blp-eyebrow">WRITTEN BY EXPERTS</div>
-            <h2 className="blp-section-h2" style={{ color: '#fff', marginBottom: 6 }}>Appliance Maintenance Advice</h2>
-            <p className="blp-body" style={{ color: 'var(--blp-white-70)', marginBottom: 28 }}>All content is written by licensed technicians with hands-on experience.</p>
+            <h2 className="blp-section-h2 blp-trust-h2">Appliance Maintenance Advice</h2>
+            <p className="blp-body blp-trust-sub">All content is written by licensed technicians with hands-on experience.</p>
             <div className="blp-trust-grid">
               {TRUST_CARDS.map((c, i) => (
                 <div key={i} className="blp-trust-card">
@@ -263,7 +263,7 @@ const BlogListPage = () => {
         <section data-testid="blog-cta" className="blp-cta">
           <div className="blp-cta-inner">
             <div className="blp-cta-eyebrow">FREE TIPS &amp; GUIDES</div>
-            <h2 className="blp-section-h2" style={{ color: '#fff', marginBottom: 12 }}>Common Appliance Problems — Answered</h2>
+            <h2 className="blp-section-h2 blp-cta-h2">Common Appliance Problems — Answered</h2>
             <p className="blp-cta-sub">Our certified technicians are here with fast, reliable service in San Francisco Bay Area.</p>
             <div className="blp-cta-btns">
               <a href="/book?go=1" target="_blank" rel="noopener noreferrer" data-testid="blog-cta-book" className="blp-cta-primary" aria-label="opens in new tab">
@@ -291,7 +291,7 @@ const BlogListPage = () => {
           <div className="blp-mobile-bar flex md:hidden">
             <a href="tel:+17605435733" data-testid="mobile-call" className="blp-mobile-call">CALL</a>
             <button onClick={() => window.open('/book?go=1', '_blank')} data-testid="mobile-book" className="blp-mobile-book">
-              <span style={{ fontSize: 9, color: 'var(--blp-white-45)', display: 'block', textAlign: 'center', marginBottom: 1 }}>Fast</span>
+              <span className="blp-mobile-fast">Fast</span>
               BOOK ONLINE
             </button>
             <a href="sms:7605435733?body=Hello%20FixitBay!" data-testid="mobile-text" className="blp-mobile-text">TEXT US</a>

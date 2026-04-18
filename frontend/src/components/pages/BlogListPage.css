@@ -134,4 +134,16 @@
 .blp-link-plain { color: inherit; text-decoration: none; }
 .blp-center { text-align: center; }
 .blp-max-1000 { max-width: 1000px; margin: 0 auto; }
+.blp-feat-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.blp-feat-meta { margin-bottom: 20px; }
+.blp-search-results { padding: 24px 24px 0; }
+.blp-grid-h2 { color: var(--blp-text-dark); margin-bottom: 8px; padding-top: 24px; }
+.blp-grid-sub { margin-bottom: 24px; }
+.blp-pad-section { padding: 48px 0; }
+.blp-empty-text { font-family: var(--blp-font); font-weight: 600; font-size: 16px; color: var(--blp-text-mid); }
+.blp-card-link { display: block; }
+.blp-trust-h2 { color: #fff; margin-bottom: 6px; }
+.blp-trust-sub { color: var(--blp-white-70); margin-bottom: 28px; }
+.blp-cta-h2 { color: #fff; margin-bottom: 12px; }
+.blp-mobile-fast { font-size: 9px; color: var(--blp-white-45); display: block; text-align: center; margin-bottom: 1px; }
 @media (max-width: 767px) { body { padding-bottom: 72px; } }
