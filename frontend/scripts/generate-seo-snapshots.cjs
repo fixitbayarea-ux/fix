@@ -327,10 +327,23 @@ console.log(`\n📄 Generated _redirects: ${baseLines.split('\n').length} base r
 console.log('\n🎉 SEO Snapshots generation complete!');
 
 // Generate sitemap.xml — canonical indexable URLs only
+// SINGLE SOURCE OF TRUTH for sitemap inclusion/exclusion rules:
+//   - noindexRoutes: pages that should NOT appear in sitemap (noindex, post-conversion, utility)
+//   - includeLlmInfoInSitemap: flag to control /llm-info inclusion (default: false)
+//   - All other routes from the `routes` array are included automatically
+//   - Any new public indexable route added to `routes` will appear in sitemap
+//   - To exclude a new route, add it to noindexRoutes
 const SITE_URL = 'https://fixitbay.net';
+const includeLlmInfoInSitemap = false;
 const noindexRoutes = [
-  '/thank-you-booking',
-  '/llm-info', '/blog-faq', '/privacy-policy'
+  '/thank-you-booking',  // post-conversion page, noindex
+  '/privacy-policy',     // legal page, noindex
+  '/terms',              // legal page, noindex
+  '/blog-faq',           // redirects to /blog
+  ...(includeLlmInfoInSitemap ? [] : ['/llm-info']),  // AI-bot page, configurable
+  '/admin',              // admin panel
+  '/admin/dashboard',    // admin panel
+  '/admin/cms',          // admin panel
 ];
 const sitemapUrls = ['/', ...filteredRoutes.filter(r => r !== '/' && !noindexRoutes.includes(r))];
 const today = new Date().toISOString().split('T')[0];

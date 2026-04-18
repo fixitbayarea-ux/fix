@@ -23,7 +23,8 @@
     "postbuild": "node scripts/generate-seo-snapshots.cjs && node scripts/verify-seo-snapshots.cjs && node scripts/cleanup-redirect-html.cjs",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "prebuild": "node scripts/validate-slugs.cjs"
+    "prebuild": "node scripts/validate-slugs.cjs",
+    "check-sitemap": "node scripts/check-sitemap-drift.cjs"
   },
   "reactSnap": {
     "source": "build",
