@@ -25,6 +25,12 @@ const BlogListPage = () => {
 
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
+  // Set hero background CSS variable — CRA css-loader cannot resolve url() to public/ assets
+  useEffect(() => {
+    document.documentElement.style.setProperty('--blp-hero-bg',
+      "linear-gradient(rgba(13,27,42,0.94),rgba(13,27,42,0.94)),url('/background_new2.webp')");
+  }, []);
+
   useEffect(() => {
     fetch(`${API_URL}/api/cms/blog-posts?published_only=true`)
       .then(r => r.json())
@@ -109,7 +115,7 @@ const BlogListPage = () => {
 
       <div>
         {/* 1. HERO */}
-        <section data-testid="blog-hero" className="blp-hero" style={{ background: "linear-gradient(rgba(13,27,42,0.94),rgba(13,27,42,0.94)),url('/background_new2.webp')" }}>
+        <section data-testid="blog-hero" className="blp-hero">
           <div className="blp-hero-inner">
             <nav className="blp-hero-nav">
               <a href="/">Home</a>

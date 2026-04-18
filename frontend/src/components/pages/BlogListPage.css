@@ -37,7 +37,7 @@
 .blp-meta { font-family: var(--blp-font); font-weight: 400; font-size: 12px; color: rgba(255,87,34,0.7); }
 
 /* ── Hero ── */
-.blp-hero { background-size: cover; background-position: center 60%; min-height: 460px; display: flex; align-items: center; justify-content: center; padding: 72px 20px 48px; color: #fff; }
+.blp-hero { background: var(--blp-hero-bg); background-size: cover; background-position: center 60%; min-height: 460px; display: flex; align-items: center; justify-content: center; padding: 72px 20px 48px; color: #fff; }
 .blp-hero-inner { max-width: 700px; margin: 0 auto; text-align: center; }
 .blp-hero-sub { font-family: var(--blp-font); font-weight: 400; font-size: 14px; color: var(--blp-white-75); max-width: 560px; margin: 0 auto 24px; }
 .blp-hero-nav { font-family: var(--blp-font); font-size: 12px; color: rgba(255,255,255,0.5); margin-bottom: 20px; }
