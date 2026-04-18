@@ -39,6 +39,27 @@ const BlogPostPage = () => {
     };
   }, [post]);
 
+  // Build Article schema — returns null when post isn't loaded (hook skips injection)
+  const articleSchema = useMemo(() => {
+    if (!post) return null;
+    return {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": post.title,
+      "description": post.excerpt || post.meta_description,
+      "image": getBlogImage(slug, post.categories).src,
+      "author": { "@type": "Organization", "name": "FixitBay LLC", "@id": "https://fixitbay.net/#organization" },
+      "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/logo.png" } },
+      "datePublished": post.publish_date || post.created_at,
+      "dateModified": post.updated_at || post.created_at,
+      "mainEntityOfPage": `https://fixitbay.net/blog/${post.slug}`
+    };
+  }, [post, slug]);
+
+  // Inject exactly one Article JSON-LD with id="blog-article-schema"
+  useArticleSchema('blog-article-schema', articleSchema);
+
+
   if (loading) return (
     <div className="min-h-screen flex items-center justify-center" style={{ paddingTop: '64px' }}>
       <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
@@ -49,18 +70,6 @@ const BlogPostPage = () => {
 
   const img = getBlogImage(slug, post.categories);
 
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": post.title,
-    "description": post.excerpt || post.meta_description,
-    "image": img.src,
-    "author": { "@type": "Organization", "name": "FixitBay LLC", "@id": "https://fixitbay.net/#organization" },
-    "publisher": { "@type": "Organization", "name": "FixitBay LLC", "logo": { "@type": "ImageObject", "url": "https://fixitbay.net/logo.png" } },
-    "datePublished": post.publish_date || post.created_at,
-    "dateModified": post.updated_at || post.created_at,
-    "mainEntityOfPage": `https://fixitbay.net/blog/${post.slug}`
-  };
 
   return (
     <div className="min-h-screen" style={{ paddingTop: '64px', background: '#F7FAFC' }}>
