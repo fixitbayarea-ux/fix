@@ -38,30 +38,7 @@ const ReviewsPage = () => {
     : '4.9';
 
   const schemas = useMemo(() => [
-    {
-      id: 'reviews-localbusiness',
-      data: {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "FixitBay LLC",
-        "telephone": "+17605435733",
-        "award": "Nextdoor Neighborhood Fave 2025 — Bay Area Appliance Repair",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "bestRating": "5",
-          "worstRating": "1",
-          "reviewCount": "106"
-        },
-        "review": reviews.filter(r => r.source === 'Google').slice(0, 3).map(r => ({
-          "@type": "Review",
-          "author": { "@type": "Person", "name": r.author },
-          "reviewRating": { "@type": "Rating", "ratingValue": String(r.rating) },
-          "reviewBody": r.text,
-          "datePublished": r.date
-        }))
-      }
-    },
+    // LocalBusiness is in public/index.html #global-localbusiness-schema
     {
       id: 'reviews-breadcrumb',
       data: {

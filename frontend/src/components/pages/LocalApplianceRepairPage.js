@@ -92,7 +92,7 @@ const LocalApplianceRepairPage = () => {
   }, []);
 
   const schemas = useMemo(() => [
-    { id: 'local-business-schema', data: { "@context": "https://schema.org", "@type": "LocalBusiness", "name": "FixitBay LLC", "description": "Local appliance repair service in San Francisco and Bay Area. Fast scheduling, $80 diagnostic, 180-day warranty.", "url": "https://fixitbay.net", "telephone": "+17605435733", "priceRange": "$$", "address": { "@type": "PostalAddress", "addressLocality": "San Francisco", "addressRegion": "CA", "postalCode": "94109" }, "areaServed": SERVICE_CITIES.map(c => c.name), "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }, { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }], "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "106", "bestRating": "5", "worstRating": "1" } } },
+    // LocalBusiness is in public/index.html #global-localbusiness-schema
     { id: 'faq-schema', data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
       { "@type": "Question", "name": "Which Bay Area cities do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "We serve San Francisco, the Peninsula, and Marin County, including Daly City, Pacifica, Brisbane, Mill Valley, San Rafael, Sausalito, Larkspur, and many more." } },
       { "@type": "Question", "name": "Do you offer same- or next-day local appointments?", "acceptedAnswer": { "@type": "Answer", "text": "Same- or next-day appointments are available in many neighborhoods, especially when you contact us earlier in the day." } },

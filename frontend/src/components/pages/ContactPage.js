@@ -46,29 +46,7 @@ const ContactPage = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
 
   const contactSchemas = useMemo(() => [
-    {
-      id: 'contact-local-business',
-      data: {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "FixitBay LLC",
-        "telephone": "+17605435733",
-        "email": "info@fixitbay.net",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "1549 Franklin Street, Unit A",
-          "addressLocality": "San Francisco",
-          "addressRegion": "CA",
-          "postalCode": "94109",
-          "addressCountry": "US"
-        },
-        "openingHoursSpecification": [
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "18:00" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "15:00" }
-        ],
-        "areaServed": ["San Francisco", "Marin County", "San Francisco Peninsula"]
-      }
-    },
+    // LocalBusiness is in public/index.html #global-localbusiness-schema
     {
       id: 'contact-breadcrumb',
       data: {

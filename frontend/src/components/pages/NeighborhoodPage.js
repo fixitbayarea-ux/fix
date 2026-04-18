@@ -61,15 +61,7 @@ const NeighborhoodPage = () => {
   /* SEO schemas */
   const schemasData = [
     {
-      id: `nh-${data.slug}-localbusiness`,
-      data: {
-        '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
-        name: 'FixitBay LLC',
-        telephone: '+17605435733',
-        areaServed: { '@type': 'Place', name: `${data.name}, San Francisco, CA` },
-        aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '106', bestRating: '5', worstRating: '1' },
-      },
+    // LocalBusiness is in public/index.html #global-localbusiness-schema
     },
     {
       id: `nh-${data.slug}-faq`,

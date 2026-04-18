@@ -117,46 +117,8 @@ const MarinCountyPage = () => {
     }))
   });
 
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "FixitBay LLC",
-    "description": "Professional appliance repair services in Marin County. Fast scheduling, licensed technicians, 180-day warranty.",
-    "telephone": "+17605435733",
-    "url": "https://fixitbay.net/marin-county-appliance-repair",
-    "image": "https://fixitbay.net/images/fixitbay-logo.png",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1549 Franklin St, Unit A",
-      "addressLocality": "San Francisco",
-      "addressRegion": "CA",
-      "postalCode": "94109",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 37.8044,
-      "longitude": -122.4711
-    },
-    "areaServed": {
-      "@type": "County",
-      "name": "Marin County",
-      "containsPlace": marinCities.map(c => ({
-        "@type": "City",
-        "name": c.name
-      }))
-    },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "08:00", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "17:00" }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "106"
-    }
-  };
+  // LocalBusiness is in public/index.html #global-localbusiness-schema
+
 
   const pageSchemas = useMemo(() => {
     const schemas = [
@@ -166,7 +128,6 @@ const MarinCountyPage = () => {
         { name: 'Marin County', url: 'https://fixitbay.net/marin-county-appliance-repair' }
       ])},
       { id: 'faq-marin', data: buildFAQSchema(faqData) },
-      { id: 'localbusiness-marin', data: localBusinessSchema }
     ];
     return schemas;
   }, []);

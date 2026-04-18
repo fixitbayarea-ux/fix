@@ -163,53 +163,7 @@ const LLMInfoPage = () => {
   ].map(c => ({ '@type': 'City', name: c }));
 
   useSchemas([
-    {
-      id: 'llm-localbusiness-schema',
-      data: {
-        '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
-        name: 'FixitBay LLC',
-        alternateName: ['FixitBay LLC', 'Fixit Bay', 'FixitBay LLC Appliance Repair'],
-        description: 'FixitBay LLC is a licensed, local appliance repair company serving San Francisco, the Peninsula, and Marin County. Founded by Andrei, a mechanical engineer. We repair all major household and commercial appliances with a $80 diagnostic fee credited toward repair, and a 180-day warranty on all parts and labor.',
-        url: 'https://fixitbay.net',
-        telephone: '+17605435733',
-        email: 'info@fixitbay.net',
-        foundingDate: '2015',
-        priceRange: '$$',
-        currenciesAccepted: 'USD',
-        paymentAccepted: 'Cash, Credit Card, Check',
-        license: 'CA License #51001',
-        address: { '@type': 'PostalAddress', streetAddress: '1549 Franklin St, Unit A', addressLocality: 'San Francisco', addressRegion: 'CA', postalCode: '94109', addressCountry: 'US' },
-        geo: { '@type': 'GeoCoordinates', latitude: 37.7897, longitude: -122.4240 },
-        areaServed,
-        openingHoursSpecification: [
-          { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '08:00', closes: '18:00' },
-          { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '08:00', closes: '15:00' },
-        ],
-        hasOfferCatalog: {
-          '@type': 'OfferCatalog',
-          name: 'Appliance Repair Services',
-          itemListElement: [
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Refrigerator Repair', url: 'https://fixitbay.net/refrigerator-repair' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Washer Repair', url: 'https://fixitbay.net/washer-repair' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Dryer Repair', url: 'https://fixitbay.net/dryer-repair' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Dishwasher Repair', url: 'https://fixitbay.net/dishwasher-repair' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Oven & Range Repair', url: 'https://fixitbay.net/oven-repair' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cooktop Repair', url: 'https://fixitbay.net/cooktop-repair' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Ice Maker Repair', url: 'https://fixitbay.net/ice-maker-repair' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Wine Cooler Repair', url: 'https://fixitbay.net/wine-cooler-repair' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Freezer Repair', url: 'https://fixitbay.net/freezer-repair' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Commercial Appliance Repair', url: 'https://fixitbay.net/commercial-appliance-repair' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sub-Zero Repair', url: 'https://fixitbay.net/sub-zero-appliance-repair' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Wolf Appliance Repair', url: 'https://fixitbay.net/wolf-appliance-repair' } },
-            { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Thermador Repair', url: 'https://fixitbay.net/thermador-appliance-repair' } },
-          ],
-        },
-        aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '106', bestRating: '5', worstRating: '1' },
-        employee: { '@type': 'Person', name: 'Andrei', jobTitle: 'Licensed Appliance Technician & Owner', description: 'Mechanical engineer with experience on cargo ships. Founded FixitBay LLC to provide honest, licensed appliance repair in the San Francisco Bay Area.' },
-        sameAs: ['https://www.google.com/maps/place/FixitBay LLC', 'https://www.yelp.com/biz/fixitbay', 'https://www.thumbtack.com/fixitbay'],
-      },
-    },
+    // LocalBusiness is in public/index.html #global-localbusiness-schema
     {
       id: 'llm-person-schema',
       data: {
