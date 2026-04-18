@@ -56,28 +56,6 @@
 
   <!-- SEO handled by SSG pre-rendering + React SEOMetaTags component -->
 
-  <!-- LocalBusiness schema dedup: hides global schema when page injects its own -->
-  <script>
-  (function () {
-
-    function dedupLocalBusiness() {
-      var globalLB = document.getElementById('global-localbusiness-schema');
-      if (!globalLB) return;
-      var allLD = document.querySelectorAll('script[type="application/ld+json"]');
-      var pageHasOwn = false;
-      for (var i = 0; i < allLD.length; i++) {
-        if (allLD[i].id === 'global-localbusiness-schema') continue;
-        try { if (JSON.parse(allLD[i].textContent)['@type'] === 'LocalBusiness') { pageHasOwn = true; break; } } catch(e) {}
-      }
-      globalLB.type = pageHasOwn ? 'application/json' : 'application/ld+json';
-    }
-    var _ps = history.pushState, _rs = history.replaceState;
-    history.pushState = function(){ var r=_ps.apply(this,arguments); setTimeout(dedupLocalBusiness,800); return r; };
-    history.replaceState = function(){ var r=_rs.apply(this,arguments); setTimeout(dedupLocalBusiness,800); return r; };
-    window.addEventListener('popstate', function(){ setTimeout(dedupLocalBusiness,800); });
-    window.addEventListener('load', function(){ setTimeout(dedupLocalBusiness,800); setTimeout(dedupLocalBusiness,2000); });
-  })();
-  </script>
 </head>
 
 <body>
@@ -91,12 +69,16 @@
     "@type": "LocalBusiness",
     "@id": "https://fixitbay.net/#organization",
     "name": "FixitBay LLC",
-    "alternateName": "FixitBay Appliance Repair",
-    "description": "Professional appliance repair services in San Francisco Bay Area. Licensed & insured technicians providing same-day service. Service-area business - we come to you.",
+    "alternateName": "FixitBay LLC Appliance Repair",
+    "description": "Professional appliance repair in San Francisco Bay Area. Licensed technician Andrei provides same- or next-day appointments for refrigerators, washers, dryers, dishwashers, ovens, cooktops, wine coolers, ice makers. $80 diagnostic applied to repair. 180-day warranty on all parts and labor.",
     "url": "https://fixitbay.net",
     "telephone": "+17605435733",
+    "email": "info@fixitbay.net",
     "priceRange": "$$",
-    "image": ["https://fixitbay.net/background_new2.png", "https://fixitbay.net/logo.png"],
+    "image": [
+      "https://fixitbay.net/background_new2.png",
+      "https://fixitbay.net/logo.png"
+    ],
     "logo": "https://fixitbay.net/logo.png",
     "address": {
       "@type": "PostalAddress",
@@ -111,61 +93,58 @@
       "latitude": 37.7937,
       "longitude": -122.4232
     },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "15:00"
+      }
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Appliance Repair Services",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Refrigerator Repair", "url": "https://fixitbay.net/refrigerator-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Washer Repair", "url": "https://fixitbay.net/washer-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dryer Repair", "url": "https://fixitbay.net/dryer-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dishwasher Repair", "url": "https://fixitbay.net/dishwasher-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven & Range Repair", "url": "https://fixitbay.net/oven-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cooktop Repair", "url": "https://fixitbay.net/cooktop-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ice Maker Repair", "url": "https://fixitbay.net/ice-maker-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wine Cooler Repair", "url": "https://fixitbay.net/wine-cooler-repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garbage Disposal Repair", "url": "https://fixitbay.net/garbage-disposal-repair" } }
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Refrigerator Repair","url":"https://fixitbay.net/refrigerator-repair"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Washer Repair","url":"https://fixitbay.net/washer-repair"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Dryer Repair","url":"https://fixitbay.net/dryer-repair"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Dishwasher Repair","url":"https://fixitbay.net/dishwasher-repair"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Oven & Range Repair","url":"https://fixitbay.net/oven-repair"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Cooktop Repair","url":"https://fixitbay.net/cooktop-repair"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Ice Maker Repair","url":"https://fixitbay.net/ice-maker-repair"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Wine Cooler Repair","url":"https://fixitbay.net/wine-cooler-repair"}}
       ]
     },
     "areaServed": [
-      { "@type": "City", "name": "San Francisco" },
-      { "@type": "City", "name": "Daly City" },
-      { "@type": "City", "name": "South San Francisco" },
-      { "@type": "City", "name": "San Bruno" },
-      { "@type": "City", "name": "Pacifica" },
-      { "@type": "City", "name": "Millbrae" },
-      { "@type": "City", "name": "Colma" },
-      { "@type": "City", "name": "Brisbane" },
-      { "@type": "City", "name": "Montara" },
-      { "@type": "City", "name": "Mill Valley" },
-      { "@type": "City", "name": "San Rafael" },
-      { "@type": "City", "name": "Sausalito" },
-      { "@type": "City", "name": "Novato" },
-      { "@type": "City", "name": "Corte Madera" },
-      { "@type": "City", "name": "Larkspur" },
-      { "@type": "City", "name": "Greenbrae" },
-      { "@type": "City", "name": "Ross" },
-      { "@type": "City", "name": "Fairfax" },
-      { "@type": "City", "name": "San Anselmo" },
-      { "@type": "City", "name": "Tiburon" },
-      { "@type": "City", "name": "Belvedere" },
-      { "@type": "City", "name": "San Quentin" }
+      {"@type":"City","name":"San Francisco"},
+      {"@type":"City","name":"Daly City"},
+      {"@type":"City","name":"South San Francisco"},
+      {"@type":"City","name":"San Bruno"},
+      {"@type":"City","name":"Pacifica"},
+      {"@type":"City","name":"Millbrae"},
+      {"@type":"City","name":"Colma"},
+      {"@type":"City","name":"Brisbane"},
+      {"@type":"City","name":"Montara"},
+      {"@type":"City","name":"Mill Valley"},
+      {"@type":"City","name":"San Rafael"},
+      {"@type":"City","name":"Sausalito"},
+      {"@type":"City","name":"Novato"},
+      {"@type":"City","name":"Corte Madera"},
+      {"@type":"City","name":"Larkspur"},
+      {"@type":"City","name":"Greenbrae"},
+      {"@type":"City","name":"Ross"},
+      {"@type":"City","name":"Fairfax"},
+      {"@type":"City","name":"San Anselmo"},
+      {"@type":"City","name":"Tiburon"},
+      {"@type":"City","name":"Belvedere"},
+      {"@type":"City","name":"San Quentin"}
     ],
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "07:00",
-        "closes": "21:00"
-      }
-    ],
-    "sameAs": [
-      "https://www.facebook.com/fixitbay",
-      "https://www.yelp.com/biz/fixitbay-san-francisco-5",
-      "https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc-appliance-repair/service/479092434655600644",
-      "https://www.google.com/maps",
-      "https://www.bbb.org/us/ca/san-francisco/profile/appliance-repair/fixitbay-llc"
-    ],
-    "award": "Nextdoor Neighborhood Fave 2025 — Bay Area Appliance Repair",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
@@ -173,27 +152,45 @@
       "bestRating": "5",
       "worstRating": "1"
     },
+    "sameAs": [
+      "https://www.facebook.com/fixitbay",
+      "https://www.yelp.com/biz/fixitbay-san-francisco-5",
+      "https://www.thumbtack.com/ca/san-francisco/handyman/fixitbay-llc/service/479092434655600644",
+      "https://www.bbb.org/us/ca/san-francisco/profile/appliance-repair/fixitbay-llc",
+      "https://share.google/Q48c6OXAIB7u60fNv"
+    ],
+    "foundingDate": "2023",
+    "award": "Nextdoor Neighborhood Fave 2025 \u2014 Bay Area Appliance Repair",
+    "numberOfEmployees": {
+      "@type": "QuantitativeValue",
+      "value": 3
+    },
+    "employee": {
+      "@type": "Person",
+      "name": "Andrei Suprunov",
+      "jobTitle": "Lead Appliance Repair Technician"
+    },
     "review": [
       {
         "@type": "Review",
-        "author": { "@type": "Person", "name": "Gayle Rabbitt" },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": {"@type": "Person", "name": "Gayle Rabbitt"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
         "reviewBody": "Andrei was excellent. He explained and checked everything. He quickly realized the leak was from the utility sink next to the washer and shut off the hoses so leak stopped. I highly recommend him and FixitBay!",
-        "publisher": { "@type": "Organization", "name": "Google" }
+        "publisher": {"@type": "Organization", "name": "Google"}
       },
       {
         "@type": "Review",
-        "author": { "@type": "Person", "name": "Emily Chen" },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "One of the smoothest repair experiences I've had. Super easy to book online. Andrei gave an initial diagnosis and quote based on photos I sent, showed up on time, and was in/out within 2 hours. Would highly recommend!",
-        "publisher": { "@type": "Organization", "name": "Google" }
+        "author": {"@type": "Person", "name": "Emily Chen"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "reviewBody": "One of the smoothest repair experiences I\u2019ve had. Super easy to book online. Andrei gave an initial diagnosis and quote based on photos I sent, showed up on time, and was in/out within 2 hours. Would highly recommend!",
+        "publisher": {"@type": "Organization", "name": "Google"}
       },
       {
         "@type": "Review",
-        "author": { "@type": "Person", "name": "Michael Kagan" },
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Andrei from FixItBay is great. He's knowledgeable, professional, fast, and answered any questions I had about my fridge and dishwasher. He's saved me twice already!",
-        "publisher": { "@type": "Organization", "name": "Google" }
+        "author": {"@type": "Person", "name": "Michael Kagan"},
+        "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+        "reviewBody": "Andrei from FixItBay is great. He\u2019s knowledgeable, professional, fast, and answered any questions I had about my fridge and dishwasher. He\u2019s saved me twice already!",
+        "publisher": {"@type": "Organization", "name": "Google"}
       }
     ]
   }
