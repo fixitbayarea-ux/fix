@@ -1,0 +1,14 @@
+/* Critical CSS for above-the-fold - Inline in <head> */
+body{margin:0;font-family:Montserrat,system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+.main-nav{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.main-nav img{display:block}
+.heroRoot{position:relative;width:100%;margin:0;padding:0;overflow:hidden;aspect-ratio:16/9}
+.heroBackground{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.heroOverlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.3) 0%,rgba(0,0,0,.1) 100%);z-index:1}
+.heroContent{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;padding:clamp(16px,2vh,32px) clamp(12px,3vw,20px);padding-top:16px}
+.heroLogo{max-width:min(600px,80vw);height:auto;animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.heroCta{display:inline-flex;align-items:center;gap:8px;font-size:clamp(18px,2.5vw,22px);font-weight:800;padding:clamp(16px,2vw,20px) clamp(32px,4vw,48px);border-radius:9999px;color:#fff;background:#C0362C;text-decoration:none;transition:transform .2s,box-shadow .2s;box-shadow:0 8px 24px rgba(192,54,44,.4)}
+.heroCta:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(192,54,44,.5)}
+h1{font-weight:600;color:#1A3B5D;margin:0}
