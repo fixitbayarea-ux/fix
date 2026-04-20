@@ -1,9 +1,10 @@
-import React, { useEffect, useMemo } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
 import BackButton from '../BackButton';
 import SEOMetaTags from '../SEOMetaTags';
 import ServiceSchema from '../schema/ServiceSchema';
-import { useSchemas } from '../../hooks/useSchema';
+import { useCitySchemas } from '../../hooks/useCitySchemas';
+import { useCityCtaHandlers } from '../../hooks/useCityCtaHandlers';
+import PopularRepairsCluster from '../sections/PopularRepairsCluster';
 
 import { motion } from 'framer-motion';
 
@@ -84,77 +85,10 @@ const CityRepairPage = ({
     }
   ];
 
-  // Helper to build breadcrumb JSON-LD - pure JSON only, no JSX
-  const buildBreadcrumbSchema = (items) => ({
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": items.map((it, i) => ({
-      "@type": "ListItem",
-      "position": i + 1,
-      "name": it.name,
-      "item": it.url
-    }))
-  });
+  // Inject BreadcrumbList + FAQPage schemas (shared hook)
+  useCitySchemas({ city, faqData, keyPrefix: 'city' });
 
-  // Inject BreadcrumbList + FAQPage schemas via direct DOM (Helmet broken with React 19)
-  const citySchemas = useMemo(() => {
-    const schemas = [
-      {
-        id: `city-breadcrumb-${city}`,
-        data: buildBreadcrumbSchema([
-          { name: 'Home', url: 'https://fixitbay.net/' },
-          { name: 'Cities We Serve', url: 'https://fixitbay.net/site-map' },
-          { name: `${city || 'City'} Appliance Repair`, url: `https://fixitbay.net/${(city || '').toLowerCase().replace(/\s+/g, '-')}-appliance-repair` }
-        ])
-      }
-    ];
-    // FAQ schema with guard against empty/invalid entries
-    const validFaqs = (faqData || []).filter(f => f.question?.trim() && f.answer?.trim());
-    if (validFaqs.length > 0) {
-      schemas.push({
-        id: `city-faq-${city}`,
-        data: {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": validFaqs.map(f => ({
-            "@type": "Question",
-            "name": f.question.trim(),
-            "acceptedAnswer": { "@type": "Answer", "text": f.answer.trim() }
-          }))
-        }
-      });
-    }
-    return schemas;
-  }, [city, faqData]);
-  useSchemas(citySchemas);
-
-  const handleBookNow = () => {
-    // GA4 Event Tracking
-    if (window.gtag) {
-      window.gtag('event', 'cta_click', {
-        page_path: window.location.pathname,
-        page_title: document.title,
-        category: 'CTA',
-        action: 'book_online',
-        label: 'Book Online Now'
-      });
-    }
-    window.location.href = '/book?go=1';
-  };
-
-  const handleCallNow = () => {
-    // GA4 Event Tracking
-    if (window.gtag) {
-      window.gtag('event', 'cta_click', {
-        page_path: window.location.pathname,
-        page_title: document.title,
-        category: 'CTA',
-        action: 'call_now',
-        label: 'Call (760) 543-5733'
-      });
-    }
-    window.location.href = 'tel:7605435733';
-  };
+  const { handleBookNow, handleCallNow } = useCityCtaHandlers();
 
   return (
     <>
@@ -524,30 +458,8 @@ const CityRepairPage = ({
         </div>
       </section>
 
-      {/* Popular Repairs in City — internal links to city+service pages */}
-      {(() => {
-        const cs = city.toLowerCase().replace(/\s+/g, '-');
-        const repairs = [
-          { label: 'Refrigerator Repair', svc: 'refrigerator' }, { label: 'Washer Repair', svc: 'washer' },
-          { label: 'Dryer Repair', svc: 'dryer' }, { label: 'Dishwasher Repair', svc: 'dishwasher' },
-          { label: 'Oven & Range Repair', svc: 'oven' }, { label: 'Wine Cooler Repair', svc: 'wine-cooler' },
-          { label: 'Ice Maker Repair', svc: 'ice-maker' },
-        ];
-        return (
-          <section style={{ background: '#F8F5F0', padding: '48px 0' }}>
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h2 style={{ fontSize: 24, fontWeight: 700, color: '#0D1B2A', marginBottom: 20 }}>Popular Repairs in {city}</h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4" style={{ gap: 10 }}>
-                {repairs.map(s => (
-                  <Link key={s.svc} to={`/${cs}-${s.svc}-repair`} data-testid={`popular-repair-${s.svc}`} style={{ fontWeight: 600, fontSize: 13, color: '#0D1B2A', textDecoration: 'none', background: '#fff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 3, padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = '#0D1B2A'; e.currentTarget.style.color = '#fff'; }} onMouseLeave={e => { e.currentTarget.style.background = '#fff'; e.currentTarget.style.color = '#0D1B2A'; }}>
-                    {s.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-        );
-      })()}
+      {/* Popular Repairs in City — internal links to city+service pages (shared component) */}
+      <PopularRepairsCluster city={city} variant="classic" />
 
       <RelatedServices type="appliances" />
       <RelatedServices type="areas" exclude={`/${city.toLowerCase().replace(/\s+/g, '-')}-appliance-repair`} />

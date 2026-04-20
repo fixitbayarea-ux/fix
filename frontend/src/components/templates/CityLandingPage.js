@@ -1,8 +1,10 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import SEOMetaTags from '../SEOMetaTags';
 import ServiceSchema from '../schema/ServiceSchema';
-import { useSchemas } from '../../hooks/useSchema';
+import { useCitySchemas } from '../../hooks/useCitySchemas';
+import { useCityCtaHandlers } from '../../hooks/useCityCtaHandlers';
+import PopularRepairsCluster from '../sections/PopularRepairsCluster';
 import { motion } from 'framer-motion';
 import { Phone, Star, CheckCircle, Wrench, Clock, Shield, MapPin, Award, Users, ThumbsUp, Home, Settings, Calendar, Search, ChevronDown, MessageSquare } from 'lucide-react';
 import FloatingButtons from '../FloatingButtons';
@@ -30,25 +32,9 @@ const CityLandingPage = ({
 }) => {
   const slug = citySlug || city.toLowerCase().replace(/\s+/g, '-');
 
-  const citySchemas = useMemo(() => {
-    const schemas = [
-      { id: `city2-breadcrumb-${slug}`, data: { "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://fixitbay.net/" },
-        { "@type": "ListItem", "position": 2, "name": "Cities We Serve", "item": "https://fixitbay.net/service-areas" },
-        { "@type": "ListItem", "position": 3, "name": `${city} Appliance Repair`, "item": `https://fixitbay.net/${slug}-appliance-repair` }
-      ]}}
-    ];
-    const validFaqs = (faqData || []).filter(f => f.question?.trim() && f.answer?.trim());
-    if (validFaqs.length > 0) {
-      schemas.push({ id: `city2-faq-${slug}`, data: { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": validFaqs.map(f => ({ "@type": "Question", "name": f.question.trim(), "acceptedAnswer": { "@type": "Answer", "text": f.answer.trim() } })) }});
-    }
-    return schemas;
-  }, [city, slug, faqData]);
-  useSchemas(citySchemas);
+  useCitySchemas({ city, slug, faqData, keyPrefix: 'city2' });
 
-  const track = (action, label) => { if (window.gtag) window.gtag('event', 'cta_click', { page_path: window.location.pathname, category: 'CTA', action, label }); };
-  const handleBook = () => { track('book_online', 'Book Online'); window.location.href = '/book?go=1'; };
-  const handleCall = () => { track('call_now', 'Call'); window.location.href = 'tel:7605435733'; };
+  const { handleBookNow: handleBook, handleCallNow: handleCall } = useCityCtaHandlers();
 
   const services = [
     { name: 'Refrigerator Repair', href: '/refrigerator-repair', icon: <Home className="w-5 h-5" /> },
@@ -266,26 +252,8 @@ const CityLandingPage = ({
           </div>
         </SectionPad>
 
-        {/* 11. POPULAR REPAIRS */}
-        <SectionPad bg={C.cream}>
-          <Eyebrow>POPULAR SERVICES</Eyebrow>
-          <H2Light>Popular Repairs in {city}</H2Light>
-          <div className="clp-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 10, marginTop: 16 }}>
-            {[
-              { label: 'Refrigerator Repair', svc: 'refrigerator' },
-              { label: 'Washer Repair', svc: 'washer' },
-              { label: 'Dryer Repair', svc: 'dryer' },
-              { label: 'Dishwasher Repair', svc: 'dishwasher' },
-              { label: 'Oven & Range Repair', svc: 'oven' },
-              { label: 'Wine Cooler Repair', svc: 'wine-cooler' },
-              { label: 'Ice Maker Repair', svc: 'ice-maker' },
-            ].map(s => (
-              <Link key={s.svc} to={`/${slug}-${s.svc}-repair`} data-testid={`popular-${s.svc}`} style={{ fontWeight: 600, fontSize: 13, color: C.navy, textDecoration: 'none', background: C.white, border: '1px solid rgba(0,0,0,0.09)', borderRadius: 4, padding: '10px 16px', display: 'flex', alignItems: 'center', gap: 8, fontFamily: F, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = C.navy; e.currentTarget.style.color = C.white; }} onMouseLeave={e => { e.currentTarget.style.background = C.white; e.currentTarget.style.color = C.navy; }}>
-                {s.label}
-              </Link>
-            ))}
-          </div>
-        </SectionPad>
+        {/* 11. POPULAR REPAIRS (shared component) */}
+        <PopularRepairsCluster city={city} citySlug={slug} variant="landing" eyebrow="POPULAR SERVICES" testIdPrefix="popular" />
 
         {/* 12. FAQ — Quick Answers */}
         <SectionPad bg={C.white}>

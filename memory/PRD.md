@@ -34,6 +34,12 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
     - Adding 5 missing blog post slugs to `/blog` internalLinks in `seo-config.cjs` (sub-zero-refrigerator-not-cooling, lg-washer-ue-error, bosch-dishwasher-error-codes, appliance-repair-marin-county, same-day-appliance-repair-bay-area).
     - Cross-linking Tiburon ↔ Belvedere in city-service SSG internalLinks (NEIGHBORS map).
     - Tiburon city hub now lists all 7 Belvedere service pages (since `/belvedere-appliance-repair` is a 301 → Tiburon; Belvedere service pages were orphaned because their own hub redirects away).
+16. P21 (Feb 2026): CityRepairPage + CityLandingPage refactor — deduped shared logic without merging visually distinct templates (two different UX concepts). Extracted:
+    - `src/hooks/useCitySchemas.js` — BreadcrumbList + FAQPage JSON-LD with unique id prefix.
+    - `src/hooks/useCityCtaHandlers.js` — GA4-tracked Book/Call handlers.
+    - `src/components/sections/PopularRepairsCluster.jsx` — reusable internal-link cluster with `classic` and `landing` visual variants.
+    - CityRepairPage.js: 570 → 482 LOC (-88). CityLandingPage.js: 330 → 298 LOC (-32). 3 shared modules (186 LOC) now available for future city templates.
+    - Verified: build 265/265, 0 orphans, 0 lint errors, Millbrae landing renders all 7 popular-repair links + all JSON-LD schemas present.
 
 ## Current Review Data (April 2026)
 - Google reviews: 106
