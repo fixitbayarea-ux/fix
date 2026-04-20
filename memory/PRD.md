@@ -28,6 +28,8 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
 10. P17: VideoObject schema fix — eliminated duplicate schemas (4→2) on /about page, fixed uploadDate format to valid ISO 8601 with timezone (April 2026)
 11. P18: LLM Info page update — review counts (106 Google + 165 Thumbtack + 6 Yelp = 277+ total), HVAC/Commercial diagnostic pricing ($100), HVAC added to services (April 2026)
 12. BreadcrumbList deduplication verified on 7+ city URLs — no duplicates found
+13. P19 (Feb 2026): GSC "Crawled — currently not indexed" — Root Cause 3 (thin content / orphan pages) FIXED. Internal cross-linking added to `CityServicePage.js` (desktop + mobile templates) so every city-service page links to: city hub, service hub, service-areas + 2-3 related city-service pages. Verified on `/larkspur-dishwasher-repair` — 6 expected internal links rendered in "Related Services" block. Build: 265/265 SSG snapshots pass.
+14. P19 cleanup (Feb 2026): Removed dead file `src/components/schema/StructuredData.js` — nowhere imported in src/ or scripts/.
 
 ## Current Review Data (April 2026)
 - Google reviews: 106
