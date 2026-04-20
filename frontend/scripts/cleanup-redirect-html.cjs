@@ -12,12 +12,19 @@ const fs = require('fs');
 const path = require('path');
 
 const BUILD_DIR = path.join(__dirname, '..', 'build');
-const REDIRECTS_SRC = path.join(__dirname, '..', 'public', '_redirects');
+const BUILD_REDIRECTS = path.join(BUILD_DIR, '_redirects');
+const PUBLIC_REDIRECTS = path.join(__dirname, '..', 'public', '_redirects');
+
+// Read from build/_redirects (the deployed file) as primary source.
+// Falls back to public/_redirects if build version doesn't exist yet.
+const REDIRECTS_SRC = fs.existsSync(BUILD_REDIRECTS) ? BUILD_REDIRECTS : PUBLIC_REDIRECTS;
 
 if (!fs.existsSync(REDIRECTS_SRC)) {
-  console.log('⚠️  public/_redirects not found — nothing to clean.');
+  console.log('⚠️  No _redirects found — nothing to clean.');
   process.exit(0);
 }
+
+console.log(`📖 Reading redirect rules from: ${REDIRECTS_SRC.includes('build') ? 'build/_redirects' : 'public/_redirects'}`);
 
 // 1. Collect every "from" path that has a 301 rule
 const redirectSources = new Set();

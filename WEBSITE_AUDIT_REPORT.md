@@ -1,6 +1,6 @@
 # 🔍 КОМПЛЕКСНЫЙ АУДИТ САЙТА FIXITBAY
 **Дата:** 24 января 2026  
-**URL:** https://seo-staging-hub.preview.emergentagent.com
+**URL:** https://appliance-repair-hub-10.preview.emergentagent.com
 
 ---
 

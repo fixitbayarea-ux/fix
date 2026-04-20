@@ -408,6 +408,11 @@ const CityServicePage = () => {
         relatedLinks={[
           { href: `/${citySlug}-appliance-repair`, label: `${cityName} Appliance Repair`, desc: 'All appliances' },
           { href: `/${serviceSlug}-repair`, label: `${serviceName} Repair`, desc: 'All locations' },
+          ...SERVICES.filter(s => s !== serviceSlug).slice(0, 2).map(s => ({
+            href: `/${citySlug}-${s}-repair`,
+            label: `${cityName} ${toDisplayName(s)} Repair`,
+            desc: `${toDisplayName(s)} service`
+          })),
         ]}
         schemaData={serviceSchema}
       />
@@ -434,6 +439,11 @@ const CityServicePage = () => {
         { href: `/${citySlug}-appliance-repair`, label: `${cityName} Appliance Repair`, desc: 'All appliance services' },
         { href: `/${serviceSlug}-repair`, label: `${serviceName} Repair SF`, desc: 'All Bay Area locations' },
         { href: '/service-areas', label: 'Service Areas', desc: 'All 22 cities we serve' },
+        ...SERVICES.filter(s => s !== serviceSlug).slice(0, 3).map(s => ({
+          href: `/${citySlug}-${s}-repair`,
+          label: `${cityName} ${toDisplayName(s)} Repair`,
+          desc: `${toDisplayName(s)} service in ${cityName}`
+        })),
       ]}
     />
   );

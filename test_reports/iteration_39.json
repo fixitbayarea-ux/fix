@@ -29,7 +29,7 @@
   "seed_data_creation": "None",
   "retest_needed": false,
   "should_main_agent_self_test": false,
-  "context_for_next_testing_agent": "Homepage fully redesigned. Reviews at #reviews has 2-column grid with 10 cards. Pricing at #pricing has dark #1A2F45 bg with 3 cards (middle featured). FAQ at #faq has cream #F8F5F0 bg with clean accordion. All sections lazy-loaded - scroll slowly to trigger. Base URL: https://seo-staging-hub.preview.emergentagent.com",
+  "context_for_next_testing_agent": "Homepage fully redesigned. Reviews at #reviews has 2-column grid with 10 cards. Pricing at #pricing has dark #1A2F45 bg with 3 cards (middle featured). FAQ at #faq has cream #F8F5F0 bg with clean accordion. All sections lazy-loaded - scroll slowly to trigger. Base URL: https://appliance-repair-hub-10.preview.emergentagent.com",
   "test_results": {
     "reviews_section": {
       "grid_layout": "PASS - 2 columns (514px 514px), 24px gap",
