@@ -795,6 +795,11 @@ function getSEOContent(route) {
         '/blog/when-to-repair-vs-replace',
         '/blog/dryer-not-heating',
         '/blog/appliance-repair-cost-san-francisco',
+        '/blog/appliance-repair-marin-county',
+        '/blog/same-day-appliance-repair-bay-area',
+        '/blog/bosch-dishwasher-error-codes',
+        '/blog/lg-washer-ue-error',
+        '/blog/sub-zero-refrigerator-not-cooling',
         '/blog-faq',
       ]
     };
@@ -1011,7 +1016,14 @@ function getSEOContent(route) {
             '/whirlpool-appliance-repair',
             '/samsung-appliance-repair',
             '/lg-appliance-repair',
-            `/${city.slug}-appliance-repair`
+            `/${city.slug}-appliance-repair`,
+            // Tiburon city hub also serves as the indexable hub for Belvedere
+            // (Belvedere's own /belvedere-appliance-repair is a 301 redirect).
+            // Link all Belvedere service pages so they aren't treated as orphans.
+            ...(city.slug === 'tiburon'
+              ? ['refrigerator', 'washer', 'dryer', 'dishwasher', 'oven', 'wine-cooler', 'ice-maker']
+                  .map(s => `/belvedere-${s}-repair`)
+              : [])
           ].filter((v, i, a) => a.indexOf(v) === i)
         };
       }
@@ -1345,13 +1357,28 @@ function getSEOContent(route) {
             </ul>
             <p style="margin-bottom:1rem;">Every ${serviceName.toLowerCase()} repair in ${cityName} includes our comprehensive 180-day warranty on parts and labor. Call <a href="tel:+17605435733" style="color:#C0362C;font-weight:bold;">(760) 543-5733</a> or <a href="/book" style="color:#C0362C;font-weight:bold;">book online</a> for fast ${serviceName.toLowerCase()} repair service in ${cityName}.</p>
           `,
-          internalLinks: [
-            '/',
-            `/${citySlug}-appliance-repair`,
-            `/${svc}-repair`,
-            '/service-areas',
-            '/contact'
-          ]
+          internalLinks: (() => {
+            const base = [
+              '/',
+              `/${citySlug}-appliance-repair`,
+              `/${svc}-repair`,
+              '/service-areas',
+              '/contact'
+            ];
+            // Cross-link geographically adjacent cities so neither becomes an orphan.
+            // Belvedere's city hub is a 301 redirect to Tiburon — so Belvedere city-service
+            // pages need an alternative indexable hub link, and Tiburon city-service pages
+            // should expose Belvedere as a nearby-area sibling.
+            const NEIGHBORS = { tiburon: 'belvedere', belvedere: 'tiburon' };
+            const neighbor = NEIGHBORS[citySlug];
+            if (neighbor) {
+              base.push(`/${neighbor}-${svc}-repair`);
+              // For Belvedere: its own /belvedere-appliance-repair is a 301, so add Tiburon's
+              // hub as the canonical indexable hub link for this cluster.
+              if (citySlug === 'belvedere') base.push('/tiburon-appliance-repair');
+            }
+            return base.filter((v, i, a) => a.indexOf(v) === i);
+          })()
         };
       }
     }

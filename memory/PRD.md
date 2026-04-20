@@ -30,6 +30,10 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
 12. BreadcrumbList deduplication verified on 7+ city URLs — no duplicates found
 13. P19 (Feb 2026): GSC "Crawled — currently not indexed" — Root Cause 3 (thin content / orphan pages) FIXED. Internal cross-linking added to `CityServicePage.js` (desktop + mobile templates) so every city-service page links to: city hub, service hub, service-areas + 2-3 related city-service pages. Verified on `/larkspur-dishwasher-repair` — 6 expected internal links rendered in "Related Services" block. Build: 265/265 SSG snapshots pass.
 14. P19 cleanup (Feb 2026): Removed dead file `src/components/schema/StructuredData.js` — nowhere imported in src/ or scripts/.
+15. P20 (Feb 2026): Orphan-pages CI guard — new `scripts/check-orphan-pages.cjs` wired into `postbuild` pipeline. Scans every indexable snapshot in `build/` and fails the build if any sitemap URL has zero internal inbound links. First run caught 10 orphans (7 Belvedere city-service pages + 3 new blog posts). Fixed by:
+    - Adding 5 missing blog post slugs to `/blog` internalLinks in `seo-config.cjs` (sub-zero-refrigerator-not-cooling, lg-washer-ue-error, bosch-dishwasher-error-codes, appliance-repair-marin-county, same-day-appliance-repair-bay-area).
+    - Cross-linking Tiburon ↔ Belvedere in city-service SSG internalLinks (NEIGHBORS map).
+    - Tiburon city hub now lists all 7 Belvedere service pages (since `/belvedere-appliance-repair` is a 301 → Tiburon; Belvedere service pages were orphaned because their own hub redirects away).
 
 ## Current Review Data (April 2026)
 - Google reviews: 106
