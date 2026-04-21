@@ -84,7 +84,7 @@ const CityLandingPage = ({
           {/* Stats grid */}
           <div className="clp-stats-grid" style={{ maxWidth: 1100, margin: '32px auto 0', padding: '0 24px', display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', background: C.navyMid, borderRadius: 8 }}>
             {[['3+', 'YEARS of Service'], ['180', 'DAY Warranty'], ['$80', 'DIAGNOSTIC Waived*']].map(([num, label], i) => (
-              <div key={i} style={{ textAlign: 'center', padding: '24px 16px', borderRight: i < 2 ? `1px solid ${C.accentFaint}` : 'none' }}>
+              <div key={label} style={{ textAlign: 'center', padding: '24px 16px', borderRight: i < 2 ? `1px solid ${C.accentFaint}` : 'none' }}>
                 <div style={{ fontSize: 28, fontWeight: 700, color: C.white, fontFamily: F }}>{num}</div>
                 <div style={{ fontSize: 11, color: C.white60, fontFamily: F, letterSpacing: '1px' }}>{label}</div>
               </div>
@@ -114,8 +114,8 @@ const CityLandingPage = ({
           <Eyebrow>COMMON ISSUES</Eyebrow>
           <H2Light>Common Appliance Problems in {city}</H2Light>
           <div className="clp-2col" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 16, marginTop: 20 }}>
-            {commonProblems.map((p, i) => (
-              <div key={i} style={{ padding: 20, background: C.cream, borderRadius: 8 }}>
+            {commonProblems.map((p) => (
+              <div key={p.title} style={{ padding: 20, background: C.cream, borderRadius: 8 }}>
                 <h3 style={{ fontSize: 16, fontWeight: 700, color: C.navy, marginBottom: 6, fontFamily: F }}>{p.title}</h3>
                 <p style={{ fontSize: 14, color: C.textMid, lineHeight: '22px', fontFamily: F }}>{p.description}</p>
               </div>
@@ -151,8 +151,8 @@ const CityLandingPage = ({
               { label: 'Diagnostic Visit', price: '$80', note: 'Applied toward repair' },
               { label: 'Most Repairs', price: '$250 – $450', note: 'Parts + labor included' },
               { label: 'Warranty', price: '180 Days', note: 'Parts and labor' },
-            ].map((p, i) => (
-              <div key={i} style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 8, padding: 24, textAlign: 'center' }}>
+            ].map((p) => (
+              <div key={p.label} style={{ background: 'rgba(255,255,255,0.06)', borderRadius: 8, padding: 24, textAlign: 'center' }}>
                 <div style={{ fontSize: 11, color: C.white60, fontFamily: F, letterSpacing: '1px', textTransform: 'uppercase', marginBottom: 8 }}>{p.label}</div>
                 <div style={{ fontSize: 28, fontWeight: 700, color: C.white, fontFamily: F }}>{p.price}</div>
                 <div style={{ fontSize: 13, color: C.white60, fontFamily: F, marginTop: 4 }}>{p.note}</div>
@@ -212,7 +212,7 @@ const CityLandingPage = ({
           <H2Light>Recent Repairs in {city}</H2Light>
           <div className="clp-2col" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,1fr)', gap: 16, marginTop: 20 }}>
             {recentRepairs.map((r, i) => (
-              <div key={i} style={{ padding: 20, background: C.white, borderRadius: 8, border: '1px solid rgba(0,0,0,0.06)' }}>
+              <div key={`${r.appliance}-${i}`} style={{ padding: 20, background: C.white, borderRadius: 8, border: '1px solid rgba(0,0,0,0.06)' }}>
                 <div style={{ fontSize: 15, fontWeight: 700, color: C.navy, fontFamily: F, marginBottom: 4 }}>{r.appliance}</div>
                 <div style={{ fontSize: 14, color: C.textMid, fontFamily: F, lineHeight: '22px' }}>{r.description}</div>
                 {r.location && <div style={{ fontSize: 12, color: C.accent, fontFamily: F, marginTop: 6 }}><MapPin size={12} style={{ display: 'inline', verticalAlign: 'middle', marginRight: 4 }} />{r.location}</div>}
@@ -227,8 +227,8 @@ const CityLandingPage = ({
             <Eyebrow>MAINTENANCE TIPS</Eyebrow>
             <H2Light>{city} Appliance Maintenance Tips</H2Light>
             <div style={{ marginTop: 20 }}>
-              {maintenanceTips.map((tip, i) => (
-                <div key={i} style={{ marginBottom: 16, padding: '16px 20px', background: C.cream, borderRadius: 8, borderLeft: `3px solid ${C.accent}` }}>
+              {maintenanceTips.map((tip) => (
+                <div key={tip.title} style={{ marginBottom: 16, padding: '16px 20px', background: C.cream, borderRadius: 8, borderLeft: `3px solid ${C.accent}` }}>
                   <h3 style={{ fontSize: 15, fontWeight: 700, color: C.navy, marginBottom: 6, fontFamily: F }}>{tip.title}</h3>
                   <p style={{ fontSize: 14, color: C.textMid, lineHeight: '22px', fontFamily: F }}>{tip.description}</p>
                 </div>
@@ -242,9 +242,9 @@ const CityLandingPage = ({
           <Eyebrow>CUSTOMER REVIEWS</Eyebrow>
           <H2Dark>What {city} Residents Say</H2Dark>
           <div className="clp-3col" style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20, marginTop: 20 }}>
-            {reviews.map((r, i) => (
-              <div key={i} style={{ padding: 24, background: 'rgba(255,255,255,0.06)', borderRadius: 8 }}>
-                <div style={{ display: 'flex', gap: 2, marginBottom: 8 }}>{Array.from({ length: r.rating }, (_, j) => <Star key={j} size={14} fill={C.accent} color={C.accent} />)}</div>
+            {reviews.map((r) => (
+              <div key={r.name} style={{ padding: 24, background: 'rgba(255,255,255,0.06)', borderRadius: 8 }}>
+                <div style={{ display: 'flex', gap: 2, marginBottom: 8 }}>{Array.from({ length: r.rating }, (_, j) => <Star key={`${r.name}-star-${j}`} size={14} fill={C.accent} color={C.accent} />)}</div>
                 <p style={{ fontSize: 14, color: C.white75, fontFamily: F, lineHeight: '22px', marginBottom: 12 }}>"{r.text}"</p>
                 <div style={{ fontSize: 13, fontWeight: 700, color: C.white, fontFamily: F }}>— {r.name}</div>
               </div>
@@ -260,8 +260,8 @@ const CityLandingPage = ({
           <Eyebrow>FAQ</Eyebrow>
           <H2Light>Quick Answers</H2Light>
           <div style={{ marginTop: 16 }}>
-            {faqData.map((faq, i) => (
-              <details key={i} style={{ marginBottom: 8, background: C.cream, borderRadius: 8, padding: '16px 20px', cursor: 'pointer' }}>
+            {faqData.map((faq) => (
+              <details key={faq.question} style={{ marginBottom: 8, background: C.cream, borderRadius: 8, padding: '16px 20px', cursor: 'pointer' }}>
                 <summary style={{ fontSize: 15, fontWeight: 700, color: C.navy, fontFamily: F, listStyle: 'none', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   {faq.question}<ChevronDown size={16} style={{ flexShrink: 0, marginLeft: 8 }} />
                 </summary>

@@ -84,7 +84,7 @@ const ServiceAreaMapLibre = React.memo(() => {
           markersRef.current[city.name] = marker;
         });
       });
-    }).catch(err => console.error('Failed to load map:', err));
+    }).catch(err => { if (process.env.NODE_ENV === 'development') console.error('Failed to load map:', err); });
 
     return () => { if (map.current) { map.current.remove(); map.current = null; } };
   }, [isIntersecting, serviceCities]);

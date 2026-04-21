@@ -40,6 +40,14 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
     - `src/components/sections/PopularRepairsCluster.jsx` — reusable internal-link cluster with `classic` and `landing` visual variants.
     - CityRepairPage.js: 570 → 482 LOC (-88). CityLandingPage.js: 330 → 298 LOC (-32). 3 shared modules (186 LOC) now available for future city templates.
     - Verified: build 265/265, 0 orphans, 0 lint errors, Millbrae landing renders all 7 popular-repair links + all JSON-LD schemas present.
+17. P22 (Feb 2026): Code-review remediation pass (applied from external code-quality report). Addressed:
+    - `#6` Array index as key — replaced unstable keys in CityRepairPage (3 sites), CityLandingPage (6 sites) and MobileServiceLanding (11 sites) with stable identifiers (item title/label/question/href).
+    - `#7` Console statements in prod — guarded the remaining 4 unwrapped sites with `process.env.NODE_ENV === 'development'` (index.js, ServiceAreaMapLibre, useAggregateRating, useSchema; the other 4 were already guarded).
+    - `#8` Python `== True` / `== False` anti-pattern in tests — 12 replacements across test_blog_api.py and test_cms_api.py.
+    - `#1` dangerouslySetInnerHTML audit — all 7 flagged instances are safe (DOMPurify.sanitize, static SVG constants, or JSON-LD via JSON.stringify). No fixes required.
+    - `#3` Missing hook deps in useSchema/useReviews/useCMSContent — audited, all are false positives (local vars + module-level constants, not state/props). Removed one redundant NODE_ENV guard in useSchema.
+    - Build still 265/265 snapshots, 0 orphans, no lint regressions.
+    - NOT DONE (require separate focused sessions): `#2` localStorage tokens → httpOnly cookies (admin panel backend refactor, only runs in preview pod), `#4` getSEOContent 1523 LOC → modules, `#5` long-function refactor (165 sites), `#9` Python type hints, `#10` Python complexity.
 
 ## Current Review Data (April 2026)
 - Google reviews: 106

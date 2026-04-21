@@ -248,13 +248,13 @@ const CityRepairPage = ({
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {trustIndicators.map((indicator, index) => (
+            {trustIndicators.map((indicator) => (
               <motion.div
-                key={index}
+                key={indicator.text}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: trustIndicators.indexOf(indicator) * 0.1 }}
                 className="bg-gray-50 rounded-xl p-6"
               >
                 <div className="flex items-center gap-4 mb-4">
@@ -373,7 +373,7 @@ const CityRepairPage = ({
             </h2>
             <div className="prose prose-lg max-w-none space-y-4">
               {localContent.map((para, idx) => (
-                <p key={idx} className="text-base leading-relaxed" style={{color:'#2B3A4A'}}>
+                <p key={`${idx}-${para.slice(0, 20)}`} className="text-base leading-relaxed" style={{color:'#2B3A4A'}}>
                   {para}
                 </p>
               ))}
@@ -399,7 +399,7 @@ const CityRepairPage = ({
           <div className="space-y-4">
             {faqData.map((faq, index) => (
               <motion.div
-                key={index}
+                key={faq.question}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

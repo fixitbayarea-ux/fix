@@ -19,7 +19,7 @@ class TestCMSServicePagesAPI:
         assert response.status_code == 200, f"Expected 200, got {response.status_code}"
         
         data = response.json()
-        assert data.get("success") == True, "Expected success=true"
+        assert data.get("success") is True, "Expected success=true"
         assert "data" in data, "Expected 'data' key in response"
         
         pages = data["data"]
@@ -47,7 +47,7 @@ class TestCMSServicePagesAPI:
         assert response.status_code == 200, f"Expected 200, got {response.status_code}"
         
         data = response.json()
-        assert data.get("success") == True, "Expected success=true"
+        assert data.get("success") is True, "Expected success=true"
         
         page = data["data"]
         assert page["id"] == "cooktop-repair"
@@ -66,7 +66,7 @@ class TestCMSServicePagesAPI:
         assert response.status_code == 200, f"Expected 200, got {response.status_code}"
         
         data = response.json()
-        assert data.get("success") == True, "Expected success=true"
+        assert data.get("success") is True, "Expected success=true"
         
         page = data["data"]
         assert page["id"] == "garbage-disposal-repair"
@@ -132,7 +132,7 @@ class TestRedirects:
         response = requests.get(f"{BASE_URL}/api/cms/service-pages", timeout=5)
         assert response.status_code == 200
         data = response.json()
-        assert data.get("success") == True
+        assert data.get("success") is True
 
 
 class TestServicePageStructure:
@@ -156,7 +156,7 @@ class TestServicePageStructure:
         pages = response.json()["data"]
         
         for page in pages:
-            assert page.get("is_published") == True, f"Page {page['id']} is not published"
+            assert page.get("is_published") is True, f"Page {page['id']} is not published"
 
 
 if __name__ == "__main__":

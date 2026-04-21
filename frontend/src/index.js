@@ -25,7 +25,7 @@ if (rootElement.hasChildNodes()) {
         if (msg.includes('Hydration') || msg.includes('hydrat')) return;
         if (msg.includes('#418') || msg.includes('#423') || msg.includes('#422')) return;
         if (msg.includes('Text content') || msg.includes('did not match')) return;
-        console.error(error);
+        if (process.env.NODE_ENV === 'development') console.error(error);
       },
     }
   );

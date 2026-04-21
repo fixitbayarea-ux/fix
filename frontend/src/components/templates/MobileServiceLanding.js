@@ -241,8 +241,8 @@ const MobileServiceLanding = ({
               { top: 'Fast', bottom: 'Scheduling' },
               { top: '180-Day', bottom: 'Warranty' },
               { top: 'License', bottom: '#51001' },
-            ].map((b, i) => (
-              <div key={i} style={{
+            ].map((b) => (
+              <div key={b.top + b.bottom} style={{
                 background: PC.white08,
                 border: `1px solid ${PC.white15}`,
                 borderRadius: PC.r,
@@ -298,7 +298,7 @@ const MobileServiceLanding = ({
           <p style={{ fontSize: 11, fontWeight: 700, color: PC.accent, letterSpacing: '0.10em', textTransform: 'uppercase', margin: '0 0 14px', fontFamily: F }}>Common Issues We Fix</p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
             {issues.map((issue, i) => (
-              <button key={i} onClick={() => handleBook('issue', pageSlug)} data-testid={`issue-pill-${i}`} style={{
+              <button key={issue.label || `issue-${i}`} onClick={() => handleBook('issue', pageSlug)} data-testid={`issue-pill-${i}`} style={{
                 display: 'flex', alignItems: 'center',
                 background: PC.white, border: '1px solid rgba(0,0,0,0.08)', borderLeft: `3px solid ${PC.accent}`,
                 borderRadius: PC.r, padding: '10px 14px', fontSize: 13, fontWeight: 600, color: PC.textDark,
@@ -348,8 +348,8 @@ const MobileServiceLanding = ({
             { n: '2', title: 'We Diagnose On-Site', desc: `$80 diagnostic — applied to your ${actionWord}. No hidden fees.` },
             { n: '3', title: isMaintenance ? 'Professional Maintenance' : 'Professional Repair', desc: isMaintenance ? 'Genuine parts and manufacturer specs. Upfront pricing before any work begins.' : 'Quality parts. Upfront pricing before any work begins.' },
             { n: '4', title: '180-Day Warranty', desc: 'If the same issue returns within 180 days, we come back at no charge.' },
-          ].map((step, i) => (
-            <div key={i} style={{ display: 'flex', gap: 14, alignItems: 'flex-start', background: PC.white, border: '1px solid rgba(0,0,0,0.08)', borderLeft: `3px solid ${PC.accent}`, borderRadius: PC.r, padding: 16, marginBottom: 8 }}>
+          ].map((step) => (
+            <div key={step.n} style={{ display: 'flex', gap: 14, alignItems: 'flex-start', background: PC.white, border: '1px solid rgba(0,0,0,0.08)', borderLeft: `3px solid ${PC.accent}`, borderRadius: PC.r, padding: 16, marginBottom: 8 }}>
               <div style={{ minWidth: 32, height: 32, background: PC.accent, color: PC.white, borderRadius: '50%', fontSize: 14, fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontFamily: F }}>{step.n}</div>
               <div>
                 <p style={{ fontFamily: F, fontWeight: 700, fontSize: 15, color: PC.textDark, margin: '0 0 4px' }}>{step.title}</p>
@@ -376,8 +376,8 @@ const MobileServiceLanding = ({
               {group.cities.map(c => (
                 <a key={c.slug} href={`/${c.slug}-${pageSlug}`} style={{ fontSize: 11, color: PC.white60, margin: '0 0 3px', lineHeight: 1.4, display: 'block', textDecoration: 'none' }}>&middot; {c.name}</a>
               ))}
-              {group.extra?.map((t, i) => (
-                <p key={i} style={{ fontSize: 11, color: PC.white60, margin: '0 0 3px', lineHeight: 1.4 }}>&middot; {t}</p>
+              {group.extra?.map((t) => (
+                <p key={t} style={{ fontSize: 11, color: PC.white60, margin: '0 0 3px', lineHeight: 1.4 }}>&middot; {t}</p>
               ))}
             </div>
           ))}
@@ -398,8 +398,8 @@ const MobileServiceLanding = ({
             <p style={{ fontWeight: 700, fontSize: 15, color: PC.textDark, margin: '0 0 6px', fontFamily: F }}>Andrei — Lead Technician</p>
             <p style={{ fontSize: 13, color: PC.textMid, margin: '0 0 10px', lineHeight: 1.5, fontFamily: F }}>Licensed CA appliance technician with 3+ years of hands-on repair experience in the Bay Area. Diagnoses and fixes what others miss. License #51001.</p>
             <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-              {['Licensed & Insured', '3+ Years Exp.', 'Fast Sched.'].map((tag, i) => (
-                <span key={i} style={{
+              {['Licensed & Insured', '3+ Years Exp.', 'Fast Sched.'].map((tag) => (
+                <span key={tag} style={{
                   background: PC.accentBg,
                   border: `1px solid ${PC.accentBorder}`,
                   borderRadius: PC.r,
@@ -419,10 +419,10 @@ const MobileServiceLanding = ({
           <span style={{ color: PC.accent }}>&#9733;</span> 4.9 / 5 &middot; Google: 95 &middot; Thumbtack: 153
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-          {reviews.map((r, i) => (
-            <div key={i} style={{ background: PC.navyMid, border: `1px solid ${PC.white08}`, borderRadius: PC.r, padding: 18 }}>
+          {reviews.map((r) => (
+            <div key={r.name} style={{ background: PC.navyMid, border: `1px solid ${PC.white08}`, borderRadius: PC.r, padding: 18 }}>
               <div style={{ display: 'flex', gap: 2, marginBottom: 10 }}>
-                {Array(r.stars).fill(0).map((_, j) => <span key={j} style={{ color: PC.accent, fontSize: 14 }}>&#9733;</span>)}
+                {Array(r.stars).fill(0).map((_, j) => <span key={`${r.name}-star-${j}`} style={{ color: PC.accent, fontSize: 14 }}>&#9733;</span>)}
               </div>
               <p style={{ fontFamily: F, fontSize: 14, color: 'rgba(255,255,255,0.85)', margin: '0 0 12px', lineHeight: 1.6, fontStyle: 'italic' }}>"{r.text}"</p>
               <p style={{ fontFamily: F, fontSize: 11, fontWeight: 700, color: PC.white45, margin: 0, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{r.name}</p>
@@ -439,8 +439,8 @@ const MobileServiceLanding = ({
         <div style={{ background: PC.white, border: `2px solid ${PC.accent}`, borderRadius: PC.r, padding: '22px 20px', textAlign: 'center', marginBottom: 12, position: 'relative', overflow: 'hidden' }}>
           <span style={{ fontFamily: F, fontSize: 48, fontWeight: 800, color: PC.accent, display: 'block', lineHeight: 1, marginTop: 8 }}>$80</span>
           <span style={{ fontFamily: F, fontSize: 14, color: PC.textMid, display: 'block', marginBottom: 16 }}>diagnostic visit</span>
-          {[`Upfront pricing — no surprises`, `$80 credited toward ${actionWord}`, '180-day warranty included', `No fix, no ${actionWord} charge`].map((item, i) => (
-            <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '6px 0', justifyContent: 'center' }}>
+          {[`Upfront pricing — no surprises`, `$80 credited toward ${actionWord}`, '180-day warranty included', `No fix, no ${actionWord} charge`].map((item) => (
+            <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '6px 0', justifyContent: 'center' }}>
               <span style={{ color: PC.accent, fontWeight: 700, fontSize: 14 }}>&#10003;</span>
               <span style={{ fontFamily: F, fontSize: 13, color: PC.textMid }}>{item}</span>
             </div>
@@ -451,8 +451,8 @@ const MobileServiceLanding = ({
           {[
             { title: '180-Day Warranty', desc: 'Coverage on all parts and labor.' },
             { title: 'Upfront Estimates', desc: 'You approve the price before any work starts.' },
-          ].map((card, i) => (
-            <div key={i} style={{ background: PC.white, border: '1px solid rgba(0,0,0,0.08)', borderRadius: PC.r, padding: 16 }}>
+          ].map((card) => (
+            <div key={card.title} style={{ background: PC.white, border: '1px solid rgba(0,0,0,0.08)', borderRadius: PC.r, padding: 16 }}>
               <p style={{ fontFamily: F, fontSize: 15, fontWeight: 700, color: PC.textDark, margin: '0 0 4px' }}>{card.title}</p>
               <p style={{ fontFamily: F, fontSize: 13, color: PC.textMid, margin: 0, lineHeight: 1.5 }}>{card.desc}</p>
             </div>
@@ -497,7 +497,7 @@ const MobileServiceLanding = ({
           <h2 style={{ fontSize: 22, fontWeight: 800, color: PC.white, margin: '0 0 16px', fontFamily: F }}>Common Questions</h2>
           <div>
             {faqs.map((faq, i) => (
-              <div key={i} style={{ borderBottom: `1px solid ${PC.white08}` }}>
+              <div key={faq.q || faq.question || `faq-${i}`} style={{ borderBottom: `1px solid ${PC.white08}` }}>
                 <button
                   onClick={() => setFaqOpen(faqOpen === i ? null : i)}
                   data-testid={`faq-btn-${i}`}
@@ -528,7 +528,7 @@ const MobileServiceLanding = ({
           <p style={{ fontFamily: F, fontSize: 13, color: PC.textMid, margin: '0 0 16px', lineHeight: 1.5 }}>{repairVsReplace.intro}</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
             {repairVsReplace.items.map((item, idx) => (
-              <div key={idx} style={{ background: PC.white, border: '1px solid rgba(0,0,0,0.08)', borderLeft: `3px solid ${item.action === 'repair' ? PC.accent : '#DC2626'}`, borderRadius: PC.r, padding: 14, display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+              <div key={item.condition || `rvr-${idx}`} style={{ background: PC.white, border: '1px solid rgba(0,0,0,0.08)', borderLeft: `3px solid ${item.action === 'repair' ? PC.accent : '#DC2626'}`, borderRadius: PC.r, padding: 14, display: 'flex', gap: 12, alignItems: 'flex-start' }}>
                 <div style={{
                   background: item.action === 'repair' ? PC.accentBg : 'rgba(220,38,38,0.10)',
                   color: item.action === 'repair' ? PC.accent : '#DC2626',
@@ -552,7 +552,7 @@ const MobileServiceLanding = ({
           <p style={{ fontSize: 11, fontWeight: 700, color: PC.white45, letterSpacing: '0.10em', textTransform: 'uppercase', margin: '0 0 14px', fontFamily: F }}>Related Services</p>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
             {relatedLinks.map((link, idx) => (
-              <a key={idx} href={link.href} data-testid={`related-link-${idx}`} style={{
+              <a key={link.href || `related-${idx}`} href={link.href} data-testid={`related-link-${idx}`} style={{
                 display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                 background: PC.navyMid, border: `1px solid ${PC.white08}`, borderRadius: PC.r, padding: 16,
                 textDecoration: 'none', color: PC.white,

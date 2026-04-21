@@ -21,7 +21,7 @@ class TestBlogPostsAPI:
         assert response.status_code == 200, f"Expected 200, got {response.status_code}"
         
         data = response.json()
-        assert data.get("success") == True, "Expected success=true"
+        assert data.get("success") is True, "Expected success=true"
         assert "data" in data, "Expected 'data' key in response"
         
         posts = data["data"]
@@ -45,12 +45,12 @@ class TestBlogPostsAPI:
         assert response.status_code == 200, f"Expected 200, got {response.status_code}"
         
         data = response.json()
-        assert data.get("success") == True, "Expected success=true"
+        assert data.get("success") is True, "Expected success=true"
         
         posts = data["data"]
         # All returned posts should be published
         for post in posts:
-            assert post.get("is_published") == True, f"Post {post.get('slug')} should be published"
+            assert post.get("is_published") is True, f"Post {post.get('slug')} should be published"
     
     def test_get_refrigerator_repair_cost_article(self):
         """GET /api/cms/blog-posts/refrigerator-repair-cost-san-francisco-2026 returns article with content"""
@@ -58,7 +58,7 @@ class TestBlogPostsAPI:
         assert response.status_code == 200, f"Expected 200, got {response.status_code}"
         
         data = response.json()
-        assert data.get("success") == True, "Expected success=true"
+        assert data.get("success") is True, "Expected success=true"
         
         post = data["data"]
         assert post["slug"] == "refrigerator-repair-cost-san-francisco-2026"
@@ -74,7 +74,7 @@ class TestBlogPostsAPI:
         assert response.status_code == 200, f"Expected 200, got {response.status_code}"
         
         data = response.json()
-        assert data.get("success") == True
+        assert data.get("success") is True
         
         post = data["data"]
         assert post["slug"] == "samsung-washer-error-codes-guide"
@@ -188,7 +188,7 @@ class TestBlogCRUDOperations:
         assert response.status_code == 200, f"Expected 200, got {response.status_code}: {response.text}"
         
         data = response.json()
-        assert data.get("success") == True, "Expected success=true"
+        assert data.get("success") is True, "Expected success=true"
         
         post = data["data"]
         assert post["slug"] == test_blog_post_data["slug"]
@@ -214,7 +214,7 @@ class TestBlogCRUDOperations:
         
         updated = update_response.json()["data"]
         assert updated["title"] == "TEST_Updated Title"
-        assert updated["is_published"] == True
+        assert updated["is_published"] is True
         
         # Verify via GET
         get_response = requests.get(f"{BASE_URL}/api/cms/blog-posts/{test_blog_post_data['slug']}")

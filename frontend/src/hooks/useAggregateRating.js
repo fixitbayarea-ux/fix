@@ -39,7 +39,7 @@ const useAggregateRating = (ratingValue, reviewCount) => {
       
       // aggregateRating added successfully
     } catch (error) {
-      console.error('[SEO] Failed to add aggregateRating:', error);
+      if (process.env.NODE_ENV === 'development') console.error('[SEO] Failed to add aggregateRating:', error);
     }
 
     // Cleanup on unmount
