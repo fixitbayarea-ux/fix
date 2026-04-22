@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend=self.webpackChunkfrontend||[]).push([[9326],{9326:(n,a,e)=>{e.r(a),e.d(a,{default:()=>t});e(5043);var r=e(5327),d=e(1233),s=e(579);const t=()=>(0,s.jsx)(r.A,{brand:d.brandLandingData.whirlpool})}}]);
+//# sourceMappingURL=9326.44e96890.chunk.js.map

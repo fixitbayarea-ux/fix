@@ -16,6 +16,7 @@ import CaseStudies from '../sections/CaseStudies';
 import Testimonials from '../sections/Testimonials';
 import ProcessSteps from '../sections/ProcessSteps';
 import FAQAccordion from '../sections/FAQAccordion';
+import StickyBookingCard from '../sections/StickyBookingCard';
 
 import { SERVICE_PRICING } from '../../data/servicePricing';
 const buildBreadcrumbSchema = (items) => ({
@@ -684,6 +685,9 @@ const ApplianceRepairPageNew = ({
         ogImage="https://fixitbay.net/images/og-cover.png"
         noindex={noindex}
       />
+
+      {/* Desktop-only sticky booking card — hidden on mobile/tablet */}
+      <StickyBookingCard serviceName={appliance} isCommercial={isCommercial} />
 
       {/* ═══ HERO ═══ */}
       {!hideHero && (
