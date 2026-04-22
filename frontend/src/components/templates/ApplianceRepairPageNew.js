@@ -1239,12 +1239,12 @@ const ApplianceRepairPageNew = ({
         }
       `}</style>
 
-      {/* Floating sticky Book Repair button */}
+      {/* Floating sticky Book Repair button — hidden on desktop ≥1280px where StickyBookingCard is visible (avoids duplicate CTA) */}
       {showStickyBtn && (
         <a
           href="/book?go=1"
           data-testid="sticky-book-btn"
-          className="hidden md:inline-flex"
+          className="hidden md:inline-flex sticky-book-fab"
           style={{
             position: 'fixed', bottom: 32, right: 32, zIndex: 999,
             background: '#FF5722', color: '#FFFFFF',

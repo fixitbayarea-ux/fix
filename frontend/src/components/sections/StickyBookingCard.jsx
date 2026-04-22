@@ -39,6 +39,8 @@ const StickyBookingCard = ({ serviceName, isCommercial = false }) => {
             z-index: 40;
             pointer-events: auto;
           }
+          /* Hide the legacy floating "Book Repair" FAB to avoid duplicate CTAs */
+          .sticky-book-fab { display: none !important; }
         }
         /* Keep clear of the 1200px main column on mid-large desktops */
         @media (min-width: 1280px) and (max-width: 1640px) {

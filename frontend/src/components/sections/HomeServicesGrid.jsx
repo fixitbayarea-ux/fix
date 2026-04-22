@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Wrench } from 'lucide-react';
 
@@ -32,35 +32,37 @@ import commercialDishwasherImgWebP from '../../assets/services/commercial-dishwa
 import commercialWasherImgWebP from '../../assets/services/commercial-washer.webp';
 import commercialDryerImgWebP from '../../assets/services/commercial-dryer.webp';
 
-// Refrigerator is the featured (double-width) card; everything else is single-width.
-const services = [
-  { name: 'Refrigerator Repair', description: 'Not cooling, water leaks, ice maker issues', path: '/refrigerator-repair', image: refrigeratorImg, imageWebP: refrigeratorImgWebP, span: 2 },
-  { name: 'Freezer Repair', description: 'Not freezing, frost buildup, temperature issues', path: '/freezer-repair', image: freezerImg, imageWebP: freezerImgWebP, span: 1 },
-  { name: 'Ice Maker Repair', description: 'Not making ice, water leaking, jammed', path: '/ice-maker-repair', image: iceMakerImg, imageWebP: iceMakerImgWebP, span: 1 },
-  { name: 'Dishwasher Repair', description: "Not draining, leaking, won't start", path: '/dishwasher-repair', image: dishwasherImg, imageWebP: dishwasherImgWebP, span: 1 },
-  { name: 'Oven Repair', description: 'Not heating, temperature issues', path: '/oven-repair', image: ovenImg, imageWebP: ovenImgWebP, span: 1 },
-  { name: 'Stove & Cooktop', description: 'Burners not working, igniter problems', path: '/cooktop-repair', image: cooktopImg, imageWebP: cooktopImgWebP, span: 1 },
-  { name: 'Range Repair', description: 'Combo oven and stove repair', path: '/oven-repair', image: rangeImg, imageWebP: rangeImgWebP, span: 1 },
-  { name: 'Wine Cooler Repair', description: 'Temperature not holding, not cooling', path: '/wine-cooler-repair', image: wineCoolerImg, imageWebP: wineCoolerImgWebP, span: 1 },
-  { name: 'Washer Repair', description: 'Not spinning, draining, or filling', path: '/washer-repair', image: washerImg, imageWebP: washerImgWebP, span: 1 },
-  { name: 'Dryer Repair', description: 'Not heating, tumbling, or turning on', path: '/dryer-repair', image: dryerImg, imageWebP: dryerImgWebP, span: 1 },
-  { name: 'Commercial Refrigerator', description: 'Walk-in coolers, reach-in units, display cases', path: '/commercial-refrigerator-repair', image: commercialRefrigeratorImg, imageWebP: commercialRefrigeratorImgWebP, span: 1 },
-  { name: 'Commercial Dishwasher', description: 'Restaurant dishwashers, high-temp units', path: '/commercial-dishwasher-repair', image: commercialDishwasherImg, imageWebP: commercialDishwasherImgWebP, span: 1 },
-  { name: 'Commercial Washer', description: 'Industrial washing machines, coin-op units', path: '/commercial-washer-repair', image: commercialWasherImg, imageWebP: commercialWasherImgWebP, span: 1 },
-  { name: 'Commercial Dryer', description: 'Industrial dryers, coin-op dryers', path: '/commercial-dryer-repair', image: commercialDryerImg, imageWebP: commercialDryerImgWebP, span: 1 },
+const servicesData = [
+  { name: 'Refrigerator', category: 'Kitchen', description: 'Not cooling, water leaks, ice maker issues', path: '/refrigerator-repair', image: refrigeratorImg, imageWebP: refrigeratorImgWebP },
+  { name: 'Freezer', category: 'Kitchen', description: 'Not freezing, frost buildup, temperature issues', path: '/freezer-repair', image: freezerImg, imageWebP: freezerImgWebP },
+  { name: 'Ice Maker', category: 'Kitchen', description: 'Not making ice, water leaking, jammed', path: '/ice-maker-repair', image: iceMakerImg, imageWebP: iceMakerImgWebP },
+  { name: 'Dishwasher', category: 'Kitchen', description: "Not draining, leaking, won't start", path: '/dishwasher-repair', image: dishwasherImg, imageWebP: dishwasherImgWebP },
+  { name: 'Oven', category: 'Kitchen', description: 'Not heating, temperature issues', path: '/oven-repair', image: ovenImg, imageWebP: ovenImgWebP },
+  { name: 'Stove & Cooktop', category: 'Kitchen', description: 'Burners not working, igniter problems', path: '/cooktop-repair', image: cooktopImg, imageWebP: cooktopImgWebP },
+  { name: 'Range', category: 'Kitchen', description: 'Combo oven and stove repair', path: '/oven-repair', image: rangeImg, imageWebP: rangeImgWebP },
+  { name: 'Wine Cooler', category: 'Kitchen', description: 'Temperature not holding, not cooling', path: '/wine-cooler-repair', image: wineCoolerImg, imageWebP: wineCoolerImgWebP },
+  { name: 'Washer', category: 'Laundry', description: 'Not spinning, draining, or filling', path: '/washer-repair', image: washerImg, imageWebP: washerImgWebP },
+  { name: 'Dryer', category: 'Laundry', description: 'Not heating, tumbling, or turning on', path: '/dryer-repair', image: dryerImg, imageWebP: dryerImgWebP },
+  { name: 'Commercial Refrigerator', category: 'Commercial', description: 'Walk-in coolers, reach-in units, display cases', path: '/commercial-refrigerator-repair', image: commercialRefrigeratorImg, imageWebP: commercialRefrigeratorImgWebP },
+  { name: 'Commercial Dishwasher', category: 'Commercial', description: 'Restaurant dishwashers, high-temp units', path: '/commercial-dishwasher-repair', image: commercialDishwasherImg, imageWebP: commercialDishwasherImgWebP },
+  { name: 'Commercial Washer', category: 'Commercial', description: 'Industrial washing machines, coin-op units', path: '/commercial-washer-repair', image: commercialWasherImg, imageWebP: commercialWasherImgWebP },
+  { name: 'Commercial Dryer', category: 'Commercial', description: 'Industrial dryers, coin-op dryers', path: '/commercial-dryer-repair', image: commercialDryerImg, imageWebP: commercialDryerImgWebP },
 ];
 
-const ServiceCard = ({ svc }) => {
-  const isFeatured = svc.span === 2;
-  const imgHeight = isFeatured ? 160 : 120;
+const CATEGORIES = ['Kitchen', 'Laundry', 'Commercial'];
+
+const ServiceCard = ({ svc, span }) => {
+  const isFeatured = span === 2;
+  const imgHeight = isFeatured ? 200 : 140;
 
   return (
     <Link
       to={svc.path}
+      rel={svc.name === 'Dishwasher' ? 'nofollow' : undefined}
       data-testid={`svc-card-${svc.name.toLowerCase().replace(/\s+/g, '-')}`}
       className="hsg-card"
       style={{
-        gridColumn: `span ${svc.span}`,
+        gridColumn: `span ${span}`,
         background: '#FFFFFF',
         borderRadius: 4,
         border: '1px solid #E5E2DD',
@@ -79,77 +81,48 @@ const ServiceCard = ({ svc }) => {
             <source srcSet={svc.imageWebP} type="image/webp" />
             <img
               src={svc.image}
-              alt={`${svc.name} — FixitBay LLC`}
+              alt={`${svc.name} repair — FixitBay LLC`}
               loading="lazy"
               decoding="async"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              width="800"
+              height="533"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform 0.25s' }}
             />
           </picture>
         </div>
       ) : (
-        <div
-          style={{
-            height: imgHeight,
-            background: '#FFF1E8',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <Wrench size={isFeatured ? 36 : 28} color="#FF5722" strokeWidth={2} />
+        <div style={{ height: imgHeight, background: '#FFF1E8', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <Wrench size={isFeatured ? 40 : 30} color="#FF5722" strokeWidth={2} />
         </div>
       )}
 
-      <div style={{ padding: '20px 18px', display: 'flex', flexDirection: 'column', flex: 1 }}>
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            fontSize: 16,
-            fontWeight: 700,
-            color: '#1A1A1A',
-            margin: 0,
-            marginBottom: 6,
-          }}
-        >
+      <div style={{ padding: '20px 22px 22px', display: 'flex', flexDirection: 'column', flex: 1, fontFamily: 'Montserrat, sans-serif' }}>
+        <h3 style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: isFeatured ? 18 : 17, fontWeight: 700, color: '#0D1B2A', margin: 0, marginBottom: 8 }}>
+          <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#FF5722', flexShrink: 0 }} />
           {svc.name}
         </h3>
-        <p
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            fontSize: 13,
-            fontWeight: 500,
-            color: '#4A5568',
-            lineHeight: 1.55,
-            margin: 0,
-            marginBottom: 12,
-          }}
-        >
+        <p style={{ fontSize: 13, lineHeight: 1.65, color: '#4A5568', fontWeight: 400, margin: 0, marginBottom: 14 }}>
           {svc.description}
         </p>
-        <span
-          style={{
-            alignSelf: 'flex-start',
-            marginTop: 'auto',
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: 6,
-            fontFamily: 'Montserrat, sans-serif',
-            fontSize: 12,
-            fontWeight: 700,
-            color: '#FF5722',
-            border: '2px solid #FF5722',
-            borderRadius: 4,
-            padding: '5px 12px',
-          }}
-        >
-          Learn More →
-        </span>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 10 }}>
+          <span style={{ fontSize: 11, fontWeight: 600, padding: '5px 10px', borderRadius: 3, background: 'rgba(255,87,34,0.08)', color: '#B85E20', border: '1px solid rgba(255,87,34,0.20)' }}>Same/Next-Day</span>
+          <span style={{ fontSize: 11, fontWeight: 600, padding: '5px 10px', borderRadius: 3, background: 'rgba(255,87,34,0.08)', color: '#B85E20', border: '1px solid rgba(255,87,34,0.20)' }}>$80 Diagnostic</span>
+        </div>
+        <p style={{ fontSize: 12, color: '#4A5568', fontWeight: 500, margin: 0, marginBottom: 16 }}>
+          180-Day Warranty on parts &amp; labor
+        </p>
+        <div className="hsg-view-btn" style={{ marginTop: 'auto', width: '100%', height: 42, borderRadius: 4, background: '#0D1B2A', color: '#FFFFFF', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 12, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.10em', transition: 'background 0.2s' }}>
+          View Service
+        </div>
       </div>
     </Link>
   );
 };
 
 const HomeServicesGrid = () => {
+  const [activeCategory, setActiveCategory] = useState('Kitchen');
+  const filtered = servicesData.filter(s => s.category === activeCategory);
+
   return (
     <section id="services" style={{ background: '#F8F5F0', paddingTop: 76, paddingBottom: 80 }}>
       <style>{`
@@ -157,6 +130,8 @@ const HomeServicesGrid = () => {
           border-color: #FF5722 !important;
           box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important;
         }
+        .hsg-card:hover .hsg-view-btn { background: #FF5722 !important; }
+        .hsg-card:hover img { transform: scale(1.03); }
         @media (max-width: 1023px) {
           .hsg-grid { grid-template-columns: repeat(2, 1fr) !important; }
           .hsg-grid .hsg-card { grid-column: span 1 !important; }
@@ -168,7 +143,7 @@ const HomeServicesGrid = () => {
 
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
         {/* Header */}
-        <div style={{ textAlign: 'center', marginBottom: 48 }}>
+        <div style={{ textAlign: 'center', marginBottom: 28 }}>
           <div
             style={{
               fontFamily: 'Montserrat, sans-serif',
@@ -198,9 +173,43 @@ const HomeServicesGrid = () => {
           </h2>
         </div>
 
-        {/* 4-column grid with variable spans */}
+        {/* Category tabs */}
+        <div className="flex justify-center overflow-x-auto pb-2 scrollbar-hide" style={{ marginBottom: 36 }}>
+          <div className="inline-flex gap-0" style={{ borderBottom: '1px solid rgba(0,0,0,0.08)' }} role="tablist">
+            {CATEGORIES.map(cat => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                role="tab"
+                aria-selected={activeCategory === cat}
+                data-testid={`svc-tab-${cat.toLowerCase()}`}
+                className="whitespace-nowrap transition-all duration-200"
+                style={{
+                  padding: '14px 36px',
+                  fontFamily: 'Montserrat, sans-serif',
+                  fontSize: 16,
+                  fontWeight: activeCategory === cat ? 600 : 500,
+                  background: 'transparent',
+                  color: activeCategory === cat ? '#0D1B2A' : '#4A5568',
+                  border: 'none',
+                  borderBottom: activeCategory === cat ? '2px solid #FF5722' : '2px solid transparent',
+                  cursor: 'pointer',
+                  marginBottom: -1,
+                  minHeight: 44,
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                }}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* 4-column grid — first card in each tab spans 2, rest span 1 */}
         <div
-          className="hsg-grid"
+          key={activeCategory}
+          className="hsg-grid animate-fadeIn"
           data-testid="home-services-grid"
           style={{
             display: 'grid',
@@ -208,8 +217,8 @@ const HomeServicesGrid = () => {
             gap: 20,
           }}
         >
-          {services.map((svc) => (
-            <ServiceCard key={svc.path + svc.name} svc={svc} />
+          {filtered.map((svc, i) => (
+            <ServiceCard key={svc.path + svc.name} svc={svc} span={i === 0 ? 2 : 1} />
           ))}
         </div>
       </div>
