@@ -537,6 +537,70 @@
   status = 301
   force = true
 
+# ── 8b. East/South Bay cities we do not service — redirect to /service-areas ──
+# (Mirrors the 301! rules already in public/_redirects; netlify.toml backup so
+#  the redirect always fires even if _redirects is misdeployed.)
+[[redirects]]
+  from = "/foster-city-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/newark-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/richmond-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cupertino-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/walnut-creek-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/concord-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pleasanton-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/castro-valley-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/alameda-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/san-jose-appliance-repair"
+  to = "/service-areas"
+  status = 301
+  force = true
+
+
 # ── 9. Gone pages ──
 [[redirects]]
   from = "/old-near-you"

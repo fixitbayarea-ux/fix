@@ -54,6 +54,13 @@ React SPA for appliance repair business (FixitBay). SSG via custom script. SEO o
 19. P24 (Feb 2026): UI follow-ups to P23 per user feedback.
     - Home "Our Services": Restored Kitchen / Laundry / Commercial category tabs (state-driven), kept the 4-column grid with first card in each tab spanning 2 columns (unified featured-card pattern). Brought back the full card content from the original design — badges (`Same/Next-Day` + `$80 Diagnostic`), warranty line (`180-Day Warranty on parts & labor`), and the `VIEW SERVICE` dark CTA button.
     - Service pages: The legacy floating "BOOK REPAIR" FAB (`data-testid="sticky-book-btn"`) was a duplicate CTA next to the new `StickyBookingCard`. Added `.sticky-book-fab` class to it and hid it via `@media (min-width: 1280px) { .sticky-book-fab { display: none !important } }` inside the StickyBookingCard's style block — so it's only hidden when the sticky card is visible. On tablet/mobile (<1280px) the FAB remains active (sticky card is hidden there) to preserve the existing conversion UX.
+20. P25 (Feb 2026): Build-pipeline + SEO audit per external prompt (5 fixes, 4 verification points).
+    - **FIX 1** `package.json` postbuild — already correct (no reference to the non-existent `fix-redirects.cjs`): `generate-seo-snapshots.cjs → verify-seo-snapshots.cjs → cleanup-redirect-html.cjs → check-orphan-pages.cjs`.
+    - **FIX 2** `generate-seo-snapshots.cjs` — already reads `public/_redirects`, parses 301 rules, extracts FROM paths, filters routes, and `cleanup-redirect-html.cjs` deletes any stale HTML snapshots. No changes needed.
+    - **FIX 3** `seo-config.cjs` — all 10 required URLs are generated dynamically via `KEY_SERVICES` (stove-repair, stacked-washer-dryer-repair) and the `ALLOWED_CITIES × CITY_SERVICE_SERVICES` matrix (corte-madera, san-anselmo, novato, millbrae, pacifica combinations). Verified snapshots exist in `build/` for all 10.
+    - **FIX 4** `public/_redirects` — all 17 required 301! rules already present. Added 10 missing mirrors to `netlify.toml` under section "8b. East/South Bay cities we do not service" (foster-city, newark, richmond, cupertino, walnut-creek, concord, pleasanton, castro-valley, alameda, san-jose) so the rule still fires if `_redirects` is ever misdeployed.
+    - **FIX 5** `netlify.toml [build]` section — already correct (`base = "frontend"`, `command = "yarn build"`, `publish = "build"`, no postbuild override).
+    - **Verification results**: 265/265 SSG snapshots generated, `build/_redirects` has 191 forced 301! rules, all 17 GSC "not indexed" URLs are 301 sources (no HTML file in `build/` for any of them), all 10 FIX 3 pages have HTML snapshots in `build/`. 0 orphans, 0 sitemap drift.
 
 ## Current Review Data (April 2026)
 - Google reviews: 106
