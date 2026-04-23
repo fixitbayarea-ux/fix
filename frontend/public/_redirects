@@ -103,8 +103,8 @@
 /appliance-repair-foster-city /service-areas 301!
 
 # Marin — deleted city-specific pages → correct service-areas sub-page
-/novato-commercial-appliance-repair /service-areas/novato 301!
-/mill-valley-residential-appliance-repair /service-areas/mill-valley 301!
+/novato-commercial-appliance-repair /service-areas 301!
+/mill-valley-residential-appliance-repair /service-areas 301!
 /belvedere-tiburon-appliance-repair /service-areas/tiburon 301!
 
 # Buggy city-x-city combination URLs (GSC crawl artifacts)
