@@ -348,11 +348,19 @@ const noindexRoutes = [
 const sitemapUrls = ['/', ...filteredRoutes.filter(r => r !== '/' && !noindexRoutes.includes(r))];
 const today = new Date().toISOString().split('T')[0];
 
+// Newer / promoted blog posts that should rank slightly higher than evergreen blog content
+const PROMOTED_BLOG_SLUGS = new Set([
+  '/blog/bosch-dishwasher-error-codes',
+  '/blog/lg-washer-ue-error',
+  '/blog/sub-zero-refrigerator-not-cooling',
+]);
+
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemapUrls.map(r => {
   const priority = r === '/' ? '1.0'
     : r === '/services' || r === '/service-areas' || r === '/brands' ? '0.8'
+    : PROMOTED_BLOG_SLUGS.has(r) ? '0.6'
     : r.startsWith('/blog/') || r.startsWith('/maintenance/') ? '0.5'
     : '0.7';
   return `  <url>
