@@ -1573,7 +1573,7 @@ function getSEOContent(route) {
       },
       'wine-refrigerator': {
         title: 'Wine Refrigerator Repair San Francisco & Bay Area | FixitBay LLC',
-        desc: 'Professional wine refrigerator repair in San Francisco & Bay Area. Same-day service, 180-day warranty. We fix Sub-Zero, Liebherr, Thermador, Viking wine refrigerators.',
+        desc: 'Wine refrigerator repair SF Bay Area. Sub-Zero, Liebherr, Thermador, Viking. $80 diagnostic applied to repair. 180-day warranty. Same-day.',
         h1: 'Wine Refrigerator Repair in San Francisco & Bay Area',
         content: `
           <p style="margin-bottom:1rem;">Wine refrigerators are precision appliances built for serious collectors. Unlike thermoelectric wine coolers, compressor-based wine refrigerators (Sub-Zero, Liebherr, Thermador, Viking) maintain exact temperatures across large collections of 50&ndash;200+ bottles. FixitBay repairs all wine refrigerator types &mdash; built-in undercounter, freestanding, and panel-ready models.</p>
