@@ -896,7 +896,7 @@ function getSEOContent(route) {
     return {
       title: `${blogTitle} | FixitBay LLC Blog`,
       robots: 'index, follow',
-      description: `${blogTitle} - expert advice from FixitBay. Professional appliance repair tips for San Francisco & Bay Area homeowners. Call (760) 543-5733.`,
+      description: `${blogTitle} — expert tips from FixitBay LLC. SF & Bay Area appliance repair. Call (760) 543-5733.`,
       h1: blogTitle,
       content: `
         <p style="margin-bottom: 1rem;">Expert guide on ${blogTitle.toLowerCase()} from FixitBay's licensed technicians. We provide professional appliance repair across San Francisco, the Peninsula, and North Bay with same-day service and a 180-day warranty.</p>
